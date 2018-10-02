@@ -1,0 +1,27 @@
+{  
+   "filesize":"541346660",
+   "addons":[
+      {
+         "title":"Magisk",
+         "summary":"Magisk",
+         "url":"http://tiny.cc/latestmagisk"
+      },
+      {
+         "title":"Magisk",
+         "summary":"Magisk Uninstaller",
+         "url":"http://tiny.cc/latestuninstaller"
+      }
+],
+   "url":"http://178.128.74.208/OTA/gemini/syberia_gemini-v1.1-20181002-0924-OFFICIAL.zip",
+   "developer":"DennySPb",
+   "website_url":"http://syberiaos.com",
+   "md5":"4c0ea630320451bdc6593c6ec00f0307",
+   "news_url":"http://github.com/seberia-project",
+   "build_date":"20181003",
+   "error":false,
+   "developer_url":"http://github.com/seberia-project",
+   "donate_url":"http://github.com/seberia-project",
+   "forum_url":"http://github.com/seberia-project",
+   "changelog":"OTA Test",
+   "filename":"syberia_gemini-v1.1-20181002-0924-OFFICIAL.zip"
+}
