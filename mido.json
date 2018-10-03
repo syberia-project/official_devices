@@ -1,0 +1,27 @@
+{
+   "filesize":"535630714",
+   "addons":[
+      {
+         "title":"Magisk",
+         "summary":"Magisk",
+         "url":"http://tiny.cc/latestmagisk"
+      },
+      {
+         "title":"Magisk",
+         "summary":"Magisk Uninstaller",
+         "url":"http://tiny.cc/latestuninstaller"
+      }
+],
+   "url":"http://178.128.74.208/OTA/mido/syberia_mido-v1.2-20181002-2158-OFFICIAL.zip",
+   "developer":"NATO66613",
+   "website_url":"http://syberiaos.com",
+   "md5":"38006137150576557a8f5015edc29607",
+   "news_url":"http://github.com/syberia-project",
+   "build_date":"20181003",
+   "error":false,
+   "developer_url":"http://github.com/kondors1995",
+   "donate_url":"http://paypal.me/nato66613",
+   "forum_url":"https://forum.xda-developers.com/redmi-note-4/xiaomi-redmi-note-4-snapdragon-roms-kernels-recoveries--other-development/rom-syberia-project-t3846212",
+   "changelog":"First Official Release!",
+   "filename":"syberia_mido-v1.2-20181002-2158-OFFICIAL.zip"
+}
