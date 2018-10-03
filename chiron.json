@@ -1,0 +1,27 @@
+{
+   "filesize":"603122766",
+   "addons":[
+      {
+         "title":"Magisk",
+         "summary":"Magisk",
+         "url":"http://tiny.cc/latestmagisk"
+      },
+      {
+         "title":"Magisk",
+         "summary":"Magisk Uninstaller",
+         "url":"http://tiny.cc/latestuninstaller"
+      }
+],
+   "url":"http://178.128.74.208/OTA/chiron/syberia_chiron-v1.2-20181003-1022-OFFICIAL.zip",
+   "developer":"AleD219",
+   "website_url":"http://syberiaos.com",
+   "md5":"73d0b72827f62beb0c346241f77f39df",
+   "news_url":"http://github.com/syberia-project",
+   "build_date":"20181003",
+   "error":false,
+   "developer_url":"http://github.com/AleD219",
+   "donate_url":"https://www.paypal.me/blinoff82",
+   "forum_url":"https://forum.xda-developers.com/mi-mix-2/development/rom-syberia-project-t3847007",
+   "changelog":"First Official OTA!",
+   "filename":"syberia_chiron-v1.2-20181003-1022-OFFICIAL.zip"
+}

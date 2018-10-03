@@ -22,6 +22,6 @@
    "developer_url":"http://github.com/syberia-project",
    "donate_url":"https://www.paypal.me/blinoff82",
    "forum_url":"https://forum.xda-developers.com/mi-5/development/rom-syberia-project-t3833868",
-   "changelog":"- Fixed chrome FC, /n-Custom notification lights/n- Show bluetooth battery in statusbar\n- Additional textclassifier languages",
+   "changelog":"* Fixed chrome FC\n* Custom notification lights\n* Show bluetooth battery in statusbar\n* Additional textclassifier languages",
    "filename":"syberia_gemini-v1.2-20181003-1223-OFFICIAL.zip"
 }
