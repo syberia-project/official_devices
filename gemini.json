@@ -1,5 +1,5 @@
 {  
-   "filesize":"541346660",
+   "filesize":"543622788",
    "addons":[
       {
          "title":"Magisk",
@@ -12,16 +12,16 @@
          "url":"http://tiny.cc/latestuninstaller"
       }
 ],
-   "url":"http://178.128.74.208/OTA/gemini/syberia_gemini-v1.1-20181002-0924-OFFICIAL.zip",
-   "developer":"DennySPb",
+   "url":"http://178.128.74.208/OTA/gemini/syberia_gemini-v1.2-20181003-1223-OFFICIAL.zip",
+   "developer":"DennySPb & Blinoff82",
    "website_url":"http://syberiaos.com",
-   "md5":"4c0ea630320451bdc6593c6ec00f0307",
-   "news_url":"http://github.com/seberia-project",
+   "md5":"57b49969a86e0fa0121d2a6cc3f6d98b",
+   "news_url":"http://github.com/syberia-project",
    "build_date":"20181003",
    "error":false,
-   "developer_url":"http://github.com/seberia-project",
-   "donate_url":"http://github.com/seberia-project",
-   "forum_url":"http://github.com/seberia-project",
-   "changelog":"OTA Test",
-   "filename":"syberia_gemini-v1.1-20181002-0924-OFFICIAL.zip"
+   "developer_url":"http://github.com/syberia-project",
+   "donate_url":"https://www.paypal.me/blinoff82",
+   "forum_url":"https://forum.xda-developers.com/mi-5/development/rom-syberia-project-t3833868",
+   "changelog":"- Fixed chrome FC, /n-Custom notification lights/n- Show bluetooth battery in statusbar\n- Additional textclassifier languages",
+   "filename":"syberia_gemini-v1.2-20181003-1223-OFFICIAL.zip"
 }
