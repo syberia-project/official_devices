@@ -1,0 +1,27 @@
+{  
+   "filesize":"530480903",
+   "addons":[
+      {
+         "title":"Magisk",
+         "summary":"Magisk",
+         "url":"http://tiny.cc/latestmagisk"
+      },
+      {
+         "title":"Magisk",
+         "summary":"Magisk Uninstaller",
+         "url":"http://tiny.cc/latestuninstaller"
+      }
+],
+   "url":"http://178.128.74.208/OTA/s2/syberia_s2-v1.1-20181003-0207-OFFICIAL.zip",
+   "developer":"DarknessKiller",
+   "website_url":"http://syberiaos.com",
+   "md5":"414eefe37ad723780081b9fa5b2c26d7",
+   "news_url":"http://github.com/syberia-project",
+   "build_date":"20181003",
+   "error":false,
+   "developer_url":"http://github.com/DarknessKiller",
+   "donate_url":"http://paypal.me/KaelChen",
+   "forum_url":"https://forum.xda-developers.com/le-2/development/rom-syberia-project-t3843243",
+   "changelog":"First Official Release!",
+   "filename":"syberia_s2-v1.1-20181003-0207-OFFICIAL.zip"
+}
