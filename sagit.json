@@ -1,0 +1,28 @@
+
+{
+   "filesize":"603122766",
+   "addons":[
+      {
+         "title":"Magisk",
+         "summary":"Magisk",
+         "url":"http://tiny.cc/latestmagisk"
+      },
+      {
+         "title":"Magisk",
+         "summary":"Magisk Uninstaller",
+         "url":"http://tiny.cc/latestuninstaller"
+      }
+],
+   "url":"https://sourceforge.net/projects/syberiaos/files/Sagit/syberia_sagit-v1.2-20181016-0908-OFFICIAL.zip/download",
+   "developer":"Verevka",
+   "website_url":"http://syberiaos.com",
+   "md5":"79c950f64408d443a7d36c4d7e683a02",
+   "news_url":"http://github.com/syberia-project",
+   "build_date":"20181016",
+   "error":false,
+   "developer_url":"http://github.com/Verevka",
+   "donate_url":"https://www.paypal.me/blinoff82",
+   "forum_url":"https://forum.xda-developers.com/",
+   "changelog":"First Official OTA!",
+   "filename":"syberia_sagit-v1.2-20181016-0908-OFFICIAL.zip"
+}
