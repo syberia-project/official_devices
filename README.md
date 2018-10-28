@@ -14,10 +14,9 @@
         + **filesize** - *.zip size in bytes
         + **md5** - *.zip md5 hash
         + **build_date** - *.zip build date
-        + **url** - direct link to download *.zip
+        + **url** - SourceForge direct link to download latest *.zip
         + **changelog** - changelog
         + **addons** - some useful downloads, like magisk, etc.
     + Download portal fields:
         + **device_brand** - Xiaomi, OnePlus, etc.
         + **device_model** - Mi5, Redmi 4X, etc.
-        + **download_portal_url** - SourceForge direct link to download latest *.zip
