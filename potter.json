@@ -1,0 +1,27 @@
+{
+   "filesize":"573152948",
+   "addons":[
+      {
+         "title":"Magisk",
+         "summary":"Magisk",
+         "url":"http://tiny.cc/latestmagisk"
+      },
+      {
+         "title":"Magisk",
+         "summary":"Magisk Uninstaller",
+         "url":"http://tiny.cc/latestuninstaller"
+      }
+],
+   "url":"https://sourceforge.net/projects/syberiaos/files/Potter/syberia_potter-v1.2-20181020-1233-OFFICIAL.zip/download",
+   "developer":"Ashwin R C",
+   "website_url":"http://syberiaos.com",
+   "md5":"38c74f3ed28dea8c2099bb9a52dbe975",
+   "news_url":"http://github.com/syberia-project",
+   "build_date":"20181022",
+   "error":false,
+   "developer_url":"http://github.com/Ashwin4RC",
+   "donate_url":"https://www.paypal.me/blinoff82",
+   "forum_url":"https://forum.xda-developers.com/g5-plus/development/rom-syberia-project-t3856692",
+   "changelog":"First Official OTA!",
+   "filename":"syberia_potter-v1.2-20181020-1233-OFFICIAL.zip"
+}

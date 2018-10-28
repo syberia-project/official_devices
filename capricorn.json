@@ -1,0 +1,28 @@
+{
+    "addons": [
+        {
+            "summary": "Magisk",
+            "title": "Magisk",
+            "url": "\"http://tiny.cc/latestmagisk"
+        },
+        {
+            "summary": "Magisk Uninstaller",
+            "title": "Magisk",
+            "url": "http://tiny.cc/latestuninstaller"
+        }
+    ],
+    "build_date": "20181021",
+    "changelog": "Fixed fingerprint SELINUX\n Enabled: maple io scheduler, adreno idler\n switch to audio HAL 4.0\n update ims",
+    "developer": "DennySPb & Blinoff82",
+    "developer_url": "http://github.com/syberia-project",
+    "device": "gemini",
+    "donate_url": "https://syberiaos.com/links",
+    "error": "false",
+    "filename": "syberia_capricorn-v1.2-20181021-2032-OFFICIAL.zip",
+    "filesize": "552451309",
+    "forum_url": "https://forum.xda-developers.com/mi-5s/development/rom-syberia-rom-1-0-t3835690",
+    "md5": "3a53e8fccc6bf61c0f62764233d1ecea",
+    "news_url": "http://github.com/syberia-project",
+    "url": "https://downloads.sourceforge.net/project/syberiaos/Capricorn/syberia_capricorn-v1.2-20181021-2032-OFFICIAL.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fsyberiaos%2Ffiles%2FCapricorn%2Fsyberia_capricorn-v1.2-20181021-2032-OFFICIAL.zip%2Fdownload&ts=1540156722",
+    "website_url": "http://syberiaos.com"
+}
