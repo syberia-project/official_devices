@@ -23,5 +23,7 @@
    "donate_url":"https://www.paypal.me/blinoff82",
    "forum_url":"https://forum.xda-developers.com/g5-plus/development/rom-syberia-project-t3856692",
    "changelog":"First Official OTA!",
-   "filename":"syberia_potter-v1.2-20181020-1233-OFFICIAL.zip"
+   "filename":"syberia_potter-v1.2-20181020-1233-OFFICIAL.zip",
+   "device_brand": "Motorola",
+   "device_model": "Moto G5 Plus"
 }
