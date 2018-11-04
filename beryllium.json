@@ -1,0 +1,29 @@
+{
+   "filesize":"466754172",
+   "addons":[
+      {
+         "title":"Magisk",
+         "summary":"Magisk",
+         "url":"http://tiny.cc/latestmagisk"
+      },
+      {
+         "title":"Magisk",
+         "summary":"Magisk Uninstaller",
+         "url":"http://tiny.cc/latestuninstaller"
+      }
+],
+   "url":"https://sourceforge.net/projects/syberiaos/files/beryllium/syberia_beryllium-v1.3-20181103-1953-OFFICIAL.zip/download",
+   "developer":"fir3walk",
+   "website_url":"http://syberiaos.com",
+   "md5":"f7dafc60862b7fd7e78555c18c7ef95d",
+   "news_url":"http://github.com/syberia-project",
+   "build_date":"20181103",
+   "error":false,
+   "developer_url":"http://github.com/fir3walk",
+   "donate_url":"https://www.paypal.me/blinoff82",
+   "forum_url":"https://forum.xda-developers.com/poco-f1/development/rom-syberia-project-t3862622",
+   "changelog":"Initial release",
+   "filename":"syberia_beryllium-v1.3-20181103-1953-OFFICIAL.zip",
+   "device_brand": "Xiaomi",
+   "device_model": "Poco F1"
+}
