@@ -1,5 +1,5 @@
 {
-   "filesize":"573152948",
+   "filesize":"585426206",
    "addons":[
       {
          "title":"Magisk",
@@ -12,17 +12,17 @@
          "url":"http://tiny.cc/latestuninstaller"
       }
 ],
-   "url":"https://sourceforge.net/projects/syberiaos/files/Potter/syberia_potter-v1.2-20181020-1233-OFFICIAL.zip/download",
+   "url":"https://sourceforge.net/projects/syberiaos/files/potter/syberia_potter-v1.3-20181103-1008-OFFICIAL.zip/download",
    "developer":"Ashwin R C",
    "website_url":"http://syberiaos.com",
-   "md5":"38c74f3ed28dea8c2099bb9a52dbe975",
+   "md5":"ee8e0ea04c22170e0ef1643e16b866c6",
    "news_url":"http://github.com/syberia-project",
    "build_date":"20181022",
    "error":false,
    "developer_url":"http://github.com/Ashwin4RC",
    "donate_url":"https://www.paypal.me/blinoff82",
    "forum_url":"https://forum.xda-developers.com/g5-plus/development/rom-syberia-project-t3856692",
-   "changelog":"First Official OTA!",
+   "changelog":Version bump to 1.3",
    "filename":"syberia_potter-v1.2-20181020-1233-OFFICIAL.zip",
    "device_brand": "Motorola",
    "device_model": "Moto G5 Plus"
