@@ -11,7 +11,7 @@
             "url": "http://tiny.cc/latestuninstaller"
         }
     ],
-    "build_date": "20181103",
+    "build_date": "20181111",
     "changelog": "Readded XiaomiDoze\nNovember Security Patch - Android 9.0_r16\nSyberia: Bump to ver. 1.4\nBeautify QS tile styles\nAdded new VoLTE icon\nPhone ringtone setting for Multi SIM device\nFixed missed call notification led\nEnable 60 fps in GCam\nSwitch between Pie/Oreo recents\nNfc: Merge tag 'LA.UM.7.6.2.r1-03800-89xx.0'\nEnable swipe-up gesture even if navbar not enabled\nPowermenu screenshot: disable partial screenshot on longclick\nFixed Instagram camera zoom bug\n",
     "developer": "mesziman",
     "developer_url": "http://github.com/syberia-project",
