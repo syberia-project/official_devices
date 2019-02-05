@@ -1,1 +1,30 @@
-{"url": "https://downloads.sourceforge.net/project/syberiaos/x00t/syberia_X00T-v2.1-20190107-1117-OFFICIAL.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fsyberiaos%2Ffiles%2Fx00t%2Fsyberia_X00T-v2.1-20190107-1117-OFFICIAL.zip%2Fdownload&ts=1546940994X00T/syberia_X00T-v2.1-20190107-1117-OFFICIAL.zip", "changelog": "Syberia OS updated !!!\n\nBuild date :- 07/1/2019\n\nChangelog:\nnew:\n- Add support for the .opus file format\n- SyberiaSettings: Custom Rounded Corner and Padding preferences\n- Launcher3: Add Google search double tap option\n- Settings: Add new 20SEVEN font\n- SmartNav: update smartbar home drawable\n- Auto face unlock v2 (Pie)\n- Add animations to QS tiles\n- Add interpolators to QS tile animations   \n- Extended audio panel \n- Audio panel location\n- Three-fingers-swipe to screenshot\n\nfixed:\n- Fixed new files not updated on PC when connected   to MTP\n- Black theme fixes\n- Fix Signature Spoofing (MicroG)\n- Fix no default ringtone for slot2\n- Fix voume panel animation\n- Fix an issue where unlocking the SIM PIN failed\n- Fix Miracast sound\n- Fixed issue with AppOps service\n- Fixed traffic indicator not hiding on lost connection\n- Fix property setting with failure\n- Fix showing empty signal strength for TD-SCDMA\n- Fix full nav gestures\n\nImprovements:\n- OP gestures tweaks\n- Improvements for render engine\n- Clean Sim Dialog layout\n- Modify connecitvity rematch logic to support MSIM devices\n- Add HDMI hotplug handling\n- Support fonts from Substratum theme packages\n- Update translations\n- Updated white-list telephony modules\n\nDevice side :-\n- Added Stock camera \n- 338 OTA sync\n- Updated blobs from Jasmine,mi8 lite and nitrogen\n- Updated Hals\n- Fixed Audio Recording\n- Improved Overall Audio quality\n- Ability to disable sim card\n- Cast fix (Not tested)\n- Kernel Upstream\n", "device_model": "Zenfone Max Pro M1", "donate_url": "https://syberiaos.com/links", "build_date": "20190107", "device_brand": "Asus", "filesize": "703958028", "addons": [{"url": "\"http://tiny.cc/latestmagisk", "title": "Magisk", "summary": "Magisk"}, {"url": "http://tiny.cc/latestuninstaller", "title": "Magisk", "summary": "Magisk Uninstaller"}], "developer_url": "https://github.com/Toymakerftw", "website_url": "http://syberiaos.com", "news_url": "http://github.com/syberia-project", "error": "false", "filename": "syberia_X00T-v2.1-20190107-1117-OFFICIAL.zip", "md5": "31acf0c11fdc7cdf6b46b44b247cacdf", "forum_url": "https://forum.xda-developers.com/asus-zenfone-max-pro-m1/development/rom-syberia-project-t3848146", "device": "X00T", "developer": "thetoymaker"}
+{
+  "news_url": "http://github.com/syberia-project",
+  "device_model": "X00T",
+  "website_url": "http://syberiaos.com",
+  "donate_url": "https://syberiaos.com/links",
+  "build_date": "20190204",
+  "error": "false",
+  "md5": "6db217cb97382c13e833dce4213cfee8",
+  "developer": "thetoymaker",
+  "forum_url": "",
+  "filename": "syberia_X00T-v2.2-20190204-1814-OFFICIAL.zip",
+  "changelog": "Syberia-Os Update\nBuild Date 05/02/2019\nChangelog :\n - Launcher3: Add more icon sizes \n - Launcher3: Updated Google Feed lib from Pixel 3\n - Updated smartbar icon drawables - Paranoid android PIE navigation \n - Edge gesture\n - Rearrange gestures settings\n - OmniRom QS headers\n - Option to hide ADB notification\n - ADB over wi-fi\n - Pie control, adb tiles\n - Enabled MultiUser Ui\n - Smoother UX\n - Fixed QS tiles FC on the first qs page \n-  Fixed context for tiles without longClick \n - Fixed PIP mode - Fixed NPE \n - Fixed icon tinting in power detail page\n - Update translations\n - Various fixes and improvements\n",
+  "developer_url": "http://github.com/syberia-project",
+  "device": "X00T",
+  "url": "https://sourceforge.net/projects/syberiaos/files/X00T/syberia_X00T-v2.2-20190204-1814-OFFICIAL.zip/download",
+  "addons": [
+    {
+      "url": "\"http://tiny.cc/latestmagisk",
+      "summary": "Magisk",
+      "title": "Magisk"
+    },
+    {
+      "url": "http://tiny.cc/latestuninstaller",
+      "summary": "Magisk Uninstaller",
+      "title": "Magisk"
+    }
+  ],
+  "device_brand": "Asus",
+  "filesize": "709129867"
+}
