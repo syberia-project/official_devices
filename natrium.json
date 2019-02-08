@@ -1,1 +1,30 @@
-{"device_model": "Mi 5s Plus", "news_url": "http://github.com/syberia-project", "md5": "87bb3a5dbe7a9c9025156911dbece67a", "website_url": "http://syberiaos.com", "filename": "syberia_natrium-v2.2-20190126-2106-OFFICIAL.zip", "device": "natrium", "filesize": "552628732", "forum_url": "https://forum.xda-developers.com/mi-5s-plus/development/rom-syberia-project-t3869145", "device_brand": "Xiaomi", "build_date": "20190126", "developer_url": "http://github.com/syberia-project", "donate_url": "https://syberiaos.com/links", "developer": "cfdddd", "url": "https://downloads.sourceforge.net/project/syberiaos/natrium/syberia_natrium-v2.2-20190126-2106-OFFICIAL.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fsyberiaos%2Ffiles%2Fnatrium%2Fsyberia_natrium-v2.2-20190126-2106-OFFICIAL.zip%2Fdownload&ts=1548623747natrium/syberia_natrium-v2.2-20190126-2106-OFFICIAL.zip", "changelog": "- Added FINE_LOCATION for Bluetooth scans\n- Updated PrivacyGuard from Lineage\n- Settings: Switch styles\n- Settings: Ambient display music ticker\n- Fixed right padding for time picker\n- Fixed bluetooth scan op permission for AppOps\n- Fixed disappearing home/recents button on navigation bar after unlocking keygaurd\n- Fixed alert slider toasts for custom actions\n- Fixed nav- and statusbar black theme\n- Fixed notification channel info text color\n- Fixed Google sounds picker storage permissions\n- Fixed animation issue when opening Messaging app\n- Themes: Lock day night mode\n- Various frameworks fixes and improvements\n", "error": "false", "addons": [{"summary": "Magisk", "url": "\"http://tiny.cc/latestmagisk", "title": "Magisk"}, {"summary": "Magisk Uninstaller", "url": "http://tiny.cc/latestuninstaller", "title": "Magisk"}]}
+{
+  "md5": "542f731d84abec558525b1e98a2224b8",
+  "error": "false",
+  "addons": [
+    {
+      "summary": "Magisk",
+      "url": "\"http://tiny.cc/latestmagisk",
+      "title": "Magisk"
+    },
+    {
+      "summary": "Magisk Uninstaller",
+      "url": "http://tiny.cc/latestuninstaller",
+      "title": "Magisk"
+    }
+  ],
+  "donate_url": "https://syberiaos.com/links",
+  "device": "natrium",
+  "developer_url": "http://github.com/syberia-project",
+  "url": "https://sourceforge.net/projects/syberiaos/files/natrium/syberia_natrium-v2.2-20190208-1921-OFFICIAL.zip/download",
+  "forum_url": "https://forum.xda-developers.com/mi-5s-plus/development/rom-syberia-project-t3869145",
+  "developer": "cfdddd",
+  "filename": "syberia_natrium-v2.2-20190208-1921-OFFICIAL.zip",
+  "changelog": "- Launcher3: Add more icon sizes\n- Launcher3: Updated Google Feed lib from Pixel 3\n- Updated smartbar icon drawables\n- Paranoid android PIE navigation\n- Edge gestures\n- Rearrange gestures settings\n- OmniRom QS headers\n- Option to hide ADB notification\n- ADB over wi-fi\n- Pie control, adb tiles\n- Enabled MultiUser UI\n- Fixed QS tiles FC on the first qs page\n- Fixed context for tiles without longClick\n- Fixed PIP mode\n- Fixed NPE in DozeService\n- Fixed black screen after screen turned on\n- Fixed icon tinting in power detail pages\n- PIN critical apps and system services\n- Optimized shutdown time\n- Optimized ART props\n- Added permissions for mediaserver and mediaextractor\n- Various fixes and improvements\n- Update translations\n- Merged Android-9.0.0_R33 (February security patch)\n- Fixed signature spoofing for MicroG (thx @ksrt12 and @fitsuli for finding issue)\n- Fixed color accent for the default printer service (Settings)\n- Fixed double tap to open notification on lockscreen\n- File manager: support night mode\n- Ambient music ticker improvements\n- Settings: Bring back Uptime in \"About Phone\"\n- Google prebuilts (Turbo, Markup, Wellbeing) updated to PQ2A.190205.003 from Marlin\n",
+  "filesize": "561661696",
+  "website_url": "http://syberiaos.com",
+  "build_date": "20190208",
+  "device_model": "Mi 5s Plus",
+  "news_url": "http://github.com/syberia-project",
+  "device_brand": "Xiaomi"
+}
