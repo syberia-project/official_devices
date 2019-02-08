@@ -1,1 +1,30 @@
-{"error": "false", "url": "https://downloads.sourceforge.net/project/syberiaos/enchilada/syberia_oneplus6-v2.2-20190202-1020-OFFICIAL.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fsyberiaos%2Ffiles%2Fenchilada%2Fsyberia_oneplus6-v2.2-20190202-1020-OFFICIAL.zip%2Fdownload&ts=1549110554", "website_url": "http://syberiaos.com", "donate_url": "https://syberiaos.com/links", "device_model": "OnePlus 6", "addons": [{"summary": "Magisk", "title": "Magisk", "url": "\"http://tiny.cc/latestmagisk"}, {"summary": "Magisk Uninstaller", "title": "Magisk", "url": "http://tiny.cc/latestuninstaller"}], "device_brand": "OnePlus", "device": "oneplus6", "filename": "syberia_oneplus6-v2.2-20190118-1328-OFFICIAL.zip", "md5": "c581a9fca1730b76c7527e44bf679a62", "developer_url": "http://github.com/syberia-project", "forum_url": "", "news_url": "http://github.com/syberia-project", "changelog": "OnePlu6 initial", "developer": "DennySPb", "filesize": "544327920", "build_date": "20190118"}
+{
+  "donate_url": "https://syberiaos.com/links",
+  "md5": "1a4fdc492db43868e187a0d7486d3a0f",
+  "addons": [
+    {
+      "title": "Magisk",
+      "summary": "Magisk",
+      "url": "\"http://tiny.cc/latestmagisk"
+    },
+    {
+      "title": "Magisk",
+      "summary": "Magisk Uninstaller",
+      "url": "http://tiny.cc/latestuninstaller"
+    }
+  ],
+  "website_url": "http://syberiaos.com",
+  "device": "oneplus6",
+  "news_url": "http://github.com/syberia-project",
+  "error": "false",
+  "url": "https://sourceforge.net/projects/syberiaos/files/enchilada/syberia_oneplus6-v2.2-20190208-1113-OFFICIAL.zip/download",
+  "device_brand": "OnePlus",
+  "device_model": "OnePlus 6",
+  "filename": "syberia_oneplus6-v2.2-20190208-1113-OFFICIAL.zip",
+  "changelog": "OnePlus 6:\n- Kernel: 4.9.155, built with clang 8.0.0\n- Fixed instagram and some others FC \n- Fixed installation of 3rd party kernels\n- Improved smoothness\nRom:\n- Merged Android-9.0.0_R33 (February security patch)\n- Fixed signature spoofing for MicroG (thx @ksrt12 and @fitsuli for finding issue)\n- Fixed color accent for the default printer service (Settings)\n- Fixed double tap to open notification on lockscreen\n- File manager: support night mode\n- Ambient music ticker improvements\n- OmniRom QS headers improvements\n- Settings: Bring back Uptime in \"About Phone\"\n- Google prebuilts (Turbo, Markup, Wellbeing) updated to PQ2A.190205.003 from Marlin",
+  "forum_url": "",
+  "filesize": "553194840",
+  "developer_url": "http://github.com/syberia-project",
+  "build_date": "20190208",
+  "developer": "DennySPb"
+}
