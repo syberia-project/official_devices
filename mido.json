@@ -1,1 +1,30 @@
-{"addons": [{"title": "Magisk", "summary": "Magisk", "url": "\"http://tiny.cc/latestmagisk"}, {"title": "Magisk", "summary": "Magisk Uninstaller", "url": "http://tiny.cc/latestuninstaller"}], "filename": "syberia_mido-v2.2-20190203-1652-OFFICIAL.zip", "changelog": "Current build date: 02/03/2019\n\nChangelog:\n- Kernel: upstreamed to 3.18.133\n- Kernel: Removed kernel sided CPU boost\n- Kernel: Added QNS driver to extend battery life spawn & protect from overcharge (big tnx to @TheHitMan7 )\n- Kernel: Enabled fuel gauge gen 3 ( improved for battery life prediction) \n- Kernel: Added Gcam focus patch big tnx to @zeelog\n- Kernel: Improved power efficiency\n- Kernel: Added possible fix for Random reboots tnx to @GiaSen\n- Kernel: More perf tweaks\n- Updated sdm blobs from LA.UM.7.5.r1-03700-8x96.0\n- Updated display blobs from from LA.UM.7.6.2.r1-03000-89xx.0\n- Enabled framework av enhancements\n- Improved Hotspot\n- Improved I/O performance\n- Improved boot speed\n- Updated power config  (raised sustained perf GPU values & added boost on app launch)\n- Updated DIRAC implementation\n- Added Mido specific easter egg (find it guys)\n- Launcher3: Add more icon sizes\n- Launcher3: Updated Google Feed lib from Pixel 3\n- Updated smartbar icon drawables\n- Paranoid android PIE navigation\n- Edge gestures\n- Rearrange gestures settings\n- OmniRom QS headers\n- Option to hide ADB notification\n- ADB over wi-fi\n- Pie control, adb tiles\n- Enabled MultiUser UI\n- Smoother UX\n- Fixed QS tiles FC on the first qs page\n- Fixed context for tiles without longClick\n- Fixed PIP mode\n- Fixed NPE in DozeService\n- Fixed black screen after screen turned on\n- Fixed icon tinting in power detail pages\n- PIN critical apps and system services\n- Optimized shutdown time\n- Optimized ART props\n- Added permissions for mediaserver and mediaextractor\n- Various fixes and improvements\n- Update translations\n", "filesize": "562396908", "md5": "de2d557d3a8ba685af7162077d2168ba", "build_date": "20190203", "device": "mido", "url": "https://downloads.sourceforge.net/project/syberiaos/mido/syberia_mido-v2.2-20190203-1652-OFFICIAL.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fsyberiaos%2Ffiles%2Fmido%2Fsyberia_mido-v2.2-20190203-1652-OFFICIAL.zip%2Fdownload&ts=1549217099mido/syberia_mido-v2.2-20190203-1652-OFFICIAL.zip", "donate_url": "https://syberiaos.com/links", "developer_url": "http://github.com/syberia-project", "news_url": "http://github.com/syberia-project", "developer": "NATO66613", "error": "false", "website_url": "http://syberiaos.com", "forum_url": "https://forum.xda-developers.com/redmi-note-4/xiaomi-redmi-note-4-snapdragon-roms-kernels-recoveries--other-development/rom-syberia-project-t3846212", "device_brand": "Xiaomi", "device_model": "Redmi Note 4X Snapdragon"}
+{
+  "addons": [
+    {
+      "title": "Magisk",
+      "summary": "Magisk",
+      "url": "\"http://tiny.cc/latestmagisk"
+    },
+    {
+      "title": "Magisk",
+      "summary": "Magisk Uninstaller",
+      "url": "http://tiny.cc/latestuninstaller"
+    }
+  ],
+  "filename": "syberia_mido-v2.2-20190208-1459-OFFICIAL.zip",
+  "changelog": "Current build date: 02/08/2019\n\nChangelog:\n\nMido:\n\n- Improveded to camera\n- Improved Dirac\n- \nRom:\n- Merged Android-9.0.0_R33 (February security patch)\n- Fixed signature spoofing for MicroG (thx @ksrt12 and @fitsuli for finding issue)\n- Fixed colour accent for the default printer service (Settings)\n- Fixed double tap to open notification on lockscreen\n- File manager: support night mode\n- Ambient music ticker improvements\n- OmniRom QS headers improvements\n- Settings: Bring back Uptime in \"About Phone\"\n- Google prebuilts (Turbo, Markup, Wellbeing) updated to PQ2A.190205.003 from Marlin\n",
+  "filesize": "563815900",
+  "md5": "a0a62d683a3b8fbed14eea9ff1af958f",
+  "build_date": "20190208",
+  "device": "mido",
+  "url": "https://sourceforge.net/projects/syberiaos/files/mido/syberia_mido-v2.2-20190208-1459-OFFICIAL.zip/download",
+  "donate_url": "https://syberiaos.com/links",
+  "developer_url": "http://github.com/syberia-project",
+  "news_url": "http://github.com/syberia-project",
+  "developer": "NATO66613",
+  "error": "false",
+  "website_url": "http://syberiaos.com",
+  "forum_url": "",
+  "device_brand": "Xiaomi",
+  "device_model": "Redmi Note 4X Snapdragon"
+}
