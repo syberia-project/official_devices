@@ -1,1 +1,30 @@
-{"news_url": "http://github.com/syberia-project", "url": "https://downloads.sourceforge.net/project/syberiaos/santoni/syberia_santoni-v2.2-20190202-0956-OFFICIAL.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fsyberiaos%2Ffiles%2Fsantoni%2Fsyberia_santoni-v2.2-20190202-0956-OFFICIAL.zip%2Fdownload&ts=1549118319&use_mirror=netcologne", "forum_url": "https://forum.xda-developers.com/xiaomi-redmi-4x/development/rom-syberia-project-t3890225", "filename": "syberia_santoni-v2.2-20190202-0956-OFFICIAL.zip", "donate_url": "https://syberiaos.com/links", "website_url": "http://syberiaos.com", "developer_url": "https://github.com/HarukeyUA", "changelog": "Kernel: upstreamed to 3.18.133\nKernel: removed darkness governor\nKernel: added wireguard support\nUpdated sdm blobs from LA.UM.7.5.r1-03700-8x96.0\nLauncher3: Add more icon sizes\nLauncher3: Updated Google Feed lib from Pixel 3\nUpdated smartbar icon drawables\nParanoid android PIE navigation\nEdge gestures\nRearrange gestures settings\nOmniRom QS headers\nOption to hide ADB notification\nADB over wi-fi\nPie control, adb tiles\nEnabled MultiUser UI\nSmoother UX\nFixed QS tiles FC on the first qs page\nFixed context for tiles without longClick\nFixed PIP mode\nFixed NPE in DozeService\nFixed black screen after screen turned on\nFixed icon tinting in power detail pages\nPIN critical apps and system services\nOptimized shutdown time\nOptimized ART props\nAdded permissions for mediaserver and mediaextractor\nVarious fixes and improvements\nUpdate translations\n", "device": "santoni", "filesize": "559918360", "build_date": "20190202", "addons": [{"url": "\"http://tiny.cc/latestmagisk", "summary": "Magisk", "title": "Magisk"}, {"url": "http://tiny.cc/latestuninstaller", "summary": "Magisk Uninstaller", "title": "Magisk"}], "device_model": "Redmi 4X", "error": "false", "md5": "55fd6916fc4b1a10900e7300d11d4876", "device_brand": "Xiaomi", "developer": "HarukeyUA"}
+{
+  "forum_url": "https://forum.xda-developers.com/xiaomi-redmi-4x/development/rom-syberia-project-t3890225",
+  "filename": "syberia_santoni-v2.2-20190209-1517-OFFICIAL.zip",
+  "md5": "4b0acfc23fa7e7e963725b2e54174535",
+  "device": "santoni",
+  "url": "https://downloads.sourceforge.net/project/syberiaos/santoni/syberia_santoni-v2.2-20190209-1517-OFFICIAL.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fsyberiaos%2Ffiles%2Fsantoni%2Fsyberia_santoni-v2.2-20190209-1517-OFFICIAL.zip%2Fdownload&ts=1549727197&use_mirror=netcologne",
+  "device_model": "Redmi 4X",
+  "error": "false",
+  "news_url": "http://github.com/syberia-project",
+  "build_date": "20190209",
+  "filesize": "564021139",
+  "developer": "HarukeyUA",
+  "donate_url": "https://syberiaos.com/links",
+  "device_brand": "Xiaomi",
+  "addons": [
+    {
+      "url": "\"http://tiny.cc/latestmagisk",
+      "title": "Magisk",
+      "summary": "Magisk"
+    },
+    {
+      "url": "http://tiny.cc/latestuninstaller",
+      "title": "Magisk",
+      "summary": "Magisk Uninstaller"
+    }
+  ],
+  "developer_url": "https://github.com/HarukeyUA",
+  "changelog": "Redmi 4X:\nKernel upstreamed to 3.18.134\nMerged caf tag LA.UM.7.6.r1-04100-89xx.0 in kernel\nAdded dirac support (sound -> mi sound enchancer)\nFixed fm radio\nRom:\nMerged Android-9.0.0_R33 (February security patch)\nFixed signature spoofing for MicroG (thx @ksrt12 and @fitsuli for finding issue)\nFixed color accent for the default printer service (Settings)\nFixed double tap to open notification on lockscreen\nFile manager: support night mode\nAmbient music ticker improvements\nOmniRom QS headers improvements\nSettings: Bring back Uptime in \"About Phone\"\nGoogle prebuilts (Turbo, Markup, Wellbeing) updated to PQ2A.190205.003 from Marlin\n",
+  "website_url": "http://syberiaos.com"
+}
