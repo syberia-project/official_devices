@@ -1,1 +1,30 @@
-{"addons": [{"title": "Magisk", "summary": "Magisk", "url": "\"http://tiny.cc/latestmagisk"}, {"title": "Magisk", "summary": "Magisk Uninstaller", "url": "http://tiny.cc/latestuninstaller"}], "filename": "syberia_vince-v2.2-20190202-1646-OFFICIAL.zip", "changelog": "- Launcher3: Add more icon sizes\n- Launcher3: Updated Google Feed lib from Pixel 3\n- Updated smartbar icon drawables\n- Paranoid android PIE navigation\n- Edge gestures\n- Rearrange gestures settings\n- OmniRom QS headers\n- Option to hide ADB notification\n- ADB over wi-fi\n- Pie control, adb tiles\n- Smoother UX\n- Fixed QS tiles FC on the first qs page\n- Fixed context for tiles without longClick\n- Fixed PIP mode\n- Fixed NPE in DozeService\n- Fixed black screen after screen turned on\n- Fixed icon tinting in power detail pages\n- PIN critical apps and system services\n- Optimized shutdown time\n- Optimized ART props\n- Added permissions for mediaserver and mediaextractor\n- Various fixes and improvements\n- Update translations", "filesize": "628779151", "md5": "0224193ac93e89e4eb90b092539c0f8d", "build_date": "20190202", "device": "vince", "url": "https://downloads.sourceforge.net/project/syberiaos/vince/syberia_vince-v2.2-20190202-1646-OFFICIAL.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fsyberiaos%2Ffiles%2Fvince%2Fsyberia_vince-v2.2-20190202-1646-OFFICIAL.zip%2Fdownload&ts=1549128847vince/syberia_vince-v2.2-20190202-1646-OFFICIAL.zip", "donate_url": "https://syberiaos.com/links", "developer_url": "http://github.com/mdeejay", "news_url": "http://github.com/syberia-project", "developer": "mdeejay", "error": "false", "website_url": "http://syberiaos.com", "forum_url": "https://forum.xda-developers.com/redmi-note-5/development/rom-syberia-project-t3884842", "device_brand": "Xiaomi", "device_model": "Redmi 5 Plus"}
+{
+  "addons": [
+    {
+      "title": "Magisk",
+      "summary": "Magisk",
+      "url": "\"http://tiny.cc/latestmagisk"
+    },
+    {
+      "title": "Magisk",
+      "summary": "Magisk Uninstaller",
+      "url": "http://tiny.cc/latestuninstaller"
+    }
+  ],
+  "filename": "syberia_vince-v2.2-20190209-0856-OFFICIAL.zip",
+  "changelog": "- kernel: upstreamed to 3.18.134\n- Dirac sound enchancer\n- Merged Android-9.0.0_R33 (February security patch)\n- Fixed signature spoofing for MicroG (thx @ksrt12 and @fitsuli for finding issue)\n- Fixed color accent for the default printer service (Settings)\n- Fixed double tap to open notification on lockscreen\n- File manager: support night mode\n- Ambient music ticker improvements\n- OmniRom QS headers improvements\n- Settings: Bring back Uptime in \"About Phone\"\n- Google prebuilts (Turbo, Markup, Wellbeing) updated to PQ2A.190205.003 from Marlin\n",
+  "filesize": "631165659",
+  "md5": "260d6c31eda137e70174569da4c74942",
+  "build_date": "20190209",
+  "device": "vince",
+  "url": "https://downloads.sourceforge.net/project/syberiaos/vince/syberia_vince-v2.2-20190209-0856-OFFICIAL.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fsyberiaos%2Ffiles%2Fvince%2Fsyberia_vince-v2.2-20190209-0856-OFFICIAL.zip%2Fdownload&ts=1549708695",
+  "donate_url": "https://syberiaos.com/links",
+  "developer_url": "http://github.com/syberia-project",
+  "news_url": "http://github.com/syberia-project",
+  "developer": "mdeejay",
+  "error": "false",
+  "website_url": "http://syberiaos.com",
+  "forum_url": "https://forum.xda-developers.com/redmi-note-5/development/rom-syberia-project-t3884842",
+  "device_brand": "Xiaomi",
+  "device_model": "Redmi 5 Plus"
+}
