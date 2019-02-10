@@ -20,3 +20,5 @@
     + Download portal fields:
         + **device_brand** - Xiaomi, OnePlus, etc.
         + **device_model** - Mi5, Redmi 4X, etc.
+        
+### Example for A/B devices you can find in 'ab/enchilada.json'
