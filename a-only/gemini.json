@@ -1,1 +1,30 @@
-{"url": "https://downloads.sourceforge.net/project/syberiaos/gemini/syberia_gemini-v2.2-20190202-1048-OFFICIAL.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fsyberiaos%2Ffiles%2Fgemini%2Fsyberia_gemini-v2.2-20190202-1048-OFFICIAL.zip%2Fdownload&ts=1549113718gemini/syberia_gemini-v2.2-20190202-1048-OFFICIAL.zip", "filesize": "560725118", "donate_url": "https://syberiaos.com/links", "news_url": "http://github.com/syberia-project", "forum_url": "https://forum.xda-developers.com/mi-5/development/rom-syberia-project-t3833868", "developer": "Blinoff82", "website_url": "http://syberiaos.com", "filename": "syberia_gemini-v2.2-20190202-1048-OFFICIAL.zip", "device_brand": "Xiaomi", "device": "gemini", "md5": "b07c579d28a87747ed0ead0f4b07443f", "build_date": "20190202", "device_model": "Mi 5", "developer_url": "http://github.com/syberia-project", "error": "false", "addons": [{"title": "Magisk", "summary": "Magisk", "url": "\"http://tiny.cc/latestmagisk"}, {"title": "Magisk", "summary": "Magisk Uninstaller", "url": "http://tiny.cc/latestuninstaller"}], "changelog": "- Launcher3: Add more icon sizes\n- Launcher3: Updated Google Feed lib from Pixel 3\n- Updated smartbar icon drawables\n- Paranoid android PIE navigation\n- Edge gestures\n- Rearrange gestures settings\n- OmniRom QS headers\n- Option to hide ADB notification\n- ADB over wi-fi\n- Pie control, adb tiles\n- Enabled MultiUser UI\n- Smoother UX\n- Fixed QS tiles FC on the first qs page\n- Fixed context for tiles without longClick\n- Fixed PIP mode\n- Fixed NPE in DozeService\n- Fixed black screen after screen turned on\n- Fixed icon tinting in power detail pages\n- PIN critical apps and system services\n- Optimized shutdown time\n- Optimized ART props\n- Added permissions for mediaserver and mediaextractor\n- Various fixes and improvements\n- Update translations\n"}
+{
+  "build_date": "20190210",
+  "donate_url": "https://syberiaos.com/links",
+  "filename": "syberia_gemini-v2.2-20190210-0935-OFFICIAL.zip",
+  "developer_url": "http://github.com/syberia-project",
+  "device_brand": "Xiaomi",
+  "developer": "Blinoff82",
+  "device_model": "Mi 5",
+  "news_url": "http://github.com/syberia-project",
+  "device": "gemini",
+  "addons": [
+    {
+      "summary": "Magisk",
+      "title": "Magisk",
+      "url": "\"http://tiny.cc/latestmagisk"
+    },
+    {
+      "summary": "Magisk Uninstaller",
+      "title": "Magisk",
+      "url": "http://tiny.cc/latestuninstaller"
+    }
+  ],
+  "filesize": "562105191",
+  "error": "false",
+  "website_url": "http://syberiaos.com",
+  "changelog": "- Kernel: Linux 3.18.134\n- Merged Android-9.0.0_R33 (February security patch)\n- Fixed signature spoofing for MicroG (thx @ksrt12 and @fitsuli for finding issue)\n- Fixed color accent for the default printer service (Settings)\n- Fixed double tap to open notification on lockscreen\n- Fixed crap sound in Whatsapp video calls\n- Improved dark theme for Telecomm\n- File manager: support night mode\n- Ambient music ticker improvements\n- OmniRom QS headers improvements\n- Settings: Bring back Uptime in \"About Phone\"\n- Google prebuilts (Turbo, Markup, Wellbeing) updated to PQ2A.190205.003 from Marlin\n- Update translations\n",
+  "md5": "97bddcaafcc8e968da34b0252d8ca467",
+  "forum_url": "",
+  "url": "https://sourceforge.net/projects/syberiaos/files/gemini/syberia_gemini-v2.2-20190210-0935-OFFICIAL.zip/download"
+}
