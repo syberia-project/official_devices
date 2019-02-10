@@ -11,7 +11,8 @@
       "device": "oneplus6",
       "device_brand": "OnePlus",
       "device_model": "OnePlus 6",
-      "developer": "DennySPb"
+      "developer": "DennySPb",
+      "device_codename": "enchilada"
     }
   ]
 }
