@@ -1,5 +1,5 @@
 # Syberia OS official device repo
-## Device config file format:
+## A-Only device config file format:
 + Device config file must be valid JSON
 + Required fields:
     + Some 'about ROM' fields:
