@@ -11,13 +11,13 @@
       "url": "http://tiny.cc/latestuninstaller"
     }
   ],
-  "filename": "syberia_dipper-v2.2-20190209-2143-OFFICIAL.zip",
-  "changelog": "Changelog:\n\n- Simple kernel 2.1\n- Updated Touch Firmware to 9.1.24\n- Update display panel drivers from MiCode/dipper-p-oss release\n- Updated Wifi drivers\n- Updated Sound drivers\n- Updated SdFat Driver to v2.1.8\n- Updated BFQ I/O Scheduler to v8r12 \n- Upstream to 4.9.155\n- Workqeue power svaing enabled by defult\n- Removed GPU underclock \n- OIS fixed (thanks to Los team)$
-  "filesize": "516686510",
-  "md5": "855690bb8cb119cd28a31d4d18988464",
-  "build_date": "20190209",
+  "filename": "syberia_dipper-v2.2-20190204-1849-OFFICIAL.zip",
+  "changelog": "Changelog:\n- SIMPLE KERNEL 2.0\n- Refactored boost logic\n- Kernel tuned out of the box\n- Nuked perf service as kernel boosting is better.\n- BFQ now defult io\n- Merged LA.UM.7.3.r1-06700-sdm845.0 CAF tag\n- Merged caf powerhal \n- Using pixel 3 auto-brightness config\n- Improve perf service\n- Paranoid android PIE navigation\n- Edge gestures\n- Rearrange gestures settings\n- OmniRom QS headers\n- Option to hide ADB notification\n- ADB over wi-fi\n- Pie control, adb tiles\n- Smoother UX\n- Fixed QS tiles FC on the first qs page\n- Fixed context for tiles without longClick\n- Fixed PIP mode\n- Fixed NPE in DozeService\n- Fixed black screen after screen turned on\n- Fixed telephony.default_network can't be read per slot\n- Fixed icon tinting in power detail pages\n- Some sepolicy fixes\n- Various fixes and improvements\n- Launcher3: Add more icon sizes\n- Launcher3: Updated Google Feed lib from Pixel 3\n- Updated smartbar icon drawables\n- Update translations\n",
+  "filesize": "515899830",
+  "md5": "586a9c7fa4a57ee2b570c5fdfe2f7641",
+  "build_date": "20190204",
   "device": "dipper",
-  "url": "https://sourceforge.net/projects/syberiaos/files/dipper/syberia_dipper-v2.2-20190209-2143-OFFICIAL.zip/download",
+  "url": "https://sourceforge.net/projects/syberiaos/files/dipper/syberia_dipper-v2.2-20190204-1849-OFFICIAL.zip/download",
   "donate_url": "https://syberiaos.com/links",
   "developer_url": "http://github.com/syberia-project",
   "news_url": "http://github.com/syberia-project",
