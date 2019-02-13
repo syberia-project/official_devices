@@ -1,5 +1,5 @@
 # Syberia OS official device repo
-## Device config file format:
+## A-Only device config file format:
 + Device config file must be valid JSON
 + Required fields:
     + Some 'about ROM' fields:
@@ -20,3 +20,5 @@
     + Download portal fields:
         + **device_brand** - Xiaomi, OnePlus, etc.
         + **device_model** - Mi5, Redmi 4X, etc.
+        
+### Example for A/B devices you can find in 'ab/enchilada.json'
