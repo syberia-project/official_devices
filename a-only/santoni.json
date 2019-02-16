@@ -1,17 +1,8 @@
 {
-  "forum_url": "https://forum.xda-developers.com/xiaomi-redmi-4x/development/rom-syberia-project-t3890225",
-  "filename": "syberia_santoni-v2.2-20190209-1517-OFFICIAL.zip",
-  "md5": "4b0acfc23fa7e7e963725b2e54174535",
-  "device": "santoni",
-  "url": "https://downloads.sourceforge.net/project/syberiaos/santoni/syberia_santoni-v2.2-20190209-1517-OFFICIAL.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fsyberiaos%2Ffiles%2Fsantoni%2Fsyberia_santoni-v2.2-20190209-1517-OFFICIAL.zip%2Fdownload&ts=1549727197&use_mirror=netcologne",
-  "device_model": "Redmi 4X",
-  "error": "false",
-  "news_url": "http://github.com/syberia-project",
-  "build_date": "20190209",
-  "filesize": "564021139",
   "developer": "HarukeyUA",
-  "donate_url": "https://syberiaos.com/links",
-  "device_brand": "Xiaomi",
+  "news_url": "http://github.com/syberia-project",
+  "forum_url": "https://forum.xda-developers.com/xiaomi-redmi-4x/development/rom-syberia-project-t3890225",
+  "developer_url": "https://github.com/HarukeyUA",
   "addons": [
     {
       "url": "\"http://tiny.cc/latestmagisk",
@@ -24,7 +15,16 @@
       "summary": "Magisk Uninstaller"
     }
   ],
-  "developer_url": "https://github.com/HarukeyUA",
-  "changelog": "Redmi 4X:\nKernel upstreamed to 3.18.134\nMerged caf tag LA.UM.7.6.r1-04100-89xx.0 in kernel\nAdded dirac support (sound -> mi sound enchancer)\nFixed fm radio\nRom:\nMerged Android-9.0.0_R33 (February security patch)\nFixed signature spoofing for MicroG (thx @ksrt12 and @fitsuli for finding issue)\nFixed color accent for the default printer service (Settings)\nFixed double tap to open notification on lockscreen\nFile manager: support night mode\nAmbient music ticker improvements\nOmniRom QS headers improvements\nSettings: Bring back Uptime in \"About Phone\"\nGoogle prebuilts (Turbo, Markup, Wellbeing) updated to PQ2A.190205.003 from Marlin\n",
+  "filename": "syberia_santoni-v2.3-20190216-0822-OFFICIAL.zip",
+  "device_brand": "Xiaomi",
+  "url": "https://downloads.sourceforge.net/project/syberiaos/santoni/syberia_santoni-v2.3-20190216-0822-OFFICIAL.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fsyberiaos%2Ffiles%2Fsantoni%2Fsyberia_santoni-v2.3-20190216-0822-OFFICIAL.zip%2Fdownload&ts=1550319633&use_mirror=netcologne",
+  "device_model": "Redmi 4X",
+  "md5": "0074c9d9561822ccc87859b6a9201e38",
+  "changelog": "Redmi 4X:\nKernel: added kcal\nKernel: ram optimization\nFixed ant\nSnap cam by default\nAdded qcom boostframework\nRom:\nVersion 2.3\nLockscreen visualizer\nFixed media art cover\nFixed some statusbar clock issues\nOP like gestures tweaks\nAbility to turn off conditions/suggestions in settings\nCAF touch responce optimization\nLauncher: switch to latest LawnChair v2\nUpdate translations\nFilemanager (DocumentsUI) fixes\nScreenrecord 18:9 res support\nOther fixes and improvements\n",
+  "filesize": "553105547",
+  "device": "santoni",
+  "error": "false",
+  "donate_url": "https://syberiaos.com/links",
+  "build_date": "20190216",
   "website_url": "http://syberiaos.com"
 }
