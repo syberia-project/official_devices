@@ -1,30 +1,30 @@
 {
-  "build_date": "20190210",
-  "donate_url": "https://syberiaos.com/links",
-  "filename": "syberia_gemini-v2.2-20190210-0935-OFFICIAL.zip",
-  "developer_url": "http://github.com/syberia-project",
-  "device_brand": "Xiaomi",
   "developer": "Blinoff82",
-  "device_model": "Mi 5",
-  "news_url": "http://github.com/syberia-project",
+  "url": "https://sourceforge.net/projects/syberiaos/files/gemini/syberia_gemini-v2.3-20190217-0746-OFFICIAL.zip/download",
+  "filesize": "550674580",
+  "changelog": "- Syberia version 2.3\n- Build kernel with clang 8.0.8\n- Lockscreen visualizer\n- OP like gestures tweaks\n- Ability to turn off conditions/suggestions in settings\n- CAF touch responce optimization\n- Screenrecord 18:9 res support\n- Filemanager (DocumentsUI) fixes\n- Fixed media art cover\n- Fixed some statusbar clock issues\n- Themes fixes and night mode improvements\n- Other fixes under the hood\n- Update translations\n",
+  "error": "false",
+  "md5": "ce55159b50471d017b47063f18ae951e",
+  "website_url": "http://syberiaos.com",
+  "build_date": "20190217",
+  "device_brand": "Xiaomi",
+  "donate_url": "https://syberiaos.com/links",
+  "forum_url": "",
+  "filename": "syberia_gemini-v2.3-20190217-0746-OFFICIAL.zip",
   "device": "gemini",
+  "developer_url": "http://github.com/syberia-project",
+  "device_model": "Mi 5",
   "addons": [
     {
-      "summary": "Magisk",
       "title": "Magisk",
+      "summary": "Magisk",
       "url": "\"http://tiny.cc/latestmagisk"
     },
     {
-      "summary": "Magisk Uninstaller",
       "title": "Magisk",
+      "summary": "Magisk Uninstaller",
       "url": "http://tiny.cc/latestuninstaller"
     }
   ],
-  "filesize": "562105191",
-  "error": "false",
-  "website_url": "http://syberiaos.com",
-  "changelog": "- Kernel: Linux 3.18.134\n- Merged Android-9.0.0_R33 (February security patch)\n- Fixed signature spoofing for MicroG (thx @ksrt12 and @fitsuli for finding issue)\n- Fixed color accent for the default printer service (Settings)\n- Fixed double tap to open notification on lockscreen\n- Fixed crap sound in Whatsapp video calls\n- Improved dark theme for Telecomm\n- File manager: support night mode\n- Ambient music ticker improvements\n- OmniRom QS headers improvements\n- Settings: Bring back Uptime in \"About Phone\"\n- Google prebuilts (Turbo, Markup, Wellbeing) updated to PQ2A.190205.003 from Marlin\n- Update translations\n",
-  "md5": "97bddcaafcc8e968da34b0252d8ca467",
-  "forum_url": "",
-  "url": "https://sourceforge.net/projects/syberiaos/files/gemini/syberia_gemini-v2.2-20190210-0935-OFFICIAL.zip/download"
+  "news_url": "http://github.com/syberia-project"
 }
