@@ -1,20 +1,15 @@
 {
-  "md5": "c9ea32991ad89061e3ec06c744c7ed18",
+  "build_date": "20190216",
   "developer": "thetoymaker",
-  "filesize": "712701770",
-  "url": "https://sourceforge.net/projects/syberiaos/files/X00T/syberia_X00T-v2.2-20190209-1507-OFFICIAL.zip/download",
-  "changelog": "Syberia-Os Update\nBuild Date 10/02/2019\n\nChangelog:\n\nDevice Side:\n - Added Dirac\n\nRom:\n - Merged Android-9.0.0_R33 (February security patch)\n - Fixed signature spoofing for MicroG (thx @ksrt12 and @fitsuli for finding issue) \n - Fixed colour accent for the default printer service (Settings)\n - Fixed double tap to open notification on lockscreen\n - File manager: support night mode\n - Ambient music ticker improvements\n - OmniRom QS headers improvements \n - Settings: Bring back Uptime in \"About Phone\"\n - Google prebuilts (Turbo, Markup, Wellbeing) updated to PQ2A.190205.003 from Marlin\n",
-  "forum_url": "",
-  "donate_url": "https://syberiaos.com/links",
-  "device_model": "X00T",
   "error": "false",
-  "developer_url": "http://github.com/syberia-project",
-  "build_date": "20190209",
-  "filename": "syberia_X00T-v2.2-20190209-1507-OFFICIAL.zip",
+  "donate_url": "https://syberiaos.com/links",
+  "url": "https://sourceforge.net/projects/syberiaos/files/x00t/syberia_X00T-v2.3-20190216-1507-OFFICIAL.zip/download",
   "device": "X00T",
-  "website_url": "http://syberiaos.com",
-  "device_brand": "Asus",
+  "developer_url": "http://github.com/syberia-project",
+  "device_model": "X00T",
   "news_url": "http://github.com/syberia-project",
+  "filename": "syberia_X00T-v2.3-20190216-1507-OFFICIAL.zip",
+  "forum_url": "https://forum.xda-developers.com/asus-zenfone-max-pro-m1/development/rom-syberia-project-t3848146",
   "addons": [
     {
       "url": "\"http://tiny.cc/latestmagisk",
@@ -26,5 +21,10 @@
       "title": "Magisk",
       "summary": "Magisk Uninstaller"
     }
-  ]
+  ],
+  "changelog": "Syberia-Os Update\nBuild Date 18/02/2019\n\nChangelog:\nDevice Side:\n - Fixed Whatsapp video lag\n - Fixed Gcam Issues\nRom:\n - Version 2.3\n - Lockscreen visualizer\n - Fixed media art cover\n - Fixed some status bar clock issues\n - OP like gestures tweaks\n - Ability to turn off conditions/suggestions in settings\n - CAF touch response optimization\n - Launcher: switch to latest LawnChair v2\n - Update translations\n - Filemanager (DocumentsUI) fixes\n - Other fixes and improvements\n",
+  "filesize": "701336538",
+  "device_brand": "Asus",
+  "website_url": "http://syberiaos.com",
+  "md5": "e0c5beb38022691976bf24e41aa5f702"
 }
