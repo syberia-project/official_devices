@@ -1,13 +1,15 @@
 {
-  "error": "false",
-  "developer_url": "https://github.com/HarukeyUA",
-  "filesize": "553264190",
-  "device_brand": "Xiaomi",
-  "developer": "HarukeyUA",
-  "news_url": "http://github.com/syberia-project",
   "device_model": "Redmi 4X",
-  "forum_url": "https://forum.xda-developers.com/xiaomi-redmi-4x/development/rom-syberia-project-t3890225",
-  "url": "https://downloads.sourceforge.net/project/syberiaos/santoni/syberia_santoni-v2.3-20190222-1401-OFFICIAL.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fsyberiaos%2Ffiles%2Fsantoni%2Fsyberia_santoni-v2.3-20190222-1401-OFFICIAL.zip%2Fdownload&ts=1550854005&use_mirror=netcologne",
+  "website_url": "http://syberiaos.com",
+  "donate_url": "https://syberiaos.com/links",
+  "error": "false",
+  "changelog": "Redmi 4X:\nKernel: 3.18.136\nRom:\nCAF wifi implementation\nFixed statusbar clock overlapping after reboot\nDevelopment settings: allow to choose GPU renderer\nOneHand mode QS tile\nFixed issue with go back to AOD by power button\nA/B updater: Redisign\nOther fixes and improvement\n",
+  "filename": "syberia_santoni-v2.3-20190301-1517-OFFICIAL.zip",
+  "device": "santoni",
+  "developer_url": "https://github.com/HarukeyUA",
+  "device_brand": "Xiaomi",
+  "url": "https://downloads.sourceforge.net/project/syberiaos/santoni/syberia_santoni-v2.3-20190301-1517-OFFICIAL.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fsyberiaos%2Ffiles%2Fsantoni%2Fsyberia_santoni-v2.3-20190301-1517-OFFICIAL.zip%2Fdownload&ts=1551466774&use_mirror=netcologne",
+  "news_url": "http://github.com/syberia-project",
   "addons": [
     {
       "summary": "Magisk",
@@ -20,11 +22,9 @@
       "title": "Magisk"
     }
   ],
-  "md5": "43b7b65dd3869a366ff9d5868ed9ae37",
-  "build_date": "20190222",
-  "donate_url": "https://syberiaos.com/links",
-  "filename": "syberia_santoni-v2.3-20190222-1401-OFFICIAL.zip",
-  "changelog": "Redmi 4X:\nKernel: 3.18.135\nKernel: added usb fast charge\nKernel: westwood tcp algorithm\nKernel: added fiops scheduler\nFixed sound lags in games\nRom:\nScreen stabilizer\nSwap back button option on stock navbar\nCompass QS tile\nUpdate translations\nOther fixes and improvements\n",
-  "website_url": "http://syberiaos.com",
-  "device": "santoni"
+  "filesize": "553602775",
+  "developer": "HarukeyUA",
+  "forum_url": "https://forum.xda-developers.com/xiaomi-redmi-4x/development/rom-syberia-project-t3890225",
+  "build_date": "20190301",
+  "md5": "93a04c951a418b3dfee234be81e0514a"
 }
