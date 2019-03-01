@@ -1,30 +1,30 @@
 {
+  "changelog": "- Kernel: Linux 3.18.136\n- CAF wifi implementation\n- Fixd statusbar clock overlapping after reboot\n- Development settings: allow to choose GPU renderer\n- OneHand mode QS tile\n- Fixed issue with go back to AOD by power button\n- A/B updater: Redisign\n- Other fixes and improvements\n",
+  "error": "false",
   "forum_url": "",
-  "url": "https://sourceforge.net/projects/syberiaos/files/gemini/syberia_gemini-v2.3-20190223-0749-OFFICIAL.zip/download",
-  "developer": "Blinoff82",
-  "changelog": "- Kernel: Linux 3.18.135\n- Screen stabilizer\n- Swap back button option on stock navbar\n- Compass QS tile\n- Add missed LTE modes\n- Fixed some themes issues\n- Fixed Spotify crashes\n- Other fixes and improvements\n- Update translations",
+  "developer_url": "http://github.com/syberia-project",
+  "md5": "e14d62c9cd98c44b35d16def7893472f",
+  "device_brand": "Xiaomi",
+  "build_date": "20190301",
+  "news_url": "http://github.com/syberia-project",
+  "device_model": "Mi5",
+  "device": "gemini",
+  "filesize": "551569682",
+  "filename": "syberia_gemini-v2.3-20190301-0804-OFFICIAL.zip",
   "addons": [
     {
-      "title": "Magisk",
       "summary": "Magisk",
-      "url": "\"http://tiny.cc/latestmagisk"
+      "url": "\"http://tiny.cc/latestmagisk",
+      "title": "Magisk"
     },
     {
-      "title": "Magisk",
       "summary": "Magisk Uninstaller",
-      "url": "http://tiny.cc/latestuninstaller"
+      "url": "http://tiny.cc/latestuninstaller",
+      "title": "Magisk"
     }
   ],
-  "device_brand": "Xiaomi",
-  "filename": "syberia_gemini-v2.3-20190223-0749-OFFICIAL.zip",
-  "error": "false",
-  "news_url": "http://github.com/syberia-project",
   "website_url": "http://syberiaos.com",
-  "md5": "fd986f1bcd6fed92e20dba6a78f55b7b",
-  "filesize": "550498829",
-  "device_model": "Mi 5",
-  "build_date": "20190223",
-  "donate_url": "https://syberiaos.com/links",
-  "device": "gemini",
-  "developer_url": "http://github.com/syberia-project"
+  "developer": "Blinoff82",
+  "url": "https://sourceforge.net/projects/syberiaos/files/gemini/syberia_gemini-v2.3-20190301-0804-OFFICIAL.zip/download",
+  "donate_url": "https://syberiaos.com/links"
 }
