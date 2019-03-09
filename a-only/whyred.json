@@ -1,1 +1,30 @@
-{"addons": [{"title": "Magisk", "summary": "Magisk", "url": "\"http://tiny.cc/latestmagisk"}, {"title": "Magisk", "summary": "Magisk Uninstaller", "url": "http://tiny.cc/latestuninstaller"}], "filename": "syberia_whyred-v2.2-20190203-2021-OFFICIAL.zip", "changelog": "SyberiaOS 2.2 Update! \n\nMinimum firmware requirements: 8.11.15\nTWRP Requirements: 3.2.3-2 (Mandatory!)\n(If you want to use F2FS check the newer TWRP (3.2.3-5) by AnkitGourav)\n\nChangelog:\n[Syberia]\n- Launcher3: Add more icon sizes\n- Launcher3: Updated Google Feed lib from Pixel 3\n- Updated smartbar icon drawables\n- Paranoid android PIE navigation\n- Edge gestures\n- Rearrange gestures settings\n- OmniRom QS headers\n- Option to hide ADB notification\n- ADB over wi-fi\n- Pie control, adb tiles\n- Enabled MultiUser UI\n- Smoother UX\n- Fixed QS tiles FC on the first qs page\n- Fixed context for tiles without longClick\n- Fixed PIP mode\n- Fixed NPE in DozeService\n- Fixed black screen after screen turned on\n- Fixed icon tinting in power detail pages\n- Update translations\n- Various fixes and improvements\n\n[Whyred]\n- Doze is now back! (Battery improvements)\n- We have also Xiaomi Dirac implementation! (Thanks to jhenrique09, bgcngm, and all the people who worked on it!)\n- Network selection *should* be fixed\n- HAL3 is enabled by default now, you dont need to flash any module anymore, also GCam will work out of the box\n- Added and enabled perfd! (We are approaching Pixel smoothness)\n- Optimized app launch time\n- Improved kernel security\n- Now you can select HD graphic options in various games (such as PUBG)\n- Memory improvements\n- Phone now shutdown faster\n- Laggyness while expanding notification should now be gone (some user reported sometime ago)\n- Various updates and fixes\n- Derp 4.6\n\nDownload: \nCheck OTA, download link in the OP \n\nEnjoy!\n", "filesize": "704575498", "md5": "69381d20c1af69d9e02b5ed6b1021fa3", "build_date": "20190203", "device": "whyred", "url": "https://sourceforge.net/projects/syberiaos/files/whyred/syberia_whyred-v2.2-20190203-2021-OFFICIAL.zip", "donate_url": "https://syberiaos.com/links", "developer_url": "http://github.com/federicobenedetti", "news_url": "http://github.com/syberia-project", "developer": "vidrikdev (sys01 @ xda-developers)", "error": "false", "website_url": "http://syberiaos.com", "forum_url": "https://forum.xda-developers.com/redmi-note-5-pro/development/rom-syberia-project-t3863434", "device_brand": "Xiaomi", "device_model": "Redmi Note 5 (Pro)"}
+{
+  "filesize": "673022393",
+  "donate_url": "https://syberiaos.com/links",
+  "filename": "syberia_whyred-v2.3-20190308-1943-OFFICIAL.zip",
+  "device_model": "Whyred",
+  "changelog": "Changelog:\n- Ambient Display Settings Added\n- Some Sepolicy updated\n- Disabled Vsync for CPU Rendered\n- Camera 2 APi enabled\n- Android-9.0.0_R34 (March security patch)\n- Fixed APP switch triggering with OP gestures\n- Fixed wrong network operator name on MSIM devices \n- Fixed incorrect proximity sensor behaviour in Dialer \n- Fixed flickering issue with live wallpapers\n- Other fixes and improvements\n- Update translations\n",
+  "website_url": "http://syberiaos.com",
+  "device": "whyred",
+  "build_date": "20190308",
+  "device_brand": "Xiaomi",
+  "news_url": "http://github.com/syberia-project",
+  "error": "false",
+  "developer": "Rashed Sahaji",
+  "url": "https://sourceforge.net/projects/syberiaos/files/whyred/syberia_whyred-v2.3-20190303-0424-OFFICIAL.zip/downloadsyberia_whyred-v2.3-20190308-1943-OFFICIAL.zip/download",
+  "forum_url": "https://forum.xda-developers.com/redmi-note-5-pro/development/rom-syberia-project-t3862355",
+  "md5": "cf81c16ac16499753e7f12ea961eeff2",
+  "developer_url": "http://github.com/syberia-project",
+  "addons": [
+    {
+      "url": "\"http://tiny.cc/latestmagisk",
+      "summary": "Magisk",
+      "title": "Magisk"
+    },
+    {
+      "url": "http://tiny.cc/latestuninstaller",
+      "summary": "Magisk Uninstaller",
+      "title": "Magisk"
+    }
+  ]
+}
