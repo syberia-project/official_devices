@@ -1,30 +1,30 @@
 {
-  "device_model": "Redmi 4X",
-  "website_url": "http://syberiaos.com",
-  "donate_url": "https://syberiaos.com/links",
-  "error": "false",
-  "changelog": "Redmi 4X:\nKernel: 3.18.136\nRom:\nCAF wifi implementation\nFixed statusbar clock overlapping after reboot\nDevelopment settings: allow to choose GPU renderer\nOneHand mode QS tile\nFixed issue with go back to AOD by power button\nA/B updater: Redisign\nOther fixes and improvement\n",
-  "filename": "syberia_santoni-v2.3-20190301-1517-OFFICIAL.zip",
-  "device": "santoni",
-  "developer_url": "https://github.com/HarukeyUA",
+  "url": "https://downloads.sourceforge.net/project/syberiaos/santoni/syberia_santoni-v2.3-20190309-0651-OFFICIAL.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fsyberiaos%2Ffiles%2Fsantoni%2Fsyberia_santoni-v2.3-20190309-0651-OFFICIAL.zip%2Fdownload&ts=1552125108&use_mirror=netcologne",
   "device_brand": "Xiaomi",
-  "url": "https://downloads.sourceforge.net/project/syberiaos/santoni/syberia_santoni-v2.3-20190301-1517-OFFICIAL.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fsyberiaos%2Ffiles%2Fsantoni%2Fsyberia_santoni-v2.3-20190301-1517-OFFICIAL.zip%2Fdownload&ts=1551466774&use_mirror=netcologne",
+  "filename": "syberia_santoni-v2.3-20190309-0651-OFFICIAL.zip",
+  "md5": "d6dc7f89854dd954d6b496035f1dabce",
+  "website_url": "http://syberiaos.com",
+  "build_date": "20190309",
   "news_url": "http://github.com/syberia-project",
+  "changelog": "Redmi 4X:\nKernel: latest caf tag, less debug, lz4 compression tweaks\nUpdated QMI/radio/ims blobs from tissot\nImproved bt+wifi coexistance\nRom:\nAndroid-9.0.0_R34 (March security patch)\nFixed APP switch triggering with OP gestures\nFixed wrong network operator name on MSIM devices \nFixed incorrect proximity sensor behaviour in Dialer \nFixed flickering issue with live wallpapers\nOther fixes and improvements\nUpdate translations\n",
+  "device_model": "Redmi 4X",
+  "forum_url": "https://forum.xda-developers.com/xiaomi-redmi-4x/development/rom-syberia-project-t3890225",
   "addons": [
     {
-      "summary": "Magisk",
       "url": "\"http://tiny.cc/latestmagisk",
-      "title": "Magisk"
+      "title": "Magisk",
+      "summary": "Magisk"
     },
     {
-      "summary": "Magisk Uninstaller",
       "url": "http://tiny.cc/latestuninstaller",
-      "title": "Magisk"
+      "title": "Magisk",
+      "summary": "Magisk Uninstaller"
     }
   ],
-  "filesize": "553602775",
+  "filesize": "568790519",
+  "error": "false",
   "developer": "HarukeyUA",
-  "forum_url": "https://forum.xda-developers.com/xiaomi-redmi-4x/development/rom-syberia-project-t3890225",
-  "build_date": "20190301",
-  "md5": "93a04c951a418b3dfee234be81e0514a"
+  "device": "santoni",
+  "developer_url": "https://github.com/HarukeyUA",
+  "donate_url": "https://syberiaos.com/links"
 }
