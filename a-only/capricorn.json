@@ -1,30 +1,30 @@
 {
-    "addons": [
-        {
-            "summary": "Magisk",
-            "title": "Magisk",
-            "url": "\"http://tiny.cc/latestmagisk"
-        },
-        {
-            "summary": "Magisk Uninstaller",
-            "title": "Magisk",
-            "url": "http://tiny.cc/latestuninstaller"
-        }
-    ],
-    "build_date": "20190112",
-    "changelog": "- January Security Patch: Android-9.0.0_r30 (PQ1A.190105.004)\n- Syberia: Bump to v2.2\n- Settings: Notification log\n- SyberiaSettings: Running services icon toggle\n- SyberiaSettings: Edit Icon Toggle\n- Camera: Increase launch speed\n- Dialer: Show phone number on bottom if number is present\n- SystemUI: Update bluetooth battery icon\n- Navbar: fix swipe to back glitches\n- NFC tile: Make inactive drawable match other tiles\n- Fix NPE when creates wifi tracker\n- Silence logcat spam from camera, wcnss",
-    "developer": "mesziman",
-    "developer_url": "http://github.com/syberia-project",
-    "device": "capricorn",
-    "donate_url": "https://syberiaos.com/links",
-    "error": "false",
-    "filename": "syberia_capricorn-v2.2-20190112-1503-OFFICIAL.zip",
-    "filesize": "553079494",
-    "forum_url": "https://forum.xda-developers.com/mi-5s/development/rom-syberia-rom-1-0-t3835690",
-    "md5": "305a12c1b4326c3a853928cba09569d2",
-    "news_url": "http://github.com/syberia-project",
-    "url": "https://downloads.sourceforge.net/project/syberiaos/capricorn/syberia_capricorn-v2.2-20190112-1503-OFFICIAL.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fsyberiaos%2Ffiles%2Fcapricorn%2Fsyberia_capricorn-v2.2-20190112-1503-OFFICIAL.zip%2Fdownload&ts=1547316410",
-    "website_url": "http://syberiaos.com",
-    "device_brand": "Xiaomi",
-    "device_model": "Mi 5S"
+  "changelog": "- Kernel: Linux 3.18.136, rebased on november commit\n- CAF wifi implementation\n- Fixd statusbar clock overlapping after reboot\n- Development settings: allow to choose GPU renderer\n- OneHand mode QS tile\n- Fixed issue with go back to AOD by power button\n- A/B updater: Redisign\n- Other fixes and improvements\n",
+  "error": "false",
+  "forum_url": "",
+  "developer_url": "http://github.com/syberia-project",
+  "md5": "bbe969f5bfddee131eaea73735e4b341",
+  "device_brand": "Xiaomi",
+  "build_date": "20190303",
+  "news_url": "http://github.com/syberia-project",
+  "device_model": "Mi 5S ",
+  "device": "capricorn",
+  "filesize": "551341819",
+  "filename": "syberia_capricorn-v2.3-20190303-2124-OFFICIAL.zip",
+  "addons": [
+    {
+      "summary": "Magisk",
+      "url": "\"http://tiny.cc/latestmagisk",
+      "title": "Magisk"
+    },
+    {
+      "summary": "Magisk Uninstaller",
+      "url": "http://tiny.cc/latestuninstaller",
+      "title": "Magisk"
+    }
+  ],
+  "website_url": "http://syberiaos.com",
+  "developer": "mesziman",
+  "url": "http://sourceforge.net/projects/syberiaos/files/capricorn/syberia_capricorn-v2.3-20190303-2124-OFFICIAL.zip/download",
+  "donate_url": "https://syberiaos.com/links"
 }
