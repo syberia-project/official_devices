@@ -1,30 +1,30 @@
 {
-  "device_model": "Mi 5s Plus",
+  "developer_url": "http://github.com/syberia-project",
+  "build_date": "20190311",
+  "md5": "8e8c6eca7c61f9f4c83b1101aba488c6",
   "device_brand": "Xiaomi",
-  "filename": "syberia_natrium-v2.3-20190301-2325-OFFICIAL.zip",
-  "url": "https://sourceforge.net/projects/syberiaos/files/natrium/syberia_natrium-v2.3-20190301-2325-OFFICIAL.zip/download",
+  "url": "https://sourceforge.net/projects/syberiaos/files/natrium/syberia_natrium-v2.3-20190311-1934-OFFICIAL.zip/download",
+  "developer": "cfdddd",
+  "changelog": "Changelog:\n- Whatsapp noise should be fixed\n- Screen pinning fixed\n- Android-9.0.0_R34 (March security patch)\n- Fixed APP switch triggering with OP gestures\n- Fixed wrong network operator name on MSIM devices \n- Fixed incorrect proximity sensor behaviour in Dialer \n- Fixed flickering issue with live wallpapers\n- Update translations\n\n",
+  "filename": "syberia_natrium-v2.3-20190311-1934-OFFICIAL.zip",
+  "device_model": "Mi 5s Plus",
   "addons": [
     {
-      "title": "Magisk",
+      "summary": "Magisk",
       "url": "\"http://tiny.cc/latestmagisk",
-      "summary": "Magisk"
+      "title": "Magisk"
     },
     {
-      "title": "Magisk",
+      "summary": "Magisk Uninstaller",
       "url": "http://tiny.cc/latestuninstaller",
-      "summary": "Magisk Uninstaller"
+      "title": "Magisk"
     }
   ],
-  "changelog": "Changelog:\n- Fixed Night Light\n- DisplayHAL ( Revert to LA.UM.7.6.2.r1-03600-89xx.0 )\n- AudioHAL ( Revert to LA.UM.7.6.r1-03900-89xx.0 )\n- BtHal ( Revert to LA.UM.7.6.r1-02500-89xx.0 )\n- CAF wifi implementation\n- Fixd statusbar clock overlapping after reboot\n- Development settings: allow to choose GPU renderer\n- OneHand mode QS tile\n- Fixed issue with go back to AOD by power button\n- Polish traslations updated\n- Other fixes and improvements\n\n",
-  "developer": "cfdddd",
-  "device": "natrium",
-  "donate_url": "https://syberiaos.com/links",
   "news_url": "http://github.com/syberia-project",
   "website_url": "http://syberiaos.com",
-  "developer_url": "http://github.com/syberia-project",
-  "build_date": "20190301",
   "forum_url": "https://forum.xda-developers.com/mi-5s-plus/development/rom-syberia-project-t3869145",
+  "filesize": "550982061",
+  "device": "natrium",
   "error": "false",
-  "md5": "a2bb5ba469e026eb4fbf054bf61fd15c",
-  "filesize": "550812686"
+  "donate_url": "https://syberiaos.com/links"
 }
