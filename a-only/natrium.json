@@ -1,13 +1,8 @@
 {
-  "developer_url": "http://github.com/syberia-project",
-  "build_date": "20190311",
-  "md5": "8e8c6eca7c61f9f4c83b1101aba488c6",
-  "device_brand": "Xiaomi",
-  "url": "https://sourceforge.net/projects/syberiaos/files/natrium/syberia_natrium-v2.3-20190311-1934-OFFICIAL.zip/download",
-  "developer": "cfdddd",
-  "changelog": "Changelog:\n- Whatsapp noise should be fixed\n- Screen pinning fixed\n- Android-9.0.0_R34 (March security patch)\n- Fixed APP switch triggering with OP gestures\n- Fixed wrong network operator name on MSIM devices \n- Fixed incorrect proximity sensor behaviour in Dialer \n- Fixed flickering issue with live wallpapers\n- Update translations\n\n",
-  "filename": "syberia_natrium-v2.3-20190311-1934-OFFICIAL.zip",
-  "device_model": "Mi 5s Plus",
+  "news_url": "http://github.com/syberia-project",
+  "error": "false",
+  "website_url": "http://syberiaos.com",
+  "filesize": "552166537",
   "addons": [
     {
       "summary": "Magisk",
@@ -20,11 +15,16 @@
       "title": "Magisk"
     }
   ],
-  "news_url": "http://github.com/syberia-project",
-  "website_url": "http://syberiaos.com",
+  "developer_url": "http://github.com/syberia-project",
+  "device_model": "Mi 5s Plus",
+  "url": "https://sourceforge.net/projects/syberiaos/files/natrium/syberia_natrium-v2.3-20190316-1625-OFFICIAL.zip/download",
+  "developer": "cfdddd",
+  "filename": "syberia_natrium-v2.3-20190316-1625-OFFICIAL.zip",
   "forum_url": "https://forum.xda-developers.com/mi-5s-plus/development/rom-syberia-project-t3869145",
-  "filesize": "550982061",
+  "build_date": "20190316",
+  "md5": "05387a7138705de7c5d95969ba9867b6",
+  "changelog": "- Updated Lawnchair to v914\n- Expanded volume panel\n- as per request decreased incall earpiece volume\n- Improved statusbar icon padding\n- Lockscreen D2TS works on whole screen\n- WiFi: Reimplemented WPS\n- Fixed manual network selection\n- Fixed display of mobile network icons\n- Some themes fixes\n- Various fixes and improvements\n- Update translations\n\n",
+  "donate_url": "https://syberiaos.com/links",
   "device": "natrium",
-  "error": "false",
-  "donate_url": "https://syberiaos.com/links"
+  "device_brand": "Xiaomi"
 }
