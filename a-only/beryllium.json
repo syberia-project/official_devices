@@ -1,1 +1,30 @@
-{"news_url": "http://github.com/syberia-project", "device_brand": "Xiaomi", "developer_url": "http://github.com/syberia-project", "changelog": "New:\n- Auto face unlock v2 (Pie)\n\nFixed:\n- fixed Wireless Display (miracast)\n- fixed Signature Spoofing (MicroG)\n- fixed an issue where unlocking the SIM PIN failed\n\nImprovements:\n- kernel and ROM are build with SDClang 6.0.9 (more performance and smoothness)\n- improved haptic feedback\n- improved resolution of bootanimation\n- switched to 'user' builds from 'userdebug' ones\n- OP gestures tweaks\n- Improvements for render engine\n\nKernel:\n- improted 8.12.27 touch firmware\n", "addons": [{"url": "\"http://tiny.cc/latestmagisk", "title": "Magisk", "summary": "Magisk"}, {"url": "http://tiny.cc/latestuninstaller", "title": "Magisk", "summary": "Magisk Uninstaller"}], "donate_url": "https://syberiaos.com/links", "website_url": "http://syberiaos.com", "device": "beryllium", "build_date": "20181229", "error": "false", "device_model": "Poco F1", "url": "https://sourceforge.net/projects/syberiaos/files/beryllium/syberia_beryllium-v2.1-20181229-1157-OFFICIAL.zip", "developer": "fir3walk", "forum_url": "https://forum.xda-developers.com/poco-f1/development/rom-syberia-project-t3862622", "filename": "syberia_beryllium-v2.1-20181229-1157-OFFICIAL.zip", "filesize": "483077592", "md5": "4b86f39842554565d947fb49ceaa24a5"}
+{
+  "addons": [
+    {
+      "title": "Magisk",
+      "summary": "Magisk",
+      "url": "\"http://tiny.cc/latestmagisk"
+    },
+    {
+      "title": "Magisk",
+      "summary": "Magisk Uninstaller",
+      "url": "http://tiny.cc/latestuninstaller"
+    }
+  ],
+  "filename": "syberia_beryllium-v2.3-20190318-1343-OFFICIAL.zip",
+  "changelog": "Changelog:\n\nMi 8:\n- Upstream to 4.9.163\n- Switched to aosp clang 9.0.1\n- Fixed system freezing and stuttering\n- Remove simple MSM thermal and simple low memory killer\n- Switched to userspace lmk\n- Dynamic stune boost optimised\n- Removed API for marking k-threads as performance critical\n- Disable SECCOMP \n- Update boosting drivers\n- Tick rate back to 300hz\n- Removed bfq\n- cfq is default i/o scheduler \n- Readahead set to 128kb \n- Optimisation for arm64\n- Lots of other fixes and optimisations\n\nRom:\n- Revert to QuickStep launcher\n- Expanded volume panel\n- Improved statusbar icon padding\n- Lockscreen D2TS works on whole screen\n- WiFi: Reimplemented WPS\n- Fixed manual network selection\n- Fixed display of mobile network icons\n- Fixed system ui crash when pinning screen\n- Some themes fixes\n- Various fixes and improvements\n- Update translations\n",
+  "filesize": "501067471",
+  "md5": "8ddab145d04280e502deb5b624457634",
+  "build_date": "20190318",
+  "device": "beryllium",
+  "url": "https://sourceforge.net/projects/syberiaos/files/beryllium/syberia_beryllium-v2.3-20190318-1343-OFFICIAL.zip/download",
+  "donate_url": "https://syberiaos.com/links",
+  "developer_url": "http://github.com/syberia-project",
+  "news_url": "http://github.com/syberia-project",
+  "developer": "Ethan Halsall",
+  "error": "false",
+  "website_url": "http://syberiaos.com",
+  "forum_url": "",
+  "device_brand": "Xiaomi",
+  "device_model": "Poco F1"
+}
