@@ -1,16 +1,16 @@
 {
-  "changelog": "- Kernel: Linux 3.18.136, rebased on november commit\n- CAF wifi implementation\n- Fixd statusbar clock overlapping after reboot\n- Development settings: allow to choose GPU renderer\n- OneHand mode QS tile\n- Fixed issue with go back to AOD by power button\n- A/B updater: Redisign\n- Other fixes and improvements\n",
+  "changelog": "- Revert to QuickStep launcher \n- Expanded volume panel \n- Improved statusbar icon padding \n- Lockscreen D2TS works on whole screen \n- WiFi: Reimplemented WPS \n- Fixed manual network selection \n- Fixed display of mobile network icons \n- Fixed system ui crash when pinning screen \n- Some themes fixes \n- Various fixes and improvements \n- Update translations",
   "error": "false",
   "forum_url": "",
   "developer_url": "http://github.com/syberia-project",
-  "md5": "bbe969f5bfddee131eaea73735e4b341",
+  "md5": "c883ece8fd3a5e8916baf45f4ca96500",
   "device_brand": "Xiaomi",
-  "build_date": "20190303",
+  "build_date": "20190320",
   "news_url": "http://github.com/syberia-project",
   "device_model": "Mi 5S ",
   "device": "capricorn",
-  "filesize": "551341819",
-  "filename": "syberia_capricorn-v2.3-20190303-2124-OFFICIAL.zip",
+  "filesize": "550367929",
+  "filename": "syberia_capricorn-v2.3-20190320-1108-OFFICIAL.zip",
   "addons": [
     {
       "summary": "Magisk",
@@ -25,6 +25,6 @@
   ],
   "website_url": "http://syberiaos.com",
   "developer": "mesziman",
-  "url": "http://sourceforge.net/projects/syberiaos/files/capricorn/syberia_capricorn-v2.3-20190303-2124-OFFICIAL.zip/download",
+  "url": "https://sourceforge.net/projects/syberiaos/files/capricorn/syberia_capricorn-v2.3-20190320-1108-OFFICIAL.zip/download",
   "donate_url": "https://syberiaos.com/links"
 }
