@@ -1,16 +1,16 @@
 {
-  "changelog": "- Revert to QuickStep launcher \n- Expanded volume panel \n- Improved statusbar icon padding \n- Lockscreen D2TS works on whole screen \n- WiFi: Reimplemented WPS \n- Fixed manual network selection \n- Fixed display of mobile network icons \n- Fixed system ui crash when pinning screen \n- Some themes fixes \n- Various fixes and improvements \n- Update translations",
+  "changelog": "- Revert faulty Fingerprint selinux \n - DTS eagle add to kernel",
   "error": "false",
   "forum_url": "",
   "developer_url": "http://github.com/syberia-project",
-  "md5": "c883ece8fd3a5e8916baf45f4ca96500",
+  "md5": "5a6375b90221f0f306bc426841cbd69b",
   "device_brand": "Xiaomi",
-  "build_date": "20190320",
+  "build_date": "20190321",
   "news_url": "http://github.com/syberia-project",
   "device_model": "Mi 5S ",
   "device": "capricorn",
-  "filesize": "550367929",
-  "filename": "syberia_capricorn-v2.3-20190320-1108-OFFICIAL.zip",
+  "filesize": "551641596",
+  "filename": "syberia_capricorn-v2.3-20190321-1308-OFFICIAL.zip",
   "addons": [
     {
       "summary": "Magisk",
@@ -25,6 +25,6 @@
   ],
   "website_url": "http://syberiaos.com",
   "developer": "mesziman",
-  "url": "https://sourceforge.net/projects/syberiaos/files/capricorn/syberia_capricorn-v2.3-20190320-1108-OFFICIAL.zip/download",
+  "url": "https://sourceforge.net/projects/syberiaos/files/capricorn/syberia_capricorn-v2.3-20190321-1308-OFFICIAL.zip/download",
   "donate_url": "https://syberiaos.com/links"
 }
