@@ -1,30 +1,30 @@
 {
-  "news_url": "http://github.com/syberia-project",
-  "error": "false",
+  "build_date": "20190323",
+  "filesize": "553926828",
+  "developer": "cfdddd",
   "website_url": "http://syberiaos.com",
-  "filesize": "552166537",
+  "device_brand": "Xiaomi",
+  "error": "false",
+  "forum_url": "https://forum.xda-developers.com/mi-5s-plus/development/rom-syberia-project-t3869145",
+  "device": "natrium",
+  "changelog": "Changelog:\n- Kernel upstream 3.18.136\n- Updated lawnchair to v968\n- Add MusicFX equalizer from OmniRom\n- SystemUI: Add Sync tile\n- Add Champagne Limousines and Nunito fonts\n- Add app name to screenshot filename\n- Improve ambient play layout on keyguard\n- Volume panel: fixed incorrect positioning\n- Various fixes and improvements\n- Update translations\n",
   "addons": [
     {
       "summary": "Magisk",
-      "url": "\"http://tiny.cc/latestmagisk",
-      "title": "Magisk"
+      "title": "Magisk",
+      "url": "\"http://tiny.cc/latestmagisk"
     },
     {
       "summary": "Magisk Uninstaller",
-      "url": "http://tiny.cc/latestuninstaller",
-      "title": "Magisk"
+      "title": "Magisk",
+      "url": "http://tiny.cc/latestuninstaller"
     }
   ],
+  "filename": "syberia_natrium-v2.3-20190323-2214-OFFICIAL.zip",
+  "news_url": "http://github.com/syberia-project",
+  "url": "https://sourceforge.net/projects/syberiaos/files/natrium/syberia_natrium-v2.3-20190323-2214-OFFICIAL.zip/download",
   "developer_url": "http://github.com/syberia-project",
-  "device_model": "Mi 5s Plus",
-  "url": "https://sourceforge.net/projects/syberiaos/files/natrium/syberia_natrium-v2.3-20190316-1625-OFFICIAL.zip/download",
-  "developer": "cfdddd",
-  "filename": "syberia_natrium-v2.3-20190316-1625-OFFICIAL.zip",
-  "forum_url": "https://forum.xda-developers.com/mi-5s-plus/development/rom-syberia-project-t3869145",
-  "build_date": "20190316",
-  "md5": "05387a7138705de7c5d95969ba9867b6",
-  "changelog": "- Updated Lawnchair to v914\n- Expanded volume panel\n- as per request decreased incall earpiece volume\n- Improved statusbar icon padding\n- Lockscreen D2TS works on whole screen\n- WiFi: Reimplemented WPS\n- Fixed manual network selection\n- Fixed display of mobile network icons\n- Some themes fixes\n- Various fixes and improvements\n- Update translations\n\n",
+  "md5": "419214e8e54b0002d478c5a0bfc3f3b9",
   "donate_url": "https://syberiaos.com/links",
-  "device": "natrium",
-  "device_brand": "Xiaomi"
+  "device_model": "Mi 5s Plus"
 }
