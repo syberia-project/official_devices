@@ -1,30 +1,30 @@
 {
-  "website_url": "http://syberiaos.com",
-  "changelog": "Redmi 4X:\nDirac toggle qs tile\nUpdated graphics blobs from TA-1024\nLawnchair updated to 943-alpha\nKernel: intellithermal, small ram and fs optimization\nROM:\nExpanded volume panel\nImproved statusbar icon padding\nLockscreen D2TS works on whole screen\nWiFi: Reimplemented WPS\nFixed manual network selection\nFixed display of mobile network icons\nFixed system ui crash when pinning screen\nSome themes fixes\nVarious fixes and improvements\nUpdate translations\n",
-  "md5": "704eff71b24826e0214e993e4a3ccbaa",
-  "news_url": "http://github.com/syberia-project",
-  "filename": "syberia_santoni-v2.3-20190316-1008-OFFICIAL.zip",
-  "error": "false",
-  "build_date": "20190316",
+  "donate_url": "https://syberiaos.com/links",
+  "build_date": "20190323",
+  "changelog": "Redmi 4X:\nUpdated ant+, drm, widevine, gatekeeper, keystore, keymaster blobs from TA-1024\nLawnchair: update to 986-alpha\nRom:\nAdd MusicFX equalizer from OmniRom\nSystemUI: Add Sync tile\nAdd Champagne Limousines and Nunito fonts\nUpdate APN's from Pixel 3XL\nAdd the battery percent back on dash charging\nAdd app name to screenshot filename\nImprove ambient play layout on keyguard\nVarious fixes and improvements\nUpdate translations\n\n",
+  "device_brand": "Xiaomi",
+  "url": "https://downloads.sourceforge.net/project/syberiaos/santoni/syberia_santoni-v2.3-20190323-1321-OFFICIAL.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fsyberiaos%2Ffiles%2Fsantoni%2Fsyberia_santoni-v2.3-20190323-1321-OFFICIAL.zip%2Fdownload&ts=1553349189&use_mirror=netcologne",
+  "filename": "syberia_santoni-v2.3-20190323-1321-OFFICIAL.zip",
   "addons": [
     {
-      "url": "\"http://tiny.cc/latestmagisk",
       "summary": "Magisk",
+      "url": "\"http://tiny.cc/latestmagisk",
       "title": "Magisk"
     },
     {
-      "url": "http://tiny.cc/latestuninstaller",
       "summary": "Magisk Uninstaller",
+      "url": "http://tiny.cc/latestuninstaller",
       "title": "Magisk"
     }
   ],
+  "md5": "a1341d2a6bf527850307ad65b6c737cc",
   "developer": "HarukeyUA",
-  "device": "santoni",
-  "device_model": "Redmi 4X",
-  "url": "https://downloads.sourceforge.net/project/syberiaos/santoni/syberia_santoni-v2.3-20190316-1008-OFFICIAL.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fsyberiaos%2Ffiles%2Fsantoni%2Fsyberia_santoni-v2.3-20190316-1008-OFFICIAL.zip%2Fdownload&ts=1552744333&use_mirror=netcologne",
-  "device_brand": "Xiaomi",
-  "developer_url": "https://github.com/HarukeyUA",
+  "website_url": "http://syberiaos.com",
   "forum_url": "https://forum.xda-developers.com/xiaomi-redmi-4x/development/rom-syberia-project-t3890225",
-  "filesize": "565177729",
-  "donate_url": "https://syberiaos.com/links"
+  "filesize": "572984852",
+  "error": "false",
+  "device": "santoni",
+  "news_url": "http://github.com/syberia-project",
+  "device_model": "Redmi 4X",
+  "developer_url": "https://github.com/HarukeyUA"
 }
