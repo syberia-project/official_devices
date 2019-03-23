@@ -1,30 +1,30 @@
 {
-  "device_brand": "Xiaomi",
-  "md5": "a8004576d26047e25e1c5fb9b433d7c6",
-  "changelog": "- Kernel: Merge tag 'LA.UM.7.5.2.r1-01500-8x96.0'\n  into wlan driver\n- Revert to QuickStep launcher\n- Expanded volume panel\n- Improved statusbar icon padding\n- Lockscreen D2TS works on whole screen\n- WiFi: Reimplemented WPS\n- Fixed manual network selection\n- Fixed display of mobile network icons\n- Fixed system ui crash when pinning screen\n- Some themes fixes\n- Various fixes and improvements\n- Update translations",
-  "build_date": "20190316",
+  "md5": "432d8dc1482b6ee5624f0f2217df259a",
+  "build_date": "20190323",
+  "developer": "Blinoff82",
   "website_url": "http://syberiaos.com",
+  "filename": "syberia_gemini-v2.3-20190323-1051-OFFICIAL.zip",
+  "forum_url": "",
   "news_url": "http://github.com/syberia-project",
   "developer_url": "http://github.com/syberia-project",
-  "developer": "Blinoff82",
-  "error": "false",
-  "forum_url": "",
-  "donate_url": "https://syberiaos.com/links",
+  "filesize": "551578029",
   "device_model": "Mi 5",
-  "url": "https://sourceforge.net/projects/syberiaos/files/gemini/syberia_gemini-v2.3-20190316-0454-OFFICIAL.zip/download",
-  "filename": "syberia_gemini-v2.3-20190316-0454-OFFICIAL.zip",
+  "error": "false",
+  "device": "gemini",
+  "url": "https://sourceforge.net/projects/syberiaos/files/gemini/syberia_gemini-v2.3-20190323-1051-OFFICIAL.zip/download",
+  "device_brand": "Xiaomi",
+  "changelog": "- Add MusicFX equalizer from OmniRom\n- SystemUI: Add Sync tile\n- Add Champagne Limousines and Nunito fonts\n- Update APN's from Pixel 3XL\n- Add app name to screenshot filename\n- Improve ambient play layout on keyguard\n- Volume panel: fixed incorrect positioning\n- Various fixes and improvements\n- Update translations",
+  "donate_url": "https://syberiaos.com/links",
   "addons": [
     {
-      "summary": "Magisk",
       "title": "Magisk",
+      "summary": "Magisk",
       "url": "\"http://tiny.cc/latestmagisk"
     },
     {
-      "summary": "Magisk Uninstaller",
       "title": "Magisk",
+      "summary": "Magisk Uninstaller",
       "url": "http://tiny.cc/latestuninstaller"
     }
-  ],
-  "filesize": "550173818",
-  "device": "gemini"
+  ]
 }
