@@ -1,16 +1,16 @@
 {
-  "changelog": "- Revert faulty Fingerprint selinux \n - DTS eagle add to kernel",
+  "changelog": "- Kernel upstreamed to 3.18.137 \n - SystemUI: Add Sync tile\n- Add Champagne Limousines and Nunito fonts\n- Update APN's from Pixel 3XL\n- Add app name to screenshot filename\n- Improve ambient play layout on keyguard\n- Volume panel: fixed incorrect positioning\n- Various fixes and improvements\n- Update translations",
   "error": "false",
   "forum_url": "",
   "developer_url": "http://github.com/syberia-project",
-  "md5": "5a6375b90221f0f306bc426841cbd69b",
+  "md5": "1c413a3ec7c27d08a26ea2f04d2bdbfb",
   "device_brand": "Xiaomi",
-  "build_date": "20190321",
+  "build_date": "20190326",
   "news_url": "http://github.com/syberia-project",
   "device_model": "Mi 5S ",
   "device": "capricorn",
-  "filesize": "551641596",
-  "filename": "syberia_capricorn-v2.3-20190321-1308-OFFICIAL.zip",
+  "filesize": "551680026",
+  "filename": "syberia_capricorn-v2.3-20190326-1154-OFFICIAL.zip",
   "addons": [
     {
       "summary": "Magisk",
@@ -25,6 +25,6 @@
   ],
   "website_url": "http://syberiaos.com",
   "developer": "mesziman",
-  "url": "https://sourceforge.net/projects/syberiaos/files/capricorn/syberia_capricorn-v2.3-20190321-1308-OFFICIAL.zip/download",
+  "url": "https://sourceforge.net/projects/syberiaos/files/capricorn/syberia_capricorn-v2.3-20190326-1154-OFFICIAL.zip/download",
   "donate_url": "https://syberiaos.com/links"
 }
