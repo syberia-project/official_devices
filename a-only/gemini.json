@@ -1,30 +1,30 @@
 {
-  "md5": "432d8dc1482b6ee5624f0f2217df259a",
-  "build_date": "20190323",
-  "developer": "Blinoff82",
-  "website_url": "http://syberiaos.com",
-  "filename": "syberia_gemini-v2.3-20190323-1051-OFFICIAL.zip",
-  "forum_url": "",
-  "news_url": "http://github.com/syberia-project",
-  "developer_url": "http://github.com/syberia-project",
-  "filesize": "551578029",
-  "device_model": "Mi 5",
-  "error": "false",
   "device": "gemini",
-  "url": "https://sourceforge.net/projects/syberiaos/files/gemini/syberia_gemini-v2.3-20190323-1051-OFFICIAL.zip/download",
   "device_brand": "Xiaomi",
-  "changelog": "- Add MusicFX equalizer from OmniRom\n- SystemUI: Add Sync tile\n- Add Champagne Limousines and Nunito fonts\n- Update APN's from Pixel 3XL\n- Add app name to screenshot filename\n- Improve ambient play layout on keyguard\n- Volume panel: fixed incorrect positioning\n- Various fixes and improvements\n- Update translations",
+  "filesize": "568423972",
+  "news_url": "http://github.com/syberia-project",
   "donate_url": "https://syberiaos.com/links",
+  "filename": "syberia_gemini-v2.3-20190330-0715-OFFICIAL.zip",
+  "error": "false",
   "addons": [
     {
-      "title": "Magisk",
       "summary": "Magisk",
+      "title": "Magisk",
       "url": "\"http://tiny.cc/latestmagisk"
     },
     {
-      "title": "Magisk",
       "summary": "Magisk Uninstaller",
+      "title": "Magisk",
       "url": "http://tiny.cc/latestuninstaller"
     }
-  ]
+  ],
+  "build_date": "20190330",
+  "forum_url": "",
+  "changelog": "Final Official Android Pie build for Xiaomi Mi5!\n- Update graphics stack to LA.UM.7.5.r1-03700-8x96.0\n- Move to proper thermal blobs\n- MIUI camera by default\n- Add Cellular tile icon from OOS\n- Dismiss keyguard on boot if disabled by profile\n- Workaround for wallpaper not shown correctly problem\n- OP Gestures: Fix navbar detection and landscape mode\n- Dialer: Make proxi sensor smart-case friendly\n- Fixes for surfaceflinger rendering\n- Fixed multiuser icon glitch in QS footer\n- Fixed animation glitch with right-sided volume panel \n- Fixed partial screenshot \n- Probably fixed sensors bug\n- Various fixes and improvements\n- Update translations",
+  "developer": "Blinoff82",
+  "md5": "c246094a5758aeb046cfdf85a0c0c05a",
+  "url": "https://sourceforge.net/projects/syberiaos/files/gemini/syberia_gemini-v2.3-20190330-0715-OFFICIAL.zip/download",
+  "website_url": "http://syberiaos.com",
+  "device_model": "Mi 5",
+  "developer_url": "http://github.com/syberia-project"
 }
