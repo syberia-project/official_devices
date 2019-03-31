@@ -1,0 +1,120 @@
+====================
+     2019-03-31    
+====================
+
+ * device/xiaomi/natrium
+4fd7126  prebuilts: update Lawnchair to 1056-alpha  [DennySPB]
+
+====================
+     2019-03-30    
+====================
+
+ * packages/apps/SyberiaSettings
+e0e468b  New maintainer for Xiaomi Poco F1 (beryllium)  [blinoff82]
+
+====================
+     2019-03-29    
+====================
+
+ * packages/apps/Updater
+09869ff  Updater: Remove download speed on UpdatesListAdapter  [Henrique Silva]
+87742df  Updater: Mark as persistent  [Henrique Silva]
+628c4d7  Updater: Correct cleanup notification action  [jhenrique09]
+37e3287  Updater: Add little delay before sending broadcast  [jhenrique09]
+236a860  Updater: Add network speed into some parts  [jhenrique09]
+26417f8  Updater: Refresh list when update get deleted  [jhenrique09]
+b16ac4a  Updater: Migrate Updater to AndroidX.  [Jyotiraditya]
+
+====================
+     2019-03-28    
+====================
+
+ * device/xiaomi/natrium
+98abda4  prebuilts: update Lawnchair to 986-alpha  [DennySPB]
+ce819b9  Revert "[temp] permissive"  [00day0]
+7e89900  init: mount before restorecon  [Gabor]
+aa8d194  dependencies: add more HALs  [00day0]
+
+====================
+     2019-03-27    
+====================
+
+ * frameworks/base
+efa562c  base: Fix partial screenshot  [Anushek Prasal]
+0df5c1f  Revert "Clean up back animation view for edge gesture"  [DennySPB]
+5fb85f5  Volume Panel: fix animation glitch with right-sided panel  [DennySPB]
+
+ * packages/apps/Dialer
+5764b85  Make proxi sensor smart-case friendly  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+1d2ff3c  Remove ringer from extended audio panel  [DennySPB]
+
+ * system/core
+1128717  healthd: make periodic battery status a debug message  [Stefan Assmann]
+
+ * vendor/syberia
+216f2fe  vendor: official_devices.json  [DennySPB]
+
+====================
+     2019-03-26    
+====================
+
+ * build/make
+4cf379b  Use flags from Soong for d8, r8, dx and desugar  [Colin Cross]
+
+ * build/soong
+e044706  Optimize CPU time when running d8, r8, dx and desugar  [Colin Cross]
+
+ * frameworks/av
+4501b26  Request to reset effect buffer in clearInputBuffer  [Ryoichi Yasutake]
+
+ * frameworks/base
+26c7d21  SystemUI: Fix multiuser icon glitch in QS footer  [Anushek Prasal]
+f9ecd065  SystemUI: Add Cellular tile icon from OOS  [Anushek Prasal]
+714f0b7  ColorFade: Silence logspam  [Anushek Prasal]
+e972432  OP Gestures: Fix navbar detection and landscape mode  [Stylogey]
+3aa4001  Clean up screenshot if nothing selected  [Lyubo]
+377668e  IMMS should preserve selected IME upon boot  [Yohei Yukawa]
+cc0dd73  base: Cleanup FP controller  [hardwareadictos]
+
+ * frameworks/native
+ddeaf5a  Respect source crop when capturing layers.  [Alec Mouri]
+f896fa8  libgui: add docs to geometry states and captureScreen  [Chia-I Wu]
+f579848  surfaceflinger: fix captureScreen for landscape LCM  [Chia-I Wu]
+9205bc7  surfaceflinger: improve RenderArea needsFiltering  [Chia-I Wu]
+58ecc5f  surfaceflinger: respect install orientation in DisplayRenderArea  [Chia-I Wu]
+e236493  surfaceflinger: add install orientation to DisplayDevice  [Chia-I Wu]
+c9dc4b4  surfaceflinger: make mPrimaryDisplayOrientation static  [Chia-I Wu]
+003a3e6  surfaceflinger: clean up captureScreen  [Chia-I Wu]
+a1f40ef  surfaceflinger: silence some RenderArea errors  [Chia-I Wu]
+690237d  surfaceflinger: fix race conditions in captureScreen  [Chia-I Wu]
+81434e7  surfaceflinger: remove ISurfaceComposer.h from RenderArea  [Chia-I Wu]
+1535b08  surfaceflinger: reorder width and height in RenderArea ctor  [Chia-I Wu]
+1317159  surfaceflinger: documents RenderArea  [Chia-I Wu]
+
+====================
+     2019-03-25    
+====================
+
+ * build/kati
+4b1faf5  Sort results of output from the "find" command  [Timothy Murphy]
+c41983d  Ignore TMPDIR when calculating the kati stamp  [Timothy Murphy]
+38a0b0d  Silence FindEmulator  [Brandon McAnsh]
+
+ * build/make
+9b58780  Accept TARGET_DEVICE_DIR preserved from previous product load  [Dan Willemsen]
+
+ * build/soong
+93d97f5  Prebuilts shouldn't inherit linker interface  [Yi Kong]
+920fa72  Pass TARGET_DEVICE_DIR from dumpvars to later kati runs  [Dan Willemsen]
+
+ * external/proguard
+4da13fb  Allow passing extra java arguments to proguard  [Luca Stefani]
+
+ * frameworks/base
+3a23ab4  Workaround for wallpaper not shown correctly problem  [Yongqin Liu]
+83bd28c  SystemUI: Dismiss keyguard on boot if disabled by current profile  [Gabriele M]
+84eb9c9  Suppress FingerprintManager logspam  [Harsh Shandilya]
+5688fac   Kill off provider info logspam  [Harsh Shandilya]
+

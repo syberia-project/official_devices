@@ -1,30 +1,30 @@
 {
-  "build_date": "20190323",
-  "filesize": "553926828",
-  "developer": "cfdddd",
-  "website_url": "http://syberiaos.com",
-  "device_brand": "Xiaomi",
-  "error": "false",
-  "forum_url": "https://forum.xda-developers.com/mi-5s-plus/development/rom-syberia-project-t3869145",
-  "device": "natrium",
-  "changelog": "Changelog:\n- Kernel upstream 3.18.136\n- Updated lawnchair to v968\n- Add MusicFX equalizer from OmniRom\n- SystemUI: Add Sync tile\n- Add Champagne Limousines and Nunito fonts\n- Add app name to screenshot filename\n- Improve ambient play layout on keyguard\n- Volume panel: fixed incorrect positioning\n- Various fixes and improvements\n- Update translations\n",
   "addons": [
     {
-      "summary": "Magisk",
       "title": "Magisk",
+      "summary": "Magisk",
       "url": "\"http://tiny.cc/latestmagisk"
     },
     {
-      "summary": "Magisk Uninstaller",
       "title": "Magisk",
+      "summary": "Magisk Uninstaller",
       "url": "http://tiny.cc/latestuninstaller"
     }
   ],
-  "filename": "syberia_natrium-v2.3-20190323-2214-OFFICIAL.zip",
-  "news_url": "http://github.com/syberia-project",
-  "url": "https://sourceforge.net/projects/syberiaos/files/natrium/syberia_natrium-v2.3-20190323-2214-OFFICIAL.zip/download",
-  "developer_url": "http://github.com/syberia-project",
-  "md5": "419214e8e54b0002d478c5a0bfc3f3b9",
+  "filename": "syberia_natrium-v2.3-20190331-0748-OFFICIAL.zip",
+  "changelog": "",
+  "filesize": "554479690",
+  "md5": "e6f2fa214837f83482232f204ae2642a",
+  "build_date": "20190331",
+  "device": "natrium",
+  "url": "https://sourceforge.net/projects/syberiaos/files/natrium/syberia_natrium-v2.3-20190331-0748-OFFICIAL.zip/download",
   "donate_url": "https://syberiaos.com/links",
+  "developer_url": "http://github.com/syberia-project",
+  "news_url": "http://github.com/syberia-project",
+  "developer": "cfdddd",
+  "error": "false",
+  "website_url": "http://syberiaos.com",
+  "forum_url": "https://forum.xda-developers.com/mi-5s-plus/development/rom-syberia-project-t3869145",
+  "device_brand": "Xiaomi",
   "device_model": "Mi 5s Plus"
 }
