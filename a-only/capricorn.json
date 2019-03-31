@@ -1,30 +1,30 @@
 {
-  "changelog": "- Kernel upstreamed to 3.18.137 \n - SystemUI: Add Sync tile\n- Add Champagne Limousines and Nunito fonts\n- Update APN's from Pixel 3XL\n- Add app name to screenshot filename\n- Improve ambient play layout on keyguard\n- Volume panel: fixed incorrect positioning\n- Various fixes and improvements\n- Update translations",
-  "error": "false",
-  "forum_url": "",
-  "developer_url": "http://github.com/syberia-project",
-  "md5": "1c413a3ec7c27d08a26ea2f04d2bdbfb",
-  "device_brand": "Xiaomi",
-  "build_date": "20190326",
-  "news_url": "http://github.com/syberia-project",
-  "device_model": "Mi 5S ",
-  "device": "capricorn",
-  "filesize": "551680026",
-  "filename": "syberia_capricorn-v2.3-20190326-1154-OFFICIAL.zip",
   "addons": [
     {
+      "title": "Magisk",
       "summary": "Magisk",
-      "url": "\"http://tiny.cc/latestmagisk",
-      "title": "Magisk"
+      "url": "\"http://tiny.cc/latestmagisk"
     },
     {
+      "title": "Magisk",
       "summary": "Magisk Uninstaller",
-      "url": "http://tiny.cc/latestuninstaller",
-      "title": "Magisk"
+      "url": "http://tiny.cc/latestuninstaller"
     }
   ],
-  "website_url": "http://syberiaos.com",
+  "filename": "syberia_capricorn-v2.3-20190331-1040-OFFICIAL.zip",
+  "changelog": "",
+  "filesize": "551935516",
+  "md5": "52502fea06230fa919e079924062080a",
+  "build_date": "20190331",
+  "device": "capricorn",
+  "url": "https://sourceforge.net/projects/syberiaos/files/capricorn/syberia_capricorn-v2.3-20190331-1040-OFFICIAL.zip/download",
+  "donate_url": "https://syberiaos.com/links",
+  "developer_url": "http://github.com/syberia-project",
+  "news_url": "http://github.com/syberia-project",
   "developer": "mesziman",
-  "url": "https://sourceforge.net/projects/syberiaos/files/capricorn/syberia_capricorn-v2.3-20190326-1154-OFFICIAL.zip/download",
-  "donate_url": "https://syberiaos.com/links"
+  "error": "false",
+  "website_url": "http://syberiaos.com",
+  "forum_url": "",
+  "device_brand": "Xiaomi",
+  "device_model": "Mi 5S"
 }
