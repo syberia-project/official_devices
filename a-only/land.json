@@ -1,1 +1,30 @@
-{"addons": [{"title": "Magisk", "summary": "Magisk", "url": "\"http://tiny.cc/latestmagisk"}, {"title": "Magisk", "summary": "Magisk Uninstaller", "url": "http://tiny.cc/latestuninstaller"}], "filename": "syberia_land-v2.3-20190323-1441-OFFICIAL.zip", "changelog": "Land:\n- Add Mi sound\n- Add Double2wake,sweep2wake,fingerprint boost\n- Fixed long switching between cameras\n- Fixed autobrightness\n- Use default Lawnchair launcher\n\nSyberia:\n- Add MusicFX equalizer from OmniRom\n- SystemUI: Add Sync tile\n- Add Champagne Limousines and Nunito fonts\n- Update APN's from Pixel 3XL\n- Add the battery percent back on dash charging\n- Add app name to screenshot filename\n- Improve ambient play layout on keyguard\n- Various fixes and improvements\n- Update translations\n", "filesize": "560472512", "md5": "1328fd7e9d9fa98c5560c43470d395ef", "build_date": "20190323", "device": "land", "url": "https://downloads.sourceforge.net/project/syberiaos/land/syberia_land-v2.3-20190323-1441-OFFICIAL.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fsyberiaos%2Ffiles%2Fland%2Fsyberia_land-v2.3-20190323-1441-OFFICIAL.zip%2Fdownload&ts=1553357900land/syberia_land-v2.3-20190323-1441-OFFICIAL.zip", "donate_url": "https://syberiaos.com/links", "developer_url": "http://github.com/syberia-project", "news_url": "http://github.com/syberia-project", "developer": "weritos", "error": "false", "website_url": "http://syberiaos.com", "forum_url": "https://forum.xda-developers.com/xiaomi-redmi-3s/development/9-0-syberia-os-9-0-t3837103", "device_brand": "Xiaomi", "device_model": "Redmi 3S/3X"}
+{
+  "addons": [
+    {
+      "title": "Magisk",
+      "summary": "Magisk",
+      "url": "\"http://tiny.cc/latestmagisk"
+    },
+    {
+      "title": "Magisk",
+      "summary": "Magisk Uninstaller",
+      "url": "http://tiny.cc/latestuninstaller"
+    }
+  ],
+  "filename": "syberia_land-v2.3-20190331-1530-OFFICIAL.zip",
+  "changelog": "",
+  "filesize": "559093550",
+  "md5": "21e929263772f184a5eaf3eab0646b5f",
+  "build_date": "20190331",
+  "device": "land",
+  "url": "https://sourceforge.net/projects/syberiaos/files/land/syberia_land-v2.3-20190331-1530-OFFICIAL.zip/download",
+  "donate_url": "https://syberiaos.com/links",
+  "developer_url": "http://github.com/syberia-project",
+  "news_url": "http://github.com/syberia-project",
+  "developer": "weritos",
+  "error": "false",
+  "website_url": "http://syberiaos.com",
+  "forum_url": "https://forum.xda-developers.com/xiaomi-redmi-3s/development/9-0-syberia-os-9-0-t3837103",
+  "device_brand": "Xiaomi",
+  "device_model": "Redmi 3S/3X"
+}
