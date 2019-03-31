@@ -1,0 +1,213 @@
+====================
+     2019-03-31    
+====================
+
+====================
+     2019-03-30    
+====================
+
+ * hardware/qcom/display-caf/msm8996
+aa552d4  Merge pull request #4 from SOVIET-ANDROID/9.0-caf-8996  [DennySPb]
+a4b597f  hwc: Remove _vendor from libbfqio  [dianlujitao]
+df1a047  hwc: Set ioprio for vsync thread  [Steve Kondik]
+
+ * packages/apps/SyberiaSettings
+e0e468b  New maintainer for Xiaomi Poco F1 (beryllium)  [blinoff82]
+
+====================
+     2019-03-29    
+====================
+
+ * kernel/xiaomi/msm8953
+64286dc  Revert "kernel: sched: fair tunnigns by @raphielscape"  [kondors1995]
+
+ * packages/apps/Updater
+09869ff  Updater: Remove download speed on UpdatesListAdapter  [Henrique Silva]
+87742df  Updater: Mark as persistent  [Henrique Silva]
+628c4d7  Updater: Correct cleanup notification action  [jhenrique09]
+37e3287  Updater: Add little delay before sending broadcast  [jhenrique09]
+236a860  Updater: Add network speed into some parts  [jhenrique09]
+26417f8  Updater: Refresh list when update get deleted  [jhenrique09]
+b16ac4a  Updater: Migrate Updater to AndroidX.  [Jyotiraditya]
+
+====================
+     2019-03-28    
+====================
+
+ * device/xiaomi/mido
+5308e22  Revert "prebuilts: add Lawnchair-943 aplha"  [kondors1995]
+86d518a  Revert "mido: camera: Saner workaround for dark preview issue"  [kondors1995]
+044ab23  mido: camera: Saner workaround for dark preview issue  [Nich]
+d928af7  Revert "mido: wifi: remove libcld80211 package"  [ZeeLog]
+1b4d19f  mido: Stop copying WCNSS_qcom_cfg.ini to userdata  [Michael Bestas]
+80384bc  mido: wifi: build from vendor tree  [ZeeLog]
+514bd68  mido: Update media codecs from bardock-pro  [Hikari-no-Tenshi]
+
+ * frameworks/base
+efa562c  base: Fix partial screenshot  [Anushek Prasal]
+
+ * kernel/xiaomi/msm8953
+e289836  kernel: initialize and free cpufreq stats properly  [Wei Wang]
+8ae9e07  kernel: Fix massive cpufreq stats memory leaks  [Sultan Alsawaf]
+587c181  cpufreq: stats: use seq iterator for large uid-related files  [Connor O'Brien]
+a16ac2b  cpufreq: stats: update uid data in acct_update_power  [Connor O'Brien]
+9575285  ANDROID: cpufreq: change uid_cpupower to use u32  [Marissa Wall]
+36d33e1  STOPSHIP: ANDROID: cpufreq: concurrent_*_time P/H experiment  [Marissa Wall]
+0e3c755  ANDROID: cpufreq: Remove seq_printf from critical path  [Marissa Wall]
+7793844  ANDROID: cpufreq: uid_concurrent_policy_time  [Marissa Wall]
+4758385  ANDROID: cpufreq: uid_concurrent_active_time  [Marissa Wall]
+0eeaf64  ANDROID: cpufreq: concurrent_policy_time by pid  [Marissa Wall]
+412cb43  ANDROID: cpufreq: concurrent_active_time by pid  [Marissa Wall]
+490446a  proc: add null check in proc_uid_init  [Connor O'Brien]
+cca69ed  ANDROID: cpufreq: Add time_in_state to /proc/uid directories  [Connor O'Brien]
+eff0246  fix mismerge:cpufreq: stats: add uid removal for uid_time_in_state  [ZeeLog]
+2a0c8d1  ANDROID: proc: Add /proc/uid directory  [Connor O'Brien]
+819bd8a  ANDROID: cpufreq: stats: Fix dead stats clearing timing  [Andres Oportus]
+0946aaa  ANDROID: cpufreq: stats: Fix sleeping while atomic in cpufreq_task_stats_init  [Siqi Lin]
+85d93ea  ANDROID: cpufreq_stats: Fix task time in state locking  [Andres Oportus]
+527bfd2  fix miserge on commit: cpufreq_stat: add per task/uid/freq stats  [ZeeLog]
+450c8c6  CHROMIUM: cpufreq: Declare acct_update_power as static inline if needed  [Guenter Roeck]
+56df636  Revert "kernel: Fix massive cpufreq stats memory leaks"  [kondors1995]
+eda50ac  mido_defconfig: Remove LIMITS_LITE_HW config  [TeYuan Wang]
+b110b3c  mido_defconfig: remove unused configs for Bluetooth  [Ecco Park]
+
+ * vendor/xiaomi
+ac244fd  msm8953-common: wifi: build prima from vendor tree  [ZeeLog]
+
+====================
+     2019-03-27    
+====================
+
+ * device/xiaomi/mido
+4beb539  Cleanup & update dependencies  [kondors1995]
+88363a3  Update graphics stack to LA.UM.7.5.r1-03700-8x96.0  [kondors1995]
+35dc607  Revert "mido: update graphics blobs from tissot"  [kondors1995]
+
+ * frameworks/base
+0df5c1f  Revert "Clean up back animation view for edge gesture"  [DennySPB]
+5fb85f5  Volume Panel: fix animation glitch with right-sided panel  [DennySPB]
+
+ * kernel/xiaomi/msm8953
+481e615  Reenable BCL  [kondors1995]
+71fac15  msm: thermal: Import Xiaomi changes  [TheHitMan7]
+
+ * packages/apps/Dialer
+5764b85  Make proxi sensor smart-case friendly  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+1d2ff3c  Remove ringer from extended audio panel  [DennySPB]
+
+ * system/core
+1128717  healthd: make periodic battery status a debug message  [Stefan Assmann]
+
+ * vendor/syberia
+216f2fe  vendor: official_devices.json  [DennySPB]
+
+ * vendor/xiaomi
+e711dee  msm8996-common: Update graphics stack to LA.UM.7.5.r1-03700-8x96.0  [Bruno Martins]
+d71c0b6  Revert "msm8953-common: Update adreno blobs from LA.UM.7.5.r1-03700-8x96.0"  [kondors1995]
+452e444  Revert "msm8953-common: Update display postproc blobs from LA.UM.7.5.r1-03700-8x96.0"  [kondors1995]
+b6b29c9  Revert "Regneretate Makefiles"  [kondors1995]
+09172e4  Revert "msm8953-common: update graphics blobs from tissot"  [kondors1995]
+
+====================
+     2019-03-26    
+====================
+
+ * build/make
+4cf379b  Use flags from Soong for d8, r8, dx and desugar  [Colin Cross]
+
+ * build/soong
+e044706  Optimize CPU time when running d8, r8, dx and desugar  [Colin Cross]
+
+ * device/xiaomi/mido
+e6dafb9  mido: audio: Don't advertise vorbis offloading support  [LuK1337]
+92083bb  Ipdate Gcam to 5.2 26/03/2019  [kondors1995]
+e8b2206  mido: overlay: Tune adaptive brightness nits under low light  [Nich]
+026ab41  Revert "Mido: Kang brightness overlays from marlin"  [kondors1995]
+
+ * frameworks/av
+4501b26  Request to reset effect buffer in clearInputBuffer  [Ryoichi Yasutake]
+
+ * frameworks/base
+26c7d21  SystemUI: Fix multiuser icon glitch in QS footer  [Anushek Prasal]
+f9ecd065  SystemUI: Add Cellular tile icon from OOS  [Anushek Prasal]
+714f0b7  ColorFade: Silence logspam  [Anushek Prasal]
+e972432  OP Gestures: Fix navbar detection and landscape mode  [Stylogey]
+3aa4001  Clean up screenshot if nothing selected  [Lyubo]
+377668e  IMMS should preserve selected IME upon boot  [Yohei Yukawa]
+cc0dd73  base: Cleanup FP controller  [hardwareadictos]
+
+ * frameworks/native
+ddeaf5a  Respect source crop when capturing layers.  [Alec Mouri]
+f896fa8  libgui: add docs to geometry states and captureScreen  [Chia-I Wu]
+f579848  surfaceflinger: fix captureScreen for landscape LCM  [Chia-I Wu]
+9205bc7  surfaceflinger: improve RenderArea needsFiltering  [Chia-I Wu]
+58ecc5f  surfaceflinger: respect install orientation in DisplayRenderArea  [Chia-I Wu]
+e236493  surfaceflinger: add install orientation to DisplayDevice  [Chia-I Wu]
+c9dc4b4  surfaceflinger: make mPrimaryDisplayOrientation static  [Chia-I Wu]
+003a3e6  surfaceflinger: clean up captureScreen  [Chia-I Wu]
+a1f40ef  surfaceflinger: silence some RenderArea errors  [Chia-I Wu]
+690237d  surfaceflinger: fix race conditions in captureScreen  [Chia-I Wu]
+81434e7  surfaceflinger: remove ISurfaceComposer.h from RenderArea  [Chia-I Wu]
+1535b08  surfaceflinger: reorder width and height in RenderArea ctor  [Chia-I Wu]
+1317159  surfaceflinger: documents RenderArea  [Chia-I Wu]
+
+ * kernel/xiaomi/msm8953
+241f486  Partially revert "input: ft5435: Fix the suspend/resume logic"  [Artem Borisov]
+9ecd1f8  vfs: clear remainder of 'full_fds_bits' in dup_fd()  [Eric Biggers]
+aab00ce  vfs: conditionally clear close-on-exec flag  [Linus Torvalds]
+4ba870e  vfs: Fix pathological performance case for __alloc_fd()  [Linus Torvalds]
+8c501ce  fs/file.c: don't acquire files->file_lock in fd_install()  [Eric Dumazet]
+e75aea0  lib/int_sqrt: adjust comments  [Peter Zijlstra]
+d5afe5d  lib/int_sqrt: optimize initial value compute  [Peter Zijlstra]
+2e7c474  lib/int_sqrt: optimize small argument  [Peter Zijlstra]
+65d09f6  Make msm_serial_hs RT to improve bluetooth performance  [Philip Cuadra]
+869b45d  cfq-iosched: fix the setting of IOPS mode on SSDs  [Jens Axboe]
+2b0b838  block: bfq: Default to IOPS mode on SSDs  [Zhao Wei Liew]
+785a8e4  Mido: Import K-LAPSE 4.3 Adapted by @TheHitMan7  [kondors1995]
+a0d11ec  Revert "video: mdss: initial klapse import"  [kondors1995]
+9c270ed  Revert "video: mdss: upgrade klapse to 4.3"  [kondors1995]
+66cee60  Revert "video: mdss: kcal: fix klapse_push"  [kondors1995]
+
+====================
+     2019-03-25    
+====================
+
+ * build/kati
+4b1faf5  Sort results of output from the "find" command  [Timothy Murphy]
+c41983d  Ignore TMPDIR when calculating the kati stamp  [Timothy Murphy]
+38a0b0d  Silence FindEmulator  [Brandon McAnsh]
+
+ * build/make
+9b58780  Accept TARGET_DEVICE_DIR preserved from previous product load  [Dan Willemsen]
+
+ * build/soong
+93d97f5  Prebuilts shouldn't inherit linker interface  [Yi Kong]
+920fa72  Pass TARGET_DEVICE_DIR from dumpvars to later kati runs  [Dan Willemsen]
+
+ * device/xiaomi/mido
+4e53018  Lawnchair update to 1040  [kondors1995]
+21d6968  mido: init.qcom.usb.rc: Set the sys.mtp.device_type property  [Sriharsha Allenki]
+0445855  mido: Set formattable flag only for ext4 userdata partition  [Luca Stefani]
+569bb12  mido: Update /data f2fs mount flags  [Albert I]
+19695a2  audio_effects: add JamesDSP effect library  [DennySPB]
+34239f6  mido: Update blobs  [kondors1995]
+ebf60ed  Update rootdir Took folowing @zeelog changes  [kondors1995]
+
+ * external/proguard
+4da13fb  Allow passing extra java arguments to proguard  [Luca Stefani]
+
+ * frameworks/base
+3a23ab4  Workaround for wallpaper not shown correctly problem  [Yongqin Liu]
+83bd28c  SystemUI: Dismiss keyguard on boot if disabled by current profile  [Gabriele M]
+84eb9c9  Suppress FingerprintManager logspam  [Harsh Shandilya]
+5688fac   Kill off provider info logspam  [Harsh Shandilya]
+
+ * kernel/xiaomi/msm8953
+5a40d45  kernel: sched: fair tunnigns by @raphielscape  [kondors1995]
+49a83de  Merge remote-tracking branch 'kud/lineage-16.0' into soviet-star  [kondors1995]
+
+ * vendor/xiaomi
+8e622a9  mido:Update blobs  [kondors1995]
+
