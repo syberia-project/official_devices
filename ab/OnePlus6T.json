@@ -10,7 +10,8 @@
       "version": "v2.3",
       "device_brand": "OnePlus",
       "device_model": "OnePlus 6T",
-      "device_codename": "fajita"
+      "device_codename": "fajita",
+      "developer": "coderzstas"
     }
   ]
 }
