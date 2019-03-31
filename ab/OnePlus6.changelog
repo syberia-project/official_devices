@@ -1,166 +1,188 @@
 ====================
+     2019-03-31    
+====================
+
+ * device/oneplus/oneplus6
+10f726e  oneplus6 : add dependencies  [coderzstas]
+
+ * kernel/oneplus/sdm845
+36cefbc  Set 403 mhz as return freq for silver cluster  [blinoff82]
+
+====================
+     2019-03-30    
+====================
+
+ * kernel/oneplus/sdm845
+b43dcac  Revert "lib/int_sqrt: optimize initial value compute"  [blinoff82]
+
+ * packages/apps/SyberiaSettings
+e0e468b  New maintainer for Xiaomi Poco F1 (beryllium)  [blinoff82]
+
+====================
+     2019-03-29    
+====================
+
+====================
+     2019-03-28    
+====================
+
+ * device/oneplus/oneplus6
+6d221f7  prebuilts: update Lawnchair to 1056-alpha  [DennySPB]
+3bcd7a4  init.performance.rc: set schedutil up_rate_limit to 10ms  [DennySPB]
+
+ * kernel/oneplus/sdm845
+0a8924e  ANDROID: arm64: preserve x18 when CPU is suspended  [Sami Tolvanen]
+a33cbb9  FROMLIST: arm64/lib: copy_page: avoid x18 register in assembler code  [Sami Tolvanen]
+e680799  FROMLIST: arm64: kernel: avoid x18 as an arbitrary temp register  [Sami Tolvanen]
+4513000  msm: ipa3: fix callback function type for ndo_start_xmit  [Sami Tolvanen]
+57a460c  UPSTREAM: mm: proc: smaps_rollup: fix pss_locked calculation  [Sandeep Patil]
+da606d4  UPSTREAM: binder: fix handling of misaligned binder object  [Todd Kjos]
+4c67291  UPSTREAM: binder: fix sparse issue in binder_alloc_selftest.c  [Todd Kjos]
+a14790e  BACKPORT: binder: use userspace pointer as base of buffer space  [Todd Kjos]
+2c18a31  UPSTREAM: binder: fix kerneldoc header for struct binder_buffer  [Todd Kjos]
+cb83240  BACKPORT: binder: remove user_buffer_offset  [Todd Kjos]
+b8cad05  UPSTREAM: binder: remove kernel vm_area for buffer space  [Todd Kjos]
+1bf8b4c  UPSTREAM: binder: avoid kernel vm_area for buffer fixups  [Todd Kjos]
+76e9d4d  BACKPORT: binder: add function to copy binder object from buffer  [Todd Kjos]
+0a304b1  BACKPORT: binder: add functions to copy to/from binder buffers  [Todd Kjos]
+4e4996d  arm64: Add work around for Arm Cortex-A55 Erratum 1024718  [Suzuki K. Poulose]
+79cac58  ANDROID: ion_dummy_driver: Remove SYSTEM_CONTIG heap  [John Stultz]
+53f4bf3  ANDROID: ion_dummy_driver: Rework ion_dummy_driver to avoid direct indexing into the heaps  [John Stultz]
+8ae3c29  ANDROID: ion_dummy_driver: Use IS_ERR_OR_NULL() before destroying heaps  [John Stultz]
+b536dfd  binder: Dump out refs_by_desc rbtree on failure  [Todd Kjos]
+61c4f8e  binder: create node flag to request sender's security context  [Todd Kjos]
+434b6fb  UPSTREAM: binder: create userspace-to-binder-buffer copy function  [Todd Kjos]
+e3b2e61  Merge branch 'kernel.lnx.4.9.r11-rel' of https://github.com/android-linux-stable/msm-4.9  [DennySPB]
+12cef52  drm/msm/sde: Wait for ctl_start asynchronously on cmd mode panels  [Sultan Alsawaf]
+bd9d752  cpufreq: schedutil: Don't set next_freq to UINT_MAX  [Viresh Kumar]
+a166247  lib/int_sqrt: adjust comments  [Peter Zijlstra]
+92c5555  lib/int_sqrt: optimize initial value compute  [Peter Zijlstra]
+72fb07e  lib/int_sqrt: optimize small argument  [Peter Zijlstra]
+e585985  Revert "int_sqrt.c: Correction square root algo with naming"  [Danny Lin]
+f8e9343  Revert "int_sqrt: Improve 3x faster integer sqrt."  [Danny Lin]
+8dba417  clk: qcom: clk-cpu-osm: Query current CPU frequency from OSM  [Danny Lin]
+2fc9f12  clk: qcom: clk-cpu-osm: Don't sleep inside the global clk lock  [Sultan Alsawaf]
+c146347  clk: qcom: clk-cpu-osm: Convert atomic delay into sleep  [Sultan Alsawaf]
+e33c5da  clk: qcom: clk-cpu-osm: Limit the rate of CPU clock-rate changes  [Sultan Alsawaf]
+352dd2d  clk: qcom: clk-cpu-osm: Set dvfs_possible_from_any_cpu cpufreq driver flag  [Pavankumar Kondeti]
+574c35b  cpufreq: schedutil: Don't restrict kthread to related_cpus unnecessarily  [Viresh Kumar]
+820fe5d  cpufreq: Simplify cpufreq_can_do_remote_dvfs()  [Rafael J. Wysocki]
+3d07410  cpufreq: Process remote callbacks from any CPU if the platform permits  [Viresh Kumar]
+bb4444a  sched: cpufreq: Allow remote cpufreq callbacks  [Viresh Kumar]
+f063a4e  usb: dwc3-msm: Switch to freezable workqueue for sm_work  [Badhri Jagan Sridharan]
+79ba0b3  UPSTREAM: readahead: stricter check for bdi io_pages  [Markus Stockhausen]
+d948be0   fs: Improve eventpoll logging to stop indicting timerfd  [Kelly Rossmoyer]
+d26d63a  cpu_input_boost: set SCREEN_AWAKE bit on probe  [Francisco Franco]
+6217d25  net: rmnet_data: Allow changes in UL aggregation parameters  [Subash Abhinov Kasiviswanathan]
+80d1834  kernel: Improve performance critical IRQ framework  [Sultan Alsawaf]
+5f11d62  Revert "kernel: Force trivial, unbound kthreads onto low-power CPUs"  [DennySPB]
+4acdc4f  mm: Boost when memory pressure becomes high  [Sultan Alsawaf]
+cae4365  iommu: iommu-debug: don't pass null character to copy_to_user  [Vijayanand Jitta]
+07e8f20  drivers: dma-removed: use relaxed memory attributes  [Vinayak Menon]
+aee0075  drivers: cpuidle: lpm_levels: Correctly update lpm stats  [Maulik Shah]
+f4b8c72  mm/shmem.c: fix unlikely() test of info->seals to test only for WRITE and GROW  [Steven Rostedt (VMware)]
+bbb84a1  sched/core: Remove unlikely() annotation from sched_move_task()  [Steven Rostedt (VMware)]
+5bfdceb  rtmutex: Delete save_state member of struct rt_mutex  [Davidlohr Bueso]
+44cd7e8  msm: ipa-v3: ipa-rt: remove always-true declaration  [Raphiel Rollerscaperers]
+fc8593f  lib: Implement a basic bcmp (string.c)  [Nick Desaulniers]
+
+ * packages/apps/Updater
+09869ff  Updater: Remove download speed on UpdatesListAdapter  [Henrique Silva]
+87742df  Updater: Mark as persistent  [Henrique Silva]
+628c4d7  Updater: Correct cleanup notification action  [jhenrique09]
+37e3287  Updater: Add little delay before sending broadcast  [jhenrique09]
+236a860  Updater: Add network speed into some parts  [jhenrique09]
+26417f8  Updater: Refresh list when update get deleted  [jhenrique09]
+b16ac4a  Updater: Migrate Updater to AndroidX.  [Jyotiraditya]
+
+====================
+     2019-03-27    
+====================
+
+ * frameworks/base
+efa562c  base: Fix partial screenshot  [Anushek Prasal]
+0df5c1f  Revert "Clean up back animation view for edge gesture"  [DennySPB]
+
+ * kernel/oneplus/sdm845
+e5bd748  ANDROID: sched/fair: fix energy compute when a cluster is only a cpu core in multi-cluster system  [Samer Xie]
+e64a933  string: Use faster alternatives when constant arguments are used  [Sultan Alsawaf]
+c2243b7  cgroup: Test for top-app with strcmp instead of memcmp  [Sultan Alsawaf]
+1e06d50  Merge 4.9.166 into kernel.lnx.4.9.r11-rel  [Nathan Chancellor]
+60771fc  Linux 4.9.166  [Greg Kroah-Hartman]
+8d78505  ath10k: avoid possible string overflow  [Arnd Bergmann]
+d746cb4  power: supply: charger-manager: Fix incorrect return value  [Baolin Wang]
+4061695  pwm-backlight: Enable/disable the PWM before/after LCD enable toggle.  [Enric Balletbo i Serra]
+018ea3f  rtc: Fix overflow when converting time64_t to rtc_time  [Baolin Wang]
+321c5ad  scsi: ufs: fix wrong command type of UTRD for UFSHCI v2.1  [kehuanlin]
+6969767  USB: core: only clean up what we allocated  [Andrey Konovalov]
+e6008a0  lib/int_sqrt: optimize small argument  [Peter Zijlstra]
+503b4ca  serial: sprd: clear timeout interrupt only rather than all interrupts  [Lanqing Liu]
+fc42149  arm64: traps: disable irq in die()  [Qiao Zhou]
+1987172  Hang/soft lockup in d_invalidate with simultaneous calls  [Al Viro]
+356b5e1  serial: sprd: adjust TIMEOUT to a big value  [Wei Qiao]
+dfe4f69  tcp/dccp: drop SYN packets if accept queue is full  [Eric Dumazet]
+9e9e3a4  ALSA: hda - Enforces runtime_resume after S3 and S4 for each codec  [Hui Wang]
+5ee8694  ALSA: hda - Record the current power state before suspend/resume calls  [Takashi Iwai]
+670d934  locking/lockdep: Add debug_locks check in __lock_downgrade()  [Waiman Long]
+bd140b0  Bluetooth: Fix decrementing reference count twice in releasing socket  [Myungho Jung]
+d54a396  media: v4l2-ctrls.c/uvc: zero v4l2_event  [Hans Verkuil]
+7002d0e  ext4: brelse all indirect buffer in ext4_ind_remove_space()  [zhangyi (F)]
+8651fa1e  ext4: fix data corruption caused by unaligned direct AIO  [Lukas Czerner]
+d9f0ce8  ext4: fix NULL pointer dereference while journal is aborted  [Jiufei Xue]
+c818b2f  objtool: Move objtool_file struct off the stack  [Josh Poimboeuf]
+726c28f  futex: Ensure that futex address is aligned in handle_futex_death()  [Chen Jie]
+b84089b  MIPS: Fix kernel crash for R6 in jump label branch function  [Archer Yan]
+c7ac334  MIPS: Ensure ELF appended dtb is relocated  [Yasha Cherikovsky]
+f6b55e7  mips: loongson64: lemote-2f: Add IRQF_NO_SUSPEND to "cascade" irqaction.  [Yifeng Li]
+9247706  udf: Fix crash on IO error during truncate  [Jan Kara]
+9c32ada  libceph: wait for latest osdmap in ceph_monc_blacklist_add()  [Ilya Dryomov]
+cfa2d25  iommu/amd: fix sg->dma_address for sg->offset bigger than PAGE_SIZE  [Stanislaw Gruszka]
+eea23ca  drm/vmwgfx: Don't double-free the mode stored in par->set_mode  [Thomas Zimmermann]
+c179e6d  mmc: pxamci: fix enum type confusion  [Arnd Bergmann]
+
+====================
+     2019-03-26    
+====================
+
+ * build/make
+4cf379b  Use flags from Soong for d8, r8, dx and desugar  [Colin Cross]
+
+ * build/soong
+e044706  Optimize CPU time when running d8, r8, dx and desugar  [Colin Cross]
+
+ * frameworks/base
+5fb85f5  Volume Panel: fix animation glitch with right-sided panel  [DennySPB]
+26c7d21  SystemUI: Fix multiuser icon glitch in QS footer  [Anushek Prasal]
+f9ecd065  SystemUI: Add Cellular tile icon from OOS  [Anushek Prasal]
+714f0b7  ColorFade: Silence logspam  [Anushek Prasal]
+e972432  OP Gestures: Fix navbar detection and landscape mode  [Stylogey]
+3aa4001  Clean up screenshot if nothing selected  [Lyubo]
+377668e  IMMS should preserve selected IME upon boot  [Yohei Yukawa]
+cc0dd73  base: Cleanup FP controller  [hardwareadictos]
+
+ * packages/apps/Dialer
+5764b85  Make proxi sensor smart-case friendly  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+1d2ff3c  Remove ringer from extended audio panel  [DennySPB]
+
+ * system/core
+1128717  healthd: make periodic battery status a debug message  [Stefan Assmann]
+
+ * vendor/syberia
+216f2fe  vendor: official_devices.json  [DennySPB]
+
+====================
      2019-03-25    
 ====================
 
-[1m * bionic/[m
-dec88bb  bionic: Prefer /sbin/sh if it exists  [Tom Marshall]
-
-[1m * bootable/recovery/[m
-b54cdc5  Revert "recovery: Blank screen on init"  [DennySPB]
-c715d39  uncrypt: write permission for f2fs_pin_file  [Jaegeuk Kim]
-21ef8b9  Make adb use a custom prop for adb root  [Luca Stefani]
-8eb764f  tmp: fix soong variable usage  [DennySPB]
-6659c04  recovery: Allow custom bootloader msg offset in block misc  [Alessandro Astone]
-30fb623  recovery: add reboot to recovery option  [jrior001]
-ec9b778  recovery: Blank screen on init  [Michael Bestas]
-39d4b36  minui: Support input device hotplug in recovery mode.  [Xihua Chen]
-22eaf54  minui: Fix the wrong move of the callback.  [Tao Bao]
-517c40e  recovery: autodetect filesystem type  [Dan Pasanen]
-24dd144  recovery: Add resize2fs, tune2fs to fstools  [Tom Marshall]
-13251bf  recovery: Add runtime checks for A/B vs traditional updates  [Christopher N. Hesse]
-d2d2be1  recovery: Scale logo image if necessary  [Tom Marshall]
-b3cfa64  recovery: minui: Implement image scaling  [Tom Marshall]
-197b893  recovery: Allow bypassing signature verification on non-release builds  [Tom Marshall]
-162af22  recovery: Allow detecting user/release build at compile time  [Tom Marshall]
-f91aaa9  recovery: Rework sideload threading code for flexibility  [Tom Marshall]
-f0e733e  recovery: Allow device specific backlight path  [Tom Marshall]
-121da4e  recovery: Add statusbar margin for panels with rounded corners  [Tom Marshall]
-3bf7359  recovery: Do not show emulated when data is encrypted  [Tom Marshall]
-79750c3  recovery: Fix redraws, flickering, and animation  [Tom Marshall]
-d77ab95  recovery: Add awk lib and driver  [Tom Marshall]
-6a61701  recovery: Respect margins in background and foreground screens  [Tom Marshall]
-f362ea3  recovery: New install/progress animation  [Tom Marshall]
-9ca91c3  recovery: Graphical UI  [Tom Marshall]
-664254d  minui: Skip EV_REL input devices.  [Vitalii Kulikov]
-28ace08  recovery: Add performance control  [Steve Kondik]
-463469f  recovery: init: mount pstore fs  [Vojtech Bocek]
-a9e8b68  minui: accept RGBA and treat it as RGBX  [Arnav Gupta]
-678a3ed  recovery: Enable the menu for User builds  [Pat Erley]
-709b9ed  recovery: Remove "Supported API" message  [Michael Bestas]
-975cfec  minui: support to pan display (FBIOPAN_DISPLAY)  [Daniel Hillenbrand]
-e35b9ee  recovery: Allow devices to reboot to download mode  [Andreas Blaesius]
-41b1258  recovery: updater: Fix multi-stage docs  [Tom Marshall]
-39d47bf  recovery: Dejank the menus, fix colors  [Tom Marshall]
-47f892d  recovery: Fix the progress bar  [Steve Kondik]
-a771cce  recovery: Return to main menu after selection  [Tom Marshall]
-19f760f  recovery: Add wipe system partition option  [Dan Pasanen]
-7106478  recovery: Provide caching for sideload files  [Tom Marshall]
-accf917  recovery: bu: Implement backup/restore  [Tom Marshall]
-adc1f5e  recovery: Provide sideload cancellation  [Tom Marshall]
-bb3c0ce  recovery: Blank screen during shutdown and reboot  [Tom Marshall]
-26e5d53  recovery: Implement a volume manager  [Tom Marshall]
-41d4ea8  recovery: Allow device-specific recovery modules  [Matt Mower]
-82cca0a  recovery: Include vendor init trigger  [Matt Mower]
-1bf3123  recovery: Add fstools  [Tom Marshall]
-4ed0336  recovery: Enable gunzip/gzip/unzip/zip commands  [Tom Marshall]
-dd22909  recovery: Puke out an /etc/fstab so stuff like busybox/toybox is happy  [Steve Kondik]
-df39cf6  recovery: ui: Support hardware virtual keys  [Tom Marshall]
-34c9a0a  recovery: ui: Minor cleanup for touch code  [Tom Marshall]
-12ef643  recovery: ui: Default to touch enabled  [Tom Marshall]
-585ff55  recovery: Get a proper shell environment in recovery  [Steve Kondik]
-b238ee2  recovery: Remove HOST_OS guard for f2fs tools  [Tom Marshall]
-625bba2  Revert "recovery: Fork a process for fuse when sideloading from SD card."  [Tom Marshall]
-a9eceef  recovery: Declare a soong namespace  [Rashed Abdel-Tawab]
-
-[1m * build/kati/[m
-b4a53c0  Sort results of output from the "find" command  [Timothy Murphy]
-b45c5a1  Ignore TMPDIR when calculating the kati stamp  [Timothy Murphy]
-2e4ae86  Silence FindEmulator  [Brandon McAnsh]
-
-[1m * build/make/[m
-e2b41a4  build: Remove charger from recovery unless needed  [Tom Marshall]
-0246336  Use flags from Soong for d8, r8, dx and desugar  [Colin Cross]
-82aebf9  Accept TARGET_DEVICE_DIR preserved from previous product load  [Dan Willemsen]
-
-[1m * build/soong/[m
-880535b  Optimize CPU time when running d8, r8, dx and desugar  [Colin Cross]
-52c831f  Prebuilts shouldn't inherit linker interface  [Yi Kong]
-0c80b35  Pass TARGET_DEVICE_DIR from dumpvars to later kati runs  [Dan Willemsen]
-
-[1m * device/syberia/sepolicy/[m
-11e7ecd  sepolicy: recovery: Allow setting sys.usb.config  [Michael Bestas]
-db8e8a3  sepolicy: recovery: Allow volume manager write to /sys/*/uevent  [Michael Bestas]
-114786d  sepolicy: recovery: Add policy for /dev/block/volmgr  [Michael Bestas]
-2bfc540  sepolicy: recovery: Fix the volume manager blkid.tab denial  [Adrian DC]
-f1029a1  sepolicy: recovery: Allow reading proc_filesystems  [Michael Bestas]
-83520ae  common: recovery: allow setting time  [Alessandro Astone]
-63846c5  common: recovery: Add policy for volume manager  [Alessandro Astone]
-12088ab  Clean-up recovery rules a bit  [Luca Stefani]
-e61cbef  Revert "common: Add sf_lcd_density_prop type and labelled props"  [dianlujitao]
-becbefc  sepolicy: Allow recovery update_engine to setexec backuptool  [Rashed Abdel-Tawab]
-31aa283  sepol: Remove recovery access to vold_socket  [Rashed Abdel-Tawab]
-45e3e10  sepolicy: recovery: Allow (re)mounting system  [Paul Keith]
-7c55e74  sepolicy: Change recovery_prop to lineage_recovery_prop  [Rashed Abdel-Tawab]
-a7b6e84  sepolicy: Fix neverallow on user builds  [Paul Keith]
-a28232d  sepolicy: Isolate qcom sysfs_graphics policy for recovery  [Adrian DC]
-a10ec0a  recovery: Clean up recovery SELinux policy  [Ethan Chen]
-
-[1m * external/e2fsprogs/[m
-c68b5d0  Merge branch 'lineage-16.0' of https://github.com/LineageOS/android_external_e2fsprogs into HEAD  [DennySPB]
-0274f8b  e2fsprogs: Build libresize2fs for recovery  [Tom Marshall]
-5bd3388  e2fsprogs: Build static libs for recovery  [Tom Marshall]
-b8f133a  e2fsprogs: Fix resize2fs_static build  [Tom Marshall]
-c1aff9b  resize: Make a target for standalone resize2fs_static binary  [Bruno Martins]
-fba8443  e2fsprogs: Prepare for adding and using static libs  [Tom Marshall]
-
-[1m * external/exfat/[m
-236a694  exfat: Rename utf conversion symbols  [Tom Marshall]
-f792c80  exfat: Add static libs for recovery  [Tom Marshall]
-
-[1m * external/f2fs-tools/[m
-5790aab  fsck: Fix more conflicts with libext2_quota  [DennySPB]
-d36f6a2  fsck: Fix conflicts with libext2_quota  [Michael Bestas]
-1398b94  f2fs-tools: Add sload.f2fs support to libf2fs_fsck  [Tom Marshall]
-66d9ab9  f2fs-tools: Rename utf conversion symbols  [Tom Marshall]
-9582e99  Merge branch 'lineage-16.0' of https://github.com/LineageOS/android_external_f2fs-tools into HEAD  [DennySPB]
-f5bdf9d  f2fs-tools: Add static libs for recovery  [Tom Marshall]
-
-[1m * external/fsck_msdos/[m
-ad7c121  fsck_msdos: Build static lib for recovery  [Tom Marshall]
-
-[1m * external/gptfdisk/[m
-1401543  gptfdisk: Provide sgdisk_read for direct reads of the partition table  [Tom Marshall]
-f354c94  gptfdisk: Build static lib for recovery fstools  [Tom Marshall]
-
-[1m * external/mksh/[m
-80cc702  mksh: Build a static library  [Steve Kondik]
-714b17d  mksh: Set TERM to xterm-256color  [Luca Stefani]
-
-[1m * external/ntfs-3g/[m
-c5d8554  ntfs-3g: Add static libs for recovery  [Tom Marshall]
-
-[1m * external/one-true-awk/[m
-3c9cc48  awk: Add libawk_main for recovery and fixup symbols  [Tom Marshall]
-
-[1m * external/proguard/[m
+ * external/proguard
 4da13fb  Allow passing extra java arguments to proguard  [Luca Stefani]
 
-[1m * external/toybox/[m
-a3dc003  toybox: Add install to symlinks  [Tom Marshall]
-85b7d48  toybox: Use toybox for dd and grep in recovery  [Tom Marshall]
-
-[1m * external/zlib/[m
-f6c7fe8  minizip: More build fixes  [Tom Marshall]
-cc40447  minizip: Clean up the code  [Steve Kondik]
-2ff89fd  minizip: Fix build under Android 6.0 and higher  [Tom Marshall]
-
-[1m * frameworks/av/[m
+ * frameworks/av
 4501b26  Request to reset effect buffer in clearInputBuffer  [Ryoichi Yasutake]
 
-[1m * frameworks/base/[m
-87fb79c  SystemUI: Fix multiuser icon glitch in QS footer  [Anushek Prasal]
-71e2d12  SystemUI: Add Cellular tile icon from OOS  [Anushek Prasal]
-fef5a68  ColorFade: Silence logspam  [Anushek Prasal]
-8906487  OP Gestures: Fix navbar detection and landscape mode  [Stylogey]
-9326ae1  Clean up screenshot if nothing selected  [Lyubo]
-d5cff1b  IMMS should preserve selected IME upon boot  [Yohei Yukawa]
-989ab17  base: Cleanup FP controller  [hardwareadictos]
-481a026  Workaround for wallpaper not shown correctly problem  [Yongqin Liu]
-83e0b69  SystemUI: Dismiss keyguard on boot if disabled by current profile  [Gabriele M]
-18ef518  Suppress FingerprintManager logspam  [Harsh Shandilya]
-5e34f49   Kill off provider info logspam  [Harsh Shandilya]
-
-[1m * frameworks/native/[m
+ * frameworks/native
 ddeaf5a  Respect source crop when capturing layers.  [Alec Mouri]
 f896fa8  libgui: add docs to geometry states and captureScreen  [Chia-I Wu]
 f579848  surfaceflinger: fix captureScreen for landscape LCM  [Chia-I Wu]
@@ -175,74 +197,19 @@ a1f40ef  surfaceflinger: silence some RenderArea errors  [Chia-I Wu]
 1535b08  surfaceflinger: reorder width and height in RenderArea ctor  [Chia-I Wu]
 1317159  surfaceflinger: documents RenderArea  [Chia-I Wu]
 
-[1m * system/core/[m
-d91f47f  init: Always use libbootloader_message from bootable/recovery namespace  [Rashed Abdel-Tawab]
-613939f  Revert "sdcard: Allow building as a static library"  [Michael Bestas]
-389492a  fs_mgr: Skip filesystem check unless fs_type matches  [Dan Pasanen]
-cafad91  Revert "fs_mgr_fstab: removing fs_mgr_get_entry_for_mount_point_after()"  [Alessandro Astone]
-
-[1m * system/vold/[m
-e094e9a  vold: Add linkage for fs_mgr changes  [Steve Kondik]
-
-[1m * vendor/syberia/[m
-e967186  soong_config: Add BOOTLOADER_MESSAGE_OFFSET  [Alessandro Astone]
-
-====================
-     2019-03-24    
-====================
-
-====================
-     2019-03-23    
-====================
-
-[1m * frameworks/base/[m
-24bd386  SystemUI: Add Sync tile  [Altaf-Mahdi]
-a9b5103  Improve ambient play layout on keyguard  [Henrique Silva]
-5c4ebea  SystemUI: Append app name after screenshot date  [DroidFreak32]
-2c6fe76  SystemUI: Append app name to screenshot filename  [ezio84]
-b4c709e  UserManagerService: Use ro.build.date to signal upgrades  [Sam Mortimer]
-
-[1m * vendor/syberia/[m
-1700829  vendor: Add Champagne Limousines font  [soybi]
-47e1cab  vendor: Add Nunito font  [Alex Cruz]
-48a6de2  Update APN's (March 2019 Pixel 3XL factory image)  [Josh Chasky]
-
-====================
-     2019-03-22    
-====================
-
-====================
-     2019-03-21    
-====================
-
-[1m * build/make/[m
-9fd5288  build: remove MusicFX from generic_no_telephony.mk  [Julian Veit]
-
-[1m * device/syberia/sepolicy/[m
-9eb866c   sepolicy: add jamesdsp  [Michele Bono]
-
-[1m * device/xiaomi/gemini/[m
-d000314  audio_effects: add JamesDSP effect library  [DennySPB]
-
-[1m * frameworks/opt/jamesdsp/[m
-41d44bd  Revert "JameaDSP: Make it a vendor module."  [Julian Veit]
-22311b5  disable SDCLANG  [DennySPB]
-
-[1m * vendor/syberia/[m
-f4ded68   vendor: build JamesDSP  [Julian Veit]
-
-====================
-     2019-03-20    
-====================
-
-[1m * frameworks/base/[m
-7fa22e6  SystemUI: Fix an issue where unlocking the SIM PIN failed  [Yingren Wang]
-082d75d  Add config to disable CDMA call forward/waiting  [pengfeix]
-813ffb3  BT: Send info if call is CS type from telecomm service to BT apps.  [Sumit Bajpai]
-0bf37a8  hiddenapi: add crc32 intrinsic methods to light-greylist  [mydongistiny]
-a647218  Dash charging: Add the battery percent back  [Alex Cruz]
-
-====================
-     2019-03-19    
-====================
+ * kernel/oneplus/sdm845
+eadccab  defconfig: Decrease max stune boost to 15  [Danny Lin]
+92a9b2c  cpuset: Restore tasks affinity while moving across cpusets  [Pavankumar Kondeti]
+24eec94  msm: mdp3: Fix retire scheduling  [Animesh Kishore]
+12e357c  slimbus: slim-msm: Handle system suspend while active slimbus transfers  [Dilip Kota]
+957ade5  msm: kgsl: Change data type for GPU ib vote  [Archana Sriram]
+be62972  drm/msm/dp: protect edid and dpcd buffers with mutex  [Ajay Singh Parmar]
+5ecf3d8  diag: Add IOCTL support to query ODL session PID  [Manoj Prabhu B]
+01b071b  f2fs/rapid_gc: Clean up return codes  [Artem Labazov]
+5d90c5c  arm64: dma-mapping: Add missing debug information  [Patrick Daly]
+31983e2  bq27541: optimize a bit  [Park Ju Hyung]
+fbf49c7  bq27541: fix improper timer operations  [Park Ju Hyung]
+48c0eef  Merge tag 'LA.UM.7.8.r1-05000-SDM710.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/fw-api  [DennySPB]
+8b66318  Merge tag 'LA.UM.7.8.r1-05000-SDM710.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0  [DennySPB]
+770202e  Merge branch 'kernel.lnx.4.9.r11-rel' of https://github.com/android-linux-stable/msm-4.9  [DennySPB]
 
