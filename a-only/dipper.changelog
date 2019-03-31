@@ -1,0 +1,300 @@
+====================
+     2019-03-31    
+====================
+
+ * device/xiaomi/dipper
+f85af28  Move all dependencies to device tree  [ethan-halsall]
+71c9bee  Update syberia dependencies  [ethan-halsall]
+
+ * device/xiaomi/sdm845-common
+54f4d56  Move dependencies to device tree  [ethan-halsall]
+d0c41c4  Properly set makefile scripts  [ethan-halsall]
+2a80c2a  Track our vendor  [ethan-halsall]
+
+====================
+     2019-03-30    
+====================
+
+ * kernel/xiaomi/sdm845
+09cfab1  Revert "input: fingerprint: fpc_tee: much cleanup, such wow"  [ethan-halsall]
+ada5381  Bump to 3.0  [ethan-halsall]
+05a5ca1  Revert "simple_lmk: Introduce Simple LMK (Low Memory Killer) for Android"  [ethan-halsall]
+f601bdf  Revert "simple_lmk: React faster to kswapd reclaim events"  [ethan-halsall]
+87c64a9  Revert "simple_lmk: Revamp task selection algorithm"  [ethan-halsall]
+1ada78b  Revert "simple_lmk: Boost CPU and DDR bus when memory reclaim is invoked"  [ethan-halsall]
+0ffe3c3  clk: qcom: clk-cpu-osm: Advertise transition latency to cpufreq  [Danny Lin]
+5963835  power: wakeup_reason: make log function work in interrupt context  [Wei Wang]
+9db3854  power: wakeup_reason: Add locking to log_base_wakeup_reason  [Jonglin Lee]
+2aa8769  PM: wakeup_reasons: fix race condition  [Iliyan Malchev]
+4057707  PM: wakeup_reasons: Fix formatting for printk  [Patrick Tjin]
+754eaf4  BACKPORT: PM: wakeup_reasons: disable wakeup-reason deduction by default  [Iliyan Malchev]
+f1fa32a  sched: ignore task_h_load for CPU_NEWLY_IDLE  [Uladzislau 2 Rezki]
+e8ef6af  sched: set loop_max after rq lock is taken  [Uladzislau 2 Rezki]
+e5f5bba  cpufreq: schedutil: Hard-code rate-limit thresholds  [Sultan Alsawaf]
+2cdcef6  UPSTREAM: sched: loadavg: make calc_load_n() public  [Johannes Weiner]
+ea4b597  UPSTREAM: sched: loadavg: consolidate LOAD_INT, LOAD_FRAC, CALC_LOAD  [Johannes Weiner]
+87c1a28  UPSTREAM: sched/headers: Remove <linux/sched.h> from <linux/sched/loadavg.h>  [Ingo Molnar]
+2553754  UPSTREAM: sched/headers: Move loadavg related definitions from <linux/sched.h> to <linux/sched/loadavg.h>  [Ingo Molnar]
+af53007  clk: qcom: clk-cpu-osm: Don't sleep inside the global clk lock  [Sultan Alsawaf]
+2b0d8a1  clk: qcom: clk-cpu-osm: Convert atomic delay into sleep  [Sultan Alsawaf]
+57c3025  clk: qcom: clk-cpu-osm: Limit the rate of CPU clock-rate changes  [Sultan Alsawaf]
+dea526f  drivers: dma-removed: use relaxed memory attributes  [Vinayak Menon]
+d9c3c77  drivers: cpuidle: lpm_levels: Correctly update lpm stats  [Maulik Shah]
+82ee06d  mm/shmem.c: fix unlikely() test of info->seals to test only for WRITE and GROW  [Steven Rostedt (VMware)]
+97ec665  sched/core: Remove unlikely() annotation from sched_move_task()  [Steven Rostedt (VMware)]
+9ecb756  rtmutex: Delete save_state member of struct rt_mutex  [Davidlohr Bueso]
+559facc  Merge remote-tracking branch 'msm-4.9/kernel.lnx.4.9.r11-rel' into test  [ethan-halsall]
+fe2f1d5  Revert "int_sqrt.c: Correction square root algo with naming"  [Danny Lin]
+c1bb275  Revert "int_sqrt: Improve 3x faster integer sqrt."  [Danny Lin]
+60dd7af  sched: boost: Don't try to kick idle CPU  [Artem Labazov]
+44a2c81  msm: camera: 3dsl_eeprom: Fix enum conversion warning  [Adin Kwok]
+477c2ab  ASoC: msm: qdsp6v2: Improve literal null conversion fix  [Nathan Chancellor]
+c01aa4a  ASoC: msm: qdsp6v2: Fix non-literal-null-conversion warning  [yarost12]
+66b5025  hwmon: qpnp-adc: Fix enum conversion warning  [Nathan Chancellor]
+0d60e6a  icnss: Fix enum-conversion warning from Clang  [Nathan Chancellor]
+133f0e2  thermal: tsens: Fix enum-conversion warnings  [Nathan Chancellor]
+5ac97b0  soc: qcom: minidump: Fix third argument to strlcpy  [Nathan Chancellor]
+497a8c2  iommu: arm-smmu: Fix constant-logical-operand warning  [Nathan Chancellor]
+d497580  usb: f_gsi: Fix enum conversion warning  [Nathan Chancellor]
+7e4c202  soc: qcom: glink: Fix third argument to strlcpy  [Nathan Chancellor]
+9c9075d  staging: ion: Fix enum conversion warnings  [Nathan Chancellor]
+7f5fb3c  usb_bam: Fix enum conversion warning  [Nathan Chancellor]
+104134a  msm: ipa: Fix enum conversion warning  [Nathan Chancellor]
+7972c6e  mmc: sdio: Fix third argument to strlcpy  [Nathan Chancellor]
+4c1b177  hwmon: qpnp-adc: Fix logical-not-parentheses warning  [Nathan Chancellor]
+e1551a6  diag: Fix third argument to strlcpy  [Nathan Chancellor]
+9399563  qseecom: Fix ignored attributes warnings  [Nathan Chancellor]
+9606fd7  drivers: ft5x46: fix -Wvarargs warning  [palaych]
+8ccb0a3  drivers: fts_521: fix compile warning  [palaych]
+2f76f20  drivers: gps: fix compile warning  [palaych]
+a1d8aa3  Merge tag 'LA.UM.7.8.r1-05000-SDM710.0' of https://source.codeaurora.… …org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0  [ethan-halsall]
+0638359  Merge tag 'LA.UM.7.8.r1-05000-SDM710.0' of https://source.codeaurora.… …org/quic/la/platform/vendor/qcom-opensource/wlan/fw-api  [ethan-halsall]
+4f65eb7  setlocalversion: Reduce git commit hash length  [Danny Lin]
+9234748  clk: qcom: clk-cpu-osm: Set dvfs_possible_from_any_cpu cpufreq driver flag  [Pavankumar Kondeti]
+6ad3700  KLAPSE : Refactor defines  [tanish2k09]
+c54f4f6  input: touchscreen: nt36xxx: use threaded IRQ  [Raphiel Rollerscaperers]
+7e458f7  input: fingerprint: fpc_tee: much cleanup, such wow  [Raphiel Rollerscaperers]
+acef2ec  power-supply: qcom: remove debug mask declaration  [Raphiel Rollerscaperers]
+a5e8cbb  cpufreq: schedutil: Don't restrict kthread to related_cpus unnecessarily  [Viresh Kumar]
+e927bde  cpufreq: Simplify cpufreq_can_do_remote_dvfs()  [Rafael J. Wysocki]
+0777ed3  cpufreq: Process remote callbacks from any CPU if the platform permits  [Viresh Kumar]
+9a7409a  sched: cpufreq: Allow remote cpufreq callbacks  [Viresh Kumar]
+9f28e65  sched/fair: Fix botched starting CPU selection logic  [Danny Lin]
+f731769  input: fingerprint: goodix: Add proximity_state sysfs support  [Sam Mortimer]
+e5276ee  kernel: Improve performance critical IRQ framework  [Sultan Alsawaf]
+978425a  drm: Mark IRQ as performance critical  [Sultan Alsawaf]
+31eed2b  drm/msm/sde: Wait for ctl_start asynchronously on cmd mode panels  [Sultan Alsawaf]
+fbac48f  usb: gadget: Update default RNDIS class for Xiaomi  [khusika]
+37e9320  msm_geni_serial: skip flushing tx upon shutdown  [Park Ju Hyung]
+84c8a76  msm_geni_serial: reduce wakelock timeout from ISR to 100ms  [Park Ju Hyung]
+383d860  Revert "cpuset: Restrict top-app cpuset to gold cluster"  [Francisco Franco]
+33cfb2e  drm/atomic: Boost CPU and DDR bus when committing a new frame  [Sultan Alsawaf]
+addde4a  Revert "sched/boost: Boost CPU and DDR bus when sched_boost is triggered"  [ethan-halsall]
+09bf96e  Merge tag 'LA.UM.7.8.r1-05000-SDM710.0'  [ethan-halsall]
+
+ * vendor/xiaomi
+4c199c1  chiron: update default display mode  [Vol Zhdanov]
+b6a7d32  msm8998-common: Add MIUI offmode charging daemon  [Bruno Martins]
+0e031c2  msm8998-common: update perf stack from taimen q preview  [Volodymyr Zhdanov]
+70f40c6  msm8998-common: update graphics stack from taimen q preview  [Volodymyr Zhdanov]
+4ed9b4b  msm8998-common: add blobs for miui camera  [Volodymyr Zhdanov]
+1c65ba6  msm8998-common: update perf stack from taimen  [Vol Zhdanov]
+5754404  msm8998-common: remove qti perf stack  [Demon Singur]
+d6a7380  msm8998-common: Decommonize thermal-engine-8998-high.conf  [Michael Bestas]
+56283c4  msm8998-common: Update blobs from 9.3.7  [Michael Bestas]
+17d3130  msm8998-common: Add power_off_alarm blob  [Michael Bestas]
+05a0bb7  msm8998-common: Hax libaudcal.so to store acdbdata in new path  [Michael Bestas]
+633e38c  msm8998-common: kang system-side ims blobs from daisy  [Volodymyr Zhdanov]
+3f74dc9  msm8998-common: remove libmedia.so libdirac dependency  [Volodymyr Zhdanov]
+4657763  msm8998-common: add missing blobs  [Volodymyr Zhdanov]
+5269370  chiron/msm8998-common: update blobs from 9.2.28  [Volodymyr Zhdanov]
+3eb4305  msm8998-common: add mlipay blobs  [Vol Zhdanov]
+93a1eaa  msm8998-common: Add QCOM's WFD implementation  [Vol Zhdanov]
+1c51261  chiron: kang aptX blobs from taimen  [Vol Zhdanov]
+673729f  msm8998-common: switch to stock nfc firmware  [Vol Zhdanov]
+38c653e  msm8998-common: update SDM from LA.UM.7.4.r1-04100-8x98.0  [Rashed Abdel-Tawab]
+44e6734  msm8998-common: Kang msm irqbalance from OnePlus5T  [Vol Zhdanov]
+ced9051  msm8998-common: Update ANT+ system blobs to P  [LuK1337]
+2fd1e6b  msm8998-common: Kang sensors.qti from daisy  [Vol Zhdanov]
+a4fab4b  msm8998-common: Kang CNEService.apk from daisy  [Vol Zhdanov]
+49aa763  msm8998-common: Update tftp_server blobs to P from daisy  [DennySPB]
+2d6b081  msm8998-common: Hack IMS apk to get rid of the stupid HD notification  [Scott Warner]
+8b37db8  msm8998-common: Kang ims.apk and qti-telephony-common.jar from daisy  [dianlujitao]
+155bfb5  chiron: remove unused elliptic dependencies  [Vol Zhdanov]
+0eb8a17  msm8998-common: remove unused libmedia dependency of lib-dplmedia  [Vol Zhdanov]
+c330e80  msm8998-common: remove libandroid.so dependencies in camera stack  [Vol Zhdanov]
+df9add0  chiron/msm8998-common: update blobs from 9.1.24  [Vol Zhdanov]
+6705fd4  msm8998-common: remove wcnss_filter  [Demon Singur]
+0e1f6f2  msm8998-common: add stock libraries needed for camera stack  [Demon Singur]
+e3c3219  Revert "msm8998-common: shim missing skia symbols"  [Demon Singur]
+51a18d5  msm8998-common: kang cne from mata  [Demon Singur]
+8c5275f  msm8998-common: kang ims from mata  [Demon Singur]
+5a8e4d2  msm8998-common: remove qti gnss stack  [Demon Singur]
+2f6483e  msm8998-common: Move NFC firmware to /vendor/lib  [Demon Singur]
+db4ca38  msm8998-common: switch to QCOM HIDL bluetooth stack  [Demon Singur]
+
+====================
+     2019-03-29    
+====================
+
+ * device/xiaomi/dipper
+6228a47  dipper: gps: Add XTRA_SERVER entries to overlays  [1nfrag]
+fe53967  Revert "dipper: add missing gps debug config file"  [ethan-halsall]
+
+ * device/xiaomi/sdm845-common
+d3a4de8  sdm845-common: Keep fpc in system-background  [Tim Murray]
+732d205  sdm845-common: Override stock fingerprint service init script  [Bruno Martins]
+6e8d645  sdm845-common: Build separate system and vendor HIDL libs  [Demon Singur]
+25d6aac  sdm845-common: Create RFS symlinks  [Bruno Martins]
+
+ * packages/apps/SyberiaSettings
+e0e468b  New maintainer for Xiaomi Poco F1 (beryllium)  [blinoff82]
+
+====================
+     2019-03-28    
+====================
+
+ * packages/apps/Updater
+09869ff  Updater: Remove download speed on UpdatesListAdapter  [Henrique Silva]
+87742df  Updater: Mark as persistent  [Henrique Silva]
+628c4d7  Updater: Correct cleanup notification action  [jhenrique09]
+37e3287  Updater: Add little delay before sending broadcast  [jhenrique09]
+236a860  Updater: Add network speed into some parts  [jhenrique09]
+26417f8  Updater: Refresh list when update get deleted  [jhenrique09]
+b16ac4a  Updater: Migrate Updater to AndroidX.  [Jyotiraditya]
+
+====================
+     2019-03-27    
+====================
+
+ * frameworks/base
+efa562c  base: Fix partial screenshot  [Anushek Prasal]
+0df5c1f  Revert "Clean up back animation view for edge gesture"  [DennySPB]
+
+ * kernel/xiaomi/sdm845
+1e06d50  Merge 4.9.166 into kernel.lnx.4.9.r11-rel  [Nathan Chancellor]
+60771fc  Linux 4.9.166  [Greg Kroah-Hartman]
+8d78505  ath10k: avoid possible string overflow  [Arnd Bergmann]
+d746cb4  power: supply: charger-manager: Fix incorrect return value  [Baolin Wang]
+4061695  pwm-backlight: Enable/disable the PWM before/after LCD enable toggle.  [Enric Balletbo i Serra]
+018ea3f  rtc: Fix overflow when converting time64_t to rtc_time  [Baolin Wang]
+321c5ad  scsi: ufs: fix wrong command type of UTRD for UFSHCI v2.1  [kehuanlin]
+6969767  USB: core: only clean up what we allocated  [Andrey Konovalov]
+e6008a0  lib/int_sqrt: optimize small argument  [Peter Zijlstra]
+503b4ca  serial: sprd: clear timeout interrupt only rather than all interrupts  [Lanqing Liu]
+fc42149  arm64: traps: disable irq in die()  [Qiao Zhou]
+1987172  Hang/soft lockup in d_invalidate with simultaneous calls  [Al Viro]
+356b5e1  serial: sprd: adjust TIMEOUT to a big value  [Wei Qiao]
+dfe4f69  tcp/dccp: drop SYN packets if accept queue is full  [Eric Dumazet]
+9e9e3a4  ALSA: hda - Enforces runtime_resume after S3 and S4 for each codec  [Hui Wang]
+5ee8694  ALSA: hda - Record the current power state before suspend/resume calls  [Takashi Iwai]
+670d934  locking/lockdep: Add debug_locks check in __lock_downgrade()  [Waiman Long]
+bd140b0  Bluetooth: Fix decrementing reference count twice in releasing socket  [Myungho Jung]
+d54a396  media: v4l2-ctrls.c/uvc: zero v4l2_event  [Hans Verkuil]
+7002d0e  ext4: brelse all indirect buffer in ext4_ind_remove_space()  [zhangyi (F)]
+8651fa1e  ext4: fix data corruption caused by unaligned direct AIO  [Lukas Czerner]
+d9f0ce8  ext4: fix NULL pointer dereference while journal is aborted  [Jiufei Xue]
+c818b2f  objtool: Move objtool_file struct off the stack  [Josh Poimboeuf]
+726c28f  futex: Ensure that futex address is aligned in handle_futex_death()  [Chen Jie]
+b84089b  MIPS: Fix kernel crash for R6 in jump label branch function  [Archer Yan]
+c7ac334  MIPS: Ensure ELF appended dtb is relocated  [Yasha Cherikovsky]
+f6b55e7  mips: loongson64: lemote-2f: Add IRQF_NO_SUSPEND to "cascade" irqaction.  [Yifeng Li]
+9247706  udf: Fix crash on IO error during truncate  [Jan Kara]
+9c32ada  libceph: wait for latest osdmap in ceph_monc_blacklist_add()  [Ilya Dryomov]
+cfa2d25  iommu/amd: fix sg->dma_address for sg->offset bigger than PAGE_SIZE  [Stanislaw Gruszka]
+eea23ca  drm/vmwgfx: Don't double-free the mode stored in par->set_mode  [Thomas Zimmermann]
+c179e6d  mmc: pxamci: fix enum type confusion  [Arnd Bergmann]
+
+====================
+     2019-03-26    
+====================
+
+ * build/make
+4cf379b  Use flags from Soong for d8, r8, dx and desugar  [Colin Cross]
+
+ * build/soong
+e044706  Optimize CPU time when running d8, r8, dx and desugar  [Colin Cross]
+
+ * device/xiaomi/sdm845-common
+a8eee11  rootdir: create and use blkio cgroups  [DennySPB]
+c385ecc  replace msm_irqbalance.conf  [Park Ju Hyung]
+
+ * frameworks/base
+5fb85f5  Volume Panel: fix animation glitch with right-sided panel  [DennySPB]
+26c7d21  SystemUI: Fix multiuser icon glitch in QS footer  [Anushek Prasal]
+f9ecd065  SystemUI: Add Cellular tile icon from OOS  [Anushek Prasal]
+714f0b7  ColorFade: Silence logspam  [Anushek Prasal]
+e972432  OP Gestures: Fix navbar detection and landscape mode  [Stylogey]
+3aa4001  Clean up screenshot if nothing selected  [Lyubo]
+377668e  IMMS should preserve selected IME upon boot  [Yohei Yukawa]
+cc0dd73  base: Cleanup FP controller  [hardwareadictos]
+
+ * packages/apps/Dialer
+5764b85  Make proxi sensor smart-case friendly  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+1d2ff3c  Remove ringer from extended audio panel  [DennySPB]
+
+ * system/core
+1128717  healthd: make periodic battery status a debug message  [Stefan Assmann]
+
+ * vendor/syberia
+216f2fe  vendor: official_devices.json  [DennySPB]
+
+====================
+     2019-03-25    
+====================
+
+ * device/xiaomi/sdm845-common
+676a7c2  Overlay-syberia: Remove led colour options  [ethan-halsall]
+3761516  sdm845-common: Generate non-hlos image mount points for A/B builds  [Ameya Thakur]
+c5a25c7  sdm845-common: power: Clean up code and add generic hint handling  [Ananth Raghavan Subramanian]
+e8dc7d4  sdm845-common: power: Fix for VNDK compliance issue  [Rajashekar Adi]
+a7c19c4  sdm845-common: power: Fix VNDK compilation errors  [Vinay Verma]
+
+ * external/proguard
+4da13fb  Allow passing extra java arguments to proguard  [Luca Stefani]
+
+ * frameworks/av
+4501b26  Request to reset effect buffer in clearInputBuffer  [Ryoichi Yasutake]
+
+ * frameworks/native
+ddeaf5a  Respect source crop when capturing layers.  [Alec Mouri]
+f896fa8  libgui: add docs to geometry states and captureScreen  [Chia-I Wu]
+f579848  surfaceflinger: fix captureScreen for landscape LCM  [Chia-I Wu]
+9205bc7  surfaceflinger: improve RenderArea needsFiltering  [Chia-I Wu]
+58ecc5f  surfaceflinger: respect install orientation in DisplayRenderArea  [Chia-I Wu]
+e236493  surfaceflinger: add install orientation to DisplayDevice  [Chia-I Wu]
+c9dc4b4  surfaceflinger: make mPrimaryDisplayOrientation static  [Chia-I Wu]
+003a3e6  surfaceflinger: clean up captureScreen  [Chia-I Wu]
+a1f40ef  surfaceflinger: silence some RenderArea errors  [Chia-I Wu]
+690237d  surfaceflinger: fix race conditions in captureScreen  [Chia-I Wu]
+81434e7  surfaceflinger: remove ISurfaceComposer.h from RenderArea  [Chia-I Wu]
+1535b08  surfaceflinger: reorder width and height in RenderArea ctor  [Chia-I Wu]
+1317159  surfaceflinger: documents RenderArea  [Chia-I Wu]
+
+ * kernel/xiaomi/sdm845
+9a1eec0  Bump to 2.95  [ethan-halsall]
+c6c5269  msm: kgsl: Mark IRQ and worker thread as performance critical  [Sultan Alsawaf]
+6a3505a  kernel: Add API to mark IRQs and kthreads as performance critical  [Sultan Alsawaf]
+7248de3  Cleanup tune.c  [ethan-halsall]
+b1d226e  msm: ipa-v3: ipa-rt: remove always-true declaration  [Raphiel Rollerscaperers]
+febfd10  Revert "Defconfig: Make minium frequency 300mhz"  [ethan-halsall]
+90db6f9  f2fs/rapid_gc: Clean up return codes  [Artem Labazov]
+7f560a8  ANDROID: Makefile: LTO: gold-plugin func/data sections  [Nick Desaulniers]
+e6fd0f8fa  lib: Implement a basic bcmp (string.c)  [Nick Desaulniers]
+a12b3af  net: fix sleeping for sk_wait_event()  [WANG Cong]
+ab4c2f2  filemap: drop the mmap_sem for all blocking operations  [Josef Bacik]
+fbc875a  filemap: kill page_cache_read usage in filemap_fault  [Josef Bacik]
+fd63cd2  Revert "Switch to lmkd"  [ethan-halsall]
+579e714  tick/nohz: Optimize nohz idle enter  [Gaurav Jindal]
+eea7c67  Defconfig: Disable dynamic stune boosting  [ethan-halsall]
+c609b63  cpu_boost_input: fix dynamic stune boost  [Francisco Franco]
+9827bcb  cpu_input_boost: Update functions for newer Dynamic Schedtune Boost changes  [Erik Müller]
+cd1bd53  cpu_input_boost: Reset Dynamic SchedTune Boost only if it is currently active  [joshuous]
+44f349d  cpu_input_boost: Implement Dynamic SchedTune Boost v3  [joshuous]
+1ca1147  Revert "cpu_input_boost: implement multi-level Dynamic SchedTune Boost"  [ethan-halsall]
+35c987d  proc: show MADV_FREE pages info in smaps  [Shaohua Li]
+32728f7  ANDROID: sched/fair: fix energy compute when a cluster is only a cpu core in multi-cluster system  [Samer Xie]
+f2a8a25  qcacld: disable -Werror  [Park Ju Hyung]
+
