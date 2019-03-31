@@ -1,0 +1,120 @@
+====================
+     2019-03-31    
+====================
+
+ * device/xiaomi/sdm660-common
+e60c9dc  sdm660 : add local bootctrl from los  [coderzstas]
+
+====================
+     2019-03-30    
+====================
+
+====================
+     2019-03-29    
+====================
+
+ * device/xiaomi/jasmine_sprout
+fe3405b  jasmine : update dependencies  [coderzstas]
+
+ * device/xiaomi/sdm660-common
+2f7c02b  fix some derps  [coderzstas]
+8783432  sdm660-common: both cores are kyro  [Manish4586]
+2238745  sdm660: overlay: enable Full screen aspect ratio  [Manish4586]
+24d297b  sdm660-common: light: reconfigure duty cyle  [Manish4586]
+661cc78  sdm660: Improve padding on keyguard  [Henrique Silva]
+eb64158  sdm660: Add persist.radio.aosp_usr_pref_sel for Telephony  [xyyx]
+dcdd344  sdm660: fingerprint: Correct fpc nodes  [GuaiYiHu]
+2952f52  sdm660: overlay:enable smart clock  [darkbeast69]
+115c8d5  sdm660: Use CarrierConfig overlays from Pie beta  [Rama Bondan Prakoso]
+2ed1970  sdm660: Migrate to versioned VNDK layout  [Divya Sharma]
+62cf49f  sdm660: Revert "sdm660: Move vndk-sp to vendor"  [GuaiYiHu]
+a8cfa47  sdm660: Disable vndk-sp creation for VNDK enabled targets.  [Vinay Verma]
+b3e36f7  sdm660: Update qti configs from caf  [GuaiYiHu]
+178db93  sdm660: overlay: Enable Wi-Fi MAC randomization  [XiNGRZ]
+
+ * packages/apps/SyberiaSettings
+e0e468b  New maintainer for Xiaomi Poco F1 (beryllium)  [blinoff82]
+
+====================
+     2019-03-28    
+====================
+
+ * device/xiaomi/jasmine_sprout
+efff8a7  jasmine: build correct updater app  [coderzstas]
+7335493  jasmine: audio: Increase Incall Volume  [Max Weffers]
+d9b2b11  jasmine: remove unneeded heap and dalvik configs  [Max Weffers]
+
+ * packages/apps/Updater
+09869ff  Updater: Remove download speed on UpdatesListAdapter  [Henrique Silva]
+87742df  Updater: Mark as persistent  [Henrique Silva]
+628c4d7  Updater: Correct cleanup notification action  [jhenrique09]
+37e3287  Updater: Add little delay before sending broadcast  [jhenrique09]
+236a860  Updater: Add network speed into some parts  [jhenrique09]
+26417f8  Updater: Refresh list when update get deleted  [jhenrique09]
+b16ac4a  Updater: Migrate Updater to AndroidX.  [Jyotiraditya]
+
+====================
+     2019-03-27    
+====================
+
+ * frameworks/base
+efa562c  base: Fix partial screenshot  [Anushek Prasal]
+0df5c1f  Revert "Clean up back animation view for edge gesture"  [DennySPB]
+
+====================
+     2019-03-26    
+====================
+
+ * build/make
+4cf379b  Use flags from Soong for d8, r8, dx and desugar  [Colin Cross]
+
+ * build/soong
+e044706  Optimize CPU time when running d8, r8, dx and desugar  [Colin Cross]
+
+ * frameworks/base
+5fb85f5  Volume Panel: fix animation glitch with right-sided panel  [DennySPB]
+26c7d21  SystemUI: Fix multiuser icon glitch in QS footer  [Anushek Prasal]
+f9ecd065  SystemUI: Add Cellular tile icon from OOS  [Anushek Prasal]
+714f0b7  ColorFade: Silence logspam  [Anushek Prasal]
+e972432  OP Gestures: Fix navbar detection and landscape mode  [Stylogey]
+3aa4001  Clean up screenshot if nothing selected  [Lyubo]
+377668e  IMMS should preserve selected IME upon boot  [Yohei Yukawa]
+cc0dd73  base: Cleanup FP controller  [hardwareadictos]
+
+ * packages/apps/Dialer
+5764b85  Make proxi sensor smart-case friendly  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+1d2ff3c  Remove ringer from extended audio panel  [DennySPB]
+
+ * system/core
+1128717  healthd: make periodic battery status a debug message  [Stefan Assmann]
+
+ * vendor/syberia
+216f2fe  vendor: official_devices.json  [DennySPB]
+
+====================
+     2019-03-25    
+====================
+
+ * external/proguard
+4da13fb  Allow passing extra java arguments to proguard  [Luca Stefani]
+
+ * frameworks/av
+4501b26  Request to reset effect buffer in clearInputBuffer  [Ryoichi Yasutake]
+
+ * frameworks/native
+ddeaf5a  Respect source crop when capturing layers.  [Alec Mouri]
+f896fa8  libgui: add docs to geometry states and captureScreen  [Chia-I Wu]
+f579848  surfaceflinger: fix captureScreen for landscape LCM  [Chia-I Wu]
+9205bc7  surfaceflinger: improve RenderArea needsFiltering  [Chia-I Wu]
+58ecc5f  surfaceflinger: respect install orientation in DisplayRenderArea  [Chia-I Wu]
+e236493  surfaceflinger: add install orientation to DisplayDevice  [Chia-I Wu]
+c9dc4b4  surfaceflinger: make mPrimaryDisplayOrientation static  [Chia-I Wu]
+003a3e6  surfaceflinger: clean up captureScreen  [Chia-I Wu]
+a1f40ef  surfaceflinger: silence some RenderArea errors  [Chia-I Wu]
+690237d  surfaceflinger: fix race conditions in captureScreen  [Chia-I Wu]
+81434e7  surfaceflinger: remove ISurfaceComposer.h from RenderArea  [Chia-I Wu]
+1535b08  surfaceflinger: reorder width and height in RenderArea ctor  [Chia-I Wu]
+1317159  surfaceflinger: documents RenderArea  [Chia-I Wu]
+
