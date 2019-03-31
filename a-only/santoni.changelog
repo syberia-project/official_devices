@@ -1,0 +1,167 @@
+====================
+     2019-03-31    
+====================
+
+====================
+     2019-03-30    
+====================
+
+ * device/xiaomi/santoni
+6bde489  santoni: update modem and Peripheral manager blobs from tissot  [HarukeyUA]
+
+ * hardware/qcom/display-caf/msm8996
+aa552d4  Merge pull request #4 from SOVIET-ANDROID/9.0-caf-8996  [DennySPb]
+
+ * packages/apps/SyberiaSettings
+e0e468b  New maintainer for Xiaomi Poco F1 (beryllium)  [blinoff82]
+
+ * vendor/xiaomi
+e7c8d4d  santoni: update modem blobs from tissot  [HarukeyUA]
+39fc6a0  santoni: update Peripheral manager blobs from tissot  [HarukeyUA]
+
+====================
+     2019-03-29    
+====================
+
+ * hardware/qcom/display-caf/msm8996
+a4b597f  hwc: Remove _vendor from libbfqio  [dianlujitao]
+df1a047  hwc: Set ioprio for vsync thread  [Steve Kondik]
+
+====================
+     2019-03-28    
+====================
+
+ * device/xiaomi/santoni
+de179f8  prebuilts: update Lawnchair to 1056-alpha  [DennySPB]
+
+ * packages/apps/Updater
+09869ff  Updater: Remove download speed on UpdatesListAdapter  [Henrique Silva]
+87742df  Updater: Mark as persistent  [Henrique Silva]
+628c4d7  Updater: Correct cleanup notification action  [jhenrique09]
+37e3287  Updater: Add little delay before sending broadcast  [jhenrique09]
+236a860  Updater: Add network speed into some parts  [jhenrique09]
+26417f8  Updater: Refresh list when update get deleted  [jhenrique09]
+b16ac4a  Updater: Migrate Updater to AndroidX.  [Jyotiraditya]
+
+====================
+     2019-03-27    
+====================
+
+ * device/xiaomi/santoni
+2d6ed32  santoni: biometrics: Create a seperate binder thread pool for … …gx_fpd  [Nich]
+ced8905  santoni: biometrics: Remove fingerprintd proxy for Goodix  [Nich]
+a037b5c  santoni: biometrics: Restore remaining templates logging  [Nich]
+ecbfce9  santoni: biometrics: Add sanity check for enumerate() return value  [Nich]
+0d46d58  santoni: biometrics: Use log/log.h instead  [Nich]
+c70a36d  santoni: biometrics: Bypass notifying device about ERROR_CANCELED  [Nich]
+e7ae657  santoni: biometrics: Avoid doing multiple property_get  [Nich]
+c40634e  santoni: Partially revert "land: biometrics: Refactor, improve and cleanup"  [Nich]
+462b78b  santoni: biometrics: Refactor, improve and cleanup  [Nich]
+92e2feb  santoni: biometrics: Don't start fingerprintd with FPC  [Nich]
+7090ebf  santoni: biometrics: Switch to LOCAL_VENDOR_MODULE  [Nich]
+359ede6  santoni: biometrics: Directly pass messages received from fingerprintd  [Nich]
+95cc97a  Revert "santoni: biometrics: Get rid of manually created IKeystoreService"  [HarukeyUA]
+7003cbb  santoni: Build clearkey HIDL service. Convert clearkey plugin to HIDL to support drm HAL v1.1. Add SELinux policy for android.hardware.drm@1.1-service.clearkey.  [Edwin Wong]
+2dd76bf  santoni: Don't build android.hardware.drm@1.0-service.widevine  [HarukeyUA]
+2da8fc7  santoni: remove unused cryptfs_hw files  [HarukeyUA]
+d227986  santoni: Build snap cam  [HarukeyUA]
+6f91c22  santoni: Fix setCameraLaunchStatus  [haran]
+7d1e247  santoni: camera: Don't attempt to trigger buggy backend color correction  [Nich]
+06d92fd  santoni: camera: Remove tests  [Michael Bestas]
+a4e3ac9  santoni: camera: Set KEY_XM_MAKEUP when change in value is detected  [Nich]
+da51ef5  QCamera2: HAL3: Add video encoder flags for high speed recording  [Santhosh Kumar Thimmanna Bhattar]
+a0ff328  QCamera2: HAL: Fix CTS CameraDeviceTest issues  [Shobhit Singh]
+6af54bf  QCamera2: update AF state in UrgentMetadata  [Saritha Yamasani]
+31a3b76  santoni: camera: Fix powerHAL usage  [Wei Wang]
+d6aceba  QCamera2: HAL: Power Hint not working  [Ankur Maheshwari]
+0039991  santoni: camera: Start vsync only for video  [Nich]
+c657d5b  QCamera2:HAL1: startVsync during start/stop preview  [Saritha Yamasani]
+26c1057  QCameraDisplay: Address FR49059  [Abhishek Jain]
+5b19340  QCamera2:QCameraDisplay:Dynamic registration of display service.  [Abhinav Sohane]
+e1ab42d  QCamera2:QCameraDisplay:Merging fix of DisplayService transaction failed.  [Abhinav Sohane]
+c2b1e46  QCamera2:HAL :Changes to get the vsync event and presentation timestamp  [Sauhard Pande]
+0b55bea  santoni: camera: Support Xiaomi makeup parameters  [Nich]
+b9bcfc5  santoni: camera: Replace libcamera_client to android.hardware.camera.common@1.0-helper  [Jiyong Park]
+ec65cc4  santoni: Revert "QCamera2: For supporting VNDK and Treble rules."  [Nich]
+4d3a14b  santoni: Squashed revert of camera changes  [HarukeyUA]
+50a9729  dependencies: add HALs  [HarukeyUA]
+
+ * frameworks/base
+efa562c  base: Fix partial screenshot  [Anushek Prasal]
+0df5c1f  Revert "Clean up back animation view for edge gesture"  [DennySPB]
+5fb85f5  Volume Panel: fix animation glitch with right-sided panel  [DennySPB]
+
+ * packages/apps/Dialer
+5764b85  Make proxi sensor smart-case friendly  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+1d2ff3c  Remove ringer from extended audio panel  [DennySPB]
+
+ * vendor/syberia
+216f2fe  vendor: official_devices.json  [DennySPB]
+
+====================
+     2019-03-26    
+====================
+
+ * build/make
+4cf379b  Use flags from Soong for d8, r8, dx and desugar  [Colin Cross]
+
+ * build/soong
+e044706  Optimize CPU time when running d8, r8, dx and desugar  [Colin Cross]
+
+ * frameworks/av
+4501b26  Request to reset effect buffer in clearInputBuffer  [Ryoichi Yasutake]
+
+ * frameworks/base
+26c7d21  SystemUI: Fix multiuser icon glitch in QS footer  [Anushek Prasal]
+f9ecd065  SystemUI: Add Cellular tile icon from OOS  [Anushek Prasal]
+714f0b7  ColorFade: Silence logspam  [Anushek Prasal]
+e972432  OP Gestures: Fix navbar detection and landscape mode  [Stylogey]
+3aa4001  Clean up screenshot if nothing selected  [Lyubo]
+377668e  IMMS should preserve selected IME upon boot  [Yohei Yukawa]
+cc0dd73  base: Cleanup FP controller  [hardwareadictos]
+
+ * frameworks/native
+ddeaf5a  Respect source crop when capturing layers.  [Alec Mouri]
+f896fa8  libgui: add docs to geometry states and captureScreen  [Chia-I Wu]
+f579848  surfaceflinger: fix captureScreen for landscape LCM  [Chia-I Wu]
+9205bc7  surfaceflinger: improve RenderArea needsFiltering  [Chia-I Wu]
+58ecc5f  surfaceflinger: respect install orientation in DisplayRenderArea  [Chia-I Wu]
+e236493  surfaceflinger: add install orientation to DisplayDevice  [Chia-I Wu]
+c9dc4b4  surfaceflinger: make mPrimaryDisplayOrientation static  [Chia-I Wu]
+003a3e6  surfaceflinger: clean up captureScreen  [Chia-I Wu]
+a1f40ef  surfaceflinger: silence some RenderArea errors  [Chia-I Wu]
+690237d  surfaceflinger: fix race conditions in captureScreen  [Chia-I Wu]
+81434e7  surfaceflinger: remove ISurfaceComposer.h from RenderArea  [Chia-I Wu]
+1535b08  surfaceflinger: reorder width and height in RenderArea ctor  [Chia-I Wu]
+1317159  surfaceflinger: documents RenderArea  [Chia-I Wu]
+
+ * system/core
+1128717  healthd: make periodic battery status a debug message  [Stefan Assmann]
+
+====================
+     2019-03-25    
+====================
+
+ * build/kati
+4b1faf5  Sort results of output from the "find" command  [Timothy Murphy]
+c41983d  Ignore TMPDIR when calculating the kati stamp  [Timothy Murphy]
+38a0b0d  Silence FindEmulator  [Brandon McAnsh]
+
+ * build/make
+9b58780  Accept TARGET_DEVICE_DIR preserved from previous product load  [Dan Willemsen]
+
+ * build/soong
+93d97f5  Prebuilts shouldn't inherit linker interface  [Yi Kong]
+920fa72  Pass TARGET_DEVICE_DIR from dumpvars to later kati runs  [Dan Willemsen]
+
+ * external/proguard
+4da13fb  Allow passing extra java arguments to proguard  [Luca Stefani]
+
+ * frameworks/base
+3a23ab4  Workaround for wallpaper not shown correctly problem  [Yongqin Liu]
+83bd28c  SystemUI: Dismiss keyguard on boot if disabled by current profile  [Gabriele M]
+84eb9c9  Suppress FingerprintManager logspam  [Harsh Shandilya]
+5688fac   Kill off provider info logspam  [Harsh Shandilya]
+
