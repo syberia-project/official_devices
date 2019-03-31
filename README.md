@@ -21,5 +21,5 @@
         + **device_brand** - Xiaomi, OnePlus, etc.
         + **device_model** - Mi5, Redmi 4X, etc.
         
-### Example for A-only devices you can find in 'a-only/stub.json'
+### Example for A-only devices you can find in 'a-only/gemini.json'
 ### Example for A/B devices you can find in 'ab/enchilada.json'
