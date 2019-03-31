@@ -1,15 +1,15 @@
 {
-  "build_date": "20190216",
-  "developer": "thetoymaker",
+  "build_date": "20190326",
+  "developer": "DarknessKiller",
   "error": "false",
   "donate_url": "https://syberiaos.com/links",
-  "url": "https://sourceforge.net/projects/syberiaos/files/x00t/syberia_X00T-v2.3-20190216-1507-OFFICIAL.zip/download",
+  "url": "https://sourceforge.net/projects/syberiaos/files/x00t/syberia_X00T-v2.3-20190326-0243-OFFICIAL.zip/download",
   "device": "X00T",
   "developer_url": "http://github.com/syberia-project",
   "device_model": "X00T",
   "news_url": "http://github.com/syberia-project",
-  "filename": "syberia_X00T-v2.3-20190216-1507-OFFICIAL.zip",
-  "forum_url": "https://forum.xda-developers.com/asus-zenfone-max-pro-m1/development/rom-syberia-project-t3848146",
+  "filename": "syberia_X00T-v2.3-20190326-0243-OFFICIAL.zip",
+  "forum_url": "https://forum.xda-developers.com/asus-zenfone-max-pro-m1/development/rom-syberia-project-t3910618",
   "addons": [
     {
       "url": "\"http://tiny.cc/latestmagisk",
@@ -22,7 +22,7 @@
       "summary": "Magisk Uninstaller"
     }
   ],
-  "changelog": "Syberia-Os Update\nBuild Date 18/02/2019\n\nChangelog:\nDevice Side:\n - Fixed Whatsapp video lag\n - Fixed Gcam Issues\nRom:\n - Version 2.3\n - Lockscreen visualizer\n - Fixed media art cover\n - Fixed some status bar clock issues\n - OP like gestures tweaks\n - Ability to turn off conditions/suggestions in settings\n - CAF touch response optimization\n - Launcher: switch to latest LawnChair v2\n - Update translations\n - Filemanager (DocumentsUI) fixes\n - Other fixes and improvements\n",
+  "changelog": "Changelog:\nDevice Side:\n - Update Inits\n - Linux 4.4.177\n - APN Fixed\n - Pie Blobs\n - Booting Fixed\nRom:\n - Add MusicFX equalizer from OmniRom\n - SystemUI: Add Sync tile\n - Add Champagne Limousines and Nunito fonts\n - Update APN's from Pixel 3XL\n - Add app name to screenshot filename\n - Improve ambient play layout on keyguard\n - Update translations\n - Other fixes and improvements\n",
   "filesize": "701336538",
   "device_brand": "Asus",
   "website_url": "http://syberiaos.com",
