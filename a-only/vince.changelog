@@ -5,6 +5,10 @@
  * device/xiaomi/vince
 c40ef26  Update dependencies  [mdeejay]
 
+ * vendor/syberia
+6d74f8c  Merge pull request #10 from mdeejay/9.0  [Ivan Blinov]
+473e6b7  syberia: qcom: Set thermal & vr HAL pathmaps  [Michael Bestas]
+
 ====================
      2019-03-31    
 ====================
@@ -80,13 +84,6 @@ b16ac4a  Updater: Migrate Updater to AndroidX.  [Jyotiraditya]
  * frameworks/base
 efa562c  base: Fix partial screenshot  [Anushek Prasal]
 0df5c1f  Revert "Clean up back animation view for edge gesture"  [DennySPB]
-5fb85f5  Volume Panel: fix animation glitch with right-sided panel  [DennySPB]
-
- * packages/apps/Dialer
-5764b85  Make proxi sensor smart-case friendly  [DennySPB]
-
- * packages/apps/SyberiaSettings
-1d2ff3c  Remove ringer from extended audio panel  [DennySPB]
 
 ====================
      2019-03-26    
@@ -98,10 +95,8 @@ efa562c  base: Fix partial screenshot  [Anushek Prasal]
  * build/soong
 e044706  Optimize CPU time when running d8, r8, dx and desugar  [Colin Cross]
 
- * frameworks/av
-4501b26  Request to reset effect buffer in clearInputBuffer  [Ryoichi Yasutake]
-
  * frameworks/base
+5fb85f5  Volume Panel: fix animation glitch with right-sided panel  [DennySPB]
 26c7d21  SystemUI: Fix multiuser icon glitch in QS footer  [Anushek Prasal]
 f9ecd065  SystemUI: Add Cellular tile icon from OOS  [Anushek Prasal]
 714f0b7  ColorFade: Silence logspam  [Anushek Prasal]
@@ -110,20 +105,11 @@ e972432  OP Gestures: Fix navbar detection and landscape mode  [Stylogey]
 377668e  IMMS should preserve selected IME upon boot  [Yohei Yukawa]
 cc0dd73  base: Cleanup FP controller  [hardwareadictos]
 
- * frameworks/native
-ddeaf5a  Respect source crop when capturing layers.  [Alec Mouri]
-f896fa8  libgui: add docs to geometry states and captureScreen  [Chia-I Wu]
-f579848  surfaceflinger: fix captureScreen for landscape LCM  [Chia-I Wu]
-9205bc7  surfaceflinger: improve RenderArea needsFiltering  [Chia-I Wu]
-58ecc5f  surfaceflinger: respect install orientation in DisplayRenderArea  [Chia-I Wu]
-e236493  surfaceflinger: add install orientation to DisplayDevice  [Chia-I Wu]
-c9dc4b4  surfaceflinger: make mPrimaryDisplayOrientation static  [Chia-I Wu]
-003a3e6  surfaceflinger: clean up captureScreen  [Chia-I Wu]
-a1f40ef  surfaceflinger: silence some RenderArea errors  [Chia-I Wu]
-690237d  surfaceflinger: fix race conditions in captureScreen  [Chia-I Wu]
-81434e7  surfaceflinger: remove ISurfaceComposer.h from RenderArea  [Chia-I Wu]
-1535b08  surfaceflinger: reorder width and height in RenderArea ctor  [Chia-I Wu]
-1317159  surfaceflinger: documents RenderArea  [Chia-I Wu]
+ * packages/apps/Dialer
+5764b85  Make proxi sensor smart-case friendly  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+1d2ff3c  Remove ringer from extended audio panel  [DennySPB]
 
  * system/core
 1128717  healthd: make periodic battery status a debug message  [Stefan Assmann]
