@@ -1,5 +1,5 @@
 ====================
-     2019-03-31    
+     2019-04-01    
 ====================
 
  * device/xiaomi/beryllium
@@ -7,12 +7,14 @@ e32441a  Update dependencies  [ethan-halsall]
 
  * device/xiaomi/sdm845-common
 54f4d56  Move dependencies to device tree  [ethan-halsall]
-d0c41c4  Properly set makefile scripts  [ethan-halsall]
-2a80c2a  Track our vendor  [ethan-halsall]
 
 ====================
-     2019-03-30    
+     2019-03-31    
 ====================
+
+ * device/xiaomi/sdm845-common
+d0c41c4  Properly set makefile scripts  [ethan-halsall]
+2a80c2a  Track our vendor  [ethan-halsall]
 
  * kernel/xiaomi/sdm845
 09cfab1  Revert "input: fingerprint: fpc_tee: much cleanup, such wow"  [ethan-halsall]
@@ -42,6 +44,12 @@ d9c3c77  drivers: cpuidle: lpm_levels: Correctly update lpm stats  [Maulik Shah]
 82ee06d  mm/shmem.c: fix unlikely() test of info->seals to test only for WRITE and GROW  [Steven Rostedt (VMware)]
 97ec665  sched/core: Remove unlikely() annotation from sched_move_task()  [Steven Rostedt (VMware)]
 9ecb756  rtmutex: Delete save_state member of struct rt_mutex  [Davidlohr Bueso]
+
+====================
+     2019-03-30    
+====================
+
+ * kernel/xiaomi/sdm845
 559facc  Merge remote-tracking branch 'msm-4.9/kernel.lnx.4.9.r11-rel' into test  [ethan-halsall]
 fe2f1d5  Revert "int_sqrt.c: Correction square root algo with naming"  [Danny Lin]
 c1bb275  Revert "int_sqrt: Improve 3x faster integer sqrt."  [Danny Lin]
@@ -91,6 +99,9 @@ fbac48f  usb: gadget: Update default RNDIS class for Xiaomi  [khusika]
 addde4a  Revert "sched/boost: Boost CPU and DDR bus when sched_boost is triggered"  [ethan-halsall]
 09bf96e  Merge tag 'LA.UM.7.8.r1-05000-SDM710.0'  [ethan-halsall]
 
+ * packages/apps/SyberiaSettings
+e0e468b  New maintainer for Xiaomi Poco F1 (beryllium)  [blinoff82]
+
  * vendor/xiaomi
 4c199c1  chiron: update default display mode  [Vol Zhdanov]
 b6a7d32  msm8998-common: Add MIUI offmode charging daemon  [Bruno Martins]
@@ -136,18 +147,15 @@ db4ca38  msm8998-common: switch to QCOM HIDL bluetooth stack  [Demon Singur]
      2019-03-29    
 ====================
 
- * packages/apps/SyberiaSettings
-e0e468b  New maintainer for Xiaomi Poco F1 (beryllium)  [blinoff82]
-
-====================
-     2019-03-28    
-====================
-
  * device/xiaomi/sdm845-common
 d3a4de8  sdm845-common: Keep fpc in system-background  [Tim Murray]
 732d205  sdm845-common: Override stock fingerprint service init script  [Bruno Martins]
 6e8d645  sdm845-common: Build separate system and vendor HIDL libs  [Demon Singur]
 25d6aac  sdm845-common: Create RFS symlinks  [Bruno Martins]
+
+====================
+     2019-03-28    
+====================
 
  * packages/apps/Updater
 09869ff  Updater: Remove download speed on UpdatesListAdapter  [Henrique Silva]
@@ -200,6 +208,9 @@ cfa2d25  iommu/amd: fix sg->dma_address for sg->offset bigger than PAGE_SIZE  [S
 eea23ca  drm/vmwgfx: Don't double-free the mode stored in par->set_mode  [Thomas Zimmermann]
 c179e6d  mmc: pxamci: fix enum type confusion  [Arnd Bergmann]
 
+ * packages/apps/Dialer
+5764b85  Make proxi sensor smart-case friendly  [DennySPB]
+
 ====================
      2019-03-26    
 ====================
@@ -210,32 +221,6 @@ c179e6d  mmc: pxamci: fix enum type confusion  [Arnd Bergmann]
  * build/soong
 e044706  Optimize CPU time when running d8, r8, dx and desugar  [Colin Cross]
 
- * frameworks/base
-5fb85f5  Volume Panel: fix animation glitch with right-sided panel  [DennySPB]
-26c7d21  SystemUI: Fix multiuser icon glitch in QS footer  [Anushek Prasal]
-f9ecd065  SystemUI: Add Cellular tile icon from OOS  [Anushek Prasal]
-714f0b7  ColorFade: Silence logspam  [Anushek Prasal]
-e972432  OP Gestures: Fix navbar detection and landscape mode  [Stylogey]
-3aa4001  Clean up screenshot if nothing selected  [Lyubo]
-377668e  IMMS should preserve selected IME upon boot  [Yohei Yukawa]
-cc0dd73  base: Cleanup FP controller  [hardwareadictos]
-
- * packages/apps/Dialer
-5764b85  Make proxi sensor smart-case friendly  [DennySPB]
-
- * packages/apps/SyberiaSettings
-1d2ff3c  Remove ringer from extended audio panel  [DennySPB]
-
- * system/core
-1128717  healthd: make periodic battery status a debug message  [Stefan Assmann]
-
- * vendor/syberia
-216f2fe  vendor: official_devices.json  [DennySPB]
-
-====================
-     2019-03-25    
-====================
-
  * device/xiaomi/sdm845-common
 a8eee11  rootdir: create and use blkio cgroups  [DennySPB]
 c385ecc  replace msm_irqbalance.conf  [Park Ju Hyung]
@@ -245,11 +230,18 @@ c5a25c7  sdm845-common: power: Clean up code and add generic hint handling  [Ana
 e8dc7d4  sdm845-common: power: Fix for VNDK compliance issue  [Rajashekar Adi]
 a7c19c4  sdm845-common: power: Fix VNDK compilation errors  [Vinay Verma]
 
- * external/proguard
-4da13fb  Allow passing extra java arguments to proguard  [Luca Stefani]
-
  * frameworks/av
 4501b26  Request to reset effect buffer in clearInputBuffer  [Ryoichi Yasutake]
+
+ * frameworks/base
+5fb85f5  Volume Panel: fix animation glitch with right-sided panel  [DennySPB]
+26c7d21  SystemUI: Fix multiuser icon glitch in QS footer  [Anushek Prasal]
+f9ecd065  SystemUI: Add Cellular tile icon from OOS  [Anushek Prasal]
+714f0b7  ColorFade: Silence logspam  [Anushek Prasal]
+e972432  OP Gestures: Fix navbar detection and landscape mode  [Stylogey]
+3aa4001  Clean up screenshot if nothing selected  [Lyubo]
+377668e  IMMS should preserve selected IME upon boot  [Yohei Yukawa]
+cc0dd73  base: Cleanup FP controller  [hardwareadictos]
 
  * frameworks/native
 ddeaf5a  Respect source crop when capturing layers.  [Alec Mouri]
@@ -266,28 +258,12 @@ a1f40ef  surfaceflinger: silence some RenderArea errors  [Chia-I Wu]
 1535b08  surfaceflinger: reorder width and height in RenderArea ctor  [Chia-I Wu]
 1317159  surfaceflinger: documents RenderArea  [Chia-I Wu]
 
- * kernel/xiaomi/sdm845
-9a1eec0  Bump to 2.95  [ethan-halsall]
-c6c5269  msm: kgsl: Mark IRQ and worker thread as performance critical  [Sultan Alsawaf]
-6a3505a  kernel: Add API to mark IRQs and kthreads as performance critical  [Sultan Alsawaf]
-7248de3  Cleanup tune.c  [ethan-halsall]
-b1d226e  msm: ipa-v3: ipa-rt: remove always-true declaration  [Raphiel Rollerscaperers]
-febfd10  Revert "Defconfig: Make minium frequency 300mhz"  [ethan-halsall]
-90db6f9  f2fs/rapid_gc: Clean up return codes  [Artem Labazov]
-7f560a8  ANDROID: Makefile: LTO: gold-plugin func/data sections  [Nick Desaulniers]
-e6fd0f8fa  lib: Implement a basic bcmp (string.c)  [Nick Desaulniers]
-a12b3af  net: fix sleeping for sk_wait_event()  [WANG Cong]
-ab4c2f2  filemap: drop the mmap_sem for all blocking operations  [Josef Bacik]
-fbc875a  filemap: kill page_cache_read usage in filemap_fault  [Josef Bacik]
-fd63cd2  Revert "Switch to lmkd"  [ethan-halsall]
-579e714  tick/nohz: Optimize nohz idle enter  [Gaurav Jindal]
-eea7c67  Defconfig: Disable dynamic stune boosting  [ethan-halsall]
-c609b63  cpu_boost_input: fix dynamic stune boost  [Francisco Franco]
-9827bcb  cpu_input_boost: Update functions for newer Dynamic Schedtune Boost changes  [Erik Müller]
-cd1bd53  cpu_input_boost: Reset Dynamic SchedTune Boost only if it is currently active  [joshuous]
-44f349d  cpu_input_boost: Implement Dynamic SchedTune Boost v3  [joshuous]
-1ca1147  Revert "cpu_input_boost: implement multi-level Dynamic SchedTune Boost"  [ethan-halsall]
-35c987d  proc: show MADV_FREE pages info in smaps  [Shaohua Li]
-32728f7  ANDROID: sched/fair: fix energy compute when a cluster is only a cpu core in multi-cluster system  [Samer Xie]
-f2a8a25  qcacld: disable -Werror  [Park Ju Hyung]
+ * packages/apps/SyberiaSettings
+1d2ff3c  Remove ringer from extended audio panel  [DennySPB]
+
+ * system/core
+1128717  healthd: make periodic battery status a debug message  [Stefan Assmann]
+
+ * vendor/syberia
+216f2fe  vendor: official_devices.json  [DennySPB]
 
