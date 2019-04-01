@@ -208,9 +208,6 @@ cfa2d25  iommu/amd: fix sg->dma_address for sg->offset bigger than PAGE_SIZE  [S
 eea23ca  drm/vmwgfx: Don't double-free the mode stored in par->set_mode  [Thomas Zimmermann]
 c179e6d  mmc: pxamci: fix enum type confusion  [Arnd Bergmann]
 
- * packages/apps/Dialer
-5764b85  Make proxi sensor smart-case friendly  [DennySPB]
-
 ====================
      2019-03-26    
 ====================
@@ -230,9 +227,6 @@ c5a25c7  sdm845-common: power: Clean up code and add generic hint handling  [Ana
 e8dc7d4  sdm845-common: power: Fix for VNDK compliance issue  [Rajashekar Adi]
 a7c19c4  sdm845-common: power: Fix VNDK compilation errors  [Vinay Verma]
 
- * frameworks/av
-4501b26  Request to reset effect buffer in clearInputBuffer  [Ryoichi Yasutake]
-
  * frameworks/base
 5fb85f5  Volume Panel: fix animation glitch with right-sided panel  [DennySPB]
 26c7d21  SystemUI: Fix multiuser icon glitch in QS footer  [Anushek Prasal]
@@ -243,20 +237,8 @@ e972432  OP Gestures: Fix navbar detection and landscape mode  [Stylogey]
 377668e  IMMS should preserve selected IME upon boot  [Yohei Yukawa]
 cc0dd73  base: Cleanup FP controller  [hardwareadictos]
 
- * frameworks/native
-ddeaf5a  Respect source crop when capturing layers.  [Alec Mouri]
-f896fa8  libgui: add docs to geometry states and captureScreen  [Chia-I Wu]
-f579848  surfaceflinger: fix captureScreen for landscape LCM  [Chia-I Wu]
-9205bc7  surfaceflinger: improve RenderArea needsFiltering  [Chia-I Wu]
-58ecc5f  surfaceflinger: respect install orientation in DisplayRenderArea  [Chia-I Wu]
-e236493  surfaceflinger: add install orientation to DisplayDevice  [Chia-I Wu]
-c9dc4b4  surfaceflinger: make mPrimaryDisplayOrientation static  [Chia-I Wu]
-003a3e6  surfaceflinger: clean up captureScreen  [Chia-I Wu]
-a1f40ef  surfaceflinger: silence some RenderArea errors  [Chia-I Wu]
-690237d  surfaceflinger: fix race conditions in captureScreen  [Chia-I Wu]
-81434e7  surfaceflinger: remove ISurfaceComposer.h from RenderArea  [Chia-I Wu]
-1535b08  surfaceflinger: reorder width and height in RenderArea ctor  [Chia-I Wu]
-1317159  surfaceflinger: documents RenderArea  [Chia-I Wu]
+ * packages/apps/Dialer
+5764b85  Make proxi sensor smart-case friendly  [DennySPB]
 
  * packages/apps/SyberiaSettings
 1d2ff3c  Remove ringer from extended audio panel  [DennySPB]
