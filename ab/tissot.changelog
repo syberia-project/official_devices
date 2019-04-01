@@ -1,0 +1,137 @@
+====================
+     2019-04-01    
+====================
+
+ * device/xiaomi/msm8953-common
+cb0b559  Move syberia.dependencies to tissot tree  [mdeejay]
+
+ * device/xiaomi/tissot
+1d4afef  Update dependencies  [mdeejay]
+0b8a4bc  Add syberia.dependencies  [mdeejay]
+
+====================
+     2019-03-31    
+====================
+
+====================
+     2019-03-30    
+====================
+
+ * hardware/qcom/display-caf/msm8996
+aa552d4  Merge pull request #4 from SOVIET-ANDROID/9.0-caf-8996  [DennySPb]
+
+ * packages/apps/SyberiaSettings
+e0e468b  New maintainer for Xiaomi Poco F1 (beryllium)  [blinoff82]
+
+====================
+     2019-03-29    
+====================
+
+ * hardware/qcom/display-caf/msm8996
+a4b597f  hwc: Remove _vendor from libbfqio  [dianlujitao]
+df1a047  hwc: Set ioprio for vsync thread  [Steve Kondik]
+
+====================
+     2019-03-28    
+====================
+
+ * kernel/xiaomi/msm8953
+216e5fc  Linux 4.9.166  [Greg Kroah-Hartman]
+fc72a1a  ath10k: avoid possible string overflow  [Arnd Bergmann]
+4dc64b4  power: supply: charger-manager: Fix incorrect return value  [Baolin Wang]
+9ce2752  pwm-backlight: Enable/disable the PWM before/after LCD enable toggle.  [Enric Balletbo i Serra]
+d577494  rtc: Fix overflow when converting time64_t to rtc_time  [Baolin Wang]
+a2d9592  scsi: ufs: fix wrong command type of UTRD for UFSHCI v2.1  [kehuanlin]
+7e62bc5  USB: core: only clean up what we allocated  [Andrey Konovalov]
+9f72363  lib/int_sqrt: optimize small argument  [Peter Zijlstra]
+c21729e  serial: sprd: clear timeout interrupt only rather than all interrupts  [Lanqing Liu]
+e480594  arm64: traps: disable irq in die()  [Qiao Zhou]
+0ae9f74  Hang/soft lockup in d_invalidate with simultaneous calls  [Al Viro]
+e845830  serial: sprd: adjust TIMEOUT to a big value  [Wei Qiao]
+e2b9e21  tcp/dccp: drop SYN packets if accept queue is full  [Eric Dumazet]
+5f0c15e  ALSA: hda - Enforces runtime_resume after S3 and S4 for each codec  [Hui Wang]
+6eb5be2  ALSA: hda - Record the current power state before suspend/resume calls  [Takashi Iwai]
+91a3d14  locking/lockdep: Add debug_locks check in __lock_downgrade()  [Waiman Long]
+51eec32  Bluetooth: Fix decrementing reference count twice in releasing socket  [Myungho Jung]
+1479e46  media: v4l2-ctrls.c/uvc: zero v4l2_event  [Hans Verkuil]
+080fd05  ext4: brelse all indirect buffer in ext4_ind_remove_space()  [zhangyi (F)]
+bc6464f  ext4: fix data corruption caused by unaligned direct AIO  [Lukas Czerner]
+038aecb  ext4: fix NULL pointer dereference while journal is aborted  [Jiufei Xue]
+350a858  objtool: Move objtool_file struct off the stack  [Josh Poimboeuf]
+7c99c72  futex: Ensure that futex address is aligned in handle_futex_death()  [Chen Jie]
+ec096e3  MIPS: Fix kernel crash for R6 in jump label branch function  [Archer Yan]
+94a3254  MIPS: Ensure ELF appended dtb is relocated  [Yasha Cherikovsky]
+fbb8ba6  mips: loongson64: lemote-2f: Add IRQF_NO_SUSPEND to "cascade" irqaction.  [Yifeng Li]
+fa76553  udf: Fix crash on IO error during truncate  [Jan Kara]
+2b5fdda  libceph: wait for latest osdmap in ceph_monc_blacklist_add()  [Ilya Dryomov]
+4a88d19  iommu/amd: fix sg->dma_address for sg->offset bigger than PAGE_SIZE  [Stanislaw Gruszka]
+8560796  drm/vmwgfx: Don't double-free the mode stored in par->set_mode  [Thomas Zimmermann]
+ef87e3a  mmc: pxamci: fix enum type confusion  [Arnd Bergmann]
+
+ * packages/apps/Updater
+09869ff  Updater: Remove download speed on UpdatesListAdapter  [Henrique Silva]
+87742df  Updater: Mark as persistent  [Henrique Silva]
+628c4d7  Updater: Correct cleanup notification action  [jhenrique09]
+37e3287  Updater: Add little delay before sending broadcast  [jhenrique09]
+236a860  Updater: Add network speed into some parts  [jhenrique09]
+26417f8  Updater: Refresh list when update get deleted  [jhenrique09]
+b16ac4a  Updater: Migrate Updater to AndroidX.  [Jyotiraditya]
+
+====================
+     2019-03-27    
+====================
+
+ * frameworks/base
+efa562c  base: Fix partial screenshot  [Anushek Prasal]
+0df5c1f  Revert "Clean up back animation view for edge gesture"  [DennySPB]
+5fb85f5  Volume Panel: fix animation glitch with right-sided panel  [DennySPB]
+
+ * packages/apps/Dialer
+5764b85  Make proxi sensor smart-case friendly  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+1d2ff3c  Remove ringer from extended audio panel  [DennySPB]
+
+====================
+     2019-03-26    
+====================
+
+ * build/make
+4cf379b  Use flags from Soong for d8, r8, dx and desugar  [Colin Cross]
+
+ * build/soong
+e044706  Optimize CPU time when running d8, r8, dx and desugar  [Colin Cross]
+
+ * frameworks/av
+4501b26  Request to reset effect buffer in clearInputBuffer  [Ryoichi Yasutake]
+
+ * frameworks/base
+26c7d21  SystemUI: Fix multiuser icon glitch in QS footer  [Anushek Prasal]
+f9ecd065  SystemUI: Add Cellular tile icon from OOS  [Anushek Prasal]
+714f0b7  ColorFade: Silence logspam  [Anushek Prasal]
+e972432  OP Gestures: Fix navbar detection and landscape mode  [Stylogey]
+3aa4001  Clean up screenshot if nothing selected  [Lyubo]
+377668e  IMMS should preserve selected IME upon boot  [Yohei Yukawa]
+cc0dd73  base: Cleanup FP controller  [hardwareadictos]
+
+ * frameworks/native
+ddeaf5a  Respect source crop when capturing layers.  [Alec Mouri]
+f896fa8  libgui: add docs to geometry states and captureScreen  [Chia-I Wu]
+f579848  surfaceflinger: fix captureScreen for landscape LCM  [Chia-I Wu]
+9205bc7  surfaceflinger: improve RenderArea needsFiltering  [Chia-I Wu]
+58ecc5f  surfaceflinger: respect install orientation in DisplayRenderArea  [Chia-I Wu]
+e236493  surfaceflinger: add install orientation to DisplayDevice  [Chia-I Wu]
+c9dc4b4  surfaceflinger: make mPrimaryDisplayOrientation static  [Chia-I Wu]
+003a3e6  surfaceflinger: clean up captureScreen  [Chia-I Wu]
+a1f40ef  surfaceflinger: silence some RenderArea errors  [Chia-I Wu]
+690237d  surfaceflinger: fix race conditions in captureScreen  [Chia-I Wu]
+81434e7  surfaceflinger: remove ISurfaceComposer.h from RenderArea  [Chia-I Wu]
+1535b08  surfaceflinger: reorder width and height in RenderArea ctor  [Chia-I Wu]
+1317159  surfaceflinger: documents RenderArea  [Chia-I Wu]
+
+ * system/core
+1128717  healthd: make periodic battery status a debug message  [Stefan Assmann]
+
+ * vendor/syberia
+216f2fe  vendor: official_devices.json  [DennySPB]
+
