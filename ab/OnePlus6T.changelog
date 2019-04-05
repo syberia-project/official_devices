@@ -1,9 +1,102 @@
 ====================
+     2019-04-05    
+====================
+
+ * external/exfat
+e346c7c  exfat: Rename utf conversion symbols  [Tom Marshall]
+9e9dc69  exfat: Add static libs for recovery  [Tom Marshall]
+
+ * packages/apps/SyberiaSettings
+e859827  Merge pull request #54 from governmentissuejoe/patch-1  [Ivan Blinov]
+a55ff19  Fix typo  [governmentissuejoe]
+
+ * vendor/syberia
+aa43400  syberia: qcom: Set proper CAF data-ipa-cfg-mgr pathmap  [Michael Bestas]
+fb6a586  syberia: qcom: Set data-ipa-cfg-mgr pathmap  [Ethan Chen]
+
+====================
+     2019-04-04    
+====================
+
+ * packages/apps/Settings
+35aaf32  Refactoring screen "About Team" [2/2] now the list of team members is in the file "packages/apps/Settings/assets/syberia.json"  [alexxxdev]
+
+ * packages/apps/SyberiaSettings
+af6cea9  Refactoring screen "About Team" [1/2] now the list of team members is in the file "packages/apps/Settings/assets/syberia.json"  [alexxxdev]
+
+ * vendor/syberia
+26c0c22  Syberia: bump to v2.4  [blinoff82]
+5a40059  Fonts: Add CircularStd  [Arghya Chanda]
+
+====================
+     2019-04-03    
+====================
+
+====================
+     2019-04-02    
+====================
+
+ * build/make
+7a2e246  Merge pull request #1 from coderzstas/9.0  [Ivan Blinov]
+bb52e11  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/build into 9.0  [coderzstas]
+
+ * device/qcom/sepolicy
+c2cd216  selinux: Add policy for rild to add IDataConnection HAL  [Eric Chang]
+
+ * frameworks/base
+7cbea20  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/frameworks/base into HEAD  [blinoff82]
+
+ * kernel/oneplus/sdm845
+4d9bcb0  cpufreq: schedutil: Reduce frequencies slower  [Rafael J. Wysocki]
+0c26408  block: prevent merging of requests with different priorities  [Damien Le Moal]
+3c3360c  sched/cpufreq: Remove unused SUGOV_KTHREAD_PRIORITY macro  [Leo Yan]
+48b461b  cpufreq: schedutil: Use idle_calls counter of the remote CPU  [Joel Fernandes]
+4ddee9f  sched/cpufreq: Don't pass flags to sugov_set_iowait_boost()  [Viresh Kumar]
+ee45aa1  cpufreq: schedutil: Always process remote callback with slow switching  [Viresh Kumar]
+5f7856c  rcu: Speed up calling of RCU tasks callbacks  [Steven Rostedt (VMware)]
+0367266  mm/page_owner: use kvmalloc instead of kmalloc  [Miles Chen]
+
+ * packages/apps/Bluetooth
+04e228e  Merge pull request #2 from coderzstas/9.0  [Ivan Blinov]
+48f85d8  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/packages/apps/Bluetooth into 9.0  [coderzstas]
+
+ * packages/apps/Settings
+4277d46  Settings: Add deep sleep info to uptime  [Stefan Berger]
+
+ * packages/apps/SyberiaSettings
+392b9c9  gemini: end of life  [blinoff82]
+315db67  whyred: left the team  [blinoff82]
+5baf9c5  Merge pull request #53 from coderzstas/9.0  [Ivan Blinov]
+1eb43f2  SyberiaSettings : add me to dev team  [coderzstas]
+
+ * system/bt
+906c31d  Merge pull request #3 from coderzstas/9.0  [Ivan Blinov]
+aead2b1  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/system/bt into 9.0  [coderzstas]
+
+ * system/netd
+8e79f0f  Merge pull request #1 from coderzstas/9.0  [Ivan Blinov]
+9e612a1  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/system/netd into 9.0  [coderzstas]
+
+====================
+     2019-04-01    
+====================
+
+ * vendor/syberia
+6d74f8c  Merge pull request #10 from mdeejay/9.0  [Ivan Blinov]
+473e6b7  syberia: qcom: Set thermal & vr HAL pathmaps  [Michael Bestas]
+
+====================
      2019-03-31    
 ====================
 
+ * device/qcom/sepolicy
+42be12d  sepolicy: Whitelist vold from reading mnt_vendor_file  [Michael Bestas]
+
  * kernel/oneplus/sdm845
 36cefbc  Set 403 mhz as return freq for silver cluster  [blinoff82]
+
+ * system/core
+2af1d8b  reboot: only run fsck when detecting filesystem inconsistency  [Randall Huang]
 
 ====================
      2019-03-30    
@@ -11,202 +104,4 @@
 
  * kernel/oneplus/sdm845
 b43dcac  Revert "lib/int_sqrt: optimize initial value compute"  [blinoff82]
-
- * packages/apps/SyberiaSettings
-e0e468b  New maintainer for Xiaomi Poco F1 (beryllium)  [blinoff82]
-
-====================
-     2019-03-29    
-====================
-
-====================
-     2019-03-28    
-====================
-
- * device/oneplus/oneplus6t
-2845f54  prebuilts: update Lawnchair to 1056-alpha  [DennySPB]
-125ab79  init.performance.rc: set schedutil up_rate_limit to 10ms  [DennySPB]
-
- * kernel/oneplus/sdm845
-0a8924e  ANDROID: arm64: preserve x18 when CPU is suspended  [Sami Tolvanen]
-a33cbb9  FROMLIST: arm64/lib: copy_page: avoid x18 register in assembler code  [Sami Tolvanen]
-e680799  FROMLIST: arm64: kernel: avoid x18 as an arbitrary temp register  [Sami Tolvanen]
-4513000  msm: ipa3: fix callback function type for ndo_start_xmit  [Sami Tolvanen]
-57a460c  UPSTREAM: mm: proc: smaps_rollup: fix pss_locked calculation  [Sandeep Patil]
-da606d4  UPSTREAM: binder: fix handling of misaligned binder object  [Todd Kjos]
-4c67291  UPSTREAM: binder: fix sparse issue in binder_alloc_selftest.c  [Todd Kjos]
-a14790e  BACKPORT: binder: use userspace pointer as base of buffer space  [Todd Kjos]
-2c18a31  UPSTREAM: binder: fix kerneldoc header for struct binder_buffer  [Todd Kjos]
-cb83240  BACKPORT: binder: remove user_buffer_offset  [Todd Kjos]
-b8cad05  UPSTREAM: binder: remove kernel vm_area for buffer space  [Todd Kjos]
-1bf8b4c  UPSTREAM: binder: avoid kernel vm_area for buffer fixups  [Todd Kjos]
-76e9d4d  BACKPORT: binder: add function to copy binder object from buffer  [Todd Kjos]
-0a304b1  BACKPORT: binder: add functions to copy to/from binder buffers  [Todd Kjos]
-4e4996d  arm64: Add work around for Arm Cortex-A55 Erratum 1024718  [Suzuki K. Poulose]
-79cac58  ANDROID: ion_dummy_driver: Remove SYSTEM_CONTIG heap  [John Stultz]
-53f4bf3  ANDROID: ion_dummy_driver: Rework ion_dummy_driver to avoid direct indexing into the heaps  [John Stultz]
-8ae3c29  ANDROID: ion_dummy_driver: Use IS_ERR_OR_NULL() before destroying heaps  [John Stultz]
-b536dfd  binder: Dump out refs_by_desc rbtree on failure  [Todd Kjos]
-61c4f8e  binder: create node flag to request sender's security context  [Todd Kjos]
-434b6fb  UPSTREAM: binder: create userspace-to-binder-buffer copy function  [Todd Kjos]
-e3b2e61  Merge branch 'kernel.lnx.4.9.r11-rel' of https://github.com/android-linux-stable/msm-4.9  [DennySPB]
-12cef52  drm/msm/sde: Wait for ctl_start asynchronously on cmd mode panels  [Sultan Alsawaf]
-bd9d752  cpufreq: schedutil: Don't set next_freq to UINT_MAX  [Viresh Kumar]
-a166247  lib/int_sqrt: adjust comments  [Peter Zijlstra]
-92c5555  lib/int_sqrt: optimize initial value compute  [Peter Zijlstra]
-72fb07e  lib/int_sqrt: optimize small argument  [Peter Zijlstra]
-e585985  Revert "int_sqrt.c: Correction square root algo with naming"  [Danny Lin]
-f8e9343  Revert "int_sqrt: Improve 3x faster integer sqrt."  [Danny Lin]
-8dba417  clk: qcom: clk-cpu-osm: Query current CPU frequency from OSM  [Danny Lin]
-2fc9f12  clk: qcom: clk-cpu-osm: Don't sleep inside the global clk lock  [Sultan Alsawaf]
-c146347  clk: qcom: clk-cpu-osm: Convert atomic delay into sleep  [Sultan Alsawaf]
-e33c5da  clk: qcom: clk-cpu-osm: Limit the rate of CPU clock-rate changes  [Sultan Alsawaf]
-352dd2d  clk: qcom: clk-cpu-osm: Set dvfs_possible_from_any_cpu cpufreq driver flag  [Pavankumar Kondeti]
-574c35b  cpufreq: schedutil: Don't restrict kthread to related_cpus unnecessarily  [Viresh Kumar]
-820fe5d  cpufreq: Simplify cpufreq_can_do_remote_dvfs()  [Rafael J. Wysocki]
-3d07410  cpufreq: Process remote callbacks from any CPU if the platform permits  [Viresh Kumar]
-bb4444a  sched: cpufreq: Allow remote cpufreq callbacks  [Viresh Kumar]
-f063a4e  usb: dwc3-msm: Switch to freezable workqueue for sm_work  [Badhri Jagan Sridharan]
-79ba0b3  UPSTREAM: readahead: stricter check for bdi io_pages  [Markus Stockhausen]
-d948be0   fs: Improve eventpoll logging to stop indicting timerfd  [Kelly Rossmoyer]
-d26d63a  cpu_input_boost: set SCREEN_AWAKE bit on probe  [Francisco Franco]
-6217d25  net: rmnet_data: Allow changes in UL aggregation parameters  [Subash Abhinov Kasiviswanathan]
-80d1834  kernel: Improve performance critical IRQ framework  [Sultan Alsawaf]
-5f11d62  Revert "kernel: Force trivial, unbound kthreads onto low-power CPUs"  [DennySPB]
-4acdc4f  mm: Boost when memory pressure becomes high  [Sultan Alsawaf]
-cae4365  iommu: iommu-debug: don't pass null character to copy_to_user  [Vijayanand Jitta]
-07e8f20  drivers: dma-removed: use relaxed memory attributes  [Vinayak Menon]
-aee0075  drivers: cpuidle: lpm_levels: Correctly update lpm stats  [Maulik Shah]
-f4b8c72  mm/shmem.c: fix unlikely() test of info->seals to test only for WRITE and GROW  [Steven Rostedt (VMware)]
-bbb84a1  sched/core: Remove unlikely() annotation from sched_move_task()  [Steven Rostedt (VMware)]
-5bfdceb  rtmutex: Delete save_state member of struct rt_mutex  [Davidlohr Bueso]
-44cd7e8  msm: ipa-v3: ipa-rt: remove always-true declaration  [Raphiel Rollerscaperers]
-fc8593f  lib: Implement a basic bcmp (string.c)  [Nick Desaulniers]
-
- * packages/apps/Updater
-09869ff  Updater: Remove download speed on UpdatesListAdapter  [Henrique Silva]
-87742df  Updater: Mark as persistent  [Henrique Silva]
-628c4d7  Updater: Correct cleanup notification action  [jhenrique09]
-37e3287  Updater: Add little delay before sending broadcast  [jhenrique09]
-236a860  Updater: Add network speed into some parts  [jhenrique09]
-26417f8  Updater: Refresh list when update get deleted  [jhenrique09]
-b16ac4a  Updater: Migrate Updater to AndroidX.  [Jyotiraditya]
-
-====================
-     2019-03-27    
-====================
-
- * frameworks/base
-efa562c  base: Fix partial screenshot  [Anushek Prasal]
-0df5c1f  Revert "Clean up back animation view for edge gesture"  [DennySPB]
-
- * kernel/oneplus/sdm845
-e5bd748  ANDROID: sched/fair: fix energy compute when a cluster is only a cpu core in multi-cluster system  [Samer Xie]
-e64a933  string: Use faster alternatives when constant arguments are used  [Sultan Alsawaf]
-c2243b7  cgroup: Test for top-app with strcmp instead of memcmp  [Sultan Alsawaf]
-1e06d50  Merge 4.9.166 into kernel.lnx.4.9.r11-rel  [Nathan Chancellor]
-60771fc  Linux 4.9.166  [Greg Kroah-Hartman]
-8d78505  ath10k: avoid possible string overflow  [Arnd Bergmann]
-d746cb4  power: supply: charger-manager: Fix incorrect return value  [Baolin Wang]
-4061695  pwm-backlight: Enable/disable the PWM before/after LCD enable toggle.  [Enric Balletbo i Serra]
-018ea3f  rtc: Fix overflow when converting time64_t to rtc_time  [Baolin Wang]
-321c5ad  scsi: ufs: fix wrong command type of UTRD for UFSHCI v2.1  [kehuanlin]
-6969767  USB: core: only clean up what we allocated  [Andrey Konovalov]
-e6008a0  lib/int_sqrt: optimize small argument  [Peter Zijlstra]
-503b4ca  serial: sprd: clear timeout interrupt only rather than all interrupts  [Lanqing Liu]
-fc42149  arm64: traps: disable irq in die()  [Qiao Zhou]
-1987172  Hang/soft lockup in d_invalidate with simultaneous calls  [Al Viro]
-356b5e1  serial: sprd: adjust TIMEOUT to a big value  [Wei Qiao]
-dfe4f69  tcp/dccp: drop SYN packets if accept queue is full  [Eric Dumazet]
-9e9e3a4  ALSA: hda - Enforces runtime_resume after S3 and S4 for each codec  [Hui Wang]
-5ee8694  ALSA: hda - Record the current power state before suspend/resume calls  [Takashi Iwai]
-670d934  locking/lockdep: Add debug_locks check in __lock_downgrade()  [Waiman Long]
-bd140b0  Bluetooth: Fix decrementing reference count twice in releasing socket  [Myungho Jung]
-d54a396  media: v4l2-ctrls.c/uvc: zero v4l2_event  [Hans Verkuil]
-7002d0e  ext4: brelse all indirect buffer in ext4_ind_remove_space()  [zhangyi (F)]
-8651fa1e  ext4: fix data corruption caused by unaligned direct AIO  [Lukas Czerner]
-d9f0ce8  ext4: fix NULL pointer dereference while journal is aborted  [Jiufei Xue]
-c818b2f  objtool: Move objtool_file struct off the stack  [Josh Poimboeuf]
-726c28f  futex: Ensure that futex address is aligned in handle_futex_death()  [Chen Jie]
-b84089b  MIPS: Fix kernel crash for R6 in jump label branch function  [Archer Yan]
-c7ac334  MIPS: Ensure ELF appended dtb is relocated  [Yasha Cherikovsky]
-f6b55e7  mips: loongson64: lemote-2f: Add IRQF_NO_SUSPEND to "cascade" irqaction.  [Yifeng Li]
-9247706  udf: Fix crash on IO error during truncate  [Jan Kara]
-9c32ada  libceph: wait for latest osdmap in ceph_monc_blacklist_add()  [Ilya Dryomov]
-cfa2d25  iommu/amd: fix sg->dma_address for sg->offset bigger than PAGE_SIZE  [Stanislaw Gruszka]
-eea23ca  drm/vmwgfx: Don't double-free the mode stored in par->set_mode  [Thomas Zimmermann]
-c179e6d  mmc: pxamci: fix enum type confusion  [Arnd Bergmann]
-
- * packages/apps/Dialer
-5764b85  Make proxi sensor smart-case friendly  [DennySPB]
-
-====================
-     2019-03-26    
-====================
-
- * build/make
-4cf379b  Use flags from Soong for d8, r8, dx and desugar  [Colin Cross]
-
- * build/soong
-e044706  Optimize CPU time when running d8, r8, dx and desugar  [Colin Cross]
-
- * frameworks/av
-4501b26  Request to reset effect buffer in clearInputBuffer  [Ryoichi Yasutake]
-
- * frameworks/base
-5fb85f5  Volume Panel: fix animation glitch with right-sided panel  [DennySPB]
-26c7d21  SystemUI: Fix multiuser icon glitch in QS footer  [Anushek Prasal]
-f9ecd065  SystemUI: Add Cellular tile icon from OOS  [Anushek Prasal]
-714f0b7  ColorFade: Silence logspam  [Anushek Prasal]
-e972432  OP Gestures: Fix navbar detection and landscape mode  [Stylogey]
-3aa4001  Clean up screenshot if nothing selected  [Lyubo]
-377668e  IMMS should preserve selected IME upon boot  [Yohei Yukawa]
-cc0dd73  base: Cleanup FP controller  [hardwareadictos]
-
- * frameworks/native
-ddeaf5a  Respect source crop when capturing layers.  [Alec Mouri]
-f896fa8  libgui: add docs to geometry states and captureScreen  [Chia-I Wu]
-f579848  surfaceflinger: fix captureScreen for landscape LCM  [Chia-I Wu]
-9205bc7  surfaceflinger: improve RenderArea needsFiltering  [Chia-I Wu]
-58ecc5f  surfaceflinger: respect install orientation in DisplayRenderArea  [Chia-I Wu]
-e236493  surfaceflinger: add install orientation to DisplayDevice  [Chia-I Wu]
-c9dc4b4  surfaceflinger: make mPrimaryDisplayOrientation static  [Chia-I Wu]
-003a3e6  surfaceflinger: clean up captureScreen  [Chia-I Wu]
-a1f40ef  surfaceflinger: silence some RenderArea errors  [Chia-I Wu]
-690237d  surfaceflinger: fix race conditions in captureScreen  [Chia-I Wu]
-81434e7  surfaceflinger: remove ISurfaceComposer.h from RenderArea  [Chia-I Wu]
-1535b08  surfaceflinger: reorder width and height in RenderArea ctor  [Chia-I Wu]
-1317159  surfaceflinger: documents RenderArea  [Chia-I Wu]
-
- * packages/apps/SyberiaSettings
-1d2ff3c  Remove ringer from extended audio panel  [DennySPB]
-
- * system/core
-1128717  healthd: make periodic battery status a debug message  [Stefan Assmann]
-
- * vendor/syberia
-216f2fe  vendor: official_devices.json  [DennySPB]
-
-====================
-     2019-03-25    
-====================
-
- * external/proguard
-4da13fb  Allow passing extra java arguments to proguard  [Luca Stefani]
-
- * kernel/oneplus/sdm845
-eadccab  defconfig: Decrease max stune boost to 15  [Danny Lin]
-92a9b2c  cpuset: Restore tasks affinity while moving across cpusets  [Pavankumar Kondeti]
-24eec94  msm: mdp3: Fix retire scheduling  [Animesh Kishore]
-12e357c  slimbus: slim-msm: Handle system suspend while active slimbus transfers  [Dilip Kota]
-957ade5  msm: kgsl: Change data type for GPU ib vote  [Archana Sriram]
-be62972  drm/msm/dp: protect edid and dpcd buffers with mutex  [Ajay Singh Parmar]
-5ecf3d8  diag: Add IOCTL support to query ODL session PID  [Manoj Prabhu B]
-01b071b  f2fs/rapid_gc: Clean up return codes  [Artem Labazov]
-5d90c5c  arm64: dma-mapping: Add missing debug information  [Patrick Daly]
-31983e2  bq27541: optimize a bit  [Park Ju Hyung]
-fbf49c7  bq27541: fix improper timer operations  [Park Ju Hyung]
-48c0eef  Merge tag 'LA.UM.7.8.r1-05000-SDM710.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/fw-api  [DennySPB]
-8b66318  Merge tag 'LA.UM.7.8.r1-05000-SDM710.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0  [DennySPB]
-770202e  Merge branch 'kernel.lnx.4.9.r11-rel' of https://github.com/android-linux-stable/msm-4.9  [DennySPB]
 
