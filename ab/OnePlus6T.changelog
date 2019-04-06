@@ -1,4 +1,12 @@
 ====================
+     2019-04-06    
+====================
+
+ * kernel/oneplus/sdm845
+2b5264d  qcacld, fw-api: revert back to 5.1.1.70J  [Park Ju Hyung]
+d5db353  Merge branch 'kernel.lnx.4.9.r11-rel' of https://github.com/android-linux-stable/msm-4.9 into HEAD  [blinoff82]
+
+====================
      2019-04-05    
 ====================
 
@@ -6,13 +14,103 @@
 e346c7c  exfat: Rename utf conversion symbols  [Tom Marshall]
 9e9dc69  exfat: Add static libs for recovery  [Tom Marshall]
 
+ * kernel/oneplus/sdm845
+7ba328e  Merge 4.9.168 into kernel.lnx.4.9.r11-rel  [Nathan Chancellor]
+e93d474  Linux 4.9.168  [Greg Kroah-Hartman]
+baf5048  ACPI / video: Extend chassis-type detection with a "Lunch Box" check  [Hans de Goede]
+f139c25  drm/dp/mst: Configure no_stop_bit correctly for remote i2c xfers  [Ville Syrjälä]
+5f99bd3  dmaengine: tegra: avoid overflow of byte tracking  [Ben Dooks]
+875268e  x86/build: Mark per-CPU symbols as absolute explicitly for LLD  [Rafael Ávila de Espíndola]
+8ede088  wlcore: Fix memory leak in case wl12xx_fetch_firmware failure  [Zumeng Chen]
+992baf5  selinux: do not override context on context mounts  [Ondrej Mosnacek]
+d4dad34  x86/build: Specify elf_i386 linker emulation explicitly for i386 objects  [George Rimar]
+865b88b  drm/nouveau: Stop using drm_crtc_force_disable  [Daniel Vetter]
+471ab0e  regulator: act8865: Fix act8600_sudcdc_voltage_ranges setting  [Axel Lin]
+b956497  media: s5p-jpeg: Check for fmt_ver_flag when doing fmt enumeration  [Pawe? Chmiel]
+2ae06da  netfilter: physdev: relax br_netfilter dependency  [Florian Westphal]
+817d556  dmaengine: qcom_hidma: assign channel cookie correctly  [Shunyong Yang]
+a0a8b92  dmaengine: imx-dma: fix warning comparison of distinct pointer types  [Anders Roxell]
+92ca8a2  hpet: Fix missing '=' character in the __setup() code of hpet_mmap_enable  [Buland Singh]
+8e6a1b3  HID: intel-ish: ipc: handle PIMR before ish_wakeup also clear PISR busy_clear bit  [Song Hongyan]
+e8a39ce  soc/tegra: fuse: Fix illegal free of IO base address  [Timo Alho]
+cc76e66  hwrng: virtio - Avoid repeated init of completion  [David Tolnay]
+576e941  media: mt9m111: set initial frame size other than 0x0  [Akinobu Mita]
+0c724ad  powerpc/pseries: Perform full re-add of CPU for topology update post-migration  [Nathan Fontenot]
+876c978  tty: increase the default flip buffer limit to 2*640K  [Manfred Schlaegl]
+0f11d2c  ARM: avoid Cortex-A9 livelock on tight dmb loops  [Russell King]
+e174804  mt7601u: bump supported EEPROM version  [Stanislaw Gruszka]
+5142b34  soc: qcom: gsbi: Fix error handling in gsbi_probe()  [Alexey Khoroshilov]
+02c2935  ARM: dts: lpc32xx: Remove leading 0x and 0s from bindings notation  [Mathieu Malaterre]
+17dc1d9  efi/memattr: Don't bail on zero VA if it equals the region's PA  [Ard Biesheuvel]
+ba69abc  ASoC: fsl-asoc-card: fix object reference leaks in fsl_asoc_card_probe  [wen yang]
+21d9c54  e1000e: fix cyclic resets at link up with active tx  [Konstantin Khlebnikov]
+f04b47a  cdrom: Fix race condition in cdrom_sysctl_register  [Guenter Roeck]
+c18638e  fbdev: fbmem: fix memory access if logo is bigger than the screen  [Manfred Schlaegl]
+b6ff217  iw_cxgb4: fix srqidx leak during connection abort  [Raju Rangoju]
+acb5aef  genirq: Avoid summation loops for /proc/stat  [Thomas Gleixner]
+e940258  bcache: improve sysfs_strtoul_clamp()  [Coly Li]
+5f0bef7  bcache: fix input overflow to sequential_cutoff  [Coly Li]
+4f9395b  bcache: fix input overflow to cache set sysfs file io_error_halflife  [Coly Li]
+4914592  usb: f_fs: Avoid crash due to out-of-scope stack ptr access  [John Stultz]
+9b5a341  ALSA: PCM: check if ops are defined before suspending PCM  [Ranjani Sridharan]
+1de344c  ARM: 8833/1: Ensure that NEON code always compiles with Clang  [Nathan Chancellor]
+9c24366  kprobes: Prohibit probing on bsearch()  [Andrea Righi]
+bca7485  ACPI / video: Refactor and fix dmi_is_desktop()  [Hans de Goede]
+000b116  iwlwifi: pcie: fix emergency path  [Sara Sharon]
+13b56f0  leds: lp55xx: fix null deref on firmware load failure  [Michal Kazior]
+83e5f3f  HID: intel-ish-hid: avoid binding wrong ishtp_cl_device  [Hong Liu]
+24c6f9f  vfs: fix preadv64v2 and pwritev64v2 compat syscalls with offset == -1  [Aurelien Jarno]
+97ac96e  media: mx2_emmaprp: Correct return type for mem2mem buffer helpers  [Ezequiel Garcia]
+f5acae3  media: s5p-g2d: Correct return type for mem2mem buffer helpers  [Ezequiel Garcia]
+208285a  media: s5p-jpeg: Correct return type for mem2mem buffer helpers  [Ezequiel Garcia]
+646bca6  media: sh_veu: Correct return type for mem2mem buffer helpers  [Ezequiel Garcia]
+25e68ae  SoC: imx-sgtl5000: add missing put_device()  [Wen Yang]
+e07e9b1  perf test: Fix failure of 'evsel-tp-sched' test on s390  [Thomas Richter]
+650c8ec  scsi: megaraid_sas: return error when create DMA pool failed  [Jason Yan]
+c14cf48  IB/mlx4: Increase the timeout for CM cache  [Håkon Bugge]
+fa5a4be  mlxsw: spectrum: Avoid -Wformat-truncation warnings  [Florian Fainelli]
+fef12d0  e1000e: Fix -Wformat-truncation warnings  [Florian Fainelli]
+437e565  mmc: omap: fix the maximum timeout setting  [Aaro Koskinen]
+afa8739  iommu/io-pgtable-arm-v7s: Only kmemleak_ignore L2 tables  [Nicolas Boichat]
+43e01fe  ARM: 8840/1: use a raw_spinlock_t in unwind  [Sebastian Andrzej Siewior]
+db3ef3e  coresight: etm4x: Add support to enable ETMv4.2  [Sai Prakash Ranjan]
+7b0dfe4  scsi: core: replace GFP_ATOMIC with GFP_KERNEL in scsi_scan.c  [Benjamin Block]
+e45d08f  usb: chipidea: Grab the (legacy) USB PHY by phandle first  [Paul Kocialkowski]
+fd3f750  crypto: crypto4xx - add missing of_node_put after of_device_is_available  [Julia Lawall]
+a695807  wil6210: check null pointer in _wil_cfg80211_merge_extra_ies  [Alexei Avshalom Lazar]
+ae0c4d3  tools lib traceevent: Fix buffer overflow in arg_eval  [Tony Jones]
+2624115  fs: fix guard_bio_eod to check for real EOD errors  [Carlos Maiolino]
+a05d994  jbd2: fix invalid descriptor block checksum  [luojiajun]
+9d5a48f  cifs: Fix NULL pointer dereference of devname  [Yao Liu]
+83d6849  dm thin: add sanity checks to thin-pool and external snapshot creation  [Jason Cai (Xiang Feng)]
+d617c20  cifs: use correct format characters  [Louis Taylor]
+7368f92  fs/file.c: initialize init_files.resize_wait  [Shuriyc Chu]
+af17a24  f2fs: do not use mutex lock in atomic context  [Sahitya Tummala]
+aed3804  ocfs2: fix a panic problem caused by o2cb_ctl  [Jia Guo]
+206b87d  mm/slab.c: kmemleak no scan alien caches  [Qian Cai]
+e6bd3ed  mm/vmalloc.c: fix kernel BUG at mm/vmalloc.c:512!  [Uladzislau Rezki (Sony)]
+7880fc29  mm/page_ext.c: fix an imbalance with kmemleak  [Qian Cai]
+dcd85a7  mm/cma.c: cma_declare_contiguous: correct err handling  [Peng Fan]
+76159ea  scsi: hisi_sas: Set PHY linkrate when disconnected  [John Garry]
+b278391  enic: fix build warning without CONFIG_CPUMASK_OFFSTACK  [Arnd Bergmann]
+6b65c26  sysctl: handle overflow for file-max  [Christian Brauner]
+553be48  include/linux/relay.h: fix percpu annotation in struct rchan  [Luc Van Oostenryck]
+8b1e0dd  gpio: gpio-omap: fix level interrupt idling  [Russell King]
+3085d41  tracing: kdb: Fix ftdump to not sleep  [Douglas Anderson]
+0140f0d  h8300: use cc-cross-prefix instead of hardcoding h8300-unknown-linux-  [Masahiro Yamada]
+56300d3  CIFS: fix POSIX lock leak and invalid ptr deref  [Aurelien Aptel]
+2555029  i2c: core-smbus: prevent stack corruption on read I2C_BLOCK_DATA  [Jeremy Compostella]
+d59794a  mm: mempolicy: make mbind() return -EIO when MPOL_MF_STRICT is specified  [Yang Shi]
+0668f0d  tty/serial: atmel: RS485 HD w/DMA: enable RX after TX is stopped  [Razvan Stefanescu]
+ab18aa0  tty/serial: atmel: Add is_half_duplex helper  [Razvan Stefanescu]
+627f9c3  lib/int_sqrt: optimize initial value compute  [Peter Zijlstra]
+32c5630  ext4: cleanup bh release code in ext4_ind_remove_space()  [zhangyi (F)]
+1d7f481  arm64: debug: Ensure debug handlers check triggering exception level  [Will Deacon]
+cc785dc  arm64: debug: Don't propagate UNKNOWN FAR into si_code for debug signals  [Will Deacon]
+
  * packages/apps/SyberiaSettings
 e859827  Merge pull request #54 from governmentissuejoe/patch-1  [Ivan Blinov]
 a55ff19  Fix typo  [governmentissuejoe]
-
- * vendor/syberia
-aa43400  syberia: qcom: Set proper CAF data-ipa-cfg-mgr pathmap  [Michael Bestas]
-fb6a586  syberia: qcom: Set data-ipa-cfg-mgr pathmap  [Ethan Chen]
 
 ====================
      2019-04-04    
@@ -25,12 +123,76 @@ fb6a586  syberia: qcom: Set data-ipa-cfg-mgr pathmap  [Ethan Chen]
 af6cea9  Refactoring screen "About Team" [1/2] now the list of team members is in the file "packages/apps/Settings/assets/syberia.json"  [alexxxdev]
 
  * vendor/syberia
+aa43400  syberia: qcom: Set proper CAF data-ipa-cfg-mgr pathmap  [Michael Bestas]
+fb6a586  syberia: qcom: Set data-ipa-cfg-mgr pathmap  [Ethan Chen]
 26c0c22  Syberia: bump to v2.4  [blinoff82]
-5a40059  Fonts: Add CircularStd  [Arghya Chanda]
 
 ====================
      2019-04-03    
 ====================
+
+ * kernel/oneplus/sdm845
+2a49ab3  Merge 4.9.167 into kernel.lnx.4.9.r11-rel  [Nathan Chancellor]
+21834d3  Linux 4.9.167  [Greg Kroah-Hartman]
+cc2852a  arm64: support keyctl() system call in 32-bit mode  [Eric Biggers]
+0f8d02d  Revert "USB: core: only clean up what we allocated"  [Greg Kroah-Hartman]
+2423480  xhci: Fix port resume done detection for SS ports with LPM enabled  [Mathias Nyman]
+6c75189  USB: gadget: f_hid: fix deadlock in f_hidg_write()  [Radoslav Gerganov]
+756e25c  KVM: x86: Emulate MSR_IA32_ARCH_CAPABILITIES on AMD hosts  [Sean Christopherson]
+c217b3c  KVM: Reject device ioctls from processes other than the VM's creator  [Sean Christopherson]
+6e9a714  x86/smp: Enforce CONFIG_HOTPLUG_CPU when SMP=y  [Thomas Gleixner]
+ce4fbb9  cpu/hotplug: Prevent crash when CPU bringup fails on CONFIG_HOTPLUG_CPU=n  [Thomas Gleixner]
+32b6e8c  perf intel-pt: Fix TSC slip  [Adrian Hunter]
+9450278  usb: host: xhci-rcar: Add XHCI_TRUST_TX_LENGTH quirk  [Yasushi Asano]
+1137f3f  usb: common: Consider only available nodes for dr_mode  [Fabrizio Castro]
+e8d3f4b  gpio: adnp: Fix testing wrong value in adnp_gpio_direction_input  [Axel Lin]
+28f0641  fs/proc/proc_sysctl.c: fix NULL pointer dereference in put_links  [YueHaibing]
+9b06a0b  Disable kgdboc failed by echo space to /sys/module/kgdboc/parameters/kgdboc  [Wentao Wang]
+7cd3656  USB: serial: option: add Olicard 600  [Bjørn Mork]
+4ac639f  USB: serial: option: set driver_info for SIM5218 and compatibles  [Mans Rullgard]
+bc9b458  USB: serial: mos7720: fix mos_parport refcount imbalance on error path  [Lin Yi]
+0e53054  USB: serial: ftdi_sio: add additional NovaTech products  [George McCollister]
+f97285b  USB: serial: cp210x: add new device id  [Greg Kroah-Hartman]
+2c90192  serial: sh-sci: Fix setting SCSCR_TIE while transferring data  [Hoan Nguyen An]
+110ee90  serial: max310x: Fix to avoid potential NULL pointer dereference  [Aditya Pakki]
+edb5270  staging: vt6655: Fix interrupt race condition on device start up.  [Malcolm Priestley]
+b2dadb8  staging: vt6655: Remove vif check from vnt_interrupt  [Malcolm Priestley]
+8c9a96e  staging: comedi: ni_mio_common: Fix divide-by-zero for DIO cmdtest  [Ian Abbott]
+fe186fd  tty: atmel_serial: fix a potential NULL pointer dereference  [Kangjie Lu]
+727b857  scsi: zfcp: fix scsi_eh host reset with port_forced ERP for non-NPIV FCP devices  [Steffen Maier]
+a63e134  scsi: zfcp: fix rport unblock if deleted SCSI devices on Scsi_Host  [Steffen Maier]
+8404089  scsi: sd: Quiesce warning if device does not report optimal I/O size  [Martin K. Petersen]
+6c6e8cc  scsi: sd: Fix a race between closing an sd device and sd I/O  [Bart Van Assche]
+7d7637d  fs/open.c: allow opening only regular files during execve()  [Tetsuo Handa]
+be0c268  ALSA: pcm: Don't suspend stream in unrecoverable PCM state  [Takashi Iwai]
+a1eb297  ALSA: pcm: Fix possible OOB access in PCM oss plugins  [Takashi Iwai]
+e308b10  ALSA: seq: oss: Fix Spectre v1 vulnerability  [Gustavo A. R. Silva]
+c84a764  ALSA: rawmidi: Fix potential Spectre v1 vulnerability  [Gustavo A. R. Silva]
+c9416ce  net: dsa: qca8k: remove leftover phy accessors  [Christian Lamparter]
+22a8711  NFSv4.1 don't free interrupted slot on open  [Olga Kornievskaia]
+91f81cb  powerpc: bpf: Fix generation of load/store DW instructions  [Naveen N. Rao]
+0e14614  ARM: imx6q: cpuidle: fix bug that CPU might not wake up at expected time  [Kohji Okuno]
+5ca1860  btrfs: raid56: properly unmap parity page in finish_parity_scrub()  [Andrea Righi]
+44f705e  btrfs: remove WARN_ON in log_dir_items  [Josef Bacik]
+7b5f260  tun: add a missing rcu_read_unlock() in error path  [Eric Dumazet]
+6f0f365  tun: properly test for IFF_UP  [Eric Dumazet]
+b731b5d0  mac8390: Fix mmio access size probe  [Finn Thain]
+4f05457  sctp: get sctphdr by offset in sctp_compute_cksum  [Xin Long]
+5da9828  vxlan: Don't call gro_cells_destroy() before device is unregistered  [Zhiqiang Liu]
+5018d91  tcp: do not use ipv6 header for ipv4 flow  [Eric Dumazet]
+936a918  packets: Always register packet sk in the same order  [Maxime Chevallier]
+65a1ff9  net: rose: fix a possible stack overflow  [Eric Dumazet]
+49190e4  net/packet: Set __GFP_NOWARN upon allocation in alloc_pg_vec  [Christoph Paasch]
+5291fcb  mISDN: hfcpci: Test both vendor & device ID for Digium HFC4S  [Bjorn Helgaas]
+dc8390f  dccp: do not use ipv6 header for ipv4 flow  [Eric Dumazet]
+c6f9eda  stmmac: copy unicast mac address to MAC registers  [Bhadram Varka]
+9406040  cfg80211: size various nl80211 messages correctly  [Johannes Berg]
+270fdb1  video: fbdev: Set pixclock = 0 in goldfishfb  [Christoffer Dall]
+99665dc  Bluetooth: Verify that l2cap_get_conf_opt provides large enough buffer  [Marcel Holtmann]
+def5c1f  Bluetooth: Check L2CAP option sizes returned from l2cap_get_conf_opt  [Marcel Holtmann]
+
+ * vendor/syberia
+5a40059  Fonts: Add CircularStd  [Arghya Chanda]
 
 ====================
      2019-04-02    
@@ -40,28 +202,12 @@ af6cea9  Refactoring screen "About Team" [1/2] now the list of team members is i
 7a2e246  Merge pull request #1 from coderzstas/9.0  [Ivan Blinov]
 bb52e11  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/build into 9.0  [coderzstas]
 
- * device/qcom/sepolicy
-c2cd216  selinux: Add policy for rild to add IDataConnection HAL  [Eric Chang]
-
  * frameworks/base
 7cbea20  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/frameworks/base into HEAD  [blinoff82]
-
- * kernel/oneplus/sdm845
-4d9bcb0  cpufreq: schedutil: Reduce frequencies slower  [Rafael J. Wysocki]
-0c26408  block: prevent merging of requests with different priorities  [Damien Le Moal]
-3c3360c  sched/cpufreq: Remove unused SUGOV_KTHREAD_PRIORITY macro  [Leo Yan]
-48b461b  cpufreq: schedutil: Use idle_calls counter of the remote CPU  [Joel Fernandes]
-4ddee9f  sched/cpufreq: Don't pass flags to sugov_set_iowait_boost()  [Viresh Kumar]
-ee45aa1  cpufreq: schedutil: Always process remote callback with slow switching  [Viresh Kumar]
-5f7856c  rcu: Speed up calling of RCU tasks callbacks  [Steven Rostedt (VMware)]
-0367266  mm/page_owner: use kvmalloc instead of kmalloc  [Miles Chen]
 
  * packages/apps/Bluetooth
 04e228e  Merge pull request #2 from coderzstas/9.0  [Ivan Blinov]
 48f85d8  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/packages/apps/Bluetooth into 9.0  [coderzstas]
-
- * packages/apps/Settings
-4277d46  Settings: Add deep sleep info to uptime  [Stefan Berger]
 
  * packages/apps/SyberiaSettings
 392b9c9  gemini: end of life  [blinoff82]
@@ -81,6 +227,16 @@ aead2b1  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platf
      2019-04-01    
 ====================
 
+ * device/qcom/sepolicy
+c2cd216  selinux: Add policy for rild to add IDataConnection HAL  [Eric Chang]
+
+ * kernel/oneplus/sdm845
+5f7856c  rcu: Speed up calling of RCU tasks callbacks  [Steven Rostedt (VMware)]
+0367266  mm/page_owner: use kvmalloc instead of kmalloc  [Miles Chen]
+
+ * packages/apps/Settings
+4277d46  Settings: Add deep sleep info to uptime  [Stefan Berger]
+
  * vendor/syberia
 6d74f8c  Merge pull request #10 from mdeejay/9.0  [Ivan Blinov]
 473e6b7  syberia: qcom: Set thermal & vr HAL pathmaps  [Michael Bestas]
@@ -92,16 +248,6 @@ aead2b1  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platf
  * device/qcom/sepolicy
 42be12d  sepolicy: Whitelist vold from reading mnt_vendor_file  [Michael Bestas]
 
- * kernel/oneplus/sdm845
-36cefbc  Set 403 mhz as return freq for silver cluster  [blinoff82]
-
  * system/core
 2af1d8b  reboot: only run fsck when detecting filesystem inconsistency  [Randall Huang]
-
-====================
-     2019-03-30    
-====================
-
- * kernel/oneplus/sdm845
-b43dcac  Revert "lib/int_sqrt: optimize initial value compute"  [blinoff82]
 
