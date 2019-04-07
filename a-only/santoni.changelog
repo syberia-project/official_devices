@@ -1,167 +1,205 @@
 ====================
-     2019-03-31    
-====================
-
-====================
-     2019-03-30    
+     2019-04-07    
 ====================
 
  * device/xiaomi/santoni
-6bde489  santoni: update modem and Peripheral manager blobs from tissot  [HarukeyUA]
+d766d2c  prebuilts: update Lawnchair to alpha-1940  [HarukeyUA]
 
- * hardware/qcom/display-caf/msm8996
-aa552d4  Merge pull request #4 from SOVIET-ANDROID/9.0-caf-8996  [DennySPb]
+====================
+     2019-04-06    
+====================
+
+ * device/xiaomi/santoni
+daf16a0  santoni: switch selinux to permissive for now  [HarukeyUA]
+d9ccee8  santoni: nuke data-ipa-cfg-mgr  [HarukeyUA]
+80c773f  sepolicy: fix denials that occures on encrypted device  [HarukeyUA]
+192a4a8  santoni: sepolicy: address init_fingerprint denials  [Ryan Andri]
+9a2b134  Revert "santoni: remove goodix script"  [HarukeyUA]
+0946a02  sepolicy: fix user reported denials Suspected in causing random reboots for some users  [HarukeyUA]
+d43bd00  santoni: sepolicy: allow gx_fpd and tee domain to access persi…  [Ryan Andri]
+
+====================
+     2019-04-05    
+====================
+
+ * external/exfat
+e346c7c  exfat: Rename utf conversion symbols  [Tom Marshall]
+9e9dc69  exfat: Add static libs for recovery  [Tom Marshall]
 
  * packages/apps/SyberiaSettings
-e0e468b  New maintainer for Xiaomi Poco F1 (beryllium)  [blinoff82]
-
- * vendor/xiaomi
-e7c8d4d  santoni: update modem blobs from tissot  [HarukeyUA]
-39fc6a0  santoni: update Peripheral manager blobs from tissot  [HarukeyUA]
-
-====================
-     2019-03-29    
-====================
-
- * hardware/qcom/display-caf/msm8996
-a4b597f  hwc: Remove _vendor from libbfqio  [dianlujitao]
-df1a047  hwc: Set ioprio for vsync thread  [Steve Kondik]
-
-====================
-     2019-03-28    
-====================
-
- * device/xiaomi/santoni
-de179f8  prebuilts: update Lawnchair to 1056-alpha  [DennySPB]
-
- * packages/apps/Updater
-09869ff  Updater: Remove download speed on UpdatesListAdapter  [Henrique Silva]
-87742df  Updater: Mark as persistent  [Henrique Silva]
-628c4d7  Updater: Correct cleanup notification action  [jhenrique09]
-37e3287  Updater: Add little delay before sending broadcast  [jhenrique09]
-236a860  Updater: Add network speed into some parts  [jhenrique09]
-26417f8  Updater: Refresh list when update get deleted  [jhenrique09]
-b16ac4a  Updater: Migrate Updater to AndroidX.  [Jyotiraditya]
-
-====================
-     2019-03-27    
-====================
-
- * device/xiaomi/santoni
-2d6ed32  santoni: biometrics: Create a seperate binder thread pool for … …gx_fpd  [Nich]
-ced8905  santoni: biometrics: Remove fingerprintd proxy for Goodix  [Nich]
-a037b5c  santoni: biometrics: Restore remaining templates logging  [Nich]
-ecbfce9  santoni: biometrics: Add sanity check for enumerate() return value  [Nich]
-0d46d58  santoni: biometrics: Use log/log.h instead  [Nich]
-c70a36d  santoni: biometrics: Bypass notifying device about ERROR_CANCELED  [Nich]
-e7ae657  santoni: biometrics: Avoid doing multiple property_get  [Nich]
-c40634e  santoni: Partially revert "land: biometrics: Refactor, improve and cleanup"  [Nich]
-462b78b  santoni: biometrics: Refactor, improve and cleanup  [Nich]
-92e2feb  santoni: biometrics: Don't start fingerprintd with FPC  [Nich]
-7090ebf  santoni: biometrics: Switch to LOCAL_VENDOR_MODULE  [Nich]
-359ede6  santoni: biometrics: Directly pass messages received from fingerprintd  [Nich]
-95cc97a  Revert "santoni: biometrics: Get rid of manually created IKeystoreService"  [HarukeyUA]
-7003cbb  santoni: Build clearkey HIDL service. Convert clearkey plugin to HIDL to support drm HAL v1.1. Add SELinux policy for android.hardware.drm@1.1-service.clearkey.  [Edwin Wong]
-2dd76bf  santoni: Don't build android.hardware.drm@1.0-service.widevine  [HarukeyUA]
-2da8fc7  santoni: remove unused cryptfs_hw files  [HarukeyUA]
-d227986  santoni: Build snap cam  [HarukeyUA]
-6f91c22  santoni: Fix setCameraLaunchStatus  [haran]
-7d1e247  santoni: camera: Don't attempt to trigger buggy backend color correction  [Nich]
-06d92fd  santoni: camera: Remove tests  [Michael Bestas]
-a4e3ac9  santoni: camera: Set KEY_XM_MAKEUP when change in value is detected  [Nich]
-da51ef5  QCamera2: HAL3: Add video encoder flags for high speed recording  [Santhosh Kumar Thimmanna Bhattar]
-a0ff328  QCamera2: HAL: Fix CTS CameraDeviceTest issues  [Shobhit Singh]
-6af54bf  QCamera2: update AF state in UrgentMetadata  [Saritha Yamasani]
-31a3b76  santoni: camera: Fix powerHAL usage  [Wei Wang]
-d6aceba  QCamera2: HAL: Power Hint not working  [Ankur Maheshwari]
-0039991  santoni: camera: Start vsync only for video  [Nich]
-c657d5b  QCamera2:HAL1: startVsync during start/stop preview  [Saritha Yamasani]
-26c1057  QCameraDisplay: Address FR49059  [Abhishek Jain]
-5b19340  QCamera2:QCameraDisplay:Dynamic registration of display service.  [Abhinav Sohane]
-e1ab42d  QCamera2:QCameraDisplay:Merging fix of DisplayService transaction failed.  [Abhinav Sohane]
-c2b1e46  QCamera2:HAL :Changes to get the vsync event and presentation timestamp  [Sauhard Pande]
-0b55bea  santoni: camera: Support Xiaomi makeup parameters  [Nich]
-b9bcfc5  santoni: camera: Replace libcamera_client to android.hardware.camera.common@1.0-helper  [Jiyong Park]
-ec65cc4  santoni: Revert "QCamera2: For supporting VNDK and Treble rules."  [Nich]
-4d3a14b  santoni: Squashed revert of camera changes  [HarukeyUA]
-50a9729  dependencies: add HALs  [HarukeyUA]
-
- * frameworks/base
-efa562c  base: Fix partial screenshot  [Anushek Prasal]
-0df5c1f  Revert "Clean up back animation view for edge gesture"  [DennySPB]
-5fb85f5  Volume Panel: fix animation glitch with right-sided panel  [DennySPB]
-
- * packages/apps/Dialer
-5764b85  Make proxi sensor smart-case friendly  [DennySPB]
-
- * packages/apps/SyberiaSettings
-1d2ff3c  Remove ringer from extended audio panel  [DennySPB]
+e859827  Merge pull request #54 from governmentissuejoe/patch-1  [Ivan Blinov]
+a55ff19  Fix typo  [governmentissuejoe]
 
  * vendor/syberia
-216f2fe  vendor: official_devices.json  [DennySPB]
+aa43400  syberia: qcom: Set proper CAF data-ipa-cfg-mgr pathmap  [Michael Bestas]
+fb6a586  syberia: qcom: Set data-ipa-cfg-mgr pathmap  [Ethan Chen]
+26c0c22  Syberia: bump to v2.4  [blinoff82]
 
 ====================
-     2019-03-26    
+     2019-04-04    
+====================
+
+ * device/xiaomi/santoni
+034067a  sepolicy: update sepolicy for syberia  [HarukeyUA]
+
+ * packages/apps/Settings
+35aaf32  Refactoring screen "About Team" [2/2] now the list of team members is in the file "packages/apps/Settings/assets/syberia.json"  [alexxxdev]
+
+ * packages/apps/SyberiaSettings
+af6cea9  Refactoring screen "About Team" [1/2] now the list of team members is in the file "packages/apps/Settings/assets/syberia.json"  [alexxxdev]
+
+ * vendor/syberia
+5a40059  Fonts: Add CircularStd  [Arghya Chanda]
+
+====================
+     2019-04-03    
+====================
+
+ * device/xiaomi/santoni
+825763b  santoni: drop old sepolicy  [HarukeyUA]
+9d18420  santoni: overlay: update power profile  [Ryan Andri]
+276a125  santoni: remove goodix script and add some sepolicy  [HarukeyUA]
+fb2d265  sepolicy: fix some denials  [HarukeyUA]
+227ed5d  santoni: simplify goodix script conditions  [HarukeyUA]
+887f7a3  sepolicy: fix even more denials  [HarukeyUA]
+04fd445  santoni: import sensors stuff  [HarukeyUA]
+3d23322  sepolicy: fix more denials  [HarukeyUA]
+2d0a2c9  We are not in marshmallow times any more  [andreisaniuk]
+8e7d096  santoni: Run sensors.qti as system/system  [Ethan Chen]
+22a98a0  sepolicy: fix some denials and switch to enforcing  [HarukeyUA]
+ac386df  santoni: build separate system and vendor hidl libs  [Demon Singur]
+6b9c597  sepolicy: fix thermal-engine denials  [HarukeyUA]
+eb16fc2  santoni: remove /data/time/ symlink  [HarukeyUA]
+181862f  santoni: rootdir: Don't allow dac_override for goodix script  [Nich]
+973d233  Revert "santoni: wlan: update symlink paths"  [HarukeyUA]
+8508b41  santoni: Baseband script changes  [Nich]
+301eeb3  santoni: update sensors blobs from tissot  [HarukeyUA]
+7f024da  santoni: correct updated path for goodix script  [Mao Jinlong]
+f162851  santoni: init.qcom.rc: Correct the alarm persist folder path  [Mao Jinlong]
+1ffdb80  santoni: wlan: update symlink paths  [ZeeLog]
+271b995  santoni: Change the MBN copy property prefix  [Sai Kousik Swarna]
+a165e68  santoni: Fix MBN copy issue  [Hua Liu]
+53d03db  santoni: Change scripts for copying MBNs  [Hua Liu]
+fc7ca76  santoni: display: Create display folder under /mnt/vendor/persist  [Qing Huang]
+b5d1002  santoni: init.qcom.rc: Change time persist folder path  [Mao Jinlong]
+b654ea8  santoni: Use build system to create mount point symlinks  [Bruno Martins]
+405cb72  santoni: Update symlinks for new mount points  [dianlujitao]
+43dc68b  santoni: Create mount point symlinks for backward compatibility  [dianlujitao]
+c077dae  santoni: Moving persist mount point to /mnt/vendor/persist  [Vinay Verma]
+af931ab  santoni: config.fs: Specify firmware image files as system:system  [David Ng]
+7b86736  santoni: Update references of firmware to /vendor/firmware_mnt  [Vinay Verma]
+93d09f2  santoni: Mount dsp and firmware in vendor  [Vinay Verma]
+07d104d  santoni: init.qcom.rc: Change qti service name to dataqti  [Mohammed Javid]
+ac68ae8  santoni: Add vendor prefix to data/ims vendor binaries  [Pavan Kumar M]
+802193f  santoni: Change data properties to comply with Treble  [Sean Tranchetti]
+ab99b64  santoni: ueventd.qcom.rc: set permissions of /dev/qce device  [Zhen Kong]
+43b598e  santoni: Add vendor prefix to data connectivity  [Devi Sandeep Endluri V V]
+35c38fa  santoni: Add "vendor" prefix to service name.  [Ankit Jain]
+9b14b6f  santoni: rootdir: sensors.qcom -> sensors.qti  [ZeeLog]
+b409b8a  santoni: rootdir: remove stale sensor entries  [ZeeLog]
+2f60a87  santoni: sepolicy: Address dac_overrides issues in shell scripts  [ZeeLog]
+44e9ffc  santoni: append vendor to per_proxy service  [ZeeLog]
+048617f  santoni: init.qcom.rc: cleanup the mess  [ZeeLog]
+d57ddd0  santoni: init.target.rc: remove stale mkdir entries  [ZeeLog]
+3bb2950  santoni: append vendor prefix to more services  [ZeeLog]
+19d619e  santoni: init.qcom.rc: Change charger process label  [Fenglin Wu]
+e443156  santoni: Change how we set the alarm property  [Michael Bestas]
+f17b6f9  sepolicy: fix neverallow  [HarukeyUA]
+50d4daa  santoni: add sepolicy for goodix hax  [HarukeyUA]
+12fefdb  santoni: RILD: Remove copying of QCRIL DB from vendor partition  [Ravi Kishore R]
+eac0074  sepolicy: properly solve healthd denials  [HarukeyUA]
+ebb5d41  santoni: remove duplicated folder creation  [ZeeLog]
+e51812e  santoni: Remove creation of /data/misc/wifi and /data/misc/dhcp  [Han Wang]
+20b0f6a  santoni: Add graphics group for post_boot.sh execution  [Sridhar Parasuram]
+486c32f  santoni: Add system/wakelock groups to post_boot.sh script  [Sridhar Parasuram]
+5f79e2d  santoni: remove unused nfc folder creation  [ZeeLog]
+79943f6  santoni: Remove creating and accessing /data/media from vendor domain  [Mahesh Lanka]
+850e7ae  santoni: Start loc_launcher as gps user  [Harikrishnan Hariharan]
+f0ee1ca  santoni: Remove non-existent iop daemon  [ZeeLog]
+a313800  santoni: rootdir: Turn down debugging on wpa_supplicant  [Dan Pasanen]
+42fea3c  santoni: rootdir: Stop creating useless folders under /data  [Bruno Martins]
+64108e3  santoni: init: remove previous bluetooth folder creation  [ZeeLog]
+a8786d1  santoni: remove voice print folder creation  [ZeeLog]
+2cf124e  santoni: init: remove previous hostapd folder creation  [ZeeLog]
+b79966b  santoni: init: remove factory test folder creation  [ZeeLog]
+18cdd92  santoni: init: drop SRS folder creation  [ZeeLog]
+b42d9af  santoni: remove duplicate camera folder creation  [ZeeLog]
+7a55018  santoni: move camera sockets in new location  [Nick Kralevich]
+c2f4e8e  santoni: remove useless attempt to chmod /system/bin/ip  [Nick Kralevich]
+20173d7  santoni: init: remove camera stale path  [ZeeLog]
+2a5a2d0  santoni: Change socket creation path as part of treble rules  [Suman Mukherjee]
+85acf9b  santoni: camera: Fix dump frm location  [Murat Kozan]
+9efbc3f  santoni: init: stop creating useless folders  [ZeeLog]
+3f87e6a  santoni: add vendor prefix to service  [HarukeyUA]
+3099385  santoni: remove ipacm-diag  [ZeeLog]
+f745061  sepolicy: fix healthd and health hal denials  [HarukeyUA]
+f5377c7  santoni: rootdir: run sensors.qcom with system group  [Rashed Abdel-Tawab]
+7163afd  santoni: set label for adsp  [klozz]
+4b51299  sepolicy: fix block device labeling  [HarukeyUA]
+233f8fb  sepolicy: add missing types  [HarukeyUA]
+a4353fb  santoni: rootdir: Do not symlink sdcard legacy path  [Demon Singur]
+0042f97  santoni: add vendor prefix to ipacm-diag  [HarukeyUA]
+5bed196  sepolicy: fix  [HarukeyUA]
+41c3ca0  santoni: rootdir: Remove /tombstones symlink creation  [Bruno Martins]
+c746b65  sepolicy: fix type  [HarukeyUA]
+47a6289  sepolocy: adapt fp policy  [HarukeyUA]
+3cba568  selinux: context  [HarukeyUA]
+9f3cc77  sepolicy: remove policy for advenced controls app  [HarukeyUA]
+9b1ee97  sepolicy: alter contexts fro santoni  [HarukeyUA]
+b252c7f  sepolicy: import sepolicies from mido  [HarukeyUA]
+b5e6d69  santoni: Address dac_override and dac_read_search issues in init.qcom.sh  [Sridhar Parasuram]
+660fe04  santoni: Run gx_fpd as system user  [Nich]
+
+ * kernel/xiaomi/msm8937
+2f2cbb3  Merge 3.18.138 into kernel.lnx.3.18.r34-rel  [Nathan Chancellor]
+
+ * packages/apps/SyberiaSettings
+392b9c9  gemini: end of life  [blinoff82]
+315db67  whyred: left the team  [blinoff82]
+
+ * vendor/xiaomi
+68a188a  santoni: update sensors blobs  [HarukeyUA]
+464417b  santoni: hex edit camera blob  [HarukeyUA]
+476d467  santoni: remove ipacm-diag  [ZeeLog]
+
+====================
+     2019-04-02    
 ====================
 
  * build/make
-4cf379b  Use flags from Soong for d8, r8, dx and desugar  [Colin Cross]
+7a2e246  Merge pull request #1 from coderzstas/9.0  [Ivan Blinov]
+bb52e11  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/build into 9.0  [coderzstas]
 
- * build/soong
-e044706  Optimize CPU time when running d8, r8, dx and desugar  [Colin Cross]
-
- * frameworks/av
-4501b26  Request to reset effect buffer in clearInputBuffer  [Ryoichi Yasutake]
+ * device/qcom/sepolicy
+c2cd216  selinux: Add policy for rild to add IDataConnection HAL  [Eric Chang]
 
  * frameworks/base
-26c7d21  SystemUI: Fix multiuser icon glitch in QS footer  [Anushek Prasal]
-f9ecd065  SystemUI: Add Cellular tile icon from OOS  [Anushek Prasal]
-714f0b7  ColorFade: Silence logspam  [Anushek Prasal]
-e972432  OP Gestures: Fix navbar detection and landscape mode  [Stylogey]
-3aa4001  Clean up screenshot if nothing selected  [Lyubo]
-377668e  IMMS should preserve selected IME upon boot  [Yohei Yukawa]
-cc0dd73  base: Cleanup FP controller  [hardwareadictos]
+7cbea20  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/frameworks/base into HEAD  [blinoff82]
 
- * frameworks/native
-ddeaf5a  Respect source crop when capturing layers.  [Alec Mouri]
-f896fa8  libgui: add docs to geometry states and captureScreen  [Chia-I Wu]
-f579848  surfaceflinger: fix captureScreen for landscape LCM  [Chia-I Wu]
-9205bc7  surfaceflinger: improve RenderArea needsFiltering  [Chia-I Wu]
-58ecc5f  surfaceflinger: respect install orientation in DisplayRenderArea  [Chia-I Wu]
-e236493  surfaceflinger: add install orientation to DisplayDevice  [Chia-I Wu]
-c9dc4b4  surfaceflinger: make mPrimaryDisplayOrientation static  [Chia-I Wu]
-003a3e6  surfaceflinger: clean up captureScreen  [Chia-I Wu]
-a1f40ef  surfaceflinger: silence some RenderArea errors  [Chia-I Wu]
-690237d  surfaceflinger: fix race conditions in captureScreen  [Chia-I Wu]
-81434e7  surfaceflinger: remove ISurfaceComposer.h from RenderArea  [Chia-I Wu]
-1535b08  surfaceflinger: reorder width and height in RenderArea ctor  [Chia-I Wu]
-1317159  surfaceflinger: documents RenderArea  [Chia-I Wu]
+ * packages/apps/Bluetooth
+04e228e  Merge pull request #2 from coderzstas/9.0  [Ivan Blinov]
+48f85d8  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/packages/apps/Bluetooth into 9.0  [coderzstas]
 
- * system/core
-1128717  healthd: make periodic battery status a debug message  [Stefan Assmann]
+ * packages/apps/Settings
+4277d46  Settings: Add deep sleep info to uptime  [Stefan Berger]
+
+ * packages/apps/SyberiaSettings
+5baf9c5  Merge pull request #53 from coderzstas/9.0  [Ivan Blinov]
+1eb43f2  SyberiaSettings : add me to dev team  [coderzstas]
+
+ * system/bt
+906c31d  Merge pull request #3 from coderzstas/9.0  [Ivan Blinov]
+aead2b1  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/system/bt into 9.0  [coderzstas]
+
+ * system/netd
+8e79f0f  Merge pull request #1 from coderzstas/9.0  [Ivan Blinov]
+9e612a1  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/system/netd into 9.0  [coderzstas]
 
 ====================
-     2019-03-25    
+     2019-04-01    
 ====================
 
- * build/kati
-4b1faf5  Sort results of output from the "find" command  [Timothy Murphy]
-c41983d  Ignore TMPDIR when calculating the kati stamp  [Timothy Murphy]
-38a0b0d  Silence FindEmulator  [Brandon McAnsh]
-
- * build/make
-9b58780  Accept TARGET_DEVICE_DIR preserved from previous product load  [Dan Willemsen]
-
- * build/soong
-93d97f5  Prebuilts shouldn't inherit linker interface  [Yi Kong]
-920fa72  Pass TARGET_DEVICE_DIR from dumpvars to later kati runs  [Dan Willemsen]
-
- * external/proguard
-4da13fb  Allow passing extra java arguments to proguard  [Luca Stefani]
-
- * frameworks/base
-3a23ab4  Workaround for wallpaper not shown correctly problem  [Yongqin Liu]
-83bd28c  SystemUI: Dismiss keyguard on boot if disabled by current profile  [Gabriele M]
-84eb9c9  Suppress FingerprintManager logspam  [Harsh Shandilya]
-5688fac   Kill off provider info logspam  [Harsh Shandilya]
+ * vendor/syberia
+6d74f8c  Merge pull request #10 from mdeejay/9.0  [Ivan Blinov]
+473e6b7  syberia: qcom: Set thermal & vr HAL pathmaps  [Michael Bestas]
 
