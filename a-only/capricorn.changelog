@@ -1,152 +1,103 @@
 ====================
-     2019-03-31    
-====================
-
- * kernel/xiaomi/msm8996
-a6c9406  Revert "Revert "Revert "Revert "Remove moar polly optimization flags""""  [Gabor Meszaros]
-919bf12  Revert "Revert "Revert "Revert "Revert "Makefile: update opt flags"""""  [Gabor Meszaros]
-bc2f1b0  Revert "enable polly"  [Gabor Meszaros]
-
-====================
-     2019-03-30    
-====================
-
- * hardware/qcom/display-caf/msm8996
-aa552d4  Merge pull request #4 from SOVIET-ANDROID/9.0-caf-8996  [DennySPb]
-
- * packages/apps/SyberiaSettings
-e0e468b  New maintainer for Xiaomi Poco F1 (beryllium)  [blinoff82]
-
-====================
-     2019-03-29    
-====================
-
- * hardware/qcom/display-caf/msm8996
-a4b597f  hwc: Remove _vendor from libbfqio  [dianlujitao]
-df1a047  hwc: Set ioprio for vsync thread  [Steve Kondik]
-
-====================
-     2019-03-28    
-====================
-
- * packages/apps/Updater
-09869ff  Updater: Remove download speed on UpdatesListAdapter  [Henrique Silva]
-87742df  Updater: Mark as persistent  [Henrique Silva]
-628c4d7  Updater: Correct cleanup notification action  [jhenrique09]
-37e3287  Updater: Add little delay before sending broadcast  [jhenrique09]
-236a860  Updater: Add network speed into some parts  [jhenrique09]
-26417f8  Updater: Refresh list when update get deleted  [jhenrique09]
-b16ac4a  Updater: Migrate Updater to AndroidX.  [Jyotiraditya]
-
-====================
-     2019-03-27    
+     2019-04-07    
 ====================
 
  * device/xiaomi/capricorn
-6678b1c  config.fs: add mapping for sensors.qti  [Gabor]
-a032d6d  dependencies: add hals  [Gabor]
-
- * frameworks/base
-efa562c  base: Fix partial screenshot  [Anushek Prasal]
-0df5c1f  Revert "Clean up back animation view for edge gesture"  [DennySPB]
-5fb85f5  Volume Panel: fix animation glitch with right-sided panel  [DennySPB]
-
- * kernel/xiaomi/msm8996
-094e2f8  enable polly  [Gabor Meszaros]
-e6f01e8  Revert "Revert "Revert "Revert "Makefile: update opt flags""""  [Gabor Meszaros]
-2be7fad  Revert "Revert "Revert "Remove moar polly optimization flags"""  [Gabor Meszaros]
-
- * packages/apps/Dialer
-5764b85  Make proxi sensor smart-case friendly  [DennySPB]
-
- * packages/apps/SyberiaSettings
-1d2ff3c  Remove ringer from extended audio panel  [DennySPB]
+3a8b81e  remove data-ipa-cfg-mgr  [Gabor Meszaros]
 
 ====================
-     2019-03-26    
+     2019-04-06    
 ====================
-
- * build/make
-4cf379b  Use flags from Soong for d8, r8, dx and desugar  [Colin Cross]
-
- * build/soong
-e044706  Optimize CPU time when running d8, r8, dx and desugar  [Colin Cross]
 
  * device/xiaomi/capricorn
-c6279d2  init: start hwcomposer early, gralloc and configstore vendor prefix  [Gabor Meszaros]
+fd6df54  audio_effects: add JamesDSP effect library  [DennySPB]
+24c13ca  sepolicy: some update  [Gabor Meszaros]
 
- * frameworks/av
-4501b26  Request to reset effect buffer in clearInputBuffer  [Ryoichi Yasutake]
+ * kernel/xiaomi/msm8996
+95c04c5  qdsp6v2: dts_eagle: use newer drivers  [Laster K]
+c6f6763  defconfig: enable dts eagle and mbhc  [Laster K]
+c66a755  sound: soc: codecs: wcd-mbhc-v2: Uncomment g_DebugMode check  [Pavel Dubrova]
+9034dd4  sound: wcd9335: Disable g_DebugMode  [joshuous]
+3f5c57c  Initial AudioWizard bringup  [joshuous]
+fafdae7  sound: DTS-Eagle integration  [joshuous]
+cb65ea6  drivers: import of dts_eagle hardware driver  [Laster K. (lazerl0rd)]
+d58e860  Kconfig: msm: remove deprecated dts eagle driver  [Laster K]
+dad60b8  defconfig : enable ip_sctp  [Gabor Meszaros]
 
- * frameworks/base
-26c7d21  SystemUI: Fix multiuser icon glitch in QS footer  [Anushek Prasal]
-f9ecd065  SystemUI: Add Cellular tile icon from OOS  [Anushek Prasal]
-714f0b7  ColorFade: Silence logspam  [Anushek Prasal]
-e972432  OP Gestures: Fix navbar detection and landscape mode  [Stylogey]
-3aa4001  Clean up screenshot if nothing selected  [Lyubo]
-377668e  IMMS should preserve selected IME upon boot  [Yohei Yukawa]
-cc0dd73  base: Cleanup FP controller  [hardwareadictos]
+====================
+     2019-04-05    
+====================
 
- * frameworks/native
-ddeaf5a  Respect source crop when capturing layers.  [Alec Mouri]
-f896fa8  libgui: add docs to geometry states and captureScreen  [Chia-I Wu]
-f579848  surfaceflinger: fix captureScreen for landscape LCM  [Chia-I Wu]
-9205bc7  surfaceflinger: improve RenderArea needsFiltering  [Chia-I Wu]
-58ecc5f  surfaceflinger: respect install orientation in DisplayRenderArea  [Chia-I Wu]
-e236493  surfaceflinger: add install orientation to DisplayDevice  [Chia-I Wu]
-c9dc4b4  surfaceflinger: make mPrimaryDisplayOrientation static  [Chia-I Wu]
-003a3e6  surfaceflinger: clean up captureScreen  [Chia-I Wu]
-a1f40ef  surfaceflinger: silence some RenderArea errors  [Chia-I Wu]
-690237d  surfaceflinger: fix race conditions in captureScreen  [Chia-I Wu]
-81434e7  surfaceflinger: remove ISurfaceComposer.h from RenderArea  [Chia-I Wu]
-1535b08  surfaceflinger: reorder width and height in RenderArea ctor  [Chia-I Wu]
-1317159  surfaceflinger: documents RenderArea  [Chia-I Wu]
+ * external/exfat
+e346c7c  exfat: Rename utf conversion symbols  [Tom Marshall]
+9e9dc69  exfat: Add static libs for recovery  [Tom Marshall]
 
- * system/core
-1128717  healthd: make periodic battery status a debug message  [Stefan Assmann]
+ * packages/apps/SyberiaSettings
+e859827  Merge pull request #54 from governmentissuejoe/patch-1  [Ivan Blinov]
+a55ff19  Fix typo  [governmentissuejoe]
 
  * vendor/syberia
-216f2fe  vendor: official_devices.json  [DennySPB]
+aa43400  syberia: qcom: Set proper CAF data-ipa-cfg-mgr pathmap  [Michael Bestas]
+fb6a586  syberia: qcom: Set data-ipa-cfg-mgr pathmap  [Ethan Chen]
 
 ====================
-     2019-03-25    
+     2019-04-04    
 ====================
 
- * build/kati
-4b1faf5  Sort results of output from the "find" command  [Timothy Murphy]
-c41983d  Ignore TMPDIR when calculating the kati stamp  [Timothy Murphy]
-38a0b0d  Silence FindEmulator  [Brandon McAnsh]
+ * packages/apps/Settings
+35aaf32  Refactoring screen "About Team" [2/2] now the list of team members is in the file "packages/apps/Settings/assets/syberia.json"  [alexxxdev]
+
+ * packages/apps/SyberiaSettings
+af6cea9  Refactoring screen "About Team" [1/2] now the list of team members is in the file "packages/apps/Settings/assets/syberia.json"  [alexxxdev]
+
+ * vendor/syberia
+26c0c22  Syberia: bump to v2.4  [blinoff82]
+5a40059  Fonts: Add CircularStd  [Arghya Chanda]
+
+====================
+     2019-04-03    
+====================
+
+====================
+     2019-04-02    
+====================
 
  * build/make
-9b58780  Accept TARGET_DEVICE_DIR preserved from previous product load  [Dan Willemsen]
+7a2e246  Merge pull request #1 from coderzstas/9.0  [Ivan Blinov]
+bb52e11  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/build into 9.0  [coderzstas]
 
- * build/soong
-93d97f5  Prebuilts shouldn't inherit linker interface  [Yi Kong]
-920fa72  Pass TARGET_DEVICE_DIR from dumpvars to later kati runs  [Dan Willemsen]
-
- * device/xiaomi/capricorn
-ea011ac  change readme. TODO: hax light sensor to work syberia jasmine sensor blobs if possible and align more  [Gabor Meszaros]
-1f641a6  Revert "msm8996-common: sepolicy: Address qfp-daemon denials properly"  [Gabor Meszaros]
-8f21bef  Revert "msm8996-common: sepolicy: Fix type attributes"  [Gabor Meszaros]
-905445d  add dependencies  [Gabor Meszaros]
-576da38  nfc: copy libnfc-nci.conf to system instead of vendor  [Gabor Meszaros]
-
- * external/proguard
-4da13fb  Allow passing extra java arguments to proguard  [Luca Stefani]
+ * device/qcom/sepolicy
+c2cd216  selinux: Add policy for rild to add IDataConnection HAL  [Eric Chang]
 
  * frameworks/base
-3a23ab4  Workaround for wallpaper not shown correctly problem  [Yongqin Liu]
-83bd28c  SystemUI: Dismiss keyguard on boot if disabled by current profile  [Gabriele M]
-84eb9c9  Suppress FingerprintManager logspam  [Harsh Shandilya]
-5688fac   Kill off provider info logspam  [Harsh Shandilya]
+7cbea20  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/frameworks/base into HEAD  [blinoff82]
 
- * kernel/xiaomi/msm8996
-d2eb41e  defconfig:switch to original msm_thermal  [Gabor Meszaros]
-29cfc6e  Merge branch '9.0' of https://github.com/SyberiaProject-Devices/platform_kernel_xiaomi_msm8996 into syb-rebase  [Gabor Meszaros]
+ * packages/apps/Bluetooth
+04e228e  Merge pull request #2 from coderzstas/9.0  [Ivan Blinov]
+48f85d8  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/packages/apps/Bluetooth into 9.0  [coderzstas]
 
- * vendor/xiaomi
-867490f  Revert "msm8996-common: Revert "Reset to stock sensor blobs""  [Gabor Meszaros]
-7b2b12f  Revert "msm8996-common: Update sensor blobs from daisy"  [Gabor Meszaros]
-46ccdb5  sdm845-common: update blobs from 9.3.11 beta  [Akhil Narang]
-e78770e  sdm845-common: delete unneeded blob, regenerate makefile  [Akhil Narang]
+ * packages/apps/Settings
+4277d46  Settings: Add deep sleep info to uptime  [Stefan Berger]
+
+ * packages/apps/SyberiaSettings
+392b9c9  gemini: end of life  [blinoff82]
+315db67  whyred: left the team  [blinoff82]
+5baf9c5  Merge pull request #53 from coderzstas/9.0  [Ivan Blinov]
+1eb43f2  SyberiaSettings : add me to dev team  [coderzstas]
+
+ * system/bt
+906c31d  Merge pull request #3 from coderzstas/9.0  [Ivan Blinov]
+aead2b1  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/system/bt into 9.0  [coderzstas]
+
+ * system/netd
+8e79f0f  Merge pull request #1 from coderzstas/9.0  [Ivan Blinov]
+9e612a1  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/system/netd into 9.0  [coderzstas]
+
+====================
+     2019-04-01    
+====================
+
+ * vendor/syberia
+6d74f8c  Merge pull request #10 from mdeejay/9.0  [Ivan Blinov]
+473e6b7  syberia: qcom: Set thermal & vr HAL pathmaps  [Michael Bestas]
 
