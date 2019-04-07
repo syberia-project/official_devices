@@ -1,0 +1,272 @@
+====================
+     2019-04-07    
+====================
+
+ * kernel/xiaomi/whyred
+459f67d  Merge branch 'fw-api/LA.UM.7.2.r1-06700-sdm660.0' into pie  [Akhil Narang]
+0732a65  Merge branch 'qca-wifi-host-cmn/LA.UM.7.2.r1-06700-sdm660.0' into pie  [Akhil Narang]
+762774a  Merge branch 'qcacld-3.0/LA.UM.7.2.r1-06700-sdm660.0' into pie  [Akhil Narang]
+e73995cd  Merge branch 'caf/LA.UM.7.2.r1-06700-sdm660.0' into pie  [Akhil Narang]
+
+====================
+     2019-04-06    
+====================
+
+====================
+     2019-04-05    
+====================
+
+ * external/exfat
+e346c7c  exfat: Rename utf conversion symbols  [Tom Marshall]
+9e9dc69  exfat: Add static libs for recovery  [Tom Marshall]
+
+ * kernel/xiaomi/whyred
+009aba5  vdso32: Invoke clang with correct path to GCC toolchain  [Daniel Mentz]
+bc505e9  whyred: enable CONFIG_CC_WERROR  [Akhil Narang]
+
+ * packages/apps/SyberiaSettings
+e859827  Merge pull request #54 from governmentissuejoe/patch-1  [Ivan Blinov]
+a55ff19  Fix typo  [governmentissuejoe]
+
+====================
+     2019-04-04    
+====================
+
+ * packages/apps/Settings
+35aaf32  Refactoring screen "About Team" [2/2] now the list of team members is in the file "packages/apps/Settings/assets/syberia.json"  [alexxxdev]
+
+ * packages/apps/SyberiaSettings
+af6cea9  Refactoring screen "About Team" [1/2] now the list of team members is in the file "packages/apps/Settings/assets/syberia.json"  [alexxxdev]
+
+ * vendor/syberia
+aa43400  syberia: qcom: Set proper CAF data-ipa-cfg-mgr pathmap  [Michael Bestas]
+fb6a586  syberia: qcom: Set data-ipa-cfg-mgr pathmap  [Ethan Chen]
+26c0c22  Syberia: bump to v2.4  [blinoff82]
+
+====================
+     2019-04-03    
+====================
+
+ * kernel/xiaomi/whyred
+53170dc  Merge remote-tracking branch 'android-linux-stable/kernel.lnx.4.4.r34-rel' into pie  [Akhil Narang]
+a9c8d8d  Merge remote-tracking branch 'aosp/android-4.4' into pie  [Akhil Narang]
+9415f72  Merge 4.4.178 into kernel.lnx.4.4.r34-rel  [Nathan Chancellor]
+12ae58c  Linux 4.4.178  [Greg Kroah-Hartman]
+b1b1efe  stm class: Hide STM-specific options if STM is disabled  [Geert Uytterhoeven]
+c003b56  coresight: removing bind/unbind options from sysfs  [Mathieu Poirier]
+455b9a6  arm64: support keyctl() system call in 32-bit mode  [Eric Biggers]
+d14ac43  Revert "USB: core: only clean up what we allocated"  [Greg Kroah-Hartman]
+78d145f  xhci: Fix port resume done detection for SS ports with LPM enabled  [Mathias Nyman]
+9aacea7  KVM: Reject device ioctls from processes other than the VM's creator  [Sean Christopherson]
+5ce6e5b  x86/smp: Enforce CONFIG_HOTPLUG_CPU when SMP=y  [Thomas Gleixner]
+0fe681f  perf intel-pt: Fix TSC slip  [Adrian Hunter]
+e250a5a  gpio: adnp: Fix testing wrong value in adnp_gpio_direction_input  [Axel Lin]
+6271fa6  fs/proc/proc_sysctl.c: fix NULL pointer dereference in put_links  [YueHaibing]
+98bc2f9  Disable kgdboc failed by echo space to /sys/module/kgdboc/parameters/kgdboc  [Wentao Wang]
+6c1c9cf  USB: serial: option: add Olicard 600  [Bjørn Mork]
+09d3f1e  USB: serial: option: set driver_info for SIM5218 and compatibles  [Mans Rullgard]
+6ef819f  USB: serial: mos7720: fix mos_parport refcount imbalance on error path  [Lin Yi]
+ef0d781  USB: serial: ftdi_sio: add additional NovaTech products  [George McCollister]
+7139e4d  USB: serial: cp210x: add new device id  [Greg Kroah-Hartman]
+327ee45  serial: sh-sci: Fix setting SCSCR_TIE while transferring data  [Hoan Nguyen An]
+7124c71  serial: max310x: Fix to avoid potential NULL pointer dereference  [Aditya Pakki]
+2e7c2f2  staging: vt6655: Fix interrupt race condition on device start up.  [Malcolm Priestley]
+1740064  staging: vt6655: Remove vif check from vnt_interrupt  [Malcolm Priestley]
+13f6808  tty: atmel_serial: fix a potential NULL pointer dereference  [Kangjie Lu]
+21da2b4  scsi: zfcp: fix scsi_eh host reset with port_forced ERP for non-NPIV FCP devices  [Steffen Maier]
+d8007fb  scsi: zfcp: fix rport unblock if deleted SCSI devices on Scsi_Host  [Steffen Maier]
+2f36912  scsi: sd: Fix a race between closing an sd device and sd I/O  [Bart Van Assche]
+49ad739  ALSA: pcm: Don't suspend stream in unrecoverable PCM state  [Takashi Iwai]
+c07db6f  ALSA: pcm: Fix possible OOB access in PCM oss plugins  [Takashi Iwai]
+f98242a8  ALSA: seq: oss: Fix Spectre v1 vulnerability  [Gustavo A. R. Silva]
+619ae9f  ALSA: rawmidi: Fix potential Spectre v1 vulnerability  [Gustavo A. R. Silva]
+e162927  ALSA: compress: add support for 32bit calls in a 64bit kernel  [Ravindra Lokhande]
+ed2f3c8  ARM: imx6q: cpuidle: fix bug that CPU might not wake up at expected time  [Kohji Okuno]
+61bde5e  btrfs: raid56: properly unmap parity page in finish_parity_scrub()  [Andrea Righi]
+a23f004  btrfs: remove WARN_ON in log_dir_items  [Josef Bacik]
+48b22ac  mac8390: Fix mmio access size probe  [Finn Thain]
+981cb03  sctp: get sctphdr by offset in sctp_compute_cksum  [Xin Long]
+c5874f3  vxlan: Don't call gro_cells_destroy() before device is unregistered  [Zhiqiang Liu]
+6c362ff  tcp: do not use ipv6 header for ipv4 flow  [Eric Dumazet]
+617ac1a  packets: Always register packet sk in the same order  [Maxime Chevallier]
+dd3351b  Add hlist_add_tail_rcu() (Merge git://git.kernel.org/pub/scm/linux/kernel/git/davem/net)  [David S. Miller]
+2c2d8a1  net: rose: fix a possible stack overflow  [Eric Dumazet]
+b969da5  net/packet: Set __GFP_NOWARN upon allocation in alloc_pg_vec  [Christoph Paasch]
+3f1c0e4  mISDN: hfcpci: Test both vendor & device ID for Digium HFC4S  [Bjorn Helgaas]
+2f242b2  dccp: do not use ipv6 header for ipv4 flow  [Eric Dumazet]
+46c8459  stmmac: copy unicast mac address to MAC registers  [Bhadram Varka]
+949c4ef4  cfg80211: size various nl80211 messages correctly  [Johannes Berg]
+695fc28  mmc: mmc: fix switch timeout issue caused by jiffies precision  [Chaotian Jing]
+c89eced  arm64: kconfig: drop CONFIG_RTC_LIB dependency  [Ezequiel Garcia]
+4a024ea  video: fbdev: Set pixclock = 0 in goldfishfb  [Christoffer Dall]
+d200cc9  cpu/hotplug: Handle unbalanced hotplug enable/disable  [Lianwei Wang]
+13e84cd  usb: gadget: rndis: free response queue during REMOTE_NDIS_RESET_MSG  [Xerox Lin]
+0752035  usb: gadget: configfs: add mutex lock before unregister gadget  [Winter Wang]
+01855b6  ipv6: fix endianness error in icmpv6_err  [Hannes Frederic Sowa]
+b0351a5  stm class: Fix stm device initialization order  [Alexander Shishkin]
+2040e80  stm class: Do not leak the chrdev in error path  [Alexander Shishkin]
+fbfaa26  PM / Hibernate: Call flush_icache_range() on pages restored in-place  [James Morse]
+60e4a50  arm64: kernel: Include _AC definition in page.h  [James Morse]
+2ba2cca  perf/ring_buffer: Refuse to begin AUX transaction after rb->aux_mmap_count drops  [Alexander Shishkin]
+e5a19cf  mac80211: fix "warning: ‘target_metric’ may be used uninitialized"  [Jeff Mahoney]
+08d870c  arm64/kernel: fix incorrect EL0 check in inv_entry macro  [Ard Biesheuvel]
+823e262  ARM: 8510/1: rework ARM_CPU_SUSPEND dependencies  [Lorenzo Pieralisi]
+a99d340  staging: goldfish: audio: fix compiliation on arm  [Greg Hackmann]
+9d4b439  staging: ion: Set minimum carveout heap allocation order to PAGE_SHIFT  [Rajmal Menariya]
+efa2ec2  staging: ashmem: Add missing include  [Rom Lemarchand]
+4dcbf6f  staging: ashmem: Avoid deadlock with mmap/shrink  [Laura Abbott]
+021c0d5  asm-generic: Fix local variable shadow in __set_fixmap_offset  [Mark Rutland]
+43ea28e  coresight: etm4x: Check every parameter used by dma_xx_coherent.  [Eric Long]
+58af2f0  coresight: "DEVICE_ATTR_RO" should defined as static.  [Eric Long]
+c66866b  stm class: Fix a race in unlinking  [Alexander Shishkin]
+8c0bfd9  stm class: Fix unbalanced module/device refcounting  [Alexander Shishkin]
+f34bc5a  stm class: Guard output assignment against concurrency  [Alexander Shishkin]
+bc9d781  stm class: Fix unlocking braino in the error path  [Alexander Shishkin]
+65b52bb  stm class: Support devices with multiple instances  [Alexander Shishkin]
+ffb2f3f  stm class: Prevent user-controllable allocations  [Alexander Shishkin]
+30e94dc  stm class: Fix link list locking  [Alexander Shishkin]
+a556f0b  stm class: Fix locking in unbinding policy path  [Alexander Shishkin]
+03d7b4e  coresight: remove csdev's link from topology  [Mathieu Poirier]
+a2828b9  coresight: release reference taken by 'bus_find_device()'  [Mathieu Poirier]
+3e2070a  coresight: coresight_unregister() function cleanup  [Mathieu Poirier]
+f485f97  coresight: fixing lockdep error  [Mathieu Poirier]
+9bda5e6  writeback: initialize inode members that track writeback history  [Tahsin Erdogan]
+cb8251f  Revert "mmc: block: don't use parameter prefix if built as module"  [Ulf Hansson]
+ab3f1a5  net: diag: support v4mapped sockets in inet_diag_find_one_icsk()  [Eric Dumazet]
+6f31138  perf: Synchronously free aux pages in case of allocation failure  [Alexander Shishkin]
+b6496f0  arm64: hide __efistub_ aliases from kallsyms  [Ard Biesheuvel]
+2aeca9a  hid-sensor-hub.c: fix wrong do_div() usage  [Nicolas Pitre]
+bdf3c00  vmstat: make vmstat_updater deferrable again and shut down on idle  [Christoph Lameter]
+119dbcd  android: unconditionally remove callbacks in sync_fence_free()  [Dmitry Torokhov]
+7276c3f  ARM: 8494/1: mm: Enable PXN when running non-LPAE kernel on LPAE processor  [Jungseung Lee]
+717da8c  ARM: 8458/1: bL_switcher: add GIC dependency  [Arnd Bergmann]
+1f2c3b4  efi: stub: define DISABLE_BRANCH_PROFILING for all architectures  [Ard Biesheuvel]
+599dcbf  arm64: fix COMPAT_SHMLBA definition for large pages  [Yury Norov]
+4afe1af  mmc: block: Allow more than 8 partitions per card  [Colin Cross]
+e431968  sched/fair: Fix new task's load avg removed from source CPU in wake_up_new_task()  [Yuyang Du]
+ade4560  Bluetooth: Verify that l2cap_get_conf_opt provides large enough buffer  [Marcel Holtmann]
+d220360  Bluetooth: Check L2CAP option sizes returned from l2cap_get_conf_opt  [Marcel Holtmann]
+a140223  ath10k: avoid possible string overflow  [Arnd Bergmann]
+ee8f5d4  rtc: Fix overflow when converting time64_t to rtc_time  [Baolin Wang]
+0cd0867  USB: core: only clean up what we allocated  [Andrey Konovalov]
+466ab66  lib/int_sqrt: optimize small argument  [Peter Zijlstra]
+7a47e3c  serial: sprd: clear timeout interrupt only rather than all interrupts  [Lanqing Liu]
+4104b44  usb: renesas_usbhs: gadget: fix unused-but-set-variable warning  [Yoshihiro Shimoda]
+e86206b  arm64: traps: disable irq in die()  [Qiao Zhou]
+a3fbab1  Hang/soft lockup in d_invalidate with simultaneous calls  [Al Viro]
+4a97f08  serial: sprd: adjust TIMEOUT to a big value  [Wei Qiao]
+7ed7c03  tcp/dccp: drop SYN packets if accept queue is full  [Eric Dumazet]
+a12cf32  usb: gadget: Add the gserial port checking in gs_start_tx()  [Baolin Wang]
+36be44e  usb: gadget: composite: fix dereference after null check coverify warning  [Peter Chen]
+c0f71ba  kbuild: setlocalversion: print error to STDERR  [Wolfram Sang]
+1e647cf  extcon: usb-gpio: Don't miss event during suspend/resume  [Roger Quadros]
+7f69a98  mm/rmap: replace BUG_ON(anon_vma->degree) with VM_WARN_ON  [Konstantin Khlebnikov]
+1394b1b  mmc: core: fix using wrong io voltage if mmc_select_hs200 fails  [Dong Aisheng]
+aa8b7ed  arm64: mm: Add trace_irqflags annotations to do_debug_exception()  [James Morse]
+df2ca32  usb: dwc3: gadget: Fix suspend/resume during device mode  [Roger Quadros]
+f242723  mmc: core: shut up "voltage-ranges unspecified" pr_info()  [Russell King]
+6a0f575  mmc: sanitize 'bus width' in debug output  [Wolfram Sang]
+40c01c8  mmc: make MAN_BKOPS_EN message a debug  [Wolfram Sang]
+282d5f0  mmc: debugfs: Add a restriction to mmc debugfs clock setting  [Chuanxiao Dong]
+c8816bb  mmc: pwrseq_simple: Make reset-gpios optional to match doc  [Martin Fuzzey]
+4d026d2  ALSA: hda - Enforces runtime_resume after S3 and S4 for each codec  [Hui Wang]
+2569eed  ALSA: hda - Record the current power state before suspend/resume calls  [Takashi Iwai]
+4aada79  locking/lockdep: Add debug_locks check in __lock_downgrade()  [Waiman Long]
+7862077  media: v4l2-ctrls.c/uvc: zero v4l2_event  [Hans Verkuil]
+a8dea33  mmc: tmio_mmc_core: don't claim spurious interrupts  [Sergei Shtylyov]
+c37fd98  ext4: brelse all indirect buffer in ext4_ind_remove_space()  [zhangyi (F)]
+2ebfb9a  ext4: fix data corruption caused by unaligned direct AIO  [Lukas Czerner]
+2b6575e  ext4: fix NULL pointer dereference while journal is aborted  [Jiufei Xue]
+2f59c12  futex: Ensure that futex address is aligned in handle_futex_death()  [Chen Jie]
+8df0d57  MIPS: Fix kernel crash for R6 in jump label branch function  [Archer Yan]
+5c06f24  mips: loongson64: lemote-2f: Add IRQF_NO_SUSPEND to "cascade" irqaction.  [Yifeng Li]
+c30b41b  udf: Fix crash on IO error during truncate  [Jan Kara]
+8b12fd7  drm/vmwgfx: Don't double-free the mode stored in par->set_mode  [Thomas Zimmermann]
+e884f7d  mmc: pxamci: fix enum type confusion  [Arnd Bergmann]
+89488fe  kernel: Boost whenever a zygote-forked process becomes a top app  [Sultan Alsawaf]
+a4fdb86  devfreq_boost: Remove unused devfreq_get_boost_dev function  [Sultan Alsawaf]
+68a11af  devfreq_boost: Clean up code style and update license header  [Sultan Alsawaf]
+cc1cc0c  cpu_input_boost: Mark boost kthread as performance critical  [Sultan Alsawaf]
+28e5321  cpu_input_boost: Serialize everything with a master kthread  [Sultan Alsawaf]
+e60b32b  cpu_input_boost: Clean up some style inconsistencies  [Sultan Alsawaf]
+33a7b37  cpu_input_boost: Only update cpu policy for one CPU in each cluster  [Sultan Alsawaf]
+3405810  cpu_input_boost: Block external boosts when the screen is turned off  [Sultan Alsawaf]
+cfb55dd  cpu_input_boost: Code style nitpicks  [Sultan Alsawaf]
+55bccea  cpu_input_boost: Clean up code style and update license header  [Sultan Alsawaf]
+e87ba90  cpu_input_boost: Eliminate spin lock by using atomic cmpxchg loop  [Sultan Alsawaf]
+1659dd3  cpu_input_boost: Simplify bitwise operations used to store boost state  [Sultan Alsawaf]
+d66d2af  cpu_input_boost: Fix and refactor max boost logic  [Sultan Alsawaf]
+9d36679  cpu_input_boost: expose input freqs and duration to userspace  [Francisco Franco]
+0a53c27  cpu_input_boost: Add API for boosting all CPUs to max frequency  [Sultan Alsawaf]
+be06147  whyred_defconfig: Omit frame pointer  [Sultan Alsawaf]
+d957ca9  arm64: Don't force FRAME_POINTER  [Sultan Alsawaf]
+67c8c77  msm: kgsl: Increase worker thread priority  [Sultan Alsawaf]
+bae96a3  msm: mdss: Boost cpubw devfreq device when a new frame is ready  [Sultan Alsawaf]
+642f0d3  kernel: Boost cpubw devfreq device to the max for app launches  [Sultan Alsawaf]
+2f2bf65  kernel: Boost all CPUs to the max when userspace launches an app  [Sultan Alsawaf]
+
+ * vendor/syberia
+5a40059  Fonts: Add CircularStd  [Arghya Chanda]
+
+====================
+     2019-04-02    
+====================
+
+ * build/make
+7a2e246  Merge pull request #1 from coderzstas/9.0  [Ivan Blinov]
+bb52e11  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/build into 9.0  [coderzstas]
+
+ * frameworks/base
+7cbea20  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/frameworks/base into HEAD  [blinoff82]
+
+ * kernel/xiaomi/whyred
+3ee966f  whyred_defconfig: Configure devfreq boost driver  [Sultan Alsawaf]
+48c5445  devfreq: Introduce devfreq boost driver  [Sultan Alsawaf]
+55c477f  msm: kgsl: Remove POPP  [Sultan Alsawaf]
+37317b3  msm: kgsl: Wake GPU upon receiving an ioctl rather than upon touch input  [Sultan Alsawaf]
+30697e2  cpu_input_boost: Destroy workqueue on error path in init  [Sultan Alsawaf]
+3476eb2  cpu_input_boost: Introduce driver for event-based CPU boosting  [Sultan Alsawaf]
+535e218  qcacld-3.0: Fix uninitialized iface pointer dereference  [Sultan Alsawaf]
+26d5654  msm: asm: validate ADSP data before access  [Vignesh Kulothungan]
+9829452  Merge "dsp: asm: validate payload size before access" into kernel.lnx.4.4.r34-rel  [Linux Build Service Account]
+930434a  Merge "dsp: validate token before usage as array index" into kernel.lnx.4.4.r34-rel  [Linux Build Service Account]
+3963fd0  qcacmn: Validate number of entries in extract_host_mem_req_tlv()  [Arif Hussain]
+5689b24  msm: ice: check for crypto engine availability  [Neeraj Soni]
+6501c69  dsp: validate token before usage as array index  [Xiaojun Sang]
+979f3d5  dsp: asm: validate payload size before access  [Xiaojun Sang]
+
+ * packages/apps/Bluetooth
+04e228e  Merge pull request #2 from coderzstas/9.0  [Ivan Blinov]
+48f85d8  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/packages/apps/Bluetooth into 9.0  [coderzstas]
+
+ * packages/apps/SyberiaSettings
+392b9c9  gemini: end of life  [blinoff82]
+315db67  whyred: left the team  [blinoff82]
+5baf9c5  Merge pull request #53 from coderzstas/9.0  [Ivan Blinov]
+1eb43f2  SyberiaSettings : add me to dev team  [coderzstas]
+
+ * system/bt
+906c31d  Merge pull request #3 from coderzstas/9.0  [Ivan Blinov]
+aead2b1  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/system/bt into 9.0  [coderzstas]
+
+ * system/netd
+8e79f0f  Merge pull request #1 from coderzstas/9.0  [Ivan Blinov]
+9e612a1  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/system/netd into 9.0  [coderzstas]
+
+====================
+     2019-04-01    
+====================
+
+ * device/qcom/sepolicy
+c2cd216  selinux: Add policy for rild to add IDataConnection HAL  [Eric Chang]
+
+ * kernel/xiaomi/whyred
+b20fa86  ANDROID: drop CONFIG_INPUT_KEYCHORD from cuttlefish and ranchu  [Mark Salyzyn]
+
+ * packages/apps/Settings
+4277d46  Settings: Add deep sleep info to uptime  [Stefan Berger]
+
+ * vendor/syberia
+6d74f8c  Merge pull request #10 from mdeejay/9.0  [Ivan Blinov]
+473e6b7  syberia: qcom: Set thermal & vr HAL pathmaps  [Michael Bestas]
+
