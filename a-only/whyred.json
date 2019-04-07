@@ -1,0 +1,30 @@
+{
+  "device_model": "Redmi Note 5 Pro",
+  "filesize": "707581253",
+  "website_url": "http://syberiaos.com",
+  "developer": "Rashed Sahaji",
+  "addons": [
+    {
+      "title": "Magisk",
+      "summary": "Magisk",
+      "url": "\"http://tiny.cc/latestmagisk"
+    },
+    {
+      "title": "Magisk",
+      "summary": "Magisk Uninstaller",
+      "url": "http://tiny.cc/latestuninstaller"
+    }
+  ],
+  "device_brand": "Xiaomi",
+  "developer_url": "http://github.com/syberia-project",
+  "news_url": "http://github.com/syberia-project",
+  "filename": "syberia_whyred-v2.3-20190330-1425-OFFICIAL.zip",
+  "md5": "080d2b530c01fac3afbdaaffaba6a143",
+  "forum_url": "https://forum.xda-developers.com/redmi-note-5-pro/development/rom-syberia-project-t3862355",
+  "donate_url": "https://syberiaos.com/links",
+  "error": "false",
+  "build_date": "20190330",
+  "device": "whyred",
+  "url": "https://sourceforge.net/projects/syberiaos/files/whyred/syberia_whyred-v2.3-20190330-1425-OFFICIAL.zip/download",
+  "changelog": "- Add Cellular tile icon from OOS\n- Dismiss keyguard on boot if disabled by profile\n- Workaround for wallpaper not shown correctly problem\n- OP Gestures: Fix navbar detection and landscape mode\n- Dialer: Make proxi sensor smart-case friendly\n- Fixes for surfaceflinger rendering\n- Fixed multiuser icon glitch in QS footer\n- Fixed animation glitch with right-sided volume panel \n- Fixed partial screenshot \n- Probably fixed sensors bug\n- Various fixes and improvements\n- Update translations\n\n**If you are in miui pie just downgrade to oreo using arb free Fw..\n"
+}
