@@ -1,0 +1,30 @@
+{
+  "device": "gemini",
+  "device_brand": "Xiaomi",
+  "filesize": "568423972",
+  "news_url": "http://github.com/syberia-project",
+  "donate_url": "https://syberiaos.com/links",
+  "filename": "syberia_gemini-v2.3-20190330-0715-OFFICIAL.zip",
+  "error": "false",
+  "addons": [
+    {
+      "summary": "Magisk",
+      "title": "Magisk",
+      "url": "\"http://tiny.cc/latestmagisk"
+    },
+    {
+      "summary": "Magisk Uninstaller",
+      "title": "Magisk",
+      "url": "http://tiny.cc/latestuninstaller"
+    }
+  ],
+  "build_date": "20190330",
+  "forum_url": "",
+  "changelog": "Final Official Android Pie build for Xiaomi Mi5!\n- Update graphics stack to LA.UM.7.5.r1-03700-8x96.0\n- Move to proper thermal blobs\n- MIUI camera by default\n- Add Cellular tile icon from OOS\n- Dismiss keyguard on boot if disabled by profile\n- Workaround for wallpaper not shown correctly problem\n- OP Gestures: Fix navbar detection and landscape mode\n- Dialer: Make proxi sensor smart-case friendly\n- Fixes for surfaceflinger rendering\n- Fixed multiuser icon glitch in QS footer\n- Fixed animation glitch with right-sided volume panel \n- Fixed partial screenshot \n- Probably fixed sensors bug\n- Various fixes and improvements\n- Update translations",
+  "developer": "Blinoff82",
+  "md5": "c246094a5758aeb046cfdf85a0c0c05a",
+  "url": "https://sourceforge.net/projects/syberiaos/files/gemini/syberia_gemini-v2.3-20190330-0715-OFFICIAL.zip/download",
+  "website_url": "http://syberiaos.com",
+  "device_model": "Mi 5",
+  "developer_url": "http://github.com/syberia-project"
+}
