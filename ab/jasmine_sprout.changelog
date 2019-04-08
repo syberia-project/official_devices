@@ -1,120 +1,370 @@
 ====================
-     2019-03-31    
+     2019-04-08    
 ====================
 
  * device/xiaomi/sdm660-common
-e60c9dc  sdm660 : add local bootctrl from los  [coderzstas]
+30193b8  sdm660: keyhandler: use swipe down option for xiaomi parts for now  [Max Weffers]
+6dccdab  sdm660: fix fingerprint enrollment after clean flash  [Max Weffers]
+76b226d  sdm660: keylayout: fix fingerprint swipe gesture keys  [Max Weffers]
+064e771  actually remove fm radio  [nebrassy]
+90ad7bb  disable FM radio  [nebrassy]
+
+ * kernel/xiaomi/sdm660
+2263795  LocalVersion: LA.UM.7.2.r1-06700  [mracar07]
+e41bde5  Merge tag 'LA.UM.7.2.r1-06700-sdm660.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn into HEAD  [Max Weffers]
+1339a33  Merge tag 'LA.UM.7.2.r1-06700-sdm660.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/fw-api into HEAD  [Max Weffers]
+0e2f14c  Merge tag 'LA.UM.7.2.r1-06700-sdm660.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into HEAD  [Max Weffers]
+f7c0675  Merge tag 'LA.UM.7.2.r1-06700-sdm660.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.4 into HEAD  [Max Weffers]
+a3ae8db  cpu: Silence log spam when a CPU is brought up  [Sultan Alsawaf]
+5724e58  irq: Silence IRQ CPU migration message  [Sultanxda]
+5b8be11  Smb: remove debug message for smblib_handle  [mracar07]
 
 ====================
-     2019-03-30    
+     2019-04-07    
 ====================
 
+ * kernel/xiaomi/sdm660
+d0ad16b  qpnp-haptic: make its strength adjustable via VibratorHW  [XiNGRZ]
+abc9f82  gpio: Handle EPROBE_DEFER while probing  [syphyr]
+e797fef  ARM: dts: sdm660: disable hotplug in BCL mitigation  [Wei Wang]
+84dd58c  defconfig: disable battery bcl  [Dusan Uveric]
+f5614dd  Merge branch 'kernel.lnx.4.4.r34-rel' of https://github.com/android-linux-stable/msm-4.4 into HEAD  [Max Weffers]
+754e14f  Merge branch 'android-4.4' of https://github.com/aosp-mirror/kernel_common into kernel.lnx.4.4.r34-rel  [Max Weffers]
+b737db3  sdm660: Add A-Only dtb for wayne  [Max Weffers]
+d2eb373  sdm660: defconfig: bring kernel config inline with wayne kernel source  [Max Weffers]
+e26c5ae  jasmine: defconfig: delete unneeded jasmine_defconfig  [Max Weffers]
+a44fb37  sdm660: defconfig: Set caf tag as Kernel name (LA.UM.7.2.r1-06500)  [Max Weffers]
+93cf499  sdm660: Add config for High Brightness Level support  [Max Weffers]
+b726ef9  wayne: Import Defconfig for Mi 6X (A-Only) Support on Mi A2 Kernel  [Max Weffers]
+361e076  drivers: cpufreq: checks to avoid kernel crash in cpufreq_interactive  [gaurav jindal]
+ba160f2  cpufreq: fallback to interactive if governor is not found  [Nathan Chancellor]
+22fad33  cpufreq_interactive: restrict min_sample_time control  [Yaroslav Furman]
+f767137  CHROMIUM: cpufreq: interactive: calculate load before freq change  [Derek Basehore]
+0766000  cpufreq: interactive: Remove the jump_to_max hack  [Christopher R. Palmer]
+9862ee2  jasmine: Enable Cpu input boost  [Max Weffers]
+7e5002a  cpu_input_boost: Clean up code style and update license header  [Sultan Alsawaf]
+a739e45  cpufreq: get rid of cpu boost driver  [Dusan Uveric]
+d2301bf  cpu_input_boost: Eliminate spin lock by using atomic cmpxchg loop  [Sultan Alsawaf]
+68df96f  cpu_input_boost: Simplify bitwise operations used to store boost state  [Sultan Alsawaf]
+7536911  cpu_input_boost: make the userspace module param vars static  [Francisco Franco]
+de38172  cpu_input_boost: expose input freqs and duration to userspace  [Francisco Franco]
+3236851  cpu_input_boost: Destroy workqueue on error path in init  [Sultan Alsawaf]
+0c55530  cpu_input_boost: Fix and refactor max boost logic  [Sultan Alsawaf]
+23cb175  cpu_input_boost: Add API for boosting all CPUs to max frequency  [Sultan Alsawaf]
+5332f08  cpufreq: Kill userspace CPU boosting entirely  [Sultan Alsawaf]
+afd3c44  cpu_input_boost: Introduce driver for event-based CPU boosting  [Sultan Alsawaf]
+059664c  qcom-cpufreq: Boost all online CPUs when exiting suspend  [Sultan Alsawaf]
+
 ====================
-     2019-03-29    
+     2019-04-06    
+====================
+
+ * kernel/xiaomi/sdm660
+be6edca  f2fs: fix merge misstake  [Max Weffers]
+7e67a47  qcacld: nuke rx_wakelock code entirely  [Park Ju Hyung]
+9b3e455  qcacld: disable qcom_rx_wakelock  [Park Ju Hyung]
+3afdfac  mmc: disable SPI CRC  [Park Ju Hyung]
+29b39d2  f2fs: fix rapid GC breakage from merge 4e87f7d2befb8  [Park Ju Hyung]
+7d816f6  f2fs/rapid_gc: do not wait until all invalid blocks are discarded  [Park Ju Hyung]
+7bd1135  sdm660: defconfig: enable wireguard  [Park Ju Hyung]
+a1fc5d2  net: import WireGuard version 0.0.20181218  [Park Ju Hyung]
+d59fefa  sound: sdm660_cdc: Correct the limits  [Mihran Thalhath]
+455a2e0  jasmine:defconfig: update defconfigs based on last caf tag  [Max Weffers]
+c9ccb1f  jasmine: defconfig: make savedefconfig  [Max Weffers]
+802f9a2  jasmine: defconfig: Enable f2fs Filesystem  [Max Weffers]
+009344c  msm: mdss: KCAL: disable igc update  [flar2]
+d717de3  f2fs: implement rapid GC for Android  [Park Ju Hyung]
+daffaf6  f2fs: set ioprio of GC kthread to idle  [Park Ju Hyung]
+cf2982b  jasmine: defconfig: enable sound control  [Max Weffers]
+c4f5cae  sound: sdm660_cdc: add sound control  [Shekhawat2]
+305209b  sdm660: haptic: revert back to old qpnp haptic driver  [Max Weffers]
+afa31c0  Revert "msm: camera: isp: Handle frame drop due to delay   "  [Max Weffers]
+11b5dee  jasmine: defconfig: enable sound config again  [Max Weffers]
+c946c77  msm_thermal: initialize later than arch drivers  [Park Ju Hyung]
+fc22dce  ANDROID: jasmine: turn on VDSO  [Mark Salyzyn]
+319ede8  ANDROID: arm64: vdso32: fix CC=clang build  [Mark Salyzyn]
+6141f36  ANDROID: CROSS_COMPILE_ARM32 must work if CONFIG_COMPAT_VDSO  [Mark Salyzyn]
+626dd92  FROMLIST: BACKPORT: [PATCH 6/6] arm64: Wire up and expose the new compat vDSO  [Kevin Brodsky]
+16d0246  FROMLIST: BACKPORT: [PATCH 5/6] arm64: compat: 32-bit vDSO setup  [Kevin Brodsky]
+d49fd4c  FROMLIST: [PATCH 4/6] arm64: compat: Add a 32-bit vDSO  [Kevin Brodsky]
+37ca5ae  FROMLIST: [PATCH 3/6] arm64: Refactor vDSO init/setup  [Kevin Brodsky]
+3bf39c2  FROMLIST: [PATCH 2/6] arm64: elf: Set AT_SYSINFO_EHDR in compat processes  [Kevin Brodsky]
+acdb5a4  FROMLIST: [PATCH 1/6] arm64: compat: Use vDSO sigreturn trampolines if available  [Kevin Brodsky]
+7140155  FROMLIST: lib: vdso: add support for time  [Mark Salyzyn]
+39c2b98  FROMLIST: [PATCH] arm64: compat: Expose offset to registers in sigframes  [Kevin Brodsky]
+6ae95a6  FROMLIST: [PATCH v5 12/12] lib: vdso: do not expose gettimeofday, if no arch supported timer  [Mark Salyzyn]
+c96ae89  FROMLIST: [PATCH v5 11/12] lib: vdso: Add support for CLOCK_BOOTTIME  [Mark Salyzyn]
+676d77d  FROMLIST: [PATCH v5 10/12] arm64: vdso: replace gettimeofday.S with global vgettimeofday.C  [Mark Salyzyn]
+5ad8dfb  FROMLIST: [PATCH v5 09/12] arm: vdso: move vgettimeofday.c to lib/vdso/  [Mark Salyzyn]
+ff3677a  FROMLIST: [PATCH v5 08/12] arm: vdso: Add ARCH_CLOCK_FIXED_MASK  [Mark Salyzyn]
+eebef3f  FROMLIST: [PATCH v5 07/12] arm: vdso: disable profiling  [Mark Salyzyn]
+80bb60f  FROMLIST: [PATCH v5 06/12] arm: vdso: add support for clock_getres  [Mark Salyzyn]
+aac19de  FROMLIST: [PATCH v6 05/12] arm: vdso: Add support for CLOCK_MONOTONIC_RAW  [Mark Salyzyn]
+6943eb3  FROMLIST: [PATCH v5 04/12] arm: vdso: do calculations outside reader loops  [Mark Salyzyn]
+3f698be  FROMLIST: [PATCH v5 03/12] arm: vdso: inline assembler operations to compiler.h  [Mark Salyzyn]
+54492d7  FROMLIST: [PATCH v5 02/12] arm: vdso: add include file defining __get_datapage()  [Mark Salyzyn]
+1e4171b  FROMLIST: [PATCH v5 01/12] arm: vdso: rename vdso_datapage variables  [Mark Salyzyn]
+0d577a1  FROMLIST: [PATCH v2 3/3] arm64: compat: Add CONFIG_KUSER_HELPERS  [Kevin Brodsky]
+b400120  FROMLIST: [PATCH v2 2/3] arm64: compat: Split the sigreturn trampolines and kuser helpers (assembler sources)  [Kevin Brodsky]
+07ea303  FROMLIST: [PATCH v2 1/3] arm64: compat: Split the sigreturn trampolines and kuser helpers (C sources)  [Kevin Brodsky]
+cea7855  kgsl/adreno: Properly set GPU timeout  [celtare21]
+97ac777  kgsl: update the effective duration of qos request  [Dusan Uveric]
+e527c66  ARM: dts: sdm660: Set GPU idle timeout to 64 ms  [Sultan Alsawaf]
+e598d59  kernel: Add API to mark IRQs and kthreads as performance critical  [Sultan Alsawaf]
+b68340c  jasmine: defconfig: enable kcal color management  [Max Weffers]
+8c0b1bc  mdss mdp: adjust kcal for sdm660  [andip71]
+07bc4c5  mdss mdp: fix washed out colours after start when screen is off during kcal initialization  [andip71]
+7cc5a7f  sdm660:mdss mdp: kcal for mdss_mdp_v1_7  [tbalden]
+ac092d6  jasmine:defconfig: enable CONFIG_NETFILTER_XT_TARGET_HL for TTL  [Max Weffers]
+e73c446  sdm660: drivers: mmc: don't set mmc driver scheduler to fifo and disable restricted priority  [Max Weffers]
+6a0ab1f  Revert "Android.bp: Initial header export bp for Android (qseecom only)"  [GuaiYiHu]
+2683e3e  arm64/config: jasmine: remove unused kernel config  [Wei Wang]
+4759f8d  arm64/confgs: jasmine: add various HID drivers  [Patrick Tjin]
+28a3cd1  jasmine-perf_defconfig: remove various debug config + DEVPORT  [Thierry Strudel]
+eb42765  defconfig: jasmine: disable SCHED_AUTOGROUP  [John Dias]
+8466ed5  arm64/configs: jasmine: clean up configs and make savedefconfig  [Patrick Tjin]
+3eed387  jasmine-perf_defconfig: align with security requirements  [Yueyao Zhu]
+27d38e2  jasmine: defconfig: Disable wil6210 modules  [GuaiYiHu]
+05c59db  arm64/configs: jasmine: enable CONFIG_MEMORY_STATE_TIME  [Thierry Strudel]
+3a98962  arm64/configs: jasmine: disable MSM_11AD  [Thierry Strudel]
+8c2f6ef  jasmine: defconfig: Switch from exfat to sdfat  [GuaiYiHu]
+1a5f810  fs: Include sdfat driver  [LuK1337]
+50ba052  Merge branch 'master' of https://github.com/cryptomilk/kernel-sdfat into HEAD  [Max Weffers]
+14fc963  jasmine: defconfig: Sync with sdm660-perf_defconfig  [guaiyihu]
+a8b0c3c  jasmine: defconfig: set default readahead to 2048KB  [Wei Wang]
+15ade71  Revert "Revert "select: use freezable blocking call""  [Tim Murray]
+d663fcd  soc: qcom: smp2p: Fix compilation when SMP2P_TEST is disabled  [Ethan Chen]
+fd1a756  jasmine: defconfig: Enable CONFIG_DETECT_HUNG_TASK  [guaiyihu]
+1415ddd  jasmine: defconfig: Enable JUMP_LABEL  [joshuous]
+6cf9c0c  Merge branch 'upstream-f2fs-stable-linux-4.4.y' of https://github.com/aosp-mirror/kernel_common into HEAD  [Max Weffers]
+ff5e06e  sdm660: fix memory overlap  [Park Ju Hyung]
+f39d1be  dm-android-verity: clean up previous commit  [Tyler Nijmeh]
+68dbfd8  dm-android-verity: spoof all forms of verification  [Tyler Nijmeh]
+4fc648b  ARM: dts: disable verity checks on boot  [Tyler Nijmeh]
+
+====================
+     2019-04-05    
 ====================
 
  * device/xiaomi/jasmine_sprout
-fe3405b  jasmine : update dependencies  [coderzstas]
+f2f9b7e  jasmine : update dependencies  [coderzstas]
 
- * device/xiaomi/sdm660-common
-2f7c02b  fix some derps  [coderzstas]
-8783432  sdm660-common: both cores are kyro  [Manish4586]
-2238745  sdm660: overlay: enable Full screen aspect ratio  [Manish4586]
-24d297b  sdm660-common: light: reconfigure duty cyle  [Manish4586]
-661cc78  sdm660: Improve padding on keyguard  [Henrique Silva]
-eb64158  sdm660: Add persist.radio.aosp_usr_pref_sel for Telephony  [xyyx]
-dcdd344  sdm660: fingerprint: Correct fpc nodes  [GuaiYiHu]
-2952f52  sdm660: overlay:enable smart clock  [darkbeast69]
-115c8d5  sdm660: Use CarrierConfig overlays from Pie beta  [Rama Bondan Prakoso]
-2ed1970  sdm660: Migrate to versioned VNDK layout  [Divya Sharma]
-62cf49f  sdm660: Revert "sdm660: Move vndk-sp to vendor"  [GuaiYiHu]
-a8cfa47  sdm660: Disable vndk-sp creation for VNDK enabled targets.  [Vinay Verma]
-b3e36f7  sdm660: Update qti configs from caf  [GuaiYiHu]
-178db93  sdm660: overlay: Enable Wi-Fi MAC randomization  [XiNGRZ]
+ * external/exfat
+e346c7c  exfat: Rename utf conversion symbols  [Tom Marshall]
+9e9dc69  exfat: Add static libs for recovery  [Tom Marshall]
 
  * packages/apps/SyberiaSettings
-e0e468b  New maintainer for Xiaomi Poco F1 (beryllium)  [blinoff82]
+e859827  Merge pull request #54 from governmentissuejoe/patch-1  [Ivan Blinov]
+a55ff19  Fix typo  [governmentissuejoe]
+
+ * vendor/syberia
+aa43400  syberia: qcom: Set proper CAF data-ipa-cfg-mgr pathmap  [Michael Bestas]
+fb6a586  syberia: qcom: Set data-ipa-cfg-mgr pathmap  [Ethan Chen]
+26c0c22  Syberia: bump to v2.4  [blinoff82]
 
 ====================
-     2019-03-28    
+     2019-04-04    
 ====================
 
- * device/xiaomi/jasmine_sprout
-efff8a7  jasmine: build correct updater app  [coderzstas]
-7335493  jasmine: audio: Increase Incall Volume  [Max Weffers]
-d9b2b11  jasmine: remove unneeded heap and dalvik configs  [Max Weffers]
+ * packages/apps/Settings
+35aaf32  Refactoring screen "About Team" [2/2] now the list of team members is in the file "packages/apps/Settings/assets/syberia.json"  [alexxxdev]
 
- * packages/apps/Updater
-09869ff  Updater: Remove download speed on UpdatesListAdapter  [Henrique Silva]
-87742df  Updater: Mark as persistent  [Henrique Silva]
-628c4d7  Updater: Correct cleanup notification action  [jhenrique09]
-37e3287  Updater: Add little delay before sending broadcast  [jhenrique09]
-236a860  Updater: Add network speed into some parts  [jhenrique09]
-26417f8  Updater: Refresh list when update get deleted  [jhenrique09]
-b16ac4a  Updater: Migrate Updater to AndroidX.  [Jyotiraditya]
+ * packages/apps/SyberiaSettings
+af6cea9  Refactoring screen "About Team" [1/2] now the list of team members is in the file "packages/apps/Settings/assets/syberia.json"  [alexxxdev]
+
+ * vendor/syberia
+5a40059  Fonts: Add CircularStd  [Arghya Chanda]
 
 ====================
-     2019-03-27    
-====================
-
- * frameworks/base
-efa562c  base: Fix partial screenshot  [Anushek Prasal]
-0df5c1f  Revert "Clean up back animation view for edge gesture"  [DennySPB]
-
-====================
-     2019-03-26    
+     2019-04-03    
 ====================
 
  * build/make
-4cf379b  Use flags from Soong for d8, r8, dx and desugar  [Colin Cross]
-
- * build/soong
-e044706  Optimize CPU time when running d8, r8, dx and desugar  [Colin Cross]
+7a2e246  Merge pull request #1 from coderzstas/9.0  [Ivan Blinov]
+bb52e11  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/build into 9.0  [coderzstas]
 
  * frameworks/base
-5fb85f5  Volume Panel: fix animation glitch with right-sided panel  [DennySPB]
-26c7d21  SystemUI: Fix multiuser icon glitch in QS footer  [Anushek Prasal]
-f9ecd065  SystemUI: Add Cellular tile icon from OOS  [Anushek Prasal]
-714f0b7  ColorFade: Silence logspam  [Anushek Prasal]
-e972432  OP Gestures: Fix navbar detection and landscape mode  [Stylogey]
-3aa4001  Clean up screenshot if nothing selected  [Lyubo]
-377668e  IMMS should preserve selected IME upon boot  [Yohei Yukawa]
-cc0dd73  base: Cleanup FP controller  [hardwareadictos]
+7cbea20  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/frameworks/base into HEAD  [blinoff82]
 
- * packages/apps/Dialer
-5764b85  Make proxi sensor smart-case friendly  [DennySPB]
+ * kernel/xiaomi/sdm660
+9415f72  Merge 4.4.178 into kernel.lnx.4.4.r34-rel  [Nathan Chancellor]
+12ae58c  Linux 4.4.178  [Greg Kroah-Hartman]
+b1b1efe  stm class: Hide STM-specific options if STM is disabled  [Geert Uytterhoeven]
+c003b56  coresight: removing bind/unbind options from sysfs  [Mathieu Poirier]
+455b9a6  arm64: support keyctl() system call in 32-bit mode  [Eric Biggers]
+d14ac43  Revert "USB: core: only clean up what we allocated"  [Greg Kroah-Hartman]
+78d145f  xhci: Fix port resume done detection for SS ports with LPM enabled  [Mathias Nyman]
+9aacea7  KVM: Reject device ioctls from processes other than the VM's creator  [Sean Christopherson]
+5ce6e5b  x86/smp: Enforce CONFIG_HOTPLUG_CPU when SMP=y  [Thomas Gleixner]
+0fe681f  perf intel-pt: Fix TSC slip  [Adrian Hunter]
+e250a5a  gpio: adnp: Fix testing wrong value in adnp_gpio_direction_input  [Axel Lin]
+6271fa6  fs/proc/proc_sysctl.c: fix NULL pointer dereference in put_links  [YueHaibing]
+98bc2f9  Disable kgdboc failed by echo space to /sys/module/kgdboc/parameters/kgdboc  [Wentao Wang]
+6c1c9cf  USB: serial: option: add Olicard 600  [Bjørn Mork]
+09d3f1e  USB: serial: option: set driver_info for SIM5218 and compatibles  [Mans Rullgard]
+6ef819f  USB: serial: mos7720: fix mos_parport refcount imbalance on error path  [Lin Yi]
+ef0d781  USB: serial: ftdi_sio: add additional NovaTech products  [George McCollister]
+7139e4d  USB: serial: cp210x: add new device id  [Greg Kroah-Hartman]
+327ee45  serial: sh-sci: Fix setting SCSCR_TIE while transferring data  [Hoan Nguyen An]
+7124c71  serial: max310x: Fix to avoid potential NULL pointer dereference  [Aditya Pakki]
+2e7c2f2  staging: vt6655: Fix interrupt race condition on device start up.  [Malcolm Priestley]
+1740064  staging: vt6655: Remove vif check from vnt_interrupt  [Malcolm Priestley]
+13f6808  tty: atmel_serial: fix a potential NULL pointer dereference  [Kangjie Lu]
+21da2b4  scsi: zfcp: fix scsi_eh host reset with port_forced ERP for non-NPIV FCP devices  [Steffen Maier]
+d8007fb  scsi: zfcp: fix rport unblock if deleted SCSI devices on Scsi_Host  [Steffen Maier]
+2f36912  scsi: sd: Fix a race between closing an sd device and sd I/O  [Bart Van Assche]
+49ad739  ALSA: pcm: Don't suspend stream in unrecoverable PCM state  [Takashi Iwai]
+c07db6f  ALSA: pcm: Fix possible OOB access in PCM oss plugins  [Takashi Iwai]
+f98242a8  ALSA: seq: oss: Fix Spectre v1 vulnerability  [Gustavo A. R. Silva]
+619ae9f  ALSA: rawmidi: Fix potential Spectre v1 vulnerability  [Gustavo A. R. Silva]
+e162927  ALSA: compress: add support for 32bit calls in a 64bit kernel  [Ravindra Lokhande]
+ed2f3c8  ARM: imx6q: cpuidle: fix bug that CPU might not wake up at expected time  [Kohji Okuno]
+61bde5e  btrfs: raid56: properly unmap parity page in finish_parity_scrub()  [Andrea Righi]
+a23f004  btrfs: remove WARN_ON in log_dir_items  [Josef Bacik]
+48b22ac  mac8390: Fix mmio access size probe  [Finn Thain]
+981cb03  sctp: get sctphdr by offset in sctp_compute_cksum  [Xin Long]
+c5874f3  vxlan: Don't call gro_cells_destroy() before device is unregistered  [Zhiqiang Liu]
+6c362ff  tcp: do not use ipv6 header for ipv4 flow  [Eric Dumazet]
+617ac1a  packets: Always register packet sk in the same order  [Maxime Chevallier]
+dd3351b  Add hlist_add_tail_rcu() (Merge git://git.kernel.org/pub/scm/linux/kernel/git/davem/net)  [David S. Miller]
+2c2d8a1  net: rose: fix a possible stack overflow  [Eric Dumazet]
+b969da5  net/packet: Set __GFP_NOWARN upon allocation in alloc_pg_vec  [Christoph Paasch]
+3f1c0e4  mISDN: hfcpci: Test both vendor & device ID for Digium HFC4S  [Bjorn Helgaas]
+2f242b2  dccp: do not use ipv6 header for ipv4 flow  [Eric Dumazet]
+46c8459  stmmac: copy unicast mac address to MAC registers  [Bhadram Varka]
+949c4ef4  cfg80211: size various nl80211 messages correctly  [Johannes Berg]
+695fc28  mmc: mmc: fix switch timeout issue caused by jiffies precision  [Chaotian Jing]
+c89eced  arm64: kconfig: drop CONFIG_RTC_LIB dependency  [Ezequiel Garcia]
+4a024ea  video: fbdev: Set pixclock = 0 in goldfishfb  [Christoffer Dall]
+d200cc9  cpu/hotplug: Handle unbalanced hotplug enable/disable  [Lianwei Wang]
+13e84cd  usb: gadget: rndis: free response queue during REMOTE_NDIS_RESET_MSG  [Xerox Lin]
+0752035  usb: gadget: configfs: add mutex lock before unregister gadget  [Winter Wang]
+01855b6  ipv6: fix endianness error in icmpv6_err  [Hannes Frederic Sowa]
+b0351a5  stm class: Fix stm device initialization order  [Alexander Shishkin]
+2040e80  stm class: Do not leak the chrdev in error path  [Alexander Shishkin]
+fbfaa26  PM / Hibernate: Call flush_icache_range() on pages restored in-place  [James Morse]
+60e4a50  arm64: kernel: Include _AC definition in page.h  [James Morse]
+2ba2cca  perf/ring_buffer: Refuse to begin AUX transaction after rb->aux_mmap_count drops  [Alexander Shishkin]
+e5a19cf  mac80211: fix "warning: ‘target_metric’ may be used uninitialized"  [Jeff Mahoney]
+08d870c  arm64/kernel: fix incorrect EL0 check in inv_entry macro  [Ard Biesheuvel]
+823e262  ARM: 8510/1: rework ARM_CPU_SUSPEND dependencies  [Lorenzo Pieralisi]
+a99d340  staging: goldfish: audio: fix compiliation on arm  [Greg Hackmann]
+9d4b439  staging: ion: Set minimum carveout heap allocation order to PAGE_SHIFT  [Rajmal Menariya]
+efa2ec2  staging: ashmem: Add missing include  [Rom Lemarchand]
+4dcbf6f  staging: ashmem: Avoid deadlock with mmap/shrink  [Laura Abbott]
+021c0d5  asm-generic: Fix local variable shadow in __set_fixmap_offset  [Mark Rutland]
+43ea28e  coresight: etm4x: Check every parameter used by dma_xx_coherent.  [Eric Long]
+58af2f0  coresight: "DEVICE_ATTR_RO" should defined as static.  [Eric Long]
+c66866b  stm class: Fix a race in unlinking  [Alexander Shishkin]
+8c0bfd9  stm class: Fix unbalanced module/device refcounting  [Alexander Shishkin]
+f34bc5a  stm class: Guard output assignment against concurrency  [Alexander Shishkin]
+bc9d781  stm class: Fix unlocking braino in the error path  [Alexander Shishkin]
+65b52bb  stm class: Support devices with multiple instances  [Alexander Shishkin]
+ffb2f3f  stm class: Prevent user-controllable allocations  [Alexander Shishkin]
+30e94dc  stm class: Fix link list locking  [Alexander Shishkin]
+a556f0b  stm class: Fix locking in unbinding policy path  [Alexander Shishkin]
+03d7b4e  coresight: remove csdev's link from topology  [Mathieu Poirier]
+a2828b9  coresight: release reference taken by 'bus_find_device()'  [Mathieu Poirier]
+3e2070a  coresight: coresight_unregister() function cleanup  [Mathieu Poirier]
+f485f97  coresight: fixing lockdep error  [Mathieu Poirier]
+9bda5e6  writeback: initialize inode members that track writeback history  [Tahsin Erdogan]
+cb8251f  Revert "mmc: block: don't use parameter prefix if built as module"  [Ulf Hansson]
+ab3f1a5  net: diag: support v4mapped sockets in inet_diag_find_one_icsk()  [Eric Dumazet]
+6f31138  perf: Synchronously free aux pages in case of allocation failure  [Alexander Shishkin]
+b6496f0  arm64: hide __efistub_ aliases from kallsyms  [Ard Biesheuvel]
+2aeca9a  hid-sensor-hub.c: fix wrong do_div() usage  [Nicolas Pitre]
+bdf3c00  vmstat: make vmstat_updater deferrable again and shut down on idle  [Christoph Lameter]
+119dbcd  android: unconditionally remove callbacks in sync_fence_free()  [Dmitry Torokhov]
+7276c3f  ARM: 8494/1: mm: Enable PXN when running non-LPAE kernel on LPAE processor  [Jungseung Lee]
+717da8c  ARM: 8458/1: bL_switcher: add GIC dependency  [Arnd Bergmann]
+1f2c3b4  efi: stub: define DISABLE_BRANCH_PROFILING for all architectures  [Ard Biesheuvel]
+599dcbf  arm64: fix COMPAT_SHMLBA definition for large pages  [Yury Norov]
+4afe1af  mmc: block: Allow more than 8 partitions per card  [Colin Cross]
+e431968  sched/fair: Fix new task's load avg removed from source CPU in wake_up_new_task()  [Yuyang Du]
+ade4560  Bluetooth: Verify that l2cap_get_conf_opt provides large enough buffer  [Marcel Holtmann]
+d220360  Bluetooth: Check L2CAP option sizes returned from l2cap_get_conf_opt  [Marcel Holtmann]
+a140223  ath10k: avoid possible string overflow  [Arnd Bergmann]
+ee8f5d4  rtc: Fix overflow when converting time64_t to rtc_time  [Baolin Wang]
+0cd0867  USB: core: only clean up what we allocated  [Andrey Konovalov]
+466ab66  lib/int_sqrt: optimize small argument  [Peter Zijlstra]
+7a47e3c  serial: sprd: clear timeout interrupt only rather than all interrupts  [Lanqing Liu]
+4104b44  usb: renesas_usbhs: gadget: fix unused-but-set-variable warning  [Yoshihiro Shimoda]
+e86206b  arm64: traps: disable irq in die()  [Qiao Zhou]
+a3fbab1  Hang/soft lockup in d_invalidate with simultaneous calls  [Al Viro]
+4a97f08  serial: sprd: adjust TIMEOUT to a big value  [Wei Qiao]
+7ed7c03  tcp/dccp: drop SYN packets if accept queue is full  [Eric Dumazet]
+a12cf32  usb: gadget: Add the gserial port checking in gs_start_tx()  [Baolin Wang]
+36be44e  usb: gadget: composite: fix dereference after null check coverify warning  [Peter Chen]
+c0f71ba  kbuild: setlocalversion: print error to STDERR  [Wolfram Sang]
+1e647cf  extcon: usb-gpio: Don't miss event during suspend/resume  [Roger Quadros]
+7f69a98  mm/rmap: replace BUG_ON(anon_vma->degree) with VM_WARN_ON  [Konstantin Khlebnikov]
+1394b1b  mmc: core: fix using wrong io voltage if mmc_select_hs200 fails  [Dong Aisheng]
+aa8b7ed  arm64: mm: Add trace_irqflags annotations to do_debug_exception()  [James Morse]
+df2ca32  usb: dwc3: gadget: Fix suspend/resume during device mode  [Roger Quadros]
+f242723  mmc: core: shut up "voltage-ranges unspecified" pr_info()  [Russell King]
+6a0f575  mmc: sanitize 'bus width' in debug output  [Wolfram Sang]
+40c01c8  mmc: make MAN_BKOPS_EN message a debug  [Wolfram Sang]
+282d5f0  mmc: debugfs: Add a restriction to mmc debugfs clock setting  [Chuanxiao Dong]
+c8816bb  mmc: pwrseq_simple: Make reset-gpios optional to match doc  [Martin Fuzzey]
+4d026d2  ALSA: hda - Enforces runtime_resume after S3 and S4 for each codec  [Hui Wang]
+2569eed  ALSA: hda - Record the current power state before suspend/resume calls  [Takashi Iwai]
+4aada79  locking/lockdep: Add debug_locks check in __lock_downgrade()  [Waiman Long]
+7862077  media: v4l2-ctrls.c/uvc: zero v4l2_event  [Hans Verkuil]
+a8dea33  mmc: tmio_mmc_core: don't claim spurious interrupts  [Sergei Shtylyov]
+c37fd98  ext4: brelse all indirect buffer in ext4_ind_remove_space()  [zhangyi (F)]
+2ebfb9a  ext4: fix data corruption caused by unaligned direct AIO  [Lukas Czerner]
+2b6575e  ext4: fix NULL pointer dereference while journal is aborted  [Jiufei Xue]
+2f59c12  futex: Ensure that futex address is aligned in handle_futex_death()  [Chen Jie]
+8df0d57  MIPS: Fix kernel crash for R6 in jump label branch function  [Archer Yan]
+5c06f24  mips: loongson64: lemote-2f: Add IRQF_NO_SUSPEND to "cascade" irqaction.  [Yifeng Li]
+c30b41b  udf: Fix crash on IO error during truncate  [Jan Kara]
+8b12fd7  drm/vmwgfx: Don't double-free the mode stored in par->set_mode  [Thomas Zimmermann]
+e884f7d  mmc: pxamci: fix enum type confusion  [Arnd Bergmann]
+
+ * packages/apps/Bluetooth
+04e228e  Merge pull request #2 from coderzstas/9.0  [Ivan Blinov]
+48f85d8  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/packages/apps/Bluetooth into 9.0  [coderzstas]
 
  * packages/apps/SyberiaSettings
-1d2ff3c  Remove ringer from extended audio panel  [DennySPB]
+392b9c9  gemini: end of life  [blinoff82]
+315db67  whyred: left the team  [blinoff82]
+5baf9c5  Merge pull request #53 from coderzstas/9.0  [Ivan Blinov]
+1eb43f2  SyberiaSettings : add me to dev team  [coderzstas]
 
- * system/core
-1128717  healthd: make periodic battery status a debug message  [Stefan Assmann]
+ * system/bt
+906c31d  Merge pull request #3 from coderzstas/9.0  [Ivan Blinov]
+aead2b1  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/system/bt into 9.0  [coderzstas]
+
+ * system/netd
+8e79f0f  Merge pull request #1 from coderzstas/9.0  [Ivan Blinov]
+9e612a1  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/system/netd into 9.0  [coderzstas]
+
+====================
+     2019-04-02    
+====================
+
+ * device/qcom/sepolicy
+c2cd216  selinux: Add policy for rild to add IDataConnection HAL  [Eric Chang]
+
+ * device/xiaomi/jasmine_sprout
+8536c2d  jasmine : update dependencies  [coderzstas]
+
+ * kernel/xiaomi/sdm660
+26d5654  msm: asm: validate ADSP data before access  [Vignesh Kulothungan]
+9829452  Merge "dsp: asm: validate payload size before access" into kernel.lnx.4.4.r34-rel  [Linux Build Service Account]
+930434a  Merge "dsp: validate token before usage as array index" into kernel.lnx.4.4.r34-rel  [Linux Build Service Account]
+3963fd0  qcacmn: Validate number of entries in extract_host_mem_req_tlv()  [Arif Hussain]
+5689b24  msm: ice: check for crypto engine availability  [Neeraj Soni]
+6501c69  dsp: validate token before usage as array index  [Xiaojun Sang]
+979f3d5  dsp: asm: validate payload size before access  [Xiaojun Sang]
+
+ * packages/apps/Settings
+4277d46  Settings: Add deep sleep info to uptime  [Stefan Berger]
 
  * vendor/syberia
-216f2fe  vendor: official_devices.json  [DennySPB]
+6d74f8c  Merge pull request #10 from mdeejay/9.0  [Ivan Blinov]
+473e6b7  syberia: qcom: Set thermal & vr HAL pathmaps  [Michael Bestas]
 
-====================
-     2019-03-25    
-====================
-
- * external/proguard
-4da13fb  Allow passing extra java arguments to proguard  [Luca Stefani]
-
- * frameworks/av
-4501b26  Request to reset effect buffer in clearInputBuffer  [Ryoichi Yasutake]
-
- * frameworks/native
-ddeaf5a  Respect source crop when capturing layers.  [Alec Mouri]
-f896fa8  libgui: add docs to geometry states and captureScreen  [Chia-I Wu]
-f579848  surfaceflinger: fix captureScreen for landscape LCM  [Chia-I Wu]
-9205bc7  surfaceflinger: improve RenderArea needsFiltering  [Chia-I Wu]
-58ecc5f  surfaceflinger: respect install orientation in DisplayRenderArea  [Chia-I Wu]
-e236493  surfaceflinger: add install orientation to DisplayDevice  [Chia-I Wu]
-c9dc4b4  surfaceflinger: make mPrimaryDisplayOrientation static  [Chia-I Wu]
-003a3e6  surfaceflinger: clean up captureScreen  [Chia-I Wu]
-a1f40ef  surfaceflinger: silence some RenderArea errors  [Chia-I Wu]
-690237d  surfaceflinger: fix race conditions in captureScreen  [Chia-I Wu]
-81434e7  surfaceflinger: remove ISurfaceComposer.h from RenderArea  [Chia-I Wu]
-1535b08  surfaceflinger: reorder width and height in RenderArea ctor  [Chia-I Wu]
-1317159  surfaceflinger: documents RenderArea  [Chia-I Wu]
+ * vendor/xiaomi/jasmine_sprout
+b39ef40  jasmine:Update fingerprint hal and libs to pie release  [Max Weffers]
 
