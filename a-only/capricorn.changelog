@@ -1,103 +1,105 @@
 ====================
-     2019-04-07    
+     2019-04-15    
 ====================
 
- * device/xiaomi/capricorn
-3a8b81e  remove data-ipa-cfg-mgr  [Gabor Meszaros]
-
 ====================
-     2019-04-06    
+     2019-04-14    
 ====================
 
- * device/xiaomi/capricorn
-fd6df54  audio_effects: add JamesDSP effect library  [DennySPB]
-24c13ca  sepolicy: some update  [Gabor Meszaros]
-
- * kernel/xiaomi/msm8996
-95c04c5  qdsp6v2: dts_eagle: use newer drivers  [Laster K]
-c6f6763  defconfig: enable dts eagle and mbhc  [Laster K]
-c66a755  sound: soc: codecs: wcd-mbhc-v2: Uncomment g_DebugMode check  [Pavel Dubrova]
-9034dd4  sound: wcd9335: Disable g_DebugMode  [joshuous]
-3f5c57c  Initial AudioWizard bringup  [joshuous]
-fafdae7  sound: DTS-Eagle integration  [joshuous]
-cb65ea6  drivers: import of dts_eagle hardware driver  [Laster K. (lazerl0rd)]
-d58e860  Kconfig: msm: remove deprecated dts eagle driver  [Laster K]
-dad60b8  defconfig : enable ip_sctp  [Gabor Meszaros]
-
 ====================
-     2019-04-05    
-====================
-
- * external/exfat
-e346c7c  exfat: Rename utf conversion symbols  [Tom Marshall]
-9e9dc69  exfat: Add static libs for recovery  [Tom Marshall]
-
- * packages/apps/SyberiaSettings
-e859827  Merge pull request #54 from governmentissuejoe/patch-1  [Ivan Blinov]
-a55ff19  Fix typo  [governmentissuejoe]
-
- * vendor/syberia
-aa43400  syberia: qcom: Set proper CAF data-ipa-cfg-mgr pathmap  [Michael Bestas]
-fb6a586  syberia: qcom: Set data-ipa-cfg-mgr pathmap  [Ethan Chen]
-
-====================
-     2019-04-04    
+     2019-04-13    
 ====================
 
  * packages/apps/Settings
-35aaf32  Refactoring screen "About Team" [2/2] now the list of team members is in the file "packages/apps/Settings/assets/syberia.json"  [alexxxdev]
-
- * packages/apps/SyberiaSettings
-af6cea9  Refactoring screen "About Team" [1/2] now the list of team members is in the file "packages/apps/Settings/assets/syberia.json"  [alexxxdev]
-
- * vendor/syberia
-26c0c22  Syberia: bump to v2.4  [blinoff82]
-5a40059  Fonts: Add CircularStd  [Arghya Chanda]
+9720ac1  Settings UI: Open UserSettings fragment on user icon click  [DennySPB]
+078a39f  Brandify settings title  [DennySPB]
+06be20d  BatteryMeterView: unhardcode charging strings  [DennySPB]
 
 ====================
-     2019-04-03    
+     2019-04-12    
 ====================
-
-====================
-     2019-04-02    
-====================
+ * art
+2d7d845  ART: Support kryo385 CPU  [Artem Serov]
 
  * build/make
-7a2e246  Merge pull request #1 from coderzstas/9.0  [Ivan Blinov]
-bb52e11  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/build into 9.0  [coderzstas]
+3e38a88  Correctly configure armv8-2a for 32-bit  [Miao Wang]
+cb693f8  Enable armv8-2a supporting on 2nd arch. variant  [Isaac Lee]
 
- * device/qcom/sepolicy
-c2cd216  selinux: Add policy for rild to add IDataConnection HAL  [Eric Chang]
-
- * frameworks/base
-7cbea20  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/frameworks/base into HEAD  [blinoff82]
-
- * packages/apps/Bluetooth
-04e228e  Merge pull request #2 from coderzstas/9.0  [Ivan Blinov]
-48f85d8  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/packages/apps/Bluetooth into 9.0  [coderzstas]
+ * build/soong
+9fce16e  re-add kryo300 cpu variant after f7bd3bb1  [DennySPB]
+b940191  androidmk: Skip obsolete JACK flags  [Ng Zhi An]
+4cab171  Stop using GCC in toolchain_library  [Dan Willemsen]
+246f59c  Support Qualcomm Kryo 385 CPU variant  [Artem Serov]
+7d789cd  Add to support armv8-2a on 2nd arch. variant  [mtk15504]
+f7bd3bb  Move arch variants registering code to arch.go  [Jaewoong Jung]
+f1f5857  Configure the default arch variant features per-OS  [Dan Willemsen]
+3c36a6b  Fix multilib first with multiple 64-bit architectures  [Colin Cross]
 
  * packages/apps/Settings
-4277d46  Settings: Add deep sleep info to uptime  [Stefan Berger]
+531a57e  UI : Increase toolbar size and misc fixes  [IacobIonut01]
+504298d  Settings UI : Show User Icon in dashboard  [IacobIonut01]
+146dbe7  Settings UI : Tint Storage ProgressBar & Redesign Toolbar  [IacobIonut01]
+0792518f  Dashboard : Quick Redesign  [IacobIonut01]
+1edabdd  Battery : Redesign BatteryMeterView  [IacobIonut01]
+
+====================
+     2019-04-11    
+====================
+
+ * frameworks/base
+09adfa9  Connectivity: Trigger network permission change for non DDS network  [Sunmeet Gill]
+8ac2369  connectivity: Make http(s) probe connections non-persistent.  [Devi Sandeep Endluri V V]
+5ed5c43  FrameworkBase: Fix NullPointerException of AMS  [xiaohuin]
+b90d8c7  IconsHandler: Really update the icon packs available  [Giuseppe Maggio]
+b479d71  Support per-app icon and label customization [2/2]  [Anas Karbila]
+b2a4ea6  LTE tile: Remove oreo style slashes  [Pranav Vashi]
+daf4f5e  The surface hang up when screen on and screen off  [Guo Li]
+86b59b3  Fixed setting incorrect mode of vibration  [Sun Changqing]
+8860e20  backup: right way to check canonical file path  [pip.zhang]
+65bf3e3  Fixes crash/race condition when destroyActivity  [katao]
+
+ * frameworks/opt/net/wifi
+a94c0f5  Merge tag 'LA.UM.7.6.r1-04500-89xx.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/wifi  [DennySPB]
+
+ * packages/apps/Launcher3
+08f665c  Launcher3: Switch to actual compiled library for SystemUI  [Pranav Vashi]
+5dd0629  Add INTERACT_ACROSS_USERS_FULL permission for quickstep  [Pranav Vashi]
+7fa10ea  Launcher3: Add permission to allow updating database  [neobuddy89]
+5e2456b  Launcher3: Improve label hide logic  [neobuddy89]
+c917f0f  proguard: Also keep FixedScaleDrawable  [Diogo Ferreira]
+d27d40e  Launcher3: Fix NPE in PagedView  [Pranav Vashi]
+9e82928  Launcher3: Bump sdk version  [Pranav Vashi]
+22022d2  Settings: fix method to hide dividers  [Alex]
+293900d  Icon edit: Add fast scrolling to icon pack RecyclerView  [Alex]
+8428543  Beautify icon edit dialog  [Alex]
+6c192f8  Fix icon editor picking the wrong icon on tap  [ezio84]
+32dad73  Support per-app icon and label customization [1/2]  [Anas Karbila]
+98e2746  Launcher3: Use generic android icon for IconPack chooser  [Giuseppe Maggio]
+
+ * packages/apps/Settings
+751fbe3  Team: we are looking for new santoni maintainer  [DennySPB]
+
+====================
+     2019-04-10    
+====================
+
+====================
+     2019-04-09    
+====================
+
+ * frameworks/base
+4b878c0  EdgeGestures: fix unregistering input filter  [Jens Lody]
+38a8916  core: Implement Aggressive Battery [1/2]  [Joe Maples]
+
+ * packages/apps/Settings
+0398731  Team: add maintainer for Xiaomi 6X (Wayne) Also cleanup "About Team" screen  [blinoff82]
 
  * packages/apps/SyberiaSettings
-392b9c9  gemini: end of life  [blinoff82]
-315db67  whyred: left the team  [blinoff82]
-5baf9c5  Merge pull request #53 from coderzstas/9.0  [Ivan Blinov]
-1eb43f2  SyberiaSettings : add me to dev team  [coderzstas]
+401d91d  Implement Aggressive Battery [2/2]  [Joe Maples]
 
- * system/bt
-906c31d  Merge pull request #3 from coderzstas/9.0  [Ivan Blinov]
-aead2b1  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/system/bt into 9.0  [coderzstas]
-
- * system/netd
-8e79f0f  Merge pull request #1 from coderzstas/9.0  [Ivan Blinov]
-9e612a1  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/system/netd into 9.0  [coderzstas]
-
-====================
-     2019-04-01    
-====================
+ * prebuilts/clang/host/linux-x86
+01b4a3d  Update prebuilt Clang to r353983b.  [Yi Kong]
 
  * vendor/syberia
-6d74f8c  Merge pull request #10 from mdeejay/9.0  [Ivan Blinov]
-473e6b7  syberia: qcom: Set thermal & vr HAL pathmaps  [Michael Bestas]
+3318868  jenkins: add Xiaomi 6x (Wayne)  [blinoff82]
 
