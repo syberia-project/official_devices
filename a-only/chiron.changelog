@@ -1,0 +1,106 @@
+====================
+     2019-04-15    
+====================
+
+ * device/xiaomi/msm8998-common
+120b219  msm8998-common: Enable TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT  [Henrique Silva]
+9f55838  BoardConfig: drop custom RIL flags  [DennySPB]
+f6d6c24  Import gpt-utils from aosp hardware/qcom/msm8998 repo  [DennySPB]
+
+ * frameworks/base
+57c4a13  Revert "Connectivity: Trigger network permission change for non DDS network"  [DennySPB]
+
+====================
+     2019-04-14    
+====================
+
+====================
+     2019-04-13    
+====================
+
+ * packages/apps/Settings
+9720ac1  Settings UI: Open UserSettings fragment on user icon click  [DennySPB]
+
+====================
+     2019-04-12    
+====================
+
+ * packages/apps/Settings
+078a39f  Brandify settings title  [DennySPB]
+06be20d  BatteryMeterView: unhardcode charging strings  [DennySPB]
+531a57e  UI : Increase toolbar size and misc fixes  [IacobIonut01]
+504298d  Settings UI : Show User Icon in dashboard  [IacobIonut01]
+146dbe7  Settings UI : Tint Storage ProgressBar & Redesign Toolbar  [IacobIonut01]
+0792518f  Dashboard : Quick Redesign  [IacobIonut01]
+1edabdd  Battery : Redesign BatteryMeterView  [IacobIonut01]
+
+====================
+     2019-04-11    
+====================
+ * art
+2d7d845  ART: Support kryo385 CPU  [Artem Serov]
+
+ * build/make
+3e38a88  Correctly configure armv8-2a for 32-bit  [Miao Wang]
+cb693f8  Enable armv8-2a supporting on 2nd arch. variant  [Isaac Lee]
+
+ * build/soong
+9fce16e  re-add kryo300 cpu variant after f7bd3bb1  [DennySPB]
+b940191  androidmk: Skip obsolete JACK flags  [Ng Zhi An]
+4cab171  Stop using GCC in toolchain_library  [Dan Willemsen]
+246f59c  Support Qualcomm Kryo 385 CPU variant  [Artem Serov]
+7d789cd  Add to support armv8-2a on 2nd arch. variant  [mtk15504]
+f7bd3bb  Move arch variants registering code to arch.go  [Jaewoong Jung]
+f1f5857  Configure the default arch variant features per-OS  [Dan Willemsen]
+3c36a6b  Fix multilib first with multiple 64-bit architectures  [Colin Cross]
+
+ * packages/apps/Settings
+751fbe3  Team: we are looking for new santoni maintainer  [DennySPB]
+
+====================
+     2019-04-10    
+====================
+
+ * frameworks/base
+09adfa9  Connectivity: Trigger network permission change for non DDS network  [Sunmeet Gill]
+8ac2369  connectivity: Make http(s) probe connections non-persistent.  [Devi Sandeep Endluri V V]
+5ed5c43  FrameworkBase: Fix NullPointerException of AMS  [xiaohuin]
+b90d8c7  IconsHandler: Really update the icon packs available  [Giuseppe Maggio]
+b479d71  Support per-app icon and label customization [2/2]  [Anas Karbila]
+b2a4ea6  LTE tile: Remove oreo style slashes  [Pranav Vashi]
+daf4f5e  The surface hang up when screen on and screen off  [Guo Li]
+86b59b3  Fixed setting incorrect mode of vibration  [Sun Changqing]
+8860e20  backup: right way to check canonical file path  [pip.zhang]
+65bf3e3  Fixes crash/race condition when destroyActivity  [katao]
+
+ * frameworks/opt/net/wifi
+a94c0f5  Merge tag 'LA.UM.7.6.r1-04500-89xx.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/wifi  [DennySPB]
+
+ * packages/apps/Launcher3
+08f665c  Launcher3: Switch to actual compiled library for SystemUI  [Pranav Vashi]
+5dd0629  Add INTERACT_ACROSS_USERS_FULL permission for quickstep  [Pranav Vashi]
+7fa10ea  Launcher3: Add permission to allow updating database  [neobuddy89]
+5e2456b  Launcher3: Improve label hide logic  [neobuddy89]
+c917f0f  proguard: Also keep FixedScaleDrawable  [Diogo Ferreira]
+d27d40e  Launcher3: Fix NPE in PagedView  [Pranav Vashi]
+9e82928  Launcher3: Bump sdk version  [Pranav Vashi]
+22022d2  Settings: fix method to hide dividers  [Alex]
+293900d  Icon edit: Add fast scrolling to icon pack RecyclerView  [Alex]
+8428543  Beautify icon edit dialog  [Alex]
+6c192f8  Fix icon editor picking the wrong icon on tap  [ezio84]
+32dad73  Support per-app icon and label customization [1/2]  [Anas Karbila]
+98e2746  Launcher3: Use generic android icon for IconPack chooser  [Giuseppe Maggio]
+
+====================
+     2019-04-09    
+====================
+
+ * packages/apps/Settings
+0398731  Team: add maintainer for Xiaomi 6X (Wayne) Also cleanup "About Team" screen  [blinoff82]
+
+ * packages/apps/SyberiaSettings
+401d91d  Implement Aggressive Battery [2/2]  [Joe Maples]
+
+ * vendor/syberia
+3318868  jenkins: add Xiaomi 6x (Wayne)  [blinoff82]
+
