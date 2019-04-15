@@ -1,0 +1,30 @@
+{
+  "addons": [
+    {
+      "title": "Magisk",
+      "summary": "Magisk",
+      "url": "\"http://tiny.cc/latestmagisk"
+    },
+    {
+      "title": "Magisk",
+      "summary": "Magisk Uninstaller",
+      "url": "http://tiny.cc/latestuninstaller"
+    }
+  ],
+  "filename": "syberia_wayne-v2.4-20190415-1815-OFFICIAL.zip",
+  "changelog": "",
+  "filesize": "700828479",
+  "md5": "94b0d1772ffd3729d57126777df3dbc1",
+  "build_date": "20190415",
+  "device": "wayne",
+  "url": "https://sourceforge.net/projects/syberiaos/files/wayne/syberia_wayne-v2.4-20190415-1815-OFFICIAL.zip/download",
+  "donate_url": "https://syberiaos.com/links",
+  "developer_url": "http://github.com/syberia-project",
+  "news_url": "http://github.com/syberia-project",
+  "developer": "rebenok90x",
+  "error": "false",
+  "website_url": "http://syberiaos.com",
+  "forum_url": "https://forum.xda-developers.com/mi-a2/xiaomi-6x-wayne/rom-syberia-project-t3914657",
+  "device_brand": "Xiaomi",
+  "device_model": "6X"
+}
