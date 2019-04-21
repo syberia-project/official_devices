@@ -1,4 +1,133 @@
 ====================
+     2019-04-21    
+====================
+
+ * device/xiaomi/mido
+6e64763  mido:Kang aptX blobs from Marlin  [nato66613]
+27534a3  mido: overlay: Tune adaptive brightness nits under low light  [Nich]
+9c542b5  Revert "Mido: Kang brightness overlays from marlin"  [nato66613]
+af69609  mido: Update security patch level  [nato66613]
+abbe6f0  prebuilts: update Lawnchair to 1999-alpha  [DennySPB]
+7403fc1  mido: Clone 5.2 GCAM  [nato66613]
+4cc0172  add SysUI to PRODUCT_DEXPREOPT_SPEED_APPS  [Wei Wang]
+fe4ef3b  overlay: PIN critical apps and system services that get swapped  [Jorim Jaggi]
+fa9d870  mido: overlay: Pin the same RenderScript libs as stock  [Bruno Martins]
+2c4b452  Clean up overlay  [nato66613]
+30d18c9  performance.rc: set optimal SQLite flags for f2fs  [kdrag0n]
+
+ * hardware/qcom/data/ipacfg-mgr
+2e3ed98  msm8998: ipanat: Add missing kernel header dep  [Christopher N. Hesse]
+
+ * kernel/xiaomi/msm8953
+27f9ca4  dtb: msm8953: Xiaomi kernel changes for Redmi note4X  [TheHitMan7]
+871c2c7  mido:Enable compat vDSO  [nato66613]
+b9337b5  arm64: vdso/vdso32: Fix build with Clang  [Nathan Chancellor]
+5355329  ANDROID: clock_gettime(CLOCK_BOOTTIME,) slows down >20x  [Mark Salyzyn]
+4497442  ANDROID: CROSS_COMPILE_ARM32 must work if CONFIG_COMPAT_VDSO  [Mark Salyzyn]
+2e0b28a  FROMLIST: BACKPORT: [PATCH 6/6] arm64: Wire up and expose the new compat vDSO  [Kevin Brodsky]
+2d35c56a  FROMLIST: BACKPORT: [PATCH 5/6] arm64: compat: 32-bit vDSO setup  [Kevin Brodsky]
+0194859  FROMLIST: [PATCH 4/6] arm64: compat: Add a 32-bit vDSO  [Kevin Brodsky]
+18c2cac  FROMLIST: BACKPORT: [PATCH 3/6] arm64: Refactor vDSO init/setup  [Kevin Brodsky]
+1d7f1d5  FROMLIST: BACKPORT: [PATCH 2/6] arm64: elf: Set AT_SYSINFO_EHDR in compat processes  [Kevin Brodsky]
+5000639  FROMLIST: [PATCH 1/6] arm64: compat: Use vDSO sigreturn trampolines if available  [Kevin Brodsky]
+c0787e6  FROMLIST: lib: vdso: add support for time  [Mark Salyzyn]
+289648c  FROMLIST: BACKPORT: [PATCH] arm64: compat: Expose offset to registers in sigframes  [Kevin Brodsky]
+ef0962d  FROMLIST: [PATCH v5 12/12] lib: vdso: do not expose gettimeofday, if no arch supported timer  [Mark Salyzyn]
+59891d7  FROMLIST: BACKPORT: [PATCH v5 11/12] lib: vdso: Add support for CLOCK_BOOTTIME  [Mark Salyzyn]
+69a7c32  FROMLIST: BACKPORT: [PATCH v5 10/12] arm64: vdso: replace gettimeofday.S with global vgettimeofday.C  [Mark Salyzyn]
+35f29dd  FROMLIST: [PATCH v5 09/12] arm: vdso: move vgettimeofday.c to lib/vdso/  [Mark Salyzyn]
+1120b41  FROMLIST: [PATCH v5 08/12] arm: vdso: Add ARCH_CLOCK_FIXED_MASK  [Mark Salyzyn]
+1fe9123  FROMLIST: [PATCH v5 07/12] arm: vdso: disable profiling  [Mark Salyzyn]
+9654ea2  FROMLIST: [PATCH v5 06/12] arm: vdso: add support for clock_getres  [Mark Salyzyn]
+772f9b0  FROMLIST: BACKPORT: [PATCH v6 05/12] arm: vdso: Add support for CLOCK_MONOTONIC_RAW  [Mark Salyzyn]
+1788129  FROMLIST: [PATCH v5 04/12] arm: vdso: do calculations outside reader loops  [Mark Salyzyn]
+dd9db80  FROMLIST: [PATCH v5 03/12] arm: vdso: inline assembler operations to compiler.h  [Mark Salyzyn]
+a47d2f6  FROMLIST: [PATCH v5 02/12] arm: vdso: add include file defining __get_datapage()  [Mark Salyzyn]
+eb84b6e  FROMLIST: [PATCH v5 01/12] arm: vdso: rename vdso_datapage variables  [Mark Salyzyn]
+4a5747d  FROMLIST: BACKPORT: [PATCH v2 3/3] arm64: compat: Add CONFIG_KUSER_HELPERS  [Kevin Brodsky]
+a3b4633  FROMLIST: BACKPORT: [PATCH v2 2/3] arm64: compat: Split the sigreturn trampolines and kuser helpers (assembler sources)  [Kevin Brodsky]
+6caa2e9  FROMLIST: BACKPORT: [PATCH v2 1/3] arm64: compat: Split the sigreturn trampolines and kuser helpers (C sources)  [Kevin Brodsky]
+bc3f207  Revert "BACKPORT: arm64, vdso: Define vdso_{start,end} as array"  [Albert I]
+b162d50  media: msm/vidc: Avoid use of uninitialized return codes  [Albert I]
+
+ * vendor/xiaomi
+14fa07e  msm8953-common: Kang aptX blobs from Marlin  [ZeeLog]
+
+====================
+     2019-04-20    
+====================
+
+ * device/xiaomi/mido
+68c82c8  mido: Remove non-existing HAL services  [Bruno Martins]
+efe986a  mido: Remove oem_2901 group for second RIL daemon service  [Wang Han]
+d937d0c  mido: Update properties  [Artem Borisov]
+
+ * frameworks/base
+1d6aae2  Merge pull request #10 from SOVIET-ANDROID/9.0  [DennySPb]
+a85d77f  Themes: Allow volume slider and thumb to work with custom images.  [Randall Rushing]
+d12990f  Themes: Expose QS tiles and label colors  [Adarsh-MR]
+3253665  SystemUI: Add Gaming mode tile  [PMS22]
+b0e4186  SystemUI: Add tile for enable/disable HW keys  [xyyx]
+9d73c41  FOD: dont show FP icons if FOD is in use  [Marko Man]
+
+ * kernel/xiaomi/msm8953
+de558fd  Import: msm8953: Xiaomi kernel changes for Redmi note4X  [TheHitMan7]
+40a3f40  Implement USB Fast Charge  [engstk]
+efaf7a3  Update: Frandom: Random number generator  [TheHitMan7]
+9b1e457  HMP: Disable kernel HMP function  [TheHitMan7]
+8d99db0  msm: thermal: Add sysfs nodes to control parameters  [Pranav Vashi]
+c4ae337  driver: misc: Add  QNS  [nato66613]
+a478ead  Fix: Thermal driver: General fixes for msm-thermal  [TheHitMan7]
+61b5433  Revert "Fix: Thermal driver: msm_thermal Emergency Mitigation"  [TheHitMan7]
+0e653f6  ARM: dts: qcom: mido,tissot: Remove unusued display panels  [Albert I]
+
+ * vendor/syberia
+29f4f07  Themes: Expose QS tiles and label colors  [DennySPB]
+
+====================
+     2019-04-19    
+====================
+
+====================
+     2019-04-18    
+====================
+
+ * external/skia
+22773e3  Revert "Revert "switched from NUM_SHADER_BINARY_FORMATS to NUM_PROGRAM_BINARY_FORMATS""  [DennySPB]
+0130029  Merge tag 'LA.UM.7.3.r1-07400-sdm845.0' of https://source.codeaurora.org/quic/la/platform/external/skia  [DennySPB]
+
+ * frameworks/base
+d10a4aa  fod: custom fingerprint icon [1/2]  [Vachounet]
+
+ * packages/apps/Settings
+7820009  BatteryMeterView: update charging text dynamically  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+833e24e  custom fingerprint icon [2/2]  [Vachounet]
+
+====================
+     2019-04-17    
+====================
+
+ * frameworks/base
+04c3bca  fod: prevent reapplying modes if theres no changes  [Marko Man]
+9c4edf5  fod: differentiate dreaming and pulse  [Marko Man]
+460bd49  Initial support for OnePlus in-display fingerprint sensor  [phhusson]
+
+ * vendor/interfaces
+8bf66b3  add optional tags  [Marko Man]
+
+====================
+     2019-04-16    
+====================
+
+ * frameworks/base
+57c4a13  Revert "Connectivity: Trigger network permission change for non DDS network"  [DennySPB]
+
+ * vendor/syberia
+1870775  kernel: Add option for using LLD as linker  [mydongistiny]
+
+====================
      2019-04-15    
 ====================
 
@@ -12,167 +141,4 @@ f6ff766  mido: Update IDisplayConfig version  [Ramakant Singh]
 4b964b1  arm64: Add support ARCH_SUPPORTS_INT128  [Kefeng Wang]
 64a73e2  clocksource: Fix abs() usage w/ 64bit values  [John Stultz]
 4799958  Merge remote-tracking branch 'kud/lineage-16.0' into soviet-star  [kondors1995]
-
-====================
-     2019-04-14    
-====================
-
- * device/xiaomi/mido
-c30c28d  mido:update perf stack from taimen q preview  [kondors1995]
-e4719fe  mido: Remove libperfmgr.so lib  [kondors1995]
-cf5b338  mido: enable SND_MONITOR feature  [Jyotiraditya]
-47ac732  mido: audio: add new vendor specific media codec file  [Lakshman Chaluvaraju]
-694a053  mido: Set TARGET_USES_AOSP_FOR_AUDIO  [Albert I]
-14bbf45  Mido: Fix libperfmgr 1.3 Acces to /dev/cpu_dma_latency node  [kondors1995]
-002d6a2  Switch to my own Display HAL  [kondors1995]
-5528df6  mido: gps: merge caf tag LA.UM.7.5.r1-04500-8x96.0  [Linux Build Service Account]
-
- * kernel/xiaomi/msm8953
-6d93110  msm: kgsl: Wake GPU upon receiving an ioctl rather than upon touch input  [Sultan Alsawaf]
-
- * vendor/xiaomi
-c86c71f  mido: Remove libperfmgr.so lib  [kondors1995]
-1554926  mido:update perf stack from taimen q preview  [kondors1995]
-
-====================
-     2019-04-13    
-====================
-
- * kernel/xiaomi/msm8953
-608968b  soc: qcom: access smp2p_smem structure with I/O function  [Arun Kumar Neelakantam]
-f88b0990  drivers: iommu: Fix shift overflow  [Alberto97]
-fc23fc5  mm/memblock: cast constant ULLONG_MAX to phys_addr_t  [Stefan Agner]
-0bc0c16  workqueue: avoid clang warning  [Arnd Bergmann]
-01df5f6  msm: usb_bam: Fix enum-conversion warning  [Alberto97]
-e700244  thermal: tsens: Fix enum-conversion warning  [Alberto97]
-08bc34b  icnss: Redefine wlfw_wlan_mode_req_msg_v01 in order to accept icnss_driver_mode values  [Alberto97]
-d03d7ec  uvcvideo: Fix a wrong macro  [Guennadi Liakhovetski]
-8cafd5b  Revert "mmc: Fixing few warning messages."  [Nick Desaulniers]
-6142963  Revert "mmc: sdio: Update the argument for data copy"  [Nick Desaulniers]
-8974569  Revert "mmc: sdio: Update the buffer copy to include the last char"  [Nick Desaulniers]
-1f58e75  ANDROID: xt_qtaguid: don't check if embedded arrays are NULL  [Greg Hackmann]
-496e3fa  UPSTREAM: genirq: Use cpumask_available() for check of cpumask variable  [Matthias Kaehlcke]
-72deb12  UPSTREAM: cpumask: Add helper cpumask_available()  [Matthias Kaehlcke]
-139599b  UPSTREAM: selinux: Remove unnecessary check of array base in selinux_set_mapping()  [Matthias Kaehlcke]
-b230301  UPSTREAM: arm64: uaccess: suppress spurious clang warning  [Mark Rutland]
-9b3d611  soc: qcom: scm: fix boot issue when compiled with clang  [Satya Durga Srinivasu Prabhala]
-ebd4a4f  ANDROID: HACK: futex, LLVMLinux: don't optimize futex_detect_cmpxchg() on ARM64  [Greg Hackmann]
-ad51cd5  kbuild: allow to use GCC toolchain not in Clang search path  [Stefan Agner]
-fb0a834  kbuild: set no-integrated-as before incl. arch Makefile  [Stefan Agner]
-a34aa36  kbuild: move cc-option and cc-disable-warning after incl. arch Makefile  [Masahiro Yamada]
-659e15d  UPSTREAM: arm64: remove bogus TASK_SIZE_64 check  [Ard Biesheuvel]
-31a4fc3  Revert "soc: qcom: scm: preserve session ID across retries"  [Albert I]
-6cd1468  Revert "soc: qcom: smp2p: fix __iomem access in SMP2P_{GET,SET}_*"  [Albert I]
-29feff3  Revert "mmc: sdio: Fix third argument of strlcpy"  [Albert I]
-dac917b  Revert "iommu: msm_iommu-v1: Disable clang's shift-overflow warning"  [Albert I]
-
- * packages/apps/Settings
-9720ac1  Settings UI: Open UserSettings fragment on user icon click  [DennySPB]
-
-====================
-     2019-04-12    
-====================
- * art
-2d7d845  ART: Support kryo385 CPU  [Artem Serov]
-
- * build/soong
-9fce16e  re-add kryo300 cpu variant after f7bd3bb1  [DennySPB]
-b940191  androidmk: Skip obsolete JACK flags  [Ng Zhi An]
-4cab171  Stop using GCC in toolchain_library  [Dan Willemsen]
-246f59c  Support Qualcomm Kryo 385 CPU variant  [Artem Serov]
-7d789cd  Add to support armv8-2a on 2nd arch. variant  [mtk15504]
-
- * hardware/qcom/display-caf/msm8996
-f785439  Merge tag 'LA.UM.7.6.r1-04500-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into HEAD  [kondors1995]
-
- * kernel/xiaomi/msm8953
-e35aea6  Merge remote-tracking branch 'kud/lineage-16.0' into soviet-star  [kondors1995]
-17b4cdb  drivers: fingerprint: fpc: fix deep sleep issue  [Ryan Andri]
-
- * packages/apps/Settings
-078a39f  Brandify settings title  [DennySPB]
-06be20d  BatteryMeterView: unhardcode charging strings  [DennySPB]
-531a57e  UI : Increase toolbar size and misc fixes  [IacobIonut01]
-504298d  Settings UI : Show User Icon in dashboard  [IacobIonut01]
-146dbe7  Settings UI : Tint Storage ProgressBar & Redesign Toolbar  [IacobIonut01]
-0792518f  Dashboard : Quick Redesign  [IacobIonut01]
-1edabdd  Battery : Redesign BatteryMeterView  [IacobIonut01]
-
-====================
-     2019-04-11    
-====================
-
- * build/make
-3e38a88  Correctly configure armv8-2a for 32-bit  [Miao Wang]
-cb693f8  Enable armv8-2a supporting on 2nd arch. variant  [Isaac Lee]
-
- * build/soong
-f7bd3bb  Move arch variants registering code to arch.go  [Jaewoong Jung]
-f1f5857  Configure the default arch variant features per-OS  [Dan Willemsen]
-3c36a6b  Fix multilib first with multiple 64-bit architectures  [Colin Cross]
-
- * packages/apps/Settings
-751fbe3  Team: we are looking for new santoni maintainer  [DennySPB]
-
-====================
-     2019-04-10    
-====================
-
- * frameworks/base
-09adfa9  Connectivity: Trigger network permission change for non DDS network  [Sunmeet Gill]
-8ac2369  connectivity: Make http(s) probe connections non-persistent.  [Devi Sandeep Endluri V V]
-5ed5c43  FrameworkBase: Fix NullPointerException of AMS  [xiaohuin]
-b90d8c7  IconsHandler: Really update the icon packs available  [Giuseppe Maggio]
-b479d71  Support per-app icon and label customization [2/2]  [Anas Karbila]
-b2a4ea6  LTE tile: Remove oreo style slashes  [Pranav Vashi]
-daf4f5e  The surface hang up when screen on and screen off  [Guo Li]
-86b59b3  Fixed setting incorrect mode of vibration  [Sun Changqing]
-8860e20  backup: right way to check canonical file path  [pip.zhang]
-65bf3e3  Fixes crash/race condition when destroyActivity  [katao]
-
- * frameworks/opt/net/wifi
-a94c0f5  Merge tag 'LA.UM.7.6.r1-04500-89xx.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/wifi  [DennySPB]
-
- * kernel/xiaomi/msm8953
-d2ff250  Merge tag 'LA.UM.7.5.r1-04500-8x96.0' into lineage-16.0  [Albert I]
-13daee2  Revert "Revert "wlan: Add support for default SAP using ini param""  [Albert I]
-854d3ea  Merge tag 'LA.UM.7.5.r1-04500-8x96.0' into lineage-16.0  [Albert I]
-
- * packages/apps/Launcher3
-08f665c  Launcher3: Switch to actual compiled library for SystemUI  [Pranav Vashi]
-5dd0629  Add INTERACT_ACROSS_USERS_FULL permission for quickstep  [Pranav Vashi]
-7fa10ea  Launcher3: Add permission to allow updating database  [neobuddy89]
-5e2456b  Launcher3: Improve label hide logic  [neobuddy89]
-c917f0f  proguard: Also keep FixedScaleDrawable  [Diogo Ferreira]
-d27d40e  Launcher3: Fix NPE in PagedView  [Pranav Vashi]
-9e82928  Launcher3: Bump sdk version  [Pranav Vashi]
-22022d2  Settings: fix method to hide dividers  [Alex]
-293900d  Icon edit: Add fast scrolling to icon pack RecyclerView  [Alex]
-8428543  Beautify icon edit dialog  [Alex]
-6c192f8  Fix icon editor picking the wrong icon on tap  [ezio84]
-32dad73  Support per-app icon and label customization [1/2]  [Anas Karbila]
-98e2746  Launcher3: Use generic android icon for IconPack chooser  [Giuseppe Maggio]
-
-====================
-     2019-04-09    
-====================
-
- * frameworks/base
-4b878c0  EdgeGestures: fix unregistering input filter  [Jens Lody]
-38a8916  core: Implement Aggressive Battery [1/2]  [Joe Maples]
-
- * kernel/xiaomi/msm8953
-ec816c9  Partially revert "input: ft5435: Fix the suspend/resume logic"  [Artem Borisov]
-
- * packages/apps/Settings
-0398731  Team: add maintainer for Xiaomi 6X (Wayne) Also cleanup "About Team" screen  [blinoff82]
-
- * packages/apps/SyberiaSettings
-401d91d  Implement Aggressive Battery [2/2]  [Joe Maples]
-
- * prebuilts/clang/host/linux-x86
-01b4a3d  Update prebuilt Clang to r353983b.  [Yi Kong]
-
- * vendor/syberia
-3318868  jenkins: add Xiaomi 6x (Wayne)  [blinoff82]
 
