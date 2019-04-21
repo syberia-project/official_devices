@@ -1,0 +1,294 @@
+====================
+     2019-04-21    
+====================
+
+ * hardware/qcom/data/ipacfg-mgr
+2e3ed98  msm8998: ipanat: Add missing kernel header dep  [Christopher N. Hesse]
+
+====================
+     2019-04-20    
+====================
+
+ * kernel/oneplus/sdm845
+70604a7  crypto: arm,arm64 - Fix random regeneration of S_shipped  [Leonard Crestez]
+
+====================
+     2019-04-19    
+====================
+
+ * device/oneplus/oneplus6
+5448ad8  prebuilts: update Lawnchair to 1999-alpha  [DennySPB]
+946f98d  init: cleanup and adjust tweaks  [DennySPB]
+
+ * frameworks/base
+1d6aae2  Merge pull request #10 from SOVIET-ANDROID/9.0  [DennySPb]
+a85d77f  Themes: Allow volume slider and thumb to work with custom images.  [Randall Rushing]
+d12990f  Themes: Expose QS tiles and label colors  [Adarsh-MR]
+3253665  SystemUI: Add Gaming mode tile  [PMS22]
+b0e4186  SystemUI: Add tile for enable/disable HW keys  [xyyx]
+9d73c41  FOD: dont show FP icons if FOD is in use  [Marko Man]
+
+ * kernel/oneplus/sdm845
+ee81a17  cpufreq: schedutil: Fix error path mutex unlock  [Jules Maselbas]
+2533072  msm: kgsl: Only wake GPU upon ioctl receipt when it isn't awake  [Sultan Alsawaf]
+c3d76bc  msm: kgsl: Wake GPU upon receiving an ioctl rather than upon touch input  [Sultan Alsawaf]
+cfb09f4  treewide: Update code from Sultan Alsawaf  [Danny Lin]
+93ea133  Revert "Revert "sched/fair: use min capacity when evaluating active cpus""  [Danny Lin]
+d81681b  Revert "Revert "sched/fair: use min capacity when evaluating idle backup cpus""  [Danny Lin]
+3653d44  Revert "ANDROID: sched/fair: prefer energy efficient CPUs for !prefer_idle tasks"  [Danny Lin]
+77f250d  Revert "ANDROID: sched/fair: unify spare capacity calculation"  [Danny Lin]
+4926d0f  defconfig: use ARMv8.2 accelerated SHA512  [DennySPB]
+e8380c4  crypto: arm64/sha512 - fix/improve new v8.2 Crypto Extensions code  [Ard Biesheuvel]
+bc86b51  crypto: arm64/sha2-ce - move the round constant table to .rodata section  [Ard Biesheuvel]
+
+ * vendor/syberia
+29f4f07  Themes: Expose QS tiles and label colors  [DennySPB]
+
+====================
+     2019-04-18    
+====================
+
+ * external/skia
+22773e3  Revert "Revert "switched from NUM_SHADER_BINARY_FORMATS to NUM_PROGRAM_BINARY_FORMATS""  [DennySPB]
+0130029  Merge tag 'LA.UM.7.3.r1-07400-sdm845.0' of https://source.codeaurora.org/quic/la/platform/external/skia  [DennySPB]
+
+ * frameworks/base
+d10a4aa  fod: custom fingerprint icon [1/2]  [Vachounet]
+
+ * kernel/oneplus/sdm845
+0a40d38  crypto: arm64 - implement SHA-512 using special instructions  [Ard Biesheuvel]
+377fcc6  Revert "drm/msm: do not notify events when the system is shutting down"  [DennySPB]
+32c14d5  panic: Print the function name after stack corruption  [Danny Lin]
+229e2d47  BACKPORT: mm/debug.c: provide useful debugging information for VM_BUG  [Matthew Wilcox]
+ca391c4  UPSTREAM: bug: use %pB in BUG and stack protector failure  [Kees Cook]
+ec69040  UPSTREAM: x86/alternative: Print unadorned pointers  [Borislav Petkov]
+d260d96  UPSTREAM: trace_uprobe: Display correct offset in uprobe_events  [Ravi Bangoria]
+db27d51  UPSTREAM: usercopy: Remove pointer from overflow report  [Kees Cook]
+a92f96b  UPSTREAM: Do not hash userspace addresses in fault handlers  [Kees Cook]
+447d626  UPSTREAM: mm/slab.c: do not hash pointers when debugging slab  [Geert Uytterhoeven]
+47269ca  UPSTREAM: kasan: use %px to print addresses instead of %p  [Tobin C. Harding]
+54121fd  BACKPORT: vsprintf: add printk specifier %px  [Tobin C. Harding]
+50538e8  BACKPORT: printk: hash addresses printed with %p  [Tobin C. Harding]
+df943f3  UPSTREAM: siphash: implement HalfSipHash1-3 for hash tables  [Jason A. Donenfeld]
+f9c9cd5  BACKPORT: docs: correct documentation for %pK  [Tobin C. Harding]
+8fd0abe  UPSTREAM: siphash: add cryptographically secure PRF  [Jason A. Donenfeld]
+b741c46  BACKPORT: vsprintf: refactor %pK code out of pointer()  [Tobin C. Harding]
+cc456a6  ANDROID: Fix race in crng_reseed()  [Sandeep Patil]
+ee39f53  arm64: only pass -mpc-relative-literal-loads if 843419 fix is enabled  [kdrag0n]
+38cae20  mdss: rotator: Use FIFO kthread for rotator work  [Naseer Ahmed]
+8efb9bb  Initialize ata before graphics  [Arjan van de Ven]
+42efcd9  f2fs: rename /sys/fs/f2fs  [Park Ju Hyung]
+67fb7b1  f2fs: do not expose tunables that doesn't work with rapid GC  [Park Ju Hyung]
+cc9a870  f2fs: drop caches upon rapid GC exit  [Park Ju Hyung]
+a2fa58e  fs: drop_caches: expose mm_drop_caches()  [Park Ju Hyung]
+862c62d  f2fs: explicitly flush device upon foreground GC  [Park Ju Hyung]
+cc48824  Revert memory profiling disable commits  [DennySPB]
+3469576  defconfig: regenerate -> 4.9.169  [DennySPB]
+d1d7494  Revert "defconfig: disable more debugging configs"  [DennySPB]
+880bfc0  net/usb: r8152: Update to the latest version from k5.0  [Angelo G. Del Regno]
+694f643  msm: pcie: Mark MSI cascade ISR as IRQF_NO_THREAD  [Danny Lin]
+663b31b  Revert some uncertain commits that can affect to stability  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+833e24e  custom fingerprint icon [2/2]  [Vachounet]
+
+====================
+     2019-04-17    
+====================
+
+ * device/oneplus/oneplus6
+c106647  Revert "boardconfig: use clang lld linker for inline kernel build"  [DennySPB]
+0095cb3  overlay: PIN critical apps and system services that get swapped  [Jorim Jaggi]
+c692173  Revert "PIN critical apps and system services that get swapped"  [DennySPB]
+a902a7c  prebuilts: Update Lawnchair to 1983-alpha  [DennySPB]
+4d001d8  boardconfig: use clang lld linker for inline kernel build  [DennySPB]
+19c86ee  init.performance.rc: kang some tweaks from LKT magisk module  [DennySPB]
+
+ * frameworks/base
+04c3bca  fod: prevent reapplying modes if theres no changes  [Marko Man]
+9c4edf5  fod: differentiate dreaming and pulse  [Marko Man]
+
+ * kernel/oneplus/sdm845
+859221c  Merge tag 'v4.9.169' of https://kernel.googlesource.com/pub/scm/linux/kernel/git/stable/linux-stable  [DennySPB]
+5300eec  Revert LLD commits  [DennySPB]
+7706f59  techpack: Add PEWQ's to a few subsystems  [freak07]
+391200e  techpack: audio: Disable enum-conversion warning for tfa_dsp.c  [Nathan Chancellor]
+d7f6ce8  ASoC: msm: audio-effects: Fix memset-elt-size warning  [Nathan Chancellor]
+8aab84b  ASoC: msm: qdsp6v2: Remove duplicate const specifier  [Nathan Chancellor]
+6e872f2  ASoC: msm: qdsp6v2: Improve literal null conversion fix  [Nathan Chancellor]
+a1506de  ASoC: msm: qdsp6v2: Fix non-literal-null-conversion warning  [yarost12]
+7c276d0  wcd934x: add null checks to prevent crash on hardware variants  [flar2]
+7da372e  wcd934x: add speaker gain settings for 6T  [flar2]
+0ed04cb  wcd934x: remove speaker gain settings for 6T  [flar2]
+ed4f54e  wcd934x: remove headphone gain options for 6T  [flar2]
+621712c  wcd934x: sound control: reset headphone digital gain to user value  [flar2]
+ae30582  wcd934x: add sound control  [flar2]
+71678d5  techpack/audio: Build all modules inline  [Joshua Choo]
+494e53a  techpack: use static for *_sw_gpio variables  [Park Ju Hyung]
+c7ed653  treewide: merge OnePlus changes  [Park Ju Hyung]
+3d2a116  max98927: stop log spam  [Park Ju Hyung]
+d0da8ce  treewide: use correct line-endings  [Park Ju Hyung]
+4813dc0  techpack: merge OnePlus changes  [Park Ju Hyung]
+50c1507  techpack: merge OnePlus changes  [Park Ju Hyung]
+e02eb87  techpack: import minimal OnePlus 6 changes  [Park Ju Hyung]
+62a28fb  Add 'techpack/audio/' from commit 'f017a58e3e162d8a794324939cc26ab0d43e4bc0'  [DennySPB]
+fdcc12a  Remove techpack for future subtree implementation  [DennySPB]
+e3ba15a  Revert "Revert "Add proximity_state sysfs support to goodix driver""  [DennySPB]
+636c530  Merge tag 'LA.UM.7.3.r1-07400-sdm845.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.9  [DennySPB]
+df62169  Linux 4.9.169  [Greg Kroah-Hartman]
+5b86e01  PCI: Add function 1 DMA alias quirk for Marvell 9170 SATA controller  [Andre Przywara]
+aea5996  xtensa: fix return_address  [Max Filippov]
+6d1e1da  sched/fair: Do not re-read ->h_load_next during hierarchical load calculation  [Mel Gorman]
+356bcb7  xen: Prevent buffer overflow in privcmd ioctl  [Dan Carpenter]
+79bedcb  parisc: Use cr16 interval timers unconditionally on qemu  [Helge Deller]
+32810f9  arm64: futex: Fix FUTEX_WAKE_OP atomic ops with non-zero result value  [Will Deacon]
+ff7a56e  ARM: dts: at91: Fix typo in ISC_D0 on PC9  [David Engraf]
+208d25a  virtio: Honour 'may_reduce_num' in vring_create_virtqueue  [Cornelia Huck]
+97491c0  genirq: Respect IRQCHIP_SKIP_SET_WAKE in irq_chip_set_wake_parent()  [Stephen Boyd]
+056066d  block: do not leak memory in bio_copy_user_iov()  [Jérôme Glisse]
+1ac411b  Btrfs: do not allow trimming when a fs is mounted with the nologreplay option  [Filipe Manana]
+f4a4005  ASoC: fsl_esai: fix channel swap issue when stream starts  [S.j. Wang]
+a25d4ed  include/linux/bitrev.h: fix constant bitrev  [Arnd Bergmann]
+a957aa5  parisc: Detect QEMU earlier in boot process  [Helge Deller]
+c35bf96  ALSA: seq: Fix OOB-reads from strlcpy  [Zubin Mithra]
+a3320ac  ip6_tunnel: Match to ARPHRD_TUNNEL6 for dev type  [Sheena Mira-ato]
+77b924d  net: ethtool: not call vzalloc for zero sized memory request  [Li RongQing]
+6996763  netns: provide pure entropy for net_hash_mix()  [Eric Dumazet]
+9a739f1  net/mlx5e: Add a lock on tir list  [Yuval Avnery]
+8e302e8  bnxt_en: Improve RX consumer index validity check.  [Michael Chan]
+ebd153c  bnxt_en: Reset device on RX buffer errors.  [Michael Chan]
+5f5d628  vrf: check accept_source_route on the original netdevice  [Stephen Suryaputra]
+051ca6a  tcp: Ensure DCTCP reacts to losses  [Koen De Schepper]
+57601d3  sctp: initialize _pad of sockaddr_in before copying to user memory  [Xin Long]
+6f8b258  qmi_wwan: add Olicard 600  [Bjørn Mork]
+12ff23d  openvswitch: fix flow actions reallocation  [Andrea Righi]
+a1aa69b  net: rds: force to destroy connection if t_sock is NULL in rds_tcp_kill_sock().  [Mao Wenan]
+b09d697  kcm: switch order of device registration to fix a crash  [Jiri Slaby]
+2164e96  ipv6: sit: reset ip header pointer in ipip6_rcv  [Lorenzo Bianconi]
+e33684f  ipv6: Fix dangling pointer when ipv6 fragment  [Junwei Hu]
+9b7984e  tty: ldisc: add sysctl to prevent autoloading of ldiscs  [Greg Kroah-Hartman]
+942ddc0  tty: mark Siemens R3964 line discipline as BROKEN  [Greg Kroah-Hartman]
+da6c493  arm64: kaslr: Reserve size of ARM64_MEMSTART_ALIGN in linear region  [Yueyi Li]
+91f69a3c  powerpc/security: Fix spectre_v2 reporting  [Michael Ellerman]
+012c277  powerpc/fsl: Fix the flush of branch predictor.  [Christophe Leroy]
+38f573e  powerpc/fsl: Fixed warning: orphan section `__btb_flush_fixup'  [Diana Craciun]
+0ac0d2b  powerpc/fsl: Update Spectre v2 reporting  [Diana Craciun]
+487bea7  powerpc/fsl: Enable runtime patching if nospectre_v2 boot arg is used  [Diana Craciun]
+5b0392a  powerpc/fsl: Flush branch predictor when entering KVM  [Diana Craciun]
+e115294  powerpc/fsl: Flush the branch predictor at each kernel entry (32 bit)  [Diana Craciun]
+dd8bf94  powerpc/fsl: Flush the branch predictor at each kernel entry (64bit)  [Diana Craciun]
+7133df4  powerpc/fsl: Add nospectre_v2 command line argument  [Diana Craciun]
+a1101a6  powerpc/fsl: Emulate SPRN_BUCSR register  [Diana Craciun]
+1eb1ddb  powerpc/fsl: Fix spectre_v2 mitigations reporting  [Diana Craciun]
+5188172  powerpc/fsl: Add macro to flush the branch predictor  [Diana Craciun]
+d91460f  powerpc/fsl: Add infrastructure to fixup branch predictor flush  [Diana Craciun]
+ae36109  powerpc/powernv: Query firmware for count cache flush settings  [Michael Ellerman]
+e745d15  powerpc/pseries: Query hypervisor for count cache flush settings  [Michael Ellerman]
+98f6ded  powerpc/64s: Add support for software count cache flush  [Michael Ellerman]
+2f4fed0  powerpc/64s: Add new security feature flags for count cache flush  [Michael Ellerman]
+6482f0d  powerpc/asm: Add a patch_site macro & helpers for patching instructions  [Michael Ellerman]
+25ea295  powerpc/fsl: Sanitize the syscall table for NXP PowerPC 32 bit platforms  [Diana Craciun]
+a299c07  powerpc/fsl: Add barrier_nospec implementation for NXP PowerPC Book3E  [Diana Craciun]
+a96e47d  powerpc/64: Make meltdown reporting Book3S 64 specific  [Diana Craciun]
+37336b6  powerpc/64: Call setup_barrier_nospec() from setup_arch()  [Michael Ellerman]
+2f8703f  powerpc/64: Add CONFIG_PPC_BARRIER_NOSPEC  [Michael Ellerman]
+1ec00d2  powerpc/64: Make stf barrier PPC_BOOK3S_64 specific.  [Diana Craciun]
+78749d1  powerpc/64: Disable the speculation barrier from the command line  [Diana Craciun]
+ee617f5  powerpc64s: Show ori31 availability in spectre_v1 sysfs file not v2  [Michael Ellerman]
+f7493c9  powerpc/64s: Enhance the information in cpu_show_spectre_v1()  [Michal Suchanek]
+86dfa51  powerpc/64: Use barrier_nospec in syscall entry  [Michael Ellerman]
+86341b2  powerpc: Use barrier_nospec in copy_from_user()  [Michael Ellerman]
+e1217b4  powerpc/64s: Enable barrier_nospec based on firmware settings  [Michal Suchanek]
+73b0f62  powerpc/64s: Patch barrier_nospec in modules  [Michal Suchanek]
+1c38a84  powerpc: Avoid code patching freed init sections  [Michael Neuling]
+f3286f1  powerpc/64s: Add support for ori barrier_nospec patching  [Michal Suchanek]
+4314e77  powerpc/64s: Add barrier_nospec  [Michal Suchanek]
+10f1dea  powerpc: Fix invalid use of register expressions  [Andreas Schwab]
+7eceaf5  lib/string.c: implement a basic bcmp  [Nick Desaulniers]
+408d67a  x86/vdso: Drop implicit common-page-size linker flag  [Nick Desaulniers]
+94c0c4f  x86: vdso: Use $LD instead of $CC to link  [Alistair Strachan]
+1347aa2  kbuild: clang: choose GCC_TOOLCHAIN_DIR not on LD  [Nick Desaulniers]
+4d8b1fd  powerpc/tm: Limit TM code inside PPC_TRANSACTIONAL_MEM  [Breno Leitao]
+39dbf53  x86/power: Make restore_processor_context() sane  [Andy Lutomirski]
+d72b485  x86/power/32: Move SYSENTER MSR restoration to fix_processor_context()  [Andy Lutomirski]
+61f1e18  x86/power/64: Use struct desc_ptr for the IDT in struct saved_context  [Andy Lutomirski]
+57578e5  x86/power: Fix some ordering bugs in __restore_processor_context()  [Andy Lutomirski]
+
+ * packages/apps/Settings
+7820009  BatteryMeterView: update charging text dynamically  [DennySPB]
+
+====================
+     2019-04-16    
+====================
+
+ * frameworks/base
+460bd49  Initial support for OnePlus in-display fingerprint sensor  [phhusson]
+
+ * kernel/oneplus/sdm845
+7e507b7  dsi_panel: always restore panel mode when exiting aod  [Vachounet]
+05ae18c  gpu: drm: force fp pressed if fp mode on  [Vachounet]
+151df87  Revert "Add proximity_state sysfs support to goodix driver"  [Marko Man]
+4df6ac5  msm: ipa3: fix to off-by-one read issue  [Praveen Kurapati]
+82d2e95  scsi: ufs: update dev ref clock gating wait time  [Can Guo]
+a75617f  msm: mdp3: Remove panic ctrl duing ctrl off  [Animesh Kishore]
+4e78ebc  scsi: ufs: add delay after reference clock ungating  [Can Guo]
+cf6e3e7  drm/msm/sde: Add refcount support for wb irq ctrl  [Shubhashree Dhar]
+669c8de  drm/msm: fix DSC slice last_group_size config  [Veera Sundaram Sankaran]
+ba185d6  drm/msm/sde: Add NULL check for encoder master  [Jayant Shekhar]
+2d8cd7a  drm/msm/sde: add interrupt enabling state to fix deadlock  [Xu Yang]
+565a14b  drm/msm/sde: fix race condition in vblank control interrupts  [Raviteja Tamatam]
+c9b9ef6  drm/msm/sde: update 1.8G BW vote during cont-splash  [Raviteja Tamatam]
+8c0ad13  drm/msm/sde: reset both Layer mixers during Writeback disable  [Raviteja Tamatam]
+9a8c2c6  drm/msm/dp: use scaled up mvid/nvid values  [Sankeerth Billakanti]
+1b27ac7  fix int_sqrt64() for very large numbers  [Florian La Roche]
+c846b9e  lib: Add strongly typed 64bit int_sqrt  [Crt Mori]
+7e2acf2  arm64: drop linker script hack to hide __efistub_ symbols  [Ard Biesheuvel]
+34f7704  arm64: relocatable: fix inconsistencies in linker script and options  [Ard Biesheuvel]
+b8326f3  arm64: Use aarch64elf and aarch64elfb emulation mode variants  [Paul Kocialkowski]
+9e3f9c4  arm64: ensure the kernel is compiled for LP64  [Andrew Pinski]
+b3c03cc  arm64: vdso: Fix compilation with LLD  [Nathan Chancellor]
+dd8097d  Makefile: clang: choose GCC_TOOLCHAIN_DIR not on LD  [Nick Desaulniers]
+e23a406  Makefile: lld: set -O2 linker flag when linking with LLD  [Nick Desaulniers]
+fda3e9f  Makefile: lld: tell clang to use lld  [Nick Desaulniers]
+8d8df5f  BACKPORT: arm64: Expose support for optional ARMv8-A features  [Suzuki K Poulose]
+7be3557  FROMLIST: arm64: Build vDSO with -ffixed-x18  [Peter Collingbourne]
+9dc1534  defconfig: disable HARDEN_BRANCH_PREDICTOR  [DennySPB]
+e56ed31  defconfig: disable more debugging configs  [Park Ju Hyung]
+571ebac  sched/fair: Make PELT half-life configurable  [Viresh Kumar]
+bb43fbd  [STOPSHIP]: Enable Force Warm Reboot to keep persistent-memory  [Raphiel Rollerscaperers]
+5cc59ad  ARM: dts: qcom: Updating mincpubw tuning parameters  [Wei Wang]
+9c67381  There are systems in which the platform doesn't support any special sleep states, so suspend-to-idle (PM_SUSPEND_FREEZE) is the only available system sleep state.  However, some user space frameworks only use the "mem" and (sometimes) "standby" sleep state labels, so the users of those systems need to modify user space in order to be able to use system suspend at all and that may be a pain in practice.  [Vinay Kalia]
+4d76b0f  ARM: dts: qcom: Updating mincpubw tuning parameters  [Andrew LeCain]
+d941caf  ARM: dts: qcom: change freq table for l3-cpu0 memlat governor  [Wei Wang]
+9f98dff  arm64: Fix compilation with HARDEN_BRANCH_PREDICTOR config disabled  [Bruno Martins]
+88fd625  arm64: Makefile: correct how cortex-a53-843419 opt-out rolled  [Raphiel Rollerscaperers]
+78dd225  mm: Decrease swappiness to 8  [Joe Maples]
+9af9107  mm: Enable oom_kill_allocating_task and disable oom_dump_tasks  [Nathan Chancellor]
+0eb2d06  Revert "Revert "mm: workingset: tell cache transitions from workingset thrashing""  [DennySPB]
+c59a3f8  Revert "Revert "delayacct: track delays from thrashing cache pages""  [DennySPB]
+fd62c0f  Revert "BACKPORT: mm: vmscan: fix IO/refault regression in cache workingset transition"  [DennySPB]
+4bd6c43  sched: fair: skip energy aware placement when overutilized  [Wei Wang]
+
+ * vendor/interfaces
+8bf66b3  add optional tags  [Marko Man]
+
+ * vendor/syberia
+1870775  kernel: Add option for using LLD as linker  [mydongistiny]
+
+====================
+     2019-04-15    
+====================
+
+ * frameworks/base
+57c4a13  Revert "Connectivity: Trigger network permission change for non DDS network"  [DennySPB]
+
+ * kernel/oneplus/sdm845
+29e54d8  cpuidle: Do not select menu and ladder governors  [Maulik Shah]
+7f3a3a0  qseecom: Silence listener service exit warnings  [Danny Lin]
+feb86ad  arm64: armv8_deprecated: Silence deprecated instruction warnings  [Danny Lin]
+907bf67  cfq-iosched: Adjust one function call together with a variable assignment  [Markus Elfring]
+07320d8  Revert "drm/msm/dsi-staging: Reduce early wakeups before vsync events"  [Park Ju Hyung]
+99b6875  Merge tag 'LA.UM.7.4.r1-05000-8x98.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn  [DennySPB]
+e78e61d  Merge tag 'LA.UM.7.4.r1-05000-8x98.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0  [DennySPB]
+a096e58  Revert "qcacld, fw-api: revert back to 5.1.1.70J"  [Park Ju Hyung]
+
