@@ -1,120 +1,151 @@
 ====================
-     2019-04-15    
+     2019-04-21    
 ====================
 
-====================
-     2019-04-14    
-====================
+ * device/xiaomi/sdm660-common
+83d0b97  upod  [coderzstas]
+07ea4f4  remove unknown type  [rebenok90x]
+b1fff4c  remove unknown type  [rebenok90x]
+f0cc850  remove unknown type  [rebenok90x]
+3faa90f  remove unknown type  [rebenok90x]
+649416d  remove unknown type  [rebenok90x]
+1442dfa  remove unknown type  [rebenok90x]
+9bed6b9  remove unknown type  [rebenok90x]
+2f53bed  remove unknown type  [rebenok90x]
+0a598bf  remove unknown type  [rebenok90x]
+b70ba8d  Fix Online Media Streaming buffering crashes  [mracar07]
+bb15773  Fix media streaming Denial  [mracar07]
+cbf5502  sdm660: compile kernel with clang 9.0.2  [Akhil Narang]
+3923b16  sdm660: overlay: Snap Configuration for HAl1 and Bokeh  [Max Weffers]
+b4c96c4  sdm660: fix signal strength visual bug  [nebrassy]
+e542a65  sdm660: Remove double defined overlay  [Max Weffers]
+32cda9b  sdm660: bring in velocity values  [celtare21]
+6a150a6  sdm660: Compile HWUI in Performance Mode  [celtare21]
+de9ee15  sdm660: set dirty ratios  [Dusan Uveric]
+ac7ce11  sdm660: Boardconfig: Strip debug  [celtare21]
+91c4586  sdm660: Add GPU Tweaks from jason  [celtare21]
+f6e263c  sdm660: Disable VSync for CPU rendered apps  [Hazari PraveenKumar]
+cc23ccb  sdm660: adjust irqbalance prio  [Dusan Uveric]
+9718c68  sdm660: add glink_lpass to ignored irqs  [Dusan Uveric]
+d8fa90a  sdm660: Set TARGET_KERNEL_VERSION  [dianlujitao]
+33e92d1  sdm660: rootdir: Move mm-pp-dpps to hal class Change-Id: I1e243b057ed24a2bc50a206de7b6c5c8bd702617  [Ethan Chen]
+9ceb4a7  XiaomiParts: Correct FP actions for swipe gestures  [Stylogey]
+0aa3a2a  sdm660: ipacm: Enable IPACM for SA8 target  [Mohammed Javid]
+2c66888  sdm660: device: Build services-ext  [GuaiYiHu]
+00e9124  sdm660: rootdir: Modify the persist name in init script  [Max Weffers]
+9f90d57  sdm660: overlay: Squash CarrierConfig updates from LA.UM.7.2.r1-06700-sdm660.0  [GuaiYiHu]
+f92c101  sdm660: Update props from MIUI 9.3.25  [GuaiYiHu]
+1bc7191  sdm660: board: Disable split a2dp  [dianlujitao]
+bd174c5  sdm660: ifaa: Update for mlipay 1.1 changes  [GuaiYiHu]
+e6e5a8d  sdm660: wifi: Update wifi configs from MIUI 9.3.25  [GuaiYiHu]
+757acec  sepolicy: fix OTA denials  [Max Weffers]
+67902f7  sepolicy: fix unknown type  [nebrassy]
+9aef67a  sepolicy: fix more denials  [nebrassy]
+57b09e5  sdm660: sepolicy: Fix denials  [Max Weffers]
+9789dcc  sdm660: Fix dt2w denials and fingerprint prop  [Max Weffers]
+1f6344f  sdm660: selinux: enforcing  [nebrassy]
+85840a2  sdm660: Fix Denials for enforcing selinux  [nebrassy]
+517b083  sdm660: sepolicy: Address denials  [Stylogey]
+
+ * hardware/qcom/data/ipacfg-mgr
+2e3ed98  msm8998: ipanat: Add missing kernel header dep  [Christopher N. Hesse]
 
 ====================
-     2019-04-13    
-====================
-
- * kernel/xiaomi/sdm660
-9d10268  input: gf3208: Mark IRQ as performance critical  [Manish4586]
-828397d  proc: Remove verifiedbootstate flag  [Manish4586]
-
- * packages/apps/Settings
-9720ac1  Settings UI: Open UserSettings fragment on user icon click  [DennySPB]
-
-====================
-     2019-04-12    
-====================
-
- * build/soong
-9fce16e  re-add kryo300 cpu variant after f7bd3bb1  [DennySPB]
-
- * kernel/xiaomi/sdm660
-d007ff7  input: goodix: Mark IRQ as performance critical  [Dusan Uveric]
-e6311dd  input: fpc1020: Mark IRQ as performance critical  [Sultan Alsawaf]
-d0ee82c4  ARM: sdm660-mdss-pannel: reduce the maximum voltage allowed for the panel  [Manish4586]
-513bfc2  gpu: msm: Do not compile Adreno 3xx / 4xx drivers  [Tyler Nijmeh]
-cbab99e  msm: kgsl: Increase worker thread priority  [Sultan Alsawaf]
-adc775d  ARM: dts: omit useless DTBs  [Tyler Nijmeh]
-696254f  pm660l dtsi: use analog dimming  [Manish4586]
-f3a6ade  kernel: Force trivial, unbound kthreads onto low-power CPUs  [Sultan Alsawaf]
-b2376ff  msm: kgsl: Mark IRQ and worker thread as performance critical  [Sultan Alsawaf]
-bfb5bb9  sdm660: defconfig: Sync defconfig from miui beta and regen  [GuaiYiHu]
-45a6e77  drivers: Fix potential kernel panic  [GuaiYiHu]
-
- * packages/apps/Settings
-078a39f  Brandify settings title  [DennySPB]
-06be20d  BatteryMeterView: unhardcode charging strings  [DennySPB]
-531a57e  UI : Increase toolbar size and misc fixes  [IacobIonut01]
-504298d  Settings UI : Show User Icon in dashboard  [IacobIonut01]
-146dbe7  Settings UI : Tint Storage ProgressBar & Redesign Toolbar  [IacobIonut01]
-0792518f  Dashboard : Quick Redesign  [IacobIonut01]
-1edabdd  Battery : Redesign BatteryMeterView  [IacobIonut01]
-
-====================
-     2019-04-11    
-====================
- * art
-2d7d845  ART: Support kryo385 CPU  [Artem Serov]
-
- * build/make
-3e38a88  Correctly configure armv8-2a for 32-bit  [Miao Wang]
-cb693f8  Enable armv8-2a supporting on 2nd arch. variant  [Isaac Lee]
-
- * build/soong
-b940191  androidmk: Skip obsolete JACK flags  [Ng Zhi An]
-4cab171  Stop using GCC in toolchain_library  [Dan Willemsen]
-246f59c  Support Qualcomm Kryo 385 CPU variant  [Artem Serov]
-7d789cd  Add to support armv8-2a on 2nd arch. variant  [mtk15504]
-f7bd3bb  Move arch variants registering code to arch.go  [Jaewoong Jung]
-f1f5857  Configure the default arch variant features per-OS  [Dan Willemsen]
-3c36a6b  Fix multilib first with multiple 64-bit architectures  [Colin Cross]
-
- * packages/apps/Settings
-751fbe3  Team: we are looking for new santoni maintainer  [DennySPB]
-
-====================
-     2019-04-10    
+     2019-04-20    
 ====================
 
  * frameworks/base
-09adfa9  Connectivity: Trigger network permission change for non DDS network  [Sunmeet Gill]
-8ac2369  connectivity: Make http(s) probe connections non-persistent.  [Devi Sandeep Endluri V V]
-5ed5c43  FrameworkBase: Fix NullPointerException of AMS  [xiaohuin]
-b90d8c7  IconsHandler: Really update the icon packs available  [Giuseppe Maggio]
-b479d71  Support per-app icon and label customization [2/2]  [Anas Karbila]
-b2a4ea6  LTE tile: Remove oreo style slashes  [Pranav Vashi]
-daf4f5e  The surface hang up when screen on and screen off  [Guo Li]
-86b59b3  Fixed setting incorrect mode of vibration  [Sun Changqing]
-8860e20  backup: right way to check canonical file path  [pip.zhang]
-65bf3e3  Fixes crash/race condition when destroyActivity  [katao]
-
- * frameworks/opt/net/wifi
-a94c0f5  Merge tag 'LA.UM.7.6.r1-04500-89xx.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/wifi  [DennySPB]
-
- * packages/apps/Launcher3
-08f665c  Launcher3: Switch to actual compiled library for SystemUI  [Pranav Vashi]
-5dd0629  Add INTERACT_ACROSS_USERS_FULL permission for quickstep  [Pranav Vashi]
-7fa10ea  Launcher3: Add permission to allow updating database  [neobuddy89]
-5e2456b  Launcher3: Improve label hide logic  [neobuddy89]
-c917f0f  proguard: Also keep FixedScaleDrawable  [Diogo Ferreira]
-d27d40e  Launcher3: Fix NPE in PagedView  [Pranav Vashi]
-9e82928  Launcher3: Bump sdk version  [Pranav Vashi]
-22022d2  Settings: fix method to hide dividers  [Alex]
-293900d  Icon edit: Add fast scrolling to icon pack RecyclerView  [Alex]
-8428543  Beautify icon edit dialog  [Alex]
-6c192f8  Fix icon editor picking the wrong icon on tap  [ezio84]
-32dad73  Support per-app icon and label customization [1/2]  [Anas Karbila]
-98e2746  Launcher3: Use generic android icon for IconPack chooser  [Giuseppe Maggio]
-
-====================
-     2019-04-09    
-====================
-
- * packages/apps/Settings
-0398731  Team: add maintainer for Xiaomi 6X (Wayne) Also cleanup "About Team" screen  [blinoff82]
-
- * packages/apps/SyberiaSettings
-401d91d  Implement Aggressive Battery [2/2]  [Joe Maples]
+1d6aae2  Merge pull request #10 from SOVIET-ANDROID/9.0  [DennySPb]
+a85d77f  Themes: Allow volume slider and thumb to work with custom images.  [Randall Rushing]
+d12990f  Themes: Expose QS tiles and label colors  [Adarsh-MR]
+3253665  SystemUI: Add Gaming mode tile  [PMS22]
+b0e4186  SystemUI: Add tile for enable/disable HW keys  [xyyx]
+9d73c41  FOD: dont show FP icons if FOD is in use  [Marko Man]
 
  * vendor/syberia
-3318868  jenkins: add Xiaomi 6x (Wayne)  [blinoff82]
+29f4f07  Themes: Expose QS tiles and label colors  [DennySPB]
 
- * vendor/xiaomi/jasmine_sprout
-cb61f59  jasmine: Thermal setting improvment  [Max Weffers]
+====================
+     2019-04-19    
+====================
+
+====================
+     2019-04-18    
+====================
+
+ * external/skia
+22773e3  Revert "Revert "switched from NUM_SHADER_BINARY_FORMATS to NUM_PROGRAM_BINARY_FORMATS""  [DennySPB]
+0130029  Merge tag 'LA.UM.7.3.r1-07400-sdm845.0' of https://source.codeaurora.org/quic/la/platform/external/skia  [DennySPB]
+
+ * frameworks/base
+d10a4aa  fod: custom fingerprint icon [1/2]  [Vachounet]
+
+ * kernel/xiaomi/sdm660
+f8d3d04  Revert "uapi: ebtables: don't include linux/if.h"  [Shekhawat2]
+d007405  mdss_fb: remove undefined reference of min backlight  [Max Weffers]
+2e09695  ARM: dts: sdm660-gpu: Add quirk qcom,secure_pt_early_alloc  [Angelo G. Del Regno]
+bdc9e50  ARM: dts: sdm660-regulator: Add cooling devices for VDD_MX and VDD_CX  [Alin Jerpelea]
+edacadc  sdm660: defconfig: enable boeffla_wl_blocker  [sgspluss]
+2c6f0c6  boeffla_wl_blocker: add more wakelocks  [sgspluss]
+9453d60  boeffla_wl_blocker: update to wakelock blocker driver v1.1.0  [andip71]
+cbc08ad  boeffla_wl_blocker: update to wakelock blocker driver v1.0.1  [andip71]
+fd5272d  boeffla_wl_blocker: add generic wakelock blocker driver v1.0.0  [andip71]
+e46c40a  KLAPSE: adapt for sdm660  [Max Weffers]
+f05c2b5  KLAPSE: Modernize sysfs to prevent CFI failure  [flar2]
+a84b9d2  KLAPSE: adapt to work with kcal for mdss_mdp_v1_7  [flar2]
+9673f29  msm: mdss: kcal: Use PCC for negative display mode  [Parvinder Singh]
+fcaa946  mdss: update kcal  [Parvinder Singh]
+6cbb31f  mdss mdp: Bring back invert mode sysfs for kcal without any function  [andip71]
+7d69694  KLAPSE v4.3 : Bug fixes and thread-safe improvements - Fixed the issue where brightness_factor_auto_enable would keep decreasing brightness on repeated switching, thanks to @flar2 for reporting - Fixed the issue with fadeback_minutes not taking into account enable_klapse - Made pretty much all tunables more thread-safe parallel to the kernel-timer by using flush and pulse where applicable  [tanish2k09]
+ad371ac  KLAPSE : Fix compilation error, undeclared variable  [tanish2k09]
+02a205c  KLAPSE v4.2 - Modify klapse_scaling_rate to use a minute value instead of a numeric factor, now more intuitive. Suggestion credit to @flar2 - Fix an issue with brightness_factor where increasing the value would dim the colors further until the next pulse. (brightness_factor without pulse fixes it at the cost of a maximum error of 1 RGB value)  [tanish2k09]
+46ff078  KLAPSE : Allow fadeback_minutes to be greater than 0 instead of 2  [tanish2k09]
+5a1742b  KLAPSE : Update tmp sysfs vars to be same type as read from buffer, and the actual tunable itself  [tanish2k09]
+87aa66d  KLAPSE v4.1 : Add more dynamicity... - Reverted daytime and target rgb sets back to original split r,g,b sysfs nodes for easier interaction in kernel managers - Added more dynamicity by renewing a pulse after any relevant variable update from sysfs - Fixed a bug where changing brightness_factor would need a pulse to apply effect - Tweaked default pulse_freq and fadeback_minutes values - Optimised an if condition in klapse_pulse  [tanish2k09]
+4717c2d  Introducing KLapse - A kernel level livedisplay module v4.0  [tanish2k09]
+85f80e8  asoc:sdm660_cdc: sound control: fix microphone gain  [Parvinder Singh]
+b2e4dde  ARM: dts: sdm660-gpu: Declare cooling-cells for KGSL cooling device  [Angelo G. Del Regno]
+480d826  ARM: dts: sdm660: Enable CPU cooling by declaring cooling-cells  [Angelo G. Del Regno]
+56bad64  ion: msm_ion: fix incorrect ion_buffer member assignment  [Prakash Gupta]
+bffa912  ion: Force vmalloc for high-order allocations  [Artem Labazov]
+3ae9096  ion: Do not do allocation if the size exceeding heap remaining  [Zhenhua Huang]
+c4cf570  ion: correct the behaviour when allocating non-contig regions failed  [Zhenhua Huang]
+a8008c6  Replace ion_import_dma_buf with new ion_import_dma_buf_fd in the whole tree where it is needed  [PrimoDev23]
+4295e5d  ion: Check out to Android Q DP1 base  [Danny Lin]
+b0aae04  staging/ion: Add support to get ion handle from dma buf  [Rohit kumar]
+887380e  diag: disable DIAG_DEBUG  [Park Ju Hyung]
+681ffcd  mdss_fb: add backlight dimmer option [@nathanchance: Change permissions to 0644 to avoid runtime warning] Signed-off-by: Nathan Chancellor <natechancellor@gmail.com> Signed-off-by: Akhil Narang <akhilnarang.1999@gmail.com>  [flar2]
+145399f  ASoC: sdm660_cdc: Add Microphone Gain  [Haseo97]
+
+ * packages/apps/SyberiaSettings
+833e24e  custom fingerprint icon [2/2]  [Vachounet]
+
+====================
+     2019-04-17    
+====================
+
+ * frameworks/base
+04c3bca  fod: prevent reapplying modes if theres no changes  [Marko Man]
+9c4edf5  fod: differentiate dreaming and pulse  [Marko Man]
+460bd49  Initial support for OnePlus in-display fingerprint sensor  [phhusson]
+
+ * packages/apps/Settings
+7820009  BatteryMeterView: update charging text dynamically  [DennySPB]
+
+ * vendor/interfaces
+8bf66b3  add optional tags  [Marko Man]
+
+====================
+     2019-04-16    
+====================
+
+ * vendor/syberia
+1870775  kernel: Add option for using LLD as linker  [mydongistiny]
+
+====================
+     2019-04-15    
+====================
+
+ * frameworks/base
+57c4a13  Revert "Connectivity: Trigger network permission change for non DDS network"  [DennySPB]
 
