@@ -1,233 +1,80 @@
 ====================
-     2019-04-15    
-====================
-
-====================
-     2019-04-14    
-====================
-
-====================
-     2019-04-13    
+     2019-04-21    
 ====================
 
  * device/xiaomi/land
-0e21741  land:OTA Updater  [weritos666]
+78c2a5a  overlay: PIN critical apps and system services that get swapped  [Jorim Jaggi]
+db161eb  land:Default list of files pinned by the Pinner Service  [weritos666]
+2b2ecd0  land:part of Xiaomi's ricing in P. it generally should improve UI performance  [weritos666]
+4abc6e6  prebuilts: update Lawnchair to 1999-alpha  [DennySPB]
 
- * packages/apps/Settings
-9720ac1  Settings UI: Open UserSettings fragment on user icon click  [DennySPB]
-
-====================
-     2019-04-12    
-====================
- * art
-2d7d845  ART: Support kryo385 CPU  [Artem Serov]
-
- * build/make
-3e38a88  Correctly configure armv8-2a for 32-bit  [Miao Wang]
-cb693f8  Enable armv8-2a supporting on 2nd arch. variant  [Isaac Lee]
-
- * build/soong
-9fce16e  re-add kryo300 cpu variant after f7bd3bb1  [DennySPB]
-b940191  androidmk: Skip obsolete JACK flags  [Ng Zhi An]
-4cab171  Stop using GCC in toolchain_library  [Dan Willemsen]
-246f59c  Support Qualcomm Kryo 385 CPU variant  [Artem Serov]
-7d789cd  Add to support armv8-2a on 2nd arch. variant  [mtk15504]
-f7bd3bb  Move arch variants registering code to arch.go  [Jaewoong Jung]
-f1f5857  Configure the default arch variant features per-OS  [Dan Willemsen]
-3c36a6b  Fix multilib first with multiple 64-bit architectures  [Colin Cross]
-
- * packages/apps/Settings
-078a39f  Brandify settings title  [DennySPB]
-06be20d  BatteryMeterView: unhardcode charging strings  [DennySPB]
-531a57e  UI : Increase toolbar size and misc fixes  [IacobIonut01]
-504298d  Settings UI : Show User Icon in dashboard  [IacobIonut01]
-146dbe7  Settings UI : Tint Storage ProgressBar & Redesign Toolbar  [IacobIonut01]
-0792518f  Dashboard : Quick Redesign  [IacobIonut01]
-1edabdd  Battery : Redesign BatteryMeterView  [IacobIonut01]
-
-====================
-     2019-04-11    
-====================
-
- * device/xiaomi/land
-91ae067  prebuilts: Update Lawnchair to 1957-alpha  [DennySPB]
-b0ca7fb  land:In connection with the previous commit, it is not necessary  [weritos666]
-08fdc83  land:change directory prebuilt on prebuilts  [weritos666]
-7ece1b2  land:Kernel,Display dependencies  [weritos666]
-
- * frameworks/base
-09adfa9  Connectivity: Trigger network permission change for non DDS network  [Sunmeet Gill]
-8ac2369  connectivity: Make http(s) probe connections non-persistent.  [Devi Sandeep Endluri V V]
-5ed5c43  FrameworkBase: Fix NullPointerException of AMS  [xiaohuin]
-b90d8c7  IconsHandler: Really update the icon packs available  [Giuseppe Maggio]
-b479d71  Support per-app icon and label customization [2/2]  [Anas Karbila]
-b2a4ea6  LTE tile: Remove oreo style slashes  [Pranav Vashi]
-
- * frameworks/opt/net/wifi
-a94c0f5  Merge tag 'LA.UM.7.6.r1-04500-89xx.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/wifi  [DennySPB]
-
- * kernel/xiaomi/msm8937
-20aca90  Merge branch 'lineage-16.0' of https://github.com/Xiaomi-Redmi3S-pie/kernel_xiaomi_land_msm8937 into lineage-16.0  [weritos666]
-9bcd862  mdss: fb: Fix off by one in linear equation  [Nich]
-5ab1e28  mdss: fb: Smoother backlight transition  [Nich]
-bc57477  land:mdss: Set the minimum possible brightness level from userspace to 1  [Nich]
-0c5469d  land:Enable DOUBLETAP2WAKE,SWEEP2WAKE,FINGERPRINT_BOOST  [weritos666]
-04d3521  land:Fix Compiling dt2w  [weritos666]
-b19f2fa  Enable dt2w half b default  [Ayra Hikari]
-aa665e4  S2W: Remove Sweep2Sleep completely  [rupansh]
-296062e  S2W: Add haptic feedback  [rupansh]
-719107f  DT2W : Add haptic feedback option  [Tanish]
-493fa3f  drivers: input: touchscreen: dt2w: upgrade to version 2  [rupansh]
-147091e  input: dt2w/s2w: changes notifier screen state.  [Ryan Andri]
-5dfbb71  input: touchscreen: ist30xx: Implement dt2w/s2w  [nichcream]
-0637bd6  input: dt2w/s2w: reduce waking up time.  [Ryan Andri]
-5b863ed  input: dt2w/s2w: schedule on any cpu's instead of cpu 0.  [Ryan Andri]
-a9b7e0a  input: dt2w/s2w: integrate all fixes into tree.  [Ryan Andri]
-731bb3c  input: dt2w/s2w: hook screens status to ft5336 ts driver  [Ryan Andri]
-c4fbc2f  input: dt2w/s2w: register to ft5336 ts driver.  [Ryan Andri]
-a9686b9  input: dt2w/s2w: change init driver late_initcall to module_init.  [Ryan Andri]
-3479dce  input: add dt2w/s2w support.  [Ryan Andri]
-f05af78  fp-boost: Decrease duration to 2 seconds  [Joe Maples]
-a11abb0  fp-boost: Set priority to max  [Joe Maples]
-8c03d2f  cpufreq: Introduce fingerprint boost driver  [Joe Maples]
-8101c12  msm: camera: isp: Fix invalid type conversion  [Meera Gande]
-
- * packages/apps/Launcher3
-08f665c  Launcher3: Switch to actual compiled library for SystemUI  [Pranav Vashi]
-5dd0629  Add INTERACT_ACROSS_USERS_FULL permission for quickstep  [Pranav Vashi]
-7fa10ea  Launcher3: Add permission to allow updating database  [neobuddy89]
-5e2456b  Launcher3: Improve label hide logic  [neobuddy89]
-c917f0f  proguard: Also keep FixedScaleDrawable  [Diogo Ferreira]
-d27d40e  Launcher3: Fix NPE in PagedView  [Pranav Vashi]
-9e82928  Launcher3: Bump sdk version  [Pranav Vashi]
-22022d2  Settings: fix method to hide dividers  [Alex]
-293900d  Icon edit: Add fast scrolling to icon pack RecyclerView  [Alex]
-8428543  Beautify icon edit dialog  [Alex]
-6c192f8  Fix icon editor picking the wrong icon on tap  [ezio84]
-32dad73  Support per-app icon and label customization [1/2]  [Anas Karbila]
-98e2746  Launcher3: Use generic android icon for IconPack chooser  [Giuseppe Maggio]
-
- * packages/apps/Settings
-751fbe3  Team: we are looking for new santoni maintainer  [DennySPB]
-
-====================
-     2019-04-10    
-====================
-
- * device/xiaomi/land
-29ab4c3  land:Disable Metadata  [weritos666]
-
- * frameworks/base
-daf4f5e  The surface hang up when screen on and screen off  [Guo Li]
-86b59b3  Fixed setting incorrect mode of vibration  [Sun Changqing]
-8860e20  backup: right way to check canonical file path  [pip.zhang]
-65bf3e3  Fixes crash/race condition when destroyActivity  [katao]
+ * hardware/qcom/data/ipacfg-mgr
+2e3ed98  msm8998: ipanat: Add missing kernel header dep  [Christopher N. Hesse]
 
  * vendor/xiaomi
-a6038b9  land:Fix conflicts  [weritos666]
+4655442  land: Add missing blobs for boost framework  [Ritesh Saxena]
 
 ====================
-     2019-04-09    
+     2019-04-20    
 ====================
-
- * device/xiaomi/land
-3c544d9  land:Do not need anymore  [weritos666]
-af61a34  land:libshims  [weritos666]
-3c12c36  land:Remove unwanted blobs  [weritos666]
-3e4bdfb  land: Update IMS/QMI/RIL from tissot  [mikeNG]
-3a94ef0  land: Enable h/w memory tuning  [Ramjee Singh]
-c453d27  land: add system property to set AudioFlinger client heap size  [Name]
-e8322b7  land: update props for new BT HAL  [dianlujitao]
-bf95558  land: Stop copying WCNSS_qcom_cfg.ini to userdata  [Michael Bestas]
-4060c84  land: Move wcnss_service to vendor  [Ethan Chen]
-b48fc60  land: Add ir hidl to vendor_framework_compatibility_matrix  [Darshan Manjrekar]
-02ebddd  land: rootdir: Rename atfwd service and property  [Wileen Chiu]
-5257bbd  land: init: stop/start -> restart  [Michael Bestas]
-5fe1961  land: rootdir: Update paths for new persist mount points  [Ritesh Saxena]
-69934a8  land: init.qcom.rc: Correct the alarm persist folder path  [Mao Jinlong]
-1c6b808  land: rootdir: Update for P sensors stack  [Ritesh Saxena]
-6d215b5  land: Update IMS/QMI/RIL from tissot  [Michael Bestas]
-67a23a5  land: Remove system mount and load_system_props from charger  [Michael Bestas]
-686bbde  land: Add power off alarm service  [Mao Jinlong]
-15d7b40  land: Add init.qcom.early_boot.sh for power off alarm  [Michael Bestas]
-f82e2c8  land: move wcnss-service to late_start  [Dan Pasanen]
-945e709  land: Clean vendor_framework_compatibility_matrix.xml  [Ritesh Saxena]
-9eb8144  land: Use tether automatic upstream selection  [ekline]
-2be0755  land:Enable Camera App pinning  [Philip Cuadra]
-28b04f3  land: Pin HOME application  [Jorim Jaggi]
-29bf0bf  land: Configure number of physical SIM slots  [aviraxp]
-7d25596  land: Add vendor prefix to camera-provider-2-4  [Michael Bestas]
-88ed1c5  land: rootdir: Rename FM prop for new HAL  [Adithya R]
-277bc9e  land: Remove CNE HAL entries.  [Devi Sandeep Endluri V V]
-7d38731  land: Add vendor.qti.data.factory HAL in manifest file  [Eric Chang]
-3c3a59b  land: Update display config compatibility matrix  [Rajavenu Kyatham]
-b860743  land: IQtiRadio HIDL version update to 2.0  [Ruthwar Ambeer]
-7be678e  land: Uprev IMS HIDL to 1.4  [Sumit Das]
-e2a2370  land: Update display color 1.2 in framework compatibility matrix  [Xu Yang]
-714c366  land: Add 1.0::IGnss/gnss_vendor to compatibility matirx  [Baili Feng]
-32819d8  land: Update display config compatibility matrix  [Pullakavi Srinivas]
-5b418ac  land: Update framework compatibility matrix to be compatible with IMS HALs  [Sumit Das]
-bc4f58f  land: Remove improveTouch HAL Entry from vendor framework manifest  [Shantanu Jain]
-d45d4c5  land: Add vendor.qti.data.factory to framework compatibility matrix.  [Eric Chang]
-7596cbc  land: Add vendor HAL entries in framework compatibility matrix  [Vinay Verma]
-6bc61d2  land: Add factory hidl matrix  [Daocai Yang]
-58918df  land: Update compatibility matrix with Display HAL's  [Anjaneya Prasad Musunuri]
-1301f30  land: Add MATRIX file for vendor HAL's  [Vinay Verma]
-14b348c  land: Move AtFwd hal from device to framework manifest.  [Ruthwar Ambeer]
-e297700  land: ueventd.qcom.rc: set permissions of /dev/qce device  [Zhen Kong]
-6d6c2e7  land: Create display folder under /mnt/vendor/persist  [Qing Huang]
-39c48e5  land: Creating directory mnt/vendor/persist/bluetooth  [RAJATH R]
-4d79941  land: Change time persist folder path  [Mao Jinlong]
-3509b4c  land: Set partitions for loop device.  [Bindu Gokul]
-437b883  land: rootdir: Added a permissions for ODL char devices  [Mohammed Javid]
-24be281  land: Use build system to create mount point symlinks  [Bruno Martins]
-05ff0dc  land: Update symlinks for new mount points  [dianlujitao]
-223312d  land: Create mount point symlinks for backward compatibility  [dianlujitao]
-56d012d  land: Moving persist mount point to /mnt/vendor/persist  [Vinay Verma]
-e4d630e  land: config.fs: Specify firmware image files as system:system  [David Ng]
-998d1b2  land: Update references of firmware to /vendor/firmware_mnt  [Vinay Verma]
-02d9a86  land: Mount dsp and firmware in vendor  [Vinay Verma]
-10a3447  Revert "land: Use build system to create mount point symlinks"  [Ritesh Saxena]
-3ef14c9  land: audio: Remove 2 instance support for "primary input"  [Samyak Jain]
-6862560  land: Disable noise cancelling when recording  [Daniel Stuart]
-7ed0e9b  land: Update acdb ids from stock  [Isaac Chen]
-1db001d  land: Add vendor prefix to below services.  [Anuj Singhal]
-30a4d96  land: Update qseecom daemon service name  [Monika Singh]
-8def126  land: init.rc: Changes to stop rtp daemon during shutdown  [Sauvik Saha]
-a051a48  land: camera: Saner workaround for dark preview issue  [Nich]
-93fd92a  land: Update WCNSS configuration symlink  [dianlujitao]
-5d6225f  land: Update BT/GPS/WIFI blobs from tissot  [Ritesh Saxena]
-3122669  land: Update blobs from TA-1024  [Ritesh Saxena]
-0cf6e64  prebuilts: update Lawnchair to 1940-alpha  [00day0]
-e0baeff  prebuilts: update Lawnchair to 1905-alpha  [00day0]
-d805d8b  land:it is not necessary  [weritos666]
-d146a89  land:Set TARGET_PROVIDES_QTI_TELEPHONY_JAR := true    As we use the Telephony Jar from Sagit on our device,    this removes just a build warning.  [Michael Bestas]
-d02455b  land:Enable TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT  [jhenrique09]
-add93b8  Revert "land:Enable TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT,Set TARGET_PROVIDES_QTI_TELEPHONY_JAR, Fix Gcam"  [weritos666]
-3ef7ccc  land:Remove unwanted blobs  [weritos666]
-ca3ddd7  land:Drop data-ipa-cfg-mgr  [weritos666]
-4f47a1f  land:Reduce charging time by increasing the maximum battery temperature from difr  [difr]
-613d0d4  land:Change display source to fix night mode  [weritos666]
 
  * frameworks/base
-4b878c0  EdgeGestures: fix unregistering input filter  [Jens Lody]
-38a8916  core: Implement Aggressive Battery [1/2]  [Joe Maples]
-
- * packages/apps/Settings
-0398731  Team: add maintainer for Xiaomi 6X (Wayne) Also cleanup "About Team" screen  [blinoff82]
-
- * packages/apps/SyberiaSettings
-401d91d  Implement Aggressive Battery [2/2]  [Joe Maples]
-
- * prebuilts/clang/host/linux-x86
-01b4a3d  Update prebuilt Clang to r353983b.  [Yi Kong]
+1d6aae2  Merge pull request #10 from SOVIET-ANDROID/9.0  [DennySPb]
+a85d77f  Themes: Allow volume slider and thumb to work with custom images.  [Randall Rushing]
+d12990f  Themes: Expose QS tiles and label colors  [Adarsh-MR]
+3253665  SystemUI: Add Gaming mode tile  [PMS22]
+b0e4186  SystemUI: Add tile for enable/disable HW keys  [xyyx]
+9d73c41  FOD: dont show FP icons if FOD is in use  [Marko Man]
 
  * vendor/syberia
-3318868  jenkins: add Xiaomi 6x (Wayne)  [blinoff82]
+29f4f07  Themes: Expose QS tiles and label colors  [DennySPB]
 
- * vendor/xiaomi
-f9178cc  land: Update IMS/QMI/RIL from tissot  [Ritesh Saxena]
-4c0a182  land: Update BT/GPS/WIFI blobs from tissot  [Ritesh Saxena]
-87754a8  land: Update blobs from TA-1024  [Ritesh Saxena]
-16e42a1  land:Update  [weritos666]
+====================
+     2019-04-19    
+====================
+
+ * external/skia
+22773e3  Revert "Revert "switched from NUM_SHADER_BINARY_FORMATS to NUM_PROGRAM_BINARY_FORMATS""  [DennySPB]
+
+====================
+     2019-04-18    
+====================
+
+ * external/skia
+0130029  Merge tag 'LA.UM.7.3.r1-07400-sdm845.0' of https://source.codeaurora.org/quic/la/platform/external/skia  [DennySPB]
+
+ * frameworks/base
+d10a4aa  fod: custom fingerprint icon [1/2]  [Vachounet]
+
+ * packages/apps/Settings
+7820009  BatteryMeterView: update charging text dynamically  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+833e24e  custom fingerprint icon [2/2]  [Vachounet]
+
+====================
+     2019-04-17    
+====================
+
+ * frameworks/base
+04c3bca  fod: prevent reapplying modes if theres no changes  [Marko Man]
+9c4edf5  fod: differentiate dreaming and pulse  [Marko Man]
+460bd49  Initial support for OnePlus in-display fingerprint sensor  [phhusson]
+
+ * vendor/interfaces
+8bf66b3  add optional tags  [Marko Man]
+
+====================
+     2019-04-16    
+====================
+
+ * frameworks/base
+57c4a13  Revert "Connectivity: Trigger network permission change for non DDS network"  [DennySPB]
+
+ * vendor/syberia
+1870775  kernel: Add option for using LLD as linker  [mydongistiny]
+
+====================
+     2019-04-15    
+====================
 
