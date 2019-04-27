@@ -1,69 +1,175 @@
 ====================
+     2019-04-27    
+====================
+
+ * frameworks/base
+9ffc4f1  CustomTextClock: remove unused code for RU localization  [blinoff82]
+7e6e3c4  Merge pull request #12 from rebenok90x/9  [Stanislav Bukovetsiy]
+c6a65ca  base: add option to enable AOD on charging only [1/2]  [Marko Man]
+b68e1b3  Q Clock: add RU translation  [DennySPB]
+faa3bd4  CustomTextClock: Fix my derps for O' - Only for en doe  [ovenoboyo]
+de9f824  CustomTextClock: LangGuard: Remove unnecessary function to get hour strings seperately  [ovenoboyo]
+bf6f31e  CustomTextClock: Check if language has changed before setting toprow text  [Dil3mm4]
+103a9d9  CustomTextClock: Remove methods moved in utility classes  [Dil3mm4]
+05ec7bc  CustomTextClock: This makes the lockscreen lag  [Dil3mm4]
+fa52a24  CustomTextClock: Ditch code related to color getting  [Dil3mm4]
+ff811ec  CustomTextClock: Create LangGuard utility  [Dil3mm4]
+32d113d  CustomTextClock: Refactor a few strings  [Dil3mm4]
+184aad2  CustomTextClock: Remove all logging - Now that its almost done  [ovenoboyo]
+6e27f14  CustomTextClock: Add O' again  [ovenoboyo]
+b065850  CustomTextClock: Add Portuguese and French translations  [ovenoboyo]
+396ac84  CustomTextClock: Account for *almost* all of the possiblities while updating text color  [Ovenoboyo]
+5dd7af2  Squash Q-Clock un-hardcode strings and add translatable strings  [Dil3mm4]
+528009e  Change TopTextView color according to wallpaper - After 2weeks of intensive mindfuck, it was as simple as putting it in onDraw - It wont be resource intensive as onDraw on topview isn't called constantly  [ovenoboyo]
+a331ecf  CustomTextClock: Improve UI and optimisations  [Ovenoboyo]
+4cd3d28  LS clock style: Place Q style clock above keyguard status view  [Shubham Singh]
+4c3a934  Lockscreen Clock Styles: Introduce Q style text clock  [Ovenoboyo]
+21c72bb  [1/2] LS Clocks: Let's add a new gradients designs  [ElDainosor]
+900d34d  [1/2] Add sammy accent clock and a variant  [ElDainosor]
+03ae289  lockscreen : differentiate hour from minutes in digital bold style clock  [Shreyansh Lodha]
+94aab54  Lockscreen analog clock: improve minute hands looking  [ezio84]
+063ee10  Auto switch to a dark analog clock when using dark system theme  [ezio84]
+4afe3f2  Always use standard small clock when pulsing on new notifications  [ezio84]
+2fae593  Lockscreen clock styles: Fix bottom margins & ambient display/AOD visibility  [Alex Cruz]
+80f758e  Lockscreen clock styles: Move everything to the keyguard [1/2]  [Alex Cruz]
+5c6011b  Lockscreen/ambient analog clock: improve design  [ezio84]
+26f1d63  Ensure the clockview is aligned correctly each time  [Alex Cruz]
+d817c49  Remove the 0 from the 12 hour format from the 'Digital (bold)' option  [Alex Cruz]
+566ffa6  Keyguard items: code improvements  [ezio84]
+dee6627  Introduce lockscreen clock/date styles [1/2]  [Alex Cruz]
+
+ * packages/apps/Settings
+a8520f3  Merge pull request #22 from rebenok90x/9  [Stanislav Bukovetsiy]
+8ef738b  Update Russian translation  [rebenok90x]
+00fd388  [2/2] Settings: show AOD on charge setting  [Marko Man]
+
+ * packages/apps/SyberiaSettings
+08ce938  Update RU translation  [blinoff82]
+8cf39c8  Lockscreen Clock Styles: Introduce Q style TextClock  [Rahul]
+741b3c3  Extensions: add new gradient options for clock  [ElDainosor]
+df6d783  [2/2] Add sammy accent clock and a variant  [ElDainosor]
+284e1b3  Introduce lockscreen clock/date styles [2/2]  [Alex Cruz]
+
+ * vendor/syberia
+7e8cc9d  vendor: Theme custom analog clock  [Shubham Singh]
+
+====================
+     2019-04-26    
+====================
+
+ * packages/apps/SettingsIntelligence
+3a6711e  SettingsIntelligence : Redesign searchbar to match settings change  [Mohan Cm]
+
+====================
+     2019-04-25    
+====================
+
+ * frameworks/base
+844e11f  NetworkStatsHistory: Prevent IllegalArgumentException  [Henrique Silva]
+e924aa7  Make roaming indicator optional [1/2]  [Pranav Vashi]
+bc56da0  Fix Cannot grant system fixed permission com.android.voicemail.permission.ADD_VOICEMAIL for package com.google.android.dialer crash  [Illia Poplawski]
+3de6afa  Update RU translation  [blinoff82]
+
+ * frameworks/native
+8008005  libbinder: -case in 'Waiting for service' log.  [Steven Moreland]
+1dec339  Revert "libbinder: Don't log call trace when waiting for vendor service on non-eng builds"  [martinusbe]
+a1cda6e  libbinder: Don't link against libutilscallstack.  [Martijn Coenen]
+
+ * packages/apps/Bluetooth
+907cc11  Fix leak of registerReceiver  [zhoutengteng]
+eb1429e  HID: Fix the potential NPE in HidHostService jni callback  [Sravan voleti]
+
+ * packages/apps/SyberiaSettings
+a67f21e  Make roaming indicator optional [2/2]  [Pranav Vashi]
+48cf048  Move torch on power button into gestures settings  [DennySPB]
+
+ * prebuilts/clang/host/linux-x86
+d3b78c9  Update prebuilt Clang to r353983c.  [Yi Kong]
+
+ * vendor/syberia
+798a12d  Update Google prebuilts  [DennySPB]
+
+====================
+     2019-04-24    
+====================
+
+ * build/make
+1268fea  build: Support system-as-root A-only backuptool  [LuK1337]
+03828ad  Revert "Fix recovery-script cleanups in block mode"  [DennySPB]
+3f5f5dd  Revert "ota: Build uboot bootable images when necessary"  [DennySPB]
+
+ * frameworks/base
+bf4cace  Fix tr translation  [DennySPB]
+80954b4  PowerManager: Don't bother devices not using wait for MPCTL  [Shubham Singh]
+fbf002b  PerformanceManager: Allow wait for MPCTL to start on boot  [dianlujitao]
+
+ * packages/apps/SmartNavSettings
+d3fdc9d  Fix tr translation  [DennySPB]
+
+ * vendor/syberia
+4bc43a9  Support system-as-root A-only backuptool  [LuK1337]
+
+====================
+     2019-04-23    
+====================
+
+ * frameworks/base
+eb2305c  Merge pull request #11 from Astridxx/9.0  [DennySPb]
+ecb2d1b  Update Turkish translation  [Murat Kozan]
+c8fdd86  base: Use a system-wide recents corner radius  [ElDainosor]
+
+ * packages/apps/Dialer
+ae2eb9c  Merge pull request #1 from Astridxx/9.0  [DennySPb]
+75347f0  incallui: Add Turkish translation  [Murat Kozan]
+
+ * packages/apps/Launcher3
+209947f  Merge pull request #1 from Astridxx/9.0  [DennySPb]
+d5ef278  Add Turkish translation  [Murat Kozan]
+
+ * packages/apps/Settings
+6437f63  Merge pull request #21 from Astridxx/9.0  [DennySPb]
+17a11c0  Team: add tulip maintainer  [DennySPB]
+a07e38f  Team: add back whyred maintainer  [DennySPB]
+8665d1e  Update Turkish translation  [Murat Kozan]
+3ea4ec8  Team: maintainers dying like a flies  [DennySPB]
+
+ * packages/apps/SmartNav
+e28c60b  Merge pull request #1 from Astridxx/9.0  [DennySPb]
+138bee4  Update Turkish translation  [Murat Kozan]
+
+ * packages/apps/SmartNavSettings
+6dc1feb  Merge pull request #2 from Astridxx/9.0  [DennySPb]
+2052a8c  Add Turkish translation  [Murat Kozan]
+
+ * packages/apps/SyberiaSettings
+954b00b  Merge pull request #55 from Astridxx/9.0  [DennySPb]
+bd8aee8  Update Turkish translation  [Murat Kozan]
+
+ * vendor/syberia
+ddf5014  official: add tulip  [DennySPB]
+
+====================
+     2019-04-22    
+====================
+
+ * frameworks/base
+f520008  Exclude Emergency Dialer from recent app list.  [Leo Hsu]
+3ea712f  Use proper context for prevent ringing gesture toast  [Giuseppe Maggio]
+36bb4fc  Audio assets: add NFC sounds  [Jean-Michel Trivi]
+0801ad2  Support CALLBACK_TYPE_SENSOR_ROUTING  [Mingbo Zhang]
+
+ * packages/apps/Bluetooth
+be8789d  Fix setting of BLE scan parameters  [Subramanian Srinivasan]
+a717600  Add BLE Scan Phy parameter to scan API  [Subramanian Srinivasan]
+76b2d12  Support to startScan with DELIVERY_MODE_ROUTE  [Mingbo Zhang]
+
+ * system/bt
+b12d5b0  Add BLE Scan Phy parameter to scan API Add BLE Scan Phy parameter to set scan parameters API.  [Subramanian Srinivasan]
+
+====================
      2019-04-21    
 ====================
 
  * hardware/qcom/data/ipacfg-mgr
 2e3ed98  msm8998: ipanat: Add missing kernel header dep  [Christopher N. Hesse]
-
-====================
-     2019-04-20    
-====================
-
- * frameworks/base
-1d6aae2  Merge pull request #10 from SOVIET-ANDROID/9.0  [DennySPb]
-a85d77f  Themes: Allow volume slider and thumb to work with custom images.  [Randall Rushing]
-d12990f  Themes: Expose QS tiles and label colors  [Adarsh-MR]
-3253665  SystemUI: Add Gaming mode tile  [PMS22]
-b0e4186  SystemUI: Add tile for enable/disable HW keys  [xyyx]
-9d73c41  FOD: dont show FP icons if FOD is in use  [Marko Man]
-
- * vendor/syberia
-29f4f07  Themes: Expose QS tiles and label colors  [DennySPB]
-
-====================
-     2019-04-19    
-====================
-
-====================
-     2019-04-18    
-====================
-
- * external/skia
-22773e3  Revert "Revert "switched from NUM_SHADER_BINARY_FORMATS to NUM_PROGRAM_BINARY_FORMATS""  [DennySPB]
-0130029  Merge tag 'LA.UM.7.3.r1-07400-sdm845.0' of https://source.codeaurora.org/quic/la/platform/external/skia  [DennySPB]
-
- * frameworks/base
-d10a4aa  fod: custom fingerprint icon [1/2]  [Vachounet]
-
- * packages/apps/Settings
-7820009  BatteryMeterView: update charging text dynamically  [DennySPB]
-
- * packages/apps/SyberiaSettings
-833e24e  custom fingerprint icon [2/2]  [Vachounet]
-
-====================
-     2019-04-17    
-====================
-
- * frameworks/base
-04c3bca  fod: prevent reapplying modes if theres no changes  [Marko Man]
-9c4edf5  fod: differentiate dreaming and pulse  [Marko Man]
-460bd49  Initial support for OnePlus in-display fingerprint sensor  [phhusson]
-
- * vendor/interfaces
-8bf66b3  add optional tags  [Marko Man]
-
-====================
-     2019-04-16    
-====================
-
- * frameworks/base
-57c4a13  Revert "Connectivity: Trigger network permission change for non DDS network"  [DennySPB]
-
- * vendor/syberia
-1870775  kernel: Add option for using LLD as linker  [mydongistiny]
-
-====================
-     2019-04-15    
-====================
 
