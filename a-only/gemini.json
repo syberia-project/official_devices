@@ -1,30 +1,30 @@
 {
-  "device": "gemini",
-  "device_brand": "Xiaomi",
-  "filesize": "568423972",
-  "news_url": "http://github.com/syberia-project",
-  "donate_url": "https://syberiaos.com/links",
-  "filename": "syberia_gemini-v2.3-20190330-0715-OFFICIAL.zip",
-  "error": "false",
   "addons": [
     {
-      "summary": "Magisk",
       "title": "Magisk",
+      "summary": "Magisk",
       "url": "\"http://tiny.cc/latestmagisk"
     },
     {
-      "summary": "Magisk Uninstaller",
       "title": "Magisk",
+      "summary": "Magisk Uninstaller",
       "url": "http://tiny.cc/latestuninstaller"
     }
   ],
-  "build_date": "20190330",
-  "forum_url": "",
-  "changelog": "Final Official Android Pie build for Xiaomi Mi5!\n- Update graphics stack to LA.UM.7.5.r1-03700-8x96.0\n- Move to proper thermal blobs\n- MIUI camera by default\n- Add Cellular tile icon from OOS\n- Dismiss keyguard on boot if disabled by profile\n- Workaround for wallpaper not shown correctly problem\n- OP Gestures: Fix navbar detection and landscape mode\n- Dialer: Make proxi sensor smart-case friendly\n- Fixes for surfaceflinger rendering\n- Fixed multiuser icon glitch in QS footer\n- Fixed animation glitch with right-sided volume panel \n- Fixed partial screenshot \n- Probably fixed sensors bug\n- Various fixes and improvements\n- Update translations",
-  "developer": "Blinoff82",
-  "md5": "c246094a5758aeb046cfdf85a0c0c05a",
-  "url": "https://sourceforge.net/projects/syberiaos/files/gemini/syberia_gemini-v2.3-20190330-0715-OFFICIAL.zip/download",
+  "filename": "syberia_gemini-v2.4-20190427-1837-OFFICIAL.zip",
+  "changelog": "",
+  "filesize": "575894536",
+  "md5": "e51f2950acf3b2501762db235cb6afe6",
+  "build_date": "20190427",
+  "device": "gemini",
+  "url": "https://sourceforge.net/projects/syberiaos/files/gemini/syberia_gemini-v2.4-20190427-1837-OFFICIAL.zip/download",
+  "donate_url": "https://syberiaos.com/links",
+  "developer_url": "http://github.com/syberia-project",
+  "news_url": "http://github.com/syberia-project",
+  "developer": "blinoff82",
+  "error": "false",
   "website_url": "http://syberiaos.com",
-  "device_model": "Mi 5",
-  "developer_url": "http://github.com/syberia-project"
+  "forum_url": "https://forum.xda-developers.com/mi-5/development/rom-syberia-project-t3833868",
+  "device_brand": "Xiaomi",
+  "device_model": "Mi 5"
 }
