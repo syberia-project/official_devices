@@ -1,9 +1,193 @@
 ====================
-     2019-04-21    
+     2019-04-27    
+====================
+
+ * frameworks/base
+9ffc4f1  CustomTextClock: remove unused code for RU localization  [blinoff82]
+7e6e3c4  Merge pull request #12 from rebenok90x/9  [Stanislav Bukovetsiy]
+c6a65ca  base: add option to enable AOD on charging only [1/2]  [Marko Man]
+b68e1b3  Q Clock: add RU translation  [DennySPB]
+faa3bd4  CustomTextClock: Fix my derps for O' - Only for en doe  [ovenoboyo]
+de9f824  CustomTextClock: LangGuard: Remove unnecessary function to get hour strings seperately  [ovenoboyo]
+bf6f31e  CustomTextClock: Check if language has changed before setting toprow text  [Dil3mm4]
+103a9d9  CustomTextClock: Remove methods moved in utility classes  [Dil3mm4]
+05ec7bc  CustomTextClock: This makes the lockscreen lag  [Dil3mm4]
+fa52a24  CustomTextClock: Ditch code related to color getting  [Dil3mm4]
+ff811ec  CustomTextClock: Create LangGuard utility  [Dil3mm4]
+32d113d  CustomTextClock: Refactor a few strings  [Dil3mm4]
+184aad2  CustomTextClock: Remove all logging - Now that its almost done  [ovenoboyo]
+6e27f14  CustomTextClock: Add O' again  [ovenoboyo]
+b065850  CustomTextClock: Add Portuguese and French translations  [ovenoboyo]
+396ac84  CustomTextClock: Account for *almost* all of the possiblities while updating text color  [Ovenoboyo]
+5dd7af2  Squash Q-Clock un-hardcode strings and add translatable strings  [Dil3mm4]
+528009e  Change TopTextView color according to wallpaper - After 2weeks of intensive mindfuck, it was as simple as putting it in onDraw - It wont be resource intensive as onDraw on topview isn't called constantly  [ovenoboyo]
+a331ecf  CustomTextClock: Improve UI and optimisations  [Ovenoboyo]
+4cd3d28  LS clock style: Place Q style clock above keyguard status view  [Shubham Singh]
+4c3a934  Lockscreen Clock Styles: Introduce Q style text clock  [Ovenoboyo]
+21c72bb  [1/2] LS Clocks: Let's add a new gradients designs  [ElDainosor]
+900d34d  [1/2] Add sammy accent clock and a variant  [ElDainosor]
+03ae289  lockscreen : differentiate hour from minutes in digital bold style clock  [Shreyansh Lodha]
+94aab54  Lockscreen analog clock: improve minute hands looking  [ezio84]
+063ee10  Auto switch to a dark analog clock when using dark system theme  [ezio84]
+4afe3f2  Always use standard small clock when pulsing on new notifications  [ezio84]
+2fae593  Lockscreen clock styles: Fix bottom margins & ambient display/AOD visibility  [Alex Cruz]
+80f758e  Lockscreen clock styles: Move everything to the keyguard [1/2]  [Alex Cruz]
+5c6011b  Lockscreen/ambient analog clock: improve design  [ezio84]
+26f1d63  Ensure the clockview is aligned correctly each time  [Alex Cruz]
+d817c49  Remove the 0 from the 12 hour format from the 'Digital (bold)' option  [Alex Cruz]
+566ffa6  Keyguard items: code improvements  [ezio84]
+dee6627  Introduce lockscreen clock/date styles [1/2]  [Alex Cruz]
+
+ * packages/apps/Settings
+a8520f3  Merge pull request #22 from rebenok90x/9  [Stanislav Bukovetsiy]
+8ef738b  Update Russian translation  [rebenok90x]
+00fd388  [2/2] Settings: show AOD on charge setting  [Marko Man]
+
+ * packages/apps/SettingsIntelligence
+3a6711e  SettingsIntelligence : Redesign searchbar to match settings change  [Mohan Cm]
+
+ * packages/apps/SyberiaSettings
+08ce938  Update RU translation  [blinoff82]
+8cf39c8  Lockscreen Clock Styles: Introduce Q style TextClock  [Rahul]
+741b3c3  Extensions: add new gradient options for clock  [ElDainosor]
+df6d783  [2/2] Add sammy accent clock and a variant  [ElDainosor]
+284e1b3  Introduce lockscreen clock/date styles [2/2]  [Alex Cruz]
+
+ * vendor/syberia
+7e8cc9d  vendor: Theme custom analog clock  [Shubham Singh]
+
+====================
+     2019-04-26    
 ====================
 
  * device/xiaomi/sdm845-common
-48e9814  init: cleanup and adjust tweaks inline with simple 3.35  [ethan-halsall]
+5314808  init.performance.rc: adjust some tweaks inline with simple kernel 3.4  [ethan-halsall]
+03aa5d6  sdm845-common: Sync framework compatibility matrix with MIUI 9.4.18  [palaych]
+b2ec1ff  sdm845-common: Update for 9.4.18 vendor  [TheScarastic]
+0aae92d  sepolicy: create policy for proprietary glgps daemon  [argraur]
+
+ * frameworks/base
+844e11f  NetworkStatsHistory: Prevent IllegalArgumentException  [Henrique Silva]
+e924aa7  Make roaming indicator optional [1/2]  [Pranav Vashi]
+
+ * frameworks/native
+8008005  libbinder: -case in 'Waiting for service' log.  [Steven Moreland]
+1dec339  Revert "libbinder: Don't log call trace when waiting for vendor service on non-eng builds"  [martinusbe]
+a1cda6e  libbinder: Don't link against libutilscallstack.  [Martijn Coenen]
+
+ * packages/apps/Bluetooth
+907cc11  Fix leak of registerReceiver  [zhoutengteng]
+eb1429e  HID: Fix the potential NPE in HidHostService jni callback  [Sravan voleti]
+
+ * packages/apps/SyberiaSettings
+a67f21e  Make roaming indicator optional [2/2]  [Pranav Vashi]
+
+ * prebuilts/clang/host/linux-x86
+d3b78c9  Update prebuilt Clang to r353983c.  [Yi Kong]
+
+ * vendor/xiaomi
+f6ffc3d  sdm845-common: Update to MIUI 9.4.18 Global blobs  [palaych]
+
+====================
+     2019-04-25    
+====================
+
+ * frameworks/base
+bc56da0  Fix Cannot grant system fixed permission com.android.voicemail.permission.ADD_VOICEMAIL for package com.google.android.dialer crash  [Illia Poplawski]
+3de6afa  Update RU translation  [blinoff82]
+
+ * packages/apps/SyberiaSettings
+48cf048  Move torch on power button into gestures settings  [DennySPB]
+
+ * vendor/syberia
+798a12d  Update Google prebuilts  [DennySPB]
+
+====================
+     2019-04-24    
+====================
+
+ * build/make
+1268fea  build: Support system-as-root A-only backuptool  [LuK1337]
+03828ad  Revert "Fix recovery-script cleanups in block mode"  [DennySPB]
+3f5f5dd  Revert "ota: Build uboot bootable images when necessary"  [DennySPB]
+
+ * frameworks/base
+bf4cace  Fix tr translation  [DennySPB]
+80954b4  PowerManager: Don't bother devices not using wait for MPCTL  [Shubham Singh]
+fbf002b  PerformanceManager: Allow wait for MPCTL to start on boot  [dianlujitao]
+eb2305c  Merge pull request #11 from Astridxx/9.0  [DennySPb]
+
+ * packages/apps/Dialer
+ae2eb9c  Merge pull request #1 from Astridxx/9.0  [DennySPb]
+
+ * packages/apps/Launcher3
+209947f  Merge pull request #1 from Astridxx/9.0  [DennySPb]
+
+ * packages/apps/Settings
+6437f63  Merge pull request #21 from Astridxx/9.0  [DennySPb]
+17a11c0  Team: add tulip maintainer  [DennySPB]
+a07e38f  Team: add back whyred maintainer  [DennySPB]
+
+ * packages/apps/SmartNav
+e28c60b  Merge pull request #1 from Astridxx/9.0  [DennySPb]
+
+ * packages/apps/SmartNavSettings
+d3fdc9d  Fix tr translation  [DennySPB]
+6dc1feb  Merge pull request #2 from Astridxx/9.0  [DennySPb]
+
+ * packages/apps/SyberiaSettings
+954b00b  Merge pull request #55 from Astridxx/9.0  [DennySPb]
+
+ * vendor/syberia
+4bc43a9  Support system-as-root A-only backuptool  [LuK1337]
+ddf5014  official: add tulip  [DennySPB]
+
+====================
+     2019-04-23    
+====================
+
+ * frameworks/base
+ecb2d1b  Update Turkish translation  [Murat Kozan]
+c8fdd86  base: Use a system-wide recents corner radius  [ElDainosor]
+f520008  Exclude Emergency Dialer from recent app list.  [Leo Hsu]
+3ea712f  Use proper context for prevent ringing gesture toast  [Giuseppe Maggio]
+36bb4fc  Audio assets: add NFC sounds  [Jean-Michel Trivi]
+0801ad2  Support CALLBACK_TYPE_SENSOR_ROUTING  [Mingbo Zhang]
+
+ * packages/apps/Bluetooth
+be8789d  Fix setting of BLE scan parameters  [Subramanian Srinivasan]
+a717600  Add BLE Scan Phy parameter to scan API  [Subramanian Srinivasan]
+76b2d12  Support to startScan with DELIVERY_MODE_ROUTE  [Mingbo Zhang]
+
+ * packages/apps/Dialer
+75347f0  incallui: Add Turkish translation  [Murat Kozan]
+
+ * packages/apps/Launcher3
+d5ef278  Add Turkish translation  [Murat Kozan]
+
+ * packages/apps/Settings
+8665d1e  Update Turkish translation  [Murat Kozan]
+3ea4ec8  Team: maintainers dying like a flies  [DennySPB]
+
+ * packages/apps/SmartNav
+138bee4  Update Turkish translation  [Murat Kozan]
+
+ * packages/apps/SmartNavSettings
+2052a8c  Add Turkish translation  [Murat Kozan]
+
+ * packages/apps/SyberiaSettings
+bd8aee8  Update Turkish translation  [Murat Kozan]
+
+ * system/bt
+b12d5b0  Add BLE Scan Phy parameter to scan API Add BLE Scan Phy parameter to set scan parameters API.  [Subramanian Srinivasan]
+
+====================
+     2019-04-22    
+====================
+
+====================
+     2019-04-21    
+====================
 
  * hardware/qcom/data/ipacfg-mgr
 2e3ed98  msm8998: ipanat: Add missing kernel header dep  [Christopher N. Hesse]
@@ -13,230 +197,4 @@
 cbef221  cpufreq: Don't let userspace set the max freq  [Sultan Alsawaf]
 d7eaaa4  init.simple.sh huge cleanup  [ethan-halsall]
 f32f7be  defconfig: sync with 4.9.169  [ethan-halsall]
-
-====================
-     2019-04-20    
-====================
-
- * frameworks/base
-1d6aae2  Merge pull request #10 from SOVIET-ANDROID/9.0  [DennySPb]
-a85d77f  Themes: Allow volume slider and thumb to work with custom images.  [Randall Rushing]
-d12990f  Themes: Expose QS tiles and label colors  [Adarsh-MR]
-3253665  SystemUI: Add Gaming mode tile  [PMS22]
-b0e4186  SystemUI: Add tile for enable/disable HW keys  [xyyx]
-9d73c41  FOD: dont show FP icons if FOD is in use  [Marko Man]
-
- * kernel/xiaomi/sdm845
-3a63014  bump to 3.3  [ethan-halsall]
-48917f2  cpu_input_boost: Cleanup code style and fix mismerge  [ethan-halsall]
-a0efdeb  Merge branch 'revert-nc-sched-backports'  [Danny Lin]
-dc0db8d  msm: kgsl: Only wake GPU upon ioctl receipt when it isn't awake  [Sultan Alsawaf]
-e1ff01e  defconfig: Populate cluster CPU bitmasks for sdm845  [ethan-halsall]
-55b37a9  treewide: Update code from Sultan Alsawaf  [Danny Lin]
-
- * vendor/syberia
-29f4f07  Themes: Expose QS tiles and label colors  [DennySPB]
-
-====================
-     2019-04-19    
-====================
-
- * device/xiaomi/sdm845-common
-cfdea5f  overlay: PIN critical apps and system services that get swapped  [Jorim Jaggi]
-d1bc02f  sdm845-common: Stop useless Xiaomi services  [TheScarastic]
-
- * external/skia
-22773e3  Revert "Revert "switched from NUM_SHADER_BINARY_FORMATS to NUM_PROGRAM_BINARY_FORMATS""  [DennySPB]
-0130029  Merge tag 'LA.UM.7.3.r1-07400-sdm845.0' of https://source.codeaurora.org/quic/la/platform/external/skia  [DennySPB]
-
- * frameworks/base
-d10a4aa  fod: custom fingerprint icon [1/2]  [Vachounet]
-
- * kernel/xiaomi/sdm845
-3098b81  init.simple.sh: highspeed freq use proper frequency values  [ethan-halsall]
-1b5fa0f  init.simple.sh: further tuning and code style improvement  [ethan-halsall]
-ca81180  init.simple.sh: modify the schedutil govener  [ethan-halsall]
-123ed69  Revert "Revert "ARM: dts: msm: enable dsi phy idle mode for sdm845""  [ethan-halsall]
-2daf37d  cpuidle: Do not select menu and ladder governors  [Maulik Shah]
-0d8a469  mm: Revert some problematic commits  [ethan-halsall]
-c555155  BACKPORT: mm/debug.c: provide useful debugging information for VM_BUG  [Matthew Wilcox]
-e7b92ed  UPSTREAM: bug: use %pB in BUG and stack protector failure  [Kees Cook]
-54b25ba  UPSTREAM: x86/alternative: Print unadorned pointers  [Borislav Petkov]
-89b4035  UPSTREAM: trace_uprobe: Display correct offset in uprobe_events  [Ravi Bangoria]
-07e3df2  UPSTREAM: usercopy: Remove pointer from overflow report  [Kees Cook]
-466db93  UPSTREAM: Do not hash userspace addresses in fault handlers  [Kees Cook]
-ed88cc2  UPSTREAM: mm/slab.c: do not hash pointers when debugging slab  [Geert Uytterhoeven]
-0f45177  UPSTREAM: kasan: use %px to print addresses instead of %p  [Tobin C. Harding]
-dd9c692  BACKPORT: vsprintf: add printk specifier %px  [Tobin C. Harding]
-df12bfc  BACKPORT: printk: hash addresses printed with %p  [Tobin C. Harding]
-6fb0007  UPSTREAM: siphash: implement HalfSipHash1-3 for hash tables  [Jason A. Donenfeld]
-ca4c12f  BACKPORT: docs: correct documentation for %pK  [Tobin C. Harding]
-4e8a4de  UPSTREAM: siphash: add cryptographically secure PRF  [Jason A. Donenfeld]
-7f97a33  BACKPORT: vsprintf: refactor %pK code out of pointer()  [Tobin C. Harding]
-4e1afe5  ANDROID: Fix race in crng_reseed()  [Sandeep Patil]
-b957138  init.simple.sh: kang some tweaks from LKT magisk module  [ethan-halsall]
-2549b69  Revert "drm/msm: do not notify events when the system is shutting down"  [ethan-halsall]
-4b94d3d11  f2fs: rename /sys/fs/f2fs  [Park Ju Hyung]
-844f69a  Revert "sched: Turn on MIN_CAPACITY_CAPPING feature"  [Danny Lin]
-dc375b8  msm: pcie: Mark MSI cascade ISR as IRQF_NO_THREAD  [Danny Lin]
-211bd1f  Revert "clk: qcom: clk-cpu-osm: Advertise transition latency to cpufreq"  [ethan-halsall]
-90688f4  Revert "pmqos: Enable cpu isolation awareness"  [ethan-halsall]
-8a0543c  Merge remote-tracking branch 'msm-4.9/kernel.lnx.4.9.r11-rel' into staging  [ethan-halsall]
-0114354  Merge tag 'LA.UM.7.3.r1-07400-sdm845.0' into staging  [ethan-halsall]
-4a33c03  block: disable I/O stats accounting by default  [kdrag0n]
-907cfa2  drm/msm: do not notify events when the system is shutting down  [Park Ju Hyung]
-7f76ff0  random: prevent add_input from doing anything  [imoseyon]
-58ecf16  mdss: rotator: Use FIFO kthread for rotator work  [Naseer Ahmed]
-753281d  random: fix comment for unused random_min_urandom_seed  [Stephan Müller]
-15aeb4b  random: remove variable limit  [Stephan Müller]
-ff6e128  random: remove stale urandom_init_wait  [Stephan Müller]
-8cb4b18  Initialize ata before graphics  [Arjan van de Ven]
-
- * packages/apps/SyberiaSettings
-833e24e  custom fingerprint icon [2/2]  [Vachounet]
-
-====================
-     2019-04-18    
-====================
-
- * frameworks/base
-04c3bca  fod: prevent reapplying modes if theres no changes  [Marko Man]
-9c4edf5  fod: differentiate dreaming and pulse  [Marko Man]
-
- * kernel/xiaomi/sdm845
-f193fa2  arm64: futex: Restore oldval initialization to work around buggy compilers  [Nathan Chancellor]
-d06a411  Merge 4.9.169 into kernel.lnx.4.9.r11-rel  [Nathan Chancellor]
-fb4fa40  FROMLIST: arm64: Build vDSO with -ffixed-x18  [Peter Collingbourne]
-72e163c  mm: Decrease swappiness to 8  [Joe Maples]
-e81c07b  arm64: Makefile: correct how cortex-a53-843419 opt-out rolled  [Raphiel Rollerscaperers]
-a956a61  Revert "drm/msm/dsi-staging: Reduce early wakeups before vsync events"  [Park Ju Hyung]
-c5d4f80  [STOPSHIP]: Enable Force Warm Reboot to keep persistent-memory  [Raphiel Rollerscaperers]
-eb97b15  Revert " sched: Revert some patch"  [ethan-halsall]
-b6888b8  sched: Improve the scheduler  [Pavankumar Kondeti]
-408996e  sched: Improve the scheduler  [Pavankumar Kondeti]
-3f85441  Revert "USB: set hub's default autosuspend delay as 0"  [Thierry Strudel]
-504606b  Revert "usb: hub: Prevent hub autosuspend if usbcore.autosuspend is -1"  [Thierry Strudel]
-8069b0a  tty: check before stopping kthread  [Philip Cuadra]
-b79a899  tty: move tty_port workqueue to be a kthread  [Philip Cuadra]
-f9c8b1a  tty: add tty_port_set_policy function  [Philip Cuadra]
-c463dda  compiler-gcc.h: add a new macro to wrap gcc attribute  [Gideon Israel Dsouza]
-eaee332  sched/fair: Make PELT half-life configurable  [Viresh Kumar]
-776c795  drm/atomic: Add a configurable timeout for frame commit boosts  [Danny Lin]
-df62169  Linux 4.9.169  [Greg Kroah-Hartman]
-5b86e01  PCI: Add function 1 DMA alias quirk for Marvell 9170 SATA controller  [Andre Przywara]
-aea5996  xtensa: fix return_address  [Max Filippov]
-6d1e1da  sched/fair: Do not re-read ->h_load_next during hierarchical load calculation  [Mel Gorman]
-356bcb7  xen: Prevent buffer overflow in privcmd ioctl  [Dan Carpenter]
-79bedcb  parisc: Use cr16 interval timers unconditionally on qemu  [Helge Deller]
-32810f9  arm64: futex: Fix FUTEX_WAKE_OP atomic ops with non-zero result value  [Will Deacon]
-ff7a56e  ARM: dts: at91: Fix typo in ISC_D0 on PC9  [David Engraf]
-208d25a  virtio: Honour 'may_reduce_num' in vring_create_virtqueue  [Cornelia Huck]
-97491c0  genirq: Respect IRQCHIP_SKIP_SET_WAKE in irq_chip_set_wake_parent()  [Stephen Boyd]
-056066d  block: do not leak memory in bio_copy_user_iov()  [Jérôme Glisse]
-1ac411b  Btrfs: do not allow trimming when a fs is mounted with the nologreplay option  [Filipe Manana]
-f4a4005  ASoC: fsl_esai: fix channel swap issue when stream starts  [S.j. Wang]
-a25d4ed  include/linux/bitrev.h: fix constant bitrev  [Arnd Bergmann]
-a957aa5  parisc: Detect QEMU earlier in boot process  [Helge Deller]
-c35bf96  ALSA: seq: Fix OOB-reads from strlcpy  [Zubin Mithra]
-a3320ac  ip6_tunnel: Match to ARPHRD_TUNNEL6 for dev type  [Sheena Mira-ato]
-77b924d  net: ethtool: not call vzalloc for zero sized memory request  [Li RongQing]
-6996763  netns: provide pure entropy for net_hash_mix()  [Eric Dumazet]
-9a739f1  net/mlx5e: Add a lock on tir list  [Yuval Avnery]
-8e302e8  bnxt_en: Improve RX consumer index validity check.  [Michael Chan]
-ebd153c  bnxt_en: Reset device on RX buffer errors.  [Michael Chan]
-5f5d628  vrf: check accept_source_route on the original netdevice  [Stephen Suryaputra]
-051ca6a  tcp: Ensure DCTCP reacts to losses  [Koen De Schepper]
-57601d3  sctp: initialize _pad of sockaddr_in before copying to user memory  [Xin Long]
-6f8b258  qmi_wwan: add Olicard 600  [Bjørn Mork]
-12ff23d  openvswitch: fix flow actions reallocation  [Andrea Righi]
-a1aa69b  net: rds: force to destroy connection if t_sock is NULL in rds_tcp_kill_sock().  [Mao Wenan]
-b09d697  kcm: switch order of device registration to fix a crash  [Jiri Slaby]
-2164e96  ipv6: sit: reset ip header pointer in ipip6_rcv  [Lorenzo Bianconi]
-e33684f  ipv6: Fix dangling pointer when ipv6 fragment  [Junwei Hu]
-9b7984e  tty: ldisc: add sysctl to prevent autoloading of ldiscs  [Greg Kroah-Hartman]
-942ddc0  tty: mark Siemens R3964 line discipline as BROKEN  [Greg Kroah-Hartman]
-da6c493  arm64: kaslr: Reserve size of ARM64_MEMSTART_ALIGN in linear region  [Yueyi Li]
-91f69a3c  powerpc/security: Fix spectre_v2 reporting  [Michael Ellerman]
-012c277  powerpc/fsl: Fix the flush of branch predictor.  [Christophe Leroy]
-38f573e  powerpc/fsl: Fixed warning: orphan section `__btb_flush_fixup'  [Diana Craciun]
-0ac0d2b  powerpc/fsl: Update Spectre v2 reporting  [Diana Craciun]
-487bea7  powerpc/fsl: Enable runtime patching if nospectre_v2 boot arg is used  [Diana Craciun]
-5b0392a  powerpc/fsl: Flush branch predictor when entering KVM  [Diana Craciun]
-e115294  powerpc/fsl: Flush the branch predictor at each kernel entry (32 bit)  [Diana Craciun]
-dd8bf94  powerpc/fsl: Flush the branch predictor at each kernel entry (64bit)  [Diana Craciun]
-7133df4  powerpc/fsl: Add nospectre_v2 command line argument  [Diana Craciun]
-a1101a6  powerpc/fsl: Emulate SPRN_BUCSR register  [Diana Craciun]
-1eb1ddb  powerpc/fsl: Fix spectre_v2 mitigations reporting  [Diana Craciun]
-5188172  powerpc/fsl: Add macro to flush the branch predictor  [Diana Craciun]
-d91460f  powerpc/fsl: Add infrastructure to fixup branch predictor flush  [Diana Craciun]
-ae36109  powerpc/powernv: Query firmware for count cache flush settings  [Michael Ellerman]
-e745d15  powerpc/pseries: Query hypervisor for count cache flush settings  [Michael Ellerman]
-98f6ded  powerpc/64s: Add support for software count cache flush  [Michael Ellerman]
-2f4fed0  powerpc/64s: Add new security feature flags for count cache flush  [Michael Ellerman]
-6482f0d  powerpc/asm: Add a patch_site macro & helpers for patching instructions  [Michael Ellerman]
-25ea295  powerpc/fsl: Sanitize the syscall table for NXP PowerPC 32 bit platforms  [Diana Craciun]
-a299c07  powerpc/fsl: Add barrier_nospec implementation for NXP PowerPC Book3E  [Diana Craciun]
-a96e47d  powerpc/64: Make meltdown reporting Book3S 64 specific  [Diana Craciun]
-37336b6  powerpc/64: Call setup_barrier_nospec() from setup_arch()  [Michael Ellerman]
-2f8703f  powerpc/64: Add CONFIG_PPC_BARRIER_NOSPEC  [Michael Ellerman]
-1ec00d2  powerpc/64: Make stf barrier PPC_BOOK3S_64 specific.  [Diana Craciun]
-78749d1  powerpc/64: Disable the speculation barrier from the command line  [Diana Craciun]
-ee617f5  powerpc64s: Show ori31 availability in spectre_v1 sysfs file not v2  [Michael Ellerman]
-f7493c9  powerpc/64s: Enhance the information in cpu_show_spectre_v1()  [Michal Suchanek]
-86dfa51  powerpc/64: Use barrier_nospec in syscall entry  [Michael Ellerman]
-86341b2  powerpc: Use barrier_nospec in copy_from_user()  [Michael Ellerman]
-e1217b4  powerpc/64s: Enable barrier_nospec based on firmware settings  [Michal Suchanek]
-73b0f62  powerpc/64s: Patch barrier_nospec in modules  [Michal Suchanek]
-1c38a84  powerpc: Avoid code patching freed init sections  [Michael Neuling]
-f3286f1  powerpc/64s: Add support for ori barrier_nospec patching  [Michal Suchanek]
-4314e77  powerpc/64s: Add barrier_nospec  [Michal Suchanek]
-10f1dea  powerpc: Fix invalid use of register expressions  [Andreas Schwab]
-7eceaf5  lib/string.c: implement a basic bcmp  [Nick Desaulniers]
-408d67a  x86/vdso: Drop implicit common-page-size linker flag  [Nick Desaulniers]
-94c0c4f  x86: vdso: Use $LD instead of $CC to link  [Alistair Strachan]
-1347aa2  kbuild: clang: choose GCC_TOOLCHAIN_DIR not on LD  [Nick Desaulniers]
-4d8b1fd  powerpc/tm: Limit TM code inside PPC_TRANSACTIONAL_MEM  [Breno Leitao]
-39dbf53  x86/power: Make restore_processor_context() sane  [Andy Lutomirski]
-d72b485  x86/power/32: Move SYSENTER MSR restoration to fix_processor_context()  [Andy Lutomirski]
-61f1e18  x86/power/64: Use struct desc_ptr for the IDT in struct saved_context  [Andy Lutomirski]
-57578e5  x86/power: Fix some ordering bugs in __restore_processor_context()  [Andy Lutomirski]
-
- * packages/apps/Settings
-7820009  BatteryMeterView: update charging text dynamically  [DennySPB]
-
-====================
-     2019-04-17    
-====================
-
- * frameworks/base
-460bd49  Initial support for OnePlus in-display fingerprint sensor  [phhusson]
-
- * vendor/interfaces
-8bf66b3  add optional tags  [Marko Man]
-
- * vendor/syberia
-1870775  kernel: Add option for using LLD as linker  [mydongistiny]
-
-====================
-     2019-04-16    
-====================
-
- * frameworks/base
-57c4a13  Revert "Connectivity: Trigger network permission change for non DDS network"  [DennySPB]
-
- * kernel/xiaomi/sdm845
-30fdbd9  cfq-iosched: Adjust one function call together with a variable assignment  [Markus Elfring]
-f7404c4  soc: qcom: pil: Fix trivial -Wmaybe-used-uninitialized warning  [Sultan Alsawaf]
-1da9e91  Makefile: Remove gcc-wrapper  [Jason A. Donenfeld]
-aa26285  UPSTREAM: cgroup add cftype->open/release() callbacks  [Tejun Heo]
-726c6d6  UPSTREAM: kernfs: Check KERNFS_HAS_RELEASE before calling kernfs_release_file()  [Vaibhav Jain]
-2aee5e7  UPSTREAM: kernfs: fix locking around kernfs_ops->release() callback  [Tejun Heo]
-ebc89a3  UPSTREAM: kernfs: add kernfs_ops->open/release() callbacks  [Tejun Heo]
-76a8342  UPSTREAM: Avoid page waitqueue race leaving possible page locker waiting  [Linus Torvalds]
-2b8a0ff8  msm: sde: Fix uninitialized variable usage  [Sultan Alsawaf]
-eca0f94  Makefile: Disable noisy GCC 8 warnings  [Sultan Alsawaf]
-
-====================
-     2019-04-15    
-====================
 
