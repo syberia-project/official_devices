@@ -1,4 +1,262 @@
 ====================
+     2019-04-27    
+====================
+
+ * device/xiaomi/sdm660-common
+630505a  Revert "build keyhandler"  [root]
+ec59a0e  test  [coderzstas]
+918d5f2  upd  [coderzstas]
+48430b9  upd  [coderzstas]
+c3da89c  test  [coderzstas]
+
+ * frameworks/base
+9ffc4f1  CustomTextClock: remove unused code for RU localization  [blinoff82]
+7e6e3c4  Merge pull request #12 from rebenok90x/9  [Stanislav Bukovetsiy]
+c6a65ca  base: add option to enable AOD on charging only [1/2]  [Marko Man]
+b68e1b3  Q Clock: add RU translation  [DennySPB]
+faa3bd4  CustomTextClock: Fix my derps for O' - Only for en doe  [ovenoboyo]
+de9f824  CustomTextClock: LangGuard: Remove unnecessary function to get hour strings seperately  [ovenoboyo]
+bf6f31e  CustomTextClock: Check if language has changed before setting toprow text  [Dil3mm4]
+103a9d9  CustomTextClock: Remove methods moved in utility classes  [Dil3mm4]
+05ec7bc  CustomTextClock: This makes the lockscreen lag  [Dil3mm4]
+fa52a24  CustomTextClock: Ditch code related to color getting  [Dil3mm4]
+ff811ec  CustomTextClock: Create LangGuard utility  [Dil3mm4]
+32d113d  CustomTextClock: Refactor a few strings  [Dil3mm4]
+184aad2  CustomTextClock: Remove all logging - Now that its almost done  [ovenoboyo]
+6e27f14  CustomTextClock: Add O' again  [ovenoboyo]
+b065850  CustomTextClock: Add Portuguese and French translations  [ovenoboyo]
+396ac84  CustomTextClock: Account for *almost* all of the possiblities while updating text color  [Ovenoboyo]
+5dd7af2  Squash Q-Clock un-hardcode strings and add translatable strings  [Dil3mm4]
+528009e  Change TopTextView color according to wallpaper - After 2weeks of intensive mindfuck, it was as simple as putting it in onDraw - It wont be resource intensive as onDraw on topview isn't called constantly  [ovenoboyo]
+a331ecf  CustomTextClock: Improve UI and optimisations  [Ovenoboyo]
+4cd3d28  LS clock style: Place Q style clock above keyguard status view  [Shubham Singh]
+4c3a934  Lockscreen Clock Styles: Introduce Q style text clock  [Ovenoboyo]
+21c72bb  [1/2] LS Clocks: Let's add a new gradients designs  [ElDainosor]
+900d34d  [1/2] Add sammy accent clock and a variant  [ElDainosor]
+03ae289  lockscreen : differentiate hour from minutes in digital bold style clock  [Shreyansh Lodha]
+94aab54  Lockscreen analog clock: improve minute hands looking  [ezio84]
+063ee10  Auto switch to a dark analog clock when using dark system theme  [ezio84]
+4afe3f2  Always use standard small clock when pulsing on new notifications  [ezio84]
+2fae593  Lockscreen clock styles: Fix bottom margins & ambient display/AOD visibility  [Alex Cruz]
+80f758e  Lockscreen clock styles: Move everything to the keyguard [1/2]  [Alex Cruz]
+5c6011b  Lockscreen/ambient analog clock: improve design  [ezio84]
+26f1d63  Ensure the clockview is aligned correctly each time  [Alex Cruz]
+d817c49  Remove the 0 from the 12 hour format from the 'Digital (bold)' option  [Alex Cruz]
+566ffa6  Keyguard items: code improvements  [ezio84]
+
+ * packages/apps/Settings
+a8520f3  Merge pull request #22 from rebenok90x/9  [Stanislav Bukovetsiy]
+8ef738b  Update Russian translation  [rebenok90x]
+00fd388  [2/2] Settings: show AOD on charge setting  [Marko Man]
+
+ * packages/apps/SyberiaSettings
+08ce938  Update RU translation  [blinoff82]
+8cf39c8  Lockscreen Clock Styles: Introduce Q style TextClock  [Rahul]
+
+====================
+     2019-04-26    
+====================
+
+ * device/xiaomi/jasmine_sprout
+7d88273  jasmine : remove duplicate props  [coderzstas]
+a9a29b0  jasmine: Update camera props for pie camera blobs  [Max Weffers]
+5628435  jasmine : update dependencies  [coderzstas]
+
+ * device/xiaomi/sdm660-common
+e67c655  build keyhandler  [coderzstas]
+2e33b9a  sdm660: fix typo in platform prop file  [Max Weffers]
+f0ef93b  sdm660: Set camera Hal3 vendor prop for new gcam  [Max Weffers]
+b75a88e  sdm660: XiaomiParts: Add some stuff * Add headset gain control * Same for mic * Add grayscale to the display calibration  [Stylogey]
+2c048cc  sdm660: XiaomiParts: Dont use the aosp gestures if the FPShutter is enabled  [Stylogey]
+454e913  upd  [coderzstas]
+
+ * frameworks/base
+dee6627  Introduce lockscreen clock/date styles [1/2]  [Alex Cruz]
+
+ * packages/apps/SettingsIntelligence
+3a6711e  SettingsIntelligence : Redesign searchbar to match settings change  [Mohan Cm]
+
+ * packages/apps/SyberiaSettings
+741b3c3  Extensions: add new gradient options for clock  [ElDainosor]
+df6d783  [2/2] Add sammy accent clock and a variant  [ElDainosor]
+284e1b3  Introduce lockscreen clock/date styles [2/2]  [Alex Cruz]
+
+ * vendor/syberia
+7e8cc9d  vendor: Theme custom analog clock  [Shubham Singh]
+
+====================
+     2019-04-25    
+====================
+
+ * frameworks/base
+844e11f  NetworkStatsHistory: Prevent IllegalArgumentException  [Henrique Silva]
+e924aa7  Make roaming indicator optional [1/2]  [Pranav Vashi]
+
+ * frameworks/native
+8008005  libbinder: -case in 'Waiting for service' log.  [Steven Moreland]
+1dec339  Revert "libbinder: Don't log call trace when waiting for vendor service on non-eng builds"  [martinusbe]
+a1cda6e  libbinder: Don't link against libutilscallstack.  [Martijn Coenen]
+
+ * packages/apps/Bluetooth
+907cc11  Fix leak of registerReceiver  [zhoutengteng]
+eb1429e  HID: Fix the potential NPE in HidHostService jni callback  [Sravan voleti]
+
+ * packages/apps/SyberiaSettings
+a67f21e  Make roaming indicator optional [2/2]  [Pranav Vashi]
+
+ * prebuilts/clang/host/linux-x86
+d3b78c9  Update prebuilt Clang to r353983c.  [Yi Kong]
+
+ * vendor/syberia
+798a12d  Update Google prebuilts  [DennySPB]
+
+ * vendor/xiaomi/jasmine_sprout
+d368c9b  jasmine: drop unused whyred cam blobs  [Manish4586]
+
+====================
+     2019-04-24    
+====================
+
+ * frameworks/base
+bc56da0  Fix Cannot grant system fixed permission com.android.voicemail.permission.ADD_VOICEMAIL for package com.google.android.dialer crash  [Illia Poplawski]
+3de6afa  Update RU translation  [blinoff82]
+
+ * kernel/xiaomi/sdm660
+011f21a  arm64: Don't force FRAME_POINTER  [Sultan Alsawaf]
+eba0c6c  ARM: dts: omit useless DTBs  [Tyler Nijmeh]
+7a33567  power: supply: smblib: remove power_path_status debug statments  [Max Weffers]
+b372a6c  misc: Remove ANT GPIO checking driver  [Tyler Nijmeh]
+df6b051  ASoC: msm: Handle bit_width to configure ASM session for FLAC playback  [Divya Narayanan Poojary]
+d56d577  Kconfig: msm: remove deprecated dts eagle driver  [Laster K]
+86ac53f  asoc/msm: Reduce min capture size  [Steve Kondik]
+9f40272  ASoC: msm: qdsp6v2: Fix format parsing  [Haynes Mathew George]
+83101c5  ASoC: Don't enable DOLBY_LICENSE and DTS_EAGLE for Qualcomm chips  [Sultanxda]
+ed070c6  sound/soc/msm/qdsp6v2/msm-pcm-routing-v2.c: remove a nested loop  [ktommy91]
+85c36b7  sdm670: Add mixer control and update affine qos value  [Soumya Managoli]
+b8fa009  msm: ASoC: enable aptX HD decoder  [Han Lu]
+ad3a7a1  f2fs: convert wakelock APIs to wakeup_source  [Park Ju Hyung]
+ac16904  msm: qdsp6v2: Allow 320K AAC encoding  [Steve Kondik]
+a6b13c8  diag: Add timer to make sure wakelock no stuck  [Jie Song]
+a6252f4  msm: ipa3: Fix redundant wakelock releases in error paths  [Sultan Alsawaf]
+7cee3c3  qdsp6v2: adjust drivers for xiaomi sdm636  [Yaroslav Furman]
+ecb7fed  Revert "uapi: ebtables: don't include linux/if.h"  [Shekhawat2]
+67a7fbb  ARM: dts: sdm660-gpu: Add quirk qcom,secure_pt_early_alloc  [Angelo G. Del Regno]
+3b9278f  ARM: dts: sdm660-regulator: Add cooling devices for VDD_MX and VDD_CX  [Alin Jerpelea]
+1b48f45  sdm660: defconfig: enable boeffla_wl_blocker  [sgspluss]
+4c41de13  boeffla_wl_blocker: add more wakelocks  [sgspluss]
+f131b00  boeffla_wl_blocker: update to wakelock blocker driver v1.1.0  [andip71]
+fe9a5e5  boeffla_wl_blocker: update to wakelock blocker driver v1.0.1  [andip71]
+237626c  boeffla_wl_blocker: add generic wakelock blocker driver v1.0.0  [andip71]
+47e2c98  KLAPSE: adapt for sdm660  [Max Weffers]
+d5237f9  KLAPSE: Modernize sysfs to prevent CFI failure  [flar2]
+5bcaa4c  KLAPSE: adapt to work with kcal for mdss_mdp_v1_7  [flar2]
+ecbfc11  msm: mdss: kcal: Use PCC for negative display mode  [Parvinder Singh]
+ab7af47  mdss: update kcal  [Parvinder Singh]
+6140e1e  mdss mdp: Bring back invert mode sysfs for kcal without any function  [andip71]
+4d753f5  KLAPSE v4.3 : Bug fixes and thread-safe improvements - Fixed the issue where brightness_factor_auto_enable would keep decreasing brightness on repeated switching, thanks to @flar2 for reporting - Fixed the issue with fadeback_minutes not taking into account enable_klapse - Made pretty much all tunables more thread-safe parallel to the kernel-timer by using flush and pulse where applicable  [tanish2k09]
+06a5868  KLAPSE : Fix compilation error, undeclared variable  [tanish2k09]
+b4a4b78  KLAPSE v4.2 - Modify klapse_scaling_rate to use a minute value instead of a numeric factor, now more intuitive. Suggestion credit to @flar2 - Fix an issue with brightness_factor where increasing the value would dim the colors further until the next pulse. (brightness_factor without pulse fixes it at the cost of a maximum error of 1 RGB value)  [tanish2k09]
+f763368  KLAPSE : Allow fadeback_minutes to be greater than 0 instead of 2  [tanish2k09]
+3fa9d42  KLAPSE : Update tmp sysfs vars to be same type as read from buffer, and the actual tunable itself  [tanish2k09]
+ee60a47  KLAPSE v4.1 : Add more dynamicity... - Reverted daytime and target rgb sets back to original split r,g,b sysfs nodes for easier interaction in kernel managers - Added more dynamicity by renewing a pulse after any relevant variable update from sysfs - Fixed a bug where changing brightness_factor would need a pulse to apply effect - Tweaked default pulse_freq and fadeback_minutes values - Optimised an if condition in klapse_pulse  [tanish2k09]
+310c5d6  Introducing KLapse - A kernel level livedisplay module v4.0  [tanish2k09]
+83b84dafb  asoc:sdm660_cdc: sound control: fix microphone gain  [Parvinder Singh]
+ca3e930  ARM: dts: sdm660-gpu: Declare cooling-cells for KGSL cooling device  [Angelo G. Del Regno]
+b5d3080  ARM: dts: sdm660: Enable CPU cooling by declaring cooling-cells  [Angelo G. Del Regno]
+3e92d53  ion: msm_ion: fix incorrect ion_buffer member assignment  [Prakash Gupta]
+24e38be  ion: Force vmalloc for high-order allocations  [Artem Labazov]
+ba3623f  ion: Do not do allocation if the size exceeding heap remaining  [Zhenhua Huang]
+da9816f  ion: correct the behaviour when allocating non-contig regions failed  [Zhenhua Huang]
+0574803  Replace ion_import_dma_buf with new ion_import_dma_buf_fd in the whole tree where it is needed  [PrimoDev23]
+c37db87  ion: Check out to Android Q DP1 base  [Danny Lin]
+ef4b5ec  staging/ion: Add support to get ion handle from dma buf  [Rohit kumar]
+e7bb9fe  diag: disable DIAG_DEBUG  [Park Ju Hyung]
+f671f17  ASoC: sdm660_cdc: Add Microphone Gain  [Haseo97]
+51b2bbf  input: gf3208: Mark IRQ as performance critical  [Manish4586]
+587f395  input: goodix: Mark IRQ as performance critical  [Dusan Uveric]
+d9ecf50  input: fpc1020: Mark IRQ as performance critical  [Sultan Alsawaf]
+f10debb  gpu: msm: Do not compile Adreno 3xx / 4xx drivers  [Tyler Nijmeh]
+c5709b0  msm: kgsl: Increase worker thread priority  [Sultan Alsawaf]
+
+ * packages/apps/SyberiaSettings
+48cf048  Move torch on power button into gestures settings  [DennySPB]
+
+ * vendor/xiaomi/MiuiCamera
+5d72965  camera: update miui camera to wayne miui 10 camera with ai  [Max Weffers]
+
+ * vendor/xiaomi/jasmine_sprout
+3480388  jasmine: Update camera blobs from Mi A2 pie release (v10.0.3)  [Max Weffers]
+
+====================
+     2019-04-23    
+====================
+
+ * build/make
+1268fea  build: Support system-as-root A-only backuptool  [LuK1337]
+03828ad  Revert "Fix recovery-script cleanups in block mode"  [DennySPB]
+3f5f5dd  Revert "ota: Build uboot bootable images when necessary"  [DennySPB]
+
+ * frameworks/base
+bf4cace  Fix tr translation  [DennySPB]
+80954b4  PowerManager: Don't bother devices not using wait for MPCTL  [Shubham Singh]
+fbf002b  PerformanceManager: Allow wait for MPCTL to start on boot  [dianlujitao]
+eb2305c  Merge pull request #11 from Astridxx/9.0  [DennySPb]
+ecb2d1b  Update Turkish translation  [Murat Kozan]
+
+ * packages/apps/Dialer
+ae2eb9c  Merge pull request #1 from Astridxx/9.0  [DennySPb]
+75347f0  incallui: Add Turkish translation  [Murat Kozan]
+
+ * packages/apps/Launcher3
+209947f  Merge pull request #1 from Astridxx/9.0  [DennySPb]
+d5ef278  Add Turkish translation  [Murat Kozan]
+
+ * packages/apps/Settings
+6437f63  Merge pull request #21 from Astridxx/9.0  [DennySPb]
+17a11c0  Team: add tulip maintainer  [DennySPB]
+a07e38f  Team: add back whyred maintainer  [DennySPB]
+8665d1e  Update Turkish translation  [Murat Kozan]
+
+ * packages/apps/SmartNav
+e28c60b  Merge pull request #1 from Astridxx/9.0  [DennySPb]
+138bee4  Update Turkish translation  [Murat Kozan]
+
+ * packages/apps/SmartNavSettings
+d3fdc9d  Fix tr translation  [DennySPB]
+6dc1feb  Merge pull request #2 from Astridxx/9.0  [DennySPb]
+2052a8c  Add Turkish translation  [Murat Kozan]
+
+ * packages/apps/SyberiaSettings
+954b00b  Merge pull request #55 from Astridxx/9.0  [DennySPb]
+bd8aee8  Update Turkish translation  [Murat Kozan]
+
+ * vendor/syberia
+4bc43a9  Support system-as-root A-only backuptool  [LuK1337]
+ddf5014  official: add tulip  [DennySPB]
+
+====================
+     2019-04-22    
+====================
+
+ * frameworks/base
+c8fdd86  base: Use a system-wide recents corner radius  [ElDainosor]
+f520008  Exclude Emergency Dialer from recent app list.  [Leo Hsu]
+3ea712f  Use proper context for prevent ringing gesture toast  [Giuseppe Maggio]
+36bb4fc  Audio assets: add NFC sounds  [Jean-Michel Trivi]
+0801ad2  Support CALLBACK_TYPE_SENSOR_ROUTING  [Mingbo Zhang]
+
+ * packages/apps/Bluetooth
+be8789d  Fix setting of BLE scan parameters  [Subramanian Srinivasan]
+a717600  Add BLE Scan Phy parameter to scan API  [Subramanian Srinivasan]
+76b2d12  Support to startScan with DELIVERY_MODE_ROUTE  [Mingbo Zhang]
+
+ * packages/apps/Settings
+3ea4ec8  Team: maintainers dying like a flies  [DennySPB]
+
+ * system/bt
+b12d5b0  Add BLE Scan Phy parameter to scan API Add BLE Scan Phy parameter to set scan parameters API.  [Subramanian Srinivasan]
+
+====================
      2019-04-21    
 ====================
 
@@ -49,103 +307,4 @@ e6e5a8d  sdm660: wifi: Update wifi configs from MIUI 9.3.25  [GuaiYiHu]
 
  * hardware/qcom/data/ipacfg-mgr
 2e3ed98  msm8998: ipanat: Add missing kernel header dep  [Christopher N. Hesse]
-
-====================
-     2019-04-20    
-====================
-
- * frameworks/base
-1d6aae2  Merge pull request #10 from SOVIET-ANDROID/9.0  [DennySPb]
-a85d77f  Themes: Allow volume slider and thumb to work with custom images.  [Randall Rushing]
-d12990f  Themes: Expose QS tiles and label colors  [Adarsh-MR]
-3253665  SystemUI: Add Gaming mode tile  [PMS22]
-b0e4186  SystemUI: Add tile for enable/disable HW keys  [xyyx]
-9d73c41  FOD: dont show FP icons if FOD is in use  [Marko Man]
-
- * vendor/syberia
-29f4f07  Themes: Expose QS tiles and label colors  [DennySPB]
-
-====================
-     2019-04-19    
-====================
-
-====================
-     2019-04-18    
-====================
-
- * external/skia
-22773e3  Revert "Revert "switched from NUM_SHADER_BINARY_FORMATS to NUM_PROGRAM_BINARY_FORMATS""  [DennySPB]
-0130029  Merge tag 'LA.UM.7.3.r1-07400-sdm845.0' of https://source.codeaurora.org/quic/la/platform/external/skia  [DennySPB]
-
- * frameworks/base
-d10a4aa  fod: custom fingerprint icon [1/2]  [Vachounet]
-
- * kernel/xiaomi/sdm660
-f8d3d04  Revert "uapi: ebtables: don't include linux/if.h"  [Shekhawat2]
-d007405  mdss_fb: remove undefined reference of min backlight  [Max Weffers]
-2e09695  ARM: dts: sdm660-gpu: Add quirk qcom,secure_pt_early_alloc  [Angelo G. Del Regno]
-bdc9e50  ARM: dts: sdm660-regulator: Add cooling devices for VDD_MX and VDD_CX  [Alin Jerpelea]
-edacadc  sdm660: defconfig: enable boeffla_wl_blocker  [sgspluss]
-2c6f0c6  boeffla_wl_blocker: add more wakelocks  [sgspluss]
-9453d60  boeffla_wl_blocker: update to wakelock blocker driver v1.1.0  [andip71]
-cbc08ad  boeffla_wl_blocker: update to wakelock blocker driver v1.0.1  [andip71]
-fd5272d  boeffla_wl_blocker: add generic wakelock blocker driver v1.0.0  [andip71]
-e46c40a  KLAPSE: adapt for sdm660  [Max Weffers]
-f05c2b5  KLAPSE: Modernize sysfs to prevent CFI failure  [flar2]
-a84b9d2  KLAPSE: adapt to work with kcal for mdss_mdp_v1_7  [flar2]
-9673f29  msm: mdss: kcal: Use PCC for negative display mode  [Parvinder Singh]
-fcaa946  mdss: update kcal  [Parvinder Singh]
-6cbb31f  mdss mdp: Bring back invert mode sysfs for kcal without any function  [andip71]
-7d69694  KLAPSE v4.3 : Bug fixes and thread-safe improvements - Fixed the issue where brightness_factor_auto_enable would keep decreasing brightness on repeated switching, thanks to @flar2 for reporting - Fixed the issue with fadeback_minutes not taking into account enable_klapse - Made pretty much all tunables more thread-safe parallel to the kernel-timer by using flush and pulse where applicable  [tanish2k09]
-ad371ac  KLAPSE : Fix compilation error, undeclared variable  [tanish2k09]
-02a205c  KLAPSE v4.2 - Modify klapse_scaling_rate to use a minute value instead of a numeric factor, now more intuitive. Suggestion credit to @flar2 - Fix an issue with brightness_factor where increasing the value would dim the colors further until the next pulse. (brightness_factor without pulse fixes it at the cost of a maximum error of 1 RGB value)  [tanish2k09]
-46ff078  KLAPSE : Allow fadeback_minutes to be greater than 0 instead of 2  [tanish2k09]
-5a1742b  KLAPSE : Update tmp sysfs vars to be same type as read from buffer, and the actual tunable itself  [tanish2k09]
-87aa66d  KLAPSE v4.1 : Add more dynamicity... - Reverted daytime and target rgb sets back to original split r,g,b sysfs nodes for easier interaction in kernel managers - Added more dynamicity by renewing a pulse after any relevant variable update from sysfs - Fixed a bug where changing brightness_factor would need a pulse to apply effect - Tweaked default pulse_freq and fadeback_minutes values - Optimised an if condition in klapse_pulse  [tanish2k09]
-4717c2d  Introducing KLapse - A kernel level livedisplay module v4.0  [tanish2k09]
-85f80e8  asoc:sdm660_cdc: sound control: fix microphone gain  [Parvinder Singh]
-b2e4dde  ARM: dts: sdm660-gpu: Declare cooling-cells for KGSL cooling device  [Angelo G. Del Regno]
-480d826  ARM: dts: sdm660: Enable CPU cooling by declaring cooling-cells  [Angelo G. Del Regno]
-56bad64  ion: msm_ion: fix incorrect ion_buffer member assignment  [Prakash Gupta]
-bffa912  ion: Force vmalloc for high-order allocations  [Artem Labazov]
-3ae9096  ion: Do not do allocation if the size exceeding heap remaining  [Zhenhua Huang]
-c4cf570  ion: correct the behaviour when allocating non-contig regions failed  [Zhenhua Huang]
-a8008c6  Replace ion_import_dma_buf with new ion_import_dma_buf_fd in the whole tree where it is needed  [PrimoDev23]
-4295e5d  ion: Check out to Android Q DP1 base  [Danny Lin]
-b0aae04  staging/ion: Add support to get ion handle from dma buf  [Rohit kumar]
-887380e  diag: disable DIAG_DEBUG  [Park Ju Hyung]
-681ffcd  mdss_fb: add backlight dimmer option [@nathanchance: Change permissions to 0644 to avoid runtime warning] Signed-off-by: Nathan Chancellor <natechancellor@gmail.com> Signed-off-by: Akhil Narang <akhilnarang.1999@gmail.com>  [flar2]
-145399f  ASoC: sdm660_cdc: Add Microphone Gain  [Haseo97]
-
- * packages/apps/SyberiaSettings
-833e24e  custom fingerprint icon [2/2]  [Vachounet]
-
-====================
-     2019-04-17    
-====================
-
- * frameworks/base
-04c3bca  fod: prevent reapplying modes if theres no changes  [Marko Man]
-9c4edf5  fod: differentiate dreaming and pulse  [Marko Man]
-460bd49  Initial support for OnePlus in-display fingerprint sensor  [phhusson]
-
- * packages/apps/Settings
-7820009  BatteryMeterView: update charging text dynamically  [DennySPB]
-
- * vendor/interfaces
-8bf66b3  add optional tags  [Marko Man]
-
-====================
-     2019-04-16    
-====================
-
- * vendor/syberia
-1870775  kernel: Add option for using LLD as linker  [mydongistiny]
-
-====================
-     2019-04-15    
-====================
-
- * frameworks/base
-57c4a13  Revert "Connectivity: Trigger network permission change for non DDS network"  [DennySPB]
 
