@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1555852860,
-      "filename": "syberia_oneplus6t-v2.4-20190421-1321-OFFICIAL.zip",
-      "id": "766060c73c689f4f7aca90f7a889ab1fa748e2542d8eb8d17569a1605ab2a7b6",
+      "datetime": 1556332020,
+      "filename": "syberia_oneplus6t-v2.4-20190427-0227-OFFICIAL.zip",
+      "id": "f1a1a8b2fc0762c5c291fd3e6878e74d9a07bd5a663ba18128109edf7af1f315",
       "romtype": "OFFICIAL",
-      "size": "551163470",
-      "url": "https://sourceforge.net/projects/syberiaos/files/fajita/syberia_oneplus6t-v2.4-20190421-1321-OFFICIAL.zip/download",
+      "size": "549654941",
+      "url": "https://sourceforge.net/projects/syberiaos/files/fajita/syberia_oneplus6t-v2.4-20190427-0227-OFFICIAL.zip/download",
       "version": "v2.4",
       "device_brand": "OnePlus",
       "device_model": "OnePlus 6T",
