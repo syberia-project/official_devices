@@ -1,175 +1,324 @@
 ====================
-     2019-04-27    
+     2019-05-04    
 ====================
 
- * frameworks/base
-9ffc4f1  CustomTextClock: remove unused code for RU localization  [blinoff82]
-7e6e3c4  Merge pull request #12 from rebenok90x/9  [Stanislav Bukovetsiy]
-c6a65ca  base: add option to enable AOD on charging only [1/2]  [Marko Man]
-b68e1b3  Q Clock: add RU translation  [DennySPB]
-faa3bd4  CustomTextClock: Fix my derps for O' - Only for en doe  [ovenoboyo]
-de9f824  CustomTextClock: LangGuard: Remove unnecessary function to get hour strings seperately  [ovenoboyo]
-bf6f31e  CustomTextClock: Check if language has changed before setting toprow text  [Dil3mm4]
-103a9d9  CustomTextClock: Remove methods moved in utility classes  [Dil3mm4]
-05ec7bc  CustomTextClock: This makes the lockscreen lag  [Dil3mm4]
-fa52a24  CustomTextClock: Ditch code related to color getting  [Dil3mm4]
-ff811ec  CustomTextClock: Create LangGuard utility  [Dil3mm4]
-32d113d  CustomTextClock: Refactor a few strings  [Dil3mm4]
-184aad2  CustomTextClock: Remove all logging - Now that its almost done  [ovenoboyo]
-6e27f14  CustomTextClock: Add O' again  [ovenoboyo]
-b065850  CustomTextClock: Add Portuguese and French translations  [ovenoboyo]
-396ac84  CustomTextClock: Account for *almost* all of the possiblities while updating text color  [Ovenoboyo]
-5dd7af2  Squash Q-Clock un-hardcode strings and add translatable strings  [Dil3mm4]
-528009e  Change TopTextView color according to wallpaper - After 2weeks of intensive mindfuck, it was as simple as putting it in onDraw - It wont be resource intensive as onDraw on topview isn't called constantly  [ovenoboyo]
-a331ecf  CustomTextClock: Improve UI and optimisations  [Ovenoboyo]
-4cd3d28  LS clock style: Place Q style clock above keyguard status view  [Shubham Singh]
-4c3a934  Lockscreen Clock Styles: Introduce Q style text clock  [Ovenoboyo]
-21c72bb  [1/2] LS Clocks: Let's add a new gradients designs  [ElDainosor]
-900d34d  [1/2] Add sammy accent clock and a variant  [ElDainosor]
-03ae289  lockscreen : differentiate hour from minutes in digital bold style clock  [Shreyansh Lodha]
-94aab54  Lockscreen analog clock: improve minute hands looking  [ezio84]
-063ee10  Auto switch to a dark analog clock when using dark system theme  [ezio84]
-4afe3f2  Always use standard small clock when pulsing on new notifications  [ezio84]
-2fae593  Lockscreen clock styles: Fix bottom margins & ambient display/AOD visibility  [Alex Cruz]
-80f758e  Lockscreen clock styles: Move everything to the keyguard [1/2]  [Alex Cruz]
-5c6011b  Lockscreen/ambient analog clock: improve design  [ezio84]
-26f1d63  Ensure the clockview is aligned correctly each time  [Alex Cruz]
-d817c49  Remove the 0 from the 12 hour format from the 'Digital (bold)' option  [Alex Cruz]
-566ffa6  Keyguard items: code improvements  [ezio84]
-dee6627  Introduce lockscreen clock/date styles [1/2]  [Alex Cruz]
+ * device/xiaomi/vince
+e6e9c47  vince: Restart audio HIDL HAL after decryption  [Artem Borisov]
+d048fe9  vince: rootdir: Remove NFC permissions  [haran]
+bad1d73  vince: Remove oem_2901 group for second RIL daemon service  [Wang Han]
+e86fe23  vince: Remove deprecated/useless flags  [haran]
+653821e  vince: Don't set custom file attributes for cnss-daemon  [LuK1337]
+f08a6da  Revert: "vince: add system property to set AudioFlinger client heap size"  [mdeejay]
+d07c362  vince: Update properties  [Flex1911]
+
+ * kernel/xiaomi/msm8953
+74454e6  Linux 4.9.172  [Greg Kroah-Hartman]
+ba3a607  Documentation: Add nospectre_v1 parameter  [Diana Craciun]
+0f68953  powerpc/fsl: Add FSL_PPC_BOOK3E as supported arch for nospectre_v2 boot arg  [Diana Craciun]
+9b50c47  net: IP6 defrag: use rbtrees in nf_conntrack_reasm.c  [Peter Oskolkov]
+b30cd96  net: IP6 defrag: use rbtrees for IPv6 defrag  [Peter Oskolkov]
+397281c  ipv6: remove dependency of nf_defrag_ipv6 on ipv6 module  [Florian Westphal]
+cc83a96  net: IP defrag: encapsulate rbtree defrag code into callable functions  [Peter Oskolkov]
+2aa5718  ipv6: frags: fix a lockdep false positive  [Eric Dumazet]
+5200be6  ipv4: set the tcp_min_rtt_wlen range from 0 to one day  [ZhangXiaoxu]
+16d7a9f  net: stmmac: move stmmac_check_ether_addr() to driver probe  [Vinod Koul]
+5fb1cd3  team: fix possible recursive locking when add slaves  [Hangbin Liu]
+72b6653  net: rds: exchange of 8K and 1M pool  [Zhu Yanjun]
+84ad941  net/mlx5e: ethtool, Remove unsupported SFP EEPROM high pages query  [Erez Alfasi]
+65c03e7  mlxsw: spectrum: Fix autoneg status in ethtool  [Amit Cohen]
+d5d7dd3  ipv4: add sanity checks in ipv4_link_failure()  [Eric Dumazet]
+ba6c12e  Revert "block/loop: Use global lock for ioctl() operation."  [Greg Kroah-Hartman]
+52ad474  tipc: check link name with right length in tipc_nl_compat_link_set  [Xin Long]
+59ad57f  tipc: check bearer name with right length in tipc_nl_compat_bearer_enable  [Xin Long]
+0aa9bf3  fm10k: Fix a potential NULL pointer dereference  [Yue Haibing]
+da247df  netfilter: ebtables: CONFIG_COMPAT: drop a bogus WARN_ON  [Florian Westphal]
+56577df  NFS: Forbid setting AF_INET6 to "struct sockaddr_in"->sin_family.  [Tetsuo Handa]
+f9e398e  fs/proc/proc_sysctl.c: Fix a NULL pointer dereference  [YueHaibing]
+82b5ad9  intel_th: gth: Fix an off-by-one in output unassigning  [Alexander Shishkin]
+18f836c  slip: make slhc_free() silently accept an error pointer  [Linus Torvalds]
+7e83129  tipc: handle the err returned from cmd header function  [Xin Long]
+9bf4986  vsock/virtio: fix kernel panic from virtio_transport_reset_no_sock  [Adalbert Lazăr]
+0c4e6f2  USB: Consolidate LPM checks to avoid enabling LPM twice  [Kai-Heng Feng]
+a8bb6178  USB: Add new USB LPM helpers  [Kai-Heng Feng]
+5b2ec71  drm/vc4: Fix compilation error reported by kbuild test bot  [Maarten Lankhorst]
+d154e26  drm/vc4: Fix memory leak during gpu reset.  [Maarten Lankhorst]
+c5e3780  ARM: 8857/1: efi: enable CP15 DMB instructions before cleaning the cache  [Ard Biesheuvel]
+72f7a35  dmaengine: sh: rcar-dmac: With cyclic DMA residue 0 is valid  [Dirk Behme]
+3215cf3  Input: synaptics-rmi4 - write config register values to the right offset  [Lucas Stach]
+cb11c87  sunrpc: don't mark uninitialised items as VALID.  [NeilBrown]
+b9418f7  nfsd: Don't release the callback slot unless it was actually held  [Trond Myklebust]
+f9ecf10  ceph: fix ci->i_head_snapc leak  [Yan, Zheng]
+aa492cf  ceph: ensure d_name stability in ceph_dentry_hash()  [Jeff Layton]
+c299764  sched/numa: Fix a possible divide-by-zero  [Xie XiuQi]
+9ed420d  IB/rdmavt: Fix frwr memory registration  [Josh Collier]
+490e3a9  trace: Fix preempt_enable_no_resched() abuse  [Peter Zijlstra]
+d4cb3c2  MIPS: scall64-o32: Fix indirect syscall number load  [Aurelien Jarno]
+a21f97a  tracing: Fix a memory leak by early error exit in trace_pid_write()  [Wenwen Wang]
+6591a62  cifs: do not attempt cifs operation on smb2+ rename error  [Frank Sorenson]
+fc0e7af  kbuild: simplify ld-option implementation  [Masahiro Yamada]
+2f922d7  Linux 4.9.171  [Greg Kroah-Hartman]
+02c18cf  kernel/sysctl.c: fix out-of-bounds access when setting file-max  [Will Deacon]
+a36335d  Revert "locking/lockdep: Add debug_locks check in __lock_downgrade()"  [Greg Kroah-Hartman]
+531e35e  i2c-hid: properly terminate i2c_hid_dmi_desc_override_table[] array  [Linus Torvalds]
+dccfcc8  percpu: stop printing kernel addresses  [Matteo Croce]
+16b353b  ALSA: info: Fix racy addition/deletion of nodes  [Takashi Iwai]
+01c03a3  mm/vmstat.c: fix /proc/vmstat format for CONFIG_DEBUG_TLBFLUSH=y CONFIG_SMP=n  [Konstantin Khlebnikov]
+c0206ec  device_cgroup: fix RCU imbalance in error case  [Jann Horn]
+c797d09  sched/fair: Limit sched_cfs_period_timer() loop to avoid hard lockup  [Phil Auld]
+9f91750  Revert "kbuild: use -Oz instead of -Os when using clang"  [Matthias Kaehlcke]
+d77af55  perf/x86/amd: Add event map for AMD Family 17h  [Kim Phillips]
+370f4e5  mac80211: do not call driver wake_tx_queue op during reconfig  [Felix Fietkau]
+7373745  rt2x00: do not increment sequence number while re-transmitting  [Vijayakumar Durai]
+2d018bb  kprobes: Fix error check when reusing optimized probes  [Masami Hiramatsu]
+c7cbda5  kprobes: Mark ftrace mcount handler functions nokprobe  [Masami Hiramatsu]
+dba648c  x86/kprobes: Verify stack frame on kretprobe  [Masami Hiramatsu]
+9c01706  arm64: futex: Restore oldval initialization to work around buggy compilers  [Nathan Chancellor]
+56676c5  crypto: x86/poly1305 - fix overflow during partial reduction  [Eric Biggers]
+eb1464e  Revert "svm: Fix AVIC incomplete IPI emulation"  [Suthikulpanit, Suravee]
+fb1eab0  Revert "scsi: fcoe: clear FC_RP_STARTED flags when receiving a LOGO"  [Saurav Kashyap]
+3c8b00a  ALSA: core: Fix card races between register and disconnect  [Takashi Iwai]
+e5d37f0  staging: comedi: ni_usb6501: Fix possible double-free of ->usb_rx_buf  [Ian Abbott]
+b2bbb0c  staging: comedi: ni_usb6501: Fix use of uninitialized mutex  [Ian Abbott]
+de140a5  staging: comedi: vmk80xx: Fix possible double-free of ->usb_rx_buf  [Ian Abbott]
+820d907  staging: comedi: vmk80xx: Fix use of uninitialized semaphore  [Ian Abbott]
+b858672  io: accel: kxcjk1013: restore the range after resume.  [he, bo]
+e5f5aa1  iio: adc: at91: disable adc channel interrupt in timeout case  [Georg Ottinger]
+9cc7f46  iio: ad_sigma_delta: select channel when reading register  [Dragos Bogdan]
+0490477  iio/gyro/bmg160: Use millidegrees for temperature scale  [Mike Looijmans]
+735d8d3  staging: iio: ad7192: Fix ad7193 channel address  [Mircea Caprioru]
+06e6b13  KVM: x86: Don't clear EFER during SMM transitions for 32-bit vCPU  [Sean Christopherson]
+10fd76b  CIFS: keep FileInfo handle live during oplock break  [Aurelien Aptel]
+0be8e24  tpm/tpm_i2c_atmel: Return -E2BIG when the transfer is incomplete  [Jarkko Sakkinen]
+2a212011  modpost: file2alias: check prototype of handler  [Masahiro Yamada]
+bda0357  modpost: file2alias: go back to simple devtable lookup  [Masahiro Yamada]
+50cd809  mmc: sdhci: Fix data command CRC error handling  [Adrian Hunter]
+e188f50  crypto: crypto4xx - properly set IV after de- and encrypt  [Christian Lamparter]
+c34d733  ipv4: ensure rcu_read_lock() in ipv4_link_failure()  [Eric Dumazet]
+1740187  ipv4: recompile ip options in ipv4_link_failure  [Stephen Suryaputra]
+aea2398  vhost: reject zero size iova range  [Jason Wang]
+5d299a4  team: set slave to promisc if team is already in promisc mode  [Hangbin Liu]
+e364fff  tcp: tcp_grow_window() needs to respect tcp_space()  [Eric Dumazet]
+755c8d0  net: fou: do not use guehdr after iptunnel_pull_offloads in gue_udp_recv  [Lorenzo Bianconi]
+efbb199  net: bridge: multicast: use rcu to access port list from br_multicast_start_querier  [Nikolay Aleksandrov]
+412d6ba  net: bridge: fix per-port af_packet sockets  [Nikolay Aleksandrov]
+abae4c8  net: atm: Fix potential Spectre v1 vulnerabilities  [Gustavo A. R. Silva]
+24a3854  bonding: fix event handling for stacked bonds  [Sabrina Dubroca]
+a959719  Linux 4.9.170  [Greg Kroah-Hartman]
+015a451  appletalk: Fix compile regression  [Arnd Bergmann]
+b934fbe  net: stmmac: Set dma ring length before enabling the DMA  [Lars Persson]
+0226e90  tpm/tpm_crb: Avoid unaligned reads in crb_recv()  [Jarkko Sakkinen]
+91bc1c5  include/linux/swap.h: use offsetof() instead of custom __swapoffset macro  [Pi-Hsun Shih]
+b8ebdab  lib/div64.c: off by one in shift  [Stanislaw Gruszka]
+6cbd530  appletalk: Fix use-after-free in atalk_proc_exit  [YueHaibing]
+9e7bc0e  ARM: 8839/1: kprobe: make patch_lock a raw_spinlock_t  [Yang Shi]
+44345f0  lkdtm: Add tests for NULL pointer dereference  [Christophe Leroy]
+6f929aa  soc/tegra: pmc: Drop locking from tegra_powergate_is_powered()  [Dmitry Osipenko]
+7c5f763  iommu/dmar: Fix buffer overflow during PCI bus notification  [Julia Cartwright]
+8f8dab2  crypto: sha512/arm - fix crash bug in Thumb2 build  [Ard Biesheuvel]
+c1aa326  crypto: sha256/arm - fix crash bug in Thumb2 build  [Ard Biesheuvel]
+8eacab4  kernel: hung_task.c: disable on suspend  [Vitaly Kuznetsov]
+53adb6c  cifs: fallback to older infolevels on findfirst queryinfo retry  [Steve French]
+bb8cd7e  ACPI / SBS: Fix GPE storm on recent MacBookPro's  [Ronald Tschalär]
+732630e  ARM: samsung: Limit SAMSUNG_PM_CHECK config option to non-Exynos platforms  [Bartlomiej Zolnierkiewicz]
+81428203  HID: i2c-hid: override HID descriptors for certain devices  [Julian Sax]
+5cb33db  serial: uartps: console_setup() can't be placed to init section  [Michal Simek]
+af60872  f2fs: fix to do sanity check with current segment number  [Chao Yu]
+8503e23  9p locks: add mount option for lock retry interval  [Dinu-Razvan Chis-Serban]
+977ede6  9p: do not trust pdu content for stat item size  [Gertjan Halkes]
+ec17dbc  rsi: improve kernel thread handling to fix kernel panic  [Siva Rebbagondla]
+892605e  gpio: pxa: handle corner case of unprobed device  [Robert Jarzmik]
+d8d0192  ext4: prohibit fstrim in norecovery mode  [Darrick J. Wong]
+4024c2f  fix incorrect error code mapping for OBJECTID_NOT_FOUND  [Steve French]
+af90cb6  x86/hw_breakpoints: Make default case in hw_breakpoint_arch_parse() return an error  [Nathan Chancellor]
+4ef7abf  iommu/vt-d: Check capability before disabling protected memory  [Lu Baolu]
+9155909  x86/cpu/cyrix: Use correct macros for Cyrix calls on Geode processors  [Matthew Whitehead]
+e69ca31  x86/hpet: Prevent potential NULL pointer dereference  [Aditya Pakki]
+9480880  irqchip/mbigen: Don't clear eventid when freeing an MSI  [Jianguo Chen]
+5edcc51  perf tests: Fix a memory leak in test__perf_evsel__tp_sched_test()  [Changbin Du]
+66158ab  perf tests: Fix a memory leak of cpu_map object in the openat_syscall_event_on_all_cpus test  [Changbin Du]
+78d6b3e  perf evsel: Free evsel->counts in perf_evsel__exit()  [Arnaldo Carvalho de Melo]
+62ee92e  perf hist: Add missing map__put() in error case  [Changbin Du]
+e972ca6  perf top: Fix error handling in cmd_top()  [Changbin Du]
+8897d90  perf build-id: Fix memory leak in print_sdt_events()  [Changbin Du]
+0e45de3  perf config: Fix a memory leak in collect_config()  [Changbin Du]
+22972c2  perf config: Fix an error in the config template documentation  [Changbin Du]
+8cf2148  tools/power turbostat: return the exit status of a command  [David Arcari]
+a56f5a6  thermal/int340x_thermal: fix mode setting  [Matthew Garrett]
+20d69d4  thermal/int340x_thermal: Add additional UUIDs  [Matthew Garrett]
+3855025  ALSA: opl3: fix mismatch between snd_opl3_drum_switch definition and declaration  [Colin Ian King]
+9b75882  mmc: davinci: remove extraneous __init annotation  [Arnd Bergmann]
+1647ef3  IB/mlx4: Fix race condition between catas error reset and aliasguid flows  [Jack Morgenstein]
+d0e1f12  ALSA: sb8: add a check for request_region  [Kangjie Lu]
+882493a  ALSA: echoaudio: add a check for ioremap_nocache  [Kangjie Lu]
+1e140b7  ext4: report real fs size after failed resize  [Lukas Czerner]
+08fe306  ext4: add missing brelse() in add_new_gdb_meta_bg()  [Lukas Czerner]
+5bf02db  perf/core: Restore mmap record type correctly  [Stephane Eranian]
+8401120  ARC: u-boot args: check that magic number is correct  [Eugeniy Paltsev]
+9dbf73e  Linux 4.9.169  [Greg Kroah-Hartman]
+e9bb17e  PCI: Add function 1 DMA alias quirk for Marvell 9170 SATA controller  [Andre Przywara]
+6612616  xtensa: fix return_address  [Max Filippov]
+55c5149  sched/fair: Do not re-read ->h_load_next during hierarchical load calculation  [Mel Gorman]
+0f14822  xen: Prevent buffer overflow in privcmd ioctl  [Dan Carpenter]
+57b08fc  parisc: Use cr16 interval timers unconditionally on qemu  [Helge Deller]
+44b0adf  arm64: futex: Fix FUTEX_WAKE_OP atomic ops with non-zero result value  [Will Deacon]
+1aee630  ARM: dts: at91: Fix typo in ISC_D0 on PC9  [David Engraf]
+1d9011c  virtio: Honour 'may_reduce_num' in vring_create_virtqueue  [Cornelia Huck]
+d3b4725  genirq: Respect IRQCHIP_SKIP_SET_WAKE in irq_chip_set_wake_parent()  [Stephen Boyd]
+475d13c  block: do not leak memory in bio_copy_user_iov()  [Jérôme Glisse]
+50f578b  Btrfs: do not allow trimming when a fs is mounted with the nologreplay option  [Filipe Manana]
+d66f9d4  ASoC: fsl_esai: fix channel swap issue when stream starts  [S.j. Wang]
+ddfcc27  include/linux/bitrev.h: fix constant bitrev  [Arnd Bergmann]
+020d0e3  parisc: Detect QEMU earlier in boot process  [Helge Deller]
+4e99016  ALSA: seq: Fix OOB-reads from strlcpy  [Zubin Mithra]
+563612a  ip6_tunnel: Match to ARPHRD_TUNNEL6 for dev type  [Sheena Mira-ato]
+2137f8de  net: ethtool: not call vzalloc for zero sized memory request  [Li RongQing]
+095bb08  netns: provide pure entropy for net_hash_mix()  [Eric Dumazet]
+fa50027  net/mlx5e: Add a lock on tir list  [Yuval Avnery]
+ab1ede3  bnxt_en: Improve RX consumer index validity check.  [Michael Chan]
+f0ceb40  bnxt_en: Reset device on RX buffer errors.  [Michael Chan]
+f816674  vrf: check accept_source_route on the original netdevice  [Stephen Suryaputra]
+7aa4dff  tcp: Ensure DCTCP reacts to losses  [Koen De Schepper]
+7d1cdb5  sctp: initialize _pad of sockaddr_in before copying to user memory  [Xin Long]
+3b4d191  qmi_wwan: add Olicard 600  [Bjørn Mork]
+aa91863  openvswitch: fix flow actions reallocation  [Andrea Righi]
+9e6af27  net: rds: force to destroy connection if t_sock is NULL in rds_tcp_kill_sock().  [Mao Wenan]
+7a457b9  kcm: switch order of device registration to fix a crash  [Jiri Slaby]
+7e5b478  ipv6: sit: reset ip header pointer in ipip6_rcv  [Lorenzo Bianconi]
+736a099  ipv6: Fix dangling pointer when ipv6 fragment  [Junwei Hu]
+390be6f  tty: ldisc: add sysctl to prevent autoloading of ldiscs  [Greg Kroah-Hartman]
+5c73f9e  tty: mark Siemens R3964 line discipline as BROKEN  [Greg Kroah-Hartman]
+ad6a75e  arm64: kaslr: Reserve size of ARM64_MEMSTART_ALIGN in linear region  [Yueyi Li]
+4f2c1a6  powerpc/security: Fix spectre_v2 reporting  [Michael Ellerman]
+a0ff395  powerpc/fsl: Fix the flush of branch predictor.  [Christophe Leroy]
+7ae2235  powerpc/fsl: Fixed warning: orphan section `__btb_flush_fixup'  [Diana Craciun]
+9eb7051  powerpc/fsl: Update Spectre v2 reporting  [Diana Craciun]
+f3401db  powerpc/fsl: Enable runtime patching if nospectre_v2 boot arg is used  [Diana Craciun]
+a293b43  powerpc/fsl: Flush branch predictor when entering KVM  [Diana Craciun]
+a857f4f  powerpc/fsl: Flush the branch predictor at each kernel entry (32 bit)  [Diana Craciun]
+fb4fd16  powerpc/fsl: Flush the branch predictor at each kernel entry (64bit)  [Diana Craciun]
+668e99c  powerpc/fsl: Add nospectre_v2 command line argument  [Diana Craciun]
+39e3f15  powerpc/fsl: Emulate SPRN_BUCSR register  [Diana Craciun]
+faa95a2  powerpc/fsl: Fix spectre_v2 mitigations reporting  [Diana Craciun]
+52ada33  powerpc/fsl: Add macro to flush the branch predictor  [Diana Craciun]
+70edeb6  powerpc/fsl: Add infrastructure to fixup branch predictor flush  [Diana Craciun]
+46a3ee0  powerpc/powernv: Query firmware for count cache flush settings  [Michael Ellerman]
+f87b527  powerpc/pseries: Query hypervisor for count cache flush settings  [Michael Ellerman]
+34e1b10  powerpc/64s: Add support for software count cache flush  [Michael Ellerman]
+bc0e6a6  powerpc/64s: Add new security feature flags for count cache flush  [Michael Ellerman]
+03379ba  powerpc/asm: Add a patch_site macro & helpers for patching instructions  [Michael Ellerman]
+56dfbe9  powerpc/fsl: Sanitize the syscall table for NXP PowerPC 32 bit platforms  [Diana Craciun]
+7db45d8  powerpc/fsl: Add barrier_nospec implementation for NXP PowerPC Book3E  [Diana Craciun]
+02bb864  powerpc/64: Make meltdown reporting Book3S 64 specific  [Diana Craciun]
+ae35c13  powerpc/64: Call setup_barrier_nospec() from setup_arch()  [Michael Ellerman]
+4356a6c  powerpc/64: Add CONFIG_PPC_BARRIER_NOSPEC  [Michael Ellerman]
+9ef95db  powerpc/64: Make stf barrier PPC_BOOK3S_64 specific.  [Diana Craciun]
+3fbbfa0  powerpc/64: Disable the speculation barrier from the command line  [Diana Craciun]
+df39716  powerpc64s: Show ori31 availability in spectre_v1 sysfs file not v2  [Michael Ellerman]
+3dbd6c8  powerpc/64s: Enhance the information in cpu_show_spectre_v1()  [Michal Suchanek]
+bddd4f0  powerpc/64: Use barrier_nospec in syscall entry  [Michael Ellerman]
+3ff3bdb  powerpc: Use barrier_nospec in copy_from_user()  [Michael Ellerman]
+d4ff580  powerpc/64s: Enable barrier_nospec based on firmware settings  [Michal Suchanek]
+8417e9c  powerpc/64s: Patch barrier_nospec in modules  [Michal Suchanek]
+dea32ce  powerpc: Avoid code patching freed init sections  [Michael Neuling]
+88af23ab  powerpc/64s: Add support for ori barrier_nospec patching  [Michal Suchanek]
+46af66a  powerpc/64s: Add barrier_nospec  [Michal Suchanek]
+a93dc56  powerpc: Fix invalid use of register expressions  [Andreas Schwab]
+abed384  lib/string.c: implement a basic bcmp  [Nick Desaulniers]
+482ef16  x86/vdso: Drop implicit common-page-size linker flag  [Nick Desaulniers]
+2a3ef2c  x86: vdso: Use $LD instead of $CC to link  [Alistair Strachan]
+1daff09  kbuild: clang: choose GCC_TOOLCHAIN_DIR not on LD  [Nick Desaulniers]
+f1e525e  powerpc/tm: Limit TM code inside PPC_TRANSACTIONAL_MEM  [Breno Leitao]
+95f6368  x86/power: Make restore_processor_context() sane  [Andy Lutomirski]
+cc33466  x86/power/32: Move SYSENTER MSR restoration to fix_processor_context()  [Andy Lutomirski]
+1767e85  x86/power/64: Use struct desc_ptr for the IDT in struct saved_context  [Andy Lutomirski]
+4d8aa36  x86/power: Fix some ordering bugs in __restore_processor_context()  [Andy Lutomirski]
 
  * packages/apps/Settings
-a8520f3  Merge pull request #22 from rebenok90x/9  [Stanislav Bukovetsiy]
-8ef738b  Update Russian translation  [rebenok90x]
-00fd388  [2/2] Settings: show AOD on charge setting  [Marko Man]
+75e8ccb  Update RU translation  [blinoff82]
+
+====================
+     2019-05-03    
+====================
+
+====================
+     2019-05-02    
+====================
+
+ * frameworks/base
+2a0edcb  base: Add Q style battery icon toggle [1/2]  [paphonb]
 
  * packages/apps/SyberiaSettings
-08ce938  Update RU translation  [blinoff82]
-8cf39c8  Lockscreen Clock Styles: Introduce Q style TextClock  [Rahul]
-741b3c3  Extensions: add new gradient options for clock  [ElDainosor]
-df6d783  [2/2] Add sammy accent clock and a variant  [ElDainosor]
-284e1b3  Introduce lockscreen clock/date styles [2/2]  [Alex Cruz]
+f896ab8  Merge pull request #56 from SilverShades02/9.0  [Ivan Blinov]
+c15ae8d  AboutSyberia: set card cornerradius and elevation to cardview.  [Jyotiraditya]
+99b6abf  SyberiaSettings: Add Q style battery icon toggle [2/2]  [paphonb]
 
- * vendor/syberia
-7e8cc9d  vendor: Theme custom analog clock  [Shubham Singh]
+ * packages/services/Telephony
+db22956  Fix non-protected broadcasts sent from phone process.  [Umashankar Godachi]
 
 ====================
-     2019-04-26    
-====================
-
- * packages/apps/SettingsIntelligence
-3a6711e  SettingsIntelligence : Redesign searchbar to match settings change  [Mohan Cm]
-
-====================
-     2019-04-25    
+     2019-05-01    
 ====================
 
  * frameworks/base
-844e11f  NetworkStatsHistory: Prevent IllegalArgumentException  [Henrique Silva]
-e924aa7  Make roaming indicator optional [1/2]  [Pranav Vashi]
-bc56da0  Fix Cannot grant system fixed permission com.android.voicemail.permission.ADD_VOICEMAIL for package com.google.android.dialer crash  [Illia Poplawski]
-3de6afa  Update RU translation  [blinoff82]
+959890f  Fix NullPointerException in CaptivePortalLogin  [Hisanobu, Watanabe]
+e841d02  Fix a bug where + before % is ignored  [Chalard Jean]
+07cf635  LockClock: don't mess with font size  [DennySPB]
 
- * frameworks/native
-8008005  libbinder: -case in 'Waiting for service' log.  [Steven Moreland]
-1dec339  Revert "libbinder: Don't log call trace when waiting for vendor service on non-eng builds"  [martinusbe]
-a1cda6e  libbinder: Don't link against libutilscallstack.  [Martijn Coenen]
-
- * packages/apps/Bluetooth
-907cc11  Fix leak of registerReceiver  [zhoutengteng]
-eb1429e  HID: Fix the potential NPE in HidHostService jni callback  [Sravan voleti]
-
- * packages/apps/SyberiaSettings
-a67f21e  Make roaming indicator optional [2/2]  [Pranav Vashi]
-48cf048  Move torch on power button into gestures settings  [DennySPB]
-
- * prebuilts/clang/host/linux-x86
-d3b78c9  Update prebuilt Clang to r353983c.  [Yi Kong]
-
- * vendor/syberia
-798a12d  Update Google prebuilts  [DennySPB]
-
-====================
-     2019-04-24    
-====================
-
- * build/make
-1268fea  build: Support system-as-root A-only backuptool  [LuK1337]
-03828ad  Revert "Fix recovery-script cleanups in block mode"  [DennySPB]
-3f5f5dd  Revert "ota: Build uboot bootable images when necessary"  [DennySPB]
-
- * frameworks/base
-bf4cace  Fix tr translation  [DennySPB]
-80954b4  PowerManager: Don't bother devices not using wait for MPCTL  [Shubham Singh]
-fbf002b  PerformanceManager: Allow wait for MPCTL to start on boot  [dianlujitao]
-
- * packages/apps/SmartNavSettings
-d3fdc9d  Fix tr translation  [DennySPB]
-
- * vendor/syberia
-4bc43a9  Support system-as-root A-only backuptool  [LuK1337]
-
-====================
-     2019-04-23    
-====================
-
- * frameworks/base
-eb2305c  Merge pull request #11 from Astridxx/9.0  [DennySPb]
-ecb2d1b  Update Turkish translation  [Murat Kozan]
-c8fdd86  base: Use a system-wide recents corner radius  [ElDainosor]
-
- * packages/apps/Dialer
-ae2eb9c  Merge pull request #1 from Astridxx/9.0  [DennySPb]
-75347f0  incallui: Add Turkish translation  [Murat Kozan]
-
- * packages/apps/Launcher3
-209947f  Merge pull request #1 from Astridxx/9.0  [DennySPb]
-d5ef278  Add Turkish translation  [Murat Kozan]
+ * packages/apps/Messaging
+a4fd27b  Merge pull request #1 from prometheusXderpgang/9.0  [DennySPb]
+ff816dd  Messaging: Add "Mark as read" quick action for message notifications  [Paul Keith]
 
  * packages/apps/Settings
-6437f63  Merge pull request #21 from Astridxx/9.0  [DennySPb]
-17a11c0  Team: add tulip maintainer  [DennySPB]
-a07e38f  Team: add back whyred maintainer  [DennySPB]
-8665d1e  Update Turkish translation  [Murat Kozan]
-3ea4ec8  Team: maintainers dying like a flies  [DennySPB]
-
- * packages/apps/SmartNav
-e28c60b  Merge pull request #1 from Astridxx/9.0  [DennySPb]
-138bee4  Update Turkish translation  [Murat Kozan]
-
- * packages/apps/SmartNavSettings
-6dc1feb  Merge pull request #2 from Astridxx/9.0  [DennySPb]
-2052a8c  Add Turkish translation  [Murat Kozan]
-
- * packages/apps/SyberiaSettings
-954b00b  Merge pull request #55 from Astridxx/9.0  [DennySPb]
-bd8aee8  Update Turkish translation  [Murat Kozan]
-
- * vendor/syberia
-ddf5014  official: add tulip  [DennySPB]
+4b18198  Fix code for NPE when click add and cancel repeatly VPN profile  [sj.cha]
+1a7e5f1  Fixed memory leak  [Jia Jia]
 
 ====================
-     2019-04-22    
+     2019-04-30    
 ====================
 
  * frameworks/base
-f520008  Exclude Emergency Dialer from recent app list.  [Leo Hsu]
-3ea712f  Use proper context for prevent ringing gesture toast  [Giuseppe Maggio]
-36bb4fc  Audio assets: add NFC sounds  [Jean-Michel Trivi]
-0801ad2  Support CALLBACK_TYPE_SENSOR_ROUTING  [Mingbo Zhang]
+98154a4  base: LS filters: Add 2 more variants  [ElDainosor]
+dae3e83  base: Optimize toGrayscale function  [ElDainosor]
+374a9e3  base: Intensify the blur amount on LS cover art  [ElDainosor]
+41bf0c9  base: Add Lockscreen cover art filter [1/2]  [ElDainosor]
+ba8e6dd  ImageUtils: Switch blur lib to SimpleImageBlur  [ElDainosor]
+ba65369  ImageHelper: add getBlurredImage  [Dil3mm4]
+e760619  GamingModeTile: stop adjusting volume  [HolyAngel]
+238c0b7  Hide lockscreen items [1/2]  [Alex Cruz]
+391b556  Q style clock: Improve RU translation  [DennySPB]
 
- * packages/apps/Bluetooth
-be8789d  Fix setting of BLE scan parameters  [Subramanian Srinivasan]
-a717600  Add BLE Scan Phy parameter to scan API  [Subramanian Srinivasan]
-76b2d12  Support to startScan with DELIVERY_MODE_ROUTE  [Mingbo Zhang]
+ * packages/apps/SyberiaSettings
+8bdaf9a  Lockscreen: add dependencies  [DennySPB]
+26d05bb  SystemSettingListPreference: Add dependency attribute  [DennySPB]
+638a204  Settings: LS filters: Add 2 more variants  [ElDainosor]
+c62b4da  Settings: Add Lockscreen cover art filter [2/2]  [ElDainosor]
+eb60234  Hide lockscreen items [2/2]  [Alex Cruz]
+dfd0407  [2/2]: Add customisable alignment for Q style clock No shit Sherlock  [Ovenoboyo]
 
  * system/bt
-b12d5b0  Add BLE Scan Phy parameter to scan API Add BLE Scan Phy parameter to set scan parameters API.  [Subramanian Srinivasan]
+4472f94  Fix handling of BLE create connection when all PHYs are set When all PHYs are set during BLE create connection, there is an assert error seen in BT stack. This change fixes this issue.  [Subramanian Srinivasan]
+31653b5  RFCOMM: Add new API to check port state based on SCN As there is no API in RFCOMM to check exact port status, AG checking port opening state and continuing outgoing connection even incoming port already opened.  [Venkata Jagadeesh Garaga]
 
 ====================
-     2019-04-21    
+     2019-04-29    
 ====================
 
- * hardware/qcom/data/ipacfg-mgr
-2e3ed98  msm8998: ipanat: Add missing kernel header dep  [Christopher N. Hesse]
+ * frameworks/base
+3d6ab33  CustomTextClock: LangGuard: Update Portuguese translations - Also add langguard to strings below 20  [ovenoboyo]
+eb72138  CustomTextClock: Add more detailing to the functions - Basically fuckup everything and make it even more complex  [ovenoboyo]
+993b6f3  CustomTextClock: LangGuard: Add exceptions for turkish language  [ovenboyo]
+932fd54  CustomTextClock: LangGuard: Fix dutch translations  [ovenoboyo]
+a883803  Add Japanese and Dutch translation for Q text clock  [Dil3mm4]
+b305f87  CustomTextClock: Merge Translations  [Bayram Kılıç]
+aae7e79  [1/2]: Add customisable alignment for Q style clock  [ovenoboyo]
+
+====================
+     2019-04-28    
+====================
+
+ * packages/apps/Settings
+773b83a  team: gemini is back  [blinoff82]
+
+ * vendor/syberia
+3c8dd11  jenkins: build gemini  [blinoff82]
 
