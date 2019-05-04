@@ -1,232 +1,103 @@
 ====================
-     2019-04-27    
+     2019-05-04    
 ====================
 
  * device/xiaomi/sdm660-common
-5eef19d  sdm660-common : remove duplicate props , move some props  [coderzstas]
-38b6659  sdm660: fix typo in platform prop file  [Max Weffers]
-0af5e04  sdm660: Set camera Hal3 vendor prop for new gcam  [Max Weffers]
-26ee30b  sdm660: XiaomiParts: Add some stuff * Add headset gain control * Same for mic * Add grayscale to the display calibration  [Stylogey]
-d049a72  sdm660: XiaomiParts: Dont use the aosp gestures if the FPShutter is enabled  [Stylogey]
-
- * device/xiaomi/wayne
-ab6bfd9  wayne: Update camera props for pie camera blobs  [Max Weffers]
-f05f5cd  wayne: audio: Increase Incall Volume  [Max Weffers]
-a08b7c6  wayne:remove unneeded heap and dalvik configs  [Max Weffers]
-e9cd474  Update deps  [Nikita]
-
- * frameworks/base
-9ffc4f1  CustomTextClock: remove unused code for RU localization  [blinoff82]
-7e6e3c4  Merge pull request #12 from rebenok90x/9  [Stanislav Bukovetsiy]
-c6a65ca  base: add option to enable AOD on charging only [1/2]  [Marko Man]
-b68e1b3  Q Clock: add RU translation  [DennySPB]
-faa3bd4  CustomTextClock: Fix my derps for O' - Only for en doe  [ovenoboyo]
-de9f824  CustomTextClock: LangGuard: Remove unnecessary function to get hour strings seperately  [ovenoboyo]
-bf6f31e  CustomTextClock: Check if language has changed before setting toprow text  [Dil3mm4]
-103a9d9  CustomTextClock: Remove methods moved in utility classes  [Dil3mm4]
-05ec7bc  CustomTextClock: This makes the lockscreen lag  [Dil3mm4]
-fa52a24  CustomTextClock: Ditch code related to color getting  [Dil3mm4]
-ff811ec  CustomTextClock: Create LangGuard utility  [Dil3mm4]
-32d113d  CustomTextClock: Refactor a few strings  [Dil3mm4]
-184aad2  CustomTextClock: Remove all logging - Now that its almost done  [ovenoboyo]
-6e27f14  CustomTextClock: Add O' again  [ovenoboyo]
-b065850  CustomTextClock: Add Portuguese and French translations  [ovenoboyo]
-396ac84  CustomTextClock: Account for *almost* all of the possiblities while updating text color  [Ovenoboyo]
-5dd7af2  Squash Q-Clock un-hardcode strings and add translatable strings  [Dil3mm4]
-528009e  Change TopTextView color according to wallpaper - After 2weeks of intensive mindfuck, it was as simple as putting it in onDraw - It wont be resource intensive as onDraw on topview isn't called constantly  [ovenoboyo]
-a331ecf  CustomTextClock: Improve UI and optimisations  [Ovenoboyo]
-4cd3d28  LS clock style: Place Q style clock above keyguard status view  [Shubham Singh]
-4c3a934  Lockscreen Clock Styles: Introduce Q style text clock  [Ovenoboyo]
-21c72bb  [1/2] LS Clocks: Let's add a new gradients designs  [ElDainosor]
-900d34d  [1/2] Add sammy accent clock and a variant  [ElDainosor]
-03ae289  lockscreen : differentiate hour from minutes in digital bold style clock  [Shreyansh Lodha]
-94aab54  Lockscreen analog clock: improve minute hands looking  [ezio84]
-063ee10  Auto switch to a dark analog clock when using dark system theme  [ezio84]
-4afe3f2  Always use standard small clock when pulsing on new notifications  [ezio84]
-2fae593  Lockscreen clock styles: Fix bottom margins & ambient display/AOD visibility  [Alex Cruz]
-80f758e  Lockscreen clock styles: Move everything to the keyguard [1/2]  [Alex Cruz]
-5c6011b  Lockscreen/ambient analog clock: improve design  [ezio84]
-26f1d63  Ensure the clockview is aligned correctly each time  [Alex Cruz]
-d817c49  Remove the 0 from the 12 hour format from the 'Digital (bold)' option  [Alex Cruz]
-566ffa6  Keyguard items: code improvements  [ezio84]
+7c745f8  Fix low in call volume  [Shouko]
+51e748c  Fix GSI Not working on Custom Vendor  [AkshayKakatkar]
 
  * packages/apps/Settings
-a8520f3  Merge pull request #22 from rebenok90x/9  [Stanislav Bukovetsiy]
-8ef738b  Update Russian translation  [rebenok90x]
-00fd388  [2/2] Settings: show AOD on charge setting  [Marko Man]
-
- * packages/apps/SyberiaSettings
-08ce938  Update RU translation  [blinoff82]
-8cf39c8  Lockscreen Clock Styles: Introduce Q style TextClock  [Rahul]
+75e8ccb  Update RU translation  [blinoff82]
 
 ====================
-     2019-04-26    
+     2019-05-03    
+====================
+
+====================
+     2019-05-02    
 ====================
 
  * frameworks/base
-dee6627  Introduce lockscreen clock/date styles [1/2]  [Alex Cruz]
-
- * packages/apps/SettingsIntelligence
-3a6711e  SettingsIntelligence : Redesign searchbar to match settings change  [Mohan Cm]
+2a0edcb  base: Add Q style battery icon toggle [1/2]  [paphonb]
 
  * packages/apps/SyberiaSettings
-741b3c3  Extensions: add new gradient options for clock  [ElDainosor]
-df6d783  [2/2] Add sammy accent clock and a variant  [ElDainosor]
-284e1b3  Introduce lockscreen clock/date styles [2/2]  [Alex Cruz]
+f896ab8  Merge pull request #56 from SilverShades02/9.0  [Ivan Blinov]
+c15ae8d  AboutSyberia: set card cornerradius and elevation to cardview.  [Jyotiraditya]
+99b6abf  SyberiaSettings: Add Q style battery icon toggle [2/2]  [paphonb]
 
- * vendor/syberia
-7e8cc9d  vendor: Theme custom analog clock  [Shubham Singh]
-
-====================
-     2019-04-25    
-====================
-
- * frameworks/base
-844e11f  NetworkStatsHistory: Prevent IllegalArgumentException  [Henrique Silva]
-e924aa7  Make roaming indicator optional [1/2]  [Pranav Vashi]
-
- * frameworks/native
-8008005  libbinder: -case in 'Waiting for service' log.  [Steven Moreland]
-1dec339  Revert "libbinder: Don't log call trace when waiting for vendor service on non-eng builds"  [martinusbe]
-a1cda6e  libbinder: Don't link against libutilscallstack.  [Martijn Coenen]
-
- * packages/apps/Bluetooth
-907cc11  Fix leak of registerReceiver  [zhoutengteng]
-eb1429e  HID: Fix the potential NPE in HidHostService jni callback  [Sravan voleti]
-
- * packages/apps/SyberiaSettings
-a67f21e  Make roaming indicator optional [2/2]  [Pranav Vashi]
-
- * prebuilts/clang/host/linux-x86
-d3b78c9  Update prebuilt Clang to r353983c.  [Yi Kong]
-
- * vendor/syberia
-798a12d  Update Google prebuilts  [DennySPB]
+ * packages/services/Telephony
+db22956  Fix non-protected broadcasts sent from phone process.  [Umashankar Godachi]
 
  * vendor/xiaomi/wayne
-f58e752  wayne: Update camera blobs from Mi A2 pie release (v10.0.3)  [Max Weffers]
+225f05e  wayne: tune battery thermal settings  [Max Weffers]
 
 ====================
-     2019-04-24    
+     2019-05-01    
+====================
+
+ * vendor/xiaomi/wayne
+45fe298  wayne: correct miui camera watermark  [Max Weffers]
+8d52e41  wayne: reconfigure Thermal settings  [Max Weffers]
+cd8d85c  wayne: use source builded soundfx libs  [Max Weffers]
+
+====================
+     2019-04-30    
 ====================
 
  * frameworks/base
-bc56da0  Fix Cannot grant system fixed permission com.android.voicemail.permission.ADD_VOICEMAIL for package com.google.android.dialer crash  [Illia Poplawski]
-3de6afa  Update RU translation  [blinoff82]
-bf4cace  Fix tr translation  [DennySPB]
+959890f  Fix NullPointerException in CaptivePortalLogin  [Hisanobu, Watanabe]
+e841d02  Fix a bug where + before % is ignored  [Chalard Jean]
+07cf635  LockClock: don't mess with font size  [DennySPB]
+98154a4  base: LS filters: Add 2 more variants  [ElDainosor]
+dae3e83  base: Optimize toGrayscale function  [ElDainosor]
+374a9e3  base: Intensify the blur amount on LS cover art  [ElDainosor]
+41bf0c9  base: Add Lockscreen cover art filter [1/2]  [ElDainosor]
+ba8e6dd  ImageUtils: Switch blur lib to SimpleImageBlur  [ElDainosor]
+ba65369  ImageHelper: add getBlurredImage  [Dil3mm4]
+e760619  GamingModeTile: stop adjusting volume  [HolyAngel]
+238c0b7  Hide lockscreen items [1/2]  [Alex Cruz]
 
- * packages/apps/SmartNavSettings
-d3fdc9d  Fix tr translation  [DennySPB]
-
- * packages/apps/SyberiaSettings
-48cf048  Move torch on power button into gestures settings  [DennySPB]
-
- * vendor/xiaomi/MiuiCamera
-5d72965  camera: update miui camera to wayne miui 10 camera with ai  [Max Weffers]
-
-====================
-     2019-04-23    
-====================
-
- * build/make
-1268fea  build: Support system-as-root A-only backuptool  [LuK1337]
-03828ad  Revert "Fix recovery-script cleanups in block mode"  [DennySPB]
-3f5f5dd  Revert "ota: Build uboot bootable images when necessary"  [DennySPB]
-
- * frameworks/base
-80954b4  PowerManager: Don't bother devices not using wait for MPCTL  [Shubham Singh]
-fbf002b  PerformanceManager: Allow wait for MPCTL to start on boot  [dianlujitao]
-eb2305c  Merge pull request #11 from Astridxx/9.0  [DennySPb]
-ecb2d1b  Update Turkish translation  [Murat Kozan]
-
- * packages/apps/Dialer
-ae2eb9c  Merge pull request #1 from Astridxx/9.0  [DennySPb]
-75347f0  incallui: Add Turkish translation  [Murat Kozan]
-
- * packages/apps/Launcher3
-209947f  Merge pull request #1 from Astridxx/9.0  [DennySPb]
-d5ef278  Add Turkish translation  [Murat Kozan]
+ * packages/apps/Messaging
+a4fd27b  Merge pull request #1 from prometheusXderpgang/9.0  [DennySPb]
+ff816dd  Messaging: Add "Mark as read" quick action for message notifications  [Paul Keith]
 
  * packages/apps/Settings
-6437f63  Merge pull request #21 from Astridxx/9.0  [DennySPb]
-17a11c0  Team: add tulip maintainer  [DennySPB]
-a07e38f  Team: add back whyred maintainer  [DennySPB]
-8665d1e  Update Turkish translation  [Murat Kozan]
-
- * packages/apps/SmartNav
-e28c60b  Merge pull request #1 from Astridxx/9.0  [DennySPb]
-138bee4  Update Turkish translation  [Murat Kozan]
-
- * packages/apps/SmartNavSettings
-6dc1feb  Merge pull request #2 from Astridxx/9.0  [DennySPb]
-2052a8c  Add Turkish translation  [Murat Kozan]
+4b18198  Fix code for NPE when click add and cancel repeatly VPN profile  [sj.cha]
+1a7e5f1  Fixed memory leak  [Jia Jia]
 
  * packages/apps/SyberiaSettings
-954b00b  Merge pull request #55 from Astridxx/9.0  [DennySPb]
-bd8aee8  Update Turkish translation  [Murat Kozan]
-
- * vendor/syberia
-4bc43a9  Support system-as-root A-only backuptool  [LuK1337]
-ddf5014  official: add tulip  [DennySPB]
-
-====================
-     2019-04-22    
-====================
-
- * frameworks/base
-c8fdd86  base: Use a system-wide recents corner radius  [ElDainosor]
-f520008  Exclude Emergency Dialer from recent app list.  [Leo Hsu]
-3ea712f  Use proper context for prevent ringing gesture toast  [Giuseppe Maggio]
-36bb4fc  Audio assets: add NFC sounds  [Jean-Michel Trivi]
-0801ad2  Support CALLBACK_TYPE_SENSOR_ROUTING  [Mingbo Zhang]
-
- * packages/apps/Bluetooth
-be8789d  Fix setting of BLE scan parameters  [Subramanian Srinivasan]
-a717600  Add BLE Scan Phy parameter to scan API  [Subramanian Srinivasan]
-76b2d12  Support to startScan with DELIVERY_MODE_ROUTE  [Mingbo Zhang]
-
- * packages/apps/Settings
-3ea4ec8  Team: maintainers dying like a flies  [DennySPB]
+8bdaf9a  Lockscreen: add dependencies  [DennySPB]
+26d05bb  SystemSettingListPreference: Add dependency attribute  [DennySPB]
+638a204  Settings: LS filters: Add 2 more variants  [ElDainosor]
+c62b4da  Settings: Add Lockscreen cover art filter [2/2]  [ElDainosor]
+eb60234  Hide lockscreen items [2/2]  [Alex Cruz]
+dfd0407  [2/2]: Add customisable alignment for Q style clock No shit Sherlock  [Ovenoboyo]
 
  * system/bt
-b12d5b0  Add BLE Scan Phy parameter to scan API Add BLE Scan Phy parameter to set scan parameters API.  [Subramanian Srinivasan]
+4472f94  Fix handling of BLE create connection when all PHYs are set When all PHYs are set during BLE create connection, there is an assert error seen in BT stack. This change fixes this issue.  [Subramanian Srinivasan]
+31653b5  RFCOMM: Add new API to check port state based on SCN As there is no API in RFCOMM to check exact port status, AG checking port opening state and continuing outgoing connection even incoming port already opened.  [Venkata Jagadeesh Garaga]
 
 ====================
-     2019-04-21    
+     2019-04-29    
 ====================
 
- * device/xiaomi/sdm660-common
-09b9c20  Fix Online Media Streaming buffering crashes  [mracar07]
-750dfe9  Fix media streaming Denial  [mracar07]
-b463c3a  sdm660: compile kernel with clang 9.0.2  [Akhil Narang]
-27fd718  sdm660: Enable TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT  [Henrique Silva]
-fca6018  sdm660: overlay: Snap Configuration for HAl1 and Bokeh  [Max Weffers]
-7ccef7e  sdm660: fix signal strength visual bug  [nebrassy]
-87d6b5b  sdm660: Remove double defined overlay  [Max Weffers]
-f69a0b5  sdm660: bring in velocity values  [celtare21]
-0c17cf7  sdm660: Compile HWUI in Performance Mode  [celtare21]
-d085f1a  sdm660: set dirty ratios  [Dusan Uveric]
-4c2d37e  sdm660: Boardconfig: Strip debug  [celtare21]
-6990d24  sdm660: Add GPU Tweaks from jason  [celtare21]
-b8683ed  sdm660: Disable VSync for CPU rendered apps  [Hazari PraveenKumar]
-6468c40  sdm660: adjust irqbalance prio  [Dusan Uveric]
-cbd0035  sdm660: add glink_lpass to ignored irqs  [Dusan Uveric]
-4011960  sdm660: Set TARGET_KERNEL_VERSION  [dianlujitao]
-04a9005  sdm660: rootdir: Move mm-pp-dpps to hal class Change-Id: I1e243b057ed24a2bc50a206de7b6c5c8bd702617  [Ethan Chen]
-4359cc6  XiaomiParts: Correct FP actions for swipe gestures  [Stylogey]
-e793039  sdm660: ipacm: Enable IPACM for SA8 target  [Mohammed Javid]
-c2bf44b  sdm660: device: Build services-ext  [GuaiYiHu]
-7a09ae9  sdm660: rootdir: Modify the persist name in init script  [Max Weffers]
-9ee0310  sdm660: overlay: Squash CarrierConfig updates from LA.UM.7.2.r1-06700-sdm660.0  [GuaiYiHu]
-8416880  sdm660: Update props from MIUI 9.3.25  [GuaiYiHu]
-d95100c  sdm660: board: Disable split a2dp  [dianlujitao]
-51a0d77  sdm660: ifaa: Update for mlipay 1.1 changes  [GuaiYiHu]
-ff4f845  sdm660: wifi: Update wifi configs from MIUI 9.3.25  [GuaiYiHu]
-8f003e7  sepolicy: fix OTA denials  [Max Weffers]
-875dfe0  sepolicy: fix unknown type  [nebrassy]
-469f126  sepolicy: fix more denials  [nebrassy]
-77be8e2  speed up  [Nikita]
+ * frameworks/base
+391b556  Q style clock: Improve RU translation  [DennySPB]
+3d6ab33  CustomTextClock: LangGuard: Update Portuguese translations - Also add langguard to strings below 20  [ovenoboyo]
+eb72138  CustomTextClock: Add more detailing to the functions - Basically fuckup everything and make it even more complex  [ovenoboyo]
+993b6f3  CustomTextClock: LangGuard: Add exceptions for turkish language  [ovenboyo]
+932fd54  CustomTextClock: LangGuard: Fix dutch translations  [ovenoboyo]
+a883803  Add Japanese and Dutch translation for Q text clock  [Dil3mm4]
+b305f87  CustomTextClock: Merge Translations  [Bayram Kılıç]
+aae7e79  [1/2]: Add customisable alignment for Q style clock  [ovenoboyo]
 
- * hardware/qcom/data/ipacfg-mgr
-2e3ed98  msm8998: ipanat: Add missing kernel header dep  [Christopher N. Hesse]
+====================
+     2019-04-28    
+====================
+
+ * packages/apps/Settings
+773b83a  team: gemini is back  [blinoff82]
+
+ * vendor/syberia
+3c8dd11  jenkins: build gemini  [blinoff82]
 
