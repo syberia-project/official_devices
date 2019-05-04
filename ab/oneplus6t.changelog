@@ -1,5 +1,78 @@
 ====================
-     2019-04-30    
+     2019-05-04    
+====================
+
+====================
+     2019-05-03    
+====================
+
+ * device/oneplus/oneplus6t
+a316971  init.performance.rc: use RZ cpuset setup  [DennySPb]
+
+ * frameworks/base
+2a0edcb  base: Add Q style battery icon toggle [1/2]  [paphonb]
+
+ * kernel/oneplus/sdm845
+a9ad2bc  Merge branch 'linux-4.9.y' of https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux into HEAD  [blinoff82]
+5383785  Linux 4.9.172  [Greg Kroah-Hartman]
+5bf817b  Documentation: Add nospectre_v1 parameter  [Diana Craciun]
+0feb371  powerpc/fsl: Add FSL_PPC_BOOK3E as supported arch for nospectre_v2 boot arg  [Diana Craciun]
+d476186  net: IP6 defrag: use rbtrees in nf_conntrack_reasm.c  [Peter Oskolkov]
+eccf76e  net: IP6 defrag: use rbtrees for IPv6 defrag  [Peter Oskolkov]
+33336cd  ipv6: remove dependency of nf_defrag_ipv6 on ipv6 module  [Florian Westphal]
+aaee29e  net: IP defrag: encapsulate rbtree defrag code into callable functions  [Peter Oskolkov]
+6a06369  ipv6: frags: fix a lockdep false positive  [Eric Dumazet]
+840367c  ipv4: set the tcp_min_rtt_wlen range from 0 to one day  [ZhangXiaoxu]
+87464be  net: stmmac: move stmmac_check_ether_addr() to driver probe  [Vinod Koul]
+a5f876f  team: fix possible recursive locking when add slaves  [Hangbin Liu]
+8b888be  net: rds: exchange of 8K and 1M pool  [Zhu Yanjun]
+50dd679  net/mlx5e: ethtool, Remove unsupported SFP EEPROM high pages query  [Erez Alfasi]
+7962b91  mlxsw: spectrum: Fix autoneg status in ethtool  [Amit Cohen]
+cd55c74  ipv4: add sanity checks in ipv4_link_failure()  [Eric Dumazet]
+2f4ca7a  Revert "block/loop: Use global lock for ioctl() operation."  [Greg Kroah-Hartman]
+7b7e51f  tipc: check link name with right length in tipc_nl_compat_link_set  [Xin Long]
+a379172  tipc: check bearer name with right length in tipc_nl_compat_bearer_enable  [Xin Long]
+0648cd7  fm10k: Fix a potential NULL pointer dereference  [Yue Haibing]
+74da2dc  netfilter: ebtables: CONFIG_COMPAT: drop a bogus WARN_ON  [Florian Westphal]
+22aed03  NFS: Forbid setting AF_INET6 to "struct sockaddr_in"->sin_family.  [Tetsuo Handa]
+9f3a14b  fs/proc/proc_sysctl.c: Fix a NULL pointer dereference  [YueHaibing]
+91cc4610  intel_th: gth: Fix an off-by-one in output unassigning  [Alexander Shishkin]
+d442c82  slip: make slhc_free() silently accept an error pointer  [Linus Torvalds]
+d2618e3  tipc: handle the err returned from cmd header function  [Xin Long]
+d280a9b  vsock/virtio: fix kernel panic from virtio_transport_reset_no_sock  [Adalbert Lazăr]
+9b916af  USB: Consolidate LPM checks to avoid enabling LPM twice  [Kai-Heng Feng]
+c73982b  USB: Add new USB LPM helpers  [Kai-Heng Feng]
+ff0d081  drm/vc4: Fix compilation error reported by kbuild test bot  [Maarten Lankhorst]
+420f8c0  drm/vc4: Fix memory leak during gpu reset.  [Maarten Lankhorst]
+2732382  ARM: 8857/1: efi: enable CP15 DMB instructions before cleaning the cache  [Ard Biesheuvel]
+2996669  dmaengine: sh: rcar-dmac: With cyclic DMA residue 0 is valid  [Dirk Behme]
+a4a0e6b  Input: synaptics-rmi4 - write config register values to the right offset  [Lucas Stach]
+9bae0c0  sunrpc: don't mark uninitialised items as VALID.  [NeilBrown]
+28154b8  nfsd: Don't release the callback slot unless it was actually held  [Trond Myklebust]
+99055c0  ceph: fix ci->i_head_snapc leak  [Yan, Zheng]
+a9adfd9  ceph: ensure d_name stability in ceph_dentry_hash()  [Jeff Layton]
+c9e5f60  sched/numa: Fix a possible divide-by-zero  [Xie XiuQi]
+a51d5ec  IB/rdmavt: Fix frwr memory registration  [Josh Collier]
+56f9da8  trace: Fix preempt_enable_no_resched() abuse  [Peter Zijlstra]
+078ffd6  MIPS: scall64-o32: Fix indirect syscall number load  [Aurelien Jarno]
+3ddc299  tracing: Fix a memory leak by early error exit in trace_pid_write()  [Wenwen Wang]
+da502d3  cifs: do not attempt cifs operation on smb2+ rename error  [Frank Sorenson]
+a4ccc9e5  kbuild: simplify ld-option implementation  [Masahiro Yamada]
+
+ * packages/apps/SyberiaSettings
+f896ab8  Merge pull request #56 from SilverShades02/9.0  [Ivan Blinov]
+c15ae8d  AboutSyberia: set card cornerradius and elevation to cardview.  [Jyotiraditya]
+99b6abf  SyberiaSettings: Add Q style battery icon toggle [2/2]  [paphonb]
+
+ * packages/services/Telephony
+db22956  Fix non-protected broadcasts sent from phone process.  [Umashankar Godachi]
+
+====================
+     2019-05-02    
+====================
+
+====================
+     2019-05-01    
 ====================
 
  * device/oneplus/oneplus6t
@@ -8,6 +81,8 @@ ed15774  Revert "prebuilts: Update Lawnchair to 2035-alpha"  [coderzstas]
 1d2c61b  init.performance.rc: add foreground boost  [DennySPb]
 
  * frameworks/base
+959890f  Fix NullPointerException in CaptivePortalLogin  [Hisanobu, Watanabe]
+e841d02  Fix a bug where + before % is ignored  [Chalard Jean]
 07cf635  LockClock: don't mess with font size  [DennySPB]
 98154a4  base: LS filters: Add 2 more variants  [ElDainosor]
 dae3e83  base: Optimize toGrayscale function  [ElDainosor]
@@ -17,17 +92,14 @@ ba8e6dd  ImageUtils: Switch blur lib to SimpleImageBlur  [ElDainosor]
 ba65369  ImageHelper: add getBlurredImage  [Dil3mm4]
 e760619  GamingModeTile: stop adjusting volume  [HolyAngel]
 238c0b7  Hide lockscreen items [1/2]  [Alex Cruz]
-391b556  Q style clock: Improve RU translation  [DennySPB]
-
- * kernel/oneplus/sdm845
-5d84eca  Revert "qcacld-3.0: Add pdev_id for stats request command"  [khusika]
-f997023  Merge tag 'LA.UM.7.3.r1-07400-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/fw-api  [DennySPB]
-7da6ecb  Merge tag 'LA.UM.7.3.r1-07400-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn  [DennySPB]
-36a17cf  Merge tag 'LA.UM.7.3.r1-07400-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0  [DennySPB]
 
  * packages/apps/Messaging
 a4fd27b  Merge pull request #1 from prometheusXderpgang/9.0  [DennySPb]
 ff816dd  Messaging: Add "Mark as read" quick action for message notifications  [Paul Keith]
+
+ * packages/apps/Settings
+4b18198  Fix code for NPE when click add and cancel repeatly VPN profile  [sj.cha]
+1a7e5f1  Fixed memory leak  [Jia Jia]
 
  * packages/apps/SyberiaSettings
 8bdaf9a  Lockscreen: add dependencies  [DennySPB]
@@ -35,6 +107,31 @@ ff816dd  Messaging: Add "Mark as read" quick action for message notifications  [
 638a204  Settings: LS filters: Add 2 more variants  [ElDainosor]
 c62b4da  Settings: Add Lockscreen cover art filter [2/2]  [ElDainosor]
 eb60234  Hide lockscreen items [2/2]  [Alex Cruz]
+
+====================
+     2019-04-30    
+====================
+
+ * frameworks/base
+391b556  Q style clock: Improve RU translation  [DennySPB]
+3d6ab33  CustomTextClock: LangGuard: Update Portuguese translations - Also add langguard to strings below 20  [ovenoboyo]
+eb72138  CustomTextClock: Add more detailing to the functions - Basically fuckup everything and make it even more complex  [ovenoboyo]
+993b6f3  CustomTextClock: LangGuard: Add exceptions for turkish language  [ovenboyo]
+932fd54  CustomTextClock: LangGuard: Fix dutch translations  [ovenoboyo]
+a883803  Add Japanese and Dutch translation for Q text clock  [Dil3mm4]
+b305f87  CustomTextClock: Merge Translations  [Bayram Kılıç]
+aae7e79  [1/2]: Add customisable alignment for Q style clock  [ovenoboyo]
+
+ * kernel/oneplus/sdm845
+5d84eca  Revert "qcacld-3.0: Add pdev_id for stats request command"  [khusika]
+f997023  Merge tag 'LA.UM.7.3.r1-07400-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/fw-api  [DennySPB]
+7da6ecb  Merge tag 'LA.UM.7.3.r1-07400-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn  [DennySPB]
+36a17cf  Merge tag 'LA.UM.7.3.r1-07400-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0  [DennySPB]
+ccba575  clk: qcom: clk-cpu-osm: Reduce CPU frequency update rate limit to 500 us  [Danny Lin]
+8b29630  defconfig: set TA_STUNE_BOOST to 10  [DennySPB]
+02b9da4  Merge branch 'kernel.lnx.4.9.r11-rel' of https://github.com/android-linux-stable/msm-4.9  [DennySPB]
+
+ * packages/apps/SyberiaSettings
 dfd0407  [2/2]: Add customisable alignment for Q style clock No shit Sherlock  [Ovenoboyo]
 
  * system/bt
@@ -45,75 +142,18 @@ dfd0407  [2/2]: Add customisable alignment for Q style clock No shit Sherlock  [
      2019-04-29    
 ====================
 
- * frameworks/base
-3d6ab33  CustomTextClock: LangGuard: Update Portuguese translations - Also add langguard to strings below 20  [ovenoboyo]
-eb72138  CustomTextClock: Add more detailing to the functions - Basically fuckup everything and make it even more complex  [ovenoboyo]
-993b6f3  CustomTextClock: LangGuard: Add exceptions for turkish language  [ovenboyo]
-932fd54  CustomTextClock: LangGuard: Fix dutch translations  [ovenoboyo]
-a883803  Add Japanese and Dutch translation for Q text clock  [Dil3mm4]
-b305f87  CustomTextClock: Merge Translations  [Bayram Kılıç]
-aae7e79  [1/2]: Add customisable alignment for Q style clock  [ovenoboyo]
-
  * kernel/oneplus/sdm845
-ccba575  clk: qcom: clk-cpu-osm: Reduce CPU frequency update rate limit to 500 us  [Danny Lin]
-8b29630  defconfig: set TA_STUNE_BOOST to 10  [DennySPB]
-02b9da4  Merge branch 'kernel.lnx.4.9.r11-rel' of https://github.com/android-linux-stable/msm-4.9  [DennySPB]
 a46befb  Merge tag 'LA.UM.7.3.r1-07400-sdm845.0' into kernel.lnx.4.9.r11-rel  [Nathan Chancellor]
 
 ====================
      2019-04-28    
 ====================
 
- * kernel/oneplus/sdm845
-45ac442  Merge 4.9.171 into kernel.lnx.4.9.r11-rel  [Nathan Chancellor]
-
- * packages/apps/Settings
-773b83a  team: gemini is back  [blinoff82]
-
- * vendor/syberia
-3c8dd11  jenkins: build gemini  [blinoff82]
-
-====================
-     2019-04-27    
-====================
-
  * frameworks/base
 9ffc4f1  CustomTextClock: remove unused code for RU localization  [blinoff82]
-7e6e3c4  Merge pull request #12 from rebenok90x/9  [Stanislav Bukovetsiy]
-c6a65ca  base: add option to enable AOD on charging only [1/2]  [Marko Man]
-b68e1b3  Q Clock: add RU translation  [DennySPB]
-faa3bd4  CustomTextClock: Fix my derps for O' - Only for en doe  [ovenoboyo]
-de9f824  CustomTextClock: LangGuard: Remove unnecessary function to get hour strings seperately  [ovenoboyo]
-bf6f31e  CustomTextClock: Check if language has changed before setting toprow text  [Dil3mm4]
-103a9d9  CustomTextClock: Remove methods moved in utility classes  [Dil3mm4]
-05ec7bc  CustomTextClock: This makes the lockscreen lag  [Dil3mm4]
-fa52a24  CustomTextClock: Ditch code related to color getting  [Dil3mm4]
-ff811ec  CustomTextClock: Create LangGuard utility  [Dil3mm4]
-32d113d  CustomTextClock: Refactor a few strings  [Dil3mm4]
-184aad2  CustomTextClock: Remove all logging - Now that its almost done  [ovenoboyo]
-6e27f14  CustomTextClock: Add O' again  [ovenoboyo]
-b065850  CustomTextClock: Add Portuguese and French translations  [ovenoboyo]
-396ac84  CustomTextClock: Account for *almost* all of the possiblities while updating text color  [Ovenoboyo]
-5dd7af2  Squash Q-Clock un-hardcode strings and add translatable strings  [Dil3mm4]
-528009e  Change TopTextView color according to wallpaper - After 2weeks of intensive mindfuck, it was as simple as putting it in onDraw - It wont be resource intensive as onDraw on topview isn't called constantly  [ovenoboyo]
-a331ecf  CustomTextClock: Improve UI and optimisations  [Ovenoboyo]
-4cd3d28  LS clock style: Place Q style clock above keyguard status view  [Shubham Singh]
-4c3a934  Lockscreen Clock Styles: Introduce Q style text clock  [Ovenoboyo]
-21c72bb  [1/2] LS Clocks: Let's add a new gradients designs  [ElDainosor]
-900d34d  [1/2] Add sammy accent clock and a variant  [ElDainosor]
-03ae289  lockscreen : differentiate hour from minutes in digital bold style clock  [Shreyansh Lodha]
-94aab54  Lockscreen analog clock: improve minute hands looking  [ezio84]
-063ee10  Auto switch to a dark analog clock when using dark system theme  [ezio84]
-4afe3f2  Always use standard small clock when pulsing on new notifications  [ezio84]
-2fae593  Lockscreen clock styles: Fix bottom margins & ambient display/AOD visibility  [Alex Cruz]
-80f758e  Lockscreen clock styles: Move everything to the keyguard [1/2]  [Alex Cruz]
-5c6011b  Lockscreen/ambient analog clock: improve design  [ezio84]
-26f1d63  Ensure the clockview is aligned correctly each time  [Alex Cruz]
-d817c49  Remove the 0 from the 12 hour format from the 'Digital (bold)' option  [Alex Cruz]
-566ffa6  Keyguard items: code improvements  [ezio84]
-dee6627  Introduce lockscreen clock/date styles [1/2]  [Alex Cruz]
 
  * kernel/oneplus/sdm845
+45ac442  Merge 4.9.171 into kernel.lnx.4.9.r11-rel  [Nathan Chancellor]
 6bff0bb  Linux 4.9.171  [Greg Kroah-Hartman]
 3141fcc  kernel/sysctl.c: fix out-of-bounds access when setting file-max  [Will Deacon]
 7f21387  Revert "locking/lockdep: Add debug_locks check in __lock_downgrade()"  [Greg Kroah-Hartman]
@@ -163,98 +203,8 @@ d55ff2f0  net: fou: do not use guehdr after iptunnel_pull_offloads in gue_udp_re
 489b99b  bonding: fix event handling for stacked bonds  [Sabrina Dubroca]
 
  * packages/apps/Settings
-a8520f3  Merge pull request #22 from rebenok90x/9  [Stanislav Bukovetsiy]
-8ef738b  Update Russian translation  [rebenok90x]
-00fd388  [2/2] Settings: show AOD on charge setting  [Marko Man]
-
- * packages/apps/SyberiaSettings
-08ce938  Update RU translation  [blinoff82]
-8cf39c8  Lockscreen Clock Styles: Introduce Q style TextClock  [Rahul]
-741b3c3  Extensions: add new gradient options for clock  [ElDainosor]
-df6d783  [2/2] Add sammy accent clock and a variant  [ElDainosor]
-
-====================
-     2019-04-26    
-====================
-
- * device/oneplus/oneplus6t
-14f76ae  init.performance.rc: discard most of recently added kernel tweaks  [DennySPB]
-2432c84  Revert "6t: increase status bar padding"  [coderzstas]
-4360806  op6t: fixup gestures  [coderzstas]
-c0f87b8  prebuilts: Update Lawnchair to 2035-alpha  [DennySPB]
-517e951  Boardconfig: uprev kernel clang to 9.0.3  [DennySPB]
-f75ee5d  init.performance.rc: adjust some tweaks  [ethan-halsall]
-
- * kernel/oneplus/sdm845
-abad71b7  sched/fair: Add bias schedtune boosted tasks sched feature  [Josh Choo]
-fe3ce86  Revert "sched/fair: Disable LB_BIAS by default"  [DennySPB]
-613b10d  Revert "sched: Turn on MIN_CAPACITY_CAPPING feature"  [DennySPB]
-
- * packages/apps/SettingsIntelligence
-3a6711e  SettingsIntelligence : Redesign searchbar to match settings change  [Mohan Cm]
-
- * packages/apps/SyberiaSettings
-284e1b3  Introduce lockscreen clock/date styles [2/2]  [Alex Cruz]
+773b83a  team: gemini is back  [blinoff82]
 
  * vendor/syberia
-7e8cc9d  vendor: Theme custom analog clock  [Shubham Singh]
-
-====================
-     2019-04-25    
-====================
-
- * frameworks/base
-844e11f  NetworkStatsHistory: Prevent IllegalArgumentException  [Henrique Silva]
-e924aa7  Make roaming indicator optional [1/2]  [Pranav Vashi]
-
- * frameworks/native
-8008005  libbinder: -case in 'Waiting for service' log.  [Steven Moreland]
-1dec339  Revert "libbinder: Don't log call trace when waiting for vendor service on non-eng builds"  [martinusbe]
-a1cda6e  libbinder: Don't link against libutilscallstack.  [Martijn Coenen]
-
- * packages/apps/Bluetooth
-907cc11  Fix leak of registerReceiver  [zhoutengteng]
-eb1429e  HID: Fix the potential NPE in HidHostService jni callback  [Sravan voleti]
-
- * packages/apps/SyberiaSettings
-a67f21e  Make roaming indicator optional [2/2]  [Pranav Vashi]
-48cf048  Move torch on power button into gestures settings  [DennySPB]
-
- * prebuilts/clang/host/linux-x86
-d3b78c9  Update prebuilt Clang to r353983c.  [Yi Kong]
-
- * vendor/oneplus
-c491e66  Update wfdcommon.jar to 9.0.5  [DennySPB]
-
- * vendor/syberia
-798a12d  Update Google prebuilts  [DennySPB]
-
-====================
-     2019-04-24    
-====================
-
- * device/oneplus/oneplus6t
-f26f1e2  overlay: Remove fused location provider overlay  [Dante Russo]
-20cda9b  overlay: enable qti network location  [DennySPB]
-1d50589  Ship QTI location provider blobs  [DennySPB]
-00a40bb  power: Kill "Failed to acquire lock" log  [Luca Stefani]
-11bb593  power: Clean up code and add generic hint handling  [Ananth Raghavan Subramanian]
-b2a19c5  power: Fix for VNDK compliance issue  [Rajashekar Adi]
-6a9e967  power: Fix VNDK compilation errors  [Vinay Verma]
-5a35bef  power: Release launch boost perflock when launch is completed  [tomascus]
-28ee963  power: Override stock power HAL service definition  [Giuseppe Barillari]
-56e84ba  op6t : bring back some overlay values what was removed b02619e  [coderzstas]
-b02619e  6t: incrase status bar notification count  [Marko Man]
-29ea66a  op6t: adjust cutout  [Marko Man]
-
- * frameworks/base
-bc56da0  Fix Cannot grant system fixed permission com.android.voicemail.permission.ADD_VOICEMAIL for package com.google.android.dialer crash  [Illia Poplawski]
-3de6afa  Update RU translation  [blinoff82]
-bf4cace  Fix tr translation  [DennySPB]
-
- * packages/apps/SmartNavSettings
-d3fdc9d  Fix tr translation  [DennySPB]
-
- * vendor/oneplus
-280b61c  Ship QTI location provider  [DennySPB]
+3c8dd11  jenkins: build gemini  [blinoff82]
 
