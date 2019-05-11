@@ -7,12 +7,6 @@ d024adc  Lawnchair: Update to alpha-2066  [nato66613]
 df8d890  mido:Optimize stune settings a bit  [nato66613]
 abf639e  msm8953: Add missing usb@1.0-service.basic selinux rule  [nato66613]
 
- * hardware/qcom/media-caf/msm8996
-308a64a  Merge tag 'LA.UM.7.5.r1-04800-8x96.0' into 9.0-caf-8996  [blinoff82]
-
- * hardware/qcom/wlan
-28310b5  Merge tag 'LA.UM.7.5.r1-04800-8x96.0' into 9.0-caf  [blinoff82]
-
 ====================
      2019-05-10    
 ====================
@@ -23,6 +17,12 @@ abf639e  msm8953: Add missing usb@1.0-service.basic selinux rule  [nato66613]
 
  * frameworks/base
 e8d3683  SwipeToScreenshot: Import MIUI implementation  [Henrique Silva]
+
+ * hardware/qcom/media-caf/msm8996
+308a64a  Merge tag 'LA.UM.7.5.r1-04800-8x96.0' into 9.0-caf-8996  [blinoff82]
+
+ * hardware/qcom/wlan
+28310b5  Merge tag 'LA.UM.7.5.r1-04800-8x96.0' into 9.0-caf  [blinoff82]
 
  * kernel/xiaomi/msm8953
 dbfd130  ZRAM: Use LZ4  [nato66613]
@@ -47,11 +47,6 @@ e0f904a  selinux: Remove audit dependency  [Sultan Alsawaf]
  * packages/apps/Settings
 06d02e0  Merge "Revert "Multi user: Allow user name and profile photo editing"" into 9.0  [blinov.in]
 70aa03f  Merge "Remove fullscreen cutout mode if device doesn't have notch" into 9.0  [blinov.in]
-
- * packages/providers/DownloadProvider
-e5e196a  DownloadProvider: Stop using Arrays.checkOffsetAndCount  [Pete Gillin]
-73bc5be  Downloaded content is deleted if Download folder is renamed using MTP  [Kaushalendra Mishra]
-09f383e  DownloadProvider: allow more redirects  [Simon Dubray]
 
 ====================
      2019-05-09    
@@ -84,15 +79,8 @@ addb8a4  Camera: Skip stream size check for whitelisted apps..  [Gaoxiang Chen]
 182d314  Select the proper request list size  [Guruprasad Gaonkar]
 5e44703  Merge "Hide arrows in Network Traffic indicators [1/2]" into 9.0  [dennyspb]
 
- * hardware/qcom/bt
-5ddb75b  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into 9.0-caf  [blinoff82]
-
- * hardware/qcom/media-caf/msm8996
-19b5143  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into 9.0-caf-8996  [blinoff82]
-
  * hardware/qcom/wlan
 0ca6a29  Revert "WiFi-Hal: Add support to set wifi latency level"  [blinoff82]
-9dcb1f7  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into 9.0-caf  [blinoff82]
 
  * kernel/xiaomi/msm8953
 3a949f2  power: qpnp-fg: make CHARGE_FULL property writable by user  [Jack Wu]
@@ -114,6 +102,11 @@ e9781f7  Merge "DisplaySettings: comment out color mode settings" into 9.0  [den
 
  * packages/apps/SyberiaSettings
 2815bfc  Merge "SyberiaSettings: Hide arrows in Network Traffic indicators [2/2]" into 9.0  [dennyspb]
+
+ * packages/providers/DownloadProvider
+e5e196a  DownloadProvider: Stop using Arrays.checkOffsetAndCount  [Pete Gillin]
+73bc5be  Downloaded content is deleted if Download folder is renamed using MTP  [Kaushalendra Mishra]
+09f383e  DownloadProvider: allow more redirects  [Simon Dubray]
 
  * vendor/interfaces
 04e7d3d  interfaces: Add 2.0 livedisplay interfaces  [Paul Keith]
@@ -169,6 +162,15 @@ f94139c  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platf
  * hardware/nxp/nfc
 08e0fa6  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/hardware/nxp/nfc into HEAD  [DennySPB]
 
+ * hardware/qcom/bt
+5ddb75b  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into 9.0-caf  [blinoff82]
+
+ * hardware/qcom/media-caf/msm8996
+19b5143  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into 9.0-caf-8996  [blinoff82]
+
+ * hardware/qcom/wlan
+9dcb1f7  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into 9.0-caf  [blinoff82]
+
  * kernel/xiaomi/msm8953
 06f2f44  mido: Set maple as deflaut I/O  [nato66613]
 
@@ -192,7 +194,6 @@ eebd560  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platf
 
  * packages/apps/SyberiaSettings
 d50d4c5  StatusBar battery: Toggle for left/right percentage position [2/2]  [a.derendyaev]
-4ac8406  SyberiaSettings: Hide arrows in Network Traffic indicators [2/2]  [Nico60]
 
  * packages/providers/DownloadProvider
 d4f976f  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD  [DennySPB]
@@ -231,9 +232,6 @@ a3d69cd  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platf
 
  * frameworks/av
 a59b297  amrnb: Fix memory leaks  [George Burgess IV]
-
- * frameworks/base
-b09afe5  Improved display of battery percent in the status bar  [a.derendyaev]
 
  * kernel/xiaomi/msm8953
 4445dd1  block: [Introduded for 3.18.y] Add Maple I/O Scheduler  [frap129]
@@ -275,16 +273,12 @@ de056d0  msm: kgsl: Relax CPU latency requirements to save power  [Sultan Alsawa
  * packages/apps/Settings
 ef77e02  Added strings (#25)  [Lukáš Sýkora]
 
+ * packages/apps/SyberiaSettings
+4ac8406  SyberiaSettings: Hide arrows in Network Traffic indicators [2/2]  [Nico60]
+
 ====================
      2019-05-06    
 ====================
-
- * bionic
-4f8cbdf  libc: Optimize ARM memcmp by using NEON.  [Kyle Repinski]
-c28bfb5  bionic: Prefer /sbin/sh if it exists  [Tom Marshall]
-f8a953d  Optimize the clone() system call on ARM(64)  [Anton Kirilov]
-4c69d28  bionic: linker: Fix fd leak  [Vic Yang]
-ccd3c98  linker: Disable linker debugging  [Miguel Martinez]
 
  * device/xiaomi/mido
 5100465  Mido: Remove audio power hint  [nato66613]
@@ -292,6 +286,9 @@ a5a8411  Mido: I/O tune V3  [nato66613]
 15e96c8  mido: Add suport for DTS_EAGLE  [nato66613]
 61a9e2f  mido:Update Davlik Heap logic  [nato66613]
 1e08cf4  mido: Build liboffloadhal  [Roker2]
+
+ * frameworks/base
+b09afe5  Improved display of battery percent in the status bar  [a.derendyaev]
 
  * packages/apps/Dialer
 08487c5  dialer: Add TR translation  [Murat Kozan]
@@ -304,6 +301,13 @@ a3d0034  Added values-cs and strings with Czech translation  [Lukáš Sýkora]
      2019-05-05    
 ====================
 
+ * bionic
+4f8cbdf  libc: Optimize ARM memcmp by using NEON.  [Kyle Repinski]
+c28bfb5  bionic: Prefer /sbin/sh if it exists  [Tom Marshall]
+f8a953d  Optimize the clone() system call on ARM(64)  [Anton Kirilov]
+4c69d28  bionic: linker: Fix fd leak  [Vic Yang]
+ccd3c98  linker: Disable linker debugging  [Miguel Martinez]
+
  * packages/apps/Messaging
 620e5ca  Merge pull request #2 from Astridxx/9.0  [Ivan Blinov]
 37106f7  Update RU translation  [blinoff82]
@@ -312,7 +316,6 @@ ed651a2  Update TR translation  [Murat Kozan]
  * packages/apps/Settings
 bcaac93  Merge pull request #23 from Astridxx/9.0  [Ivan Blinov]
 92408ca  Update TR translation  [Murat Kozan]
-75e8ccb  Update RU translation  [blinoff82]
 
  * packages/apps/SyberiaSettings
 16caf1d  Merge pull request #57 from Astridxx/9.0  [Ivan Blinov]
