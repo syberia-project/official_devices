@@ -1,19 +1,19 @@
 ====================
+     2019-05-11    
+====================
+
+====================
      2019-05-10    
 ====================
+
+ * frameworks/base
+e8d3683  SwipeToScreenshot: Import MIUI implementation  [Henrique Silva]
 
  * hardware/qcom/media-caf/msm8996
 308a64a  Merge tag 'LA.UM.7.5.r1-04800-8x96.0' into 9.0-caf-8996  [blinoff82]
 
  * hardware/qcom/wlan
 28310b5  Merge tag 'LA.UM.7.5.r1-04800-8x96.0' into 9.0-caf  [blinoff82]
-
-====================
-     2019-05-09    
-====================
-
- * frameworks/base
-e8d3683  SwipeToScreenshot: Import MIUI implementation  [Henrique Silva]
 
  * packages/apps/Settings
 06d02e0  Merge "Revert "Multi user: Allow user name and profile photo editing"" into 9.0  [blinov.in]
@@ -25,7 +25,7 @@ e5e196a  DownloadProvider: Stop using Arrays.checkOffsetAndCount  [Pete Gillin]
 09f383e  DownloadProvider: allow more redirects  [Simon Dubray]
 
 ====================
-     2019-05-08    
+     2019-05-09    
 ====================
 
  * device/syberia/sepolicy
@@ -92,7 +92,7 @@ e9781f7  Merge "DisplaySettings: comment out color mode settings" into 9.0  [den
 1c8c546  vendor: Whitelist LiveDisplay permissions  [Henrique Silva]
 
 ====================
-     2019-05-07    
+     2019-05-08    
 ====================
 
  * bionic
@@ -187,7 +187,7 @@ a07d0f1  Fix path for treble default prop  [Wei Wang]
 a3d69cd  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPB]
 
 ====================
-     2019-05-06    
+     2019-05-07    
 ====================
 
  * device/xiaomi/gemini
@@ -197,14 +197,25 @@ a3d69cd  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platf
  * frameworks/av
 a59b297  amrnb: Fix memory leaks  [George Burgess IV]
 
- * frameworks/base
-b09afe5  Improved display of battery percent in the status bar  [a.derendyaev]
-
  * packages/apps/Dialer
 530bac0  Merge pull request #2 from Astridxx/9.0  [Stanislav Bukovetsiy]
 
  * packages/apps/Settings
 ef77e02  Added strings (#25)  [Lukáš Sýkora]
+
+====================
+     2019-05-06    
+====================
+
+ * frameworks/base
+b09afe5  Improved display of battery percent in the status bar  [a.derendyaev]
+
+ * packages/apps/Dialer
+08487c5  dialer: Add TR translation  [Murat Kozan]
+
+ * packages/apps/SyberiaSettings
+1309bd0  Merge pull request #59 from MrLookas/9.0  [Ivan Blinov]
+a3d0034  Added values-cs and strings with Czech translation  [Lukáš Sýkora]
 
 ====================
      2019-05-05    
@@ -216,17 +227,6 @@ c28bfb5  bionic: Prefer /sbin/sh if it exists  [Tom Marshall]
 f8a953d  Optimize the clone() system call on ARM(64)  [Anton Kirilov]
 4c69d28  bionic: linker: Fix fd leak  [Vic Yang]
 ccd3c98  linker: Disable linker debugging  [Miguel Martinez]
-
- * packages/apps/Dialer
-08487c5  dialer: Add TR translation  [Murat Kozan]
-
- * packages/apps/SyberiaSettings
-1309bd0  Merge pull request #59 from MrLookas/9.0  [Ivan Blinov]
-a3d0034  Added values-cs and strings with Czech translation  [Lukáš Sýkora]
-
-====================
-     2019-05-04    
-====================
 
  * device/xiaomi/gemini
 d55a825  Revert "Revert "Ramdisk: switch to Thermal simple""  [blinoff82]
@@ -242,7 +242,6 @@ ed651a2  Update TR translation  [Murat Kozan]
  * packages/apps/Settings
 bcaac93  Merge pull request #23 from Astridxx/9.0  [Ivan Blinov]
 92408ca  Update TR translation  [Murat Kozan]
-75e8ccb  Update RU translation  [blinoff82]
 
  * packages/apps/SyberiaSettings
 16caf1d  Merge pull request #57 from Astridxx/9.0  [Ivan Blinov]
