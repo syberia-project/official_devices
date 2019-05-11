@@ -1,6 +1,13 @@
 ====================
+     2019-05-11    
+====================
+
+====================
      2019-05-10    
 ====================
+
+ * frameworks/base
+e8d3683  SwipeToScreenshot: Import MIUI implementation  [Henrique Silva]
 
  * hardware/qcom/media-caf/msm8996
 308a64a  Merge tag 'LA.UM.7.5.r1-04800-8x96.0' into 9.0-caf-8996  [blinoff82]
@@ -8,24 +15,12 @@
  * hardware/qcom/wlan
 28310b5  Merge tag 'LA.UM.7.5.r1-04800-8x96.0' into 9.0-caf  [blinoff82]
 
-====================
-     2019-05-09    
-====================
-
- * frameworks/base
-e8d3683  SwipeToScreenshot: Import MIUI implementation  [Henrique Silva]
-
  * packages/apps/Settings
 06d02e0  Merge "Revert "Multi user: Allow user name and profile photo editing"" into 9.0  [blinov.in]
 70aa03f  Merge "Remove fullscreen cutout mode if device doesn't have notch" into 9.0  [blinov.in]
 
- * packages/providers/DownloadProvider
-e5e196a  DownloadProvider: Stop using Arrays.checkOffsetAndCount  [Pete Gillin]
-73bc5be  Downloaded content is deleted if Download folder is renamed using MTP  [Kaushalendra Mishra]
-09f383e  DownloadProvider: allow more redirects  [Simon Dubray]
-
 ====================
-     2019-05-08    
+     2019-05-09    
 ====================
 
  * device/syberia/sepolicy
@@ -52,12 +47,6 @@ addb8a4  Camera: Skip stream size check for whitelisted apps..  [Gaoxiang Chen]
 182d314  Select the proper request list size  [Guruprasad Gaonkar]
 5e44703  Merge "Hide arrows in Network Traffic indicators [1/2]" into 9.0  [dennyspb]
 
- * hardware/qcom/bt
-5ddb75b  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into 9.0-caf  [blinoff82]
-
- * hardware/qcom/display-caf/msm8996
-d456539  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into HEAD  [blinoff82]
-
  * hardware/qcom/media-caf/msm8996
 19b5143  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into 9.0-caf-8996  [blinoff82]
 
@@ -79,8 +68,18 @@ e9781f7  Merge "DisplaySettings: comment out color mode settings" into 9.0  [den
  * packages/apps/SyberiaSettings
 2815bfc  Merge "SyberiaSettings: Hide arrows in Network Traffic indicators [2/2]" into 9.0  [dennyspb]
 
- * system/sepolicy
-a3d69cd  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPB]
+ * packages/providers/DownloadProvider
+e5e196a  DownloadProvider: Stop using Arrays.checkOffsetAndCount  [Pete Gillin]
+73bc5be  Downloaded content is deleted if Download folder is renamed using MTP  [Kaushalendra Mishra]
+09f383e  DownloadProvider: allow more redirects  [Simon Dubray]
+
+ * vendor/interfaces
+04e7d3d  interfaces: Add 2.0 livedisplay interfaces  [Paul Keith]
+
+ * vendor/syberia
+4d5bef1  ready for v2.5  [DennySPB]
+780d00f  vendor: Import LiveDisplay init file  [Henrique Silva]
+1c8c546  vendor: Whitelist LiveDisplay permissions  [Henrique Silva]
 
 ====================
      2019-05-08    
@@ -127,6 +126,12 @@ f94139c  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platf
 
  * hardware/nxp/nfc
 08e0fa6  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/hardware/nxp/nfc into HEAD  [DennySPB]
+
+ * hardware/qcom/bt
+5ddb75b  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into 9.0-caf  [blinoff82]
+
+ * hardware/qcom/display-caf/msm8996
+d456539  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into HEAD  [blinoff82]
 
  * packages/apps/Bluetooth
 80be884  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPB]
@@ -184,9 +189,6 @@ a3d69cd  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platf
  * frameworks/av
 a59b297  amrnb: Fix memory leaks  [George Burgess IV]
 
- * frameworks/base
-b09afe5  Improved display of battery percent in the status bar  [a.derendyaev]
-
  * packages/apps/Dialer
 530bac0  Merge pull request #2 from Astridxx/9.0  [Stanislav Bukovetsiy]
 
@@ -197,12 +199,8 @@ ef77e02  Added strings (#25)  [Lukáš Sýkora]
      2019-05-06    
 ====================
 
- * bionic
-4f8cbdf  libc: Optimize ARM memcmp by using NEON.  [Kyle Repinski]
-c28bfb5  bionic: Prefer /sbin/sh if it exists  [Tom Marshall]
-f8a953d  Optimize the clone() system call on ARM(64)  [Anton Kirilov]
-4c69d28  bionic: linker: Fix fd leak  [Vic Yang]
-ccd3c98  linker: Disable linker debugging  [Miguel Martinez]
+ * frameworks/base
+b09afe5  Improved display of battery percent in the status bar  [a.derendyaev]
 
  * packages/apps/Dialer
 08487c5  dialer: Add TR translation  [Murat Kozan]
@@ -215,6 +213,13 @@ a3d0034  Added values-cs and strings with Czech translation  [Lukáš Sýkora]
      2019-05-05    
 ====================
 
+ * bionic
+4f8cbdf  libc: Optimize ARM memcmp by using NEON.  [Kyle Repinski]
+c28bfb5  bionic: Prefer /sbin/sh if it exists  [Tom Marshall]
+f8a953d  Optimize the clone() system call on ARM(64)  [Anton Kirilov]
+4c69d28  bionic: linker: Fix fd leak  [Vic Yang]
+ccd3c98  linker: Disable linker debugging  [Miguel Martinez]
+
  * packages/apps/Messaging
 620e5ca  Merge pull request #2 from Astridxx/9.0  [Ivan Blinov]
 37106f7  Update RU translation  [blinoff82]
@@ -223,7 +228,6 @@ ed651a2  Update TR translation  [Murat Kozan]
  * packages/apps/Settings
 bcaac93  Merge pull request #23 from Astridxx/9.0  [Ivan Blinov]
 92408ca  Update TR translation  [Murat Kozan]
-75e8ccb  Update RU translation  [blinoff82]
 
  * packages/apps/SyberiaSettings
 16caf1d  Merge pull request #57 from Astridxx/9.0  [Ivan Blinov]
