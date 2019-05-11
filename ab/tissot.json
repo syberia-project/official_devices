@@ -1,13 +1,13 @@
 {
   "response": [
     {
-      "datetime": 1556956020,
-      "filename": "syberia_tissot-v2.4-20190504-0747-OFFICIAL.zip",
-      "id": "d4be27b752513a430f6b5940386ed9f4b59df44ea6b948fb65c71cf156a44ff3",
+      "datetime": 1557536400,
+      "filename": "syberia_tissot-v2.5-20190511-0100-OFFICIAL.zip",
+      "id": "b751de12fb9242725ef9edc7382b2b1c10a57edee5168de281c7cc575107fe48",
       "romtype": "OFFICIAL",
-      "size": "537585763",
-      "url": "https://sourceforge.net/projects/syberiaos/files/tissot/syberia_tissot-v2.4-20190504-0747-OFFICIAL.zip/download",
-      "version": "v2.4",
+      "size": "537491938",
+      "url": "https://sourceforge.net/projects/syberiaos/files/tissot/syberia_tissot-v2.5-20190511-0100-OFFICIAL.zip/download",
+      "version": "v2.5",
       "device_brand": "Xiaomi",
       "device_model": "Mi A1",
       "device_codename": "tissot",
