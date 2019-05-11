@@ -11,13 +11,13 @@
       "url": "http://tiny.cc/latestuninstaller"
     }
   ],
-  "filename": "syberia_natrium-v2.4-20190504-0953-OFFICIAL.zip",
+  "filename": "syberia_natrium-v2.5-20190511-0754-OFFICIAL.zip",
   "changelog": "",
-  "filesize": "561668739",
-  "md5": "a0936efc9199aa6e95894e42b102f74f",
-  "build_date": "20190504",
+  "filesize": "562002837",
+  "md5": "17035b415992e63dc043fed33e95eda1",
+  "build_date": "20190511",
   "device": "natrium",
-  "url": "https://sourceforge.net/projects/syberiaos/files/natrium/syberia_natrium-v2.4-20190504-0953-OFFICIAL.zip/download",
+  "url": "https://sourceforge.net/projects/syberiaos/files/natrium/syberia_natrium-v2.5-20190511-0754-OFFICIAL.zip/download",
   "donate_url": "https://syberiaos.com/links",
   "developer_url": "http://github.com/syberia-project",
   "news_url": "http://github.com/syberia-project",
