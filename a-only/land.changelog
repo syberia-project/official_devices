@@ -1,95 +1,231 @@
 ====================
-     2019-05-04    
+     2019-05-10    
 ====================
 
- * packages/apps/Settings
-75e8ccb  Update RU translation  [blinoff82]
+ * hardware/qcom/media-caf/msm8996
+308a64a  Merge tag 'LA.UM.7.5.r1-04800-8x96.0' into 9.0-caf-8996  [blinoff82]
+
+ * hardware/qcom/wlan
+28310b5  Merge tag 'LA.UM.7.5.r1-04800-8x96.0' into 9.0-caf  [blinoff82]
 
 ====================
-     2019-05-03    
-====================
-
- * packages/apps/SyberiaSettings
-f896ab8  Merge pull request #56 from SilverShades02/9.0  [Ivan Blinov]
-c15ae8d  AboutSyberia: set card cornerradius and elevation to cardview.  [Jyotiraditya]
-
-====================
-     2019-05-02    
+     2019-05-09    
 ====================
 
  * frameworks/base
-2a0edcb  base: Add Q style battery icon toggle [1/2]  [paphonb]
+e8d3683  SwipeToScreenshot: Import MIUI implementation  [Henrique Silva]
+
+ * packages/apps/Settings
+06d02e0  Merge "Revert "Multi user: Allow user name and profile photo editing"" into 9.0  [blinov.in]
+70aa03f  Merge "Remove fullscreen cutout mode if device doesn't have notch" into 9.0  [blinov.in]
+
+ * packages/providers/DownloadProvider
+e5e196a  DownloadProvider: Stop using Arrays.checkOffsetAndCount  [Pete Gillin]
+73bc5be  Downloaded content is deleted if Download folder is renamed using MTP  [Kaushalendra Mishra]
+09f383e  DownloadProvider: allow more redirects  [Simon Dubray]
+
+====================
+     2019-05-08    
+====================
+
+ * device/syberia/sepolicy
+85ca413  sepolicy: Import LiveDisplay rules  [Henrique Silva]
+
+ * frameworks/av
+da3171c  Camera: consider all cameras in flash light control  [Yin-Chia Yeh]
+7f6d6f0  Camera: extend getBuffer wait timeout  [Yin-Chia Yeh]
+b0192ed  Camera3: Handle stream format override for shared output stream  [Shuzhen Wang]
+bd78522  Camera: Use physical camera's capability for physical stream check  [Shuzhen Wang]
+
+ * frameworks/base
+7c9d8a0  Update RU translation  [blinoff82]
+f4467b3  LiveDisplay: Disable by default  [Henrique Silva]
+89864c0  LiveDisplay: don't start services if phone is encrypted  [Henrique Silva]
+fd8b4a5  SystemUI: Add reading mode tile  [Joey]
+6c5b4e3  SystemUI: Add LiveDisplay tile  [Steve Kondik]
+31dc682  Introduce LiveDisplay from Lineage  [Henrique Silva]
+13f992d  Cutout force full screen: Remove fullscreen checks  [Henrique Silva]
+f29de67  fwb: [1/2] Implement cutout force full screen  [Henrique Silva]
+136fabc  Add Google Sound Search tile  [ezio84]
+60fd132  Improvements for swipe to screenshot  [Henrique Silva]
+addb8a4  Camera: Skip stream size check for whitelisted apps..  [Gaoxiang Chen]
+182d314  Select the proper request list size  [Guruprasad Gaonkar]
+5e44703  Merge "Hide arrows in Network Traffic indicators [1/2]" into 9.0  [dennyspb]
+
+ * hardware/qcom/bt
+5ddb75b  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into 9.0-caf  [blinoff82]
+
+ * hardware/qcom/display-caf/msm8996
+d456539  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into HEAD  [blinoff82]
+
+ * hardware/qcom/media-caf/msm8996
+19b5143  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into 9.0-caf-8996  [blinoff82]
+
+ * hardware/qcom/wlan
+0ca6a29  Revert "WiFi-Hal: Add support to set wifi latency level"  [blinoff82]
+9dcb1f7  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into 9.0-caf  [blinoff82]
+
+ * packages/apps/Settings
+09205b5  Remove fullscreen cutout mode if device doesn't have notch  [blinoff82]
+95b96d7  Revert "Multi user: Allow user name and profile photo editing"  [blinoff82]
+4be2401  Settings: Update RU transation for LiveDisplay  [blinoff82]
+7b8a39b  LiveDisplay: Add illustration into picture and color adjustment  [Henrique Silva]
+d65354c  Settings: Changes for LiveDisplay  [Henrique Silva]
+e9781f7  Merge "DisplaySettings: comment out color mode settings" into 9.0  [dennyspb]
+1196092  Multi user: Allow user name and profile photo editing  [Henrique Silva]
+20e21e9  DisplaySettings: comment out color mode settings  [DennySPB]
+58b8a0d  Settings: [2/2] Implement cutout force full screen  [Henrique Silva]
 
  * packages/apps/SyberiaSettings
-99b6abf  SyberiaSettings: Add Q style battery icon toggle [2/2]  [paphonb]
+2815bfc  Merge "SyberiaSettings: Hide arrows in Network Traffic indicators [2/2]" into 9.0  [dennyspb]
+
+ * system/sepolicy
+a3d69cd  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPB]
+
+====================
+     2019-05-08    
+====================
+
+ * bionic
+b3dc7a9  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/bionic into HEAD  [DennySPB]
+
+ * bootable/recovery
+97dcb71  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/bootable/recovery into HEAD  [DennySPB]
+
+ * build/make
+ab8db85  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/build into HEAD  [DennySPB]
+
+ * external/skia
+71de33e  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/external/skia into HEAD  [DennySPB]
+
+ * external/sqlite
+cb8a165  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/external/sqlite into HEAD  [DennySPB]
+
+ * external/wpa_supplicant_8
+36dfa10  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/external/wpa_supplicant_8 into HEAD  [DennySPB]
+
+ * frameworks/av
+5adc977  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPB]
+
+ * frameworks/base
+f317f47  Ambient music ticker: fix text scrolling glitches  [ezio84]
+2b29602  StatusBar battery: Toggle for left/right percentage position [1/2]  [a.derendyaev]
+e4bb5f2  Hide arrows in Network Traffic indicators [1/2]  [Nico60]
+eeda3c1  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPB]
+
+ * frameworks/native
+0cd1173  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPB]
+
+ * frameworks/opt/net/wifi
+f94139c  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD  [DennySPB]
+
+ * frameworks/opt/telephony
+5ddf6a1  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPB]
+
+ * hardware/interfaces
+703a275  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPB]
+
+ * hardware/nxp/nfc
+08e0fa6  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/hardware/nxp/nfc into HEAD  [DennySPB]
+
+ * packages/apps/Bluetooth
+80be884  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPB]
+
+ * packages/apps/DeskClock
+e8fbcd9  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/apps/DeskClock into HEAD  [DennySPB]
+
+ * packages/apps/DocumentsUI
+cc5aede  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/apps/DocumentsUI into HEAD  [DennySPB]
+
+ * packages/apps/EmergencyInfo
+a81a7a8  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/apps/EmergencyInfo into HEAD  [DennySPB]
+
+ * packages/apps/Nfc
+eebd560  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPB]
+
+ * packages/apps/Settings
+2f9deb1  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+d50d4c5  StatusBar battery: Toggle for left/right percentage position [2/2]  [a.derendyaev]
+4ac8406  SyberiaSettings: Hide arrows in Network Traffic indicators [2/2]  [Nico60]
+
+ * packages/providers/DownloadProvider
+d4f976f  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD  [DennySPB]
+
+ * packages/providers/MediaProvider
+b882a1b  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/providers/MediaProvider into HEAD  [DennySPB]
+
+ * packages/services/Telecomm
+86a830e  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPB]
 
  * packages/services/Telephony
-db22956  Fix non-protected broadcasts sent from phone process.  [Umashankar Godachi]
-
-====================
-     2019-05-01    
-====================
-
- * frameworks/base
-959890f  Fix NullPointerException in CaptivePortalLogin  [Hisanobu, Watanabe]
-e841d02  Fix a bug where + before % is ignored  [Chalard Jean]
-07cf635  LockClock: don't mess with font size  [DennySPB]
-98154a4  base: LS filters: Add 2 more variants  [ElDainosor]
-dae3e83  base: Optimize toGrayscale function  [ElDainosor]
-374a9e3  base: Intensify the blur amount on LS cover art  [ElDainosor]
-41bf0c9  base: Add Lockscreen cover art filter [1/2]  [ElDainosor]
-ba8e6dd  ImageUtils: Switch blur lib to SimpleImageBlur  [ElDainosor]
-ba65369  ImageHelper: add getBlurredImage  [Dil3mm4]
-e760619  GamingModeTile: stop adjusting volume  [HolyAngel]
-238c0b7  Hide lockscreen items [1/2]  [Alex Cruz]
-
- * packages/apps/Messaging
-a4fd27b  Merge pull request #1 from prometheusXderpgang/9.0  [DennySPb]
-ff816dd  Messaging: Add "Mark as read" quick action for message notifications  [Paul Keith]
-
- * packages/apps/Settings
-4b18198  Fix code for NPE when click add and cancel repeatly VPN profile  [sj.cha]
-1a7e5f1  Fixed memory leak  [Jia Jia]
-
- * packages/apps/SyberiaSettings
-8bdaf9a  Lockscreen: add dependencies  [DennySPB]
-26d05bb  SystemSettingListPreference: Add dependency attribute  [DennySPB]
-638a204  Settings: LS filters: Add 2 more variants  [ElDainosor]
-c62b4da  Settings: Add Lockscreen cover art filter [2/2]  [ElDainosor]
-eb60234  Hide lockscreen items [2/2]  [Alex Cruz]
-
-====================
-     2019-04-30    
-====================
-
- * frameworks/base
-391b556  Q style clock: Improve RU translation  [DennySPB]
-3d6ab33  CustomTextClock: LangGuard: Update Portuguese translations - Also add langguard to strings below 20  [ovenoboyo]
-eb72138  CustomTextClock: Add more detailing to the functions - Basically fuckup everything and make it even more complex  [ovenoboyo]
-993b6f3  CustomTextClock: LangGuard: Add exceptions for turkish language  [ovenboyo]
-932fd54  CustomTextClock: LangGuard: Fix dutch translations  [ovenoboyo]
-a883803  Add Japanese and Dutch translation for Q text clock  [Dil3mm4]
-b305f87  CustomTextClock: Merge Translations  [Bayram Kılıç]
-aae7e79  [1/2]: Add customisable alignment for Q style clock  [ovenoboyo]
-
- * packages/apps/SyberiaSettings
-dfd0407  [2/2]: Add customisable alignment for Q style clock No shit Sherlock  [Ovenoboyo]
+7d32681  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD  [DennySPB]
 
  * system/bt
-4472f94  Fix handling of BLE create connection when all PHYs are set When all PHYs are set during BLE create connection, there is an assert error seen in BT stack. This change fixes this issue.  [Subramanian Srinivasan]
-31653b5  RFCOMM: Add new API to check port state based on SCN As there is no API in RFCOMM to check exact port status, AG checking port opening state and continuing outgoing connection even incoming port already opened.  [Venkata Jagadeesh Garaga]
+e45c6bf  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
+
+ * system/core
+231920e  usbd: Do not join the thread pool  [Badhri Jagan Sridharan]
+aab956f  lmkd: bump process priority and set to FOREGROUND group before kill  [Wei Wang]
+ca37fcf  Run BoringSSL self test during startup  [Branden Archer]
+a07d0f1  Fix path for treble default prop  [Wei Wang]
+
+ * system/netd
+6f4771d  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/system/netd into HEAD  [DennySPB]
+
+ * system/sepolicy
+a3d69cd  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPB]
 
 ====================
-     2019-04-29    
+     2019-05-07    
 ====================
 
-====================
-     2019-04-28    
-====================
+ * frameworks/av
+a59b297  amrnb: Fix memory leaks  [George Burgess IV]
+
+ * frameworks/base
+b09afe5  Improved display of battery percent in the status bar  [a.derendyaev]
+
+ * packages/apps/Dialer
+530bac0  Merge pull request #2 from Astridxx/9.0  [Stanislav Bukovetsiy]
 
  * packages/apps/Settings
-773b83a  team: gemini is back  [blinoff82]
+ef77e02  Added strings (#25)  [Lukáš Sýkora]
 
- * vendor/syberia
-3c8dd11  jenkins: build gemini  [blinoff82]
+====================
+     2019-05-06    
+====================
+
+ * bionic
+4f8cbdf  libc: Optimize ARM memcmp by using NEON.  [Kyle Repinski]
+c28bfb5  bionic: Prefer /sbin/sh if it exists  [Tom Marshall]
+f8a953d  Optimize the clone() system call on ARM(64)  [Anton Kirilov]
+4c69d28  bionic: linker: Fix fd leak  [Vic Yang]
+ccd3c98  linker: Disable linker debugging  [Miguel Martinez]
+
+ * packages/apps/Dialer
+08487c5  dialer: Add TR translation  [Murat Kozan]
+
+ * packages/apps/SyberiaSettings
+1309bd0  Merge pull request #59 from MrLookas/9.0  [Ivan Blinov]
+a3d0034  Added values-cs and strings with Czech translation  [Lukáš Sýkora]
+
+====================
+     2019-05-05    
+====================
+
+ * packages/apps/Messaging
+620e5ca  Merge pull request #2 from Astridxx/9.0  [Ivan Blinov]
+37106f7  Update RU translation  [blinoff82]
+ed651a2  Update TR translation  [Murat Kozan]
+
+ * packages/apps/Settings
+bcaac93  Merge pull request #23 from Astridxx/9.0  [Ivan Blinov]
+92408ca  Update TR translation  [Murat Kozan]
+75e8ccb  Update RU translation  [blinoff82]
+
+ * packages/apps/SyberiaSettings
+16caf1d  Merge pull request #57 from Astridxx/9.0  [Ivan Blinov]
+634073a  Update TR translation  [Murat Kozan]
 
