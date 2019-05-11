@@ -1,5 +1,5 @@
 ====================
-     2019-05-10    
+     2019-05-11    
 ====================
 
  * hardware/qcom/media-caf/msm8996
@@ -9,7 +9,7 @@
 28310b5  Merge tag 'LA.UM.7.5.r1-04800-8x96.0' into 9.0-caf  [blinoff82]
 
 ====================
-     2019-05-09    
+     2019-05-10    
 ====================
 
  * frameworks/base
@@ -25,7 +25,7 @@ e5e196a  DownloadProvider: Stop using Arrays.checkOffsetAndCount  [Pete Gillin]
 09f383e  DownloadProvider: allow more redirects  [Simon Dubray]
 
 ====================
-     2019-05-08    
+     2019-05-09    
 ====================
 
  * device/syberia/sepolicy
@@ -88,7 +88,7 @@ e9781f7  Merge "DisplaySettings: comment out color mode settings" into 9.0  [den
 1c8c546  vendor: Whitelist LiveDisplay permissions  [Henrique Silva]
 
 ====================
-     2019-05-07    
+     2019-05-08    
 ====================
 
  * bionic
@@ -183,7 +183,7 @@ a07d0f1  Fix path for treble default prop  [Wei Wang]
 a3d69cd  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPB]
 
 ====================
-     2019-05-06    
+     2019-05-07    
 ====================
 
  * frameworks/av
@@ -199,7 +199,7 @@ b09afe5  Improved display of battery percent in the status bar  [a.derendyaev]
 ef77e02  Added strings (#25)  [Lukáš Sýkora]
 
 ====================
-     2019-05-05    
+     2019-05-06    
 ====================
 
  * bionic
@@ -217,7 +217,7 @@ ccd3c98  linker: Disable linker debugging  [Miguel Martinez]
 a3d0034  Added values-cs and strings with Czech translation  [Lukáš Sýkora]
 
 ====================
-     2019-05-04    
+     2019-05-05    
 ====================
 
  * packages/apps/Messaging
@@ -228,7 +228,6 @@ ed651a2  Update TR translation  [Murat Kozan]
  * packages/apps/Settings
 bcaac93  Merge pull request #23 from Astridxx/9.0  [Ivan Blinov]
 92408ca  Update TR translation  [Murat Kozan]
-75e8ccb  Update RU translation  [blinoff82]
 
  * packages/apps/SyberiaSettings
 16caf1d  Merge pull request #57 from Astridxx/9.0  [Ivan Blinov]
