@@ -2,11 +2,35 @@
      2019-05-11    
 ====================
 
- * hardware/qcom/media-caf/msm8996
-308a64a  Merge tag 'LA.UM.7.5.r1-04800-8x96.0' into 9.0-caf-8996  [blinoff82]
-
- * hardware/qcom/wlan
-28310b5  Merge tag 'LA.UM.7.5.r1-04800-8x96.0' into 9.0-caf  [blinoff82]
+ * kernel/xiaomi/msm8953
+c78cb3d  Linux 4.9.175  [Greg Kroah-Hartman]
+a56d400  timer/debug: Change /proc/timer_stats from 0644 to 0600  [Ben Hutchings]
+40bacfd  ASoC: Intel: avoid Oops if DMA setup fails  [Ross Zwisler]
+1521140  UAS: fix alignment of scatter/gather segments  [Oliver Neukum]
+d25b8c9  Bluetooth: Align minimum encryption key size for LE and BR/EDR connections  [Marcel Holtmann]
+ef91362  Bluetooth: hidp: fix buffer overflow  [Young Xiao]
+46b2fb9  scsi: qla2xxx: Fix incorrect region-size setting in optrom SYSFS routines  [Andrew Vasquez]
+512fb89  usb-storage: Set virt_boundary_mask to avoid SG overflows  [Alan Stern]
+9f80b4d  USB: serial: f81232: fix interrupt worker not stop  [Ji-Ze Hong (Peter Hong)]
+6a4b3d5  usb: dwc3: Fix default lpm_nyet_threshold value  [Thinh Nguyen]
+8b604aa  genirq: Prevent use-after-free and work list corruption  [Prasad Sodagudi]
+ca9b174  ARM: 8680/1: boot/compressed: fix inappropriate Thumb2 mnemonic for __nop  [Ard Biesheuvel]
+e8f182f  mm: add 'try_get_page()' helper function  [Linus Torvalds]
+05fe3a1  iommu/amd: Set exclusion range correctly  [Joerg Roedel]
+459e332  virtio-blk: limit number of hw queues by nr_cpu_ids  [Dongli Zhang]
+0e3bb11  drm/mediatek: fix possible object reference leak  [Wen Yang]
+7c14f98  scsi: csiostor: fix missing data copy in csio_scsi_err_handler()  [Varun Prakash]
+28f5cff  linux/kernel.h: Use parentheses around argument in u64_to_user_ptr()  [Jann Horn]
+f2386b1  perf/x86/intel: Fix handling of wakeup_events for multi-entry PEBS  [Stephane Eranian]
+52a98e0  drm/mediatek: Fix an error code in mtk_hdmi_dt_parse_pdata()  [Dan Carpenter]
+e6d80e3  ASoC: tlv320aic32x4: Fix Common Pins  [Annaliese McDermond]
+52e6be2  IB/hfi1: Eliminate opcode tests on mr deref  [Kaike Wan]
+2071444  ASoC: cs4270: Set auto-increment bit for register writes  [Daniel Mack]
+8337117  ASoC: nau8810: fix the issue of widget with prefixed name  [John Hsu]
+29f184e  ASoC:soc-pcm:fix a codec fixup issue in TDM case  [Rander Wang]
+56c9dc3  staging: greybus: power_supply: fix prop-descriptor request size  [Johan Hovold]
+b691e95  ubsan: Fix nasty -Wbuiltin-declaration-mismatch GCC-9 warnings  [Andrey Ryabinin]
+c425891  scsi: libsas: fix a race condition when smp task timeout  [Jason Yan]
 
 ====================
      2019-05-10    
@@ -15,14 +39,15 @@
  * frameworks/base
 e8d3683  SwipeToScreenshot: Import MIUI implementation  [Henrique Silva]
 
+ * hardware/qcom/media-caf/msm8996
+308a64a  Merge tag 'LA.UM.7.5.r1-04800-8x96.0' into 9.0-caf-8996  [blinoff82]
+
+ * hardware/qcom/wlan
+28310b5  Merge tag 'LA.UM.7.5.r1-04800-8x96.0' into 9.0-caf  [blinoff82]
+
  * packages/apps/Settings
 06d02e0  Merge "Revert "Multi user: Allow user name and profile photo editing"" into 9.0  [blinov.in]
 70aa03f  Merge "Remove fullscreen cutout mode if device doesn't have notch" into 9.0  [blinov.in]
-
- * packages/providers/DownloadProvider
-e5e196a  DownloadProvider: Stop using Arrays.checkOffsetAndCount  [Pete Gillin]
-73bc5be  Downloaded content is deleted if Download folder is renamed using MTP  [Kaushalendra Mishra]
-09f383e  DownloadProvider: allow more redirects  [Simon Dubray]
 
 ====================
      2019-05-09    
@@ -52,18 +77,8 @@ addb8a4  Camera: Skip stream size check for whitelisted apps..  [Gaoxiang Chen]
 182d314  Select the proper request list size  [Guruprasad Gaonkar]
 5e44703  Merge "Hide arrows in Network Traffic indicators [1/2]" into 9.0  [dennyspb]
 
- * hardware/qcom/bt
-5ddb75b  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into 9.0-caf  [blinoff82]
-
- * hardware/qcom/display-caf/msm8996
-d456539  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into HEAD  [blinoff82]
-
- * hardware/qcom/media-caf/msm8996
-19b5143  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into 9.0-caf-8996  [blinoff82]
-
  * hardware/qcom/wlan
 0ca6a29  Revert "WiFi-Hal: Add support to set wifi latency level"  [blinoff82]
-9dcb1f7  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into 9.0-caf  [blinoff82]
 
  * kernel/xiaomi/msm8953
 62f16ed  Linux 4.9.174  [Greg Kroah-Hartman]
@@ -142,6 +157,11 @@ e9781f7  Merge "DisplaySettings: comment out color mode settings" into 9.0  [den
  * packages/apps/SyberiaSettings
 2815bfc  Merge "SyberiaSettings: Hide arrows in Network Traffic indicators [2/2]" into 9.0  [dennyspb]
 
+ * packages/providers/DownloadProvider
+e5e196a  DownloadProvider: Stop using Arrays.checkOffsetAndCount  [Pete Gillin]
+73bc5be  Downloaded content is deleted if Download folder is renamed using MTP  [Kaushalendra Mishra]
+09f383e  DownloadProvider: allow more redirects  [Simon Dubray]
+
  * vendor/interfaces
 04e7d3d  interfaces: Add 2.0 livedisplay interfaces  [Paul Keith]
 
@@ -152,6 +172,37 @@ e9781f7  Merge "DisplaySettings: comment out color mode settings" into 9.0  [den
 
 ====================
      2019-05-08    
+====================
+
+ * frameworks/base
+f317f47  Ambient music ticker: fix text scrolling glitches  [ezio84]
+2b29602  StatusBar battery: Toggle for left/right percentage position [1/2]  [a.derendyaev]
+e4bb5f2  Hide arrows in Network Traffic indicators [1/2]  [Nico60]
+eeda3c1  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPB]
+
+ * frameworks/opt/telephony
+5ddf6a1  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPB]
+
+ * hardware/qcom/bt
+5ddb75b  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into 9.0-caf  [blinoff82]
+
+ * hardware/qcom/display-caf/msm8996
+d456539  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into HEAD  [blinoff82]
+
+ * hardware/qcom/media-caf/msm8996
+19b5143  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into 9.0-caf-8996  [blinoff82]
+
+ * hardware/qcom/wlan
+9dcb1f7  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into 9.0-caf  [blinoff82]
+
+ * system/core
+231920e  usbd: Do not join the thread pool  [Badhri Jagan Sridharan]
+aab956f  lmkd: bump process priority and set to FOREGROUND group before kill  [Wei Wang]
+ca37fcf  Run BoringSSL self test during startup  [Branden Archer]
+a07d0f1  Fix path for treble default prop  [Wei Wang]
+
+====================
+     2019-05-07    
 ====================
 
  * bionic
@@ -174,21 +225,13 @@ cb8a165  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platf
 
  * frameworks/av
 5adc977  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPB]
-
- * frameworks/base
-f317f47  Ambient music ticker: fix text scrolling glitches  [ezio84]
-2b29602  StatusBar battery: Toggle for left/right percentage position [1/2]  [a.derendyaev]
-e4bb5f2  Hide arrows in Network Traffic indicators [1/2]  [Nico60]
-eeda3c1  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPB]
+a59b297  amrnb: Fix memory leaks  [George Burgess IV]
 
  * frameworks/native
 0cd1173  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPB]
 
  * frameworks/opt/net/wifi
 f94139c  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD  [DennySPB]
-
- * frameworks/opt/telephony
-5ddf6a1  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPB]
 
  * hardware/interfaces
 703a275  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPB]
@@ -202,6 +245,9 @@ f94139c  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platf
  * packages/apps/DeskClock
 e8fbcd9  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/apps/DeskClock into HEAD  [DennySPB]
 
+ * packages/apps/Dialer
+530bac0  Merge pull request #2 from Astridxx/9.0  [Stanislav Bukovetsiy]
+
  * packages/apps/DocumentsUI
 cc5aede  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/apps/DocumentsUI into HEAD  [DennySPB]
 
@@ -213,6 +259,7 @@ eebd560  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platf
 
  * packages/apps/Settings
 2f9deb1  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPB]
+ef77e02  Added strings (#25)  [Lukáš Sýkora]
 
  * packages/apps/SyberiaSettings
 d50d4c5  StatusBar battery: Toggle for left/right percentage position [2/2]  [a.derendyaev]
@@ -233,12 +280,6 @@ b882a1b  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platf
  * system/bt
 e45c6bf  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
 
- * system/core
-231920e  usbd: Do not join the thread pool  [Badhri Jagan Sridharan]
-aab956f  lmkd: bump process priority and set to FOREGROUND group before kill  [Wei Wang]
-ca37fcf  Run BoringSSL self test during startup  [Branden Archer]
-a07d0f1  Fix path for treble default prop  [Wei Wang]
-
  * system/netd
 6f4771d  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/system/netd into HEAD  [DennySPB]
 
@@ -246,31 +287,11 @@ a07d0f1  Fix path for treble default prop  [Wei Wang]
 a3d69cd  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPB]
 
 ====================
-     2019-05-07    
-====================
-
- * frameworks/av
-a59b297  amrnb: Fix memory leaks  [George Burgess IV]
-
- * frameworks/base
-b09afe5  Improved display of battery percent in the status bar  [a.derendyaev]
-
- * packages/apps/Dialer
-530bac0  Merge pull request #2 from Astridxx/9.0  [Stanislav Bukovetsiy]
-
- * packages/apps/Settings
-ef77e02  Added strings (#25)  [Lukáš Sýkora]
-
-====================
      2019-05-06    
 ====================
 
- * bionic
-4f8cbdf  libc: Optimize ARM memcmp by using NEON.  [Kyle Repinski]
-c28bfb5  bionic: Prefer /sbin/sh if it exists  [Tom Marshall]
-f8a953d  Optimize the clone() system call on ARM(64)  [Anton Kirilov]
-4c69d28  bionic: linker: Fix fd leak  [Vic Yang]
-ccd3c98  linker: Disable linker debugging  [Miguel Martinez]
+ * frameworks/base
+b09afe5  Improved display of battery percent in the status bar  [a.derendyaev]
 
  * packages/apps/Dialer
 08487c5  dialer: Add TR translation  [Murat Kozan]
@@ -283,17 +304,12 @@ a3d0034  Added values-cs and strings with Czech translation  [Lukáš Sýkora]
      2019-05-05    
 ====================
 
- * device/xiaomi/msm8953-common
-7276b8e  msm8953-common: Restart audio HIDL HAL after decryption  [Artem Borisov]
-7faa465  msm8953-common: rootdir: Remove NFC permissions  [haran]
-9efa137  msm8953-common: sepolicy: Remove hci_attach_dev rules from qti_init_shell  [haran]
-0073216  msm8953-common: Remove oem_2901 group for second RIL daemon service  [Wang Han]
-d7cbfdf  msm8953-common: Remove unnecessary languages_full.mk include  [LuK1337]
-7242e9b  msm8953-common: Remove deprecated/useless flags  [haran]
-23f3f84  msm8953-common: Don't set custom file attributes for cnss-daemon  [LuK1337]
-e4f0e4d  Revert: "msm8953-common: add system property to set AudioFlinger client heap size"  [mdeejay]
-dda01f2  msm8953-common: Update properties  [Flex1911]
-205d634  msm8953-common: Add vendor prefix to yet another prop  [Michael Bestas]
+ * bionic
+4f8cbdf  libc: Optimize ARM memcmp by using NEON.  [Kyle Repinski]
+c28bfb5  bionic: Prefer /sbin/sh if it exists  [Tom Marshall]
+f8a953d  Optimize the clone() system call on ARM(64)  [Anton Kirilov]
+4c69d28  bionic: linker: Fix fd leak  [Vic Yang]
+ccd3c98  linker: Disable linker debugging  [Miguel Martinez]
 
  * kernel/xiaomi/msm8953
 80c9e93  Linux 4.9.173  [Greg Kroah-Hartman]
@@ -338,7 +354,6 @@ ed651a2  Update TR translation  [Murat Kozan]
  * packages/apps/Settings
 bcaac93  Merge pull request #23 from Astridxx/9.0  [Ivan Blinov]
 92408ca  Update TR translation  [Murat Kozan]
-75e8ccb  Update RU translation  [blinoff82]
 
  * packages/apps/SyberiaSettings
 16caf1d  Merge pull request #57 from Astridxx/9.0  [Ivan Blinov]
