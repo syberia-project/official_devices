@@ -1,12 +1,12 @@
 ====================
-     2019-05-10    
+     2019-05-11    
 ====================
 
  * hardware/qcom/wlan
 28310b5  Merge tag 'LA.UM.7.5.r1-04800-8x96.0' into 9.0-caf  [blinoff82]
 
 ====================
-     2019-05-09    
+     2019-05-10    
 ====================
 
  * frameworks/base
@@ -47,7 +47,7 @@ e5e196a  DownloadProvider: Stop using Arrays.checkOffsetAndCount  [Pete Gillin]
 09f383e  DownloadProvider: allow more redirects  [Simon Dubray]
 
 ====================
-     2019-05-08    
+     2019-05-09    
 ====================
 
  * device/syberia/sepolicy
@@ -168,7 +168,7 @@ e9781f7  Merge "DisplaySettings: comment out color mode settings" into 9.0  [den
 1c8c546  vendor: Whitelist LiveDisplay permissions  [Henrique Silva]
 
 ====================
-     2019-05-07    
+     2019-05-08    
 ====================
 
  * bionic
@@ -277,7 +277,7 @@ a07d0f1  Fix path for treble default prop  [Wei Wang]
 a3d69cd  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPB]
 
 ====================
-     2019-05-06    
+     2019-05-07    
 ====================
 
  * frameworks/av
@@ -301,7 +301,7 @@ c87bc80  Revert "random: always use non-blocking pool"  [kdrag0n]
 ef77e02  Added strings (#25)  [Lukáš Sýkora]
 
 ====================
-     2019-05-05    
+     2019-05-06    
 ====================
 
  * bionic
@@ -325,11 +325,8 @@ bf8a092  Merge remote-tracking branch 'los/lineage-16.0' into stable  [ethan-hal
 a3d0034  Added values-cs and strings with Czech translation  [Lukáš Sýkora]
 
 ====================
-     2019-05-04    
+     2019-05-05    
 ====================
-
- * device/xiaomi/sdm845-common
-031ee0a  init.performance.rc: add support for franco profiles  [ethan-halsall]
 
  * kernel/xiaomi/sdm845
 b816efc  Merge 4.9.173 into kernel.lnx.4.9.r11-rel  [Nathan Chancellor]
@@ -374,8 +371,6 @@ aa70f06  s390: limit brk randomization to 32MB  [Martin Schwidefsky]
 8598e3f  media: vivid: check if the cec_adapter is valid  [Hans Verkuil]
 aa06083  usbnet: ipheth: fix potential null pointer dereference in ipheth_carrier_set  [Gustavo A. R. Silva]
 ea7d6be  usbnet: ipheth: prevent TX queue timeouts when device not ready  [Alexander Kappner]
-d643393  defconfig: Update boosting configurations  [ethan-halsall]
-727ea34  zip-out: Add support for franco profiles  [ethan-halsall]
 
  * packages/apps/Messaging
 620e5ca  Merge pull request #2 from Astridxx/9.0  [Ivan Blinov]
