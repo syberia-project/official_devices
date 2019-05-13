@@ -1,4 +1,15 @@
 ====================
+     2019-05-13    
+====================
+
+ * device/xiaomi/jasmine_sprout
+d08fd25  Update syberia.dependencies  [Stanislav Bukovetsiy]
+
+====================
+     2019-05-12    
+====================
+
+====================
      2019-05-11    
 ====================
 
@@ -42,15 +53,8 @@ b5b3de8  sdm660: Remove KGSL irq from ignore list  [Runmin Wang]
      2019-05-10    
 ====================
 
- * frameworks/base
-e8d3683  SwipeToScreenshot: Import MIUI implementation  [Henrique Silva]
-
  * hardware/qcom/wlan
 28310b5  Merge tag 'LA.UM.7.5.r1-04800-8x96.0' into 9.0-caf  [blinoff82]
-
- * packages/apps/Settings
-06d02e0  Merge "Revert "Multi user: Allow user name and profile photo editing"" into 9.0  [blinov.in]
-70aa03f  Merge "Remove fullscreen cutout mode if device doesn't have notch" into 9.0  [blinov.in]
 
 ====================
      2019-05-09    
@@ -63,6 +67,7 @@ b0192ed  Camera3: Handle stream format override for shared output stream  [Shuzh
 bd78522  Camera: Use physical camera's capability for physical stream check  [Shuzhen Wang]
 
  * frameworks/base
+e8d3683  SwipeToScreenshot: Import MIUI implementation  [Henrique Silva]
 7c9d8a0  Update RU translation  [blinoff82]
 f4467b3  LiveDisplay: Disable by default  [Henrique Silva]
 89864c0  LiveDisplay: don't start services if phone is encrypted  [Henrique Silva]
@@ -78,6 +83,8 @@ addb8a4  Camera: Skip stream size check for whitelisted apps..  [Gaoxiang Chen]
 5e44703  Merge "Hide arrows in Network Traffic indicators [1/2]" into 9.0  [dennyspb]
 
  * packages/apps/Settings
+06d02e0  Merge "Revert "Multi user: Allow user name and profile photo editing"" into 9.0  [blinov.in]
+70aa03f  Merge "Remove fullscreen cutout mode if device doesn't have notch" into 9.0  [blinov.in]
 09205b5  Remove fullscreen cutout mode if device doesn't have notch  [blinoff82]
 95b96d7  Revert "Multi user: Allow user name and profile photo editing"  [blinoff82]
 4be2401  Settings: Update RU transation for LiveDisplay  [blinoff82]
@@ -120,12 +127,17 @@ f317f47  Ambient music ticker: fix text scrolling glitches  [ezio84]
 0ca6a29  Revert "WiFi-Hal: Add support to set wifi latency level"  [blinoff82]
 9dcb1f7  Merge tag 'LA.UM.7.5.2.r1-02600-8x96.0' into 9.0-caf  [blinoff82]
 
+ * kernel/xiaomi/sdm660
+8f046ec  LocalVersion: LA.UM.7.2.r1-06900  [Max Weffers]
+ecc2c2b  ARM: dts: Add interpolated sdm660 EAS energy model  [Tyler Nijmeh]
+434505c  power: qpnp-fg: Don't hold wakelocks  [Tyler Nijmeh]
+6c02492  Merge tag 'LA.UM.7.2.r1-06900-sdm660.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/fw-api into HEAD  [Max Weffers]
+f11b9e3  Merge tag 'LA.UM.7.2.r1-06900-sdm660.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn into HEAD  [Max Weffers]
+7a80a6a  Merge tag 'LA.UM.7.2.r1-06900-sdm660.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into HEAD "LA.UM.7.2.r1-06900-sdm660.0"  [Max Weffers]
+
  * packages/apps/Settings
 20e21e9  DisplaySettings: comment out color mode settings  [DennySPB]
 58b8a0d  Settings: [2/2] Implement cutout force full screen  [Henrique Silva]
-
- * system/core
-231920e  usbd: Do not join the thread pool  [Badhri Jagan Sridharan]
 
  * vendor/interfaces
 04e7d3d  interfaces: Add 2.0 livedisplay interfaces  [Paul Keith]
@@ -175,6 +187,9 @@ f94139c  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platf
  * hardware/nxp/nfc
 08e0fa6  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/hardware/nxp/nfc into HEAD  [DennySPB]
 
+ * kernel/xiaomi/sdm660
+70936de  Merge tag 'LA.UM.7.2.r1-06900-sdm660.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.4 into HEAD  [Max Weffers]
+
  * packages/apps/Bluetooth
 80be884  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPB]
 
@@ -213,6 +228,7 @@ b882a1b  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platf
 e45c6bf  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
 
  * system/core
+231920e  usbd: Do not join the thread pool  [Badhri Jagan Sridharan]
 aab956f  lmkd: bump process priority and set to FOREGROUND group before kill  [Wei Wang]
 ca37fcf  Run BoringSSL self test during startup  [Branden Archer]
 a07d0f1  Fix path for treble default prop  [Wei Wang]
@@ -222,53 +238,4 @@ a07d0f1  Fix path for treble default prop  [Wei Wang]
 
  * system/sepolicy
 a3d69cd  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPB]
-
-====================
-     2019-05-06    
-====================
-
- * frameworks/base
-b09afe5  Improved display of battery percent in the status bar  [a.derendyaev]
-
- * packages/apps/Dialer
-530bac0  Merge pull request #2 from Astridxx/9.0  [Stanislav Bukovetsiy]
-08487c5  dialer: Add TR translation  [Murat Kozan]
-
- * packages/apps/Settings
-ef77e02  Added strings (#25)  [Lukáš Sýkora]
-
- * packages/apps/SyberiaSettings
-1309bd0  Merge pull request #59 from MrLookas/9.0  [Ivan Blinov]
-a3d0034  Added values-cs and strings with Czech translation  [Lukáš Sýkora]
-
- * vendor/xiaomi/jasmine_sprout
-e5e24e6  jasmine: update perfd stack from taimen q preview  [Dusan Uveric]
-
-====================
-     2019-05-05    
-====================
-
- * bionic
-4f8cbdf  libc: Optimize ARM memcmp by using NEON.  [Kyle Repinski]
-c28bfb5  bionic: Prefer /sbin/sh if it exists  [Tom Marshall]
-f8a953d  Optimize the clone() system call on ARM(64)  [Anton Kirilov]
-4c69d28  bionic: linker: Fix fd leak  [Vic Yang]
-ccd3c98  linker: Disable linker debugging  [Miguel Martinez]
-
- * packages/apps/Messaging
-620e5ca  Merge pull request #2 from Astridxx/9.0  [Ivan Blinov]
-37106f7  Update RU translation  [blinoff82]
-ed651a2  Update TR translation  [Murat Kozan]
-
- * packages/apps/Settings
-bcaac93  Merge pull request #23 from Astridxx/9.0  [Ivan Blinov]
-92408ca  Update TR translation  [Murat Kozan]
-
- * packages/apps/SyberiaSettings
-16caf1d  Merge pull request #57 from Astridxx/9.0  [Ivan Blinov]
-634073a  Update TR translation  [Murat Kozan]
-
- * vendor/xiaomi/jasmine_sprout
-6eecdd4  jasmine: remove perfd stack Signed-off-by: Dusan Uveric <dusan.uveric9@gmail.com>  [Dusan Uveric]
-c937abc  jasmine_sprout: Import qct_resampler lib & build as module.  [Jyotiraditya]
 
