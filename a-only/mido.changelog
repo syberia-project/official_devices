@@ -1,187 +1,223 @@
 ====================
-     2019-05-18    
-====================
-
- * frameworks/base
-c97e5b2  Smart Charging: rework for using more common sysfs node [1/2]  [DennySPB]
-
- * kernel/xiaomi/msm8953
-1f174bf  PM/devfreq: bw_hwmon: Unlock mutex in case of error  [Pranav Vashi]
-3d3c4fd  PM / devfreq: bw_hwmon: add mutex lock in polling interval case  [Santosh Mardi]
-30ce87f  PM / devfreq: bw_hwmon: Add HW offload support to governor  [Saravana Kannan]
-3c9c40b  adreno_tz: Remove unnecessary devfreq NULL check in tz_handler()  [Hareesh Gundu]
-a0758ab  mdss: change recovery tries to 3  [Park Ju Hyung]
-c08741f  writeback: hardcode dirty_expire_centisecs=3000 (30s)  [Park Ju Hyung]
-f0d6088  binder: check for binder_thread allocation failure in binder_poll()  [xNombre]
-b8b9bf9  staging: android: ashmem: Fix possible deadlock in ashmem_ioctl  [Yisheng Xie]
-46b523e  staging: android: check the return value of register_shrinker  [Xiongwei Song]
-b0a37d5  staging: android: ashmem: clean up range inline functions  [Guillaume Tucker]
-4fc237b  staging: android: ashmem: convert range macros to inlines  [Guillaume Tucker]
-58128adc  Staging: android: ashmem.c: Convert macros page_range_{subsumes/subsumed_by/in}_range to static inline function  [Bhumika Goyal]
-e663e01  Staging: android: ashmem.c: Redefine macros as static inline functions  [Bhumika Goyal]
-ee0729b  staging: android: Replace min_t/max_t with min/max  [Amitoj Kaur Chawla]
-658760d  staging: android: ashmem.c: destroy slabs when init fails  [Wenwei Tao]
-debd5f3  staging: android: no unlikely with IS_ERR  [xNombre]
-ad2ba04  Staging : android :Replace comma with a semicolon  [Shraddha Barke]
-71aa50b  UPSTREAM: staging: android: ashmem: Fix a race condition in pin ioctls  [xNombre]
-7cd9684  staging: binder - Set binder_debug_mask=0 to suppress logging  [John Dias]
-52282a1  f2fs: always assume that the device is idle under gc_urgent  [Park Ju Hyung]
-778b07f  f2fs: don't wait with each discards under gc_urgent  [Park Ju Hyung]
-d5813eb  f2fs: use a more reasonable discard policy for high utilization  [Park Ju Hyung]
-4b041a3  f2fs: reduce timeout for uncongestion on f2fs_write_cache_pages()  [Park Ju Hyung]
-
- * vendor/syberia
-01314ad  Smart Charging: rework for using more common sysfs node [2/2]  [DennySPB]
-
-====================
-     2019-05-17    
-====================
-
- * device/xiaomi/mido
-c510128  whyred: Enable vendor.enable_default_color_mode  [Henrique Silva]
-010b202  whyred: Filter and remap display modes  [Henrique Silva]
-c232f36  mido: Migrate to livedisplay 2.0  [Bruno Martins]
-c063093  mido:restore livedisplay  [nato66613]
-
- * kernel/xiaomi/msm8953
-9f8fe8b  Merge branch 'kernel.lnx.3.18.r34-rel' of github.com:android-linux-stable/msm-3.18 into Shinsoo_P  [Watanabe]
-83526c9  Merge branch 'dev/soviet-star' into soviet-star  [nato66613]
-20808c0  Merge upstream-f2fs-stable-linux-3.18.y into android-3.18  [Jaegeuk Kim]
-
- * packages/apps/Settings
-cdda31b  LD: Update RU translation  [DennySPB]
-472c0c2  LiveDisplay: fix my bad in picture adjustment settings  [DennySPB]
-
-====================
-     2019-05-16    
+     2019-05-25    
 ====================
 
  * bionic
-e332521  [AArch64] Optimize memcmp for medium to large sizes  [Adhemerval Zanella]
-ee120f1  libc: arm: Optimise memchr for NEON-enabled processors  [Prakhar Bahuguna]
-b80846a  libc: import ARM strcmp from newlib  [Jake Weinstein]
-b751d45  Set __bionic_asm_align to 16 for arm64  [Adhemerval Zanella]
-37eda1d  arm64: Use builtin for nearbyintf/nearbyint  [Adhemerval Zanella]
-6fed4bc  Improve strncmp for mutually misaligned inputs  [Adhemerval Zanella]
-b748cc4  Improve strcmp performance for misaligned strings  [Adhemerval Zanella]
+76055b2  bionic: update for glibc 2.17  [George Burgess IV]
+7439ca3  bionic: update for using jemalloc 5+  [Christopher Ferris]
+3d317ed  bionic: Remove ARM/MIPS fenv duplication  [Elliott Hughes]
+4e45fca  arm64: Extend branch range in __memcpy_chk  [Evgenii Stepanov]
+599863e  bionic: strip libc and linker  [Park Ju Hyung]
 
  * device/xiaomi/mido
-a417151  Partical: Revert mido: update audio policy configuration  [nato66613]
-1474698  Revert "mido: audio: Switch to Low Latency playback"  [nato66613]
-9cb8029  configs: Add sound trigger implementer version  [Revathi Uddaraju]
+b586a65  sepolicy: add livedisplay rules  [DennySPB]
+26002ca  sepolicy: allow system_server access to charging sysfs node  [DennySPB]
+bf551ee  BoardConfig: switch to gcc 9.1 for inline kernel building  [DennySPB]
+9423a63  overlay: Enable smart charging  [blinoff82]
+daa1d09  mido: Set TARGET_COMPILE_WITH_MSM_KERNEL true  [Abhisek Devkota]
+28697aa  mido: parts: Add Vector icons for Dirac  [darkbeast69]
+d985bc5  mido: parts: Add vector images to doze menu.  [Akash]
+4999627  mido: Remove useless attempts to chown and chmod /persist  [ZeeLog]
+efb0d6d  mido: nuke data migration scripts  [ZeeLog]
+e427d79  mido: overlay: Disable bluetooth by default  [Pavel Dubrova]
+7bf710e  mido: Enable auto brightness by default  [CyberWalkMaN]
+b45e864  mido: Set virtual displays to 0  [nichcream]
+38e9e21  mido: biometrics: remove useless folder creation rules  [ZeeLog]
+4182235  mido: Clear the recovery cache in persist on boot  [Artem Borisov]
+4b1517f  mido: Remove deprecated BOARD_HAS_QCOM_WLAN_SDK  [Arne Coucheron]
+f7439d9  mido: Reserve 128MB for critical system components.  [Jeff Sharkey]
+8407776  mido: Dirac: add QS tile  [HarukeyUA]
+a35d361  Revert "Revert "whyred: parts: Add summary for dirac""  [kondors1995]
+158f3a3  Revert "Revert "mido: parts: Add DiracSound backend""  [kondors1995]
+df7821f  Revert "Revert "mido: parts: Introduce Dirac preferences""  [kondors1995]
+f75c123  mido: Drop AdvancedControls  [kondors1995]
 
- * external/sqlite
-93c91d1  sqlite: upgrade to SQLite 3.28.0  [mydongistiny]
-96b95e9  sqlite: Turn off the new pass manager  [Yi Kong]
-bd0a884  sqlite: Remove useless function of tokenize  [Jinguang Dong]
-a7ee84e  Fix parameter checking logic error in tokenize  [Jinguang Dong]
-79dc2d7  sqlite: upgrade to SQLite 3.27.2  [mydongistiny]
-ae8fc55  Revert "Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/platform/external/sqlite into HEAD"  [DennySPB]
+ * external/jemalloc
+aa96756  [HAX] background_threads: explictly disable libdl usage  [DennySPB]
+88dfa30  jemalloc: update to version 5.2.0  [mydongistiny]
+e7bc30f  jemalloc: Further updates to code  [Christopher Ferris]
+e4d7fe1  jemalloc: update to version 5.1.0  [mydongistiny]
+
+ * external/zlib
+8cca925  Suppress sign compare warning  [Anushek]
+699c0dd  zlib: Fix InflateBack corner case  [Adenilson Cavalcanti]
+36e8999  Using ARMv8 CRC32 specific instruction  [Adenilson Cavalcanti]
+68e8c83  Isolating ARM specific code in inffast  [Adenilson Cavalcanti]
+29b23c2  zlib: inflate using wider loads and stores  [Adenilson Cavalcanti]
+03daae7  zlib: enable unaligned memory access  [Park Ju Hyung]
+a348f36  trees: minor enhancement to put_short() macro  [Shuxin Yang]
+6771d3d  deflate: restructure the loop  [Shuxin Yang]
+d168a48  deflate: rewrite the loops  [shuxinyang]
+5905237  NEON implementation for Adler32  [Adenilson Cavalcanti]
+81bcf16  Cache s->ins_h in a scalar while looping  [Michael Chastain]
 
  * frameworks/base
-0e45091  Long press QS settings for SyberiaSettings  [beanstown106]
-ba8367f8  Merge "LiveDisplay tile: allow override outdoor capablity" into 9.0  [dennyspb]
-fa15c84  ScreenRecord: respect selected quality using screenrecord chord  [DennySPB]
-d7bebb9  LiveDisplay tile: allow override outdoor capablity  [DennySPB]
-7f72222  Lockscreen: align weather and date according Q clock alignment  [a.derendyaev]
+9d8ff4c  HeadsUpAppearanceController: allow heads-up to draw beyond bounds  [Peter Cai]
+4185182  base: Accents: Pastel Colors [1/3]  [Ivan Blinov]
+76e58f6  base: Accents: Sweet Q Purple [1/3]  [GjorgjiL]
+582755e  TwilightTracker: Disable debug  [Henrique Silva]
+78eecd2  LiveDisplay: Improve sunrise/sunset calculator  [Henrique Silva]
+
+ * kernel/xiaomi/msm8953
+8f538bb  q6asm: Stop validating payload size  [ZeeLog]
+f50afc4  Revert "prima: overwrite mac address if config file exists"  [ZeeLog]
+306473c  msm: kgsl: increase worker thread priority  [Danny Lin]
+4a8049a  kernel: time: reduce ntp wakeups  [Arjan van de Ven]
+9c08b8b  cfq: Give a chance to arm slice idle timer in case of group_idle  [Ritesh Harjani]
+77e46fe  block: use ktime_get_ns() instead of sched_clock() for cfq and bfq  [Omar Sandoval]
+b08f0d0  block: Initialize cfqq->ioprio_class in cfq_get_queue()  [Alexander Potapenko]
+cfd3dcb  cfq-iosched: temporarily boost queue priority for idle classes  [Jens Axboe]
+56fae8f  fs: sdcardfs: Add missing option to show_options  [Daniel Rosenberg]
+e46cf33  f2fs: always assume that the device is idle under gc_urgent  [Park Ju Hyung]
+d9e9290  f2fs: don't wait with each discards under gc_urgent  [Park Ju Hyung]
+539336e  f2fs: use a more reasonable discard policy for high utilization  [Park Ju Hyung]
+9efc959  f2fs: reduce timeout for uncongestion on f2fs_write_cache_pages()  [Park Ju Hyung]
+45a6382  ASoC: codecs: Truncate size arguments to match destination buffers  [Albert I]
+00a79fb  lowmemorykiller: Revert to android-3.18 version at 73abc99b42cf  [Albert I]
+91b78db  Merge remote-tracking branch 'aosp/android-3.18' into lineage-16.0  [Albert I]
+0de5100  Merge remote-tracking branch 'als/kernel.lnx.3.18.r34-rel' into lineage-16.0  [Albert I]
+e1de816  Merge branch 'lineage-16.0' into pie  [Albert I]
+a0adbcd  Mido: Remove K-Laspe  [nato66613]
+
+ * packages/apps/Settings
+8819a44  settings: Accents: Pastel Colors [2/3]  [Ivan Blinov]
+131b26c  settings: Accents: Sweet Q Purple [2/3]  [GjorgjiL]
+
+ * vendor/syberia
+3dda269  vendor: Accents: Pastel Colors [3/3]  [Ivan Blinov]
+eb3dc04  vendor: Accents: Sweet Q Purple [3/3]  [GjorgjiL]
+
+====================
+     2019-05-24    
+====================
+
+ * build/soong
+f40a29d  config: swap to glibc 2.17  [George Burgess IV]
+8ce0d4f  Allow product_variables.malloc_svelte inside target  [Sasha Smundak]
+
+ * frameworks/base
+1f9ecbc  wifi: Add wifi latency level API to WifiManager  [Hu Wang]
+33399df  BoostFramework: Trigger IOP at Displayed for duration.  [Sai Manobhiram]
+3d6f36e  Boostframework: Adding reserved hint types for launch boost  [richagar]
+a51f677  BoostFramework: Fix - Avoid Null Object Reference.  [Manapragada Sai]
+ab7404f  BoostFramework : Modified Start Proc trigger and added Kill Hint.  [Sai Manobhiram]
+e2b81be  Use headline font in preference title  [Henrique Silva]
+7b0190c  systemui: use headline font for carrier label  [Josh Fox (XlxFoXxlX)]
+db43f88  base: Use headline font in notification texts  [paphonb]
+b5630d0  SystemUI: Use headline font in various parts  [paphonb]
+c355448  LiveDisplay: Use Google's algorithm to convert color temperature to RGB  [Paul Keith]
+ab25808  Option for disable userinfo in dashboard title [1/2]  [a.derendyaev]
+adfacfe  Create a Zram writeback job  [Srinivas Paladugu]
+946bebf  pm: PackageBackwardCompatibility -> applyPolicy  [Steven Moreland]
+e107b3d  pm: Use toArray(T[]) instead of toArray()  [Garfield Tan]
+c048145  LayoutInflater: Special case well-known View constructors  [Eric Holk]
+3872325  Use Class.forName instead of ClassLoader.loadClass  [Nicolas Geoffray]
+8107b64  appops: put @hide back to opToDefaultMode  [ccc]
+9f183d4  Fix the reference leak on RemoteCallbackList  [Kyeongkab.Nam]
+acdce2a  LiveDisplay: Change night/day mode transition behavior  [Paul Keith]
+
+ * frameworks/opt/telephony
+bb3e5d0  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony  [DennySPB]
+
+ * hardware/qcom/wlan
+fb3677f  Merge tag 'LA.UM.7.5.2.r1-02900-8x96.0' into HEAD  [Ivan Blinov]
+
+ * packages/apps/Dialer
+535a668  Dialer: Respect global navigation theme values  [theimpulson]
+497dc8a  Dialer: Get rid of navigation bar divider  [theimpulson]
+
+ * packages/apps/Settings
+e5da1e2  Merge "Option for disable userinfo in dashboard title [2/2]" into 9.0  [dennyspb]
+
+ * system/netd
+9e31cd0  Skip permission checking for binder call from system server  [Luke Huang]
+e814bd4  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
+
+====================
+     2019-05-23    
+====================
+
+ * frameworks/opt/net/wifi
+4ca7a2f  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/wifi  [DennySPB]
+
+ * packages/apps/Settings
+274b04c  Option for disable userinfo in dashboard title [2/2]  [a.derendyaev]
+
+ * packages/services/Telecomm
+d18f41b  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm  [DennySPB]
+
+ * packages/services/Telephony
+44f72ba  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony  [DennySPB]
+
+ * system/core
+4e89874  Allow write access to system_server on zram sysfs  [Srinivas Paladugu]
+0fd1b5f  lmkd: make psi pressure a little more aggressive  [freak07]
+7ad6f16  lmkd: Add support for psi monitors  [Suren Baghdasaryan]
+08fd42d  rootdir: init.rc: use default dirty writeout policy  [Jaegeuk Kim]
+3d275be  init.rc: tune F2FS to be aligned to system settings  [Jaegeuk Kim]
+
+ * system/sepolicy
+0485911  Allow system server to access zram sysfs  [Srinivas Paladugu]
+89a7881  Allow lmkd to setched kernel threads  [Wei Wang]
+b27b3d0  Allow lmkd to kill kernel threads  [Wei Wang]
+7c03f7b  sepolicy: Grant system_server and init access to /proc/pressure/memory  [Tim Murray]
+d504076  sepolicy: Allow lmkd access to psi procfs nodes  [Suren Baghdasaryan]
+
+ * vendor/codeaurora/telephony
+564c5f1  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/codeaurora/telephony  [DennySPB]
+
+====================
+     2019-05-22    
+====================
+
+ * frameworks/base
+1030146  Less boring heads up option [1/2]  [ezio84]
+9bde199  Smart charge: allow using device overlays  [DennySPB]
 
  * packages/apps/SyberiaSettings
-417e7d8  fix crash on AboutTeam  [a.derendyaev]
+ab37c2b  Less boring heads up option [2/2]  [ezio84]
 
- * packages/apps/Updater
-bdb1929  strings: fix derped title  [DennySPB]
-
- * packages/inputmethods/LatinIME
-9aee629  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/inputmethods/LatinIME  [DennySPB]
+ * vendor/syberia
+0e290bd  Smart Charge: chown all known charge suspend nodes  [DennySPB]
+5c8909f  sdclang: switch to 8.0.6  [DennySPB]
+91fcb0a  sdclang: Sync LTO makefile with LA.UM.6.2.r1-08100-sdm660.0  [Alex Naidis]
+dbb8cc5  team: natrium is out  [blinoff82]
 
 ====================
-     2019-05-15    
+     2019-05-21    
 ====================
-
- * device/syberia/sepolicy
-34977ba  sepolicy: Smart Charging (3/4)  [Lucchetto]
-
- * device/xiaomi/mido
-2e06c79  Revert "Mido: Remove audio power hint"  [nato66613]
-5478a77  mido: biometrics: Don't attempt to start if Goodix driver isn't ready  [Nich]
-4170344  mido: cleanup GPS properties  [ZeeLog]
-1115a24  mido: Don't re-start hwcomposer if sf restart  [Ramakant Singh]
 
  * frameworks/base
-5a795ba  LiveDisplay tile: allow FEATURE_MANAGED_OUTDOOR_MODE  [DennySPB]
+8981d0c  Use MM instead of MMM in SimpleDateFormat in trace filename  [Shibin George]
+089bbbd3  Create a new WD trace file for ease of debugging  [Shibin George]
+ae49411  base: Dump traces of HAL_INTERFACES_OF_INTEREST as well when app receives ANR  [Abhishek Jain]
+4e5187b  admin: Restore requireSecureKeyguard interface.  [Adnan Begovic]
+c1e5931  Check for null callerPackage in getStorageEncryptionStatus  [Ethan Chen]
+2ed7bce  hwui: Disable fine-grained logging  [Joe Maples]
+acd2d1b  Fixed auto-brightness first screen update.  [Dan Gittik]
 
- * kernel/xiaomi/msm8953
-e148f4b  Revert "cpuidle: Wakeup only cpus for which qos has changed."  [Sultan Alsawaf]
-e8f3035  configs: mido: Disable audit support  [kerneltoast]
-6e87b34  kernel: Use the stock mido config for /proc/config.gz  [kerneltoast]
-352039c  ASoC: wsa881x: Avoid query temp during suspend  [Naveen Ramaraj]
+ * hardware/ril
+d0706b6  libril: Disable sanitize with latest clang  [mydongistiny]
 
- * vendor/qcom/opensource/interfaces
-8dd7ec7  Regenerate vendor blueprints  [DennySPB]
-
-====================
-     2019-05-14    
-====================
-
- * device/xiaomi/mido
-4e27289  mido: QCamera2: Fix denial of mm q camerad  [chrmhoffmann]
-624641e  mido: QCamera2: The picture show overexpose  [liuxt0702]
-150b269  mido: QCamera2: Enable antibanding to fix the flickers issue  [panfw6372]
-
- * frameworks/base
-2a2f3a1  Fix inaccurate power algorithm of mobile radio  [yuanhuihui]
-68c431d  base: SystemUI: fix themeing of notification shelf dot  [maxwen]
-36fd86c  base: SystemUI: make qs edit repect header image  [maxwen]
-292eaa3  Revert "Revert "base: Add additional builtins to scan ids.""  [Marko Man]
-1fffbf3  base: Add seekbar to media notification  [paphonb]
-bdb20fa  Remove useless warning when dismissing notification  [Pranav Vashi]
-1a70bd1  base: Smart Charging (1/4)  [Lucchetto]
-24bdd9c  StatusBar battery: fix toggle for left/right percentage position  [a.derendyaev]
-
- * hardware/qcom/audio-caf/msm8996
-d042cc0  hal: Fix forgotten guards  [Rashed Abdel-Tawab]
-bc8fcf1  audio: Use perf hints from audio HAL for ULL and MMAP  [Haynes Mathew George]
-a108fe2  audio: Guard power@1.2 hints  [Rashed Abdel-Tawab]
-fac35d7  Move audio-perf to HAL module  [Wei Wang]
-72d6cb0  audio-hal: use powerHAL 1.2 to do performance hint  [Wei Wang]
-da0dcfd  Merge tag 'LA.UM.7.5.r1-04800-8x96.0' into HEAD  [blinoff82]
-
- * kernel/xiaomi/msm8953
-3acb5e4  mido: Regen defconfig  [nato66613]
-5267cec  Revert "block: introduce Anxiety I/O scheduler"  [nato66613]
-3171e8a  Revert "block: [Introduded for 3.18.y] Add Maple I/O Scheduler"  [nato66613]
-0a66bee  RCU:Masive update  [nato66613]
-
- * packages/apps/Bluetooth
-6c1ab6b  Bluetooth:add missing permission  [kldoc]
-
- * vendor/qcom/opensource/interfaces
-be74c09  Merge tag 'LA.UM.7.8.r3-01400-SDM710.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/interfaces  [DennySPB]
+ * system/netd
+260d562  Fix build with current clang master  [Bernhard Rosenkränzer]
+13c8f90  Types and type qualifiers have to be to the right of "operator".  [Stephen Hines]
 
 ====================
-     2019-05-13    
+     2019-05-20    
 ====================
 
- * device/xiaomi/mido
-3e70b28  mido: Remove triple buffering and custom VSYNC offsets  [Artem Borisov]
-cefe210  mido: Update ADSP & Audio blobs from OP3  [ZeeLog]
-8a09c18  mido: drop unused bt property  [ZeeLog]
-2585dc0  mido: remove more traces of common repo  [Silesh K Nair]
-
- * vendor/xiaomi
-70a1ab7  msm8953-common: Update ADSP & Audio blobs from OP3  [ZeeLog]
+ * vendor/qcom/sdclang-8.0
+66046ed  Import stripped SDClang 8.0.6  [Josh Choo]
 
 ====================
-     2019-05-12    
+     2019-05-19    
 ====================
 
- * device/xiaomi/mido
-668253a  overlay: enable MultiUser UI  [DennySPB]
+ * packages/apps/Settings
+45e5c2f  team: natrium is out  [blinoff82]
 
- * kernel/xiaomi/msm8953
-ab48ffc  mido_defconfig: Use a timer frequency of 100 Hz  [kerneltoast]
-8a73349  Mido: Remove K-Laspe  [nato66613]
-d779b49  Import xiaomi changes for live display  [Silesh K Nair]
-5f095c9  Mido: Remove K-Laspe  [nato66613]
-d326544  Import xiaomi changes for live display  [Silesh K Nair]
+ * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-9.1
+8f8b95b  Add aarch64-elf GCC 9.1.0 toolchain for x86_64 hosts  [Danny Lin]
+c615e81  Initial commit  [Danny Lin]
 
