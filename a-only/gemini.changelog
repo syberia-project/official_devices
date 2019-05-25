@@ -1,206 +1,198 @@
 ====================
-     2019-05-18    
-====================
-
- * frameworks/base
-c97e5b2  Smart Charging: rework for using more common sysfs node [1/2]  [DennySPB]
-
- * vendor/syberia
-01314ad  Smart Charging: rework for using more common sysfs node [2/2]  [DennySPB]
-
-====================
-     2019-05-17    
-====================
-
- * kernel/xiaomi/msm8996
-1b99dad  Merge branch 'upstream-linux-3.18.y' of https://android.googlesource.com/kernel/common into HEAD  [blinoff82]
-6b1ae52  Linux 3.18.140  [Greg Kroah-Hartman]
-36927e4  powerpc/booke64: set RI in default MSR  [Laurentiu Tudor]
-db7e501  drivers/virt/fsl_hypervisor.c: prevent integer overflow in ioctl  [Dan Carpenter]
-3b18731  drivers/virt/fsl_hypervisor.c: dereferencing error pointers in ioctl  [Dan Carpenter]
-66ed3c8  bonding: fix arp_validate toggling in active-backup mode  [Jarod Wilson]
-ae0f0eb  ipv4: Fix raw socket lookup for local traffic  [David Ahern]
-860e918  vlan: disable SIOCSHWTSTAMP in container  [Hangbin Liu]
-97d36ca  packet: Fix error path in packet_init  [YueHaibing]
-9d59fa6  net: ucc_geth - fix Oops when changing number of buffers in the ring  [Christophe Leroy]
-28107ba  bridge: Fix error path for kobject_init_and_add()  [Tobin C. Harding]
-c0759c1  USB: serial: fix unthrottle races  [Johan Hovold]
-6b612ec  USB: serial: use variable for status  [Oliver Neukum]
-466153f  Don't jump to compute_result state from check_result state  [Nigel Croxon]
-913fbfc  gpu: ipu-v3: dp: fix CSC handling  [Lucas Stach]
-fad3684  selftests/net: correct the return value for run_netsocktests  [Po-Hsu Lin]
-68e8a8d  s390: ctcm: fix ctcm_new_device error return code  [Arnd Bergmann]
-4ce4b00  init: initialize jump labels before command line option parsing  [Dan Williams]
-f97fc64  tools lib traceevent: Fix missing equality check for strcmp  [Rikard Falkeborn]
-72ba8a7  KVM: x86: avoid misreporting level-triggered irqs as edge-triggered in tracing  [Vitaly Kuznetsov]
-eca5f4d  s390/3270: fix lockdep false positive on view->lock  [Martin Schwidefsky]
-2f922c4  s390/dasd: Fix capacity calculation for large volumes  [Peter Oberparleiter]
-e172a3b  HID: input: add mapping for keyboard Brightness Up/Down/Toggle keys  [Dmitry Torokhov]
-b8f6da2  iio: adc: xilinx: fix potential use-after-free on remove  [Sven Van Asbroeck]
-23a030f  platform/x86: sony-laptop: Fix unintentional fall-through  [Gustavo A. R. Silva]
-d277466  netfilter: compat: initialize all fields in xt_init  [Francesco Ruggeri]
-b784e7a  timer/debug: Change /proc/timer_stats from 0644 to 0600  [Ben Hutchings]
-b16a6c9  Bluetooth: Align minimum encryption key size for LE and BR/EDR connections  [Marcel Holtmann]
-9c47ad9  Bluetooth: hidp: fix buffer overflow  [Young Xiao]
-6ee7108  scsi: qla2xxx: Fix incorrect region-size setting in optrom SYSFS routines  [Andrew Vasquez]
-43dae3a  genirq: Prevent use-after-free and work list corruption  [Prasad Sodagudi]
-17f93dc  iommu/amd: Set exclusion range correctly  [Joerg Roedel]
-47ebd40  scsi: csiostor: fix missing data copy in csio_scsi_err_handler()  [Varun Prakash]
-0562cef  ASoC: tlv320aic32x4: Fix Common Pins  [Annaliese McDermond]
-e012479  ASoC: cs4270: Set auto-increment bit for register writes  [Daniel Mack]
-0a635ce  ASoC:soc-pcm:fix a codec fixup issue in TDM case  [Rander Wang]
-ec22b57  scsi: libsas: fix a race condition when smp task timeout  [Jason Yan]
-f521187  media: v4l2: i2c: ov7670: Fix PLL bypass register values  [Jacopo Mondi]
-56c85b2  staging: iio: adt7316: fix the dac write calculation  [Jeremy Fertic]
-05aafb6  staging: iio: adt7316: fix the dac read calculation  [Jeremy Fertic]
-4e12fe2  staging: iio: adt7316: allow adt751x to use internal vref for all dacs  [Jeremy Fertic]
-19a8133  usb: usbip: fix isoc packet num validation in get_pipe  [Malte Leip]
-9f3a2aa  ARM: iop: don't use using 64-bit DMA masks  [Arnd Bergmann]
-91b4d92  ARM: orion: don't use using 64-bit DMA masks  [Arnd Bergmann]
-77541ef  xsysace: Fix error handling in ace_setup  [Guenter Roeck]
-b3a65e1  hugetlbfs: fix memory leak for resv_map  [Mike Kravetz]
-202dff9  scsi: storvsc: Fix calculation of sub-channel count  [Michael Kelley]
-44a476c  jffs2: fix use-after-free on symlink traversal  [Al Viro]
-c452e33  bonding: show full hw address in sysfs for slave entries  [Konstantin Khorenko]
-b2eed39  igb: Fix WARN_ONCE on runtime suspend  [Arvind Sankar]
-00a9ea1  rtc: sh: Fix invalid alarm warning for non-enabled alarm  [Geert Uytterhoeven]
-358e948  HID: debug: fix race condition with between rdesc_show() and device removal  [He, Bo]
-bc1c5d1  USB: core: Fix bug caused by duplicate interface PM usage counter  [Alan Stern]
-fe1e6f5  USB: media: disable tlg2300 driver  [Greg Kroah-Hartman]
-652c6e1  USB: core: Fix unterminated string returned by usb_string()  [Alan Stern]
-483dc30  USB: w1 ds2490: Fix bug caused by improper use of altsetting array  [Alan Stern]
-15c0d26  USB: yurex: Fix protection fault after device removal  [Alan Stern]
-f4d6bb3  ipv6/flowlabel: wait rcu grace period before put_pid()  [Eric Dumazet]
-6ca4b40  packet: validate msg_namelen in send directly  [Willem de Bruijn]
-91c38d7  ipv6: invert flowlabel sharing check in process and user mode  [Willem de Bruijn]
-1e58407  ipv4: ip_do_fragment: Preserve skb_iif during fragmentation  [Shmulik Ladkani]
-e2e7cf4  kconfig/[mn]conf: handle backspace (^H) key  [Changbin Du]
-c2e5f31  libata: fix using DMA buffers on stack  [raymond pang]
-ef26956  scsi: zfcp: reduce flood of fcrscn1 trace records on multi-element RSCN  [Steffen Maier]
-d98c0b8  ceph: fix use-after-free on symlink traversal  [Al Viro]
-a826eff  usb: u132-hcd: fix resource leak  [Mukesh Ojha]
-61d5861  scsi: qla4xxx: fix a potential NULL pointer dereference  [Kangjie Lu]
-0f1cf48  net: ibm: fix possible object reference leak  [Wen Yang]
-90a9d6d  net: ks8851: Set initial carrier state to down  [Lukas Wunner]
-cd30c29  net: ks8851: Delay requesting IRQ until opened  [Lukas Wunner]
-76fc3b4  net: ks8851: Reassert reset pin if chip ID check fails  [Lukas Wunner]
-47d93a1  net: ks8851: Dequeue RX packets explicitly  [Lukas Wunner]
-906dbad  usb: gadget: net2272: Fix net2272_dequeue()  [Guido Kiener]
-1da2fd0  usb: gadget: net2280: Fix overrun of OUT messages  [Guido Kiener]
-65e6cca  qlcnic: Avoid potential NULL pointer dereference  [Aditya Pakki]
-a011889  net: stmmac: move stmmac_check_ether_addr() to driver probe  [Vinod Koul]
-5466bd9  team: fix possible recursive locking when add slaves  [Hangbin Liu]
-f37fb00  ipv4: add sanity checks in ipv4_link_failure()  [Eric Dumazet]
-7f29d9b  Revert "block/loop: Use global lock for ioctl() operation."  [Greg Kroah-Hartman]
-9331b51  netfilter: ebtables: CONFIG_COMPAT: drop a bogus WARN_ON  [Florian Westphal]
-dcbb0ca  NFS: Forbid setting AF_INET6 to "struct sockaddr_in"->sin_family.  [Tetsuo Handa]
-7ab3ca7  fs/proc/proc_sysctl.c: Fix a NULL pointer dereference  [YueHaibing]
-0cc8c5a  slip: make slhc_free() silently accept an error pointer  [Linus Torvalds]
-b0b38ec  sunrpc: don't mark uninitialised items as VALID.  [NeilBrown]
-596c782  ceph: ensure d_name stability in ceph_dentry_hash()  [Jeff Layton]
-7c82b63  sched/numa: Fix a possible divide-by-zero  [Xie XiuQi]
-316bc81  trace: Fix preempt_enable_no_resched() abuse  [Peter Zijlstra]
-d1a3145  MIPS: scall64-o32: Fix indirect syscall number load  [Aurelien Jarno]
-
- * packages/apps/Settings
-cdda31b  LD: Update RU translation  [DennySPB]
-472c0c2  LiveDisplay: fix my bad in picture adjustment settings  [DennySPB]
-
- * packages/apps/SyberiaSettings
-417e7d8  fix crash on AboutTeam  [a.derendyaev]
-
- * vendor/xiaomi
-4b668a5  Revert "sdm845-common: delete unneeded blob, regenerate makefile"  [Bruno Martins]
-
-====================
-     2019-05-16    
+     2019-05-25    
 ====================
 
  * bionic
-e332521  [AArch64] Optimize memcmp for medium to large sizes  [Adhemerval Zanella]
-ee120f1  libc: arm: Optimise memchr for NEON-enabled processors  [Prakhar Bahuguna]
-b80846a  libc: import ARM strcmp from newlib  [Jake Weinstein]
-b751d45  Set __bionic_asm_align to 16 for arm64  [Adhemerval Zanella]
-37eda1d  arm64: Use builtin for nearbyintf/nearbyint  [Adhemerval Zanella]
-6fed4bc  Improve strncmp for mutually misaligned inputs  [Adhemerval Zanella]
-b748cc4  Improve strcmp performance for misaligned strings  [Adhemerval Zanella]
+76055b2  bionic: update for glibc 2.17  [George Burgess IV]
+7439ca3  bionic: update for using jemalloc 5+  [Christopher Ferris]
+3d317ed  bionic: Remove ARM/MIPS fenv duplication  [Elliott Hughes]
+4e45fca  arm64: Extend branch range in __memcpy_chk  [Evgenii Stepanov]
+599863e  bionic: strip libc and linker  [Park Ju Hyung]
 
- * external/sqlite
-93c91d1  sqlite: upgrade to SQLite 3.28.0  [mydongistiny]
-96b95e9  sqlite: Turn off the new pass manager  [Yi Kong]
-bd0a884  sqlite: Remove useless function of tokenize  [Jinguang Dong]
-a7ee84e  Fix parameter checking logic error in tokenize  [Jinguang Dong]
-79dc2d7  sqlite: upgrade to SQLite 3.27.2  [mydongistiny]
-ae8fc55  Revert "Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/platform/external/sqlite into HEAD"  [DennySPB]
+ * external/jemalloc
+aa96756  [HAX] background_threads: explictly disable libdl usage  [DennySPB]
+88dfa30  jemalloc: update to version 5.2.0  [mydongistiny]
+e7bc30f  jemalloc: Further updates to code  [Christopher Ferris]
+e4d7fe1  jemalloc: update to version 5.1.0  [mydongistiny]
 
- * frameworks/base
-0e45091  Long press QS settings for SyberiaSettings  [beanstown106]
-ba8367f8  Merge "LiveDisplay tile: allow override outdoor capablity" into 9.0  [dennyspb]
-fa15c84  ScreenRecord: respect selected quality using screenrecord chord  [DennySPB]
-d7bebb9  LiveDisplay tile: allow override outdoor capablity  [DennySPB]
-7f72222  Lockscreen: align weather and date according Q clock alignment  [a.derendyaev]
-
- * packages/apps/Updater
-bdb1929  strings: fix derped title  [DennySPB]
-
- * packages/inputmethods/LatinIME
-9aee629  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/inputmethods/LatinIME  [DennySPB]
-
-====================
-     2019-05-15    
-====================
-
- * device/syberia/sepolicy
-34977ba  sepolicy: Smart Charging (3/4)  [Lucchetto]
+ * external/zlib
+8cca925  Suppress sign compare warning  [Anushek]
+699c0dd  zlib: Fix InflateBack corner case  [Adenilson Cavalcanti]
+36e8999  Using ARMv8 CRC32 specific instruction  [Adenilson Cavalcanti]
+68e8c83  Isolating ARM specific code in inffast  [Adenilson Cavalcanti]
+29b23c2  zlib: inflate using wider loads and stores  [Adenilson Cavalcanti]
+03daae7  zlib: enable unaligned memory access  [Park Ju Hyung]
+a348f36  trees: minor enhancement to put_short() macro  [Shuxin Yang]
+6771d3d  deflate: restructure the loop  [Shuxin Yang]
+d168a48  deflate: rewrite the loops  [shuxinyang]
+5905237  NEON implementation for Adler32  [Adenilson Cavalcanti]
+81bcf16  Cache s->ins_h in a scalar while looping  [Michael Chastain]
 
  * frameworks/base
-5a795ba  LiveDisplay tile: allow FEATURE_MANAGED_OUTDOOR_MODE  [DennySPB]
+9d8ff4c  HeadsUpAppearanceController: allow heads-up to draw beyond bounds  [Peter Cai]
+4185182  base: Accents: Pastel Colors [1/3]  [Ivan Blinov]
+76e58f6  base: Accents: Sweet Q Purple [1/3]  [GjorgjiL]
+582755e  TwilightTracker: Disable debug  [Henrique Silva]
+78eecd2  LiveDisplay: Improve sunrise/sunset calculator  [Henrique Silva]
+
+ * packages/apps/Settings
+8819a44  settings: Accents: Pastel Colors [2/3]  [Ivan Blinov]
+131b26c  settings: Accents: Sweet Q Purple [2/3]  [GjorgjiL]
+
+ * vendor/syberia
+3dda269  vendor: Accents: Pastel Colors [3/3]  [Ivan Blinov]
+eb3dc04  vendor: Accents: Sweet Q Purple [3/3]  [GjorgjiL]
+
+====================
+     2019-05-24    
+====================
+
+ * build/soong
+f40a29d  config: swap to glibc 2.17  [George Burgess IV]
+8ce0d4f  Allow product_variables.malloc_svelte inside target  [Sasha Smundak]
+
+ * frameworks/base
+1f9ecbc  wifi: Add wifi latency level API to WifiManager  [Hu Wang]
+33399df  BoostFramework: Trigger IOP at Displayed for duration.  [Sai Manobhiram]
+3d6f36e  Boostframework: Adding reserved hint types for launch boost  [richagar]
+a51f677  BoostFramework: Fix - Avoid Null Object Reference.  [Manapragada Sai]
+ab7404f  BoostFramework : Modified Start Proc trigger and added Kill Hint.  [Sai Manobhiram]
+e2b81be  Use headline font in preference title  [Henrique Silva]
+7b0190c  systemui: use headline font for carrier label  [Josh Fox (XlxFoXxlX)]
+db43f88  base: Use headline font in notification texts  [paphonb]
+b5630d0  SystemUI: Use headline font in various parts  [paphonb]
+c355448  LiveDisplay: Use Google's algorithm to convert color temperature to RGB  [Paul Keith]
+ab25808  Option for disable userinfo in dashboard title [1/2]  [a.derendyaev]
+adfacfe  Create a Zram writeback job  [Srinivas Paladugu]
+946bebf  pm: PackageBackwardCompatibility -> applyPolicy  [Steven Moreland]
+e107b3d  pm: Use toArray(T[]) instead of toArray()  [Garfield Tan]
+c048145  LayoutInflater: Special case well-known View constructors  [Eric Holk]
+3872325  Use Class.forName instead of ClassLoader.loadClass  [Nicolas Geoffray]
+8107b64  appops: put @hide back to opToDefaultMode  [ccc]
+9f183d4  Fix the reference leak on RemoteCallbackList  [Kyeongkab.Nam]
+acdce2a  LiveDisplay: Change night/day mode transition behavior  [Paul Keith]
+
+ * frameworks/opt/telephony
+bb3e5d0  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony  [DennySPB]
 
  * hardware/qcom/display-caf/msm8996
-29d6ded  Revert "display: Define soong namespace"  [blinoff82]
+55e3c63  Merge tag 'LA.UM.7.5.2.r1-02900-8x96.0' into HEAD  [Ivan Blinov]
 
- * vendor/qcom/opensource/interfaces
-8dd7ec7  Regenerate vendor blueprints  [DennySPB]
+ * hardware/qcom/wlan
+fb3677f  Merge tag 'LA.UM.7.5.2.r1-02900-8x96.0' into HEAD  [Ivan Blinov]
+
+ * packages/apps/Dialer
+535a668  Dialer: Respect global navigation theme values  [theimpulson]
+497dc8a  Dialer: Get rid of navigation bar divider  [theimpulson]
+
+ * packages/apps/Settings
+e5da1e2  Merge "Option for disable userinfo in dashboard title [2/2]" into 9.0  [dennyspb]
+
+ * system/netd
+9e31cd0  Skip permission checking for binder call from system server  [Luke Huang]
+e814bd4  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
 
 ====================
-     2019-05-14    
+     2019-05-23    
 ====================
+
+ * device/xiaomi/gemini
+a088ed0  sepolicy: add livedisplay rules  [DennySPB]
+4181475  Migrate to livedisplay 2.0  [Bruno Martins]
+
+ * frameworks/opt/net/wifi
+4ca7a2f  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/wifi  [DennySPB]
+
+ * packages/apps/Settings
+274b04c  Option for disable userinfo in dashboard title [2/2]  [a.derendyaev]
+
+ * packages/services/Telecomm
+d18f41b  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm  [DennySPB]
+
+ * packages/services/Telephony
+44f72ba  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony  [DennySPB]
+
+ * system/core
+4e89874  Allow write access to system_server on zram sysfs  [Srinivas Paladugu]
+0fd1b5f  lmkd: make psi pressure a little more aggressive  [freak07]
+7ad6f16  lmkd: Add support for psi monitors  [Suren Baghdasaryan]
+08fd42d  rootdir: init.rc: use default dirty writeout policy  [Jaegeuk Kim]
+3d275be  init.rc: tune F2FS to be aligned to system settings  [Jaegeuk Kim]
+
+ * system/sepolicy
+0485911  Allow system server to access zram sysfs  [Srinivas Paladugu]
+89a7881  Allow lmkd to setched kernel threads  [Wei Wang]
+b27b3d0  Allow lmkd to kill kernel threads  [Wei Wang]
+7c03f7b  sepolicy: Grant system_server and init access to /proc/pressure/memory  [Tim Murray]
+d504076  sepolicy: Allow lmkd access to psi procfs nodes  [Suren Baghdasaryan]
+
+ * vendor/codeaurora/telephony
+564c5f1  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/codeaurora/telephony  [DennySPB]
+
+====================
+     2019-05-22    
+====================
+
+ * device/xiaomi/gemini
+522bbb2  sepolicy: allow system_server access to charging sysfs node  [DennySPB]
+cad6a3e  overlay: override sysfs nodes for smart charge  [blinoff82]
 
  * frameworks/base
-2a2f3a1  Fix inaccurate power algorithm of mobile radio  [yuanhuihui]
-68c431d  base: SystemUI: fix themeing of notification shelf dot  [maxwen]
-36fd86c  base: SystemUI: make qs edit repect header image  [maxwen]
-292eaa3  Revert "Revert "base: Add additional builtins to scan ids.""  [Marko Man]
-1fffbf3  base: Add seekbar to media notification  [paphonb]
-bdb20fa  Remove useless warning when dismissing notification  [Pranav Vashi]
-1a70bd1  base: Smart Charging (1/4)  [Lucchetto]
-24bdd9c  StatusBar battery: fix toggle for left/right percentage position  [a.derendyaev]
+1030146  Less boring heads up option [1/2]  [ezio84]
+9bde199  Smart charge: allow using device overlays  [DennySPB]
 
- * hardware/qcom/audio-caf/msm8996
-d042cc0  hal: Fix forgotten guards  [Rashed Abdel-Tawab]
-bc8fcf1  audio: Use perf hints from audio HAL for ULL and MMAP  [Haynes Mathew George]
-a108fe2  audio: Guard power@1.2 hints  [Rashed Abdel-Tawab]
-fac35d7  Move audio-perf to HAL module  [Wei Wang]
-72d6cb0  audio-hal: use powerHAL 1.2 to do performance hint  [Wei Wang]
-da0dcfd  Merge tag 'LA.UM.7.5.r1-04800-8x96.0' into HEAD  [blinoff82]
+ * packages/apps/SyberiaSettings
+ab37c2b  Less boring heads up option [2/2]  [ezio84]
 
- * packages/apps/Bluetooth
-6c1ab6b  Bluetooth:add missing permission  [kldoc]
-
- * vendor/qcom/opensource/interfaces
-be74c09  Merge tag 'LA.UM.7.8.r3-01400-SDM710.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/interfaces  [DennySPB]
+ * vendor/syberia
+0e290bd  Smart Charge: chown all known charge suspend nodes  [DennySPB]
+5c8909f  sdclang: switch to 8.0.6  [DennySPB]
+91fcb0a  sdclang: Sync LTO makefile with LA.UM.6.2.r1-08100-sdm660.0  [Alex Naidis]
+dbb8cc5  team: natrium is out  [blinoff82]
 
 ====================
-     2019-05-13    
+     2019-05-21    
 ====================
 
+ * device/xiaomi/gemini
+887b46e  BoardConfig: switch to gcc 9.1 for inline kernel building  [DennySPB]
+
+ * frameworks/base
+8981d0c  Use MM instead of MMM in SimpleDateFormat in trace filename  [Shibin George]
+089bbbd3  Create a new WD trace file for ease of debugging  [Shibin George]
+ae49411  base: Dump traces of HAL_INTERFACES_OF_INTEREST as well when app receives ANR  [Abhishek Jain]
+4e5187b  admin: Restore requireSecureKeyguard interface.  [Adnan Begovic]
+c1e5931  Check for null callerPackage in getStorageEncryptionStatus  [Ethan Chen]
+2ed7bce  hwui: Disable fine-grained logging  [Joe Maples]
+acd2d1b  Fixed auto-brightness first screen update.  [Dan Gittik]
+
+ * hardware/ril
+d0706b6  libril: Disable sanitize with latest clang  [mydongistiny]
+
+ * kernel/xiaomi/msm8996
+076a7a2  Makefile: use cortex-a57.cortex-a53 gcc optimization  [DennySPB]
+93e2d27  prepare for gcc 9.1  [DennySPB]
+4b68e2c  qcacld: use O2 optimization  [DennySPB]
+
+ * system/netd
+260d562  Fix build with current clang master  [Bernhard Rosenkränzer]
+13c8f90  Types and type qualifiers have to be to the right of "operator".  [Stephen Hines]
+
 ====================
-     2019-05-12    
+     2019-05-20    
+====================
+
+ * vendor/qcom/sdclang-8.0
+66046ed  Import stripped SDClang 8.0.6  [Josh Choo]
+
+====================
+     2019-05-19    
 ====================
 
  * packages/apps/Settings
-2c88dd7  Settings: Smart Charging (2/4)  [Lucchetto]
+45e5c2f  team: natrium is out  [blinoff82]
 
- * vendor/syberia
-84f4278  vendor: Smart Charging (4/4)  [Lucchetto]
+ * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-9.1
+8f8b95b  Add aarch64-elf GCC 9.1.0 toolchain for x86_64 hosts  [Danny Lin]
+c615e81  Initial commit  [Danny Lin]
 
