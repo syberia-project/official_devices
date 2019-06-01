@@ -1,182 +1,125 @@
 ====================
-     2019-05-25    
+     2019-06-01    
 ====================
 
  * bionic
-76055b2  bionic: update for glibc 2.17  [George Burgess IV]
-7439ca3  bionic: update for using jemalloc 5+  [Christopher Ferris]
-3d317ed  bionic: Remove ARM/MIPS fenv duplication  [Elliott Hughes]
-4e45fca  arm64: Extend branch range in __memcpy_chk  [Evgenii Stepanov]
-599863e  bionic: strip libc and linker  [Park Ju Hyung]
+46e3c96  bionic: Revert recents commits  [blinoff82]
+d1951d7  Remove workarounds for old versions of clang and GCC  [Elliott Hughes]
+52b37a8  libm: Fix builtins when building with armv8-2a  [mydongistiny]
+08b82c9  libm: Replace ARM64 lrint assembly with builtin  [Jake Weinstein]
+43da8a3  Replace ARM and ARM64 sqrt assembly with builtins  [Jake Weinstein]
+d522b15  libm: Use a few builtins on 32-bit ARM  [Jake Weinstein]
+d7518a9  libc: Make powerof2 macro ubsan safe  [Nick Kralevich]
+4630961  arm64: Use builtin for nearbyintf/nearbyint  [Jake Weinstein]
+12d4895  arm64: Use builtins for ceil/floor/rint/trunc  [Jake Weinstein]
+9482a36  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
 
- * external/jemalloc
-aa96756  [HAX] background_threads: explictly disable libdl usage  [DennySPB]
-88dfa30  jemalloc: update to version 5.2.0  [mydongistiny]
-e7bc30f  jemalloc: Further updates to code  [Christopher Ferris]
-e4d7fe1  jemalloc: update to version 5.1.0  [mydongistiny]
+ * external/libjpeg-turbo
+e4bb5fe  Update to 2.0.3  [DennySPB]
+5b120ed  libjpeg-turbo: update to 2.0.2  [mydongistiny]
+a68a8ff  libjpeg-turbo: add config to disable merged upsample  [Mort (Tianqi) Guo]
+ec70164  Handle corner case where merged_upsampler is used for regional decoding  [Mort (Tianqi) Guo]
 
- * external/zlib
-8cca925  Suppress sign compare warning  [Anushek]
-699c0dd  zlib: Fix InflateBack corner case  [Adenilson Cavalcanti]
-36e8999  Using ARMv8 CRC32 specific instruction  [Adenilson Cavalcanti]
-68e8c83  Isolating ARM specific code in inffast  [Adenilson Cavalcanti]
-29b23c2  zlib: inflate using wider loads and stores  [Adenilson Cavalcanti]
-03daae7  zlib: enable unaligned memory access  [Park Ju Hyung]
-a348f36  trees: minor enhancement to put_short() macro  [Shuxin Yang]
-6771d3d  deflate: restructure the loop  [Shuxin Yang]
-d168a48  deflate: rewrite the loops  [shuxinyang]
-5905237  NEON implementation for Adler32  [Adenilson Cavalcanti]
-81bcf16  Cache s->ins_h in a scalar while looping  [Michael Chastain]
+ * external/libpng
+22a42b4  libpng: Suppress sign compare warning  [Pranav Vashi]
+f144291  libpng: Update to version 1.6.37  [mydongistiny]
+39ffe69  libpng: Update to version 1.6.36  [mydongistiny]
 
- * frameworks/base
-9d8ff4c  HeadsUpAppearanceController: allow heads-up to draw beyond bounds  [Peter Cai]
-4185182  base: Accents: Pastel Colors [1/3]  [Ivan Blinov]
-76e58f6  base: Accents: Sweet Q Purple [1/3]  [GjorgjiL]
-582755e  TwilightTracker: Disable debug  [Henrique Silva]
-78eecd2  LiveDisplay: Improve sunrise/sunset calculator  [Henrique Silva]
+ * external/skia
+7b4e78a  Fix ABI Compliance Issue for JPEG Merged Upsample  [Mort (Tianqi) Guo]
+82f54f7  external/skia: Take Fast Jpeg Decoding Path  [Mort (Tianqi) Guo]
 
- * packages/apps/Settings
-8819a44  settings: Accents: Pastel Colors [2/3]  [Ivan Blinov]
-131b26c  settings: Accents: Sweet Q Purple [2/3]  [GjorgjiL]
-
- * vendor/syberia
-3dda269  vendor: Accents: Pastel Colors [3/3]  [Ivan Blinov]
-eb3dc04  vendor: Accents: Sweet Q Purple [3/3]  [GjorgjiL]
-
-====================
-     2019-05-24    
-====================
-
- * build/soong
-f40a29d  config: swap to glibc 2.17  [George Burgess IV]
-8ce0d4f  Allow product_variables.malloc_svelte inside target  [Sasha Smundak]
+ * external/webp
+46f95dc  Update to 1.0.2  [DennySPB]
 
  * frameworks/base
-1f9ecbc  wifi: Add wifi latency level API to WifiManager  [Hu Wang]
-33399df  BoostFramework: Trigger IOP at Displayed for duration.  [Sai Manobhiram]
-3d6f36e  Boostframework: Adding reserved hint types for launch boost  [richagar]
-a51f677  BoostFramework: Fix - Avoid Null Object Reference.  [Manapragada Sai]
-ab7404f  BoostFramework : Modified Start Proc trigger and added Kill Hint.  [Sai Manobhiram]
-e2b81be  Use headline font in preference title  [Henrique Silva]
-7b0190c  systemui: use headline font for carrier label  [Josh Fox (XlxFoXxlX)]
-db43f88  base: Use headline font in notification texts  [paphonb]
-b5630d0  SystemUI: Use headline font in various parts  [paphonb]
-c355448  LiveDisplay: Use Google's algorithm to convert color temperature to RGB  [Paul Keith]
-ab25808  Option for disable userinfo in dashboard title [1/2]  [a.derendyaev]
-adfacfe  Create a Zram writeback job  [Srinivas Paladugu]
-946bebf  pm: PackageBackwardCompatibility -> applyPolicy  [Steven Moreland]
-e107b3d  pm: Use toArray(T[]) instead of toArray()  [Garfield Tan]
-c048145  LayoutInflater: Special case well-known View constructors  [Eric Holk]
-3872325  Use Class.forName instead of ClassLoader.loadClass  [Nicolas Geoffray]
-8107b64  appops: put @hide back to opToDefaultMode  [ccc]
-9f183d4  Fix the reference leak on RemoteCallbackList  [Kyeongkab.Nam]
-acdce2a  LiveDisplay: Change night/day mode transition behavior  [Paul Keith]
+058b788  QS: Update RU translations  [blinoff82]
+a51e1e8  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
+ecacc74  Revert "Add Dual Channel into Bluetooth Audio Channel Mode developer options menu"  [DennySPB]
 
- * frameworks/opt/telephony
-bb3e5d0  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony  [DennySPB]
-
- * hardware/qcom/display-caf/msm8996
-55e3c63  Merge tag 'LA.UM.7.5.2.r1-02900-8x96.0' into HEAD  [Ivan Blinov]
-
- * hardware/qcom/wlan
-fb3677f  Merge tag 'LA.UM.7.5.2.r1-02900-8x96.0' into HEAD  [Ivan Blinov]
-
- * packages/apps/Dialer
-535a668  Dialer: Respect global navigation theme values  [theimpulson]
-497dc8a  Dialer: Get rid of navigation bar divider  [theimpulson]
+ * packages/apps/OmniStyle
+8d8a705  Add Mono/Art headers  [DennySPB]
+686a90d  Remove Omni headers  [DennySPB]
 
  * packages/apps/Settings
-e5da1e2  Merge "Option for disable userinfo in dashboard title [2/2]" into 9.0  [dennyspb]
-
- * system/netd
-9e31cd0  Skip permission checking for binder call from system server  [Luke Huang]
-e814bd4  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
-
-====================
-     2019-05-23    
-====================
-
- * frameworks/opt/net/wifi
-4ca7a2f  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/wifi  [DennySPB]
-
- * packages/apps/Settings
-274b04c  Option for disable userinfo in dashboard title [2/2]  [a.derendyaev]
-
- * packages/services/Telecomm
-d18f41b  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm  [DennySPB]
-
- * packages/services/Telephony
-44f72ba  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony  [DennySPB]
-
- * system/core
-4e89874  Allow write access to system_server on zram sysfs  [Srinivas Paladugu]
-0fd1b5f  lmkd: make psi pressure a little more aggressive  [freak07]
-7ad6f16  lmkd: Add support for psi monitors  [Suren Baghdasaryan]
-08fd42d  rootdir: init.rc: use default dirty writeout policy  [Jaegeuk Kim]
-3d275be  init.rc: tune F2FS to be aligned to system settings  [Jaegeuk Kim]
-
- * system/sepolicy
-0485911  Allow system server to access zram sysfs  [Srinivas Paladugu]
-89a7881  Allow lmkd to setched kernel threads  [Wei Wang]
-b27b3d0  Allow lmkd to kill kernel threads  [Wei Wang]
-7c03f7b  sepolicy: Grant system_server and init access to /proc/pressure/memory  [Tim Murray]
-d504076  sepolicy: Allow lmkd access to psi procfs nodes  [Suren Baghdasaryan]
-
- * vendor/codeaurora/telephony
-564c5f1  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/codeaurora/telephony  [DennySPB]
-
-====================
-     2019-05-22    
-====================
-
- * frameworks/base
-1030146  Less boring heads up option [1/2]  [ezio84]
-9bde199  Smart charge: allow using device overlays  [DennySPB]
+fdef270  Dashboard: user info: use default font  [DennySPB]
+4caf43d  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
 
  * packages/apps/SyberiaSettings
-ab37c2b  Less boring heads up option [2/2]  [ezio84]
+c695d9e  QS Headers: Fix summary and add missing entry  [DennySPB]
 
- * vendor/syberia
-0e290bd  Smart Charge: chown all known charge suspend nodes  [DennySPB]
-5c8909f  sdclang: switch to 8.0.6  [DennySPB]
-91fcb0a  sdclang: Sync LTO makefile with LA.UM.6.2.r1-08100-sdm660.0  [Alex Naidis]
-dbb8cc5  team: natrium is out  [blinoff82]
+ * packages/services/Telecomm
+d1abc8f  Change UI to be consistency with dialer settings light M2 theme  [Youming Ye]
+
+ * packages/services/Telephony
+32576c5  Add missing null check on start of SipIncomingCallReceiver received.  [Tyler Gunn]
+0f65c95  Change action bar icon and text color from white to grey  [Youming Ye]
+5921f8e  Fix the drawable resource can't be loaded from RRO package  [Ping Sun]
+0579b76  Disable EmergencyDialer multi window mode  [Wesley.CW Wang]
+2bb64bd  Change UI styles to match dialer settings light M2 theme  [Youming Ye]
+a2e3b12  Fix EmergencyDialer UI when display size change  [Wesley.CW Wang]
+99a65b0  Don't start SIP service before decrypted  [dianlujitao]
+
+ * system/netd
+e71c590  Copy queries synchronously in DnsTlsSocket  [Ben Schwartz]
 
 ====================
-     2019-05-21    
+     2019-05-31    
 ====================
 
  * frameworks/base
-8981d0c  Use MM instead of MMM in SimpleDateFormat in trace filename  [Shibin George]
-089bbbd3  Create a new WD trace file for ease of debugging  [Shibin George]
-ae49411  base: Dump traces of HAL_INTERFACES_OF_INTEREST as well when app receives ANR  [Abhishek Jain]
-4e5187b  admin: Restore requireSecureKeyguard interface.  [Adnan Begovic]
-c1e5931  Check for null callerPackage in getStorageEncryptionStatus  [Ethan Chen]
-2ed7bce  hwui: Disable fine-grained logging  [Joe Maples]
-acd2d1b  Fixed auto-brightness first screen update.  [Dan Gittik]
+d6ba708  QS: Add advanced location tile options  [Joey]
+e079185  Revert "QS: LocationTile: make it cycle modes"  [DennySPB]
+6fb052c  SystemUI: Enable/fix QS detail view & adapt to Pie  [eray orçunus]
+0354460  Use headline font on battery percentage  [Henrique Silva]
+b920764  base: Persistent settings icon on qs panel for 9.x  [HrX03]
 
- * hardware/ril
-d0706b6  libril: Disable sanitize with latest clang  [mydongistiny]
-
- * system/netd
-260d562  Fix build with current clang master  [Bernhard Rosenkränzer]
-13c8f90  Types and type qualifiers have to be to the right of "operator".  [Stephen Hines]
+ * frameworks/native
+b97f1bb  Revert "opengl: Disable sdclang for EGL and OpenGLES"  [Jyotiraditya]
+1326750  Revert "binder: Release tracking lock before invoking binder_proxy_limit_callback"  [DennySPB]
+4ddf713  opengl: Allow implcit IT blocks on arm  [Joe Maples]
 
 ====================
-     2019-05-20    
+     2019-05-30    
 ====================
 
- * vendor/qcom/sdclang-8.0
-66046ed  Import stripped SDClang 8.0.6  [Josh Choo]
+====================
+     2019-05-29    
+====================
+ * art
+3887ef1  art: Enable -O3  [dkati]
+
+ * bionic
+e974044  libc: Don't try to re-export libgcc symbols that don't exist in 6.3  [Bernhard Rosenkränzer]
+a9a5d23  libc: import ARM strlen from Apple C library  [Jake Weinstein]
+3b812fe  libm: Support -ffp-contract=fast  [dkati]
+3c5e75a  bionic: Enable -O3  [dkati]
+
+ * frameworks/base
+70cb232  Fix weird artifact in battery icon  [paphonb]
+9d0b81d  Improve Q battery icon and unify with portrait style  [paphonb]
+ec77048  SettingsLib: Expose Q battery icon paths  [paphonb]
+fd77b46  Introduce FontTile  [bigrushdog]
+bb249d0  Stop USB Debugging authorization window dismissing on tap outside.  [Tobias Thierer]
+83aaec2  Fix NPE on ExpandableNotificationRow  [Henrique Silva]
+410cdcc  base: Allow network as default location provider as well  [theimpulson]
+679449f  BatteryMeterDrawableBase: Refresh only when value changed  [Pranav Vashi]
+36b015f  SystemUI: fix the behavior of QS with isDualTarget=true  [Alex]
+ff3c7c7  SystemUI: Tweak QS status icons in expand animation  [paphonb]
+99b3710  SystemUI: assist: disable old Assistant animations  [argraur]
 
 ====================
-     2019-05-19    
+     2019-05-28    
 ====================
 
  * packages/apps/Settings
-45e5c2f  team: natrium is out  [blinoff82]
+1e56388  deviceinfo: Move imei information to Sim status  [Chris]
 
- * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-9.1
-8f8b95b  Add aarch64-elf GCC 9.1.0 toolchain for x86_64 hosts  [Danny Lin]
-c615e81  Initial commit  [Danny Lin]
+====================
+     2019-05-27    
+====================
+
+====================
+     2019-05-26    
+====================
 
