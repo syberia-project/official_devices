@@ -1,231 +1,336 @@
 ====================
-     2019-05-25    
+     2019-06-01    
 ====================
 
  * bionic
-76055b2  bionic: update for glibc 2.17  [George Burgess IV]
-7439ca3  bionic: update for using jemalloc 5+  [Christopher Ferris]
-3d317ed  bionic: Remove ARM/MIPS fenv duplication  [Elliott Hughes]
-4e45fca  arm64: Extend branch range in __memcpy_chk  [Evgenii Stepanov]
-599863e  bionic: strip libc and linker  [Park Ju Hyung]
+46e3c96  bionic: Revert recents commits  [blinoff82]
 
- * external/jemalloc
-aa96756  [HAX] background_threads: explictly disable libdl usage  [DennySPB]
-88dfa30  jemalloc: update to version 5.2.0  [mydongistiny]
-e7bc30f  jemalloc: Further updates to code  [Christopher Ferris]
-e4d7fe1  jemalloc: update to version 5.1.0  [mydongistiny]
+ * external/libjpeg-turbo
+e4bb5fe  Update to 2.0.3  [DennySPB]
 
- * external/zlib
-8cca925  Suppress sign compare warning  [Anushek]
-699c0dd  zlib: Fix InflateBack corner case  [Adenilson Cavalcanti]
-36e8999  Using ARMv8 CRC32 specific instruction  [Adenilson Cavalcanti]
-68e8c83  Isolating ARM specific code in inffast  [Adenilson Cavalcanti]
-29b23c2  zlib: inflate using wider loads and stores  [Adenilson Cavalcanti]
-03daae7  zlib: enable unaligned memory access  [Park Ju Hyung]
-a348f36  trees: minor enhancement to put_short() macro  [Shuxin Yang]
-6771d3d  deflate: restructure the loop  [Shuxin Yang]
-d168a48  deflate: rewrite the loops  [shuxinyang]
-5905237  NEON implementation for Adler32  [Adenilson Cavalcanti]
-81bcf16  Cache s->ins_h in a scalar while looping  [Michael Chastain]
+ * external/libpng
+22a42b4  libpng: Suppress sign compare warning  [Pranav Vashi]
+
+ * external/webp
+46f95dc  Update to 1.0.2  [DennySPB]
 
  * frameworks/base
-9d8ff4c  HeadsUpAppearanceController: allow heads-up to draw beyond bounds  [Peter Cai]
-4185182  base: Accents: Pastel Colors [1/3]  [Ivan Blinov]
-76e58f6  base: Accents: Sweet Q Purple [1/3]  [GjorgjiL]
-582755e  TwilightTracker: Disable debug  [Henrique Silva]
-78eecd2  LiveDisplay: Improve sunrise/sunset calculator  [Henrique Silva]
+058b788  QS: Update RU translations  [blinoff82]
 
- * kernel/xiaomi/tulip
-a58256f  Revert "printk: Fix mismatch error"  [Advertpavan]
+ * packages/apps/OmniStyle
+8d8a705  Add Mono/Art headers  [DennySPB]
+686a90d  Remove Omni headers  [DennySPB]
 
  * packages/apps/Settings
-8819a44  settings: Accents: Pastel Colors [2/3]  [Ivan Blinov]
-131b26c  settings: Accents: Sweet Q Purple [2/3]  [GjorgjiL]
-
- * vendor/syberia
-3dda269  vendor: Accents: Pastel Colors [3/3]  [Ivan Blinov]
-eb3dc04  vendor: Accents: Sweet Q Purple [3/3]  [GjorgjiL]
-
-====================
-     2019-05-24    
-====================
-
- * build/soong
-f40a29d  config: swap to glibc 2.17  [George Burgess IV]
-8ce0d4f  Allow product_variables.malloc_svelte inside target  [Sasha Smundak]
-
- * frameworks/base
-1f9ecbc  wifi: Add wifi latency level API to WifiManager  [Hu Wang]
-33399df  BoostFramework: Trigger IOP at Displayed for duration.  [Sai Manobhiram]
-3d6f36e  Boostframework: Adding reserved hint types for launch boost  [richagar]
-a51f677  BoostFramework: Fix - Avoid Null Object Reference.  [Manapragada Sai]
-ab7404f  BoostFramework : Modified Start Proc trigger and added Kill Hint.  [Sai Manobhiram]
-e2b81be  Use headline font in preference title  [Henrique Silva]
-7b0190c  systemui: use headline font for carrier label  [Josh Fox (XlxFoXxlX)]
-db43f88  base: Use headline font in notification texts  [paphonb]
-b5630d0  SystemUI: Use headline font in various parts  [paphonb]
-c355448  LiveDisplay: Use Google's algorithm to convert color temperature to RGB  [Paul Keith]
-ab25808  Option for disable userinfo in dashboard title [1/2]  [a.derendyaev]
-adfacfe  Create a Zram writeback job  [Srinivas Paladugu]
-946bebf  pm: PackageBackwardCompatibility -> applyPolicy  [Steven Moreland]
-e107b3d  pm: Use toArray(T[]) instead of toArray()  [Garfield Tan]
-c048145  LayoutInflater: Special case well-known View constructors  [Eric Holk]
-3872325  Use Class.forName instead of ClassLoader.loadClass  [Nicolas Geoffray]
-8107b64  appops: put @hide back to opToDefaultMode  [ccc]
-9f183d4  Fix the reference leak on RemoteCallbackList  [Kyeongkab.Nam]
-acdce2a  LiveDisplay: Change night/day mode transition behavior  [Paul Keith]
-
- * frameworks/opt/telephony
-bb3e5d0  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony  [DennySPB]
-
- * hardware/qcom/wlan
-fb3677f  Merge tag 'LA.UM.7.5.2.r1-02900-8x96.0' into HEAD  [Ivan Blinov]
-
- * packages/apps/Dialer
-535a668  Dialer: Respect global navigation theme values  [theimpulson]
-497dc8a  Dialer: Get rid of navigation bar divider  [theimpulson]
-
- * packages/apps/Settings
-e5da1e2  Merge "Option for disable userinfo in dashboard title [2/2]" into 9.0  [dennyspb]
-
- * system/netd
-9e31cd0  Skip permission checking for binder call from system server  [Luke Huang]
-e814bd4  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
-
-====================
-     2019-05-23    
-====================
-
- * frameworks/opt/net/wifi
-4ca7a2f  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/wifi  [DennySPB]
-
- * kernel/xiaomi/tulip
-7f31cbc  Merge branch 'android-4.4' of kernel/common into mkp  [Rama Bondan Prakoso]
-
- * packages/apps/Settings
-274b04c  Option for disable userinfo in dashboard title [2/2]  [a.derendyaev]
-
- * packages/services/Telecomm
-d18f41b  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm  [DennySPB]
-
- * packages/services/Telephony
-44f72ba  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony  [DennySPB]
-
- * system/core
-4e89874  Allow write access to system_server on zram sysfs  [Srinivas Paladugu]
-0fd1b5f  lmkd: make psi pressure a little more aggressive  [freak07]
-7ad6f16  lmkd: Add support for psi monitors  [Suren Baghdasaryan]
-08fd42d  rootdir: init.rc: use default dirty writeout policy  [Jaegeuk Kim]
-3d275be  init.rc: tune F2FS to be aligned to system settings  [Jaegeuk Kim]
-
- * system/sepolicy
-0485911  Allow system server to access zram sysfs  [Srinivas Paladugu]
-89a7881  Allow lmkd to setched kernel threads  [Wei Wang]
-b27b3d0  Allow lmkd to kill kernel threads  [Wei Wang]
-7c03f7b  sepolicy: Grant system_server and init access to /proc/pressure/memory  [Tim Murray]
-d504076  sepolicy: Allow lmkd access to psi procfs nodes  [Suren Baghdasaryan]
-
- * vendor/codeaurora/telephony
-564c5f1  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/codeaurora/telephony  [DennySPB]
-
-====================
-     2019-05-22    
-====================
-
- * frameworks/base
-1030146  Less boring heads up option [1/2]  [ezio84]
-9bde199  Smart charge: allow using device overlays  [DennySPB]
-
- * kernel/xiaomi/tulip
-6dc3fb0  fs: sdcardfs: Add missing option to show_options  [Daniel Rosenberg]
-
- * vendor/syberia
-0e290bd  Smart Charge: chown all known charge suspend nodes  [DennySPB]
-5c8909f  sdclang: switch to 8.0.6  [DennySPB]
-91fcb0a  sdclang: Sync LTO makefile with LA.UM.6.2.r1-08100-sdm660.0  [Alex Naidis]
-dbb8cc5  team: natrium is out  [blinoff82]
-
-====================
-     2019-05-21    
-====================
-
- * frameworks/base
-8981d0c  Use MM instead of MMM in SimpleDateFormat in trace filename  [Shibin George]
-089bbbd3  Create a new WD trace file for ease of debugging  [Shibin George]
-ae49411  base: Dump traces of HAL_INTERFACES_OF_INTEREST as well when app receives ANR  [Abhishek Jain]
-4e5187b  admin: Restore requireSecureKeyguard interface.  [Adnan Begovic]
-c1e5931  Check for null callerPackage in getStorageEncryptionStatus  [Ethan Chen]
-2ed7bce  hwui: Disable fine-grained logging  [Joe Maples]
-acd2d1b  Fixed auto-brightness first screen update.  [Dan Gittik]
-
- * hardware/ril
-d0706b6  libril: Disable sanitize with latest clang  [mydongistiny]
-
- * kernel/xiaomi/tulip
-da0f03a  crypto: avoid VLA  [srfarias]
-e30d5c9  mmc: pwrseq: Use kmalloc_array instead of stack VLA  [Ulf Hansson]
-45983a7  mfd: wcd9xxx-irq: avoid VLA  [srfarias]
-8072fca  gpio: Remove VLA from gpiolib  [Linus Walleij]
-522a4df  crypto: remove several VLAs  [Salvatore Mesoraca]
-f2b1f54  msm: camera: avoid VLA  [Park Ju Hyung]
-de2cdf2  crypto: msm: qcrypto: avoid vla  [srfarias]
-620a6cf  crypto: aead - Add chunk size  [Herbert Xu]
-5148d2e  qcacld: avoid VLA  [Park Ju Hyung]
-ddccbe7  msm_smem: make temp_string_size a constant to avoid VLA  [Park Ju Hyung]
-105a3b57  crypto: api - Introduce generic max blocksize and alignmask  [Kees Cook]
-c31b949  crypto: shash - Remove VLA usage in unaligned hashing  [Kees Cook]
-26ff7f0  crypto: hash - Remove VLA usage  [Kees Cook]
-9b8fa32  crypto: xcbc - Remove VLA usage  [Kees Cook]
-ace5458  crypto: api - laying defines and checks for statically allocated buffers  [Salvatore Mesoraca]
-16962f5  xfrm: remove VLA usage in __xfrm6_sort()  [Kees Cook]
-1757d3e  netfilter: nfnetlink: Remove VLA usage  [Kees Cook]
-9a31b24  rtnetlink: Fix null-ptr-deref in rtnl_newlink  [Prashant Bhole]
-946b07b  rtnetlink: Remove VLA usage  [Kees Cook]
-39fce97  pstore/ram: Do not use stack VLA for parity workspace  [Kees Cook]
-39f771d  rslib: Allocate decoder buffers to avoid VLAs  [Thomas Gleixner]
-cc0a48a  rslib: Split rs control struct  [Thomas Gleixner]
-3c8798a  rslib: Simplify error path  [Thomas Gleixner]
-b14adc1  rslib: Remove GPL boilerplate  [Thomas Gleixner]
-d6541ad  rslib: Add SPDX identifiers  [Thomas Gleixner]
-069d8dc  rslib: Cleanup top level comments  [Thomas Gleixner]
-46636b9  rslib: Cleanup whitespace damage  [Thomas Gleixner]
-9a5186b  rslib: Add GFP aware init function  [Thomas Gleixner]
-b6c982e  dm stripe: get rid of a Variable Length Array (VLA)  [Tycho Andersen]
-2dfd974  ALSA: pcm: Remove VLA usage  [Takashi Iwai]
-d8897f6  libceph: Remove VLA usage of skcipher  [Kees Cook]
-1c235ba  libceph: Remove unnecessary ivsize variables  [Ilya Dryomov]
-8f18ba4  libceph: Use skcipher  [Herbert Xu]
-d827cad  block: cryptoloop: Remove VLA usage of skcipher  [Kees Cook]
-8c60a5f  block: cryptoloop - Use new skcipher interface  [Herbert Xu]
-1183957  gss_krb5: Remove VLA usage of skcipher  [Kees Cook]
-ed2ce3e  sunrpc: Fix skcipher/shash conversion  [Herbert Xu]
-9c41272  sunrpc: Use skcipher and ahash/shash  [Herbert Xu]
-b5f53e6  crypto: skcipher - Introduce crypto_sync_skcipher  [Kees Cook]
-5a44616  Makefile: Globally enable VLA warning  [Kees Cook]
-e481957  compiler.h: give up __compiletime_assert_fallback()  [Kees Cook]
+fdef270  Dashboard: user info: use default font  [DennySPB]
 
  * packages/apps/SyberiaSettings
-ab37c2b  Less boring heads up option [2/2]  [ezio84]
+c695d9e  QS Headers: Fix summary and add missing entry  [DennySPB]
+
+ * packages/services/Telecomm
+d1abc8f  Change UI to be consistency with dialer settings light M2 theme  [Youming Ye]
+
+ * packages/services/Telephony
+32576c5  Add missing null check on start of SipIncomingCallReceiver received.  [Tyler Gunn]
+0f65c95  Change action bar icon and text color from white to grey  [Youming Ye]
+5921f8e  Fix the drawable resource can't be loaded from RRO package  [Ping Sun]
+0579b76  Disable EmergencyDialer multi window mode  [Wesley.CW Wang]
+2bb64bd  Change UI styles to match dialer settings light M2 theme  [Youming Ye]
+a2e3b12  Fix EmergencyDialer UI when display size change  [Wesley.CW Wang]
+99a65b0  Don't start SIP service before decrypted  [dianlujitao]
 
  * system/netd
-260d562  Fix build with current clang master  [Bernhard Rosenkränzer]
-13c8f90  Types and type qualifiers have to be to the right of "operator".  [Stephen Hines]
+e71c590  Copy queries synchronously in DnsTlsSocket  [Ben Schwartz]
 
 ====================
-     2019-05-20    
+     2019-05-31    
 ====================
 
- * vendor/qcom/sdclang-8.0
-66046ed  Import stripped SDClang 8.0.6  [Josh Choo]
+ * bionic
+d1951d7  Remove workarounds for old versions of clang and GCC  [Elliott Hughes]
+52b37a8  libm: Fix builtins when building with armv8-2a  [mydongistiny]
+08b82c9  libm: Replace ARM64 lrint assembly with builtin  [Jake Weinstein]
+43da8a3  Replace ARM and ARM64 sqrt assembly with builtins  [Jake Weinstein]
+d522b15  libm: Use a few builtins on 32-bit ARM  [Jake Weinstein]
+d7518a9  libc: Make powerof2 macro ubsan safe  [Nick Kralevich]
+4630961  arm64: Use builtin for nearbyintf/nearbyint  [Jake Weinstein]
+12d4895  arm64: Use builtins for ceil/floor/rint/trunc  [Jake Weinstein]
+9482a36  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
+
+ * external/libjpeg-turbo
+5b120ed  libjpeg-turbo: update to 2.0.2  [mydongistiny]
+a68a8ff  libjpeg-turbo: add config to disable merged upsample  [Mort (Tianqi) Guo]
+ec70164  Handle corner case where merged_upsampler is used for regional decoding  [Mort (Tianqi) Guo]
+
+ * external/libpng
+f144291  libpng: Update to version 1.6.37  [mydongistiny]
+39ffe69  libpng: Update to version 1.6.36  [mydongistiny]
+
+ * external/skia
+7b4e78a  Fix ABI Compliance Issue for JPEG Merged Upsample  [Mort (Tianqi) Guo]
+82f54f7  external/skia: Take Fast Jpeg Decoding Path  [Mort (Tianqi) Guo]
+
+ * frameworks/base
+a51e1e8  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
+ecacc74  Revert "Add Dual Channel into Bluetooth Audio Channel Mode developer options menu"  [DennySPB]
+d6ba708  QS: Add advanced location tile options  [Joey]
+e079185  Revert "QS: LocationTile: make it cycle modes"  [DennySPB]
+6fb052c  SystemUI: Enable/fix QS detail view & adapt to Pie  [eray orçunus]
+0354460  Use headline font on battery percentage  [Henrique Silva]
+b920764  base: Persistent settings icon on qs panel for 9.x  [HrX03]
+
+ * frameworks/native
+b97f1bb  Revert "opengl: Disable sdclang for EGL and OpenGLES"  [Jyotiraditya]
+1326750  Revert "binder: Release tracking lock before invoking binder_proxy_limit_callback"  [DennySPB]
+4ddf713  opengl: Allow implcit IT blocks on arm  [Joe Maples]
+
+ * packages/apps/Settings
+4caf43d  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
 
 ====================
-     2019-05-19    
+     2019-05-30    
+====================
+
+ * device/xiaomi/tulip
+7062e57  tulip: Filter and remap display modes  [Henrique Silva]
+c8dc3ae  tulip: Enable vendor.enable_default_color_mode  [Henrique Silva]
+12fe471  tulip: Migrate to livedisplay 2.0  [Bruno Martins]
+
+====================
+     2019-05-29    
+====================
+ * art
+3887ef1  art: Enable -O3  [dkati]
+
+ * bionic
+e974044  libc: Don't try to re-export libgcc symbols that don't exist in 6.3  [Bernhard Rosenkränzer]
+a9a5d23  libc: import ARM strlen from Apple C library  [Jake Weinstein]
+3b812fe  libm: Support -ffp-contract=fast  [dkati]
+3c5e75a  bionic: Enable -O3  [dkati]
+
+ * device/xiaomi/tulip
+e03a357  tulip: parts: Add vector icons  [darkbeast69]
+1c9c727  tulip: Enable AOD  [Luca Stefani]
+9c70e86  tulip: Declare STATE_DOZE support  [Bruno Martins]
+5971133  tulip: Update GPS from LA.UM.7.2.r1-06900-sdm660.0  [Rama Bondan Prakoso]
+ebd8fd1  tulip: Add missing required blobs  [Rama Bondan Prakoso]
+408e30e  tulip: rootdir: Setup permission for powerHAL  [fagyi]
+ce25f4b  tulip: power: Add back DT2W support  [YumeMichi]
+e33cf72  tulip: power: Update to binderized PowerHAL from LA.UM.7.2.r1-06900-sdm660.0  [Rama Bondan Prakoso]
+
+ * frameworks/base
+70cb232  Fix weird artifact in battery icon  [paphonb]
+9d0b81d  Improve Q battery icon and unify with portrait style  [paphonb]
+ec77048  SettingsLib: Expose Q battery icon paths  [paphonb]
+
+ * kernel/xiaomi/tulip
+0cf4ab8  ARM: dts: sdm660-pm: set LPM parameters from SDM845  [Yaroslav Furman]
+3ec2fbf  SDM660: 80mv GPU UV  [ktommy91]
+
+====================
+     2019-05-28    
+====================
+
+ * frameworks/base
+fd77b46  Introduce FontTile  [bigrushdog]
+bb249d0  Stop USB Debugging authorization window dismissing on tap outside.  [Tobias Thierer]
+83aaec2  Fix NPE on ExpandableNotificationRow  [Henrique Silva]
+410cdcc  base: Allow network as default location provider as well  [theimpulson]
+679449f  BatteryMeterDrawableBase: Refresh only when value changed  [Pranav Vashi]
+36b015f  SystemUI: fix the behavior of QS with isDualTarget=true  [Alex]
+ff3c7c7  SystemUI: Tweak QS status icons in expand animation  [paphonb]
+99b3710  SystemUI: assist: disable old Assistant animations  [argraur]
+
+ * kernel/xiaomi/tulip
+ac5d869  ARM: sdm660-gpu: Use a default powerlevel of 5 (160 MHz)  [Tyler Nijmeh]
+6e95133  ARM: dts: tulip-panels: Use sync pulses for panels  [Tyler Nijmeh]
+cca7f3c  ARM: dts: Reduce the maximum voltage allowed for the panel  [Tyler Nijmeh]
+4ac7190  tulip: defconfig: Enable and configure DSBoost  [Rama Bondan Prakoso]
+3848eda  cpufreq: Introduce DSBoost driver  [Tyler Nijmeh]
+4007a98  ARM: dts: tulip-panels: Add dynamic bitclk and dynamic fps support  [Tyler Nijmeh]
+
+ * packages/apps/Settings
+1e56388  deviceinfo: Move imei information to Sim status  [Chris]
+
+====================
+     2019-05-27    
 ====================
 
  * kernel/xiaomi/tulip
-0eddb43  Genom Kernel tulip Pie OSS r5  [Rama Bondan Prakoso]
-e6d9c41  ANDROID: lowmemorykiller: revert to kernel/common  [Rama Bondan Prakoso]
+acbcfae  ARM: dts: tulip: Remove dsi-pref-prim-pan property  [Rama Bondan Prakoso]
+25af2d4  tulip: defconfig: Update kernel name  [Rama Bondan Prakoso]
+b618828  lowmemorykiller: Revert to android-4.4 version at 152bacdd85c4  [Albert I]
+e882b15  tulip: defconfig: Enable Sound Control  [Rama Bondan Prakoso]
+b7ec6d8  sound: sdm660_cdc: prevent headphone reset  [Mihran Thalhath]
+9e778fa  asoc:sdm660_cdc:sound control: add microphone gain credits to @flar2  [ktommy91]
+c467284  sound: sdm660_cdc: add sound control  [Shekhawat2]
+fd135fd  Added support for TTL fixation  [Razziell]
+2510a92  scripts: Strip android Clang compiler name by default  [Rama Bondan Prakoso]
+815bfd8  tulip: defconfig: Build other TCP Cong in-kernel  [Rama Bondan Prakoso]
+48549e0  Makefile: Use O3 for Clang  [Nathan Chancellor]
+7848c4b  usb: f_qc_rndis: Remove unused static variables  [Nathan Chancellor]
+cd8582d  mmc: host: sdhci-msm-ice: Fix logical not parentheses warning  [Nathan Chancellor]
+6575645  clk: qcom: Hide self-assign warning  [Nathan Chancellor]
+a381d16  msm: thermal: Disable strlcpy-strlcat-size warning  [Nathan Chancellor]
+bdd63d4  ASoC: msm: qdsp6v2: Fix constant-logic-operand warning  [Nathan Chancellor]
+cf8c72e  msm-4.4: Fix strlcpy-strlcat-size Clang warnings  [Nathan Chancellor]
+3a204c3  icnss: Fix enum-conversion warning from Clang  [Nathan Chancellor]
+e85be11  HACK: input: touchpanel: st: Disable Clang warnings  [Nathan Chancellor]
+f7182a8  BACKPORT: sched/sysctl: Fix attributes of some extern declarations  [Matthias Kaehlcke]
+7526f34  cfg80211: Support backport of removing ieee80211  [Srinivas Girigowda]
+ecbda0d  BACKPORT: cfg80211: remove enum ieee80211_band  [Johannes Berg]
+27e28b9  UPSTREAM: mm/zsmalloc.c: change stat type parameter to int  [Matthias Kaehlcke]
+588da3c  UPSTREAM: mm/zsmalloc.c: fix -Wunneeded-internal-declaration warning  [Nick Desaulniers]
+a74fc115  BACKPORT: kernel.h: handle pointers to arrays better in container_of()  [Ian Abbott]
+248cbe9  BACKPORT: bug: split BUILD_BUG stuff out into <linux/build_bug.h>  [Ian Abbott]
+d4f22cb  UPSTREAM: include/linux/dcache.h: use unsigned chars in struct name_snapshot  [Stephen Rothwell]
+62878f3  ANDROID: HACK: Makefile: fix all build warnings for in tree code  [Nick Desaulniers]
+516c08c  ion: system_secure_heap: fix constant logical comparison bug  [Nick Desaulniers]
+162ce1a  drivers: firmware: qcom: more specific -Wno-* subdirs  [Nick Desaulniers]
+b0a4788  ANDROID: HACK: Makefile: wrap -Wno-frame-larger-than= flags in cc-option  [Nick Desaulniers]
+5366cb0  ANDROID: HACK: Makefile: whitelist CFLAGS to reenable Werror  [Nick Desaulniers]
+92bfbef  arm64: Update Clang flags  [Nathan Chancellor]
+d66b438  FROMLIST: BACKPORT: kbuild: add __cc-ifversion and compiler-specific variants  [Sami Tolvanen]
+6ca1f2d  FROMLIST: kbuild: add clang-version.sh  [Sami Tolvanen]
+4ec741d  msm: camera: properly initialize vfe  [Zhijun He]
+0b714e2  msm: sde: fix unaligned memory read  [Sami Tolvanen]
+c9354df  soc: qcom: smp2p: fix __iomem access in SMP2P_{GET,SET}_*  [Sami Tolvanen]
+c15a66c  drivers: media: msm: don't use nested functions  [Greg Hackmann]
+f35cc19  drivers: soc: qcom: fix register names on ARM64  [Greg Hackmann]
+2b2a75b  ANDROID: Kbuild, LLVMLinux: disable clang -Wpointer-bool-conversion  [Greg Hackmann]
+9a6709b  scripts: Support a custom compiler name  [Joe Maples]
+d91ef13  UPSTREAM: scripts/mkcompile_h: Remove trailing spaces from compiler version  [Jonathan Liu]
+e7cfd7f  kernel: Add CC_WERROR config to turn warnings into errors  [Chris Fries]
+a946593  Revert "scripts: gcc-wrapper: Use wrapper to check compiler warnings"  [Thierry Strudel]
+e6deacc  net/wireguard: add wireguard importer  [flar2]
 
- * packages/apps/Settings
-45e5c2f  team: natrium is out  [blinoff82]
+====================
+     2019-05-26    
+====================
+
+ * kernel/xiaomi/tulip
+055f9ed  add toggle for disabling newly added USB devices  [Daniel Micay]
+151625b  tulip: defconfig: Enable Adreno Idler  [Rama Bondan Prakoso]
+d9fc18a  adreno_idler: Disable adreno_idler by default  [Planet-X]
+d4e035b  adreno idler: Ramp down more agressively  [Joe Maples]
+c5f0b2d  adreno_idler: fix typos :)  [arter97]
+1fd3f27  adreno_idler: fix-up some comments  [arter97]
+c5577b6  adreno_idler: fix-up type definitions  [arter97]
+a1df613  adreno_idler: remove frequency bump  [arter97]
+b4466df  adreno_idler: switch to count based instead of time based  [arter97]
+1b9ba0b  Introduce Adreno idler for devfreq-based Adreno devices  [arter97]
+8e47ed0  adrenoboost: disable by default  [flar2]
+c286685  adrenoboost: finetuning algorithm - scale it a bit down  [tbalden]
+7582fa6  msm_adreno_tz: add adrenoboost parameter  [flar2]
+316dcf3  fs:sync: disable fsync by default  [srfarias]
+6613752  Added fsync on/off support.  [franciscofranco]
+342a424  tulip: defconfig: Use Westwood as default TCP congestion control  [Rama Bondan Prakoso]
+6a18cde  mmc: Disable CRC check  [kdrag0n]
+82ae2e2  tulip: defconfig: Enable KCAL control and Boeffla Wakelocks Blocker  [Rama Bondan Prakoso]
+8818642  power: boeffla: Block some wakelocks  [Francisco Franco]
+91e80b6  boeffla_wl_blocker: update to wakelock blocker driver v1.1.0  [andip71]
+1aef6c7  boeffla_wl_blocker: update to wakelock blocker driver v1.0.1  [andip71]
+e98d319  boeffla_wl_blocker: add generic wakelock blocker driver v1.0.0  [andip71]
+dbbb3a7  mdss mdp: squashed kcal for mdss_mdp_v1_7  [tbalden]
+16eb437  tulip: defconfig: Enable and switch to LZ4 for ZRAM  [Rama Bondan Prakoso]
+7c8dc5d  zram: Move default compression algorithm choice to Kconfig  [Nathan Chancellor]
+64d2bd3  tulip: defconfig: Disable kallsyms  [Rama Bondan Prakoso]
+efe0b27  tulip: defconfig: CC Optimize for performance  [Rama Bondan Prakoso]
+7825d72  tulip: defconfig: EAS bringup  [Rama Bondan Prakoso]
+21f32f3  ARM: dts: tulip: Add interpolated sdm660 EAS energy model  [Tyler Nijmeh]
+f24c681  sched: deadline: Add missing WALT code  [Josh Choo]
+d8ae285  Documentation: scheduler: Add Dynamic SchedTune Boost documentation  [Josh Choo]
+5a88c6e  init: Make DYNAMIC_STUNE_BOOST depend on CGROUP_SCHEDTUNE  [Josh Choo]
+1103789  schedutil: Don't assume we are likely using PELT  [Josh Choo]
+5e8afe0  sched: energy: calculate and update CPU capacity dynamically  [Joonwoo Park]
+de52822  sched: schedutil: Tune rate limits  [Tyler Nijmeh]
+5948681  sched: schedutil: Individualize rate limits  [Tyler Nijmeh]
+7b090a2  sched/tune: use dummy functions when Dynamic Schedtune Boost is disabled  [kdrag0n]
+3951da0  ANDROID: sched/tune: remove unused variable  [Patrick Bellasi]
+8b0614a  sched/tune: Switch Dynamic Schedtune Boost to a slot-based tracking system  [joshuous]
+f705ce4  sched/stune: Rename stune_boost() to do_stune_sched_boost()  [joshuous]
+9cf90fb  sched/tune: Rename dynamic_boost parameter to sched_boost  [joshuous]
+9521111  sched/tune: Track active boosts on a per-Schedtune basis  [joshuous]
+568e6ff  sched/tune: Reset Dynamic Schedtune Boost only if no more boosts running  [joshuous]
+2d51b45  sched/tune: Introduce stune_boost() function  [joshuous]
+7866c79  sched/tune: Refactor do_stune_boost()  [joshuous]
+ee5af23  sched/tune: Create dynamic_boost SchedTune parameter  [joshuous]
+e320ab8  sched/tune: Rename dynamic_boost_write() to dynamic_boost()  [joshuous]
+5414500  sched/tune: Add initial support for Dynamic SchedTune Boost  [joshuous]
+5f10fc8  sched/fair: Fix issue where frequency update not skipped  [Joel Fernandes]
+9698e64  sched/fair: Skip frequency updates if CPU about to idle  [Joel Fernandes]
+4318cb2  ANDROID: Move schedtune en/dequeue before schedutil update triggers  [Chris Redpath]
+cbd1425  sched: Add stub function for core_ctl_set_boost  [Josh Choo]
+3ac7043  sched: Add stub functions for wake_up_idle API  [Josh Choo]
+3a058ef  HACK: qcom: patch OSM to work without HMP  [Tyler Nijmeh]
+3db8798  sched: EAS: upmigrate misfit current task  [Joonwoo Park]
+599fdde  sched: EAS: kill incorrect nohz idle cpu kick  [Joonwoo Park]
+1400d73  sched/fair: kick nohz idle balance for misfit task  [Leo Yan]
+73fd7fc  sched: Extend active balance to accept 'push_task' argument  [Srivatsa Vaddagiri]
+a731880  sched/walt: use do_div instead of division operator  [Amit Pundir]
+5070395  sched: WALT: account cumulative window demand  [Joonwoo Park]
+5c03f2a  sched: Add missing WALT code  [Josh Choo]
+3472942  sched: Remove HMP scheduling and core_ctl  [Josh Choo]
+2813785  Revert "sched: WALT: account cumulative window demand"  [Josh Choo]
+ff3317d  qcacld-3.0: Fix derp on commit 5f5dba5f7c3cf65dd6bcb82030383702b8e6181f  [Rama Bondan Prakoso]
+c5e778a  FROMLIST: arm64: vdso32: Use full path to Clang instead of relying on PATH  [Nathan Chancellor]
+92ca9be  tulip: ANDROID: turn on VDSO  [Mark Salyzyn]
+61f102b  ANDROID: arm64: vdso32: fix CC=clang build  [Mark Salyzyn]
+cff1b82  ANDROID: CROSS_COMPILE_ARM32 must work if CONFIG_COMPAT_VDSO  [Mark Salyzyn]
+9a93cab  FROMLIST: BACKPORT: [PATCH 6/6] arm64: Wire up and expose the new compat vDSO  [Kevin Brodsky]
+f7eb0a1  FROMLIST: BACKPORT: [PATCH 5/6] arm64: compat: 32-bit vDSO setup  [Kevin Brodsky]
+abadb80  FROMLIST: [PATCH 4/6] arm64: compat: Add a 32-bit vDSO  [Kevin Brodsky]
+c71a35c  FROMLIST: [PATCH 3/6] arm64: Refactor vDSO init/setup  [Kevin Brodsky]
+dc2df11  FROMLIST: [PATCH 2/6] arm64: elf: Set AT_SYSINFO_EHDR in compat processes  [Kevin Brodsky]
+cb11f50  FROMLIST: [PATCH 1/6] arm64: compat: Use vDSO sigreturn trampolines if available  [Kevin Brodsky]
+8a7645c  FROMLIST: lib: vdso: add support for time  [Mark Salyzyn]
+3da52a1  FROMLIST: [PATCH] arm64: compat: Expose offset to registers in sigframes  [Kevin Brodsky]
+b618d65  FROMLIST: [PATCH v5 12/12] lib: vdso: do not expose gettimeofday, if no arch supported timer  [Mark Salyzyn]
+66925a1  FROMLIST: [PATCH v5 11/12] lib: vdso: Add support for CLOCK_BOOTTIME  [Mark Salyzyn]
+f63a5f1  FROMLIST: [PATCH v5 10/12] arm64: vdso: replace gettimeofday.S with global vgettimeofday.C  [Mark Salyzyn]
+36e7d2f  FROMLIST: [PATCH v5 09/12] arm: vdso: move vgettimeofday.c to lib/vdso/  [Mark Salyzyn]
+2385001  FROMLIST: [PATCH v5 08/12] arm: vdso: Add ARCH_CLOCK_FIXED_MASK  [Mark Salyzyn]
+2ecd16e  FROMLIST: [PATCH v5 07/12] arm: vdso: disable profiling  [Mark Salyzyn]
+41182ae  FROMLIST: [PATCH v5 06/12] arm: vdso: add support for clock_getres  [Mark Salyzyn]
+04dbbe2  FROMLIST: [PATCH v6 05/12] arm: vdso: Add support for CLOCK_MONOTONIC_RAW  [Mark Salyzyn]
+27a734b  FROMLIST: [PATCH v5 04/12] arm: vdso: do calculations outside reader loops  [Mark Salyzyn]
+08490dc  FROMLIST: [PATCH v5 03/12] arm: vdso: inline assembler operations to compiler.h  [Mark Salyzyn]
+2e0e6ef  FROMLIST: [PATCH v5 02/12] arm: vdso: add include file defining __get_datapage()  [Mark Salyzyn]
+3b7a20a  FROMLIST: [PATCH v5 01/12] arm: vdso: rename vdso_datapage variables  [Mark Salyzyn]
+c612844  FROMLIST: [PATCH v2 3/3] arm64: compat: Add CONFIG_KUSER_HELPERS  [Kevin Brodsky]
+2ddaa20  FROMLIST: [PATCH v2 2/3] arm64: compat: Split the sigreturn trampolines and kuser helpers (assembler sources)  [Kevin Brodsky]
+a343ad0  FROMLIST: [PATCH v2 1/3] arm64: compat: Split the sigreturn trampolines and kuser helpers (C sources)  [Kevin Brodsky]
+51e63f7  f2fs: rename /sys/fs/f2fs  [Park Ju Hyung]
+a039bde  f2fs: do not expose tunables that doesn't work with rapid GC  [Park Ju Hyung]
+8324d2b  f2fs: drop caches upon rapid GC exit  [Park Ju Hyung]
+182c90c  fs: drop_caches: expose mm_drop_caches()  [Park Ju Hyung]
+6ac092e  f2fs: explicitly flush device upon foreground GC  [Park Ju Hyung]
+b0fa3f6  f2fs/rapid_gc: do not wait until all invalid blocks are discarded  [Park Ju Hyung]
+fb9fb2b  f2fs: implement rapid GC for Android  [Park Ju Hyung]
+e800624  f2fs: set ioprio of GC kthread to idle  [Park Ju Hyung]
+cb09d11  tulip: defconfig: Enable F2FS w/ encryption  [Rama Bondan Prakoso]
+67dda0a  tulip: defconfig: Inline suggested sdFAT config  [Rama Bondan Prakoso]
+2787b9c  tulip: defconfig: Inline WLAN driver  [Rama Bondan Prakoso]
+0ca6ce1  tulip: defconfig: Disable useless modules  [Rama Bondan Prakoso]
+ed254c4  tulip: defconfig: Regenerate  [Rama Bondan Prakoso]
+6d3f5b6  tulip: defconfig: Drop sdm630 arch  [Rama Bondan Prakoso]
+3a4bbc6  ARM: dts: tulip: Use max 1.96 GHz for big cluster and 1.84 GHz for little cluster  [Rama Bondan Prakoso]
+a96d591  ARM: dts: tulip: Remove GPU overrides  [Rama Bondan Prakoso]
+73aefd3  ARM: dts: Merge tulip dts changes from Xiaomi  [Rama Bondan Prakoso]
+d2ab2e8  Revert "ARM: dts: msm: add DT properties for dynamic refresh for SDM660/SDM630"  [Rama Bondan Prakoso]
+f8ad49c  treewide: Merge Xiaomi changes for the Redmi Note 6 Pro  [Rama Bondan Prakoso]
+875e51c  fs: Include sdfat driver  [LuK1337]
+0368b13  Add 'fs/sdfat/' from https://github.com/cryptomilk/kernel-sdfat  [Rama Bondan Prakoso]
+29bcc1b  qcacld-3.0: Do not allow any wakelocks to be held  [Tyler Nijmeh]
+eed5f62  qcacld-3.0: disable some debugging features  [kdrag0n]
+228f487  drivers: staging: qcacld-3.0: Disable -Werror  [Tyler Nijmeh]
+3fa51f9  staging: qcacld-3.0: Make debug functions configurable  [Luca Stefani]
+447d792  staging: qcacld-3.0: Fix Kconfig  [Ethan Chen]
+4dbbdb0  qcacld-3.0: Load driver at device_initcall  [Sultanxda]
+5f5dba5  qcacld-3.0: Load driver on late initcall when not built as a module  [Sultanxda]
+17120d4  qcacld-3.0: Include it into Source  [Rama Bondan Prakoso]
+0390c7b  qca-wifi-host-cmn: Initial tag 'LA.UM.7.2.r1-06900-sdm660.0' into final  [Rama Bondan Prakoso]
+07e9380  qcacld-3.0: Initial tag 'LA.UM.7.2.r1-06900-sdm660.0' into final  [Rama Bondan Prakoso]
+b534ee6  fw-api: Initial tag 'LA.UM.7.2.r1-06900-sdm660.0' into final  [Rama Bondan Prakoso]
+8add243  Merge branch 'upstream-f2fs-stable-linux-4.4.y' of kernel/common into final  [Rama Bondan Prakoso]
 
