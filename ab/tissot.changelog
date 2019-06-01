@@ -1,289 +1,333 @@
 ====================
-     2019-05-25    
+     2019-06-01    
 ====================
 
  * bionic
-76055b2  bionic: update for glibc 2.17  [George Burgess IV]
-7439ca3  bionic: update for using jemalloc 5+  [Christopher Ferris]
-3d317ed  bionic: Remove ARM/MIPS fenv duplication  [Elliott Hughes]
-4e45fca  arm64: Extend branch range in __memcpy_chk  [Evgenii Stepanov]
-599863e  bionic: strip libc and linker  [Park Ju Hyung]
+46e3c96  bionic: Revert recents commits  [blinoff82]
 
  * device/xiaomi/msm8953-common
-2d6c541  msm8953-common: kernel: switch to GCC  [mdeejay]
+d467fdb  msm8953-common: sepolicy: remove duplicates  [mdeejay]
 
- * external/jemalloc
-aa96756  [HAX] background_threads: explictly disable libdl usage  [DennySPB]
-88dfa30  jemalloc: update to version 5.2.0  [mydongistiny]
-e7bc30f  jemalloc: Further updates to code  [Christopher Ferris]
-e4d7fe1  jemalloc: update to version 5.1.0  [mydongistiny]
+ * external/libjpeg-turbo
+e4bb5fe  Update to 2.0.3  [DennySPB]
 
- * external/zlib
-8cca925  Suppress sign compare warning  [Anushek]
-699c0dd  zlib: Fix InflateBack corner case  [Adenilson Cavalcanti]
-36e8999  Using ARMv8 CRC32 specific instruction  [Adenilson Cavalcanti]
-68e8c83  Isolating ARM specific code in inffast  [Adenilson Cavalcanti]
-29b23c2  zlib: inflate using wider loads and stores  [Adenilson Cavalcanti]
-03daae7  zlib: enable unaligned memory access  [Park Ju Hyung]
-a348f36  trees: minor enhancement to put_short() macro  [Shuxin Yang]
-6771d3d  deflate: restructure the loop  [Shuxin Yang]
-d168a48  deflate: rewrite the loops  [shuxinyang]
-5905237  NEON implementation for Adler32  [Adenilson Cavalcanti]
-81bcf16  Cache s->ins_h in a scalar while looping  [Michael Chastain]
+ * external/webp
+46f95dc  Update to 1.0.2  [DennySPB]
 
  * frameworks/base
-9d8ff4c  HeadsUpAppearanceController: allow heads-up to draw beyond bounds  [Peter Cai]
-4185182  base: Accents: Pastel Colors [1/3]  [Ivan Blinov]
-76e58f6  base: Accents: Sweet Q Purple [1/3]  [GjorgjiL]
-582755e  TwilightTracker: Disable debug  [Henrique Silva]
-78eecd2  LiveDisplay: Improve sunrise/sunset calculator  [Henrique Silva]
-
- * packages/apps/Settings
-8819a44  settings: Accents: Pastel Colors [2/3]  [Ivan Blinov]
-131b26c  settings: Accents: Sweet Q Purple [2/3]  [GjorgjiL]
-
- * vendor/syberia
-3dda269  vendor: Accents: Pastel Colors [3/3]  [Ivan Blinov]
-eb3dc04  vendor: Accents: Sweet Q Purple [3/3]  [GjorgjiL]
-
-====================
-     2019-05-24    
-====================
-
- * build/soong
-f40a29d  config: swap to glibc 2.17  [George Burgess IV]
-8ce0d4f  Allow product_variables.malloc_svelte inside target  [Sasha Smundak]
-
- * frameworks/base
-1f9ecbc  wifi: Add wifi latency level API to WifiManager  [Hu Wang]
-33399df  BoostFramework: Trigger IOP at Displayed for duration.  [Sai Manobhiram]
-3d6f36e  Boostframework: Adding reserved hint types for launch boost  [richagar]
-a51f677  BoostFramework: Fix - Avoid Null Object Reference.  [Manapragada Sai]
-ab7404f  BoostFramework : Modified Start Proc trigger and added Kill Hint.  [Sai Manobhiram]
-e2b81be  Use headline font in preference title  [Henrique Silva]
-7b0190c  systemui: use headline font for carrier label  [Josh Fox (XlxFoXxlX)]
-db43f88  base: Use headline font in notification texts  [paphonb]
-b5630d0  SystemUI: Use headline font in various parts  [paphonb]
-c355448  LiveDisplay: Use Google's algorithm to convert color temperature to RGB  [Paul Keith]
-ab25808  Option for disable userinfo in dashboard title [1/2]  [a.derendyaev]
-adfacfe  Create a Zram writeback job  [Srinivas Paladugu]
-946bebf  pm: PackageBackwardCompatibility -> applyPolicy  [Steven Moreland]
-e107b3d  pm: Use toArray(T[]) instead of toArray()  [Garfield Tan]
-c048145  LayoutInflater: Special case well-known View constructors  [Eric Holk]
-3872325  Use Class.forName instead of ClassLoader.loadClass  [Nicolas Geoffray]
-8107b64  appops: put @hide back to opToDefaultMode  [ccc]
-9f183d4  Fix the reference leak on RemoteCallbackList  [Kyeongkab.Nam]
-acdce2a  LiveDisplay: Change night/day mode transition behavior  [Paul Keith]
-
- * frameworks/opt/telephony
-bb3e5d0  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony  [DennySPB]
-
- * hardware/qcom/display-caf/msm8996
-55e3c63  Merge tag 'LA.UM.7.5.2.r1-02900-8x96.0' into HEAD  [Ivan Blinov]
-
- * hardware/qcom/wlan
-fb3677f  Merge tag 'LA.UM.7.5.2.r1-02900-8x96.0' into HEAD  [Ivan Blinov]
-
- * packages/apps/Dialer
-535a668  Dialer: Respect global navigation theme values  [theimpulson]
-497dc8a  Dialer: Get rid of navigation bar divider  [theimpulson]
-
- * packages/apps/Settings
-e5da1e2  Merge "Option for disable userinfo in dashboard title [2/2]" into 9.0  [dennyspb]
-
- * system/netd
-9e31cd0  Skip permission checking for binder call from system server  [Luke Huang]
-e814bd4  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
-
-====================
-     2019-05-23    
-====================
-
- * frameworks/opt/net/wifi
-4ca7a2f  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/wifi  [DennySPB]
+058b788  QS: Update RU translations  [blinoff82]
 
  * kernel/xiaomi/msm8953
-1f817e66  Linux 4.9.178  [Greg Kroah-Hartman]
-6200d07  KVM: x86: Skip EFER vs. guest CPUID checks for host-initiated writes  [Sean Christopherson]
-bd05d6b  ALSA: hda/realtek - Fix for Lenovo B50-70 inverted internal microphone bug  [Michał Wadowski]
-aa9bc58  ext4: fix data corruption caused by overlapping unaligned and aligned IO  [Lukas Czerner]
-4c50753  ext4: zero out the unused memory region in the extent tree block  [Sriram Rajagopalan]
-61411b2  fs/writeback.c: use rcu_barrier() to wait for inflight wb switches going into workqueue when umount  [Jiufei Xue]
-438ec99  writeback: synchronize sync(2) against cgroup writeback membership switches  [Tejun Heo]
-501f7a3  fib_rules: fix error in backport of e9919a24d302 ("fib_rules: return 0...")  [Greg Kroah-Hartman]
-4749bfc  crypto: arm/aes-neonbs - don't access already-freed walk.iv  [Eric Biggers]
-0d192ea  crypto: salsa20 - don't access already-freed walk.iv  [Eric Biggers]
-eda2e21  crypto: gcm - fix incompatibility between "gcm" and "gcm_base"  [Eric Biggers]
-47bb921  crypto: gcm - Fix error return code in crypto_gcm_create_common()  [Wei Yongjun]
-49c4fb9  ipmi:ssif: compare block number correctly for multi-part return messages  [Kamlakant Patel]
-ab766da  bcache: never set KEY_PTRS of journal key to 0 in journal_reclaim()  [Coly Li]
-1a6b73c  bcache: fix a race between cache register and cacheset unregister  [Liang Chen]
-e978759  Btrfs: do not start a transaction at iterate_extent_inodes()  [Filipe Manana]
-9c92aa1  ext4: fix ext4_show_options for file systems w/o journal  [Debabrata Banerjee]
-063872b  ext4: actually request zeroing of inode table after grow  [Kirill Tkhai]
-ebc583b  jbd2: check superblock mapped prior to committing  [Jiufei Xue]
-1a1fdfa  tty/vt: fix write/write race in ioctl(KDSKBSENT) handler  [Sergei Trofimovich]
-1649ccd  mfd: max77620: Fix swapped FPS_PERIOD_MAX_US values  [Dmitry Osipenko]
-c05b745  mfd: da9063: Fix OTP control register names to match datasheets for DA9063/63L  [Steve Twiss]
-0bc3c2a  ocfs2: fix ocfs2 read inode data panic in ocfs2_iget  [Shuning Zhang]
-21d432e  mm/mincore.c: make mincore() more conservative  [Jiri Kosina]
-5c2adbc  ASoC: RT5677-SPI: Disable 16Bit SPI Transfers  [Curtis Malainey]
-aaae084  ASoC: max98090: Fix restore of DAPM Muxes  [Jon Hunter]
-957095f  ALSA: hda/realtek - EAPD turn on later  [Kailang Yang]
-6d28383  ALSA: hda/hdmi - Consider eld_valid when reporting jack event  [Hui Wang]
-3f8d72b  ALSA: hda/hdmi - Read the pin sense from register when repolling  [Hui Wang]
-e61f08a  ALSA: usb-audio: Fix a memory leak bug  [Wenwen Wang]
-0aeb89e  crypto: x86/crct10dif-pcl - fix use via crypto_shash_digest()  [Eric Biggers]
-9305504  crypto: crct10dif-generic - fix use via crypto_shash_digest()  [Eric Biggers]
-6ae5650  crypto: vmx - fix copy-paste error in CTR mode  [Daniel Axtens]
-1c37764  crypto: chacha20poly1305 - set cra_name correctly  [Eric Biggers]
-aa3fe16  sched/x86: Save [ER]FLAGS on context switch  [Peter Zijlstra]
-8169295  arm64: Clear OSDLR_EL1 on CPU boot  [Jean-Philippe Brucker]
-fe7d310  arm64: compat: Reduce address limit  [Vincenzo Frascino]
-866d197  power: supply: axp288_charger: Fix unchecked return value  [Gustavo A. R. Silva]
-713e04c  ARM: exynos: Fix a leaked reference by adding missing of_node_put  [Wen Yang]
-22657e7  objtool: Fix function fallthrough detection  [Josh Poimboeuf]
-180dfc7  x86/speculation/mds: Improve CPU buffer clear documentation  [Andy Lutomirski]
-41af990  x86/speculation/mds: Revert CPU buffer clear on double fault exit  [Andy Lutomirski]
-ae2d9ff  PCI: hv: Fix a memory leak in hv_eject_device_work()  [Dexuan Cui]
-a4295de  locking/rwsem: Prevent decrement of reader count before increment  [Waiman Long]
-7db304c  net: core: another layer of lists, around PF_MEMALLOC skb handling  [Sasha Levin]
+9933d0c  Linux 4.9.180  [Greg Kroah-Hartman]
+fee3a0a  drm: Wake up next in drm_read() chain if we are forced to putback the event  [Chris Wilson]
+afd4126  ASoC: davinci-mcasp: Fix clang warning without CONFIG_PM  [Arnd Bergmann]
+8593baf  spi: Fix zero length xfer bug  [Chris Lesiak]
+3960c41  spi: rspi: Fix sequencer reset during initialization  [Geert Uytterhoeven]
+c103ee4  spi : spi-topcliff-pch: Fix to handle empty DMA buffers  [Aditya Pakki]
+83697a5  scsi: lpfc: Fix SLI3 commands being issued on SLI4 devices  [James Smart]
+6af9a31  media: saa7146: avoid high stack usage with clang  [Arnd Bergmann]
+70a5d09  scsi: lpfc: Fix FDMI manufacturer attribute value  [James Smart]
+2f5f25c  media: go7007: avoid clang frame overflow warning with KASAN  [Arnd Bergmann]
+156f75f  media: m88ds3103: serialize reset messages in m88ds3103_set_frontend  [James Hutchinson]
+fa3e2e5  dmaengine: tegra210-adma: use devm_clk_*() helpers  [Sameer Pujar]
+3e992e8  scsi: qla4xxx: avoid freeing unallocated dma memory  [Arnd Bergmann]
+d30c20c  usb: core: Add PM runtime calls to usb_hcd_platform_shutdown  [Tony Lindgren]
+e425c05  rcuperf: Fix cleanup path for invalid perf_type strings  [Paul E. McKenney]
+bd3f527  rcutorture: Fix cleanup path for invalid torture_type strings  [Paul E. McKenney]
+a87d1cb  x86/mce: Fix machine_check_poll() tests for error types  [Tony Luck]
+759d858  tty: ipwireless: fix missing checks for ioremap  [Kangjie Lu]
+0c2661c  virtio_console: initialize vtermno value for ports  [Pankaj Gupta]
+eef6aa0  media: wl128x: prevent two potential buffer overflows  [Dan Carpenter]
+3cacc6c  spi: tegra114: reset controller on probe  [Sowjanya Komatineni]
+00593d6  cxgb3/l2t: Fix undefined behaviour  [Gustavo A. R. Silva]
+8cf8071  ASoC: fsl_utils: fix a leaked reference by adding missing of_node_put  [Wen Yang]
+29fae65  ASoC: eukrea-tlv320: fix a leaked reference by adding missing of_node_put  [Wen Yang]
+f77a85b  HID: core: move Usage Page concatenation to Main item  [Nicolas Saenz Julienne]
+c83c6a4  chardev: add additional check for minor range overlap  [Chengguang Xu]
+e4ac44d  x86/ia32: Fix ia32_restore_sigcontext() AC leak  [Peter Zijlstra]
+2b01456  x86/uaccess, signal: Fix AC=1 bloat  [Peter Zijlstra]
+d802907  arm64: cpu_ops: fix a leaked reference by adding missing of_node_put  [Wen Yang]
+6a2932c  scsi: ufs: Avoid configuring regulator with undefined voltage range  [Stanley Chu]
+bdae44d  scsi: ufs: Fix regulator load and icc-level configuration  [Stanley Chu]
+62a6601  brcmfmac: fix Oops when bringing up interface during USB disconnect  [Piotr Figiel]
+440626e  brcmfmac: fix race during disconnect when USB completion is in progress  [Piotr Figiel]
+76362e7  brcmfmac: convert dev_init_lock mutex to completion  [Piotr Figiel]
+1cf43c8  b43: shut up clang -Wuninitialized variable warning  [Arnd Bergmann]
+717dd59  brcmfmac: fix missing checks for kmemdup  [Kangjie Lu]
+5b89efb  mwifiex: Fix mem leak in mwifiex_tm_cmd  [YueHaibing]
+5bbdbfa  rtlwifi: fix a potential NULL pointer dereference  [Kangjie Lu]
+7802c21  iio: common: ssp_sensors: Initialize calculated_time in ssp_common_process_data  [Nathan Chancellor]
+0e6b074  iio: hmc5843: fix potential NULL pointer dereferences  [Kangjie Lu]
+222a5fe  iio: ad_sigma_delta: Properly handle SPI bus locking vs CS assertion  [Lars-Peter Clausen]
+42048fc  x86/build: Keep local relocations with ld.lld  [Kees Cook]
+d31ae37  cpufreq: pmac32: fix possible object reference leak  [Wen Yang]
+c917e80  cpufreq/pasemi: fix possible object reference leak  [Wen Yang]
+898c94f  cpufreq: ppc_cbe: fix possible object reference leak  [Wen Yang]
+28c4415  s390: cio: fix cio_irb declaration  [Arnd Bergmann]
+c40af63  extcon: arizona: Disable mic detect if running when driver is removed  [Charles Keepax]
+ac67cab  PM / core: Propagate dev->power.wakeup_path when no callbacks  [Ulf Hansson]
+842a3f03  mmc: sdhci-of-esdhc: add erratum eSDHC-A001 and A-008358 support  [Yinbo Zhu]
+181f7c7  mmc: sdhci-of-esdhc: add erratum eSDHC5 support  [Yinbo Zhu]
+9774dba  mmc_spi: add a status check for spi_sync_locked  [Kangjie Lu]
+d4aa68e  mmc: core: make pwrseq_emmc (partially) support sleepy GPIO controllers  [Andrea Merello]
+4833dc7  scsi: libsas: Do discovery on empty PHY to update PHY info  [John Garry]
+c0400b6  hwmon: (f71805f) Use request_muxed_region for Super-IO accesses  [Guenter Roeck]
+163871f  hwmon: (pc87427) Use request_muxed_region for Super-IO accesses  [Guenter Roeck]
+aca0473  hwmon: (smsc47b397) Use request_muxed_region for Super-IO accesses  [Guenter Roeck]
+398d05d  hwmon: (smsc47m1) Use request_muxed_region for Super-IO accesses  [Guenter Roeck]
+476ed6c  hwmon: (vt1211) Use request_muxed_region for Super-IO accesses  [Guenter Roeck]
+01d03ca  RDMA/cxgb4: Fix null pointer dereference on alloc_skb failure  [Colin Ian King]
+b0478fd  arm64: vdso: Fix clock_getres() for CLOCK_REALTIME  [Vincenzo Frascino]
+899d289  i40e: don't allow changes to HW VLAN stripping on active port VLANs  [Nicholas Nunley]
+1eb9d7d  x86/irq/64: Limit IST stack overflow check to #DB stack  [Thomas Gleixner]
+0bb6bf5  USB: core: Don't unbind interfaces following device reset failure  [Alan Stern]
+ef17a87  sched/core: Handle overflow in cpu_shares_write_u64  [Konstantin Khlebnikov]
+06893fb  sched/core: Check quota and period overflow at usec to nsec conversion  [Konstantin Khlebnikov]
+fb0bf6d  powerpc/numa: improve control of topology updates  [Nathan Lynch]
+68d9af0  media: pvrusb2: Prevent a buffer overflow  [Dan Carpenter]
+6ffd6b6  media: au0828: Fix NULL pointer dereference in au0828_analog_stream_enable()  [Shuah Khan]
+e5afbe0  audit: fix a memory leak bug  [Wenwen Wang]
+2f3fa3d  media: ov2659: make S_FMT succeed even if requested format doesn't match  [Akinobu Mita]
+3444df3  media: au0828: stop video streaming only when last user stops  [Hans Verkuil]
+e62f8a3  media: ov6650: Move v4l2_clk_get() to ov6650_video_probe() helper  [Janusz Krzysztofik]
+27828f3  media: coda: clear error return value before picture run  [Philipp Zabel]
+b847675  dmaengine: at_xdmac: remove BUG_ON macro in tasklet  [Nicolas Ferre]
+4f3e406  pinctrl: pistachio: fix leaked of_node references  [Wen Yang]
+d4fc9e8  HID: logitech-hidpp: use RAP instead of FAP to get the protocol version  [Hans de Goede]
+4fb0cfb  mm/uaccess: Use 'unsigned long' to placate UBSAN warnings on older GCC versions  [Peter Zijlstra]
+56908fe  x86/mm: Remove in_nmi() warning from 64-bit implementation of vmalloc_fault()  [Jiri Kosina]
+6cb8773  smpboot: Place the __percpu annotation correctly  [Sebastian Andrzej Siewior]
+18f348f  x86/build: Move _etext to actual end of .text  [Kees Cook]
+8291ad6  bcache: avoid clang -Wunintialized warning  [Arnd Bergmann]
+e71a2e6  bcache: add failure check to run_cache_set() for journal replay  [Coly Li]
+2a2dd2c  bcache: fix failure in journal relplay  [Tang Junhui]
+9997934  bcache: return error immediately in bch_journal_replay()  [Coly Li]
+88bdac9  crypto: sun4i-ss - Fix invalid calculation of hash end  [Corentin Labbe]
+f0c681f  net: cw1200: fix a NULL pointer dereference  [Kangjie Lu]
+b2bcde4  mwifiex: prevent an array overflow  [Dan Carpenter]
+c642483  ASoC: fsl_sai: Update is_slave_mode with correct value  [Daniel Baluta]
+295272a  mac80211/cfg80211: update bss channel on channel switch  [Sergey Matyukevich]
+0a317b9  dmaengine: pl330: _stop: clear interrupt status  [Sugar Zhang]
+bb36768  w1: fix the resume command API  [Mariusz Bialonczyk]
+6b3f1ea  rtc: 88pm860x: prevent use-after-free on device remove  [Sven Van Asbroeck]
+e125fa9  iwlwifi: pcie: don't crash on invalid RX interrupt  [Johannes Berg]
+f7870a7  scsi: qla2xxx: Fix a qla24xx_enable_msix() error path  [Bart Van Assche]
+7ce714c  sched/cpufreq: Fix kobject memleak  [Viresh Kumar]
+997b976  arm64: Fix compiler warning from pte_unmap() with -Wunused-but-set-variable  [Qian Cai]
+9e37fd9  ARM: vdso: Remove dependency with the arch_timer driver internals  [Marc Zyngier]
+d3a7e8f  brcm80211: potential NULL dereference in brcmf_cfg80211_vndr_cmds_dcmd_handler()  [Dan Carpenter]
+089568f  spi: pxa2xx: fix SCR (divisor) calculation  [Flavio Suligoi]
+3750747  ASoC: imx: fix fiq dependencies  [Arnd Bergmann]
+6094467  powerpc/boot: Fix missing check of lseek() return value  [Bo YU]
+5ec914f  ASoC: hdmi-codec: unlock the device on startup errors  [Jerome Brunet]
+ac86316  net: ena: gcc 8: fix compilation warning  [Sameeh Jubran]
+a49292f  dmaengine: tegra210-dma: free dma controller in remove()  [Sameer Pujar]
+eed0a2c  mmc: core: Verify SD bus width  [Raul E Rangel]
+3620c6f  cxgb4: Fix error path in cxgb4_init_module  [YueHaibing]
+90deb75  gfs2: Fix lru_count going negative  [Ross Lagerwall]
+a24eeda  Revert "btrfs: Honour FITRIM range constraints during free space trim"  [David Sterba]
+084373b  tools include: Adopt linux/bits.h  [Arnaldo Carvalho de Melo]
+4ed020f  perf tools: No need to include bitops.h in util.h  [Arnaldo Carvalho de Melo]
+773c5e8  at76c50x-usb: Don't register led_trigger if usb_register_driver failed  [YueHaibing]
+3b6dfe4  ssb: Fix possible NULL pointer dereference in ssb_host_pcmcia_exit  [YueHaibing]
+a073807  media: vivid: use vfree() instead of kfree() for dev->bitmap_cap  [Alexander Potapenko]
+b09b1f2  media: cpia2: Fix use-after-free in cpia2_exit  [YueHaibing]
+4398aea  fbdev: fix WARNING in __alloc_pages_nodemask bug  [Jiufei Xue]
+3f91888  hugetlb: use same fault hash key for shared and private mappings  [Mike Kravetz]
+45bdfd8  fbdev: fix divide error in fb_var_to_videomode  [Shile Zhang]
+d426b2d  btrfs: sysfs: don't leak memory when failing add fsid  [Tobin C. Harding]
+0227bb9  Btrfs: fix race between ranged fsync and writeback of adjacent ranges  [Filipe Manana]
+c7bc068  Btrfs: do not abort transaction at btrfs_update_root() after failure to COW path  [Filipe Manana]
+64d3382  gfs2: Fix sign extension bug in gfs2_update_stats  [Andreas Gruenbacher]
+18b79ee  arm64: Save and restore OSDLR_EL1 across suspend/resume  [Jean-Philippe Brucker]
+789582d  libnvdimm/namespace: Fix label tracking error  [Dan Williams]
+edc37c4  kvm: svm/avic: fix off-by-one in checking host APIC ID  [Suthikulpanit, Suravee]
+88376ce  crypto: vmx - CTR: always increment IV as quadword  [Daniel Axtens]
+365cac9  Revert "scsi: sd: Keep disk read-only when re-reading partition"  [Martin K. Petersen]
+bfdd1d1  bio: fix improper use of smp_mb__before_atomic()  [Andrea Parri]
+9deadec  KVM: x86: fix return value for reserved EFER  [Paolo Bonzini]
+929f07c  ext4: do not delete unlinked inode from orphan list on failed truncate  [Jan Kara]
+
+ * packages/apps/OmniStyle
+8d8a705  Add Mono/Art headers  [DennySPB]
+686a90d  Remove Omni headers  [DennySPB]
 
  * packages/apps/Settings
-274b04c  Option for disable userinfo in dashboard title [2/2]  [a.derendyaev]
-
- * packages/services/Telecomm
-d18f41b  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm  [DennySPB]
-
- * packages/services/Telephony
-44f72ba  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony  [DennySPB]
-
- * system/core
-4e89874  Allow write access to system_server on zram sysfs  [Srinivas Paladugu]
-0fd1b5f  lmkd: make psi pressure a little more aggressive  [freak07]
-7ad6f16  lmkd: Add support for psi monitors  [Suren Baghdasaryan]
-08fd42d  rootdir: init.rc: use default dirty writeout policy  [Jaegeuk Kim]
-3d275be  init.rc: tune F2FS to be aligned to system settings  [Jaegeuk Kim]
-
- * system/sepolicy
-0485911  Allow system server to access zram sysfs  [Srinivas Paladugu]
-89a7881  Allow lmkd to setched kernel threads  [Wei Wang]
-b27b3d0  Allow lmkd to kill kernel threads  [Wei Wang]
-7c03f7b  sepolicy: Grant system_server and init access to /proc/pressure/memory  [Tim Murray]
-d504076  sepolicy: Allow lmkd access to psi procfs nodes  [Suren Baghdasaryan]
-
- * vendor/codeaurora/telephony
-564c5f1  Merge tag 'LA.UM.7.3.r1-07800-sdm845.0' of https://source.codeaurora.org/quic/la/platform/vendor/codeaurora/telephony  [DennySPB]
-
-====================
-     2019-05-22    
-====================
-
- * frameworks/base
-1030146  Less boring heads up option [1/2]  [ezio84]
-9bde199  Smart charge: allow using device overlays  [DennySPB]
+fdef270  Dashboard: user info: use default font  [DennySPB]
 
  * packages/apps/SyberiaSettings
-ab37c2b  Less boring heads up option [2/2]  [ezio84]
+c695d9e  QS Headers: Fix summary and add missing entry  [DennySPB]
 
- * vendor/syberia
-0e290bd  Smart Charge: chown all known charge suspend nodes  [DennySPB]
-5c8909f  sdclang: switch to 8.0.6  [DennySPB]
-91fcb0a  sdclang: Sync LTO makefile with LA.UM.6.2.r1-08100-sdm660.0  [Alex Naidis]
-dbb8cc5  team: natrium is out  [blinoff82]
+ * packages/services/Telecomm
+d1abc8f  Change UI to be consistency with dialer settings light M2 theme  [Youming Ye]
+
+ * packages/services/Telephony
+32576c5  Add missing null check on start of SipIncomingCallReceiver received.  [Tyler Gunn]
+0f65c95  Change action bar icon and text color from white to grey  [Youming Ye]
+5921f8e  Fix the drawable resource can't be loaded from RRO package  [Ping Sun]
+0579b76  Disable EmergencyDialer multi window mode  [Wesley.CW Wang]
+2bb64bd  Change UI styles to match dialer settings light M2 theme  [Youming Ye]
+a2e3b12  Fix EmergencyDialer UI when display size change  [Wesley.CW Wang]
+99a65b0  Don't start SIP service before decrypted  [dianlujitao]
+
+ * system/netd
+e71c590  Copy queries synchronously in DnsTlsSocket  [Ben Schwartz]
 
 ====================
-     2019-05-21    
+     2019-05-31    
+====================
+
+ * bionic
+d1951d7  Remove workarounds for old versions of clang and GCC  [Elliott Hughes]
+52b37a8  libm: Fix builtins when building with armv8-2a  [mydongistiny]
+08b82c9  libm: Replace ARM64 lrint assembly with builtin  [Jake Weinstein]
+43da8a3  Replace ARM and ARM64 sqrt assembly with builtins  [Jake Weinstein]
+d522b15  libm: Use a few builtins on 32-bit ARM  [Jake Weinstein]
+d7518a9  libc: Make powerof2 macro ubsan safe  [Nick Kralevich]
+4630961  arm64: Use builtin for nearbyintf/nearbyint  [Jake Weinstein]
+12d4895  arm64: Use builtins for ceil/floor/rint/trunc  [Jake Weinstein]
+9482a36  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
+
+ * external/libjpeg-turbo
+5b120ed  libjpeg-turbo: update to 2.0.2  [mydongistiny]
+a68a8ff  libjpeg-turbo: add config to disable merged upsample  [Mort (Tianqi) Guo]
+ec70164  Handle corner case where merged_upsampler is used for regional decoding  [Mort (Tianqi) Guo]
+
+ * external/libpng
+22a42b4  libpng: Suppress sign compare warning  [Pranav Vashi]
+f144291  libpng: Update to version 1.6.37  [mydongistiny]
+39ffe69  libpng: Update to version 1.6.36  [mydongistiny]
+
+ * external/skia
+7b4e78a  Fix ABI Compliance Issue for JPEG Merged Upsample  [Mort (Tianqi) Guo]
+82f54f7  external/skia: Take Fast Jpeg Decoding Path  [Mort (Tianqi) Guo]
+
+ * frameworks/base
+a51e1e8  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
+ecacc74  Revert "Add Dual Channel into Bluetooth Audio Channel Mode developer options menu"  [DennySPB]
+d6ba708  QS: Add advanced location tile options  [Joey]
+e079185  Revert "QS: LocationTile: make it cycle modes"  [DennySPB]
+
+ * packages/apps/Settings
+4caf43d  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
+
+====================
+     2019-05-30    
 ====================
 
  * frameworks/base
-8981d0c  Use MM instead of MMM in SimpleDateFormat in trace filename  [Shibin George]
-089bbbd3  Create a new WD trace file for ease of debugging  [Shibin George]
-ae49411  base: Dump traces of HAL_INTERFACES_OF_INTEREST as well when app receives ANR  [Abhishek Jain]
-4e5187b  admin: Restore requireSecureKeyguard interface.  [Adnan Begovic]
-c1e5931  Check for null callerPackage in getStorageEncryptionStatus  [Ethan Chen]
-2ed7bce  hwui: Disable fine-grained logging  [Joe Maples]
-acd2d1b  Fixed auto-brightness first screen update.  [Dan Gittik]
+6fb052c  SystemUI: Enable/fix QS detail view & adapt to Pie  [eray orçunus]
+0354460  Use headline font on battery percentage  [Henrique Silva]
+b920764  base: Persistent settings icon on qs panel for 9.x  [HrX03]
 
- * hardware/ril
-d0706b6  libril: Disable sanitize with latest clang  [mydongistiny]
-
- * system/netd
-260d562  Fix build with current clang master  [Bernhard Rosenkränzer]
-13c8f90  Types and type qualifiers have to be to the right of "operator".  [Stephen Hines]
+ * frameworks/native
+b97f1bb  Revert "opengl: Disable sdclang for EGL and OpenGLES"  [Jyotiraditya]
+1326750  Revert "binder: Release tracking lock before invoking binder_proxy_limit_callback"  [DennySPB]
+4ddf713  opengl: Allow implcit IT blocks on arm  [Joe Maples]
 
 ====================
-     2019-05-20    
+     2019-05-29    
+====================
+ * art
+3887ef1  art: Enable -O3  [dkati]
+
+ * bionic
+e974044  libc: Don't try to re-export libgcc symbols that don't exist in 6.3  [Bernhard Rosenkränzer]
+a9a5d23  libc: import ARM strlen from Apple C library  [Jake Weinstein]
+3b812fe  libm: Support -ffp-contract=fast  [dkati]
+3c5e75a  bionic: Enable -O3  [dkati]
+
+ * frameworks/base
+70cb232  Fix weird artifact in battery icon  [paphonb]
+9d0b81d  Improve Q battery icon and unify with portrait style  [paphonb]
+ec77048  SettingsLib: Expose Q battery icon paths  [paphonb]
+
+====================
+     2019-05-28    
 ====================
 
- * vendor/qcom/sdclang-8.0
-66046ed  Import stripped SDClang 8.0.6  [Josh Choo]
-
-====================
-     2019-05-19    
-====================
-
- * device/xiaomi/msm8953-common
-3d6bd47  msm8953-common: Remove custom VSYNC offsets  [Artem Borisov]
-
- * kernel/xiaomi/msm8953
-592efc5  Linux 4.9.177  [Greg Kroah-Hartman]
-0bc352d  powerpc/booke64: set RI in default MSR  [Laurentiu Tudor]
-8fee7a7  powerpc/lib: fix book3s/32 boot failure due to code patching  [Christophe Leroy]
-e11aca4  drivers/virt/fsl_hypervisor.c: prevent integer overflow in ioctl  [Dan Carpenter]
-201ce0b  drivers/virt/fsl_hypervisor.c: dereferencing error pointers in ioctl  [Dan Carpenter]
-599417a  bonding: fix arp_validate toggling in active-backup mode  [Jarod Wilson]
-655f3f4  ipv4: Fix raw socket lookup for local traffic  [David Ahern]
-63b7315  vrf: sit mtu should not be updated when vrf netdev is the link  [Stephen Suryaputra]
-ae6c052  vlan: disable SIOCSHWTSTAMP in container  [Hangbin Liu]
-dede0f2  packet: Fix error path in packet_init  [YueHaibing]
-905dcb9  net: ucc_geth - fix Oops when changing number of buffers in the ring  [Christophe Leroy]
-999f4bc  fib_rules: return 0 directly if an exactly same rule exists when NLM_F_EXCL not supplied  [Hangbin Liu]
-3c32b23  bridge: Fix error path for kobject_init_and_add()  [Tobin C. Harding]
-67f2778  powerpc/64s: Include cpu header  [Breno Leitao]
-9ea5814  x86/vdso: Pass --eh-frame-hdr to the linker  [Alistair Strachan]
-2ed51c7  x86/vdso: Drop implicit common-page-size linker flag  [Nick Desaulniers]
-09ba9a0  x86: vdso: Use $LD instead of $CC to link  [Alistair Strachan]
-30466f0  Revert "x86: vdso: Use $LD instead of $CC to link"  [Sasha Levin]
-74ac119  Revert "x86/vdso: Drop implicit common-page-size linker flag"  [Sasha Levin]
-169089d  Don't jump to compute_result state from check_result state  [Nigel Croxon]
-6b18774  rtlwifi: rtl8723ae: Fix missing break in switch statement  [Gustavo A. R. Silva]
-3ced1b6  ALSA: pcm: remove SNDRV_PCM_IOCTL1_INFO internal command  [Takashi Sakamoto]
-5c9d558  cw1200: fix missing unlock on error in cw1200_hw_scan()  [Wei Yongjun]
-8815d8e  Input: synaptics-rmi4 - fix possible double free  [Pan Bian]
-8a230cb  spi: ST ST95HF NFC: declare missing of table  [Daniel Gomez]
-a26977e  spi: Micrel eth switch: declare missing of table  [Daniel Gomez]
-b9c6041  gpu: ipu-v3: dp: fix CSC handling  [Lucas Stach]
-d9f1db5  selftests/net: correct the return value for run_netsocktests  [Po-Hsu Lin]
-a886db6  drm/sun4i: Set device driver data at bind time for use in unbind  [Paul Kocialkowski]
-70f984f  s390: ctcm: fix ctcm_new_device error return code  [Arnd Bergmann]
-deeb571  MIPS: perf: ath79: Fix perfcount IRQ assignment  [Petr Štetiar]
-27c6bb6  ipvs: do not schedule icmp errors from tunnels  [Julian Anastasov]
-1202268  selftests: netfilter: check icmp pkttoobig errors are set as related  [Florian Westphal]
-d38cc82  init: initialize jump labels before command line option parsing  [Dan Williams]
-9eb52b3  tools lib traceevent: Fix missing equality check for strcmp  [Rikard Falkeborn]
-f89a018  KVM: x86: avoid misreporting level-triggered irqs as edge-triggered in tracing  [Vitaly Kuznetsov]
-f684ae4  x86/reboot, efi: Use EFI reboot for Acer TravelMate X514-51T  [Jian-Hong Pan]
-67a1059  mISDN: Check address length before reading address family  [Tetsuo Handa]
-6db23ba  s390/3270: fix lockdep false positive on view->lock  [Martin Schwidefsky]
-46a9c3b  mac80211: fix unaligned access in mesh table hash function  [Felix Fietkau]
-81fd6fc  s390/dasd: Fix capacity calculation for large volumes  [Peter Oberparleiter]
-2505f90  libnvdimm/btt: Fix a kmemdup failure check  [Aditya Pakki]
-4a60a23  HID: input: add mapping for "Toggle Display" key  [Dmitry Torokhov]
-8af3f2e  HID: input: add mapping for keyboard Brightness Up/Down/Toggle keys  [Dmitry Torokhov]
-9e0a809  HID: input: add mapping for Expose/Overview key  [Dmitry Torokhov]
-347a634  libnvdimm/namespace: Fix a potential NULL pointer dereference  [Kangjie Lu]
-60961f1  iio: adc: xilinx: fix potential use-after-free on remove  [Sven Van Asbroeck]
-c71bb6b  USB: serial: fix unthrottle races  [Johan Hovold]
-fd338d3  platform/x86: sony-laptop: Fix unintentional fall-through  [Gustavo A. R. Silva]
-5e74dba  bpf: convert htab map to hlist_nulls  [Alexei Starovoitov]
-045084e  bpf: fix struct htab_elem layout  [Alexei Starovoitov]
-a75c88f  netfilter: compat: initialize all fields in xt_init  [Francesco Ruggeri]
+ * frameworks/base
+fd77b46  Introduce FontTile  [bigrushdog]
+bb249d0  Stop USB Debugging authorization window dismissing on tap outside.  [Tobias Thierer]
+83aaec2  Fix NPE on ExpandableNotificationRow  [Henrique Silva]
+410cdcc  base: Allow network as default location provider as well  [theimpulson]
+679449f  BatteryMeterDrawableBase: Refresh only when value changed  [Pranav Vashi]
+36b015f  SystemUI: fix the behavior of QS with isDualTarget=true  [Alex]
+ff3c7c7  SystemUI: Tweak QS status icons in expand animation  [paphonb]
+99b3710  SystemUI: assist: disable old Assistant animations  [argraur]
 
  * packages/apps/Settings
-45e5c2f  team: natrium is out  [blinoff82]
+1e56388  deviceinfo: Move imei information to Sim status  [Chris]
 
- * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-9.1
-8f8b95b  Add aarch64-elf GCC 9.1.0 toolchain for x86_64 hosts  [Danny Lin]
-c615e81  Initial commit  [Danny Lin]
+====================
+     2019-05-27    
+====================
+
+ * kernel/xiaomi/msm8953
+f024404  input: ft5435: Implement deferred work for resume  [Artem Borisov]
+
+====================
+     2019-05-26    
+====================
+
+ * kernel/xiaomi/msm8953
+a9fdb51  Linux 4.9.179  [Greg Kroah-Hartman]
+5bd6ead  fbdev: sm712fb: fix memory frequency by avoiding a switch/case fallthrough  [Yifeng Li]
+ca3c731  btrfs: Honour FITRIM range constraints during free space trim  [Nikolay Borisov]
+5ef4dc6  md/raid: raid5 preserve the writeback action after the parity check  [Nigel Croxon]
+1a1181a  Revert "Don't jump to compute_result state from check_result state"  [Song Liu]
+f2f50d8  perf bench numa: Add define for RUSAGE_THREAD if not present  [Arnaldo Carvalho de Melo]
+256a398  ufs: fix braino in ufs_get_inode_gid() for solaris UFS flavour  [Al Viro]
+bfc5bdd5  power: supply: sysfs: prevent endless uevent loop with CONFIG_POWER_SUPPLY_DEBUG  [Andrey Smirnov]
+6342a47  KVM: arm/arm64: Ensure vcpu target is unset on reset failure  [Andrew Jones]
+87152af  mac80211: Fix kernel panic due to use of txq after free  [Bhagavathi Perumal S]
+b82121a  xfrm4: Fix uninitialized memory read in _decode_session4  [Steffen Klassert]
+6f49cea  vti4: ipip tunnel deregistration fixes.  [Jeremy Sowden]
+9110190  xfrm6_tunnel: Fix potential panic when unloading xfrm6_tunnel module  [Su Yanjun]
+6d76bbb  xfrm: policy: Fix out-of-bound array accesses in __xfrm_policy_unlink  [YueHaibing]
+95b4b49  dm delay: fix a crash when invalid device is specified  [Mikulas Patocka]
+e066eec  PCI: Work around Pericom PCIe-to-PCI bridge Retrain Link erratum  [Stefan Mätje]
+c1611c7  PCI: Factor out pcie_retrain_link() function  [Stefan Mätje]
+665e7b2  PCI: Mark Atheros AR9462 to avoid bus reset  [James Prestwood]
+95f35e4  fbdev: sm712fb: fix crashes and garbled display during DPMS modesetting  [Yifeng Li]
+d2ca241  fbdev: sm712fb: use 1024x768 by default on non-MIPS, fix garbled display  [Yifeng Li]
+a89e93e  fbdev: sm712fb: fix support for 1024x768-16 mode  [Yifeng Li]
+48bf6b2  fbdev: sm712fb: fix crashes during framebuffer writes by correctly mapping VRAM  [Yifeng Li]
+4f8e79d  fbdev: sm712fb: fix boot screen glitch when sm712fb replaces VGA  [Yifeng Li]
+d3c4d3d  fbdev: sm712fb: fix white screen of death on reboot, don't set CR3B-CR3F  [Yifeng Li]
+fd4329d  fbdev: sm712fb: fix VRAM detection, don't set SR70/71/74/75  [Yifeng Li]
+73afbc2  fbdev: sm712fb: fix brightness control on reboot, don't set SR30  [Yifeng Li]
+3d56524  objtool: Allow AR to be overridden with HOSTAR  [Nathan Chancellor]
+73bde34  perf intel-pt: Fix sample timestamp wrt non-taken branches  [Adrian Hunter]
+ac4093c  perf intel-pt: Fix improved sample timestamp  [Adrian Hunter]
+2504edf  perf intel-pt: Fix instructions sampling rate  [Adrian Hunter]
+21c6305  memory: tegra: Fix integer overflow on tick value calculation  [Dmitry Osipenko]
+d6ad7aa  tracing: Fix partial reading of trace event's id file  [Elazar Leibovich]
+82352c1  ceph: flush dirty inodes before proceeding with remount  [Jeff Layton]
+2acc687  iommu/tegra-smmu: Fix invalid ASID bits on Tegra30/114  [Dmitry Osipenko]
+5f65e0e  fuse: honor RLIMIT_FSIZE in fuse_file_fallocate  [Liu Bo]
+c84b0ee  fuse: fix writepages on 32bit  [Miklos Szeredi]
+3f5e2b3  clk: tegra: Fix PLLM programming on Tegra124+ when PMC overrides divider  [Dmitry Osipenko]
+d8e409c  NFS4: Fix v4.0 client state corruption when mount  [ZhangXiaoxu]
+e2bcd8d  media: ov6650: Fix sensor possibly not detected on probe  [Janusz Krzysztofik]
+1cf3c5b  cifs: fix strcat buffer overflow and reduce raciness in smb21_set_oplock_level()  [Christoph Probst]
+734ce46  of: fix clang -Wunsequenced for be32_to_cpu()  [Phong Tran]
+f7d5045  p54: drop device reference count if fails to enable device  [Pan Bian]
+bf37806  intel_th: msu: Fix single mode with IOMMU  [Alexander Shishkin]
+67bad73  md: add mddev->pers to avoid potential NULL pointer dereference  [Yufen Yu]
+c5b0ddf  stm class: Fix channel free in stm output free path  [Tingwei Zhang]
+d991932  parisc: Rename LEVEL to PA_ASM_LEVEL to avoid name clash with DRBD code  [Helge Deller]
+6c39a3c  parisc: Skip registering LED when running in QEMU  [Helge Deller]
+b54a3a8  parisc: Export running_on_qemu symbol for modules  [Helge Deller]
+cab958d  vsock/virtio: Initialize core virtio vsock before registering the driver  [Jorge E. Moreira]
+99dc7d9  tipc: fix modprobe tipc failed after switch order of device registration  [Junwei Hu]
+679fd55  vsock/virtio: free packets during the socket release  [Stefano Garzarella]
+4b2aa9a  tipc: switch order of device registration to fix a crash  [Junwei Hu]
+efc175b  ppp: deflate: Fix possible crash in deflate_init  [YueHaibing]
+94375e6  net/mlx4_core: Change the error print to info print  [Yunjian Wang]
+3c8dd89  net: avoid weird emergency message  [Eric Dumazet]
+9c2deda  Revert "msm: camera: isp: Handle frame drop due to delay   "  [mdeejay]
+5e7b010  Revert "msm: camera: isp: Fix frame drop pattern"  [mdeejay]
+5419b1c  Revert "msm: camera: isp: Fix drop frame due to reg update miss"  [mdeejay]
+208eb62  Merge tag 'LA.UM.7.6.2.r1-08700-89xx.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.9 into pie  [mdeejay]
 
