@@ -1,4 +1,19 @@
 ====================
+     2019-06-02    
+====================
+
+ * device/xiaomi/vince
+569c595  vince: Disable ALMK and PPR on all targets  [Artem Borisov]
+c6255f4  vince: Fix camera-daemon cpuset  [Artem Borisov]
+
+ * external/skia
+de5aacb  Revert "external/skia: Take Fast Jpeg Decoding Path"  [blinoff82]
+8a9a561  Revert "Fix ABI Compliance Issue for JPEG Merged Upsample"  [blinoff82]
+
+ * packages/apps/Settings
+aee11ed  team: vince: fix model name  [blinoff82]
+
+====================
      2019-06-01    
 ====================
 
@@ -11,11 +26,11 @@
  * external/libjpeg-turbo
 e4bb5fe  Update to 2.0.3  [DennySPB]
 
- * external/webp
-46f95dc  Update to 1.0.2  [DennySPB]
-
  * frameworks/base
 058b788  QS: Update RU translations  [blinoff82]
+
+ * hardware/lineage/livedisplay
+fd1713f  sdm: Fix restoring default mode when using prebuilt vendor  [TheScarastic]
 
  * kernel/xiaomi/msm8953
 8259c4d  Linux 4.9.180  [Greg Kroah-Hartman]
@@ -152,9 +167,6 @@ a86d731  libnvdimm/namespace: Fix label tracking error  [Dan Williams]
 8d8a705  Add Mono/Art headers  [DennySPB]
 686a90d  Remove Omni headers  [DennySPB]
 
- * packages/apps/Settings
-fdef270  Dashboard: user info: use default font  [DennySPB]
-
  * packages/apps/SyberiaSettings
 c695d9e  QS Headers: Fix summary and add missing entry  [DennySPB]
 
@@ -202,21 +214,27 @@ f144291  libpng: Update to version 1.6.37  [mydongistiny]
 7b4e78a  Fix ABI Compliance Issue for JPEG Merged Upsample  [Mort (Tianqi) Guo]
 82f54f7  external/skia: Take Fast Jpeg Decoding Path  [Mort (Tianqi) Guo]
 
+ * external/webp
+46f95dc  Update to 1.0.2  [DennySPB]
+
  * frameworks/base
 a51e1e8  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
 ecacc74  Revert "Add Dual Channel into Bluetooth Audio Channel Mode developer options menu"  [DennySPB]
 d6ba708  QS: Add advanced location tile options  [Joey]
 e079185  Revert "QS: LocationTile: make it cycle modes"  [DennySPB]
-6fb052c  SystemUI: Enable/fix QS detail view & adapt to Pie  [eray orçunus]
-0354460  Use headline font on battery percentage  [Henrique Silva]
-b920764  base: Persistent settings icon on qs panel for 9.x  [HrX03]
 
  * packages/apps/Settings
+fdef270  Dashboard: user info: use default font  [DennySPB]
 4caf43d  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
 
 ====================
      2019-05-30    
 ====================
+
+ * frameworks/base
+6fb052c  SystemUI: Enable/fix QS detail view & adapt to Pie  [eray orçunus]
+0354460  Use headline font on battery percentage  [Henrique Silva]
+b920764  base: Persistent settings icon on qs panel for 9.x  [HrX03]
 
  * frameworks/native
 b97f1bb  Revert "opengl: Disable sdclang for EGL and OpenGLES"  [Jyotiraditya]
@@ -260,69 +278,4 @@ ff3c7c7  SystemUI: Tweak QS status icons in expand animation  [paphonb]
 ====================
      2019-05-27    
 ====================
-
-====================
-     2019-05-26    
-====================
-
- * kernel/xiaomi/msm8953
-4bb86a3  Linux 4.9.179  [Greg Kroah-Hartman]
-83c1915  fbdev: sm712fb: fix memory frequency by avoiding a switch/case fallthrough  [Yifeng Li]
-5b00669  btrfs: Honour FITRIM range constraints during free space trim  [Nikolay Borisov]
-1ec0fb4  md/raid: raid5 preserve the writeback action after the parity check  [Nigel Croxon]
-03bde00  Revert "Don't jump to compute_result state from check_result state"  [Song Liu]
-f417c8d  perf bench numa: Add define for RUSAGE_THREAD if not present  [Arnaldo Carvalho de Melo]
-28e84f3  ufs: fix braino in ufs_get_inode_gid() for solaris UFS flavour  [Al Viro]
-9085b1a  power: supply: sysfs: prevent endless uevent loop with CONFIG_POWER_SUPPLY_DEBUG  [Andrey Smirnov]
-e6158cc  KVM: arm/arm64: Ensure vcpu target is unset on reset failure  [Andrew Jones]
-ae6d11e  mac80211: Fix kernel panic due to use of txq after free  [Bhagavathi Perumal S]
-53ffd1b  xfrm4: Fix uninitialized memory read in _decode_session4  [Steffen Klassert]
-73cd673  vti4: ipip tunnel deregistration fixes.  [Jeremy Sowden]
-0fc479a  xfrm6_tunnel: Fix potential panic when unloading xfrm6_tunnel module  [Su Yanjun]
-7b7f317  xfrm: policy: Fix out-of-bound array accesses in __xfrm_policy_unlink  [YueHaibing]
-709664b  dm delay: fix a crash when invalid device is specified  [Mikulas Patocka]
-9da8923  PCI: Work around Pericom PCIe-to-PCI bridge Retrain Link erratum  [Stefan Mätje]
-658b523  PCI: Factor out pcie_retrain_link() function  [Stefan Mätje]
-1d11d24  PCI: Mark Atheros AR9462 to avoid bus reset  [James Prestwood]
-92f1767  fbdev: sm712fb: fix crashes and garbled display during DPMS modesetting  [Yifeng Li]
-6ca4771  fbdev: sm712fb: use 1024x768 by default on non-MIPS, fix garbled display  [Yifeng Li]
-8e94d03  fbdev: sm712fb: fix support for 1024x768-16 mode  [Yifeng Li]
-c8d67f6  fbdev: sm712fb: fix crashes during framebuffer writes by correctly mapping VRAM  [Yifeng Li]
-1894326  fbdev: sm712fb: fix boot screen glitch when sm712fb replaces VGA  [Yifeng Li]
-77f3fc5  fbdev: sm712fb: fix white screen of death on reboot, don't set CR3B-CR3F  [Yifeng Li]
-42533e3  fbdev: sm712fb: fix VRAM detection, don't set SR70/71/74/75  [Yifeng Li]
-e68a1e9  fbdev: sm712fb: fix brightness control on reboot, don't set SR30  [Yifeng Li]
-94f1ac5  objtool: Allow AR to be overridden with HOSTAR  [Nathan Chancellor]
-f9538fa  perf intel-pt: Fix sample timestamp wrt non-taken branches  [Adrian Hunter]
-b758245  perf intel-pt: Fix improved sample timestamp  [Adrian Hunter]
-2ea1d85  perf intel-pt: Fix instructions sampling rate  [Adrian Hunter]
-7f7addb  memory: tegra: Fix integer overflow on tick value calculation  [Dmitry Osipenko]
-c6fca7a  tracing: Fix partial reading of trace event's id file  [Elazar Leibovich]
-d3ef083  ceph: flush dirty inodes before proceeding with remount  [Jeff Layton]
-0492e29  iommu/tegra-smmu: Fix invalid ASID bits on Tegra30/114  [Dmitry Osipenko]
-4476e66  fuse: honor RLIMIT_FSIZE in fuse_file_fallocate  [Liu Bo]
-61f7682  fuse: fix writepages on 32bit  [Miklos Szeredi]
-84d404f  clk: tegra: Fix PLLM programming on Tegra124+ when PMC overrides divider  [Dmitry Osipenko]
-245bb5a  NFS4: Fix v4.0 client state corruption when mount  [ZhangXiaoxu]
-a01601b  media: ov6650: Fix sensor possibly not detected on probe  [Janusz Krzysztofik]
-1cd8f67  cifs: fix strcat buffer overflow and reduce raciness in smb21_set_oplock_level()  [Christoph Probst]
-30bd448  of: fix clang -Wunsequenced for be32_to_cpu()  [Phong Tran]
-55be94b1  p54: drop device reference count if fails to enable device  [Pan Bian]
-04ada19  intel_th: msu: Fix single mode with IOMMU  [Alexander Shishkin]
-a7979f0  md: add mddev->pers to avoid potential NULL pointer dereference  [Yufen Yu]
-1aa7431  stm class: Fix channel free in stm output free path  [Tingwei Zhang]
-ea29e38  parisc: Rename LEVEL to PA_ASM_LEVEL to avoid name clash with DRBD code  [Helge Deller]
-518d6b3  parisc: Skip registering LED when running in QEMU  [Helge Deller]
-f0aba1c  parisc: Export running_on_qemu symbol for modules  [Helge Deller]
-dea1ce4  vsock/virtio: Initialize core virtio vsock before registering the driver  [Jorge E. Moreira]
-ac341d1  tipc: fix modprobe tipc failed after switch order of device registration  [Junwei Hu]
-8f16348  vsock/virtio: free packets during the socket release  [Stefano Garzarella]
-2420eb0  tipc: switch order of device registration to fix a crash  [Junwei Hu]
-6a575ea  ppp: deflate: Fix possible crash in deflate_init  [YueHaibing]
-927387f  net/mlx4_core: Change the error print to info print  [Yunjian Wang]
-804373d  net: avoid weird emergency message  [Eric Dumazet]
-d38ef94  Revert "msm: camera: isp: Handle frame drop due to delay   "  [mdeejay]
-1c10353  Revert "msm: camera: isp: Fix frame drop pattern"  [mdeejay]
-9df6cfe  Revert "msm: camera: isp: Fix drop frame due to reg update miss"  [mdeejay]
-4d9bbc4  Merge tag 'LA.UM.7.6.2.r1-08700-89xx.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.9 into lineage-16.0  [mdeejay]
 
