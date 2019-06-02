@@ -1,4 +1,15 @@
 ====================
+     2019-06-02    
+====================
+
+ * external/skia
+de5aacb  Revert "external/skia: Take Fast Jpeg Decoding Path"  [blinoff82]
+8a9a561  Revert "Fix ABI Compliance Issue for JPEG Merged Upsample"  [blinoff82]
+
+ * hardware/lineage/livedisplay
+fd1713f  sdm: Fix restoring default mode when using prebuilt vendor  [TheScarastic]
+
+====================
      2019-06-01    
 ====================
 
@@ -108,21 +119,14 @@ bb249d0  Stop USB Debugging authorization window dismissing on tap outside.  [To
 ff3c7c7  SystemUI: Tweak QS status icons in expand animation  [paphonb]
 99b3710  SystemUI: assist: disable old Assistant animations  [argraur]
 
- * packages/apps/Settings
-1e56388  deviceinfo: Move imei information to Sim status  [Chris]
-
 ====================
      2019-05-28    
 ====================
 
+ * packages/apps/Settings
+1e56388  deviceinfo: Move imei information to Sim status  [Chris]
+
 ====================
      2019-05-27    
 ====================
-
-====================
-     2019-05-26    
-====================
-
- * device/xiaomi/capricorn
-86b4e85  fix whitespace  [Your Name]
 
