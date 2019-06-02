@@ -1,4 +1,18 @@
 ====================
+     2019-06-02    
+====================
+
+ * external/skia
+de5aacb  Revert "external/skia: Take Fast Jpeg Decoding Path"  [blinoff82]
+8a9a561  Revert "Fix ABI Compliance Issue for JPEG Merged Upsample"  [blinoff82]
+
+ * hardware/lineage/livedisplay
+fd1713f  sdm: Fix restoring default mode when using prebuilt vendor  [TheScarastic]
+
+ * packages/apps/Settings
+aee11ed  team: vince: fix model name  [blinoff82]
+
+====================
      2019-06-01    
 ====================
 
@@ -36,7 +50,6 @@ f144291  libpng: Update to version 1.6.37  [mydongistiny]
 058b788  QS: Update RU translations  [blinoff82]
 a51e1e8  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
 ecacc74  Revert "Add Dual Channel into Bluetooth Audio Channel Mode developer options menu"  [DennySPB]
-d6ba708  QS: Add advanced location tile options  [Joey]
 
  * packages/apps/OmniStyle
 8d8a705  Add Mono/Art headers  [DennySPB]
@@ -69,6 +82,7 @@ e71c590  Copy queries synchronously in DnsTlsSocket  [Ben Schwartz]
 ====================
 
  * frameworks/base
+d6ba708  QS: Add advanced location tile options  [Joey]
 e079185  Revert "QS: LocationTile: make it cycle modes"  [DennySPB]
 6fb052c  SystemUI: Enable/fix QS detail view & adapt to Pie  [eray orçunus]
 0354460  Use headline font on battery percentage  [Henrique Silva]
@@ -108,12 +122,12 @@ bb249d0  Stop USB Debugging authorization window dismissing on tap outside.  [To
 ff3c7c7  SystemUI: Tweak QS status icons in expand animation  [paphonb]
 99b3710  SystemUI: assist: disable old Assistant animations  [argraur]
 
- * packages/apps/Settings
-1e56388  deviceinfo: Move imei information to Sim status  [Chris]
-
 ====================
      2019-05-28    
 ====================
+
+ * packages/apps/Settings
+1e56388  deviceinfo: Move imei information to Sim status  [Chris]
 
 ====================
      2019-05-27    
@@ -121,8 +135,4 @@ ff3c7c7  SystemUI: Tweak QS status icons in expand animation  [paphonb]
 
  * vendor/xiaomi
 e672aaa  sdm845-common: Update blobs from MIUI 9.4.26  [Bruno Martins]
-
-====================
-     2019-05-26    
-====================
 
