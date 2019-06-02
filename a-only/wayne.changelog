@@ -1,12 +1,44 @@
 ====================
+     2019-06-02    
+====================
+
+ * device/xiaomi/sdm660-common
+6e57ff2  Merge remote-tracking branch 'origin/WIP' into syberia  [rebenok90x]
+2c04a62  sdm660: Update IFAA for pie blobs  [dianlujitao]
+2c0a1d7  sdm660: proprietary: Add FM Libs to proprietary files list  [Max Weffers]
+9c225f4  sdm660: vendor: include sdm660 common vendor tree  [Max Weffers]
+ab876fa  sdm660: scripts: add correct device names to extract and makefile script  [Max Weffers]
+dc0bff8  sdm660:init: add second Sensors service for backward compatibility  [Max Weffers]
+d581b8b  sdm660: scripts: patchelf mlipay blobs dependencies  [Max Weffers]
+6edf0b1  sdm660: proprietary: Add proprietary files list  [Max Weffers]
+820cb9d  sdm660: Add vendor scripts for new Vendor Layout  [Max Weffers]
+
+ * device/xiaomi/wayne
+d155f83  Update deps  [rebenok90x]
+a246bf7  wayne: use common vendor  [rebenok90x]
+d10bbe1  Merge remote-tracking branch 'x/WIP' into 9.0  [rebenok90x]
+91d21d0  wayne: board: Update vendor security patch level  [Max Weffers]
+dc28774  wayne: proprietary: update proprietary files list for sensors and thermal  [Max Weffers]
+bdd48a4  wayne: scripts: patch Goodix Firmware Path  [Max Weffers]
+266b2b8  wayne: proprietary: Add proprietary files list  [Max Weffers]
+db20e03  wayne: Add vendor scripts for new Vendor Layout  [Max Weffers]
+
+ * external/skia
+de5aacb  Revert "external/skia: Take Fast Jpeg Decoding Path"  [blinoff82]
+8a9a561  Revert "Fix ABI Compliance Issue for JPEG Merged Upsample"  [blinoff82]
+
+ * packages/apps/Settings
+aee11ed  team: vince: fix model name  [blinoff82]
+
+ * vendor/xiaomi/sdm660-common
+fca6acb  sdm660: Initial Pie Release Blobs of Xiaomi Sdm660-Common  [Max Weffers]
+
+====================
      2019-06-01    
 ====================
 
  * bionic
 46e3c96  bionic: Revert recents commits  [blinoff82]
-
- * external/libjpeg-turbo
-e4bb5fe  Update to 2.0.3  [DennySPB]
 
  * frameworks/base
 058b788  QS: Update RU translations  [blinoff82]
@@ -14,9 +46,184 @@ e4bb5fe  Update to 2.0.3  [DennySPB]
  * hardware/lineage/livedisplay
 fd1713f  sdm: Fix restoring default mode when using prebuilt vendor  [TheScarastic]
 
- * packages/apps/OmniStyle
-8d8a705  Add Mono/Art headers  [DennySPB]
-686a90d  Remove Omni headers  [DennySPB]
+ * kernel/xiaomi/sdm660
+1d441dc  sdm660: haptic: revert back to old qpnp haptic driver  [Max Weffers]
+45d046c  dts: sdm660: Improve energy model for sdm660 SoC  [Max Weffers]
+c5823b5  ARM: dts: msm-pm660l: update notif light fluency  [Manish4586]
+903806c  drivers: video: remove synaptics gesture leftover  [Max Weffers]
+02efa09  sdm660: defconfig: enable CONFIG_NETFILTER_XT_TARGET_HL for TTL  [Max Weffers]
+b4c2dc8  ANDROID: sdm660: turn on VDSO  [Mark Salyzyn]
+0314ef7  sdm660: Add A-Only dtb for wayne  [Max Weffers]
+232f237  jasmine: defconfig: delete unneeded jasmine_defconfig  [Max Weffers]
+0513f2e  sdm660: Add config for High Brightness Level support  [Max Weffers]
+e2e92c7  wayne: Import Defconfig for Mi 6X (A-Only) Support on Mi A2 Kernel  [Max Weffers]
+344d0df  qpnp-haptic: make its strength adjustable via VibratorHW  [XiNGRZ]
+39dddfb  nvt_touch_d2s: Do not update firmware on boot  [Tyler Nijmeh]
+3fc639c  nvt_touch_d2s: Remove useless #if 0 checks  [Tyler Nijmeh]
+84001cd  nvt_touch_d2s: Use PROTOCOL_B  [Tyler Nijmeh]
+ac36845  nvt_touch_d2s: Remove MP CTRLRAM support  [Tyler Nijmeh]
+31e5a19  nvt_touch_d2s: Always assume we have 0 physical buttons  [Tyler Nijmeh]
+e5b9609  nvt_touch_d2s: Eliminate ESD checks  [Tyler Nijmeh]
+b1dec89  input: touchscreen: Eliminate lct drivers and deps  [Tyler Nijmeh]
+5fcb8ff  nvt_touch_d2s: clean up and optimize work related functions  [Tyler Nijmeh]
+bca8fb3  drivers: nvt_touch_d2s: omit LCT drivers  [Tyler Nijmeh]
+0223828  gpio: Handle EPROBE_DEFER while probing  [syphyr]
+2b8a91b  Revert "Android.bp: Initial header export bp for Android (qseecom only)"  [GuaiYiHu]
+c49b13a  msm: mdss: kcal: Use PCC for negative display mode  [Parvinder Singh]
+9276d87  mdss: update kcal  [Parvinder Singh]
+c179da3  mdss mdp: Bring back invert mode sysfs for kcal without any function  [andip71]
+8ad360d  cpu: Silence log spam when a CPU is brought up  [Sultan Alsawaf]
+c290d7c  irq: Silence IRQ CPU migration message  [Sultanxda]
+b2300552  Smb: remove debug message for smblib_handle  [mracar07]
+f94d9c1  ARM: dts: clover: disable hotplug in BCL mitigation  [Wei Wang]
+a8e6ecd  msm_thermal: initialize later than arch drivers  [Park Ju Hyung]
+67535c8  msm: mdss: KCAL: disable igc update  [flar2]
+c08ca20  cpufreq: get rid of cpu boost driver  [Dusan Uveric]
+2653a7f  gpu: msm: Do not compile Adreno 3xx / 4xx drivers  [Tyler Nijmeh]
+1c3f166  ion: msm_ion: fix incorrect ion_buffer member assignment  [Prakash Gupta]
+ce7dd3c  ion: Force vmalloc for high-order allocations  [Artem Labazov]
+40379f4  ion: Do not do allocation if the size exceeding heap remaining  [Zhenhua Huang]
+00fe14a  ion: correct the behaviour when allocating non-contig regions failed  [Zhenhua Huang]
+cc854f0  Replace ion_import_dma_buf with new ion_import_dma_buf_fd in the whole tree where it is needed  [PrimoDev23]
+ce9f1e3  ion: Check out to Android Q DP1 base  [Danny Lin]
+5573ba3  staging/ion: Add support to get ion handle from dma buf  [Rohit kumar]
+a9e36e4  diag: disable DIAG_DEBUG  [Park Ju Hyung]
+3202a73  asoc:sdm660_cdc: sound control: fix microphone gain  [Parvinder Singh]
+5582b7f  ASoC: sdm660_cdc: Add Microphone Gain  [Haseo97]
+911e997  msm: qdsp6v2: Allow 320K AAC encoding  [Steve Kondik]
+b893019  msm: ASoC: enable aptX HD decoder  [Han Lu]
+35b032b  ARM: dts: omit useless DTBs  [Tyler Nijmeh]
+a84900e  f2fs: fix breakage after merge upstream  [Max Weffers]
+618b97d  jasmine_defconfig: Switch to engineering verity driver  [Tyler Nijmeh]
+2815af9  ARM: dts: Disable verity checks on boot  [Tyler Nijmeh]
+cedd9bd  sdm660: fix node values for qcom,msm-core@780000  [Park Ju Hyung]
+f4fb36f  ARM: dts: Add interpolated sdm660 EAS energy model  [Tyler Nijmeh]
+797933f  dsp: asm: improve misleading logs  [Park Ju Hyung]
+571296a  ARM: sdm660-gpu: Use a default powerlevel of 5 (160 MHz)  [Tyler Nijmeh]
+549d768  irq: spurious: Disable IRQ debugging by default  [Tyler Nijmeh]
+b3cde0d  net: import WireGuard version 0.0.20190227  [Park Ju Hyung]
+5ea541e  net: import WireGuard version 0.0.20190123  [Park Ju Hyung]
+f7b938e  net: import WireGuard version 0.0.20181218  [Park Ju Hyung]
+479f63f  f2fs: fix rapid GC breakage from merge 4e87f7d2befb8  [Park Ju Hyung]
+14e829b  f2fs/rapid_gc: do not wait until all invalid blocks are discarded  [Park Ju Hyung]
+b792bf8  f2fs: implement rapid GC for Android  [Park Ju Hyung]
+5f6dc9d  f2fs: set ioprio of GC kthread to idle  [Park Ju Hyung]
+6d9bcef  jasmine: defconfig: Enable f2fs Filesystem  [Max Weffers]
+5de5966  Merge branch 'upstream-f2fs-stable-linux-4.4.y' of https://github.com/aosp-mirror/kernel_common into kernel.lnx.4.4.r34-rel  [Max Weffers]
+008c992  jasmine: clang: fix eas booting with clang compiler  [Max Weffers]
+3b69e55  jasmine: defconfig: Enable Devfreq and Cpu Input boost  [Max Weffers]
+d54bd22  cpuidle: Eliminate significant overhead from pm_qos latency notifier  [Sultan Alsawaf]
+6b0e597  msm: kgsl: Remove sync debug name generation from hot path  [Sultan Alsawaf]
+59805b0  msm: mdss: Remove sync debug name generation from hot path  [Sultan Alsawaf]
+c7a2107  sched/tune: Hard-code top-app's stune boost to 1  [Sultan Alsawaf]
+fa9f51c  cfq-iosched: temporarily boost queue priority for idle classes  [Jens Axboe]
+54813ef  block, scheduler: convert xxx_var_store to void  [weiping zhang]
+72142a6  block/cfq: cache rightmost rb_node  [Davidlohr Bueso]
+5150e66  rbtree: cache leftmost node internally  [Davidlohr Bueso]
+2cdc2ec  block/cfq: replace cfq_rb_root leftmost caching  [Davidlohr Bueso]
+fc25fd5  cfq-iosched: Delete unused function min_vdisktime()  [Matthias Kaehlcke]
+6d02c31  cfq-iosched: Adjust one function call together with a variable assignment  [Markus Elfring]
+606e79c  block: do not merge requests without consulting with io scheduler  [Tahsin Erdogan]
+77dd166  cfq-iosched: fix the delay of cfq_group's vdisktime under iops mode  [Hou Tao]
+5bc96c6  cfq-iosched: Charge at least 1 jiffie instead of 1 ns  [Jan Kara]
+fc8c08e  cfq-iosched: Fix regression in bonnie++ rewrite performance  [Jan Kara]
+4459daa  cfq-iosched: Convert slice_resid from u64 to s64  [Jan Kara]
+5ea4411  cfq-iosched: Convert to use highres timers  [Jan Kara]
+873f9be  cfq-iosched: Expose microsecond interfaces  [Jeff Moyer]
+8f6fde8  cfq-iosched: Convert from jiffies to nanoseconds  [Jeff Moyer]
+cc22154  cfq-iosched: Allow parent cgroup to preempt its child  [Jan Kara]
+afd5acd  cfq-iosched: Allow sync noidle workloads to preempt each other  [Jan Kara]
+cb33a34  cfq-iosched: Reorder checks in cfq_should_preempt()  [Jan Kara]
+3fca435  cfq-iosched: Don't group_idle if cfqq has big thinktime  [Jan Kara]
+a65baec  BACKPORT: block: use ktime_get_ns() instead of sched_clock() for cfq  [Omar Sandoval]
+be93a1c  msm: kgsl: Increase worker thread priority  [Sultan Alsawaf]
+ea76714  kernel: Boost to the max for a short amount of time when zygote forks  [Sultan Alsawaf]
+d6a0165  kernel: Boost whenever a zygote-forked process becomes a top app  [Sultan Alsawaf]
+442f813  msm: mdss: Boost CPU and DDR bus when committing a new frame  [Sultan Alsawaf]
+18c909b  devfreq_boost: Mark boost kthreads as performance critical  [Sultan Alsawaf]
+f5bac59  devfreq_boost: Introduce devfreq boost driver  [Sultan Alsawaf]
+e2c5290  cpufreq: Kill userspace CPU boosting entirely  [Sultan Alsawaf]
+b1c20c1  cpu_input_boost: Mark boost kthread as performance critical  [Sultan Alsawaf]
+2efe3d3  cpu_input_boost: Introduce driver for event-based CPU boosting  [Sultan Alsawaf]
+7621b05  kernel: Add API to mark IRQs and kthreads as performance critical  [Sultan Alsawaf]
+cecb263  defconfig: Configure CPU_MASKs  [hypeartst]
+df1a9f7  cpumask: Add cpumasks for big and LITTLE CPU clusters  [Sultan Alsawaf]
+6f681d7  jasmine: defconfig: Enable Energy Aware Scheduling  [Max Weffers]
+cfca1df  sched: Extend active balance to accept 'push_task' argument  [Srivatsa Vaddagiri]
+344af8a  sched: Fix issue where frequency update not skipped  [Joel Fernandes]
+51a1ac5  sched: Move schedtune en/dequeue before schedutil update triggers  [Chris Redpath]
+9651984  sched: Skip frequency updates if CPU about to idle  [Joel Fernandes]
+2094987  sched: Upmigrate misfit current task  [Joonwoo Park]
+494e533  sched: Kill incorrect nohz idle cpu kick  [Joonwoo Park]
+62fc839  sched: Kick nohz idle balance for misfit task  [Leo Yan]
+c6a65de  sched: Account cumulative window demand in WALT  [Joonwoo Park]
+9f6efed  sched: Add missing WALT code  [Josh Choo]
+b187d08  sched: Calculate and update CPU capacity dynamically  [Joonwoo Park]
+541d109  sched: Add stub functions for wake_up_idle API  [hypeartst]
+69bb2ec  sched: Add stub function for core_ctl_set_boost  [hypeartst]
+b1284e32d  clk: qcom: Patch OSM to work without HMP  [Tyler Nijmeh]
+05236a04  Revert "cpufreq: Force most/all tasks to big cluster on input event"  [Josh Choo]
+f31ac1f  sched: Remove HMP scheduling and core_ctl  [Josh Choo]
+492f7c3  jasmine: defconfig: Set caf tag as Kernel name (LA.UM.7.2.r1-06900)  [Max Weffers]
+cbb56fc5  jasmine: defconfig: Enable QCACLD-3.0 WiFi Driver  [Max Weffers]
+df8f22e  jasmine: defconfig: Build all modules inline  [GuaiYiHu]
+2c2741e  jasmine: defconfig: enable kcal color management  [Max Weffers]
+554f0a8  jasmine: defconfig: enable sound control  [Max Weffers]
+a8dc961  jasmine: defconfig: enable wireguard  [Park Ju Hyung]
+6fb46e1  jasmine: import stock defconfig from 10.0.9  [Max Weffers]
+522f148  dts: Build only sdm660 components  [hypeartst]
+868ef89  sound: sdm660_cdc: Correct the limits  [Mihran Thalhath]
+981ff2f  mmc: disable SPI CRC  [Park Ju Hyung]
+4e60e3b  sound: sdm660_cdc: add sound control  [Shekhawat2]
+0054150  ANDROID: arm64: vdso32: fix CC=clang build  [Mark Salyzyn]
+4149e8f  ANDROID: CROSS_COMPILE_ARM32 must work if CONFIG_COMPAT_VDSO  [Mark Salyzyn]
+d5f9a2d  FROMLIST: BACKPORT: [PATCH 6/6] arm64: Wire up and expose the new compat vDSO  [Kevin Brodsky]
+3ff0d42  FROMLIST: BACKPORT: [PATCH 5/6] arm64: compat: 32-bit vDSO setup  [Kevin Brodsky]
+50efb93  FROMLIST: [PATCH 4/6] arm64: compat: Add a 32-bit vDSO  [Kevin Brodsky]
+4d9edf5  FROMLIST: [PATCH 3/6] arm64: Refactor vDSO init/setup  [Kevin Brodsky]
+4ddfadf  FROMLIST: [PATCH 2/6] arm64: elf: Set AT_SYSINFO_EHDR in compat processes  [Kevin Brodsky]
+bed1f47  FROMLIST: [PATCH 1/6] arm64: compat: Use vDSO sigreturn trampolines if available  [Kevin Brodsky]
+532e20b  FROMLIST: lib: vdso: add support for time  [Mark Salyzyn]
+6d5ca53  FROMLIST: [PATCH] arm64: compat: Expose offset to registers in sigframes  [Kevin Brodsky]
+0be07e5  FROMLIST: [PATCH v5 12/12] lib: vdso: do not expose gettimeofday, if no arch supported timer  [Mark Salyzyn]
+c8ac41c  FROMLIST: [PATCH v5 11/12] lib: vdso: Add support for CLOCK_BOOTTIME  [Mark Salyzyn]
+7756443  FROMLIST: [PATCH v5 10/12] arm64: vdso: replace gettimeofday.S with global vgettimeofday.C  [Mark Salyzyn]
+95eaa92  FROMLIST: [PATCH v5 09/12] arm: vdso: move vgettimeofday.c to lib/vdso/  [Mark Salyzyn]
+a9c18af  FROMLIST: [PATCH v5 08/12] arm: vdso: Add ARCH_CLOCK_FIXED_MASK  [Mark Salyzyn]
+a968c91  FROMLIST: [PATCH v5 07/12] arm: vdso: disable profiling  [Mark Salyzyn]
+d970873  FROMLIST: [PATCH v5 06/12] arm: vdso: add support for clock_getres  [Mark Salyzyn]
+f179d99  FROMLIST: [PATCH v6 05/12] arm: vdso: Add support for CLOCK_MONOTONIC_RAW  [Mark Salyzyn]
+4232349  FROMLIST: [PATCH v5 04/12] arm: vdso: do calculations outside reader loops  [Mark Salyzyn]
+c4e2a43  FROMLIST: [PATCH v5 03/12] arm: vdso: inline assembler operations to compiler.h  [Mark Salyzyn]
+d5874ad  FROMLIST: [PATCH v5 02/12] arm: vdso: add include file defining __get_datapage()  [Mark Salyzyn]
+0daaaba  FROMLIST: [PATCH v5 01/12] arm: vdso: rename vdso_datapage variables  [Mark Salyzyn]
+48980de  FROMLIST: [PATCH v2 3/3] arm64: compat: Add CONFIG_KUSER_HELPERS  [Kevin Brodsky]
+1620a6b  FROMLIST: [PATCH v2 2/3] arm64: compat: Split the sigreturn trampolines and kuser helpers (assembler sources)  [Kevin Brodsky]
+4624fa0  FROMLIST: [PATCH v2 1/3] arm64: compat: Split the sigreturn trampolines and kuser helpers (C sources)  [Kevin Brodsky]
+a092034  mdss mdp: adjust kcal for sdm660  [andip71]
+a9fb3e6  mdss mdp: fix washed out colours after start when screen is off during kcal initialization  [andip71]
+61af8aa  sdm660:mdss mdp: kcal for mdss_mdp_v1_7  [tbalden]
+7d3ba46  sdm660: drivers: mmc: don't set mmc driver scheduler to fifo and disable restricted priority  [Max Weffers]
+e85bcfc  touchscreen: Enable dt2w (double tap 2 wake)  [hypeartst]
+74c83d9  touchscreen: Update Synaptics DSX touchscreen driver to the latest available version  [hypeartst]
+51a247c  fs: Include sdfat driver  [LuK1337]
+f76f848  Merge branch 'master' of https://github.com/cryptomilk/kernel-sdfat into kernel.lnx.4.4.r34-rel  [Max Weffers]
+ad1dd76  ANDROID: dm: Add guarenteed android verity target  [Tyler Nijmeh]
+ae9f36b  sdm660: fix memory overlap  [Park Ju Hyung]
+5e447af  qcacld-3.0: Remove (by now) WERROR from KBuild to allow gcc compilation  [hypeartst]
+b2f38c6  qcacld-3.0: Fix building with BUILD_DEBUG_VERSION disabled  [celtare21]
+555f1ea  qcacld-3.0: Disable BUILD_DEBUG_VERSION  [celtare21]
+0fa22e7  qcacld-3.0: Fix compilation if not a module  [Alexander Martinz]
+1ded24a  qcacld-3.0: Load driver at device_initcall  [Sultanxda]
+13ade60  qcacld-3.0: Load driver on late initcall when not built as a module  [Sultanxda]
+a167b87f  staging: qcacld-3.0: Fix Kconfig  [Ethan Chen]
+ec347d9  staging: qcacld-3.0: Cleanup unused file  [Scott Mertz]
+3932161  drivers: staging: add qcacld-3.0  [Dan Pasanen]
+9781ad2  Merge tag 'LA.UM.7.2.r1-06900-sdm660.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/fw-api into kernel.lnx.4.4.r34-rel  [Max Weffers]
+26127f7  Merge tag 'LA.UM.7.2.r1-06900-sdm660.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn into kernel.lnx.4.4.r34-rel  [Max Weffers]
+b82c800  Merge tag 'LA.UM.7.2.r1-06900-sdm660.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into kernel.lnx.4.4.r34-rel  [Max Weffers]
+9ecc911  Kernel: Xiaomi kernel changes for MI A2 Android P. The Patch based on QualComm release TAG: LA.UM.7.2.r1-04900-sdm660.0. The kernel config file used is jasmine-perf_defconfig. Change-Id: I22d42a6e934cfa102f97631e05d3cbbd51705946 Signed-off-by: hehao <hehao@xiaomi.com>  [hehao]
+861dc0b  Merge branch 'msm-4.4-pie-als' of https://github.com/nathanchance/android-kernel-clang into kernel.lnx.4.4.r34-rel  [Max Weffers]
 
  * packages/apps/SyberiaSettings
 c695d9e  QS Headers: Fix summary and add missing entry  [DennySPB]
@@ -52,6 +259,7 @@ d7518a9  libc: Make powerof2 macro ubsan safe  [Nick Kralevich]
 9482a36  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
 
  * external/libjpeg-turbo
+e4bb5fe  Update to 2.0.3  [DennySPB]
 5b120ed  libjpeg-turbo: update to 2.0.2  [mydongistiny]
 a68a8ff  libjpeg-turbo: add config to disable merged upsample  [Mort (Tianqi) Guo]
 ec70164  Handle corner case where merged_upsampler is used for regional decoding  [Mort (Tianqi) Guo]
@@ -72,7 +280,10 @@ f144291  libpng: Update to version 1.6.37  [mydongistiny]
 a51e1e8  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
 ecacc74  Revert "Add Dual Channel into Bluetooth Audio Channel Mode developer options menu"  [DennySPB]
 d6ba708  QS: Add advanced location tile options  [Joey]
-e079185  Revert "QS: LocationTile: make it cycle modes"  [DennySPB]
+
+ * packages/apps/OmniStyle
+8d8a705  Add Mono/Art headers  [DennySPB]
+686a90d  Remove Omni headers  [DennySPB]
 
  * packages/apps/Settings
 fdef270  Dashboard: user info: use default font  [DennySPB]
@@ -83,6 +294,7 @@ fdef270  Dashboard: user info: use default font  [DennySPB]
 ====================
 
  * frameworks/base
+e079185  Revert "QS: LocationTile: make it cycle modes"  [DennySPB]
 6fb052c  SystemUI: Enable/fix QS detail view & adapt to Pie  [eray orçunus]
 0354460  Use headline font on battery percentage  [Henrique Silva]
 b920764  base: Persistent settings icon on qs panel for 9.x  [HrX03]
@@ -95,6 +307,16 @@ b97f1bb  Revert "opengl: Disable sdclang for EGL and OpenGLES"  [Jyotiraditya]
 ====================
      2019-05-29    
 ====================
+
+ * device/xiaomi/sdm660-common
+1cfbd20  sdm660-common: Update to latest taimen build fingerprint  [Neverhopless]
+bfc4d0d  sdm660: overlay: Unpin SystemUI  [Adithya R]
+07baf5a  sdm660: overlay: Disable ACS  [Naomi Calabretta]
+44fdf17  sdm660: overlay: Set screen off delay to 0  [Max Weffers]
+
+====================
+     2019-05-28    
+====================
  * art
 3887ef1  art: Enable -O3  [dkati]
 
@@ -104,16 +326,19 @@ a9a5d23  libc: import ARM strlen from Apple C library  [Jake Weinstein]
 3b812fe  libm: Support -ffp-contract=fast  [dkati]
 3c5e75a  bionic: Enable -O3  [dkati]
 
+ * device/xiaomi/sdm660-common
+70c2082  light: update to ramp duration and ramp steps  [Manish4586]
+9fa9cd1  sdm660-common: build vr blobs  [Manish4586]
+0d5eed9  sdm660-common: overlay: support black theme (Oled mode)  [Manish4586]
+62325b0  sdm660-common: platform: fix build errors due to embedded  [Manish4586]
+
+ * device/xiaomi/wayne
+5cf1865  audio: remove speaker reverse acdb  [Manish4586]
+
  * frameworks/base
 70cb232  Fix weird artifact in battery icon  [paphonb]
 9d0b81d  Improve Q battery icon and unify with portrait style  [paphonb]
 ec77048  SettingsLib: Expose Q battery icon paths  [paphonb]
-
-====================
-     2019-05-28    
-====================
-
- * frameworks/base
 fd77b46  Introduce FontTile  [bigrushdog]
 bb249d0  Stop USB Debugging authorization window dismissing on tap outside.  [Tobias Thierer]
 83aaec2  Fix NPE on ExpandableNotificationRow  [Henrique Silva]
@@ -130,14 +355,6 @@ ff3c7c7  SystemUI: Tweak QS status icons in expand animation  [paphonb]
      2019-05-27    
 ====================
 
-====================
-     2019-05-26    
-====================
-
  * device/xiaomi/wayne
-a0e43c0  Update dependencies  [rebenok90x]
-8dbf071  sdm660: Enable Camera2API by default  [pqhaz]
-
- * vendor/xiaomi/wayne
-a79bb2f  vendor: lib64: remove unused fpc blob  [Manish4586]
+8f4ff66  audio: fix stereo recording and noise cancellation mic  [Manish4586]
 
