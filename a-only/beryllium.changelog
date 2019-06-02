@@ -1,4 +1,19 @@
 ====================
+     2019-06-02    
+====================
+
+ * external/skia
+de5aacb  Revert "external/skia: Take Fast Jpeg Decoding Path"  [blinoff82]
+8a9a561  Revert "Fix ABI Compliance Issue for JPEG Merged Upsample"  [blinoff82]
+
+ * hardware/lineage/livedisplay
+fd1713f  sdm: Fix restoring default mode when using prebuilt vendor  [TheScarastic]
+
+ * kernel/xiaomi/sdm845
+8a2b499  msm: kgsl: do not preemptively enable gpu  [Demon000]
+1592d43  msm: camera: xiaomi fuckaroos with locks  [Demon000]
+
+====================
      2019-06-01    
 ====================
 
@@ -42,10 +57,6 @@ ecacc74  Revert "Add Dual Channel into Bluetooth Audio Channel Mode developer op
 d6ba708  QS: Add advanced location tile options  [Joey]
 
  * kernel/xiaomi/sdm845
-49ab84b  msm: kgsl: do not preemptively enable gpu  [Demon000]
-db5a1d2  msm: camera: xiaomi fuckaroos with locks  [Demon000]
-8f4f538  drm: Enable bridges asynchronously as early as possible  [Sultan Alsawaf]
-39930fa  drm: remove xiaomi early display hacks  [Demon000]
 c939234  qcacld-3.0/kbuild: this was missed during caf merge  [ethan-halsall]
 23501b5  Revert "stune: increase DSB slots count to 6"  [ethan-halsall]
 
@@ -157,9 +168,6 @@ c73da3e  block/cfq-iosched: make group_idle per io cgroup tunable  [Rick Yiu]
 62a701e  qos: Execute notifier callbacks atomically  [Sultan Alsawaf]
 420ece1  simple_lmk: Update to the latest version from Sultan  [Danny Lin]
 
- * packages/apps/Settings
-1e56388  deviceinfo: Move imei information to Sim status  [Chris]
-
 ====================
      2019-05-28    
 ====================
@@ -167,6 +175,9 @@ c73da3e  block/cfq-iosched: make group_idle per io cgroup tunable  [Rick Yiu]
  * kernel/xiaomi/sdm845
 e2204d0  qos: Don't disable interrupts while holding pm_qos_lock  [Sultan Alsawaf]
 fd30f43  kernel: Don't allow IRQ affinity masks to have more than one CPU  [Sultan Alsawaf]
+
+ * packages/apps/Settings
+1e56388  deviceinfo: Move imei information to Sim status  [Chris]
 
 ====================
      2019-05-27    
@@ -200,66 +211,4 @@ ee6788f  kernel: Don't override do_set_cpus_allowed() for perf-critical tasks  [
 
  * vendor/xiaomi
 e672aaa  sdm845-common: Update blobs from MIUI 9.4.26  [Bruno Martins]
-
-====================
-     2019-05-26    
-====================
-
- * kernel/xiaomi/sdm845
-f42cca6  Merge 4.9.179 into kernel.lnx.4.9.r11-rel  [Nathan Chancellor]
-2584e66  Linux 4.9.179  [Greg Kroah-Hartman]
-9adc440  fbdev: sm712fb: fix memory frequency by avoiding a switch/case fallthrough  [Yifeng Li]
-038ec2c  btrfs: Honour FITRIM range constraints during free space trim  [Nikolay Borisov]
-4354c04  md/raid: raid5 preserve the writeback action after the parity check  [Nigel Croxon]
-3ece5c4  Revert "Don't jump to compute_result state from check_result state"  [Song Liu]
-9f5f0d8  perf bench numa: Add define for RUSAGE_THREAD if not present  [Arnaldo Carvalho de Melo]
-2871ffa  ufs: fix braino in ufs_get_inode_gid() for solaris UFS flavour  [Al Viro]
-5e59363  power: supply: sysfs: prevent endless uevent loop with CONFIG_POWER_SUPPLY_DEBUG  [Andrey Smirnov]
-9c905e1  KVM: arm/arm64: Ensure vcpu target is unset on reset failure  [Andrew Jones]
-72d00b6  mac80211: Fix kernel panic due to use of txq after free  [Bhagavathi Perumal S]
-5b28db5  xfrm4: Fix uninitialized memory read in _decode_session4  [Steffen Klassert]
-eb490b3  vti4: ipip tunnel deregistration fixes.  [Jeremy Sowden]
-eaa8cf5  xfrm6_tunnel: Fix potential panic when unloading xfrm6_tunnel module  [Su Yanjun]
-7c96721  xfrm: policy: Fix out-of-bound array accesses in __xfrm_policy_unlink  [YueHaibing]
-1f4195f9  dm delay: fix a crash when invalid device is specified  [Mikulas Patocka]
-d0a3f25  PCI: Work around Pericom PCIe-to-PCI bridge Retrain Link erratum  [Stefan Mätje]
-1c38a7b  PCI: Factor out pcie_retrain_link() function  [Stefan Mätje]
-0e21ba0  PCI: Mark Atheros AR9462 to avoid bus reset  [James Prestwood]
-cda9ede  fbdev: sm712fb: fix crashes and garbled display during DPMS modesetting  [Yifeng Li]
-e15fc94  fbdev: sm712fb: use 1024x768 by default on non-MIPS, fix garbled display  [Yifeng Li]
-e5165ce  fbdev: sm712fb: fix support for 1024x768-16 mode  [Yifeng Li]
-1feae99  fbdev: sm712fb: fix crashes during framebuffer writes by correctly mapping VRAM  [Yifeng Li]
-40e3990  fbdev: sm712fb: fix boot screen glitch when sm712fb replaces VGA  [Yifeng Li]
-bd2d04b  fbdev: sm712fb: fix white screen of death on reboot, don't set CR3B-CR3F  [Yifeng Li]
-263903a  fbdev: sm712fb: fix VRAM detection, don't set SR70/71/74/75  [Yifeng Li]
-066009c  fbdev: sm712fb: fix brightness control on reboot, don't set SR30  [Yifeng Li]
-2bfc2e3  objtool: Allow AR to be overridden with HOSTAR  [Nathan Chancellor]
-7c24650  perf intel-pt: Fix sample timestamp wrt non-taken branches  [Adrian Hunter]
-8a566f7  perf intel-pt: Fix improved sample timestamp  [Adrian Hunter]
-af13796  perf intel-pt: Fix instructions sampling rate  [Adrian Hunter]
-6f0d9b0  memory: tegra: Fix integer overflow on tick value calculation  [Dmitry Osipenko]
-17fe900  tracing: Fix partial reading of trace event's id file  [Elazar Leibovich]
-304902e  ceph: flush dirty inodes before proceeding with remount  [Jeff Layton]
-202494a  iommu/tegra-smmu: Fix invalid ASID bits on Tegra30/114  [Dmitry Osipenko]
-eb60796  fuse: honor RLIMIT_FSIZE in fuse_file_fallocate  [Liu Bo]
-3a78b1f  fuse: fix writepages on 32bit  [Miklos Szeredi]
-a8ae32e  clk: tegra: Fix PLLM programming on Tegra124+ when PMC overrides divider  [Dmitry Osipenko]
-d4b79db  NFS4: Fix v4.0 client state corruption when mount  [ZhangXiaoxu]
-48f0cdf  media: ov6650: Fix sensor possibly not detected on probe  [Janusz Krzysztofik]
-5a3e18d  cifs: fix strcat buffer overflow and reduce raciness in smb21_set_oplock_level()  [Christoph Probst]
-8f358d6  of: fix clang -Wunsequenced for be32_to_cpu()  [Phong Tran]
-224354c  p54: drop device reference count if fails to enable device  [Pan Bian]
-09abe5a  intel_th: msu: Fix single mode with IOMMU  [Alexander Shishkin]
-cd72ddca  md: add mddev->pers to avoid potential NULL pointer dereference  [Yufen Yu]
-9110fd8  stm class: Fix channel free in stm output free path  [Tingwei Zhang]
-bd7df89  parisc: Rename LEVEL to PA_ASM_LEVEL to avoid name clash with DRBD code  [Helge Deller]
-1f62094  parisc: Skip registering LED when running in QEMU  [Helge Deller]
-1bef3a6  parisc: Export running_on_qemu symbol for modules  [Helge Deller]
-4cc4c59  vsock/virtio: Initialize core virtio vsock before registering the driver  [Jorge E. Moreira]
-03baf38  tipc: fix modprobe tipc failed after switch order of device registration  [Junwei Hu]
-4ea082c  vsock/virtio: free packets during the socket release  [Stefano Garzarella]
-a336df5  tipc: switch order of device registration to fix a crash  [Junwei Hu]
-dcdc0a4  ppp: deflate: Fix possible crash in deflate_init  [YueHaibing]
-c1398d3  net/mlx4_core: Change the error print to info print  [Yunjian Wang]
-350d659  net: avoid weird emergency message  [Eric Dumazet]
 
