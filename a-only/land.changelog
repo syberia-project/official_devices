@@ -1,41 +1,35 @@
 ====================
+     2019-06-02    
+====================
+
+ * external/skia
+de5aacb  Revert "external/skia: Take Fast Jpeg Decoding Path"  [blinoff82]
+8a9a561  Revert "Fix ABI Compliance Issue for JPEG Merged Upsample"  [blinoff82]
+
+ * hardware/lineage/livedisplay
+fd1713f  sdm: Fix restoring default mode when using prebuilt vendor  [TheScarastic]
+
+ * packages/apps/Settings
+aee11ed  team: vince: fix model name  [blinoff82]
+
+====================
      2019-06-01    
 ====================
 
  * bionic
 46e3c96  bionic: Revert recents commits  [blinoff82]
-d1951d7  Remove workarounds for old versions of clang and GCC  [Elliott Hughes]
-52b37a8  libm: Fix builtins when building with armv8-2a  [mydongistiny]
-08b82c9  libm: Replace ARM64 lrint assembly with builtin  [Jake Weinstein]
-43da8a3  Replace ARM and ARM64 sqrt assembly with builtins  [Jake Weinstein]
-d522b15  libm: Use a few builtins on 32-bit ARM  [Jake Weinstein]
-d7518a9  libc: Make powerof2 macro ubsan safe  [Nick Kralevich]
-4630961  arm64: Use builtin for nearbyintf/nearbyint  [Jake Weinstein]
-12d4895  arm64: Use builtins for ceil/floor/rint/trunc  [Jake Weinstein]
-9482a36  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
 
  * external/libjpeg-turbo
 e4bb5fe  Update to 2.0.3  [DennySPB]
-5b120ed  libjpeg-turbo: update to 2.0.2  [mydongistiny]
-a68a8ff  libjpeg-turbo: add config to disable merged upsample  [Mort (Tianqi) Guo]
-ec70164  Handle corner case where merged_upsampler is used for regional decoding  [Mort (Tianqi) Guo]
 
  * external/libpng
 22a42b4  libpng: Suppress sign compare warning  [Pranav Vashi]
-f144291  libpng: Update to version 1.6.37  [mydongistiny]
-39ffe69  libpng: Update to version 1.6.36  [mydongistiny]
-
- * external/skia
-7b4e78a  Fix ABI Compliance Issue for JPEG Merged Upsample  [Mort (Tianqi) Guo]
-82f54f7  external/skia: Take Fast Jpeg Decoding Path  [Mort (Tianqi) Guo]
 
  * external/webp
 46f95dc  Update to 1.0.2  [DennySPB]
 
  * frameworks/base
 058b788  QS: Update RU translations  [blinoff82]
-a51e1e8  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
-ecacc74  Revert "Add Dual Channel into Bluetooth Audio Channel Mode developer options menu"  [DennySPB]
 
  * packages/apps/OmniStyle
 8d8a705  Add Mono/Art headers  [DennySPB]
@@ -43,7 +37,6 @@ ecacc74  Revert "Add Dual Channel into Bluetooth Audio Channel Mode developer op
 
  * packages/apps/Settings
 fdef270  Dashboard: user info: use default font  [DennySPB]
-4caf43d  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
 
  * packages/apps/SyberiaSettings
 c695d9e  QS Headers: Fix summary and add missing entry  [DennySPB]
@@ -67,7 +60,33 @@ e71c590  Copy queries synchronously in DnsTlsSocket  [Ben Schwartz]
      2019-05-31    
 ====================
 
+ * bionic
+d1951d7  Remove workarounds for old versions of clang and GCC  [Elliott Hughes]
+52b37a8  libm: Fix builtins when building with armv8-2a  [mydongistiny]
+08b82c9  libm: Replace ARM64 lrint assembly with builtin  [Jake Weinstein]
+43da8a3  Replace ARM and ARM64 sqrt assembly with builtins  [Jake Weinstein]
+d522b15  libm: Use a few builtins on 32-bit ARM  [Jake Weinstein]
+d7518a9  libc: Make powerof2 macro ubsan safe  [Nick Kralevich]
+4630961  arm64: Use builtin for nearbyintf/nearbyint  [Jake Weinstein]
+12d4895  arm64: Use builtins for ceil/floor/rint/trunc  [Jake Weinstein]
+9482a36  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
+
+ * external/libjpeg-turbo
+5b120ed  libjpeg-turbo: update to 2.0.2  [mydongistiny]
+a68a8ff  libjpeg-turbo: add config to disable merged upsample  [Mort (Tianqi) Guo]
+ec70164  Handle corner case where merged_upsampler is used for regional decoding  [Mort (Tianqi) Guo]
+
+ * external/libpng
+f144291  libpng: Update to version 1.6.37  [mydongistiny]
+39ffe69  libpng: Update to version 1.6.36  [mydongistiny]
+
+ * external/skia
+7b4e78a  Fix ABI Compliance Issue for JPEG Merged Upsample  [Mort (Tianqi) Guo]
+82f54f7  external/skia: Take Fast Jpeg Decoding Path  [Mort (Tianqi) Guo]
+
  * frameworks/base
+a51e1e8  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
+ecacc74  Revert "Add Dual Channel into Bluetooth Audio Channel Mode developer options menu"  [DennySPB]
 d6ba708  QS: Add advanced location tile options  [Joey]
 e079185  Revert "QS: LocationTile: make it cycle modes"  [DennySPB]
 6fb052c  SystemUI: Enable/fix QS detail view & adapt to Pie  [eray orçunus]
@@ -78,6 +97,9 @@ b920764  base: Persistent settings icon on qs panel for 9.x  [HrX03]
 b97f1bb  Revert "opengl: Disable sdclang for EGL and OpenGLES"  [Jyotiraditya]
 1326750  Revert "binder: Release tracking lock before invoking binder_proxy_limit_callback"  [DennySPB]
 4ddf713  opengl: Allow implcit IT blocks on arm  [Joe Maples]
+
+ * packages/apps/Settings
+4caf43d  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
 
 ====================
      2019-05-30    
@@ -99,6 +121,12 @@ a9a5d23  libc: import ARM strlen from Apple C library  [Jake Weinstein]
 70cb232  Fix weird artifact in battery icon  [paphonb]
 9d0b81d  Improve Q battery icon and unify with portrait style  [paphonb]
 ec77048  SettingsLib: Expose Q battery icon paths  [paphonb]
+
+====================
+     2019-05-28    
+====================
+
+ * frameworks/base
 fd77b46  Introduce FontTile  [bigrushdog]
 bb249d0  Stop USB Debugging authorization window dismissing on tap outside.  [Tobias Thierer]
 83aaec2  Fix NPE on ExpandableNotificationRow  [Henrique Silva]
@@ -108,18 +136,10 @@ bb249d0  Stop USB Debugging authorization window dismissing on tap outside.  [To
 ff3c7c7  SystemUI: Tweak QS status icons in expand animation  [paphonb]
 99b3710  SystemUI: assist: disable old Assistant animations  [argraur]
 
-====================
-     2019-05-28    
-====================
-
  * packages/apps/Settings
 1e56388  deviceinfo: Move imei information to Sim status  [Chris]
 
 ====================
      2019-05-27    
-====================
-
-====================
-     2019-05-26    
 ====================
 
