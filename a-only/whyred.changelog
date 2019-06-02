@@ -1,22 +1,26 @@
 ====================
+     2019-06-02    
+====================
+
+ * external/skia
+de5aacb  Revert "external/skia: Take Fast Jpeg Decoding Path"  [blinoff82]
+8a9a561  Revert "Fix ABI Compliance Issue for JPEG Merged Upsample"  [blinoff82]
+
+ * packages/apps/Settings
+aee11ed  team: vince: fix model name  [blinoff82]
+
+====================
      2019-06-01    
 ====================
 
  * bionic
 46e3c96  bionic: Revert recents commits  [blinoff82]
 
- * external/libjpeg-turbo
-e4bb5fe  Update to 2.0.3  [DennySPB]
-
  * frameworks/base
 058b788  QS: Update RU translations  [blinoff82]
 
- * packages/apps/OmniStyle
-8d8a705  Add Mono/Art headers  [DennySPB]
-686a90d  Remove Omni headers  [DennySPB]
-
- * packages/apps/Settings
-fdef270  Dashboard: user info: use default font  [DennySPB]
+ * hardware/lineage/livedisplay
+fd1713f  sdm: Fix restoring default mode when using prebuilt vendor  [TheScarastic]
 
  * packages/apps/SyberiaSettings
 c695d9e  QS Headers: Fix summary and add missing entry  [DennySPB]
@@ -52,6 +56,7 @@ d7518a9  libc: Make powerof2 macro ubsan safe  [Nick Kralevich]
 9482a36  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
 
  * external/libjpeg-turbo
+e4bb5fe  Update to 2.0.3  [DennySPB]
 5b120ed  libjpeg-turbo: update to 2.0.2  [mydongistiny]
 a68a8ff  libjpeg-turbo: add config to disable merged upsample  [Mort (Tianqi) Guo]
 ec70164  Handle corner case where merged_upsampler is used for regional decoding  [Mort (Tianqi) Guo]
@@ -74,7 +79,12 @@ ecacc74  Revert "Add Dual Channel into Bluetooth Audio Channel Mode developer op
 d6ba708  QS: Add advanced location tile options  [Joey]
 e079185  Revert "QS: LocationTile: make it cycle modes"  [DennySPB]
 
+ * packages/apps/OmniStyle
+8d8a705  Add Mono/Art headers  [DennySPB]
+686a90d  Remove Omni headers  [DennySPB]
+
  * packages/apps/Settings
+fdef270  Dashboard: user info: use default font  [DennySPB]
 4caf43d  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
 
 ====================
@@ -97,12 +107,6 @@ b97f1bb  Revert "opengl: Disable sdclang for EGL and OpenGLES"  [Jyotiraditya]
  * art
 3887ef1  art: Enable -O3  [dkati]
 
- * bionic
-e974044  libc: Don't try to re-export libgcc symbols that don't exist in 6.3  [Bernhard Rosenkränzer]
-a9a5d23  libc: import ARM strlen from Apple C library  [Jake Weinstein]
-3b812fe  libm: Support -ffp-contract=fast  [dkati]
-3c5e75a  bionic: Enable -O3  [dkati]
-
  * frameworks/base
 70cb232  Fix weird artifact in battery icon  [paphonb]
 9d0b81d  Improve Q battery icon and unify with portrait style  [paphonb]
@@ -111,6 +115,12 @@ ec77048  SettingsLib: Expose Q battery icon paths  [paphonb]
 ====================
      2019-05-28    
 ====================
+
+ * bionic
+e974044  libc: Don't try to re-export libgcc symbols that don't exist in 6.3  [Bernhard Rosenkränzer]
+a9a5d23  libc: import ARM strlen from Apple C library  [Jake Weinstein]
+3b812fe  libm: Support -ffp-contract=fast  [dkati]
+3c5e75a  bionic: Enable -O3  [dkati]
 
  * frameworks/base
 fd77b46  Introduce FontTile  [bigrushdog]
@@ -127,9 +137,5 @@ ff3c7c7  SystemUI: Tweak QS status icons in expand animation  [paphonb]
 
 ====================
      2019-05-27    
-====================
-
-====================
-     2019-05-26    
 ====================
 
