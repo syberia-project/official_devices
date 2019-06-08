@@ -1,4 +1,265 @@
 ====================
+     2019-06-08    
+====================
+
+ * bionic
+ac3f348  Revert "bionic: strip libc and linker"  [blinoff82]
+
+ * frameworks/base
+6d3ac42  Revert "GamingMode: add more ringer modes [1/2]"  [blinoff82]
+6f98c79  GamingMode: add more ringer modes [1/2]  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+30927fb  Revert "GamingMode: add more ringer modes [1/2]"  [blinoff82]
+ba73805  GamingMode: add more ringer modes [1/2]  [DennySPB]
+
+====================
+     2019-06-07    
+====================
+
+ * build/make
+70ec36e  Merge "build: Allow mounting system properly for A-only system-as-root devices" into 9.0  [dennyspb]
+
+ * device/syberia/sepolicy
+eea7f73  sepolicy: Run dos2unix  [Henrique Silva]
+c3b6368  sepolicy: update_engine neverallows [2/2]  [maxwen]
+
+ * frameworks/base
+417e548  LiveDisplayTile: skip day/night mode  [DennySPB]
+50e38048  GamingMode: minor improvements  [DennySPB]
+c5b4957  SystemUI: FireHound Gaming [1/4]  [PMS22]
+a0b1d10  Revert "SystemUI: Add Gaming mode tile"  [DennySPB]
+5855824  Revert "GamingModeTile: stop adjusting volume"  [DennySPB]
+e7b9190  Fix NPE on navbar  [Henrique Silva]
+c0800ed  KeyguardSliceProvider: Show dnd icon regardless of suppression mode  [Henrique Silva]
+
+ * vendor/syberia
+5e51c63  v2.6  [DennySPB]
+
+====================
+     2019-06-06    
+====================
+
+ * build/make
+4d3a85a  build: Allow mounting system properly for A-only system-as-root devices  [Davide Garberi]
+
+ * device/qcom/sepolicy
+06762ef  Merge tag 'LA.UM.7.6.2.r1-08800-89xx.0' into HEAD  [blinoff82]
+
+ * frameworks/base
+df4e40e  LiveDisplayService: Disable ColorTemperature when NightDisplay is available  [Bruno Martins]
+062a5e3  WeatherSlice: set icon size according date font size  [DennySPB]
+314cbab  SystemUI: AD: hide weather completely  [Ali B]
+d0b755a  base: SystemUI: add keyguard weather style (1/2)  [Ali B]
+50c796d  base: add weather to keyguardSlice  [Ali B]
+
+ * hardware/qcom/audio-caf/msm8996
+89e7907  Merge tag 'LA.UM.7.6.2.r1-08800-89xx.0' into HEAD  [blinoff82]
+
+ * hardware/qcom/media-caf/msm8996
+bf13d90  Merge tag 'LA.UM.7.6.2.r1-08800-89xx.0' into HEAD  [blinoff82]
+
+ * packages/apps/Dialer
+c23a553  Dialer: FireHound Gaming [4/4]  [PMS22]
+
+ * packages/apps/Settings
+cdbdd98  Settings: Gaming Mode revamped [3/4]  [PMS22]
+
+ * packages/apps/SyberiaSettings
+1ae74ae  Gaming mode revamped [2/4]  [PMS22]
+abca798  Add keyguard weather style (2/2)  [Ali B]
+
+ * system/qcom
+3df6831  Merge tag 'LA.UM.7.6.2.r1-08800-89xx.0' into HEAD  [blinoff82]
+
+ * vendor/qcom/opensource/audio
+2052244  Merge tag 'LA.UM.7.6.2.r1-08800-89xx.0' into HEAD  [blinoff82]
+
+ * vendor/qcom/opensource/cryptfs_hw
+3eee69a  Merge tag 'LA.UM.7.6.2.r1-08800-89xx.0' into HEAD  [blinoff82]
+
+ * vendor/qcom/opensource/dataservices
+776018c  Merge tag 'LA.UM.7.6.2.r1-08800-89xx.0' into HEAD  [blinoff82]
+
+ * vendor/qcom/opensource/interfaces
+d5b4ef6  Merge tag 'LA.UM.7.6.2.r1-08800-89xx.0' into HEAD  [blinoff82]
+
+====================
+     2019-06-05    
+====================
+
+ * frameworks/base
+6b1c00d  Revert "NightDisplayController: report unavailable if livedisplay feature is present"  [Rashed Abdel-Tawab]
+dbfca57  Frameworks: pop up error when rename a file in the DocumentsUI  [sxia]
+
+ * hardware/qcom/fm
+221e94e  Partially revert "fm: Fix wrong BT SOC property name"  [Atman]
+
+ * packages/apps/Settings
+2eac726  deviceinfo: Completely remove legal information  [blinoff82]
+78f5714  Settings: Add battery saving mode for location  [eray orçunus]
+8ac06db  livedisplay: Don't show display mode and color tempertature on HWC2  [Rashed Abdel-Tawab]
+ce1fe7b  Revert "Settings: Hide Night Mode suggestion if LiveDisplay feature is present"  [Rashed Abdel-Tawab]
+
+ * prebuilts/r8
+578bfa7  r8: Update D8 and R8 to 1.6.3-dev  [Ian Zerny]
+2d1bb2c  r8: Update D8 and R8 to 1.6.1-dev  [Jinseong Jeon]
+2e0f790  r8: Update D8 and R8 to 1.5.23-dev  [Rico Wind]
+9520912  r8: Update D8 and R8 to 1.5.22-dev  [Morten Krogh-Jespersen]
+f9293b6  r8: Update D8 and R8 to 1.5.21-dev  [Christoffer Quist Adamsen]
+372780f  r8: Update D8 and R8 to 1.5.20-dev  [Tamas Kenez]
+6c9fd04  r8: Update D8 and R8 to 1.5.19-dev  [Tamas Kenez]
+92c8219  r8: Update D8 and R8 to 1.5.18-dev  [Tamas Kenez]
+be496c2  Update D8 and R8 to 1.5.12-dev  [Rico Wind]
+cb7af9a  r8: Update D8 and R8 to 1.5.10-dev  [Christoffer Quist Adamsen]
+fbb2fdd  r8: Update D8 and R8 to 1.5.9-dev  [mydongistiny]
+4400c0d  r8: Update D8 and R8 to 1.5.7-dev  [Tamas Kenez]
+7ff4a83  r8: Update D8 and R8 to 1.5.5-dev  [Ian Zerny]
+1c12b3b  r8: Update D8 and R8 to 1.5.3-dev  [Rico Wind]
+76161d6  r8: Update D8/R8 to version 1.5.2-dev  [mydongistiny]
+0f55668  r8: Update D8/R8 to version 1.4.25  [mydongistiny]
+e44c7eb  r8: Update D8/R8 to version 1.4.22-dev  [Mads Ager]
+f8feacd  r8: Update D8 and R8 to 1.4.21-dev  [Christoffer Quist Adamsen]
+5ba053e  r8: Update D8 and R8 to 1.4.20-dev  [Tamas Kenez]
+2b91baa  r8: Update r8 to version 1.4.19-dev  [Tamas Kenez]
+3cd6645  r8: Update r8 to version 1.4.15-dev  [Tamas Kenez]
+dac787c  r8: Update D8 and R8 to match master  [Tamas Kenez]
+584e5b3  r8: Update D8 and R8 to 1.4.14-dev  [Rico Wind]
+3bb2cc9  r8: Update D8 and R8 to 1.14.xx master  [mydongistiny]
+d2d44dc  r8: Update D8 and R8 to 1.4.12-dev  [Christoffer Quist Adamsen]
+121e0bb  r8: Update D8 and R8 to 1.4.11-dev  [Christoffer Quist Adamsen]
+46faca5  r8: Update D8 and R8 to 1.4.10-dev  [Mads Ager]
+550756f  r8: Update D8 and R8 to 1.4.9-dev  [Ian Zerny]
+842d56d  r8: Update D8 and R8 to 1.4.5-dev  [Søren Gjesse]
+070b65a  r8: Update D8 and R8 to 1.4.4-dev  [mydongistiny]
+9a74806  r8: Update D8 and R8 to 1.4.3-dev  [mydongistiny]
+939e959  r8: Update D8 and R8 to 1.4.1-dev  [mydongistiny]
+5aac8a3  r8: Update D8 and R8 to 1.3.22-dev  [Tamas Kenez]
+4e75783  r8: Update D8 and R8 to 1.3.21-dev  [Søren Gjesse]
+a500d48  r8: Update D8 and R8 to 1.3.19-dev  [Rico Wind]
+77efc6d  r8: Update D8 and R8 to 1.3.18-dev  [Rico Wind]
+f366b00  r8: Update D8 and R8 to 1.3.17-dev  [Mads Ager]
+124c2fe  r8: Update D8 and R8 to 1.3.15-dev  [Tamas Kenez]
+23426b6  r8: Update D8 and R8 to 1.3.14-dev  [Ian Zerny]
+
+ * system/core
+a757b53  Add back fuse support  [Aaron Kling]
+014d6e1  DO NOT MERGE Start update_verifier early in late-fs  [Tao Bao]
+
+ * system/vold
+f57b1e1  Fix build  [Henrique Silva]
+be282c5  vold: change to upgrade key if export fails  [Smita Ghosh]
+626e2f5  vold: add support for clear key  [Shivaprasad Hongal]
+a8c35f7  Fsync directories before delete key  [Woody Lin]
+7299efc  Fsync directories after creating files  [Paul Crowley]
+
+====================
+     2019-06-04    
+====================
+ * art
+ce00e6a  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/art into HEAD  [DennySPB]
+
+ * build/make
+d747efe  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/build  [DennySPB]
+f53206a  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/build into HEAD  [DennySPB]
+
+ * build/soong
+153eb12  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/build/soong  [DennySPB]
+
+ * external/skia
+756cfb1  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/external/skia into HEAD  [DennySPB]
+
+ * frameworks/av
+e1e7483  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPB]
+b26dfef  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/frameworks/av  [DennySPB]
+
+ * frameworks/base
+bce97e6  hwui: Avoid fake high input latency while vsync drifting  [Gao Shuo]
+fcb4444  FloatingToolbar must end animation immediately when parent window gone  [TAO MIAO]
+66abb88  Extend the watchdog timeout of main thread  [zhiyong.wang]
+8c94066  Catch the SQLiteFullException in NotificationUsageStats  [Ethan_Hu]
+5f2c894  Add missing ensureRunningOnConnectivityServiceThread() function *After June Patch Merge  [phenomenall]
+aa1ad32  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPB]
+981ed58  SurfaceControl: Unbreak public API after pie-gsi merge  [Han Wang]
+4c75656  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/frameworks/base  [DennySPB]
+
+ * frameworks/native
+02af357  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPB]
+08adf40  Merge tag 'LA.UM.7.2.r2-00800-8x98.0' of https://source.codeaurora.org/quic/la/platform/frameworks/native  [DennySPB]
+0391ffb  Revert some surfaceflinger commits for cleaner caf merge  [DennySPB]
+
+ * frameworks/opt/telephony
+e6d9189  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPB]
+
+ * hardware/interfaces
+033c3b4  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPB]
+
+ * packages/apps/Bluetooth
+797a4c1  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPB]
+
+ * packages/apps/DeskClock
+69d45ee  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/apps/DeskClock into HEAD  [DennySPB]
+
+ * packages/apps/DocumentsUI
+7dbf1ea  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/apps/DocumentsUI into HEAD  [DennySPB]
+
+ * packages/apps/EmergencyInfo
+69f6911  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/apps/EmergencyInfo into HEAD  [DennySPB]
+
+ * packages/apps/Nfc
+fe17e23  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPB]
+
+ * packages/apps/Settings
+504af0b  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPB]
+d3e149a  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPB]
+
+ * packages/providers/MediaProvider
+f677975  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/providers/MediaProvider into HEAD  [DennySPB]
+
+ * packages/services/Telecomm
+f4f89b0  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPB]
+
+ * packages/services/Telephony
+a93d9ac  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/services/Telephony  [DennySPB]
+
+ * system/bt
+46d7584  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
+b28f081  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
+
+ * system/sepolicy
+a6ec3d8  [1/2] sepolicy: update_engine neverallows  [maxwen]
+9f12070  sepolicy: allow update_engine to bypass neverallows for backuptool  [Dan Pasanen]
+8b01578  sepolicy: whitelist recovery from node creation neverallow  [Alessandro Astone]
+9dc00bb  sepolicy: Allow init to chown sysfs LED files  [Danny Baumann]
+1723718  sepolicy: public: add TCSETSF to the list of unprivileged TTY ioctls  [Vladimir Oltean]
+f6fc4c0  sepolicy: Treat proc-based DT fstab the same and sys-based  [Kevin F. Haggerty]
+f302004  Ignore newly added selinux objects  [Luca Stefani]
+a11e0f5  Add init as a fs_type neverallow exemption  [ZVNexus]
+c59621f  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/system/sepolicy  [DennySPB]
+
+ * system/vold
+6e99fd0  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/system/vold into HEAD  [DennySPB]
+
+====================
+     2019-06-03    
+====================
+
+ * frameworks/base
+c912127  wifi(settingslib): Update passpoint config to accessPoint  [Hu Wang]
+00ee81e  BoostFramework: Send PID if process is already existing in BG.  [Sai Manobhiram]
+
+ * packages/apps/Settings
+ba03e48  Merge pull request #26 from David6910/patch-9  [Ivan Blinov]
+
+ * packages/apps/SyberiaSettings
+a2d8a23  Merge pull request #63 from MrLookas/patch-1  [Ivan Blinov]
+313a0e1  Merge pull request #60 from MrLookas/9.0  [Ivan Blinov]
+4f29a22  update battery style strings  [Lukáš Sýkora]
+
+ * packages/services/Telephony
+0feb2ec  Network settings: don't hide advanced options  [DennySPB]
+
+====================
      2019-06-02    
 ====================
 
@@ -12,270 +273,4 @@ de5aacb  Revert "external/skia: Take Fast Jpeg Decoding Path"  [blinoff82]
 
  * packages/apps/Settings
 aee11ed  team: vince: fix model name  [blinoff82]
-
-====================
-     2019-06-01    
-====================
-
- * bionic
-46e3c96  bionic: Revert recents commits  [blinoff82]
-
- * device/xiaomi/vince
-3a5d1b1  vince: sepolicy: remove duplicates  [mdeejay]
-
- * external/libjpeg-turbo
-e4bb5fe  Update to 2.0.3  [DennySPB]
-
- * frameworks/base
-058b788  QS: Update RU translations  [blinoff82]
-
- * hardware/lineage/livedisplay
-fd1713f  sdm: Fix restoring default mode when using prebuilt vendor  [TheScarastic]
-
- * kernel/xiaomi/msm8953
-8259c4d  Linux 4.9.180  [Greg Kroah-Hartman]
-e9e5087  drm: Wake up next in drm_read() chain if we are forced to putback the event  [Chris Wilson]
-bedc0e5  ASoC: davinci-mcasp: Fix clang warning without CONFIG_PM  [Arnd Bergmann]
-553abe8  spi: Fix zero length xfer bug  [Chris Lesiak]
-0e01f6a  spi: rspi: Fix sequencer reset during initialization  [Geert Uytterhoeven]
-c555554  spi : spi-topcliff-pch: Fix to handle empty DMA buffers  [Aditya Pakki]
-2e24cb9  scsi: lpfc: Fix SLI3 commands being issued on SLI4 devices  [James Smart]
-407bc2b  media: saa7146: avoid high stack usage with clang  [Arnd Bergmann]
-2e658ba  scsi: lpfc: Fix FDMI manufacturer attribute value  [James Smart]
-b20a6d0  media: go7007: avoid clang frame overflow warning with KASAN  [Arnd Bergmann]
-86672bb  media: m88ds3103: serialize reset messages in m88ds3103_set_frontend  [James Hutchinson]
-6861f82  dmaengine: tegra210-adma: use devm_clk_*() helpers  [Sameer Pujar]
-447640d  scsi: qla4xxx: avoid freeing unallocated dma memory  [Arnd Bergmann]
-4b98ad0  usb: core: Add PM runtime calls to usb_hcd_platform_shutdown  [Tony Lindgren]
-94c8703  rcuperf: Fix cleanup path for invalid perf_type strings  [Paul E. McKenney]
-b076f8635  rcutorture: Fix cleanup path for invalid torture_type strings  [Paul E. McKenney]
-d618d2c  x86/mce: Fix machine_check_poll() tests for error types  [Tony Luck]
-d7f87ba  tty: ipwireless: fix missing checks for ioremap  [Kangjie Lu]
-8a8de87  virtio_console: initialize vtermno value for ports  [Pankaj Gupta]
-9b08a13  media: wl128x: prevent two potential buffer overflows  [Dan Carpenter]
-d299709  spi: tegra114: reset controller on probe  [Sowjanya Komatineni]
-40563eb  cxgb3/l2t: Fix undefined behaviour  [Gustavo A. R. Silva]
-87eb5fa  ASoC: fsl_utils: fix a leaked reference by adding missing of_node_put  [Wen Yang]
-6902fea  ASoC: eukrea-tlv320: fix a leaked reference by adding missing of_node_put  [Wen Yang]
-6e2f7f0  HID: core: move Usage Page concatenation to Main item  [Nicolas Saenz Julienne]
-7fd5a66  chardev: add additional check for minor range overlap  [Chengguang Xu]
-ceef298  x86/ia32: Fix ia32_restore_sigcontext() AC leak  [Peter Zijlstra]
-a54bd51  x86/uaccess, signal: Fix AC=1 bloat  [Peter Zijlstra]
-d5e35b0  arm64: cpu_ops: fix a leaked reference by adding missing of_node_put  [Wen Yang]
-2873c3b  scsi: ufs: Avoid configuring regulator with undefined voltage range  [Stanley Chu]
-9bf0409  scsi: ufs: Fix regulator load and icc-level configuration  [Stanley Chu]
-45406cc  brcmfmac: fix Oops when bringing up interface during USB disconnect  [Piotr Figiel]
-2af035b  brcmfmac: fix race during disconnect when USB completion is in progress  [Piotr Figiel]
-a5fb071  brcmfmac: convert dev_init_lock mutex to completion  [Piotr Figiel]
-181eafb  b43: shut up clang -Wuninitialized variable warning  [Arnd Bergmann]
-579e00d  brcmfmac: fix missing checks for kmemdup  [Kangjie Lu]
-9d2ae27  mwifiex: Fix mem leak in mwifiex_tm_cmd  [YueHaibing]
-83ad606  rtlwifi: fix a potential NULL pointer dereference  [Kangjie Lu]
-4eedd18  iio: common: ssp_sensors: Initialize calculated_time in ssp_common_process_data  [Nathan Chancellor]
-3462dfe  iio: hmc5843: fix potential NULL pointer dereferences  [Kangjie Lu]
-c28f158  iio: ad_sigma_delta: Properly handle SPI bus locking vs CS assertion  [Lars-Peter Clausen]
-042e468  x86/build: Keep local relocations with ld.lld  [Kees Cook]
-e7780b2  cpufreq: pmac32: fix possible object reference leak  [Wen Yang]
-ba3239c  cpufreq/pasemi: fix possible object reference leak  [Wen Yang]
-9352b0b  cpufreq: ppc_cbe: fix possible object reference leak  [Wen Yang]
-0cdd1ed  s390: cio: fix cio_irb declaration  [Arnd Bergmann]
-97c2228  extcon: arizona: Disable mic detect if running when driver is removed  [Charles Keepax]
-7430478  PM / core: Propagate dev->power.wakeup_path when no callbacks  [Ulf Hansson]
-eb21b83  mmc: sdhci-of-esdhc: add erratum eSDHC-A001 and A-008358 support  [Yinbo Zhu]
-4df0270  mmc: sdhci-of-esdhc: add erratum eSDHC5 support  [Yinbo Zhu]
-e60ebae  mmc_spi: add a status check for spi_sync_locked  [Kangjie Lu]
-017cdab  mmc: core: make pwrseq_emmc (partially) support sleepy GPIO controllers  [Andrea Merello]
-9b0aad7  scsi: libsas: Do discovery on empty PHY to update PHY info  [John Garry]
-4aceaa5  hwmon: (f71805f) Use request_muxed_region for Super-IO accesses  [Guenter Roeck]
-b469a3e  hwmon: (pc87427) Use request_muxed_region for Super-IO accesses  [Guenter Roeck]
-7cb9828  hwmon: (smsc47b397) Use request_muxed_region for Super-IO accesses  [Guenter Roeck]
-373a682  hwmon: (smsc47m1) Use request_muxed_region for Super-IO accesses  [Guenter Roeck]
-9597d89  hwmon: (vt1211) Use request_muxed_region for Super-IO accesses  [Guenter Roeck]
-f99384e  RDMA/cxgb4: Fix null pointer dereference on alloc_skb failure  [Colin Ian King]
-4d7dadc  arm64: vdso: Fix clock_getres() for CLOCK_REALTIME  [Vincenzo Frascino]
-c5e2e94  i40e: don't allow changes to HW VLAN stripping on active port VLANs  [Nicholas Nunley]
-3519903  x86/irq/64: Limit IST stack overflow check to #DB stack  [Thomas Gleixner]
-1081fe0  USB: core: Don't unbind interfaces following device reset failure  [Alan Stern]
-fbf8397  sched/core: Handle overflow in cpu_shares_write_u64  [Konstantin Khlebnikov]
-6e2fd25  sched/core: Check quota and period overflow at usec to nsec conversion  [Konstantin Khlebnikov]
-272c777  powerpc/numa: improve control of topology updates  [Nathan Lynch]
-f6c81db  media: pvrusb2: Prevent a buffer overflow  [Dan Carpenter]
-fd09ac5  media: au0828: Fix NULL pointer dereference in au0828_analog_stream_enable()  [Shuah Khan]
-f05535d  audit: fix a memory leak bug  [Wenwen Wang]
-b9473f7  media: ov2659: make S_FMT succeed even if requested format doesn't match  [Akinobu Mita]
-e91f4d3  media: au0828: stop video streaming only when last user stops  [Hans Verkuil]
-416fb97  media: ov6650: Move v4l2_clk_get() to ov6650_video_probe() helper  [Janusz Krzysztofik]
-f192c6b  media: coda: clear error return value before picture run  [Philipp Zabel]
-58dc77b  dmaengine: at_xdmac: remove BUG_ON macro in tasklet  [Nicolas Ferre]
-8052596  pinctrl: pistachio: fix leaked of_node references  [Wen Yang]
-67181a0  HID: logitech-hidpp: use RAP instead of FAP to get the protocol version  [Hans de Goede]
-c87962c  mm/uaccess: Use 'unsigned long' to placate UBSAN warnings on older GCC versions  [Peter Zijlstra]
-5a169e3  x86/mm: Remove in_nmi() warning from 64-bit implementation of vmalloc_fault()  [Jiri Kosina]
-4a5b41f  smpboot: Place the __percpu annotation correctly  [Sebastian Andrzej Siewior]
-2524a5b  x86/build: Move _etext to actual end of .text  [Kees Cook]
-b71c13d  bcache: avoid clang -Wunintialized warning  [Arnd Bergmann]
-8b80cbe  bcache: add failure check to run_cache_set() for journal replay  [Coly Li]
-c12c66f  bcache: fix failure in journal relplay  [Tang Junhui]
-0e5d93b  bcache: return error immediately in bch_journal_replay()  [Coly Li]
-0d3e000  crypto: sun4i-ss - Fix invalid calculation of hash end  [Corentin Labbe]
-20cf20f  net: cw1200: fix a NULL pointer dereference  [Kangjie Lu]
-0cde4ad  mwifiex: prevent an array overflow  [Dan Carpenter]
-38f9d6e  ASoC: fsl_sai: Update is_slave_mode with correct value  [Daniel Baluta]
-7d04282  mac80211/cfg80211: update bss channel on channel switch  [Sergey Matyukevich]
-6885043  dmaengine: pl330: _stop: clear interrupt status  [Sugar Zhang]
-a69cee1  w1: fix the resume command API  [Mariusz Bialonczyk]
-bc7f05e  rtc: 88pm860x: prevent use-after-free on device remove  [Sven Van Asbroeck]
-86eca07  iwlwifi: pcie: don't crash on invalid RX interrupt  [Johannes Berg]
-c23d164  scsi: qla2xxx: Fix a qla24xx_enable_msix() error path  [Bart Van Assche]
-184e736  sched/cpufreq: Fix kobject memleak  [Viresh Kumar]
-9f3b93e  arm64: Fix compiler warning from pte_unmap() with -Wunused-but-set-variable  [Qian Cai]
-aefe976  ARM: vdso: Remove dependency with the arch_timer driver internals  [Marc Zyngier]
-3af4f38  brcm80211: potential NULL dereference in brcmf_cfg80211_vndr_cmds_dcmd_handler()  [Dan Carpenter]
-7411e9f  spi: pxa2xx: fix SCR (divisor) calculation  [Flavio Suligoi]
-78a9953  ASoC: imx: fix fiq dependencies  [Arnd Bergmann]
-a387d9e  powerpc/boot: Fix missing check of lseek() return value  [Bo YU]
-7f43a43  ASoC: hdmi-codec: unlock the device on startup errors  [Jerome Brunet]
-2b18832  net: ena: gcc 8: fix compilation warning  [Sameeh Jubran]
-dd250f7  dmaengine: tegra210-dma: free dma controller in remove()  [Sameer Pujar]
-5ee4b9b  mmc: core: Verify SD bus width  [Raul E Rangel]
-5a59ded  cxgb4: Fix error path in cxgb4_init_module  [YueHaibing]
-ab75453  gfs2: Fix lru_count going negative  [Ross Lagerwall]
-2189da2  Revert "btrfs: Honour FITRIM range constraints during free space trim"  [David Sterba]
-e986c33  tools include: Adopt linux/bits.h  [Arnaldo Carvalho de Melo]
-5c081a4  perf tools: No need to include bitops.h in util.h  [Arnaldo Carvalho de Melo]
-c188fc8  at76c50x-usb: Don't register led_trigger if usb_register_driver failed  [YueHaibing]
-4d5669b  ssb: Fix possible NULL pointer dereference in ssb_host_pcmcia_exit  [YueHaibing]
-953c37c  media: vivid: use vfree() instead of kfree() for dev->bitmap_cap  [Alexander Potapenko]
-44cb34c  media: cpia2: Fix use-after-free in cpia2_exit  [YueHaibing]
-380aa7e  fbdev: fix WARNING in __alloc_pages_nodemask bug  [Jiufei Xue]
-3f39c7b  hugetlb: use same fault hash key for shared and private mappings  [Mike Kravetz]
-208f1e9  fbdev: fix divide error in fb_var_to_videomode  [Shile Zhang]
-0e6c667  btrfs: sysfs: don't leak memory when failing add fsid  [Tobin C. Harding]
-c85df9a  Btrfs: fix race between ranged fsync and writeback of adjacent ranges  [Filipe Manana]
-2e21e85  Btrfs: do not abort transaction at btrfs_update_root() after failure to COW path  [Filipe Manana]
-02601b2  gfs2: Fix sign extension bug in gfs2_update_stats  [Andreas Gruenbacher]
-604fe10  arm64: Save and restore OSDLR_EL1 across suspend/resume  [Jean-Philippe Brucker]
-a86d731  libnvdimm/namespace: Fix label tracking error  [Dan Williams]
-43334c1  kvm: svm/avic: fix off-by-one in checking host APIC ID  [Suthikulpanit, Suravee]
-8191d42  crypto: vmx - CTR: always increment IV as quadword  [Daniel Axtens]
-0f5f8ae  Revert "scsi: sd: Keep disk read-only when re-reading partition"  [Martin K. Petersen]
-1a5656f  bio: fix improper use of smp_mb__before_atomic()  [Andrea Parri]
-9c80574  KVM: x86: fix return value for reserved EFER  [Paolo Bonzini]
-7b52519  ext4: do not delete unlinked inode from orphan list on failed truncate  [Jan Kara]
-
- * packages/apps/OmniStyle
-8d8a705  Add Mono/Art headers  [DennySPB]
-686a90d  Remove Omni headers  [DennySPB]
-
- * packages/apps/SyberiaSettings
-c695d9e  QS Headers: Fix summary and add missing entry  [DennySPB]
-
- * packages/services/Telecomm
-d1abc8f  Change UI to be consistency with dialer settings light M2 theme  [Youming Ye]
-
- * packages/services/Telephony
-32576c5  Add missing null check on start of SipIncomingCallReceiver received.  [Tyler Gunn]
-0f65c95  Change action bar icon and text color from white to grey  [Youming Ye]
-5921f8e  Fix the drawable resource can't be loaded from RRO package  [Ping Sun]
-0579b76  Disable EmergencyDialer multi window mode  [Wesley.CW Wang]
-2bb64bd  Change UI styles to match dialer settings light M2 theme  [Youming Ye]
-a2e3b12  Fix EmergencyDialer UI when display size change  [Wesley.CW Wang]
-99a65b0  Don't start SIP service before decrypted  [dianlujitao]
-
- * system/netd
-e71c590  Copy queries synchronously in DnsTlsSocket  [Ben Schwartz]
-
-====================
-     2019-05-31    
-====================
-
- * bionic
-d1951d7  Remove workarounds for old versions of clang and GCC  [Elliott Hughes]
-52b37a8  libm: Fix builtins when building with armv8-2a  [mydongistiny]
-08b82c9  libm: Replace ARM64 lrint assembly with builtin  [Jake Weinstein]
-43da8a3  Replace ARM and ARM64 sqrt assembly with builtins  [Jake Weinstein]
-d522b15  libm: Use a few builtins on 32-bit ARM  [Jake Weinstein]
-d7518a9  libc: Make powerof2 macro ubsan safe  [Nick Kralevich]
-4630961  arm64: Use builtin for nearbyintf/nearbyint  [Jake Weinstein]
-12d4895  arm64: Use builtins for ceil/floor/rint/trunc  [Jake Weinstein]
-9482a36  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
-
- * external/libjpeg-turbo
-5b120ed  libjpeg-turbo: update to 2.0.2  [mydongistiny]
-a68a8ff  libjpeg-turbo: add config to disable merged upsample  [Mort (Tianqi) Guo]
-ec70164  Handle corner case where merged_upsampler is used for regional decoding  [Mort (Tianqi) Guo]
-
- * external/libpng
-22a42b4  libpng: Suppress sign compare warning  [Pranav Vashi]
-f144291  libpng: Update to version 1.6.37  [mydongistiny]
-39ffe69  libpng: Update to version 1.6.36  [mydongistiny]
-
- * external/skia
-7b4e78a  Fix ABI Compliance Issue for JPEG Merged Upsample  [Mort (Tianqi) Guo]
-82f54f7  external/skia: Take Fast Jpeg Decoding Path  [Mort (Tianqi) Guo]
-
- * external/webp
-46f95dc  Update to 1.0.2  [DennySPB]
-
- * frameworks/base
-a51e1e8  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
-ecacc74  Revert "Add Dual Channel into Bluetooth Audio Channel Mode developer options menu"  [DennySPB]
-d6ba708  QS: Add advanced location tile options  [Joey]
-e079185  Revert "QS: LocationTile: make it cycle modes"  [DennySPB]
-
- * packages/apps/Settings
-fdef270  Dashboard: user info: use default font  [DennySPB]
-4caf43d  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
-
-====================
-     2019-05-30    
-====================
-
- * frameworks/base
-6fb052c  SystemUI: Enable/fix QS detail view & adapt to Pie  [eray orçunus]
-0354460  Use headline font on battery percentage  [Henrique Silva]
-b920764  base: Persistent settings icon on qs panel for 9.x  [HrX03]
-
- * frameworks/native
-b97f1bb  Revert "opengl: Disable sdclang for EGL and OpenGLES"  [Jyotiraditya]
-1326750  Revert "binder: Release tracking lock before invoking binder_proxy_limit_callback"  [DennySPB]
-4ddf713  opengl: Allow implcit IT blocks on arm  [Joe Maples]
-
-====================
-     2019-05-29    
-====================
- * art
-3887ef1  art: Enable -O3  [dkati]
-
- * bionic
-e974044  libc: Don't try to re-export libgcc symbols that don't exist in 6.3  [Bernhard Rosenkränzer]
-a9a5d23  libc: import ARM strlen from Apple C library  [Jake Weinstein]
-3b812fe  libm: Support -ffp-contract=fast  [dkati]
-3c5e75a  bionic: Enable -O3  [dkati]
-
- * frameworks/base
-70cb232  Fix weird artifact in battery icon  [paphonb]
-9d0b81d  Improve Q battery icon and unify with portrait style  [paphonb]
-ec77048  SettingsLib: Expose Q battery icon paths  [paphonb]
-
-====================
-     2019-05-28    
-====================
-
- * frameworks/base
-fd77b46  Introduce FontTile  [bigrushdog]
-bb249d0  Stop USB Debugging authorization window dismissing on tap outside.  [Tobias Thierer]
-83aaec2  Fix NPE on ExpandableNotificationRow  [Henrique Silva]
-410cdcc  base: Allow network as default location provider as well  [theimpulson]
-679449f  BatteryMeterDrawableBase: Refresh only when value changed  [Pranav Vashi]
-36b015f  SystemUI: fix the behavior of QS with isDualTarget=true  [Alex]
-ff3c7c7  SystemUI: Tweak QS status icons in expand animation  [paphonb]
-99b3710  SystemUI: assist: disable old Assistant animations  [argraur]
-
- * packages/apps/Settings
-1e56388  deviceinfo: Move imei information to Sim status  [Chris]
-
-====================
-     2019-05-27    
-====================
 
