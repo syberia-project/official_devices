@@ -11,13 +11,13 @@
       "url": "http://tiny.cc/latestuninstaller"
     }
   ],
-  "filename": "syberia_tulip-v2.5-20190602-0940-OFFICIAL.zip",
+  "filename": "syberia_tulip-v2.6-20190608-0930-OFFICIAL.zip",
   "changelog": "",
-  "filesize": "676368286",
-  "md5": "03b6de810343146bd7d951777c6cdc27",
-  "build_date": "20190602",
+  "filesize": "676653826",
+  "md5": "9c108b8e782e117005c6447768a58da4",
+  "build_date": "20190608",
   "device": "tulip",
-  "url": "https://sourceforge.net/projects/syberiaos/files/tulip/syberia_tulip-v2.5-20190602-0940-OFFICIAL.zip/download",
+  "url": "https://sourceforge.net/projects/syberiaos/files/tulip/syberia_tulip-v2.6-20190608-0930-OFFICIAL.zip/download",
   "donate_url": "https://syberiaos.com/links",
   "developer_url": "http://github.com/syberia-project",
   "news_url": "http://github.com/syberia-project",
