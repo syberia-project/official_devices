@@ -3,20 +3,7 @@
 ====================
 
  * bionic
-c3c8763  Revert "bionic: strip libc and linker"  [DennySPB]
-5557bd0  Change memcpy ifunc to return memmove  [Haibo Huang]
-9dba7b3  Use ifunc to dynamically dispatch libc routines  [Haibo Huang]
-8c7cd80  Separate libc_common to two targets  [Haibo Huang]
-514636e  libc: Make memcpy memmove  [Haibo Huang]
-20c45ab  libc: Add generic arm non-neon memmove  [Elliott Hughes]
-e90a953  arm64: Use cortex-a53/bionic/memmove.S  [Haibo Huang]
-fec101f  libc: arm64: Import latest memset changes from newlib  [Jake Weinstein]
-0a8bbdb  libc: add optimized ARM64 strrchr from newlib  [Jake Weinstein]
-1fcb20c  libc: Make powerof2 macro ubsan safe  [Nick Kralevich]
-d17cde8  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
-
- * device/syberia/sepolicy
-eea7f73  sepolicy: Run dos2unix  [Henrique Silva]
+ac3f348  Revert "bionic: strip libc and linker"  [blinoff82]
 
  * frameworks/base
 6d3ac42  Revert "GamingMode: add more ringer modes [1/2]"  [blinoff82]
@@ -35,12 +22,9 @@ ba73805  GamingMode: add more ringer modes [1/2]  [DennySPB]
 
  * build/make
 70ec36e  Merge "build: Allow mounting system properly for A-only system-as-root devices" into 9.0  [dennyspb]
-4d3a85a  build: Allow mounting system properly for A-only system-as-root devices  [Davide Garberi]
-
- * device/qcom/sepolicy
-06762ef  Merge tag 'LA.UM.7.6.2.r1-08800-89xx.0' into HEAD  [blinoff82]
 
  * device/syberia/sepolicy
+eea7f73  sepolicy: Run dos2unix  [Henrique Silva]
 c3b6368  sepolicy: update_engine neverallows [2/2]  [maxwen]
 
  * frameworks/base
@@ -51,13 +35,42 @@ a0b1d10  Revert "SystemUI: Add Gaming mode tile"  [DennySPB]
 5855824  Revert "GamingModeTile: stop adjusting volume"  [DennySPB]
 e7b9190  Fix NPE on navbar  [Henrique Silva]
 c0800ed  KeyguardSliceProvider: Show dnd icon regardless of suppression mode  [Henrique Silva]
+
+ * vendor/syberia
+5e51c63  v2.6  [DennySPB]
+
+====================
+     2019-06-06    
+====================
+
+ * build/make
+4d3a85a  build: Allow mounting system properly for A-only system-as-root devices  [Davide Garberi]
+
+ * device/qcom/sepolicy
+06762ef  Merge tag 'LA.UM.7.6.2.r1-08800-89xx.0' into HEAD  [blinoff82]
+
+ * frameworks/base
 df4e40e  LiveDisplayService: Disable ColorTemperature when NightDisplay is available  [Bruno Martins]
+062a5e3  WeatherSlice: set icon size according date font size  [DennySPB]
+314cbab  SystemUI: AD: hide weather completely  [Ali B]
+d0b755a  base: SystemUI: add keyguard weather style (1/2)  [Ali B]
+50c796d  base: add weather to keyguardSlice  [Ali B]
 
  * hardware/qcom/audio-caf/msm8996
 89e7907  Merge tag 'LA.UM.7.6.2.r1-08800-89xx.0' into HEAD  [blinoff82]
 
  * hardware/qcom/media-caf/msm8996
 bf13d90  Merge tag 'LA.UM.7.6.2.r1-08800-89xx.0' into HEAD  [blinoff82]
+
+ * packages/apps/Dialer
+c23a553  Dialer: FireHound Gaming [4/4]  [PMS22]
+
+ * packages/apps/Settings
+cdbdd98  Settings: Gaming Mode revamped [3/4]  [PMS22]
+
+ * packages/apps/SyberiaSettings
+1ae74ae  Gaming mode revamped [2/4]  [PMS22]
+abca798  Add keyguard weather style (2/2)  [Ali B]
 
  * system/qcom
 3df6831  Merge tag 'LA.UM.7.6.2.r1-08800-89xx.0' into HEAD  [blinoff82]
@@ -74,100 +87,29 @@ bf13d90  Merge tag 'LA.UM.7.6.2.r1-08800-89xx.0' into HEAD  [blinoff82]
  * vendor/qcom/opensource/interfaces
 d5b4ef6  Merge tag 'LA.UM.7.6.2.r1-08800-89xx.0' into HEAD  [blinoff82]
 
- * vendor/syberia
-5e51c63  v2.6  [DennySPB]
-
-====================
-     2019-06-06    
-====================
-
- * frameworks/base
-062a5e3  WeatherSlice: set icon size according date font size  [DennySPB]
-314cbab  SystemUI: AD: hide weather completely  [Ali B]
-d0b755a  base: SystemUI: add keyguard weather style (1/2)  [Ali B]
-50c796d  base: add weather to keyguardSlice  [Ali B]
-6b1c00d  Revert "NightDisplayController: report unavailable if livedisplay feature is present"  [Rashed Abdel-Tawab]
-dbfca57  Frameworks: pop up error when rename a file in the DocumentsUI  [sxia]
-
- * packages/apps/Dialer
-c23a553  Dialer: FireHound Gaming [4/4]  [PMS22]
-
- * packages/apps/Settings
-cdbdd98  Settings: Gaming Mode revamped [3/4]  [PMS22]
-2eac726  deviceinfo: Completely remove legal information  [blinoff82]
-
- * packages/apps/SyberiaSettings
-1ae74ae  Gaming mode revamped [2/4]  [PMS22]
-abca798  Add keyguard weather style (2/2)  [Ali B]
-
 ====================
      2019-06-05    
 ====================
 
- * build/make
-d747efe  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/build  [DennySPB]
-
- * build/soong
-153eb12  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/build/soong  [DennySPB]
-
- * external/skia
-756cfb1  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/external/skia into HEAD  [DennySPB]
-
- * frameworks/av
-e1e7483  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPB]
-b26dfef  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/frameworks/av  [DennySPB]
-
  * frameworks/base
+6b1c00d  Revert "NightDisplayController: report unavailable if livedisplay feature is present"  [Rashed Abdel-Tawab]
+dbfca57  Frameworks: pop up error when rename a file in the DocumentsUI  [sxia]
 bce97e6  hwui: Avoid fake high input latency while vsync drifting  [Gao Shuo]
 fcb4444  FloatingToolbar must end animation immediately when parent window gone  [TAO MIAO]
 66abb88  Extend the watchdog timeout of main thread  [zhiyong.wang]
 8c94066  Catch the SQLiteFullException in NotificationUsageStats  [Ethan_Hu]
 5f2c894  Add missing ensureRunningOnConnectivityServiceThread() function *After June Patch Merge  [phenomenall]
-aa1ad32  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPB]
-981ed58  SurfaceControl: Unbreak public API after pie-gsi merge  [Han Wang]
-
- * frameworks/native
-02af357  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPB]
-
- * frameworks/opt/telephony
-e6d9189  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPB]
-
- * hardware/interfaces
-033c3b4  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPB]
 
  * hardware/qcom/fm
 221e94e  Partially revert "fm: Fix wrong BT SOC property name"  [Atman]
 
- * packages/apps/Bluetooth
-797a4c1  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPB]
-
- * packages/apps/DeskClock
-69d45ee  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/apps/DeskClock into HEAD  [DennySPB]
-
- * packages/apps/DocumentsUI
-7dbf1ea  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/apps/DocumentsUI into HEAD  [DennySPB]
-
- * packages/apps/EmergencyInfo
-69f6911  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/apps/EmergencyInfo into HEAD  [DennySPB]
-
- * packages/apps/Nfc
-fe17e23  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPB]
-
  * packages/apps/Settings
+2eac726  deviceinfo: Completely remove legal information  [blinoff82]
 78f5714  Settings: Add battery saving mode for location  [eray orçunus]
 8ac06db  livedisplay: Don't show display mode and color tempertature on HWC2  [Rashed Abdel-Tawab]
 ce1fe7b  Revert "Settings: Hide Night Mode suggestion if LiveDisplay feature is present"  [Rashed Abdel-Tawab]
 504af0b  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPB]
 d3e149a  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPB]
-
- * packages/providers/MediaProvider
-f677975  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/providers/MediaProvider into HEAD  [DennySPB]
-
- * packages/services/Telecomm
-f4f89b0  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPB]
-
- * packages/services/Telephony
-a93d9ac  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/services/Telephony  [DennySPB]
 
  * prebuilts/r8
 578bfa7  r8: Update D8 and R8 to 1.6.3-dev  [Ian Zerny]
@@ -210,9 +152,6 @@ f366b00  r8: Update D8 and R8 to 1.3.17-dev  [Mads Ager]
 124c2fe  r8: Update D8 and R8 to 1.3.15-dev  [Tamas Kenez]
 23426b6  r8: Update D8 and R8 to 1.3.14-dev  [Ian Zerny]
 
- * system/bt
-46d7584  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
-
  * system/core
 a757b53  Add back fuse support  [Aaron Kling]
 014d6e1  DO NOT MERGE Start update_verifier early in late-fs  [Tao Bao]
@@ -231,21 +170,61 @@ a8c35f7  Fsync directories before delete key  [Woody Lin]
 ce00e6a  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/art into HEAD  [DennySPB]
 
  * build/make
+d747efe  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/build  [DennySPB]
 f53206a  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/build into HEAD  [DennySPB]
 
+ * build/soong
+153eb12  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/build/soong  [DennySPB]
+
+ * external/skia
+756cfb1  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/external/skia into HEAD  [DennySPB]
+
+ * frameworks/av
+e1e7483  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPB]
+b26dfef  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/frameworks/av  [DennySPB]
+
  * frameworks/base
+aa1ad32  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPB]
+981ed58  SurfaceControl: Unbreak public API after pie-gsi merge  [Han Wang]
 4c75656  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/frameworks/base  [DennySPB]
-c912127  wifi(settingslib): Update passpoint config to accessPoint  [Hu Wang]
-00ee81e  BoostFramework: Send PID if process is already existing in BG.  [Sai Manobhiram]
 
  * frameworks/native
+02af357  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPB]
 08adf40  Merge tag 'LA.UM.7.2.r2-00800-8x98.0' of https://source.codeaurora.org/quic/la/platform/frameworks/native  [DennySPB]
 0391ffb  Revert some surfaceflinger commits for cleaner caf merge  [DennySPB]
 
+ * frameworks/opt/telephony
+e6d9189  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPB]
+
+ * hardware/interfaces
+033c3b4  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPB]
+
+ * packages/apps/Bluetooth
+797a4c1  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPB]
+
+ * packages/apps/DeskClock
+69d45ee  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/apps/DeskClock into HEAD  [DennySPB]
+
+ * packages/apps/DocumentsUI
+7dbf1ea  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/apps/DocumentsUI into HEAD  [DennySPB]
+
+ * packages/apps/EmergencyInfo
+69f6911  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/apps/EmergencyInfo into HEAD  [DennySPB]
+
+ * packages/apps/Nfc
+fe17e23  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPB]
+
+ * packages/providers/MediaProvider
+f677975  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/providers/MediaProvider into HEAD  [DennySPB]
+
+ * packages/services/Telecomm
+f4f89b0  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPB]
+
  * packages/services/Telephony
-0feb2ec  Network settings: don't hide advanced options  [DennySPB]
+a93d9ac  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/packages/services/Telephony  [DennySPB]
 
  * system/bt
+46d7584  Merge tag 'android-9.0.0_r42' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
 b28f081  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
 
  * system/sepolicy
@@ -266,25 +245,28 @@ c59621f  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/sys
      2019-06-03    
 ====================
 
- * device/xiaomi/msm8953-common
-f869331  msm8953-common: Disable ALMK and PPR on all targets  [Artem Borisov]
-2980cae  msm8953-common: Fix camera-daemon cpuset  [Artem Borisov]
+ * frameworks/base
+c912127  wifi(settingslib): Update passpoint config to accessPoint  [Hu Wang]
+00ee81e  BoostFramework: Send PID if process is already existing in BG.  [Sai Manobhiram]
 
  * packages/apps/Settings
 ba03e48  Merge pull request #26 from David6910/patch-9  [Ivan Blinov]
-aee11ed  team: vince: fix model name  [blinoff82]
 
  * packages/apps/SyberiaSettings
 a2d8a23  Merge pull request #63 from MrLookas/patch-1  [Ivan Blinov]
 313a0e1  Merge pull request #60 from MrLookas/9.0  [Ivan Blinov]
 4f29a22  update battery style strings  [Lukáš Sýkora]
 
+ * packages/services/Telephony
+0feb2ec  Network settings: don't hide advanced options  [DennySPB]
+
 ====================
      2019-06-02    
 ====================
 
  * device/xiaomi/msm8953-common
-d467fdb  msm8953-common: sepolicy: remove duplicates  [mdeejay]
+f869331  msm8953-common: Disable ALMK and PPR on all targets  [Artem Borisov]
+2980cae  msm8953-common: Fix camera-daemon cpuset  [Artem Borisov]
 
  * external/skia
 de5aacb  Revert "external/skia: Take Fast Jpeg Decoding Path"  [blinoff82]
@@ -292,4 +274,7 @@ de5aacb  Revert "external/skia: Take Fast Jpeg Decoding Path"  [blinoff82]
 
  * hardware/lineage/livedisplay
 fd1713f  sdm: Fix restoring default mode when using prebuilt vendor  [TheScarastic]
+
+ * packages/apps/Settings
+aee11ed  team: vince: fix model name  [blinoff82]
 
