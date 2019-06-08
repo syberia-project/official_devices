@@ -1,19 +1,9 @@
 ====================
-     2019-06-07    
+     2019-06-08    
 ====================
 
  * bionic
-c3c8763  Revert "bionic: strip libc and linker"  [DennySPB]
-5557bd0  Change memcpy ifunc to return memmove  [Haibo Huang]
-9dba7b3  Use ifunc to dynamically dispatch libc routines  [Haibo Huang]
-8c7cd80  Separate libc_common to two targets  [Haibo Huang]
-514636e  libc: Make memcpy memmove  [Haibo Huang]
-20c45ab  libc: Add generic arm non-neon memmove  [Elliott Hughes]
-e90a953  arm64: Use cortex-a53/bionic/memmove.S  [Haibo Huang]
-fec101f  libc: arm64: Import latest memset changes from newlib  [Jake Weinstein]
-0a8bbdb  libc: add optimized ARM64 strrchr from newlib  [Jake Weinstein]
-1fcb20c  libc: Make powerof2 macro ubsan safe  [Nick Kralevich]
-d17cde8  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
+ac3f348  Revert "bionic: strip libc and linker"  [blinoff82]
 
  * device/syberia/sepolicy
 eea7f73  sepolicy: Run dos2unix  [Henrique Silva]
@@ -27,12 +17,11 @@ eea7f73  sepolicy: Run dos2unix  [Henrique Silva]
 ba73805  GamingMode: add more ringer modes [1/2]  [DennySPB]
 
 ====================
-     2019-06-06    
+     2019-06-07    
 ====================
 
  * build/make
 70ec36e  Merge "build: Allow mounting system properly for A-only system-as-root devices" into 9.0  [dennyspb]
-4d3a85a  build: Allow mounting system properly for A-only system-as-root devices  [Davide Garberi]
 
  * device/qcom/sepolicy
 06762ef  Merge tag 'LA.UM.7.6.2.r1-08800-89xx.0' into HEAD  [blinoff82]
@@ -69,8 +58,11 @@ d5b4ef6  Merge tag 'LA.UM.7.6.2.r1-08800-89xx.0' into HEAD  [blinoff82]
 5e51c63  v2.6  [DennySPB]
 
 ====================
-     2019-06-05    
+     2019-06-06    
 ====================
+
+ * build/make
+4d3a85a  build: Allow mounting system properly for A-only system-as-root devices  [Davide Garberi]
 
  * frameworks/base
 062a5e3  WeatherSlice: set icon size according date font size  [DennySPB]
@@ -92,7 +84,7 @@ cdbdd98  Settings: Gaming Mode revamped [3/4]  [PMS22]
 abca798  Add keyguard weather style (2/2)  [Ali B]
 
 ====================
-     2019-06-04    
+     2019-06-05    
 ====================
 
  * build/make
@@ -216,7 +208,7 @@ a8c35f7  Fsync directories before delete key  [Woody Lin]
 7299efc  Fsync directories after creating files  [Paul Crowley]
 
 ====================
-     2019-06-03    
+     2019-06-04    
 ====================
  * art
 ce00e6a  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/art into HEAD  [DennySPB]
@@ -254,7 +246,7 @@ c59621f  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/sys
 6e99fd0  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/system/vold into HEAD  [DennySPB]
 
 ====================
-     2019-06-02    
+     2019-06-03    
 ====================
 
  * packages/apps/Settings
@@ -267,7 +259,7 @@ a2d8a23  Merge pull request #63 from MrLookas/patch-1  [Ivan Blinov]
 4f29a22  update battery style strings  [Lukáš Sýkora]
 
 ====================
-     2019-06-01    
+     2019-06-02    
 ====================
 
  * external/skia
