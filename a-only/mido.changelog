@@ -1,173 +1,228 @@
 ====================
-     2019-06-15    
+     2019-06-22    
 ====================
 
  * device/xiaomi/mido
-00ad378  mido:rootdir: Enable iowait_boost  [kondors1995]
-08f0dca  mido: rootdir: Update rc files  [Sachin Mohan Gadag]
-2499e7d  mido: Update compatibility matrix with QtiRadio v2.3  [Sridhar Kasukurthi]
-39c5fa5  Revert "mido: ueventd: Add permissions for cpu_dma_latency"  [kondors1995]
-1bc0587  mido: Add servicetracker HAL entries in framework compatibility matrix  [Gopal Krishna Shukla]
-f0a2edb  mido: root: add permission for i2c7 device  [Timothy Sham]
-
- * external/vim
-9de255c  Merge remote-tracking branch 'los/lineage-16.0' into HEAD  [Marko Man]
-
- * kernel/xiaomi/msm8953
-91c7189  ASoC: Silence platform not registered message  [Sultan Alsawaf]
-fb5b570  mido:regen defconfig and disable modules  [kondors1995]
-7ab5590  defconfig: disable CONFIG_SECURITY_SELINUX_AVC_STATS  [Park Ju Hyung]
-4e0ed21  defconfig: increase vmstat interval to 20 seconds  [kdrag0n]
-1ed0edd  mm: add Kconfig interface for vmstat interval  [tytydraco]
-26363a9  writeback: hardcode dirty_expire_centisecs=3000 (30s)  [Park Ju Hyung]
-073f654  blk: disable IO_STAT completely  [Park Ju Hyung]
-3ff90e5  cpuidle: lpm-levels: Remove debug event logging  [Danny Lin]
-42c05fc  staging: android: ashmem: Get rid of the big mutex lock  [Sultan Alsawaf]
-1f13c0a  msm: kgsl: Only wake GPU upon ioctl receipt when it isn't awake  [Sultan Alsawaf]
-8da937f  Merge tag 'LA.UM.7.5.r1-05300-8x96.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/prima into dev/soviet-star  [kondors1995]
-2aebb71  Merge tag 'LA.UM.7.5.r1-05300-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into dev/soviet-star  [kondors1995]
-c341d79  BACKPORT: sched/cpufreq: uclamp: add schedutil utilization clamping for RT and FAIR task  [TheHitMan7]
-e79d0ee  binder: Reserve caches for small, high-frequency memory allocations  [kerneltoast]
-bf50ac4  BACKPORT: sched/cpufreq: update schedutil IO boost task on last CPU update  [TheHitMan7]
-5e93761  BACKPORT: sched/cpufreq: uclamp: add the IO boost status of a CPU  [TheHitMan7]
-dfcdabc  defconfig: mido: disable CONFIG_MSM_SMD_DEBUG  [ZeeLog]
-c099fd6c  defconfig: mido: disable unused ecrypt fs  [Vol Zhdanov]
-05fd4ae  defconfig: mido: disable mdss xlog debug  [Adrian Salido]
-7fc8e9f  msm: vidc: Ensure validity of shared Q indices  [Vikash Garodia]
-1104774  Revert "ARM: dts: msm: Add hard reset property for MSM8953"  [Shreyas Narayan]
-d4105f4  lsm: check payload size validity in lsm_event_detect_status_v3  [Kunlei Zhang]
-4b57708  Merge remote-tracking branch 'aosp/android-3.18' into lineage-16.0  [Albert I]
-
- * packages/apps/Dialer
-0c377cf  Dialer: AudioModeProvider: use wired route for usb headsets  [codeworkx]
-
- * packages/apps/Settings
-3cf4d34  Merge "Settings: Add drawable for Private DNS" into 9.0  [blinov.in]
-097718b  team: new maintainer for Mi A2 (jasmine sprout)  [blinoff82]
-9c4ef84  Settings: Add drawable for Private DNS  [theimpulson]
-
- * packages/apps/SyberiaSettings
-684e15a  SyberiaSettings: add missing summaries  [blinoff82]
-
-====================
-     2019-06-14    
-====================
+2b25a3e  mido: camera: Add hacks for unsupported FPS bug  [Nich]
+d426ed9  mido: FM Radio: Refactor & Cleanup  [ZeeLog]
+5d24e55  mido: init: Remove cgroup mount point for memory  [ZeeLog]
+8cd1b1e  mido: Cleanup privapp-permissions-qti.xml  [Michael Bestas]
+3d941e6  mido: Enforce privapp-permissions whitelist  [Michael Bestas]
+9a43ece  mido: biometrics: register fp service to sdcard_rw group  [ZeeLog]
+8244750  mido: lights: remove unused header  [ZeeLog]
 
  * frameworks/base
-88b16d7  LiveDisplayTile: skip day/night mode  [DennySPB]
+d53bdd5  libs: hwui: disable sdclang  [DennySPB]
+aa4ec7e  Merge "Flashlight toggle api improvements" into 9.0  [dennyspb]
+d641c92  Merge "HeadsUpStatusBarView: account for rounded corner" into 9.0  [dennyspb]
+4fa8ed1  Merge "base: add camera flash toggle api" into 9.0  [dennyspb]
+95b9412  Flashlight toggle api improvements  [ezio84]
+0d60885  HeadsUpStatusBarView: account for rounded corner  [Peter Cai]
 
-====================
-     2019-06-13    
-====================
+ * frameworks/native
+c41e2e0  Revert "Revert "opengl: Disable sdclang for EGL and OpenGLES""  [DennySPB]
 
- * device/xiaomi/mido
-2933fba  prebuilts: update Lawnchair to 2112-alpha  [kondors1995]
-9e917f0  mido: camera: Switch to powerHintAsync from 1.1  [Nich]
-e50af8c  proprietary-files:Update sums  [kondors1995]
-710314e  mido: overlay: Don't change auto brightness for 0-4 lux  [Nich]
-ec0a5d7  mido: overlay: Allow higher Night Light temperature  [Nich]
-
- * external/vim
-fc4e70c  vimrc.android: Set nomodeline  [Felix]
-
- * vendor/xiaomi
-de3df44  msm8953-common: Update blobs from Tissot  [ZeeLog]
-3aebbdb  mido: Update FP blobs from MIUI V10.2.3.0.NCFMIXM  [ZeeLog]
-e04c058  mido: Update Audio ACDB blobs from MIUI V10.2.3.0.NCFMIXM  [ZeeLog]
-2584d3d  mido: Update camera blobs from MIUI V10.2.3.0.NCFMIXM  [ZeeLog]
-
-====================
-     2019-06-12    
-====================
-
-====================
-     2019-06-11    
-====================
-
-====================
-     2019-06-10    
-====================
-
- * external/vim
-00fa77d  vim: Add spacehi plugin  [Luca Stefani]
-96dfaad  vim: Update xml plugin  [Tanguy Pruvot]
-1a97a09  vim/syntax: Add android logcat syntax  [Luca Stefani]
-c1e3494  vim: Add autogenerated configs  [Luca Stefani]
-1f66998  vim: Don't ingore generated configs  [Luca Stefani]
-dad7e0a  vim: Import Android makefiles  [Luca Stefani]
-ac2450a  patch 8.1.1511: matches in a popup window are not displayed properly  [Bram Moolenaar]
-80dad48  patch 8.1.1510: a plugin cannot easily expand a command like done internally  [Bram Moolenaar]
-954bb06  patch 8.1.1509: cmdline_row can become negative, causing a crash  [Bram Moolenaar]
-541faf7  patch 8.1.1508: sound keeps failing on Travis  [Bram Moolenaar]
-a90998d  patch 8.1.1507: sound test still fails on Travis  [Bram Moolenaar]
-b29cfb8  patch 8.1.1506: syntax error in Travis config  [Bram Moolenaar]
-8ed75cb  patch 8.1.1505: running "make clean" twice gives errors  [Bram Moolenaar]
-ef23c52  patch 8.1.1504: sound test still fails on Travis  [Bram Moolenaar]
-ffa60dd  patch 8.1.1503: sound test fails on Travis  [Bram Moolenaar]
-427f5b6  patch 8.1.1502: cannot play any sound  [Bram Moolenaar]
+ * frameworks/opt/net/wifi
+8e1c2c4  Merge branch '9.0' of https://github.com/aexmod-tmp/platform_frameworks_opt_net_wifi into HEAD  [blinoff82]
+b6b9509  resurrect mWifiLinkLayerStatsSupported counter  [Stefan Assmann]
 
  * kernel/xiaomi/msm8953
-51bd261  msm: mdss: Reduce display commit latency caused by deep CPU idle  [Sultan Alsawaf]
-16934bd  msm: mdss: Remove sync debug name generation from hot path  [Sultan Alsawaf]
-28c6d9c  msm: kgsl: Remove sync debug name generation from hot path  [Sultan Alsawaf]
-bb08e40  prima: use O2 optimization  [kondors1995]
-b98ffab  Revert "BACKPORT: EM: Remove unused UTIL_CLAMP function"  [kondors1995]
-dfe2cd7  BACKPORT: sched/core: uclamp: update CPU's with task_rq_lock flags  [TheHitMan7]
-53333dd  mido_defconfig: Enable BLK and CFQ cgroup support  [kondors1995]
-0f35b86  Soviet Star R4  [kondors1995]
-24299bf  mido_defconfig: Enable UCLAMP  [kondors1995]
-7240e54  BACKPORT: Fix: sched/cpufreq: uclamp: add utilization clamping for RT tasks  [TheHitMan7]
-97c8ec9  BACKPORT: Fix: sched/core: uclamp: update CPU's refcount on TG's clamp changes  [TheHitMan7]
-82a1812  BACKPORT: Fix: sched/core: uclamp: use TG's clamps to restrict TASK's clamps  [TheHitMan7]
-d5f4505  BACKPORT: sched/core: uclamp: update CPU's refcount on TG's clamp changes  [Patrick Bellasi]
-c90a683  BACKPORT: sched/core: uclamp: use TG's clamps to restrict TASK's clamps  [Patrick Bellasi]
-45ba4dc  BACKPORT: sched/core: uclamp: map TG's clamp values into CPU's clamp groups  [Patrick Bellasi]
-a0fc62f  BACKPORT: sched/core: uclamp: propagate parent clamps  [Patrick Bellasi]
-8317a72  BACKPORT: sched/core: uclamp: extend CPU's cgroup controller  [Patrick Bellasi]
-908d357  BACKPORT: sched/cpufreq: uclamp: add utilization clamping for RT tasks  [Patrick Bellasi]
-6ccbd09  BACKPORT: sched/cpufreq: uclamp: add utilization clamping for FAIR tasks  [Patrick Bellasi]
-923a90d  BACKPORT: sched/core: uclamp: add system default clamps  [Patrick Bellasi]
-c822404  BACKPORT: sched/core: uclamp: add clamp group bucketing support  [Patrick Bellasi]
-d522e70  BACKPORT: sched/core: uclamp: enforce last task UCLAMP_MAX  [Patrick Bellasi]
-18c6947b  BACKPORT: sched/core: uclamp: update CPU's refcount on clamp changes  [Patrick Bellasi]
-39b1472  BACKPORT: sched/core: uclamp: add CPU's clamp groups refcounting  [Patrick Bellasi]
-3c68ddf  BACKPORT: sched/core: uclamp: map TASK's clamp values into CPU's clamp groups  [Patrick Bellasi]
-6de1ae4  BACKPORT: sched/core: make sched_setattr able to tune the current policy  [Patrick Bellasi]
-e49cf8c  BACKPORT: sched/core: uclamp: extend sched_setattr to support utilization clamping  [Patrick Bellasi]
-cf98e62  block/cfq-iosched: Use io_start_time_ns instead of the wrong io_start_time  [Zile995]
-947744d  msm: camera: Undo pm_qos request upon error  [Sultan Alsawaf]
-3e3a219  iommu: msm: Fix race due to mapping and unmapping simultaneously  [Sultan Alsawaf]
-b4091a1  arm64: introduce is_device_dma_coherent  [Stefano Stabellini]
-f1628f8  iommu: msm: Rewrite to improve clarity and performance  [Sultan Alsawaf]
+85d04cc  lib/decompress.c: consistency of compress formats for kernel image  [Haesung Kim]
+13559f3  lib/decompress: set the compressor name to NULL on error  [Aneesh Kumar K.V]
+1d035ae  lib/bsearch.c: micro-optimize pivot position calculation  [Sergey Senozhatsky]
+c96a600  Revert "crypto: crypto4xx - properly set IV after de- and encrypt"  [Greg Kroah-Hartman]
+e41dbca  tcp: enforce tcp_min_snd_mss in tcp_mtu_probing()  [Eric Dumazet]
+28e2947  tcp: add tcp_min_snd_mss sysctl  [Eric Dumazet]
+9e130fa  tcp: tcp_fragment() should apply sane memory limits  [Eric Dumazet]
+4bc3c4c  tcp: limit payload size of sacked skbs  [Eric Dumazet]
+
+ * packages/apps/Dialer
+4fa8974  InCallUI: SmartMute  [Ali B]
+
+ * vendor/xiaomi
+3d9a5ab  msm8953-common: remove fm_qsoc_patches  [ZeeLog]
+
+====================
+     2019-06-21    
+====================
+
+ * build/soong
+5b67d74  Revert "SDClang8: sanitize: filter implicit-integer-sign-change"  [DennySPB]
+
+ * external/skia
+d8e8a88  Disable sdclang for skia  [DennySPB]
+
+ * frameworks/base
+4f0480d  GamingMode: add master switch [1/2]  [DennySPB]
+56c3217  base: add camera flash toggle api  [Rabih Salamey]
+99f0087  LiveDisplayTile: Report unavailable on HWC2  [Han Wang]
+e6d63de  GamingMode: cleanup and fix a bit  [DennySPB]
+090208e  Q Style Clock: Reduce top margin, users want to see more notifications  [Shreyansh Lodha]
+2686007  Base: Let Q clock follow accent colour  [Gaurav Singh]
+550615b  SmartCharging: allow user set resume level [1/2]  [DennySPB]
+a3a68cc  fwb: Improve AOSP twilight code  [Henrique Silva]
+
+ * frameworks/opt/net/wifi
+4bae5fd  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' into HEAD  [blinoff82]
+
+ * hardware/qcom/audio-caf/msm8996
+95c0e9c  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' into HEAD  [blinoff82]
+
+ * hardware/qcom/bt
+2d5ff3d  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [blinoff82]
+94c4fcf  Add compat for old wcnss_filter  [LuK1337]
+dea254b  Merge tag 'LA.UM.7.3.r1-06600-sdm845.0' into HEAD  [blinoff82]
+4552b1b  libbt-vendor: Use generated kernel headers  [Bruno Martins]
+7bc042f  libbt-vendor: Add missing vendor prefix to a bluetooth.status prop  [Arne Coucheron]
+ecddbc5  libbt-vendor: Fix BLUETOOTH_MAC_ADDR_BOOT_PROPERTY definition  [Arne Coucheron]
+2aeec2d  Apply the Cherokee's mechanism of stopping hci_filter to ROME  [John Muir]
+b0b17f4  libbt: Fix case where SoC type is not set  [Steve Kondik]
+
+ * hardware/ril
+bdcbf57  librilreference: disable sanitize  [DennySPB]
+
+ * kernel/xiaomi/msm8953
+b39c17b  zRAM: only use custom compression LZ4  [TheHitMan7]
+76ba691  BACKPORT: sched/cpufreq: Boost schedutil frequency ramp up  [Douglas RAILLARD]
+feb10ff  BACKPORT: sched/cpufreq: Improve sugov_cpu_is_busy accuracy  [Douglas RAILLARD]
+f71fa39  BACKPORT: sched/cpufreq: sugov_cpu_is_busy for shared policy  [Douglas RAILLARD]
+0330899  BACKPORT: sched/cpufreq: Move up sugov_cpu_is_busy()  [Douglas RAILLARD]
+fd74b69  BACKPORT: sched/cpufreq: Make schedutil energy-aware  [Douglas RAILLARD]
+5d5b905  BACKPORT: sched/cpufreq: Attach perf domain to sugov policy  [Douglas RAILLARD]
+b5fd4f6  BACKPORT: PM: Introduce em_pd_get_higher_freq()  [Douglas RAILLARD]
+
+ * packages/apps/Settings
+8126ebb  Merge "SmartCharging: allow user set resume level [2/2]" into 9.0  [dennyspb]
+e1b0081  Merge "Cutout force fullscreen: Disable fast scroller" into 9.0  [dennyspb]
+
+ * packages/apps/SyberiaSettings
+ce4681d  Remove footer from gaming mode  [DennySPB]
+
+ * system/sepolicy
+b1dcfd2  sepolicy: Add Google App build props  [mydongistiny]
+2e7c0b0  system_server: allow writes to /proc/pid/*  [Tim Murray]
+7aeb9ac  sepolicy: Add Label to f2fs sysfs files  [Daniel Rosenberg]
+
+ * vendor/codeaurora/telephony
+5007a19  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' into HEAD  [blinoff82]
 
  * vendor/syberia
-e20d88e  team: new maintainer for Mi A2 (jasmine sprout)  [blinoff82]
+aa5a27d  Merge "Add Markup lib for arm 32-bit devices" into 9.0  [blinov.in]
+2cc48f9  Merge "team: add Xiaomi Redmi Note 7 (lavender) to official builds" into 9.0  [blinov.in]
+7ec500f  Go back to SDClang6  [DennySPB]
 
 ====================
-     2019-06-09    
+     2019-06-20    
 ====================
 
- * bionic
-ac3f348  Revert "bionic: strip libc and linker"  [blinoff82]
+ * build/soong
+ad3700d  Merge "Remove extra vendor parameters for tidy" into 9.0  [dennyspb]
+2b99ed4  Remove extra vendor parameters for tidy  [mesziman]
 
- * external/vim
-260addf  patch 8.1.1501: new behavior of b:changedtick not tested  [Bram Moolenaar]
-21f8d93  patch 8.1.1500: wrong shell command when building with VIMDLL and "!" in 'go'  [Bram Moolenaar]
-24a5ac5  patch 8.1.1499: ruler not updated after popup window was removed  [Bram Moolenaar]
-c024b46  patch 8.1.1498: ":write" increments b:changedtick even though nothing changed  [Bram Moolenaar]
-aef5c62  patch 8.1.1497: accessing memory beyond allocated space  [Bram Moolenaar]
-acc682b  patch 8.1.1496: popup window height is not recomputed  [Bram Moolenaar]
-1748c7f  patch 8.1.1495: memory access error  [Bram Moolenaar]
-6c009a3  patch 8.1.1494: build failure  [Bram Moolenaar]
-33796b3  patch 8.1.1493: redrawing with popups is slow and causes flicker  [Bram Moolenaar]
-7c348bb  patch 8.1.1492: MS-Windows: when "!" is in 'guioptions' ":!start" fails  [Bram Moolenaar]
+ * device/xiaomi/mido
+17b2ca1  rootdir:fstab.com update f2fs flags  [kondors1995]
+8644b5d  rootdir: Move back to tissot stock blkio tune  [kondors1995]
+f8cec87  mido: BT Audio: Enable default support for Aptx Adaptive  [chandan mishra]
+d1e56ba  mido: Update Mpeg4 encoder max supported resolution  [Priyanka Gujjula]
+029320c  mido: move media configs to seperate folder  [Silesh K Nair]
 
- * hardware/qcom/fm
-2140e05  Automatic translation import  [Michael Bestas]
+ * packages/apps/Settings
+fab928c  SmartCharging: allow user set resume level [2/2]  [DennySPB]
 
- * packages/apps/FMRadio
-b74e30b  Automatic translation import  [Michael Bestas]
+ * packages/apps/SyberiaSettings
+57b9a58  GamingMode: cleanup a bit  [DennySPB]
 
  * packages/resources/devicesettings
-69d301d  Automatic translation import  [Michael Bestas]
+b73e3bc  Automatic translation import  [Michael Bestas]
+
+ * vendor/syberia
+9bd226b  Add Markup lib for arm 32-bit devices  [blinoff82]
+eb4c6e4  SDClang8: disable sign sign sanitizer  [DennySPB]
+
+====================
+     2019-06-19    
+====================
+
+ * build/soong
+e9f06ab  Merge "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2" into 9.0  [dennyspb]
+
+ * device/xiaomi/mido
+f8cec87  mido: BT Audio: Enable default support for Aptx Adaptive  [chandan mishra]
+d1e56ba  mido: Update Mpeg4 encoder max supported resolution  [Priyanka Gujjula]
+029320c  mido: move media configs to seperate folder  [Silesh K Nair]
+
+ * external/zlib
+6992a71  Don't use ARMv8 CRC32 on arm arch  [DennySPB]
+
+ * frameworks/base
+180523b  GamingMode: Rewrite implementation [1/2]  [DennySPB]
+2772f3b  GamingMode: add more ringer modes [1/2]  [DennySPB]
+080b5e3  LiveDisplayTile: skip day/night mode  [DennySPB]
+3e162de  GamingMode: minor improvements  [DennySPB]
+ed25d5c  SystemUI: FireHound Gaming [1/4]  [PMS22]
+b2ddffd  Revert "SystemUI: Add Gaming mode tile"  [DennySPB]
+353681a  Revert "GamingModeTile: stop adjusting volume"  [DennySPB]
+61894aa  Fix NPE on navbar  [Henrique Silva]
+5b16e5d  KeyguardSliceProvider: Show dnd icon regardless of suppression mode  [Henrique Silva]
+9df49a9  LiveDisplayService: Disable ColorTemperature when NightDisplay is available  [Bruno Martins]
+
+ * kernel/xiaomi/msm8953
+c79a1d4  kernfs: Avoid dynamic memory allocation for small write buffers  [Sultan Alsawaf]
+d042aad  selinux: Avoid dynamic memory allocation for small context buffers  [Sultan Alsawaf]
+f7d1a5e6  ext4 crypto: Use a larger on-stack file name buffer  [Sultan Alsawaf]
+37cdec7  msm: kgsl: Avoid dynamically allocating small command buffers  [Sultan Alsawaf]
+0721398  qos: Don't disable interrupts while holding pm_qos_lock  [Sultan Alsawaf]
+40a0f77  cpuidle: Optimize pm_qos notifier callback  [Sultan Alsawaf]
+5fd58a7  msm: kgsl: Dispatch commands using a master kthread  [Sultan Alsawaf]
+2a4e064  Revert "Revert "cpuidle: Wakeup only cpus for which qos has changed.""  [kondors1995]
+
+ * packages/apps/Settings
+ac87b87  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
+69aed80  Cutout force fullscreen: Disable fast scroller  [Henrique Silva]
+
+ * packages/apps/SyberiaSettings
+03cac8a  GamingMode: add master switch [2/2]  [DennySPB]
+4026c9f  SyberiaSettings: add missing summaries  [blinoff82]
+2856d75  GamingMode: Rewrite implementation [2/2]  [DennySPB]
+
+ * system/libhwbinder
+2dbcd81  fix sdclang warnings  [DennySPB]
+a1be8cc  Change priority of thread allocation  [Steven Moreland]
+c7123c4  libhwbinder: Disable implicit-conversion sanitizer  [mydongistiny]
+8eefda8  libhwbinder: Remove thread shutdown logic  [Steven Moreland]
+9dd521c  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
+628876e  libhwbinder: move to <pthread.h> mutexes  [Elliott Hughes]
+b009a98  libhwbinder: Make new ProcessState member const  [Martijn Coenen]
+
+ * vendor/syberia
+c4cf650  Merge "sdclang8: Disable some new warings" into 9.0  [dennyspb]
+cc1a73b  sdclang8: Disable some new warings  [DennySPB]
+9bbc37b  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
+
+====================
+     2019-06-18    
+====================
+
+ * build/soong
+474c7aa  SDClang8: sanitize: filter implicit-integer-sign-change  [DennySPB]
+
+ * external/llvm
+9212c2a  Add unittests to {ARM | AArch64}TargetParser.  [Zijiao Ma]
+
+ * frameworks/rs
+25915b7  Avoid using x18 register in resize intrinsic  [Peter Collingbourne]
+f625a60  rs: Fix invalid const atomic builtin accesses  [Stephen Hines]
+
+ * system/security
+73581e4  Merge changes I28160db1,I3002c0f6,Iaeeba524,Iba04236d,I55eb358b, ... into 9.0  [dennyspb]
+bc3e709  Use std::move to avoid unnecessary copying  [Yi Kong]
+9177788  Fix unnecessary copy initialization warnings  [Chih-Hung Hsieh]
+
+====================
+     2019-06-17    
+====================
+
+====================
+     2019-06-16    
+====================
 
