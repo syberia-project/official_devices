@@ -1,11 +1,27 @@
 ====================
-     2019-06-21    
+     2019-06-22    
 ====================
+
+ * build/soong
+bd004c7  Revert "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2"  [blinoff82]
 
  * device/oneplus/oneplus6t
 f2e0913  Update ssr restart level prop  [LuK1337]
 e31358c  DeviceParts: Add sliders for changing call and notification vibration  [Anirudh Gupta]
 ea02b6a  DeviceParts: add flashlight option to alert slider  [Marko Man]
+
+ * packages/apps/Settings
+8cf97e4  team: add OnePlus One (bacon) to official builds  [blinoff82]
+
+ * vendor/syberia
+8b84b4b  team: add OnePlus One (bacon) to official builds  [blinoff82]
+
+====================
+     2019-06-21    
+====================
+
+ * device/oneplus/oneplus6t
+56e4ec1  init: remove wlan modules binding  [DennySPB]
 
  * external/skia
 d8e8a88  Disable sdclang for skia  [DennySPB]
@@ -64,9 +80,6 @@ ae70f83  Revert "soc: qcom: glink: Fix third argument to strlcpy"  [khusika]
 
  * build/soong
 5b67d74  Revert "SDClang8: sanitize: filter implicit-integer-sign-change"  [DennySPB]
-
- * device/oneplus/oneplus6t
-56e4ec1  init: remove wlan modules binding  [DennySPB]
 
  * frameworks/base
 4f0480d  GamingMode: add master switch [1/2]  [DennySPB]
@@ -200,6 +213,7 @@ dc481b2  Add 'drivers/staging/fw-api/' from commit '76faaa0fcc36c7854f10e44cd947
 b63b2ca  Add 'drivers/staging/qcacld-3.0/' from commit '15411d378694bc9fa79faba1b651caf288e3cfba'  [DennySPB]
 5612833  qcacld-3.0: drop for future merge of sm8150 drivers  [DennySPB]
 7275b84  Merge branch 'kernel.lnx.4.9.r11-rel' of https://github.com/android-linux-stable/msm-4.9  [DennySPB]
+b08e2c3  Merge 4.9.182 into kernel.lnx.4.9.r11-rel  [Nathan Chancellor]
 
  * packages/apps/Settings
 ac87b87  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
@@ -208,15 +222,6 @@ ac87b87  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82
  * packages/apps/SyberiaSettings
 4026c9f  SyberiaSettings: add missing summaries  [blinoff82]
 2856d75  GamingMode: Rewrite implementation [2/2]  [DennySPB]
-
- * system/libhwbinder
-2dbcd81  fix sdclang warnings  [DennySPB]
-a1be8cc  Change priority of thread allocation  [Steven Moreland]
-c7123c4  libhwbinder: Disable implicit-conversion sanitizer  [mydongistiny]
-8eefda8  libhwbinder: Remove thread shutdown logic  [Steven Moreland]
-9dd521c  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
-628876e  libhwbinder: move to <pthread.h> mutexes  [Elliott Hughes]
-b009a98  libhwbinder: Make new ProcessState member const  [Martijn Coenen]
 
  * system/security
 73581e4  Merge changes I28160db1,I3002c0f6,Iaeeba524,Iba04236d,I55eb358b, ... into 9.0  [dennyspb]
@@ -234,7 +239,6 @@ bc3e709  Use std::move to avoid unnecessary copying  [Yi Kong]
 474c7aa  SDClang8: sanitize: filter implicit-integer-sign-change  [DennySPB]
 
  * kernel/oneplus/sdm845
-b08e2c3  Merge 4.9.182 into kernel.lnx.4.9.r11-rel  [Nathan Chancellor]
 f4e2dd9  Linux 4.9.182  [Greg Kroah-Hartman]
 7e90962  tcp: enforce tcp_min_snd_mss in tcp_mtu_probing()  [Eric Dumazet]
 8e39cbc  tcp: add tcp_min_snd_mss sysctl  [Eric Dumazet]
@@ -245,12 +249,4 @@ cc1b58c  tcp: limit payload size of sacked skbs  [Eric Dumazet]
 ====================
      2019-06-16    
 ====================
-
-====================
-     2019-06-15    
-====================
-
- * device/oneplus/oneplus6t
-981859e  prebuilts: Lawnchair-2112  [DennySPB]
-bf57784  Prebuilts: update OnePlus Camera  [blinoff82]
 
