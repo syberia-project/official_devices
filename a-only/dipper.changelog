@@ -2,6 +2,19 @@
      2019-06-22    
 ====================
 
+ * build/soong
+bd004c7  Revert "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2"  [blinoff82]
+
+ * packages/apps/Settings
+8cf97e4  team: add OnePlus One (bacon) to official builds  [blinoff82]
+
+ * vendor/syberia
+8b84b4b  team: add OnePlus One (bacon) to official builds  [blinoff82]
+
+====================
+     2019-06-21    
+====================
+
  * external/skia
 d8e8a88  Disable sdclang for skia  [DennySPB]
 
@@ -36,7 +49,7 @@ c46d761  treewide: Revert questionable sched changes  [YumeMichi]
 4fa8974  InCallUI: SmartMute  [Ali B]
 
 ====================
-     2019-06-21    
+     2019-06-20    
 ====================
 
  * build/soong
@@ -97,7 +110,7 @@ aa5a27d  Merge "Add Markup lib for arm 32-bit devices" into 9.0  [blinov.in]
 7ec500f  Go back to SDClang6  [DennySPB]
 
 ====================
-     2019-06-20    
+     2019-06-19    
 ====================
 
  * build/soong
@@ -115,6 +128,7 @@ fcd3b03  mmc: sdio: Fix strlcpy usage  [Nathan Chancellor]
 17c3d97  Revert "soc: qcom: glink: Fix third argument to strlcpy"  [khusika]
 ef380c2  Revert "mmc: sdio: Fix third argument to strlcpy"  [khusika]
 ab55502  Revert "diag: Fix third argument to strlcpy"  [khusika]
+d4118b5  Merge branch 'kernel.lnx.4.9.r11-rel' of https://github.com/android-linux-stable/msm-4.9 into HEAD  [Bruno Martins]
 
  * packages/apps/Settings
 fab928c  SmartCharging: allow user set resume level [2/2]  [DennySPB]
@@ -133,7 +147,7 @@ c4cf650  Merge "sdclang8: Disable some new warings" into 9.0  [dennyspb]
 cc1a73b  sdclang8: Disable some new warings  [DennySPB]
 
 ====================
-     2019-06-19    
+     2019-06-18    
 ====================
 
  * external/llvm
@@ -159,7 +173,6 @@ b2ddffd  Revert "SystemUI: Add Gaming mode tile"  [DennySPB]
 f625a60  rs: Fix invalid const atomic builtin accesses  [Stephen Hines]
 
  * kernel/xiaomi/sdm845
-d4118b5  Merge branch 'kernel.lnx.4.9.r11-rel' of https://github.com/android-linux-stable/msm-4.9 into HEAD  [Bruno Martins]
 0cab1c8  Merge remote-tracking branch 'msm-4.9/kernel.lnx.4.9.r11-rel' into dev  [ethan-halsall]
 
  * packages/apps/Settings
@@ -170,15 +183,6 @@ ac87b87  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82
 4026c9f  SyberiaSettings: add missing summaries  [blinoff82]
 2856d75  GamingMode: Rewrite implementation [2/2]  [DennySPB]
 
- * system/libhwbinder
-2dbcd81  fix sdclang warnings  [DennySPB]
-a1be8cc  Change priority of thread allocation  [Steven Moreland]
-c7123c4  libhwbinder: Disable implicit-conversion sanitizer  [mydongistiny]
-8eefda8  libhwbinder: Remove thread shutdown logic  [Steven Moreland]
-9dd521c  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
-628876e  libhwbinder: move to <pthread.h> mutexes  [Elliott Hughes]
-b009a98  libhwbinder: Make new ProcessState member const  [Martijn Coenen]
-
  * system/security
 73581e4  Merge changes I28160db1,I3002c0f6,Iaeeba524,Iba04236d,I55eb358b, ... into 9.0  [dennyspb]
 bc3e709  Use std::move to avoid unnecessary copying  [Yi Kong]
@@ -188,7 +192,7 @@ bc3e709  Use std::move to avoid unnecessary copying  [Yi Kong]
 9bbc37b  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
 
 ====================
-     2019-06-18    
+     2019-06-17    
 ====================
 
  * build/soong
@@ -204,32 +208,13 @@ cc1b58c  tcp: limit payload size of sacked skbs  [Eric Dumazet]
 418894c  tcp: reduce tcp_fastretrans_alert() verbosity  [Eric Dumazet]
 
 ====================
-     2019-06-17    
+     2019-06-16    
 ====================
 
  * kernel/xiaomi/sdm845
 386a12f  defconfig: disable stune assistant  [ethan-halsall]
 3b16a6d  cpu_input_boost: Kill SchedTune boosting code  [Danny Lin]
 990e093  sched/tune: Revert Dynamic SchedTune Boost mechanism  [Danny Lin]
-
-====================
-     2019-06-16    
-====================
-
- * kernel/xiaomi/sdm845
 939d6f2  cpufreq: wrap dynamic stune boost so we can compile without it  [ethan-halsall]
 e96498f  defconfig: we are gonna use libperfmgr instead of dynamic stune boost  [ethan-halsall]
-59a19eb  drivers/soc/qcom: properly guard if statement  [ethan-halsall]
-e703307  ion: Reserve caches for sg allocations  [Sultan Alsawaf]
-d4f4549  drivers/gpu/msm: clean up messy port of sultans dispatch commit  [ethan-halsall]
-b898701  Revert "defconfig: set tick rate to 100hz and optimise"  [ethan-halsall]
-5ac5a1e  sched/fair: Fix load_balance() affinity redo path  [Jeffrey Hugo]
-5102e53  sched/debug: Intruduce task_state_to_char() helper function  [Xie XiuQi]
-12e6e93  sched/debug: Show task state in /proc/sched_debug  [Xie XiuQi]
-b004bf0  sched: improve the scheduler  [Satya Durga Srinivasu Prabhala]
-dfd95c5  ARM64: dts: Rollback third-party QoS changes  [0ctobot]
-e26fef6a  QoS: Cleanup latency optimizations  [0ctobot]
-81d2957  sched/fair: Be more aggressive preventing downmigration of Schedtune boosted tasks  [Zachariah Kennedy]
-cc03cf8  Revert "treewide: remove frameboost"  [ethan-halsall]
-bf52713  drivers/platform/msm/ipa/ipa_clients: fix misleading indentation  [ethan-halsall]
 
