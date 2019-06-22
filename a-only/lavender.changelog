@@ -1,0 +1,236 @@
+====================
+     2019-06-22    
+====================
+
+ * device/xiaomi/lavender
+55d12d2  lavender: Move offline charger from vendor  [mdeejay]
+
+ * external/skia
+d8e8a88  Disable sdclang for skia  [DennySPB]
+
+ * frameworks/base
+d53bdd5  libs: hwui: disable sdclang  [DennySPB]
+aa4ec7e  Merge "Flashlight toggle api improvements" into 9.0  [dennyspb]
+d641c92  Merge "HeadsUpStatusBarView: account for rounded corner" into 9.0  [dennyspb]
+4fa8ed1  Merge "base: add camera flash toggle api" into 9.0  [dennyspb]
+95b9412  Flashlight toggle api improvements  [ezio84]
+0d60885  HeadsUpStatusBarView: account for rounded corner  [Peter Cai]
+
+ * frameworks/native
+c41e2e0  Revert "Revert "opengl: Disable sdclang for EGL and OpenGLES""  [DennySPB]
+
+ * frameworks/opt/net/wifi
+8e1c2c4  Merge branch '9.0' of https://github.com/aexmod-tmp/platform_frameworks_opt_net_wifi into HEAD  [blinoff82]
+b6b9509  resurrect mWifiLinkLayerStatsSupported counter  [Stefan Assmann]
+
+ * packages/apps/Dialer
+4fa8974  InCallUI: SmartMute  [Ali B]
+
+ * vendor/xiaomi/lavender
+b9a5da3  lavender: Move offline charger to device tree  [mdeejay]
+
+====================
+     2019-06-21    
+====================
+
+ * build/soong
+5b67d74  Revert "SDClang8: sanitize: filter implicit-integer-sign-change"  [DennySPB]
+
+ * device/xiaomi/lavender
+78dd671  lavender: export SKIP_ABI_CHECKS=true  [mdeejay]
+
+ * frameworks/base
+4f0480d  GamingMode: add master switch [1/2]  [DennySPB]
+56c3217  base: add camera flash toggle api  [Rabih Salamey]
+99f0087  LiveDisplayTile: Report unavailable on HWC2  [Han Wang]
+e6d63de  GamingMode: cleanup and fix a bit  [DennySPB]
+090208e  Q Style Clock: Reduce top margin, users want to see more notifications  [Shreyansh Lodha]
+2686007  Base: Let Q clock follow accent colour  [Gaurav Singh]
+550615b  SmartCharging: allow user set resume level [1/2]  [DennySPB]
+a3a68cc  fwb: Improve AOSP twilight code  [Henrique Silva]
+
+ * frameworks/opt/net/wifi
+4bae5fd  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' into HEAD  [blinoff82]
+
+ * hardware/qcom/bt
+2d5ff3d  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [blinoff82]
+94c4fcf  Add compat for old wcnss_filter  [LuK1337]
+dea254b  Merge tag 'LA.UM.7.3.r1-06600-sdm845.0' into HEAD  [blinoff82]
+4552b1b  libbt-vendor: Use generated kernel headers  [Bruno Martins]
+7bc042f  libbt-vendor: Add missing vendor prefix to a bluetooth.status prop  [Arne Coucheron]
+ecddbc5  libbt-vendor: Fix BLUETOOTH_MAC_ADDR_BOOT_PROPERTY definition  [Arne Coucheron]
+2aeec2d  Apply the Cherokee's mechanism of stopping hci_filter to ROME  [John Muir]
+b0b17f4  libbt: Fix case where SoC type is not set  [Steve Kondik]
+
+ * hardware/ril
+bdcbf57  librilreference: disable sanitize  [DennySPB]
+
+ * packages/apps/Settings
+8126ebb  Merge "SmartCharging: allow user set resume level [2/2]" into 9.0  [dennyspb]
+e1b0081  Merge "Cutout force fullscreen: Disable fast scroller" into 9.0  [dennyspb]
+
+ * packages/apps/SyberiaSettings
+ce4681d  Remove footer from gaming mode  [DennySPB]
+
+ * system/sepolicy
+b1dcfd2  sepolicy: Add Google App build props  [mydongistiny]
+2e7c0b0  system_server: allow writes to /proc/pid/*  [Tim Murray]
+7aeb9ac  sepolicy: Add Label to f2fs sysfs files  [Daniel Rosenberg]
+
+ * vendor/codeaurora/telephony
+5007a19  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' into HEAD  [blinoff82]
+
+ * vendor/syberia
+aa5a27d  Merge "Add Markup lib for arm 32-bit devices" into 9.0  [blinov.in]
+2cc48f9  Merge "team: add Xiaomi Redmi Note 7 (lavender) to official builds" into 9.0  [blinov.in]
+7ec500f  Go back to SDClang6  [DennySPB]
+
+====================
+     2019-06-20    
+====================
+
+ * build/soong
+ad3700d  Merge "Remove extra vendor parameters for tidy" into 9.0  [dennyspb]
+2b99ed4  Remove extra vendor parameters for tidy  [mesziman]
+e9f06ab  Merge "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2" into 9.0  [dennyspb]
+
+ * device/xiaomi/lavender
+e2b9635  sepolicy: make init and vendor_init permissive domains  [DennySPB]
+0d0ea5a  Revert "lavender: Disable debug.sf.latch_unsignaled"  [mdeejay]
+81aa0ab  lavender: Use MIUI poweroff charging animation  [bgcngm]
+7aae000  lavender: Add Call Recordings overlays  [mdeejay]
+a22bc2f  [TEMP] Define Syberia version  [mdeejay]
+
+ * packages/apps/Settings
+fab928c  SmartCharging: allow user set resume level [2/2]  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+57b9a58  GamingMode: cleanup a bit  [DennySPB]
+03cac8a  GamingMode: add master switch [2/2]  [DennySPB]
+
+ * packages/resources/devicesettings
+b73e3bc  Automatic translation import  [Michael Bestas]
+
+ * vendor/syberia
+9bd226b  Add Markup lib for arm 32-bit devices  [blinoff82]
+eb4c6e4  SDClang8: disable sign sign sanitizer  [DennySPB]
+c4cf650  Merge "sdclang8: Disable some new warings" into 9.0  [dennyspb]
+cc1a73b  sdclang8: Disable some new warings  [DennySPB]
+
+ * vendor/xiaomi/lavender
+8e9355a  lavender: Restore to an old version of chargeonlymode  [GuaiYiHu]
+
+====================
+     2019-06-19    
+====================
+
+ * external/llvm
+9212c2a  Add unittests to {ARM | AArch64}TargetParser.  [Zijiao Ma]
+
+ * external/zlib
+6992a71  Don't use ARMv8 CRC32 on arm arch  [DennySPB]
+
+ * frameworks/base
+180523b  GamingMode: Rewrite implementation [1/2]  [DennySPB]
+2772f3b  GamingMode: add more ringer modes [1/2]  [DennySPB]
+080b5e3  LiveDisplayTile: skip day/night mode  [DennySPB]
+3e162de  GamingMode: minor improvements  [DennySPB]
+ed25d5c  SystemUI: FireHound Gaming [1/4]  [PMS22]
+b2ddffd  Revert "SystemUI: Add Gaming mode tile"  [DennySPB]
+353681a  Revert "GamingModeTile: stop adjusting volume"  [DennySPB]
+61894aa  Fix NPE on navbar  [Henrique Silva]
+5b16e5d  KeyguardSliceProvider: Show dnd icon regardless of suppression mode  [Henrique Silva]
+9df49a9  LiveDisplayService: Disable ColorTemperature when NightDisplay is available  [Bruno Martins]
+
+ * packages/apps/Settings
+ac87b87  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
+69aed80  Cutout force fullscreen: Disable fast scroller  [Henrique Silva]
+
+ * packages/apps/SyberiaSettings
+4026c9f  SyberiaSettings: add missing summaries  [blinoff82]
+2856d75  GamingMode: Rewrite implementation [2/2]  [DennySPB]
+
+ * system/libhwbinder
+2dbcd81  fix sdclang warnings  [DennySPB]
+a1be8cc  Change priority of thread allocation  [Steven Moreland]
+c7123c4  libhwbinder: Disable implicit-conversion sanitizer  [mydongistiny]
+8eefda8  libhwbinder: Remove thread shutdown logic  [Steven Moreland]
+9dd521c  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
+628876e  libhwbinder: move to <pthread.h> mutexes  [Elliott Hughes]
+b009a98  libhwbinder: Make new ProcessState member const  [Martijn Coenen]
+
+ * system/security
+73581e4  Merge changes I28160db1,I3002c0f6,Iaeeba524,Iba04236d,I55eb358b, ... into 9.0  [dennyspb]
+bc3e709  Use std::move to avoid unnecessary copying  [Yi Kong]
+9177788  Fix unnecessary copy initialization warnings  [Chih-Hung Hsieh]
+
+ * vendor/syberia
+9bbc37b  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
+
+====================
+     2019-06-18    
+====================
+
+ * build/soong
+474c7aa  SDClang8: sanitize: filter implicit-integer-sign-change  [DennySPB]
+
+ * device/xiaomi/lavender
+024fdd7  lavender: overlay: use Pie qti-telephony-common  [DennySPB]
+ae096f1  lavender: Add basic USB HAL that reports no status change  [intervigilium]
+ed71bd7  lavender: Initial Syberia OS bring up  [mdeejay]
+
+ * frameworks/rs
+25915b7  Avoid using x18 register in resize intrinsic  [Peter Collingbourne]
+f625a60  rs: Fix invalid const atomic builtin accesses  [Stephen Hines]
+
+ * kernel/xiaomi/lavender
+ffbd599  Merge branch 'kernel.lnx.4.4.r34-rel' of https://github.com/android-linux-stable/msm-4.4 into pie-clang  [mdeejay]
+db1e310  Merge 4.4.182 into kernel.lnx.4.4.r34-rel  [Nathan Chancellor]
+33790f2  Linux 4.4.182  [Greg Kroah-Hartman]
+f938ae0  tcp: enforce tcp_min_snd_mss in tcp_mtu_probing()  [Eric Dumazet]
+e757d05  tcp: add tcp_min_snd_mss sysctl  [Eric Dumazet]
+ad472d3  tcp: tcp_fragment() should apply sane memory limits  [Eric Dumazet]
+4657ee0  tcp: limit payload size of sacked skbs  [Eric Dumazet]
+
+====================
+     2019-06-17    
+====================
+
+ * device/xiaomi/lavender
+d4b832a  Revert "lavender: parts: Fix font and accent color"  [mdeejay]
+d92be93  audio_effects: add JamesDSP effect library  [DennySPB]
+f832689  overlay: enable MultiUser UI  [DennySPB]
+82b0fe8  overlay: Enable smart charging  [blinoff82]
+35b4f28  lavender: Enable a-gps overlays  [mdeejay]
+d977ffe  lavender: Initial Beast-ify  [mdeejay]
+5bf37cb  Revert "lavender: Wait for MPCTL to start on boot"  [mdeejay]
+7bd824b  Revert "lavender: Set default density to 409"  [mdeejay]
+8cf8cc9  Revert "lavender: Initial changes for caf"  [mdeejay]
+35911ef  Revert "lavender: Remove dummy libhidl"  [mdeejay]
+2d77112  Revert "lavender: copy codec to media_codecs_vendor instead of media_codecs"  [mdeejay]
+053cc9a  Revert "lavender: Adapt ANT+ for CAF"  [mdeejay]
+39188f5  Revert "lavender: Disable HAl3 by default"  [mdeejay]
+8ecd0e9  lavender: overlay: Enable VoLTE for Airtel/Vodafone India  [celtare21]
+d56e8aa  lavender: Cleanup sensor board flag  [Bladeyy]
+9313957  lavender: overlay: Import stock vendor carrier configs  [Bladeyy]
+75855f6  lavender: Force enable volte  [Bladeyy]
+ea30183  lavender: Disable HAl3 by default  [Bladeyy]
+
+====================
+     2019-06-16    
+====================
+
+ * device/xiaomi/lavender
+d4e26f4  lavender: Set AOD to off by default  [Bladeyy]
+bd318c2  lavender: Enable AlwaysOnDisplay  [Bladeyy]
+9aea780  lavender: parts: Fix AoD default pref  [Henrique Silva]
+bb3d37f  lavender: doze: Check if AOD is enabled after boot  [Luca Stefani]
+0a82365  lavender: doze: Move DozeUtils.checkDozeService in an handler  [Luca Stefani]
+179ad62  lavender: doze: Make AOD preference not persistent  [Luca Stefani]
+50905f3  lavender: parts: Add AOD support to Ambient Display  [Bruno Martins]
+d173020  lavender: Disable debug.sf.latch_unsignaled  [Flex1911]
+2c0d116  lavender: Sync props from stock miui  [Bladeyy]
+
+ * vendor/xiaomi/lavender
+fb3847c  lavender: Update vendor blobs from 9.6.13 China Dev  [Bladeyy]
+

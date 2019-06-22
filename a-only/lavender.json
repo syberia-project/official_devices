@@ -1,0 +1,30 @@
+{
+  "addons": [
+    {
+      "title": "Magisk",
+      "summary": "Magisk",
+      "url": "\"http://tiny.cc/latestmagisk"
+    },
+    {
+      "title": "Magisk",
+      "summary": "Magisk Uninstaller",
+      "url": "http://tiny.cc/latestuninstaller"
+    }
+  ],
+  "filename": "syberia_lavender-v2.6-20190622-0544-OFFICIAL.zip",
+  "changelog": "",
+  "filesize": "818855927",
+  "md5": "08f28e94b0a22b5a565e403d70a62c9c",
+  "build_date": "20190622",
+  "device": "lavender",
+  "url": "https://sourceforge.net/projects/syberiaos/files/lavender/syberia_lavender-v2.6-20190622-0544-OFFICIAL.zip/download",
+  "donate_url": "https://syberiaos.com/links",
+  "developer_url": "http://github.com/syberia-project",
+  "news_url": "http://github.com/syberia-project",
+  "developer": "mdeejay",
+  "error": "false",
+  "website_url": "http://syberiaos.com",
+  "forum_url": "https://forum.xda-developers.com/redmi-note-7/development/rom-syberia-project-t3940835",
+  "device_brand": "Xiaomi",
+  "device_model": "Redmi Note 7"
+}
