@@ -2,6 +2,19 @@
      2019-06-22    
 ====================
 
+ * build/soong
+bd004c7  Revert "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2"  [blinoff82]
+
+ * packages/apps/Settings
+8cf97e4  team: add OnePlus One (bacon) to official builds  [blinoff82]
+
+ * vendor/syberia
+8b84b4b  team: add OnePlus One (bacon) to official builds  [blinoff82]
+
+====================
+     2019-06-21    
+====================
+
  * external/skia
 d8e8a88  Disable sdclang for skia  [DennySPB]
 
@@ -24,7 +37,7 @@ b6b9509  resurrect mWifiLinkLayerStatsSupported counter  [Stefan Assmann]
 4fa8974  InCallUI: SmartMute  [Ali B]
 
 ====================
-     2019-06-21    
+     2019-06-20    
 ====================
 
  * build/soong
@@ -80,7 +93,7 @@ aa5a27d  Merge "Add Markup lib for arm 32-bit devices" into 9.0  [blinov.in]
 7ec500f  Go back to SDClang6  [DennySPB]
 
 ====================
-     2019-06-20    
+     2019-06-19    
 ====================
 
  * build/soong
@@ -102,7 +115,7 @@ c4cf650  Merge "sdclang8: Disable some new warings" into 9.0  [dennyspb]
 cc1a73b  sdclang8: Disable some new warings  [DennySPB]
 
 ====================
-     2019-06-19    
+     2019-06-18    
 ====================
 
  * external/llvm
@@ -135,15 +148,6 @@ ac87b87  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82
 4026c9f  SyberiaSettings: add missing summaries  [blinoff82]
 2856d75  GamingMode: Rewrite implementation [2/2]  [DennySPB]
 
- * system/libhwbinder
-2dbcd81  fix sdclang warnings  [DennySPB]
-a1be8cc  Change priority of thread allocation  [Steven Moreland]
-c7123c4  libhwbinder: Disable implicit-conversion sanitizer  [mydongistiny]
-8eefda8  libhwbinder: Remove thread shutdown logic  [Steven Moreland]
-9dd521c  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
-628876e  libhwbinder: move to <pthread.h> mutexes  [Elliott Hughes]
-b009a98  libhwbinder: Make new ProcessState member const  [Martijn Coenen]
-
  * system/security
 73581e4  Merge changes I28160db1,I3002c0f6,Iaeeba524,Iba04236d,I55eb358b, ... into 9.0  [dennyspb]
 bc3e709  Use std::move to avoid unnecessary copying  [Yi Kong]
@@ -153,14 +157,14 @@ bc3e709  Use std::move to avoid unnecessary copying  [Yi Kong]
 9bbc37b  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
 
 ====================
-     2019-06-18    
+     2019-06-17    
 ====================
 
  * build/soong
 474c7aa  SDClang8: sanitize: filter implicit-integer-sign-change  [DennySPB]
 
 ====================
-     2019-06-17    
+     2019-06-16    
 ====================
 
  * device/xiaomi/land
@@ -180,8 +184,4 @@ a9d9166  msm8937-common: livedisplay: Remove a no-op check in CONTROLLER_CHECK  
 
  * vendor/xiaomi
 517d6f0  land:APTX  [tkchn]
-
-====================
-     2019-06-16    
-====================
 
