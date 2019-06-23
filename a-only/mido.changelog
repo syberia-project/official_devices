@@ -2,6 +2,23 @@
      2019-06-22    
 ====================
 
+ * build/soong
+bd004c7  Revert "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2"  [blinoff82]
+
+ * kernel/xiaomi/msm8953
+38620b4  Revert "Mido: Import K-LAPSE 4.3"  [kondors1995]
+94fbf8f  Revert "lib/int_sqrt: optimize initial value compute"  [kondors1995]
+
+ * packages/apps/Settings
+8cf97e4  team: add OnePlus One (bacon) to official builds  [blinoff82]
+
+ * vendor/syberia
+8b84b4b  team: add OnePlus One (bacon) to official builds  [blinoff82]
+
+====================
+     2019-06-21    
+====================
+
  * device/xiaomi/mido
 2b25a3e  mido: camera: Add hacks for unsupported FPS bug  [Nich]
 d426ed9  mido: FM Radio: Refactor & Cleanup  [ZeeLog]
@@ -10,6 +27,9 @@ d426ed9  mido: FM Radio: Refactor & Cleanup  [ZeeLog]
 3d941e6  mido: Enforce privapp-permissions whitelist  [Michael Bestas]
 9a43ece  mido: biometrics: register fp service to sdcard_rw group  [ZeeLog]
 8244750  mido: lights: remove unused header  [ZeeLog]
+
+ * external/skia
+d8e8a88  Disable sdclang for skia  [DennySPB]
 
  * frameworks/base
 d53bdd5  libs: hwui: disable sdclang  [DennySPB]
@@ -43,14 +63,11 @@ e41dbca  tcp: enforce tcp_min_snd_mss in tcp_mtu_probing()  [Eric Dumazet]
 3d9a5ab  msm8953-common: remove fm_qsoc_patches  [ZeeLog]
 
 ====================
-     2019-06-21    
+     2019-06-20    
 ====================
 
  * build/soong
 5b67d74  Revert "SDClang8: sanitize: filter implicit-integer-sign-change"  [DennySPB]
-
- * external/skia
-d8e8a88  Disable sdclang for skia  [DennySPB]
 
  * frameworks/base
 4f0480d  GamingMode: add master switch [1/2]  [DennySPB]
@@ -112,12 +129,13 @@ aa5a27d  Merge "Add Markup lib for arm 32-bit devices" into 9.0  [blinov.in]
 7ec500f  Go back to SDClang6  [DennySPB]
 
 ====================
-     2019-06-20    
+     2019-06-19    
 ====================
 
  * build/soong
 ad3700d  Merge "Remove extra vendor parameters for tidy" into 9.0  [dennyspb]
 2b99ed4  Remove extra vendor parameters for tidy  [mesziman]
+e9f06ab  Merge "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2" into 9.0  [dennyspb]
 
  * device/xiaomi/mido
 17b2ca1  rootdir:fstab.com update f2fs flags  [kondors1995]
@@ -126,11 +144,22 @@ f8cec87  mido: BT Audio: Enable default support for Aptx Adaptive  [chandan mish
 d1e56ba  mido: Update Mpeg4 encoder max supported resolution  [Priyanka Gujjula]
 029320c  mido: move media configs to seperate folder  [Silesh K Nair]
 
+ * kernel/xiaomi/msm8953
+c79a1d4  kernfs: Avoid dynamic memory allocation for small write buffers  [Sultan Alsawaf]
+d042aad  selinux: Avoid dynamic memory allocation for small context buffers  [Sultan Alsawaf]
+f7d1a5e6  ext4 crypto: Use a larger on-stack file name buffer  [Sultan Alsawaf]
+37cdec7  msm: kgsl: Avoid dynamically allocating small command buffers  [Sultan Alsawaf]
+0721398  qos: Don't disable interrupts while holding pm_qos_lock  [Sultan Alsawaf]
+40a0f77  cpuidle: Optimize pm_qos notifier callback  [Sultan Alsawaf]
+5fd58a7  msm: kgsl: Dispatch commands using a master kthread  [Sultan Alsawaf]
+2a4e064  Revert "Revert "cpuidle: Wakeup only cpus for which qos has changed.""  [kondors1995]
+
  * packages/apps/Settings
 fab928c  SmartCharging: allow user set resume level [2/2]  [DennySPB]
 
  * packages/apps/SyberiaSettings
 57b9a58  GamingMode: cleanup a bit  [DennySPB]
+03cac8a  GamingMode: add master switch [2/2]  [DennySPB]
 
  * packages/resources/devicesettings
 b73e3bc  Automatic translation import  [Michael Bestas]
@@ -138,18 +167,15 @@ b73e3bc  Automatic translation import  [Michael Bestas]
  * vendor/syberia
 9bd226b  Add Markup lib for arm 32-bit devices  [blinoff82]
 eb4c6e4  SDClang8: disable sign sign sanitizer  [DennySPB]
+c4cf650  Merge "sdclang8: Disable some new warings" into 9.0  [dennyspb]
+cc1a73b  sdclang8: Disable some new warings  [DennySPB]
 
 ====================
-     2019-06-19    
+     2019-06-18    
 ====================
 
- * build/soong
-e9f06ab  Merge "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2" into 9.0  [dennyspb]
-
- * device/xiaomi/mido
-f8cec87  mido: BT Audio: Enable default support for Aptx Adaptive  [chandan mishra]
-d1e56ba  mido: Update Mpeg4 encoder max supported resolution  [Priyanka Gujjula]
-029320c  mido: move media configs to seperate folder  [Silesh K Nair]
+ * external/llvm
+9212c2a  Add unittests to {ARM | AArch64}TargetParser.  [Zijiao Ma]
 
  * external/zlib
 6992a71  Don't use ARMv8 CRC32 on arm arch  [DennySPB]
@@ -166,61 +192,32 @@ b2ddffd  Revert "SystemUI: Add Gaming mode tile"  [DennySPB]
 5b16e5d  KeyguardSliceProvider: Show dnd icon regardless of suppression mode  [Henrique Silva]
 9df49a9  LiveDisplayService: Disable ColorTemperature when NightDisplay is available  [Bruno Martins]
 
- * kernel/xiaomi/msm8953
-c79a1d4  kernfs: Avoid dynamic memory allocation for small write buffers  [Sultan Alsawaf]
-d042aad  selinux: Avoid dynamic memory allocation for small context buffers  [Sultan Alsawaf]
-f7d1a5e6  ext4 crypto: Use a larger on-stack file name buffer  [Sultan Alsawaf]
-37cdec7  msm: kgsl: Avoid dynamically allocating small command buffers  [Sultan Alsawaf]
-0721398  qos: Don't disable interrupts while holding pm_qos_lock  [Sultan Alsawaf]
-40a0f77  cpuidle: Optimize pm_qos notifier callback  [Sultan Alsawaf]
-5fd58a7  msm: kgsl: Dispatch commands using a master kthread  [Sultan Alsawaf]
-2a4e064  Revert "Revert "cpuidle: Wakeup only cpus for which qos has changed.""  [kondors1995]
+ * frameworks/rs
+25915b7  Avoid using x18 register in resize intrinsic  [Peter Collingbourne]
+f625a60  rs: Fix invalid const atomic builtin accesses  [Stephen Hines]
 
  * packages/apps/Settings
 ac87b87  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
 69aed80  Cutout force fullscreen: Disable fast scroller  [Henrique Silva]
 
  * packages/apps/SyberiaSettings
-03cac8a  GamingMode: add master switch [2/2]  [DennySPB]
 4026c9f  SyberiaSettings: add missing summaries  [blinoff82]
 2856d75  GamingMode: Rewrite implementation [2/2]  [DennySPB]
-
- * system/libhwbinder
-2dbcd81  fix sdclang warnings  [DennySPB]
-a1be8cc  Change priority of thread allocation  [Steven Moreland]
-c7123c4  libhwbinder: Disable implicit-conversion sanitizer  [mydongistiny]
-8eefda8  libhwbinder: Remove thread shutdown logic  [Steven Moreland]
-9dd521c  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
-628876e  libhwbinder: move to <pthread.h> mutexes  [Elliott Hughes]
-b009a98  libhwbinder: Make new ProcessState member const  [Martijn Coenen]
-
- * vendor/syberia
-c4cf650  Merge "sdclang8: Disable some new warings" into 9.0  [dennyspb]
-cc1a73b  sdclang8: Disable some new warings  [DennySPB]
-9bbc37b  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
-
-====================
-     2019-06-18    
-====================
-
- * build/soong
-474c7aa  SDClang8: sanitize: filter implicit-integer-sign-change  [DennySPB]
-
- * external/llvm
-9212c2a  Add unittests to {ARM | AArch64}TargetParser.  [Zijiao Ma]
-
- * frameworks/rs
-25915b7  Avoid using x18 register in resize intrinsic  [Peter Collingbourne]
-f625a60  rs: Fix invalid const atomic builtin accesses  [Stephen Hines]
 
  * system/security
 73581e4  Merge changes I28160db1,I3002c0f6,Iaeeba524,Iba04236d,I55eb358b, ... into 9.0  [dennyspb]
 bc3e709  Use std::move to avoid unnecessary copying  [Yi Kong]
 9177788  Fix unnecessary copy initialization warnings  [Chih-Hung Hsieh]
 
+ * vendor/syberia
+9bbc37b  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
+
 ====================
      2019-06-17    
 ====================
+
+ * build/soong
+474c7aa  SDClang8: sanitize: filter implicit-integer-sign-change  [DennySPB]
 
 ====================
      2019-06-16    
