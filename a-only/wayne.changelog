@@ -1,4 +1,17 @@
 ====================
+     2019-06-23    
+====================
+
+ * build/soong
+bd004c7  Revert "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2"  [blinoff82]
+
+ * packages/apps/Settings
+8cf97e4  team: add OnePlus One (bacon) to official builds  [blinoff82]
+
+ * vendor/syberia
+8b84b4b  team: add OnePlus One (bacon) to official builds  [blinoff82]
+
+====================
      2019-06-22    
 ====================
 
@@ -38,10 +51,6 @@ ef0291d  wayne: export SKIP_ABI_CHECKS=true  [rebenok90x]
 d02ca36  wayne: use kangaroox kernel  [rebenok90x]
 7f560c9  Update syberia.dependencies  [rebenok90x]
 
-====================
-     2019-06-21    
-====================
-
  * external/skia
 d8e8a88  Disable sdclang for skia  [DennySPB]
 
@@ -62,27 +71,12 @@ b6b9509  resurrect mWifiLinkLayerStatsSupported counter  [Stefan Assmann]
 
  * kernel/xiaomi/sdm660
 8849a99  Merge remote-tracking branch 'kernel-common/android-4.4' into pie-test  [ktommy91]
-f45e77d  Revert "msm: mdss: hdmi: skip pan_display during handoff"  [ktommy91]
-e24d72b  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.4 into pie-test  [ktommy91]
-85dc5de  cpufreq: dsboost: Correct goto labels during init failures  [Tyler Nijmeh]
-f7bdba6  cpufreq: dsboost: Unboost on panel suspend  [Tyler Nijmeh]
-4f7124a  staging: android: ashmem: Get rid of the big mutex lock  [Sultan Alsawaf]
-5aee06d  ASoC: Silence platform not registered message  [Sultan Alsawaf]
-035ae87  iommu: msm: Fix race due to mapping and unmapping simultaneously  [Sultan Alsawaf]
-875ce76  defconfig: Disable SEEMP  [Sultan Alsawaf]
-040b497  cpuidle: Optimize pm_qos notifier callback  [Sultan Alsawaf]
-9a29a03  qos: Execute notifier callbacks atomically  [Sultan Alsawaf]
-b08f723  qos: Don't disable interrupts while holding pm_qos_lock  [Sultan Alsawaf]
-fd90d51  iommu: msm: Rewrite to improve clarity and performance  [Sultan Alsawaf]
-c6ccbbe  msm: mdss: Speed up mdss_mdp_get_format_params for UBWC formats  [Sultan Alsawaf]
-21a9be4  msm: mdss: Remove sync debug name generation from hot path  [Sultan Alsawaf]
-1cc9822  qpnp-fg-gen3: Limit how frequently fg data can be queried  [Sultan Alsawaf]
 
  * packages/apps/Dialer
 4fa8974  InCallUI: SmartMute  [Ali B]
 
 ====================
-     2019-06-20    
+     2019-06-21    
 ====================
 
  * build/soong
@@ -115,8 +109,21 @@ b0b17f4  libbt: Fix case where SoC type is not set  [Steve Kondik]
 bdcbf57  librilreference: disable sanitize  [DennySPB]
 
  * kernel/xiaomi/sdm660
-eee21eb  ANDROID: kernel: cgroup: cpuset: Clear cpus_requested for empty buf  [Roman Kiryanov]
-f1adac4  ANDROID: kernel: cgroup: cpuset: Add missing allocation of cpus_requested in alloc_trial_cpuset  [Roman Kiryanov]
+f45e77d  Revert "msm: mdss: hdmi: skip pan_display during handoff"  [ktommy91]
+e24d72b  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.4 into pie-test  [ktommy91]
+85dc5de  cpufreq: dsboost: Correct goto labels during init failures  [Tyler Nijmeh]
+f7bdba6  cpufreq: dsboost: Unboost on panel suspend  [Tyler Nijmeh]
+4f7124a  staging: android: ashmem: Get rid of the big mutex lock  [Sultan Alsawaf]
+5aee06d  ASoC: Silence platform not registered message  [Sultan Alsawaf]
+035ae87  iommu: msm: Fix race due to mapping and unmapping simultaneously  [Sultan Alsawaf]
+875ce76  defconfig: Disable SEEMP  [Sultan Alsawaf]
+040b497  cpuidle: Optimize pm_qos notifier callback  [Sultan Alsawaf]
+9a29a03  qos: Execute notifier callbacks atomically  [Sultan Alsawaf]
+b08f723  qos: Don't disable interrupts while holding pm_qos_lock  [Sultan Alsawaf]
+fd90d51  iommu: msm: Rewrite to improve clarity and performance  [Sultan Alsawaf]
+c6ccbbe  msm: mdss: Speed up mdss_mdp_get_format_params for UBWC formats  [Sultan Alsawaf]
+21a9be4  msm: mdss: Remove sync debug name generation from hot path  [Sultan Alsawaf]
+1cc9822  qpnp-fg-gen3: Limit how frequently fg data can be queried  [Sultan Alsawaf]
 
  * packages/apps/Settings
 8126ebb  Merge "SmartCharging: allow user set resume level [2/2]" into 9.0  [dennyspb]
@@ -124,9 +131,6 @@ e1b0081  Merge "Cutout force fullscreen: Disable fast scroller" into 9.0  [denny
 
  * packages/apps/SyberiaSettings
 ce4681d  Remove footer from gaming mode  [DennySPB]
-
- * packages/resources/devicesettings
-b73e3bc  Automatic translation import  [Michael Bestas]
 
  * system/sepolicy
 b1dcfd2  sepolicy: Add Google App build props  [mydongistiny]
@@ -140,16 +144,19 @@ b1dcfd2  sepolicy: Add Google App build props  [mydongistiny]
 aa5a27d  Merge "Add Markup lib for arm 32-bit devices" into 9.0  [blinov.in]
 2cc48f9  Merge "team: add Xiaomi Redmi Note 7 (lavender) to official builds" into 9.0  [blinov.in]
 7ec500f  Go back to SDClang6  [DennySPB]
-9bd226b  Add Markup lib for arm 32-bit devices  [blinoff82]
 
 ====================
-     2019-06-19    
+     2019-06-20    
 ====================
 
  * build/soong
 ad3700d  Merge "Remove extra vendor parameters for tidy" into 9.0  [dennyspb]
 2b99ed4  Remove extra vendor parameters for tidy  [mesziman]
 e9f06ab  Merge "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2" into 9.0  [dennyspb]
+
+ * kernel/xiaomi/sdm660
+eee21eb  ANDROID: kernel: cgroup: cpuset: Clear cpus_requested for empty buf  [Roman Kiryanov]
+f1adac4  ANDROID: kernel: cgroup: cpuset: Add missing allocation of cpus_requested in alloc_trial_cpuset  [Roman Kiryanov]
 
  * packages/apps/Settings
 fab928c  SmartCharging: allow user set resume level [2/2]  [DennySPB]
@@ -158,13 +165,17 @@ fab928c  SmartCharging: allow user set resume level [2/2]  [DennySPB]
 57b9a58  GamingMode: cleanup a bit  [DennySPB]
 03cac8a  GamingMode: add master switch [2/2]  [DennySPB]
 
+ * packages/resources/devicesettings
+b73e3bc  Automatic translation import  [Michael Bestas]
+
  * vendor/syberia
+9bd226b  Add Markup lib for arm 32-bit devices  [blinoff82]
 eb4c6e4  SDClang8: disable sign sign sanitizer  [DennySPB]
 c4cf650  Merge "sdclang8: Disable some new warings" into 9.0  [dennyspb]
 cc1a73b  sdclang8: Disable some new warings  [DennySPB]
 
 ====================
-     2019-06-18    
+     2019-06-19    
 ====================
 
  * external/llvm
@@ -189,14 +200,6 @@ b2ddffd  Revert "SystemUI: Add Gaming mode tile"  [DennySPB]
 25915b7  Avoid using x18 register in resize intrinsic  [Peter Collingbourne]
 f625a60  rs: Fix invalid const atomic builtin accesses  [Stephen Hines]
 
- * kernel/xiaomi/sdm660
-9c4ab57  Merge 4.4.182 into android-4.4  [Greg Kroah-Hartman]
-33790f2  Linux 4.4.182  [Greg Kroah-Hartman]
-f938ae0  tcp: enforce tcp_min_snd_mss in tcp_mtu_probing()  [Eric Dumazet]
-e757d05  tcp: add tcp_min_snd_mss sysctl  [Eric Dumazet]
-ad472d3  tcp: tcp_fragment() should apply sane memory limits  [Eric Dumazet]
-4657ee0  tcp: limit payload size of sacked skbs  [Eric Dumazet]
-
  * packages/apps/Settings
 ac87b87  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
 69aed80  Cutout force fullscreen: Disable fast scroller  [Henrique Silva]
@@ -214,15 +217,27 @@ bc3e709  Use std::move to avoid unnecessary copying  [Yi Kong]
 9bbc37b  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
 
 ====================
-     2019-06-17    
+     2019-06-18    
 ====================
 
  * build/soong
 474c7aa  SDClang8: sanitize: filter implicit-integer-sign-change  [DennySPB]
 
  * kernel/xiaomi/sdm660
+9c4ab57  Merge 4.4.182 into android-4.4  [Greg Kroah-Hartman]
+33790f2  Linux 4.4.182  [Greg Kroah-Hartman]
+f938ae0  tcp: enforce tcp_min_snd_mss in tcp_mtu_probing()  [Eric Dumazet]
+e757d05  tcp: add tcp_min_snd_mss sysctl  [Eric Dumazet]
+ad472d3  tcp: tcp_fragment() should apply sane memory limits  [Eric Dumazet]
+4657ee0  tcp: limit payload size of sacked skbs  [Eric Dumazet]
 2236e75  cpuidle: don't disable cpuidle when entering suspend  [Tim Murray]
 b45dd53  defconfig: disable PSTORE  [ktommy91]
+
+====================
+     2019-06-17    
+====================
+
+ * kernel/xiaomi/sdm660
 7017860  defconfig: disable VFAT_FS SDFAT driver can be used for VFAT  [ktommy91]
 2e6b6c6  defconfig: update the f2fs configs  [ktommy91]
 70f19ad  defconfig: regen  [ktommy91]
@@ -240,12 +255,4 @@ ee2717c  Revert "Revert "qcacld-3.0: Register mon interface using hdd_add_virtua
 16b3d46  sound: sdm660_cdc:remove the headphone gain control Useless and cause issues on MIUI  [ktommy91]
 dea2fa1  nvt_touch_ds2: Properly handle userspace dt2w switch  [TingyiChen]
 3fdf53a  nvt_touch_ds2: Create procfs node to handle userspace dt2w switch  …  [TingyiChen]
-
-====================
-     2019-06-16    
-====================
-
- * vendor/xiaomi
-76576cc  wayne: move watermark to device  [Max Weffers]
-070dbcf  wayne: Initial Pie Release Blobs of Mi 6X  [Max Weffers]
 
