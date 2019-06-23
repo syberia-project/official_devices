@@ -1,0 +1,30 @@
+{
+  "addons": [
+    {
+      "title": "Magisk",
+      "summary": "Magisk",
+      "url": "\"http://tiny.cc/latestmagisk"
+    },
+    {
+      "title": "Magisk",
+      "summary": "Magisk Uninstaller",
+      "url": "http://tiny.cc/latestuninstaller"
+    }
+  ],
+  "filename": "syberia_bacon-v2.6-20190623-0417-OFFICIAL.zip",
+  "changelog": "",
+  "filesize": "369323277",
+  "md5": "8c4fc76ee80a81373d801518856d1565",
+  "build_date": "20190623",
+  "device": "bacon",
+  "url": "https://sourceforge.net/projects/syberiaos/files/bacon/syberia_bacon-v2.6-20190623-0417-OFFICIAL.zip/download",
+  "donate_url": "https://syberiaos.com/links",
+  "developer_url": "http://github.com/syberia-project",
+  "news_url": "http://github.com/syberia-project",
+  "developer": "blinoff82",
+  "error": "false",
+  "website_url": "http://syberiaos.com",
+  "forum_url": "https://forum.xda-developers.com/oneplus-one/orig-development/rom-syberia-project-t3942046",
+  "device_brand": "OnePlus",
+  "device_model": "OnePlus One"
+}

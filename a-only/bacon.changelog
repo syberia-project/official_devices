@@ -1,0 +1,255 @@
+====================
+     2019-06-23    
+====================
+
+ * build/soong
+bd004c7  Revert "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2"  [blinoff82]
+
+ * device/oneplus/bacon
+e1600c2  bacon: Update dependencies  [blinoff82]
+17b61e9  bacon: build permissive  [blinoff82]
+8161c47  bacon: Update Fz config for v3  [blinoff82]
+
+ * device/oppo/common
+5199c36  oppo_common: Remove oneplus gestures from Settings dashboard  [blinoff82]
+
+ * device/oppo/msm8974-common
+7548586  Add hostapd configs needed for CAF wlan  [blinoff82]
+
+ * hardware/ril-caf
+ef35293  Declare the right path for sap-api.pb.h  [blinoff82]
+
+ * packages/apps/Settings
+8cf97e4  team: add OnePlus One (bacon) to official builds  [blinoff82]
+
+ * vendor/syberia
+8b84b4b  team: add OnePlus One (bacon) to official builds  [blinoff82]
+
+====================
+     2019-06-22    
+====================
+
+ * device/oneplus/bacon
+bca6eb6  bacon: build OTA Updater  [blinoff82]
+dd64a08  bacon: overlay: Always enable smart replies  [dev-harsh1998]
+7e3f172  bacon: overlay: Enable AOD  [Luca Stefani]
+49c39a8  bacon: Enable pm.sleep_mode  [karthick111]
+305b7e1  bacon: Build textclassifier's smart selection  [Joey]
+
+ * device/oppo/msm8974-common
+d954d6c  bacon: Add GMS props for Play Store certification  [althafvly]
+07055aa  bacon: QCamera2: Fix take HDR picture spin forever issue  [Edward Wang]
+aff15cd  bacon: overlay: Use Cloudflare DNS servers as hints  [Daniel Micay]
+e992c59  bacon: Set AudioFlinger client heap size to 7MB  [Satya Krishna Pindiproli]
+66a7241  bacon: ueventd: Fix permission of /dev/diag  [Robert Popescu]
+52565c0  bacon: Switch to Cloudflare DNS servers  [Adithya R]
+fa2f37c  bacon: Lower audioflinger standby delay to reduce power consumption  [cb]
+ab3e6e8  bacon: Enable HWUI_COMPILE_FOR_PERF  [dev-harsh1998]
+c43da90  bacon: Use mke2fs to create ext4 images  [Wei Wang]
+469ec65  common: disable ART debugging  [Tomoms]
+7880d59  bacon: audio: Enable Dynamics Processing effect  [rago]
+ab05e06  msm8974: disable network scan via TelephonyManager  [jrior001]
+c667682  bacon: Enable Smooth Streaming for secure video playback  [Shalaj Jain]
+2a70634  bacon: Add some HWUI props  [Feinzer]
+01063ba  bacon: add aptX support  [Akshay Menon]
+e57097e  bacon: Improve scrolling responsiveness  [Simao Gomes Viana]
+ffc4af2  bacon: Minor tweaks to dalvik and dex2oat  [Adithya R]
+b764715  msm8974-common: remove lineage dependencies  [blinoff82]
+
+ * external/skia
+d8e8a88  Disable sdclang for skia  [DennySPB]
+
+ * frameworks/base
+d53bdd5  libs: hwui: disable sdclang  [DennySPB]
+aa4ec7e  Merge "Flashlight toggle api improvements" into 9.0  [dennyspb]
+d641c92  Merge "HeadsUpStatusBarView: account for rounded corner" into 9.0  [dennyspb]
+4fa8ed1  Merge "base: add camera flash toggle api" into 9.0  [dennyspb]
+95b9412  Flashlight toggle api improvements  [ezio84]
+0d60885  HeadsUpStatusBarView: account for rounded corner  [Peter Cai]
+
+ * frameworks/native
+c41e2e0  Revert "Revert "opengl: Disable sdclang for EGL and OpenGLES""  [DennySPB]
+
+ * frameworks/opt/net/wifi
+8e1c2c4  Merge branch '9.0' of https://github.com/aexmod-tmp/platform_frameworks_opt_net_wifi into HEAD  [blinoff82]
+b6b9509  resurrect mWifiLinkLayerStatsSupported counter  [Stefan Assmann]
+
+ * packages/apps/Dialer
+4fa8974  InCallUI: SmartMute  [Ali B]
+
+====================
+     2019-06-21    
+====================
+
+ * build/soong
+5b67d74  Revert "SDClang8: sanitize: filter implicit-integer-sign-change"  [DennySPB]
+
+ * device/oppo/common
+02903c9  Revert "configpanel: Write all music nodes on toggle"  [blinoff82]
+055e61c  Ensure Device Extras respects RTL  [Alex]
+682f49f  Simply remove screen off gestures.  [nickdoh81]
+764d406  Comment out flashlight gesture  [Alex Cruz]
+ddc380f  Kill off log spam pertaining to missing metadata  [Alex Cruz]
+e84e5ac  Adapt keyhandler to our API  [blinoff82]
+
+ * frameworks/base
+4f0480d  GamingMode: add master switch [1/2]  [DennySPB]
+56c3217  base: add camera flash toggle api  [Rabih Salamey]
+99f0087  LiveDisplayTile: Report unavailable on HWC2  [Han Wang]
+e6d63de  GamingMode: cleanup and fix a bit  [DennySPB]
+090208e  Q Style Clock: Reduce top margin, users want to see more notifications  [Shreyansh Lodha]
+2686007  Base: Let Q clock follow accent colour  [Gaurav Singh]
+550615b  SmartCharging: allow user set resume level [1/2]  [DennySPB]
+a3a68cc  fwb: Improve AOSP twilight code  [Henrique Silva]
+
+ * frameworks/opt/net/wifi
+4bae5fd  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' into HEAD  [blinoff82]
+
+ * hardware/qcom/bt
+2d5ff3d  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [blinoff82]
+94c4fcf  Add compat for old wcnss_filter  [LuK1337]
+dea254b  Merge tag 'LA.UM.7.3.r1-06600-sdm845.0' into HEAD  [blinoff82]
+4552b1b  libbt-vendor: Use generated kernel headers  [Bruno Martins]
+7bc042f  libbt-vendor: Add missing vendor prefix to a bluetooth.status prop  [Arne Coucheron]
+ecddbc5  libbt-vendor: Fix BLUETOOTH_MAC_ADDR_BOOT_PROPERTY definition  [Arne Coucheron]
+2aeec2d  Apply the Cherokee's mechanism of stopping hci_filter to ROME  [John Muir]
+b0b17f4  libbt: Fix case where SoC type is not set  [Steve Kondik]
+
+ * hardware/ril
+bdcbf57  librilreference: disable sanitize  [DennySPB]
+
+ * packages/apps/Settings
+8126ebb  Merge "SmartCharging: allow user set resume level [2/2]" into 9.0  [dennyspb]
+e1b0081  Merge "Cutout force fullscreen: Disable fast scroller" into 9.0  [dennyspb]
+
+ * packages/apps/SyberiaSettings
+ce4681d  Remove footer from gaming mode  [DennySPB]
+
+ * system/sepolicy
+b1dcfd2  sepolicy: Add Google App build props  [mydongistiny]
+2e7c0b0  system_server: allow writes to /proc/pid/*  [Tim Murray]
+7aeb9ac  sepolicy: Add Label to f2fs sysfs files  [Daniel Rosenberg]
+
+ * vendor/codeaurora/telephony
+5007a19  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' into HEAD  [blinoff82]
+
+ * vendor/qcom/opensource/display-commonsys-intf
+0f2b854  display: remove libqdmetadata  [blinoff82]
+
+ * vendor/syberia
+aa5a27d  Merge "Add Markup lib for arm 32-bit devices" into 9.0  [blinov.in]
+2cc48f9  Merge "team: add Xiaomi Redmi Note 7 (lavender) to official builds" into 9.0  [blinov.in]
+7ec500f  Go back to SDClang6  [DennySPB]
+
+====================
+     2019-06-20    
+====================
+
+ * build/soong
+ad3700d  Merge "Remove extra vendor parameters for tidy" into 9.0  [dennyspb]
+2b99ed4  Remove extra vendor parameters for tidy  [mesziman]
+e9f06ab  Merge "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2" into 9.0  [dennyspb]
+
+ * device/oneplus/bacon
+b05c774  overlay: enable MultiUser UI  [DennySPB]
+9cb131b  overlay: override sysfs nodes for smart charge  [blinoff82]
+4fc3f56  Overlay: Enable proxi check on wakeup events  [DennySPB]
+6dc2ba1  overlay: Enable custom button brightness  [DennySPB]
+9e47e01  bacon: add syberia dependencies  [blinoff82]
+e75077e  bacon: Syberia OS bring up  [blinoff82]
+
+ * packages/apps/Settings
+fab928c  SmartCharging: allow user set resume level [2/2]  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+57b9a58  GamingMode: cleanup a bit  [DennySPB]
+03cac8a  GamingMode: add master switch [2/2]  [DennySPB]
+
+ * packages/resources/devicesettings
+b73e3bc  Automatic translation import  [Michael Bestas]
+
+ * vendor/syberia
+9bd226b  Add Markup lib for arm 32-bit devices  [blinoff82]
+eb4c6e4  SDClang8: disable sign sign sanitizer  [DennySPB]
+c4cf650  Merge "sdclang8: Disable some new warings" into 9.0  [dennyspb]
+cc1a73b  sdclang8: Disable some new warings  [DennySPB]
+
+====================
+     2019-06-19    
+====================
+
+ * external/llvm
+9212c2a  Add unittests to {ARM | AArch64}TargetParser.  [Zijiao Ma]
+
+ * external/zlib
+6992a71  Don't use ARMv8 CRC32 on arm arch  [DennySPB]
+
+ * frameworks/base
+180523b  GamingMode: Rewrite implementation [1/2]  [DennySPB]
+2772f3b  GamingMode: add more ringer modes [1/2]  [DennySPB]
+080b5e3  LiveDisplayTile: skip day/night mode  [DennySPB]
+3e162de  GamingMode: minor improvements  [DennySPB]
+ed25d5c  SystemUI: FireHound Gaming [1/4]  [PMS22]
+b2ddffd  Revert "SystemUI: Add Gaming mode tile"  [DennySPB]
+353681a  Revert "GamingModeTile: stop adjusting volume"  [DennySPB]
+61894aa  Fix NPE on navbar  [Henrique Silva]
+5b16e5d  KeyguardSliceProvider: Show dnd icon regardless of suppression mode  [Henrique Silva]
+9df49a9  LiveDisplayService: Disable ColorTemperature when NightDisplay is available  [Bruno Martins]
+
+ * frameworks/rs
+25915b7  Avoid using x18 register in resize intrinsic  [Peter Collingbourne]
+f625a60  rs: Fix invalid const atomic builtin accesses  [Stephen Hines]
+
+ * packages/apps/Settings
+ac87b87  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
+69aed80  Cutout force fullscreen: Disable fast scroller  [Henrique Silva]
+
+ * packages/apps/SyberiaSettings
+4026c9f  SyberiaSettings: add missing summaries  [blinoff82]
+2856d75  GamingMode: Rewrite implementation [2/2]  [DennySPB]
+
+ * system/security
+73581e4  Merge changes I28160db1,I3002c0f6,Iaeeba524,Iba04236d,I55eb358b, ... into 9.0  [dennyspb]
+bc3e709  Use std::move to avoid unnecessary copying  [Yi Kong]
+9177788  Fix unnecessary copy initialization warnings  [Chih-Hung Hsieh]
+
+ * vendor/syberia
+9bbc37b  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
+
+====================
+     2019-06-18    
+====================
+
+ * build/soong
+474c7aa  SDClang8: sanitize: filter implicit-integer-sign-change  [DennySPB]
+
+====================
+     2019-06-17    
+====================
+
+ * kernel/oppo/msm8974
+cb91864  power: process: decrease time to enter sleep * Phone will enter in deepsleep in half the prev. time  [Victor Lourme]
+efcb157  suspend: enable freeze timeout configuration through sys  [Li Fei]
+a88eb2a  block: Disable add_random  [Chester Kener]
+4437b07  cpufreq: interactive: expose delta boost and delta boost frequency  [Feinzer]
+042fe6f  cpufreq: interactive: Use a custom frequency for delta boost  [Feinzer]
+94c7808  switch to reporting micro-amps instead of mili-amps  [ClintT]
+0edb0bc  adreno_tz: load_boost: Add function to get the GPU load  [Feinzer]
+17a9b02  adreno_tz: Don't sleep in atomic context for continuous boosts  [Sultanxda]
+8eb517f  adreno_tz: Add GPU Load boost  [Feinzer]
+8c883a2  adreno_tz: Remove suspend spinlocks from input boost  [Feinzer]
+d87b642  workqueue: declare system_highpri_wq  [Lai Jiangshan]
+7242c44  adreno_tz: Add GPU input-boost feature  [Sultanxda]
+4d316e4  bacon_defconfig: Enable decompress performance flags  [Feinzer]
+54c87e4  random: increase entropy levels (both read and write)  [fermasia]
+a33de29  block: zram: Use LZ4 as default  [Feinzer]
+2f4d327  bacon_defconfig: Enable zram  [Feinzer]
+b2362bc  bacon_defconfig: Enable InteractiveX  [Feinzer]
+65e47b2  cpufreq: Add InteractiveX governor  [imoseyon]
+b6d668d  lib/string: use glibc version  [faux123]
+8bfbb6a  lib/memcopy: use glibc version  [faux123]
+e261a9b  arm,kernel: Squash 'enhance power efficiency' patches  [franciscofranco]
+1a5a6f2  cpu_input_boost: Don't boost if minimum frequency is higher  [Feinzer]
+ed4c23a  cpu_input_boost: Go back to user's minimum frequency after boost  [Feinzer]
+21a8777  cpufreq: fallback to interactive if governor is not found  [Nathan Chancellor]
+
