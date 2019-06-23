@@ -1,18 +1,160 @@
 ====================
+     2019-06-23    
+====================
+
+ * build/soong
+bd004c7  Revert "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2"  [blinoff82]
+
+ * kernel/xiaomi/msm8953
+ab593dc  Linux 4.9.183  [Greg Kroah-Hartman]
+9a5a822  Abort file_remove_privs() for non-reg. files  [Alexander Lochmann]
+64dc436  mlxsw: spectrum: Prevent force of 56G  [Amit Cohen]
+1826610  scsi: libsas: delete sas port if expander discover failed  [Jason Yan]
+a11b0b0  scsi: smartpqi: properly set both the DMA mask and the coherent DMA mask  [Lianbo Jiang]
+2212cce  scsi: libcxgbi: add a check for NULL pointer in cxgbi_check_route()  [Varun Prakash]
+1580903  net: sh_eth: fix mdio access in sh_eth_close() for R-Car Gen2 and RZ/A1 SoCs  [Yoshihiro Shimoda]
+0831a02  KVM: PPC: Book3S HV: Don't take kvm->lock around kvm_for_each_vcpu  [Paul Mackerras]
+80ba370  KVM: PPC: Book3S: Use new mutex to synchronize access to rtas token list  [Paul Mackerras]
+ad689c5  ia64: fix build errors by exporting paddr_to_nid()  [Randy Dunlap]
+213571f  perf record: Fix s390 missing module symbol and warning for non-root users  [Thomas Richter]
+2dfa604  perf data: Fix 'strncat may truncate' build failure with recent gcc  [Shawn Landden]
+a1ce2020  configfs: Fix use-after-free when accessing sd->s_dentry  [Sahitya Tummala]
+71db0c2  i2c: dev: fix potential memory leak in i2cdev_ioctl_rdwr  [Yingjoe Chen]
+3e866a2  net: tulip: de4x5: Drop redundant MODULE_DEVICE_TABLE()  [Kees Cook]
+08332a2  gpio: fix gpio-adp5588 build errors  [Randy Dunlap]
+5b418c6  perf/ring_buffer: Add ordering to rb->nest increment  [Peter Zijlstra]
+bf25837  perf/ring_buffer: Fix exposing a temporarily decreased data_head  [Yabin Cui]
+d138f9d  x86/CPU/AMD: Don't force the CPB cap when running under a hypervisor  [Frank van der Linden]
+7d68788  mISDN: make sure device name is NUL terminated  [Dan Carpenter]
+0493a75  selftests: netfilter: missing error check when setting up veth interface  [Jeffrin Jose T]
+1caefe9  perf/x86/intel/ds: Fix EVENT vs. UEVENT PEBS constraints  [Stephane Eranian]
+c98ac78  Revert "staging: vc04_services: prevent integer overflow in create_pagelist()"  [Greg Kroah-Hartman]
+acca368  sunhv: Fix device naming inconsistency between sunhv_console and sunhv_reg  [John Paul Adrian Glaubitz]
+bbba13a  neigh: fix use-after-free read in pneigh_get_next  [Eric Dumazet]
+0c4ddec  lapb: fixed leak of control-blocks.  [Jeremy Sowden]
+092ecc9c  ipv6: flowlabel: fl6_sock_lookup() must use atomic_inc_not_zero  [Eric Dumazet]
+0bc7658  be2net: Fix number of Rx queues used for flow hashing  [Ivan Vecera]
+6b2ac50  ax25: fix inconsistent lock state in ax25_destroy_timer  [Eric Dumazet]
+e6926084  rtc: pcf8523: don't return invalid date when battery is low  [Baruch Siach]
+d3a5747  USB: serial: option: add Telit 0x1260 and 0x1261 compositions  [Daniele Palmas]
+5f085f4  USB: serial: option: add support for Simcom SIM7500/SIM7600 RNDIS mode  [Jörgen Storvist]
+e5d4341  USB: serial: pl2303: add Allied Telesis VT-Kit3  [Chris Packham]
+ffe4421  USB: usb-storage: Add new ID to ums-realtek  [Kai-Heng Feng]
+c205941  USB: Fix chipmunk-like voice when using Logitech C270 for recording audio.  [Marco Zatta]
+57a2a47  usb: dwc2: Fix DMA cache alignment issues  [Martin Schiller]
+07ba684  drm/vmwgfx: NULL pointer dereference from vmw_cmd_dx_view_define()  [Murray McAllister]
+aeb54cc  drm/vmwgfx: integer underflow in vmw_cmd_dx_set_shader() leading to an invalid read  [Murray McAllister]
+cb7287b  KVM: s390: fix memory slot handling for KVM_SET_USER_MEMORY_REGION  [Christian Borntraeger]
+f9d514f  KVM: x86/pmu: do not mask the value that is written to fixed PMUs  [Paolo Bonzini]
+32cc0668  usbnet: ipheth: fix racing condition  [Bernd Eckstein]
+6c49a26  selftests/timers: Add missing fflush(stdout) calls  [Kees Cook]
+1786278  scsi: bnx2fc: fix incorrect cast to u64 on shift operation  [Colin Ian King]
+7c9a266e  arm64/mm: Inhibit huge-vmap with ptdump  [Mark Rutland]
+f332d3c  scsi: lpfc: add check for loss of ndlp when sending RRQ  [James Smart]
+c6623fd  Drivers: misc: fix out-of-bounds access in function param_set_kgdbts_var  [Young Xiao]
+bf7a044  Revert "ALSA: seq: Protect in-kernel ioctl calls with mutex"  [Takashi Iwai]
+af87c91  ALSA: seq: Fix race of get-subscription call vs port-delete ioctls  [Takashi Iwai]
+9a1a655  ALSA: seq: Protect in-kernel ioctl calls with mutex  [Takashi Iwai]
+b2a69c7  x86/uaccess, kcov: Disable stack protector  [Peter Zijlstra]
+f468c666  ASoC: fsl_asrc: Fix the issue about unsupported rate  [S.j. Wang]
+a256b25  ASoC: cs42xx8: Add regcache mask dirty  [S.j. Wang]
+b61e3a8  cgroup: Use css_tryget() instead of css_tryget_online() in task_get_css()  [Tejun Heo]
+49fd367  bcache: fix stack corruption by PRECEDING_KEY()  [Coly Li]
+d8f0369  i2c: acorn: fix i2c warning  [Russell King]
+eec9390  media: v4l2-ioctl: clear fields in s_parm  [Hans Verkuil]
+a8cb272  ptrace: restore smp_rmb() in __ptrace_may_access()  [Jann Horn]
+fec81c3  signal/ptrace: Don't leak unitialized kernel memory with PTRACE_PEEK_SIGINFO  [Eric W. Biederman]
+04b123f  fs/ocfs2: fix race in ocfs2_dentry_attach_lock()  [Wengang Wang]
+30b89b7  mm/list_lru.c: fix memory leak in __memcg_init_list_lru_node  [Shakeel Butt]
+b0458fc  libata: Extend quirks for the ST1000LM024 drives with NOLPM quirk  [Hans de Goede]
+5bcab2f  ALSA: oxfw: allow PCM capture for Stanton SCS.1m  [Takashi Sakamoto]
+152ca70  ALSA: seq: Cover unsubscribe_port() in list_mutex  [Takashi Iwai]
+7a9771a  Revert "Bluetooth: Align minimum encryption key size for LE and BR/EDR connections"  [Greg Kroah-Hartman]
+6831ce6  ARM: exynos: Fix undefined instruction during Exynos5422 resume  [Marek Szyprowski]
+a6f4ccd  pwm: Fix deadlock warning when removing PWM device  [Phong Hoang]
+82d3362  ARM: dts: exynos: Always enable necessary APIO_1V8 and ABB_1V8 regulators on Arndale Octa  [Krzysztof Kozlowski]
+d68d83b  pwm: tiehrpwm: Update shadow register for disabling PWMs  [Christoph Vogtländer]
+1442e3c  dmaengine: idma64: Use actual device for DMA transfers  [Andy Shevchenko]
+def5cbb  gpio: gpio-omap: add check for off wake capable gpios  [Tony Lindgren]
+33d8bff  PCI: xilinx: Check for __get_free_pages() failure  [Kangjie Lu]
+42de762  video: imsttfb: fix potential NULL pointer dereferences  [Kangjie Lu]
+5670db5  video: hgafb: fix potential NULL pointer dereference  [Kangjie Lu]
+5636454  PCI: rcar: Fix 64bit MSI message address handling  [Marek Vasut]
+dfc782d  PCI: rcar: Fix a potential NULL pointer dereference  [Kangjie Lu]
+ba4fd3f  platform/x86: intel_pmc_ipc: adding error handling  [Junxiao Chang]
+2acdfe9  PCI: rpadlpar: Fix leaked device_node references in add/remove paths  [Tyrel Datwyler]
+7380009  ARM: dts: imx6qdl: Specify IMX6QDL_CLK_IPG as "ipg" clock to SDMA  [Andrey Smirnov]
+08ab49a  ARM: dts: imx6sx: Specify IMX6SX_CLK_IPG as "ipg" clock to SDMA  [Andrey Smirnov]
+8da7fc3  ARM: dts: imx6ul: Specify IMX6UL_CLK_IPG as "ipg" clock to SDMA  [Andrey Smirnov]
+e1c34da  ARM: dts: imx7d: Specify IMX7D_CLK_IPG as "ipg" clock to SDMA  [Andrey Smirnov]
+9e86283  ARM: dts: imx6sx: Specify IMX6SX_CLK_IPG as "ahb" clock to SDMA  [Andrey Smirnov]
+3347d73  clk: rockchip: Turn on "aclk_dmac1" for suspend on rk3288  [Douglas Anderson]
+fc8164f  soc: mediatek: pwrap: Zero initialize rdata in pwrap_init_cipher  [Nathan Chancellor]
+e2f046a  platform/chrome: cros_ec_proto: check for NULL transfer function  [Enrico Granata]
+79e9ed4  x86/PCI: Fix PCI IRQ routing table memory leak  [Wenwen Wang]
+c58dced  nfsd: allow fh_want_write to be called twice  [J. Bruce Fields]
+5424c84  fuse: retrieve: cap requested size to negotiated max_write  [Kirill Smelkov]
+5e80488  nvmem: core: fix read buffer in place  [Jorge Ramirez-Ortiz]
+5bc5622  ALSA: hda - Register irq handler after the chip initialization  [Takashi Iwai]
+4f77e92  iommu/vt-d: Set intel_iommu_gfx_mapped correctly  [Lu Baolu]
+ef91f43  watchdog: fix compile time error of pretimeout governors  [Vladimir Zapolskiy]
+284d639  watchdog: imx2_wdt: Fix set_timeout for big timeout values  [Georg Hofmann]
+d593c33  uml: fix a boot splat wrt use of cpu_all_mask  [Maciej Żenczykowski]
+9372c83  configfs: fix possible use-after-free in configfs_register_group  [YueHaibing]
+ee7b299  f2fs: fix to do sanity check on valid block count of segment  [Chao Yu]
+f94ee1d  f2fs: fix to clear dirty inode in error path of f2fs_iget()  [Chao Yu]
+c09eeee  f2fs: fix to avoid panic in do_recover_data()  [Chao Yu]
+d17633b  ntp: Allow TAI-UTC offset to be set to zero  [Miroslav Lichvar]
+9f4603a  pwm: meson: Use the spin-lock only to protect register modifications  [Martin Blumenstingl]
+d92ba99  objtool: Don't use ignore flag for fake jumps  [Josh Poimboeuf]
+45044cd  drm/bridge: adv7511: Fix low refresh rate selection  [Matt Redfearn]
+a4ad297  perf/x86/intel: Allow PEBS multi-entry in watermark mode  [Stephane Eranian]
+cf05909  mfd: twl6040: Fix device init errors for ACCCTL register  [Tony Lindgren]
+6346366  mfd: intel-lpss: Set the device in reset state when init  [Binbin Wu]
+6cdbd5c  mfd: tps65912-spi: Add missing of table registration  [Daniel Gomez]
+cc01528  drivers: thermal: tsens: Don't print error message on -EPROBE_DEFER  [Amit Kucheria]
+c00d105  kernel/sys.c: prctl: fix false positive in validate_prctl_map()  [Cyrill Gorcunov]
+2c692cc  mm/slab.c: fix an infinite loop in leaks_show()  [Qian Cai]
+54c1648  mm/cma_debug.c: fix the break condition in cma_maxchunk_get()  [Yue Hu]
+64f2911  mm/cma.c: fix crash on CMA allocation if bitmap allocation fails  [Yue Hu]
+737dc61  mem-hotplug: fix node spanned pages when we have a node with only ZONE_MOVABLE  [Linxu Fang]
+d582c5f  hugetlbfs: on restore reserve error path retain subpool reservation  [Mike Kravetz]
+b3d842a  ARM: prevent tracing IPI_CPU_BACKTRACE  [Arnd Bergmann]
+e512d2d  ipc: prevent lockup on alloc_msg and free_msg  [Li Rongqing]
+6198a33  sysctl: return -EINVAL if val violates minmax  [Christian Brauner]
+fd27f3b  fs/fat/file.c: issue flush after the writeback of FAT  [Hou Tao]
+6762b0c  rapidio: fix a NULL pointer dereference when create_workqueue() fails  [Kangjie Lu]
+
+ * packages/apps/Settings
+8cf97e4  team: add OnePlus One (bacon) to official builds  [blinoff82]
+
+ * vendor/syberia
+8b84b4b  team: add OnePlus One (bacon) to official builds  [blinoff82]
+
+====================
      2019-06-22    
 ====================
+
+ * external/skia
+d8e8a88  Disable sdclang for skia  [DennySPB]
 
  * frameworks/base
 d53bdd5  libs: hwui: disable sdclang  [DennySPB]
 aa4ec7e  Merge "Flashlight toggle api improvements" into 9.0  [dennyspb]
 d641c92  Merge "HeadsUpStatusBarView: account for rounded corner" into 9.0  [dennyspb]
 4fa8ed1  Merge "base: add camera flash toggle api" into 9.0  [dennyspb]
+95b9412  Flashlight toggle api improvements  [ezio84]
+0d60885  HeadsUpStatusBarView: account for rounded corner  [Peter Cai]
 
  * frameworks/native
 c41e2e0  Revert "Revert "opengl: Disable sdclang for EGL and OpenGLES""  [DennySPB]
 
  * frameworks/opt/net/wifi
 8e1c2c4  Merge branch '9.0' of https://github.com/aexmod-tmp/platform_frameworks_opt_net_wifi into HEAD  [blinoff82]
+b6b9509  resurrect mWifiLinkLayerStatsSupported counter  [Stefan Assmann]
+
+ * packages/apps/Dialer
+4fa8974  InCallUI: SmartMute  [Ali B]
 
 ====================
      2019-06-21    
@@ -21,12 +163,7 @@ c41e2e0  Revert "Revert "opengl: Disable sdclang for EGL and OpenGLES""  [DennyS
  * build/soong
 5b67d74  Revert "SDClang8: sanitize: filter implicit-integer-sign-change"  [DennySPB]
 
- * external/skia
-d8e8a88  Disable sdclang for skia  [DennySPB]
-
  * frameworks/base
-95b9412  Flashlight toggle api improvements  [ezio84]
-0d60885  HeadsUpStatusBarView: account for rounded corner  [Peter Cai]
 4f0480d  GamingMode: add master switch [1/2]  [DennySPB]
 56c3217  base: add camera flash toggle api  [Rabih Salamey]
 99f0087  LiveDisplayTile: Report unavailable on HWC2  [Han Wang]
@@ -37,7 +174,10 @@ e6d63de  GamingMode: cleanup and fix a bit  [DennySPB]
 a3a68cc  fwb: Improve AOSP twilight code  [Henrique Silva]
 
  * frameworks/opt/net/wifi
-b6b9509  resurrect mWifiLinkLayerStatsSupported counter  [Stefan Assmann]
+4bae5fd  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' into HEAD  [blinoff82]
+
+ * hardware/qcom/audio-caf/msm8996
+95c0e9c  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' into HEAD  [blinoff82]
 
  * hardware/qcom/bt
 2d5ff3d  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [blinoff82]
@@ -52,9 +192,6 @@ b0b17f4  libbt: Fix case where SoC type is not set  [Steve Kondik]
  * hardware/ril
 bdcbf57  librilreference: disable sanitize  [DennySPB]
 
- * packages/apps/Dialer
-4fa8974  InCallUI: SmartMute  [Ali B]
-
  * packages/apps/Settings
 8126ebb  Merge "SmartCharging: allow user set resume level [2/2]" into 9.0  [dennyspb]
 e1b0081  Merge "Cutout force fullscreen: Disable fast scroller" into 9.0  [dennyspb]
@@ -66,6 +203,9 @@ ce4681d  Remove footer from gaming mode  [DennySPB]
 b1dcfd2  sepolicy: Add Google App build props  [mydongistiny]
 2e7c0b0  system_server: allow writes to /proc/pid/*  [Tim Murray]
 7aeb9ac  sepolicy: Add Label to f2fs sysfs files  [Daniel Rosenberg]
+
+ * vendor/codeaurora/telephony
+5007a19  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' into HEAD  [blinoff82]
 
  * vendor/syberia
 aa5a27d  Merge "Add Markup lib for arm 32-bit devices" into 9.0  [blinov.in]
@@ -79,32 +219,33 @@ aa5a27d  Merge "Add Markup lib for arm 32-bit devices" into 9.0  [blinov.in]
  * build/soong
 ad3700d  Merge "Remove extra vendor parameters for tidy" into 9.0  [dennyspb]
 2b99ed4  Remove extra vendor parameters for tidy  [mesziman]
+e9f06ab  Merge "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2" into 9.0  [dennyspb]
 
- * frameworks/opt/net/wifi
-4bae5fd  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' into HEAD  [blinoff82]
-
- * hardware/qcom/audio-caf/msm8996
-95c0e9c  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' into HEAD  [blinoff82]
+ * packages/apps/Settings
+fab928c  SmartCharging: allow user set resume level [2/2]  [DennySPB]
 
  * packages/apps/SyberiaSettings
 57b9a58  GamingMode: cleanup a bit  [DennySPB]
+03cac8a  GamingMode: add master switch [2/2]  [DennySPB]
 
  * packages/resources/devicesettings
 b73e3bc  Automatic translation import  [Michael Bestas]
 
- * vendor/codeaurora/telephony
-5007a19  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' into HEAD  [blinoff82]
-
  * vendor/syberia
 9bd226b  Add Markup lib for arm 32-bit devices  [blinoff82]
 eb4c6e4  SDClang8: disable sign sign sanitizer  [DennySPB]
+c4cf650  Merge "sdclang8: Disable some new warings" into 9.0  [dennyspb]
+cc1a73b  sdclang8: Disable some new warings  [DennySPB]
 
 ====================
      2019-06-19    
 ====================
 
- * build/soong
-e9f06ab  Merge "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2" into 9.0  [dennyspb]
+ * external/llvm
+9212c2a  Add unittests to {ARM | AArch64}TargetParser.  [Zijiao Ma]
+
+ * external/zlib
+6992a71  Don't use ARMv8 CRC32 on arm arch  [DennySPB]
 
  * frameworks/base
 180523b  GamingMode: Rewrite implementation [1/2]  [DennySPB]
@@ -118,41 +259,6 @@ b2ddffd  Revert "SystemUI: Add Gaming mode tile"  [DennySPB]
 5b16e5d  KeyguardSliceProvider: Show dnd icon regardless of suppression mode  [Henrique Silva]
 9df49a9  LiveDisplayService: Disable ColorTemperature when NightDisplay is available  [Bruno Martins]
 
- * packages/apps/Settings
-fab928c  SmartCharging: allow user set resume level [2/2]  [DennySPB]
-ac87b87  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
-69aed80  Cutout force fullscreen: Disable fast scroller  [Henrique Silva]
-
- * packages/apps/SyberiaSettings
-03cac8a  GamingMode: add master switch [2/2]  [DennySPB]
-
- * system/libhwbinder
-2dbcd81  fix sdclang warnings  [DennySPB]
-a1be8cc  Change priority of thread allocation  [Steven Moreland]
-c7123c4  libhwbinder: Disable implicit-conversion sanitizer  [mydongistiny]
-8eefda8  libhwbinder: Remove thread shutdown logic  [Steven Moreland]
-9dd521c  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
-628876e  libhwbinder: move to <pthread.h> mutexes  [Elliott Hughes]
-b009a98  libhwbinder: Make new ProcessState member const  [Martijn Coenen]
-
- * vendor/syberia
-c4cf650  Merge "sdclang8: Disable some new warings" into 9.0  [dennyspb]
-cc1a73b  sdclang8: Disable some new warings  [DennySPB]
-9bbc37b  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
-
-====================
-     2019-06-18    
-====================
-
- * build/soong
-474c7aa  SDClang8: sanitize: filter implicit-integer-sign-change  [DennySPB]
-
- * external/llvm
-9212c2a  Add unittests to {ARM | AArch64}TargetParser.  [Zijiao Ma]
-
- * external/zlib
-6992a71  Don't use ARMv8 CRC32 on arm arch  [DennySPB]
-
  * frameworks/rs
 25915b7  Avoid using x18 register in resize intrinsic  [Peter Collingbourne]
 f625a60  rs: Fix invalid const atomic builtin accesses  [Stephen Hines]
@@ -165,6 +271,10 @@ c275585  tcp: enforce tcp_min_snd_mss in tcp_mtu_probing()  [Eric Dumazet]
 1faa85e  tcp: limit payload size of sacked skbs  [Eric Dumazet]
 3516b05  tcp: reduce tcp_fastretrans_alert() verbosity  [Eric Dumazet]
 
+ * packages/apps/Settings
+ac87b87  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
+69aed80  Cutout force fullscreen: Disable fast scroller  [Henrique Silva]
+
  * packages/apps/SyberiaSettings
 4026c9f  SyberiaSettings: add missing summaries  [blinoff82]
 2856d75  GamingMode: Rewrite implementation [2/2]  [DennySPB]
@@ -174,11 +284,17 @@ c275585  tcp: enforce tcp_min_snd_mss in tcp_mtu_probing()  [Eric Dumazet]
 bc3e709  Use std::move to avoid unnecessary copying  [Yi Kong]
 9177788  Fix unnecessary copy initialization warnings  [Chih-Hung Hsieh]
 
-====================
-     2019-06-17    
-====================
+ * vendor/syberia
+9bbc37b  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
 
 ====================
-     2019-06-16    
+     2019-06-18    
+====================
+
+ * build/soong
+474c7aa  SDClang8: sanitize: filter implicit-integer-sign-change  [DennySPB]
+
+====================
+     2019-06-17    
 ====================
 
