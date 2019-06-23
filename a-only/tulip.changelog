@@ -1,16 +1,19 @@
 ====================
-     2019-06-22    
-====================
-
- * frameworks/opt/net/wifi
-8e1c2c4  Merge branch '9.0' of https://github.com/aexmod-tmp/platform_frameworks_opt_net_wifi into HEAD  [blinoff82]
-
-====================
-     2019-06-21    
+     2019-06-23    
 ====================
 
  * build/soong
-5b67d74  Revert "SDClang8: sanitize: filter implicit-integer-sign-change"  [DennySPB]
+bd004c7  Revert "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2"  [blinoff82]
+
+ * packages/apps/Settings
+8cf97e4  team: add OnePlus One (bacon) to official builds  [blinoff82]
+
+ * vendor/syberia
+8b84b4b  team: add OnePlus One (bacon) to official builds  [blinoff82]
+
+====================
+     2019-06-22    
+====================
 
  * external/skia
 d8e8a88  Disable sdclang for skia  [DennySPB]
@@ -22,6 +25,25 @@ d641c92  Merge "HeadsUpStatusBarView: account for rounded corner" into 9.0  [den
 4fa8ed1  Merge "base: add camera flash toggle api" into 9.0  [dennyspb]
 95b9412  Flashlight toggle api improvements  [ezio84]
 0d60885  HeadsUpStatusBarView: account for rounded corner  [Peter Cai]
+
+ * frameworks/native
+c41e2e0  Revert "Revert "opengl: Disable sdclang for EGL and OpenGLES""  [DennySPB]
+
+ * frameworks/opt/net/wifi
+8e1c2c4  Merge branch '9.0' of https://github.com/aexmod-tmp/platform_frameworks_opt_net_wifi into HEAD  [blinoff82]
+b6b9509  resurrect mWifiLinkLayerStatsSupported counter  [Stefan Assmann]
+
+ * packages/apps/Dialer
+4fa8974  InCallUI: SmartMute  [Ali B]
+
+====================
+     2019-06-21    
+====================
+
+ * build/soong
+5b67d74  Revert "SDClang8: sanitize: filter implicit-integer-sign-change"  [DennySPB]
+
+ * frameworks/base
 4f0480d  GamingMode: add master switch [1/2]  [DennySPB]
 56c3217  base: add camera flash toggle api  [Rabih Salamey]
 99f0087  LiveDisplayTile: Report unavailable on HWC2  [Han Wang]
@@ -30,40 +52,6 @@ e6d63de  GamingMode: cleanup and fix a bit  [DennySPB]
 2686007  Base: Let Q clock follow accent colour  [Gaurav Singh]
 550615b  SmartCharging: allow user set resume level [1/2]  [DennySPB]
 a3a68cc  fwb: Improve AOSP twilight code  [Henrique Silva]
-
- * frameworks/native
-c41e2e0  Revert "Revert "opengl: Disable sdclang for EGL and OpenGLES""  [DennySPB]
-
- * frameworks/opt/net/wifi
-b6b9509  resurrect mWifiLinkLayerStatsSupported counter  [Stefan Assmann]
-
- * packages/apps/Dialer
-4fa8974  InCallUI: SmartMute  [Ali B]
-
- * packages/apps/Settings
-8126ebb  Merge "SmartCharging: allow user set resume level [2/2]" into 9.0  [dennyspb]
-e1b0081  Merge "Cutout force fullscreen: Disable fast scroller" into 9.0  [dennyspb]
-
- * packages/apps/SyberiaSettings
-ce4681d  Remove footer from gaming mode  [DennySPB]
-
- * system/sepolicy
-b1dcfd2  sepolicy: Add Google App build props  [mydongistiny]
-2e7c0b0  system_server: allow writes to /proc/pid/*  [Tim Murray]
-7aeb9ac  sepolicy: Add Label to f2fs sysfs files  [Daniel Rosenberg]
-
- * vendor/syberia
-aa5a27d  Merge "Add Markup lib for arm 32-bit devices" into 9.0  [blinov.in]
-2cc48f9  Merge "team: add Xiaomi Redmi Note 7 (lavender) to official builds" into 9.0  [blinov.in]
-7ec500f  Go back to SDClang6  [DennySPB]
-
-====================
-     2019-06-20    
-====================
-
- * build/soong
-ad3700d  Merge "Remove extra vendor parameters for tidy" into 9.0  [dennyspb]
-2b99ed4  Remove extra vendor parameters for tidy  [mesziman]
 
  * frameworks/opt/net/wifi
 4bae5fd  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' into HEAD  [blinoff82]
@@ -81,42 +69,54 @@ b0b17f4  libbt: Fix case where SoC type is not set  [Steve Kondik]
  * hardware/ril
 bdcbf57  librilreference: disable sanitize  [DennySPB]
 
- * packages/resources/devicesettings
-b73e3bc  Automatic translation import  [Michael Bestas]
+ * packages/apps/Settings
+8126ebb  Merge "SmartCharging: allow user set resume level [2/2]" into 9.0  [dennyspb]
+e1b0081  Merge "Cutout force fullscreen: Disable fast scroller" into 9.0  [dennyspb]
+
+ * packages/apps/SyberiaSettings
+ce4681d  Remove footer from gaming mode  [DennySPB]
+
+ * system/sepolicy
+b1dcfd2  sepolicy: Add Google App build props  [mydongistiny]
+2e7c0b0  system_server: allow writes to /proc/pid/*  [Tim Murray]
+7aeb9ac  sepolicy: Add Label to f2fs sysfs files  [Daniel Rosenberg]
 
  * vendor/codeaurora/telephony
 5007a19  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' into HEAD  [blinoff82]
 
  * vendor/syberia
-9bd226b  Add Markup lib for arm 32-bit devices  [blinoff82]
-eb4c6e4  SDClang8: disable sign sign sanitizer  [DennySPB]
+aa5a27d  Merge "Add Markup lib for arm 32-bit devices" into 9.0  [blinov.in]
+2cc48f9  Merge "team: add Xiaomi Redmi Note 7 (lavender) to official builds" into 9.0  [blinov.in]
+7ec500f  Go back to SDClang6  [DennySPB]
 
 ====================
-     2019-06-19    
+     2019-06-20    
 ====================
 
  * build/soong
+ad3700d  Merge "Remove extra vendor parameters for tidy" into 9.0  [dennyspb]
+2b99ed4  Remove extra vendor parameters for tidy  [mesziman]
 e9f06ab  Merge "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2" into 9.0  [dennyspb]
 
  * packages/apps/Settings
 fab928c  SmartCharging: allow user set resume level [2/2]  [DennySPB]
-ac87b87  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
 
  * packages/apps/SyberiaSettings
 57b9a58  GamingMode: cleanup a bit  [DennySPB]
 03cac8a  GamingMode: add master switch [2/2]  [DennySPB]
 
+ * packages/resources/devicesettings
+b73e3bc  Automatic translation import  [Michael Bestas]
+
  * vendor/syberia
+9bd226b  Add Markup lib for arm 32-bit devices  [blinoff82]
+eb4c6e4  SDClang8: disable sign sign sanitizer  [DennySPB]
 c4cf650  Merge "sdclang8: Disable some new warings" into 9.0  [dennyspb]
 cc1a73b  sdclang8: Disable some new warings  [DennySPB]
-9bbc37b  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
 
 ====================
-     2019-06-18    
+     2019-06-19    
 ====================
-
- * build/soong
-474c7aa  SDClang8: sanitize: filter implicit-integer-sign-change  [DennySPB]
 
  * external/llvm
 9212c2a  Add unittests to {ARM | AArch64}TargetParser.  [Zijiao Ma]
@@ -141,37 +141,32 @@ b2ddffd  Revert "SystemUI: Add Gaming mode tile"  [DennySPB]
 f625a60  rs: Fix invalid const atomic builtin accesses  [Stephen Hines]
 
  * packages/apps/Settings
+ac87b87  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
 69aed80  Cutout force fullscreen: Disable fast scroller  [Henrique Silva]
 
  * packages/apps/SyberiaSettings
 4026c9f  SyberiaSettings: add missing summaries  [blinoff82]
 2856d75  GamingMode: Rewrite implementation [2/2]  [DennySPB]
 
- * system/libhwbinder
-2dbcd81  fix sdclang warnings  [DennySPB]
-a1be8cc  Change priority of thread allocation  [Steven Moreland]
-c7123c4  libhwbinder: Disable implicit-conversion sanitizer  [mydongistiny]
-8eefda8  libhwbinder: Remove thread shutdown logic  [Steven Moreland]
-9dd521c  Modernize codebase by replacing NULL with nullptr  [Yi Kong]
-628876e  libhwbinder: move to <pthread.h> mutexes  [Elliott Hughes]
-b009a98  libhwbinder: Make new ProcessState member const  [Martijn Coenen]
-
  * system/security
 73581e4  Merge changes I28160db1,I3002c0f6,Iaeeba524,Iba04236d,I55eb358b, ... into 9.0  [dennyspb]
 bc3e709  Use std::move to avoid unnecessary copying  [Yi Kong]
 9177788  Fix unnecessary copy initialization warnings  [Chih-Hung Hsieh]
 
+ * vendor/syberia
+9bbc37b  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
+
 ====================
-     2019-06-17    
+     2019-06-18    
 ====================
+
+ * build/soong
+474c7aa  SDClang8: sanitize: filter implicit-integer-sign-change  [DennySPB]
 
  * vendor/xiaomi/tulip
 18e9661  tulip: Drop mlipay 1.0  [Advertpavan]
 
 ====================
-     2019-06-16    
+     2019-06-17    
 ====================
-
- * device/xiaomi/tulip
-72021fb  tulip: cleanup some overlays  [Advertpavan]
 
