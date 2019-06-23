@@ -1,12 +1,21 @@
 ====================
-     2019-06-22    
+     2019-06-23    
 ====================
+
+ * build/soong
+bd004c7  Revert "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2"  [blinoff82]
 
  * device/xiaomi/whyred
 0c010a7  Fix dependencies  [rashedsahaji]
 
+ * packages/apps/Settings
+8cf97e4  team: add OnePlus One (bacon) to official builds  [blinoff82]
+
+ * vendor/syberia
+8b84b4b  team: add OnePlus One (bacon) to official builds  [blinoff82]
+
 ====================
-     2019-06-21    
+     2019-06-22    
 ====================
 
  * device/xiaomi/whyred
@@ -24,8 +33,6 @@ d641c92  Merge "HeadsUpStatusBarView: account for rounded corner" into 9.0  [den
 4fa8ed1  Merge "base: add camera flash toggle api" into 9.0  [dennyspb]
 95b9412  Flashlight toggle api improvements  [ezio84]
 0d60885  HeadsUpStatusBarView: account for rounded corner  [Peter Cai]
-4f0480d  GamingMode: add master switch [1/2]  [DennySPB]
-56c3217  base: add camera flash toggle api  [Rabih Salamey]
 
  * frameworks/native
 c41e2e0  Revert "Revert "opengl: Disable sdclang for EGL and OpenGLES""  [DennySPB]
@@ -37,22 +44,16 @@ b6b9509  resurrect mWifiLinkLayerStatsSupported counter  [Stefan Assmann]
  * packages/apps/Dialer
 4fa8974  InCallUI: SmartMute  [Ali B]
 
- * packages/apps/Settings
-8126ebb  Merge "SmartCharging: allow user set resume level [2/2]" into 9.0  [dennyspb]
-
- * packages/apps/SyberiaSettings
-ce4681d  Remove footer from gaming mode  [DennySPB]
-
 ====================
-     2019-06-20    
+     2019-06-21    
 ====================
 
  * build/soong
 5b67d74  Revert "SDClang8: sanitize: filter implicit-integer-sign-change"  [DennySPB]
-ad3700d  Merge "Remove extra vendor parameters for tidy" into 9.0  [dennyspb]
-2b99ed4  Remove extra vendor parameters for tidy  [mesziman]
 
  * frameworks/base
+4f0480d  GamingMode: add master switch [1/2]  [DennySPB]
+56c3217  base: add camera flash toggle api  [Rabih Salamey]
 99f0087  LiveDisplayTile: Report unavailable on HWC2  [Han Wang]
 e6d63de  GamingMode: cleanup and fix a bit  [DennySPB]
 090208e  Q Style Clock: Reduce top margin, users want to see more notifications  [Shreyansh Lodha]
@@ -77,10 +78,11 @@ b0b17f4  libbt: Fix case where SoC type is not set  [Steve Kondik]
 bdcbf57  librilreference: disable sanitize  [DennySPB]
 
  * packages/apps/Settings
+8126ebb  Merge "SmartCharging: allow user set resume level [2/2]" into 9.0  [dennyspb]
 e1b0081  Merge "Cutout force fullscreen: Disable fast scroller" into 9.0  [dennyspb]
 
- * packages/resources/devicesettings
-b73e3bc  Automatic translation import  [Michael Bestas]
+ * packages/apps/SyberiaSettings
+ce4681d  Remove footer from gaming mode  [DennySPB]
 
  * system/sepolicy
 b1dcfd2  sepolicy: Add Google App build props  [mydongistiny]
@@ -94,14 +96,14 @@ b1dcfd2  sepolicy: Add Google App build props  [mydongistiny]
 aa5a27d  Merge "Add Markup lib for arm 32-bit devices" into 9.0  [blinov.in]
 2cc48f9  Merge "team: add Xiaomi Redmi Note 7 (lavender) to official builds" into 9.0  [blinov.in]
 7ec500f  Go back to SDClang6  [DennySPB]
-9bd226b  Add Markup lib for arm 32-bit devices  [blinoff82]
-eb4c6e4  SDClang8: disable sign sign sanitizer  [DennySPB]
 
 ====================
-     2019-06-19    
+     2019-06-20    
 ====================
 
  * build/soong
+ad3700d  Merge "Remove extra vendor parameters for tidy" into 9.0  [dennyspb]
+2b99ed4  Remove extra vendor parameters for tidy  [mesziman]
 e9f06ab  Merge "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2" into 9.0  [dennyspb]
 
  * device/xiaomi/whyred
@@ -118,19 +120,22 @@ eb6ec6f  prebuilts: add Lawnchair-943 aplha  [DennySPB]
 
  * packages/apps/Settings
 fab928c  SmartCharging: allow user set resume level [2/2]  [DennySPB]
-ac87b87  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
 
  * packages/apps/SyberiaSettings
 57b9a58  GamingMode: cleanup a bit  [DennySPB]
 03cac8a  GamingMode: add master switch [2/2]  [DennySPB]
 
+ * packages/resources/devicesettings
+b73e3bc  Automatic translation import  [Michael Bestas]
+
  * vendor/syberia
+9bd226b  Add Markup lib for arm 32-bit devices  [blinoff82]
+eb4c6e4  SDClang8: disable sign sign sanitizer  [DennySPB]
 c4cf650  Merge "sdclang8: Disable some new warings" into 9.0  [dennyspb]
 cc1a73b  sdclang8: Disable some new warings  [DennySPB]
-9bbc37b  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
 
 ====================
-     2019-06-18    
+     2019-06-19    
 ====================
 
  * external/llvm
@@ -155,14 +160,8 @@ b2ddffd  Revert "SystemUI: Add Gaming mode tile"  [DennySPB]
 25915b7  Avoid using x18 register in resize intrinsic  [Peter Collingbourne]
 f625a60  rs: Fix invalid const atomic builtin accesses  [Stephen Hines]
 
- * kernel/xiaomi/whyred
-0380d25  whyred-perf_defconfig: purecaf x5  [srfarias]
-6b99034  whyred-perf_defconfig: enable f2fs encryption  [srfarias]
-169cf60  ARM: dts: panels: add dynamic refresh properties for whyred panels  [srfarias]
-58ba5df  Revert "Revert "ARM: dts: msm: add DT properties for dynamic refresh for SDM660/SDM630""  [srfarias]
-d12d5c1  qcacld-3.0: properly fix issues after LA.UM.7.2.r1-07000-sdm660.0 merge  [Albert I]
-
  * packages/apps/Settings
+ac87b87  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
 69aed80  Cutout force fullscreen: Disable fast scroller  [Henrique Silva]
 
  * packages/apps/SyberiaSettings
@@ -174,14 +173,24 @@ d12d5c1  qcacld-3.0: properly fix issues after LA.UM.7.2.r1-07000-sdm660.0 merge
 bc3e709  Use std::move to avoid unnecessary copying  [Yi Kong]
 9177788  Fix unnecessary copy initialization warnings  [Chih-Hung Hsieh]
 
+ * vendor/syberia
+9bbc37b  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
+
 ====================
-     2019-06-17    
+     2019-06-18    
 ====================
 
  * build/soong
 474c7aa  SDClang8: sanitize: filter implicit-integer-sign-change  [DennySPB]
 
+ * kernel/xiaomi/whyred
+0380d25  whyred-perf_defconfig: purecaf x5  [srfarias]
+6b99034  whyred-perf_defconfig: enable f2fs encryption  [srfarias]
+169cf60  ARM: dts: panels: add dynamic refresh properties for whyred panels  [srfarias]
+58ba5df  Revert "Revert "ARM: dts: msm: add DT properties for dynamic refresh for SDM660/SDM630""  [srfarias]
+d12d5c1  qcacld-3.0: properly fix issues after LA.UM.7.2.r1-07000-sdm660.0 merge  [Albert I]
+
 ====================
-     2019-06-16    
+     2019-06-17    
 ====================
 
