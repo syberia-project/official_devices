@@ -1,4 +1,17 @@
 ====================
+     2019-06-23    
+====================
+
+ * build/soong
+bd004c7  Revert "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2"  [blinoff82]
+
+ * packages/apps/Settings
+8cf97e4  team: add OnePlus One (bacon) to official builds  [blinoff82]
+
+ * vendor/syberia
+8b84b4b  team: add OnePlus One (bacon) to official builds  [blinoff82]
+
+====================
      2019-06-22    
 ====================
 
@@ -35,8 +48,23 @@ f51dc76  sdm660-common: power: set cpufreq max first  [Wei Wang]
 3a72c49  sdm660-common: power: switch to libperfmgr for powerhint Test: boot and do powerhint Bug: 62041945 Change-Id: I7de1d2bf377fb46162171a084fca3413b1067d3b  [Wei Wang]
 c3ac42b  sdm660: Implement a script for goodix data migration  [Max Weffers]
 
+ * external/skia
+d8e8a88  Disable sdclang for skia  [DennySPB]
+
+ * frameworks/base
+d53bdd5  libs: hwui: disable sdclang  [DennySPB]
+aa4ec7e  Merge "Flashlight toggle api improvements" into 9.0  [dennyspb]
+d641c92  Merge "HeadsUpStatusBarView: account for rounded corner" into 9.0  [dennyspb]
+4fa8ed1  Merge "base: add camera flash toggle api" into 9.0  [dennyspb]
+95b9412  Flashlight toggle api improvements  [ezio84]
+0d60885  HeadsUpStatusBarView: account for rounded corner  [Peter Cai]
+
+ * frameworks/native
+c41e2e0  Revert "Revert "opengl: Disable sdclang for EGL and OpenGLES""  [DennySPB]
+
  * frameworks/opt/net/wifi
 8e1c2c4  Merge branch '9.0' of https://github.com/aexmod-tmp/platform_frameworks_opt_net_wifi into HEAD  [blinoff82]
+b6b9509  resurrect mWifiLinkLayerStatsSupported counter  [Stefan Assmann]
 
  * kernel/xiaomi/sdm660
 41226c5  binder: Reserve caches for small, high-frequency memory allocations  [Sultan Alsawaf]
@@ -62,49 +90,19 @@ ac5301a  ipv4: add option to drop unicast encapsulated in L2 multicast  [Johanne
 2537e5b  treewide: Update usages of boost task check helper  [Dusan Uveric]
 4a0f241  exec: Rename boost task check function to match most task checks  [Danny Lin]
 
+ * packages/apps/Dialer
+4fa8974  InCallUI: SmartMute  [Ali B]
+
 ====================
      2019-06-21    
 ====================
 
- * external/skia
-d8e8a88  Disable sdclang for skia  [DennySPB]
-
- * frameworks/base
-d53bdd5  libs: hwui: disable sdclang  [DennySPB]
-aa4ec7e  Merge "Flashlight toggle api improvements" into 9.0  [dennyspb]
-d641c92  Merge "HeadsUpStatusBarView: account for rounded corner" into 9.0  [dennyspb]
-4fa8ed1  Merge "base: add camera flash toggle api" into 9.0  [dennyspb]
-95b9412  Flashlight toggle api improvements  [ezio84]
-0d60885  HeadsUpStatusBarView: account for rounded corner  [Peter Cai]
-4f0480d  GamingMode: add master switch [1/2]  [DennySPB]
-56c3217  base: add camera flash toggle api  [Rabih Salamey]
-
- * frameworks/native
-c41e2e0  Revert "Revert "opengl: Disable sdclang for EGL and OpenGLES""  [DennySPB]
-
- * frameworks/opt/net/wifi
-b6b9509  resurrect mWifiLinkLayerStatsSupported counter  [Stefan Assmann]
-
- * packages/apps/Dialer
-4fa8974  InCallUI: SmartMute  [Ali B]
-
- * packages/apps/Settings
-8126ebb  Merge "SmartCharging: allow user set resume level [2/2]" into 9.0  [dennyspb]
-e1b0081  Merge "Cutout force fullscreen: Disable fast scroller" into 9.0  [dennyspb]
-
- * packages/apps/SyberiaSettings
-ce4681d  Remove footer from gaming mode  [DennySPB]
-
-====================
-     2019-06-20    
-====================
-
  * build/soong
 5b67d74  Revert "SDClang8: sanitize: filter implicit-integer-sign-change"  [DennySPB]
-ad3700d  Merge "Remove extra vendor parameters for tidy" into 9.0  [dennyspb]
-2b99ed4  Remove extra vendor parameters for tidy  [mesziman]
 
  * frameworks/base
+4f0480d  GamingMode: add master switch [1/2]  [DennySPB]
+56c3217  base: add camera flash toggle api  [Rabih Salamey]
 99f0087  LiveDisplayTile: Report unavailable on HWC2  [Han Wang]
 e6d63de  GamingMode: cleanup and fix a bit  [DennySPB]
 090208e  Q Style Clock: Reduce top margin, users want to see more notifications  [Shreyansh Lodha]
@@ -128,8 +126,12 @@ b0b17f4  libbt: Fix case where SoC type is not set  [Steve Kondik]
  * hardware/ril
 bdcbf57  librilreference: disable sanitize  [DennySPB]
 
- * packages/resources/devicesettings
-b73e3bc  Automatic translation import  [Michael Bestas]
+ * packages/apps/Settings
+8126ebb  Merge "SmartCharging: allow user set resume level [2/2]" into 9.0  [dennyspb]
+e1b0081  Merge "Cutout force fullscreen: Disable fast scroller" into 9.0  [dennyspb]
+
+ * packages/apps/SyberiaSettings
+ce4681d  Remove footer from gaming mode  [DennySPB]
 
  * system/sepolicy
 b1dcfd2  sepolicy: Add Google App build props  [mydongistiny]
@@ -143,35 +145,35 @@ b1dcfd2  sepolicy: Add Google App build props  [mydongistiny]
 aa5a27d  Merge "Add Markup lib for arm 32-bit devices" into 9.0  [blinov.in]
 2cc48f9  Merge "team: add Xiaomi Redmi Note 7 (lavender) to official builds" into 9.0  [blinov.in]
 7ec500f  Go back to SDClang6  [DennySPB]
-9bd226b  Add Markup lib for arm 32-bit devices  [blinoff82]
-eb4c6e4  SDClang8: disable sign sign sanitizer  [DennySPB]
 
 ====================
-     2019-06-19    
+     2019-06-20    
 ====================
 
  * build/soong
+ad3700d  Merge "Remove extra vendor parameters for tidy" into 9.0  [dennyspb]
+2b99ed4  Remove extra vendor parameters for tidy  [mesziman]
 e9f06ab  Merge "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2" into 9.0  [dennyspb]
 
  * packages/apps/Settings
 fab928c  SmartCharging: allow user set resume level [2/2]  [DennySPB]
-ac87b87  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
 
  * packages/apps/SyberiaSettings
 57b9a58  GamingMode: cleanup a bit  [DennySPB]
 03cac8a  GamingMode: add master switch [2/2]  [DennySPB]
 
+ * packages/resources/devicesettings
+b73e3bc  Automatic translation import  [Michael Bestas]
+
  * vendor/syberia
+9bd226b  Add Markup lib for arm 32-bit devices  [blinoff82]
+eb4c6e4  SDClang8: disable sign sign sanitizer  [DennySPB]
 c4cf650  Merge "sdclang8: Disable some new warings" into 9.0  [dennyspb]
 cc1a73b  sdclang8: Disable some new warings  [DennySPB]
-9bbc37b  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
 
 ====================
-     2019-06-18    
+     2019-06-19    
 ====================
-
- * build/soong
-474c7aa  SDClang8: sanitize: filter implicit-integer-sign-change  [DennySPB]
 
  * external/llvm
 9212c2a  Add unittests to {ARM | AArch64}TargetParser.  [Zijiao Ma]
@@ -195,6 +197,29 @@ b2ddffd  Revert "SystemUI: Add Gaming mode tile"  [DennySPB]
 25915b7  Avoid using x18 register in resize intrinsic  [Peter Collingbourne]
 f625a60  rs: Fix invalid const atomic builtin accesses  [Stephen Hines]
 
+ * packages/apps/Settings
+ac87b87  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
+69aed80  Cutout force fullscreen: Disable fast scroller  [Henrique Silva]
+
+ * packages/apps/SyberiaSettings
+4026c9f  SyberiaSettings: add missing summaries  [blinoff82]
+2856d75  GamingMode: Rewrite implementation [2/2]  [DennySPB]
+
+ * system/security
+73581e4  Merge changes I28160db1,I3002c0f6,Iaeeba524,Iba04236d,I55eb358b, ... into 9.0  [dennyspb]
+bc3e709  Use std::move to avoid unnecessary copying  [Yi Kong]
+9177788  Fix unnecessary copy initialization warnings  [Chih-Hung Hsieh]
+
+ * vendor/syberia
+9bbc37b  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
+
+====================
+     2019-06-18    
+====================
+
+ * build/soong
+474c7aa  SDClang8: sanitize: filter implicit-integer-sign-change  [DennySPB]
+
  * kernel/xiaomi/sdm660
 be0c795  cpufreq: Always report schedutil governor to libperfmgr  [Danny Lin]
 2081c4d  exec: Add helper function to determine whether to block sysfs writes  [Danny Lin]
@@ -214,27 +239,9 @@ f523366  {sdm660}_defconfig: disable MSM_11AD  [Thierry Strudel]
 3324030  {sdm660}_defconfig: disable BRIDGE_NETFILTER  [Chris Fries]
 8fa67bd  {sdm660}_defconfig: disable QBT1000  [Chris Fries]
 93a419c  {sdm660}_defconfig: remove various debug configs  [Thierry Strudel]
-
- * packages/apps/Settings
-69aed80  Cutout force fullscreen: Disable fast scroller  [Henrique Silva]
-
- * packages/apps/SyberiaSettings
-4026c9f  SyberiaSettings: add missing summaries  [blinoff82]
-2856d75  GamingMode: Rewrite implementation [2/2]  [DennySPB]
-
- * system/security
-73581e4  Merge changes I28160db1,I3002c0f6,Iaeeba524,Iba04236d,I55eb358b, ... into 9.0  [dennyspb]
-bc3e709  Use std::move to avoid unnecessary copying  [Yi Kong]
-9177788  Fix unnecessary copy initialization warnings  [Chih-Hung Hsieh]
-
-====================
-     2019-06-17    
-====================
-
- * kernel/xiaomi/sdm660
 d46036b  Revert "msm: camera: isp: Handle frame drop due to delay   "  [Vol Zhdanov]
 
 ====================
-     2019-06-16    
+     2019-06-17    
 ====================
 
