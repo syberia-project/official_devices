@@ -1,258 +1,149 @@
 ====================
+     2019-06-29    
+====================
+
+ * device/xiaomi/sdm660-common
+5d500f9  Don't build keyhanlder!  [rebenok90x]
+
+====================
+     2019-06-28    
+====================
+
+ * device/xiaomi/sdm660-common
+dbae09b  Syberia bring up and cleanup  [coderzstas]
+
+ * frameworks/base
+439178c  FixUp: SystemUI: Statusbar layout improvements  [Anushek Prasal]
+
+====================
+     2019-06-27    
+====================
+
+ * frameworks/base
+0d21c9f  Option to Display Data Disabled Indicator Icon [1/2]  [Varun Date]
+da40d01  SmartCharging: add reset battery stats option [1/2]  [DennySPB]
+42fb825  Revert "ActivityRecord: add fw boost after r33 merge"  [DennySPB]
+8184f72  SmartNav: Eliminate needless BroadcastReceiver in BaseNavigationBar [1/2]  [bigrushdog]
+7531bb2  Move Q animation to custom animations  [DennySPB]
+25e37d8  Revert "Add missing ensureRunningOnConnectivityServiceThread() function"  [DennySPB]
+c631053  Revert "Revert "Update VPN capabilities when its underlying network set is null.""  [Varun Anand]
+b6dfb94  SystemUI: Statusbar layout improvements  [Anushek Prasal]
+8d53400  PhoneWindowManager: Set delay for screenshot shortcut to 0  [Anirudh Gupta]
+449cbec  SystemUI: Fix several layout bugs  [eray orçunus]
+097afed  Reload Pixel Home Animation without reboot  [Joe Maples]
+cf5ff23  Pixel Navbar animation toggle [1/2]  [beanstown106]
+762b939  SystemUI: Add navigation touch animation support  [Chris]
+76b2f83  SystemUI: Remove older Pixel Animation  [argraur]
+c57a991  SystemUI: Use proper lock icon scale on dismissing notification panel view  [LuK1337]
+b17e981  SystemUI: Handle orientation and screenSize changes for TunerActivity  [LuK1337]
+
+ * frameworks/native
+bd4d564  Revert some questionable binder commits  [DennySPB]
+
+ * packages/apps/Settings
+0426d72  Merge "team: capricorn is out" into 9.0  [blinov.in]
+f0687e5  SmartCharging: add reset battery stats option [2/2]  [DennySPB]
+
+ * packages/apps/Snap
+cbbc294  Snap: allow to disable image stabilization per device  [codeworkx]
+242266a  Snap: Fix picture size preference  [dianlujitao]
+3ad6082  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [Bruno Martins]
+378ac64  Snap: Fix shutter button size  [Artem Borisov]
+2317d90  Snap: make support for bokeh mode configurable per device  [codeworkx]
+b543b72  Snap: Yet Another String Improvement  [Michael Bestas]
+1100ce3  change to BUILD_NUMBER_FROM_FILE  [jinwu]
+c46c7d5  QuickReader: Update libs  [Luca Stefani]
+167cc22  Snap: Always allow 100% JPEG quality to be set  [Zhao Wei Liew]
+c6b27e4  Snap: Disable debugging of double open issue  [Wang Han]
+0a74332  Snap: Add missing NULL check in updateQcfaPictureSize()  [Wang Han]
+34a5a9a  Snap: Check various feature support before applying  [Wang Han]
+da83b97  Snap: Fix layout of zoom option  [Wang Han]
+45e402f  Snap: Create correct redeye reduction config icon  [Wang Han]
+5ca0b6e  Snap: Avoid crash with empty RAW output size  [Wang Han]
+4841eae  DisableCameraReceiver: Initialize CameraHolder before use  [dianlujitao]
+8420c48  SnapdragonCamera: Check for fixed focus  [Rajshekar Eashwarappa]
+ae2394c  SnapdragonCamera: Completed the EIS and video HDR function  [xianming wang]
+7eae9de  Change version to 015  [zhuw]
+f79ad63  SnapdragonCamera: SunSet and Landscape use HAL-ZSL mode  [xianming wang]
+405de58  Requirement from EIS team  [zhuw]
+
+ * packages/apps/SyberiaSettings
+92372bb  Data disabled icon switch[2/2]  [Varun Date]
+
+ * prebuilts/clang/host/linux-x86
+187e3a7  Update prebuilt Clang to r353983d.  [Nick Desaulniers]
+
+====================
+     2019-06-26    
+====================
+
+ * device/xiaomi/wayne
+49b619b  jasmine: overlay: Move Brightness to common repo  [Max Weffers]
+33d93b8  jasmine: Use slightly increased vibration pattern strength from marlin  [Max Weffers]
+34b2d2a  jasmine: manifest: update power hal to 1.3  [Max Weffers]
+
+====================
+     2019-06-25    
+====================
+
+ * frameworks/base
+fed99f0  base: Import Android Q activity animations  [Lucchetto]
+
+ * kernel/xiaomi/sdm660
+f070848  defconfig: disable some useless stuff  [ktommy91]
+d0a1d1e  defconfig: disable MEMORY_STATE_TIME  [ktommy91]
+9d77c58  defconfig: disable CONFIG_ARM64_SW_TTBR0_PAN CONFIG_ARM64_PAN is enabled, we dont need this  [ktommy91]
+63f7150  arm64: configs: kangaroox: disable UNMAP_KERNEL_AT_EL0  [Jonathan Solnit]
+
+ * packages/apps/Settings
+5de0c5b  team: capricorn is out  [blinoff82]
+
+ * packages/apps/SmartNav
+fb742a6  SmartNav: Eliminate needless BroadcastReceiver in BaseNavigationBar [2/2]  [bigrushdog]
+08c1004  SmartNav: Reload icons from storage when boot completes  [bigrushdog]
+f806f44  Pulse: Fix defaulting to user color if no album color available  [Pranav Vashi]
+543e49a  SmartNav: opa: fix Pixel animation on SB with new SysUI opa  [argraur]
+d430cb5  SmartNav: Use correct colors for popup  [xyyx]
+
+====================
+     2019-06-24    
+====================
+
+ * device/xiaomi/sdm660-common
+99bcd71  Revert "sdm660: use roms default build fingerprint to avoid photos storage issue"  [pqhaz]
+ca5c4c2  sdm660-common: Update from xiaomi-sdm660  [pqhaz]
+
+ * external/vim
+3223f19  external: vim: Create vi symlink  [Humberto Borba]
+
+ * kernel/xiaomi/sdm660
+3e8d4af  Revert "defconfig: disable PSTORE"  [ktommy91]
+002707c  ARM: dts: msm: sdm660_e7s/e7t/wayne: enable the napi framework  [ktommy91]
+a20cade  defconfig: disable the UFS configs and regen  [ktommy91]
+
+====================
      2019-06-23    
 ====================
 
- * build/soong
-bd004c7  Revert "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2"  [blinoff82]
+ * device/xiaomi/sdm660-common
+a5565cd  sdm660-common: wifi: Enable DFS channel scanning in P2P search  [LuK1337]
+
+ * kernel/xiaomi/sdm660
+10b2878  Merge remote-tracking branch 'kernel-common/android-4.4' into pie-test  [ktommy91]
+7f5ccb1  sched/fair: Tune the scheduler using Google's presets  [Tyler Nijmeh]
+6ba2295  kernel/sysctl: Fix misc sched tunables not being in macro check  [Tyler Nijmeh]
+c96d4e5  sched: Add separate config for exposing scheduler tunables  [Tyler Nijmeh]
+ee79423  tcp: Disable slow start after idle by default  [Tyler Nijmeh]
+0f7c424  tcp: Disable ping replies by default  [Tyler Nijmeh]
+6536276  tcp: Reuse existing connections  [Tyler Nijmeh]
+bdd6dd0  Revert "display: add a simple api to query the display state (on/off) at any."  [ktommy91]
+0a74b67  Revert "msm_adreno_tz: Add display state awareness"  [ktommy91]
+104af8f  Revert "cpuidle: don't disable cpuidle when entering suspend"  [ktommy91]
+923e0dd  Revert "sound: sdm660_cdc:remove the headphone gain control"  [ktommy91]
 
  * packages/apps/Settings
 8cf97e4  team: add OnePlus One (bacon) to official builds  [blinoff82]
 
  * vendor/syberia
 8b84b4b  team: add OnePlus One (bacon) to official builds  [blinoff82]
-
-====================
-     2019-06-22    
-====================
-
- * device/xiaomi/sdm660-common
-09507e3  sdm660-common: Access persist via /mnt/vendor/persist  [rebenok90x]
-6384718  Merge remote-tracking branch 's/havoc' into syberia  [rebenok90x]
-861b4ea  sdm660: parts: fastcharge: Toogle fastcharge without replug device  [Max Weffers]
-ca1bbd9  sdm660: Kang brightness overlays from marlin  [TheScarastic]
-f3f0eeb  sdm660-common: power-libperfmgr: InteractionHandler: exit silently if int state is uninitialized  [argraur]
-fe08fd3  sdm660: sepolicy: adjust sepolicy for new powerhal  [Max Weffers]
-8f80041  sdm660-common: power: adjust powerhint for sdm660  [Max Weffers]
-d8c96de  sdm660-common: power: Add support for second tap-to-wake node  [Max Weffers]
-b6fd69f  sdm660-common: Update power HAL to version 1.3.  [Michael Wright]
-e0dd8e4  sdm660-common: add power-libperfmgr dt2w implementation  [Wight554]
-2928407  sdm660-common: power: make powerhal starts handling powerhint after boot_complete  [Wei Wang]
-8181ac6  sdm660-common: power: remove camera hints  [Vol Zhdanov]
-629323b  sdm660-common: power: clean up  [Demon Singur]
-eec821f  sdm660-common: power: keep launch boost values for camera launch  [Demon Singur]
-d508857  sdm660-common: power: reduce launch boosts to 2s  [Demon Singur]
-1456357  sdm660-common: power: do not boost big cluster on interaction  [Demon Singur]
-7c5c07b  sdm660-common: power: remove video encode hint  [Demon Singur]
-6e8fa60  sdm660-common: power: remove VR hints handling  [Demon Singur]
-42d2575  sdm660-common: power: lower interaction boost  [Demon Singur]
-4d9cb77  sdm660-common: power: change to use Value directly  [Wei Wang]
-e3cf5b3  sdm660-common: power: change CPU min freq to 0 in config  [Wei Wang]
-09d5617  sdm660-common: power: fix timeout in powerhint.json  [Wei Wang]
-ad97e5e  sdm660-common: power: fix typo in log  [Wei Wang]
-b3b0bb5  sdm660-common: power: Reorder cpu max node value priority  [Wei Wang]
-f51dc76  sdm660-common: power: set cpufreq max first  [Wei Wang]
-715a8c8  sdm660-common: power: change node owner early to reduce permission denial log spam  [Wei Wang]
-3a72c49  sdm660-common: power: switch to libperfmgr for powerhint Test: boot and do powerhint Bug: 62041945 Change-Id: I7de1d2bf377fb46162171a084fca3413b1067d3b  [Wei Wang]
-c3ac42b  sdm660: Implement a script for goodix data migration  [Max Weffers]
-
- * device/xiaomi/wayne
-7f9b70f  Update dependencies  [rebenok90x]
-ef0291d  wayne: export SKIP_ABI_CHECKS=true  [rebenok90x]
-d02ca36  wayne: use kangaroox kernel  [rebenok90x]
-7f560c9  Update syberia.dependencies  [rebenok90x]
-
- * external/skia
-d8e8a88  Disable sdclang for skia  [DennySPB]
-
- * frameworks/base
-d53bdd5  libs: hwui: disable sdclang  [DennySPB]
-aa4ec7e  Merge "Flashlight toggle api improvements" into 9.0  [dennyspb]
-d641c92  Merge "HeadsUpStatusBarView: account for rounded corner" into 9.0  [dennyspb]
-4fa8ed1  Merge "base: add camera flash toggle api" into 9.0  [dennyspb]
-95b9412  Flashlight toggle api improvements  [ezio84]
-0d60885  HeadsUpStatusBarView: account for rounded corner  [Peter Cai]
-
- * frameworks/native
-c41e2e0  Revert "Revert "opengl: Disable sdclang for EGL and OpenGLES""  [DennySPB]
-
- * frameworks/opt/net/wifi
-8e1c2c4  Merge branch '9.0' of https://github.com/aexmod-tmp/platform_frameworks_opt_net_wifi into HEAD  [blinoff82]
-b6b9509  resurrect mWifiLinkLayerStatsSupported counter  [Stefan Assmann]
-
- * kernel/xiaomi/sdm660
-8849a99  Merge remote-tracking branch 'kernel-common/android-4.4' into pie-test  [ktommy91]
-
- * packages/apps/Dialer
-4fa8974  InCallUI: SmartMute  [Ali B]
-
-====================
-     2019-06-21    
-====================
-
- * build/soong
-5b67d74  Revert "SDClang8: sanitize: filter implicit-integer-sign-change"  [DennySPB]
-
- * frameworks/base
-4f0480d  GamingMode: add master switch [1/2]  [DennySPB]
-56c3217  base: add camera flash toggle api  [Rabih Salamey]
-99f0087  LiveDisplayTile: Report unavailable on HWC2  [Han Wang]
-e6d63de  GamingMode: cleanup and fix a bit  [DennySPB]
-090208e  Q Style Clock: Reduce top margin, users want to see more notifications  [Shreyansh Lodha]
-2686007  Base: Let Q clock follow accent colour  [Gaurav Singh]
-550615b  SmartCharging: allow user set resume level [1/2]  [DennySPB]
-a3a68cc  fwb: Improve AOSP twilight code  [Henrique Silva]
-
- * frameworks/opt/net/wifi
-4bae5fd  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' into HEAD  [blinoff82]
-
- * hardware/qcom/bt
-2d5ff3d  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [blinoff82]
-94c4fcf  Add compat for old wcnss_filter  [LuK1337]
-dea254b  Merge tag 'LA.UM.7.3.r1-06600-sdm845.0' into HEAD  [blinoff82]
-4552b1b  libbt-vendor: Use generated kernel headers  [Bruno Martins]
-7bc042f  libbt-vendor: Add missing vendor prefix to a bluetooth.status prop  [Arne Coucheron]
-ecddbc5  libbt-vendor: Fix BLUETOOTH_MAC_ADDR_BOOT_PROPERTY definition  [Arne Coucheron]
-2aeec2d  Apply the Cherokee's mechanism of stopping hci_filter to ROME  [John Muir]
-b0b17f4  libbt: Fix case where SoC type is not set  [Steve Kondik]
-
- * hardware/ril
-bdcbf57  librilreference: disable sanitize  [DennySPB]
-
- * kernel/xiaomi/sdm660
-f45e77d  Revert "msm: mdss: hdmi: skip pan_display during handoff"  [ktommy91]
-e24d72b  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.4 into pie-test  [ktommy91]
-85dc5de  cpufreq: dsboost: Correct goto labels during init failures  [Tyler Nijmeh]
-f7bdba6  cpufreq: dsboost: Unboost on panel suspend  [Tyler Nijmeh]
-4f7124a  staging: android: ashmem: Get rid of the big mutex lock  [Sultan Alsawaf]
-5aee06d  ASoC: Silence platform not registered message  [Sultan Alsawaf]
-035ae87  iommu: msm: Fix race due to mapping and unmapping simultaneously  [Sultan Alsawaf]
-875ce76  defconfig: Disable SEEMP  [Sultan Alsawaf]
-040b497  cpuidle: Optimize pm_qos notifier callback  [Sultan Alsawaf]
-9a29a03  qos: Execute notifier callbacks atomically  [Sultan Alsawaf]
-b08f723  qos: Don't disable interrupts while holding pm_qos_lock  [Sultan Alsawaf]
-fd90d51  iommu: msm: Rewrite to improve clarity and performance  [Sultan Alsawaf]
-c6ccbbe  msm: mdss: Speed up mdss_mdp_get_format_params for UBWC formats  [Sultan Alsawaf]
-21a9be4  msm: mdss: Remove sync debug name generation from hot path  [Sultan Alsawaf]
-1cc9822  qpnp-fg-gen3: Limit how frequently fg data can be queried  [Sultan Alsawaf]
-
- * packages/apps/Settings
-8126ebb  Merge "SmartCharging: allow user set resume level [2/2]" into 9.0  [dennyspb]
-e1b0081  Merge "Cutout force fullscreen: Disable fast scroller" into 9.0  [dennyspb]
-
- * packages/apps/SyberiaSettings
-ce4681d  Remove footer from gaming mode  [DennySPB]
-
- * system/sepolicy
-b1dcfd2  sepolicy: Add Google App build props  [mydongistiny]
-2e7c0b0  system_server: allow writes to /proc/pid/*  [Tim Murray]
-7aeb9ac  sepolicy: Add Label to f2fs sysfs files  [Daniel Rosenberg]
-
- * vendor/codeaurora/telephony
-5007a19  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' into HEAD  [blinoff82]
-
- * vendor/syberia
-aa5a27d  Merge "Add Markup lib for arm 32-bit devices" into 9.0  [blinov.in]
-2cc48f9  Merge "team: add Xiaomi Redmi Note 7 (lavender) to official builds" into 9.0  [blinov.in]
-7ec500f  Go back to SDClang6  [DennySPB]
-
-====================
-     2019-06-20    
-====================
-
- * build/soong
-ad3700d  Merge "Remove extra vendor parameters for tidy" into 9.0  [dennyspb]
-2b99ed4  Remove extra vendor parameters for tidy  [mesziman]
-e9f06ab  Merge "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2" into 9.0  [dennyspb]
-
- * kernel/xiaomi/sdm660
-eee21eb  ANDROID: kernel: cgroup: cpuset: Clear cpus_requested for empty buf  [Roman Kiryanov]
-f1adac4  ANDROID: kernel: cgroup: cpuset: Add missing allocation of cpus_requested in alloc_trial_cpuset  [Roman Kiryanov]
-
- * packages/apps/Settings
-fab928c  SmartCharging: allow user set resume level [2/2]  [DennySPB]
-
- * packages/apps/SyberiaSettings
-57b9a58  GamingMode: cleanup a bit  [DennySPB]
-03cac8a  GamingMode: add master switch [2/2]  [DennySPB]
-
- * packages/resources/devicesettings
-b73e3bc  Automatic translation import  [Michael Bestas]
-
- * vendor/syberia
-9bd226b  Add Markup lib for arm 32-bit devices  [blinoff82]
-eb4c6e4  SDClang8: disable sign sign sanitizer  [DennySPB]
-c4cf650  Merge "sdclang8: Disable some new warings" into 9.0  [dennyspb]
-cc1a73b  sdclang8: Disable some new warings  [DennySPB]
-
-====================
-     2019-06-19    
-====================
-
- * external/llvm
-9212c2a  Add unittests to {ARM | AArch64}TargetParser.  [Zijiao Ma]
-
- * external/zlib
-6992a71  Don't use ARMv8 CRC32 on arm arch  [DennySPB]
-
- * frameworks/base
-180523b  GamingMode: Rewrite implementation [1/2]  [DennySPB]
-2772f3b  GamingMode: add more ringer modes [1/2]  [DennySPB]
-080b5e3  LiveDisplayTile: skip day/night mode  [DennySPB]
-3e162de  GamingMode: minor improvements  [DennySPB]
-ed25d5c  SystemUI: FireHound Gaming [1/4]  [PMS22]
-b2ddffd  Revert "SystemUI: Add Gaming mode tile"  [DennySPB]
-353681a  Revert "GamingModeTile: stop adjusting volume"  [DennySPB]
-61894aa  Fix NPE on navbar  [Henrique Silva]
-5b16e5d  KeyguardSliceProvider: Show dnd icon regardless of suppression mode  [Henrique Silva]
-9df49a9  LiveDisplayService: Disable ColorTemperature when NightDisplay is available  [Bruno Martins]
-
- * frameworks/rs
-25915b7  Avoid using x18 register in resize intrinsic  [Peter Collingbourne]
-f625a60  rs: Fix invalid const atomic builtin accesses  [Stephen Hines]
-
- * packages/apps/Settings
-ac87b87  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
-69aed80  Cutout force fullscreen: Disable fast scroller  [Henrique Silva]
-
- * packages/apps/SyberiaSettings
-4026c9f  SyberiaSettings: add missing summaries  [blinoff82]
-2856d75  GamingMode: Rewrite implementation [2/2]  [DennySPB]
-
- * system/security
-73581e4  Merge changes I28160db1,I3002c0f6,Iaeeba524,Iba04236d,I55eb358b, ... into 9.0  [dennyspb]
-bc3e709  Use std::move to avoid unnecessary copying  [Yi Kong]
-9177788  Fix unnecessary copy initialization warnings  [Chih-Hung Hsieh]
-
- * vendor/syberia
-9bbc37b  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
-
-====================
-     2019-06-18    
-====================
-
- * build/soong
-474c7aa  SDClang8: sanitize: filter implicit-integer-sign-change  [DennySPB]
-
- * kernel/xiaomi/sdm660
-9c4ab57  Merge 4.4.182 into android-4.4  [Greg Kroah-Hartman]
-33790f2  Linux 4.4.182  [Greg Kroah-Hartman]
-f938ae0  tcp: enforce tcp_min_snd_mss in tcp_mtu_probing()  [Eric Dumazet]
-e757d05  tcp: add tcp_min_snd_mss sysctl  [Eric Dumazet]
-ad472d3  tcp: tcp_fragment() should apply sane memory limits  [Eric Dumazet]
-4657ee0  tcp: limit payload size of sacked skbs  [Eric Dumazet]
-2236e75  cpuidle: don't disable cpuidle when entering suspend  [Tim Murray]
-b45dd53  defconfig: disable PSTORE  [ktommy91]
-
-====================
-     2019-06-17    
-====================
-
- * kernel/xiaomi/sdm660
-7017860  defconfig: disable VFAT_FS SDFAT driver can be used for VFAT  [ktommy91]
-2e6b6c6  defconfig: update the f2fs configs  [ktommy91]
-70f19ad  defconfig: regen  [ktommy91]
-af3f70d  cpufreq: dsboost: Remove HIGHPRI and use FREEZABLE  [Tyler Nijmeh]
-7f8f41f  treewide: Remove tracing and debug drivers  [Tyler Nijmeh]
-73a67f2  arm64: Kconfig: disable some tracers  [ktommy91]
-d99cecf  Revert "defconfig: enable BLK_CGROUP and BFQ/CFQ_GROUP_IOSCHED"  [ktommy91]
-e19927d  sched: tune: raise the BOOSTGROUPS_COUNT to 6 [    4.898319] Trying to create more than 5 SchedTune boosting groups We need more then 5  [ktommy91]
-c06c84c  defconfig: enable LRO  [ktommy91]
-f0155e2  defconfig: enable WLAN_FEATURE_PKT_CAPTURE  [ktommy91]
-e4cc51c  qcacld-3.0: Add packet capture feature option into Kconfig  [Albert I]
-e6d7bc0  Revert "Revert "qcacld-3.0: Register-Deregister mon context and callback""  [ktommy91]
-ee2717c  Revert "Revert "qcacld-3.0: Register mon interface using hdd_add_virtual_intf""  [ktommy91]
-6f42f7a  Revert "Fix bugs about step-chg-jeita"  [ktommy91]
-16b3d46  sound: sdm660_cdc:remove the headphone gain control Useless and cause issues on MIUI  [ktommy91]
-dea2fa1  nvt_touch_ds2: Properly handle userspace dt2w switch  [TingyiChen]
-3fdf53a  nvt_touch_ds2: Create procfs node to handle userspace dt2w switch  …  [TingyiChen]
 
