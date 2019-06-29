@@ -1,4 +1,103 @@
 ====================
+     2019-06-29    
+====================
+
+====================
+     2019-06-28    
+====================
+
+ * frameworks/base
+439178c  FixUp: SystemUI: Statusbar layout improvements  [Anushek Prasal]
+0d21c9f  Option to Display Data Disabled Indicator Icon [1/2]  [Varun Date]
+
+ * frameworks/native
+bd4d564  Revert some questionable binder commits  [DennySPB]
+
+ * packages/apps/Settings
+0426d72  Merge "team: capricorn is out" into 9.0  [blinov.in]
+
+====================
+     2019-06-27    
+====================
+
+ * frameworks/base
+da40d01  SmartCharging: add reset battery stats option [1/2]  [DennySPB]
+42fb825  Revert "ActivityRecord: add fw boost after r33 merge"  [DennySPB]
+8184f72  SmartNav: Eliminate needless BroadcastReceiver in BaseNavigationBar [1/2]  [bigrushdog]
+7531bb2  Move Q animation to custom animations  [DennySPB]
+25e37d8  Revert "Add missing ensureRunningOnConnectivityServiceThread() function"  [DennySPB]
+c631053  Revert "Revert "Update VPN capabilities when its underlying network set is null.""  [Varun Anand]
+b6dfb94  SystemUI: Statusbar layout improvements  [Anushek Prasal]
+8d53400  PhoneWindowManager: Set delay for screenshot shortcut to 0  [Anirudh Gupta]
+449cbec  SystemUI: Fix several layout bugs  [eray orçunus]
+097afed  Reload Pixel Home Animation without reboot  [Joe Maples]
+cf5ff23  Pixel Navbar animation toggle [1/2]  [beanstown106]
+762b939  SystemUI: Add navigation touch animation support  [Chris]
+76b2f83  SystemUI: Remove older Pixel Animation  [argraur]
+c57a991  SystemUI: Use proper lock icon scale on dismissing notification panel view  [LuK1337]
+b17e981  SystemUI: Handle orientation and screenSize changes for TunerActivity  [LuK1337]
+
+ * packages/apps/Settings
+f0687e5  SmartCharging: add reset battery stats option [2/2]  [DennySPB]
+
+ * packages/apps/Snap
+cbbc294  Snap: allow to disable image stabilization per device  [codeworkx]
+242266a  Snap: Fix picture size preference  [dianlujitao]
+3ad6082  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [Bruno Martins]
+378ac64  Snap: Fix shutter button size  [Artem Borisov]
+2317d90  Snap: make support for bokeh mode configurable per device  [codeworkx]
+b543b72  Snap: Yet Another String Improvement  [Michael Bestas]
+1100ce3  change to BUILD_NUMBER_FROM_FILE  [jinwu]
+c46c7d5  QuickReader: Update libs  [Luca Stefani]
+167cc22  Snap: Always allow 100% JPEG quality to be set  [Zhao Wei Liew]
+c6b27e4  Snap: Disable debugging of double open issue  [Wang Han]
+0a74332  Snap: Add missing NULL check in updateQcfaPictureSize()  [Wang Han]
+34a5a9a  Snap: Check various feature support before applying  [Wang Han]
+da83b97  Snap: Fix layout of zoom option  [Wang Han]
+45e402f  Snap: Create correct redeye reduction config icon  [Wang Han]
+5ca0b6e  Snap: Avoid crash with empty RAW output size  [Wang Han]
+4841eae  DisableCameraReceiver: Initialize CameraHolder before use  [dianlujitao]
+8420c48  SnapdragonCamera: Check for fixed focus  [Rajshekar Eashwarappa]
+ae2394c  SnapdragonCamera: Completed the EIS and video HDR function  [xianming wang]
+7eae9de  Change version to 015  [zhuw]
+f79ad63  SnapdragonCamera: SunSet and Landscape use HAL-ZSL mode  [xianming wang]
+405de58  Requirement from EIS team  [zhuw]
+
+ * packages/apps/SyberiaSettings
+92372bb  Data disabled icon switch[2/2]  [Varun Date]
+
+ * prebuilts/clang/host/linux-x86
+187e3a7  Update prebuilt Clang to r353983d.  [Nick Desaulniers]
+
+====================
+     2019-06-26    
+====================
+
+====================
+     2019-06-25    
+====================
+
+ * frameworks/base
+fed99f0  base: Import Android Q activity animations  [Lucchetto]
+
+ * packages/apps/Settings
+5de0c5b  team: capricorn is out  [blinoff82]
+
+ * packages/apps/SmartNav
+fb742a6  SmartNav: Eliminate needless BroadcastReceiver in BaseNavigationBar [2/2]  [bigrushdog]
+08c1004  SmartNav: Reload icons from storage when boot completes  [bigrushdog]
+f806f44  Pulse: Fix defaulting to user color if no album color available  [Pranav Vashi]
+543e49a  SmartNav: opa: fix Pixel animation on SB with new SysUI opa  [argraur]
+d430cb5  SmartNav: Use correct colors for popup  [xyyx]
+
+====================
+     2019-06-24    
+====================
+
+ * external/vim
+3223f19  external: vim: Create vi symlink  [Humberto Borba]
+
+====================
      2019-06-23    
 ====================
 
@@ -10,163 +109,4 @@ bd004c7  Revert "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2"  [blinoff
 
  * vendor/syberia
 8b84b4b  team: add OnePlus One (bacon) to official builds  [blinoff82]
-
-====================
-     2019-06-22    
-====================
-
- * external/skia
-d8e8a88  Disable sdclang for skia  [DennySPB]
-
- * frameworks/base
-d53bdd5  libs: hwui: disable sdclang  [DennySPB]
-aa4ec7e  Merge "Flashlight toggle api improvements" into 9.0  [dennyspb]
-d641c92  Merge "HeadsUpStatusBarView: account for rounded corner" into 9.0  [dennyspb]
-4fa8ed1  Merge "base: add camera flash toggle api" into 9.0  [dennyspb]
-95b9412  Flashlight toggle api improvements  [ezio84]
-0d60885  HeadsUpStatusBarView: account for rounded corner  [Peter Cai]
-
- * frameworks/native
-c41e2e0  Revert "Revert "opengl: Disable sdclang for EGL and OpenGLES""  [DennySPB]
-
- * frameworks/opt/net/wifi
-8e1c2c4  Merge branch '9.0' of https://github.com/aexmod-tmp/platform_frameworks_opt_net_wifi into HEAD  [blinoff82]
-b6b9509  resurrect mWifiLinkLayerStatsSupported counter  [Stefan Assmann]
-
- * packages/apps/Dialer
-4fa8974  InCallUI: SmartMute  [Ali B]
-
-====================
-     2019-06-21    
-====================
-
- * build/soong
-5b67d74  Revert "SDClang8: sanitize: filter implicit-integer-sign-change"  [DennySPB]
-
- * frameworks/base
-4f0480d  GamingMode: add master switch [1/2]  [DennySPB]
-56c3217  base: add camera flash toggle api  [Rabih Salamey]
-99f0087  LiveDisplayTile: Report unavailable on HWC2  [Han Wang]
-e6d63de  GamingMode: cleanup and fix a bit  [DennySPB]
-090208e  Q Style Clock: Reduce top margin, users want to see more notifications  [Shreyansh Lodha]
-2686007  Base: Let Q clock follow accent colour  [Gaurav Singh]
-550615b  SmartCharging: allow user set resume level [1/2]  [DennySPB]
-a3a68cc  fwb: Improve AOSP twilight code  [Henrique Silva]
-
- * frameworks/opt/net/wifi
-4bae5fd  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' into HEAD  [blinoff82]
-
- * hardware/qcom/bt
-2d5ff3d  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [blinoff82]
-94c4fcf  Add compat for old wcnss_filter  [LuK1337]
-dea254b  Merge tag 'LA.UM.7.3.r1-06600-sdm845.0' into HEAD  [blinoff82]
-4552b1b  libbt-vendor: Use generated kernel headers  [Bruno Martins]
-7bc042f  libbt-vendor: Add missing vendor prefix to a bluetooth.status prop  [Arne Coucheron]
-ecddbc5  libbt-vendor: Fix BLUETOOTH_MAC_ADDR_BOOT_PROPERTY definition  [Arne Coucheron]
-2aeec2d  Apply the Cherokee's mechanism of stopping hci_filter to ROME  [John Muir]
-b0b17f4  libbt: Fix case where SoC type is not set  [Steve Kondik]
-
- * hardware/ril
-bdcbf57  librilreference: disable sanitize  [DennySPB]
-
- * packages/apps/Settings
-8126ebb  Merge "SmartCharging: allow user set resume level [2/2]" into 9.0  [dennyspb]
-e1b0081  Merge "Cutout force fullscreen: Disable fast scroller" into 9.0  [dennyspb]
-
- * packages/apps/SyberiaSettings
-ce4681d  Remove footer from gaming mode  [DennySPB]
-
- * system/sepolicy
-b1dcfd2  sepolicy: Add Google App build props  [mydongistiny]
-2e7c0b0  system_server: allow writes to /proc/pid/*  [Tim Murray]
-7aeb9ac  sepolicy: Add Label to f2fs sysfs files  [Daniel Rosenberg]
-
- * vendor/codeaurora/telephony
-5007a19  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' into HEAD  [blinoff82]
-
- * vendor/syberia
-aa5a27d  Merge "Add Markup lib for arm 32-bit devices" into 9.0  [blinov.in]
-2cc48f9  Merge "team: add Xiaomi Redmi Note 7 (lavender) to official builds" into 9.0  [blinov.in]
-7ec500f  Go back to SDClang6  [DennySPB]
-
-====================
-     2019-06-20    
-====================
-
- * build/soong
-ad3700d  Merge "Remove extra vendor parameters for tidy" into 9.0  [dennyspb]
-2b99ed4  Remove extra vendor parameters for tidy  [mesziman]
-e9f06ab  Merge "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2" into 9.0  [dennyspb]
-
- * packages/apps/Settings
-fab928c  SmartCharging: allow user set resume level [2/2]  [DennySPB]
-
- * packages/apps/SyberiaSettings
-57b9a58  GamingMode: cleanup a bit  [DennySPB]
-03cac8a  GamingMode: add master switch [2/2]  [DennySPB]
-
- * packages/resources/devicesettings
-b73e3bc  Automatic translation import  [Michael Bestas]
-
- * vendor/syberia
-9bd226b  Add Markup lib for arm 32-bit devices  [blinoff82]
-eb4c6e4  SDClang8: disable sign sign sanitizer  [DennySPB]
-c4cf650  Merge "sdclang8: Disable some new warings" into 9.0  [dennyspb]
-cc1a73b  sdclang8: Disable some new warings  [DennySPB]
-
-====================
-     2019-06-19    
-====================
-
- * external/llvm
-9212c2a  Add unittests to {ARM | AArch64}TargetParser.  [Zijiao Ma]
-
- * external/zlib
-6992a71  Don't use ARMv8 CRC32 on arm arch  [DennySPB]
-
- * frameworks/base
-180523b  GamingMode: Rewrite implementation [1/2]  [DennySPB]
-2772f3b  GamingMode: add more ringer modes [1/2]  [DennySPB]
-080b5e3  LiveDisplayTile: skip day/night mode  [DennySPB]
-3e162de  GamingMode: minor improvements  [DennySPB]
-ed25d5c  SystemUI: FireHound Gaming [1/4]  [PMS22]
-b2ddffd  Revert "SystemUI: Add Gaming mode tile"  [DennySPB]
-353681a  Revert "GamingModeTile: stop adjusting volume"  [DennySPB]
-61894aa  Fix NPE on navbar  [Henrique Silva]
-5b16e5d  KeyguardSliceProvider: Show dnd icon regardless of suppression mode  [Henrique Silva]
-9df49a9  LiveDisplayService: Disable ColorTemperature when NightDisplay is available  [Bruno Martins]
-
- * frameworks/rs
-25915b7  Avoid using x18 register in resize intrinsic  [Peter Collingbourne]
-f625a60  rs: Fix invalid const atomic builtin accesses  [Stephen Hines]
-
- * packages/apps/Settings
-ac87b87  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
-69aed80  Cutout force fullscreen: Disable fast scroller  [Henrique Silva]
-
- * packages/apps/SyberiaSettings
-4026c9f  SyberiaSettings: add missing summaries  [blinoff82]
-2856d75  GamingMode: Rewrite implementation [2/2]  [DennySPB]
-
- * system/security
-73581e4  Merge changes I28160db1,I3002c0f6,Iaeeba524,Iba04236d,I55eb358b, ... into 9.0  [dennyspb]
-bc3e709  Use std::move to avoid unnecessary copying  [Yi Kong]
-9177788  Fix unnecessary copy initialization warnings  [Chih-Hung Hsieh]
-
- * vendor/syberia
-9bbc37b  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
-
-====================
-     2019-06-18    
-====================
-
- * build/soong
-474c7aa  SDClang8: sanitize: filter implicit-integer-sign-change  [DennySPB]
-
- * vendor/xiaomi/tulip
-18e9661  tulip: Drop mlipay 1.0  [Advertpavan]
-
-====================
-     2019-06-17    
-====================
 
