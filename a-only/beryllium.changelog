@@ -1,221 +1,214 @@
 ====================
-     2019-06-22    
+     2019-06-29    
+====================
+
+ * frameworks/base
+439178c  FixUp: SystemUI: Statusbar layout improvements  [Anushek Prasal]
+
+ * kernel/xiaomi/sdm845
+1c1ac00  Revert "defconfig: set rcu boost delay to 250ms"  [Ethan Halsall]
+864dbc3  defconfig: sync  [ethan-halsall]
+4a8018a0  lpm-levels: Remove check for non negative LPM level selected  [Maulik Shah]
+0483f7c  cpuidle: lpm-levels: Use static residency values  [Maulik Shah]
+
+====================
+     2019-06-28    
+====================
+
+ * frameworks/base
+0d21c9f  Option to Display Data Disabled Indicator Icon [1/2]  [Varun Date]
+da40d01  SmartCharging: add reset battery stats option [1/2]  [DennySPB]
+
+ * frameworks/native
+bd4d564  Revert some questionable binder commits  [DennySPB]
+
+ * kernel/xiaomi/sdm845
+d91b919  mm: vmalloc: clean up vunmap to avoid pgtable ops twice  [Chintan Pandya]
+39af082  dts: Fix weird cpuidle values  [Artem Labazov]
+72177f2  dts: Migrate cpuidle properties to a new format  [Artem Labazov]
+0f13bec  Revert "sched: set min & max capacity CPUs in sched_energy_probe"  [ethan-halsall]
+5f7f587  Revert "init.qcom.rc: Use fifo for ui"  [ethan-halsall]
+0b412c3  [BACKPORT] power: qos: Use effective affinity mask  [Pavankumar Kondeti]
+54c3573  sched: inline api with previous commit  [ethan-halsall]
+61b0f8e  sched/rt: schedtune: Add boost retention to RT  [Joel Fernandes]
+87c38ca  sched/rt: add schedtune accounting for en/dequeue  [Joel Fernandes]
+3286b26  mm/slab_common: Align all caches' objects to hardware cachelines  [Sultan Alsawaf]
+95e9931  net: socket: Use convoluted tricks to silence a GCC 9 error  [Sultan Alsawaf]
+7da8031  ALSA: control: Don't dynamically allocate a single struct instance  [Sultan Alsawaf]
+01080be  media: v4l2-ioctl: Use a larger on-stack video copy buffer  [Sultan Alsawaf]
+b43be97  msm: camera: Avoid dynamic memory allocation for small buffers  [Sultan Alsawaf]
+d70e8db  Linux 4.9.184  [Greg Kroah-Hartman]
+6686b75  tcp: refine memory limit test in tcp_fragment()  [Eric Dumazet]
+6c08a9e  defconfig: set rcu boost delay to 250ms  [ethan-halsall]
+7507a80  genirq: Introduce effective affinity mask  [Thomas Gleixner]
+87b7bcc0  Revert "sched/fair.c: Don't allow SchedTune boosted tasks to be migrated to small cores"  [Raphiel Rollerscaperers]
+878d182  sched/fair: Fix load_balance() affinity redo path  [Jeffrey Hugo]
+d131a447  sched: walt: Add BUG_ON() when wallclock goes backwards  [Pavankumar Kondeti]
+0ab7e93  random: optimize add_interrupt_randomness  [Andi Kleen]
+a5312a2  block: optimize bvec iteration in bvec_iter_advance  [Christoph Hellwig]
+
+ * packages/apps/Settings
+0426d72  Merge "team: capricorn is out" into 9.0  [blinov.in]
+f0687e5  SmartCharging: add reset battery stats option [2/2]  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+92372bb  Data disabled icon switch[2/2]  [Varun Date]
+
+ * prebuilts/clang/host/linux-x86
+187e3a7  Update prebuilt Clang to r353983d.  [Nick Desaulniers]
+
+====================
+     2019-06-27    
+====================
+
+ * frameworks/base
+42fb825  Revert "ActivityRecord: add fw boost after r33 merge"  [DennySPB]
+8184f72  SmartNav: Eliminate needless BroadcastReceiver in BaseNavigationBar [1/2]  [bigrushdog]
+7531bb2  Move Q animation to custom animations  [DennySPB]
+25e37d8  Revert "Add missing ensureRunningOnConnectivityServiceThread() function"  [DennySPB]
+c631053  Revert "Revert "Update VPN capabilities when its underlying network set is null.""  [Varun Anand]
+b6dfb94  SystemUI: Statusbar layout improvements  [Anushek Prasal]
+8d53400  PhoneWindowManager: Set delay for screenshot shortcut to 0  [Anirudh Gupta]
+449cbec  SystemUI: Fix several layout bugs  [eray orçunus]
+097afed  Reload Pixel Home Animation without reboot  [Joe Maples]
+cf5ff23  Pixel Navbar animation toggle [1/2]  [beanstown106]
+762b939  SystemUI: Add navigation touch animation support  [Chris]
+76b2f83  SystemUI: Remove older Pixel Animation  [argraur]
+c57a991  SystemUI: Use proper lock icon scale on dismissing notification panel view  [LuK1337]
+b17e981  SystemUI: Handle orientation and screenSize changes for TunerActivity  [LuK1337]
+
+ * kernel/xiaomi/sdm845
+1a72bca  diag: Increase the MHI buffer size to 4k  [Sreelakshmi Gownipalli]
+ea6a69c  thermal: core: skip update disabled thermal zones after suspend  [Wei Wang]
+102833e  drivers: thermal: Ignore spurious BCL interrupts whenever BCL is in polling  [Manaf Meethalavalappu Pallikunhi]
+322c94d  thermal: tsens: Fix CLANG compilation issues in TSENS for kernel 4.9  [Jishnu Prakash]
+90cef3f  thermal: tsens: Use the new threshold notification API  [Ram Chandrasekar]
+0c3aa3e  drivers: thermal: Add post suspend evaluate flag to thermal zone devicetree  [Manaf Meethalavalappu Pallikunhi]
+dda30e2  drivers: thermal: Evaluate based on trip temperature  [Ram Chandrasekar]
+99f3b0c  arm64: dts: qcom: Separate thermal from device DT  [Raphiel Rollerscaperers]
+67a2bad  arm64: beryllium: disable bcl and the tz altogether  [Raphiel Rollerscaperers]
+d1cf8fb  arm64: dts: qcom: beryllium: thermal stuff reworks  [Raphiel Rollerscaperers]
+d30f955  drivers: thermal: lmh-dcvs: use CPURFREQ_INCOMPATIBLE for thermal handling  [Raphiel Rollerscaperers]
+f82a5d1  sched: set min & max capacity CPUs in sched_energy_probe  [Connor O'Brien]
+5c381fa  thermal: Skip thermal sensor update if emul temp set  [TeYuan Wang]
+ea9af48  thermal: qpnp-adc-tm: sync temperature update in different thermal zones  [Wei Wang]
+f557cf0  bcl: Notify thermal core when soc throttling can be cleared  [TeYuan Wang]
+1fd7532  power: smb-lib: Force suspend when cable out.  [Wasb Liu]
+1904419  ARM: dts: msm: disable pmi8998_tz  [martin_liu]
+38b70ca  ARM: dts: msm: Add wakeup capable flag to all thermal zone for SDM845  [Manaf Meethalavalappu Pallikunhi]
+
+ * packages/apps/Snap
+cbbc294  Snap: allow to disable image stabilization per device  [codeworkx]
+242266a  Snap: Fix picture size preference  [dianlujitao]
+3ad6082  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [Bruno Martins]
+378ac64  Snap: Fix shutter button size  [Artem Borisov]
+2317d90  Snap: make support for bokeh mode configurable per device  [codeworkx]
+b543b72  Snap: Yet Another String Improvement  [Michael Bestas]
+1100ce3  change to BUILD_NUMBER_FROM_FILE  [jinwu]
+c46c7d5  QuickReader: Update libs  [Luca Stefani]
+167cc22  Snap: Always allow 100% JPEG quality to be set  [Zhao Wei Liew]
+c6b27e4  Snap: Disable debugging of double open issue  [Wang Han]
+0a74332  Snap: Add missing NULL check in updateQcfaPictureSize()  [Wang Han]
+34a5a9a  Snap: Check various feature support before applying  [Wang Han]
+da83b97  Snap: Fix layout of zoom option  [Wang Han]
+45e402f  Snap: Create correct redeye reduction config icon  [Wang Han]
+5ca0b6e  Snap: Avoid crash with empty RAW output size  [Wang Han]
+4841eae  DisableCameraReceiver: Initialize CameraHolder before use  [dianlujitao]
+8420c48  SnapdragonCamera: Check for fixed focus  [Rajshekar Eashwarappa]
+ae2394c  SnapdragonCamera: Completed the EIS and video HDR function  [xianming wang]
+7eae9de  Change version to 015  [zhuw]
+f79ad63  SnapdragonCamera: SunSet and Landscape use HAL-ZSL mode  [xianming wang]
+405de58  Requirement from EIS team  [zhuw]
+
+====================
+     2019-06-26    
+====================
+
+ * kernel/xiaomi/sdm845
+2019930  Merge tag 'LA.UM.7.8.r1-06000-SDM710.0' into dev  [ethan-halsall]
+
+ * packages/apps/Settings
+5de0c5b  team: capricorn is out  [blinoff82]
+
+====================
+     2019-06-25    
+====================
+
+ * frameworks/base
+fed99f0  base: Import Android Q activity animations  [Lucchetto]
+
+ * packages/apps/SmartNav
+fb742a6  SmartNav: Eliminate needless BroadcastReceiver in BaseNavigationBar [2/2]  [bigrushdog]
+08c1004  SmartNav: Reload icons from storage when boot completes  [bigrushdog]
+f806f44  Pulse: Fix defaulting to user color if no album color available  [Pranav Vashi]
+543e49a  SmartNav: opa: fix Pixel animation on SB with new SysUI opa  [argraur]
+d430cb5  SmartNav: Use correct colors for popup  [xyyx]
+
+====================
+     2019-06-24    
+====================
+
+ * external/vim
+3223f19  external: vim: Create vi symlink  [Humberto Borba]
+
+ * kernel/xiaomi/sdm845
+bfa03c7  defconfig: remove rcu boost delay  [ethan-halsall]
+9f8ddcf  Merge remote-tracking branch 'msm-4.9/kernel.lnx.4.9.r11-rel' into dev  [ethan-halsall]
+7a3493f  sched/fair: remove unused previous cpu stuff  [ethan-halsall]
+3625f06  ARM: dts: msm: Increasing shared mem region size for SDM845 and SDM710  [Raja Mallik]
+e88604c  Revert 'treewide: Revert questionable sched changes'  [ethan-halsall]
+5132470  [FIXUP] ANDROID:sched/fair: prefer energy efficient CPUs for !prefer_idle tasks  [Ionela Voinescu]
+27ad5f8  sched/tune: Increase the cgroup limit to 6  [Pavankumar Kondeti]
+f5964c9  Revert "sched/fair: Fix load_balance() affinity redo path"  [ethan-halsall]
+fdb081c  cpufreq: schedutil: Avoid using invalid next_freq  [Rafael J. Wysocki]
+265885d  sched/fair: Fix schedtune boosted tasks placement issues  [Pavankumar Kondeti]
+b11c11d  sched: improve the scheduler  [Abhijeet Dharmapurikar]
+87e289f  sched/fair: fix prefer_idle behaviour  [Abhijeet Dharmapurikar]
+8f254df  sched/fair: improve big task placement  [Abhijeet Dharmapurikar]
+d1fdfb9  sched/fair: do not reset target_capacity  [Abhijeet Dharmapurikar]
+3a2f6fe  sched/fair: fix a problem with boost placement  [Abhijeet Dharmapurikar]
+0287af7  sched: fastpath for prev_cpu  [Abhijeet Dharmapurikar]
+4b795c3  sched: use cuml demand for idle selection  [Abhijeet Dharmapurikar]
+dbe35c7  qcom: soc: Remove DEBUG_FS dependency from MSM_IDLE_STATS  [0ctobot]
+c777f7a  treewide: Don't warn about debugfs failure if disabled  [0ctobot]
+eb6243d  scsi: ufs: Fix compilation errors when TRACEPOINTS is disabled  [0ctobot]
+4afa432  msm: sde: Fix compilation errors when debugfs is disabled  [0ctobot]
+8eec0b3  msm: ipa: Enable debugfs usage and fix compilation errors  [Yaroslav Furman]
+3d6a1c0  techpack: audio: Fix compilation errors when debugfs is disabled  [Yaroslav Furman]
+aa5e391  drm: dp: Enable debugfs usage  [Yaroslav Furman]
+c1f7cec  msm: qcedev: Don't bail out when debugfs creation fails  [Yaroslav Furman]
+2c09683  msm: crypto: Fix compilation errors when debugfs is disabled  [Yaroslav Furman]
+d2ef181  msm: gsi: Disable debugfs usage  [Yaroslav Furman]
+d97f2ae  msm: kgsl: Turn debugfs off  [msdx321]
+697c7cc  wakeup: Enable debugfs usage  [Sultan Alsawaf]
+578994d  debugfs: Always compile core debugfs driver for Android kernels  [Sultan Alsawaf]
+1ac3661  soc: qcom: glink: Fix compile errors when debugfs is disabled  [Sultan Alsawaf]
+9a3e596  power: qpnp-fg-gen3: Don't bail out when debugfs creation fails  [Sultan Alsawaf]
+5f5fc6e  msm: sps: Fix compile errors when debugfs is disabled  [Sultan Alsawaf]
+b43af2c  msm: ipa3: Fix compile errors when debugfs is disabled  [Sultan Alsawaf]
+9bf3df7  msm: vidc: Fix broken debugfs creation error checks and error paths  [Sultan Alsawaf]
+b1b7132  drm/msm: Don't bail out when debugfs creation fails  [Sultan Alsawaf]
+7447f55  drm/msm/dsi-staging: Don't bail out when debugfs creation fails  [Sultan Alsawaf]
+fbf8385  debugfs: Define debugfs_create_file_unsafe when debugfs is disabled  [Sultan Alsawaf]
+5804258  firmware: qcom: Remove debugfs dependency from tz-log driver  [Sultan Alsawaf]
+f0c5d91  crypto: msm: Don't bail out when debugfs creation fails  [Sultan Alsawaf]
+b580958  clk: Fix compile errors when debugfs is disabled  [Sultan Alsawaf]
+d1c3863  sysctl: Nuke sched_boost feature  [Sultan Alsawaf]
+215cce3  defconfig: sync  [ethan-halsall]
+
+====================
+     2019-06-23    
 ====================
 
  * build/soong
 bd004c7  Revert "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2"  [blinoff82]
+
+ * kernel/xiaomi/sdm845
+8fe8c8e  Merge 4.9.183 into kernel.lnx.4.9.r11-rel  [Nathan Chancellor]
 
  * packages/apps/Settings
 8cf97e4  team: add OnePlus One (bacon) to official builds  [blinoff82]
 
  * vendor/syberia
 8b84b4b  team: add OnePlus One (bacon) to official builds  [blinoff82]
-
-====================
-     2019-06-21    
-====================
-
- * external/skia
-d8e8a88  Disable sdclang for skia  [DennySPB]
-
- * frameworks/base
-d53bdd5  libs: hwui: disable sdclang  [DennySPB]
-aa4ec7e  Merge "Flashlight toggle api improvements" into 9.0  [dennyspb]
-d641c92  Merge "HeadsUpStatusBarView: account for rounded corner" into 9.0  [dennyspb]
-4fa8ed1  Merge "base: add camera flash toggle api" into 9.0  [dennyspb]
-95b9412  Flashlight toggle api improvements  [ezio84]
-0d60885  HeadsUpStatusBarView: account for rounded corner  [Peter Cai]
-
- * frameworks/native
-c41e2e0  Revert "Revert "opengl: Disable sdclang for EGL and OpenGLES""  [DennySPB]
-
- * frameworks/opt/net/wifi
-8e1c2c4  Merge branch '9.0' of https://github.com/aexmod-tmp/platform_frameworks_opt_net_wifi into HEAD  [blinoff82]
-b6b9509  resurrect mWifiLinkLayerStatsSupported counter  [Stefan Assmann]
-
- * kernel/xiaomi/sdm845
-aa0dbcd  Reapply fdf9c96 ("sched/fair: Optimize Schedtune boosted task placement")  [Zachariah Kennedy]
-90def26  sched/fair: Remove caf's rotator/avoid_prev_cpu code from find_best_t…  [Zachariah Kennedy]
-b8f4179  [FIXUP] dbaf0f4 ("ANDROID: sched/fair: prefer energy efficient CPUs for !prefer_idle tasks")  [Ionela Voinescu]
-9660c5a  [FIXUP] 21d9333 ("ANDROID: sched/fair: remove order from CPU selection")  [Ionela Voinescu]
-bfd6fbd  [FIXUP] abd41a9 ("ANDROID: sched/fair: unify spare capacity calculation")  [Ionela Voinescu]
-42117a9  Revert "sched/fair: introduce minimum capacity capping sched feature"  [0ctobot]
-efa9978  Revert "sched/fair: use min capacity when evaluating placement energy costs"  [0ctobot]
-7a92f09  Revert "sched/fair: Be more aggressive preventing downmigration of Schedtune boosted tasks"  [0ctobot]
-c46d761  treewide: Revert questionable sched changes  [YumeMichi]
-97a6f0a  treewide: Revert Linux 4.14 changes  [YumeMichi]
-
- * packages/apps/Dialer
-4fa8974  InCallUI: SmartMute  [Ali B]
-
-====================
-     2019-06-20    
-====================
-
- * build/soong
-5b67d74  Revert "SDClang8: sanitize: filter implicit-integer-sign-change"  [DennySPB]
-
- * frameworks/base
-4f0480d  GamingMode: add master switch [1/2]  [DennySPB]
-56c3217  base: add camera flash toggle api  [Rabih Salamey]
-99f0087  LiveDisplayTile: Report unavailable on HWC2  [Han Wang]
-e6d63de  GamingMode: cleanup and fix a bit  [DennySPB]
-090208e  Q Style Clock: Reduce top margin, users want to see more notifications  [Shreyansh Lodha]
-2686007  Base: Let Q clock follow accent colour  [Gaurav Singh]
-550615b  SmartCharging: allow user set resume level [1/2]  [DennySPB]
-a3a68cc  fwb: Improve AOSP twilight code  [Henrique Silva]
-
- * frameworks/opt/net/wifi
-4bae5fd  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' into HEAD  [blinoff82]
-
- * hardware/qcom/bt
-2d5ff3d  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [blinoff82]
-94c4fcf  Add compat for old wcnss_filter  [LuK1337]
-dea254b  Merge tag 'LA.UM.7.3.r1-06600-sdm845.0' into HEAD  [blinoff82]
-4552b1b  libbt-vendor: Use generated kernel headers  [Bruno Martins]
-7bc042f  libbt-vendor: Add missing vendor prefix to a bluetooth.status prop  [Arne Coucheron]
-ecddbc5  libbt-vendor: Fix BLUETOOTH_MAC_ADDR_BOOT_PROPERTY definition  [Arne Coucheron]
-2aeec2d  Apply the Cherokee's mechanism of stopping hci_filter to ROME  [John Muir]
-b0b17f4  libbt: Fix case where SoC type is not set  [Steve Kondik]
-
- * hardware/ril
-bdcbf57  librilreference: disable sanitize  [DennySPB]
-
- * kernel/xiaomi/sdm845
-f2f0a2a  Merge remote-tracking branch 'los/lineage-16.0' into dev  [ethan-halsall]
-e1f85a1  msm: kgsl: Don't allocate memory dynamically for temp command buffers  [Sultan Alsawaf]
-5c683ae  msm: kgsl: Don't try to wait for fences that have been signaled  [Sultan Alsawaf]
-d048034  msm: kgsl: Don't allocate memory dynamically for drawobj sync structs  [Sultan Alsawaf]
-943a714  selinux: Avoid dynamic memory allocation for small context buffers  [Sultan Alsawaf]
-97dd341  kernfs: Avoid dynamic memory allocation for small write buffers  [Sultan Alsawaf]
-
- * packages/apps/Settings
-8126ebb  Merge "SmartCharging: allow user set resume level [2/2]" into 9.0  [dennyspb]
-e1b0081  Merge "Cutout force fullscreen: Disable fast scroller" into 9.0  [dennyspb]
-
- * packages/apps/SyberiaSettings
-ce4681d  Remove footer from gaming mode  [DennySPB]
-
- * system/sepolicy
-b1dcfd2  sepolicy: Add Google App build props  [mydongistiny]
-2e7c0b0  system_server: allow writes to /proc/pid/*  [Tim Murray]
-7aeb9ac  sepolicy: Add Label to f2fs sysfs files  [Daniel Rosenberg]
-
- * vendor/codeaurora/telephony
-5007a19  Merge tag 'LA.UM.7.5.2.r1-03200-8x96.0' into HEAD  [blinoff82]
-
- * vendor/syberia
-aa5a27d  Merge "Add Markup lib for arm 32-bit devices" into 9.0  [blinov.in]
-2cc48f9  Merge "team: add Xiaomi Redmi Note 7 (lavender) to official builds" into 9.0  [blinov.in]
-7ec500f  Go back to SDClang6  [DennySPB]
-
-====================
-     2019-06-19    
-====================
-
- * build/soong
-ad3700d  Merge "Remove extra vendor parameters for tidy" into 9.0  [dennyspb]
-2b99ed4  Remove extra vendor parameters for tidy  [mesziman]
-e9f06ab  Merge "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2" into 9.0  [dennyspb]
-
- * kernel/xiaomi/sdm845
-0c1feb8  UPSTREAM: misc: lkdtm: Add volatile to intentional NULL pointer reference  [Michael Davidson]
-175a9d8  UPSTREAM: sched/debug: Explicitly cast sched_feat() to bool  [Peter Zijlstra]
-bb13022  soc: qcom: glink_debugfs: Fix strlcpy usage  [Nathan Chancellor]
-fcd3b03  mmc: sdio: Fix strlcpy usage  [Nathan Chancellor]
-6257488  char: diag: Fix strlcpy usage  [Nathan Chancellor]
-6b6c0d3  Revert "sched/core: Properly fix constant logical operand Clang warning"  [khusika]
-17c3d97  Revert "soc: qcom: glink: Fix third argument to strlcpy"  [khusika]
-ef380c2  Revert "mmc: sdio: Fix third argument to strlcpy"  [khusika]
-ab55502  Revert "diag: Fix third argument to strlcpy"  [khusika]
-d4118b5  Merge branch 'kernel.lnx.4.9.r11-rel' of https://github.com/android-linux-stable/msm-4.9 into HEAD  [Bruno Martins]
-
- * packages/apps/Settings
-fab928c  SmartCharging: allow user set resume level [2/2]  [DennySPB]
-
- * packages/apps/SyberiaSettings
-57b9a58  GamingMode: cleanup a bit  [DennySPB]
-03cac8a  GamingMode: add master switch [2/2]  [DennySPB]
-
- * packages/resources/devicesettings
-b73e3bc  Automatic translation import  [Michael Bestas]
-
- * vendor/syberia
-9bd226b  Add Markup lib for arm 32-bit devices  [blinoff82]
-eb4c6e4  SDClang8: disable sign sign sanitizer  [DennySPB]
-c4cf650  Merge "sdclang8: Disable some new warings" into 9.0  [dennyspb]
-cc1a73b  sdclang8: Disable some new warings  [DennySPB]
-
-====================
-     2019-06-18    
-====================
-
- * external/llvm
-9212c2a  Add unittests to {ARM | AArch64}TargetParser.  [Zijiao Ma]
-
- * external/zlib
-6992a71  Don't use ARMv8 CRC32 on arm arch  [DennySPB]
-
- * frameworks/base
-180523b  GamingMode: Rewrite implementation [1/2]  [DennySPB]
-2772f3b  GamingMode: add more ringer modes [1/2]  [DennySPB]
-080b5e3  LiveDisplayTile: skip day/night mode  [DennySPB]
-3e162de  GamingMode: minor improvements  [DennySPB]
-ed25d5c  SystemUI: FireHound Gaming [1/4]  [PMS22]
-b2ddffd  Revert "SystemUI: Add Gaming mode tile"  [DennySPB]
-353681a  Revert "GamingModeTile: stop adjusting volume"  [DennySPB]
-61894aa  Fix NPE on navbar  [Henrique Silva]
-5b16e5d  KeyguardSliceProvider: Show dnd icon regardless of suppression mode  [Henrique Silva]
-9df49a9  LiveDisplayService: Disable ColorTemperature when NightDisplay is available  [Bruno Martins]
-
- * frameworks/rs
-25915b7  Avoid using x18 register in resize intrinsic  [Peter Collingbourne]
-f625a60  rs: Fix invalid const atomic builtin accesses  [Stephen Hines]
-
- * kernel/xiaomi/sdm845
-0cab1c8  Merge remote-tracking branch 'msm-4.9/kernel.lnx.4.9.r11-rel' into dev  [ethan-halsall]
-
- * packages/apps/Settings
-ac87b87  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
-69aed80  Cutout force fullscreen: Disable fast scroller  [Henrique Silva]
-
- * packages/apps/SyberiaSettings
-4026c9f  SyberiaSettings: add missing summaries  [blinoff82]
-2856d75  GamingMode: Rewrite implementation [2/2]  [DennySPB]
-
- * system/security
-73581e4  Merge changes I28160db1,I3002c0f6,Iaeeba524,Iba04236d,I55eb358b, ... into 9.0  [dennyspb]
-bc3e709  Use std::move to avoid unnecessary copying  [Yi Kong]
-9177788  Fix unnecessary copy initialization warnings  [Chih-Hung Hsieh]
-
- * vendor/syberia
-9bbc37b  team: add Xiaomi Redmi Note 7 (lavender) to official builds  [blinoff82]
-
-====================
-     2019-06-17    
-====================
-
- * build/soong
-474c7aa  SDClang8: sanitize: filter implicit-integer-sign-change  [DennySPB]
-
- * kernel/xiaomi/sdm845
-b08e2c3  Merge 4.9.182 into kernel.lnx.4.9.r11-rel  [Nathan Chancellor]
-f4e2dd9  Linux 4.9.182  [Greg Kroah-Hartman]
-7e90962  tcp: enforce tcp_min_snd_mss in tcp_mtu_probing()  [Eric Dumazet]
-8e39cbc  tcp: add tcp_min_snd_mss sysctl  [Eric Dumazet]
-e358f4a  tcp: tcp_fragment() should apply sane memory limits  [Eric Dumazet]
-cc1b58c  tcp: limit payload size of sacked skbs  [Eric Dumazet]
-418894c  tcp: reduce tcp_fastretrans_alert() verbosity  [Eric Dumazet]
-
-====================
-     2019-06-16    
-====================
-
- * kernel/xiaomi/sdm845
-386a12f  defconfig: disable stune assistant  [ethan-halsall]
-3b16a6d  cpu_input_boost: Kill SchedTune boosting code  [Danny Lin]
-990e093  sched/tune: Revert Dynamic SchedTune Boost mechanism  [Danny Lin]
-939d6f2  cpufreq: wrap dynamic stune boost so we can compile without it  [ethan-halsall]
-e96498f  defconfig: we are gonna use libperfmgr instead of dynamic stune boost  [ethan-halsall]
-59a19eb  drivers/soc/qcom: properly guard if statement  [ethan-halsall]
 
