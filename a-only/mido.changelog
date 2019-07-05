@@ -1,169 +1,168 @@
 ====================
+     2019-07-05    
+====================
+
+ * device/syberia/sepolicy
+da01a21  sepolicy: Dontaudit sysinit  [Jan Altensen]
+
+ * device/xiaomi/mido
+af2ee95  prebuilts: update Lawnchair to 2268-alpha  [kondors1995]
+9260b3e  powerhint: V.2.2  [kondors1995]
+502b26d  [DNM] Fix compile  [kondors1995]
+
+ * frameworks/base
+9bdaff5  FOD: fixes and improvements  [Marko Man]
+df2e482  FODCircleView: calculate proper dimming amount  [PeterCxy]
+cc95d1c  Merge "libs: hwui: Enable perf mode and disable pgo" into 9.0  [dennyspb]
+48a6e70  SystemUI: optimize content observers in StatusBar  [DennySPB]
+63998d9  base: Q seekbar: make the seekbar transparent for non-seekable notifs  [ElDainosor]
+5354954  Add toggle for charging animation [1/2]  [Pranav Vashi]
+6573626  SystemUI: Protect against terrible music players  [Harsh Shandilya]
+fc6c3d4  Merge changes Ic2a484d2,I96415659,Ia72d2476 into 9.0  [dennyspb]
+6a26935  SystemUI: Adjust battery and location icon size  [Anushek Prasal]
+ac0b3cb  Frameworks: Slightly refactor Parcel code  [Andreas Gampe]
+d35e0e7  Stable seek bar positioning  [Sergey]
+2767143  Ambient play: Fix padding on some densities  [Henrique Silva]
+a72d45a  libs: hwui: Enable perf mode and disable pgo  [mydongistiny]
+
+ * packages/apps/Settings
+b3c033b  Merge "Add SyberiaSettings to Search" into 9.0  [dennyspb]
+
+ * vendor/syberia
+39ab74b  Merge changes I5b1a24ae,Icbb7f84b into 9.0  [dennyspb]
+c54306e  Merge "v2.7" into 9.0  [dennyspb]
+0a5e706  vendor: fonts: Add Source Sans Pro from Android Q  [Joey Huab]
+d8495d5  Fonts: Add Alegreya SansSC and NokiaPure  [Gaurav Singh]
+
+====================
+     2019-07-04    
+====================
+
+ * device/xiaomi/mido
+1d3f12c  1  [kondors1995]
+a1aedab  mido: blobs from LA.UM.7.5.r1-04800-8x96.0  [Adesh15]
+22b56d7  mido: Remove Dirac stuff from AdvancedCotrols  [Adesh15]
+e2af2a5  [squash]Import AdvancedControls  [sayan7848]
+1ac9ae7  prebuilts: update Lawnchair to 2198-alpha  [kondors1995]
+709c934  Revert "mido: biometrics: register fp service to sdcard_rw group"  [ZeeLog]
+26dada5  mido: overlay: Improve auto brightness for 0-4 lux  [Nich]
+ea6ffff  mido: biometrics: Fix log tag  [Murat Kozan]
+b84a0ef  mido: Add ethernet overlay  [Murat Kozan]
+a04e16e  mido: Use persist time services  [Murat Kozan]
+27dd427  mido: Add new entry for DHCP ranges  [Murat Kozan]
+b9f13b7  mido: init: Enable vendor.dataqti service  [Murat Kozan]
+44d4397  mido: init: Use /vendor/bin/ where possible  [Murat Kozan]
+eeb830b  mido: compile kernel with 9.0.4 clang  [kondors1995]
+ca65fc1  mido: camera: Rename properties with vendor prefix according to new sepolicy rules.  [Vandana Jain]
+d55bdd0  mido: camera: Fix build error for a new SP  [Vandana Jain]
+e1c2913  Revert "BoardConfig: switch to gcc 9.1 for inline kernel building"  [kondors1995]
+
+ * kernel/xiaomi/msm8953
+b935444  mm: readahead back to 128KB  [Jaegeuk Kim]
+43bda6c  Move HMP REVOLT to its own config  [kondors1995]
+d9baa9b  cpu-boost: don't try to boost if the thread hasn't been initiated or boom goes the dynamite  [Francisco Franco]
+b0b19fe  cpu-boost: bail early when we're trying to boost to a frequency below of what we're already boosted  [Francisco Franco]
+eacb0f7  fork: boost the cpu to max freq when an app is launched  [Francisco Franco]
+4edb2e7  kernel: Boost all CPUs to the max when userspace launches an app  [Sultan Alsawaf]
+bca0c57  cpu-boost: add a function to boost the cpu to max freq  [Francisco Franco]
+799478b  cpu-boost: Create separate tunable for Dynamic Schedtune Boost duration  [Josh Choo]
+6f673f6  cpu-boost: Rework scheduling setup  [Alex Naidis]
+7c6973c  cpufreq: cpu-boost: don't boost if input_boost_ms is <= 0  [Francisco Franco]
+e03a305  cpufreq: cpu-boost: export input_boost_enable to userspace  [franciscofranco]
+f625fb6  cpufreq: cpu-boost: don't boost over user set max freq  [Francisco Franco]
+19d6666  drivers: cpu-boost: fixing this typo will improve performance by 50%  [Francisco Franco]
+925730f  drivers: cpu-boost: optimize policy update loop on input cpufreq boost  [Francisco Franco]
+607c82b  cpufreq: cpu-boost: set interval between consecutive boosts to be at least the duration of the boost instead of a bigger value  [Francisco Franco]
+f98773c  Revert "cpu-boost: Export input_boost_enable to userspace"  [nato66613]
+b9b3659  Revert "cheryl: cpu-boost: Rework scheduling setup"  [nato66613]
+
+ * packages/apps/Settings
+7e3c7c5  Add SyberiaSettings to Search  [xyyx]
+
+ * packages/apps/SyberiaSettings
+9207dfd  SyberiaSettings: Add to Search  [xyyx]
+32f5ebb  Add toggle for charging animation [2/2]  [Pranav Vashi]
+131df9a  SyberiaSettings: system settings reworking  [blinoff82]
+
+ * vendor/syberia
+51b5c40  v2.7  [DennySPB]
+
+ * vendor/xiaomi
+99d5783  mido: blobs from LA.UM.7.5.r1-04800-8x96.0  [Adesh15]
+
+====================
+     2019-07-03    
+====================
+
+ * frameworks/base
+e64b3c7  Support for alternative device specific key handlers  [Bruno Martins]
+e26d7a4  GamingMode: Clean up and refine [1/2]  [Pranav Vashi]
+d833860  Fix NPE in destroyUiAutomationService function  [hangl]
+68b40bd  wifi: Filter unsupported networks from scan results  [Veerendranath Jakkam]
+59c202d  Wifi: Connect indication on UI for STA when AP supports SAE+PSK  [Anurag Das]
+58db154  Wifi: Update accesspoint to cater to add network option from GUI  [Anurag Das]
+fb3c826  Wifi: Check for SAE/OWE AKM prior to PSK  [Anurag Das]
+a6cf564  perfLock: Enable ActivityBoost  [yanglv]
+c224404  Prevent crash in TTS engine due to improper configuration  [Pranav Vashi]
+
+====================
+     2019-07-02    
+====================
+
+ * build/make
+708dea8  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/build into HEAD  [DennySPB]
+
+ * frameworks/av
+68329c4  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPB]
+
+ * frameworks/base
+185b607  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPB]
+
+ * frameworks/native
+5c0508c  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPB]
+
+ * frameworks/opt/net/wifi
+ac4275a  Prevent scan searching overhead  [Sticky Chen]
+562ee95  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/opt/net/wifi  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+69efa71  GameMode: remove hwkeys toggle on non-hwkeys devices  [Lup Gabriel]
+bb9a75a  GamingMode: Clean up and refine [2/2]  [Pranav Vashi]
+
+ * system/bt
+58ea68b  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
+
+ * system/netd
+feba124  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/system/netd  [DennySPB]
+
+ * system/security
+e4f975e  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/system/security into HEAD  [DennySPB]
+
+====================
+     2019-07-01    
+====================
+
+====================
+     2019-06-30    
+====================
+
+====================
      2019-06-29    
 ====================
 
-====================
-     2019-06-28    
-====================
-
- * device/xiaomi/mido
-0ca42b2  prebuilts: update Lawnchair to 2198-alpha  [kondors1995]
-d3b7086  Revert "mido: biometrics: register fp service to sdcard_rw group"  [ZeeLog]
-b4b6588  mido: overlay: Improve auto brightness for 0-4 lux  [Nich]
-db8d80b  mido: biometrics: Fix log tag  [Murat Kozan]
-4e01d7e  mido: Add ethernet overlay  [Murat Kozan]
-7296f2f  mido: Use persist time services  [Murat Kozan]
-9d2808e  mido: Add new entry for DHCP ranges  [Murat Kozan]
-929239d  mido: init: Enable vendor.dataqti service  [Murat Kozan]
-4b5aed2  mido: init: Use /vendor/bin/ where possible  [Murat Kozan]
-e8fc248  mido: compile kernel with 9.0.4 clang  [kondors1995]
-6844988  mido: camera: Rename properties with vendor prefix according to new sepolicy rules.  [Vandana Jain]
-4b1d137  mido: camera: Fix build error for a new SP  [Vandana Jain]
-4ba9fa8  Revert "BoardConfig: switch to gcc 9.1 for inline kernel building"  [kondors1995]
-
- * frameworks/base
-439178c  FixUp: SystemUI: Statusbar layout improvements  [Anushek Prasal]
-0d21c9f  Option to Display Data Disabled Indicator Icon [1/2]  [Varun Date]
-
- * frameworks/native
-bd4d564  Revert some questionable binder commits  [DennySPB]
-
  * kernel/xiaomi/msm8953
-b9c6963  neigh: fix use-after-free read in pneigh_get_next  [Eric Dumazet]
-5e0bac6  lapb: fixed leak of control-blocks.  [Jeremy Sowden]
-d157a82  ipv6: flowlabel: fl6_sock_lookup() must use atomic_inc_not_zero  [Eric Dumazet]
-948cf65  be2net: Fix number of Rx queues used for flow hashing  [Ivan Vecera]
-c4fd0af  ax25: fix inconsistent lock state in ax25_destroy_timer  [Eric Dumazet]
-e76bb4d  USB: serial: pl2303: add Allied Telesis VT-Kit3  [Chris Packham]
-adbdd0c  USB: usb-storage: Add new ID to ums-realtek  [Kai-Heng Feng]
-7d6f4e5  USB: Fix chipmunk-like voice when using Logitech C270 for recording audio.  [Marco Zatta]
-430af25  ASoC: cs42xx8: Add regcache mask dirty  [S.j. Wang]
-1efc7d4  bcache: fix stack corruption by PRECEDING_KEY()  [Coly Li]
-8b40ce2  i2c: acorn: fix i2c warning  [Russell King]
-9205d67  signal/ptrace: Don't leak unitialized kernel memory with PTRACE_PEEK_SIGINFO  [Eric W. Biederman]
-a88a762  libata: Extend quirks for the ST1000LM024 drives with NOLPM quirk  [Hans de Goede]
-6a2f301  ALSA: seq: Cover unsubscribe_port() in list_mutex  [Takashi Iwai]
+8c8bca2  proc: Don't let Google Camera and Settings run in the background  [Sultan Alsawaf]
+87dfa5c  iommu: msm: Fix lethal race condition and code inconsistencies  [Sultan Alsawaf]
+c8ebdc4  Revert "iommu: msm: Fix race due to mapping and unmapping simultaneously"  [Sultan Alsawaf]
+f4d4bfb  iommu: arm-smmu: Free pgtbl ops when domain contexts are destroyed  [Sultan Alsawaf]
+c4e2fe6  Merge branch 'lineage-16.0' into pie  [Albert I]
+d053346  ALSA: control: Don't dynamically allocate a single struct instance  [Sultan Alsawaf]
+1b5bd0c  media: v4l2-ioctl: Use a larger on-stack video copy buffer  [Sultan Alsawaf]
+0812442  msm: camera: Avoid dynamic memory allocation for small buffers  [Sultan Alsawaf]
 
  * packages/apps/Settings
-0426d72  Merge "team: capricorn is out" into 9.0  [blinov.in]
-
- * packages/apps/SyberiaSettings
-92372bb  Data disabled icon switch[2/2]  [Varun Date]
-
-====================
-     2019-06-27    
-====================
-
- * frameworks/base
-da40d01  SmartCharging: add reset battery stats option [1/2]  [DennySPB]
-42fb825  Revert "ActivityRecord: add fw boost after r33 merge"  [DennySPB]
-8184f72  SmartNav: Eliminate needless BroadcastReceiver in BaseNavigationBar [1/2]  [bigrushdog]
-7531bb2  Move Q animation to custom animations  [DennySPB]
-25e37d8  Revert "Add missing ensureRunningOnConnectivityServiceThread() function"  [DennySPB]
-c631053  Revert "Revert "Update VPN capabilities when its underlying network set is null.""  [Varun Anand]
-b6dfb94  SystemUI: Statusbar layout improvements  [Anushek Prasal]
-8d53400  PhoneWindowManager: Set delay for screenshot shortcut to 0  [Anirudh Gupta]
-449cbec  SystemUI: Fix several layout bugs  [eray orçunus]
-097afed  Reload Pixel Home Animation without reboot  [Joe Maples]
-cf5ff23  Pixel Navbar animation toggle [1/2]  [beanstown106]
-762b939  SystemUI: Add navigation touch animation support  [Chris]
-76b2f83  SystemUI: Remove older Pixel Animation  [argraur]
-c57a991  SystemUI: Use proper lock icon scale on dismissing notification panel view  [LuK1337]
-b17e981  SystemUI: Handle orientation and screenSize changes for TunerActivity  [LuK1337]
-
- * kernel/xiaomi/msm8953
-367ec4e  BACKPORT: Fix: Rebuild the scheduling domains  [TheHitMan7]
-c37435f  ANDROID: sched/fair: Make the EAS path aware of prefer-idle  [Quentin Perret]
-6eff2a8  BACKPORT: sched/fair: Select an energy-efficient CPU on task wake-up  [Quentin Perret]
-7269ac0  BACKPORT: sched/fair: Introduce an energy estimation helper function  [Quentin Perret]
-20f79b6  BACKPORT: sched/cpufreq: sugov allow maximum cpu idle calls  [TheHitMan7]
-
- * packages/apps/Settings
-f0687e5  SmartCharging: add reset battery stats option [2/2]  [DennySPB]
-
- * packages/apps/Snap
-cbbc294  Snap: allow to disable image stabilization per device  [codeworkx]
-242266a  Snap: Fix picture size preference  [dianlujitao]
-3ad6082  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [Bruno Martins]
-378ac64  Snap: Fix shutter button size  [Artem Borisov]
-2317d90  Snap: make support for bokeh mode configurable per device  [codeworkx]
-b543b72  Snap: Yet Another String Improvement  [Michael Bestas]
-1100ce3  change to BUILD_NUMBER_FROM_FILE  [jinwu]
-c46c7d5  QuickReader: Update libs  [Luca Stefani]
-167cc22  Snap: Always allow 100% JPEG quality to be set  [Zhao Wei Liew]
-c6b27e4  Snap: Disable debugging of double open issue  [Wang Han]
-0a74332  Snap: Add missing NULL check in updateQcfaPictureSize()  [Wang Han]
-34a5a9a  Snap: Check various feature support before applying  [Wang Han]
-da83b97  Snap: Fix layout of zoom option  [Wang Han]
-45e402f  Snap: Create correct redeye reduction config icon  [Wang Han]
-5ca0b6e  Snap: Avoid crash with empty RAW output size  [Wang Han]
-4841eae  DisableCameraReceiver: Initialize CameraHolder before use  [dianlujitao]
-8420c48  SnapdragonCamera: Check for fixed focus  [Rajshekar Eashwarappa]
-ae2394c  SnapdragonCamera: Completed the EIS and video HDR function  [xianming wang]
-7eae9de  Change version to 015  [zhuw]
-f79ad63  SnapdragonCamera: SunSet and Landscape use HAL-ZSL mode  [xianming wang]
-405de58  Requirement from EIS team  [zhuw]
-
- * prebuilts/clang/host/linux-x86
-187e3a7  Update prebuilt Clang to r353983d.  [Nick Desaulniers]
-
-====================
-     2019-06-26    
-====================
-
- * kernel/xiaomi/msm8953
-6277d2cd  mido: Regen defconfig  [kondors1995]
-3249fd9  iommu: arm-smmu: Free pgtbl ops when domain contexts are destroyed  [Sultan Alsawaf]
-e0078b2  ALSA: control: Don't dynamically allocate a single struct instance  [Sultan Alsawaf]
-0bd5ce8  media: v4l2-ioctl: Use a larger on-stack video copy buffer  [Sultan Alsawaf]
-42f8d15  msm: camera: Avoid dynamic memory allocation for small buffers  [Sultan Alsawaf]
-1f14f26  msm: kgsl: Don't allocate memory dynamically for temp command buffers  [Sultan Alsawaf]
-
- * vendor/xiaomi
-d1e5b53  Merge branch 'dev/9.0' into 9.0  [kondors1995]
-
-====================
-     2019-06-25    
-====================
-
- * device/xiaomi/mido
-af9973e  mido: Update Audio and Media blobs from LA.UM.7.5.r1-04800-8x96.0  [Adesh15]
-
- * frameworks/base
-fed99f0  base: Import Android Q activity animations  [Lucchetto]
-
- * packages/apps/Settings
-5de0c5b  team: capricorn is out  [blinoff82]
-
- * packages/apps/SmartNav
-fb742a6  SmartNav: Eliminate needless BroadcastReceiver in BaseNavigationBar [2/2]  [bigrushdog]
-08c1004  SmartNav: Reload icons from storage when boot completes  [bigrushdog]
-f806f44  Pulse: Fix defaulting to user color if no album color available  [Pranav Vashi]
-543e49a  SmartNav: opa: fix Pixel animation on SB with new SysUI opa  [argraur]
-d430cb5  SmartNav: Use correct colors for popup  [xyyx]
-
- * vendor/xiaomi
-f99a106  mido: Update Audio and Media blobs from LA.UM.7.5.r1-04800-8x96.0  [Adesh15]
-c858ce5  mido: Update Audio and Media blobs from LA.UM.7.5.r1-04800-8x96.0  [Adesh15]
-fa74a15  mido: Update Graphics blobs from LA.UM.7.5.r1-04800-8x96.0  [Adesh15]
-
-====================
-     2019-06-24    
-====================
-
- * external/vim
-3223f19  external: vim: Create vi symlink  [Humberto Borba]
-
-====================
-     2019-06-23    
-====================
-
- * build/soong
-bd004c7  Revert "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2"  [blinoff82]
-
- * packages/apps/Settings
-8cf97e4  team: add OnePlus One (bacon) to official builds  [blinoff82]
+e04515e  team: add Lenovo Zuk Z2 Plus to official builds  [blinoff82]
 
  * vendor/syberia
-8b84b4b  team: add OnePlus One (bacon) to official builds  [blinoff82]
+aad22a9  team: add Lenovo Zuk Z2 Plus to official builds  [blinoff82]
 

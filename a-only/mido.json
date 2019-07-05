@@ -11,13 +11,13 @@
       "url": "http://tiny.cc/latestuninstaller"
     }
   ],
-  "filename": "syberia_mido-v2.6-20190629-1007-OFFICIAL.zip",
+  "filename": "syberia_mido-v2.7-20190705-2323-OFFICIAL.zip",
   "changelog": "",
-  "filesize": "593204994",
-  "md5": "0cffd56b4ea343eeb21883f55484ac67",
-  "build_date": "20190629",
+  "filesize": "594767098",
+  "md5": "7324871900cca90e0bd1633c218ceb34",
+  "build_date": "20190705",
   "device": "mido",
-  "url": "https://sourceforge.net/projects/syberiaos/files/mido/syberia_mido-v2.6-20190629-1007-OFFICIAL.zip/download",
+  "url": "https://sourceforge.net/projects/syberiaos/files/mido/syberia_mido-v2.7-20190705-2323-OFFICIAL.zip/download",
   "donate_url": "https://syberiaos.com/links",
   "developer_url": "http://github.com/syberia-project",
   "news_url": "http://github.com/syberia-project",
