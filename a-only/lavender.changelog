@@ -1,20 +1,26 @@
 ====================
-     2019-07-05    
+     2019-07-06    
 ====================
 
- * device/syberia/sepolicy
-da01a21  sepolicy: Dontaudit sysinit  [Jan Altensen]
-
  * device/xiaomi/lavender
-cbc2a68  lavender: Update build fingerprint  [mdeejay]
-e3c4396  lavender: Update CarrierConfig from MIUI  [mdeejay]
-a10acfa  lavender: add HAL3 | HAL1 Switch button  [DarkDroidDev]
 4cef985  lavender: Allow newer baseband version  [GuaiYiHu]
 
  * frameworks/base
 9bdaff5  FOD: fixes and improvements  [Marko Man]
 df2e482  FODCircleView: calculate proper dimming amount  [PeterCxy]
 cc95d1c  Merge "libs: hwui: Enable perf mode and disable pgo" into 9.0  [dennyspb]
+
+ * vendor/syberia
+39ab74b  Merge changes I5b1a24ae,Icbb7f84b into 9.0  [dennyspb]
+
+====================
+     2019-07-05    
+====================
+
+ * device/syberia/sepolicy
+da01a21  sepolicy: Dontaudit sysinit  [Jan Altensen]
+
+ * frameworks/base
 48a6e70  SystemUI: optimize content observers in StatusBar  [DennySPB]
 63998d9  base: Q seekbar: make the seekbar transparent for non-seekable notifs  [ElDainosor]
 5354954  Add toggle for charging animation [1/2]  [Pranav Vashi]
@@ -28,45 +34,30 @@ a72d45a  libs: hwui: Enable perf mode and disable pgo  [mydongistiny]
 
  * packages/apps/Settings
 b3c033b  Merge "Add SyberiaSettings to Search" into 9.0  [dennyspb]
-
- * vendor/syberia
-39ab74b  Merge changes I5b1a24ae,Icbb7f84b into 9.0  [dennyspb]
-c54306e  Merge "v2.7" into 9.0  [dennyspb]
-0a5e706  vendor: fonts: Add Source Sans Pro from Android Q  [Joey Huab]
-d8495d5  Fonts: Add Alegreya SansSC and NokiaPure  [Gaurav Singh]
-
-====================
-     2019-07-04    
-====================
-
- * packages/apps/Settings
 7e3c7c5  Add SyberiaSettings to Search  [xyyx]
 
  * packages/apps/SyberiaSettings
 9207dfd  SyberiaSettings: Add to Search  [xyyx]
 32f5ebb  Add toggle for charging animation [2/2]  [Pranav Vashi]
-131df9a  SyberiaSettings: system settings reworking  [blinoff82]
 
  * vendor/syberia
+c54306e  Merge "v2.7" into 9.0  [dennyspb]
+0a5e706  vendor: fonts: Add Source Sans Pro from Android Q  [Joey Huab]
+d8495d5  Fonts: Add Alegreya SansSC and NokiaPure  [Gaurav Singh]
 51b5c40  v2.7  [DennySPB]
 
 ====================
-     2019-07-03    
+     2019-07-04    
 ====================
 
  * frameworks/base
 e64b3c7  Support for alternative device specific key handlers  [Bruno Martins]
-e26d7a4  GamingMode: Clean up and refine [1/2]  [Pranav Vashi]
-d833860  Fix NPE in destroyUiAutomationService function  [hangl]
-68b40bd  wifi: Filter unsupported networks from scan results  [Veerendranath Jakkam]
-59c202d  Wifi: Connect indication on UI for STA when AP supports SAE+PSK  [Anurag Das]
-58db154  Wifi: Update accesspoint to cater to add network option from GUI  [Anurag Das]
-fb3c826  Wifi: Check for SAE/OWE AKM prior to PSK  [Anurag Das]
-a6cf564  perfLock: Enable ActivityBoost  [yanglv]
-c224404  Prevent crash in TTS engine due to improper configuration  [Pranav Vashi]
+
+ * packages/apps/SyberiaSettings
+131df9a  SyberiaSettings: system settings reworking  [blinoff82]
 
 ====================
-     2019-07-02    
+     2019-07-03    
 ====================
 
  * build/make
@@ -76,6 +67,14 @@ c224404  Prevent crash in TTS engine due to improper configuration  [Pranav Vash
 68329c4  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPB]
 
  * frameworks/base
+e26d7a4  GamingMode: Clean up and refine [1/2]  [Pranav Vashi]
+d833860  Fix NPE in destroyUiAutomationService function  [hangl]
+68b40bd  wifi: Filter unsupported networks from scan results  [Veerendranath Jakkam]
+59c202d  Wifi: Connect indication on UI for STA when AP supports SAE+PSK  [Anurag Das]
+58db154  Wifi: Update accesspoint to cater to add network option from GUI  [Anurag Das]
+fb3c826  Wifi: Check for SAE/OWE AKM prior to PSK  [Anurag Das]
+a6cf564  perfLock: Enable ActivityBoost  [yanglv]
+c224404  Prevent crash in TTS engine due to improper configuration  [Pranav Vashi]
 185b607  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPB]
 
  * frameworks/native
@@ -84,10 +83,6 @@ c224404  Prevent crash in TTS engine due to improper configuration  [Pranav Vash
  * frameworks/opt/net/wifi
 ac4275a  Prevent scan searching overhead  [Sticky Chen]
 562ee95  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/opt/net/wifi  [DennySPB]
-
- * packages/apps/SyberiaSettings
-69efa71  GameMode: remove hwkeys toggle on non-hwkeys devices  [Lup Gabriel]
-bb9a75a  GamingMode: Clean up and refine [2/2]  [Pranav Vashi]
 
  * system/bt
 58ea68b  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
@@ -99,6 +94,14 @@ feba124  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platf
 e4f975e  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/system/security into HEAD  [DennySPB]
 
 ====================
+     2019-07-02    
+====================
+
+ * packages/apps/SyberiaSettings
+69efa71  GameMode: remove hwkeys toggle on non-hwkeys devices  [Lup Gabriel]
+bb9a75a  GamingMode: Clean up and refine [2/2]  [Pranav Vashi]
+
+====================
      2019-07-01    
 ====================
 
@@ -108,14 +111,4 @@ e4f975e  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platf
 
  * device/xiaomi/lavender
 d65f004  lavender: Fix TARGET_RELEASETOOLS_EXTENSIONS path  [Bladeyy]
-
-====================
-     2019-06-29    
-====================
-
- * packages/apps/Settings
-e04515e  team: add Lenovo Zuk Z2 Plus to official builds  [blinoff82]
-
- * vendor/syberia
-aad22a9  team: add Lenovo Zuk Z2 Plus to official builds  [blinoff82]
 
