@@ -1,116 +1,241 @@
 ====================
-     2019-06-29    
+     2019-07-06    
 ====================
 
-====================
-     2019-06-28    
-====================
+ * device/syberia/sepolicy
+da01a21  sepolicy: Dontaudit sysinit  [Jan Altensen]
 
  * frameworks/base
-439178c  FixUp: SystemUI: Statusbar layout improvements  [Anushek Prasal]
-0d21c9f  Option to Display Data Disabled Indicator Icon [1/2]  [Varun Date]
-
- * frameworks/native
-bd4d564  Revert some questionable binder commits  [DennySPB]
-
- * kernel/xiaomi/msm8953
-32c44f5  Linux 4.9.184  [Greg Kroah-Hartman]
-7b3a82f  tcp: refine memory limit test in tcp_fragment()  [Eric Dumazet]
-
- * packages/apps/Settings
-0426d72  Merge "team: capricorn is out" into 9.0  [blinov.in]
-
- * packages/apps/SyberiaSettings
-92372bb  Data disabled icon switch[2/2]  [Varun Date]
-
-====================
-     2019-06-27    
-====================
-
- * frameworks/base
-da40d01  SmartCharging: add reset battery stats option [1/2]  [DennySPB]
-42fb825  Revert "ActivityRecord: add fw boost after r33 merge"  [DennySPB]
-8184f72  SmartNav: Eliminate needless BroadcastReceiver in BaseNavigationBar [1/2]  [bigrushdog]
-7531bb2  Move Q animation to custom animations  [DennySPB]
-25e37d8  Revert "Add missing ensureRunningOnConnectivityServiceThread() function"  [DennySPB]
-c631053  Revert "Revert "Update VPN capabilities when its underlying network set is null.""  [Varun Anand]
-b6dfb94  SystemUI: Statusbar layout improvements  [Anushek Prasal]
-8d53400  PhoneWindowManager: Set delay for screenshot shortcut to 0  [Anirudh Gupta]
-449cbec  SystemUI: Fix several layout bugs  [eray orçunus]
-097afed  Reload Pixel Home Animation without reboot  [Joe Maples]
-cf5ff23  Pixel Navbar animation toggle [1/2]  [beanstown106]
-762b939  SystemUI: Add navigation touch animation support  [Chris]
-76b2f83  SystemUI: Remove older Pixel Animation  [argraur]
-c57a991  SystemUI: Use proper lock icon scale on dismissing notification panel view  [LuK1337]
-b17e981  SystemUI: Handle orientation and screenSize changes for TunerActivity  [LuK1337]
+9bdaff5  FOD: fixes and improvements  [Marko Man]
+df2e482  FODCircleView: calculate proper dimming amount  [PeterCxy]
+cc95d1c  Merge "libs: hwui: Enable perf mode and disable pgo" into 9.0  [dennyspb]
+48a6e70  SystemUI: optimize content observers in StatusBar  [DennySPB]
+63998d9  base: Q seekbar: make the seekbar transparent for non-seekable notifs  [ElDainosor]
+5354954  Add toggle for charging animation [1/2]  [Pranav Vashi]
+6573626  SystemUI: Protect against terrible music players  [Harsh Shandilya]
+fc6c3d4  Merge changes Ic2a484d2,I96415659,Ia72d2476 into 9.0  [dennyspb]
+6a26935  SystemUI: Adjust battery and location icon size  [Anushek Prasal]
+ac0b3cb  Frameworks: Slightly refactor Parcel code  [Andreas Gampe]
+d35e0e7  Stable seek bar positioning  [Sergey]
+2767143  Ambient play: Fix padding on some densities  [Henrique Silva]
+a72d45a  libs: hwui: Enable perf mode and disable pgo  [mydongistiny]
 
  * packages/apps/Settings
-f0687e5  SmartCharging: add reset battery stats option [2/2]  [DennySPB]
-
- * packages/apps/Snap
-cbbc294  Snap: allow to disable image stabilization per device  [codeworkx]
-242266a  Snap: Fix picture size preference  [dianlujitao]
-3ad6082  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [Bruno Martins]
-378ac64  Snap: Fix shutter button size  [Artem Borisov]
-2317d90  Snap: make support for bokeh mode configurable per device  [codeworkx]
-b543b72  Snap: Yet Another String Improvement  [Michael Bestas]
-1100ce3  change to BUILD_NUMBER_FROM_FILE  [jinwu]
-c46c7d5  QuickReader: Update libs  [Luca Stefani]
-167cc22  Snap: Always allow 100% JPEG quality to be set  [Zhao Wei Liew]
-c6b27e4  Snap: Disable debugging of double open issue  [Wang Han]
-0a74332  Snap: Add missing NULL check in updateQcfaPictureSize()  [Wang Han]
-34a5a9a  Snap: Check various feature support before applying  [Wang Han]
-da83b97  Snap: Fix layout of zoom option  [Wang Han]
-45e402f  Snap: Create correct redeye reduction config icon  [Wang Han]
-5ca0b6e  Snap: Avoid crash with empty RAW output size  [Wang Han]
-4841eae  DisableCameraReceiver: Initialize CameraHolder before use  [dianlujitao]
-8420c48  SnapdragonCamera: Check for fixed focus  [Rajshekar Eashwarappa]
-ae2394c  SnapdragonCamera: Completed the EIS and video HDR function  [xianming wang]
-7eae9de  Change version to 015  [zhuw]
-f79ad63  SnapdragonCamera: SunSet and Landscape use HAL-ZSL mode  [xianming wang]
-405de58  Requirement from EIS team  [zhuw]
-
- * prebuilts/clang/host/linux-x86
-187e3a7  Update prebuilt Clang to r353983d.  [Nick Desaulniers]
-
-====================
-     2019-06-26    
-====================
-
-====================
-     2019-06-25    
-====================
-
- * frameworks/base
-fed99f0  base: Import Android Q activity animations  [Lucchetto]
-
- * packages/apps/Settings
-5de0c5b  team: capricorn is out  [blinoff82]
-
- * packages/apps/SmartNav
-fb742a6  SmartNav: Eliminate needless BroadcastReceiver in BaseNavigationBar [2/2]  [bigrushdog]
-08c1004  SmartNav: Reload icons from storage when boot completes  [bigrushdog]
-f806f44  Pulse: Fix defaulting to user color if no album color available  [Pranav Vashi]
-543e49a  SmartNav: opa: fix Pixel animation on SB with new SysUI opa  [argraur]
-d430cb5  SmartNav: Use correct colors for popup  [xyyx]
-
-====================
-     2019-06-24    
-====================
-
- * external/vim
-3223f19  external: vim: Create vi symlink  [Humberto Borba]
-
-====================
-     2019-06-23    
-====================
-
- * build/soong
-bd004c7  Revert "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2"  [blinoff82]
-
- * packages/apps/Settings
-8cf97e4  team: add OnePlus One (bacon) to official builds  [blinoff82]
+b3c033b  Merge "Add SyberiaSettings to Search" into 9.0  [dennyspb]
 
  * vendor/syberia
-8b84b4b  team: add OnePlus One (bacon) to official builds  [blinoff82]
+39ab74b  Merge changes I5b1a24ae,Icbb7f84b into 9.0  [dennyspb]
+c54306e  Merge "v2.7" into 9.0  [dennyspb]
+0a5e706  vendor: fonts: Add Source Sans Pro from Android Q  [Joey Huab]
+d8495d5  Fonts: Add Alegreya SansSC and NokiaPure  [Gaurav Singh]
+
+====================
+     2019-07-05    
+====================
+
+ * packages/apps/Settings
+7e3c7c5  Add SyberiaSettings to Search  [xyyx]
+
+ * packages/apps/SyberiaSettings
+9207dfd  SyberiaSettings: Add to Search  [xyyx]
+32f5ebb  Add toggle for charging animation [2/2]  [Pranav Vashi]
+131df9a  SyberiaSettings: system settings reworking  [blinoff82]
+
+ * vendor/syberia
+51b5c40  v2.7  [DennySPB]
+
+====================
+     2019-07-04    
+====================
+
+ * frameworks/base
+e64b3c7  Support for alternative device specific key handlers  [Bruno Martins]
+e26d7a4  GamingMode: Clean up and refine [1/2]  [Pranav Vashi]
+d833860  Fix NPE in destroyUiAutomationService function  [hangl]
+68b40bd  wifi: Filter unsupported networks from scan results  [Veerendranath Jakkam]
+59c202d  Wifi: Connect indication on UI for STA when AP supports SAE+PSK  [Anurag Das]
+58db154  Wifi: Update accesspoint to cater to add network option from GUI  [Anurag Das]
+fb3c826  Wifi: Check for SAE/OWE AKM prior to PSK  [Anurag Das]
+a6cf564  perfLock: Enable ActivityBoost  [yanglv]
+c224404  Prevent crash in TTS engine due to improper configuration  [Pranav Vashi]
+
+====================
+     2019-07-03    
+====================
+
+ * build/make
+708dea8  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/build into HEAD  [DennySPB]
+
+ * frameworks/av
+68329c4  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPB]
+
+ * frameworks/base
+185b607  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPB]
+
+ * frameworks/native
+5c0508c  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPB]
+
+ * frameworks/opt/net/wifi
+ac4275a  Prevent scan searching overhead  [Sticky Chen]
+562ee95  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/opt/net/wifi  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+69efa71  GameMode: remove hwkeys toggle on non-hwkeys devices  [Lup Gabriel]
+bb9a75a  GamingMode: Clean up and refine [2/2]  [Pranav Vashi]
+
+ * system/bt
+58ea68b  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
+
+ * system/netd
+feba124  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/system/netd  [DennySPB]
+
+ * system/security
+e4f975e  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/system/security into HEAD  [DennySPB]
+
+====================
+     2019-07-02    
+====================
+
+====================
+     2019-07-01    
+====================
+
+ * kernel/xiaomi/msm8953
+95eb6c7  msm: camera: Avoid dynamic memory allocation for small buffers  [Sultan Alsawaf]
+4e21daf  msm: camera: Fix for Possible information leak issue  [annamraj]
+73b6bcf  mm-camera2:isp2: Handle use after free buffer  [Sean Callanan]
+cdbb7a8  Revert "msm: camera: isp: Handle frame drop due to delay   "  [Artem Borisov]
+6a2a578  camera_v2: sensor: io: remove extra parentheses  [Lau]
+dfed8d0  Revert "msm: camerav2: isp: Allocate UB for all source types"  [Lau]
+de8e00b  Revert "msm: camerav2: isp: Reserve rdi ub based on image size"  [Lau]
+c88ab5f  msm: camera: Fix out-of-bounds read in string class name.  [Trishansh Bhardwaj]
+385dab0  msm: sensor: flash: Remove unnecessary null checks in msm_flash_i2c_release  [Nathan Chancellor]
+16e6f8f  msm: camera: Remove unnecessary null check in msm_remove_session_cmd_ack_q  [Nathan Chancellor]
+1d792b8  msm: camera: Remove always false checks in msm_camera_{get,put}_clk_info  [Nathan Chancellor]
+acd63d7  msm_actuator: increase usleep for mono sensor  [Jean-Baptiste Theou]
+eb45bbd  msm: camera: fix user space access  [Sami Tolvanen]
+2aea953a3  Revert "msm: camera: Lack of copy_from_user in camera driver."  [celtare21]
+e6a7ce0  Improve camera power consumption  [longxiaowu]
+796d11c  Improve camera power consumption  [longxiaowu]
+0a0214c  msm: camera: Do not wait for complete during driver_probe  [Wei Wang]
+17aeaca  msm: camera: isp: Configure stats framedrop period correctly  [Shubhraprakash Das]
+f668110  Revert "msm: camera: Bypass redundant creation of video node in stereo"  [Hriday Sharma]
+cc7235c  msm: camera: jpegdma: Fix incorrect buffer struct size  [Gautham Mayyuri]
+503bf69  media: msm: camera_v2: add newline after a few prints  [Trevor Bunker]
+39bd779  camera_v2: fix code issues detected with GCC 8  [Sultan Alsawaf]
+20cd02f  msm: camera: Undo pm_qos request upon error  [Sultan Alsawaf]
+cf178b4  msm: sensor: actuator: fix out of bound read for region params  [Haibin Liu]
+fec1c38  msm: sensor: actuator: add null pointer check for i2c array  [Haibin Liu]
+baa191e  msm: camera: sensor: Fix memory leaks when sensor probe fails  [Sultanxda]
+1d21b48  msm_cci: fix inconsistent mutex_lock  [David Lin]
+70b712f  msm: isp: Clear irq status if irq is set again with same value  [Srikanth Uyyala]
+7b40ce2  msm: camera: Fix 32-bit compilation issues.  [Trishansh Bhardwaj]
+2c6374c  mm-camera2:isp2: Use system time for VT  [Meera Gande]
+c70b8fc  msm: camera: Remove dead code  [Naresh Bommena]
+bf83adb  msm: camera: Disable camera csiphy IRQs during stream-on  [Vijay kumar Tumati]
+d949ceb  msm: camera: isp: Reset request queue at stop  [Meera Gande]
+71dcb6d  msm: camera: isp: Store the user ahb vote  [Shubhraprakash Das]
+7bdec63  msm: camera: Fix for NOC error in CCI  [Shankar Ravi]
+fb481ae  msm: camera: isp: Rate limit certain logs  [Venu Yeshala]
+5374ee5  Revert "drivers: camera: HACK: Always power down actuator."  [Quallenauge]
+4ac02cc  msm: camera: Handle actuator close before power down  [Vijay kumar Tumati]
+89a209e  msm: camera: Rate limit debug logs  [Srikanth Uyyala]
+41d789a  msm : camera: Fix kw issues in Jpeg  [Krupal Divvela]
+8abe86c  msm: camera: isp: use correct list API  [Srikanth Uyyala]
+15f6320  msm: common: set clk rate when rate is INIT_RATE  [Junzhe Zou]
+cd79527  msm: isp: fix bug in cfg_camif  [Junzhe Zou]
+14612c2  msm: camera: jpegdma: fix compilation issues for sdm660  [Krupal Divvela]
+5a6259d  msm: camera: isp: Do not wait w/o interruptible  [Shubhraprakash Das]
+0d8b6f5  msm: camera: Limit GPU clock on camera open  [Trishansh Bhardwaj]
+186ef0d  msm: camera: fd: Call fd buffer done on active buffer  [Pavan Kumar Chilamkurthi]
+9230478  msm: camera: fd: Fix race condition during stream-off  [Pavan Kumar Chilamkurthi]
+aea4638  msm: camera: Synchronize jpeg ISR and userspace call  [Krishnankutty Kolathappilly]
+d233d02  Revert "msm-camera: Addressing possible overflow conditions"  [Quallenauge]
+4d8f0ea  msm-camera: Addressing possible overflow conditions  [guyang]
+fd9d3b9  msm: camera: jpegdma: Check for compat config  [Gautham Mayyuri]
+a90b7fc  msm: camera: ispif: Do not reset ispif  [Shubhraprakash Das]
+4761a72  Revert "msm: camera: isp: Configure stats framedrop period correctly"  [Quallenauge]
+ed31165  msm: camera: isp: Configure stats framedrop period correctly  [Shubhraprakash Das]
+8c0f6cd  msm: camera: isp: Set the clock rate before ahb vote  [Shubhraprakash Das]
+7149bd6  msm: cpp: Vote for nominal ahb clock while loading firmware  [Krishnankutty Kolathappilly]
+6a84d52  msm: camera: isp: Vote ahb clock to nominal.  [Shubhraprakash Das]
+01febfd  msm: camera: isp: Print overflow information  [Shubhraprakash Das]
+478bfda  msm: camera: cpp: Vote AHB with clock enabled and no mem retention  [Gautham Mayyuri]
+e6eae27  msm: camera: jpegdma: Reg values stored in array at alternate indices  [Gautham Mayyuri]
+2bb70ec  msm: camera: FD: Set no memory retention  [Gautham Mayyuri]
+b6c0f44  msm: camera: jpeg: Set no memory retention  [Gautham Mayyuri]
+b3c503b  msm: camera: isp: Set no memory retention  [Shubhraprakash Das]
+f968030  msm: camera: Add new soc api  [Shubhraprakash Das]
+5ce5433  msm: camera: Add support for reading new property tag  [Viswanadha Raju Thotakura]
+1845673  msm: camera: Add support for reading new property tag  [Viswanadha Raju Thotakura]
+b0323178  msm: jpegdma: set minimum acceptable dimension as 8x8  [Gautham Mayyuri]
+92a5878  msm: Camera buffer overflow fix  [Manish Poddar]
+a666af6  msm: jpegdma: Remove even number check for crop left and top  [Gautham Mayyuri]
+0204a8a  msm: jpeg: DMA V4L2 driver changes  [Ashwini Rao]
+da2c984  msm: camera: isp: For testgen disable camif on frame boundary  [Shubhraprakash Das]
+ec60804  msm: camera: isp: Set init rate for mnoc_maxi_clk  [Shubhraprakash Das]
+b0b243a  msm: jpeg: Expose JPEG DMA max downscale to user space  [Gautham Mayyuri]
+1c29ae4  msm: camera: isp: Set vfe clock rate  [Shubhraprakash Das]
+0983926  msm: cpp: Use the micro reset binding to decide if micro can be reset  [Krishnankutty Kolathappilly]
+1570853  msm: camera: Add support for reset controller framework  [Amit Nischal]
+c7c2150  msm: camera: cpp: Support conditional reset of micro  [Rajakumar Govindaram]
+3248e88  drivers: camera: HACK: Always power down actuator.  [Quallenauge]
+8d1496a  msm: camera: isp: Fix memory leaks in vfe probe  [Sultanxda]
+763c368  msm: camera_v2: handle the error value returned during get clock  [Srikanth Uyyala]
+a6f6db1  drivers: camera: Add actuator driver from k4.9.  [Quallenauge]
+b0eebd1  msm: camera : Lock Implementation for avoid race condition  [Vijay kumar Tumati]
+6c120cf  msm: camera: Add V4L2_CAP_DEVICE_CAPS to caps  [Quallenauge]
+2930869  msm: msm-jpegdma: Add V4L2_CAP_DEVICE_CAPS to caps  [ix5]
+6069802  msm: camera: Bring back old subdev ids  [Artem Borisov]
+0716d8d  camera: Show gpio value in logs.  [Quallenauge]
+88cfc9a  msm: camera: Update camera drivers  [Lakshmi Narayana Kalavala]
+7c1ba62  msm: cam_smmu: Remove obsolete IOMMU domain attribute  [Mitchel Humpherys]
+e781ec9  Add includes from 3.18  [Quallenauge]
+b160e16  drivers: media: camera_v2: Import tissot changes  [mdeejay]
+463c83e  camera_v2: checkout to LA.UM.7.6.r1-04500-89xx.0  [Lau]
+7b63dd7  ARM64: configs: tissot: turn on VDSO  [Mark Salyzyn]
+105c72f  tissot: config: Change kernel name  [mdeejay]
+d2dda72  gpu: msm: kgsl: Use 8M global MMU mem size for Adreno 3xx, 4xx, 5xx  [Angelo G. Del Regno]
+2560e5b  gpu: msm: kgsl: Add quirk to use different MMU carveout size  [Angelo G. Del Regno]
+2ba5ea5  msm: vidc_3x: Adapt handling of framerate ioctl to 3.18 beahvior.  [Quallenauge]
+e6ecf1b  vdso32: Invoke clang with correct path to GCC toolchain  [Daniel Mentz]
+8bafe2c  FROMLIST: arm64: vdso32: Use full path to Clang instead of relying on PATH  [Nathan Chancellor]
+afb0f2d  ANDROID: turn on VCT access from 32-bit applications  [Mark Salyzyn]
+dd6ab5d  ANDROID: clock_gettime(CLOCK_BOOTTIME,) slows down >20x  [Mark Salyzyn]
+48c1b2c  STOPSHIP: vdso: disable switches for experiments  [Mark Salyzyn]
+649fe2b  ANDROID: CROSS_COMPILE_ARM32 must work if CONFIG_COMPAT_VDSO  [Mark Salyzyn]
+8cee10d  FROMLIST: BACKPORT: [PATCH 6/6] arm64: Wire up and expose the new compat vDSO  [Kevin Brodsky]
+6e8c0cd  FROMLIST: [PATCH 5/6] arm64: compat: 32-bit vDSO setup  [Kevin Brodsky]
+5a1bdb6  FROMLIST: [PATCH 4/6] arm64: compat: Add a 32-bit vDSO  [Kevin Brodsky]
+93f619f  FROMLIST: BACKPORT: [PATCH 3/6] arm64: Refactor vDSO init/setup  [Kevin Brodsky]
+f9ae2e3  FROMLIST: [PATCH 2/6] arm64: elf: Set AT_SYSINFO_EHDR in compat processes  [Kevin Brodsky]
+68973ba  FROMLIST: [PATCH 1/6] arm64: compat: Use vDSO sigreturn trampolines if available  [Kevin Brodsky]
+4084006  FROMLIST: lib: vdso: add support for time  [Mark Salyzyn]
+b3296c0  FROMLIST: [PATCH] arm64: compat: Expose offset to registers in sigframes  [Kevin Brodsky]
+21f2a5c  FROMLIST: [PATCH v5 12/12] lib: vdso: do not expose gettimeofday, if no arch supported timer  [Mark Salyzyn]
+94f11a9  FROMLIST: [PATCH v5 11/12] lib: vdso: Add support for CLOCK_BOOTTIME  [Mark Salyzyn]
+3c2a0d4  FROMLIST: [PATCH v5 10/12] arm64: vdso: replace gettimeofday.S with global vgettimeofday.C  [Mark Salyzyn]
+8804896  FROMLIST: [PATCH v5 09/12] arm: vdso: move vgettimeofday.c to lib/vdso/  [Mark Salyzyn]
+6b2cbc3  FROMLIST: [PATCH v5 08/12] arm: vdso: Add ARCH_CLOCK_FIXED_MASK  [Mark Salyzyn]
+01deabd  FROMLIST: [PATCH v5 07/12] arm: vdso: disable profiling  [Mark Salyzyn]
+51462ac  FROMLIST: [PATCH v5 06/12] arm: vdso: add support for clock_getres  [Mark Salyzyn]
+245f2ff  FROMLIST: [PATCH v6 05/12] arm: vdso: Add support for CLOCK_MONOTONIC_RAW  [Mark Salyzyn]
+720975c  FROMLIST: [PATCH v5 04/12] arm: vdso: do calculations outside reader loops  [Mark Salyzyn]
+a68bb16b  FROMLIST: [PATCH v5 03/12] arm: vdso: inline assembler operations to compiler.h  [Mark Salyzyn]
+aff64e0  Revert "ARM: vdso: Remove dependency with the arch_timer driver internals"  [Quallenauge]
+08f9a1c  FROMLIST: [PATCH v5 02/12] arm: vdso: add include file defining __get_datapage()  [Mark Salyzyn]
+d5d0887  FROMLIST: [PATCH v5 01/12] arm: vdso: rename vdso_datapage variables  [Mark Salyzyn]
+f6ffb1c  FROMLIST: [PATCH v3 3/3] arm64: compat: Add CONFIG_KUSER_HELPERS  [Kevin Brodsky]
+d3ce7e2  FROMLIST: [PATCH v3 2/3] arm64: compat: Split the sigreturn trampolines and kuser helpers (assembler sources)  [Kevin Brodsky]
+fefc05e  FROMLIST: [PATCH v3 1/3] arm64: compat: Split the sigreturn trampolines and kuser helpers (C sources)  [Kevin Brodsky]
+
+====================
+     2019-06-30    
+====================
+
+ * packages/apps/Settings
+e04515e  team: add Lenovo Zuk Z2 Plus to official builds  [blinoff82]
+
+ * vendor/syberia
+aad22a9  team: add Lenovo Zuk Z2 Plus to official builds  [blinoff82]
 
