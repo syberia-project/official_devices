@@ -1,142 +1,138 @@
 ====================
-     2019-06-29    
-====================
-
- * frameworks/base
-439178c  FixUp: SystemUI: Statusbar layout improvements  [Anushek Prasal]
-
-====================
-     2019-06-28    
-====================
-
- * frameworks/base
-0d21c9f  Option to Display Data Disabled Indicator Icon [1/2]  [Varun Date]
-da40d01  SmartCharging: add reset battery stats option [1/2]  [DennySPB]
-
- * frameworks/native
-bd4d564  Revert some questionable binder commits  [DennySPB]
-
- * packages/apps/Settings
-0426d72  Merge "team: capricorn is out" into 9.0  [blinov.in]
-f0687e5  SmartCharging: add reset battery stats option [2/2]  [DennySPB]
-
- * packages/apps/SyberiaSettings
-92372bb  Data disabled icon switch[2/2]  [Varun Date]
-
- * prebuilts/clang/host/linux-x86
-187e3a7  Update prebuilt Clang to r353983d.  [Nick Desaulniers]
-
-====================
-     2019-06-27    
+     2019-07-06    
 ====================
 
  * device/oneplus/bacon
-9dbf2e4  bacon: Update dependencies  [blinoff82]
+56d6acc  Update Lawnchair to alpha-2268  [blinoff82]
+
+ * device/oppo/msm8974-common
+8f347aa  msm8974-common: enable ART and DEX optimization  [blinoff82]
+
+ * device/syberia/sepolicy
+da01a21  sepolicy: Dontaudit sysinit  [Jan Altensen]
 
  * frameworks/base
-42fb825  Revert "ActivityRecord: add fw boost after r33 merge"  [DennySPB]
-8184f72  SmartNav: Eliminate needless BroadcastReceiver in BaseNavigationBar [1/2]  [bigrushdog]
-7531bb2  Move Q animation to custom animations  [DennySPB]
-25e37d8  Revert "Add missing ensureRunningOnConnectivityServiceThread() function"  [DennySPB]
-c631053  Revert "Revert "Update VPN capabilities when its underlying network set is null.""  [Varun Anand]
-b6dfb94  SystemUI: Statusbar layout improvements  [Anushek Prasal]
-8d53400  PhoneWindowManager: Set delay for screenshot shortcut to 0  [Anirudh Gupta]
-449cbec  SystemUI: Fix several layout bugs  [eray orçunus]
-097afed  Reload Pixel Home Animation without reboot  [Joe Maples]
-cf5ff23  Pixel Navbar animation toggle [1/2]  [beanstown106]
-762b939  SystemUI: Add navigation touch animation support  [Chris]
-76b2f83  SystemUI: Remove older Pixel Animation  [argraur]
-c57a991  SystemUI: Use proper lock icon scale on dismissing notification panel view  [LuK1337]
-b17e981  SystemUI: Handle orientation and screenSize changes for TunerActivity  [LuK1337]
+9bdaff5  FOD: fixes and improvements  [Marko Man]
+df2e482  FODCircleView: calculate proper dimming amount  [PeterCxy]
+cc95d1c  Merge "libs: hwui: Enable perf mode and disable pgo" into 9.0  [dennyspb]
+48a6e70  SystemUI: optimize content observers in StatusBar  [DennySPB]
+63998d9  base: Q seekbar: make the seekbar transparent for non-seekable notifs  [ElDainosor]
+5354954  Add toggle for charging animation [1/2]  [Pranav Vashi]
+6573626  SystemUI: Protect against terrible music players  [Harsh Shandilya]
+fc6c3d4  Merge changes Ic2a484d2,I96415659,Ia72d2476 into 9.0  [dennyspb]
+6a26935  SystemUI: Adjust battery and location icon size  [Anushek Prasal]
+ac0b3cb  Frameworks: Slightly refactor Parcel code  [Andreas Gampe]
+d35e0e7  Stable seek bar positioning  [Sergey]
+2767143  Ambient play: Fix padding on some densities  [Henrique Silva]
+a72d45a  libs: hwui: Enable perf mode and disable pgo  [mydongistiny]
 
- * packages/apps/Snap
-cbbc294  Snap: allow to disable image stabilization per device  [codeworkx]
-242266a  Snap: Fix picture size preference  [dianlujitao]
-3ad6082  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [Bruno Martins]
-378ac64  Snap: Fix shutter button size  [Artem Borisov]
-2317d90  Snap: make support for bokeh mode configurable per device  [codeworkx]
-b543b72  Snap: Yet Another String Improvement  [Michael Bestas]
-1100ce3  change to BUILD_NUMBER_FROM_FILE  [jinwu]
-c46c7d5  QuickReader: Update libs  [Luca Stefani]
-167cc22  Snap: Always allow 100% JPEG quality to be set  [Zhao Wei Liew]
-c6b27e4  Snap: Disable debugging of double open issue  [Wang Han]
-0a74332  Snap: Add missing NULL check in updateQcfaPictureSize()  [Wang Han]
-34a5a9a  Snap: Check various feature support before applying  [Wang Han]
-da83b97  Snap: Fix layout of zoom option  [Wang Han]
-45e402f  Snap: Create correct redeye reduction config icon  [Wang Han]
-5ca0b6e  Snap: Avoid crash with empty RAW output size  [Wang Han]
-4841eae  DisableCameraReceiver: Initialize CameraHolder before use  [dianlujitao]
-8420c48  SnapdragonCamera: Check for fixed focus  [Rajshekar Eashwarappa]
-ae2394c  SnapdragonCamera: Completed the EIS and video HDR function  [xianming wang]
-7eae9de  Change version to 015  [zhuw]
-f79ad63  SnapdragonCamera: SunSet and Landscape use HAL-ZSL mode  [xianming wang]
-405de58  Requirement from EIS team  [zhuw]
+ * packages/apps/Settings
+b3c033b  Merge "Add SyberiaSettings to Search" into 9.0  [dennyspb]
 
  * vendor/oneplus
-1b347f5  Import initial oneplus_bacon vendor  [Balaji VR]
-
-====================
-     2019-06-26    
-====================
-
- * device/oneplus/bacon
-da08602  Change TARGET_DEVICE for OTA compatible  [blinoff82]
-
- * packages/apps/Settings
-5de0c5b  team: capricorn is out  [blinoff82]
-
- * packages/apps/SmartNav
-fb742a6  SmartNav: Eliminate needless BroadcastReceiver in BaseNavigationBar [2/2]  [bigrushdog]
-08c1004  SmartNav: Reload icons from storage when boot completes  [bigrushdog]
-f806f44  Pulse: Fix defaulting to user color if no album color available  [Pranav Vashi]
-
-====================
-     2019-06-25    
-====================
-
- * device/oneplus/bacon
-e01ce8f  bacon: Add command line tools  [blinoff82]
-
- * device/oppo/msm8974-common
-46cfe4e  system.prop: Cleanup and remove old props  [blinoff82]
-6b446b3  Make dalvik_vm fw/native dependent  [blinoff82]
-27136fc  Drop deprecated OpenGLRenderer Configuration  [blinoff82]
-
- * frameworks/base
-fed99f0  base: Import Android Q activity animations  [Lucchetto]
-
- * packages/apps/SmartNav
-543e49a  SmartNav: opa: fix Pixel animation on SB with new SysUI opa  [argraur]
-d430cb5  SmartNav: Use correct colors for popup  [xyyx]
-
-====================
-     2019-06-24    
-====================
-
- * external/vim
-3223f19  external: vim: Create vi symlink  [Humberto Borba]
-
-====================
-     2019-06-23    
-====================
-
- * build/soong
-bd004c7  Revert "Fix derp in 1a01ca74e545da896c5ccb5b80e8cc0f532b86b2"  [blinoff82]
-
- * device/oneplus/bacon
-e1600c2  bacon: Update dependencies  [blinoff82]
-17b61e9  bacon: build permissive  [blinoff82]
-8161c47  bacon: Update Fz config for v3  [blinoff82]
-
- * device/oppo/msm8974-common
-7548586  Add hostapd configs needed for CAF wlan  [blinoff82]
-
- * hardware/ril-caf
-ef35293  Declare the right path for sap-api.pb.h  [blinoff82]
-
- * packages/apps/Settings
-8cf97e4  team: add OnePlus One (bacon) to official builds  [blinoff82]
+32de0f6  sdm845-common: Update blobs to enchilada OB21  [Christian Oder]
+b1627e4  sdm845-common: Update ims blobs from daisy  [Christian Oder]
+288fb64  sdm845-common: Import NXP NFC stack  [Luca Stefani]
+fb389fd  sdm845-common: update to 9.0.7  [DennySPB]
 
  * vendor/syberia
-8b84b4b  team: add OnePlus One (bacon) to official builds  [blinoff82]
+39ab74b  Merge changes I5b1a24ae,Icbb7f84b into 9.0  [dennyspb]
+c54306e  Merge "v2.7" into 9.0  [dennyspb]
+
+====================
+     2019-07-05    
+====================
+
+ * device/oneplus/bacon
+aa9757c  bacon: Remove wrong dependencies  [blinoff82]
+d6e7f27  filename ends in .so  [Dave Hewitt]
+
+ * packages/apps/Settings
+7e3c7c5  Add SyberiaSettings to Search  [xyyx]
+
+ * packages/apps/SyberiaSettings
+9207dfd  SyberiaSettings: Add to Search  [xyyx]
+32f5ebb  Add toggle for charging animation [2/2]  [Pranav Vashi]
+131df9a  SyberiaSettings: system settings reworking  [blinoff82]
+
+ * vendor/syberia
+0a5e706  vendor: fonts: Add Source Sans Pro from Android Q  [Joey Huab]
+d8495d5  Fonts: Add Alegreya SansSC and NokiaPure  [Gaurav Singh]
+51b5c40  v2.7  [DennySPB]
+
+====================
+     2019-07-04    
+====================
+
+ * device/oneplus/bacon
+88b9866  Increase earpiece volume  [Balaji VR]
+8dea86f  prebuilts: add Lawnchair  [blinoff82]
+
+ * device/oppo/common
+855531d  oppo-common: Adapt to alternative keyhandler  [blinoff82]
+
+ * frameworks/base
+e64b3c7  Support for alternative device specific key handlers  [Bruno Martins]
+e26d7a4  GamingMode: Clean up and refine [1/2]  [Pranav Vashi]
+d833860  Fix NPE in destroyUiAutomationService function  [hangl]
+68b40bd  wifi: Filter unsupported networks from scan results  [Veerendranath Jakkam]
+59c202d  Wifi: Connect indication on UI for STA when AP supports SAE+PSK  [Anurag Das]
+58db154  Wifi: Update accesspoint to cater to add network option from GUI  [Anurag Das]
+fb3c826  Wifi: Check for SAE/OWE AKM prior to PSK  [Anurag Das]
+a6cf564  perfLock: Enable ActivityBoost  [yanglv]
+c224404  Prevent crash in TTS engine due to improper configuration  [Pranav Vashi]
+
+====================
+     2019-07-03    
+====================
+
+ * build/make
+708dea8  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/build into HEAD  [DennySPB]
+
+ * device/oppo/common
+0dbd42a  oppo_common: Rework keyhandler and configpanel  [blinoff82]
+
+ * frameworks/av
+68329c4  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPB]
+
+ * frameworks/base
+185b607  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPB]
+
+ * frameworks/native
+5c0508c  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPB]
+
+ * frameworks/opt/net/wifi
+ac4275a  Prevent scan searching overhead  [Sticky Chen]
+562ee95  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/opt/net/wifi  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+69efa71  GameMode: remove hwkeys toggle on non-hwkeys devices  [Lup Gabriel]
+bb9a75a  GamingMode: Clean up and refine [2/2]  [Pranav Vashi]
+
+ * system/bt
+58ea68b  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
+
+ * system/netd
+feba124  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/system/netd  [DennySPB]
+
+ * system/security
+e4f975e  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/system/security into HEAD  [DennySPB]
+
+====================
+     2019-07-02    
+====================
+
+====================
+     2019-07-01    
+====================
+
+====================
+     2019-06-30    
+====================
+
+ * packages/apps/Settings
+e04515e  team: add Lenovo Zuk Z2 Plus to official builds  [blinoff82]
+
+ * vendor/syberia
+aad22a9  team: add Lenovo Zuk Z2 Plus to official builds  [blinoff82]
 
