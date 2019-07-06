@@ -1,0 +1,30 @@
+{
+  "addons": [
+    {
+      "title": "Magisk",
+      "summary": "Magisk",
+      "url": "\"http://tiny.cc/latestmagisk"
+    },
+    {
+      "title": "Magisk",
+      "summary": "Magisk Uninstaller",
+      "url": "http://tiny.cc/latestuninstaller"
+    }
+  ],
+  "filename": "syberia_z2_plus-v2.7-20190706-0836-OFFICIAL.zip",
+  "changelog": "",
+  "filesize": "567475272",
+  "md5": "812fa3946243aa16fb651ea54241303e",
+  "build_date": "20190706",
+  "device": "z2_plus",
+  "url": "https://sourceforge.net/projects/syberiaos/files/z2_plus/syberia_z2_plus-v2.7-20190706-0836-OFFICIAL.zip/download",
+  "donate_url": "https://syberiaos.com/links",
+  "developer_url": "http://github.com/syberia-project",
+  "news_url": "http://github.com/syberia-project",
+  "developer": "Kanishk",
+  "error": "false",
+  "website_url": "http://syberiaos.com",
+  "forum_url": "https://forum.xda-developers.com/lenovo-zuk-z2/development/rom-syberia-project-t3916546",
+  "device_brand": "Lenovo",
+  "device_model": "Zuk Z2 Plus"
+}
