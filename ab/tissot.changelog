@@ -1,241 +1,222 @@
 ====================
-     2019-07-06    
-====================
-
- * device/syberia/sepolicy
-da01a21  sepolicy: Dontaudit sysinit  [Jan Altensen]
-
- * frameworks/base
-9bdaff5  FOD: fixes and improvements  [Marko Man]
-df2e482  FODCircleView: calculate proper dimming amount  [PeterCxy]
-cc95d1c  Merge "libs: hwui: Enable perf mode and disable pgo" into 9.0  [dennyspb]
-48a6e70  SystemUI: optimize content observers in StatusBar  [DennySPB]
-63998d9  base: Q seekbar: make the seekbar transparent for non-seekable notifs  [ElDainosor]
-5354954  Add toggle for charging animation [1/2]  [Pranav Vashi]
-6573626  SystemUI: Protect against terrible music players  [Harsh Shandilya]
-fc6c3d4  Merge changes Ic2a484d2,I96415659,Ia72d2476 into 9.0  [dennyspb]
-6a26935  SystemUI: Adjust battery and location icon size  [Anushek Prasal]
-ac0b3cb  Frameworks: Slightly refactor Parcel code  [Andreas Gampe]
-d35e0e7  Stable seek bar positioning  [Sergey]
-2767143  Ambient play: Fix padding on some densities  [Henrique Silva]
-a72d45a  libs: hwui: Enable perf mode and disable pgo  [mydongistiny]
-
- * packages/apps/Settings
-b3c033b  Merge "Add SyberiaSettings to Search" into 9.0  [dennyspb]
-
- * vendor/syberia
-39ab74b  Merge changes I5b1a24ae,Icbb7f84b into 9.0  [dennyspb]
-c54306e  Merge "v2.7" into 9.0  [dennyspb]
-0a5e706  vendor: fonts: Add Source Sans Pro from Android Q  [Joey Huab]
-d8495d5  Fonts: Add Alegreya SansSC and NokiaPure  [Gaurav Singh]
-
-====================
-     2019-07-05    
-====================
-
- * packages/apps/Settings
-7e3c7c5  Add SyberiaSettings to Search  [xyyx]
-
- * packages/apps/SyberiaSettings
-9207dfd  SyberiaSettings: Add to Search  [xyyx]
-32f5ebb  Add toggle for charging animation [2/2]  [Pranav Vashi]
-131df9a  SyberiaSettings: system settings reworking  [blinoff82]
-
- * vendor/syberia
-51b5c40  v2.7  [DennySPB]
-
-====================
-     2019-07-04    
+     2019-07-13    
 ====================
 
  * frameworks/base
-e64b3c7  Support for alternative device specific key handlers  [Bruno Martins]
-e26d7a4  GamingMode: Clean up and refine [1/2]  [Pranav Vashi]
-d833860  Fix NPE in destroyUiAutomationService function  [hangl]
-68b40bd  wifi: Filter unsupported networks from scan results  [Veerendranath Jakkam]
-59c202d  Wifi: Connect indication on UI for STA when AP supports SAE+PSK  [Anurag Das]
-58db154  Wifi: Update accesspoint to cater to add network option from GUI  [Anurag Das]
-fb3c826  Wifi: Check for SAE/OWE AKM prior to PSK  [Anurag Das]
-a6cf564  perfLock: Enable ActivityBoost  [yanglv]
-c224404  Prevent crash in TTS engine due to improper configuration  [Pranav Vashi]
-
-====================
-     2019-07-03    
-====================
-
- * build/make
-708dea8  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/build into HEAD  [DennySPB]
-
- * frameworks/av
-68329c4  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPB]
-
- * frameworks/base
-185b607  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPB]
-
- * frameworks/native
-5c0508c  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPB]
+7dafc57  FODCircleView: support all screen orientations  [Peter Cai]
+b5e8a3c  fod: run async task for setting brightness  [Marko Man]
+516fa77  FODCircleView: read from system props  [Peter Cai]
+a7ffe01  Merge "Improve performance of unclipped save layers." into 9.0  [dennyspb]
 
  * frameworks/opt/net/wifi
-ac4275a  Prevent scan searching overhead  [Sticky Chen]
-562ee95  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/opt/net/wifi  [DennySPB]
+bfbb76b  CountryCode: Use hack for all regions.  [xyyx]
 
- * packages/apps/SyberiaSettings
-69efa71  GameMode: remove hwkeys toggle on non-hwkeys devices  [Lup Gabriel]
-bb9a75a  GamingMode: Clean up and refine [2/2]  [Pranav Vashi]
-
- * system/bt
-58ea68b  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
-
- * system/netd
-feba124  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/system/netd  [DennySPB]
-
- * system/security
-e4f975e  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/system/security into HEAD  [DennySPB]
+ * system/sepolicy
+d5421ce  Address some theme_data_file denials  [DennySPB]
 
 ====================
-     2019-07-02    
+     2019-07-12    
 ====================
 
-====================
-     2019-07-01    
-====================
+ * external/skia
+2ae28b8  Add private save-behind and draw-behind methods to canvas.  [Derek Sollenberger]
 
- * kernel/xiaomi/msm8953
-95eb6c7  msm: camera: Avoid dynamic memory allocation for small buffers  [Sultan Alsawaf]
-4e21daf  msm: camera: Fix for Possible information leak issue  [annamraj]
-73b6bcf  mm-camera2:isp2: Handle use after free buffer  [Sean Callanan]
-cdbb7a8  Revert "msm: camera: isp: Handle frame drop due to delay   "  [Artem Borisov]
-6a2a578  camera_v2: sensor: io: remove extra parentheses  [Lau]
-dfed8d0  Revert "msm: camerav2: isp: Allocate UB for all source types"  [Lau]
-de8e00b  Revert "msm: camerav2: isp: Reserve rdi ub based on image size"  [Lau]
-c88ab5f  msm: camera: Fix out-of-bounds read in string class name.  [Trishansh Bhardwaj]
-385dab0  msm: sensor: flash: Remove unnecessary null checks in msm_flash_i2c_release  [Nathan Chancellor]
-16e6f8f  msm: camera: Remove unnecessary null check in msm_remove_session_cmd_ack_q  [Nathan Chancellor]
-1d792b8  msm: camera: Remove always false checks in msm_camera_{get,put}_clk_info  [Nathan Chancellor]
-acd63d7  msm_actuator: increase usleep for mono sensor  [Jean-Baptiste Theou]
-eb45bbd  msm: camera: fix user space access  [Sami Tolvanen]
-2aea953a3  Revert "msm: camera: Lack of copy_from_user in camera driver."  [celtare21]
-e6a7ce0  Improve camera power consumption  [longxiaowu]
-796d11c  Improve camera power consumption  [longxiaowu]
-0a0214c  msm: camera: Do not wait for complete during driver_probe  [Wei Wang]
-17aeaca  msm: camera: isp: Configure stats framedrop period correctly  [Shubhraprakash Das]
-f668110  Revert "msm: camera: Bypass redundant creation of video node in stereo"  [Hriday Sharma]
-cc7235c  msm: camera: jpegdma: Fix incorrect buffer struct size  [Gautham Mayyuri]
-503bf69  media: msm: camera_v2: add newline after a few prints  [Trevor Bunker]
-39bd779  camera_v2: fix code issues detected with GCC 8  [Sultan Alsawaf]
-20cd02f  msm: camera: Undo pm_qos request upon error  [Sultan Alsawaf]
-cf178b4  msm: sensor: actuator: fix out of bound read for region params  [Haibin Liu]
-fec1c38  msm: sensor: actuator: add null pointer check for i2c array  [Haibin Liu]
-baa191e  msm: camera: sensor: Fix memory leaks when sensor probe fails  [Sultanxda]
-1d21b48  msm_cci: fix inconsistent mutex_lock  [David Lin]
-70b712f  msm: isp: Clear irq status if irq is set again with same value  [Srikanth Uyyala]
-7b40ce2  msm: camera: Fix 32-bit compilation issues.  [Trishansh Bhardwaj]
-2c6374c  mm-camera2:isp2: Use system time for VT  [Meera Gande]
-c70b8fc  msm: camera: Remove dead code  [Naresh Bommena]
-bf83adb  msm: camera: Disable camera csiphy IRQs during stream-on  [Vijay kumar Tumati]
-d949ceb  msm: camera: isp: Reset request queue at stop  [Meera Gande]
-71dcb6d  msm: camera: isp: Store the user ahb vote  [Shubhraprakash Das]
-7bdec63  msm: camera: Fix for NOC error in CCI  [Shankar Ravi]
-fb481ae  msm: camera: isp: Rate limit certain logs  [Venu Yeshala]
-5374ee5  Revert "drivers: camera: HACK: Always power down actuator."  [Quallenauge]
-4ac02cc  msm: camera: Handle actuator close before power down  [Vijay kumar Tumati]
-89a209e  msm: camera: Rate limit debug logs  [Srikanth Uyyala]
-41d789a  msm : camera: Fix kw issues in Jpeg  [Krupal Divvela]
-8abe86c  msm: camera: isp: use correct list API  [Srikanth Uyyala]
-15f6320  msm: common: set clk rate when rate is INIT_RATE  [Junzhe Zou]
-cd79527  msm: isp: fix bug in cfg_camif  [Junzhe Zou]
-14612c2  msm: camera: jpegdma: fix compilation issues for sdm660  [Krupal Divvela]
-5a6259d  msm: camera: isp: Do not wait w/o interruptible  [Shubhraprakash Das]
-0d8b6f5  msm: camera: Limit GPU clock on camera open  [Trishansh Bhardwaj]
-186ef0d  msm: camera: fd: Call fd buffer done on active buffer  [Pavan Kumar Chilamkurthi]
-9230478  msm: camera: fd: Fix race condition during stream-off  [Pavan Kumar Chilamkurthi]
-aea4638  msm: camera: Synchronize jpeg ISR and userspace call  [Krishnankutty Kolathappilly]
-d233d02  Revert "msm-camera: Addressing possible overflow conditions"  [Quallenauge]
-4d8f0ea  msm-camera: Addressing possible overflow conditions  [guyang]
-fd9d3b9  msm: camera: jpegdma: Check for compat config  [Gautham Mayyuri]
-a90b7fc  msm: camera: ispif: Do not reset ispif  [Shubhraprakash Das]
-4761a72  Revert "msm: camera: isp: Configure stats framedrop period correctly"  [Quallenauge]
-ed31165  msm: camera: isp: Configure stats framedrop period correctly  [Shubhraprakash Das]
-8c0f6cd  msm: camera: isp: Set the clock rate before ahb vote  [Shubhraprakash Das]
-7149bd6  msm: cpp: Vote for nominal ahb clock while loading firmware  [Krishnankutty Kolathappilly]
-6a84d52  msm: camera: isp: Vote ahb clock to nominal.  [Shubhraprakash Das]
-01febfd  msm: camera: isp: Print overflow information  [Shubhraprakash Das]
-478bfda  msm: camera: cpp: Vote AHB with clock enabled and no mem retention  [Gautham Mayyuri]
-e6eae27  msm: camera: jpegdma: Reg values stored in array at alternate indices  [Gautham Mayyuri]
-2bb70ec  msm: camera: FD: Set no memory retention  [Gautham Mayyuri]
-b6c0f44  msm: camera: jpeg: Set no memory retention  [Gautham Mayyuri]
-b3c503b  msm: camera: isp: Set no memory retention  [Shubhraprakash Das]
-f968030  msm: camera: Add new soc api  [Shubhraprakash Das]
-5ce5433  msm: camera: Add support for reading new property tag  [Viswanadha Raju Thotakura]
-1845673  msm: camera: Add support for reading new property tag  [Viswanadha Raju Thotakura]
-b0323178  msm: jpegdma: set minimum acceptable dimension as 8x8  [Gautham Mayyuri]
-92a5878  msm: Camera buffer overflow fix  [Manish Poddar]
-a666af6  msm: jpegdma: Remove even number check for crop left and top  [Gautham Mayyuri]
-0204a8a  msm: jpeg: DMA V4L2 driver changes  [Ashwini Rao]
-da2c984  msm: camera: isp: For testgen disable camif on frame boundary  [Shubhraprakash Das]
-ec60804  msm: camera: isp: Set init rate for mnoc_maxi_clk  [Shubhraprakash Das]
-b0b243a  msm: jpeg: Expose JPEG DMA max downscale to user space  [Gautham Mayyuri]
-1c29ae4  msm: camera: isp: Set vfe clock rate  [Shubhraprakash Das]
-0983926  msm: cpp: Use the micro reset binding to decide if micro can be reset  [Krishnankutty Kolathappilly]
-1570853  msm: camera: Add support for reset controller framework  [Amit Nischal]
-c7c2150  msm: camera: cpp: Support conditional reset of micro  [Rajakumar Govindaram]
-3248e88  drivers: camera: HACK: Always power down actuator.  [Quallenauge]
-8d1496a  msm: camera: isp: Fix memory leaks in vfe probe  [Sultanxda]
-763c368  msm: camera_v2: handle the error value returned during get clock  [Srikanth Uyyala]
-a6f6db1  drivers: camera: Add actuator driver from k4.9.  [Quallenauge]
-b0eebd1  msm: camera : Lock Implementation for avoid race condition  [Vijay kumar Tumati]
-6c120cf  msm: camera: Add V4L2_CAP_DEVICE_CAPS to caps  [Quallenauge]
-2930869  msm: msm-jpegdma: Add V4L2_CAP_DEVICE_CAPS to caps  [ix5]
-6069802  msm: camera: Bring back old subdev ids  [Artem Borisov]
-0716d8d  camera: Show gpio value in logs.  [Quallenauge]
-88cfc9a  msm: camera: Update camera drivers  [Lakshmi Narayana Kalavala]
-7c1ba62  msm: cam_smmu: Remove obsolete IOMMU domain attribute  [Mitchel Humpherys]
-e781ec9  Add includes from 3.18  [Quallenauge]
-b160e16  drivers: media: camera_v2: Import tissot changes  [mdeejay]
-463c83e  camera_v2: checkout to LA.UM.7.6.r1-04500-89xx.0  [Lau]
-7b63dd7  ARM64: configs: tissot: turn on VDSO  [Mark Salyzyn]
-105c72f  tissot: config: Change kernel name  [mdeejay]
-d2dda72  gpu: msm: kgsl: Use 8M global MMU mem size for Adreno 3xx, 4xx, 5xx  [Angelo G. Del Regno]
-2560e5b  gpu: msm: kgsl: Add quirk to use different MMU carveout size  [Angelo G. Del Regno]
-2ba5ea5  msm: vidc_3x: Adapt handling of framerate ioctl to 3.18 beahvior.  [Quallenauge]
-e6ecf1b  vdso32: Invoke clang with correct path to GCC toolchain  [Daniel Mentz]
-8bafe2c  FROMLIST: arm64: vdso32: Use full path to Clang instead of relying on PATH  [Nathan Chancellor]
-afb0f2d  ANDROID: turn on VCT access from 32-bit applications  [Mark Salyzyn]
-dd6ab5d  ANDROID: clock_gettime(CLOCK_BOOTTIME,) slows down >20x  [Mark Salyzyn]
-48c1b2c  STOPSHIP: vdso: disable switches for experiments  [Mark Salyzyn]
-649fe2b  ANDROID: CROSS_COMPILE_ARM32 must work if CONFIG_COMPAT_VDSO  [Mark Salyzyn]
-8cee10d  FROMLIST: BACKPORT: [PATCH 6/6] arm64: Wire up and expose the new compat vDSO  [Kevin Brodsky]
-6e8c0cd  FROMLIST: [PATCH 5/6] arm64: compat: 32-bit vDSO setup  [Kevin Brodsky]
-5a1bdb6  FROMLIST: [PATCH 4/6] arm64: compat: Add a 32-bit vDSO  [Kevin Brodsky]
-93f619f  FROMLIST: BACKPORT: [PATCH 3/6] arm64: Refactor vDSO init/setup  [Kevin Brodsky]
-f9ae2e3  FROMLIST: [PATCH 2/6] arm64: elf: Set AT_SYSINFO_EHDR in compat processes  [Kevin Brodsky]
-68973ba  FROMLIST: [PATCH 1/6] arm64: compat: Use vDSO sigreturn trampolines if available  [Kevin Brodsky]
-4084006  FROMLIST: lib: vdso: add support for time  [Mark Salyzyn]
-b3296c0  FROMLIST: [PATCH] arm64: compat: Expose offset to registers in sigframes  [Kevin Brodsky]
-21f2a5c  FROMLIST: [PATCH v5 12/12] lib: vdso: do not expose gettimeofday, if no arch supported timer  [Mark Salyzyn]
-94f11a9  FROMLIST: [PATCH v5 11/12] lib: vdso: Add support for CLOCK_BOOTTIME  [Mark Salyzyn]
-3c2a0d4  FROMLIST: [PATCH v5 10/12] arm64: vdso: replace gettimeofday.S with global vgettimeofday.C  [Mark Salyzyn]
-8804896  FROMLIST: [PATCH v5 09/12] arm: vdso: move vgettimeofday.c to lib/vdso/  [Mark Salyzyn]
-6b2cbc3  FROMLIST: [PATCH v5 08/12] arm: vdso: Add ARCH_CLOCK_FIXED_MASK  [Mark Salyzyn]
-01deabd  FROMLIST: [PATCH v5 07/12] arm: vdso: disable profiling  [Mark Salyzyn]
-51462ac  FROMLIST: [PATCH v5 06/12] arm: vdso: add support for clock_getres  [Mark Salyzyn]
-245f2ff  FROMLIST: [PATCH v6 05/12] arm: vdso: Add support for CLOCK_MONOTONIC_RAW  [Mark Salyzyn]
-720975c  FROMLIST: [PATCH v5 04/12] arm: vdso: do calculations outside reader loops  [Mark Salyzyn]
-a68bb16b  FROMLIST: [PATCH v5 03/12] arm: vdso: inline assembler operations to compiler.h  [Mark Salyzyn]
-aff64e0  Revert "ARM: vdso: Remove dependency with the arch_timer driver internals"  [Quallenauge]
-08f9a1c  FROMLIST: [PATCH v5 02/12] arm: vdso: add include file defining __get_datapage()  [Mark Salyzyn]
-d5d0887  FROMLIST: [PATCH v5 01/12] arm: vdso: rename vdso_datapage variables  [Mark Salyzyn]
-f6ffb1c  FROMLIST: [PATCH v3 3/3] arm64: compat: Add CONFIG_KUSER_HELPERS  [Kevin Brodsky]
-d3ce7e2  FROMLIST: [PATCH v3 2/3] arm64: compat: Split the sigreturn trampolines and kuser helpers (assembler sources)  [Kevin Brodsky]
-fefc05e  FROMLIST: [PATCH v3 1/3] arm64: compat: Split the sigreturn trampolines and kuser helpers (C sources)  [Kevin Brodsky]
-
-====================
-     2019-06-30    
-====================
+ * frameworks/base
+823b65e  Merge changes I84dfb11f,I3bd86832,Ie7d15918,Iaa9413bf,I36d05835, ... into 9.0  [dennyspb]
+582f775  GamingMode: allow disable navigation gestures [1/2]  [DennySPB]
+538d263  Aggressive Battery: Improve value substitution  [Joe Maples]
+ac991ae  Improve performance of unclipped save layers.  [Derek Sollenberger]
 
  * packages/apps/Settings
-e04515e  team: add Lenovo Zuk Z2 Plus to official builds  [blinoff82]
+1ebf020  Merge "GamingMode: Long press tile to open settings [2/2]" into 9.0  [dennyspb]
+f6880b0  Stop calling isBandwidthControlEnabled.  [Lorenzo Colitti]
+5eeb874  Merge "BatteryUtils: Show anomalies of pre-O apps" into 9.0  [dennyspb]
+
+ * packages/apps/SyberiaSettings
+743e823  GamingMode: Disable modifying settings when GamingMode is turned on  [Pranav Vashi]
+
+====================
+     2019-07-11    
+====================
+
+ * frameworks/base
+85289a8  fwb: Add hide notch support [1/2]  [Henrique Silva]
+ba5eda0  Partialy revert "[1/2] services: allow to force "never" mode for display cutout"  [DennySPB]
+9fc3620  SystemUI: QS: Add VPN tile  [Danny Baumann]
+6ddd22e  frameworks/base: Avoid recording negative data  [Pavan Kumar M]
+9a0263c  Use the boot class loader as parent of system server loader  [Nicolas Geoffray]
+d5f9169  Remove uses of libcore.io DropBox and EventLogger  [Paul Duffin]
+e9c498b  telephony: Fixed crash in data service  [Jack Yu]
+6e5d593  Optimize the font cache size according to display resolution  [Libo Jin]
+6911648  Fix handlelr thread block while switching bluetooth  [Kou Lei]
+b5f866a  Fix NullPointerException in ConnectivityService  [soma, kawata]
+c2c76fe  idle-maint: provide a way to run GC more aggressively  [Jaegeuk Kim]
+
+ * kernel/xiaomi/msm8953
+19709c8  Linux 4.9.185  [Greg Kroah-Hartman]
+ae59e4e  arm64: kaslr: keep modules inside module region when KASAN is enabled  [Ard Biesheuvel]
+f4973e9  dmaengine: imx-sdma: remove BD_INTR for channel0  [Robin Gong]
+629f779  MIPS: Add missing EHB in mtc0 -> mfc0 sequence.  [Dmitry Korotin]
+6898b3c  IB/hfi1: Close PSM sdma_progress sleep window  [Mike Marciniszyn]
+2cfecf3  KVM: LAPIC: Fix pending interrupt in IRR blocked by software disable LAPIC  [Wanpeng Li]
+45d1f7b  arm64, vdso: Define vdso_{start,end} as array  [Kees Cook]
+ba1c600  tty: rocket: fix incorrect forward declaration of 'rp_init()'  [Linus Torvalds]
+f5d2c67  btrfs: Ensure replaced device doesn't have pending chunk allocation  [Nikolay Borisov]
+11b8d4d  drm/imx: only send event on crtc disable if kept disabled  [Robert Beckett]
+f26271f  drm/imx: notify drm core before sending event during crtc disable  [Robert Beckett]
+6be98ae  lib/mpi: Fix karactx leak in mpi_powm  [Herbert Xu]
+da9d247  ALSA: usb-audio: fix sign unintended sign extension on left shifts  [Colin Ian King]
+8c4cadd  ALSA: line6: Fix write on zero-sized buffer  [Takashi Iwai]
+34807b4  ALSA: firewire-lib/fireworks: fix miss detection of received MIDI messages  [Takashi Sakamoto]
+5d80974  ALSA: seq: fix incorrect order of dest_client/dest_ports arguments  [Colin Ian King]
+a7255ac  crypto: user - prevent operating on larval algorithms  [Eric Biggers]
+5b75d57  ptrace: Fix ->ptracer_cred handling for PTRACE_TRACEME  [Jann Horn]
+9ca0ab5  MIPS: Workaround GCC __builtin_unreachable reordering bug  [Paul Burton]
+633daf9  drm/i915/dmc: protect against reading random memory  [Lucas De Marchi]
+97139c8  KVM: x86: degrade WARN to pr_warn_ratelimited  [Paolo Bonzini]
+d084b5e  clk: sunxi: fix uninitialized access  [Arnd Bergmann]
+97d0866  ARC: handle gcc generated __builtin_trap for older compiler  [Vineet Gupta]
+eb06e3c  bug.h: work around GCC PR82365 in BUG()  [Arnd Bergmann]
+31c60bc  ARC: fix allnoconfig build warning  [Vineet Gupta]
+8464219  mfd: omap-usb-tll: Fix register offsets  [Arnd Bergmann]
+07d33bd  MIPS: netlogic: xlr: Remove erroneous check in nlm_fmn_send()  [Paul Burton]
+27de9cf  MIPS: math-emu: do not use bools for arithmetic  [Manuel Lauss]
+51e8fc9  mm/mlock.c: change count_mm_mlocked_page_nr return type  [swkhack]
+72fd61e  scripts/decode_stacktrace.sh: prefix addr2line with $CROSS_COMPILE  [Manuel Traut]
+6684b4c  scsi: hpsa: correct ioaccel2 chaining  [Don Brace]
+fb60307  usb: gadget: udc: lpc32xx: allocate descriptor with GFP_ATOMIC  [Alexandre Belloni]
+70b8e37  usb: gadget: fusb300_udc: Fix memory leak of fusb300->ep[i]  [Young Xiao]
+2e8e036  ASoC: max98090: remove 24-bit format support if RJ is 0  [Yu-Hsuan Hsu]
+25cdb73  drm/mediatek: fix unbind functions  [Hsin-Yi Wang]
+991efd2  spi: bitbang: Fix NULL pointer dereference in spi_unregister_master  [YueHaibing]
+7661d12  ASoC: soc-pcm: BE dai needs prepare when pause release after resume  [Libin Yang]
+e5eec44  ASoC : cs4265 : readable register too low  [Matt Flax]
+61de773  Bluetooth: Fix faulty expression for minimum encryption key size check  [Matias Karhumaa]
+f366c03  tipc: pass tunnel dev as NULL to udp_tunnel(6)_xmit_skb  [Xin Long]
+be4ecab  bpf: udp: ipv6: Avoid running reuseport's bpf_prog from __udp6_lib_err  [Martin KaFai Lau]
+e995766  bpf: udp: Avoid calling reuseport's bpf_prog from udp_gro  [Martin KaFai Lau]
+148bc50  net: check before dereferencing netdev_ops during busy poll  [Josh Elsasser]
+469b310  ipv4: Use return value of inet_iif() for __raw_v4_lookup in the while loop  [Stephen Suryaputra]
+fc8f2ee  bonding: Always enable vlan tx offload  [YueHaibing]
+8de2651  team: Always enable vlan tx offload  [YueHaibing]
+ffe11ba  tun: wake up waitqueues after IFF_UP is set  [Fei Li]
+d4ad85d  tipc: check msg->req data len in tipc_nl_compat_bearer_disable  [Xin Long]
+87ac491  tipc: change to use register_pernet_device  [Xin Long]
+f55abf93  sctp: change to hold sk after auth shkey is created successfully  [Xin Long]
+04f8b78  net: stmmac: fixed new system time seconds value calculation  [Roland Hii]
+023cee3  af_packet: Block execution of tasks waiting for transmit to complete in AF_PACKET  [Neil Horman]
+a5ce93c  cpu/speculation: Warn on unsupported mitigations= parameter  [Geert Uytterhoeven]
+d805fc0  NFS/flexfiles: Use the correct TCP timeout for flexfiles I/O  [Trond Myklebust]
+61e6373  x86/speculation: Allow guests to use SSBD even if host does not  [Alejandro Jimenez]
+c08161c  scsi: vmw_pscsi: Fix use-after-free in pvscsi_queue_lck()  [Jan Kara]
+bc40cd5  mm/page_idle.c: fix oops because end_pfn is larger than max_pfn  [Colin Ian King]
+3b504d5  fs/binfmt_flat.c: make load_flat_shared_library() work  [Jann Horn]
+8236027  fs/proc/array.c: allow reporting eip/esp for all coredumping threads  [John Ogness]
+a48248d  net/9p: include trans_common.h to fix missing prototype warning.  [Adeodato Simó]
+e991403  9p: p9dirent_read: check network-provided name length  [Dominique Martinet]
+a352b28  9p/rdma: remove useless check in cm_event_handler  [Dominique Martinet]
+085e4c5  9p: acl: fix uninitialized iattr access  [Dominique Martinet]
+42e7b3b  9p/rdma: do not disconnect on down_interruptible EAGAIN  [Dominique Martinet]
+a876754  perf header: Fix unchecked usage of strncpy()  [Arnaldo Carvalho de Melo]
+7a99c02  perf help: Remove needless use of strncpy()  [Arnaldo Carvalho de Melo]
+587d208  perf ui helpline: Use strlcpy() as a shorter form of strncpy() + explicit set nul  [Arnaldo Carvalho de Melo]
+75f5204  IB/hfi1: Avoid hardlockup with flushlist_lock  [Mike Marciniszyn]
+ec7621a  mac80211: Do not use stack memory with scatterlist for GMAC  [Jouni Malinen]
+ebb0322  mac80211: drop robust management frames from unknown TA  [Johannes Berg]
+5b654b7  cfg80211: fix memory leak of wiphy device name  [Eric Biggers]
+417e08f  Bluetooth: Fix regression with minimum encryption key size alignment  [Marcel Holtmann]
+9e4eb5a  Bluetooth: Align minimum encryption key size for LE and BR/EDR connections  [Marcel Holtmann]
+091a6db  ARM: imx: cpuidle-imx6sx: Restrict the SW2ISO increase to i.MX6SX  [Fabio Estevam]
+c209860  powerpc/bpf: use unsigned division instruction for 64-bit operations  [Naveen N. Rao]
+2be5eff  can: purge socket error queue on sock destruct  [Willem de Bruijn]
+4df920c  can: flexcan: fix timeout when set small bitrate  [Joakim Zhang]
+a373a6d  btrfs: start readahead also in seed devices  [Naohiro Aota]
+b279979  nvme: Fix u32 overflow in the number of namespace list calculation  [Jaesoo Lee]
+29724e9  hwmon: (pmbus/core) Treat parameters as paged if on multiple pages  [Robert Hancock]
+5e6f26b  s390/qeth: fix VLAN attribute in bridge_hostnotify udev event  [Alexandra Winter]
+1079e02  scsi: ufs: Check that space was properly alloced in copy_query_response  [Avri Altman]
+63efed1  scripts/checkstack.pl: Fix arm64 wrong or unknown architecture  [George G. Davis]
+4fec682  drm/arm/hdlcd: Allow a bit of clock tolerance  [Robin Murphy]
+f35b40b  net: ethernet: mediatek: Use NET_IP_ALIGN to judge if HW RX_2BYTE_OFFSET is enabled  [Sean Wang]
+1c6166c  net: ethernet: mediatek: Use hw_feature to judge if HWLRO is supported  [Sean Wang]
+9826734  sparc: perf: fix updated event period in response to PERF_EVENT_IOC_PERIOD  [Young Xiao]
+a1efac1  net: hns: Fix loopback test failed at copper ports  [Yonglong Liu]
+9153cb4  net: dsa: mv88e6xxx: avoid error message on remove from VLAN 0  [Nikita Yushchenko]
+0123028  MIPS: uprobes: remove set but not used variable 'epc'  [YueHaibing]
+f9d0e4d  IB/{qib, hfi1, rdmavt}: Correct ibv_devinfo max_mr value  [Mike Marciniszyn]
+819a29c  IB/hfi1: Insure freeze_work work_struct is canceled on shutdown  [Mike Marciniszyn]
+8ecd460  IB/rdmavt: Fix alloc_qpn() WARN_ON()  [Mike Marciniszyn]
+c69a31e  parisc: Fix compiler warnings in float emulation code  [Helge Deller]
+c3e2f83  parport: Fix mem leak in parport_register_dev_model  [YueHaibing]
+dd7ef94  ARC: fix build warnings with !CONFIG_KPROBES  [Vineet Gupta]
+bee1915  apparmor: enforce nullbyte at end of tag string  [Jann Horn]
+363eeb6  Input: uinput - add compat ioctl number translation for UI_*_FF_UPLOAD  [Andrey Smirnov]
+8abbd37  IB/hfi1: Silence txreq allocation warnings  [Mike Marciniszyn]
+9d649cc  usb: chipidea: udc: workaround for endpoint conflict issue  [Peter Chen]
+a2c911e  scsi: ufs: Avoid runtime suspend possibly being blocked forever  [Stanley Chu]
+fc4f0d4  gcc-9: silence 'address-of-packed-member' warning  [Linus Torvalds]
+de8585a  tracing: Silence GCC 9 array bounds warning  [Miguel Ojeda]
+
+ * libcore
+5f6797c  Remove a superfluous array copy from several String ctors  [Pete Gillin]
+e768383  libcore: Remove DropBox and EventLogger  [Paul Duffin]
+
+ * packages/apps/SyberiaSettings
+a0babd6  GamingMode: Allow disable navigation gestures [2/2]  [DennySPB]
+
+ * packages/inputmethods/LatinIME
+3b27a15  Move LatinIME and its lib to /product  [Anton Hansson]
+c6d8317  Remove extend touchable region for AOSP keyboard  [lumark]
+
+ * system/core
+2dc5c30  lmkd: Prevent non-main threads being registered or killed by lmkd  [Suren Baghdasaryan]
+
+ * system/vold
+158b09d  Fix mount error caused by FULL mode bypassed by remountUid  [Zeng Huipeng]
+3c2d2e4  idle-maint: don't need to change discard_granularity  [Jaegeuk Kim]
+4c29376  vold: Introduce android::vold::writeStringToFile  [Tommy Chiu]
+825c1ec  Fix double close in GetTreeBytes  [Josh Gao]
+576dadd  fix wrong ioctl direction for F2FS_IOC_GET_PIN_FILE  [Jaegeuk Kim]
 
  * vendor/syberia
-aad22a9  team: add Lenovo Zuk Z2 Plus to official builds  [blinoff82]
+dba0ae2  vendor: Add hide notch support [1/2]  [Henrique Silva]
+
+====================
+     2019-07-10    
+====================
+
+ * frameworks/base
+0153911  GamingMode: Long press tile to open settings [1/2]  [Pranav Vashi]
+d58639d  Add Gaming mode tile  [Pranav Vashi]
+6312440  GamingMode: Exempt calls and alarms when headsup disabled  [Pranav Vashi]
+e35795c  Stop using deprecated Canvas APIs.  [Derek Sollenberger]
+a2b1202  Remove isBandwidthControlEnabled.  [Lorenzo Colitti]
+
+ * hardware/qcom/power
+2846b24  qcom: power: Stop log spam "QCOM PowerHAL: Failed to acquire lock"  [pavlaras]
+
+ * packages/apps/Settings
+90fd4f5  GamingMode: Long press tile to open settings [2/2]  [Pranav Vashi]
+
+====================
+     2019-07-09    
+====================
+
+ * prebuilts/clang/host/linux-x86
+cbeb854  Merge pull request #1 from SOVIET-ANDROID/9.0  [DennySPb]
+d5c9ccc  Update prebuilt Clang to r353983e.  [Stephen Hines]
+
+====================
+     2019-07-08    
+====================
+
+====================
+     2019-07-07    
+====================
+
+ * hardware/qcom/fm
+647ae02  Automatic translation import  [Michael Bestas]
+
+ * packages/apps/Nfc
+1f50db5  NfcNci: make T3T/Nfc-F HCE optional  [Simon Shields]
 
