@@ -1,117 +1,120 @@
 ====================
-     2019-07-06    
+     2019-07-13    
 ====================
 
  * frameworks/base
-9bdaff5  FOD: fixes and improvements  [Marko Man]
-df2e482  FODCircleView: calculate proper dimming amount  [PeterCxy]
-
-====================
-     2019-07-05    
-====================
-
- * device/syberia/sepolicy
-da01a21  sepolicy: Dontaudit sysinit  [Jan Altensen]
-
- * frameworks/base
-cc95d1c  Merge "libs: hwui: Enable perf mode and disable pgo" into 9.0  [dennyspb]
-48a6e70  SystemUI: optimize content observers in StatusBar  [DennySPB]
-63998d9  base: Q seekbar: make the seekbar transparent for non-seekable notifs  [ElDainosor]
-5354954  Add toggle for charging animation [1/2]  [Pranav Vashi]
-6573626  SystemUI: Protect against terrible music players  [Harsh Shandilya]
-fc6c3d4  Merge changes Ic2a484d2,I96415659,Ia72d2476 into 9.0  [dennyspb]
-6a26935  SystemUI: Adjust battery and location icon size  [Anushek Prasal]
-ac0b3cb  Frameworks: Slightly refactor Parcel code  [Andreas Gampe]
-d35e0e7  Stable seek bar positioning  [Sergey]
-2767143  Ambient play: Fix padding on some densities  [Henrique Silva]
-a72d45a  libs: hwui: Enable perf mode and disable pgo  [mydongistiny]
-
- * packages/apps/Settings
-b3c033b  Merge "Add SyberiaSettings to Search" into 9.0  [dennyspb]
-7e3c7c5  Add SyberiaSettings to Search  [xyyx]
-
- * packages/apps/SyberiaSettings
-9207dfd  SyberiaSettings: Add to Search  [xyyx]
-32f5ebb  Add toggle for charging animation [2/2]  [Pranav Vashi]
-
- * vendor/syberia
-39ab74b  Merge changes I5b1a24ae,Icbb7f84b into 9.0  [dennyspb]
-c54306e  Merge "v2.7" into 9.0  [dennyspb]
-0a5e706  vendor: fonts: Add Source Sans Pro from Android Q  [Joey Huab]
-d8495d5  Fonts: Add Alegreya SansSC and NokiaPure  [Gaurav Singh]
-51b5c40  v2.7  [DennySPB]
-
-====================
-     2019-07-04    
-====================
-
- * frameworks/base
-e64b3c7  Support for alternative device specific key handlers  [Bruno Martins]
-
- * packages/apps/SyberiaSettings
-131df9a  SyberiaSettings: system settings reworking  [blinoff82]
-
-====================
-     2019-07-03    
-====================
-
- * build/make
-708dea8  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/build into HEAD  [DennySPB]
-
- * frameworks/av
-68329c4  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPB]
-
- * frameworks/base
-e26d7a4  GamingMode: Clean up and refine [1/2]  [Pranav Vashi]
-d833860  Fix NPE in destroyUiAutomationService function  [hangl]
-68b40bd  wifi: Filter unsupported networks from scan results  [Veerendranath Jakkam]
-59c202d  Wifi: Connect indication on UI for STA when AP supports SAE+PSK  [Anurag Das]
-58db154  Wifi: Update accesspoint to cater to add network option from GUI  [Anurag Das]
-fb3c826  Wifi: Check for SAE/OWE AKM prior to PSK  [Anurag Das]
-a6cf564  perfLock: Enable ActivityBoost  [yanglv]
-c224404  Prevent crash in TTS engine due to improper configuration  [Pranav Vashi]
-185b607  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPB]
-
- * frameworks/native
-5c0508c  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPB]
+7dafc57  FODCircleView: support all screen orientations  [Peter Cai]
+b5e8a3c  fod: run async task for setting brightness  [Marko Man]
+516fa77  FODCircleView: read from system props  [Peter Cai]
+a7ffe01  Merge "Improve performance of unclipped save layers." into 9.0  [dennyspb]
 
  * frameworks/opt/net/wifi
-ac4275a  Prevent scan searching overhead  [Sticky Chen]
-562ee95  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/opt/net/wifi  [DennySPB]
+bfbb76b  CountryCode: Use hack for all regions.  [xyyx]
 
- * system/bt
-58ea68b  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
-
- * system/netd
-feba124  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/system/netd  [DennySPB]
-
- * system/security
-e4f975e  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/system/security into HEAD  [DennySPB]
+ * system/sepolicy
+d5421ce  Address some theme_data_file denials  [DennySPB]
 
 ====================
-     2019-07-02    
+     2019-07-12    
 ====================
+
+ * external/skia
+2ae28b8  Add private save-behind and draw-behind methods to canvas.  [Derek Sollenberger]
+
+ * frameworks/base
+823b65e  Merge changes I84dfb11f,I3bd86832,Ie7d15918,Iaa9413bf,I36d05835, ... into 9.0  [dennyspb]
+582f775  GamingMode: allow disable navigation gestures [1/2]  [DennySPB]
+538d263  Aggressive Battery: Improve value substitution  [Joe Maples]
+ac991ae  Improve performance of unclipped save layers.  [Derek Sollenberger]
+
+ * packages/apps/Settings
+1ebf020  Merge "GamingMode: Long press tile to open settings [2/2]" into 9.0  [dennyspb]
+f6880b0  Stop calling isBandwidthControlEnabled.  [Lorenzo Colitti]
+5eeb874  Merge "BatteryUtils: Show anomalies of pre-O apps" into 9.0  [dennyspb]
 
  * packages/apps/SyberiaSettings
-69efa71  GameMode: remove hwkeys toggle on non-hwkeys devices  [Lup Gabriel]
-bb9a75a  GamingMode: Clean up and refine [2/2]  [Pranav Vashi]
+743e823  GamingMode: Disable modifying settings when GamingMode is turned on  [Pranav Vashi]
 
 ====================
-     2019-07-01    
+     2019-07-11    
+====================
+
+ * frameworks/base
+85289a8  fwb: Add hide notch support [1/2]  [Henrique Silva]
+ba5eda0  Partialy revert "[1/2] services: allow to force "never" mode for display cutout"  [DennySPB]
+9fc3620  SystemUI: QS: Add VPN tile  [Danny Baumann]
+6ddd22e  frameworks/base: Avoid recording negative data  [Pavan Kumar M]
+9a0263c  Use the boot class loader as parent of system server loader  [Nicolas Geoffray]
+d5f9169  Remove uses of libcore.io DropBox and EventLogger  [Paul Duffin]
+e9c498b  telephony: Fixed crash in data service  [Jack Yu]
+6e5d593  Optimize the font cache size according to display resolution  [Libo Jin]
+6911648  Fix handlelr thread block while switching bluetooth  [Kou Lei]
+b5f866a  Fix NullPointerException in ConnectivityService  [soma, kawata]
+c2c76fe  idle-maint: provide a way to run GC more aggressively  [Jaegeuk Kim]
+
+ * libcore
+5f6797c  Remove a superfluous array copy from several String ctors  [Pete Gillin]
+e768383  libcore: Remove DropBox and EventLogger  [Paul Duffin]
+
+ * packages/apps/SyberiaSettings
+a0babd6  GamingMode: Allow disable navigation gestures [2/2]  [DennySPB]
+
+ * packages/inputmethods/LatinIME
+3b27a15  Move LatinIME and its lib to /product  [Anton Hansson]
+c6d8317  Remove extend touchable region for AOSP keyboard  [lumark]
+
+ * system/core
+2dc5c30  lmkd: Prevent non-main threads being registered or killed by lmkd  [Suren Baghdasaryan]
+
+ * system/vold
+158b09d  Fix mount error caused by FULL mode bypassed by remountUid  [Zeng Huipeng]
+3c2d2e4  idle-maint: don't need to change discard_granularity  [Jaegeuk Kim]
+4c29376  vold: Introduce android::vold::writeStringToFile  [Tommy Chiu]
+825c1ec  Fix double close in GetTreeBytes  [Josh Gao]
+576dadd  fix wrong ioctl direction for F2FS_IOC_GET_PIN_FILE  [Jaegeuk Kim]
+
+ * vendor/syberia
+dba0ae2  vendor: Add hide notch support [1/2]  [Henrique Silva]
+
+====================
+     2019-07-10    
+====================
+
+ * frameworks/base
+0153911  GamingMode: Long press tile to open settings [1/2]  [Pranav Vashi]
+d58639d  Add Gaming mode tile  [Pranav Vashi]
+6312440  GamingMode: Exempt calls and alarms when headsup disabled  [Pranav Vashi]
+e35795c  Stop using deprecated Canvas APIs.  [Derek Sollenberger]
+a2b1202  Remove isBandwidthControlEnabled.  [Lorenzo Colitti]
+
+ * hardware/qcom/power
+2846b24  qcom: power: Stop log spam "QCOM PowerHAL: Failed to acquire lock"  [pavlaras]
+
+ * packages/apps/Settings
+90fd4f5  GamingMode: Long press tile to open settings [2/2]  [Pranav Vashi]
+
+====================
+     2019-07-09    
+====================
+
+ * prebuilts/clang/host/linux-x86
+cbeb854  Merge pull request #1 from SOVIET-ANDROID/9.0  [DennySPb]
+d5c9ccc  Update prebuilt Clang to r353983e.  [Stephen Hines]
+
+====================
+     2019-07-08    
 ====================
 
  * device/zuk/z2_plus
-751afd0  Revert "bootdevice: replace bootdevice symlink with actual block device"  [prometheusXderpgang]
+8775c18  Zuk: Update Bootanimation Resolution  [prometheusXderpgang]
 
 ====================
-     2019-06-30    
+     2019-07-07    
 ====================
 
- * device/zuk/z2_plus
-2e3d66e  Zuk: dependencies: Add Clang and Gcc in dependencies  [prometheusXderpgang]
-730834e  bootdevice: replace bootdevice symlink with actual block device  [Sandeep Patil]
-db06816  Import gpt-utils from Marlin  [xyyx]
-b5fab6f  Zuk: Add syberia.dependencies  [prometheusXderpgang]
-7a10480  Zuk: Go Official  [prometheusXderpgang]
-084708d  Zuk: BoardConfig: Update Clang Paths  [prometheusXderpgang]
+ * hardware/qcom/fm
+647ae02  Automatic translation import  [Michael Bestas]
+
+ * packages/apps/Nfc
+1f50db5  NfcNci: make T3T/Nfc-F HCE optional  [Simon Shields]
 
