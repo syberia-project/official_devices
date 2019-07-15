@@ -1,0 +1,30 @@
+{
+  "addons": [
+    {
+      "title": "Magisk",
+      "summary": "Magisk",
+      "url": "\"http://tiny.cc/latestmagisk"
+    },
+    {
+      "title": "Magisk",
+      "summary": "Magisk Uninstaller",
+      "url": "http://tiny.cc/latestuninstaller"
+    }
+  ],
+  "filename": "syberia_X00T-v2.7-20190711-0823-OFFICIAL.zip",
+  "changelog": "",
+  "filesize": "632017131",
+  "md5": "ca0e4083f019bc3c697e362ad7399fc9",
+  "build_date": "20190711",
+  "device": "X00T",
+  "url": "https://sourceforge.net/projects/syberiaos/files/x00t/syberia_X00T-v2.7-20190711-0823-OFFICIAL.zip/download",
+  "donate_url": "https://syberiaos.com/links",
+  "developer_url": "http://github.com/syberia-project",
+  "news_url": "http://github.com/syberia-project",
+  "developer": "Kanishk",
+  "error": "false",
+  "website_url": "http://syberiaos.com",
+  "forum_url": "https://forum.xda-developers.com/asus-zenfone-max-pro-m1/development/rom-syberia-project-t3947572",
+  "device_brand": "Asus",
+  "device_model": "ZenFone Max Pro M1"
+}
