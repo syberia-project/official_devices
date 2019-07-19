@@ -1,7 +1,73 @@
+Attention! Attention! Attention!
+Due to the fact that the device tree was changed to a stable branch, a clean flash is strictly necessary! 
+You can download ROM in this update menu, but the installation should be carried out manually with all wipes: data, cache, dalvik!
+
+Changelog:
+
 ====================
-     2019-07-11    
+     2019-07-17    
 ====================
 
-* Initail Build.
-* Built using Travarilo tree and Kernel, so thanks to him.
-* Enforcing build.
+ * device/asus/X00T
+e551d1e  X00T: Update Build Fingerprint from crosshatch PQ3A.190705.003  [prometheusXderpgang]
+1d21658  X00T: enable channel bonding for 2.4GHz WiFi  [SyberHexen]
+18ac92c  X00T: Adapt for Syberia  [prometheusXderpgang]
+5b75142  X00T: overlay: Enable smart charging  [blinoff82]
+
+====================
+     2019-07-16    
+====================
+
+ * device/asus/X00T
+b7af41a  X00T: Use MIUI poweroff charging animation  [Bruno Martins]
+2a65c3f  X00T: Fix device name not showing up in About phone section  [prometheusXderpgang]
+
+====================
+     2019-07-15    
+====================
+
+ * device/asus/X00T
+4846b0d  X00T: Update Audio With Prebuilt  [varunhardgamer]
+d15f2ed  X00T: Update some overlays  [varunhardgamer]
+d4510f0  X00T: update dependencies  [prometheusXderpgang]
+
+ * vendor/asus
+810e85d  X00T: Add Prebuilt Audio Hal  [varunhardgamer]
+
+====================
+     2019-07-14    
+====================
+
+ * hardware/qcom/data/ipacfg-mgr
+7367dc7  Merge remote-tracking branch 'aosp/pie-gsi' into lineage-16.0-pie-gsi  [Luca Stefani]
+
+ * hardware/qcom/gps
+a62882c  Merge remote-tracking branch 'aosp/pie-gsi' into lineage-16.0-pie-gsi  [Luca Stefani]
+
+ * packages/apps/Settings
+800d8b2  Merge "team: add Asus ZenFone Max Pro M1 to official builds" into 9.0  [blinov.in]
+
+ * vendor/syberia
+9a1a189  team: add Asus ZenFone Max Pro M1 to official builds  [blinoff82]
+
+====================
+     2019-07-13    
+====================
+
+ * device/asus/X00T
+9170ece  X00T: add back missing widevine blobs  [SagarMakhar]
+452d6cd  X00T: Overlay: Don't Use Outdated Qti telephony  [prometheusXderpgang]
+22a9829  X00T: Fix RIL  [prometheusXderpgang]
+
+ * frameworks/base
+7dafc57  FODCircleView: support all screen orientations  [Peter Cai]
+b5e8a3c  fod: run async task for setting brightness  [Marko Man]
+516fa77  FODCircleView: read from system props  [Peter Cai]
+a7ffe01  Merge "Improve performance of unclipped save layers." into 9.0  [dennyspb]
+
+ * frameworks/opt/net/wifi
+bfbb76b  CountryCode: Use hack for all regions.  [xyyx]
+
+ * system/sepolicy
+d5421ce  Address some theme_data_file denials  [DennySPB]
+
