@@ -11,13 +11,13 @@
       "url": "http://tiny.cc/latestuninstaller"
     }
   ],
-  "filename": "syberia_land-v2.7-20190713-0043-OFFICIAL.zip",
+  "filename": "syberia_land-v2.7-20190719-1643-OFFICIAL.zip",
   "changelog": "",
-  "filesize": "572625050",
-  "md5": "47c1f22ef8e84484b896aa6f1b2eb076",
-  "build_date": "20190713",
+  "filesize": "572317545",
+  "md5": "b3e882b7c3bea28a102a409bdf216f27",
+  "build_date": "20190719",
   "device": "land",
-  "url": "https://sourceforge.net/projects/syberiaos/files/land/syberia_land-v2.7-20190713-0043-OFFICIAL.zip/download",
+  "url": "https://sourceforge.net/projects/syberiaos/files/land/syberia_land-v2.7-20190719-1643-OFFICIAL.zip/download",
   "donate_url": "https://syberiaos.com/links",
   "developer_url": "http://github.com/syberia-project",
   "news_url": "http://github.com/syberia-project",
