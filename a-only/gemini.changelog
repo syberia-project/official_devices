@@ -1,117 +1,81 @@
 ====================
+     2019-07-19    
+====================
+
+ * frameworks/base
+42901ab  Launch music player on headset connect: add BT compatibility [1/2]  [ezio84]
+8c2351d  Bluetooth: Unregister BLE APPs when mBluetoothGatt valid only  [Venkata Jagadeesh Garaga]
+cc1cf3d  Merge "Move DexLoadReporter setup before AppComponentFactory calls" into 9.0  [blinov.in]
+ef4cde5  Merge "QS tiles: Update icons from Android Q" into 9.0  [blinov.in]
+
+ * packages/apps/Settings
+85167aa  Open app when clicking on icon in App Info  [deadman96385]
+
+ * packages/apps/SyberiaSettings
+10cbfff  Launch music player on headset connect: add BT compatibility [2/2]  [ezio84]
+
+====================
+     2019-07-18    
+====================
+
+====================
+     2019-07-17    
+====================
+
+ * frameworks/base
+3f6afbc  Move DexLoadReporter setup before AppComponentFactory calls  [David Brazdil]
+
+====================
+     2019-07-16    
+====================
+
+ * frameworks/av
+30e9e36  Camera: Consider the currently acquired input buffers  [Emilian Peev]
+
+ * frameworks/base
+3615a14  QS tiles: Update icons from Android Q  [Stallix]
+
+ * system/bt
+b6bc7c9  GAP: Correct the continuous pkt length in l2cap  [Venkata Jagadeesh Garaga]
+
+ * system/sepolicy
+c0fe63b  A2dp sink SHO: Add bluetooth support to access mediametrics service  [haoll]
+
+====================
+     2019-07-15    
+====================
+
+ * external/sqlite
+72a3832  sqlite: upgrade to SQLite 3.29.0  [mydongistiny]
+
+ * packages/apps/Settings
+f49f16f  Settings: update ru translation  [blinoff82]
+2d062f9  team: beryllium is out  [blinoff82]
+
+====================
+     2019-07-14    
+====================
+
+ * hardware/qcom/data/ipacfg-mgr
+7367dc7  Merge remote-tracking branch 'aosp/pie-gsi' into lineage-16.0-pie-gsi  [Luca Stefani]
+
+ * hardware/qcom/gps
+a62882c  Merge remote-tracking branch 'aosp/pie-gsi' into lineage-16.0-pie-gsi  [Luca Stefani]
+
+ * vendor/syberia
+9a1a189  team: add Asus ZenFone Max Pro M1 to official builds  [blinoff82]
+
+====================
      2019-07-13    
 ====================
 
  * frameworks/base
+c929aff  SystemUI: Fix SystemUI failed to go to doze issue  [Weijie Wang]
+11add3d  BoostFramework : Add an Update Hint on App update.  [Sai Manobhiram]
 7dafc57  FODCircleView: support all screen orientations  [Peter Cai]
 b5e8a3c  fod: run async task for setting brightness  [Marko Man]
 516fa77  FODCircleView: read from system props  [Peter Cai]
-a7ffe01  Merge "Improve performance of unclipped save layers." into 9.0  [dennyspb]
-
- * frameworks/opt/net/wifi
-bfbb76b  CountryCode: Use hack for all regions.  [xyyx]
-
- * system/sepolicy
-d5421ce  Address some theme_data_file denials  [DennySPB]
-
-====================
-     2019-07-12    
-====================
-
- * external/skia
-2ae28b8  Add private save-behind and draw-behind methods to canvas.  [Derek Sollenberger]
-
- * frameworks/base
-823b65e  Merge changes I84dfb11f,I3bd86832,Ie7d15918,Iaa9413bf,I36d05835, ... into 9.0  [dennyspb]
-582f775  GamingMode: allow disable navigation gestures [1/2]  [DennySPB]
-538d263  Aggressive Battery: Improve value substitution  [Joe Maples]
-ac991ae  Improve performance of unclipped save layers.  [Derek Sollenberger]
 
  * packages/apps/Settings
-1ebf020  Merge "GamingMode: Long press tile to open settings [2/2]" into 9.0  [dennyspb]
-f6880b0  Stop calling isBandwidthControlEnabled.  [Lorenzo Colitti]
-5eeb874  Merge "BatteryUtils: Show anomalies of pre-O apps" into 9.0  [dennyspb]
-
- * packages/apps/SyberiaSettings
-743e823  GamingMode: Disable modifying settings when GamingMode is turned on  [Pranav Vashi]
-
-====================
-     2019-07-11    
-====================
-
- * frameworks/base
-85289a8  fwb: Add hide notch support [1/2]  [Henrique Silva]
-ba5eda0  Partialy revert "[1/2] services: allow to force "never" mode for display cutout"  [DennySPB]
-9fc3620  SystemUI: QS: Add VPN tile  [Danny Baumann]
-6ddd22e  frameworks/base: Avoid recording negative data  [Pavan Kumar M]
-9a0263c  Use the boot class loader as parent of system server loader  [Nicolas Geoffray]
-d5f9169  Remove uses of libcore.io DropBox and EventLogger  [Paul Duffin]
-e9c498b  telephony: Fixed crash in data service  [Jack Yu]
-6e5d593  Optimize the font cache size according to display resolution  [Libo Jin]
-6911648  Fix handlelr thread block while switching bluetooth  [Kou Lei]
-b5f866a  Fix NullPointerException in ConnectivityService  [soma, kawata]
-c2c76fe  idle-maint: provide a way to run GC more aggressively  [Jaegeuk Kim]
-
- * libcore
-5f6797c  Remove a superfluous array copy from several String ctors  [Pete Gillin]
-e768383  libcore: Remove DropBox and EventLogger  [Paul Duffin]
-
- * packages/apps/SyberiaSettings
-a0babd6  GamingMode: Allow disable navigation gestures [2/2]  [DennySPB]
-
- * packages/inputmethods/LatinIME
-3b27a15  Move LatinIME and its lib to /product  [Anton Hansson]
-c6d8317  Remove extend touchable region for AOSP keyboard  [lumark]
-
- * system/core
-2dc5c30  lmkd: Prevent non-main threads being registered or killed by lmkd  [Suren Baghdasaryan]
-
- * system/vold
-158b09d  Fix mount error caused by FULL mode bypassed by remountUid  [Zeng Huipeng]
-3c2d2e4  idle-maint: don't need to change discard_granularity  [Jaegeuk Kim]
-4c29376  vold: Introduce android::vold::writeStringToFile  [Tommy Chiu]
-825c1ec  Fix double close in GetTreeBytes  [Josh Gao]
-576dadd  fix wrong ioctl direction for F2FS_IOC_GET_PIN_FILE  [Jaegeuk Kim]
-
- * vendor/syberia
-dba0ae2  vendor: Add hide notch support [1/2]  [Henrique Silva]
-
-====================
-     2019-07-10    
-====================
-
- * frameworks/base
-0153911  GamingMode: Long press tile to open settings [1/2]  [Pranav Vashi]
-d58639d  Add Gaming mode tile  [Pranav Vashi]
-6312440  GamingMode: Exempt calls and alarms when headsup disabled  [Pranav Vashi]
-e35795c  Stop using deprecated Canvas APIs.  [Derek Sollenberger]
-a2b1202  Remove isBandwidthControlEnabled.  [Lorenzo Colitti]
-
- * hardware/qcom/power
-2846b24  qcom: power: Stop log spam "QCOM PowerHAL: Failed to acquire lock"  [pavlaras]
-
- * packages/apps/Settings
-90fd4f5  GamingMode: Long press tile to open settings [2/2]  [Pranav Vashi]
-
-====================
-     2019-07-09    
-====================
-
- * prebuilts/clang/host/linux-x86
-cbeb854  Merge pull request #1 from SOVIET-ANDROID/9.0  [DennySPb]
-d5c9ccc  Update prebuilt Clang to r353983e.  [Stephen Hines]
-
-====================
-     2019-07-08    
-====================
-
-====================
-     2019-07-07    
-====================
-
- * hardware/qcom/fm
-647ae02  Automatic translation import  [Michael Bestas]
-
- * packages/apps/Nfc
-1f50db5  NfcNci: make T3T/Nfc-F HCE optional  [Simon Shields]
+800d8b2  Merge "team: add Asus ZenFone Max Pro M1 to official builds" into 9.0  [blinov.in]
 
