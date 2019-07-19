@@ -1,4 +1,125 @@
 ====================
+     2019-07-19    
+====================
+
+====================
+     2019-07-18    
+====================
+
+ * frameworks/base
+42901ab  Launch music player on headset connect: add BT compatibility [1/2]  [ezio84]
+8c2351d  Bluetooth: Unregister BLE APPs when mBluetoothGatt valid only  [Venkata Jagadeesh Garaga]
+cc1cf3d  Merge "Move DexLoadReporter setup before AppComponentFactory calls" into 9.0  [blinov.in]
+ef4cde5  Merge "QS tiles: Update icons from Android Q" into 9.0  [blinov.in]
+
+ * kernel/xiaomi/sdm660
+487d071  Revert "sched/fair: vruntime should normalize when switching from fair"  [ktommy91]
+ed84ac4  Merge tag 'LA.UM.7.5.2.r1-03300-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.4 into kernel.lnx.4.4.r37-rel  [ktommy91]
+ea054f4  Revert "alarmtimers: Don't fail on wakeup"  [ktommy91]
+979aee4  defconfig: 300Hz  [ktommy91]
+90c2b31  msm: kgsl: Add missing check for snapshot IB dump  [Rajesh Kemisetti]
+9284ac5  msm: kgsl: Fix drawqueue timer race condition  [Harshdeep Dhatt]
+387c1da  msm: kgsl: Omit referencing pointers in traces  [Harshdeep Dhatt]
+389ec94  dma_buf: try to use kmem_cache pool for dmabuf allocations  [Park Ju Hyung]
+a71b4b6  dma_buf: use kmem_cache pool for struct dma_buf_attachment  [Park Ju Hyung]
+71d5062  ipa: Avoid dynamic memory allocation for small transfer buffers  [Park Ju Hyung]
+46b3789  quota_tree: Avoid dynamic memory allocations  [Park Ju Hyung]
+1dc0bf3  dcache: increase DNAME_INLINE_LEN  [Park Ju Hyung]
+ebc0a6e  msm: kgsl: use kmem_cache pool for draw objects  [Park Ju Hyung]
+3b21f61  glink: use kmem_cache pool for struct read_work  [Park Ju Hyung]
+0b5fa7c  glink: use kmem_cache pool for struct deferred_cmd  [Park Ju Hyung]
+4e10db6  glink: use kmem_cache pool for rx/tx  [Park Ju Hyung]
+79ab651  kernfs: use kmem_cache pool for struct kernfs_open_node/file  [Park Ju Hyung]
+669e30f  sdcardfs: use kmem_cache pool for struct sdcardfs_file_info  [Park Ju Hyung]
+0e706bd  cgroup: use kmem_cache pool for struct css_set  [Park Ju Hyung]
+859a6b8  ipc_router: use kmem_cache pool for packets  [Park Ju Hyung]
+1225e0a  seq_file: use kmem_cache pool for single_open() and single_close()  [Park Ju Hyung]
+c62dd78  async: use kmem_cache pool for struct async_entry  [Park Ju Hyung]
+e5722bd  cgroup: use kmem_cache pool for struct cgrp_cset_link  [Park Ju Hyung]
+35b313f  seq_file: allocate seq_file from kmem_cache  [Alexey Dobriyan]
+22d6f7d  selinux: reduce calls to context_struct_to_string()  [Park Ju Hyung]
+c425052  adreno: disable snapshot, coresight and trace  [Park Ju Hyung]
+2d20eb3  sched: Use capacity_orig_of instead of capacity_of in overutilized function  [Satya Durga Srinivasu Prabhala]
+ed83e24  sched/fair: vruntime should normalize when switching from fair  [John Dias]
+f03342f  sched/fair: Make tick path active migration more robust  [Pavankumar Kondeti]
+da7de08  ANDROID: crypto: heh - Avoid dynamically allocating memory for keys  [Sultan Alsawaf]
+34e7ca1  ALSA: control_compat: Don't dynamically allocate single-use structs  [Sultan Alsawaf]
+bd93cd4  scatterlist: Use vmalloc instead of chaining  [Sultan Alsawaf]
+3860f01  mbcache2: Speed up cache entry creation  [Sultan Alsawaf]
+4f4cdd1  ext4: Avoid dynamically allocating memory in ext4_ext_remove_space  [Sultan Alsawaf]
+6d52840  xattr: Avoid dynamically allocating memory in getxattr  [Sultan Alsawaf]
+d72df12  binfmt_elf: Don't allocate memory dynamically in load_elf_binary  [Sultan Alsawaf]
+e4941e9  Makefile: Force ARCH to be arm64  [Sultan Alsawaf]
+1d10e8a  msm: mdss: Don't allocate memory dynamically for destination scaler  [Sultan Alsawaf]
+1ac20a6  ext4 crypto: Avoid dynamically allocating memory for file names  [Sultan Alsawaf]
+bd7f019  ALSA: control: Don't dynamically allocate a single struct instance  [Sultan Alsawaf]
+b303559  msm: camera: Avoid dynamic memory allocation for small buffers  [Sultan Alsawaf]
+bdf911c  msm: kgsl: Don't allocate memory dynamically for temp command buffers  [Sultan Alsawaf]
+3b956c0  msm: mdss: Don't allocate memory dynamically for small layer buffers  [Sultan Alsawaf]
+f06022d  msm: kgsl: Don't allocate memory dynamically for drawobj sync structs  [Sultan Alsawaf]
+9c76491  msm: kgsl: Don't try to wait for fences that have been signaled  [Sultan Alsawaf]
+618a380  staging: sync: Add a function to check if a fence has been signaled  [Sultan Alsawaf]
+215a3de  ext4 crypto: Use a larger on-stack file name buffer  [Sultan Alsawaf]
+b4016f7  selinux: Avoid dynamic memory allocation for small context buffers  [Sultan Alsawaf]
+2ccaffd  kernfs: Avoid dynamic memory allocation for small write buffers  [Sultan Alsawaf]
+2c3a816  msm: kgsl: Avoid dynamically allocating small command buffers  [Sultan Alsawaf]
+4594ea4  alarmtimers: Don't fail on wakeup  [celtare21]
+
+ * packages/apps/Settings
+85167aa  Open app when clicking on icon in App Info  [deadman96385]
+
+ * packages/apps/SyberiaSettings
+10cbfff  Launch music player on headset connect: add BT compatibility [2/2]  [ezio84]
+
+====================
+     2019-07-17    
+====================
+
+ * frameworks/base
+3f6afbc  Move DexLoadReporter setup before AppComponentFactory calls  [David Brazdil]
+
+====================
+     2019-07-16    
+====================
+
+ * frameworks/base
+3615a14  QS tiles: Update icons from Android Q  [Stallix]
+
+ * kernel/xiaomi/sdm660
+83fb2d7  f2fs: always assume that the device is idle under gc_urgent  [Park Ju Hyung]
+87d2f6a  f2fs: don't wait with each discards under gc_urgent  [Park Ju Hyung]
+659116d  f2fs: use a more reasonable discard policy for high utilization  [Park Ju Hyung]
+393bb5c  f2fs: reduce timeout for uncongestion on f2fs_write_cache_pages()  [Park Ju Hyung]
+33fa02e  ANDROID: sched/fair: fix energy compute when a cluster is only a cpu core in multi-cluster system  [Samer Xie]
+9374231  sched/fair: Don't let tasks slip away from gold to silver cluster  [Pavankumar Kondeti]
+86605ea  FROMLIST: sched/fair: Don't move tasks to lower capacity cpus unless necessary  [Chris Redpath]
+4313ea2  ANDROID: sched/fair: Attempt to improve throughput for asym cap systems  [Chris Redpath]
+
+====================
+     2019-07-15    
+====================
+
+ * external/sqlite
+72a3832  sqlite: upgrade to SQLite 3.29.0  [mydongistiny]
+
+ * frameworks/av
+30e9e36  Camera: Consider the currently acquired input buffers  [Emilian Peev]
+
+ * packages/apps/Settings
+f49f16f  Settings: update ru translation  [blinoff82]
+2d062f9  team: beryllium is out  [blinoff82]
+
+ * system/bt
+b6bc7c9  GAP: Correct the continuous pkt length in l2cap  [Venkata Jagadeesh Garaga]
+
+ * system/sepolicy
+c0fe63b  A2dp sink SHO: Add bluetooth support to access mediametrics service  [haoll]
+
+====================
+     2019-07-14    
+====================
+
+====================
      2019-07-13    
 ====================
 
@@ -6,295 +127,18 @@
 1602a70  Upd deps  [rebenok90x]
 
  * frameworks/base
-7dafc57  FODCircleView: support all screen orientations  [Peter Cai]
-b5e8a3c  fod: run async task for setting brightness  [Marko Man]
-516fa77  FODCircleView: read from system props  [Peter Cai]
+c929aff  SystemUI: Fix SystemUI failed to go to doze issue  [Weijie Wang]
+11add3d  BoostFramework : Add an Update Hint on App update.  [Sai Manobhiram]
 
- * system/sepolicy
-d5421ce  Address some theme_data_file denials  [DennySPB]
+ * hardware/qcom/data/ipacfg-mgr
+7367dc7  Merge remote-tracking branch 'aosp/pie-gsi' into lineage-16.0-pie-gsi  [Luca Stefani]
 
-====================
-     2019-07-12    
-====================
-
- * frameworks/base
-a7ffe01  Merge "Improve performance of unclipped save layers." into 9.0  [dennyspb]
-823b65e  Merge changes I84dfb11f,I3bd86832,Ie7d15918,Iaa9413bf,I36d05835, ... into 9.0  [dennyspb]
-582f775  GamingMode: allow disable navigation gestures [1/2]  [DennySPB]
-538d263  Aggressive Battery: Improve value substitution  [Joe Maples]
-
- * frameworks/opt/net/wifi
-bfbb76b  CountryCode: Use hack for all regions.  [xyyx]
-
- * kernel/xiaomi/sdm660
-fe4a849  r4.6  [ktommy91]
-01dcf04  sdm660_cdc: prevent headphone gain change  [flar2]
-899d411  Optmize audio codec!! -> Better audio quality; -> Louder; -> Clean; -> Safe.  [LuizPauloDamaceno]
-fbae614  Incrase current to 165mA to update fidelity a little bit more  [electronicslover]
-45b7518  ASoC: wcd9xxx: Increase HPH bias current to improve fidelity  [nikhil18]
-923100e  dwc3-msm: Fix dwc3_drd_state_string for undefined state  [Vamsi Krishna Samavedam]
-52d8a68  usb: dwc3-msm: Ensure hardware is reset during role change  [Manu Gautam]
-d213917  usb: dwc3-msm: add enum for drd_states to remove otg_state usage  [Manu Gautam]
-01996b4  PM / core: Split dpm_suspend_noirq() and dpm_resume_noirq()  [Rafael J. Wysocki]
-3156888  PM / reboot: Eliminate race between reboot and suspend  [Pingfan Liu]
-93068f8  PM / sleep: Make lock/unlock_system_sleep() available to kernel modules  [Bart Van Assche]
-5f0388c  PM / wakeup: Make s2idle_lock a RAW_SPINLOCK  [Sebastian Andrzej Siewior]
-c462964  PM / s2idle: Make s2idle_wait_head swait based  [Sebastian Andrzej Siewior]
-91e306c  PM / suspend: Prevent might sleep splats  [Thomas Gleixner]
-c577986  PM / s2idle: Clear the events_check_enabled flag  [Rajat Jain]
-58004b3  PM / s2idle: Invoke the ->wake() platform callback earlier  [Rafael J. Wysocki]
-b89cb15  PM / suspend: Define pr_fmt() in suspend.c  [Rafael J. Wysocki]
-6810c37  PM / suspend: Use mem_sleep_labels[] strings in messages  [Rafael J. Wysocki]
-3d24e14  PM / sleep: Check pm_wakeup_pending() in __device_suspend_noirq()  [Rafael J. Wysocki]
-10d4f70  PM / s2idle: Rearrange the main suspend-to-idle loop  [Rafael J. Wysocki]
-97a384d  PM / sleep: Mark suspend/hibernation start and finish  [Rafael J. Wysocki]
-3a5d87b  PM / sleep: Do not print debug messages by default  [Rafael J. Wysocki]
-2bae672  PM / suspend: Export pm_suspend_target_state  [Florian Fainelli]
-37018c0  PM / sleep: System sleep state selection interface rework  [Rafael J. Wysocki]
-7a9338e  PM / suspend: Fix missing KERN_CONT for suspend message  [Jon Hunter]
-e3cb6f3  PM / sleep: enable suspend-to-idle even without registered suspend_ops  [Sudeep Holla]
-e5e9988  kernel/...: convert pr_warning to pr_warn  [Joe Perches]
-ad032a9  PM / suspend: replacing printk  [saurabh]
-1375452  PM / wakeup: Make events_lock a RAW_SPINLOCK  [Sebastian Andrzej Siewior]
-2bd9421  PM: wakeup: Use pr_debug() for the "aborting suspend" message  [Rafael J. Wysocki]
-8da9c8d  PM / wakeup: Only update last time for active wakeup sources  [Doug Berger]
-4a2d8a5  PM / wakeup: Use seq_open() to show wakeup stats  [Mahendran Ganesh]
-ba78b30  PM / wakeup: Print warn if device gets enabled as wakeup source during sleep  [Ulf Hansson]
-7231d33  PM / wakeup: Do not fail dev_pm_attach_wake_irq() unnecessarily  [Rafael J. Wysocki]
-2ec8e71  PM / wakeup: Drop redundant check from device_init_wakeup()  [Rafael J. Wysocki]
-0978ea8  PM / wakeup: Drop redundant check from device_set_wakeup_enable()  [Rafael J. Wysocki]
-9e87113  PM / wakeup: only recommend "call"ing device_init_wakeup() once  [Brian Norris]
-437b270  PM / wakeup: Set power.can_wakeup if wakeup_sysfs_add() fails  [Rafael J. Wysocki]
-b75f506  ACPI / PM: Ignore spurious SCI wakeups from suspend-to-idle  [Rafael J. Wysocki]
-5e98a45  PM / wakeup: Fix up wakeup_source_report_event()  [Rafael J. Wysocki]
-6bc70a5  PM / wakeup: Integrate mechanism to abort transitions in progress  [Rafael J. Wysocki]
-5055444  PM / sleep: Print active wakeup sources when blocking on wakeup_count reads  [xing wei]
-61fc1cc  PM-wakeup: Delete unnecessary checks before three function calls  [Markus Elfring]
-bd22354  PM / wakeirq: fix wakeirq setting after wakup re-configuration from sysfs  [Strashko, Grygorii]
-01e4685  Merge branch 'android-4.4' of https://github.com/aosp-mirror/kernel_common into kernel.lnx.4.4.r37-rel  [ktommy91]
-961c937  fw-api: Merge tag LA.UM.7.2.r1-07200-sdm660.0 into kernel.lnx.4.4.r37-rel  [ktommy91]
-41cdaa3  qcacld-3.0: Merge tag "LA.UM.7.2.r1-07200-sdm660.0" into kernel.lnx.4.4.r37-rel  [ktommy91]
+ * hardware/qcom/gps
+a62882c  Merge remote-tracking branch 'aosp/pie-gsi' into lineage-16.0-pie-gsi  [Luca Stefani]
 
  * packages/apps/Settings
-1ebf020  Merge "GamingMode: Long press tile to open settings [2/2]" into 9.0  [dennyspb]
-f6880b0  Stop calling isBandwidthControlEnabled.  [Lorenzo Colitti]
-5eeb874  Merge "BatteryUtils: Show anomalies of pre-O apps" into 9.0  [dennyspb]
-
- * packages/apps/SyberiaSettings
-743e823  GamingMode: Disable modifying settings when GamingMode is turned on  [Pranav Vashi]
-
-====================
-     2019-07-11    
-====================
-
- * external/skia
-2ae28b8  Add private save-behind and draw-behind methods to canvas.  [Derek Sollenberger]
-
- * frameworks/base
-ac991ae  Improve performance of unclipped save layers.  [Derek Sollenberger]
-
- * kernel/xiaomi/sdm660
-14e1196  Merge 4.4.185 into android-4.4  [Greg Kroah-Hartman]
-
- * libcore
-5f6797c  Remove a superfluous array copy from several String ctors  [Pete Gillin]
-e768383  libcore: Remove DropBox and EventLogger  [Paul Duffin]
-
- * packages/apps/SyberiaSettings
-a0babd6  GamingMode: Allow disable navigation gestures [2/2]  [DennySPB]
+800d8b2  Merge "team: add Asus ZenFone Max Pro M1 to official builds" into 9.0  [blinov.in]
 
  * vendor/syberia
-dba0ae2  vendor: Add hide notch support [1/2]  [Henrique Silva]
-
-====================
-     2019-07-10    
-====================
-
- * frameworks/base
-85289a8  fwb: Add hide notch support [1/2]  [Henrique Silva]
-ba5eda0  Partialy revert "[1/2] services: allow to force "never" mode for display cutout"  [DennySPB]
-9fc3620  SystemUI: QS: Add VPN tile  [Danny Baumann]
-6ddd22e  frameworks/base: Avoid recording negative data  [Pavan Kumar M]
-9a0263c  Use the boot class loader as parent of system server loader  [Nicolas Geoffray]
-d5f9169  Remove uses of libcore.io DropBox and EventLogger  [Paul Duffin]
-e9c498b  telephony: Fixed crash in data service  [Jack Yu]
-6e5d593  Optimize the font cache size according to display resolution  [Libo Jin]
-6911648  Fix handlelr thread block while switching bluetooth  [Kou Lei]
-b5f866a  Fix NullPointerException in ConnectivityService  [soma, kawata]
-c2c76fe  idle-maint: provide a way to run GC more aggressively  [Jaegeuk Kim]
-0153911  GamingMode: Long press tile to open settings [1/2]  [Pranav Vashi]
-d58639d  Add Gaming mode tile  [Pranav Vashi]
-6312440  GamingMode: Exempt calls and alarms when headsup disabled  [Pranav Vashi]
-
- * kernel/xiaomi/sdm660
-7bbf489  Linux 4.4.185  [Greg Kroah-Hartman]
-f66168a  dmaengine: imx-sdma: remove BD_INTR for channel0  [Robin Gong]
-2fec7f2  KVM: x86: degrade WARN to pr_warn_ratelimited  [Paolo Bonzini]
-c0309c7  arm64, vdso: Define vdso_{start,end} as array  [Kees Cook]
-a62a40c  ARC: handle gcc generated __builtin_trap for older compiler  [Vineet Gupta]
-1ed8ed6  tty: rocket: fix incorrect forward declaration of 'rp_init()'  [Linus Torvalds]
-986543f  btrfs: Ensure replaced device doesn't have pending chunk allocation  [Nikolay Borisov]
-adbf2b4  lib/mpi: Fix karactx leak in mpi_powm  [Herbert Xu]
-52e0b9f  ALSA: usb-audio: fix sign unintended sign extension on left shifts  [Colin Ian King]
-3864c89  ALSA: firewire-lib/fireworks: fix miss detection of received MIDI messages  [Takashi Sakamoto]
-13088ba  ALSA: seq: fix incorrect order of dest_client/dest_ports arguments  [Colin Ian King]
-6e5d6d1  crypto: user - prevent operating on larval algorithms  [Eric Biggers]
-54562d2  ptrace: Fix ->ptracer_cred handling for PTRACE_TRACEME  [Jann Horn]
-18eee99  MIPS: Workaround GCC __builtin_unreachable reordering bug  [Paul Burton]
-2fbaa1a  bug.h: work around GCC PR82365 in BUG()  [Arnd Bergmann]
-2f8180f  swiotlb: Make linux/swiotlb.h standalone includible  [Thierry Reding]
-f1a9886  mfd: omap-usb-tll: Fix register offsets  [Arnd Bergmann]
-a1877fd  MIPS: math-emu: do not use bools for arithmetic  [Manuel Lauss]
-014275f  ARC: fix build warning in elf.h  [Vineet Gupta]
-a414c47  ARC: Assume multiplier is always present  [Vineet Gupta]
-b3e8f6b  scsi: hpsa: correct ioaccel2 chaining  [Don Brace]
-8978dce  usb: gadget: udc: lpc32xx: allocate descriptor with GFP_ATOMIC  [Alexandre Belloni]
-53f1c78  usb: gadget: fusb300_udc: Fix memory leak of fusb300->ep[i]  [Young Xiao]
-5b3f570  ASoC: max98090: remove 24-bit format support if RJ is 0  [Yu-Hsuan Hsu]
-05d6e61  spi: bitbang: Fix NULL pointer dereference in spi_unregister_master  [YueHaibing]
-d4dcab6  ASoC : cs4265 : readable register too low  [Matt Flax]
-3c73842  um: Compile with modern headers  [Jason A. Donenfeld]
-993699d  Bluetooth: Fix faulty expression for minimum encryption key size check  [Matias Karhumaa]
-b3c963d  net: check before dereferencing netdev_ops during busy poll  [Josh Elsasser]
-ec109e6  bonding: Always enable vlan tx offload  [YueHaibing]
-012e59e  ipv4: Use return value of inet_iif() for __raw_v4_lookup in the while loop  [Stephen Suryaputra]
-8b4c9df  team: Always enable vlan tx offload  [YueHaibing]
-36ad5e8  tipc: check msg->req data len in tipc_nl_compat_bearer_disable  [Xin Long]
-253c717  tipc: change to use register_pernet_device  [Xin Long]
-92598c5  sctp: change to hold sk after auth shkey is created successfully  [Xin Long]
-a892d74  cpu/speculation: Warn on unsupported mitigations= parameter  [Geert Uytterhoeven]
-8ac3c1a  x86/speculation: Allow guests to use SSBD even if host does not  [Alejandro Jimenez]
-b24be4a  ovl: modify ovl_permission() to do checks on two inodes  [Vivek Goyal]
-485ac3d  KVM: X86: Fix scan ioapic use-before-initialization  [Wanpeng Li]
-33da943  net/9p: include trans_common.h to fix missing prototype warning.  [Adeodato Simó]
-33e0f07  9p: p9dirent_read: check network-provided name length  [Dominique Martinet]
-3479b3c  9p/rdma: remove useless check in cm_event_handler  [Dominique Martinet]
-1275a5c  9p: acl: fix uninitialized iattr access  [Dominique Martinet]
-8745173  9p/rdma: do not disconnect on down_interruptible EAGAIN  [Dominique Martinet]
-6052d03  perf help: Remove needless use of strncpy()  [Arnaldo Carvalho de Melo]
-e1f60e3  perf ui helpline: Use strlcpy() as a shorter form of strncpy() + explicit set nul  [Arnaldo Carvalho de Melo]
-c7c6809  mac80211: drop robust management frames from unknown TA  [Johannes Berg]
-3aca040  cfg80211: fix memory leak of wiphy device name  [Eric Biggers]
-b79e58a  SMB3: retry on STATUS_INSUFFICIENT_RESOURCES instead of failing write  [Steve French]
-59f9ad4  Bluetooth: Fix regression with minimum encryption key size alignment  [Marcel Holtmann]
-75de0dd  Bluetooth: Align minimum encryption key size for LE and BR/EDR connections  [Marcel Holtmann]
-892b9bf  ARM: imx: cpuidle-imx6sx: Restrict the SW2ISO increase to i.MX6SX  [Fabio Estevam]
-562f962  can: purge socket error queue on sock destruct  [Willem de Bruijn]
-b4fd1ed  can: flexcan: fix timeout when set small bitrate  [Joakim Zhang]
-d38cac3  btrfs: start readahead also in seed devices  [Naohiro Aota]
-95c8238  Btrfs: fix race between readahead and device replace/removal  [Filipe Manana]
-66f0f0f  hwmon: (pmbus/core) Treat parameters as paged if on multiple pages  [Robert Hancock]
-4847348  s390/qeth: fix VLAN attribute in bridge_hostnotify udev event  [Alexandra Winter]
-3b63a2e  scsi: ufs: Check that space was properly alloced in copy_query_response  [Avri Altman]
-d367346  scripts/checkstack.pl: Fix arm64 wrong or unknown architecture  [George G. Davis]
-37515df  sparc: perf: fix updated event period in response to PERF_EVENT_IOC_PERIOD  [Young Xiao]
-9df6837  net: hns: Fix loopback test failed at copper ports  [Yonglong Liu]
-629877b5  MIPS: uprobes: remove set but not used variable 'epc'  [YueHaibing]
-a66d44b  IB/hfi1: Insure freeze_work work_struct is canceled on shutdown  [Mike Marciniszyn]
-96fdfe5  parisc: Fix compiler warnings in float emulation code  [Helge Deller]
-ececcbae  parport: Fix mem leak in parport_register_dev_model  [YueHaibing]
-9617058  apparmor: enforce nullbyte at end of tag string  [Jann Horn]
-4b6818e  Input: uinput - add compat ioctl number translation for UI_*_FF_UPLOAD  [Andrey Smirnov]
-9a7435e  usb: chipidea: udc: workaround for endpoint conflict issue  [Peter Chen]
-9efccd7  gcc-9: silence 'address-of-packed-member' warning  [Linus Torvalds]
-f724766  tracing: Silence GCC 9 array bounds warning  [Miguel Ojeda]
-9370976  scsi: vmw_pscsi: Fix use-after-free in pvscsi_queue_lck()  [Jan Kara]
-bd6042e  mm/page_idle.c: fix oops because end_pfn is larger than max_pfn  [Colin Ian King]
-fb7adf6  fs/binfmt_flat.c: make load_flat_shared_library() work  [Jann Horn]
-d657433  ANDROID: Fixes to locking around handle_lmk_event  [Jim Blackler]
-c93a1fa  ANDROID: Avoid taking multiple locks in handle_lmk_event  [Jim Blackler]
-
- * packages/inputmethods/LatinIME
-3b27a15  Move LatinIME and its lib to /product  [Anton Hansson]
-c6d8317  Remove extend touchable region for AOSP keyboard  [lumark]
-
- * system/core
-2dc5c30  lmkd: Prevent non-main threads being registered or killed by lmkd  [Suren Baghdasaryan]
-
- * system/vold
-158b09d  Fix mount error caused by FULL mode bypassed by remountUid  [Zeng Huipeng]
-3c2d2e4  idle-maint: don't need to change discard_granularity  [Jaegeuk Kim]
-4c29376  vold: Introduce android::vold::writeStringToFile  [Tommy Chiu]
-825c1ec  Fix double close in GetTreeBytes  [Josh Gao]
-576dadd  fix wrong ioctl direction for F2FS_IOC_GET_PIN_FILE  [Jaegeuk Kim]
-
-====================
-     2019-07-09    
-====================
-
- * frameworks/base
-e35795c  Stop using deprecated Canvas APIs.  [Derek Sollenberger]
-a2b1202  Remove isBandwidthControlEnabled.  [Lorenzo Colitti]
-
- * hardware/qcom/power
-2846b24  qcom: power: Stop log spam "QCOM PowerHAL: Failed to acquire lock"  [pavlaras]
-
- * kernel/xiaomi/sdm660
-e7e4701  mm: Do readahead if requested size is over 128 KiB  [Tyler Nijmeh]
-aa2c817  Revert "ANDROID: mm: add config for default readahead size"  [ktommy91]
-e765227  mmc: queue: Do not attempt request merging  [Tyler Nijmeh]
-d96a6c0  mm: Increase ratelimit pages value  [Tyler Nijmeh]
-501b9b4  mm: Increase vmstat interval  [Tyler Nijmeh]
-31287f7  mm: Do not periodically writeback data  [Tyler Nijmeh]
-fa6c5b2  mm: Keep dirty pages in ram for at least 120 seconds  [Tyler Nijmeh]
-67f4f2d  mm: Do not reserve memory for admins  [Tyler Nijmeh]
-
- * packages/apps/Settings
-90fd4f5  GamingMode: Long press tile to open settings [2/2]  [Pranav Vashi]
-
-====================
-     2019-07-08    
-====================
-
- * hardware/qcom/display-caf/msm8998
-d3dae9c  Merge tag 'LA.UM.7.4.r1-05300-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into lineage-16.0-caf-8998  [rashedsahaji]
-17992ce  Merge tag 'LA.UM.7.4.r1-05000-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into lineage-16.0-caf-8998  [rashedsahaji]
-f06d5ef  Merge tag 'LA.UM.7.4.r1-04700-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into lineage-16.0-caf-8998  [rashedsahaji]
-
- * kernel/xiaomi/sdm660
-cbd1afc  sched/core: nr_migrate = 128 increases number of tasks to iterate in a single balance run.  [Alexandre Frade]
-92da90d  qcacld-3.0: Fix null pointer dereference in htt_rx_amsdu_rx_in_order_pop_ll()  [Sultan Alsawaf]
-
- * prebuilts/clang/host/linux-x86
-cbeb854  Merge pull request #1 from SOVIET-ANDROID/9.0  [DennySPb]
-d5c9ccc  Update prebuilt Clang to r353983e.  [Stephen Hines]
-
-====================
-     2019-07-07    
-====================
-
- * device/xiaomi/sdm660-common
-f9fad50  Don't build keyhanlder!  [rebenok90x]
-2433183  Syberia bring up and cleanup  [coderzstas]
-bdb0b17  sdm660-common: Bring back XiaomiParts  [pqhaz]
-d75591a  sdm660-common: wifi: Drop persistent_reconnect  [haran]
-83cb421  sdm660-common: Remove gEnableConcurrentSTA parameter from ini file  [Dundi Raviteja]
-0d45a50  sdm660-common: Import modifications to WiFi configs from Xiaomi  [Bruno Martins]
-450c416  sdm660-common: Increase maximum number of BSS in memory  [Peng Xu]
-b632f83  sdm660-common: Enable p2p and tdls default configurations  [Rajiv Ranjan]
-a4049db  sdm660-common: Add wowlan_triggers to wpa_supplicant conf  [Dustin Brown]
-cf2ad09  sdm660-common: Add ini param for rtt mac randomization  [Naveen Rawat]
-a812cbe  sdm660-common: Add secondary interface using gEnableConcurrentSTA=wlan1  [Purushottam Kushwaha]
-3e351ce  sdm660-common: Add default values to action OUI inis  [Rajeev Kumar Sirasanagandla]
-1938af4  sdm660-common: Reset RSSI threshold offset for 2G to 5G roam  [Kiran Kumar Lokere]
-19f7752  sdm660-common: wifi: ini: Enable rx_mode=5, napi+rx_thread  [Manjunathappa Prakash]
-fad2261  sdm660-common: Change NAPI and CE params to avoid audio glitches  [Mohit Khanna]
-2a55f51  sdm660-common: Remove gNeighborScanTimerPeriod from ini  [Sandeep Puligilla]
-eea7ebe  sdm660-common: Disable DTIM Synth  [Tushnim Bhattacharyya]
-773fa6f  sdm660-common: Remove McastBcastFilter parameter from ini  [Mahesh Kumar Kalikot Veetil]
-96c9e20  sdm660-common: wifi: ini: Enable GRO support  [Manjunathappa Prakash]
-0154912  sdm660-common: Enable Mac address spoofing by default  [Rajiv Ranjan]
-e0e0768  sdm660-common: Enable NAN data path support  [Ravi Joshi]
-03bebe2  sdm660-common: Make the force SCC option default for gWlanMccToSccSwitchMode  [Tushnim Bhattacharyya]
-2b75627  sdm660-common: Enable IMPS/BMPS for WLAN  [Yuanyuan Liu]
-58c9c23  sdm660-common: Update INI configuration file for WLAN  [Yuanyuan Liu]
-9f59057  sdm660: sepolicy: fix dirac denial  [Max Weffers]
-f5d4bcf  sdm660: Restart audio HIDL HAL after decryption  [Artem Borisov]
-
- * device/xiaomi/wayne
-a08be2d  wayne: audio: Add BT SCO to routes list  [Sujin Panicker]
-0b069c6  manifest: Downgrade to PowerHAL 1.2  [pqhaz]
-
- * packages/apps/Nfc
-1f50db5  NfcNci: make T3T/Nfc-F HCE optional  [Simon Shields]
+9a1a189  team: add Asus ZenFone Max Pro M1 to official builds  [blinoff82]
 
