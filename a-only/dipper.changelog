@@ -1,171 +1,171 @@
 ====================
-     2019-07-05    
+     2019-07-19    
 ====================
 
- * device/syberia/sepolicy
-da01a21  sepolicy: Dontaudit sysinit  [Jan Altensen]
-
  * frameworks/base
-9bdaff5  FOD: fixes and improvements  [Marko Man]
-df2e482  FODCircleView: calculate proper dimming amount  [PeterCxy]
-cc95d1c  Merge "libs: hwui: Enable perf mode and disable pgo" into 9.0  [dennyspb]
-48a6e70  SystemUI: optimize content observers in StatusBar  [DennySPB]
-63998d9  base: Q seekbar: make the seekbar transparent for non-seekable notifs  [ElDainosor]
-5354954  Add toggle for charging animation [1/2]  [Pranav Vashi]
-6573626  SystemUI: Protect against terrible music players  [Harsh Shandilya]
-fc6c3d4  Merge changes Ic2a484d2,I96415659,Ia72d2476 into 9.0  [dennyspb]
-6a26935  SystemUI: Adjust battery and location icon size  [Anushek Prasal]
-ac0b3cb  Frameworks: Slightly refactor Parcel code  [Andreas Gampe]
-d35e0e7  Stable seek bar positioning  [Sergey]
-2767143  Ambient play: Fix padding on some densities  [Henrique Silva]
-a72d45a  libs: hwui: Enable perf mode and disable pgo  [mydongistiny]
+42901ab  Launch music player on headset connect: add BT compatibility [1/2]  [ezio84]
+8c2351d  Bluetooth: Unregister BLE APPs when mBluetoothGatt valid only  [Venkata Jagadeesh Garaga]
+cc1cf3d  Merge "Move DexLoadReporter setup before AppComponentFactory calls" into 9.0  [blinov.in]
+ef4cde5  Merge "QS tiles: Update icons from Android Q" into 9.0  [blinov.in]
+
+ * packages/apps/Settings
+85167aa  Open app when clicking on icon in App Info  [deadman96385]
+
+ * packages/apps/SyberiaSettings
+10cbfff  Launch music player on headset connect: add BT compatibility [2/2]  [ezio84]
+
+====================
+     2019-07-18    
+====================
 
  * kernel/xiaomi/sdm845
-6bd96ce  defconfig: regenerate  [ethan-halsall]
-8357927  wireguard: Skip update if no internet  [Jason A. Donenfeld]
-e1cafb0  wireguard: Add local distros file and fetch from it  [Akshay Menon]
-8fbb68f  patch-kernel: more reliable version selection  [Jason A. Donenfeld]
-b742cbd  patch-kernel: only allow one execution at a time, with others failing open  [Jason A. Donenfeld]
-8f82f85  net/wireguard: add wireguard importer  [flar2]
-8dfa0b7  ALSA: control_compat: Don't dynamically allocate single-use structs  [Sultan Alsawaf]
-857183c  scatterlist: Use vmalloc instead of chaining  [Sultan Alsawaf]
-f40bfce  binfmt_elf: Don't allocate memory dynamically in load_elf_binary  [Sultan Alsawaf]
-a86cede  dmaengine: Fix memory leak in dma_async_device_register  [Sultan Alsawaf]
-f64dee9  drm: Mark the bridge-enable kthread as performance critical  [Sultan Alsawaf]
-3a4c367  drm: Enable bridges asynchronously as early as possible  [Sultan Alsawaf]
-954ce26  drm: remove xiaomi early display hacks  [Demon000]
-dde257b  Revert "kernel: Remove calls to get/put_online_cpus in affine_one_perf_irq"  [ethan-halsall]
-a39e285  ARM: dts: qcom: Use silver core energy data from CAF  [Artem Labazov]
-c26dfb9  init.simple.sh: Update some stuffs  [ethan-halsall]
-e8e076b  serial: msm_geni_serial: Align to HW assisted flow control support  [Akash Asthana]
-07c7c1d  [FIXUP] selinux: Avoid dynamic memory allocation for small context buffers  [Sultan Alsawaf]
-f41eb17  [FIXUP]: msm: kgsl: Avoid dynamically allocating small command buffers  [Sultan Alsawaf]
-daa04b0  msm: kgsl: Avoid dynamically allocating small command buffers  [Sultan Alsawaf]
-f94b815  [PATCH] iommu: msm: Fix lethal race condition and code inconsistencies  [Sultan Alsawaf]
-c01d9cc  msm: adsprpc: Fix integer overflow in refcount of map  [Tharun Kumar Merugu]
-48e473c  drm/msm/sde: stage border fill after ctl start timeout  [Krishna Manikandan]
-788f7d2  drm/msm/dsi-staging: Add range check in debugfs_dump_info_read  [Nirmal Abraham]
-4eefcfe  msm: vidc: correct buffer size calcuation logic for output plane  [Srinu Gorle]
-0d91cdf  Merge remote-tracking branch 'dev/msm-4.14' into msm-4.9 05/20  [Raja Mallik]
-f54da56  [PATCH] tracing: silence GCC 9 array bounds warning  [Miguel Ojeda]
-c76358b9  defconfig: enable sched cgroup  [ethan-halsall]
-b20d6a6  Add capacity clamping by Patrick Bellasi  [Erik Müller]
-b9eed06  drivers: touchscreen: focaltech_touch: Update firmware from MIUI 9.6.20  [TheScarastic]
-3db9fd1  Revert "defconfig: set rcu boost delay to 250ms"  [Ethan Halsall]
-0b509ba  defconfig: sync  [ethan-halsall]
-14c2741  lpm-levels: Remove check for non negative LPM level selected  [Maulik Shah]
-f662e86  cpuidle: lpm-levels: Use static residency values  [Maulik Shah]
-546d660  mm: vmalloc: clean up vunmap to avoid pgtable ops twice  [Chintan Pandya]
-83f8a3c  dts: Fix weird cpuidle values  [Artem Labazov]
-ca3e6bd  dts: Migrate cpuidle properties to a new format  [Artem Labazov]
-61cc2de  Revert "init.qcom.rc: Use fifo for ui"  [ethan-halsall]
-8b65b41  [BACKPORT] power: qos: Use effective affinity mask  [Pavankumar Kondeti]
-d15c881  sched: inline api with previous commit  [ethan-halsall]
-b466d3f  sched/rt: schedtune: Add boost retention to RT  [Joel Fernandes]
-7e39235  sched/rt: add schedtune accounting for en/dequeue  [Joel Fernandes]
-be8e688e  mm/slab_common: Align all caches' objects to hardware cachelines  [Sultan Alsawaf]
-21a9823  net: socket: Use convoluted tricks to silence a GCC 9 error  [Sultan Alsawaf]
-6c847e6  ALSA: control: Don't dynamically allocate a single struct instance  [Sultan Alsawaf]
-77940f8  media: v4l2-ioctl: Use a larger on-stack video copy buffer  [Sultan Alsawaf]
-e50b9af  msm: camera: Avoid dynamic memory allocation for small buffers  [Sultan Alsawaf]
-eac86f5  Linux 4.9.184  [Greg Kroah-Hartman]
-08cc924  tcp: refine memory limit test in tcp_fragment()  [Eric Dumazet]
-d5b100d  defconfig: set rcu boost delay to 250ms  [ethan-halsall]
-562e350  genirq: Introduce effective affinity mask  [Thomas Gleixner]
-f36bcb2  Revert "sched/fair.c: Don't allow SchedTune boosted tasks to be migrated to small cores"  [Raphiel Rollerscaperers]
-68b6229  sched/fair: Fix load_balance() affinity redo path  [Jeffrey Hugo]
-544129e  sched: walt: Add BUG_ON() when wallclock goes backwards  [Pavankumar Kondeti]
-2568716  random: optimize add_interrupt_randomness  [Andi Kleen]
-199491c  block: optimize bvec iteration in bvec_iter_advance  [Christoph Hellwig]
-ed0edca  diag: Increase the MHI buffer size to 4k  [Sreelakshmi Gownipalli]
-
- * packages/apps/Settings
-b3c033b  Merge "Add SyberiaSettings to Search" into 9.0  [dennyspb]
-
- * vendor/syberia
-39ab74b  Merge changes I5b1a24ae,Icbb7f84b into 9.0  [dennyspb]
-c54306e  Merge "v2.7" into 9.0  [dennyspb]
-0a5e706  vendor: fonts: Add Source Sans Pro from Android Q  [Joey Huab]
-d8495d5  Fonts: Add Alegreya SansSC and NokiaPure  [Gaurav Singh]
+95d96d9  bump to simple reloaded 1.1  [ethan-halsall]
+541b850  arm64: cleanup  [ethan-halsall]
 
 ====================
-     2019-07-04    
-====================
-
- * packages/apps/Settings
-7e3c7c5  Add SyberiaSettings to Search  [xyyx]
-
- * packages/apps/SyberiaSettings
-9207dfd  SyberiaSettings: Add to Search  [xyyx]
-32f5ebb  Add toggle for charging animation [2/2]  [Pranav Vashi]
-131df9a  SyberiaSettings: system settings reworking  [blinoff82]
-
- * vendor/syberia
-51b5c40  v2.7  [DennySPB]
-
-====================
-     2019-07-03    
+     2019-07-17    
 ====================
 
  * frameworks/base
-e64b3c7  Support for alternative device specific key handlers  [Bruno Martins]
-e26d7a4  GamingMode: Clean up and refine [1/2]  [Pranav Vashi]
-d833860  Fix NPE in destroyUiAutomationService function  [hangl]
-68b40bd  wifi: Filter unsupported networks from scan results  [Veerendranath Jakkam]
-59c202d  Wifi: Connect indication on UI for STA when AP supports SAE+PSK  [Anurag Das]
-58db154  Wifi: Update accesspoint to cater to add network option from GUI  [Anurag Das]
-fb3c826  Wifi: Check for SAE/OWE AKM prior to PSK  [Anurag Das]
-a6cf564  perfLock: Enable ActivityBoost  [yanglv]
-c224404  Prevent crash in TTS engine due to improper configuration  [Pranav Vashi]
+3f6afbc  Move DexLoadReporter setup before AppComponentFactory calls  [David Brazdil]
+
+ * kernel/xiaomi/sdm845
+7c6f44c  ower: smb-lib: Force suspend when cable out.  [Wasb Liu]
+ad64c8a  ext4: Avoid dynamically allocating memory in ext4_ext_remove_space  [Sultan Alsawaf]
+dc82e01  [FIXUP] soc: qcom: rpm_stats: Enable debugfs usage  [Sultan Alsawaf]
+4eca43d  Bringup polaris and beryllium  [ethan-halsall]
+3cd7e1a  ANDROID: sched/fair: Attempt to improve throughput for asym cap systems  [Chris Redpath]
+92197eb  ipc_router: use kmem_cache pool for packets  [Park Ju Hyung]
+a881009  ipa: Avoid dynamic memory allocation for small transfer buffers  [Park Ju Hyung]
+fee7a92  kernel/printk: Convert to hotplug state machine  [Sebastian Andrzej Siewior]
+3feed5b  fs/buffer: Convert to hotplug state machine  [Sebastian Andrzej Siewior]
 
 ====================
-     2019-07-02    
+     2019-07-16    
 ====================
 
- * build/make
-708dea8  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/build into HEAD  [DennySPB]
+ * device/xiaomi/dipper
+e8afa9e  dipper: remove no cutout overlay  [ethan-halsall]
+ceed96b  dipper: track rebase branch of kernel  [ethan-halsall]
 
  * frameworks/av
-68329c4  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPB]
+30e9e36  Camera: Consider the currently acquired input buffers  [Emilian Peev]
 
  * frameworks/base
-185b607  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPB]
+3615a14  QS tiles: Update icons from Android Q  [Stallix]
 
- * frameworks/native
-5c0508c  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPB]
-
- * frameworks/opt/net/wifi
-ac4275a  Prevent scan searching overhead  [Sticky Chen]
-562ee95  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/frameworks/opt/net/wifi  [DennySPB]
-
- * packages/apps/SyberiaSettings
-69efa71  GameMode: remove hwkeys toggle on non-hwkeys devices  [Lup Gabriel]
-bb9a75a  GamingMode: Clean up and refine [2/2]  [Pranav Vashi]
+ * kernel/xiaomi/sdm845
+95c06a6  selinux: use kmem_cache for ebitmap  [Junil Lee]
+7c5ba4c  async: use kmem_cache pool for struct async_entry  [Park Ju Hyung]
+84cb284  dma_buf: try to use kmem_cache pool for dmabuf allocations  [Park Ju Hyung]
+df260aa  dma_buf: use kmem_cache pool for struct sync_file  [Park Ju Hyung]
+56cb0b3  dma_buf: use kmem_cache pool for struct dma_buf_attachment  [Park Ju Hyung]
+6a5f945  quota_tree: Avoid dynamic memory allocations  [Park Ju Hyung]
+26b492b  dcache: increase DNAME_INLINE_LEN  [Park Ju Hyung]
+f17a507  msm: vidc: use kmem_cache pool for struct msm_vidc_buffer  [Park Ju Hyung]
+5728072  glink: use kmem_cache pool for struct read_work  [Park Ju Hyung]
+a38d240  glink: use kmem_cache pool for struct deferred_cmd  [Park Ju Hyung]
+3504584  msm: kgsl: use kmem_cache pool for draw objects  [Park Ju Hyung]
+6603949  msm: kgsl: Don't allocate memory dynamically for drawobj sync structs  [Sultan Alsawaf]
+4d47379  drm/msm: use kmem_cache pool for struct vblank_work  [Park Ju Hyung]
+0bcfebb  arm64/cpuinfo: Convert to hotplug state machine  [Anna-Maria Gleixner]
+3a1d9ac  arm64/cpuinfo: Make hotplug notifier symmetric  [Anna-Maria Gleixner]
+1c40304  sched/nohz: Convert to hotplug state machine  [Sebastian Andrzej Siewior]
+e9a7b70  techpack: use kmem_cache pool for tx buffer  [Park Ju Hyung]
+73ea438  defconfig: enable native dts eagle support  [ethan-halsall]
+f9720a3  qos: Don't allow userspace to impose restrictions on CPU idle levels  [Sultan Alsawaf]
+70a562b  mm: kmemleak: Don't require global debug options  [Sultan Alsawaf]
+4b6ccc1  [PATCH] dts_eagle: Cleanup  [celtare21]
+36eb6a8  drivers: dts_eagle software driver port  [Laster K. (lazerl0rd)]
 
  * system/bt
-58ea68b  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
+b6bc7c9  GAP: Correct the continuous pkt length in l2cap  [Venkata Jagadeesh Garaga]
 
- * system/netd
-feba124  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/system/netd  [DennySPB]
-
- * system/security
-e4f975e  Merge tag 'android-9.0.0_r45' of https://android.googlesource.com/platform/system/security into HEAD  [DennySPB]
+ * system/sepolicy
+c0fe63b  A2dp sink SHO: Add bluetooth support to access mediametrics service  [haoll]
 
 ====================
-     2019-07-01    
+     2019-07-15    
 ====================
 
-====================
-     2019-06-30    
-====================
+ * external/sqlite
+72a3832  sqlite: upgrade to SQLite 3.29.0  [mydongistiny]
 
-====================
-     2019-06-29    
-====================
+ * kernel/xiaomi/sdm845
+81b66a1  defconfig: update inline with latest changes  [ethan-halsall]
+197e240  icnss: Add a flag to indicate PDR  [Sandeep Singh]
+1d12449  qcacld: disable bunch of more debug configs  [Park Ju Hyung]
+d3a95fc  qcacld-3.0: Optimize for size  [0ctobot]
+58c9d8a  qcacld-3.0: Enable debugfs usage  [Sultan Alsawaf]
+1b8ce6f  qcacld-3.0: Nuke as much debug bloat as possible  [Sultan Alsawaf]
+2a85371  qcacld: update wlan_hdd_cfg.h  [Park Ju Hyung]
+3921f39  qcacld: add wlan_hdd_cfg.h  [Park Ju Hyung]
+8668a24  qcacld: read config file from wlan_hdd_cfg.h  [Park Ju Hyung]
+8e88581  qcacld: initialize variables to avoid errors during compilation  [Park Ju Hyung]
+c3274f4  qcacld: nuke rx_wakelock code entirely  [Park Ju Hyung]
+b574ea1  qcacld: Disable drop_bcn_on_chan_mismatch  [Liangwei Dong]
+8e1194b  qcacld: reduce log spam  [Park Ju Hyung]
+d199b1f  qcacld: defer hdd initialization and rely on userspace writing to /dev/wlan  [Park Ju Hyung]
+6e6edaa  qcacld: discard wlan_boot sysfs code on !CONFIG_MODULES  [Park Ju Hyung]
+24f6885d  qcacld: default_config: tone down debugging  [Park Ju Hyung]
+76c9210  qcacld: always force user build  [Park Ju Hyung]
+8351fe2  qcacld: nuke Kconfig-based configuration entirely  [Park Ju Hyung]
+0507a36  Add 'drivers/staging/qca-wifi-host-cmn/' from commit 'd539e13672e5eadaa1d2283e5a40d97fcebeb6f4'  [ethan-halsall]
+40c3adf  Add 'drivers/staging/fw-api/' from commit '3a58d112d099b25f87f401de86717af7feb8a3b1'  [ethan-halsall]
+c5ecd2f  Add 'drivers/staging/qcacld-3.0/' from commit '7dc44ba7b815424586730f94c2948518afdb9330'  [ethan-halsall]
+ead6b04  Remove qcacld-3.0 for clean import of new drivers  [ethan-halsall]
+1a0387b  sde_crtc: Don't allocate memory dynamically in sde_crtc_atomic_check()  [Park Ju Hyung]
+d6186f1  dma-buf: Avoid dynamic memory allocation for small info buffers  [Park Ju Hyung]
+0c3a7b2  cpuhotplug: stop IRQ hotplug messages  [Park Ju Hyung]
+8dbad13  kobject_uevent: Allocate environment buffer on the stack  [Sultan Alsawaf]
+365453b  scatterlist: Don't allocate sg lists using __get_free_page  [Sultan Alsawaf]
+00221a7  ANDROID: sdcardfs: Allocate temporary name buffer on the stack  [Sultan Alsawaf]
+ef1abe8  ion: Speed up scatterlist duplication when chaining isn't used  [Sultan Alsawaf]
+6278e8d  ion: Clean out custom sg alloc and free now that sg uses vmalloc  [Sultan Alsawaf]
+8f44474  ion: Use vmalloc for large scatterlist arrays  [Sultan Alsawaf]
+69d9bf4  ion: Reserve caches for sg allocations  [Sultan Alsawaf]
+6c7d16a  ion: nuke dbg_str to avoid VLA  [Park Ju Hyung]
+8d35017  drivers/cpufreq: remove perfomance govener from being chosen when schedutil is selected as defualt  [ethan-halsall]
+81b1eab  block: remove noop and deadline  [ethan-halsall]
+c95d1e5f  init.simple.sh: little cleanup  [ethan-halsall]
 
  * packages/apps/Settings
-e04515e  team: add Lenovo Zuk Z2 Plus to official builds  [blinoff82]
+f49f16f  Settings: update ru translation  [blinoff82]
+2d062f9  team: beryllium is out  [blinoff82]
+
+====================
+     2019-07-14    
+====================
+
+ * hardware/qcom/data/ipacfg-mgr
+7367dc7  Merge remote-tracking branch 'aosp/pie-gsi' into lineage-16.0-pie-gsi  [Luca Stefani]
+
+ * hardware/qcom/gps
+a62882c  Merge remote-tracking branch 'aosp/pie-gsi' into lineage-16.0-pie-gsi  [Luca Stefani]
+
+ * kernel/xiaomi/sdm845
+4c70f71  dipper: get ready for rebase release  [ethan-halsall]
+41d839c  dipper: defconfig regenerate  [ethan-halsall]
+20eb284  glink: use kmem_cache pool for rx/tx  [Park Ju Hyung]
+620e53b  cgroup: use kmem_cache pool for struct cgrp_cset_link  [Park Ju Hyung]
+c5e9902  kernfs: Avoid dynamic memory allocation for small write buffers  [Sultan Alsawaf]
+1c2d8b4  driver: power: qpnp-smb2: no debug  [Raphiel Rollerscaperers]
+1c39785  Makefile: Use pipes rather than temporary files for intermediate steps  [Danny Lin]
+
+ * packages/apps/Settings
+800d8b2  Merge "team: add Asus ZenFone Max Pro M1 to official builds" into 9.0  [blinov.in]
 
  * vendor/syberia
-aad22a9  team: add Lenovo Zuk Z2 Plus to official builds  [blinoff82]
+9a1a189  team: add Asus ZenFone Max Pro M1 to official builds  [blinoff82]
+
+====================
+     2019-07-13    
+====================
+
+ * frameworks/base
+c929aff  SystemUI: Fix SystemUI failed to go to doze issue  [Weijie Wang]
+11add3d  BoostFramework : Add an Update Hint on App update.  [Sai Manobhiram]
+7dafc57  FODCircleView: support all screen orientations  [Peter Cai]
+b5e8a3c  fod: run async task for setting brightness  [Marko Man]
+516fa77  FODCircleView: read from system props  [Peter Cai]
 
