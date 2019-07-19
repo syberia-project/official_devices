@@ -1,4 +1,72 @@
 ====================
+     2019-07-19    
+====================
+
+====================
+     2019-07-18    
+====================
+
+ * device/xiaomi/whyred
+38a78dc  whyred: audio stuff and some cleans  [srfarias]
+
+ * frameworks/base
+42901ab  Launch music player on headset connect: add BT compatibility [1/2]  [ezio84]
+8c2351d  Bluetooth: Unregister BLE APPs when mBluetoothGatt valid only  [Venkata Jagadeesh Garaga]
+cc1cf3d  Merge "Move DexLoadReporter setup before AppComponentFactory calls" into 9.0  [blinov.in]
+ef4cde5  Merge "QS tiles: Update icons from Android Q" into 9.0  [blinov.in]
+
+ * packages/apps/Settings
+85167aa  Open app when clicking on icon in App Info  [deadman96385]
+
+ * packages/apps/SyberiaSettings
+10cbfff  Launch music player on headset connect: add BT compatibility [2/2]  [ezio84]
+
+====================
+     2019-07-17    
+====================
+
+ * frameworks/base
+3f6afbc  Move DexLoadReporter setup before AppComponentFactory calls  [David Brazdil]
+
+====================
+     2019-07-16    
+====================
+
+ * frameworks/base
+3615a14  QS tiles: Update icons from Android Q  [Stallix]
+
+====================
+     2019-07-15    
+====================
+
+ * external/sqlite
+72a3832  sqlite: upgrade to SQLite 3.29.0  [mydongistiny]
+
+ * frameworks/av
+30e9e36  Camera: Consider the currently acquired input buffers  [Emilian Peev]
+
+ * packages/apps/Settings
+f49f16f  Settings: update ru translation  [blinoff82]
+2d062f9  team: beryllium is out  [blinoff82]
+
+ * system/bt
+b6bc7c9  GAP: Correct the continuous pkt length in l2cap  [Venkata Jagadeesh Garaga]
+
+ * system/sepolicy
+c0fe63b  A2dp sink SHO: Add bluetooth support to access mediametrics service  [haoll]
+
+====================
+     2019-07-14    
+====================
+
+ * kernel/xiaomi/whyred
+87daa42  whyred-perf_defconfig: pure x6.1  [srfarias]
+d7c8a83  Merge tag 'LA.UM.7.2.r1-07200-sdm660.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.4 into caf-pie  [srfarias]
+6d44828  mdss: livedisplay: Fix memory leaks in mdss_livedisplay_update()  [Sultanxda]
+1d9b149  video: mdss: LiveDisplay driver  [Steve Kondik]
+22a9b8d  qcacld-3.0: Fix null pointer dereference in htt_rx_amsdu_rx_in_order_pop_ll()  [Sultan Alsawaf]
+
+====================
      2019-07-13    
 ====================
 
@@ -6,188 +74,20 @@
 184757a  whyred: Overlay: Add lawnchair overlay  [Rashed Sahaji]
 b5c84d1  whyred : Update Dependencies  [rashedsahaji]
 5b11e66  whyred: prebuilt: Add Missing Lawnchair stuff  [rashedsahaji]
-9e2fa00  whyred: add missing wfd props and update graphics ones  [srfarias]
-d377523  whyred: rootdir: update init target from xiaomi  [srfarias]
-1ec7164  whyred: extract-files: Adapt Syberia  [rashedsahaji]
-46c5c6a  sdm660: add cpu set for audio app  [Soumya Managoli]
-8ad8d22  Syberia Bring Up!  [rashedsahaji]
-0ae1af0  whyred: overlay: Disable bluetooth by default  [IamJoker03]
-e60f026  whyred: rootdir: Add missing dynamic fps node[Fix the Derp]  [srfarias]
-f6bfe77  whyred: rootdir: Add missing dynamic fps node * otherwise sdm won't access it  [Vol Zhdanov]
-f79499e  prebuilts: update Lawnchair to alpha-2190  [DennySPB]
-005c98c  sepolicy: allow system_server access to charging sysfs node  [DennySPB]
-e538e77  overlay: Enable smart charging  [blinoff82]
-f1d9402  overlay: proximity Check On Fingerprint Wake  [rashedsahaji]
-b14fff6  Overlay: Enable proxi check on wakeup events  [DennySPB]
-3e0a87c  whyred: media: Disable 4k on front cam  [Henrique Silva]
-11de809  whyred: Import camera changes  [Henrique Silva]
-4e09e65  whyred: Add basic USB HAL that reports no status change  [Ethan Chen]
-26c40d7  whyred: Enable AOD  [Luca Stefani]
-4357a42  whyred: Declare STATE_DOZE support  [Bruno Martins]
-8bd2383  sepolicy: make init and vendor_init permissive domains  [DennySPB]
-c6a451f  overlay: pin QPerformance and UxPerformance oats  [DennySPB]
 
  * frameworks/base
-7dafc57  FODCircleView: support all screen orientations  [Peter Cai]
-b5e8a3c  fod: run async task for setting brightness  [Marko Man]
-516fa77  FODCircleView: read from system props  [Peter Cai]
+c929aff  SystemUI: Fix SystemUI failed to go to doze issue  [Weijie Wang]
+11add3d  BoostFramework : Add an Update Hint on App update.  [Sai Manobhiram]
 
- * hardware/qcom/display-caf/msm8998
-bd4946a  Revert "display: Define soong namespace"  [rashedsahaji]
+ * hardware/qcom/data/ipacfg-mgr
+7367dc7  Merge remote-tracking branch 'aosp/pie-gsi' into lineage-16.0-pie-gsi  [Luca Stefani]
 
- * system/sepolicy
-d5421ce  Address some theme_data_file denials  [DennySPB]
-
- * vendor/xiaomi/whyred
-13b9309  Revert "Revert "whyred: Import camera changes""  [rashedsahaji]
-
-====================
-     2019-07-12    
-====================
-
- * frameworks/base
-a7ffe01  Merge "Improve performance of unclipped save layers." into 9.0  [dennyspb]
-823b65e  Merge changes I84dfb11f,I3bd86832,Ie7d15918,Iaa9413bf,I36d05835, ... into 9.0  [dennyspb]
-582f775  GamingMode: allow disable navigation gestures [1/2]  [DennySPB]
-538d263  Aggressive Battery: Improve value substitution  [Joe Maples]
-
- * frameworks/opt/net/wifi
-bfbb76b  CountryCode: Use hack for all regions.  [xyyx]
+ * hardware/qcom/gps
+a62882c  Merge remote-tracking branch 'aosp/pie-gsi' into lineage-16.0-pie-gsi  [Luca Stefani]
 
  * packages/apps/Settings
-1ebf020  Merge "GamingMode: Long press tile to open settings [2/2]" into 9.0  [dennyspb]
-f6880b0  Stop calling isBandwidthControlEnabled.  [Lorenzo Colitti]
-5eeb874  Merge "BatteryUtils: Show anomalies of pre-O apps" into 9.0  [dennyspb]
-
- * packages/apps/SyberiaSettings
-743e823  GamingMode: Disable modifying settings when GamingMode is turned on  [Pranav Vashi]
-
-====================
-     2019-07-11    
-====================
-
- * external/skia
-2ae28b8  Add private save-behind and draw-behind methods to canvas.  [Derek Sollenberger]
-
- * frameworks/base
-ac991ae  Improve performance of unclipped save layers.  [Derek Sollenberger]
-85289a8  fwb: Add hide notch support [1/2]  [Henrique Silva]
-ba5eda0  Partialy revert "[1/2] services: allow to force "never" mode for display cutout"  [DennySPB]
-9fc3620  SystemUI: QS: Add VPN tile  [Danny Baumann]
-6ddd22e  frameworks/base: Avoid recording negative data  [Pavan Kumar M]
-9a0263c  Use the boot class loader as parent of system server loader  [Nicolas Geoffray]
-d5f9169  Remove uses of libcore.io DropBox and EventLogger  [Paul Duffin]
-e9c498b  telephony: Fixed crash in data service  [Jack Yu]
-6e5d593  Optimize the font cache size according to display resolution  [Libo Jin]
-6911648  Fix handlelr thread block while switching bluetooth  [Kou Lei]
-b5f866a  Fix NullPointerException in ConnectivityService  [soma, kawata]
-c2c76fe  idle-maint: provide a way to run GC more aggressively  [Jaegeuk Kim]
-
- * libcore
-5f6797c  Remove a superfluous array copy from several String ctors  [Pete Gillin]
-e768383  libcore: Remove DropBox and EventLogger  [Paul Duffin]
-
- * packages/apps/SyberiaSettings
-a0babd6  GamingMode: Allow disable navigation gestures [2/2]  [DennySPB]
+800d8b2  Merge "team: add Asus ZenFone Max Pro M1 to official builds" into 9.0  [blinov.in]
 
  * vendor/syberia
-dba0ae2  vendor: Add hide notch support [1/2]  [Henrique Silva]
-
- * vendor/xiaomi/whyred
-80193ef  whyred: import missing bloobs for soundtrigger from V10.3.3.0.PEICNXM  [srfarias]
-08829f4  whyred: update time service from V10.3.3.0.PEICNXM  [srfarias]
-
-====================
-     2019-07-10    
-====================
-
- * device/xiaomi/whyred
-c3926ed  PIN critical apps and system services that get swapped  [Jorim Jaggi]
-f50c4be  props: Optimize ART props Change-Id: Ib384409127c09e611d1e875b6827e744298b8499 Signed-off-by: celtare21 <celtare21@gmail.com> Signed-off-by: DennySPB <dennyspb@gmail.com> Signed-off-by: rashedsahaji <asifrashed2@gmail.com>  [celtare21]
-7e7eb91  prop: Shorten wait time to optimize shutdown time  [zljing]
-2a106fb  BoardConfig: Properly set dexpreopt  [celtare21]
-c416e32  whyred: BoardConfig: Add TARGET_USE_OLD_MNC_FORMAT * Fixes signal icon disappearing when manually selected   a network  [rahul1892]
-4947473  whyred: build missing camera.device impl  [srfarias]
-11e902c  whyred: overlay: Increase number of notification icons  [rahul1892]
-b4730bc  overlay: use Pie qti-telephony-common  [DennySPB]
-5ebd0fc  Import hostapd configs and move_wifi_data script from OB12  [DennySPB]
-
- * frameworks/base
-0153911  GamingMode: Long press tile to open settings [1/2]  [Pranav Vashi]
-d58639d  Add Gaming mode tile  [Pranav Vashi]
-6312440  GamingMode: Exempt calls and alarms when headsup disabled  [Pranav Vashi]
-e35795c  Stop using deprecated Canvas APIs.  [Derek Sollenberger]
-a2b1202  Remove isBandwidthControlEnabled.  [Lorenzo Colitti]
-
- * hardware/qcom/audio-caf/msm8998
-999eb28  Merge tag 'LA.UM.7.4.r1-05300-8x98.0' into pie-caf  [jhenrique09]
-
- * hardware/qcom/display-caf/msm8998
-835981b  Merge tag 'LA.UM.7.4.r1-05300-8x98.0' into HEAD  [jhenrique09]
-
- * hardware/qcom/media-caf/msm8998
-e4dfc2b  Merge tag 'LA.UM.7.4.r1-05300-8x98.0' into pie-caf  [jhenrique09]
-
- * packages/inputmethods/LatinIME
-3b27a15  Move LatinIME and its lib to /product  [Anton Hansson]
-c6d8317  Remove extend touchable region for AOSP keyboard  [lumark]
-
- * system/core
-2dc5c30  lmkd: Prevent non-main threads being registered or killed by lmkd  [Suren Baghdasaryan]
-
- * system/vold
-158b09d  Fix mount error caused by FULL mode bypassed by remountUid  [Zeng Huipeng]
-3c2d2e4  idle-maint: don't need to change discard_granularity  [Jaegeuk Kim]
-4c29376  vold: Introduce android::vold::writeStringToFile  [Tommy Chiu]
-825c1ec  Fix double close in GetTreeBytes  [Josh Gao]
-576dadd  fix wrong ioctl direction for F2FS_IOC_GET_PIN_FILE  [Jaegeuk Kim]
-
- * vendor/xiaomi/whyred
-3fa8a61  Create README.md  [Rashed Sahaji]
-5b33e38  whyred: postprocessing: update from V10.3.3.0.PEICNXM  [srfarias]
-549620b  whyred: add missing libperfgluelayer from V10.3.3.0.PEICNXM  [srfarias]
-bb7326f  whyred: update thermals from thermals-miui  *  [srfarias]
-62b239f  whyred: update vendor blobs from V10.3.3.0.PEICNXM  [srfarias]
-59d0911  whyred: update soundtrigger from V10.3.3.0.PEICNXM  [srfarias]
-f0ba0d4  Revert "whyred: Import camera changes"  [srfarias]
-694df0a  whyred: update time service blobs from LA.UM.7.2.r1-06900-sdm660.0 Picked from https://github.com/AOSiP-Devices/proprietary_vendor_xiaomi/commit/aa2adfe1bbe9baee83bdf3a17829e24bd169daec#diff-b02ba134b026114a75def18805602a61  [Nidhun Balaji T R]
-990b1fe  whyred: delete goodix fingerprint firmware  [Akhil Narang]
-
-====================
-     2019-07-09    
-====================
-
- * hardware/qcom/power
-2846b24  qcom: power: Stop log spam "QCOM PowerHAL: Failed to acquire lock"  [pavlaras]
-
- * packages/apps/Settings
-90fd4f5  GamingMode: Long press tile to open settings [2/2]  [Pranav Vashi]
-
-====================
-     2019-07-08    
-====================
-
- * prebuilts/clang/host/linux-x86
-cbeb854  Merge pull request #1 from SOVIET-ANDROID/9.0  [DennySPb]
-d5c9ccc  Update prebuilt Clang to r353983e.  [Stephen Hines]
-
-====================
-     2019-07-07    
-====================
-
- * device/xiaomi/whyred
-e092086  whyred: proprietary-files: add ..color@1.2 from V10.3.3.0.PEICNXM  [srfarias]
-b620563  whyred: vendor_prop.mk: update all required vendor props  [srfarias]
-85239b1  whyred: proprietary-files: add libperfgluelayer from V10.3.3.0.PEICNXM  [srfarias]
-41c59f6  whyred: rootdir: set 128kb readahead  [srfarias]
-a686ef0  whyred: overlay: add surfaceflinger to the list of pinned apps  [srfarias]
-e1b2467  whyred: update audio features and props from LA.UM.7.2.r1-07000-sdm660.0  [srfarias]
-fdf8062  whyred: props: massive update from V10.3.3.0.PEICNXM  [srfarias]
-f73d584  whyred: sepolicy: adressed wlan/p2p0 denials  [srfarias]
-
- * hardware/qcom/fm
-647ae02  Automatic translation import  [Michael Bestas]
-
- * packages/apps/Nfc
-1f50db5  NfcNci: make T3T/Nfc-F HCE optional  [Simon Shields]
+9a1a189  team: add Asus ZenFone Max Pro M1 to official builds  [blinoff82]
 
