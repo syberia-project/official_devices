@@ -1,159 +1,170 @@
 ====================
+     2019-07-19    
+====================
+
+ * device/xiaomi/mido
+2753011  mido: selinux: Fix the time_daemon denial  [davidtrpcevski]
+91d5d9e  mido: Fix audio recording distortion  [David Trpcheski]
+f24ec3f  mido: Disable fluence for voice recording  [David Trpcheski]
+11dc7ef  mido:Update tree for pelt  [kondors1995]
+d7b251b  mido: update sha sum  [kondors1995]
+
+ * kernel/xiaomi/msm8953
+ca2d60e  sched/fair: Make scheduling period more efficient  [Tyler Nijmeh]
+
+====================
+     2019-07-18    
+====================
+
+ * frameworks/base
+42901ab  Launch music player on headset connect: add BT compatibility [1/2]  [ezio84]
+8c2351d  Bluetooth: Unregister BLE APPs when mBluetoothGatt valid only  [Venkata Jagadeesh Garaga]
+cc1cf3d  Merge "Move DexLoadReporter setup before AppComponentFactory calls" into 9.0  [blinov.in]
+ef4cde5  Merge "QS tiles: Update icons from Android Q" into 9.0  [blinov.in]
+
+ * packages/apps/Settings
+85167aa  Open app when clicking on icon in App Info  [deadman96385]
+
+ * packages/apps/SyberiaSettings
+10cbfff  Launch music player on headset connect: add BT compatibility [2/2]  [ezio84]
+
+====================
+     2019-07-17    
+====================
+
+ * frameworks/base
+3f6afbc  Move DexLoadReporter setup before AppComponentFactory calls  [David Brazdil]
+
+ * kernel/xiaomi/msm8953
+4f59178  PELT: use half value of 16  [kondors1995]
+5f3b2ae  proc:Also kill Snapcam & stock syberaia gcam  [kondors1995]
+3829629  mido:Use a PELT halflife of 8  [kondors1995]
+472a310  proc: Fix scheduling while atomic when killing errant background apps  [Sultan Alsawaf]
+949ac91  kernel: Don't allow IRQ affinity masks to have more than one CPU  [Sultan Alsawaf]
+70dc9c0  Revert "BACKPORT: sched/cpufreq/schedutil: Use util_est for OPP selection"  [kondors1995]
+
+====================
+     2019-07-16    
+====================
+
+ * frameworks/base
+3615a14  QS tiles: Update icons from Android Q  [Stallix]
+
+ * kernel/xiaomi/msm8953
+96f4546  disbale walt  [kondors1995]
+f5b19f0  Revert "schedutil: Don't assume we are likely using PELT"  [Volodymyr Zhdanov]
+c93a1e9  FROMLIST: sched: force update of blocked load of idle cpus  [Brendan Jackman]
+e88d0b7  sched/pelt: Fix false running accounting  [Vincent Guittot]
+c1c71e4  ANDROID: sched/fair: correct pelt load information in sched-pelt.h  [Guanglei Li]
+3ff274b  ANDROID: sched/fair: initialise util_est values to 0 on fork  [Chris Redpath]
+562ce00  ANDROID: sched/fair: schedtune: update before schedutil  [Patrick Bellasi]
+af21833  Revert "ANDROID: Move schedtune en/dequeue before schedutil update triggers"  [celtare21]
+3dadb33c  FROMLIST: sched/fair: add support to tune PELT ramp/decay timings  [Patrick Bellasi]
+71ac9ab  BACKPORT: sched/fair: Update util_est before updating schedutil  [Patrick Bellasi]
+09b1119  BACKPORT: sched/fair: Update util_est only on util_avg updates  [Patrick Bellasi]
+11c5fa2  sched/fair: Move the PELT constants into a generated header  [Peter Zijlstra]
+5370604  sched/fair: Increase PELT accuracy for small tasks  [Peter Zijlstra]
+55995d1  sched/fair: Fix comments  [Peter Zijlstra]
+2e4d21a  sched/Documentation: Add 'sched-pelt' tool  [Yuyang Du]
+471389a  sched/fair: Fix corner case in __accumulate_sum()  [Peter Zijlstra]
+4dccec5  sched/fair: Optimize ___update_sched_avg()  [Yuyang Du]
+a7f4ca3  sched/fair: Explicitly generate __update_load_avg() instances  [Peter Zijlstra]
+cdfda84  sched/fair: Optimize sum computation with a lookup table  [Yuyang Du]
+
+====================
+     2019-07-15    
+====================
+
+ * external/sqlite
+72a3832  sqlite: upgrade to SQLite 3.29.0  [mydongistiny]
+
+ * frameworks/av
+30e9e36  Camera: Consider the currently acquired input buffers  [Emilian Peev]
+
+ * packages/apps/Settings
+f49f16f  Settings: update ru translation  [blinoff82]
+2d062f9  team: beryllium is out  [blinoff82]
+
+ * system/bt
+b6bc7c9  GAP: Correct the continuous pkt length in l2cap  [Venkata Jagadeesh Garaga]
+
+ * system/sepolicy
+c0fe63b  A2dp sink SHO: Add bluetooth support to access mediametrics service  [haoll]
+
+ * vendor/xiaomi
+fd993c7  mido:msm_irqbalance update from sailfish-qpp5  [kondors1995]
+
+====================
+     2019-07-14    
+====================
+
+ * kernel/xiaomi/msm8953
+db7ad33  R6  [kondors1995]
+2c8b7bd  staging: sync: Add a function to check if a fence has been signaled  [Sultan Alsawaf]
+3078e77  ion: Import updated driver from @Zile995  [kondors1995]
+ef7e986  audit: Delete unnecessary checks before two function calls  [Markus Elfring]
+7f9cbed  audit: use kmem_cache to manage the audit_buffer cache  [Paul Moore]
+03079c1  selinux: reduce locking overhead in inode_free_security()  [Waiman Long]
+72d2f64  selinux: Use kmem_cache for hashtab_node  [Kyeongdon Kim]
+3098185  selinux: use kmem_cache for ebitmap  [Junil Lee]
+8cf0add  msm: kgsl: Dispatch commands using a master kthread  [Sultan Alsawaf]
+028d915  staging: sync: Fix compilation when debugfs is enabled  [Sultan Alsawaf]
+5083798  staging: sync: Remove 64-byte name from sync_fence struct  [Sultan Alsawaf]
+72d12f8  msm: kgsl: Don't allocate memory dynamically for drawobj sync structs  [Sultan Alsawaf]
+778d314  msm: kgsl: Modify dispatcher to accept generic objects  [Tarun Karra]
+15f32f8  msm: kgsl: Rename cmdbatch to drawobj  [Tarun Karra]
+dc36db4  msm: kgsl: Don't try to wait for fences that have been signaled  [Sultan Alsawaf]
+364d28a  ALSA: control_compat: Don't dynamically allocate single-use structs  [Sultan Alsawaf]
+bd63ef2  scatterlist: Use vmalloc instead of chaining  [Sultan Alsawaf]
+37c1d1a  mbcache2: Speed up cache entry creation  [Sultan Alsawaf]
+7304743  BACKPORT: [UPSTREAM] ext2: convert to mbcache2  [Jan Kara]
+590b3bc  BACKPORT [UPSTREAM] ext4: convert to mbcache2  [Jan Kara]
+982bd01  BACKPORT: [UPSTREAM] mbcache2: reimplement mbcache  [Jan Kara]
+7b04954  ext4: Avoid dynamically allocating memory in ext4_ext_remove_space  [Sultan Alsawaf]
+0e08612  staging: sync: Don't copy fence names by default  [Sultan Alsawaf]
+d90d61b  xattr: Avoid dynamically allocating memory in getxattr  [Sultan Alsawaf]
+d28cc32  binfmt_elf: Don't allocate memory dynamically in load_elf_binary  [Sultan Alsawaf]
+ebb78dff  staging: sync: Use an on-stack allocation for fence info ioctl  [Sultan Alsawaf]
+66ebb56  selinux: Don't allocate memory dynamically for file and inode security  [Sultan Alsawaf]
+87a31d3  ext4 crypto: Avoid dynamically allocating memory for file names  [Sultan Alsawaf]
+eb31aa2  arm64: vdso: Mark vdso_pagelist allocation as not a leak  [Sultan Alsawaf]
+a072350  dmaengine: Fix memory leak in dma_async_device_register  [Sultan Alsawaf]
+257e0b0  iommu: msm: ensure lazy mappings are unmapped on detach  [Liam Mark]
+83674cf  iommu: msm: Fix lethal race condition and code inconsistencies  [Sultan Alsawaf]
+7ff311b  mm/slab_common: Align all caches' objects to hardware cachelines  [Sultan Alsawaf]
+37ab251  iommu: arm-smmu: Free pgtbl ops when domain contexts are destroyed  [Sultan Alsawaf]
+c15ad07  media: v4l2-ioctl: Use a larger on-stack video copy buffer  [Sultan Alsawaf]
+b3ac447  msm: camera: Avoid dynamic memory allocation for small buffers  [Sultan Alsawaf]
+9aba853  kernfs: Avoid dynamic memory allocation for small write buffers  [Sultan Alsawaf]
+76d0ecb  sysfs/kernfs: make read requests on pre-alloc files use the buffer.  [NeilBrown]
+5b3ea2b  sysfs/kernfs: allow attributes to request write buffer be pre-allocated.  [NeilBrown]
+fad592a  ext4 crypto: Use a larger on-stack file name buffer  [Sultan Alsawaf]
+fe3bb50  selinux: Avoid dynamic memory allocation for small context buffers  [Sultan Alsawaf]
+03f17f0  msm: kgsl: Avoid dynamically allocating small command buffers  [Sultan Alsawaf]
+c7e9fb7  iommu: msm: Rewrite to improve clarity and performance  [Sultan Alsawaf]
+e097769  Revert Multiple Sultan changes in preperation for updated change import  [kondors1995]
+
+====================
      2019-07-13    
 ====================
 
- * device/xiaomi/mido
-336a993  mido: Don't provide module target for libtime_genoff  [ZeeLog]
-
  * frameworks/base
-7dafc57  FODCircleView: support all screen orientations  [Peter Cai]
-b5e8a3c  fod: run async task for setting brightness  [Marko Man]
-516fa77  FODCircleView: read from system props  [Peter Cai]
-a7ffe01  Merge "Improve performance of unclipped save layers." into 9.0  [dennyspb]
+c929aff  SystemUI: Fix SystemUI failed to go to doze issue  [Weijie Wang]
+11add3d  BoostFramework : Add an Update Hint on App update.  [Sai Manobhiram]
 
- * frameworks/opt/net/wifi
-bfbb76b  CountryCode: Use hack for all regions.  [xyyx]
+ * hardware/qcom/data/ipacfg-mgr
+7367dc7  Merge remote-tracking branch 'aosp/pie-gsi' into lineage-16.0-pie-gsi  [Luca Stefani]
+
+ * hardware/qcom/gps
+a62882c  Merge remote-tracking branch 'aosp/pie-gsi' into lineage-16.0-pie-gsi  [Luca Stefani]
 
  * kernel/xiaomi/msm8953
-6bbb61c  Merge remote-tracking branches 'caf/msm-3.18/kernel.lnx.3.18.r34-rel', 'caf/prima/wlan-driver.lnx.1.0.r30-rel' and 'aosp/android-3.18' into lineage-16.0  [Albert I]
-
- * system/sepolicy
-d5421ce  Address some theme_data_file denials  [DennySPB]
-
-====================
-     2019-07-12    
-====================
-
- * external/skia
-2ae28b8  Add private save-behind and draw-behind methods to canvas.  [Derek Sollenberger]
-
- * frameworks/base
-823b65e  Merge changes I84dfb11f,I3bd86832,Ie7d15918,Iaa9413bf,I36d05835, ... into 9.0  [dennyspb]
-582f775  GamingMode: allow disable navigation gestures [1/2]  [DennySPB]
-538d263  Aggressive Battery: Improve value substitution  [Joe Maples]
-ac991ae  Improve performance of unclipped save layers.  [Derek Sollenberger]
+83ab516  ARM: dts: msm: Add a capacity-based SD625 (msm8953) energy model  [kondors1995]
+1a8aa6e  Revert "sched: energy: calculate and update CPU capacity dynamically"  [kondors1995]
 
  * packages/apps/Settings
-1ebf020  Merge "GamingMode: Long press tile to open settings [2/2]" into 9.0  [dennyspb]
-f6880b0  Stop calling isBandwidthControlEnabled.  [Lorenzo Colitti]
-5eeb874  Merge "BatteryUtils: Show anomalies of pre-O apps" into 9.0  [dennyspb]
-
- * packages/apps/SyberiaSettings
-743e823  GamingMode: Disable modifying settings when GamingMode is turned on  [Pranav Vashi]
-
-====================
-     2019-07-11    
-====================
-
- * device/xiaomi/mido
-7462773  mido: Update Graphics stack from Aquarius X2 (Zangya)  [ZeeLog]
-224270c  mido: XiaomiParts: Migrate to androidx  [Bruno Martins]
-efc52f1  mido: compile kernel with 9.0.5 clang  [kondors1995]
-
- * frameworks/base
-85289a8  fwb: Add hide notch support [1/2]  [Henrique Silva]
-ba5eda0  Partialy revert "[1/2] services: allow to force "never" mode for display cutout"  [DennySPB]
-9fc3620  SystemUI: QS: Add VPN tile  [Danny Baumann]
-6ddd22e  frameworks/base: Avoid recording negative data  [Pavan Kumar M]
-9a0263c  Use the boot class loader as parent of system server loader  [Nicolas Geoffray]
-d5f9169  Remove uses of libcore.io DropBox and EventLogger  [Paul Duffin]
-e9c498b  telephony: Fixed crash in data service  [Jack Yu]
-6e5d593  Optimize the font cache size according to display resolution  [Libo Jin]
-6911648  Fix handlelr thread block while switching bluetooth  [Kou Lei]
-b5f866a  Fix NullPointerException in ConnectivityService  [soma, kawata]
-c2c76fe  idle-maint: provide a way to run GC more aggressively  [Jaegeuk Kim]
-
- * libcore
-5f6797c  Remove a superfluous array copy from several String ctors  [Pete Gillin]
-e768383  libcore: Remove DropBox and EventLogger  [Paul Duffin]
-
- * packages/apps/SyberiaSettings
-a0babd6  GamingMode: Allow disable navigation gestures [2/2]  [DennySPB]
-
- * packages/inputmethods/LatinIME
-3b27a15  Move LatinIME and its lib to /product  [Anton Hansson]
-c6d8317  Remove extend touchable region for AOSP keyboard  [lumark]
-
- * system/core
-2dc5c30  lmkd: Prevent non-main threads being registered or killed by lmkd  [Suren Baghdasaryan]
-
- * system/vold
-158b09d  Fix mount error caused by FULL mode bypassed by remountUid  [Zeng Huipeng]
-3c2d2e4  idle-maint: don't need to change discard_granularity  [Jaegeuk Kim]
-4c29376  vold: Introduce android::vold::writeStringToFile  [Tommy Chiu]
-825c1ec  Fix double close in GetTreeBytes  [Josh Gao]
-576dadd  fix wrong ioctl direction for F2FS_IOC_GET_PIN_FILE  [Jaegeuk Kim]
+800d8b2  Merge "team: add Asus ZenFone Max Pro M1 to official builds" into 9.0  [blinov.in]
 
  * vendor/syberia
-dba0ae2  vendor: Add hide notch support [1/2]  [Henrique Silva]
-
- * vendor/xiaomi
-5cbf26f  mido: Update blobs from taimen-qpp4.190502.018  [Volodymyr Zhdanov]
-63a8484  msm8953-common: Don't provide module target for libloc_api_v02  [ZeeLog]
-9fc1cde  msm8953-common: Update Graphics stack from Aquarius X2 (Zangya)  [ZeeLog]
-07b3b35  mido: Update blobs from 7.0/NRD90M/9.7.4  [ZeeLog]
-
-====================
-     2019-07-10    
-====================
-
- * device/xiaomi/mido
-27774b8  mido: proprietary-files: Use keymaster@3.0-impl from Oreo.  [Quallenauge]
-
- * frameworks/base
-0153911  GamingMode: Long press tile to open settings [1/2]  [Pranav Vashi]
-d58639d  Add Gaming mode tile  [Pranav Vashi]
-6312440  GamingMode: Exempt calls and alarms when headsup disabled  [Pranav Vashi]
-e35795c  Stop using deprecated Canvas APIs.  [Derek Sollenberger]
-a2b1202  Remove isBandwidthControlEnabled.  [Lorenzo Colitti]
-
- * hardware/qcom/power
-2846b24  qcom: power: Stop log spam "QCOM PowerHAL: Failed to acquire lock"  [pavlaras]
-
- * packages/apps/Settings
-90fd4f5  GamingMode: Long press tile to open settings [2/2]  [Pranav Vashi]
-
- * vendor/xiaomi
-e7582ce  msm8953-common: Use keymaster@3.0-impl from Oreo.  [Quallenauge]
-
-====================
-     2019-07-09    
-====================
-
- * device/xiaomi/mido
-a427e06  mido: overlay: Add wifi tcp buffersizes  [Murat Kozan]
-bec8b13  mido: init: Create rfs data files  [Murat Kozan]
-55bbde2  mido: Add vendor prefix to mobile data user preference properties  [Murat Kozan]
-c27d756  mido: Set mobile data user preference  [Murat Kozan]
-e6defd4  mido: Update nitz radio properties  [Murat Kozan]
-
- * prebuilts/clang/host/linux-x86
-cbeb854  Merge pull request #1 from SOVIET-ANDROID/9.0  [DennySPb]
-d5c9ccc  Update prebuilt Clang to r353983e.  [Stephen Hines]
-
-====================
-     2019-07-08    
-====================
-
-====================
-     2019-07-07    
-====================
-
- * device/xiaomi/mido
-bf8f56f  mido: Update GPS blobs from LA.UM.7.6.r1-04300-89xx.0  [Flex1911]
-61dfd65  mido: prop: allow surfaceflinger to skip propagating backpressure  [rashedsahaji]
-f686d13  msm8953-common: Update blobs from Tissot  [ZeeLog]
-019946d  rootdir:Disable iowait boost  [kondors1995]
-9b33ea7  prebuilts: update Lawnchair to 2268-alpha  [kondors1995]
-58bcebc  powerhint: V.2.2  [kondors1995]
-
- * hardware/qcom/fm
-647ae02  Automatic translation import  [Michael Bestas]
-
- * packages/apps/Nfc
-1f50db5  NfcNci: make T3T/Nfc-F HCE optional  [Simon Shields]
-
- * vendor/xiaomi
-c665458  msm8953-common: Update GPS blobs from LA.UM.7.6.r1-04300-89xx.0  [Artem Borisov]
-b0e28b4  msm8953-common: Update blobs from Tissot  [ZeeLog]
+9a1a189  team: add Asus ZenFone Max Pro M1 to official builds  [blinoff82]
 
