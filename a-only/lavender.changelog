@@ -1,4 +1,62 @@
 ====================
+     2019-07-19    
+====================
+
+====================
+     2019-07-18    
+====================
+
+ * frameworks/base
+42901ab  Launch music player on headset connect: add BT compatibility [1/2]  [ezio84]
+8c2351d  Bluetooth: Unregister BLE APPs when mBluetoothGatt valid only  [Venkata Jagadeesh Garaga]
+cc1cf3d  Merge "Move DexLoadReporter setup before AppComponentFactory calls" into 9.0  [blinov.in]
+ef4cde5  Merge "QS tiles: Update icons from Android Q" into 9.0  [blinov.in]
+
+ * packages/apps/Settings
+85167aa  Open app when clicking on icon in App Info  [deadman96385]
+
+ * packages/apps/SyberiaSettings
+10cbfff  Launch music player on headset connect: add BT compatibility [2/2]  [ezio84]
+
+====================
+     2019-07-17    
+====================
+
+ * frameworks/base
+3f6afbc  Move DexLoadReporter setup before AppComponentFactory calls  [David Brazdil]
+
+====================
+     2019-07-16    
+====================
+
+ * frameworks/base
+3615a14  QS tiles: Update icons from Android Q  [Stallix]
+
+====================
+     2019-07-15    
+====================
+
+ * external/sqlite
+72a3832  sqlite: upgrade to SQLite 3.29.0  [mydongistiny]
+
+ * frameworks/av
+30e9e36  Camera: Consider the currently acquired input buffers  [Emilian Peev]
+
+ * packages/apps/Settings
+f49f16f  Settings: update ru translation  [blinoff82]
+2d062f9  team: beryllium is out  [blinoff82]
+
+ * system/bt
+b6bc7c9  GAP: Correct the continuous pkt length in l2cap  [Venkata Jagadeesh Garaga]
+
+ * system/sepolicy
+c0fe63b  A2dp sink SHO: Add bluetooth support to access mediametrics service  [haoll]
+
+====================
+     2019-07-14    
+====================
+
+====================
      2019-07-13    
 ====================
 
@@ -6,209 +64,21 @@
 67c71b9  lavender: Update display HAL dependencies  [mdeejay]
 
  * frameworks/base
-7dafc57  FODCircleView: support all screen orientations  [Peter Cai]
-b5e8a3c  fod: run async task for setting brightness  [Marko Man]
-516fa77  FODCircleView: read from system props  [Peter Cai]
-a7ffe01  Merge "Improve performance of unclipped save layers." into 9.0  [dennyspb]
+c929aff  SystemUI: Fix SystemUI failed to go to doze issue  [Weijie Wang]
+11add3d  BoostFramework : Add an Update Hint on App update.  [Sai Manobhiram]
 
- * frameworks/opt/net/wifi
-bfbb76b  CountryCode: Use hack for all regions.  [xyyx]
+ * hardware/qcom/data/ipacfg-mgr
+7367dc7  Merge remote-tracking branch 'aosp/pie-gsi' into lineage-16.0-pie-gsi  [Luca Stefani]
 
  * hardware/qcom/display-caf/msm8998
 02c9e9f  Revert "display: Define soong namespace"  [mdeejay]
 
- * system/sepolicy
-d5421ce  Address some theme_data_file denials  [DennySPB]
-
-====================
-     2019-07-12    
-====================
-
- * frameworks/base
-823b65e  Merge changes I84dfb11f,I3bd86832,Ie7d15918,Iaa9413bf,I36d05835, ... into 9.0  [dennyspb]
-582f775  GamingMode: allow disable navigation gestures [1/2]  [DennySPB]
-538d263  Aggressive Battery: Improve value substitution  [Joe Maples]
+ * hardware/qcom/gps
+a62882c  Merge remote-tracking branch 'aosp/pie-gsi' into lineage-16.0-pie-gsi  [Luca Stefani]
 
  * packages/apps/Settings
-1ebf020  Merge "GamingMode: Long press tile to open settings [2/2]" into 9.0  [dennyspb]
-f6880b0  Stop calling isBandwidthControlEnabled.  [Lorenzo Colitti]
-5eeb874  Merge "BatteryUtils: Show anomalies of pre-O apps" into 9.0  [dennyspb]
-
- * packages/apps/SyberiaSettings
-743e823  GamingMode: Disable modifying settings when GamingMode is turned on  [Pranav Vashi]
-
-====================
-     2019-07-11    
-====================
-
- * external/skia
-2ae28b8  Add private save-behind and draw-behind methods to canvas.  [Derek Sollenberger]
-
- * frameworks/base
-ac991ae  Improve performance of unclipped save layers.  [Derek Sollenberger]
-85289a8  fwb: Add hide notch support [1/2]  [Henrique Silva]
-ba5eda0  Partialy revert "[1/2] services: allow to force "never" mode for display cutout"  [DennySPB]
-9fc3620  SystemUI: QS: Add VPN tile  [Danny Baumann]
-6ddd22e  frameworks/base: Avoid recording negative data  [Pavan Kumar M]
-9a0263c  Use the boot class loader as parent of system server loader  [Nicolas Geoffray]
-d5f9169  Remove uses of libcore.io DropBox and EventLogger  [Paul Duffin]
-e9c498b  telephony: Fixed crash in data service  [Jack Yu]
-6e5d593  Optimize the font cache size according to display resolution  [Libo Jin]
-6911648  Fix handlelr thread block while switching bluetooth  [Kou Lei]
-b5f866a  Fix NullPointerException in ConnectivityService  [soma, kawata]
-c2c76fe  idle-maint: provide a way to run GC more aggressively  [Jaegeuk Kim]
-
- * kernel/xiaomi/lavender
-a1f9013  Android: Add empty Android.mk file  [LuK1337]
-1afde06  Merge branch 'kernel.lnx.4.4.r34-rel' of https://github.com/android-linux-stable/msm-4.4 into pie-clang  [mdeejay]
-47ecf75  Merge 4.4.185 into kernel.lnx.4.4.r34-rel  [Nathan Chancellor]
-092bcb7  lavender: config: Update WLAN config  [mdeejay]
-f3e972b  SQUASHED: Update QCOM WLAN drivers  [mdeejay]
-6f56096  Merge tag 'LA.UM.7.2.r1-07000-sdm660.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.4 into pie-clang  [mdeejay]
-7bbf489  Linux 4.4.185  [Greg Kroah-Hartman]
-f66168a  dmaengine: imx-sdma: remove BD_INTR for channel0  [Robin Gong]
-2fec7f2  KVM: x86: degrade WARN to pr_warn_ratelimited  [Paolo Bonzini]
-c0309c7  arm64, vdso: Define vdso_{start,end} as array  [Kees Cook]
-a62a40c  ARC: handle gcc generated __builtin_trap for older compiler  [Vineet Gupta]
-1ed8ed6  tty: rocket: fix incorrect forward declaration of 'rp_init()'  [Linus Torvalds]
-986543f  btrfs: Ensure replaced device doesn't have pending chunk allocation  [Nikolay Borisov]
-adbf2b4  lib/mpi: Fix karactx leak in mpi_powm  [Herbert Xu]
-52e0b9f  ALSA: usb-audio: fix sign unintended sign extension on left shifts  [Colin Ian King]
-3864c89  ALSA: firewire-lib/fireworks: fix miss detection of received MIDI messages  [Takashi Sakamoto]
-13088ba  ALSA: seq: fix incorrect order of dest_client/dest_ports arguments  [Colin Ian King]
-6e5d6d1  crypto: user - prevent operating on larval algorithms  [Eric Biggers]
-54562d2  ptrace: Fix ->ptracer_cred handling for PTRACE_TRACEME  [Jann Horn]
-18eee99  MIPS: Workaround GCC __builtin_unreachable reordering bug  [Paul Burton]
-2fbaa1a  bug.h: work around GCC PR82365 in BUG()  [Arnd Bergmann]
-2f8180f  swiotlb: Make linux/swiotlb.h standalone includible  [Thierry Reding]
-f1a9886  mfd: omap-usb-tll: Fix register offsets  [Arnd Bergmann]
-a1877fd  MIPS: math-emu: do not use bools for arithmetic  [Manuel Lauss]
-014275f  ARC: fix build warning in elf.h  [Vineet Gupta]
-a414c47  ARC: Assume multiplier is always present  [Vineet Gupta]
-b3e8f6b  scsi: hpsa: correct ioaccel2 chaining  [Don Brace]
-8978dce  usb: gadget: udc: lpc32xx: allocate descriptor with GFP_ATOMIC  [Alexandre Belloni]
-53f1c78  usb: gadget: fusb300_udc: Fix memory leak of fusb300->ep[i]  [Young Xiao]
-5b3f570  ASoC: max98090: remove 24-bit format support if RJ is 0  [Yu-Hsuan Hsu]
-05d6e61  spi: bitbang: Fix NULL pointer dereference in spi_unregister_master  [YueHaibing]
-d4dcab6  ASoC : cs4265 : readable register too low  [Matt Flax]
-3c73842  um: Compile with modern headers  [Jason A. Donenfeld]
-993699d  Bluetooth: Fix faulty expression for minimum encryption key size check  [Matias Karhumaa]
-b3c963d  net: check before dereferencing netdev_ops during busy poll  [Josh Elsasser]
-ec109e6  bonding: Always enable vlan tx offload  [YueHaibing]
-012e59e  ipv4: Use return value of inet_iif() for __raw_v4_lookup in the while loop  [Stephen Suryaputra]
-8b4c9df  team: Always enable vlan tx offload  [YueHaibing]
-36ad5e8  tipc: check msg->req data len in tipc_nl_compat_bearer_disable  [Xin Long]
-253c717  tipc: change to use register_pernet_device  [Xin Long]
-92598c5  sctp: change to hold sk after auth shkey is created successfully  [Xin Long]
-a892d74  cpu/speculation: Warn on unsupported mitigations= parameter  [Geert Uytterhoeven]
-8ac3c1a  x86/speculation: Allow guests to use SSBD even if host does not  [Alejandro Jimenez]
-b24be4a  ovl: modify ovl_permission() to do checks on two inodes  [Vivek Goyal]
-485ac3d  KVM: X86: Fix scan ioapic use-before-initialization  [Wanpeng Li]
-33da943  net/9p: include trans_common.h to fix missing prototype warning.  [Adeodato Simó]
-33e0f07  9p: p9dirent_read: check network-provided name length  [Dominique Martinet]
-3479b3c  9p/rdma: remove useless check in cm_event_handler  [Dominique Martinet]
-1275a5c  9p: acl: fix uninitialized iattr access  [Dominique Martinet]
-8745173  9p/rdma: do not disconnect on down_interruptible EAGAIN  [Dominique Martinet]
-6052d03  perf help: Remove needless use of strncpy()  [Arnaldo Carvalho de Melo]
-e1f60e3  perf ui helpline: Use strlcpy() as a shorter form of strncpy() + explicit set nul  [Arnaldo Carvalho de Melo]
-c7c6809  mac80211: drop robust management frames from unknown TA  [Johannes Berg]
-3aca040  cfg80211: fix memory leak of wiphy device name  [Eric Biggers]
-b79e58a  SMB3: retry on STATUS_INSUFFICIENT_RESOURCES instead of failing write  [Steve French]
-59f9ad4  Bluetooth: Fix regression with minimum encryption key size alignment  [Marcel Holtmann]
-75de0dd  Bluetooth: Align minimum encryption key size for LE and BR/EDR connections  [Marcel Holtmann]
-892b9bf  ARM: imx: cpuidle-imx6sx: Restrict the SW2ISO increase to i.MX6SX  [Fabio Estevam]
-562f962  can: purge socket error queue on sock destruct  [Willem de Bruijn]
-b4fd1ed  can: flexcan: fix timeout when set small bitrate  [Joakim Zhang]
-d38cac3  btrfs: start readahead also in seed devices  [Naohiro Aota]
-95c8238  Btrfs: fix race between readahead and device replace/removal  [Filipe Manana]
-66f0f0f  hwmon: (pmbus/core) Treat parameters as paged if on multiple pages  [Robert Hancock]
-4847348  s390/qeth: fix VLAN attribute in bridge_hostnotify udev event  [Alexandra Winter]
-3b63a2e  scsi: ufs: Check that space was properly alloced in copy_query_response  [Avri Altman]
-d367346  scripts/checkstack.pl: Fix arm64 wrong or unknown architecture  [George G. Davis]
-37515df  sparc: perf: fix updated event period in response to PERF_EVENT_IOC_PERIOD  [Young Xiao]
-9df6837  net: hns: Fix loopback test failed at copper ports  [Yonglong Liu]
-629877b5  MIPS: uprobes: remove set but not used variable 'epc'  [YueHaibing]
-a66d44b  IB/hfi1: Insure freeze_work work_struct is canceled on shutdown  [Mike Marciniszyn]
-96fdfe5  parisc: Fix compiler warnings in float emulation code  [Helge Deller]
-ececcbae  parport: Fix mem leak in parport_register_dev_model  [YueHaibing]
-9617058  apparmor: enforce nullbyte at end of tag string  [Jann Horn]
-4b6818e  Input: uinput - add compat ioctl number translation for UI_*_FF_UPLOAD  [Andrey Smirnov]
-9a7435e  usb: chipidea: udc: workaround for endpoint conflict issue  [Peter Chen]
-9efccd7  gcc-9: silence 'address-of-packed-member' warning  [Linus Torvalds]
-f724766  tracing: Silence GCC 9 array bounds warning  [Miguel Ojeda]
-9370976  scsi: vmw_pscsi: Fix use-after-free in pvscsi_queue_lck()  [Jan Kara]
-bd6042e  mm/page_idle.c: fix oops because end_pfn is larger than max_pfn  [Colin Ian King]
-fb7adf6  fs/binfmt_flat.c: make load_flat_shared_library() work  [Jann Horn]
-
- * libcore
-5f6797c  Remove a superfluous array copy from several String ctors  [Pete Gillin]
-e768383  libcore: Remove DropBox and EventLogger  [Paul Duffin]
-
- * packages/apps/SyberiaSettings
-a0babd6  GamingMode: Allow disable navigation gestures [2/2]  [DennySPB]
-
- * packages/inputmethods/LatinIME
-3b27a15  Move LatinIME and its lib to /product  [Anton Hansson]
-c6d8317  Remove extend touchable region for AOSP keyboard  [lumark]
-
- * system/core
-2dc5c30  lmkd: Prevent non-main threads being registered or killed by lmkd  [Suren Baghdasaryan]
-
- * system/vold
-158b09d  Fix mount error caused by FULL mode bypassed by remountUid  [Zeng Huipeng]
-3c2d2e4  idle-maint: don't need to change discard_granularity  [Jaegeuk Kim]
-4c29376  vold: Introduce android::vold::writeStringToFile  [Tommy Chiu]
-825c1ec  Fix double close in GetTreeBytes  [Josh Gao]
-576dadd  fix wrong ioctl direction for F2FS_IOC_GET_PIN_FILE  [Jaegeuk Kim]
+800d8b2  Merge "team: add Asus ZenFone Max Pro M1 to official builds" into 9.0  [blinov.in]
 
  * vendor/syberia
-dba0ae2  vendor: Add hide notch support [1/2]  [Henrique Silva]
-
-====================
-     2019-07-10    
-====================
-
- * frameworks/base
-0153911  GamingMode: Long press tile to open settings [1/2]  [Pranav Vashi]
-d58639d  Add Gaming mode tile  [Pranav Vashi]
-6312440  GamingMode: Exempt calls and alarms when headsup disabled  [Pranav Vashi]
-e35795c  Stop using deprecated Canvas APIs.  [Derek Sollenberger]
-a2b1202  Remove isBandwidthControlEnabled.  [Lorenzo Colitti]
-
- * hardware/qcom/display-caf/msm8998
-835981b  Merge tag 'LA.UM.7.4.r1-05300-8x98.0' into HEAD  [jhenrique09]
-
- * hardware/qcom/power
-2846b24  qcom: power: Stop log spam "QCOM PowerHAL: Failed to acquire lock"  [pavlaras]
-
- * packages/apps/Settings
-90fd4f5  GamingMode: Long press tile to open settings [2/2]  [Pranav Vashi]
-
-====================
-     2019-07-09    
-====================
-
- * prebuilts/clang/host/linux-x86
-cbeb854  Merge pull request #1 from SOVIET-ANDROID/9.0  [DennySPb]
-d5c9ccc  Update prebuilt Clang to r353983e.  [Stephen Hines]
-
-====================
-     2019-07-08    
-====================
-
- * kernel/xiaomi/lavender
-294b521  proc: Don't let Google Camera and Settings run in the background  [Sultan Alsawaf]
-
-====================
-     2019-07-07    
-====================
-
- * device/xiaomi/lavender
-1810c54  lavender: Bump Syberia version  [mdeejay]
-
- * hardware/qcom/fm
-647ae02  Automatic translation import  [Michael Bestas]
-
- * packages/apps/Nfc
-1f50db5  NfcNci: make T3T/Nfc-F HCE optional  [Simon Shields]
+9a1a189  team: add Asus ZenFone Max Pro M1 to official builds  [blinoff82]
 
