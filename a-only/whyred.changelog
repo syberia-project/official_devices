@@ -1,13 +1,67 @@
 ====================
-     2019-07-19    
-====================
-
-====================
-     2019-07-18    
+     2019-07-21    
 ====================
 
  * device/xiaomi/whyred
-38a78dc  whyred: audio stuff and some cleans  [srfarias]
+e0f32f7  whyred: little tweak in-call volume  [rashedsahaji]
+ea8544f  whyred: load thermal-engine.conf config  [luk1337]
+1a25b60  whyred: configs: add regenerated thermal config  [srfarias]
+0dc0a38  whyred: rootdir: little init.qcom.rc update from caf  [srfarias]
+c676e25  whyred: Use handset-stereo-dmic-ef for camcorder-mic usecase  [LuK1337]
+ea70e9e  whyred: proprietary-files: remove unused thermals configs  [srfarias]
+9e43590  whyred: audio stuff and some cleans  [srfarias]
+4e2c642  whyred: proprietary-files: update perf from LA.UM.7.2.r1-06900-sdm660.0  [srfarias]
+5996ff9  whyred: declare omx.media hild on mk  [srfarias]
+4a6b2a2  whyred: proprietary-files: clean soundtrigger blobs  [srfarias]
+e046223  whyred: update all audio flags/configs and others  [srfarias]
+cfb7cc0  whyred: proprietary-files: update graphics sdm blobs from LA.UM.7.2.r1-06900-sdm660.0  [srfarias]
+39148fd  whyred:props Fix ART props typos  [srfarias]
+b7e7112  props: Optimize ART props  [celtare21]
+73b4b7a  whyred: vendor_prop: remove splita2dp prop from vendor prop  [srfarias]
+651a3c5  whyred: wifi: Drop persistent_reconnect  [haran]
+194c752  whyred: configs: wifi: Disable RX wakelock feature  [LuK1337]
+b94a643  whyred: proprietary-files: unpin time services blobs  [srfarias]
+7a9556a  whyred: Remove redefined time_daemon from init.target.rc  [dianlujitao]
+8cc0252  whyred: Overlay: Add lawnchair overlay  [Rashed Sahaji]
+513ca90  whyred : Update Dependencies  [rashedsahaji]
+ce20e40  whyred: prebuilt: Add Missing Lawnchair stuff  [rashedsahaji]
+b390f54  whyred: add missing wfd props and update graphics ones  [srfarias]
+50d4b79  whyred: rootdir: update init target from xiaomi  [srfarias]
+e7bc43c  whyred: extract-files: Adapt Syberia  [rashedsahaji]
+cb14e95  sdm660: add cpu set for audio app  [Soumya Managoli]
+a6d0e0a  Syberia Bring Up!  [rashedsahaji]
+7f74ebc  whyred: overlay: Disable bluetooth by default  [IamJoker03]
+29aed6d  whyred: rootdir: Add missing dynamic fps node[Fix the Derp]  [srfarias]
+94c8d8d  whyred: rootdir: Add missing dynamic fps node * otherwise sdm won't access it  [Vol Zhdanov]
+abc075b  prebuilts: update Lawnchair to alpha-2190  [DennySPB]
+ecc472b  sepolicy: allow system_server access to charging sysfs node  [DennySPB]
+22896a9  overlay: Enable smart charging  [blinoff82]
+9bbb803  overlay: proximity Check On Fingerprint Wake  [rashedsahaji]
+dce3fc9  Overlay: Enable proxi check on wakeup events  [DennySPB]
+5c09d47  whyred: media: Disable 4k on front cam  [Henrique Silva]
+a06a545  whyred: Import camera changes  [Henrique Silva]
+27964eb  whyred: Add basic USB HAL that reports no status change  [Ethan Chen]
+5d7ad58  whyred: Enable AOD  [Luca Stefani]
+3034c65  whyred: Declare STATE_DOZE support  [Bruno Martins]
+9d8a672  sepolicy: make init and vendor_init permissive domains  [DennySPB]
+237b367  overlay: pin QPerformance and UxPerformance oats  [DennySPB]
+67d45af  PIN critical apps and system services that get swapped  [Jorim Jaggi]
+
+ * vendor/xiaomi/whyred
+3134f0f  whyred: reset to stock thermal configs  [srfarias]
+1b3625e  whyred: perf: update from LA.UM.7.2.r1-06900-sdm660.0  [srfarias]
+5f4fd57  Revert "whyred: Import perf blobs from V10.3.1.0.PEIMIXM"  [srfarias]
+ca234e6  whyred: soundtrigger: seems that we don't need this blobs  [srfarias]
+3678ae8  whyred: update graphics sdm blobs from LA.UM.7.2.r1-06900-sdm660.0  [srfarias]
+39e0ba2  whyred: update more blobs from V10.3.3.0.PEICNXM  [srfarias]
+
+====================
+     2019-07-20    
+====================
+
+====================
+     2019-07-19    
+====================
 
  * frameworks/base
 42901ab  Launch music player on headset connect: add BT compatibility [1/2]  [ezio84]
@@ -22,21 +76,21 @@ ef4cde5  Merge "QS tiles: Update icons from Android Q" into 9.0  [blinov.in]
 10cbfff  Launch music player on headset connect: add BT compatibility [2/2]  [ezio84]
 
 ====================
-     2019-07-17    
+     2019-07-18    
 ====================
 
  * frameworks/base
 3f6afbc  Move DexLoadReporter setup before AppComponentFactory calls  [David Brazdil]
 
 ====================
-     2019-07-16    
+     2019-07-17    
 ====================
 
  * frameworks/base
 3615a14  QS tiles: Update icons from Android Q  [Stallix]
 
 ====================
-     2019-07-15    
+     2019-07-16    
 ====================
 
  * external/sqlite
@@ -56,38 +110,6 @@ b6bc7c9  GAP: Correct the continuous pkt length in l2cap  [Venkata Jagadeesh Gar
 c0fe63b  A2dp sink SHO: Add bluetooth support to access mediametrics service  [haoll]
 
 ====================
-     2019-07-14    
+     2019-07-15    
 ====================
-
- * kernel/xiaomi/whyred
-87daa42  whyred-perf_defconfig: pure x6.1  [srfarias]
-d7c8a83  Merge tag 'LA.UM.7.2.r1-07200-sdm660.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.4 into caf-pie  [srfarias]
-6d44828  mdss: livedisplay: Fix memory leaks in mdss_livedisplay_update()  [Sultanxda]
-1d9b149  video: mdss: LiveDisplay driver  [Steve Kondik]
-22a9b8d  qcacld-3.0: Fix null pointer dereference in htt_rx_amsdu_rx_in_order_pop_ll()  [Sultan Alsawaf]
-
-====================
-     2019-07-13    
-====================
-
- * device/xiaomi/whyred
-184757a  whyred: Overlay: Add lawnchair overlay  [Rashed Sahaji]
-b5c84d1  whyred : Update Dependencies  [rashedsahaji]
-5b11e66  whyred: prebuilt: Add Missing Lawnchair stuff  [rashedsahaji]
-
- * frameworks/base
-c929aff  SystemUI: Fix SystemUI failed to go to doze issue  [Weijie Wang]
-11add3d  BoostFramework : Add an Update Hint on App update.  [Sai Manobhiram]
-
- * hardware/qcom/data/ipacfg-mgr
-7367dc7  Merge remote-tracking branch 'aosp/pie-gsi' into lineage-16.0-pie-gsi  [Luca Stefani]
-
- * hardware/qcom/gps
-a62882c  Merge remote-tracking branch 'aosp/pie-gsi' into lineage-16.0-pie-gsi  [Luca Stefani]
-
- * packages/apps/Settings
-800d8b2  Merge "team: add Asus ZenFone Max Pro M1 to official builds" into 9.0  [blinov.in]
-
- * vendor/syberia
-9a1a189  team: add Asus ZenFone Max Pro M1 to official builds  [blinoff82]
 
