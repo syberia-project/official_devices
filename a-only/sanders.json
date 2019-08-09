@@ -1,0 +1,30 @@
+{
+  "addons": [
+    {
+      "title": "Magisk",
+      "summary": "Magisk",
+      "url": "\"http://tiny.cc/latestmagisk"
+    },
+    {
+      "title": "Magisk",
+      "summary": "Magisk Uninstaller",
+      "url": "http://tiny.cc/latestuninstaller"
+    }
+  ],
+  "filename": "syberia_sanders-v2.8-20190809-2147-OFFICIAL.zip",
+  "changelog": "",
+  "filesize": "601204948",
+  "md5": "f65e721c228ae35d3f6e4571d6e0d278",
+  "build_date": "20190809",
+  "device": "sanders",
+  "url": "https://sourceforge.net/projects/syberiaos/files/sanders/syberia_sanders-v2.8-20190809-2147-OFFICIAL.zip/download",
+  "donate_url": "https://syberiaos.com/links",
+  "developer_url": "http://github.com/syberia-project",
+  "news_url": "http://github.com/syberia-project",
+  "developer": "Ashwatthama",
+  "error": "false",
+  "website_url": "http://syberiaos.com",
+  "forum_url": "https://forum.xda-developers.com/moto-g5s-plus/development/rom-syberia-project-t3947216",
+  "device_brand": "Motorola",
+  "device_model": "Moto G5S Plus"
+}
