@@ -91,9 +91,6 @@ ecbb7fd  sched: Extend scheduler's asym packing  [Tim Chen]
  * packages/apps/Settings
 b454827  Merge changes I574e7067,Ia1f46fad,I96e83a35,Ib8054f72,I49490d63, ... into 9.0  [dennyspb]
 
- * packages/apps/SyberiaPapers
-42089c5  SyberiaPapers: add night mode overlay  [coderzstas]
-
  * vendor/syberia
 7aa0a7d  v2.8  [DennySPB]
 56da69d  Build our wallpapers package  [DennySPB]
@@ -237,6 +234,7 @@ ecc6f15  cpufreq: schedutil: Don't restrict kthread to related_cpus unnecessaril
 04be20f  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPB]
 
  * packages/apps/SyberiaPapers
+42089c5  SyberiaPapers: add night mode overlay  [coderzstas]
 fbdf6fb  Adapt to Syberia  [DennySPB]
 
  * packages/services/Telecomm
@@ -344,9 +342,6 @@ e8564b1  init: support /dev/input  [Mark Salyzyn]
 ====================
      2019-08-04    
 ====================
-
- * build/make
-ccdc5e6  build: Also replace audio/include old-style kernel header  [Dyneteve]
 
  * build/soong
 f973a85  Add kryo300 to CPU optimizations list  [Dmitry Eliseev]
@@ -587,6 +582,9 @@ b3c56e7  Automatic translation import  [Michael Bestas]
 ====================
      2019-08-03    
 ====================
+
+ * build/make
+ccdc5e6  build: Also replace audio/include old-style kernel header  [Dyneteve]
 
  * frameworks/native
 41e1b95  libbinder: empty ping transaction  [Steven Moreland]
