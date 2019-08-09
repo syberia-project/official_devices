@@ -340,9 +340,6 @@ e8564b1  init: support /dev/input  [Mark Salyzyn]
      2019-08-04    
 ====================
 
- * build/soong
-f973a85  Add kryo300 to CPU optimizations list  [Dmitry Eliseev]
-
  * hardware/qcom/fm
 2cf84a8  Automatic translation import  [Michael Bestas]
 
@@ -582,6 +579,9 @@ b3c56e7  Automatic translation import  [Michael Bestas]
 
  * build/make
 ccdc5e6  build: Also replace audio/include old-style kernel header  [Dyneteve]
+
+ * build/soong
+f973a85  Add kryo300 to CPU optimizations list  [Dmitry Eliseev]
 
  * frameworks/native
 41e1b95  libbinder: empty ping transaction  [Steven Moreland]
