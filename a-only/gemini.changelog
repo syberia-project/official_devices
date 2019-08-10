@@ -1,81 +1,161 @@
 ====================
-     2019-07-19    
-====================
-
- * frameworks/base
-42901ab  Launch music player on headset connect: add BT compatibility [1/2]  [ezio84]
-8c2351d  Bluetooth: Unregister BLE APPs when mBluetoothGatt valid only  [Venkata Jagadeesh Garaga]
-cc1cf3d  Merge "Move DexLoadReporter setup before AppComponentFactory calls" into 9.0  [blinov.in]
-ef4cde5  Merge "QS tiles: Update icons from Android Q" into 9.0  [blinov.in]
-
- * packages/apps/Settings
-85167aa  Open app when clicking on icon in App Info  [deadman96385]
-
- * packages/apps/SyberiaSettings
-10cbfff  Launch music player on headset connect: add BT compatibility [2/2]  [ezio84]
-
-====================
-     2019-07-18    
+     2019-08-10    
 ====================
 
 ====================
-     2019-07-17    
+     2019-08-09    
 ====================
 
- * frameworks/base
-3f6afbc  Move DexLoadReporter setup before AppComponentFactory calls  [David Brazdil]
-
 ====================
-     2019-07-16    
+     2019-08-08    
 ====================
-
- * frameworks/av
-30e9e36  Camera: Consider the currently acquired input buffers  [Emilian Peev]
-
- * frameworks/base
-3615a14  QS tiles: Update icons from Android Q  [Stallix]
-
- * system/bt
-b6bc7c9  GAP: Correct the continuous pkt length in l2cap  [Venkata Jagadeesh Garaga]
-
- * system/sepolicy
-c0fe63b  A2dp sink SHO: Add bluetooth support to access mediametrics service  [haoll]
-
-====================
-     2019-07-15    
-====================
-
- * external/sqlite
-72a3832  sqlite: upgrade to SQLite 3.29.0  [mydongistiny]
-
- * packages/apps/Settings
-f49f16f  Settings: update ru translation  [blinoff82]
-2d062f9  team: beryllium is out  [blinoff82]
-
-====================
-     2019-07-14    
-====================
-
- * hardware/qcom/data/ipacfg-mgr
-7367dc7  Merge remote-tracking branch 'aosp/pie-gsi' into lineage-16.0-pie-gsi  [Luca Stefani]
-
- * hardware/qcom/gps
-a62882c  Merge remote-tracking branch 'aosp/pie-gsi' into lineage-16.0-pie-gsi  [Luca Stefani]
 
  * vendor/syberia
-9a1a189  team: add Asus ZenFone Max Pro M1 to official builds  [blinoff82]
+7aa0a7d  v2.8  [DennySPB]
 
 ====================
-     2019-07-13    
+     2019-08-07    
 ====================
+
+ * build/make
+5392998  Merge "build: Also replace audio/include old-style kernel header" into 9.0  [dennyspb]
+
+ * frameworks/av
+d73863f  libcameraservice: write all pkgNames  [Marko Man]
 
  * frameworks/base
-c929aff  SystemUI: Fix SystemUI failed to go to doze issue  [Weijie Wang]
-11add3d  BoostFramework : Add an Update Hint on App update.  [Sai Manobhiram]
-7dafc57  FODCircleView: support all screen orientations  [Peter Cai]
-b5e8a3c  fod: run async task for setting brightness  [Marko Man]
-516fa77  FODCircleView: read from system props  [Peter Cai]
+4fb9184  NetworkManagement : Add ability to restrict app vpn usage  [Uldiniad]
+ffff3c5  GamingMode: Clean up for dynamic mode  [Pranav Vashi]
+a10403a  GamingMode: Fix unnecessary unloading of gaming mode  [Pranav Vashi]
+fb129b1  AMS: Fix the Deadlocks exception in UiHandler  [Terigele]
+f32050d  PM: Stop recording unsupported class loaders  [Alan Stokes]
+6bcbeee  Fix ShortcutService handling of locale change during device setup  [peter.zhang]
+b324b08  jni: Fix improper call to createFromExisting()  [Wang Han]
+216722e  Fix bugs regarding system app cannot write visible path  [sangho.yoon]
+34f0577  GlobalActionsDialog: Fix emergency icon on dark theme  [jhenrique09]
+d4908e0  FOD: prevent showing on auth error  [Marko Man]
+47dbbb8  FOD: deactivate temporary brightness correclty  [Marko Man]
+9b422a3  Fix sim pin on DSDS  [Jordan Liu]
+e4b2bba  Dismiss SIM lock page after correct SIM  [Jordan Liu]
+e2a6aa8  Merge "BT: Adding aptX-Adaptive codec entry to Framework" into 9.0  [dennyspb]
+1649e40  Merge "SystemUI: Fix multiple issues with hiding unprovisioned SIMs" into 9.0  [dennyspb]
+60c598c  NMS: change save policy in other HandlerThread  [Terigele]
+5400b7a  When data switches during voice call, make sure signal bar updates it.  [Malcolm Chen]
+b5c6859  Merge "Add new atoms to log Downgraded Apps and Low Storage" into 9.0  [dennyspb]
+d028aed  Merge "statsd: Add min_score_adj into LmkKillOccurred event" into 9.0  [dennyspb]
+59e737d  Merge "statsd: Add start time to LmkKillOccurred" into 9.0  [dennyspb]
+50e2a68  Update navigation bar upon change of display density  [rleix]
+eed65ae  Unable to input PIN with hardware keyboard  [Wang, ArvinX]
+a04a871  BT: Adding aptX-Adaptive codec entry to Framework  [Gurpreet Ghai]
+496718a  SystemUI: Fix multiple issues with hiding unprovisioned SIMs  [LuK1337]
+4e032b0  Fix to register the receiver for all users  [Kyeongkab.Nam]
+4febe5a  combo issue when location reported by providers do not come with extras  [Kevin Tang]
+
+ * frameworks/native
+8254a90  Merge "libbinder: empty ping transaction" into 9.0  [dennyspb]
 
  * packages/apps/Settings
-800d8b2  Merge "team: add Asus ZenFone Max Pro M1 to official builds" into 9.0  [blinov.in]
+b454827  Merge changes I574e7067,Ia1f46fad,I96e83a35,Ib8054f72,I49490d63, ... into 9.0  [dennyspb]
+07cd458  AppNotificationSettings: fix build after r47 merge  [DennySPB]
+
+ * packages/apps/SyberiaPapers
+42089c5  SyberiaPapers: add night mode overlay  [coderzstas]
+fbdf6fb  Adapt to Syberia  [DennySPB]
+
+ * vendor/syberia
+56da69d  Build our wallpapers package  [DennySPB]
+
+====================
+     2019-08-06    
+====================
+ * art
+2fbd8ea  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/art into HEAD  [DennySPB]
+
+ * build/make
+68ab20d  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/build into HEAD  [DennySPB]
+
+ * frameworks/av
+d4b05a6  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPB]
+
+ * frameworks/base
+fac60dc  Add new atoms to log Downgraded Apps and Low Storage  [Felix Lopez Luis]
+fd923f0  statsd: Add min_score_adj into LmkKillOccurred event  [Suren Baghdasaryan]
+701de3c  statsd: Add start time to LmkKillOccurred  [Jim Blackler]
+17ab9ed  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPB]
+
+ * frameworks/native
+348856e  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPB]
+
+ * packages/apps/Bluetooth
+5ef44b4  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPB]
+
+ * packages/apps/Nfc
+319daae  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPB]
+
+ * packages/apps/Settings
+1a3bfe4  Settings: per-app VPN data restriction  [Uldiniad]
+0fa1cd1  Fix to show eSIM reset checkbox in eng build  [Taesu Lee]
+204b950  Settings: appops: Drop GET_UNINSTALLED_PACKAGES from getApplicationInfo()  [LuK1337]
+49d27ae  SimSettings: Fix preferred calls sim not being disabled  [Michael W]
+4e91335  SimSettings: Fix potential NPE  [LuK1337]
+8afa566  team: add Moto G5S Plus to official builds  [blinoff82]
+04be20f  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPB]
+
+ * packages/services/Telecomm
+aa0906a  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPB]
+
+ * system/bt
+edcd5fe  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
+
+ * vendor/qcom/opensource/audio
+a5c5a30  policy_hal: Adapt to AudioMix API changes in f/av audiopolicy  [Kevin F. Haggerty]
+
+ * vendor/syberia
+7130b8d  vendor: Add audio/include/uapi to include path  [Dyneteve]
+12c6c59  qcom: Mark some gralloc bits as valid  [Bruno Martins]
+de814fb  qcom: Add UM 4.14 platforms  [Rashed Abdel-Tawab]
+f107d83  team: add Moto G5S Plus to official builds  [blinoff82]
+
+====================
+     2019-08-05    
+====================
+
+ * hardware/qcom/fm
+2cf84a8  Automatic translation import  [Michael Bestas]
+
+ * packages/apps/FMRadio
+b3c56e7  Automatic translation import  [Michael Bestas]
+
+ * system/core
+fd75487  lmkd: fix sign compare warning  [DennySPB]
+525ee34  init: switch from /dev/keychord to /dev/input/  [Mark Salyzyn]
+0db9d11  init: use std::function for epoll handling  [Tom Cherry]
+acbb8c5  init: disable asan  [Tom Cherry]
+46917b5  init: set oom_adj early before fork vendor_init  [Wei Wang]
+6f49510  lmkd: Enable new kill strategy, add and adjust required system properties  [Suren Baghdasaryan]
+09049dc  lmkd: Introduce kill strategy based on zone watermarks, swap and thrashing  [Suren Baghdasaryan]
+22c2e06  lmkd: Support variable polling intervals set by event handlers  [Suren Baghdasaryan]
+e7cc964  lmkd: set PSI_POLL_PERIOD to 10ms  [Suren Baghdasaryan]
+40273ac  lmkd: Change zoneinfo parsing to retrieve zone watermarks  [Suren Baghdasaryan]
+5dc50bb  lmkd: Change procfs read routine to handle files larger than 1 page in size  [Suren Baghdasaryan]
+
+ * system/netd
+588cdac  NetD : Allow passing in interface names for vpn app restriction  [Uldiniad]
+
+ * system/sepolicy
+e8564b1  init: support /dev/input  [Mark Salyzyn]
+
+====================
+     2019-08-04    
+====================
+
+ * build/make
+ccdc5e6  build: Also replace audio/include old-style kernel header  [Dyneteve]
+
+ * build/soong
+f973a85  Add kryo300 to CPU optimizations list  [Dmitry Eliseev]
+
+ * frameworks/native
+41e1b95  libbinder: empty ping transaction  [Steven Moreland]
+5f7e092  Merge tag 'LA.UM.7.5.2.r1-03300-8x96.0' into HEAD  [blinoff82]
 
