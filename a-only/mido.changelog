@@ -1,170 +1,222 @@
 ====================
-     2019-07-19    
+     2019-08-10    
 ====================
 
  * device/xiaomi/mido
-2753011  mido: selinux: Fix the time_daemon denial  [davidtrpcevski]
-91d5d9e  mido: Fix audio recording distortion  [David Trpcheski]
-f24ec3f  mido: Disable fluence for voice recording  [David Trpcheski]
-11dc7ef  mido:Update tree for pelt  [kondors1995]
-d7b251b  mido: update sha sum  [kondors1995]
-
- * kernel/xiaomi/msm8953
-ca2d60e  sched/fair: Make scheduling period more efficient  [Tyler Nijmeh]
+465f991  mido:lower boost  [kondors1995]
 
 ====================
-     2019-07-18    
+     2019-08-09    
 ====================
 
- * frameworks/base
-42901ab  Launch music player on headset connect: add BT compatibility [1/2]  [ezio84]
-8c2351d  Bluetooth: Unregister BLE APPs when mBluetoothGatt valid only  [Venkata Jagadeesh Garaga]
-cc1cf3d  Merge "Move DexLoadReporter setup before AppComponentFactory calls" into 9.0  [blinov.in]
-ef4cde5  Merge "QS tiles: Update icons from Android Q" into 9.0  [blinov.in]
-
- * packages/apps/Settings
-85167aa  Open app when clicking on icon in App Info  [deadman96385]
-
- * packages/apps/SyberiaSettings
-10cbfff  Launch music player on headset connect: add BT compatibility [2/2]  [ezio84]
+ * device/xiaomi/mido
+d079bee  mido:powerhint v4  [kondors1995]
 
 ====================
-     2019-07-17    
+     2019-08-08    
 ====================
 
- * frameworks/base
-3f6afbc  Move DexLoadReporter setup before AppComponentFactory calls  [David Brazdil]
-
- * kernel/xiaomi/msm8953
-4f59178  PELT: use half value of 16  [kondors1995]
-5f3b2ae  proc:Also kill Snapcam & stock syberaia gcam  [kondors1995]
-3829629  mido:Use a PELT halflife of 8  [kondors1995]
-472a310  proc: Fix scheduling while atomic when killing errant background apps  [Sultan Alsawaf]
-949ac91  kernel: Don't allow IRQ affinity masks to have more than one CPU  [Sultan Alsawaf]
-70dc9c0  Revert "BACKPORT: sched/cpufreq/schedutil: Use util_est for OPP selection"  [kondors1995]
-
-====================
-     2019-07-16    
-====================
-
- * frameworks/base
-3615a14  QS tiles: Update icons from Android Q  [Stallix]
-
- * kernel/xiaomi/msm8953
-96f4546  disbale walt  [kondors1995]
-f5b19f0  Revert "schedutil: Don't assume we are likely using PELT"  [Volodymyr Zhdanov]
-c93a1e9  FROMLIST: sched: force update of blocked load of idle cpus  [Brendan Jackman]
-e88d0b7  sched/pelt: Fix false running accounting  [Vincent Guittot]
-c1c71e4  ANDROID: sched/fair: correct pelt load information in sched-pelt.h  [Guanglei Li]
-3ff274b  ANDROID: sched/fair: initialise util_est values to 0 on fork  [Chris Redpath]
-562ce00  ANDROID: sched/fair: schedtune: update before schedutil  [Patrick Bellasi]
-af21833  Revert "ANDROID: Move schedtune en/dequeue before schedutil update triggers"  [celtare21]
-3dadb33c  FROMLIST: sched/fair: add support to tune PELT ramp/decay timings  [Patrick Bellasi]
-71ac9ab  BACKPORT: sched/fair: Update util_est before updating schedutil  [Patrick Bellasi]
-09b1119  BACKPORT: sched/fair: Update util_est only on util_avg updates  [Patrick Bellasi]
-11c5fa2  sched/fair: Move the PELT constants into a generated header  [Peter Zijlstra]
-5370604  sched/fair: Increase PELT accuracy for small tasks  [Peter Zijlstra]
-55995d1  sched/fair: Fix comments  [Peter Zijlstra]
-2e4d21a  sched/Documentation: Add 'sched-pelt' tool  [Yuyang Du]
-471389a  sched/fair: Fix corner case in __accumulate_sum()  [Peter Zijlstra]
-4dccec5  sched/fair: Optimize ___update_sched_avg()  [Yuyang Du]
-a7f4ca3  sched/fair: Explicitly generate __update_load_avg() instances  [Peter Zijlstra]
-cdfda84  sched/fair: Optimize sum computation with a lookup table  [Yuyang Du]
-
-====================
-     2019-07-15    
-====================
-
- * external/sqlite
-72a3832  sqlite: upgrade to SQLite 3.29.0  [mydongistiny]
+ * build/make
+5392998  Merge "build: Also replace audio/include old-style kernel header" into 9.0  [dennyspb]
 
  * frameworks/av
-30e9e36  Camera: Consider the currently acquired input buffers  [Emilian Peev]
-
- * packages/apps/Settings
-f49f16f  Settings: update ru translation  [blinoff82]
-2d062f9  team: beryllium is out  [blinoff82]
-
- * system/bt
-b6bc7c9  GAP: Correct the continuous pkt length in l2cap  [Venkata Jagadeesh Garaga]
-
- * system/sepolicy
-c0fe63b  A2dp sink SHO: Add bluetooth support to access mediametrics service  [haoll]
-
- * vendor/xiaomi
-fd993c7  mido:msm_irqbalance update from sailfish-qpp5  [kondors1995]
-
-====================
-     2019-07-14    
-====================
-
- * kernel/xiaomi/msm8953
-db7ad33  R6  [kondors1995]
-2c8b7bd  staging: sync: Add a function to check if a fence has been signaled  [Sultan Alsawaf]
-3078e77  ion: Import updated driver from @Zile995  [kondors1995]
-ef7e986  audit: Delete unnecessary checks before two function calls  [Markus Elfring]
-7f9cbed  audit: use kmem_cache to manage the audit_buffer cache  [Paul Moore]
-03079c1  selinux: reduce locking overhead in inode_free_security()  [Waiman Long]
-72d2f64  selinux: Use kmem_cache for hashtab_node  [Kyeongdon Kim]
-3098185  selinux: use kmem_cache for ebitmap  [Junil Lee]
-8cf0add  msm: kgsl: Dispatch commands using a master kthread  [Sultan Alsawaf]
-028d915  staging: sync: Fix compilation when debugfs is enabled  [Sultan Alsawaf]
-5083798  staging: sync: Remove 64-byte name from sync_fence struct  [Sultan Alsawaf]
-72d12f8  msm: kgsl: Don't allocate memory dynamically for drawobj sync structs  [Sultan Alsawaf]
-778d314  msm: kgsl: Modify dispatcher to accept generic objects  [Tarun Karra]
-15f32f8  msm: kgsl: Rename cmdbatch to drawobj  [Tarun Karra]
-dc36db4  msm: kgsl: Don't try to wait for fences that have been signaled  [Sultan Alsawaf]
-364d28a  ALSA: control_compat: Don't dynamically allocate single-use structs  [Sultan Alsawaf]
-bd63ef2  scatterlist: Use vmalloc instead of chaining  [Sultan Alsawaf]
-37c1d1a  mbcache2: Speed up cache entry creation  [Sultan Alsawaf]
-7304743  BACKPORT: [UPSTREAM] ext2: convert to mbcache2  [Jan Kara]
-590b3bc  BACKPORT [UPSTREAM] ext4: convert to mbcache2  [Jan Kara]
-982bd01  BACKPORT: [UPSTREAM] mbcache2: reimplement mbcache  [Jan Kara]
-7b04954  ext4: Avoid dynamically allocating memory in ext4_ext_remove_space  [Sultan Alsawaf]
-0e08612  staging: sync: Don't copy fence names by default  [Sultan Alsawaf]
-d90d61b  xattr: Avoid dynamically allocating memory in getxattr  [Sultan Alsawaf]
-d28cc32  binfmt_elf: Don't allocate memory dynamically in load_elf_binary  [Sultan Alsawaf]
-ebb78dff  staging: sync: Use an on-stack allocation for fence info ioctl  [Sultan Alsawaf]
-66ebb56  selinux: Don't allocate memory dynamically for file and inode security  [Sultan Alsawaf]
-87a31d3  ext4 crypto: Avoid dynamically allocating memory for file names  [Sultan Alsawaf]
-eb31aa2  arm64: vdso: Mark vdso_pagelist allocation as not a leak  [Sultan Alsawaf]
-a072350  dmaengine: Fix memory leak in dma_async_device_register  [Sultan Alsawaf]
-257e0b0  iommu: msm: ensure lazy mappings are unmapped on detach  [Liam Mark]
-83674cf  iommu: msm: Fix lethal race condition and code inconsistencies  [Sultan Alsawaf]
-7ff311b  mm/slab_common: Align all caches' objects to hardware cachelines  [Sultan Alsawaf]
-37ab251  iommu: arm-smmu: Free pgtbl ops when domain contexts are destroyed  [Sultan Alsawaf]
-c15ad07  media: v4l2-ioctl: Use a larger on-stack video copy buffer  [Sultan Alsawaf]
-b3ac447  msm: camera: Avoid dynamic memory allocation for small buffers  [Sultan Alsawaf]
-9aba853  kernfs: Avoid dynamic memory allocation for small write buffers  [Sultan Alsawaf]
-76d0ecb  sysfs/kernfs: make read requests on pre-alloc files use the buffer.  [NeilBrown]
-5b3ea2b  sysfs/kernfs: allow attributes to request write buffer be pre-allocated.  [NeilBrown]
-fad592a  ext4 crypto: Use a larger on-stack file name buffer  [Sultan Alsawaf]
-fe3bb50  selinux: Avoid dynamic memory allocation for small context buffers  [Sultan Alsawaf]
-03f17f0  msm: kgsl: Avoid dynamically allocating small command buffers  [Sultan Alsawaf]
-c7e9fb7  iommu: msm: Rewrite to improve clarity and performance  [Sultan Alsawaf]
-e097769  Revert Multiple Sultan changes in preperation for updated change import  [kondors1995]
-
-====================
-     2019-07-13    
-====================
-
- * frameworks/base
-c929aff  SystemUI: Fix SystemUI failed to go to doze issue  [Weijie Wang]
-11add3d  BoostFramework : Add an Update Hint on App update.  [Sai Manobhiram]
-
- * hardware/qcom/data/ipacfg-mgr
-7367dc7  Merge remote-tracking branch 'aosp/pie-gsi' into lineage-16.0-pie-gsi  [Luca Stefani]
-
- * hardware/qcom/gps
-a62882c  Merge remote-tracking branch 'aosp/pie-gsi' into lineage-16.0-pie-gsi  [Luca Stefani]
-
- * kernel/xiaomi/msm8953
-83ab516  ARM: dts: msm: Add a capacity-based SD625 (msm8953) energy model  [kondors1995]
-1a8aa6e  Revert "sched: energy: calculate and update CPU capacity dynamically"  [kondors1995]
-
- * packages/apps/Settings
-800d8b2  Merge "team: add Asus ZenFone Max Pro M1 to official builds" into 9.0  [blinov.in]
+d73863f  libcameraservice: write all pkgNames  [Marko Man]
 
  * vendor/syberia
-9a1a189  team: add Asus ZenFone Max Pro M1 to official builds  [blinoff82]
+7aa0a7d  v2.8  [DennySPB]
+
+====================
+     2019-08-07    
+====================
+
+ * device/xiaomi/mido
+19cbf94  mido:EAS cleanup  [kondors1995]
+5503cec  msm8953-common: set avaliable lowest freq for devfreq  [Dede Dindin Qudsy]
+49bfe4e  msm8953-common: cpufreq driver will pick up lowest freq if 0 is written  [Dede Dindin Qudsy]
+
+ * frameworks/base
+4fb9184  NetworkManagement : Add ability to restrict app vpn usage  [Uldiniad]
+ffff3c5  GamingMode: Clean up for dynamic mode  [Pranav Vashi]
+a10403a  GamingMode: Fix unnecessary unloading of gaming mode  [Pranav Vashi]
+fb129b1  AMS: Fix the Deadlocks exception in UiHandler  [Terigele]
+f32050d  PM: Stop recording unsupported class loaders  [Alan Stokes]
+6bcbeee  Fix ShortcutService handling of locale change during device setup  [peter.zhang]
+b324b08  jni: Fix improper call to createFromExisting()  [Wang Han]
+216722e  Fix bugs regarding system app cannot write visible path  [sangho.yoon]
+34f0577  GlobalActionsDialog: Fix emergency icon on dark theme  [jhenrique09]
+d4908e0  FOD: prevent showing on auth error  [Marko Man]
+47dbbb8  FOD: deactivate temporary brightness correclty  [Marko Man]
+9b422a3  Fix sim pin on DSDS  [Jordan Liu]
+e4b2bba  Dismiss SIM lock page after correct SIM  [Jordan Liu]
+e2a6aa8  Merge "BT: Adding aptX-Adaptive codec entry to Framework" into 9.0  [dennyspb]
+1649e40  Merge "SystemUI: Fix multiple issues with hiding unprovisioned SIMs" into 9.0  [dennyspb]
+60c598c  NMS: change save policy in other HandlerThread  [Terigele]
+5400b7a  When data switches during voice call, make sure signal bar updates it.  [Malcolm Chen]
+b5c6859  Merge "Add new atoms to log Downgraded Apps and Low Storage" into 9.0  [dennyspb]
+d028aed  Merge "statsd: Add min_score_adj into LmkKillOccurred event" into 9.0  [dennyspb]
+59e737d  Merge "statsd: Add start time to LmkKillOccurred" into 9.0  [dennyspb]
+50e2a68  Update navigation bar upon change of display density  [rleix]
+eed65ae  Unable to input PIN with hardware keyboard  [Wang, ArvinX]
+a04a871  BT: Adding aptX-Adaptive codec entry to Framework  [Gurpreet Ghai]
+496718a  SystemUI: Fix multiple issues with hiding unprovisioned SIMs  [LuK1337]
+4e032b0  Fix to register the receiver for all users  [Kyeongkab.Nam]
+4febe5a  combo issue when location reported by providers do not come with extras  [Kevin Tang]
+
+ * frameworks/native
+8254a90  Merge "libbinder: empty ping transaction" into 9.0  [dennyspb]
+
+ * packages/apps/Settings
+b454827  Merge changes I574e7067,Ia1f46fad,I96e83a35,Ib8054f72,I49490d63, ... into 9.0  [dennyspb]
+07cd458  AppNotificationSettings: fix build after r47 merge  [DennySPB]
+
+ * packages/apps/SyberiaPapers
+42089c5  SyberiaPapers: add night mode overlay  [coderzstas]
+fbdf6fb  Adapt to Syberia  [DennySPB]
+
+ * vendor/syberia
+56da69d  Build our wallpapers package  [DennySPB]
+
+====================
+     2019-08-06    
+====================
+ * art
+2fbd8ea  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/art into HEAD  [DennySPB]
+
+ * build/make
+68ab20d  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/build into HEAD  [DennySPB]
+
+ * device/xiaomi/mido
+d9cc23d  mido:Filter livedisplay  [kondors1995]
+
+ * frameworks/av
+d4b05a6  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPB]
+
+ * frameworks/base
+fac60dc  Add new atoms to log Downgraded Apps and Low Storage  [Felix Lopez Luis]
+fd923f0  statsd: Add min_score_adj into LmkKillOccurred event  [Suren Baghdasaryan]
+701de3c  statsd: Add start time to LmkKillOccurred  [Jim Blackler]
+17ab9ed  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPB]
+
+ * frameworks/native
+348856e  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPB]
+
+ * kernel/xiaomi/msm8953
+a5edfb6  FROMLIST: sched/rt: add utilization tracking  [Vincent Guittot]
+7cd070b  kernel: Fix massive cpufreq stats memory leaks  [Sultan Alsawaf]
+14b41d4  ANDROID: cpufreq: provide default frequency-invariance setter function  [Dietmar Eggemann]
+57a862d  ANDROID: arm64: topology: Parse and store cpu efficiency values from dt  [Joel Fernandes]
+44f820b  mido:siwtch to pelt  [kondors1995]
+afd1f1b  BACKPORT: binder: Set end of SG buffer area properly.  [Martijn Coenen]
+7db2e2e  staging: android: ion:Fix typo  [kondors1995]
+77dc6fa  staging: android: ion: Set the length of the DMA sg entries in buffer  [Liviu Dudau]
+1d0cd19  Revert "ion: Fix panic when ion_handle_add fails"  [Sultan Alsawaf]
+7db3834  sched/fair: Make scheduling period more efficient  [Tyler Nijmeh]
+6b3e733  proc:Also kill Snapcam & stock syberaia gcam  [kondors1995]
+acf64d6  proc: Fix scheduling while atomic when killing errant background apps  [Sultan Alsawaf]
+4aa08d1  Revert "schedutil: Don't assume we are likely using PELT"  [Volodymyr Zhdanov]
+dbfaea5  sched/fair: Move the PELT constants into a generated header  [Peter Zijlstra]
+c792502  sched: core: Fix yet another CAF mismerge of 8623286 and ec888d4  [celtare21]
+8b9b4a0  sched: fair: Add strict skip buddy support  [Maria Yu]
+0b19af0  sched/pelt: Skip updating util_est when utilization is higher than CPU's capacity  [Vincent Guittot]
+116159eb  BACKPORT: FROMGIT: sched/debug: Explicitly cast sched_feat() to bool  [Peter Zijlstra]
+df27a73  FROMLIST: sched: force update of blocked load of idle cpus  [Brendan Jackman]
+6d47c9a  sched/fair: Fix false running accounting  [Vincent Guittot]
+1d05e6d  sched/fair: Increase PELT accuracy for small tasks  [Peter Zijlstra]
+795926c  sched/fair: Explicitly generate __update_load_avg() instances  [Peter Zijlstra]
+5f4f7e9  sched/fair: Fix corner case in __accumulate_sum()  [Peter Zijlstra]
+71791df  sched/fair: Optimize ___update_sched_avg()  [Yuyang Du]
+ff2f08d  CONFIG: use 16ms PELT's half-life  [Patrick Bellasi]
+64ac213  sched/fair: Add support to tune PELT ramp/decay timings  [Patrick Bellasi]
+82bf90d  BACKPORT: sched/fair: Update util_est before updating schedutil  [Patrick Bellasi]
+758b9f4  sched/fair: Update util_est only on util_avg updates  [Patrick Bellasi]
+94c4679  sched: Turn on MIN_CAPACITY_CAPPING feature  [Josh Choo]
+206760b  sched/fair: Fix load_balance redo for !imbalance  [Vincent Guittot]
+5b5e469  BACKPORT: sched/fair: Don't move tasks to lower capacity CPUs unless necessary  [Chris Redpath]
+552b194  sched/fair: Disable LB_BIAS by default  [Dietmar Eggemann]
+f6bb40f  sched/fair: Allow idle local group to pull tasks from overloaded group  [Pavankumar Kondeti]
+30a67ed  ANDROID: sched/fair: Don't balance misfits if it would overload local group  [Chris Redpath]
+6bb7e5d  ANDROID: sched/fair: Attempt to improve throughput for asym cap systems  [Chris Redpath]
+ebb3ba1  sched: Update schedtune hold based on the android-4.14 version  [Nathan Chancellor]
+
+ * packages/apps/Bluetooth
+5ef44b4  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPB]
+
+ * packages/apps/Nfc
+319daae  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPB]
+
+ * packages/apps/Settings
+1a3bfe4  Settings: per-app VPN data restriction  [Uldiniad]
+0fa1cd1  Fix to show eSIM reset checkbox in eng build  [Taesu Lee]
+204b950  Settings: appops: Drop GET_UNINSTALLED_PACKAGES from getApplicationInfo()  [LuK1337]
+49d27ae  SimSettings: Fix preferred calls sim not being disabled  [Michael W]
+4e91335  SimSettings: Fix potential NPE  [LuK1337]
+8afa566  team: add Moto G5S Plus to official builds  [blinoff82]
+04be20f  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPB]
+
+ * packages/services/Telecomm
+aa0906a  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPB]
+
+ * system/bt
+edcd5fe  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
+
+ * system/core
+fd75487  lmkd: fix sign compare warning  [DennySPB]
+
+ * system/sepolicy
+e8564b1  init: support /dev/input  [Mark Salyzyn]
+
+ * vendor/qcom/opensource/audio
+a5c5a30  policy_hal: Adapt to AudioMix API changes in f/av audiopolicy  [Kevin F. Haggerty]
+
+ * vendor/syberia
+7130b8d  vendor: Add audio/include/uapi to include path  [Dyneteve]
+12c6c59  qcom: Mark some gralloc bits as valid  [Bruno Martins]
+de814fb  qcom: Add UM 4.14 platforms  [Rashed Abdel-Tawab]
+f107d83  team: add Moto G5S Plus to official builds  [blinoff82]
+
+====================
+     2019-08-05    
+====================
+
+ * hardware/qcom/fm
+2cf84a8  Automatic translation import  [Michael Bestas]
+
+ * kernel/xiaomi/msm8953
+ebb3ba1  sched: Update schedtune hold based on the android-4.14 version  [Nathan Chancellor]
+fd24d93  sched/core: Remove pointless printout in sched_show_task()  [Linus Torvalds]
+
+ * packages/apps/FMRadio
+b3c56e7  Automatic translation import  [Michael Bestas]
+
+ * packages/resources/devicesettings
+6f0205a  Automatic translation import  [Michael Bestas]
+
+ * system/core
+525ee34  init: switch from /dev/keychord to /dev/input/  [Mark Salyzyn]
+0db9d11  init: use std::function for epoll handling  [Tom Cherry]
+acbb8c5  init: disable asan  [Tom Cherry]
+46917b5  init: set oom_adj early before fork vendor_init  [Wei Wang]
+6f49510  lmkd: Enable new kill strategy, add and adjust required system properties  [Suren Baghdasaryan]
+09049dc  lmkd: Introduce kill strategy based on zone watermarks, swap and thrashing  [Suren Baghdasaryan]
+22c2e06  lmkd: Support variable polling intervals set by event handlers  [Suren Baghdasaryan]
+e7cc964  lmkd: set PSI_POLL_PERIOD to 10ms  [Suren Baghdasaryan]
+40273ac  lmkd: Change zoneinfo parsing to retrieve zone watermarks  [Suren Baghdasaryan]
+5dc50bb  lmkd: Change procfs read routine to handle files larger than 1 page in size  [Suren Baghdasaryan]
+
+ * system/netd
+588cdac  NetD : Allow passing in interface names for vpn app restriction  [Uldiniad]
+
+====================
+     2019-08-04    
+====================
+
+ * build/make
+ccdc5e6  build: Also replace audio/include old-style kernel header  [Dyneteve]
+
+ * build/soong
+f973a85  Add kryo300 to CPU optimizations list  [Dmitry Eliseev]
+
+ * frameworks/native
+41e1b95  libbinder: empty ping transaction  [Steven Moreland]
+5f7e092  Merge tag 'LA.UM.7.5.2.r1-03300-8x96.0' into HEAD  [blinoff82]
 
