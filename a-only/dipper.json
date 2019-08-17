@@ -11,13 +11,13 @@
       "url": "http://tiny.cc/latestuninstaller"
     }
   ],
-  "filename": "syberia_dipper-v2.7-20190719-1254-OFFICIAL.zip",
+  "filename": "syberia_dipper-v2.8-20190817-0152-OFFICIAL.zip",
   "changelog": "",
-  "filesize": "494888335",
-  "md5": "c7033ab439af19ad824dc1b89852840d",
-  "build_date": "20190719",
+  "filesize": "507631895",
+  "md5": "ac292af3e552dd07de16e24f7defa34a",
+  "build_date": "20190817",
   "device": "dipper",
-  "url": "https://sourceforge.net/projects/syberiaos/files/dipper/syberia_dipper-v2.7-20190719-1254-OFFICIAL.zip/download",
+  "url": "https://sourceforge.net/projects/syberiaos/files/dipper/syberia_dipper-v2.8-20190817-0152-OFFICIAL.zip/download",
   "donate_url": "https://syberiaos.com/links",
   "developer_url": "http://github.com/syberia-project",
   "news_url": "http://github.com/syberia-project",
