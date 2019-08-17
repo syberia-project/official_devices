@@ -11,13 +11,13 @@
       "url": "http://tiny.cc/latestuninstaller"
     }
   ],
-  "filename": "syberia_bacon-v2.8-20190809-2046-OFFICIAL.zip",
+  "filename": "syberia_bacon-v2.8-20190816-2340-OFFICIAL.zip",
   "changelog": "",
-  "filesize": "394676323",
-  "md5": "970bcad257545a4810ea139cc99d45ad",
-  "build_date": "20190809",
+  "filesize": "394380979",
+  "md5": "eda13c02c3fd55f7408aa3f2a3dcb1bd",
+  "build_date": "20190816",
   "device": "bacon",
-  "url": "https://sourceforge.net/projects/syberiaos/files/bacon/syberia_bacon-v2.8-20190809-2046-OFFICIAL.zip/download",
+  "url": "https://sourceforge.net/projects/syberiaos/files/bacon/syberia_bacon-v2.8-20190816-2340-OFFICIAL.zip/download",
   "donate_url": "https://syberiaos.com/links",
   "developer_url": "http://github.com/syberia-project",
   "news_url": "http://github.com/syberia-project",
