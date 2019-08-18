@@ -1,282 +1,98 @@
 ====================
-     2019-08-10    
+     2019-08-18    
 ====================
 
  * device/xiaomi/whyred
-be0b2bd  whyred: audio: adjust mic volume when handset-stereo-dmic-ef was used  [srfarias]
-980116a  whyred: vendor_prop: reconfigure fluence and stilize it  [srfarias]
-9cdcc5f  whyred: audio: sync with CAF  [srfarias]
-4fafcfc  whyred: audio: comment vorbis policy conf  [srfarias]
-d767e38  whyred: proprietary-files: update Time Service from davinci  [srfarias]
-
- * vendor/xiaomi/whyred
-f492e0b  whyred: update TimeService blobs from Davinci  [srfarias]
+cd684ee  whyred: prebuilts: update Lawnchair to alpha-2382  [rashedsahaji]
 
 ====================
-     2019-08-09    
+     2019-08-17    
 ====================
 
  * device/xiaomi/whyred
-1546ab6  whyred: init-post-boot: set fifo ui prop if EAS exist  [srfarias]
-caf479e  whyred: kang thermal blobs from platina  [srfarias]
-23f2ef6  whyred: Remove deprecated cmdline option  [Luca Stefani]
-ddab04f  whyred: Use oneplus 7 vibration pattern  [Dyneteve]
-
- * vendor/xiaomi/whyred
-e2508cf  whyred: kang thermal blobs from platina  [srfarias]
-
-====================
-     2019-08-08    
-====================
-
- * kernel/xiaomi/whyred
-da928b5  whyred-perf_defconfig: purecaf x8  [srfarias]
-df1a51b  Merge tag 'LA.UM.7.2.r1-07400-sdm660.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.4 into caf-pie  [srfarias]
-adeadbd3  Revert "Revert "msm: mdss: hdmi: skip pan_display during handoff""  [srfarias]
-bdfa7f0  fs: Align file struct to 8 bytes  [Sultan Alsawaf]
-
-====================
-     2019-08-07    
-====================
-
- * build/make
-5392998  Merge "build: Also replace audio/include old-style kernel header" into 9.0  [dennyspb]
-
- * device/xiaomi/whyred
-c080038  prebuilts: update Lawnchair to alpha-2357  [rashedsahaji]
-
- * frameworks/av
-d73863f  libcameraservice: write all pkgNames  [Marko Man]
+c5ae521  whyred: Set default hotspot name  [Rashed Abdel-Tawab]
+58daf9a  Set SV in use mask based on final fixes  [Mike Cailean]
+f85931b  whyred: uprev vendor.qti.data.factory to 1.1 in vendor framework compatibility matrix  [Akhil Narang]
+76a3bee  whyred: Add factory hal 1.1 to manifest  [Sauvik Saha]
+8092000  msm_irqbalance: Add glink lpass irq to ignored list  [Soumya Managoli]
 
  * frameworks/base
-4fb9184  NetworkManagement : Add ability to restrict app vpn usage  [Uldiniad]
-ffff3c5  GamingMode: Clean up for dynamic mode  [Pranav Vashi]
-a10403a  GamingMode: Fix unnecessary unloading of gaming mode  [Pranav Vashi]
-fb129b1  AMS: Fix the Deadlocks exception in UiHandler  [Terigele]
-f32050d  PM: Stop recording unsupported class loaders  [Alan Stokes]
-6bcbeee  Fix ShortcutService handling of locale change during device setup  [peter.zhang]
-b324b08  jni: Fix improper call to createFromExisting()  [Wang Han]
-216722e  Fix bugs regarding system app cannot write visible path  [sangho.yoon]
-34f0577  GlobalActionsDialog: Fix emergency icon on dark theme  [jhenrique09]
-d4908e0  FOD: prevent showing on auth error  [Marko Man]
-47dbbb8  FOD: deactivate temporary brightness correclty  [Marko Man]
-9b422a3  Fix sim pin on DSDS  [Jordan Liu]
-e4b2bba  Dismiss SIM lock page after correct SIM  [Jordan Liu]
-e2a6aa8  Merge "BT: Adding aptX-Adaptive codec entry to Framework" into 9.0  [dennyspb]
-1649e40  Merge "SystemUI: Fix multiple issues with hiding unprovisioned SIMs" into 9.0  [dennyspb]
-60c598c  NMS: change save policy in other HandlerThread  [Terigele]
-5400b7a  When data switches during voice call, make sure signal bar updates it.  [Malcolm Chen]
-b5c6859  Merge "Add new atoms to log Downgraded Apps and Low Storage" into 9.0  [dennyspb]
-d028aed  Merge "statsd: Add min_score_adj into LmkKillOccurred event" into 9.0  [dennyspb]
-59e737d  Merge "statsd: Add start time to LmkKillOccurred" into 9.0  [dennyspb]
-50e2a68  Update navigation bar upon change of display density  [rleix]
-eed65ae  Unable to input PIN with hardware keyboard  [Wang, ArvinX]
-a04a871  BT: Adding aptX-Adaptive codec entry to Framework  [Gurpreet Ghai]
-496718a  SystemUI: Fix multiple issues with hiding unprovisioned SIMs  [LuK1337]
-4e032b0  Fix to register the receiver for all users  [Kyeongkab.Nam]
-4febe5a  combo issue when location reported by providers do not come with extras  [Kevin Tang]
+83eeba8  Merge changes I2b650c31,I2560aafe,I70a3191c,I48f885f6,I8c5c3f8e, ... into 9.0  [dennyspb]
+9c15c8c  Merge "Q Style Clock: Align owner info as per the clock style" into 9.0  [dennyspb]
+b482d4d  Merge "Implement per-app thermal control [2/3]" into 9.0  [dennyspb]
+a61f6fa  Revert "BT: Adding aptX-Adaptive codec entry to Framework"  [DennySPB]
 
- * frameworks/native
-8254a90  Merge "libbinder: empty ping transaction" into 9.0  [dennyspb]
-
- * packages/apps/Settings
-b454827  Merge changes I574e7067,Ia1f46fad,I96e83a35,Ib8054f72,I49490d63, ... into 9.0  [dennyspb]
-07cd458  AppNotificationSettings: fix build after r47 merge  [DennySPB]
-
- * packages/apps/SyberiaPapers
-42089c5  SyberiaPapers: add night mode overlay  [coderzstas]
-fbdf6fb  Adapt to Syberia  [DennySPB]
+ * frameworks/opt/net/wifi
+ac4e9d0  Merge branch '9.0' of https://github.com/syberia- */platform_frameworks_opt_net_wifi into HEAD  [blinoff82]
+4a9765d  Revert "CountryCode: Use hack for all regions."  [DennySPB]
 
  * vendor/syberia
-7aa0a7d  v2.8  [DennySPB]
-56da69d  Build our wallpapers package  [DennySPB]
+72fce32  dark_theme: make autofill dialog background white  [Josh Fox (XlxFoXxlX)]
 
 ====================
-     2019-08-06    
+     2019-08-16    
 ====================
- * art
-2fbd8ea  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/art into HEAD  [DennySPB]
 
- * build/make
-68ab20d  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/build into HEAD  [DennySPB]
-
- * device/xiaomi/whyred
-6564535  whyred: revert timeservice blobs to V10.3.1.0.PEIMIXM  [Akhil Narang]
-c453d5e  whyred: Drop USE_OPENGL_RENDERER flag  [Ethan Chen]
-e53062c  whyred: audio: enable fluence for audio/voice rec  [srfarias]
-e4abf3b  whyred: vendor_prop: update props from MIUI  [srfarias]
-e44a9fd  whyred: system prop: fix backpressure prop  [srfarias]
-c1ef7bc  Whyred: QCOM Boost Framework[1/2]  [DennySPB]
-efd9de0  whyred: Copy media_codecs_google_video_le from fw/av  [LuK1337]
-0494048  whyred: Remove custom VSYNC offsets  [Artem Borisov]
-ebc9788  whyred: overlay: Set white color unconditionally  [IvvanVG]
-371ebb7  whyred: Enable display default color mode  [rashedsahaji]
-a6490ea  whyred: Update IFAA for pie blobs  [dianlujitao]
-6f79846  whyred: audio: Add BT SCO to routes list  [Sujin Panicker]
-34e9a51  whyred: audio: Load A2DP configuration from a2dp_audio_policy_configuration.xml  [LuK1337]
-30d0694  whyred: audio: Update policy_configuration from caf  [PIPIPIG233666]
-1f6ed93  whyred: Overlay: Clean Up time.  [rashedsahaji]
-656e65b  Revert "whyred: add system property to set AudioFlinger client heap size"  [Wang Han]
-92940d9  whyred: Set default hotspot name  [Rashed Abdel-Tawab]
-7ad29e1  prebuilts: update Lawnchair to alpha-2338  [rashedsahaji]
-97fc44c  whyred: Add call recording Overlay  [davidevinavil]
-1e7f9da  whyred: overlay: Settings:  Turn On Adaptive Brightness by default  [Nidhun Balaji T R]
-aba1f2c  whyred: overlay: Ignore RSSNR signal level  [Henrique Silva]
-c987ade  whyred: nobody here is building TWRP  [Akhil Narang]
-ba7bb83  whyred: Track the correct hals  [Rashed Sahaji]
-d9cc8ac  Revert "whyred: parts: Migrate to androidx"  [rashedsahaji]
-85390bd  sepolicy: address battery info denails  [Blacksuan19]
-e104d09  whyred: Vendor: Add persist.radio.aosp_usr_pref_sel for Telephony  [xyyx]
-02af68a  sdm660: add cpu set for audio app  [Soumya Managoli]
-c95a8c2  whyred: Overlay: Add lawnchair overlay  [Rashed Sahaji]
-c108341  Syberia Bring Up!  [rashedsahaji]
-f89ebe1  whyred: overlay: Disable bluetooth by default  [IamJoker03]
-36b636e  whyred: extract-files: Adapt Syberia  [rashedsahaji]
-36b014a  whyred: prebuilt: Add Missing Lawnchair stuff  [rashedsahaji]
-48fbef4  prebuilts: update Lawnchair to alpha-2190  [DennySPB]
-c3fbe26  sepolicy: allow system_server access to charging sysfs node  [DennySPB]
-17712e1  overlay: Enable smart charging  [blinoff82]
-5339113  overlay: proximity Check On Fingerprint Wake  [rashedsahaji]
-dae21bd  Overlay: Enable proxi check on wakeup events  [DennySPB]
-50683ac  whyred: Add basic USB HAL that reports no status change  [Ethan Chen]
-0ae2ff8  sepolicy: make init and vendor_init permissive domains  [DennySPB]
-dcaaeb2  overlay: pin QPerformance and UxPerformance oats  [DennySPB]
-c074df2  BoardConfig: Properly set dexpreopt  [celtare21]
-27db024  prop: Shorten wait time to optimize shutdown time  [zljing]
-82f1ff6  overlay: use Pie qti-telephony-common  [DennySPB]
-b2a7887  Import hostapd configs and move_wifi_data script from OB12  [DennySPB]
-0b53a9a  whyred: Import camera changes  [Henrique Silva]
-a86619c  whyred: boardconfig: enforce selinux  [srfarias]
-dfbd881  whyred: sepolicy: adress denials  [srfarias]
-d06e762  whyred: parts: Migrate to androidx  [Bruno Martins]
-a32b65f  whyred: mixer_paths: increase in call volume  [srfarias]
-86c28b7  whyred: boardconfig: use alternative manual network selection  [srfarias]
-a734d34  whyred: rootdir: some cleanups and updates from MIUI  [srfarias]
-c9c2392  whyred: system.prop: dex2oat improvements  [srfarias]
-fc19d5e  whyred: system.prop: skip propagating backpressure  [srfarias]
-62aed32  whyred: manifest: add ims callinfo  [srfarias]
-43bcd3d  whyred: audio: import all soundtrigger mixer paths from MIUI 9.7.25  [srfarias]
-a982e3f  whyred: media_profiles: Remove highspeed profiles  [Henrique Silva]
-1f9ce61  whyred: Track and include MiuiCamera  [Henrique Silva]
-c8cc120  whyred: prop: Enable B-services aging propagation  [Bruno Martins]
-c1202f7  whyred: update system.prop from stock  [srfarias]
-
- * frameworks/av
-d4b05a6  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPB]
+====================
+     2019-08-15    
+====================
 
  * frameworks/base
-fac60dc  Add new atoms to log Downgraded Apps and Low Storage  [Felix Lopez Luis]
-fd923f0  statsd: Add min_score_adj into LmkKillOccurred event  [Suren Baghdasaryan]
-701de3c  statsd: Add start time to LmkKillOccurred  [Jim Blackler]
-17ab9ed  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPB]
+1b53c4b  SystemUI: Tiny expanding improvement  [BigBrother1984]
+d5cea14  FOD: disable fod on trusted keyguard  [Marko Man]
+05073cb  Keyguard: Avoid starting FP authentication right after cancelling  [dianlujitao]
+8111f28  FOD: change Windowmanager flags  [Marko Man]
+ffb53d5  ViewRootImpl: set max fling ticks per sec to 24  [Simao Gomes Viana]
+33e21dd  CamcorderProfile: Add 1440p camcorder profile  [Sultanxda]
+e60ee78  Fix wrong locale causing reboot in recovery  [Damien Nicolet]
+6c0d580  SystemUI: Use appropriate function when trying to retrieve colorError  [LuK1337]
 
- * frameworks/native
-348856e  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPB]
-
- * packages/apps/Bluetooth
-5ef44b4  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPB]
-
- * packages/apps/Nfc
-319daae  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPB]
-
- * packages/apps/Settings
-1a3bfe4  Settings: per-app VPN data restriction  [Uldiniad]
-0fa1cd1  Fix to show eSIM reset checkbox in eng build  [Taesu Lee]
-204b950  Settings: appops: Drop GET_UNINSTALLED_PACKAGES from getApplicationInfo()  [LuK1337]
-49d27ae  SimSettings: Fix preferred calls sim not being disabled  [Michael W]
-4e91335  SimSettings: Fix potential NPE  [LuK1337]
-8afa566  team: add Moto G5S Plus to official builds  [blinoff82]
-04be20f  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPB]
-
- * packages/services/Telecomm
-aa0906a  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPB]
-
- * system/bt
-edcd5fe  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
+ * frameworks/opt/net/wifi
+afeafc0  Merge tag 'LA.UM.7.6.2.r1-09500-89xx.0' into HEAD  [blinoff82]
 
  * vendor/qcom/opensource/audio
-a5c5a30  policy_hal: Adapt to AudioMix API changes in f/av audiopolicy  [Kevin F. Haggerty]
+e7c1a84  Merge tag 'LA.UM.7.6.2.r1-09500-89xx.0' into HEAD  [blinoff82]
 
- * vendor/syberia
-7130b8d  vendor: Add audio/include/uapi to include path  [Dyneteve]
-12c6c59  qcom: Mark some gralloc bits as valid  [Bruno Martins]
-de814fb  qcom: Add UM 4.14 platforms  [Rashed Abdel-Tawab]
-f107d83  team: add Moto G5S Plus to official builds  [blinoff82]
+ * vendor/qcom/opensource/interfaces
+a396f24  Merge tag 'LA.UM.7.6.2.r1-09500-89xx.0' into HEAD  [blinoff82]
 
 ====================
-     2019-08-05    
+     2019-08-14    
 ====================
 
- * hardware/qcom/fm
-2cf84a8  Automatic translation import  [Michael Bestas]
-
- * kernel/xiaomi/whyred
-57e2881  ARM: dts: sdm660: Set cpubw governor to bw_hwmon  [Jago Gardiner (nysadev)]
-b9a3b16  qcacld-3.0: Remove unused parameter from process_rx_public_action_frame  [Sultan Alsawaf]
-2e93325  ANDROID: binder: correct the cmd print for BINDER_WORK_RETURN_ERROR  [宋金时]
-ce5ce18  binder: fix incorrect cmd to binder_stat_br  [Todd Kjos]
-8b3fb70  ANDROID: crypto: heh - Avoid dynamically allocating memory for keys  [Sultan Alsawaf]
-5a227e2  ext4: Avoid dynamically allocating memory in ext4_ext_remove_space  [Sultan Alsawaf]
-389d31a  media: v4l2-ioctl: Use larger on-stack video copy buffers  [Sultan Alsawaf]
-9b7755e  msm: camera: Optimize memory allocation for small buffers  [Sultan Alsawaf]
-0c5e417  ext4 crypto: Use a larger on-stack file name buffer  [Sultan Alsawaf]
-ff69a3c  whyred-perf_defconfig: Disable stack frame size warning  [Sultan Alsawaf]
-0565090a  ext4: Allocate allocation-context on the stack  [Sultan Alsawaf]
-6b4f431  scatterlist: Don't allocate sg lists using __get_free_page  [Sultan Alsawaf]
-0407aa3  mm: kmemleak: Don't die when memory allocation fails  [Sultan Alsawaf]
-9e0bf75  mm: kmemleak: Don't require global debug options  [Sultan Alsawaf]
-00380ea  mbcache2: Speed up cache entry creation  [Sultan Alsawaf]
-51255d2  ion: system_heap: Speed up system heap allocations  [Sultan Alsawaf]
-8e213ff  ion: Overhaul for vastly improved clarity and performance  [Sultan Alsawaf]
-6b08897  arm64: vdso: Mark vdso_pagelist allocation as not a leak  [Sultan Alsawaf]
-9c4f7ae  staging: sync: Add a function to check if a fence has been signaled  [Sultan Alsawaf]
-6d9ee78  binder: Reserve caches for small, high-frequency memory allocations  [Sultan Alsawaf]
-bd438c8  binder: checkout all driver from wahoo  [Sultan Alsawaf]
-6f1ecf7  drivers: simple_lmk: toast driver updated  [Sultan Alsawaf]
-8c236b3  proc: Don't let Google Camera and Settings run in the background  [Sultan Alsawaf]
-
- * packages/apps/FMRadio
-b3c56e7  Automatic translation import  [Michael Bestas]
-
- * packages/resources/devicesettings
-6f0205a  Automatic translation import  [Michael Bestas]
-
- * system/core
-fd75487  lmkd: fix sign compare warning  [DennySPB]
-525ee34  init: switch from /dev/keychord to /dev/input/  [Mark Salyzyn]
-0db9d11  init: use std::function for epoll handling  [Tom Cherry]
-acbb8c5  init: disable asan  [Tom Cherry]
-46917b5  init: set oom_adj early before fork vendor_init  [Wei Wang]
-6f49510  lmkd: Enable new kill strategy, add and adjust required system properties  [Suren Baghdasaryan]
-09049dc  lmkd: Introduce kill strategy based on zone watermarks, swap and thrashing  [Suren Baghdasaryan]
-22c2e06  lmkd: Support variable polling intervals set by event handlers  [Suren Baghdasaryan]
-e7cc964  lmkd: set PSI_POLL_PERIOD to 10ms  [Suren Baghdasaryan]
-40273ac  lmkd: Change zoneinfo parsing to retrieve zone watermarks  [Suren Baghdasaryan]
-5dc50bb  lmkd: Change procfs read routine to handle files larger than 1 page in size  [Suren Baghdasaryan]
-
- * system/netd
-588cdac  NetD : Allow passing in interface names for vpn app restriction  [Uldiniad]
-
- * system/sepolicy
-e8564b1  init: support /dev/input  [Mark Salyzyn]
-
- * vendor/xiaomi/whyred
-7b70e4d  whyred: revert timeservice blobs to V10.3.1.0.PEIMIXM  [Akhil Narang]
-
 ====================
-     2019-08-04    
+     2019-08-13    
 ====================
 
- * build/make
-ccdc5e6  build: Also replace audio/include old-style kernel header  [Dyneteve]
+====================
+     2019-08-12    
+====================
 
- * build/soong
-f973a85  Add kryo300 to CPU optimizations list  [Dmitry Eliseev]
-
- * frameworks/native
-41e1b95  libbinder: empty ping transaction  [Steven Moreland]
-5f7e092  Merge tag 'LA.UM.7.5.2.r1-03300-8x96.0' into HEAD  [blinoff82]
-
- * vendor/xiaomi/whyred
-b125b80  QCOM Boost Framework[2/2]  [DennySPB]
+ * device/xiaomi/whyred
+7c56a22  whyred: audio: adjust mic volume when handset-stereo-dmic-ef was used  [srfarias]
+78563e3  whyred: vendor_prop: reconfigure fluence and stilize it  [srfarias]
+7f4f663  whyred: audio: sync with CAF  [srfarias]
+4284d1c  whyred: audio: comment vorbis policy conf  [srfarias]
+7a87c97  whyred: proprietary-files: update Time Service from davinci  [srfarias]
+d2aec72  whyred: init-post-boot: set fifo ui prop if EAS exist  [srfarias]
+3ac5d12  whyred: kang thermal blobs from platina  [srfarias]
+c221d9e  whyred: Remove deprecated cmdline option  [Luca Stefani]
+6f4427e  whyred: Use oneplus 7 vibration pattern  [Dyneteve]
+5eb2c44  prebuilts: update Lawnchair to alpha-2357  [rashedsahaji]
+da5a53d  whyred: revert timeservice blobs to V10.3.1.0.PEIMIXM  [Akhil Narang]
+c60986e  whyred: Drop USE_OPENGL_RENDERER flag  [Ethan Chen]
+a8dd7f6  whyred: audio: enable fluence for audio/voice rec  [srfarias]
+85896b3  whyred: vendor_prop: update props from MIUI  [srfarias]
+f92f43f  whyred: system prop: fix backpressure prop  [srfarias]
+3c71a86  Whyred: QCOM Boost Framework[1/2]  [DennySPB]
+a4932d0  whyred: Copy media_codecs_google_video_le from fw/av  [LuK1337]
+3db1c6b  whyred: Remove custom VSYNC offsets  [Artem Borisov]
+484d89a  whyred: overlay: Set white color unconditionally  [IvvanVG]
+69fd8a2  whyred: Enable display default color mode  [rashedsahaji]
+4fef653  whyred: Update IFAA for pie blobs  [dianlujitao]
+8bbf736  whyred: audio: Add BT SCO to routes list  [Sujin Panicker]
+ac1c88a  whyred: audio: Load A2DP configuration from a2dp_audio_policy_configuration.xml  [LuK1337]
+406a28f  whyred: audio: Update policy_configuration from caf  [PIPIPIG233666]
+a44b13a  whyred: Overlay: Clean Up time.  [rashedsahaji]
+464c316  Revert "whyred: add system property to set AudioFlinger client heap size"  [Wang Han]
 
