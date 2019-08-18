@@ -11,13 +11,13 @@
       "url": "http://tiny.cc/latestuninstaller"
     }
   ],
-  "filename": "syberia_vince-v2.8-20190810-1411-OFFICIAL.zip",
+  "filename": "syberia_vince-v2.8-20190818-0307-OFFICIAL.zip",
   "changelog": "",
-  "filesize": "575534318",
-  "md5": "39c4010275ca8881f273e986c9b02b35",
-  "build_date": "20190810",
+  "filesize": "575562198",
+  "md5": "7506da0782be50877a00736abd7025e0",
+  "build_date": "20190818",
   "device": "vince",
-  "url": "https://sourceforge.net/projects/syberiaos/files/vince/syberia_vince-v2.8-20190810-1411-OFFICIAL.zip/download",
+  "url": "https://sourceforge.net/projects/syberiaos/files/vince/syberia_vince-v2.8-20190818-0307-OFFICIAL.zip/download",
   "donate_url": "https://syberiaos.com/links",
   "developer_url": "http://github.com/syberia-project",
   "news_url": "http://github.com/syberia-project",
