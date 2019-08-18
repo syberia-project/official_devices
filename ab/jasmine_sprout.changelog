@@ -1,4 +1,8 @@
 ====================
+     2019-08-18    
+====================
+
+====================
      2019-08-17    
 ====================
 
@@ -25,6 +29,10 @@ ac4e9d0  Merge branch '9.0' of https://github.com/syberia- */platform_frameworks
      2019-08-15    
 ====================
 
+====================
+     2019-08-14    
+====================
+
  * frameworks/base
 1b53c4b  SystemUI: Tiny expanding improvement  [BigBrother1984]
 d5cea14  FOD: disable fod on trusted keyguard  [Marko Man]
@@ -34,10 +42,6 @@ ffb53d5  ViewRootImpl: set max fling ticks per sec to 24  [Simao Gomes Viana]
 33e21dd  CamcorderProfile: Add 1440p camcorder profile  [Sultanxda]
 e60ee78  Fix wrong locale causing reboot in recovery  [Damien Nicolet]
 6c0d580  SystemUI: Use appropriate function when trying to retrieve colorError  [LuK1337]
-
-====================
-     2019-08-14    
-====================
 
  * frameworks/opt/net/wifi
 afeafc0  Merge tag 'LA.UM.7.6.2.r1-09500-89xx.0' into HEAD  [blinoff82]
@@ -55,120 +59,4 @@ a396f24  Merge tag 'LA.UM.7.6.2.r1-09500-89xx.0' into HEAD  [blinoff82]
 ====================
      2019-08-12    
 ====================
-
-====================
-     2019-08-11    
-====================
-
- * device/xiaomi/sdm660-common
-6c39b61  Don't build keyhandler  [rebenok90x]
-
- * kernel/xiaomi/jasmine_sprout
-4dde843  iommu: msm: Rewrite to improve clarity and performance  [Sultan Alsawaf]
-1ef5681  msm: mdss: Fix uninitialized vsync_time in mdss_mdp_cmd_pingpong_done  [Sultan Alsawaf]
-ca8d56e  qcacld-3.0: Remove unused parameter from process_rx_public_action_frame  [Sultan Alsawaf]
-d2c66ad  msm: sps: Fix uninitialized result usage when an invalid IRQ is found  [Sultan Alsawaf]
-83d0d50  arm64: arch_timer: simplify accessors  [Mark Rutland]
-d86b815  ANDROID: binder: correct the cmd print for BINDER_WORK_RETURN_ERROR  [宋金时]
-aa2a0d6  binder: fix incorrect cmd to binder_stat_br  [Todd Kjos]
-225d3f9  fib_rules: Fix payload calculation  [Sultan Alsawaf]
-9f4e3f1  net/ipv4: fib_trie: Avoid cryptic ternary expressions  [Matthias Kaehlcke]
-b7acb76  lib: Kconfig.debug: Remove debug dependency from SCHED_STACK_END_CHECK  [Sultan Alsawaf]
-f363973  ANDROID: sdcardfs: Allocate temporary name buffer on the stack  [Sultan Alsawaf]
-3a92d18  kobject_uevent: Allocate environment buffer on the stack  [Sultan Alsawaf]
-b51ee19  ion: system_heap: Speed up system heap allocations  [Sultan Alsawaf]
-72ebf44  ANDROID: crypto: heh - Avoid dynamically allocating memory for keys  [Sultan Alsawaf]
-2aaa707  ext4: Avoid dynamically allocating memory in ext4_ext_remove_space  [Sultan Alsawaf]
-16c7d10  xattr: Avoid dynamically allocating memory in getxattr  [Sultan Alsawaf]
-ee80777  binfmt_elf: Don't allocate memory dynamically in load_elf_binary  [Sultan Alsawaf]
-81464fd  staging: sync: Use an on-stack allocation for fence info ioctl  [Sultan Alsawaf]
-ff3b6ba  media: v4l2-ioctl: Use larger on-stack video copy buffers  [Sultan Alsawaf]
-27d21be  msm: camera: Optimize memory allocation for small buffers  [Sultan Alsawaf]
-9ece3a1  msm: kgsl: Don't allocate memory dynamically for temp command buffers  [Sultan Alsawaf]
-34125c4  msm: mdss: Don't allocate memory dynamically for small layer buffers  [Sultan Alsawaf]
-b6fd301  ext4 crypto: Use a larger on-stack file name buffer  [Sultan Alsawaf]
-c1c92fa  selinux: Avoid dynamic memory allocation for small context buffers  [Sultan Alsawaf]
-8c13709  kernfs: Avoid dynamic memory allocation for small write buffers  [Sultan Alsawaf]
-eb81897  msm: kgsl: Avoid dynamically allocating small command buffers  [Sultan Alsawaf]
-6995568  jasmine_defconfig: Disable stack frame size warning  [Sultan Alsawaf]
-ea0ba67  ext4: Allocate allocation-context on the stack  [Sultan Alsawaf]
-5868ebe  scatterlist: Don't allocate sg lists using __get_free_page  [Sultan Alsawaf]
-1076323  mbcache2: Speed up cache entry creation  [Sultan Alsawaf]
-9bf3357  msm: mdss: Don't allocate memory dynamically for destination scaler  [Sultan Alsawaf]
-afebe55  jasmine_defconfig: Disable SMACK and Integrity security suites  [Sultan Alsawaf]
-99ef94f  ion: Overhaul for vastly improved clarity and performance  [Sultan Alsawaf]
-a6f78f8  Revert "staging: android: ion: fix ION_IOC_IMPORT use-after-free"  [Subhajeet Muhuri]
-7706dc86  Revert "ion: Convert allocation counters to long"  [Volodymyr Zhdanov]
-7c534c1  Revert "ion: revert downstream fix for debugfs synchronization"  [wloot]
-fd50c90  Revert "ion:synchronize debugfs callback and ion_client_destroy"  [wloot]
-0201986  dmaengine: Fix memory leak in dma_async_device_register  [Sultan Alsawaf]
-49c29cd  iommu: arm-smmu: Free pgtbl ops when domain contexts are destroyed  [Sultan Alsawaf]
-acb8788  ALSA: control_compat: Don't dynamically allocate single-use structs  [Sultan Alsawaf]
-abdca77  msm: kgsl: Don't allocate memory dynamically for drawobj sync structs  [Sultan Alsawaf]
-c05f620  msm: kgsl: Don't try to wait for fences that have been signaled  [Sultan Alsawaf]
-f8edd5c  staging: sync: Add a function to check if a fence has been signaled  [Sultan Alsawaf]
-7bc89e7  msm: kgsl: Mark dispatcher thread as performance-critical  [Sultan Alsawaf]
-a5ae7d2  msm: kgsl: Dispatch commands using a master kthread  [Sultan Alsawaf]
-a9ead92  Revert "msm: kgsl: Defer issue commands to worker thread"  [idkwhoiam322]
-25c1f46  binder: Reserve caches for small, high-frequency memory allocations  [Sultan Alsawaf]
-fec860e  staging: android: ashmem: Get rid of the big mutex lock  [Sultan Alsawaf]
-7f29cce  kernel: Don't allow IRQ affinity masks to have more than one CPU  [Sultan Alsawaf]
-d636a65  jasmine_defconfig: Disable SEEMP  [Sultan Alsawaf]
-d3943b6  jasmine_defconfig: Use Simple LMK  [Sultan Alsawaf]
-bb7e7cf  simple_lmk: Mark reclaim kthread as performance critical  [Sultan Alsawaf]
-cfc074a  simple_lmk: Introduce Simple Low Memory Killer for Android  [Sultan Alsawaf]
-de01a66  cpuidle: lpm-levels: Remove debug event logging  [Artem Labazov]
-f36c035  staging: sync: Remove fence names by default  [Sultan Alsawaf]
-29201f0  msm: mdss: Speed up mdss_mdp_get_format_params for UBWC formats  [Sultan Alsawaf]
-b3861e8  msm: kgsl: Remove sync debug name generation from hot path  [Sultan Alsawaf]
-de3df78  msm: mdss: Remove sync debug name generation from hot path  [Sultan Alsawaf]
-e115f13  jasmine_defconfig: Disable audit support  [Sultan Alsawaf]
-087c9f8  selinux: Remove audit dependency  [Sultan Alsawaf]
-5406735  msm: clock-osm: Use CLKFLAG_NO_RATE_CACHE for pwrcl and perfcl clk  [Sultan Alsawaf]
-6a83b24  msm: kgsl: Increase worker thread priority  [Sultan Alsawaf]
-dc880fe  msm: kgsl: Remove POPP  [Sultan Alsawaf]
-e8e1a78  msm: kgsl: Wake GPU upon receiving an ioctl rather than upon touch input  [Sultan Alsawaf]
-5d32837  ARM: dts: sdm660: Set GPU idle timeout to 64 ms  [Sultan Alsawaf]
-7507576  msm: ipa3: Fix redundant wakelock releases in error paths  [Sultan Alsawaf]
-633ba6a  msm: pcie: Fix uninitialized pointer usage in msm_pcie_debug_info()  [Sultan Alsawaf]
-ccff018  msm: camera: isp: Fix memory leaks in vfe probe  [Sultan Alsawaf]
-74862d9  msm: mdss: Don't cache the address of a stack variable in timings init  [Sultan Alsawaf]
-bba4073  soc: qcom: watchdog_v2: Fix memory leaks when memory_dump_v2 isn't built  [Sultan Alsawaf]
-0527a93a  input: fpc1020: Mark IRQ as performance critical  [Sultan Alsawaf]
-5d3b782  msm: mdss: Mark IRQ and important kthreads as performance critical  [Sultan Alsawaf]
-d17f783  msm: kgsl: Mark IRQ and worker thread as performance critical  [Sultan Alsawaf]
-ee6ad6a  kernel: Add API to mark IRQs and kthreads as performance critical  [Sultan Alsawaf]
-1e6a2a2  jasmine_defconfig: Populate cluster CPU bitmasks for sdm660  [Subhajeet Muhuri]
-bdfc4a0  cpumask: Add cpumasks for big and LITTLE CPU clusters  [Sultan Alsawaf]
-ce0b726  pinctrl: qcom: Update irq handle for GPIO pins  [Archana Sathyakumar]
-514c6ef  crypto: Make CRYPTO_DEV_QCE depend on CRYPTO_DEV_QCRYPTO being disabled  [Sultan Alsawaf]
-3c70021  cpuidle: don't disable cpuidle when entering suspend  [Tim Murray]
-db22ef7  msm: msm_bus: Don't enable QoS clocks when none are present  [Sultan Alsawaf]
-7c13b8f  msm: mdss: add idle state node  [Adrian Salido]
-a5f72d5  kernel: sched: Fix CAF mismerge of 8623286, ec888d4 and fa8dd7068ae69078c24e3f5ffbfb5fc078b9c8e6  [idkwhoiam322]
-d9dd3ce  sched: Enable TTWU_QUEUE as a sched feature for bluecross  [Miguel de Dios]
-79c32f0  sched/fair: Move the PELT constants into a generated header  [Peter Zijlstra]
-f370bf1  FROMLIST: sched/rt: add utilization tracking  [Vincent Guittot]
-94a2486  sched: fair: Add strict skip buddy support  [Maria Yu]
-dd06665  sched/pelt: Skip updating util_est when utilization is higher than CPU's capacity  [Vincent Guittot]
-ac137ec  ANDROID: cpufreq: provide default frequency-invariance setter function  [Dietmar Eggemann]
-3b869a5  qcom-cpufreq: Notify the current frequency to the topology driver  [Pavankumar Kondeti]
-f7c93d2  jasmine_defconfig: Disable CPU_BOOST, APSS_CORE_EA & MSM_PERFORMANCE  [Subhajeet Muhuri]
-6cfbe2a  jasmine_defconfig: Disable Interactive cpufreq governor  [Josh Choo]
-05e3fab  jasmine_defconfig: Enable Schedutil cpufreq governor  [Josh Choo]
-c676dda  jasmine_defconfig: Enable Energy Aware Scheduling by default  [Josh Choo]
-d64e858  jasmine_defconfig: Remove HMP and core_ctl  [Josh Choo]
-f3b1915  FROMLIST: sched: force update of blocked load of idle cpus  [Brendan Jackman]
-2861c88  sched/fair: Fix false running accounting  [Vincent Guittot]
-fd736ae  BACKPORT: sched/fair: Fix cpu_util_wake() for 'execl' type  workloads  [Chris Redpath]
-8f73b487  sched/fair: Increase PELT accuracy for small tasks  [Peter Zijlstra]
-0f4f06d  sched/fair: Explicitly generate __update_load_avg() instances  [Peter Zijlstra]
-31ae11f  sched/fair: Fix corner case in __accumulate_sum()  [Peter Zijlstra]
-53af2f0  sched/fair: Optimize ___update_sched_avg()  [Yuyang Du]
-f7a0f37  CONFIG: use 16ms PELT's half-life  [Patrick Bellasi]
-b236d07  sched/fair: Add support to tune PELT ramp/decay timings  [Patrick Bellasi]
-64eeb2d  BACKPORT: sched/fair: Update util_est before updating schedutil  [Patrick Bellasi]
-aa18295  sched/fair: Update util_est only on util_avg updates  [Patrick Bellasi]
-4f710ef  sched/fair: Use util_est in LB and WU paths  [Patrick Bellasi]
-c617648d  sched/fair: Add util_est on top of PELT  [Patrick Bellasi]
 
