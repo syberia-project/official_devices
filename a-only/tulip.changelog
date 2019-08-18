@@ -1,152 +1,60 @@
 ====================
-     2019-08-10    
+     2019-08-18    
 ====================
 
 ====================
-     2019-08-09    
+     2019-08-17    
 ====================
-
-====================
-     2019-08-08    
-====================
-
-====================
-     2019-08-07    
-====================
-
- * build/make
-5392998  Merge "build: Also replace audio/include old-style kernel header" into 9.0  [dennyspb]
-
- * frameworks/av
-d73863f  libcameraservice: write all pkgNames  [Marko Man]
 
  * frameworks/base
-4fb9184  NetworkManagement : Add ability to restrict app vpn usage  [Uldiniad]
-ffff3c5  GamingMode: Clean up for dynamic mode  [Pranav Vashi]
-a10403a  GamingMode: Fix unnecessary unloading of gaming mode  [Pranav Vashi]
-fb129b1  AMS: Fix the Deadlocks exception in UiHandler  [Terigele]
-f32050d  PM: Stop recording unsupported class loaders  [Alan Stokes]
-6bcbeee  Fix ShortcutService handling of locale change during device setup  [peter.zhang]
-b324b08  jni: Fix improper call to createFromExisting()  [Wang Han]
-216722e  Fix bugs regarding system app cannot write visible path  [sangho.yoon]
-34f0577  GlobalActionsDialog: Fix emergency icon on dark theme  [jhenrique09]
-d4908e0  FOD: prevent showing on auth error  [Marko Man]
-47dbbb8  FOD: deactivate temporary brightness correclty  [Marko Man]
-9b422a3  Fix sim pin on DSDS  [Jordan Liu]
-e4b2bba  Dismiss SIM lock page after correct SIM  [Jordan Liu]
-e2a6aa8  Merge "BT: Adding aptX-Adaptive codec entry to Framework" into 9.0  [dennyspb]
-1649e40  Merge "SystemUI: Fix multiple issues with hiding unprovisioned SIMs" into 9.0  [dennyspb]
-60c598c  NMS: change save policy in other HandlerThread  [Terigele]
-5400b7a  When data switches during voice call, make sure signal bar updates it.  [Malcolm Chen]
-b5c6859  Merge "Add new atoms to log Downgraded Apps and Low Storage" into 9.0  [dennyspb]
-d028aed  Merge "statsd: Add min_score_adj into LmkKillOccurred event" into 9.0  [dennyspb]
-59e737d  Merge "statsd: Add start time to LmkKillOccurred" into 9.0  [dennyspb]
-50e2a68  Update navigation bar upon change of display density  [rleix]
-eed65ae  Unable to input PIN with hardware keyboard  [Wang, ArvinX]
-a04a871  BT: Adding aptX-Adaptive codec entry to Framework  [Gurpreet Ghai]
-496718a  SystemUI: Fix multiple issues with hiding unprovisioned SIMs  [LuK1337]
-4e032b0  Fix to register the receiver for all users  [Kyeongkab.Nam]
-4febe5a  combo issue when location reported by providers do not come with extras  [Kevin Tang]
+83eeba8  Merge changes I2b650c31,I2560aafe,I70a3191c,I48f885f6,I8c5c3f8e, ... into 9.0  [dennyspb]
+9c15c8c  Merge "Q Style Clock: Align owner info as per the clock style" into 9.0  [dennyspb]
+b482d4d  Merge "Implement per-app thermal control [2/3]" into 9.0  [dennyspb]
+a61f6fa  Revert "BT: Adding aptX-Adaptive codec entry to Framework"  [DennySPB]
 
- * frameworks/native
-8254a90  Merge "libbinder: empty ping transaction" into 9.0  [dennyspb]
-
- * packages/apps/Settings
-b454827  Merge changes I574e7067,Ia1f46fad,I96e83a35,Ib8054f72,I49490d63, ... into 9.0  [dennyspb]
+ * frameworks/opt/net/wifi
+ac4e9d0  Merge branch '9.0' of https://github.com/syberia- */platform_frameworks_opt_net_wifi into HEAD  [blinoff82]
+4a9765d  Revert "CountryCode: Use hack for all regions."  [DennySPB]
 
  * vendor/syberia
-7aa0a7d  v2.8  [DennySPB]
-56da69d  Build our wallpapers package  [DennySPB]
+72fce32  dark_theme: make autofill dialog background white  [Josh Fox (XlxFoXxlX)]
 
 ====================
-     2019-08-06    
+     2019-08-16    
 ====================
- * art
-2fbd8ea  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/art into HEAD  [DennySPB]
 
- * build/make
-68ab20d  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/build into HEAD  [DennySPB]
-
- * frameworks/av
-d4b05a6  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPB]
+====================
+     2019-08-15    
+====================
 
  * frameworks/base
-fac60dc  Add new atoms to log Downgraded Apps and Low Storage  [Felix Lopez Luis]
-fd923f0  statsd: Add min_score_adj into LmkKillOccurred event  [Suren Baghdasaryan]
-701de3c  statsd: Add start time to LmkKillOccurred  [Jim Blackler]
-17ab9ed  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPB]
+1b53c4b  SystemUI: Tiny expanding improvement  [BigBrother1984]
+d5cea14  FOD: disable fod on trusted keyguard  [Marko Man]
+05073cb  Keyguard: Avoid starting FP authentication right after cancelling  [dianlujitao]
+8111f28  FOD: change Windowmanager flags  [Marko Man]
+ffb53d5  ViewRootImpl: set max fling ticks per sec to 24  [Simao Gomes Viana]
+33e21dd  CamcorderProfile: Add 1440p camcorder profile  [Sultanxda]
+e60ee78  Fix wrong locale causing reboot in recovery  [Damien Nicolet]
+6c0d580  SystemUI: Use appropriate function when trying to retrieve colorError  [LuK1337]
 
- * frameworks/native
-348856e  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPB]
-
- * packages/apps/Bluetooth
-5ef44b4  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPB]
-
- * packages/apps/Nfc
-319daae  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPB]
-
- * packages/apps/Settings
-07cd458  AppNotificationSettings: fix build after r47 merge  [DennySPB]
-1a3bfe4  Settings: per-app VPN data restriction  [Uldiniad]
-0fa1cd1  Fix to show eSIM reset checkbox in eng build  [Taesu Lee]
-204b950  Settings: appops: Drop GET_UNINSTALLED_PACKAGES from getApplicationInfo()  [LuK1337]
-49d27ae  SimSettings: Fix preferred calls sim not being disabled  [Michael W]
-4e91335  SimSettings: Fix potential NPE  [LuK1337]
-8afa566  team: add Moto G5S Plus to official builds  [blinoff82]
-04be20f  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPB]
-
- * packages/apps/SyberiaPapers
-42089c5  SyberiaPapers: add night mode overlay  [coderzstas]
-fbdf6fb  Adapt to Syberia  [DennySPB]
-
- * packages/services/Telecomm
-aa0906a  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPB]
-
- * system/bt
-edcd5fe  Merge tag 'android-9.0.0_r47' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
+ * frameworks/opt/net/wifi
+afeafc0  Merge tag 'LA.UM.7.6.2.r1-09500-89xx.0' into HEAD  [blinoff82]
 
  * vendor/qcom/opensource/audio
-a5c5a30  policy_hal: Adapt to AudioMix API changes in f/av audiopolicy  [Kevin F. Haggerty]
+e7c1a84  Merge tag 'LA.UM.7.6.2.r1-09500-89xx.0' into HEAD  [blinoff82]
 
- * vendor/syberia
-7130b8d  vendor: Add audio/include/uapi to include path  [Dyneteve]
-12c6c59  qcom: Mark some gralloc bits as valid  [Bruno Martins]
-de814fb  qcom: Add UM 4.14 platforms  [Rashed Abdel-Tawab]
-f107d83  team: add Moto G5S Plus to official builds  [blinoff82]
+ * vendor/qcom/opensource/interfaces
+a396f24  Merge tag 'LA.UM.7.6.2.r1-09500-89xx.0' into HEAD  [blinoff82]
 
 ====================
-     2019-08-05    
+     2019-08-14    
 ====================
 
- * system/core
-fd75487  lmkd: fix sign compare warning  [DennySPB]
-525ee34  init: switch from /dev/keychord to /dev/input/  [Mark Salyzyn]
-0db9d11  init: use std::function for epoll handling  [Tom Cherry]
-acbb8c5  init: disable asan  [Tom Cherry]
-46917b5  init: set oom_adj early before fork vendor_init  [Wei Wang]
-6f49510  lmkd: Enable new kill strategy, add and adjust required system properties  [Suren Baghdasaryan]
-09049dc  lmkd: Introduce kill strategy based on zone watermarks, swap and thrashing  [Suren Baghdasaryan]
-22c2e06  lmkd: Support variable polling intervals set by event handlers  [Suren Baghdasaryan]
-e7cc964  lmkd: set PSI_POLL_PERIOD to 10ms  [Suren Baghdasaryan]
-40273ac  lmkd: Change zoneinfo parsing to retrieve zone watermarks  [Suren Baghdasaryan]
-5dc50bb  lmkd: Change procfs read routine to handle files larger than 1 page in size  [Suren Baghdasaryan]
-
- * system/netd
-588cdac  NetD : Allow passing in interface names for vpn app restriction  [Uldiniad]
-
- * system/sepolicy
-e8564b1  init: support /dev/input  [Mark Salyzyn]
-
 ====================
-     2019-08-04    
+     2019-08-13    
 ====================
 
- * hardware/qcom/fm
-2cf84a8  Automatic translation import  [Michael Bestas]
-
- * packages/apps/FMRadio
-b3c56e7  Automatic translation import  [Michael Bestas]
-
- * packages/resources/devicesettings
-6f0205a  Automatic translation import  [Michael Bestas]
+====================
+     2019-08-12    
+====================
 
