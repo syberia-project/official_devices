@@ -11,13 +11,13 @@
       "url": "http://tiny.cc/latestuninstaller"
     }
   ],
-  "filename": "syberia_gemini-v2.8-20190817-0437-OFFICIAL.zip",
+  "filename": "syberia_gemini-v2.8-20190823-2110-OFFICIAL.zip",
   "changelog": "",
-  "filesize": "595467919",
-  "md5": "6feb65eb07adb009847b58ddbae7f52e",
-  "build_date": "20190817",
+  "filesize": "593343253",
+  "md5": "f9492ca595907164d62a2556a65b4384",
+  "build_date": "20190823",
   "device": "gemini",
-  "url": "https://sourceforge.net/projects/syberiaos/files/gemini/syberia_gemini-v2.8-20190817-0437-OFFICIAL.zip/download",
+  "url": "https://sourceforge.net/projects/syberiaos/files/gemini/syberia_gemini-v2.8-20190823-2110-OFFICIAL.zip/download",
   "donate_url": "https://syberiaos.com/links",
   "developer_url": "http://github.com/syberia-project",
   "news_url": "http://github.com/syberia-project",
