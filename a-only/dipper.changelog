@@ -1,128 +1,283 @@
 ====================
+     2019-08-23    
+====================
+
+ * build/make
+cd207a0  Move sepolicy inheritance into build repo [1/2]  [DennySPB]
+
+ * device/syberia/sepolicy
+e860765  qcom: Extend untrusted_app access to battery/power supply sysfs  [Michael Bestas]
+967342c  Add rules for Long screenshot service  [jhenrique09]
+c43ca8a  sepolicy: Add hal_lineage_fod domain  [LuK1337]
+0d2b555  sepolicy: Add hal_lineage_camera_motor domain  [Łukasz Patron]
+a0aff6e  sepolicy: qcom: Label /d/rpmh  [LuK1337]
+83e337c  sepolicy: Break livedisplay hal policy into impl independent ones  [dianlujitao]
+f5186f3  sepolicy: qcom: Rename common to vendor to avoid confusion  [dianlujitao]
+38298a2  sepolicy: Move livedisplay hal policy to dynamic  [dianlujitao]
+d8644a1  sepolicy: Dynamically build trust policy into system/vendor  [dianlujitao]
+
+ * frameworks/av
+6e059be  CameraService: Support hooks for motorized camera  [PeterCxy]
+
+ * frameworks/base
+0c506aa  LiveDisplayTile: Remove tile if unavailable  [jhenrique09]
+0edd5f7  LiveDisplayManager: Perform null check in getConfig()  [dianlujitao]
+f2357e5  OutdoorModeController: Unconditionally enable auto mode on HWC2  [dianlujitao]
+1a55347  OutdoorModeController: Advertise MODE_AUTO  [dianlujitao]
+c5965a9  LiveDisplayService: Properly disable ColorTemperature  [dianlujitao]
+ebc1b94  LiveDisplayTile: Refresh state after livedisplay initialization  [dianlujitao]
+4716eda  LiveDisplayTile: Enable for outdoor mode and skip night display on HWC2  [dianlujitao]
+3b7d896  LiveDisplayService: Notify SystemUI after initialization finished  [dianlujitao]
+f2589cd  LiveDispalayTile: revert outdoor mode changes  [DennySPB]
+36f9d8f  Revert "fwb: Improve AOSP twilight code"  [DennySPB]
+2b19771  fwb: Port extended screenshot function from OOS  [jhenrique09]
+
+ * kernel/xiaomi/sdm845
+e3592f1  defconfigs: sync for release of 1.5  [ethan-halsall]
+c0a13bf  drivers/media/tuners: fix uninitialized warnings  [ethan-halsall]
+a6ce408  power: smb-lib: Fix -Wmaybe-uninitialized warning  [Yousef Algadri]
+6fceb33  msm: camera: Fix incorrect place of CAM_DBG()  [YumeMichi]
+9bc5939  sched/fair: Avoid cpu idle to deep sleep when have active balance  [Maria Yu]
+a172c0e  sched/fair: Allow load bigger task load balance when nr_running is 2  [Maria Yu]
+886ce61  sched/fair: Consider others if target cpu overutilized  [Maria Yu]
+d50ed17  sched: core: Clear walt rq request in cpu starting  [Maria Yu]
+9a7d014  Merge tag 'LA.UM.7.3.r1-08200-sdm845.0' into reloaded-dev  [ethan-halsall]
+422889d  Merge tag 'LA.UM.7.3.r1-08200-sdm845.0' into reloaded-dev  [ethan-halsall]
+16b8251  Merge tag 'LA.UM.7.3.r1-08200-sdm845.0' into reloaded-dev  [ethan-halsall]
+500736d  msm / camera : Revert troublesome commit  [Raphiel Rollerscaperers]
+1c9dfbc  Merge tag 'LA.UM.7.3.r1-08200-sdm845.0' into reloaded-dev  [ethan-halsall]
+
+ * packages/apps/Longshot
+3886633  Import modded Longshot app  [jhenrique09]
+
+ * packages/apps/Settings
+0a31415  Merge "Substratum: enable FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES by default" into 9.0  [dennyspb]
+
+ * packages/providers/MediaProvider
+1576b4d  MediaProvider: Add read storage permission  [Luca Stefani]
+
+ * vendor/interfaces
+cee18ec  introduce camera motor hal  [Peter Cai]
+
+ * vendor/syberia
+f97112d  Remove Google Markup prebuilt  [DennySPB]
+e854160  Let the user choose the screenshot editor himself  [ShevT]
+fe5a151  vendor: Build Longshot app  [jhenrique09]
+e93fe12  Move sepolicy inheritance into build repo [2/2]  [DennySPB]
+
+====================
+     2019-08-22    
+====================
+
+ * frameworks/base
+3f43650  fw/b: Add capability to allow tethering to use VPN upstreams  [Sam Mortimer]
+ca38962  Merge changes I5630c495,I02362055,I8ab46fde,Ie18bce98,I1c600bc2 into 9.0  [dennyspb]
+b453f70  Merge "GPU Renderer: OpenGL is not the default GPU renderer anymore" into 9.0  [dennyspb]
+0e56919  Set default VR_MODE based on VR feature support  [William McVicker]
+8f5aa3c  Fix NPE issue for GpsNetInitiatedHandler not complete initialization  [wya]
+43b76e2  Fix NPE crash issue for setting  [wya]
+d3d0655  Fix NPE issue while disable KeyguardViewMediator  [wya]
+355d9dd  Merge changes Iec2a88a6,I00e2efac into 9.0  [dennyspb]
+d1b70f6  Added mapping files for DualShock3 and DualShock4  [Kim Low]
+c9177c5  Fallback BUTTON_MODE to HOME  [Siarhei Vishniakou]
+c377460  Remap PS key to BUTTON_MODE  [Siarhei Vishniakou]
+cea64ed  Add keylayout for Xbox One USB controller  [Siarhei Vishniakou]
+f9c109f  Keylayout for xbox controllers  [Siarhei Vishniakou]
+
+ * frameworks/native
+ee7c469  SurfaceFlinger: extend qcom devices with msm8974  [DennySPB]
+
+ * kernel/xiaomi/sdm845
+b0800df  cpufreq: Skip cpufreq resume if it's not suspended  [Bo Yan]
+7288d94  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+012841c  devfreq: memlat: Add suspend/resume for mem_latency  [Jonathan Avila]
+
+ * packages/apps/Settings
+2d5a57a  settings : move wifi mac randomization to wifi settings  [coderzstas]
+7a1d969  Settings: Add hotspot setting to allow VPN upstreams  [Sam Mortimer]
+a3c6d7d  Substratum: enable FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES by default  [DennySPB]
+
+ * vendor/syberia
+c457b4b  config: Use tether automatic upstream selection  [Erik Kline]
+a518412  vendor: extend qcom platform dump with msm8974  [DennySPB]
+
+====================
+     2019-08-21    
+====================
+
+ * device/xiaomi/dipper
+9696379  dipper: add dependencies  [ethan-halsall]
+
+ * device/xiaomi/sdm845-common
+b6e79b6  sdm845-common: Clear persist.vendor.usb.config on boot  [Wang Han]
+0f1f720  sdm845-common: Remove bootctrl  [ethan-halsall]
+aedb3dc  overlay: PIN critical apps and system services that get swapped  [Jorim Jaggi]
+340fa45  overlay: enable MultiUser UI  [DennySPB]
+982d8f2  prop: Disable VSync for CPU rendered apps  [Hazari PraveenKumar]
+11dea9c  prop: Shorten wait time to optimize shutdown time  [zljing]
+0082752  sdm845-common: Enable lawnstep recents  [ethan-halsall]
+b257014  props: Optimize ART props  [celtare21]
+64e3a25  sdm845-common: remove uneeded RIL flag  [ethan-halsall]
+487f37c  sdm845-common: overlay: update doze packagename  [Akhil Narang]
+9fca793  sdm845-common: overlay: Define config_customDozePackage  [jhenrique09]
+c6658c4  sdm845-common: none of the common devices have multi coloured led  [Akhil Narang]
+
+ * frameworks/av
+5242883  Framework Audio: offload stream play will pause when buffer low  [lixin]
+
+ * frameworks/base
+226f577  GPU Renderer: OpenGL is not the default GPU renderer anymore  [Subhajeet Muhuri]
+9082fb1  Add property to control system dialog show  [wya]
+ca1e6ff  Fix the fwr issue due to dead lock  [wya]
+
+ * kernel/xiaomi/sdm845
+1c6c35c  sched: walt: Add an API for querying default related thread group load  [Pavankumar Kondeti]
+b4c34e2  ARM: dts: sdm845: Disable LPM wakeup prediction for the big cluster  [Danny Lin]
+e572e73  genirq: Introduce IRQD_SINGLE_TARGET flag  [Thomas Gleixner]
+793884e  irqchip/gic-v3: Report that effective affinity is a single target  [Marc Zyngier]
+ffe9604  power: qos: Use effective affinity mask  [Pavankumar Kondeti]
+30f9e0e  genirq: Introduce effective affinity mask  [Thomas Gleixner]
+16be0ac  sched: core_ctl: Add core_ctl_notifier_register()  [Pavankumar Kondeti]
+d04ba4e  Revert "qos: Don't allow userspace to impose restrictions on CPU idle levels"  [ethan-halsall]
+d7fd192  Revert "[Squash]cpuidle: include Sultans optimizations"  [ethan-halsall]
+
+ * vendor/xiaomi
+702a8fa  sdm845-common: Decommonize ACDB loader libraries  [Bruno Martins]
+ec8b72e  polaris: Add camera OIS firmware  [palaych]
+c1aa170  polaris: Add missing camera libs  [palaych]
+9564276  polaris: Add QC location blobs  [Bruno Martins]
+fc6154a  polaris: Add initial vendor blobs  [Bruno Martins]
+e092efa  equuleus: Add initial vendor blobs  [Bruno Martins]
+f8abf48  ursa: Add initial vendor blobs  [Bruno Martins]
+2173578  beryllium: Add QC location blobs  [Bruno Martins]
+97aceb0  beryllium: Add hotword enrollment  [1nfrag]
+da18ccb  beryllium: Add initial vendor blobs  [Bruno Martins]
+86bde20  dipper: Add initial vendor blobs  [Bruno Martins]
+cc3bcc3  sdm845-common: Include missing hostapd init script  [Bruno Martins]
+860860d  sdm845-common: Remove prebuilt IPACM blobs  [Bruno Martins]
+0b0efef  sdm845-common: Remove prebuilt thermal and VR HALs  [Bruno Martins]
+c9d4ba1  sdm845-common: Remove OMX blobs that be built from source  [Bruno Martins]
+72bbe02  sdm845-common: Remove prebuilt sound FX libs  [Bruno Martins]
+70cd3ec  sdm845-common: Add initial vendor blobs  [Bruno Martins]
+2b81b5d  sdm845-common: remove qcom performance blobs  [ethan-halsall]
+
+====================
+     2019-08-20    
+====================
+
+ * frameworks/base
+04c29c8  Ticker: fix alignment in statusbar  [Josh Fox (XlxFoXxlX)]
+00f5844  power: Respect global vibration setting for charging sounds  [Michael Bestas]
+e13482f  Fix issues with QS access on secured lockscreen  [Pranav Vashi]
+
+ * vendor/syberia
+a9b03e8  Merge "team: Fix device model name for X00T" into 9.0  [blinov.in]
+
+====================
+     2019-08-19    
+====================
+
+ * build/soong
+071a08d  Give Blueprint modules access to all namespaces  [Colin Cross]
+
+ * device/xiaomi/dipper
+2198aa5  dipper: beautify rounded corners  [argraur]
+2d0f400  dipper: Add additional gps configuration to overlay  [1nfrag]
+fe98f93  Use Pie qti-telephony-common  [Ethan Halsall]
+38f1379  dipper: remove no cutout overlay  [ethan-halsall]
+3e0d7e2  overlay: override livedisplay outdoor capability  [DennySPB]
+be0e0dc  dipper: update doze overlay  [ethan-halsall]
+4812a62  Bringup syberia  [ethan-halsall]
+
+ * device/xiaomi/sdm845-common
+d33deb6  gpt-utils: use generated kernel headers  [DennySPB]
+02b1009  Import bootctrl and gpt-utils  [Luca Stefani]
+2e80d81  prebuilts: Add Lawnchair alpha-2338  [DennySPB]
+
+ * frameworks/native
+6c87ca0  SurfaceFlinger: Exclude CAF extensions from non-QC devices  [jhenrique09]
+
+ * kernel/xiaomi/sdm845
+ccfd404  qseecom: improve app_block_wq processing  [Zhen Kong]
+
+ * packages/apps/SyberiaSettings
+3772a1c  Fix RU translation  [DennySPB]
+
+ * vendor/syberia
+0f40c36  vendor: Add qcom platform type to soongs vars  [jhenrique09]
+6a0bafa  build: Use ifeq/else ifeq/else construction in board config  [Ethan Chen]
+0399265  build: add support for sdm710 and sdm845  [Isaac Chen]
+62046ea  team: Fix device model name for X00T  [blinoff82]
+
+====================
+     2019-08-18    
+====================
+
+ * build/make
+e244651  Remove TARGET_USES_MKE2FS  [Colin Cross]
+
+ * device/xiaomi/dipper
+2190157  dipper: Drop unnecessary fqnames  [LuK1337]
+3a9fa2a  dipper: set display desnity to a sane 420  [ethan-halsall]
+bcee239  dipper: NoCutoutOverlay: override others notch overlays  [Henrique Silva]
+a9ef78c  Adjust status bar height to match notch height  [ethan-halsall]
+7ffa4a2  overlay: Use vibration patterns from Pixel 2  [Vasishath Kaushal]
+b40cee7  dipper: Add device specific ACDB loader libraries  [Bruno Martins]
+9ea55d0  dipper: Kill Xiaomi's display feature  [Bruno Martins]
+ff4555a  Fixes Fingerprint Shutter For Camera Apps  [Luffitys]
+56356a6  sepolicy: add policy for INxpEse and INxpNfc  [argraur]
+5e89fa7  dipper: switch to NfcNci and NFC 1.1  [argraur]
+afe1148  BoardConfig: build revenge varient of simple kernel  [ethan-halsall]
+efd6be0  dipper: AlwaysHideBatteryPercentageOnKeyguard  [ethan-halsall]
+7ffd659  SystemUI: Allow for 4 system icons and 1 notication icon  [ethan-halsall]
+3d85cae  dipper: remove ftsab encyrption  [ethan-halsall]
+6bbad2e  Add full f2fs support to fstab  [ethan-halsall]
+071d008  dipper: declare physical cutout  [ethan-halsall]
+
+ * device/xiaomi/sdm845-common
+017e163  sdm845-common: sepolicy: fix thermal controller permission  [palaych]
+3ca5f29  Bringup syberia  [ethan-halsall]
+1d905dd  sdm845-commmon: cleanup post boot power script for libperfmgr  [ethan-halsall]
+389383a  sdm845-common: power: Keep powersaving disabled during boottime  [Bruno Martins]
+fb93250  sdm845-common: Enable UFS boottime setting  [Wei Wang]
+149f1ad  sdm845-common: Adjust charger state CPUs  [Thierry Strudel]
+d635c8d  sdm845-common: charger: Powersaving in charger mode  [Wei Wang]
+3e8c5b3  sdm845-common: Don't trigger low power on charger mode  [Bruno Martins]
+d876b30  sdm845-common: Remove unused services and property triggers  [Bruno Martins]
+10f15b1  sdm845-common: Delete class_main init shell script  [Bruno Martins]
+71add06  sdm845-common: Remove more obsolete system properties  [Bruno Martins]
+f73cb1a  sdm845-common: Set prop expected by the FM radio HAL  [TheScarastic]
+137ad16  sdm845-common: Drop the creation of deprecated system_data folders  [Bruno Martins]
+fed1839  sdm845-common: Remove obsolete tcp buffer size system properties.  [Tom Cherry]
+254009d  sdm845-common: sepolicy: Drop init rules for bind mounting  [Bruno Martins]
+eec635a  sdm845-common: Point charger service directly to MIUI daemon  [Bruno Martins]
+3669654  sdm845-common: Create power init script  [Bruno Martins]
+664a529  sdm845-common: Remove wcnss_filter and all references to it  [Bruno Martins]
+2ee426f  sdm845-common: Drop most of unnecessary fqnames  [LuK1337]
+3f905fc  sdm845-common: reduce stune interation boost from 50 -> 20  [ethan-halsall]
+a9e5469  arch: cortex-a75 is armv8-2a and armv8-a  [argraur]
+daa27b0  cpu: sdm845 is cortex-a75 in aosp  [argraur]
+dafeef0  sdm845-common: Add aosp nxpese interface  [argraur]
+8b61402  sdm845-common: rootdir: Update rc files  [Sachin Mohan Gadag]
+f039cd7  sdm845-common: Don't re-start hwcomposer if sf restart  [Ramakant Singh]
+a16ce29  sdm845-common: init.qcom.rc: Override android.hardware.contexthub@1.0-service  [Tharun Kumar Merugu]
+a348774  sdm845-common: Change ownership of /data/vendor/tombstones to system  [Veerubhotla Hari]
+64d3182  sdm845-common: init.qcom.usb.rc: Fix the incorrect mtp property  [Sriharsha Allenki]
+772e713  sdm845-common: Clean-up tombstone related commands in rc  [Hari Veerubhotla]
+bf2225a  sdm845-common: init.qcom.usb.rc: Set the sys.mtp.device_type property  [Sriharsha Allenki]
+
+====================
      2019-08-17    
 ====================
 
- * frameworks/base
-83eeba8  Merge changes I2b650c31,I2560aafe,I70a3191c,I48f885f6,I8c5c3f8e, ... into 9.0  [dennyspb]
-9c15c8c  Merge "Q Style Clock: Align owner info as per the clock style" into 9.0  [dennyspb]
-b482d4d  Merge "Implement per-app thermal control [2/3]" into 9.0  [dennyspb]
-a61f6fa  Revert "BT: Adding aptX-Adaptive codec entry to Framework"  [DennySPB]
-
- * frameworks/opt/net/wifi
-ac4e9d0  Merge branch '9.0' of https://github.com/syberia- */platform_frameworks_opt_net_wifi into HEAD  [blinoff82]
-4a9765d  Revert "CountryCode: Use hack for all regions."  [DennySPB]
-
- * vendor/syberia
-72fce32  dark_theme: make autofill dialog background white  [Josh Fox (XlxFoXxlX)]
-
-====================
-     2019-08-16    
-====================
-
-====================
-     2019-08-15    
-====================
-
- * frameworks/base
-1b53c4b  SystemUI: Tiny expanding improvement  [BigBrother1984]
-d5cea14  FOD: disable fod on trusted keyguard  [Marko Man]
-05073cb  Keyguard: Avoid starting FP authentication right after cancelling  [dianlujitao]
-8111f28  FOD: change Windowmanager flags  [Marko Man]
-ffb53d5  ViewRootImpl: set max fling ticks per sec to 24  [Simao Gomes Viana]
-33e21dd  CamcorderProfile: Add 1440p camcorder profile  [Sultanxda]
-e60ee78  Fix wrong locale causing reboot in recovery  [Damien Nicolet]
-6c0d580  SystemUI: Use appropriate function when trying to retrieve colorError  [LuK1337]
-
- * frameworks/opt/net/wifi
-afeafc0  Merge tag 'LA.UM.7.6.2.r1-09500-89xx.0' into HEAD  [blinoff82]
-
- * vendor/qcom/opensource/audio
-e7c1a84  Merge tag 'LA.UM.7.6.2.r1-09500-89xx.0' into HEAD  [blinoff82]
-
- * vendor/qcom/opensource/interfaces
-a396f24  Merge tag 'LA.UM.7.6.2.r1-09500-89xx.0' into HEAD  [blinoff82]
-
-====================
-     2019-08-14    
-====================
-
  * kernel/xiaomi/sdm845
-a58fed3  defonfig: sync for 1.4 release  [ethan-halsall]
-49ead5a  tick/nohz: Optimize nohz idle enter  [Gaurav Jindal]
-aed4751  mm: add Kconfig interface for vmstat interval  [Tyler Nijmeh]
-cb68c8f  qcacld: disable -Werror  [Park Ju Hyung]
-cdffc14  defocnfig: inline  [ethan-halsall]
-de96e12  Revert "Remove qcacld-3.0 for clean import of new drivers"  [ethan-halsall]
-40eedce  Delete wifi drivers from sm8150 due to issues  [ethan-halsall]
-04a2b34  arm64: cpufeature: add feature for CRC32 instructions  [Ard Biesheuvel]
-3461d49  lib/crc32: fix ambiguous aliases  [Sami Tolvanen]
-312ed91  lib/crc32.c: mark crc32_le_base/__crc32c_le_base aliases as __pure  [Miguel Ojeda]
-e40ce6c  lib/crc32: make core crc32() routines weak so they can be overridden  [Ard Biesheuvel]
-cf6e74b  lib/crc: Use consistent naming for CRC-32 polynomials  [Krzysztof Kozlowski]
-1acc33e  lib/crc: Move polynomial definition to separate header  [Krzysztof Kozlowski]
-aad7d4b  arm64/lib: improve CRC32 performance for deep pipelines  [Ard Biesheuvel]
-ac1c588  arm64/lib: add accelerated crc32 routines  [Ard Biesheuvel]
-23b5660  include: asm-generic: Use the HZ value of defconfig instead  [ahmedradaideh]
-3b12898  sched: walt: Refactor WALT initialization routine  [Pavankumar Kondeti]
-a819ba5  sched/fair: prefer energy efficient CPUs for !prefer_idle tasks  [Ionela Voinescu]
-908c914  rcu: Speed up calling of RCU tasks callbacks  [Steven Rostedt (VMware)]
-91d61d0  sched: use cuml demand for idle selection  [Abhijeet Dharmapurikar]
-fb7ee43  sched/fair: Remove caf's rotator/avoid_prev_cpu code from find_best_target()  [Zachariah Kennedy]
-7410f04  Revert "sched/fair: use min capacity when evaluating idle backup cpus"  [Ionela Voinescu]
-8e0f897  Revert "sched/fair: use min capacity when evaluating active cpus"  [Ionela Voinescu]
-
-====================
-     2019-08-13    
-====================
-
-====================
-     2019-08-12    
-====================
-
- * kernel/xiaomi/sdm845
-5745080  cpuidle: Do not select menu and ladder governors  [Maulik Shah]
-42f4096  Merge remote-tracking branch 'msm-4.9/kernel.lnx.4.9.r11-rel' into reloaded-dev  [ethan-halsall]
-ffa063f  arm64 / lib ; Optimize strlen routines  [Raphiel Rollerscaperers]
-8470607  arm64 / memchr : Optimize memchr routines  [Raphiel Rollerscaperers]
-45e4eb6  Merge 4.9.189 into kernel.lnx.4.9.r11-rel  [Nathan Chancellor]
-4bd718d  Linux 4.9.189  [Greg Kroah-Hartman]
-2224e89  x86/speculation/swapgs: Exclude ATOMs from speculation through SWAPGS  [Thomas Gleixner]
-6583ecc  x86/entry/64: Use JMP instead of JMPQ  [Josh Poimboeuf]
-90d45f0  x86/speculation: Enable Spectre v1 swapgs mitigations  [Josh Poimboeuf]
-e90ec5e  x86/speculation: Prepare entry code for Spectre v1 swapgs mitigations  [Josh Poimboeuf]
-7092a21  x86: cpufeatures: Sort feature word 7  [Ben Hutchings]
-a89b44e  spi: bcm2835: Fix 3-wire mode if DMA is enabled  [Lukas Wunner]
-c191991  block: blk_init_allocated_queue() set q->fq as NULL in the fail case  [xiao jin]
-7c46532  bnx2x: Disable multi-cos feature.  [Sudarsana Reddy Kalluru]
-264e020  ife: error out when nla attributes are empty  [Cong Wang]
-dfb9883  ip6_tunnel: fix possible use-after-free on xmit  [Haishuang Yan]
-00a8794  compat_ioctl: pppoe: fix PPPOEIOCSFWD handling  [Arnd Bergmann]
-695074c  tipc: compat: allow tipc commands without arguments  [Taras Kondratiuk]
-4c6f0d6  net: sched: Fix a possible null-pointer dereference in dequeue_func()  [Jia-Ju Bai]
-03eb042  net/mlx5: Use reversed order when unregister devices  [Mark Zhang]
-78922ae  net: fix ifindex collision during namespace removal  [Jiri Pirko]
-6d9235b  net: bridge: mcast: don't delete permanent entries when fast leave is enabled  [Nikolay Aleksandrov]
-0e08ee5  net: bridge: delete local fdb on device init failure  [Nikolay Aleksandrov]
-b5641e5  atm: iphase: Fix Spectre v1 vulnerability  [Gustavo A. R. Silva]
-22395a3  libceph: use kbasename() and kill ceph_file_part()  [Ilya Dryomov]
-180019b  objtool: Add rewind_stack_do_exit() to the noreturn list  [Josh Poimboeuf]
-495dace  objtool: Add machine_real_restart() to the noreturn list  [Josh Poimboeuf]
-d41d78c  IB: directly cast the sockaddr union to aockaddr  [Greg Kroah-Hartman]
-7d5750c  RDMA: Directly cast the sockaddr union to sockaddr  [Jason Gunthorpe]
-41052c9  HID: Add quirk for HP X1200 PIXART OEM mouse  [Sebastian Parschauer]
-0cb65f3  HID: wacom: fix bit shift for Cintiq Companion 2  [Aaron Armstrong Skomra]
-06fac08  tcp: be more careful in tcp_fragment()  [Eric Dumazet]
-3c5dbb9  arm64: cpufeature: Fix feature comparison for CTR_EL0.{CWG,ERG}  [Will Deacon]
-e364e9a  arm64: cpufeature: Fix CTR_EL0 field definitions  [Will Deacon]
-5f085ef  ARM: dts: logicpd-som-lv: Fix Audio Mute  [Adam Ford]
-7fc1e8a  ARM: dts: Add pinmuxing for i2c2 and i2c3 for LogicPD torpedo  [Adam Ford]
-5770e69  ARM: dts: Add pinmuxing for i2c2 and i2c3 for LogicPD SOM-LV  [Adam Ford]
-792f95e  scsi: fcoe: Embed fc_rport_priv in fcoe_rport structure  [Hannes Reinecke]
-
-====================
-     2019-08-11    
-====================
-
- * kernel/xiaomi/sdm845
-ed98eb8  sched/fair: Add feature to toggle SchedTune utilization boosting  [Danny Lin]
+9ccb379  cpufreq: schedutil: Remove CAF predicted load functionality  [0ctobot]
+d5f1f48  cpuset: Clear cpus_requested for empty buf  [Roman Kiryanov]
+db9b167  kernel/printk: Block cpuhotplug callback when tasks are frozen  [Thomas Gleixner]
+a2b3ad3  irqchip/gic: Consolidate hotplug state space  [Thomas Gleixner]
+377e8df  Revert "ARM: dts: msm: disable pmi8998_tz"  [Raphiel Rollerscaperers]
+8b0e503  Revert "arm64: dts: qcom: Separate thermal from device DT"  [ethan-halsall]
+6f88446  Treewide: clang: fix all -Wunsequenced warnings  [mydongistiny]
+c4fa9f8  cpuset: Add missing allocation of cpus_requested in alloc_trial_cpuset  [Roman Kiryanov]
+c81b06c  sched/core: Improve CPU hotplug latency for rcu_expedited=1 case  [Pavankumar Kondeti]
 
