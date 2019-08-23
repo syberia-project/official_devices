@@ -1,91 +1,140 @@
 ====================
-     2019-08-17    
+     2019-08-23    
 ====================
 
-====================
-     2019-08-16    
-====================
+ * build/make
+cd207a0  Move sepolicy inheritance into build repo [1/2]  [DennySPB]
 
- * device/xiaomi/lavender
-ecff4be  lavender: Update syberia version  [mdeejay]
+ * device/syberia/sepolicy
+e860765  qcom: Extend untrusted_app access to battery/power supply sysfs  [Michael Bestas]
+967342c  Add rules for Long screenshot service  [jhenrique09]
+c43ca8a  sepolicy: Add hal_lineage_fod domain  [LuK1337]
+0d2b555  sepolicy: Add hal_lineage_camera_motor domain  [Łukasz Patron]
+a0aff6e  sepolicy: qcom: Label /d/rpmh  [LuK1337]
+83e337c  sepolicy: Break livedisplay hal policy into impl independent ones  [dianlujitao]
+f5186f3  sepolicy: qcom: Rename common to vendor to avoid confusion  [dianlujitao]
+38298a2  sepolicy: Move livedisplay hal policy to dynamic  [dianlujitao]
+d8644a1  sepolicy: Dynamically build trust policy into system/vendor  [dianlujitao]
+
+ * frameworks/av
+6e059be  CameraService: Support hooks for motorized camera  [PeterCxy]
 
  * frameworks/base
-83eeba8  Merge changes I2b650c31,I2560aafe,I70a3191c,I48f885f6,I8c5c3f8e, ... into 9.0  [dennyspb]
-9c15c8c  Merge "Q Style Clock: Align owner info as per the clock style" into 9.0  [dennyspb]
-b482d4d  Merge "Implement per-app thermal control [2/3]" into 9.0  [dennyspb]
-a61f6fa  Revert "BT: Adding aptX-Adaptive codec entry to Framework"  [DennySPB]
+0c506aa  LiveDisplayTile: Remove tile if unavailable  [jhenrique09]
+0edd5f7  LiveDisplayManager: Perform null check in getConfig()  [dianlujitao]
+f2357e5  OutdoorModeController: Unconditionally enable auto mode on HWC2  [dianlujitao]
+1a55347  OutdoorModeController: Advertise MODE_AUTO  [dianlujitao]
+c5965a9  LiveDisplayService: Properly disable ColorTemperature  [dianlujitao]
+ebc1b94  LiveDisplayTile: Refresh state after livedisplay initialization  [dianlujitao]
+4716eda  LiveDisplayTile: Enable for outdoor mode and skip night display on HWC2  [dianlujitao]
+3b7d896  LiveDisplayService: Notify SystemUI after initialization finished  [dianlujitao]
+f2589cd  LiveDispalayTile: revert outdoor mode changes  [DennySPB]
+36f9d8f  Revert "fwb: Improve AOSP twilight code"  [DennySPB]
+2b19771  fwb: Port extended screenshot function from OOS  [jhenrique09]
 
- * frameworks/opt/net/wifi
-ac4e9d0  Merge branch '9.0' of https://github.com/syberia- */platform_frameworks_opt_net_wifi into HEAD  [blinoff82]
-4a9765d  Revert "CountryCode: Use hack for all regions."  [DennySPB]
+ * hardware/qcom/display-caf/msm8998
+6063eae  Revert "Revert "display: Define soong namespace""  [mdeejay]
+
+ * packages/apps/Settings
+0a31415  Merge "Substratum: enable FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES by default" into 9.0  [dennyspb]
+
+ * packages/providers/MediaProvider
+1576b4d  MediaProvider: Add read storage permission  [Luca Stefani]
+
+ * vendor/interfaces
+cee18ec  introduce camera motor hal  [Peter Cai]
 
  * vendor/syberia
-72fce32  dark_theme: make autofill dialog background white  [Josh Fox (XlxFoXxlX)]
+f97112d  Remove Google Markup prebuilt  [DennySPB]
+e854160  Let the user choose the screenshot editor himself  [ShevT]
+fe5a151  vendor: Build Longshot app  [jhenrique09]
+e93fe12  Move sepolicy inheritance into build repo [2/2]  [DennySPB]
 
 ====================
-     2019-08-15    
-====================
-
-====================
-     2019-08-14    
+     2019-08-22    
 ====================
 
  * frameworks/base
-1b53c4b  SystemUI: Tiny expanding improvement  [BigBrother1984]
-d5cea14  FOD: disable fod on trusted keyguard  [Marko Man]
-05073cb  Keyguard: Avoid starting FP authentication right after cancelling  [dianlujitao]
-8111f28  FOD: change Windowmanager flags  [Marko Man]
-ffb53d5  ViewRootImpl: set max fling ticks per sec to 24  [Simao Gomes Viana]
-33e21dd  CamcorderProfile: Add 1440p camcorder profile  [Sultanxda]
-e60ee78  Fix wrong locale causing reboot in recovery  [Damien Nicolet]
-6c0d580  SystemUI: Use appropriate function when trying to retrieve colorError  [LuK1337]
+3f43650  fw/b: Add capability to allow tethering to use VPN upstreams  [Sam Mortimer]
+ca38962  Merge changes I5630c495,I02362055,I8ab46fde,Ie18bce98,I1c600bc2 into 9.0  [dennyspb]
+b453f70  Merge "GPU Renderer: OpenGL is not the default GPU renderer anymore" into 9.0  [dennyspb]
+0e56919  Set default VR_MODE based on VR feature support  [William McVicker]
+8f5aa3c  Fix NPE issue for GpsNetInitiatedHandler not complete initialization  [wya]
+43b76e2  Fix NPE crash issue for setting  [wya]
+d3d0655  Fix NPE issue while disable KeyguardViewMediator  [wya]
+355d9dd  Merge changes Iec2a88a6,I00e2efac into 9.0  [dennyspb]
+d1b70f6  Added mapping files for DualShock3 and DualShock4  [Kim Low]
+c9177c5  Fallback BUTTON_MODE to HOME  [Siarhei Vishniakou]
+c377460  Remap PS key to BUTTON_MODE  [Siarhei Vishniakou]
+cea64ed  Add keylayout for Xbox One USB controller  [Siarhei Vishniakou]
+f9c109f  Keylayout for xbox controllers  [Siarhei Vishniakou]
 
- * frameworks/opt/net/wifi
-afeafc0  Merge tag 'LA.UM.7.6.2.r1-09500-89xx.0' into HEAD  [blinoff82]
+ * frameworks/native
+ee7c469  SurfaceFlinger: extend qcom devices with msm8974  [DennySPB]
 
- * vendor/qcom/opensource/audio
-e7c1a84  Merge tag 'LA.UM.7.6.2.r1-09500-89xx.0' into HEAD  [blinoff82]
+ * packages/apps/Longshot
+3886633  Import modded Longshot app  [jhenrique09]
 
- * vendor/qcom/opensource/interfaces
-a396f24  Merge tag 'LA.UM.7.6.2.r1-09500-89xx.0' into HEAD  [blinoff82]
+ * packages/apps/Settings
+2d5a57a  settings : move wifi mac randomization to wifi settings  [coderzstas]
+7a1d969  Settings: Add hotspot setting to allow VPN upstreams  [Sam Mortimer]
+a3c6d7d  Substratum: enable FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES by default  [DennySPB]
+
+ * vendor/syberia
+c457b4b  config: Use tether automatic upstream selection  [Erik Kline]
+a518412  vendor: extend qcom platform dump with msm8974  [DennySPB]
 
 ====================
-     2019-08-13    
+     2019-08-21    
 ====================
 
- * kernel/xiaomi/lavender
-e4755fd  Merge branch 'kernel.lnx.4.4.r34-rel' of https://github.com/android-linux-stable/msm-4.4 into pie-clang  [mdeejay]
+ * frameworks/av
+5242883  Framework Audio: offload stream play will pause when buffer low  [lixin]
+
+ * frameworks/base
+226f577  GPU Renderer: OpenGL is not the default GPU renderer anymore  [Subhajeet Muhuri]
+9082fb1  Add property to control system dialog show  [wya]
+ca1e6ff  Fix the fwr issue due to dead lock  [wya]
 
 ====================
-     2019-08-12    
+     2019-08-20    
 ====================
 
+ * frameworks/base
+04c29c8  Ticker: fix alignment in statusbar  [Josh Fox (XlxFoXxlX)]
+00f5844  power: Respect global vibration setting for charging sounds  [Michael Bestas]
+e13482f  Fix issues with QS access on secured lockscreen  [Pranav Vashi]
+
+ * vendor/syberia
+a9b03e8  Merge "team: Fix device model name for X00T" into 9.0  [blinov.in]
+
 ====================
-     2019-08-11    
+     2019-08-19    
 ====================
 
- * kernel/xiaomi/lavender
-5781ea2  Merge 4.4.189 into kernel.lnx.4.4.r34-rel  [Nathan Chancellor]
-3904234  Linux 4.4.189  [Greg Kroah-Hartman]
-62dcfbb  x86/speculation/swapgs: Exclude ATOMs from speculation through SWAPGS  [Thomas Gleixner]
-967858f  x86/entry/64: Use JMP instead of JMPQ  [Josh Poimboeuf]
-73e2c1b  x86/speculation: Enable Spectre v1 swapgs mitigations  [Josh Poimboeuf]
-e3d8c97  x86/speculation: Prepare entry code for Spectre v1 swapgs mitigations  [Josh Poimboeuf]
-3d3e1f4  x86/entry/64: Fix context tracking state warning when load_gs_index fails  [Wanpeng Li]
-1bd558b  x86: cpufeatures: Sort feature word 7  [Ben Hutchings]
-68522ac  spi: bcm2835: Fix 3-wire mode if DMA is enabled  [Lukas Wunner]
-e6ea77d  block: blk_init_allocated_queue() set q->fq as NULL in the fail case  [xiao jin]
-bf60393  compat_ioctl: pppoe: fix PPPOEIOCSFWD handling  [Arnd Bergmann]
-2a0b2bd  bnx2x: Disable multi-cos feature.  [Sudarsana Reddy Kalluru]
-7d0c335  net/mlx5: Use reversed order when unregister devices  [Mark Zhang]
-4c64134  net: sched: Fix a possible null-pointer dereference in dequeue_func()  [Jia-Ju Bai]
-6eded45  tipc: compat: allow tipc commands without arguments  [Taras Kondratiuk]
-985fcc1  net: fix ifindex collision during namespace removal  [Jiri Pirko]
-8db1305  net: bridge: delete local fdb on device init failure  [Nikolay Aleksandrov]
-eee434d  atm: iphase: Fix Spectre v1 vulnerability  [Gustavo A. R. Silva]
-5917ca4  tcp: be more careful in tcp_fragment()  [Eric Dumazet]
-c333492a  HID: Add quirk for HP X1200 PIXART OEM mouse  [Sebastian Parschauer]
-68e3b4e  netfilter: nfnetlink_acct: validate NFACCT_QUOTA parameter  [Phil Turnbull]
-ebb9ffd  arm64: cpufeature: Fix feature comparison for CTR_EL0.{CWG,ERG}  [Will Deacon]
-375ddde  arm64: cpufeature: Fix CTR_EL0 field definitions  [Will Deacon]
+ * build/soong
+071a08d  Give Blueprint modules access to all namespaces  [Colin Cross]
+
+ * frameworks/native
+6c87ca0  SurfaceFlinger: Exclude CAF extensions from non-QC devices  [jhenrique09]
+
+ * packages/apps/SyberiaSettings
+3772a1c  Fix RU translation  [DennySPB]
+
+ * vendor/syberia
+0f40c36  vendor: Add qcom platform type to soongs vars  [jhenrique09]
+6a0bafa  build: Use ifeq/else ifeq/else construction in board config  [Ethan Chen]
+0399265  build: add support for sdm710 and sdm845  [Isaac Chen]
+62046ea  team: Fix device model name for X00T  [blinoff82]
+
+====================
+     2019-08-18    
+====================
+
+ * build/make
+e244651  Remove TARGET_USES_MKE2FS  [Colin Cross]
+
+====================
+     2019-08-17    
+====================
 
