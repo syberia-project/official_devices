@@ -11,13 +11,13 @@
       "url": "http://tiny.cc/latestuninstaller"
     }
   ],
-  "filename": "syberia_X00T-v2.8-20190818-0850-OFFICIAL.zip",
+  "filename": "syberia_X00T-v2.8-20190824-0310-OFFICIAL.zip",
   "changelog": "",
-  "filesize": "634258324",
-  "md5": "e97a958f6a2f93bdf30de4bdfe2de0ee",
-  "build_date": "20190818",
+  "filesize": "632032899",
+  "md5": "8037e2e3f15b0665268e2800a48c6227",
+  "build_date": "20190824",
   "device": "X00T",
-  "url": "https://sourceforge.net/projects/syberiaos/files/X00T/syberia_X00T-v2.8-20190818-0850-OFFICIAL.zip/download",
+  "url": "https://sourceforge.net/projects/syberiaos/files/X00T/syberia_X00T-v2.8-20190824-0310-OFFICIAL.zip/download",
   "donate_url": "https://syberiaos.com/links",
   "developer_url": "http://github.com/syberia-project",
   "news_url": "http://github.com/syberia-project",
@@ -26,5 +26,5 @@
   "website_url": "http://syberiaos.com",
   "forum_url": "https://forum.xda-developers.com/asus-zenfone-max-pro-m1/development/rom-syberia-project-t3947572",
   "device_brand": "Asus",
-  "device_model": "X00T"
+  "device_model": "ZenFone Max Pro M1"
 }
