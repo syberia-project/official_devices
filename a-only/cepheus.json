@@ -1,0 +1,30 @@
+{
+  "addons": [
+    {
+      "title": "Magisk",
+      "summary": "Magisk",
+      "url": "\"http://tiny.cc/latestmagisk"
+    },
+    {
+      "title": "Magisk",
+      "summary": "Magisk Uninstaller",
+      "url": "http://tiny.cc/latestuninstaller"
+    }
+  ],
+  "filename": "syberia_cepheus-v2.8-20190830-2020-OFFICIAL.zip",
+  "changelog": "",
+  "filesize": "543885811",
+  "md5": "c1dc09254d4b1800c0641ff5bade4089",
+  "build_date": "20190830",
+  "device": "cepheus",
+  "url": "https://sourceforge.net/projects/syberiaos/files/cepheus/syberia_cepheus-v2.8-20190830-2020-OFFICIAL.zip/download",
+  "donate_url": "https://syberiaos.com/links",
+  "developer_url": "http://github.com/syberia-project",
+  "news_url": "http://github.com/syberia-project",
+  "developer": "mesziman",
+  "error": "false",
+  "website_url": "http://syberiaos.com",
+  "forum_url": "https://forum.xda-developers.com/Mi-9/development/rom-syberia-project-2-8-t3963061",
+  "device_brand": "Xiaomi",
+  "device_model": "Mi9"
+}
