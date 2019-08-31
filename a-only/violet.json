@@ -1,0 +1,30 @@
+{
+  "addons": [
+    {
+      "title": "Magisk",
+      "summary": "Magisk",
+      "url": "\"http://tiny.cc/latestmagisk"
+    },
+    {
+      "title": "Magisk",
+      "summary": "Magisk Uninstaller",
+      "url": "http://tiny.cc/latestuninstaller"
+    }
+  ],
+  "filename": "syberia_violet-v2.8-20190831-1522-OFFICIAL.zip",
+  "changelog": "",
+  "filesize": "830878348",
+  "md5": "8469f0b5c3a5c74190169b4b95a8cd2f",
+  "build_date": "20190831",
+  "device": "violet",
+  "url": "https://sourceforge.net/projects/syberiaos/files/violet/syberia_violet-v2.8-20190831-1522-OFFICIAL.zip/download",
+  "donate_url": "https://syberiaos.com/links",
+  "developer_url": "http://github.com/syberia-project",
+  "news_url": "http://github.com/syberia-project",
+  "developer": "rashedsahaji",
+  "error": "false",
+  "website_url": "http://syberiaos.com",
+  "forum_url": "https://forum.xda-developers.com/redmi-note-7-pro/development/rom-syberia-project-t3962568",
+  "device_brand": "Xiaomi",
+  "device_model": "Redmi Note 7 Pro"
+}
