@@ -1,5 +1,177 @@
 ====================
-     2019-08-25    
+     2019-08-31    
+====================
+
+ * packages/apps/Settings
+7104965  team: add Redmi K20 Pro, Redmi Note 7 Pro and Xiaomi Mi9 to official builds  [blinoff82]
+
+ * vendor/syberia
+0a781dc  Merge "team: add Redmi K20 Pro, Redmi Note 7 Pro and Xiaomi Mi9 to official builds" into 9.0  [blinov.in]
+add7773  Add more fonts  [Pranav Vashi]
+94d194e  Merge "overlay: Enable Wi-Fi by default on first boot" into 9.0  [dennyspb]
+0b7c359  team: add Redmi K20 Pro, Redmi Note 7 Pro and Xiaomi Mi9 to official builds  [blinoff82]
+
+====================
+     2019-08-30    
+====================
+
+ * build/make
+94e7e76  More base_rules.mk optimizations  [Dan Willemsen]
+
+ * frameworks/base
+6842e82  Fix binder leakage when turning off Bluetooth  [Ugo Yu]
+ddf0ce4  Avoid recording negative data  [Pavan Kumar M]
+c55b5f3  config: longer wifi scan interval  [Simao Gomes Viana]
+828c14a  fwb: Increase Longshot timeout to 2 seconds  [celtare21]
+16af1b3  Drop screenrecord  [DennySPB]
+
+ * packages/apps/Recorder
+2cf66d6  Tile: send broadcast for close all dialogs after click  [DennySPB]
+e4c6a49  Introduce Screen Record QS Tile  [DennySPB]
+
+ * vendor/syberia
+f8e89ae  Merge "vendor: Build Recorder app" into 9.0  [dennyspb]
+
+====================
+     2019-08-29    
+====================
+
+ * build/make
+6d9654c  Skip much of aux_config.mk  [Dan Willemsen]
+
+ * frameworks/base
+c947de6  FOD: Change default icon and color  [mdeejay]
+85d5c4d  fwb: Add support for internal audio recording  [jhenrique09]
+a01701e  SystemUI: disable wallpaper-based tint for scrim  [Joey]
+d3e4fb3  Merge changes from topic "fod-hidl" into 9.0  [dennyspb]
+47e5df6  Merge "Drop omni's OnePlus FOD implementation" into 9.0  [dennyspb]
+
+ * packages/apps/SyberiaSettings
+16ccd6e  Revert "custom fingerprint icon [2/2]"  [DennySPB]
+
+ * system/core
+d05fac9  ueventd: parallelize restorecon /sys  [Bongkyu Kim]
+
+ * system/vold
+70601fc  Add "changepw" command to vdc.  [LuK1337]
+
+ * vendor/syberia
+763943c  overlay: Enable Wi-Fi by default on first boot  [ShevT]
+8d10a94  BoardConfigQcom: Fix the Derp  [Rashed Sahaji]
+
+====================
+     2019-08-28    
+====================
+
+ * bionic
+ba9cda0  Revert "bionic: Fix compilation"  [mdeejay]
+5f792a6  Revert "libc fortify: Ignore open() O_TMPFILE mode bits warning"  [mdeejay]
+
+ * frameworks/av
+e0f8428  audiopolicy: Fixes for internal audio recording  [jhenrique09]
+
+ * packages/apps/Recorder
+d531cdf  Update icon  [jhenrique09]
+528d07f  Grant CAPTURE_AUDIO_OUTPUT permission  [jhenrique09]
+
+ * system/core
+7ee1943  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/system/core into 9.0  [mdeejay]
+92fc916  tombstoned: fixed tombstones failed issue  [Jinguang Dong]
+32d155c  health: Add CAP_WAKE_ALARM to service via init  [Felix]
+7666fda  Fix two clang-tidy issues in crasher.cpp.  [Ram Muthiah]
+6f4e724  Add native vsock support to ADB.  [Cody Schuffelen]
+6c8bd82  init: add install_keyring for TWRP FBE decrypt  [Ethan Yonker]
+4b496d4  init: fix typo in error message  [Tom Cherry]
+41750d9  init: Add vendor-specific initialization hooks.  [David Ng]
+d23048c  Set permissions on /system/addon.d/ and files within.  [beanstown106]
+3927201  Set /system/etc/init.d/* permissions  [beanstown106]
+042f63d  lmkd: fix sign compare warning  [DennySPB]
+30c3c1c  init: switch from /dev/keychord to /dev/input/  [Mark Salyzyn]
+77cdfd8  init: use std::function for epoll handling  [Tom Cherry]
+cd85a18  init: disable asan  [Tom Cherry]
+fe9110b  init: set oom_adj early before fork vendor_init  [Wei Wang]
+ab382eb  lmkd: Enable new kill strategy, add and adjust required system properties  [Suren Baghdasaryan]
+a3b9c32  lmkd: Introduce kill strategy based on zone watermarks, swap and thrashing  [Suren Baghdasaryan]
+418fe90  lmkd: Support variable polling intervals set by event handlers  [Suren Baghdasaryan]
+7bd3aec  lmkd: set PSI_POLL_PERIOD to 10ms  [Suren Baghdasaryan]
+0ff6079  lmkd: Change zoneinfo parsing to retrieve zone watermarks  [Suren Baghdasaryan]
+f769823  lmkd: Change procfs read routine to handle files larger than 1 page in size  [Suren Baghdasaryan]
+a6e3834  lmkd: Prevent non-main threads being registered or killed by lmkd  [Suren Baghdasaryan]
+9094f57  Add back fuse support  [Aaron Kling]
+95ff37f  Allow write access to system_server on zram sysfs  [Srinivas Paladugu]
+c01a33b  lmkd: make psi pressure a little more aggressive  [freak07]
+21a0ace  lmkd: Add support for psi monitors  [Suren Baghdasaryan]
+29f6d30  rootdir: init.rc: use default dirty writeout policy  [Jaegeuk Kim]
+1d7f032  init.rc: tune F2FS to be aligned to system settings  [Jaegeuk Kim]
+925b0f2  Fix path for treble default prop  [Wei Wang]
+5500377  reboot: only run fsck when detecting filesystem inconsistency  [Randall Huang]
+96f98ac  healthd: make periodic battery status a debug message  [Stefan Assmann]
+8baa0c3  Filter out QTI performance spam  [DennySPB]
+fb2c1a7  Shut up camera and wcnss debug output  [faust93]
+a389d4e  Filter GalleryDatab*  [Simao Gomes Viana]
+440dbe5  Silence spammy logs from camera blobs (AEC_PORT and mm-camera)  [Sultanxda]
+f28720f  init: No fsck for /data and /cache when shutdown  [jixj]
+804a974  init: Cleanly exit subcontext processes upon init's death  [Luis Hector Chavez]
+69e3afa  libpixelflinger: Avoid using x18 register in blend implementation  [Peter Collingbourne]
+d7440dd  storaged: change log level for health HAL calls  [Yifan Hong]
+465bbad  Policy: Add cpuset for audio app  [Arun Mirpuri]
+52ea6bc  Add blkio cgroup support in user-space  [Vijay Dandiga]
+8f1174d  Add cpu set for audio app  [Revathi Uddaraju]
+83bf70e  fs_mgr: Add MF_WRAPPEDKEY flag  [Shivaprasad Hongal]
+6b6cca0  libion: save errno value  [Liam Mark]
+635f289  LockscreenCharging: squashed (2/3)  [xyyx]
+1481413  adb: Conditionally restore support for legacy f_adb interface  [Adrian DC]
+cc912c6  Revert "System/core: Remove include/ziparchive"  [Kshitij Gupta]
+319c015  init: don't skip starting a service with no domain if permissive  [William Bellavance]
+60f8758  bsdgrep: for -r, use the working directory if none specified  [emaste]
+05375af  adb: Add wait-for-online command  [Steve Kondik]
+2ca0aca  camera: Add L-compatible camera feature enums  [Steve Kondik]
+d7e7d70  init: Don't run update_sys_usb_config if /data isn't mounted  [Michael Bestas]
+799f856  adb: host: Provide better sideload status  [Tom Marshall]
+150bb16  healthd: allow custom charger images  [Scott Mertz]
+69fc4bb  healthd: Reinitialize mChargerNames for every battery update  [Abhijeet Dharmapurikar]
+b6212bb  adbd: Disable "adb root" by system property (2/3)  [Steve Kondik]
+5c97f54  Update permissions to the superuser binary  [Ricardo Cerqueira]
+b83e423  set /system/etc/init.d/* permissions  [Michaël Burtin]
+5028f69  utils: Threads: Handle empty thread names  [Christopher N. Hesse]
+88223c8  healthd: Add support for HVDCP_3 chargers  [Abhijeet Dharmapurikar]
+612abd3  healthd: Add DASH charger type  [Steve Kondik]
+d59c136  init: always allow local.prop overrides  [Dan Pasanen]
+07b812b  fs_mgr: Add fs_mgr_get_entry_for_mount_point_after to header  [Dan Pasanen]
+06656ab  sdcard: Allow building as a static library  [Steve Kondik]
+01386e7  libsysutils: Allow building static library  [Tom Marshall]
+35641e0  adb: Look for executables in alternate places  [Tom Marshall]
+bb02c47  Camera: Add feature extensions  [Sauhard Pande]
+3d433ce  logcat: Map '-C' to 'logcat -v color'  [Adnan Begovic]
+2230940  mkbootimg: add 32K 64K and 128K pagesizes  [Michael Bestas]
+ac71444  mkbootimg: add support for --dt  [M1cha]
+b8e42c0  init: update recovery when enabled in settings  [Brint E. Kriebel]
+
+ * vendor/interfaces
+e22e0f7  Import Xiaomi HAL definitions  [Pierre-Hugues Husson]
+
+ * vendor/syberia
+7223458  vendor: Build Recorder app  [jhenrique09]
+bc385ff  backuptool_ab: Make copy_file preserve file/directory attrs  [Luca Stefani]
+354daf1  Revert "Let the user choose the screenshot editor himself"  [DennySPB]
+
+====================
+     2019-08-27    
+====================
+
+ * frameworks/base
+7c758cd  SystemUI: Properly align owner info in Q style clock  [DennySPB]
+6576015  Fix Google Markup FC  [DennySPB]
+c09135a  SystemUI: Use matching data usage size formatting between QS and Settings  [LuK1337]
+
+ * packages/services/Telecomm
+1800d78  Telecomm: Improve dark theme  [Henrique Silva]
+
+ * vendor/syberia
+d57c91a  Revert "Remove Google Markup prebuilt"  [dennyspb]
+
+====================
+     2019-08-26    
 ====================
 
  * device/xiaomi/whyred
@@ -20,188 +192,42 @@ da619f3  whyred: Disable ALMK and PPR on all targets  [Artem Borisov]
 caf83df  whyred: rootdir: Configure power key input boost value  [GuaiYiHu]
 
  * frameworks/base
+e8b1532  Update Xbox BT controller mapping to support upcoming controller firmware update  [Jared Henderson]
+b37c756  FODCircleView: Fix position if cutout is hidden  [jhenrique09]
+6bd694d  SystemUI: Update keyguard indication margin when fod is in use  [Chris Crump]
+99d2217  Initial support for in-display fingerprint sensors  [Peter Cai]
+d2a0c4b  Drop omni's OnePlus FOD implementation  [DennySPB]
+0d31c7b  Revert "Merge pull request #15 from David6910/patch-4"  [DennySPB]
 d5d42bf  Merge pull request #16 from David6910/patch-5  [Ivan Blinov]
 9bd7a61  Merge pull request #15 from David6910/patch-4  [Ivan Blinov]
 b501e89  Merge pull request #14 from David6910/patch-3  [Ivan Blinov]
 
+ * hardware/interfaces
+9e32dc9  Wifi: Syncronization on reading and writing ringbuffer  [Ajit Vaishya]
+
+ * packages/apps/Snap
+41b3ef3  Automatic translation import  [Michael Bestas]
+7e15056  Automatic translation import  [Michael Bestas]
+
  * packages/apps/SyberiaSettings
-a99aeb7  Merge branch '9.0' of https://github.com/syberia- */platform_packages_apps_SyberiaSettings into HEAD  [blinoff82]
-6cc52eb  SyberiaSettings: be the right frenchman  [blinoff82]
-7b14eed  SyberiaSettings: be the right frenchman  [blinoff82]
+1a8b56f  SyberiaSettings: be the right frenchman  [blinoff82]
 0f4cb6c  Merge pull request #62 from David6910/patch-4  [Ivan Blinov]
 4c41d9f  Merge pull request #65 from RemyL/9.0  [Ivan Blinov]
 8d528e2  Syberia settings french translation v2  [RemyL]
 
+ * vendor/interfaces
+c6b5fbf  IFingerprintInscreen: Allow HALs to control position and size  [Peter Cai]
+9eacc42  IFingerprintInscreen: Allow HALs to provide finger up/down callback  [LuK1337]
+ce5f385  IFingerprintInscreen: Allow HALs to control dimming  [Peter Cai]
+62d07e4  Introduce in-screen fingerprint scanner HAL  [Peter Cai]
+
+====================
+     2019-08-25    
+====================
+ * art
+80f467f  Stop verifying barrier count for thread dumping  [Mathieu Chartier]
+8c7a498  ART: Cache type index validity  [Andreas Gampe]
+
  * vendor/xiaomi/whyred
 4c2f6da  whyred: update blobs from V10.3.2.0.PEIMIXM  [Akhil Narang]
-
-====================
-     2019-08-24    
-====================
-
- * packages/providers/MediaProvider
-1576b4d  MediaProvider: Add read storage permission  [Luca Stefani]
-
-====================
-     2019-08-23    
-====================
-
- * build/make
-cd207a0  Move sepolicy inheritance into build repo [1/2]  [DennySPB]
-
- * device/syberia/sepolicy
-e860765  qcom: Extend untrusted_app access to battery/power supply sysfs  [Michael Bestas]
-967342c  Add rules for Long screenshot service  [jhenrique09]
-c43ca8a  sepolicy: Add hal_lineage_fod domain  [LuK1337]
-0d2b555  sepolicy: Add hal_lineage_camera_motor domain  [Łukasz Patron]
-a0aff6e  sepolicy: qcom: Label /d/rpmh  [LuK1337]
-83e337c  sepolicy: Break livedisplay hal policy into impl independent ones  [dianlujitao]
-f5186f3  sepolicy: qcom: Rename common to vendor to avoid confusion  [dianlujitao]
-38298a2  sepolicy: Move livedisplay hal policy to dynamic  [dianlujitao]
-d8644a1  sepolicy: Dynamically build trust policy into system/vendor  [dianlujitao]
-
- * frameworks/av
-6e059be  CameraService: Support hooks for motorized camera  [PeterCxy]
-
- * frameworks/base
-0c506aa  LiveDisplayTile: Remove tile if unavailable  [jhenrique09]
-0edd5f7  LiveDisplayManager: Perform null check in getConfig()  [dianlujitao]
-f2357e5  OutdoorModeController: Unconditionally enable auto mode on HWC2  [dianlujitao]
-1a55347  OutdoorModeController: Advertise MODE_AUTO  [dianlujitao]
-c5965a9  LiveDisplayService: Properly disable ColorTemperature  [dianlujitao]
-ebc1b94  LiveDisplayTile: Refresh state after livedisplay initialization  [dianlujitao]
-4716eda  LiveDisplayTile: Enable for outdoor mode and skip night display on HWC2  [dianlujitao]
-3b7d896  LiveDisplayService: Notify SystemUI after initialization finished  [dianlujitao]
-f2589cd  LiveDispalayTile: revert outdoor mode changes  [DennySPB]
-36f9d8f  Revert "fwb: Improve AOSP twilight code"  [DennySPB]
-2b19771  fwb: Port extended screenshot function from OOS  [jhenrique09]
-
- * packages/apps/Longshot
-3886633  Import modded Longshot app  [jhenrique09]
-
- * packages/apps/Settings
-0a31415  Merge "Substratum: enable FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES by default" into 9.0  [dennyspb]
-
- * vendor/interfaces
-cee18ec  introduce camera motor hal  [Peter Cai]
-
- * vendor/syberia
-f97112d  Remove Google Markup prebuilt  [DennySPB]
-e854160  Let the user choose the screenshot editor himself  [ShevT]
-fe5a151  vendor: Build Longshot app  [jhenrique09]
-e93fe12  Move sepolicy inheritance into build repo [2/2]  [DennySPB]
-
-====================
-     2019-08-22    
-====================
-
- * frameworks/base
-3f43650  fw/b: Add capability to allow tethering to use VPN upstreams  [Sam Mortimer]
-ca38962  Merge changes I5630c495,I02362055,I8ab46fde,Ie18bce98,I1c600bc2 into 9.0  [dennyspb]
-b453f70  Merge "GPU Renderer: OpenGL is not the default GPU renderer anymore" into 9.0  [dennyspb]
-0e56919  Set default VR_MODE based on VR feature support  [William McVicker]
-8f5aa3c  Fix NPE issue for GpsNetInitiatedHandler not complete initialization  [wya]
-43b76e2  Fix NPE crash issue for setting  [wya]
-d3d0655  Fix NPE issue while disable KeyguardViewMediator  [wya]
-355d9dd  Merge changes Iec2a88a6,I00e2efac into 9.0  [dennyspb]
-d1b70f6  Added mapping files for DualShock3 and DualShock4  [Kim Low]
-c9177c5  Fallback BUTTON_MODE to HOME  [Siarhei Vishniakou]
-c377460  Remap PS key to BUTTON_MODE  [Siarhei Vishniakou]
-cea64ed  Add keylayout for Xbox One USB controller  [Siarhei Vishniakou]
-f9c109f  Keylayout for xbox controllers  [Siarhei Vishniakou]
-
- * frameworks/native
-ee7c469  SurfaceFlinger: extend qcom devices with msm8974  [DennySPB]
-
- * packages/apps/Settings
-2d5a57a  settings : move wifi mac randomization to wifi settings  [coderzstas]
-7a1d969  Settings: Add hotspot setting to allow VPN upstreams  [Sam Mortimer]
-a3c6d7d  Substratum: enable FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES by default  [DennySPB]
-
- * packages/apps/SyberiaSettings
-eda7f3a  Syberia settings first french translation  [RemyL]
-
- * vendor/syberia
-c457b4b  config: Use tether automatic upstream selection  [Erik Kline]
-a518412  vendor: extend qcom platform dump with msm8974  [DennySPB]
-
-====================
-     2019-08-21    
-====================
-
- * frameworks/av
-5242883  Framework Audio: offload stream play will pause when buffer low  [lixin]
-
- * frameworks/base
-226f577  GPU Renderer: OpenGL is not the default GPU renderer anymore  [Subhajeet Muhuri]
-9082fb1  Add property to control system dialog show  [wya]
-ca1e6ff  Fix the fwr issue due to dead lock  [wya]
-
-====================
-     2019-08-20    
-====================
-
- * frameworks/base
-04c29c8  Ticker: fix alignment in statusbar  [Josh Fox (XlxFoXxlX)]
-00f5844  power: Respect global vibration setting for charging sounds  [Michael Bestas]
-e13482f  Fix issues with QS access on secured lockscreen  [Pranav Vashi]
-
- * kernel/xiaomi/whyred
-c71b59d  whyred-perf_defconfig: purecaf x9  [srfarias]
-3a72a1b0  whyred-perf_defconfig: Enable workqueue power-efficient mode by default  [srfarias]
-ede82c2  block: Fix a race between blk_cleanup_queue() and timeout handling  [Bart Van Assche]
-f183af5  block: defer timeouts to a workqueue  [Christoph Hellwig]
-dd474fa  block: prevent merging of requests with different priorities  [Damien Le Moal]
-26437ce  block: replace io_schedule with io_schedule_timeout  [Jaegeuk Kim]
-90862be  UPSTREAM: block: silently forbid sending any ioctl to a partition  [Paolo Bonzini]
-b5040aa  block/cfq-iosched: make group_idle per io cgroup tunable  [Rick Yiu]
-6b5f896  Revert "block/cfq-iosched: make group_idle per io cgroup tuneable"  [Rick Yiu]
-9c8ca99  block/cfq-iosched: make group_idle per io cgroup tuneable  [Rick Yiu]
-cdc20a8  cfq: clear queue pointers from cfqg after unpinning them in cfq_pd_offline  [Maciej S. Szmigiero]
-c2ccdad  cfq: Suppress compiler warnings about comparisons  [Bart Van Assche]
-45152ce  block: use ktime_get_ns() instead of sched_clock() for cfq and bfq  [Omar Sandoval]
-cf11f36  cfq-iosched: temporarily boost queue priority for idle classes  [Jens Axboe]
-beb2f56  block, scheduler: convert xxx_var_store to void  [weiping zhang]
-b0f36b7  block/cfq: cache rightmost rb_node  [Davidlohr Bueso]
-abb8a77  block/cfq: replace cfq_rb_root leftmost caching  [Davidlohr Bueso]
-7470d4a  cfq-iosched: Delete unused function min_vdisktime()  [Matthias Kaehlcke]
-02c7851  cfq-iosched: Adjust one function call together with a variable assignment  [Markus Elfring]
-0153035  block: Initialize cfqq->ioprio_class in cfq_get_queue()  [Alexander Potapenko]
-03a1f02  cfq-iosched: fix the delay of cfq_group's vdisktime under iops mode  [Hou Tao]
-e5f55f3  cfq-iosched: Charge at least 1 jiffie instead of 1 ns  [Jan Kara]
-122268a  cfq-iosched: Fix regression in bonnie++ rewrite performance  [Jan Kara]
-e5458be  cfq-iosched: Convert slice_resid from u64 to s64  [Jan Kara]
-05fe129  cfq-iosched: Convert to use highres timers  [Jan Kara]
-5a4bc8a  cfq-iosched: Expose microsecond interfaces  [Jeff Moyer]
-36f0eb7  cfq-iosched: Convert from jiffies to nanoseconds  [Jeff Moyer]
-47d5d31  cfq-iosched: Allow parent cgroup to preempt its child  [Jan Kara]
-1e454b0  cfq-iosched: Allow sync noidle workloads to preempt each other  [Jan Kara]
-18cb655  cfq-iosched: Reorder checks in cfq_should_preempt()  [Jan Kara]
-143018a  cfq-iosched: Don't group_idle if cfqq has big thinktime  [Jan Kara]
-4e73dc7  block: do not merge requests without consulting with io scheduler  [Tahsin Erdogan]
-5871846  ktime: Get rid of the union  [Dusan Uveric]
-053503a  rbtree: cache leftmost node internally  [Davidlohr Bueso]
-4955dd6  Revert "proc: Don't let Google Camera and Settings run in the background"  [srfarias]
-
- * vendor/syberia
-a9b03e8  Merge "team: Fix device model name for X00T" into 9.0  [blinov.in]
-
-====================
-     2019-08-19    
-====================
-
- * build/soong
-071a08d  Give Blueprint modules access to all namespaces  [Colin Cross]
-
- * frameworks/native
-6c87ca0  SurfaceFlinger: Exclude CAF extensions from non-QC devices  [jhenrique09]
-
- * packages/apps/SyberiaSettings
-3772a1c  Fix RU translation  [DennySPB]
-
- * vendor/syberia
-0f40c36  vendor: Add qcom platform type to soongs vars  [jhenrique09]
-6a0bafa  build: Use ifeq/else ifeq/else construction in board config  [Ethan Chen]
-0399265  build: add support for sdm710 and sdm845  [Isaac Chen]
-62046ea  team: Fix device model name for X00T  [blinoff82]
 
