@@ -1,216 +1,198 @@
 ====================
-     2019-08-30    
+     2019-09-06    
 ====================
 
  * build/make
-94e7e76  More base_rules.mk optimizations  [Dan Willemsen]
+4c95e81  Bump Security String to 2019-09-05  [Kevin F. Haggerty]
+
+ * external/libcups
+16403e0  Fix heap buffer overflow in ipp.c  [Bryan Ferris]
+
+ * external/libhevc
+b60a8a2  decoder: Fix valid SPS check in parsing SEI  [Harish Mahendrakar]
 
  * frameworks/base
-6842e82  Fix binder leakage when turning off Bluetooth  [Ugo Yu]
-ddf0ce4  Avoid recording negative data  [Pavan Kumar M]
-c55b5f3  config: longer wifi scan interval  [Simao Gomes Viana]
-828c14a  fwb: Increase Longshot timeout to 2 seconds  [celtare21]
-16af1b3  Drop screenrecord  [DennySPB]
+36810c0  Fix Layout.primaryIsTrailingPreviousAllLineOffsets  [Mihai Popa]
+150b909  HidProfile: sync isPreferred() with HidHostService  [Chienyuan]
+88eaa90  Correct argument order in permission check  [Bryan Ferris]
+786c05c  Allow override of DUN settings  [Dave Daynard]
+62efe44  Fix NPE in SyncRtSurfaceTransactionApplier#scheduleApply  [Tracy Zhou]
 
- * packages/apps/Recorder
-2cf66d6  Tile: send broadcast for close all dialogs after click  [DennySPB]
-e4c6a49  Introduce Screen Record QS Tile  [DennySPB]
+ * frameworks/native
+35dc9a2  Free mObjects if no objects left to realloc on resize  [Michael Wachenschwanz]
+8e83805  Fix race between SensorManager ctor and callback  [Brian Duddie]
 
  * packages/apps/Settings
-7104965  team: add Redmi K20 Pro, Redmi Note 7 Pro and Xiaomi Mi9 to official builds  [blinoff82]
+aba05d4  Merge "Settings: Prevent DataSaverBackend from overwriting uid policies" into 9.0  [blinov.in]
+e2d1617  Act as usb device when there is no hal, but we believe we are a device  [Pierre-Hugues Husson]
 
- * vendor/syberia
-0a781dc  Merge "team: add Redmi K20 Pro, Redmi Note 7 Pro and Xiaomi Mi9 to official builds" into 9.0  [blinov.in]
-add7773  Add more fonts  [Pranav Vashi]
-94d194e  Merge "overlay: Enable Wi-Fi by default on first boot" into 9.0  [dennyspb]
-0b7c359  team: add Redmi K20 Pro, Redmi Note 7 Pro and Xiaomi Mi9 to official builds  [blinoff82]
-f8e89ae  Merge "vendor: Build Recorder app" into 9.0  [dennyspb]
+ * packages/apps/SyberiaSettings
+319315b  Power menu: nuke screenrecord preference  [blinoff82]
 
-====================
-     2019-08-29    
-====================
-
- * build/make
-6d9654c  Skip much of aux_config.mk  [Dan Willemsen]
+ * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-9.1
+4f96ce7  cc1, lto1: Fix library rpath  [Danny Lin]
+0335d0d  Update toolchain to GCC 9.2.0 + binutils 2.32  [Danny Lin]
+21ee8f1  lib: Bundle flex library for Ubuntu 14.04 compatibility  [Danny Lin]
+e8ca67d  lib: Bundle unconventional shared libraries used by GCC  [Danny Lin]
 
  * system/core
-d05fac9  ueventd: parallelize restorecon /sys  [Bongkyu Kim]
+e14cd7f  Fix a memory leak in gatekeeper.  [Janis Danisevskis]
+
+ * system/nfc
+0b5a05e  Prevent OOB read in rw_t4t.cc  [George Chang]
+9f4e61f  Prevent integer overflow in NDEF_MsgValidate  [George Chang]
+
+ * system/sepolicy
+7896699  adbd: do not audit vsock_socket create  [bohu]
 
  * vendor/syberia
-763943c  overlay: Enable Wi-Fi by default on first boot  [ShevT]
+54deaa9  Pie is almost ready.  [blinoff82]
 
 ====================
-     2019-08-28    
+     2019-09-05    
 ====================
 
- * bionic
-ba9cda0  Revert "bionic: Fix compilation"  [mdeejay]
-5f792a6  Revert "libc fortify: Ignore open() O_TMPFILE mode bits warning"  [mdeejay]
+ * device/qcom/sepolicy
+60f07c4  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
+
+ * frameworks/native
+0a9f67b  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
+
+ * frameworks/opt/telephony
+c3b20c3  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
+
+ * packages/apps/Settings
+931f4c7  Settings: Prevent DataSaverBackend from overwriting uid policies  [Sam Mortimer]
+
+ * vendor/qcom/opensource/audio
+88e2eb2  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
+
+ * vendor/qcom/opensource/interfaces
+83ec28d  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
+
+====================
+     2019-09-04    
+====================
 
  * frameworks/base
-c947de6  FOD: Change default icon and color  [mdeejay]
-85d5c4d  fwb: Add support for internal audio recording  [jhenrique09]
-a01701e  SystemUI: disable wallpaper-based tint for scrim  [Joey]
-d3e4fb3  Merge changes from topic "fod-hidl" into 9.0  [dennyspb]
-47e5df6  Merge "Drop omni's OnePlus FOD implementation" into 9.0  [dennyspb]
+79e2f52  Merge "MTP: Add support of ObjectInfoChanged Event" into 9.0  [dennyspb]
+e112e11  SystemUI: Whitelist our recorder on CastController  [jhenrique09]
+0c0448a  VolumeDialogControllerImpl: Check for internal audio recording support  [jhenrique09]
+bc8cd37  MTP: Add support of ObjectInfoChanged Event  [James Wei]
+
+ * packages/apps/Longshot
+6265612  Add edit action on notification  [jhenrique09]
+41c989c  Declare priv-app permission  [jhenrique09]
 
  * packages/apps/Recorder
-d531cdf  Update icon  [jhenrique09]
-528d07f  Grant CAPTURE_AUDIO_OUTPUT permission  [jhenrique09]
+65d7e8f  Automatic translation import  [jhenrique09]
+86b1226  overlay: Use dp instead of sp on timer tick  [jhenrique09]
+2f35bf1  Keep overlay always dark  [jhenrique09]
+71c9eab  ScreencastService: Update notification immediately after recording started  [jhenrique09]
+3d3f83b  OverlayService: Hide when starting recording, if not overlay should not be displayed  [jhenrique09]
+6eee17a  Fix inline build  [jhenrique09]
+88e9641  Improve error handling and some code  [jhenrique09]
+f5a510d  Prevent miss-clicks on views  [jhenrique09]
+ecb35a8  Fix lag when dragging overlay and updating timer  [jhenrique09]
+17db06a  Add alpha on floating window  [jhenrique09]
+8e29bc7  Cleanup config  [jhenrique09]
+f10eb6e  Adjust internal audio recording params  [jhenrique09]
+5927871  Add timer into activity  [jhenrique09]
+48aa459  Revert "Open last recorded item on stop"  [jhenrique09]
+22bffa8  Improve floating window  [jhenrique09]
+5522496  Don't hardcode font  [jhenrique09]
+3208b2d  Fix black theme  [jhenrique09]
+2db869a  overlay: Add little spacing on the end of recording button  [jhenrique09]
+f78cb68  Improve share notifications  [jhenrique09]
+33e44c9  Disable qs tiles when locked  [jhenrique09]
+83112bf  Open last recorded item on stop  [jhenrique09]
+e5934b3  Add listener on Settings activity  [jhenrique09]
+d268bfb  Stop overlay service on record started  [jhenrique09]
+6d602dc  Add orientation preference  [jhenrique09]
+011fb72  Pause recording when screen off to save resources  [jhenrique09]
+7661a96  Check before unregistering broadcast receiver  [jhenrique09]
+ea203d5  Always use H264  [jhenrique09]
+ef8de56  Hide some activities from recents  [jhenrique09]
+50e1952  Add more preferences  [jhenrique09]
+15869e4  Use reflection to collapse statusbar  [jhenrique09]
+fe90f24  Improve transparent theme  [jhenrique09]
+a0f82e7  Conditionally disable internal audio recording support  [jhenrique09]
+3ac1fef  Import custom androidx preference library for better theming  [jhenrique09]
+9ecff59  More theming improvements  [jhenrique09]
+b49b2fa  Refactor settings UI  [jhenrique09]
+c634dd7  Refactor recording methods  [jhenrique09]
+1c7a15a  Separate and improve strings  [jhenrique09]
+931eac7  Rename strings to custom_strings.xml  [jhenrique09]
+c495a4d  Cleanup intents  [jhenrique09]
+f1f882a  Remove from launcher  [jhenrique09]
+249bb08  Implement qs tiles and refactor code  [jhenrique09]
+5cb1735  Improve recording floating overlay  [jhenrique09]
+df03d03  Don't use shared prefs to store recording state  [jhenrique09]
+600c8f4  UI redesign  [jhenrique09]
+5a3470a  Add system audio recording support [1/2]  [jhenrique09]
+b3fc671  Revert previous QS implementation  [DennySPB]
+
+ * packages/apps/Settings
+587d708  Merge "SwipeUpController: update recents layout variable" into 9.0  [dennyspb]
 
  * packages/apps/SyberiaSettings
-16ccd6e  Revert "custom fingerprint icon [2/2]"  [DennySPB]
-
- * system/vold
-70601fc  Add "changepw" command to vdc.  [LuK1337]
-
- * vendor/interfaces
-e22e0f7  Import Xiaomi HAL definitions  [Pierre-Hugues Husson]
+ad94987  Update french translation  [RemyL]
 
  * vendor/syberia
-8d10a94  BoardConfigQcom: Fix the Derp  [Rashed Sahaji]
-7223458  vendor: Build Recorder app  [jhenrique09]
+ecab8a2  Merge "vendor: privapp-permissions-recorder: Add missing permissions" into 9.0  [dennyspb]
+6ba5977  vendor: privapp-permissions-recorder: Add missing permissions  [jhenrique09]
 
 ====================
-     2019-08-27    
+     2019-09-03    
 ====================
 
- * frameworks/av
-e0f8428  audiopolicy: Fixes for internal audio recording  [jhenrique09]
-
- * packages/services/Telecomm
-1800d78  Telecomm: Improve dark theme  [Henrique Silva]
-
- * system/core
-7ee1943  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/system/core into 9.0  [mdeejay]
-92fc916  tombstoned: fixed tombstones failed issue  [Jinguang Dong]
-32d155c  health: Add CAP_WAKE_ALARM to service via init  [Felix]
-7666fda  Fix two clang-tidy issues in crasher.cpp.  [Ram Muthiah]
-6f4e724  Add native vsock support to ADB.  [Cody Schuffelen]
-6c8bd82  init: add install_keyring for TWRP FBE decrypt  [Ethan Yonker]
-4b496d4  init: fix typo in error message  [Tom Cherry]
-41750d9  init: Add vendor-specific initialization hooks.  [David Ng]
-d23048c  Set permissions on /system/addon.d/ and files within.  [beanstown106]
-3927201  Set /system/etc/init.d/* permissions  [beanstown106]
-042f63d  lmkd: fix sign compare warning  [DennySPB]
-30c3c1c  init: switch from /dev/keychord to /dev/input/  [Mark Salyzyn]
-77cdfd8  init: use std::function for epoll handling  [Tom Cherry]
-cd85a18  init: disable asan  [Tom Cherry]
-fe9110b  init: set oom_adj early before fork vendor_init  [Wei Wang]
-ab382eb  lmkd: Enable new kill strategy, add and adjust required system properties  [Suren Baghdasaryan]
-a3b9c32  lmkd: Introduce kill strategy based on zone watermarks, swap and thrashing  [Suren Baghdasaryan]
-418fe90  lmkd: Support variable polling intervals set by event handlers  [Suren Baghdasaryan]
-7bd3aec  lmkd: set PSI_POLL_PERIOD to 10ms  [Suren Baghdasaryan]
-0ff6079  lmkd: Change zoneinfo parsing to retrieve zone watermarks  [Suren Baghdasaryan]
-f769823  lmkd: Change procfs read routine to handle files larger than 1 page in size  [Suren Baghdasaryan]
-a6e3834  lmkd: Prevent non-main threads being registered or killed by lmkd  [Suren Baghdasaryan]
-9094f57  Add back fuse support  [Aaron Kling]
-95ff37f  Allow write access to system_server on zram sysfs  [Srinivas Paladugu]
-c01a33b  lmkd: make psi pressure a little more aggressive  [freak07]
-21a0ace  lmkd: Add support for psi monitors  [Suren Baghdasaryan]
-29f6d30  rootdir: init.rc: use default dirty writeout policy  [Jaegeuk Kim]
-1d7f032  init.rc: tune F2FS to be aligned to system settings  [Jaegeuk Kim]
-925b0f2  Fix path for treble default prop  [Wei Wang]
-5500377  reboot: only run fsck when detecting filesystem inconsistency  [Randall Huang]
-96f98ac  healthd: make periodic battery status a debug message  [Stefan Assmann]
-8baa0c3  Filter out QTI performance spam  [DennySPB]
-fb2c1a7  Shut up camera and wcnss debug output  [faust93]
-a389d4e  Filter GalleryDatab*  [Simao Gomes Viana]
-440dbe5  Silence spammy logs from camera blobs (AEC_PORT and mm-camera)  [Sultanxda]
-f28720f  init: No fsck for /data and /cache when shutdown  [jixj]
-804a974  init: Cleanly exit subcontext processes upon init's death  [Luis Hector Chavez]
-69e3afa  libpixelflinger: Avoid using x18 register in blend implementation  [Peter Collingbourne]
-d7440dd  storaged: change log level for health HAL calls  [Yifan Hong]
-465bbad  Policy: Add cpuset for audio app  [Arun Mirpuri]
-52ea6bc  Add blkio cgroup support in user-space  [Vijay Dandiga]
-8f1174d  Add cpu set for audio app  [Revathi Uddaraju]
-83bf70e  fs_mgr: Add MF_WRAPPEDKEY flag  [Shivaprasad Hongal]
-6b6cca0  libion: save errno value  [Liam Mark]
-635f289  LockscreenCharging: squashed (2/3)  [xyyx]
-1481413  adb: Conditionally restore support for legacy f_adb interface  [Adrian DC]
-cc912c6  Revert "System/core: Remove include/ziparchive"  [Kshitij Gupta]
-319c015  init: don't skip starting a service with no domain if permissive  [William Bellavance]
-60f8758  bsdgrep: for -r, use the working directory if none specified  [emaste]
-05375af  adb: Add wait-for-online command  [Steve Kondik]
-2ca0aca  camera: Add L-compatible camera feature enums  [Steve Kondik]
-d7e7d70  init: Don't run update_sys_usb_config if /data isn't mounted  [Michael Bestas]
-799f856  adb: host: Provide better sideload status  [Tom Marshall]
-150bb16  healthd: allow custom charger images  [Scott Mertz]
-69fc4bb  healthd: Reinitialize mChargerNames for every battery update  [Abhijeet Dharmapurikar]
-b6212bb  adbd: Disable "adb root" by system property (2/3)  [Steve Kondik]
-5c97f54  Update permissions to the superuser binary  [Ricardo Cerqueira]
-b83e423  set /system/etc/init.d/* permissions  [Michaël Burtin]
-5028f69  utils: Threads: Handle empty thread names  [Christopher N. Hesse]
-88223c8  healthd: Add support for HVDCP_3 chargers  [Abhijeet Dharmapurikar]
-612abd3  healthd: Add DASH charger type  [Steve Kondik]
-d59c136  init: always allow local.prop overrides  [Dan Pasanen]
-07b812b  fs_mgr: Add fs_mgr_get_entry_for_mount_point_after to header  [Dan Pasanen]
-06656ab  sdcard: Allow building as a static library  [Steve Kondik]
-01386e7  libsysutils: Allow building static library  [Tom Marshall]
-35641e0  adb: Look for executables in alternate places  [Tom Marshall]
-bb02c47  Camera: Add feature extensions  [Sauhard Pande]
-3d433ce  logcat: Map '-C' to 'logcat -v color'  [Adnan Begovic]
-2230940  mkbootimg: add 32K 64K and 128K pagesizes  [Michael Bestas]
-ac71444  mkbootimg: add support for --dt  [M1cha]
-b8e42c0  init: update recovery when enabled in settings  [Brint E. Kriebel]
-
- * vendor/syberia
-bc385ff  backuptool_ab: Make copy_file preserve file/directory attrs  [Luca Stefani]
-354daf1  Revert "Let the user choose the screenshot editor himself"  [DennySPB]
-
 ====================
-     2019-08-26    
+     2019-09-02    
 ====================
 
  * frameworks/base
-7c758cd  SystemUI: Properly align owner info in Q style clock  [DennySPB]
-6576015  Fix Google Markup FC  [DennySPB]
-c09135a  SystemUI: Use matching data usage size formatting between QS and Settings  [LuK1337]
-e8b1532  Update Xbox BT controller mapping to support upcoming controller firmware update  [Jared Henderson]
-b37c756  FODCircleView: Fix position if cutout is hidden  [jhenrique09]
-6bd694d  SystemUI: Update keyguard indication margin when fod is in use  [Chris Crump]
-99d2217  Initial support for in-display fingerprint sensors  [Peter Cai]
-d2a0c4b  Drop omni's OnePlus FOD implementation  [DennySPB]
-0d31c7b  Revert "Merge pull request #15 from David6910/patch-4"  [DennySPB]
+ad27dec  fwb: media_seekbar: make it sexy  [vladrevers]
+db15a67  base: core: audio: unregister policy mixers already in place  [Derek Chen]
+dba855e  fw/b: Use common network restrict apps method  [Sam Mortimer]
+0262e3a  Override the method onMenuPressed() in CarStatusBar to do the action "dismiss keyguard"  [Dheeraj Kumar Chaudhary]
+1912935  Adjust QS Tile to work with new long screenshots  [00day0]
 
- * hardware/interfaces
-9e32dc9  Wifi: Syncronization on reading and writing ringbuffer  [Ajit Vaishya]
+ * kernel/xiaomi/sdm845
+70c2ee8  defconfig: sync for 1.6 release  [ethan-halsall]
+a162cbd  fix compilation after caf merge  [ethan-halsall]
+2a0e8ae  Merge tag 'LA.UM.7.8.r1-06900-SDM710.0' into reloaded-dev  [ethan-halsall]
+6ab0b2a  init.simple.sh: bring back cfq tweaks for better latency  [ethan-halsall]
+2deca59  schedutil: follow CAF's initialization  [Park Ju Hyung]
 
- * packages/apps/Snap
-41b3ef3  Automatic translation import  [Michael Bestas]
-7e15056  Automatic translation import  [Michael Bestas]
+ * packages/apps/Dialer
+1704dd9  Dialer: update RU translation  [blinoff82]
 
- * vendor/interfaces
-c6b5fbf  IFingerprintInscreen: Allow HALs to control position and size  [Peter Cai]
-9eacc42  IFingerprintInscreen: Allow HALs to provide finger up/down callback  [LuK1337]
-ce5f385  IFingerprintInscreen: Allow HALs to control dimming  [Peter Cai]
-62d07e4  Introduce in-screen fingerprint scanner HAL  [Peter Cai]
-
- * vendor/syberia
-d57c91a  Revert "Remove Google Markup prebuilt"  [dennyspb]
-
-====================
-     2019-08-25    
-====================
- * art
-80f467f  Stop verifying barrier count for thread dumping  [Mathieu Chartier]
-8c7a498  ART: Cache type index validity  [Andreas Gampe]
-
- * frameworks/base
-d5d42bf  Merge pull request #16 from David6910/patch-5  [Ivan Blinov]
-9bd7a61  Merge pull request #15 from David6910/patch-4  [Ivan Blinov]
-b501e89  Merge pull request #14 from David6910/patch-3  [Ivan Blinov]
+ * packages/apps/Settings
+54c3732  Developer settings: update RU translation  [blinoff82]
+eabf4a8  team: violet is out  [blinoff82]
+f937466  SwipeUpController: update recents layout variable  [DennySPB]
 
  * packages/apps/SyberiaSettings
-1a8b56f  SyberiaSettings: be the right frenchman  [blinoff82]
-0f4cb6c  Merge pull request #62 from David6910/patch-4  [Ivan Blinov]
-4c41d9f  Merge pull request #65 from RemyL/9.0  [Ivan Blinov]
-8d528e2  Syberia settings french translation v2  [RemyL]
+9d569e3  settings: featureize ro.recents.grid and Go Layout [2/2]  [maxwen]
+
+ * system/netd
+3bc871c  netd: Consolidate restrict apps methods  [Sam Mortimer]
 
 ====================
-     2019-08-24    
+     2019-09-01    
 ====================
 
- * device/xiaomi/sdm845-common
-330acec  sdm845-common: enable sdclang  [ethan-halsall]
+ * kernel/xiaomi/sdm845
+6f6223a  binder: fix binder change in merge of 4.9.188  [Todd Kjos]
+a626ae1  Revert "sched/walt: Improve the scheduler"  [ethan-halsall]
+
+====================
+     2019-08-31    
+====================
+
+ * frameworks/opt/telephony
+b0e5b51  Sort activeSubscriptionInfoList according to API annotation  [Takumi Hori]
+
+ * kernel/xiaomi/sdm845
+38e080c  Revert "revenge: disable msm performance driver"  [ethan-halsall]
 
