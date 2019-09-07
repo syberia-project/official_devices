@@ -1,140 +1,190 @@
 ====================
-     2019-08-24    
+     2019-09-07    
 ====================
 
  * build/make
-cd207a0  Move sepolicy inheritance into build repo [1/2]  [DennySPB]
+4c95e81  Bump Security String to 2019-09-05  [Kevin F. Haggerty]
 
- * device/syberia/sepolicy
-e860765  qcom: Extend untrusted_app access to battery/power supply sysfs  [Michael Bestas]
-967342c  Add rules for Long screenshot service  [jhenrique09]
-c43ca8a  sepolicy: Add hal_lineage_fod domain  [LuK1337]
-0d2b555  sepolicy: Add hal_lineage_camera_motor domain  [Łukasz Patron]
-a0aff6e  sepolicy: qcom: Label /d/rpmh  [LuK1337]
-83e337c  sepolicy: Break livedisplay hal policy into impl independent ones  [dianlujitao]
-f5186f3  sepolicy: qcom: Rename common to vendor to avoid confusion  [dianlujitao]
-38298a2  sepolicy: Move livedisplay hal policy to dynamic  [dianlujitao]
-d8644a1  sepolicy: Dynamically build trust policy into system/vendor  [dianlujitao]
+ * external/libcups
+16403e0  Fix heap buffer overflow in ipp.c  [Bryan Ferris]
 
- * frameworks/av
-6e059be  CameraService: Support hooks for motorized camera  [PeterCxy]
+ * external/libhevc
+b60a8a2  decoder: Fix valid SPS check in parsing SEI  [Harish Mahendrakar]
 
  * frameworks/base
-0c506aa  LiveDisplayTile: Remove tile if unavailable  [jhenrique09]
-0edd5f7  LiveDisplayManager: Perform null check in getConfig()  [dianlujitao]
-f2357e5  OutdoorModeController: Unconditionally enable auto mode on HWC2  [dianlujitao]
-1a55347  OutdoorModeController: Advertise MODE_AUTO  [dianlujitao]
-c5965a9  LiveDisplayService: Properly disable ColorTemperature  [dianlujitao]
-ebc1b94  LiveDisplayTile: Refresh state after livedisplay initialization  [dianlujitao]
-4716eda  LiveDisplayTile: Enable for outdoor mode and skip night display on HWC2  [dianlujitao]
-3b7d896  LiveDisplayService: Notify SystemUI after initialization finished  [dianlujitao]
-f2589cd  LiveDispalayTile: revert outdoor mode changes  [DennySPB]
-36f9d8f  Revert "fwb: Improve AOSP twilight code"  [DennySPB]
-2b19771  fwb: Port extended screenshot function from OOS  [jhenrique09]
-
- * packages/apps/Settings
-0a31415  Merge "Substratum: enable FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES by default" into 9.0  [dennyspb]
-
- * packages/providers/MediaProvider
-1576b4d  MediaProvider: Add read storage permission  [Luca Stefani]
-
- * vendor/interfaces
-cee18ec  introduce camera motor hal  [Peter Cai]
-
- * vendor/syberia
-f97112d  Remove Google Markup prebuilt  [DennySPB]
-e854160  Let the user choose the screenshot editor himself  [ShevT]
-fe5a151  vendor: Build Longshot app  [jhenrique09]
-e93fe12  Move sepolicy inheritance into build repo [2/2]  [DennySPB]
-
-====================
-     2019-08-23    
-====================
-
- * frameworks/base
-3f43650  fw/b: Add capability to allow tethering to use VPN upstreams  [Sam Mortimer]
-ca38962  Merge changes I5630c495,I02362055,I8ab46fde,Ie18bce98,I1c600bc2 into 9.0  [dennyspb]
-b453f70  Merge "GPU Renderer: OpenGL is not the default GPU renderer anymore" into 9.0  [dennyspb]
-0e56919  Set default VR_MODE based on VR feature support  [William McVicker]
-8f5aa3c  Fix NPE issue for GpsNetInitiatedHandler not complete initialization  [wya]
-43b76e2  Fix NPE crash issue for setting  [wya]
-d3d0655  Fix NPE issue while disable KeyguardViewMediator  [wya]
-355d9dd  Merge changes Iec2a88a6,I00e2efac into 9.0  [dennyspb]
-d1b70f6  Added mapping files for DualShock3 and DualShock4  [Kim Low]
-c9177c5  Fallback BUTTON_MODE to HOME  [Siarhei Vishniakou]
-c377460  Remap PS key to BUTTON_MODE  [Siarhei Vishniakou]
-cea64ed  Add keylayout for Xbox One USB controller  [Siarhei Vishniakou]
-f9c109f  Keylayout for xbox controllers  [Siarhei Vishniakou]
+36810c0  Fix Layout.primaryIsTrailingPreviousAllLineOffsets  [Mihai Popa]
+150b909  HidProfile: sync isPreferred() with HidHostService  [Chienyuan]
+88eaa90  Correct argument order in permission check  [Bryan Ferris]
+786c05c  Allow override of DUN settings  [Dave Daynard]
 
  * frameworks/native
-ee7c469  SurfaceFlinger: extend qcom devices with msm8974  [DennySPB]
-
- * packages/apps/Longshot
-3886633  Import modded Longshot app  [jhenrique09]
+35dc9a2  Free mObjects if no objects left to realloc on resize  [Michael Wachenschwanz]
+8e83805  Fix race between SensorManager ctor and callback  [Brian Duddie]
 
  * packages/apps/Settings
-2d5a57a  settings : move wifi mac randomization to wifi settings  [coderzstas]
-7a1d969  Settings: Add hotspot setting to allow VPN upstreams  [Sam Mortimer]
-a3c6d7d  Substratum: enable FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES by default  [DennySPB]
-
- * vendor/syberia
-c457b4b  config: Use tether automatic upstream selection  [Erik Kline]
-a518412  vendor: extend qcom platform dump with msm8974  [DennySPB]
-
-====================
-     2019-08-22    
-====================
-
- * frameworks/av
-5242883  Framework Audio: offload stream play will pause when buffer low  [lixin]
-
- * frameworks/base
-226f577  GPU Renderer: OpenGL is not the default GPU renderer anymore  [Subhajeet Muhuri]
-9082fb1  Add property to control system dialog show  [wya]
-ca1e6ff  Fix the fwr issue due to dead lock  [wya]
-
-====================
-     2019-08-21    
-====================
-
- * frameworks/base
-04c29c8  Ticker: fix alignment in statusbar  [Josh Fox (XlxFoXxlX)]
-00f5844  power: Respect global vibration setting for charging sounds  [Michael Bestas]
-e13482f  Fix issues with QS access on secured lockscreen  [Pranav Vashi]
-
- * hardware/qcom/display-caf/msm8996
-84adf46  Revert "Revert "display: Define soong namespace""  [blinoff82]
-
- * vendor/syberia
-a9b03e8  Merge "team: Fix device model name for X00T" into 9.0  [blinov.in]
-
-====================
-     2019-08-20    
-====================
-
- * build/soong
-071a08d  Give Blueprint modules access to all namespaces  [Colin Cross]
-
- * frameworks/native
-6c87ca0  SurfaceFlinger: Exclude CAF extensions from non-QC devices  [jhenrique09]
+aba05d4  Merge "Settings: Prevent DataSaverBackend from overwriting uid policies" into 9.0  [blinov.in]
+e2d1617  Act as usb device when there is no hal, but we believe we are a device  [Pierre-Hugues Husson]
 
  * packages/apps/SyberiaSettings
-3772a1c  Fix RU translation  [DennySPB]
+319315b  Power menu: nuke screenrecord preference  [blinoff82]
+
+ * system/nfc
+0b5a05e  Prevent OOB read in rw_t4t.cc  [George Chang]
+9f4e61f  Prevent integer overflow in NDEF_MsgValidate  [George Chang]
 
  * vendor/syberia
-0f40c36  vendor: Add qcom platform type to soongs vars  [jhenrique09]
-6a0bafa  build: Use ifeq/else ifeq/else construction in board config  [Ethan Chen]
-0399265  build: add support for sdm710 and sdm845  [Isaac Chen]
-62046ea  team: Fix device model name for X00T  [blinoff82]
+54deaa9  Pie is almost ready.  [blinoff82]
 
 ====================
-     2019-08-19    
+     2019-09-06    
 ====================
 
- * build/make
-e244651  Remove TARGET_USES_MKE2FS  [Colin Cross]
+ * frameworks/base
+62efe44  Fix NPE in SyncRtSurfaceTransactionApplier#scheduleApply  [Tracy Zhou]
+
+ * frameworks/native
+0a9f67b  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
+
+ * frameworks/opt/telephony
+c3b20c3  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
+
+ * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-9.1
+4f96ce7  cc1, lto1: Fix library rpath  [Danny Lin]
+0335d0d  Update toolchain to GCC 9.2.0 + binutils 2.32  [Danny Lin]
+21ee8f1  lib: Bundle flex library for Ubuntu 14.04 compatibility  [Danny Lin]
+e8ca67d  lib: Bundle unconventional shared libraries used by GCC  [Danny Lin]
+
+ * system/core
+e14cd7f  Fix a memory leak in gatekeeper.  [Janis Danisevskis]
+
+ * system/sepolicy
+7896699  adbd: do not audit vsock_socket create  [bohu]
 
 ====================
-     2019-08-18    
+     2019-09-05    
 ====================
+
+ * device/qcom/sepolicy
+60f07c4  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
+
+ * frameworks/base
+79e2f52  Merge "MTP: Add support of ObjectInfoChanged Event" into 9.0  [dennyspb]
+e112e11  SystemUI: Whitelist our recorder on CastController  [jhenrique09]
+0c0448a  VolumeDialogControllerImpl: Check for internal audio recording support  [jhenrique09]
+bc8cd37  MTP: Add support of ObjectInfoChanged Event  [James Wei]
+
+ * hardware/qcom/audio-caf/msm8996
+1d84d72  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
+
+ * hardware/qcom/media-caf/msm8996
+ba0ab50  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
+
+ * packages/apps/Longshot
+6265612  Add edit action on notification  [jhenrique09]
+41c989c  Declare priv-app permission  [jhenrique09]
+
+ * packages/apps/Recorder
+65d7e8f  Automatic translation import  [jhenrique09]
+86b1226  overlay: Use dp instead of sp on timer tick  [jhenrique09]
+2f35bf1  Keep overlay always dark  [jhenrique09]
+71c9eab  ScreencastService: Update notification immediately after recording started  [jhenrique09]
+3d3f83b  OverlayService: Hide when starting recording, if not overlay should not be displayed  [jhenrique09]
+6eee17a  Fix inline build  [jhenrique09]
+88e9641  Improve error handling and some code  [jhenrique09]
+f5a510d  Prevent miss-clicks on views  [jhenrique09]
+ecb35a8  Fix lag when dragging overlay and updating timer  [jhenrique09]
+17db06a  Add alpha on floating window  [jhenrique09]
+8e29bc7  Cleanup config  [jhenrique09]
+f10eb6e  Adjust internal audio recording params  [jhenrique09]
+5927871  Add timer into activity  [jhenrique09]
+48aa459  Revert "Open last recorded item on stop"  [jhenrique09]
+22bffa8  Improve floating window  [jhenrique09]
+5522496  Don't hardcode font  [jhenrique09]
+3208b2d  Fix black theme  [jhenrique09]
+2db869a  overlay: Add little spacing on the end of recording button  [jhenrique09]
+f78cb68  Improve share notifications  [jhenrique09]
+33e44c9  Disable qs tiles when locked  [jhenrique09]
+83112bf  Open last recorded item on stop  [jhenrique09]
+e5934b3  Add listener on Settings activity  [jhenrique09]
+d268bfb  Stop overlay service on record started  [jhenrique09]
+6d602dc  Add orientation preference  [jhenrique09]
+011fb72  Pause recording when screen off to save resources  [jhenrique09]
+7661a96  Check before unregistering broadcast receiver  [jhenrique09]
+ea203d5  Always use H264  [jhenrique09]
+ef8de56  Hide some activities from recents  [jhenrique09]
+50e1952  Add more preferences  [jhenrique09]
+15869e4  Use reflection to collapse statusbar  [jhenrique09]
+fe90f24  Improve transparent theme  [jhenrique09]
+a0f82e7  Conditionally disable internal audio recording support  [jhenrique09]
+3ac1fef  Import custom androidx preference library for better theming  [jhenrique09]
+9ecff59  More theming improvements  [jhenrique09]
+b49b2fa  Refactor settings UI  [jhenrique09]
+c634dd7  Refactor recording methods  [jhenrique09]
+1c7a15a  Separate and improve strings  [jhenrique09]
+931eac7  Rename strings to custom_strings.xml  [jhenrique09]
+c495a4d  Cleanup intents  [jhenrique09]
+f1f882a  Remove from launcher  [jhenrique09]
+249bb08  Implement qs tiles and refactor code  [jhenrique09]
+5cb1735  Improve recording floating overlay  [jhenrique09]
+df03d03  Don't use shared prefs to store recording state  [jhenrique09]
+600c8f4  UI redesign  [jhenrique09]
+5a3470a  Add system audio recording support [1/2]  [jhenrique09]
+b3fc671  Revert previous QS implementation  [DennySPB]
+
+ * packages/apps/Settings
+931f4c7  Settings: Prevent DataSaverBackend from overwriting uid policies  [Sam Mortimer]
+587d708  Merge "SwipeUpController: update recents layout variable" into 9.0  [dennyspb]
+
+ * packages/apps/SyberiaSettings
+ad94987  Update french translation  [RemyL]
+
+ * vendor/qcom/opensource/audio
+88e2eb2  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
+
+ * vendor/qcom/opensource/interfaces
+83ec28d  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
+
+ * vendor/syberia
+ecab8a2  Merge "vendor: privapp-permissions-recorder: Add missing permissions" into 9.0  [dennyspb]
+6ba5977  vendor: privapp-permissions-recorder: Add missing permissions  [jhenrique09]
+
+====================
+     2019-09-04    
+====================
+
+====================
+     2019-09-03    
+====================
+
+ * frameworks/base
+ad27dec  fwb: media_seekbar: make it sexy  [vladrevers]
+db15a67  base: core: audio: unregister policy mixers already in place  [Derek Chen]
+dba855e  fw/b: Use common network restrict apps method  [Sam Mortimer]
+0262e3a  Override the method onMenuPressed() in CarStatusBar to do the action "dismiss keyguard"  [Dheeraj Kumar Chaudhary]
+1912935  Adjust QS Tile to work with new long screenshots  [00day0]
+
+ * packages/apps/Dialer
+1704dd9  Dialer: update RU translation  [blinoff82]
+
+ * packages/apps/Settings
+54c3732  Developer settings: update RU translation  [blinoff82]
+eabf4a8  team: violet is out  [blinoff82]
+f937466  SwipeUpController: update recents layout variable  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+9d569e3  settings: featureize ro.recents.grid and Go Layout [2/2]  [maxwen]
+
+====================
+     2019-09-02    
+====================
+
+ * system/netd
+3bc871c  netd: Consolidate restrict apps methods  [Sam Mortimer]
+
+====================
+     2019-09-01    
+====================
+
+ * frameworks/opt/telephony
+b0e5b51  Sort activeSubscriptionInfoList according to API annotation  [Takumi Hori]
 
