@@ -11,13 +11,13 @@
       "url": "http://tiny.cc/latestuninstaller"
     }
   ],
-  "filename": "syberia_wayne-v2.8-20190831-0712-UNOFFICIAL.zip",
+  "filename": "syberia_wayne-v2.9-20190907-0453-OFFICIAL.zip",
   "changelog": "",
-  "filesize": "732278313",
-  "md5": "8830cb1f45a9dc7fad0bf3de2d134ab2",
-  "build_date": "20190831",
+  "filesize": "752671961",
+  "md5": "33c2ef3adf406df7a660258c8fbbb2c0",
+  "build_date": "20190907",
   "device": "wayne",
-  "url": "https://sourceforge.net/projects/syberiaos/files/wayne/syberia_wayne-v2.8-20190831-0712-UNOFFICIAL.zip/download",
+  "url": "https://sourceforge.net/projects/syberiaos/files/wayne/syberia_wayne-v2.9-20190907-0453-OFFICIAL.zip/download",
   "donate_url": "https://syberiaos.com/links",
   "developer_url": "http://github.com/syberia-project",
   "news_url": "http://github.com/syberia-project",
