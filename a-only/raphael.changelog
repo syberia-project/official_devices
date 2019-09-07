@@ -1,405 +1,184 @@
 ====================
-     2019-08-31    
-====================
-
- * device/xiaomi/raphael
-41dc7a5  Bordconfig: Use armv8-2a for a75 cores  [kondors1995]
-bc450b7  sdm845-common: parts: Migrate to androidx  [Bruno Martins]
-58424f5  raphael: fod: use fingerprint icon location & size values from stock  [UtsavisGreat]
-817b2e9  cepheus:overlay: Switch to brightness model from Sargo Sargo's brightness values are 420 nits max which is close to Cepheus's one(424). Where as Crosshatch max is 389 nits only  [Akash]
-22f492b  system.prop:set deflaut DPI to 440 same as stock  [kondors1995]
-28a51ab  prebuilts: add Lawnchair  [DennySPB]
-8f17c4f  Import hostapd configs and move_wifi_data script from MIUI  [kondors1995]
-4b9cdfc  system.prop:Update perf prop  [kondors1995]
-065a803  BoardConfig: Update Flags  [kondors1995]
-
-====================
-     2019-08-30    
+     2019-09-07    
 ====================
 
  * build/make
-94e7e76  More base_rules.mk optimizations  [Dan Willemsen]
+4c95e81  Bump Security String to 2019-09-05  [Kevin F. Haggerty]
+
+ * external/libcups
+16403e0  Fix heap buffer overflow in ipp.c  [Bryan Ferris]
+
+ * external/libhevc
+b60a8a2  decoder: Fix valid SPS check in parsing SEI  [Harish Mahendrakar]
 
  * frameworks/base
-6842e82  Fix binder leakage when turning off Bluetooth  [Ugo Yu]
-ddf0ce4  Avoid recording negative data  [Pavan Kumar M]
-c55b5f3  config: longer wifi scan interval  [Simao Gomes Viana]
-828c14a  fwb: Increase Longshot timeout to 2 seconds  [celtare21]
-16af1b3  Drop screenrecord  [DennySPB]
+36810c0  Fix Layout.primaryIsTrailingPreviousAllLineOffsets  [Mihai Popa]
+150b909  HidProfile: sync isPreferred() with HidHostService  [Chienyuan]
+88eaa90  Correct argument order in permission check  [Bryan Ferris]
+786c05c  Allow override of DUN settings  [Dave Daynard]
+62efe44  Fix NPE in SyncRtSurfaceTransactionApplier#scheduleApply  [Tracy Zhou]
 
- * packages/apps/Recorder
-2cf66d6  Tile: send broadcast for close all dialogs after click  [DennySPB]
-e4c6a49  Introduce Screen Record QS Tile  [DennySPB]
+ * frameworks/native
+35dc9a2  Free mObjects if no objects left to realloc on resize  [Michael Wachenschwanz]
+8e83805  Fix race between SensorManager ctor and callback  [Brian Duddie]
 
  * packages/apps/Settings
-7104965  team: add Redmi K20 Pro, Redmi Note 7 Pro and Xiaomi Mi9 to official builds  [blinoff82]
-
- * vendor/syberia
-0a781dc  Merge "team: add Redmi K20 Pro, Redmi Note 7 Pro and Xiaomi Mi9 to official builds" into 9.0  [blinov.in]
-add7773  Add more fonts  [Pranav Vashi]
-94d194e  Merge "overlay: Enable Wi-Fi by default on first boot" into 9.0  [dennyspb]
-0b7c359  team: add Redmi K20 Pro, Redmi Note 7 Pro and Xiaomi Mi9 to official builds  [blinoff82]
-f8e89ae  Merge "vendor: Build Recorder app" into 9.0  [dennyspb]
-
-====================
-     2019-08-29    
-====================
-
- * build/make
-6d9654c  Skip much of aux_config.mk  [Dan Willemsen]
-
- * kernel/xiaomi/raphael
-e83e5df  Linux 4.14.141  [Greg Kroah-Hartman]
-0f966fd  Revert "perf test 6: Fix missing kvm module load for s390"  [Sasha Levin]
-cfcf0da  powerpc: Allow flush_(inval_)dcache_range to work across ranges >4GB  [Alastair D'Silva]
-fe54569  dm zoned: fix potential NULL dereference in dmz_do_reclaim()  [Dan Carpenter]
-a0bfbf8  xfs: fix missing ILOCK unlock when xfs_setattr_nonsize fails due to EDQUOT  [Darrick J. Wong]
-f5dbd05  mm/zsmalloc.c: fix race condition in zs_destroy_pool  [Henry Burns]
-9d2906e  mm/zsmalloc.c: migration can leave pages in ZS_EMPTY indefinitely  [Henry Burns]
-3033359  mm, page_owner: handle THP splits correctly  [Vlastimil Babka]
-4011082  genirq: Properly pair kobject_del() with kobject_add()  [Michael Kelley]
-c825472  dm zoned: properly handle backing device failure  [Dmitry Fomichev]
-d837050  dm zoned: improve error handling in i/o map code  [Dmitry Fomichev]
-b2cf553e  dm zoned: improve error handling in reclaim  [Dmitry Fomichev]
-d11a5a0  dm table: fix invalid memory accesses with too high sector number  [Mikulas Patocka]
-5fbffd2  dm space map metadata: fix missing store of apply_bops() return value  [ZhangXiaoxu]
-5cc4d75  dm btree: fix order of block initialization in btree_split_beneath  [ZhangXiaoxu]
-77531ec  dm kcopyd: always complete failed jobs  [Dmitry Fomichev]
-866cea2  x86/boot: Fix boot regression caused by bootparam sanitizing  [John Hubbard]
-ce94cdb  x86/boot: Save fields explicitly, zero out everything else  [John Hubbard]
-71cd5ac  x86/CPU/AMD: Clear RDRAND CPUID bit on AMD family 15h/16h  [Tom Lendacky]
-72f1a48  x86/apic: Handle missing global clockevent gracefully  [Thomas Gleixner]
-b01a61c  x86/retpoline: Don't clobber RFLAGS during CALL_NOSPEC on i386  [Sean Christopherson]
-3481379  gpiolib: never report open-drain/source lines as 'input' to user-space  [Bartosz Golaszewski]
-eebf3d3  drm/nouveau: Don't retry infinitely when receiving no data on i2c over AUX  [Lyude Paul]
-322042e  libceph: fix PG split vs OSD (re)connect race  [Ilya Dryomov]
-5199d44  ceph: don't try fill file_lock on unsuccessful GETFILELOCK reply  [Jeff Layton]
-87f58ec  Revert "dm bufio: fix deadlock with loop device"  [Mikulas Patocka]
-df5d5e7  HID: wacom: Correct distance scale for 2nd-gen Intuos devices  [Jason Gerecke]
-6f27c4e  HID: wacom: correct misreported EKR ring values  [Aaron Armstrong Skomra]
-a9ef73b  selftests: kvm: Adding config fragments  [Naresh Kamboju]
-ed1f87b  perf pmu-events: Fix missing "cpu_clk_unhalted.core" event  [Jin Yao]
-38f097b  perf cpumap: Fix writing to illegal memory in handling cpumap mask  [He Zhe]
-cdca1ec  perf ftrace: Fix failure to set cpumask when only one cpu is present  [He Zhe]
-dd066a2  drm/vmwgfx: fix memory leak when too many retries have occurred  [Colin Ian King]
-9433166  x86/lib/cpu: Address missing prototypes warning  [Valdis Klētnieks]
-350e4ce  libata: add SG safety checks in SFF pio transfers  [Jens Axboe]
-d4c6e10  libata: have ata_scsi_rw_xlat() fail invalid passthrough requests  [Jens Axboe]
-b5adef5  net: hisilicon: Fix dma_map_single failed on arm64  [Jiangfeng Xiao]
-aabe1e9  net: hisilicon: fix hip04-xmit never return TX_BUSY  [Jiangfeng Xiao]
-e58a766  net: hisilicon: make hip04_tx_reclaim non-reentrant  [Jiangfeng Xiao]
-7b46d5c  net: cxgb3_main: Fix a resource leak in a error path in 'init_one()'  [Christophe JAILLET]
-a5ee9cb  SMB3: Kernel oops mounting a encryptData share with CONFIG_DEBUG_VIRTUAL  [Sebastien Tisserant]
-3c42677  HID: input: fix a4tech horizontal wheel custom usage  [Nicolas Saenz Julienne]
-5000296  NFSv4: Fix a potential sleep while atomic in nfs4_do_reclaim()  [Trond Myklebust]
-42fb490  net/ethernet/qlogic/qed: force the string buffer NULL-terminated  [Wang Xiayang]
-5dcb35c  can: peak_usb: force the string buffer NULL-terminated  [Wang Xiayang]
-58fe230  can: sja1000: force the string buffer NULL-terminated  [Wang Xiayang]
-49390a2  perf bench numa: Fix cpu0 binding  [Jiri Olsa]
-58405b6  isdn: hfcsusb: Fix mISDN driver crash caused by transfer buffer on the stack  [Juliana Rodrigueiro]
-dd27335  netfilter: ipset: Fix rename concurrency with listing  [Jozsef Kadlecsik]
-86118e6  isdn: mISDN: hfcsusb: Fix possible null-pointer dereferences in start_isoc_chain()  [Jia-Ju Bai]
-a7d2e71  qed: RDMA - Fix the hw_ver returned in device attributes  [Michal Kalderon]
-b29fbf2  net: usb: qmi_wwan: Add the BroadMobi BM818 card  [Bob Ham]
-98edc5e  ASoC: ti: davinci-mcasp: Correct slot_width posed constraint  [Peter Ujfalusi]
-5249bb9  st_nci_hci_connectivity_event_received: null check the allocation  [Navid Emamdoost]
-3514ea5  st21nfca_connectivity_event_received: null check the allocation  [Navid Emamdoost]
-01cb105  ASoC: Fail card instantiation if DAI format setup fails  [Ricard Wanderlof]
-a106e82  can: dev: call netif_carrier_off() in register_candev()  [Rasmus Villemoes]
-eaa5b0c  bonding: Force slave speed check after link state recovery for 802.3ad  [Thomas Falcon]
-b9f4a02  ASoC: dapm: Fix handling of custom_stop_condition on DAPM graph walks  [Charles Keepax]
-3f289ef  netfilter: ebtables: fix a memory leak bug in compat  [Wenwen Wang]
-5b7989f  mips: fix cacheinfo  [Vladimir Kondratiev]
-8ec8477  MIPS: kernel: only use i8253 clocksource with periodic clockevent  [Thomas Bogendoerfer]
-ae73e30  HID: Add 044f:b320 ThrustMaster, Inc. 2 in 1 DT  [Ilya Trukhanov]
+aba05d4  Merge "Settings: Prevent DataSaverBackend from overwriting uid policies" into 9.0  [blinov.in]
+e2d1617  Act as usb device when there is no hal, but we believe we are a device  [Pierre-Hugues Husson]
 
  * packages/apps/SyberiaSettings
-16ccd6e  Revert "custom fingerprint icon [2/2]"  [DennySPB]
+319315b  Power menu: nuke screenrecord preference  [blinoff82]
+
+ * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-9.1
+4f96ce7  cc1, lto1: Fix library rpath  [Danny Lin]
+0335d0d  Update toolchain to GCC 9.2.0 + binutils 2.32  [Danny Lin]
+21ee8f1  lib: Bundle flex library for Ubuntu 14.04 compatibility  [Danny Lin]
+e8ca67d  lib: Bundle unconventional shared libraries used by GCC  [Danny Lin]
 
  * system/core
-d05fac9  ueventd: parallelize restorecon /sys  [Bongkyu Kim]
+e14cd7f  Fix a memory leak in gatekeeper.  [Janis Danisevskis]
+
+ * system/nfc
+0b5a05e  Prevent OOB read in rw_t4t.cc  [George Chang]
+9f4e61f  Prevent integer overflow in NDEF_MsgValidate  [George Chang]
+
+ * system/sepolicy
+7896699  adbd: do not audit vsock_socket create  [bohu]
 
  * vendor/syberia
-763943c  overlay: Enable Wi-Fi by default on first boot  [ShevT]
-8d10a94  BoardConfigQcom: Fix the Derp  [Rashed Sahaji]
+54deaa9  Pie is almost ready.  [blinoff82]
 
 ====================
-     2019-08-28    
+     2019-09-06    
 ====================
 
- * bionic
-ba9cda0  Revert "bionic: Fix compilation"  [mdeejay]
-5f792a6  Revert "libc fortify: Ignore open() O_TMPFILE mode bits warning"  [mdeejay]
+ * device/qcom/sepolicy
+60f07c4  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
 
- * device/xiaomi/raphael
-f454ea1  raphael: FOD: Make mount permissions stricter  [TheMarionette]
-04a3a4a  raphael: camera_motor: Check camera status before motor operation  [TingyiChen]
-764b705  raphael: camera_motor: Add indicator for camera motor  [TingyiChen]
-8e85974  raphael: overlay: Enable config_deviceLightCapabilities  [Akash]
-34a4a84  raphael: overlay: Enable config for dual LTE capability  [Qiang Chen]
-ebe0452  overlay: Enable burn-in protection on ambient display  [Anirudh Gupta]
-947c128  raphael: Tweak brightness values  [mdeejay]
-14264a0  raphael: Update syberia.dependencies  [mdeejay]
-9249227  raphael: Enabled QCOM_HARDWARE / Added missed IMS prop  [mdeejay]
+ * frameworks/native
+0a9f67b  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
 
- * frameworks/av
-e0f8428  audiopolicy: Fixes for internal audio recording  [jhenrique09]
+ * frameworks/opt/telephony
+c3b20c3  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
+
+ * packages/apps/Settings
+931f4c7  Settings: Prevent DataSaverBackend from overwriting uid policies  [Sam Mortimer]
+
+ * vendor/qcom/opensource/audio
+88e2eb2  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
+
+ * vendor/qcom/opensource/interfaces
+83ec28d  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
+
+====================
+     2019-09-05    
+====================
 
  * frameworks/base
-c947de6  FOD: Change default icon and color  [mdeejay]
-85d5c4d  fwb: Add support for internal audio recording  [jhenrique09]
-a01701e  SystemUI: disable wallpaper-based tint for scrim  [Joey]
-d3e4fb3  Merge changes from topic "fod-hidl" into 9.0  [dennyspb]
-47e5df6  Merge "Drop omni's OnePlus FOD implementation" into 9.0  [dennyspb]
+79e2f52  Merge "MTP: Add support of ObjectInfoChanged Event" into 9.0  [dennyspb]
+e112e11  SystemUI: Whitelist our recorder on CastController  [jhenrique09]
+0c0448a  VolumeDialogControllerImpl: Check for internal audio recording support  [jhenrique09]
+bc8cd37  MTP: Add support of ObjectInfoChanged Event  [James Wei]
+
+ * packages/apps/Longshot
+6265612  Add edit action on notification  [jhenrique09]
+41c989c  Declare priv-app permission  [jhenrique09]
 
  * packages/apps/Recorder
-d531cdf  Update icon  [jhenrique09]
-528d07f  Grant CAPTURE_AUDIO_OUTPUT permission  [jhenrique09]
+65d7e8f  Automatic translation import  [jhenrique09]
+86b1226  overlay: Use dp instead of sp on timer tick  [jhenrique09]
+2f35bf1  Keep overlay always dark  [jhenrique09]
+71c9eab  ScreencastService: Update notification immediately after recording started  [jhenrique09]
+3d3f83b  OverlayService: Hide when starting recording, if not overlay should not be displayed  [jhenrique09]
+6eee17a  Fix inline build  [jhenrique09]
+88e9641  Improve error handling and some code  [jhenrique09]
+f5a510d  Prevent miss-clicks on views  [jhenrique09]
+ecb35a8  Fix lag when dragging overlay and updating timer  [jhenrique09]
+17db06a  Add alpha on floating window  [jhenrique09]
+8e29bc7  Cleanup config  [jhenrique09]
+f10eb6e  Adjust internal audio recording params  [jhenrique09]
+5927871  Add timer into activity  [jhenrique09]
+48aa459  Revert "Open last recorded item on stop"  [jhenrique09]
+22bffa8  Improve floating window  [jhenrique09]
+5522496  Don't hardcode font  [jhenrique09]
+3208b2d  Fix black theme  [jhenrique09]
+2db869a  overlay: Add little spacing on the end of recording button  [jhenrique09]
+f78cb68  Improve share notifications  [jhenrique09]
+33e44c9  Disable qs tiles when locked  [jhenrique09]
+83112bf  Open last recorded item on stop  [jhenrique09]
+e5934b3  Add listener on Settings activity  [jhenrique09]
+d268bfb  Stop overlay service on record started  [jhenrique09]
+6d602dc  Add orientation preference  [jhenrique09]
+011fb72  Pause recording when screen off to save resources  [jhenrique09]
+7661a96  Check before unregistering broadcast receiver  [jhenrique09]
+ea203d5  Always use H264  [jhenrique09]
+ef8de56  Hide some activities from recents  [jhenrique09]
+50e1952  Add more preferences  [jhenrique09]
+15869e4  Use reflection to collapse statusbar  [jhenrique09]
+fe90f24  Improve transparent theme  [jhenrique09]
+a0f82e7  Conditionally disable internal audio recording support  [jhenrique09]
+3ac1fef  Import custom androidx preference library for better theming  [jhenrique09]
+9ecff59  More theming improvements  [jhenrique09]
+b49b2fa  Refactor settings UI  [jhenrique09]
+c634dd7  Refactor recording methods  [jhenrique09]
+1c7a15a  Separate and improve strings  [jhenrique09]
+931eac7  Rename strings to custom_strings.xml  [jhenrique09]
+c495a4d  Cleanup intents  [jhenrique09]
+f1f882a  Remove from launcher  [jhenrique09]
+249bb08  Implement qs tiles and refactor code  [jhenrique09]
+5cb1735  Improve recording floating overlay  [jhenrique09]
+df03d03  Don't use shared prefs to store recording state  [jhenrique09]
+600c8f4  UI redesign  [jhenrique09]
+5a3470a  Add system audio recording support [1/2]  [jhenrique09]
+b3fc671  Revert previous QS implementation  [DennySPB]
 
- * system/core
-7ee1943  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/system/core into 9.0  [mdeejay]
-92fc916  tombstoned: fixed tombstones failed issue  [Jinguang Dong]
-32d155c  health: Add CAP_WAKE_ALARM to service via init  [Felix]
-7666fda  Fix two clang-tidy issues in crasher.cpp.  [Ram Muthiah]
-6f4e724  Add native vsock support to ADB.  [Cody Schuffelen]
-6c8bd82  init: add install_keyring for TWRP FBE decrypt  [Ethan Yonker]
-4b496d4  init: fix typo in error message  [Tom Cherry]
-41750d9  init: Add vendor-specific initialization hooks.  [David Ng]
-d23048c  Set permissions on /system/addon.d/ and files within.  [beanstown106]
-3927201  Set /system/etc/init.d/* permissions  [beanstown106]
-042f63d  lmkd: fix sign compare warning  [DennySPB]
-30c3c1c  init: switch from /dev/keychord to /dev/input/  [Mark Salyzyn]
-77cdfd8  init: use std::function for epoll handling  [Tom Cherry]
-cd85a18  init: disable asan  [Tom Cherry]
-fe9110b  init: set oom_adj early before fork vendor_init  [Wei Wang]
-ab382eb  lmkd: Enable new kill strategy, add and adjust required system properties  [Suren Baghdasaryan]
-a3b9c32  lmkd: Introduce kill strategy based on zone watermarks, swap and thrashing  [Suren Baghdasaryan]
-418fe90  lmkd: Support variable polling intervals set by event handlers  [Suren Baghdasaryan]
-7bd3aec  lmkd: set PSI_POLL_PERIOD to 10ms  [Suren Baghdasaryan]
-0ff6079  lmkd: Change zoneinfo parsing to retrieve zone watermarks  [Suren Baghdasaryan]
-f769823  lmkd: Change procfs read routine to handle files larger than 1 page in size  [Suren Baghdasaryan]
-a6e3834  lmkd: Prevent non-main threads being registered or killed by lmkd  [Suren Baghdasaryan]
-9094f57  Add back fuse support  [Aaron Kling]
-95ff37f  Allow write access to system_server on zram sysfs  [Srinivas Paladugu]
-c01a33b  lmkd: make psi pressure a little more aggressive  [freak07]
-21a0ace  lmkd: Add support for psi monitors  [Suren Baghdasaryan]
-29f6d30  rootdir: init.rc: use default dirty writeout policy  [Jaegeuk Kim]
-1d7f032  init.rc: tune F2FS to be aligned to system settings  [Jaegeuk Kim]
-925b0f2  Fix path for treble default prop  [Wei Wang]
-5500377  reboot: only run fsck when detecting filesystem inconsistency  [Randall Huang]
-96f98ac  healthd: make periodic battery status a debug message  [Stefan Assmann]
-8baa0c3  Filter out QTI performance spam  [DennySPB]
-fb2c1a7  Shut up camera and wcnss debug output  [faust93]
-a389d4e  Filter GalleryDatab*  [Simao Gomes Viana]
-440dbe5  Silence spammy logs from camera blobs (AEC_PORT and mm-camera)  [Sultanxda]
-f28720f  init: No fsck for /data and /cache when shutdown  [jixj]
-804a974  init: Cleanly exit subcontext processes upon init's death  [Luis Hector Chavez]
-69e3afa  libpixelflinger: Avoid using x18 register in blend implementation  [Peter Collingbourne]
-d7440dd  storaged: change log level for health HAL calls  [Yifan Hong]
-465bbad  Policy: Add cpuset for audio app  [Arun Mirpuri]
-52ea6bc  Add blkio cgroup support in user-space  [Vijay Dandiga]
-8f1174d  Add cpu set for audio app  [Revathi Uddaraju]
-83bf70e  fs_mgr: Add MF_WRAPPEDKEY flag  [Shivaprasad Hongal]
-6b6cca0  libion: save errno value  [Liam Mark]
-635f289  LockscreenCharging: squashed (2/3)  [xyyx]
-1481413  adb: Conditionally restore support for legacy f_adb interface  [Adrian DC]
-cc912c6  Revert "System/core: Remove include/ziparchive"  [Kshitij Gupta]
-319c015  init: don't skip starting a service with no domain if permissive  [William Bellavance]
-60f8758  bsdgrep: for -r, use the working directory if none specified  [emaste]
-05375af  adb: Add wait-for-online command  [Steve Kondik]
-2ca0aca  camera: Add L-compatible camera feature enums  [Steve Kondik]
-d7e7d70  init: Don't run update_sys_usb_config if /data isn't mounted  [Michael Bestas]
-799f856  adb: host: Provide better sideload status  [Tom Marshall]
-150bb16  healthd: allow custom charger images  [Scott Mertz]
-69fc4bb  healthd: Reinitialize mChargerNames for every battery update  [Abhijeet Dharmapurikar]
-b6212bb  adbd: Disable "adb root" by system property (2/3)  [Steve Kondik]
-5c97f54  Update permissions to the superuser binary  [Ricardo Cerqueira]
-b83e423  set /system/etc/init.d/* permissions  [Michaël Burtin]
-5028f69  utils: Threads: Handle empty thread names  [Christopher N. Hesse]
-88223c8  healthd: Add support for HVDCP_3 chargers  [Abhijeet Dharmapurikar]
-612abd3  healthd: Add DASH charger type  [Steve Kondik]
-d59c136  init: always allow local.prop overrides  [Dan Pasanen]
-07b812b  fs_mgr: Add fs_mgr_get_entry_for_mount_point_after to header  [Dan Pasanen]
-06656ab  sdcard: Allow building as a static library  [Steve Kondik]
-01386e7  libsysutils: Allow building static library  [Tom Marshall]
-35641e0  adb: Look for executables in alternate places  [Tom Marshall]
-bb02c47  Camera: Add feature extensions  [Sauhard Pande]
-3d433ce  logcat: Map '-C' to 'logcat -v color'  [Adnan Begovic]
-2230940  mkbootimg: add 32K 64K and 128K pagesizes  [Michael Bestas]
-ac71444  mkbootimg: add support for --dt  [M1cha]
-b8e42c0  init: update recovery when enabled in settings  [Brint E. Kriebel]
-
- * system/vold
-70601fc  Add "changepw" command to vdc.  [LuK1337]
-
- * vendor/interfaces
-e22e0f7  Import Xiaomi HAL definitions  [Pierre-Hugues Husson]
-
- * vendor/syberia
-7223458  vendor: Build Recorder app  [jhenrique09]
-bc385ff  backuptool_ab: Make copy_file preserve file/directory attrs  [Luca Stefani]
-354daf1  Revert "Let the user choose the screenshot editor himself"  [DennySPB]
-
-====================
-     2019-08-27    
-====================
-
- * frameworks/base
-7c758cd  SystemUI: Properly align owner info in Q style clock  [DennySPB]
-6576015  Fix Google Markup FC  [DennySPB]
-c09135a  SystemUI: Use matching data usage size formatting between QS and Settings  [LuK1337]
-
- * packages/services/Telecomm
-1800d78  Telecomm: Improve dark theme  [Henrique Silva]
-
- * vendor/syberia
-d57c91a  Revert "Remove Google Markup prebuilt"  [dennyspb]
-
-====================
-     2019-08-26    
-====================
-
- * device/xiaomi/raphael
-883eff0  raphael: SyberiaOS Bring-up part2  [mdeejay]
-bc2c3e4  raphael: SyberiaOS bring-up  [mdeejay]
-19c8055  raphael: sepolicy: Adress SmartCharging denials  [mdeejay]
-00bd7e5  raphael: Remove useless nfc configs  [mdeejay]
-f90ef21  raphael: Switch to NQ NFC  [mdeejay]
-3ddb98c  raphael: FOD: Calculate correct position from TS driver  [mdeejay]
-
- * frameworks/base
-e8b1532  Update Xbox BT controller mapping to support upcoming controller firmware update  [Jared Henderson]
-b37c756  FODCircleView: Fix position if cutout is hidden  [jhenrique09]
-6bd694d  SystemUI: Update keyguard indication margin when fod is in use  [Chris Crump]
-99d2217  Initial support for in-display fingerprint sensors  [Peter Cai]
-d2a0c4b  Drop omni's OnePlus FOD implementation  [DennySPB]
-0d31c7b  Revert "Merge pull request #15 from David6910/patch-4"  [DennySPB]
-
- * hardware/interfaces
-9e32dc9  Wifi: Syncronization on reading and writing ringbuffer  [Ajit Vaishya]
-
- * kernel/xiaomi/raphael
-4811838  techpack/pinctrl-lpi: initialise at late_initcall  [Yaroslav Furman]
-4de657c  Linux 4.14.140  [Greg Kroah-Hartman]
-44d17af  xfrm: policy: remove pcpu policy cache  [Florian Westphal]
-4caca0f  mmc: sdhci-of-arasan: Do now show error message in case of deffered probe  [Michal Simek]
-bf4c518  bonding: Add vlan tx offload to hw_enc_features  [YueHaibing]
-d354ff0  team: Add vlan tx offload to hw_enc_features  [YueHaibing]
-d55ca8c  net/mlx5e: Use flow keys dissector to parse packets for ARFS  [Maxim Mikityanskiy]
-ef30af0  net/mlx5e: Only support tx/rx pause setting for port owner  [Huy Nguyen]
-6cff50e  xen/netback: Reset nr_frags before freeing skb  [Ross Lagerwall]
-04ed068  sctp: fix the transport error_count check  [Xin Long]
-0af3c3c  net/packet: fix race in tpacket_snd()  [Eric Dumazet]
-ad6613d8  net/mlx4_en: fix a memory leak bug  [Wenwen Wang]
-99b61f0  bnx2x: Fix VF's VLAN reconfiguration in reload.  [Manish Chopra]
-c649fdf  iommu/amd: Move iommu_init_pci() to .init section  [Joerg Roedel]
-032c288  Input: psmouse - fix build error of multiple definition  [YueHaibing]
-9c005b6  netfilter: conntrack: Use consistent ct id hash calculation  [Dirk Morris]
-2d585c5  arm64: ftrace: Ensure module ftrace trampoline is coherent with I-side  [Will Deacon]
-744cdad  arm64: compat: Allow single-byte watchpoints on all addresses  [Will Deacon]
-7dc0864  Revert "tcp: Clear sk_send_head after purging the write queue"  [Sasha Levin]
-9a9a3f6  bpf: fix bpf_jit_limit knob for PAGE_SIZE >= 64K  [Daniel Borkmann]
-72e6c18  USB: serial: option: Add Motorola modem UARTs  [Tony Lindgren]
-6af13db  USB: serial: option: add the BroadMobi BM818 card  [Bob Ham]
-fe79668  USB: serial: option: Add support for ZTE MF871A  [Yoshiaki Okamoto]
-bd8dcbe  USB: serial: option: add D-Link DWM-222 device ID  [Rogan Dawes]
-5113c1d  USB: CDC: fix sanity checks in CDC union parser  [Oliver Neukum]
-7892207  usb: cdc-acm: make sure a refcount is taken early enough  [Oliver Neukum]
-e2efc50  usb: gadget: udc: renesas_usb3: Fix sysfs interface of "role"  [Yoshihiro Shimoda]
-3617cd9  USB: core: Fix races in character device registration and deregistraion  [Alan Stern]
-cb1be8a  iio: adc: max9611: Fix temperature reading in probe  [Jacopo Mondi]
-d6d8a07  staging: comedi: dt3000: Fix rounding up of timer divisor  [Ian Abbott]
-d775c93  staging: comedi: dt3000: Fix signed integer overflow 'divider * base'  [Ian Abbott]
-2ddb274  KVM: arm/arm64: Sync ICH_VMCR_EL2 back when about to block  [Marc Zyngier]
-3b7ca06  asm-generic: fix -Wtype-limits compiler warnings  [Qian Cai]
-a0c983b  ocfs2: remove set but not used variable 'last_hash'  [YueHaibing]
-2f8ef22  drm: msm: Fix add_gpu_components  [Jeffrey Hugo]
-ee49d5c  IB/mad: Fix use-after-free in ib mad completion handling  [Jack Morgenstein]
-d0f80ce  IB/core: Add mitigation for Spectre V1  [Luck, Tony]
-c39aba9  arm64/mm: fix variable 'pud' set but not used  [Qian Cai]
-2e02896  arm64: unwind: Prohibit probing on return_address()  [Masami Hiramatsu]
-2dcc772  arm64/efi: fix variable 'si' set but not used  [Qian Cai]
-fd885b5  kbuild: modpost: handle KBUILD_EXTRA_SYMBOLS only for external modules  [Masahiro Yamada]
-fda0c2c  ata: libahci: do not complain in case of deferred probe  [Miquel Raynal]
-ec7956c  scsi: qla2xxx: Fix possible fcport null-pointer dereferences  [Jia-Ju Bai]
-00e3744b  scsi: hpsa: correct scsi command status issue after reset  [Don Brace]
-ede0dae  drm/bridge: lvds-encoder: Fix build error while CONFIG_DRM_KMS_HELPER=m  [YueHaibing]
-a7316d0  libata: zpodd: Fix small read overflow in zpodd_get_mech_type()  [Kees Cook]
-3f945db  perf header: Fix use of unitialized value warning  [Numfor Mbiziwo-Tiapo]
-6186a48  perf header: Fix divide by zero error if f_header.attr_size==0  [Vince Weaver]
-7165ba6  irqchip/irq-imx-gpcv2: Forward irq type to parent  [Lucas Stach]
-84e3295c  irqchip/gic-v3-its: Free unused vpt_page when alloc vpe table fail  [Nianyao Tang]
-2c50812  xen/pciback: remove set but not used variable 'old_state'  [YueHaibing]
-bf97bef  clk: renesas: cpg-mssr: Fix reset control race condition  [Geert Uytterhoeven]
-919d844  clk: at91: generated: Truncate divisor to GENERATED_MAX_DIV + 1  [Codrin Ciubotariu]
-fa383bf  netfilter: ebtables: also count base chain policies  [Florian Westphal]
-5b37776  net: usb: pegasus: fix improper read if get_registers() fail  [Denis Kirjanov]
-7a1d1a6  Input: iforce - add sanity checks  [Oliver Neukum]
-e212be7  Input: kbtab - sanity check for endpoint type  [Oliver Neukum]
-a1884fe  HID: hiddev: do cleanup in failure of opening a device  [Hillf Danton]
-da9d20a  HID: hiddev: avoid opening a disconnected device  [Hillf Danton]
-5d36ca6  HID: holtek: test for sanity of intfdata  [Oliver Neukum]
-1e04642  ALSA: hda - Let all conexant codec enter D3 when rebooting  [Hui Wang]
-e4ac1d5  ALSA: hda - Add a generic reboot_notify  [Hui Wang]
-93e1cbf  ALSA: hda - Fix a memory leak bug  [Wenwen Wang]
-4b2dbb7  ALSA: hda - Apply workaround for another AMD chip 1022:1487  [Takashi Iwai]
-b59b88a  xtensa: add missing isync to the cpu_reset TLB code  [Max Filippov]
-d7fcfaa  x86/mm: Use WRITE_ONCE() when setting PTEs  [Nadav Amit]
-ad7a01e  bpf: add bpf_jit_limit knob to restrict unpriv allocations  [Daniel Borkmann]
-509d0b1  bpf: restrict access to core bpf sysctls  [Daniel Borkmann]
-679b4c6  bpf: get rid of pure_initcall dependency to enable jits  [Daniel Borkmann]
-f07996b  mm/memcontrol.c: fix use after free in mem_cgroup_iter()  [Miles Chen]
-8665fe9  sh: kernel: hw_breakpoint: Fix missing break in switch statement  [Gustavo A. R. Silva]
-280cac1  scsi: mpt3sas: Use 63-bit DMA addressing on SAS35 HBA  [Suganath Prabu]
-0af4054  raphael: nfc: Remove Xiaomi changes  [mdeejay]
-
- * packages/apps/Snap
-41b3ef3  Automatic translation import  [Michael Bestas]
-7e15056  Automatic translation import  [Michael Bestas]
+ * packages/apps/Settings
+587d708  Merge "SwipeUpController: update recents layout variable" into 9.0  [dennyspb]
 
  * packages/apps/SyberiaSettings
-1a8b56f  SyberiaSettings: be the right frenchman  [blinoff82]
+ad94987  Update french translation  [RemyL]
 
- * vendor/interfaces
-c6b5fbf  IFingerprintInscreen: Allow HALs to control position and size  [Peter Cai]
-9eacc42  IFingerprintInscreen: Allow HALs to provide finger up/down callback  [LuK1337]
-ce5f385  IFingerprintInscreen: Allow HALs to control dimming  [Peter Cai]
-62d07e4  Introduce in-screen fingerprint scanner HAL  [Peter Cai]
+ * vendor/syberia
+ecab8a2  Merge "vendor: privapp-permissions-recorder: Add missing permissions" into 9.0  [dennyspb]
+6ba5977  vendor: privapp-permissions-recorder: Add missing permissions  [jhenrique09]
 
 ====================
-     2019-08-25    
+     2019-09-04    
 ====================
- * art
-80f467f  Stop verifying barrier count for thread dumping  [Mathieu Chartier]
-8c7a498  ART: Cache type index validity  [Andreas Gampe]
 
- * device/xiaomi/raphael
-0198c6e  Revert "raphael: camera_motor: Add indicator for camera motor"  [mdeejay]
-4bacdc8  Revert "raphael: camera_motor: Check camera status before motor operation"  [mdeejay]
-c321c91  raphael: Add assert for India variant  [isaacchen]
-6e7dcff  raphael: Update build fingerprint from Mi9T  [mdeejay]
-0437855  raphael: Update proprietary blobs list  [mdeejay]
-9ab9dd7  raphael: Add perf boot jars  [mdeejay]
+====================
+     2019-09-03    
+====================
 
  * frameworks/base
-d5d42bf  Merge pull request #16 from David6910/patch-5  [Ivan Blinov]
-9bd7a61  Merge pull request #15 from David6910/patch-4  [Ivan Blinov]
-b501e89  Merge pull request #14 from David6910/patch-3  [Ivan Blinov]
+ad27dec  fwb: media_seekbar: make it sexy  [vladrevers]
+db15a67  base: core: audio: unregister policy mixers already in place  [Derek Chen]
+dba855e  fw/b: Use common network restrict apps method  [Sam Mortimer]
+0262e3a  Override the method onMenuPressed() in CarStatusBar to do the action "dismiss keyguard"  [Dheeraj Kumar Chaudhary]
+1912935  Adjust QS Tile to work with new long screenshots  [00day0]
 
- * kernel/xiaomi/raphael
-38bc071  Revert "modules: ignore signature"  [mdeejay]
-cf2d650  raphael: defconfig: Disable audit  [mdeejay]
-3106e10  selinux: reduce calls to context_struct_to_string()  [Park Ju Hyung]
-1229474  raphael: defconfig: disable CONFIG_CPU_FREQ_TIMES  [Park Ju Hyung]
-ac2a354  raphael: defconfig: Disable CONFIG_MEMCG  [mdeejay]
-025cfda  msm: kgsl: Report correct GPU frequency in sysfs  [myfluxi]
-c733821  msm: fix improper size checks  [Park Ju Hyung]
+ * packages/apps/Dialer
+1704dd9  Dialer: update RU translation  [blinoff82]
+
+ * packages/apps/Settings
+54c3732  Developer settings: update RU translation  [blinoff82]
+eabf4a8  team: violet is out  [blinoff82]
+f937466  SwipeUpController: update recents layout variable  [DennySPB]
 
  * packages/apps/SyberiaSettings
-0f4cb6c  Merge pull request #62 from David6910/patch-4  [Ivan Blinov]
-4c41d9f  Merge pull request #65 from RemyL/9.0  [Ivan Blinov]
-8d528e2  Syberia settings french translation v2  [RemyL]
+9d569e3  settings: featureize ro.recents.grid and Go Layout [2/2]  [maxwen]
 
- * vendor/xiaomi/raphael
-680bde9  raphael: Remove useless 32 bit blobs  [mdeejay]
+ * system/netd
+3bc871c  netd: Consolidate restrict apps methods  [Sam Mortimer]
+
+====================
+     2019-09-02    
+====================
+
+====================
+     2019-09-01    
+====================
+
+ * frameworks/opt/telephony
+b0e5b51  Sort activeSubscriptionInfoList according to API annotation  [Takumi Hori]
 
