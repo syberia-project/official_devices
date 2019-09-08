@@ -1,4 +1,68 @@
 ====================
+     2019-09-08    
+====================
+
+ * build/make
+c21cccd  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/build into HEAD  [blinoff82]
+
+ * device/xiaomi/whyred
+081bb36  Re-Enable LiveDisplay V2.0  [rashedsahaji]
+
+ * external/libcups
+c847dc5  Merge tag 'android-9.0.0_r48' into HEAD  [blinoff82]
+
+ * external/libhevc
+3101c57  Merge tag 'android-9.0.0_r48' into HEAD  [blinoff82]
+
+ * external/skia
+29a0f0c  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/external/skia into HEAD  [blinoff82]
+
+ * external/zlib
+976b383  Merge tag 'android-9.0.0_r48' into HEAD  [blinoff82]
+
+ * frameworks/av
+2270162  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/frameworks/av into HEAD  [blinoff82]
+
+ * frameworks/native
+c7aaa79  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/frameworks/native into HEAD  [blinoff82]
+
+ * hardware/nxp/nfc
+056bda8  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/hardware/nxp/nfc into HEAD  [blinoff82]
+
+ * packages/apps/Bluetooth
+7530578  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [blinoff82]
+
+ * packages/apps/DocumentsUI
+c5e1498  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/packages/apps/DocumentsUI into HEAD  [blinoff82]
+
+ * packages/apps/Launcher3
+05dbe23  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD  [blinoff82]
+
+ * packages/apps/Nfc
+2fdc654  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [blinoff82]
+
+ * packages/apps/SettingsIntelligence
+17f9c8b  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/packages/apps/SettingsIntelligence into HEAD  [blinoff82]
+
+ * packages/providers/DownloadProvider
+bbdd20b  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD  [blinoff82]
+
+ * packages/services/Telecomm
+f4db44c  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [blinoff82]
+
+ * system/netd
+852c007  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/system/netd into HEAD  [blinoff82]
+
+ * system/nfc
+f52a29b  Merge tag 'android-9.0.0_r48' into HEAD  [blinoff82]
+
+ * system/sepolicy
+7b271e8  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [blinoff82]
+
+ * system/vold
+5f52d27  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/system/vold into HEAD  [blinoff82]
+
+====================
      2019-09-07    
 ====================
 
@@ -95,8 +159,6 @@ e14cd7f  Fix a memory leak in gatekeeper.  [Janis Danisevskis]
 
  * frameworks/base
 79e2f52  Merge "MTP: Add support of ObjectInfoChanged Event" into 9.0  [dennyspb]
-e112e11  SystemUI: Whitelist our recorder on CastController  [jhenrique09]
-0c0448a  VolumeDialogControllerImpl: Check for internal audio recording support  [jhenrique09]
 
  * frameworks/native
 0a9f67b  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
@@ -185,6 +247,8 @@ ecab8a2  Merge "vendor: privapp-permissions-recorder: Add missing permissions" i
 ====================
 
  * frameworks/base
+e112e11  SystemUI: Whitelist our recorder on CastController  [jhenrique09]
+0c0448a  VolumeDialogControllerImpl: Check for internal audio recording support  [jhenrique09]
 bc8cd37  MTP: Add support of ObjectInfoChanged Event  [James Wei]
 
 ====================
@@ -204,10 +268,6 @@ dba855e  fw/b: Use common network restrict apps method  [Sam Mortimer]
  * packages/apps/Settings
 54c3732  Developer settings: update RU translation  [blinoff82]
 eabf4a8  team: violet is out  [blinoff82]
-f937466  SwipeUpController: update recents layout variable  [DennySPB]
-
- * packages/apps/SyberiaSettings
-9d569e3  settings: featureize ro.recents.grid and Go Layout [2/2]  [maxwen]
 
 ====================
      2019-09-02    
@@ -233,41 +293,12 @@ d2d07a6  cpu_input_boost: make the userspace module param vars static  [Francisc
 3a44304  cpu_input_boost: add an option to choose a custom boost finish return freq for the LP cluster  [Francisco Franco]
 df644f7  cpufreq: interactive: Skip timer when policy->min == policy->max  [Sultanxda]
 
+ * packages/apps/Settings
+f937466  SwipeUpController: update recents layout variable  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+9d569e3  settings: featureize ro.recents.grid and Go Layout [2/2]  [maxwen]
+
  * system/netd
 3bc871c  netd: Consolidate restrict apps methods  [Sam Mortimer]
-
-====================
-     2019-09-01    
-====================
-
- * frameworks/opt/telephony
-b0e5b51  Sort activeSubscriptionInfoList according to API annotation  [Takumi Hori]
-
- * kernel/xiaomi/whyred
-51a2baf  mm: oom_kill: Do not dump tasks by default  [Tyler Nijmeh]
-de86ea4  whyred-perf_defconfig: increase input boost freqs  [srfarias]
-2d9d231  blk: disable IO_STAT completely  [Park Ju Hyung]
-02c4dd7  block: disable iostats and io random generation by default  [tytydraco]
-2b9380d  cfq: clear queue pointers from cfqg after unpinning them in cfq_pd_offline  [Maciej S. Szmigiero]
-78d08e1  block: use ktime_get_ns() instead of sched_clock() for cfq and bfq  [Omar Sandoval]
-f42b99d  cfq-iosched: temporarily boost queue priority for idle classes  [Jens Axboe]
-321c071  UPSTREAM: block: silently forbid sending any ioctl to a partition  [Paolo Bonzini]
-8be8592  mmc: Disable crc check  [Chet Kener]
-0476c8b  arch: dts: e7s: Increase power button debounce time  [Kieran Cawthray]
-796d1af  ANDROID: block/cfq-iosched: make group_idle per io cgroup tunable  [Rick Yiu]
-0e72af83  cfq-iosched: fix the delay of cfq_group's vdisktime under iops mode  [Hou Tao]
-1903c86  cfq-iosched: Delete unused function min_vdisktime()  [Matthias Kaehlcke]
-b97319e  cfq: Disable writeback throttling by default  [Jan Kara]
-18d1171  cfq-iosched: don't call wbt_disable_default() with IRQs disabled  [Jens Axboe]
-12d5f5c  cfq-iosched: Adjust one function call together with a variable assignment  [Markus Elfring]
-4302d65  block: Initialize cfqq->ioprio_class in cfq_get_queue()  [Alexander Potapenko]
-97a332d  mm/compaction: Prioritize compaction work  [Tyler Nijmeh]
-bd3846a  mm: Implement minimum bound for performing readahead  [Tyler Nijmeh]
-6471d89  block: Reduce queue depth  [Tyler Nijmeh]
-f6db60c  block: Force requests onto their origin CPU  [Tyler Nijmeh]
-432832c  block: Do not collect I/O statistics  [Tyler Nijmeh]
-9485026  block: Disable preemption during IPI consideration  [Tyler Nijmeh]
-7c53a83  block: Use interruptible waits  [Tyler Nijmeh]
-3cda381  fs: add missing inode_nohighmem  [srfarias]
-ebee1fd  fs: f2fs: use f2fs_info instead of f2fs_msg  [srfarias]
 
