@@ -1,304 +1,53 @@
 ====================
-     2019-09-08    
+     2019-09-21    
 ====================
 
- * build/make
-c21cccd  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/build into HEAD  [blinoff82]
+====================
+     2019-09-20    
+====================
 
- * device/xiaomi/whyred
-081bb36  Re-Enable LiveDisplay V2.0  [rashedsahaji]
+====================
+     2019-09-19    
+====================
 
- * external/libcups
-c847dc5  Merge tag 'android-9.0.0_r48' into HEAD  [blinoff82]
+ * frameworks/base
+15bd52a  Merge "base: SystemUI: make storage notification channel blockable" into 9.0  [blinov.in]
 
- * external/libhevc
-3101c57  Merge tag 'android-9.0.0_r48' into HEAD  [blinoff82]
+ * packages/apps/Settings
+0bc3384  Merge "Developer opts: set default notification channel warnings" into 9.0  [blinov.in]
+dc4820d  Merge "Settings: show battery times in summary" into 9.0  [blinov.in]
 
- * external/skia
-29a0f0c  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/external/skia into HEAD  [blinoff82]
-
- * external/zlib
-976b383  Merge tag 'android-9.0.0_r48' into HEAD  [blinoff82]
+====================
+     2019-09-18    
+====================
 
  * frameworks/av
-2270162  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/frameworks/av into HEAD  [blinoff82]
-
- * frameworks/native
-c7aaa79  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/frameworks/native into HEAD  [blinoff82]
-
- * hardware/nxp/nfc
-056bda8  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/hardware/nxp/nfc into HEAD  [blinoff82]
-
- * packages/apps/Bluetooth
-7530578  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [blinoff82]
-
- * packages/apps/DocumentsUI
-c5e1498  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/packages/apps/DocumentsUI into HEAD  [blinoff82]
-
- * packages/apps/Launcher3
-05dbe23  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD  [blinoff82]
-
- * packages/apps/Nfc
-2fdc654  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [blinoff82]
-
- * packages/apps/SettingsIntelligence
-17f9c8b  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/packages/apps/SettingsIntelligence into HEAD  [blinoff82]
-
- * packages/providers/DownloadProvider
-bbdd20b  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD  [blinoff82]
-
- * packages/services/Telecomm
-f4db44c  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [blinoff82]
-
- * system/netd
-852c007  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/system/netd into HEAD  [blinoff82]
-
- * system/nfc
-f52a29b  Merge tag 'android-9.0.0_r48' into HEAD  [blinoff82]
-
- * system/sepolicy
-7b271e8  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [blinoff82]
-
- * system/vold
-5f52d27  Merge tag 'android-9.0.0_r48' of https://android.googlesource.com/platform/system/vold into HEAD  [blinoff82]
-
-====================
-     2019-09-07    
-====================
-
- * build/make
-4c95e81  Bump Security String to 2019-09-05  [Kevin F. Haggerty]
-
- * device/xiaomi/whyred
-15cfdea  Track from Los  [Rashed Sahaji]
-0140cfe  whyred: overlay: Ignore RSSNR signal level  [Henrique Silva]
-6bd0b6a  ADD Lawnchair  [rashedsahaji]
-
- * external/libcups
-16403e0  Fix heap buffer overflow in ipp.c  [Bryan Ferris]
-
- * external/libhevc
-b60a8a2  decoder: Fix valid SPS check in parsing SEI  [Harish Mahendrakar]
+f366e74  fix audioflinger integer mulplication overflow  [wendy lin]
 
  * frameworks/base
-36810c0  Fix Layout.primaryIsTrailingPreviousAllLineOffsets  [Mihai Popa]
-150b909  HidProfile: sync isPreferred() with HidHostService  [Chienyuan]
-88eaa90  Correct argument order in permission check  [Bryan Ferris]
+5c436c4  base: SystemUI: make storage notification channel blockable  [maxwen]
 
- * frameworks/native
-35dc9a2  Free mObjects if no objects left to realloc on resize  [Michael Wachenschwanz]
-8e83805  Fix race between SensorManager ctor and callback  [Brian Duddie]
-
- * packages/apps/Settings
-aba05d4  Merge "Settings: Prevent DataSaverBackend from overwriting uid policies" into 9.0  [blinov.in]
-
- * packages/apps/SyberiaSettings
-319315b  Power menu: nuke screenrecord preference  [blinoff82]
-
- * system/nfc
-0b5a05e  Prevent OOB read in rw_t4t.cc  [George Chang]
-9f4e61f  Prevent integer overflow in NDEF_MsgValidate  [George Chang]
-
- * vendor/syberia
-54deaa9  Pie is almost ready.  [blinoff82]
-
-====================
-     2019-09-06    
-====================
-
- * device/xiaomi/whyred
-1a44d7e  violet: Thermal Sepolicy  [jhenrique09]
-ba4be39  whyred: Build ThermalController  [Rashed Sahaji]
-7e67091  whyred: thermalcontroller: add more apps  [Dyneteve]
-b173803  whyred: Import ThermalController  [Henrique Silva]
-11a5bb1  whyred: mixer_paths: increase in call volume  [srfarias]
-0e5ec97  whyred: proprietary-files: update Time Service from davinci  [srfarias]
-cb3c71c  whyred: kang thermal blobs from platina  [srfarias]
-8a365a7  whyred: media_profiles: Remove highspeed profiles  [Henrique Silva]
-b987266  BoardConfig: Properly set dexpreopt  [celtare21]
-faefdae  prop: Shorten wait time to optimize shutdown time  [zljing]
-053bcaf  overlay: use Pie qti-telephony-common  [DennySPB]
-6bdaff3  Import hostapd configs and move_wifi_data script from OB12  [DennySPB]
-6b266e2  whyred: Import camera changes  [Henrique Silva]
-bbf7bf9  whyred: sepolicy: adress denials  [srfarias]
-6868f51  overlay: Enable smart charging  [blinoff82]
-8cfbde8  overlay: proximity Check On Fingerprint Wake  [rashedsahaji]
-9b80893  Overlay: Enable proxi check on wakeup events  [DennySPB]
-4d2971f  whyred: Add basic USB HAL that reports no status change  [Ethan Chen]
-8cac387  whyred: overlay: Disable bluetooth by default  [IamJoker03]
-75b8c5b  whyred: Use oneplus 7 vibration pattern  [Dyneteve]
-783a79e  Update syberia.dependencies  [Rashed Sahaji]
-ed21830  whyred: Enable display default color mode  [rashedsahaji]
-d931f93  Syberia Bring Up!  [rashedsahaji]
-
- * frameworks/base
-786c05c  Allow override of DUN settings  [Dave Daynard]
-62efe44  Fix NPE in SyncRtSurfaceTransactionApplier#scheduleApply  [Tracy Zhou]
+ * frameworks/opt/telephony
+ea39f2f  telephony: Query LTE thresholds from CarrierConfig  [Artem Borisov]
+056b07f  telephony: Squashed support of dynamic signal strength thresholds  [Paul Keith]
+559c42b  Implement signal strength hacks used on Huawei devices  [codeworkx]
 
  * packages/apps/Settings
-e2d1617  Act as usb device when there is no hal, but we believe we are a device  [Pierre-Hugues Husson]
-
- * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-9.1
-4f96ce7  cc1, lto1: Fix library rpath  [Danny Lin]
-0335d0d  Update toolchain to GCC 9.2.0 + binutils 2.32  [Danny Lin]
-21ee8f1  lib: Bundle flex library for Ubuntu 14.04 compatibility  [Danny Lin]
-e8ca67d  lib: Bundle unconventional shared libraries used by GCC  [Danny Lin]
-
- * system/core
-e14cd7f  Fix a memory leak in gatekeeper.  [Janis Danisevskis]
-
- * system/sepolicy
-7896699  adbd: do not audit vsock_socket create  [bohu]
+3798701  Developer opts: set default notification channel warnings  [Marko Man]
+94e8e22  Settings: show battery times in summary  [maxwen]
 
 ====================
-     2019-09-05    
+     2019-09-17    
+====================
+
+====================
+     2019-09-16    
 ====================
 
  * device/qcom/sepolicy
-60f07c4  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
-
- * frameworks/base
-79e2f52  Merge "MTP: Add support of ObjectInfoChanged Event" into 9.0  [dennyspb]
-
- * frameworks/native
-0a9f67b  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
-
- * frameworks/opt/telephony
-c3b20c3  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
-
- * kernel/xiaomi/whyred
-104fb9e  whyred-perf_defconfig: purecaf x10.2  [srfarias]
-54f258f  Merge tag 'LA.UM.7.2.r1-07500-sdm660.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into new-caf-pie  [srfarias]
-756d556  Revert "Revert "qcacld-3.0: Fix OOB in wma_stats_event_handler""  [srfarias]
-9f5f6e8  Merge tag 'LA.UM.7.2.r1-07500-sdm660.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/fw-api into new-caf-pie  [srfarias]
-dc4274c  Merge tag 'LA.UM.7.2.r1-07500-sdm660.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.4 into new-caf-pie  [srfarias]
-
- * packages/apps/Longshot
-6265612  Add edit action on notification  [jhenrique09]
-41c989c  Declare priv-app permission  [jhenrique09]
-
- * packages/apps/Recorder
-65d7e8f  Automatic translation import  [jhenrique09]
-86b1226  overlay: Use dp instead of sp on timer tick  [jhenrique09]
-2f35bf1  Keep overlay always dark  [jhenrique09]
-71c9eab  ScreencastService: Update notification immediately after recording started  [jhenrique09]
-3d3f83b  OverlayService: Hide when starting recording, if not overlay should not be displayed  [jhenrique09]
-6eee17a  Fix inline build  [jhenrique09]
-88e9641  Improve error handling and some code  [jhenrique09]
-f5a510d  Prevent miss-clicks on views  [jhenrique09]
-ecb35a8  Fix lag when dragging overlay and updating timer  [jhenrique09]
-17db06a  Add alpha on floating window  [jhenrique09]
-8e29bc7  Cleanup config  [jhenrique09]
-f10eb6e  Adjust internal audio recording params  [jhenrique09]
-5927871  Add timer into activity  [jhenrique09]
-48aa459  Revert "Open last recorded item on stop"  [jhenrique09]
-22bffa8  Improve floating window  [jhenrique09]
-5522496  Don't hardcode font  [jhenrique09]
-3208b2d  Fix black theme  [jhenrique09]
-2db869a  overlay: Add little spacing on the end of recording button  [jhenrique09]
-f78cb68  Improve share notifications  [jhenrique09]
-33e44c9  Disable qs tiles when locked  [jhenrique09]
-83112bf  Open last recorded item on stop  [jhenrique09]
-e5934b3  Add listener on Settings activity  [jhenrique09]
-d268bfb  Stop overlay service on record started  [jhenrique09]
-6d602dc  Add orientation preference  [jhenrique09]
-011fb72  Pause recording when screen off to save resources  [jhenrique09]
-7661a96  Check before unregistering broadcast receiver  [jhenrique09]
-ea203d5  Always use H264  [jhenrique09]
-ef8de56  Hide some activities from recents  [jhenrique09]
-50e1952  Add more preferences  [jhenrique09]
-15869e4  Use reflection to collapse statusbar  [jhenrique09]
-fe90f24  Improve transparent theme  [jhenrique09]
-a0f82e7  Conditionally disable internal audio recording support  [jhenrique09]
-3ac1fef  Import custom androidx preference library for better theming  [jhenrique09]
-9ecff59  More theming improvements  [jhenrique09]
-b49b2fa  Refactor settings UI  [jhenrique09]
-c634dd7  Refactor recording methods  [jhenrique09]
-1c7a15a  Separate and improve strings  [jhenrique09]
-931eac7  Rename strings to custom_strings.xml  [jhenrique09]
-c495a4d  Cleanup intents  [jhenrique09]
-f1f882a  Remove from launcher  [jhenrique09]
-249bb08  Implement qs tiles and refactor code  [jhenrique09]
-5cb1735  Improve recording floating overlay  [jhenrique09]
-df03d03  Don't use shared prefs to store recording state  [jhenrique09]
-600c8f4  UI redesign  [jhenrique09]
-5a3470a  Add system audio recording support [1/2]  [jhenrique09]
-b3fc671  Revert previous QS implementation  [DennySPB]
-
- * packages/apps/Settings
-931f4c7  Settings: Prevent DataSaverBackend from overwriting uid policies  [Sam Mortimer]
-587d708  Merge "SwipeUpController: update recents layout variable" into 9.0  [dennyspb]
-
- * packages/apps/SyberiaSettings
-ad94987  Update french translation  [RemyL]
-
- * vendor/qcom/opensource/audio
-88e2eb2  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
-
- * vendor/qcom/opensource/interfaces
-83ec28d  Merge tag 'LA.UM.7.6.r1-05900-89xx.0' into HEAD  [blinoff82]
-
- * vendor/syberia
-ecab8a2  Merge "vendor: privapp-permissions-recorder: Add missing permissions" into 9.0  [dennyspb]
-6ba5977  vendor: privapp-permissions-recorder: Add missing permissions  [jhenrique09]
+6d402a8  sepolicy: label persist.vendor.bluetooth.a4wp  [Marc Bourgoin]
 
 ====================
-     2019-09-04    
+     2019-09-15    
 ====================
-
- * frameworks/base
-e112e11  SystemUI: Whitelist our recorder on CastController  [jhenrique09]
-0c0448a  VolumeDialogControllerImpl: Check for internal audio recording support  [jhenrique09]
-bc8cd37  MTP: Add support of ObjectInfoChanged Event  [James Wei]
-
-====================
-     2019-09-03    
-====================
-
- * frameworks/base
-ad27dec  fwb: media_seekbar: make it sexy  [vladrevers]
-db15a67  base: core: audio: unregister policy mixers already in place  [Derek Chen]
-dba855e  fw/b: Use common network restrict apps method  [Sam Mortimer]
-0262e3a  Override the method onMenuPressed() in CarStatusBar to do the action "dismiss keyguard"  [Dheeraj Kumar Chaudhary]
-1912935  Adjust QS Tile to work with new long screenshots  [00day0]
-
- * packages/apps/Dialer
-1704dd9  Dialer: update RU translation  [blinoff82]
-
- * packages/apps/Settings
-54c3732  Developer settings: update RU translation  [blinoff82]
-eabf4a8  team: violet is out  [blinoff82]
-
-====================
-     2019-09-02    
-====================
-
- * kernel/xiaomi/whyred
-c659069  Revert "whyred-perf_defconfig: Disable BCL driver"  [srfarias]
-886e542  whyred-perf_defconfig: purecaf x10.1  [srfarias]
-3b2f2a0  whyred-perf_defconfig: remove CONFIG_DVB_MPQ modules  [srfarias]
-1ec11eb  dts: sdm600: remove dm verity  [srfarias]
-2d1f292  whyred-perf_defconfig: purecaf x10  [srfarias]
-8255352  Improve camera power consumption  [longxiaowu]
-f27da24  whyred_defconfig: zstd for zram compression and hide lz0 from zram compression backends  [srfarias]
-86e2ee6  zram: Add Kconfig option to hide LZO  [Nathan Chancellor]
-8a556fe  zram: Do not allow compression algorithm to be changed  [Nathan Chancellor]
-fb71bad  zram: Move default compression algorithm choice to Kconfig  [Nathan Chancellor]
-c1e6101  UPSTREAM: lib: update LZ4 compressor module  [Sven Schmidt]
-af0bce2  UPSTREAM: lz4: fix wrong compress buffer size for 64-bits  [Bongkyu Kim]
-ca619c9  UPSTREAM: lib: lz4: cleanup unaligned access efficiency detection  [Rui Salvaterra]
-d2d07a6  cpu_input_boost: make the userspace module param vars static  [Francisco Franco]
-017a4d3  cpu_input_boost: expose input freqs and duration to userspace  [Francisco Franco]
-6e3ebd2  cpu_input_boost: Add ability to choose minimum frequency for big cluster  [Nathan Chancellor]
-3a44304  cpu_input_boost: add an option to choose a custom boost finish return freq for the LP cluster  [Francisco Franco]
-df644f7  cpufreq: interactive: Skip timer when policy->min == policy->max  [Sultanxda]
-
- * packages/apps/Settings
-f937466  SwipeUpController: update recents layout variable  [DennySPB]
-
- * packages/apps/SyberiaSettings
-9d569e3  settings: featureize ro.recents.grid and Go Layout [2/2]  [maxwen]
-
- * system/netd
-3bc871c  netd: Consolidate restrict apps methods  [Sam Mortimer]
 
