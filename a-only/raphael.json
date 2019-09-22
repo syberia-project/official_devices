@@ -11,13 +11,13 @@
       "url": "http://tiny.cc/latestuninstaller"
     }
   ],
-  "filename": "syberia_raphael-v2.9-20190907-0207-OFFICIAL.zip",
+  "filename": "syberia_raphael-v2.9-20190922-0126-OFFICIAL.zip",
   "changelog": "",
-  "filesize": "568923896",
-  "md5": "635c5058439ba6b83cba9c276952a82e",
-  "build_date": "20190907",
+  "filesize": "581315783",
+  "md5": "1410c4564b97d24654e2f46750300900",
+  "build_date": "20190922",
   "device": "raphael",
-  "url": "https://sourceforge.net/projects/syberiaos/files/raphael/syberia_raphael-v2.9-20190907-0207-OFFICIAL.zip/download",
+  "url": "https://sourceforge.net/projects/syberiaos/files/raphael/syberia_raphael-v2.9-20190922-0126-OFFICIAL.zip/download",
   "donate_url": "https://syberiaos.com/links",
   "developer_url": "http://github.com/syberia-project",
   "news_url": "http://github.com/syberia-project",
