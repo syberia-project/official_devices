@@ -1,0 +1,17 @@
+{
+  "response": [
+    {
+      "device_model": "Redmi 3S/3X",
+      "datetime": 1579901890,
+      "version": "v3.3",
+      "size": "615991469",
+      "device_codename": "land",
+      "url": "https://sourceforge.net/projects/syberiaos/files/land/syberia_land-v3.3-20200124-2148-OFFICIAL.zip/download",
+      "developer": "weritos",
+      "filename": "syberia_land-v3.3-20200124-2148-OFFICIAL.zip",
+      "id": "d3e880f64a56dc89ff4d5aeafd38959e0cf9fe17",
+      "romtype": "OFFICIAL",
+      "device_brand": "Xiaomi"
+    }
+  ]
+}
