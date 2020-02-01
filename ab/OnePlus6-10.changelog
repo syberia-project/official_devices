@@ -1,449 +1,93 @@
 =============
-   2020-01-25
+   2020-02-01
 =============
- * art
-ad19029  Revert "Disable JNI native whitelist check"  [DennySPB]
-
- * device/oneplus/oneplus6
-49d4409  Utilize power hal for double tap to wake  [DennySPB]
 
  * frameworks/base
-c7f8638  SystemUI: fix qs footer divider width  [maxwen]
-38be3ca  Avoid system reboot while invalidate LegacyGlobalAction  [zhiqxion]
-6d47eca  wm::DisplayRotation: Limit WFD UIBC rotation to primary displays  [Indranil]
-915530f  Allow to hide arrow for back gesture [1/2]  [Nicolas Dhouailly]
-055900a  Volume panel: avoid multiple animations on touch spam  [Giuseppe Maggio]
-b179aa5  Volume panel: Adjust the left padding  [Alex]
+5ec9692  SettingsLib: Don't show system overlays on apps list  [Henrique Silva]
+67ea84f  Updates to "Context-aware Bluetooth airplane mode"  [Ugo Yu]
+fddcc45  Updates to various icons  [Dan Sandler]
 
- * kernel/oneplus/sdm845
-d7b2dd9  ANDROID: cpufreq: times: record fast switch frequency transitions  [Connor O'Brien]
-89cf9c9  psi: Fix a division error in psi poll()  [Johannes Weiner]
-cd84b18  sched/psi: Fix sampling error and rare div0 crashes with cgroups and high uptime  [Johannes Weiner]
-c023ff1  mm/page_alloc.c: free order-0 pages through PCP in page_frag_free()  [Aaron Lu]
-83fbef6  lockref: Limit number of cmpxchg loop retries  [Jan Glauber]
-be892d4  sched/numa: Stagger NUMA balancing scan periods for new threads  [Mel Gorman]
-a29ad5e  Revert "sched/numa: Delay retrying placement for automatic NUMA balance after wake_affine()"  [Ethan Halsall]
-8046bb2  sched/numa: Delay retrying placement for automatic NUMA balance after wake_affine()  [Mel Gorman]
-112308d  sched/fair: Consider SD_NUMA when selecting the most idle group to schedule on  [Mel Gorman]
-3631e72  sched/fair: Do not migrate on wake_affine_weight() if weights are equal  [Mel Gorman]
-9724aac  sched/fair: Defer calculation of 'prev_eff_load' in wake_affine_weight() until needed  [Mel Gorman]
-eeccd81  sched/fair: Do not migrate if the prev_cpu is idle  [Mel Gorman]
-7632c95  sched: restore 0644 files permission after caf merge  [DennySPB]
-e8f18b3  Revert "sched/fair.c: Bring back the original intent of sync_boost"  [DennySPB]
-092083c  sched/fair: fix constant logical operand warning  [Ethan Halsall]
-df3e884  sched/fair: Restructure wake_affine*() to return a CPU id  [Mel Gorman]
-f5bcf83  sched/fair: Remove unnecessary parameters from wake_affine_idle()  [Mel Gorman]
-b2bdbb8  sched/fair: Only immediately migrate tasks due to interrupts if prev and target CPUs share cache  [Mel Gorman]
-63b7519  sched/core: Address more wake_affine() regressions  [Peter Zijlstra]
-aceadfc  sched/core: Fix wake_affine() performance regression  [Peter Zijlstra]
-788d993  sched/fair: Fix wake_affine_llc() balancing rules  [Peter Zijlstra]
-ea9526d  sched/fair: Fix wake_affine() for !NUMA_BALANCING  [Peter Zijlstra]
-68b0ae6  sched/numa: Scale scan period with tasks in group and shared/private  [Rik van Riel]
-dea029b  sched/numa: Slow down scan rate if shared faults dominate  [Rik van Riel]
-0a915c8  sched/numa: Hide numa_wake_affine() from UP build  [Thomas Gleixner]
-fa98497  sched/fair: Remove effective_load()  [Rik van Riel]
-ad5571b  sched/numa: Implement NUMA node level wake_affine()  [Rik van Riel]
-3d9bf03  sched/fair: Simplify wake_affine() for the single socket case  [Rik van Riel]
-3c446c1  sched/numa: Override part of migrate_degrades_locality() when idle balancing  [Rik van Riel]
-0cf6f5e  sched/core: Optimize sched_feat() for !CONFIG_SCHED_DEBUG builds  [Patrick Bellasi]
-8b34d69  sched/rt: Make update_curr_rt() more accurate  [Wen Yang]
-fa1fb1b  sched/fair: Do not migrate due to a sync wakeup on exit  [Peter Zijlstra]
-1008603  sched/fair: Avoid calling sync_entity_load_avg() unnecessarily  [Viresh Kumar]
-b72e194  BACKPORT: sched/fair: Rearrange select_task_rq_fair() to optimize it  [Viresh Kumar]
-b048367  sched/fair: improve select_task_rq_fair coding style  [Ethan Halsall]
-e9d91a2  BACKPORT: sched/topology: Add SD_ASYM_CPUCAPACITY flag detection  [Morten Rasmussen]
-2a603af  defconfig: enable CFS bandwidth  [DennySPB]
-9a02f54  [BACKPORT v.4.9.y 2/2] sched/fair: Fix -Wunused-but-set-variable warnings  [Qian Cai]
-89cb957  [BACKPORT v4.9.y 1/2] sched/fair: Fix low cpu usage with high throttling by removing expiration of cpu-local slices  [Dave Chiluk]
-577fa7f  Revert "[BACKPORT] sched/fair: Fix low cpu usage with high throttling by removing expiration of cpu-local slices"  [Rapherion Rollerscaperers]
-4ae5f93  proc: base: move task boost out of walt guard  [DennySPB]
-38076f9  [BACKPORT] sched: Add task boost feature  [blong]
-7241df4  sched/fair: Use rq_lock/unlock in online_fair_sched_group  [Phil Auld]
-5258554  sched/fair: Fix infinite loop in update_blocked_averages() by reverting a9e7f6544b9c  [Linus Torvalds]
-7216170  schedutil: checkout to 4.14 from krdag0n kernel  [DennySPB]
-8a2ca2a  Revert "cpufreq: Avoid leaving stale IRQ work items during CPU offline"  [DennySPB]
-a338dcf  cpufreq: remove no longer used is_slow function  [DennySPB]
-83122a5  cpufreq: Allow dynamic switching with CPUFREQ_ETERNAL latency  [Viresh Kumar]
-f70e85f  cpufreq: Add CPUFREQ_NO_AUTO_DYNAMIC_SWITCHING cpufreq driver flag  [Viresh Kumar]
-88ed6f4  cpufreq: Replace "max_transition_latency" with "dynamic_switching"  [Viresh Kumar]
-159fbf0  cpufreq: governor: Drop min_sampling_rate  [Viresh Kumar]
-d8cdd05  sched/walt: Introduce SCHED_CPUFREQ_CONTINUE for schedutil  [Puja Gupta]
-36467b7  clk: qcom: clk-cpu-osm: Use CLK_GET_RATE_NOCACHE  [Sultan Alsawaf]
-6e5e331  Merge tag '6cebe2a5c10a676396b46ae4626c168e43db37b5' into staging/10.0  [DennySPB]
-2cd752a  Merge tag 'a2c598a76f5c39e569849007a19aa3ecb1b5497b' into staging/10.0  [DennySPB]
-4a0e2b1  Merge tag '780611109c73a1f3d6da6ddd6ca25fa7ce853641' into staging/10.0  [DennySPB]
-eac06d6  Merge tag '4f7d3b88983d4ac4f5dd5425f0b08ef61d56e133'  [DennySPB]
-3ee63ee  Merge tag 'LA.UM.8.3.r1-07200-sdm845.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.9  [DennySPB]
-a536095  Add battery_health node  [yangfangbiao]
-c6c908e  Make advance srgb mode color check consistent with P  [roger.li]
-bec6db8  Make natural mode color check consistent with P  [roger.li]
-3616b57  Optimize power off charging animation  [Sunil Shinde]
-4284dc9  Initialize completion variable before cdm submit happens.  [v-zhiyuan.sun]
-b3b058d  Synchronize codes for Oneplus 6T OxygenOS 10.3.1/ Oneplus 6 OxygenOS 10.3.1  [Gopi Sai Teja]
-
- * packages/apps/Settings
-839a510  Settings: Allow to hide arrow for back gesture [2/2]  [Nicolas Dhouailly]
+ * packages/apps/Launcher3
+d526fc3  Revert "Enable LAUNCHER3_PROMISE_APPS_IN_ALL_APPS"  [blinoff82]
+420f793  New Recents: add kill action to app shortcuts popup  [ezio84]
 
  * vendor/syberia
-6584420  Merge "build: add support for trinket" into 10.0  [dennyspb]
+4f8dcbf  Merge "Update raw animations and drawables from Pixel 4 XL" into 10.0  [blinov.in]
+dc5a5df  Merge "Bring back animations in Settings" into 10.0  [blinov.in]
 
 =============
-   2020-01-24
+   2020-01-31
 =============
-
- * device/oneplus/oneplus6
-544fa14  init.postboot.sh: cleanup scheduler and schedutil setup  [DennySPB]
-61f8209  Revert "oneplus6: add QDCM profiles from OnePlus6-user-10-QKQ1.190716.003-1910050400-release-keys"  [DennySPB]
-0d1bb41  Use 8Gb dalvik heap size config  [DennySPB]
-
- * frameworks/av
-0df6756  audio policy: fix capture policy for HOTWORD source  [Eric Laurent]
-dd23562  Restore stream [dis]connect parameters in deprecated state  [Mikhail Naganov]
-d63212a  Fix the name of the constant for device [dis]connect parameter  [Mikhail Naganov]
-fc9bb30  Cast enum to uint32_t before comparing with AUDIO_MODE_CNT  [Yi Kong]
-092bc73  audiopolicy: Match DIRECT and MMAP_NOIRQ flags exactly in IOProfile  [Mikhail Naganov]
-6a86b2b  Require HW AV sync flag match for compatible output IOProfile  [Mikhail Naganov]
-b058299  av: Add AUDIO_OUTPUT_FLAG_MMAP_NOIRQ flag.  [Aniket Kumar Lata]
-8de12f1  AudioPolicyManager: Handle error from setInputDevice in startInput  [Mikhail Naganov]
-d73727d  Remove usages of USE_XML_AUDIO_POLICY_CONF  [Mikhail Naganov]
-531bc26  Merge tag 'LA.UM.8.8.1.r1-01100-QCS605.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av  [DennySPB]
+ * art
+c54fe0f  Enable support of VecLoad/VecStore in LSE  [xueliang.zhong]
 
  * frameworks/base
-14bce47  Sync tile: make it behave like every other tile Instead of switching icon drawable based on state (on/off) now it will switch color  [00day0]
-9740485  StatusBarMobileView: Fix gap when toggling airplane mode  [Willi Ye]
-f6e7309  QSFooterImpl: Animate multiuser avatar  [rajadeja]
-2cc7723  Add Network Preference Bitmaps (1/2)  [Nathan Harold]
-a1c0af0  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
-c595d4c  SystemUI: DigitalClock: increase linespacing  [DennySPB]
-c63f8cf  SystemUI: fixup analog clock for aod support  [maxwen]
-cbca180  SystemUI: TypeClock: adapt to recents clock keyguard changes  [DennySPB]
-b579ff1  SystemUI: custom keyguard clock kick off  [maxwen]
-cde7cef  base: Fix list style alert dialog to use system font  [maxwen]
-921d1d1  DozeSensors: do not use binned brightness sensor for proximity if not supported  [Demon000]
-0f65399  PackageInstaller: Remove side padding from the dialog  [Anushek Prasal]
-eb5fc7c  SystemUI: Show charging status in addition to trust granted/transient status  [Scott Warner]
-58a1e2e  Properly set fonts and icons on keyguard when changing styles  [ezio84]
-cfbb69b  Fonts: Restore light font styling of AOSP  [Pranav Vashi]
-e9583ca  Fonts: Add regular / light font config  [Pranav Vashi]
-18842ee  SystemUI: QS: Fix mobile data usage qs details view content  [SpiritCroc]
-6317477  DO NOT MERGE Revert "Adding the privacy chip to the CarStatusBar"  [Priyank Singh]
-3c580d7  SystemUI: add CAF VoLTE HD icon [1/2]  [DennySPB]
-3ae07e6  SystemUI: update HD (VoLTE) icon  [Adarsh-MR]
-b765a3b  SystemUI: Add Asus VoLTE Icon [1/2]  [PainKiller3]
-7e7b7d9  VoLTE Icon - User Selectable VoLTE Icon [1/2]  [SuperDroidBond]
-4a097ba  Add VOLTE icon toggle [1/2]  [SagarMakhar]
-04e3692  SystemUI: Show 4G instead of LTE switch [1/2]  [Alex Cruz]
-9447389  Fix VOLTE icon color on Light statusbar  [Adarsh-MR]
-33dbd50  VoLTE: Add New Minimal Icon  [SuperDroidBond]
-580eba7  base: Fix padding for VoLTE icon  [Josh Fox (XlxFoXxlX)]
-6ac5708  SystemUI: Enhancement for volte icon  [Weijie Wang]
-4d62deb  SystemUI: Query IMS state after CapabilityCallback is regisered  [Qimeng Pan]
-632e94a  SystemUI: Fix HD icon missing  [Weijie Wang]
-a09ec63  Adapt to IMS registration changes.  [Bill Peckham]
-4e94388  SystemUI: Refactor the feature of volte icon  [Weijie Wang]
-35dbdd0  SystemUI: Fix volte icon doesn't update in real time  [Weijie Wang]
-bdc1e0e  SystemUI: Add new configuration for displaying Volte icon  [Weijie Wang]
-ea685ae  Remove previous VoLTE icon implementation  [DennySPB]
-1768158  Fix Another SystemUI crash  [SuperDroidBond]
-e24e2c8  Fix StorageManagerService linkToDeath more than one time when vold/storaged died.  [peter.zhang]
-2e2f074  Camera: Avoid removing valid repeating requests  [Emilian Peev]
-ac82bbf  Revert "Introduce bold digital and Samsung like lockscreen clocks"  [DennySPB]
-
- * frameworks/native
-39ac985  Add dalvik-heap device configs for 8/12/16 GiB devices  [Simao Gomes Viana]
-
- * hardware/libhardware
-01dc363  libhardware: Add new display types.  [Dileep Marchya]
-71d66cd  audio: Add audio amplifier HAL  [Ethan Chen]
-517869a  hardware/libhw: Add display_defs.h to declare custom enums/flags  [Arun Kumar K.R]
-
- * hardware/libhardware_legacy
-b70804b  Add wifi_add_or_remove_virtual_intf() to the legacy wifi hal  [Purushottam Kushwaha]
-
- * kernel/oneplus/sdm845
-d395c30  Merge branch 'android-4.9-q' of https://android.googlesource.com/kernel/common  [DennySPB]
-c8157b0  sched/fair: Optimize Schedtune boosted task placement  [Zachariah Kennedy]
-71feef2  Revert "sched/fair: Optimize Schedtune boosted task placement"  [DennySPB]
-b8dc6b1  sched/fair: Avoid force newly idle load balance if have iowait task  [Maria Yu]
-e44bdfb  Revert "FROMLIST: sched/fair: util_est: fast ramp-up EWMA on utilization increases"  [Yousef Algadri]
-656f556  schedutil: Add cpu_frequency traces for each cpu in the policy  [Kyle Yan]
-02f70dc  sched/fair: Fix util_avg of new tasks for asymmetric systems  [Quentin Perret]
-1b47818  sched: boost: fix build with WALT enabled  [DennySPB]
-61e2b29  Revert "walt: enable pelt based stats"  [DennySPB]
-9aed6f8  Makefile: Use -Wno-psabi for GCC  [Yousef Algadri]
-2c434f6  ANDROID: selinux: modify RTM_GETLINK permission  [Jeff Vander Stoep]
+4ed1756  base: Remove some overlays  [blinoff82]
+d2b70af  SystemUI: fix qs footer divider width  [maxwen]
 
  * packages/apps/Bluetooth
-ad8acca  Check Null-safeness when switching optional-codecs state  [Nauval Rizky]
-
- * packages/apps/DeskClock
-ed1ed82  DeskClock: Use system fonts  [Pranav Vashi]
-
- * packages/apps/Dialer
-b0ad895  AospThemeImpl: fully white might NOT be uninitialized!  [SpiritCroc]
-f0e0182  Fix Dialer memory leaks  [Mengjun Leng]
-f3e22e5  Proximity: Check pocket state before enabling proximity sensor  [DennySPB]
-
- * packages/apps/Launcher3
-4dc1f89  Launcher3: check need for restart on resume  [Ali B]
-e0a516b  RecentsUiOverrides: Check if restart needed on swipe up  [Ali B]
-6a33f06  Settings restart watcher improvements  [Ezio Lacandia Bijelkic]
-9a4cc9c  Restart with change only on exit  [Alex Cruz]
-debf6cc  SystemShortcut: Add uninstall option  [Giuseppe Maggio]
-
- * packages/apps/Settings
-9947548  Deselect items that are not meant to be clicked on in "About Phone"  [Alex Cruz]
-fe1867e  InstalledAppDetails: fix refreshing storage summary after force stop  [Altaf-Mahdi]
-dd98f33  Optimize NetworkScan for only User-Enabled RANs (2/2)  [Nathan Harold]
-bcffeb0  Settings: Import AccountFeatureProviderImpl from Pixel  [jhenrique09]
-
- * packages/apps/SyberiaSettings
-16dceba  Revert "Add footer with clarifying about ambient music"  [DennySPB]
-
- * packages/apps/ThemePicker
-52f1335  ThemePicker: Prevent random crash  [Ido Ben-Hur]
-8d40a11  ThemeFragment: handle case where no custom wallpaper is available  [shagbag913]
-
- * packages/services/Telecomm
-be04838  CallLog: Get rid of warning  [Michael W]
-80bb62c  services_Telecomm: Use system fonts  [Pranav Vashi]
-
- * packages/services/Telephony
-300586b  Telephony: Use System Fonts  [Pranav Vashi]
+4c07104  Remove intent filter without any action  [Bruno Martins]
+29fceb8  Bluetooth: Remove Duplicate permission  [sravan voleti]
 
 =============
-   2020-01-23
+   2020-01-30
+=============
+
+ * packages/apps/Settings
+a29d1d2  team: Add maintainer for Xiaomi Redmi Note 8  [blinoff82]
+
+ * vendor/syberia
+c5583f3  Add ginkgo to official devices  [blinoff82]
+
+=============
+   2020-01-29
 =============
 
  * frameworks/base
-b896a89  Revert "KeyguardClockPositionAlgorithm: Allow forcing default clockY positioning"  [DennySPB]
-
- * frameworks/opt/telephony
-3e0362f  2G wants proper signal strength too  [Arne Coucheron]
-c2b04b1  Telephony: Fix out of boundary for non telephony device.  [zhaoyouyi]
-
- * kernel/oneplus/sdm845
-5af9b7f  Merge 4.9.211 into android-4.9-q  [Greg Kroah-Hartman]
-80f0831  Linux 4.9.211  [Greg Kroah-Hartman]
-1bdac6c  regulator: ab8500: Remove SYSCLKREQ from enum ab8505_regulator_id  [Stephan Gerhold]
-f3a9888  perf probe: Fix wrong address verification  [Masami Hiramatsu]
-c87b9e7  scsi: core: scsi_trace: Use get_unaligned_be*()  [Bart Van Assche]
-9b6e2c4  scsi: target: core: Fix a pr_debug() argument  [Bart Van Assche]
-154d9c5  scsi: bnx2i: fix potential use after free  [Pan Bian]
-2dd06d8  scsi: qla4xxx: fix double free bug  [Pan Bian]
-501cdba  scsi: esas2r: unlock on error in esas2r_nvram_read_direct()  [Dan Carpenter]
-5774dd5  reiserfs: fix handling of -EOPNOTSUPP in reiserfs_for_each_xattr  [Jeff Mahoney]
-230b578  cfg80211: check for set_wiphy_params  [Johannes Berg]
-c136d25  cw1200: Fix a signedness bug in cw1200_load_firmware()  [Dan Carpenter]
-5f34563  xen/blkfront: Adjust indentation in xlvbd_alloc_gendisk  [Nathan Chancellor]
-d9e76e8  net: usb: lan78xx: limit size of local TSO packets  [Eric Dumazet]
-3930b48  tcp: fix marked lost packets not being retransmitted  [Pengcheng Yang]
-068300d  r8152: add missing endpoint sanity check  [Johan Hovold]
-4b800e1  net/wan/fsl_ucc_hdlc: fix out of bounds write on array utdm_info  [Colin Ian King]
-e8efa7c  net: dsa: tag_qca: fix doubled Tx statistics  [Alexander Lobakin]
-bde7568  macvlan: use skb_reset_mac_header() in macvlan_queue_xmit()  [Eric Dumazet]
-717e9a5  batman-adv: Fix DAT candidate selection on little endian systems  [Sven Eckelmann]
-2564ab9  netfilter: arp_tables: init netns pointer in xt_tgdtor_param struct  [Florian Westphal]
-2afd32b  netfilter: fix a use-after-free in mtype_destroy()  [Cong Wang]
-4a0a338  cfg80211: fix page refcount issue in A-MSDU decap  [Felix Fietkau]
-3407f51  arm64: dts: agilex/stratix10: fix pmu interrupt numbers  [Dinh Nguyen]
-0351da8  scsi: fnic: fix invalid stack access  [Arnd Bergmann]
-e41f5af  scsi: fnic: use kernel's '%pM' format option to print MAC  [Andy Shevchenko]
-79ed6ec  USB: serial: keyspan: handle unbound ports  [Johan Hovold]
-72af08e  USB: serial: io_edgeport: handle unbound ports on URB completion  [Johan Hovold]
-3d70345a  USB: serial: io_edgeport: use irqsave() in USB's complete callback  [John Ogness]
-0320e2e  net: stmmac: Enable 16KB buffer size  [Jose Abreu]
-1f0d719  net: stmmac: 16KB buffer must be 16 byte aligned  [Jose Abreu]
-28f0430  mm/page-writeback.c: avoid potential division by zero in wb_min_max_ratio()  [Wen Yang]
-a9c122e  perf report: Fix incorrectly added dimensions as switch perf data file  [Jin Yao]
-3f085b32  perf hists: Fix variable name's inconsistency in hists__for_each() macro  [Yuya Fujita]
-e8b419b  x86/efistub: Disable paging at mixed mode entry  [Ard Biesheuvel]
-940c098  usb: core: hub: Improved device recognition on remote wakeup  [Keiya Nobuta]
-ddfa91a  scsi: mptfusion: Fix double fetch bug in ioctl  [Dan Carpenter]
-0a35412  USB: serial: quatech2: handle unbound ports  [Johan Hovold]
-bbd5aeb  USB: serial: io_edgeport: add missing active-port sanity check  [Johan Hovold]
-79410c8  USB: serial: ch341: handle unbound port at reset_resume  [Johan Hovold]
-0a0495e  USB: serial: suppress driver bind attributes  [Johan Hovold]
-48e681f  USB: serial: opticon: fix control-message timeouts  [Johan Hovold]
-bd72a84  USB: serial: simple: Add Motorola Solutions TETRA MTP3xxx and MTP85xx  [Jerónimo Borque]
-3578ff7  iio: buffer: align the size of scan bytes to size of the largest element  [Lars Möllendorf]
-5dbde46  block: fix an integer overflow in logical block size  [Mikulas Patocka]
-8021ccd  Fix built-in early-load Intel microcode alignment  [Jari Ruusu]
-1883246  ALSA: seq: Fix racy access for queue timer in proc read  [Takashi Iwai]
-92e9a80  clk: Don't try to enable critical clocks if prepare failed  [Guenter Roeck]
-1a087b5  dt-bindings: reset: meson8b: fix duplicate reset IDs  [Martin Blumenstingl]
-221c195  ocfs2: call journal flush to mark journal as empty after journal recovery when mount  [Kai Li]
-455030c  hexagon: work around compiler crash  [Nick Desaulniers]
-a63c9fe  hexagon: parenthesize registers in asm predicates  [Nick Desaulniers]
-1cb9ccb  ioat: ioat_alloc_ring() failure handling.  [Alexander.Barabash@dell.com]
-2793bba  MIPS: Prevent link failure with kcov instrumentation  [Jouni Hogander]
-ae1d4e9  rseq/selftests: Turn off timeout setting  [Mathieu Desnoyers]
-379b0a9  scsi: libcxgbi: fix NULL pointer dereference in cxgbi_device_destroy()  [Varun Prakash]
-19f3261  gpio: mpc8xxx: Add platform device to gpiochip->parent  [Johnson CH Chen (陳昭勳)]
-a4e032e  rtc: msm6242: Fix reading of 10-hour digit  [Kars de Jong]
-8531936  f2fs: fix potential overflow  [Chao Yu]
-e53fe75  rtlwifi: Remove unnecessary NULL check in rtl_regd_init  [Nathan Chancellor]
-6d6a7a0  spi: atmel: fix handling of cs_change set on non-last xfer  [Mans Rullgard]
-d0bf048  mtd: spi-nor: fix silent truncation in spi_nor_read()  [Sergei Shtylyov]
-4758358  media: exynos4-is: Fix recursive locking in isp_video_release()  [Seung-Woo Kim]
-7afe9c3  tty: serial: pch_uart: correct usage of dma_unmap_sg  [Peng Fan]
-a18a51a  tty: serial: imx: use the sg count from dma_map_sg  [Peng Fan]
-04d8497  powerpc/powernv: Disable native PCIe port management  [Oliver O'Halloran]
-c21e3d1  PCI/PTM: Remove spurious "d" from granularity message  [Bjorn Helgaas]
-fc49aa7  compat_ioctl: handle SIOCOUTQNSD  [Arnd Bergmann]
-0d39e3f  clk: samsung: exynos5420: Preserve CPU clocks configuration during suspend/resume  [Marian Mihailescu]
-66998c4  mei: fix modalias documentation  [Alexander Usyskin]
-ab97a94  iio: imu: adis16480: assign bias value only if operation succeeded  [Alexandru Ardelean]
-5765dba  platform/x86: asus-wmi: Fix keyboard brightness cannot be set to 0  [Jian-Hong Pan]
-78171dc  scsi: sd: Clear sdkp->protection_type if disk is reformatted without PI  [Xiang Chen]
-1f04240  scsi: enclosure: Fix stale device oops with hot replug  [James Bottomley]
-e72f5fe  RDMA/srpt: Report the SCSI residual to the initiator  [Bart Van Assche]
-a1ac6bd  cifs: Adjust indentation in smb2_open_file  [Nathan Chancellor]
-16514f2  hsr: reset network header when supervision frame is created  [Taehee Yoo]
-699c96b  gpio: Fix error message on out-of-range GPIO in lookup table  [Geert Uytterhoeven]
-c664cdb  iommu: Remove device link to group on failure  [Jon Derrick]
-26cd0d2  rtc: mt6397: fix alarm register overwrite  [Ran Bi]
-33cab7a  dccp: Fix memleak in __feat_register_sp  [YueHaibing]
-8e508ac  ext4: add more paranoia checking in ext4_expand_extra_isize handling  [Theodore Ts'o]
-d1c8138  ext4: fix use-after-free race with debug_want_extra_isize  [Barret Rhoden]
-7c41a86  wimax: i2400: Fix memory leak in i2400m_op_rfkill_sw_toggle  [Navid Emamdoost]
-49fcab5  wimax: i2400: fix memory leak  [Navid Emamdoost]
-6ba34f5  media: usb:zr364xx:Fix KASAN:null-ptr-deref Read in zr364xx_vidioc_querycap  [Vandana BN]
-ca60f42  mac80211: Do not send Layer 2 Update frame before authorization  [Jouni Malinen]
-ab56789  cfg80211/mac80211: make ieee80211_send_layer2_update a public function  [Dedy Lansky]
-246eee7  arm64: Make sure permission updates happen for pmd/pud  [Laura Abbott]
-4f45a0a  arm64: Enforce BBM for huge IO/VMAP mappings  [Will Deacon]
-3103206  arm64: mm: Change page table pointer name in p[md]_set_huge()  [Ben Hutchings]
-17c4139  arm64: don't open code page table entry creation  [Kristina Martsenko]
-120db14  arm64: mm: BUG on unsupported manipulations of live kernel mappings  [Ard Biesheuvel]
-65b32fd  rsi: add fix for crash during assertions  [Sanjay Konduri]
-cbad0dc  fs/select: avoid clang stack usage warning  [Arnd Bergmann]
-f8f6561  ethtool: reduce stack usage with clang  [Arnd Bergmann]
-f6d0187  HID: hidraw, uhid: Always report EPOLLOUT  [Jiri Kosina]
-3f2c636  HID: hidraw: Fix returning EPOLLOUT from hidraw_poll  [Marcel Holtmann]
-0856815  hidraw: Return EPOLLOUT from hidraw_poll  [Fabian Henneke]
-
- * packages/apps/Launcher3
-d101550  Protected Apps: Switch to BiometricPrompt  [Luca Stefani]
-b26ac6d  Protected Apps: prettify app launch dialog  [DennySPB]
-dcdf4e9  Launcher: implement hidden & protected apps  [Joey]
-
- * packages/apps/Settings
-2b76267  Show a warning dialog before network search  [Nagasawa Dai]
-bc0a405  Settings: Fix textApperance of our modified gesture dialog  [maxwen]
-dfcf975  Settings: Use global fonts in styles  [Pranav Vashi]
-
- * packages/apps/SyberiaSettings
-17499ed  SyberiaSettings: add CAF VoLTE HD icon [2/2]  [DennySPB]
-
-=============
-   2020-01-22
-=============
-
- * device/oneplus/oneplus6
-0d79726  Sepolicy: allow audio hal to do binder calls to libperfmgr  [DennySPB]
-b2d2110  PowerHints: cleanup and optimize  [DennySPB]
-
- * external/zlib
-a3d0dc6  Merge branch 'quartz' of https://github.com/AOSPA/android_external_zlib  [DennySPB]
-
- * packages/apps/Dialer
-2e53a03  Add setting to enable Do Not Disturb during calls  [blunden]
-
- * packages/apps/SyberiaSettings
-386ecfb  Add Asus VoLTE Icon [2/2]  [PainKiller3]
-2977920  VoLTE Icon - User Selectable VoLTE Icon [2/2]  [SuperDroidBond]
-52afe9d  StatusBar: VoLTE icon toggle [2/2]  [DennySPB]
-26dab9b  StatusBar: 4G instead of LTE option [2/2]  [DennySPB]
-
- * system/vold
-9062c84  Fix the overflow issue in Checkpoint  [Qilin Tan]
-
-=============
-   2020-01-21
-=============
- * art
-8e85b05  Disable JNI native whitelist check  [Orion Hodson]
-
- * bionic
-9e0e1f3  Neon-optimized version of the GNU symbol calculation  [Ryan Prichard]
-ee121fe  Restore handling of R_GENERIC_NONE relocations  [Ryan Prichard]
-
- * device/oneplus/oneplus6
-a1580e4  Revert "Power: Use property node to manage hints"  [DennySPB]
-
- * frameworks/av
-8aeced7  cameraserver: filter out non-HAL3 devices from HIDL addListener.  [Jayant Chowdhary]
-314b1bd  add the AV1 in the VideoCodingMapEntry  [chunlei.guo]
-ff5bb36  Use stride in ycbcr for YUV->YUV convert  [Chong Zhang]
-e0d7dbd  Change lock to lockYCbCr for to get the actual y,cb,cr.  [Jessie Hao]
-4e0d14f  cameraserver: Avoiding deadlocks while calling isPublicallyHiddenSecureCamera().  [Jayant Chowdhary]
-7221ade  Camera: Set input timestamp before returning depth jpegs  [Emilian Peev]
-aab9e25  C2SoftMpeg4Enc: Handle yStride not equal to aligned width  [Harish Mahendrakar]
+58d2eec  Volume panel: Long press settings button to launch Sound Settings  [Alex]
 
  * frameworks/native
-45ac990  add the OMX_VIDEO_CodingAV1 in the OMX_VIDEO_CODINGTYPE  [chunlei.guo]
-cec9951  Fix testVerifyStatsExternalConsistent case  [Chuwei Xu]
-929ac78  Change the position of addAndGetFrameTimestamps when queueBuffer  [JihCheng Chiu]
-a06edc2  Vulkan: Improve error translation in CreateSwapChainKHR  [Anders Frostad Pedersen]
-c6ec726  Vulkan: correctly expose Vulkan entry points  [Yiwei Zhang]
-c51f732  fix -Wdangling-gsl in test  [Nick Desaulniers]
-1a26c90  libbinder: remove INT32_MAX definition  [Steven Moreland]
-12aa72e  Remove "required:"  [Marco Nelissen]
-2ea8a0b  fix -Wreorder-init-list  [Nick Desaulniers]
-9d7482e  fix -Wreorder-init-list  [Nick Desaulniers]
-dc0e547  EGL: Fix repeated extension lookups  [Cody Northrop]
-5224caa  {math|ui} fix -Wimplicit-int-float-conversion  [Nick Desaulniers]
-663a1c4  Remove unnecessary link library  [Marco Nelissen]
-bf28225  Link libvndksupport dynamically instead of statically.  [Peter Collingbourne]
+4a8ed5e  SurfaceFlinger: lock mStateLock when modifying allowed configs  [Ady Abraham]
 
- * kernel/oneplus/sdm845
-b0e9337  msm: vidc: remove additional checks in response_handler  [Govindaraj Rajagopal]
-4023c89  asoc: fix for fm not routing to speaker  [Shalini Manjunatha]
+=============
+   2020-01-28
+=============
 
- * packages/apps/Dialer
-ee00f03  Update RU translations  [blinoff82]
-
- * packages/services/Telecomm
-93137d4  Add synchronized lock when set call state ANSWERED  [Jiangli Liu]
-
- * system/core
-9d1882b  init: only provide control message results for devices launching > Q  [Tom Cherry]
-7b0d418  Reland^2: "init: run property service in a thread"  [Tom Cherry]
-1ef64e6  Change search order for system processes in vndk_lite.  [Michael Bestas]
-22e853d  Set /sys/power/wake_lock permissions on init.  [Tri Vo]
-e9bbff5  init: handle getpeercon() errors  [Tom Cherry]
-63b13b8  init: simplify async restorecon  [Tom Cherry]
-249aa89  init: add error handling in control message  [Wei Wang]
-2d45144  init: set up SelinuxAuditCallback() earlier  [Tom Cherry]
-
- * system/sepolicy
-539fcfa  app_zygote need access to oem partition  [Henrik Baard]
-3ed5570  Mark mediacodec_2{6,7,8} as hal_omx_server  [Pierre-Hugues Husson]
-
- * system/vold
-f03bb27  Consistently use CLOCK_MONOTONIC for timing encryption  [Denis Hsu]
+ * frameworks/base
+9b9cc0a  base: Add San Francisco Display Pro font [1/2]  [blinoff82]
+8a10145  FODCircleView: FOD pressed state [1/2]  [Stallix]
+c93727d  FODCircleView: fix incorrect position on keyguard  [00day0]
+bf5e01e  FODCircleView: add a transparent icon for pressed state  [XiNGRZ]
 
  * vendor/syberia
-d11895a  Cleanup official devices list  [DennySPB]
+b67f53a  SyberiaSettings: Add San Francisco Display Pro font [2/2]  [blinoff82]
 
 =============
-   2020-01-20
+   2020-01-27
 =============
 
- * frameworks/av
-a20373b  CameraService: optionally link motorized camera hooks  [DennySPB]
+=============
+   2020-01-26
+=============
 
- * kernel/oneplus/sdm845
-9d5001b  defconfig: Use FQ as default Fair Queue instead  [Raphiel Rollerscaperers]
+ * frameworks/base
+c4c4ee8  Add haptic feedback to QS tiles [1/2]  [Evisceration]
 
- * packages/apps/ThemePicker
-1c8b994  Revert "ThemePicker: store clock plugin as JSON"  [DennySPB]
+ * official_devices
+6a9413d  raphael: build done  [blinoff82]
+449e984  land: build done  [blinoff82]
+
+ * packages/apps/Settings
+3be3abc  Fix typo in RU translation  [blinoff82]
+b0e6202  Remove battery percentage switch from main Battery menu  [blinoff82]
+dad2c3d  land: change XDA link  [blinoff82]
+
+ * packages/apps/SyberiaSettings
+5c5704e  Syberia: FOD pressed state [2/2]  [Joey Huab]
+72355f6  Add haptic feedback to QS tiles [2/2]  [Evisceration]
 
  * vendor/syberia
-71c4e83  soong: optionally link motorized camera hooks  [DennySPB]
-
-=============
-   2020-01-19
-=============
+3fad662  Update raw animations and drawables from Pixel 4 XL  [Surge Raval]
+618e405  Bring back animations in Settings  [Surge Raval]
+1a7803c  Re add land to official devices  [blinoff82]
 
