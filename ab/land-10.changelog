@@ -1,0 +1,34 @@
+Device:
+- Fix Goodix FP (need patch)
+- Update QTI Bluetooth from LA.UM.8.6.r1-02600-89xx.0
+- Update GPS from LA.UM.8.6.r1-02600-89xx.0
+- Update peripheral manager from LA.UM.8.6.r1-02600-89xx.0
+- Update Time from LA.UM.8.6.r1-02600-89xx.0
+- Update CNE/DPM from LA.UM.8.6.r1-02900-89xx.0
+- Update DRM/Widevine/TEE from LA.UM.8.6.r1-02600-89xx.0
+- Update thermal blobs from LA.UM.8.6.r1-02600-89xx.0
+- Update WiFi Display from LA.UM.8.6.r1-02900-89xx.0
+- Partially Update QMI/Radio/IMS blobs from LA.UM.8.6.r1-02900-89xx.0
+- Update graphics stack from LA.UM.8.6.r1-02900-89xx.0
+- Update Media from LA.UM.8.6.r1-02900-89xx.0
+- Update perf blobs from LA.UM.8.6.r1-02600-89xx.0
+- Remove hw_acc effect
+- Don't advertise vorbis offloading support
+- Fix random glitshes green
+- Enable GL comp backpressure
+- Update init from LA.UM.8.6.r1-02900-89xx.0
+- Update cpusets & Add parameters for sound control
+- Update perfboostsconfig and Add perfconfigstore
+- Update powerhint from olive-user-9-PKQ1.190319.001-V10.3.5.0.PC
+- Improved sound (Thanks apb24rus )
+- Full Selinux Enforce
+
+ROM:
+- Merged february ASB (android-10.0.0_r29 tag)
+- V3.4
+- Added big circle/big dotted circle statusbar battery
+- Lockscreen media art fixes
+- Added LongShot
+- Added double tap to trigger doze option
+- OmniJaws weather provider and tile improvements
+- Edge notification lights improvements

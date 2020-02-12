@@ -2,14 +2,14 @@
   "response": [
     {
       "device_model": "Redmi 3S/3X",
-      "datetime": 1579901890,
-      "version": "v3.3",
-      "size": "615991469",
+      "datetime": 1581449330,
+      "version": "v3.4",
+      "size": "641802074",
       "device_codename": "land",
-      "url": "https://sourceforge.net/projects/syberiaos/files/land/syberia_land-v3.3-20200124-2148-OFFICIAL.zip/download",
+      "url": "https://sourceforge.net/projects/syberiaos/files/land/syberia_land-v3.4-20200211-1928-OFFICIAL.zip/download",
       "developer": "weritos",
-      "filename": "syberia_land-v3.3-20200124-2148-OFFICIAL.zip",
-      "id": "d3e880f64a56dc89ff4d5aeafd38959e0cf9fe17",
+      "filename": "syberia_land-v3.4-20200211-1928-OFFICIAL.zip",
+      "id": "7a529dc344910f58296f06de1b76c74f326e047463044bf31375ff603aa24ce1",
       "romtype": "OFFICIAL",
       "device_brand": "Xiaomi"
     }
