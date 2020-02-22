@@ -1,0 +1,17 @@
+{
+  "response": [
+    {
+      "device_codename": "ginkgo",
+      "url": "https://sourceforge.net/projects/syberiaos/files/ginkgo/syberia_ginkgo-v3.4-20200222-0008-OFFICIAL.zip/download",
+      "device_brand": "Xiaomi",
+      "device_model": "Redmi Note 8",
+      "version": "v3.4",
+      "size": "841179850",
+      "datetime": 1582330026,
+      "filename": "syberia_ginkgo-v3.4-20200222-0008-OFFICIAL.zip",
+      "romtype": "OFFICIAL",
+      "developer": "TheHitMan",
+      "id": "704196a5d37b6dccedb8d50c0d9ae4470d96173b2aa55632bf480092ffd5ca2e"
+    }
+  ]
+}

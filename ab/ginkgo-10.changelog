@@ -1,0 +1,110 @@
+=============
+   2020-02-22
+=============
+
+ * bionic
+5baeb1c  benchmarks: add 16 and 32 bytes to common sizes  [Jake Weinstein]
+
+ * frameworks/base
+67a887e  base: Use MD2 icon for missed call notification  [Anushek Prasal]
+a8b9b81  SystemUI: Prevent dummy expansion of status bar  [maxwen]
+cff62b6  RingtoneManager: Don't crash if the ringtone doesn't have a numerical ID  [Scott Warner]
+d190cd2  Revert "base: conditionally skip scan /vendor/overlay for static overlays"  [blinoff82]
+
+ * packages/apps/SyberiaSettings
+3808e7c  CarrierLabel: Ensure the dialog matches other dialogs  [Alex]
+25c2e65  CarrierLabel: Disable preference if carrier label is off  [Alex]
+63d1db3  CarrierLabel: Set a text length on the carrier label  [Alex]
+
+=============
+   2020-02-21
+=============
+
+ * build/soong
+2f765d3  soong: Whitelist python3.7 for changelog generation  [blinoff82]
+
+ * packages/apps/SyberiaSettings
+d4d3ada  CarrierLabel: Keyguard/Statusbar carrier label options  [Altaf-Mahdi]
+
+=============
+   2020-02-20
+=============
+
+ * frameworks/base
+60d77ba  CarrierLabel: Adapt to heads up when notifications arrive  [Josh Chasky]
+aa62c11  CarrierLabel: Bring back the scroll (marquee) effect  [Alex]
+aff6c67  CarrierLabel: Make carrier label's visibility gone  [TheScarastic]
+0c38b63  CarrierLabel: Keyguard/Statusbar carrier label options  [Altaf-Mahdi]
+5f0cf82  CarrierLabel: Adapt carrier label to DarkController  [Ali B]
+1ad5e17  CarrierLabel: Show carrier label / custom label [1/2]  [martincz]
+af423f7  CarrierLabel: Method to detect a notch'd device  [Alex]
+f149c9b  Add check for Chinese Language in SyberiaUtils  [martincz]
+
+ * packages/apps/SyberiaSettings
+11ee306  CarrierLabel: Fix empty carrier label options on msim devices  [Anas Karbila]
+d19feb5  CarrierLabel: Show carrier label / custom label [2/2]  [martincz]
+
+=============
+   2020-02-19
+=============
+
+ * frameworks/base
+4641a06  Process: Use audio-app cpuset if available  [Haynes Mathew George]
+1e01b3e9  Fix Settings creating too many threads unexpectedly  [Jason Chiu]
+122b8a8  (Minor) fix on ActivityManagerService.LocalService.getCurrentUserId()  [Felipe Leme]
+9c73afe  Fix nav bar leak in SystemUI  [Winson Chung]
+4b29d11  Fix Jank when factory resetting  [Raff Tsai]
+fa7b2e1  Clamp brightness thresholds to the maximum brightness.  [Santos Cordon]
+18ec760  Fix for Surface#lockHardwareCanvas lockups  [John Reck]
+c444b72  Ignore null package names on AppIdleHistory writes  [Michael Wachenschwanz]
+2929dd2  Issue a warning when the user switching dialog times out.  [felipeal]
+
+ * packages/apps/Settings
+8eaceb3  Merge "Settings: Avoid rendering hidden preferences" into 10.0  [blinov.in]
+5214cac  Merge "Fix for User edit info dialog during rotation" into 10.0  [blinov.in]
+ce6d139  Merge "Settings: Add platform and RAM to Model & Hardware" into 10.0  [blinov.in]
+5e62892  Merge "Screensaver: Tint button to match system theme" into 10.0  [blinov.in]
+fd28413  Merge "Sync dimen from SystemUI" into 10.0  [blinov.in]
+78e60fb  Merge "Battery icon is too large" into 10.0  [blinov.in]
+68a4415  Merge "Add a dark theme slice" into 10.0  [blinov.in]
+456cacb  Merge "Fix Settings creating too many threads unexpectedly" into 10.0  [blinov.in]
+3b1c1f7  Merge "DarkUIPreferenceController null exception" into 10.0  [blinov.in]
+
+=============
+   2020-02-18
+=============
+ * art
+3fddbac  ART: ARM64: Improve FP IsInfinity intrinsic.  [Artem Serov]
+
+ * packages/apps/Dialer
+19cac04  Dialer: Fix leaked ServiceConnection in CallRecorderService  [Hikari-no-Tenshi]
+
+ * packages/apps/Settings
+0d5194e  Settings: Avoid rendering hidden preferences  [Bonian Chen]
+1f3c660  Fix for User edit info dialog during rotation  [Rafael Matias de Lima]
+76839f2  Settings: Add platform and RAM to Model & Hardware  [Rashed Abdel-Tawab]
+
+ * packages/apps/SyberiaSettings
+49a9e37  Add strings for platform and RAM info  [Pranav Vashi]
+
+=============
+   2020-02-16
+=============
+
+ * frameworks/base
+98e997c  Make emergency notification dismissable  [Yu-Han Yang]
+8001a97  Fix crash after destroyed  [TYM Tsai]
+b1bc4ca  Fix AnimatedImageDrawables using ByteBuffers  [Leon Scroggins III]
+68a1ccd  Keyguard should be dismissed if there is no trusted device.  [jovanak]
+74543b2  Force a garbage collection after lockscreen verification  [Rubin Xu]
+0fec181  Make smart actions icon to respect dark theme setting  [Tony Mak]
+b55dabe  Try to rebind disconnected wallpaper service for 10 seconds.  [wilsonshih]
+45e7066  Don't disable GPS in Doze until the device is stationary.  [Kweku Adams]
+
+ * packages/apps/Settings
+4151a50  Screensaver: Tint button to match system theme  [Alex]
+9f6320f  Sync dimen from SystemUI  [timhypeng]
+8890ca9  Battery icon is too large  [timhypeng]
+17e6cd8  Add a dark theme slice  [Sunny Shao]
+42dba83  Fix Settings creating too many threads unexpectedly  [Jason Chiu]
+
