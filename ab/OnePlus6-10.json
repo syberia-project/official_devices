@@ -1,17 +1,17 @@
 {
   "response": [
     {
-      "device_brand": "OnePlus",
-      "romtype": "OFFICIAL",
-      "url": "https://sourceforge.net/projects/syberiaos/files/enchilada/syberia_oneplus6-v3.4-20200215-0437-OFFICIAL.zip/download",
-      "datetime": 1581741379,
-      "developer": "DennySPb",
-      "size": "644509260",
-      "filename": "syberia_oneplus6-v3.4-20200215-0437-OFFICIAL.zip",
-      "version": "v3.4",
       "device_codename": "enchilada",
+      "url": "https://sourceforge.net/projects/syberiaos/files/enchilada/syberia_oneplus6-v3.4-20200222-0922-OFFICIAL.zip/download",
+      "device_brand": "OnePlus",
       "device_model": "OnePlus 6",
-      "id": "ddcbae2f99c70042a403a7656e63eb315c0ca1309e8bbb761567bd14235b9875"
+      "version": "v3.4",
+      "size": "644546491",
+      "datetime": 1582363251,
+      "filename": "syberia_oneplus6-v3.4-20200222-0922-OFFICIAL.zip",
+      "romtype": "OFFICIAL",
+      "developer": "DennySPb",
+      "id": "2276b6196bf39b26a29ab402be61845ac106031b022a797f0d5253bad3df3628"
     }
   ]
 }

@@ -1,91 +1,135 @@
 =============
-   2020-02-15
-=============
-
- * frameworks/base
-2ab37d5  base: Allow limiting edge lighting repeats [1/2]  [Ido Ben-Hur]
-d4e7427  Keyguard: Fix failed unlock attempt dialog button  [Alex]
-88077ad  Keyguard: ReInflate views when density or font scale change  [Alex]
-74ba707  Crash occured due to null pointer exception.  [Niraj kumar Mishra]
-2c993be  ActivityManager: Fix NPE in ProcessRecord  [gaoshiqi]
-225ebde  Changing app classification logic from manifest-based to WLC-based  [Maryia Maskaliova]
-49664c4  Fix: dummy deviceKey is not correct if real device with dummy addr exist  [Mingbo Zhang]
-
- * packages/apps/Settings
-cf386fd  DarkUIPreferenceController null exception  [Jay Aliomer]
-3df9f78  Merge "Settings: Fix QRCamera crash" into 10.0  [blinov.in]
-a761e7f  Merge "Bug:PreferredNetworkModePreferenceController.java not being refreshed" into 10.0  [blinov.in]
-
- * packages/apps/SyberiaSettings
-6d8ab30  Allow limiting edge lighting repeats [2/2]  [Ido Ben-Hur]
-
-=============
-   2020-02-14
-=============
-
- * frameworks/base
-212be7e  ScreenStabilization Tile: Settings Menu integrated in Tile itself(long click)  [rituj]
-ee974cf  Add ScreenStabilizationTile in QS  [SuperDroidBond]
-ecd6045  Add config to use base rounded corner radius for window animation  [HarukeyUA]
-
- * packages/apps/Settings
-1e72c22  Merge "team: Add maintainer for Xiaomi Mi A3" into 10.0  [blinov.in]
-
-=============
-   2020-02-13
-=============
-
- * official_devices
-b812257  land: build done  [weritos666]
-
- * packages/apps/Settings
-7e7cfc5  Settings: Fix QRCamera crash  [Joel Stein]
-57045a9  Bug:PreferredNetworkModePreferenceController.java not being refreshed  [SongFerngWang]
-0b6f126  team: Add maintainer for Xiaomi Mi A3  [blinoff82]
-
- * vendor/syberia
-ccc1b31  Add laurel_sprout to official devices  [blinoff82]
-
-=============
-   2020-02-12
-=============
-
- * frameworks/base
-792ac2f  Make screen stabilization more responsive  [Rituj Beniwal]
-ad2bf96  Screen Stabiization [1/3]  [Rituj Beniwal]
-4a60a9c  Add MIUI 11 VoLTE icon [1/2]  [Lup Gabriel]
-
- * frameworks/native
-30a5866  Screen Stabilization [2/3]  [Rituj Beniwal]
-
- * packages/apps/Settings
-90e93b9  Settings: Adaptive brightness: Fix summary fuckery  [Alex]
-
- * packages/apps/SyberiaSettings
-2d06aae  Add Screen Stabilization [3/3]  [brituj]
-543ddb8  Add MIUI 11 VoLTE icon [2/2]  [Lup Gabriel]
-
-=============
-   2020-02-11
-=============
-
-=============
-   2020-02-10
+   2020-02-22
 =============
 
  * bionic
-ace2227  bionic: Support wildcards in cached hosts file  [Tom Marshall]
+5baeb1c  benchmarks: add 16 and 32 bytes to common sizes  [Jake Weinstein]
+
+ * device/oneplus/oneplus6
+bcb0f6d  enchilada: Remove NoCutoutOverlay  [blinoff82]
+52aa388  enchilada: Label ssr related sysfs paths  [LuK1337]
+c4d5099  enchilada: Make Android.mk search recursive  [Luca Stefani]
 
  * frameworks/base
-79b4188  SystemUI: Hide QS divider  [Joey Huab]
-11aadb7  QS CaffeineTile: update vector  [Alex]
-440dbad  QS brightness slider: Update brightness thumb vector  [JBCDroid2]
-e614d17  Remove DUN requirement for tethering  [Dave Daynard]
+67a887e  base: Use MD2 icon for missed call notification  [Anushek Prasal]
+a8b9b81  SystemUI: Prevent dummy expansion of status bar  [maxwen]
+cff62b6  RingtoneManager: Don't crash if the ringtone doesn't have a numerical ID  [Scott Warner]
+d190cd2  Revert "base: conditionally skip scan /vendor/overlay for static overlays"  [blinoff82]
+
+ * kernel/oneplus/sdm845
+043b3cd  Merge branch 'android-4.9-q' of https://android.googlesource.com/kernel/common into HEAD  [blinoff82]
+
+ * packages/apps/SyberiaSettings
+3808e7c  CarrierLabel: Ensure the dialog matches other dialogs  [Alex]
+25c2e65  CarrierLabel: Disable preference if carrier label is off  [Alex]
+63d1db3  CarrierLabel: Set a text length on the carrier label  [Alex]
 
 =============
-   2020-02-09
+   2020-02-21
 =============
+
+ * build/soong
+2f765d3  soong: Whitelist python3.7 for changelog generation  [blinoff82]
+
+ * packages/apps/SyberiaSettings
+d4d3ada  CarrierLabel: Keyguard/Statusbar carrier label options  [Altaf-Mahdi]
+
+=============
+   2020-02-20
+=============
+
+ * frameworks/base
+60d77ba  CarrierLabel: Adapt to heads up when notifications arrive  [Josh Chasky]
+aa62c11  CarrierLabel: Bring back the scroll (marquee) effect  [Alex]
+aff6c67  CarrierLabel: Make carrier label's visibility gone  [TheScarastic]
+0c38b63  CarrierLabel: Keyguard/Statusbar carrier label options  [Altaf-Mahdi]
+5f0cf82  CarrierLabel: Adapt carrier label to DarkController  [Ali B]
+1ad5e17  CarrierLabel: Show carrier label / custom label [1/2]  [martincz]
+af423f7  CarrierLabel: Method to detect a notch'd device  [Alex]
+f149c9b  Add check for Chinese Language in SyberiaUtils  [martincz]
+
+ * packages/apps/SyberiaSettings
+11ee306  CarrierLabel: Fix empty carrier label options on msim devices  [Anas Karbila]
+d19feb5  CarrierLabel: Show carrier label / custom label [2/2]  [martincz]
+
+=============
+   2020-02-19
+=============
+
+ * frameworks/base
+4641a06  Process: Use audio-app cpuset if available  [Haynes Mathew George]
+1e01b3e9  Fix Settings creating too many threads unexpectedly  [Jason Chiu]
+122b8a8  (Minor) fix on ActivityManagerService.LocalService.getCurrentUserId()  [Felipe Leme]
+9c73afe  Fix nav bar leak in SystemUI  [Winson Chung]
+4b29d11  Fix Jank when factory resetting  [Raff Tsai]
+fa7b2e1  Clamp brightness thresholds to the maximum brightness.  [Santos Cordon]
+18ec760  Fix for Surface#lockHardwareCanvas lockups  [John Reck]
+c444b72  Ignore null package names on AppIdleHistory writes  [Michael Wachenschwanz]
+2929dd2  Issue a warning when the user switching dialog times out.  [felipeal]
+
+ * packages/apps/Settings
+8eaceb3  Merge "Settings: Avoid rendering hidden preferences" into 10.0  [blinov.in]
+5214cac  Merge "Fix for User edit info dialog during rotation" into 10.0  [blinov.in]
+ce6d139  Merge "Settings: Add platform and RAM to Model & Hardware" into 10.0  [blinov.in]
+5e62892  Merge "Screensaver: Tint button to match system theme" into 10.0  [blinov.in]
+fd28413  Merge "Sync dimen from SystemUI" into 10.0  [blinov.in]
+78e60fb  Merge "Battery icon is too large" into 10.0  [blinov.in]
+68a4415  Merge "Add a dark theme slice" into 10.0  [blinov.in]
+456cacb  Merge "Fix Settings creating too many threads unexpectedly" into 10.0  [blinov.in]
+3b1c1f7  Merge "DarkUIPreferenceController null exception" into 10.0  [blinov.in]
+
+=============
+   2020-02-18
+=============
+ * art
+3fddbac  ART: ARM64: Improve FP IsInfinity intrinsic.  [Artem Serov]
+
+ * packages/apps/Dialer
+19cac04  Dialer: Fix leaked ServiceConnection in CallRecorderService  [Hikari-no-Tenshi]
+
+ * packages/apps/Settings
+0d5194e  Settings: Avoid rendering hidden preferences  [Bonian Chen]
+1f3c660  Fix for User edit info dialog during rotation  [Rafael Matias de Lima]
+76839f2  Settings: Add platform and RAM to Model & Hardware  [Rashed Abdel-Tawab]
+
+ * packages/apps/SyberiaSettings
+49a9e37  Add strings for platform and RAM info  [Pranav Vashi]
+
+=============
+   2020-02-17
+=============
+
+ * device/oneplus/oneplus6
+d867467  enchilada: Disable OnePlus shape icon overlays  [LuK1337]
+
+ * kernel/oneplus/sdm845
+c1c5428  Merge 4.9.214 into android-4.9-q  [Greg Kroah-Hartman]
 
  * official_devices
-263dc05  raphael build 08/02/2020  [kondors1995]
+61ec2eb  laurel_sprout: Build done  [HarukeyUA]
+10f1f43  raphael:build done  [kondors1995]
+
+=============
+   2020-02-16
+=============
+
+ * frameworks/base
+98e997c  Make emergency notification dismissable  [Yu-Han Yang]
+8001a97  Fix crash after destroyed  [TYM Tsai]
+b1bc4ca  Fix AnimatedImageDrawables using ByteBuffers  [Leon Scroggins III]
+68a1ccd  Keyguard should be dismissed if there is no trusted device.  [jovanak]
+74543b2  Force a garbage collection after lockscreen verification  [Rubin Xu]
+0fec181  Make smart actions icon to respect dark theme setting  [Tony Mak]
+b55dabe  Try to rebind disconnected wallpaper service for 10 seconds.  [wilsonshih]
+45e7066  Don't disable GPS in Doze until the device is stationary.  [Kweku Adams]
+
+ * official_devices
+17ab614  enchilada: build done  [blinoff82]
+
+ * packages/apps/Settings
+4151a50  Screensaver: Tint button to match system theme  [Alex]
+9f6320f  Sync dimen from SystemUI  [timhypeng]
+8890ca9  Battery icon is too large  [timhypeng]
+17e6cd8  Add a dark theme slice  [Sunny Shao]
+42dba83  Fix Settings creating too many threads unexpectedly  [Jason Chiu]
 
