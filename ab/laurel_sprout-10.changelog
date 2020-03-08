@@ -1,147 +1,167 @@
 =============
-   2020-02-23
+   2020-03-08
 =============
+
+ * build/make
+c363521  Merge " Add cortex-A76 to known v8-2a cores" into 10.0  [blinov.in]
+1770072  Merge "Create 0 compression ratio jar files" into 10.0  [blinov.in]
+5dd64eb  Merge "Remove [jni_]link_type files" into 10.0  [blinov.in]
+f8789c8  Merge "Remove ro.bionic.ld.warning" into 10.0  [blinov.in]
+23891e7  Merge "Revamp nopreload configuration" into 10.0  [blinov.in]
 
  * frameworks/base
-7f8a639  base: Use MD2 icon for missed call notification  [Anushek Prasal]
-52d9dce  SystemUI: Prevent dummy expansion of status bar  [maxwen]
+8dd99e7  Make aspect ratio hack configable on app level [1/2]  [maxwen]
+c44582e  FODCircleView: adjust dim amount based on changes in brightness  [TheScarastic]
+9cd6cdb  FODCircleView: split boost and dim into separate functions  [Demon000]
+32383e9  FODCircleView: update position of icon before show  [Demon000]
+5627702  FODCircleView: bring closer to LOS impl  [kondors1995]
+c70445f  FODCircleView: disable touch detection on screen off  [Demon000]
+2ca4563  fw/b torch: Let long press power turn torch off when screen is on.  [Sam Mortimer]
+c4eafbd  SettingsProvider: Disable Bluetooth by default  [nysascape]
 
- * kernel/xiaomi/laurel_sprout
-0198014  ARM64: configs: laurel_sprout: Append dtb  [HarukeyUA]
-
- * official_devices
-93f2b4c  laurel_sprout: Build done  [HarukeyUA]
-343abf2  ginkgo: build done  [blinoff82]
-429419f  enchilada: build done  [blinoff82]
-
-=============
-   2020-02-22
-=============
-
- * bionic
-28e5763  benchmarks: add 16 and 32 bytes to common sizes  [Jake Weinstein]
-
- * device/xiaomi/laurel_sprout
-9676e09  Revert "prop: enable skip vendor overlays prop"  [HarukeyUA]
-01845ab  laurel_sprout: Bind mount bluetooth overlay  [HarukeyUA]
-a8c6a53  Revert "laurel_sprout: Drop Bluetooth overlay"  [HarukeyUA]
-
- * frameworks/base
-cff62b6  RingtoneManager: Don't crash if the ringtone doesn't have a numerical ID  [Scott Warner]
-d190cd2  Revert "base: conditionally skip scan /vendor/overlay for static overlays"  [blinoff82]
-
- * packages/apps/SyberiaSettings
-3808e7c  CarrierLabel: Ensure the dialog matches other dialogs  [Alex]
-25c2e65  CarrierLabel: Disable preference if carrier label is off  [Alex]
-63d1db3  CarrierLabel: Set a text length on the carrier label  [Alex]
+ * vendor/syberia
+8e0718e  Merge "Syberia version: bump to 3.5" into 10.0  [blinov.in]
+1def34b  Merge "Revert "make use proton clang 11 toolchain"" into 10.0  [dennyspb]
+bda64b2  Revert "make use proton clang 11 toolchain"  [dennyspb]
+4a9acd1  Merge "qcom: Proper add UM 4.14 platforms" into 10.0  [blinov.in]
+204326c  Merge "Revert "build: add support for trinket"" into 10.0  [blinov.in]
+80b602c  Merge "Update Google prebuilts" into 10.0  [blinov.in]
+c91bdff  Merge "make use proton clang 11 toolchain" into 10.0  [blinov.in]
 
 =============
-   2020-02-21
+   2020-03-07
 =============
-
- * build/soong
-2f765d3  soong: Whitelist python3.7 for changelog generation  [blinoff82]
-
- * device/xiaomi/laurel_sprout
-f317f16  laurel_sprout: fod: Improve semantics  [Demon000]
-a2aefef  laurel_sprout: fod: Remove onRelase calls duplication  [Demon000]
-607e8dd  laurel_sprout: fod: Adjust nit value used based on screen brightness  [Demon000]
-516239c  laurel_sprout: fod: Calculate dim amount based on real brightness  [Demon000]
-4f51f86  laurel_sprout: Inherit product launched with  [HarukeyUA]
-
- * kernel/xiaomi/laurel_sprout
-593f0c5  proc: Remove additional SafetyNet flags from /proc/cmdline  [Sultanxda]
-73a219b  proc: Remove verifiedbootstate flag from /proc/cmdline  [Sultanxda]
-ef9ffa6  Revert "qcacld-3.0: Enable SAE and GCMP by default"  [Sultan Alsawaf]
-7e745e8  blkdev: switch to SSD mode, disable IO stats and entropy gathering  [Yaroslav Furman]
-25c573b  drivers: focaltech_touch: Disable debug  [HarukeyUA]
-ebc70ac  laurel_sprout: disable CONFIG_UNMAP_KERNEL_AT_EL0  [Yaroslav Furman]
-9340605  blk: disable IO_STAT completely  [Park Ju Hyung]
-a1372e5  msm: camera: Fix memory leak  [Demon000]
-3e0e2d7  laurel_sprout: disable CONFIG_SM_DEBUGCC_TRINKET  [Rick Yiu]
-af111db  defconfig: laurel_sprout: disable useless cpu governors  [Yaroslav Furman]
-5f600db  Merge tag 'LA.UM.8.11.r1-02600-NICOBAR.0' of https://source.codeaurora.org/quic/la/platform/vendor/opensource/audio-kernel into staging/ten  [HarukeyUA]
-326a9ac  Merge tag 'LA.UM.8.11.r1-02600-NICOBAR.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into staging/ten  [HarukeyUA]
-ac24f6b  Merge tag 'LA.UM.8.11.r1-02600-NICOBAR.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn into staging/ten  [HarukeyUA]
-3fca7f1  Merge tag 'LA.UM.8.11.r1-02600-NICOBAR.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/fw-api into staging/ten  [HarukeyUA]
-b587853  Merge tag 'LA.UM.8.11.r1-02600-NICOBAR.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.14 into staging/ten  [HarukeyUA]
-c089950  Merge branch 'kernel.lnx.4.14.r4-rel' of https://github.com/android-linux-stable/msm-4.14 into staging/ten  [HarukeyUA]
-
- * packages/apps/SyberiaSettings
-d4d3ada  CarrierLabel: Keyguard/Statusbar carrier label options  [Altaf-Mahdi]
-
-=============
-   2020-02-20
-=============
-
- * frameworks/base
-60d77ba  CarrierLabel: Adapt to heads up when notifications arrive  [Josh Chasky]
-aa62c11  CarrierLabel: Bring back the scroll (marquee) effect  [Alex]
-aff6c67  CarrierLabel: Make carrier label's visibility gone  [TheScarastic]
-0c38b63  CarrierLabel: Keyguard/Statusbar carrier label options  [Altaf-Mahdi]
-5f0cf82  CarrierLabel: Adapt carrier label to DarkController  [Ali B]
-1ad5e17  CarrierLabel: Show carrier label / custom label [1/2]  [martincz]
-af423f7  CarrierLabel: Method to detect a notch'd device  [Alex]
-f149c9b  Add check for Chinese Language in SyberiaUtils  [martincz]
-
- * packages/apps/SyberiaSettings
-11ee306  CarrierLabel: Fix empty carrier label options on msim devices  [Anas Karbila]
-d19feb5  CarrierLabel: Show carrier label / custom label [2/2]  [martincz]
-
-=============
-   2020-02-19
-=============
-
- * frameworks/base
-4641a06  Process: Use audio-app cpuset if available  [Haynes Mathew George]
-1e01b3e9  Fix Settings creating too many threads unexpectedly  [Jason Chiu]
-122b8a8  (Minor) fix on ActivityManagerService.LocalService.getCurrentUserId()  [Felipe Leme]
-9c73afe  Fix nav bar leak in SystemUI  [Winson Chung]
-4b29d11  Fix Jank when factory resetting  [Raff Tsai]
-fa7b2e1  Clamp brightness thresholds to the maximum brightness.  [Santos Cordon]
-18ec760  Fix for Surface#lockHardwareCanvas lockups  [John Reck]
-c444b72  Ignore null package names on AppIdleHistory writes  [Michael Wachenschwanz]
-2929dd2  Issue a warning when the user switching dialog times out.  [felipeal]
-
- * kernel/xiaomi/laurel_sprout
-1654518  Merge 4.14.171 into kernel.lnx.4.14.r4-rel  [Nathan Chancellor]
 
  * packages/apps/Settings
-8eaceb3  Merge "Settings: Avoid rendering hidden preferences" into 10.0  [blinov.in]
-5214cac  Merge "Fix for User edit info dialog during rotation" into 10.0  [blinov.in]
-ce6d139  Merge "Settings: Add platform and RAM to Model & Hardware" into 10.0  [blinov.in]
-5e62892  Merge "Screensaver: Tint button to match system theme" into 10.0  [blinov.in]
-fd28413  Merge "Sync dimen from SystemUI" into 10.0  [blinov.in]
-78e60fb  Merge "Battery icon is too large" into 10.0  [blinov.in]
-68a4415  Merge "Add a dark theme slice" into 10.0  [blinov.in]
-456cacb  Merge "Fix Settings creating too many threads unexpectedly" into 10.0  [blinov.in]
-3b1c1f7  Merge "DarkUIPreferenceController null exception" into 10.0  [blinov.in]
+14b2132  Settings: fix hardcoded black text in storage summary  [maxwen]
+
+ * packages/apps/SyberiaSettings
+aa88bd1  Make aspect ratio hack configable on app level [2/2]  [maxwen]
+
+ * packages/apps/ThemePicker
+870a5d7  Merge tag 'android-10.0.0_r31' into HEAD  [blinoff82]
+
+ * vendor/dexopt_profiles
+45d656e  profiles: Update for latest google apps  [mydongistiny]
+
+ * vendor/syberia
+d5eec53  Syberia version: bump to 3.5  [blinoff82]
+bc44112  Update Google prebuilts  [blinoff82]
 
 =============
-   2020-02-18
+   2020-03-06
+=============
+
+ * vendor/syberia
+6079a84  make use proton clang 11 toolchain  [Gabor Meszaros]
+
+=============
+   2020-03-05
+=============
+
+ * frameworks/av
+94a54fa  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPB]
+
+ * frameworks/base
+fe5a508  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPB]
+
+ * frameworks/opt/net/wifi
+041d0a5  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD  [DennySPB]
+
+ * frameworks/opt/telephony
+f5c2a61  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPB]
+
+ * packages/apps/Launcher3
+4c90607  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD  [DennySPB]
+225815b  Revert "Launcher3: make all apps grid independent from workspace"  [Volodymyr Zhdanov]
+f6dfbee  Revert "Launcher3: send device profile changes to all apps views"  [Volodymyr Zhdanov]
+12b5b13  Revert "Launcher3: correctly apply grid changes from grid control provider"  [Volodymyr Zhdanov]
+
+ * packages/apps/Settings
+37c1544  Re-apply: Settings: Enable permission hub by default  [Luca Stefani]
+e5ff107  Re-apply: Revert "Remove Permissions Hub."  [Luca Stefani]
+043f8ca  Restore permission hub chart  [DennySPB]
+f6366b1  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPB]
+
+ * packages/services/Telephony
+d52135a  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD  [DennySPB]
+
+ * system/sepolicy
+98efd4d  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPB]
+
+ * vendor/qcom/opensource/data-ipa-cfg-mgr
+2616fd9  Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' into 10.0  [kondors1995]
+
+ * vendor/qcom/opensource/dataservices
+00e71b1  Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' into 10.0  [kondors1995]
+
+ * vendor/syberia
+1c3ac7a  qcom: Proper add UM 4.14 platforms  [kondors1995]
+bda0fa0  Revert "build: add support for trinket"  [kondors1995]
+
+=============
+   2020-03-04
 =============
  * art
-3fddbac  ART: ARM64: Improve FP IsInfinity intrinsic.  [Artem Serov]
+187b506  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/art into HEAD  [DennySPB]
 
- * device/xiaomi/laurel_sprout
-96f33f4  laurel_sprout: Drop hostapd configuration  [HarukeyUA]
+ * bootable/recovery
+c65910f  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/bootable/recovery into HEAD  [DennySPB]
+
+ * build/make
+412eb35   Add cortex-A76 to known v8-2a cores  [Gabor Meszaros]
+d2959b3  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/build into HEAD  [DennySPB]
+
+ * build/soong
+ca6ac9c  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/build/soong into HEAD  [DennySPB]
+
+ * frameworks/native
+5da686b  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPB]
+
+ * hardware/interfaces
+99bd9b5  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPB]
+
+ * hardware/libhardware
+e84a68d  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/hardware/libhardware into HEAD  [DennySPB]
+
+ * packages/apps/Bluetooth
+cd0fcb1  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPB]
 
  * packages/apps/Dialer
-19cac04  Dialer: Fix leaked ServiceConnection in CallRecorderService  [Hikari-no-Tenshi]
+949e214  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/packages/apps/Dialer into HEAD  [DennySPB]
 
- * packages/apps/Settings
-0d5194e  Settings: Avoid rendering hidden preferences  [Bonian Chen]
-1f3c660  Fix for User edit info dialog during rotation  [Rafael Matias de Lima]
-76839f2  Settings: Add platform and RAM to Model & Hardware  [Rashed Abdel-Tawab]
+ * packages/apps/DocumentsUI
+b7f3374  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/packages/apps/DocumentsUI into HEAD  [DennySPB]
 
- * packages/apps/SyberiaSettings
-49a9e37  Add strings for platform and RAM info  [Pranav Vashi]
+ * packages/apps/Nfc
+85d52e0  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPB]
+
+ * packages/inputmethods/LatinIME
+42a20c6  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/packages/inputmethods/LatinIME into HEAD  [DennySPB]
+
+ * packages/providers/DownloadProvider
+fe9f852  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD  [DennySPB]
+
+ * packages/providers/MediaProvider
+717cdd3  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/packages/providers/MediaProvider into HEAD  [DennySPB]
+
+ * packages/services/Telecomm
+6881ced  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPB]
+
+ * system/bt
+2e6f321  Fix build error  [Alex]
+05ea337  Merge tag 'android-10.0.0_r31' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
+
+ * system/core
+90622d4  Adding the AVB public key for Q-Developer-GSI  [Bowgo Tsai]
+c185946  Store crashing process name in sysprop  [Gavin Corkery]
+08493f1  Allowing /avb/q-developer-gsi.avbpubkey for DSU  [Bowgo Tsai]
 
 =============
-   2020-02-17
+   2020-03-03
 =============
 
- * official_devices
-61ec2eb  laurel_sprout: Build done  [HarukeyUA]
-10f1f43  raphael:build done  [kondors1995]
+=============
+   2020-03-02
+=============
 
