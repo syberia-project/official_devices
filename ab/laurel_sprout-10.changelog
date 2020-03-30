@@ -1,5 +1,14 @@
 =============
-   2020-03-28
+   2020-03-30
+=============
+
+ * device/xiaomi/laurel_sprout
+1d535f3  Revert "Revert "Include google/vendor/customization""  [HarukeyUA]
+6c09070  laurel_sprout: Disable hashtree verification  [HarukeyUA]
+2704e64  laurel_sprout: Correct offsets  [HarukeyUA]
+
+=============
+   2020-03-29
 =============
 
  * device/xiaomi/laurel_sprout
@@ -8,15 +17,25 @@
 61618c2  laurel_sprout: Drop CDSchedtuneBoost powerhint  [HarukeyUA]
 
  * official_devices
+76623d4  laurel_sprout: Build done  [HarukeyUA]
 cd7f88a  raphael build 28/03/2020x  [kondors1995]
+
+=============
+   2020-03-28
+=============
+
+ * device/xiaomi/laurel_sprout
+fa188f9  Revert "Include google/vendor/customization"  [DennySPB]
+3f8f09e  sepolicy: mark /sys/class/drm/sde-crtc-0/measured_fps as sysfs_graphics type  [DennySPB]
+
+ * official_devices
+31007aa  enchilada: update 03/27/20  [blinoff82]
 
 =============
    2020-03-27
 =============
 
  * device/xiaomi/laurel_sprout
-fa188f9  Revert "Include google/vendor/customization"  [DennySPB]
-3f8f09e  sepolicy: mark /sys/class/drm/sde-crtc-0/measured_fps as sysfs_graphics type  [DennySPB]
 697fabb  add FPS overlay  [Lup Gabriel]
 
  * frameworks/base
@@ -24,25 +43,6 @@ a7dfdf4  Revert "FODCircleView: disable touch detection on screen off"  [kondors
 a16ec23  ambientdisplay: Fix volume key music control  [Christopher R. Palmer]
 6682558  Flashlight toggle API improvements  [ezio84]
 41a34db  Screenshot: remove white flash if dark mode is enabled  [ezio84]
-
- * frameworks/opt/telephony
-ae203f0  Merge branch '10.0' of https://github.com/syberia- */platform_frameworks_opt_telephony  [DennySPB]
-
- * official_devices
-31007aa  enchilada: update 03/27/20  [blinoff82]
-
- * packages/apps/Launcher3
-4a7f089  dimens: adjust to avoid icon crop on recents  [DennySPB]
-1409958  Globally disable debug logging  [Bruno Martins]
-
- * packages/apps/SyberiaSettings
-fd86776  Merge "Import Custom switch and category" into 10.0  [dennyspb]
-
-=============
-   2020-03-26
-=============
-
- * frameworks/base
 2087e26  Freedom windows: fix drag [1/2]  [Jon West]
 984a8ee  Navbar: Ensure 2/3 button layout options play nice with gesture navbar  [Alex]
 4dc1dac  Update RU translation  [DennySPB]
@@ -57,40 +57,28 @@ dd40597  ActionUtils: Reverse actions for QS and notification panel  [ezio84]
 f2db924  Extended swipe double arrow: don't show if option is disabled  [ezio84]
 3f469cf  Gesture nav extended swipe: show a double arrow when almost triggered  [Nico]
 41b2f15  Gestures: Back long swipe improvements  [Anushek Prasal]
-7ec471a  Add kill app action to nav swipe actions [1/3]  [ezio84]
-555fa67  Add kill-app api (with new fresh implementation)  [ezio84]
-97434ca  Allow long back swipe on bottom screen when launcher is showing [1/2]  [ezio84]
-62a9fa3  Allow a wider back swipe to trigger actions (instead of timeout) [1/2]  [ezio84]
-e6915dd  Move actions to ActionUtils [1/2]  [ezio84]
-a5e561e  Allow long back swipe to trigger custom actions/app/activities [1/2]  [ezio84]
-e742062  Don't include the data dir in zygote library paths.  [Torne (Richard Coles)]
-8edc02b  Fix for recycling key events when sending global button broadcast  [Hiroaki.Kojima]
-ec8e58b  Make sure the right DND config is used  [Daniel Hunt]
-0c45317  Fix ThumbnailUtils thumbnail pts calculation  [Chong Zhang]
-9d464e2  SystemUI: FPS Info Overlay & Tile  [Marko Man]
 
  * frameworks/native
 d0de44e  Freedom windows: fix drag [2/2]  [Jon West]
+
+ * frameworks/opt/telephony
+ae203f0  Merge branch '10.0' of https://github.com/syberia- */platform_frameworks_opt_telephony  [DennySPB]
+
+ * packages/apps/Launcher3
+4a7f089  dimens: adjust to avoid icon crop on recents  [DennySPB]
+1409958  Globally disable debug logging  [Bruno Martins]
 
  * packages/apps/Settings
 2d6f99b  Update RU translation  [DennySPB]
 d48adf1  Gestures: move back arrow animation option into gesture tweaks  [DennySPB]
 3c46722  Gestures: Move gestures haptic to gestures tweaks  [DennySPB]
 45833b6  Improve gesture navigation handle length [2/2]  [Nicolas Dhouailly]
-2d36107  Allow for customizing the length of the navigation handle [2/2]  [Alex]
-5c8c238  Allow long back swipe on bottom screen when launcher is showing [2/2]  [ezio84]
-efce5e1  Allow a wider back swipe to trigger actions (instead of timeout) [2/2]  [ezio84]
-f4e1f39  Allow long back swipe to trigger custom actions/app/activities [2/2]  [ezio84]
-3f13071  MobileNetwork: always enable NETWORK_INTERNET_V2 feature  [DennySPB]
 
  * packages/apps/SyberiaSettings
-70f2f07  Import Custom switch and category  [Alex]
-
- * vendor/xiaomi/laurel_sprout
-a2d5634  laurel_sprout: Drop perf blobs  [HarukeyUA]
+fd86776  Merge "Import Custom switch and category" into 10.0  [dennyspb]
 
 =============
-   2020-03-25
+   2020-03-26
 =============
 
  * device/xiaomi/laurel_sprout
@@ -145,6 +133,36 @@ dcd2e30  laurel_sprout: sepolicy: setup for libperfmgr  [DennySPB]
 912574e  laurel_sprout: Power: Add explicit initialization for last timestamp and fix time unit  [Wei Wang]
 585c315  laurel_sprout: modified system variant of libperfmgr  [kondors1995]
 
+ * frameworks/base
+7ec471a  Add kill app action to nav swipe actions [1/3]  [ezio84]
+555fa67  Add kill-app api (with new fresh implementation)  [ezio84]
+97434ca  Allow long back swipe on bottom screen when launcher is showing [1/2]  [ezio84]
+62a9fa3  Allow a wider back swipe to trigger actions (instead of timeout) [1/2]  [ezio84]
+e6915dd  Move actions to ActionUtils [1/2]  [ezio84]
+a5e561e  Allow long back swipe to trigger custom actions/app/activities [1/2]  [ezio84]
+e742062  Don't include the data dir in zygote library paths.  [Torne (Richard Coles)]
+8edc02b  Fix for recycling key events when sending global button broadcast  [Hiroaki.Kojima]
+ec8e58b  Make sure the right DND config is used  [Daniel Hunt]
+0c45317  Fix ThumbnailUtils thumbnail pts calculation  [Chong Zhang]
+9d464e2  SystemUI: FPS Info Overlay & Tile  [Marko Man]
+
+ * packages/apps/Settings
+2d36107  Allow for customizing the length of the navigation handle [2/2]  [Alex]
+5c8c238  Allow long back swipe on bottom screen when launcher is showing [2/2]  [ezio84]
+efce5e1  Allow a wider back swipe to trigger actions (instead of timeout) [2/2]  [ezio84]
+f4e1f39  Allow long back swipe to trigger custom actions/app/activities [2/2]  [ezio84]
+3f13071  MobileNetwork: always enable NETWORK_INTERNET_V2 feature  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+70f2f07  Import Custom switch and category  [Alex]
+
+ * vendor/xiaomi/laurel_sprout
+a2d5634  laurel_sprout: Drop perf blobs  [HarukeyUA]
+
+=============
+   2020-03-25
+=============
+
  * frameworks/av
 cb29545  Merge tag 'LA.UM.8.3.r1-07600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPB]
 
@@ -152,6 +170,14 @@ cb29545  Merge tag 'LA.UM.8.3.r1-07600-sdm845.0' of https://source.codeaurora.or
 46ef8d0  Fix wrong variable in AccountManagerService's TokenCache  [Haohua Li]
 9e6fc68  Telephony: Rename VoWiFi Emergency notification intent.  [Muhammed Siju]
 66c1131  IMS: Add new Carrier Config.  [Sonalika Paul]
+f1fdc7b  [1/2] SystemUI: change layout of keyguard status slice view  [maxwen]
+f88e1f7  SystemUI: also use mobile data panel on celular qs tile  [maxwen]
+8f546de  SystemUI: revert the special long click handling of dual target qs tiles  [maxwen]
+9b2b1d1  QS: Add and use Mobile Data panel  [Joe Maples]
+0bca8c4  QS: Add and use Bluetooth Panel instead of full Settings  [Joe Maples]
+f6ab049  QS: Use Settings.Panel intents for WiFi and NFC  [Joe Maples]
+28944bf  SystemUI: Disable heads up debugging on debug builds as well.  [Jake Weinstein]
+bff5ba3  NotificationLightsView: omit debug messages spam  [DennySPB]
 
  * frameworks/native
 3c22a08  Merge tag 'LA.UM.8.3.r1-07600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/frameworks/native into HEAD  [DennySPB]
@@ -163,38 +189,6 @@ cb29545  Merge tag 'LA.UM.8.3.r1-07600-sdm845.0' of https://source.codeaurora.or
 4580f82  Restore getSubIdFromNetworkRequest method  [Alex Koskovich]
 ea8dbf7  Merge tag 'LA.UM.8.3.r1-07600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPB]
 
- * official_devices
-7333c24  Update sanders.json  [rlshukhov]
-ae997aa  Update sanders.json  [rlshukhov]
-10e8f9c  Update README.md  [rlshukhov]
-42d4e87  Update README.md  [rlshukhov]
-
- * packages/services/Telephony
-d394240  Merge tag 'LA.UM.8.3.r1-07600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony into HEAD  [DennySPB]
-
- * system/core
-12512ef  healthd: Add support for BMS, WiPower, Main.  [codeworkx]
-
-=============
-   2020-03-24
-=============
-
- * frameworks/base
-f1fdc7b  [1/2] SystemUI: change layout of keyguard status slice view  [maxwen]
-f88e1f7  SystemUI: also use mobile data panel on celular qs tile  [maxwen]
-8f546de  SystemUI: revert the special long click handling of dual target qs tiles  [maxwen]
-9b2b1d1  QS: Add and use Mobile Data panel  [Joe Maples]
-0bca8c4  QS: Add and use Bluetooth Panel instead of full Settings  [Joe Maples]
-f6ab049  QS: Use Settings.Panel intents for WiFi and NFC  [Joe Maples]
-28944bf  SystemUI: Disable heads up debugging on debug builds as well.  [Jake Weinstein]
-bff5ba3  NotificationLightsView: omit debug messages spam  [DennySPB]
-0e1f363  Apply proper displayCutout rotation in density 480 dpi and 270 degrees rotation.  [Mark Hong]
-ccb0f21  Visualizer: Ensure multi-thread safety  [Mikhail Naganov]
-32bb87e  bugfix for noteResetVideoLocked  [wangqiuling]
-741452c  AlarmManagerService: Fix FWR before boot completed  [jianzhou]
-baf6c00  MediaCodec: Release lock before calling onFrameRendered()  [Pawin Vongmasa]
-024d727  Sanitize Bluetooth device names without regex  [Dan Sandler]
-
  * kernel/xiaomi/laurel_sprout
 a8437f5  Revert "dts: Disable AVB for vendor and product"  [HarukeyUA]
 64a90ab  arm64: configs: Switch to userspace lmkd  [HarukeyUA]
@@ -205,6 +199,12 @@ f1cee5f  UPSTREAM: sched/psi: Do not require setsched permission from the trigge
 e175b59  UPSTREAM: sched/psi: Reduce psimon FIFO priority  [Peter Zijlstra]
 a78f24a  psi: Use deferrable psi_avgs_work  [Patrick Daly]
 
+ * official_devices
+7333c24  Update sanders.json  [rlshukhov]
+ae997aa  Update sanders.json  [rlshukhov]
+10e8f9c  Update README.md  [rlshukhov]
+42d4e87  Update README.md  [rlshukhov]
+
  * packages/apps/Settings
 bb3c889  panels: fix data usage display on mobile panel  [maxwen]
 b077817  QS panels: Improvements  [Alex]
@@ -212,17 +212,22 @@ b077817  QS panels: Improvements  [Alex]
 6986996  panels: Add Bluetooth panel  [Joe Maples]
 811eb8f  panels: Add Mobile Data panel  [Joe Maples]
 
+ * packages/services/Telephony
+d394240  Merge tag 'LA.UM.8.3.r1-07600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony into HEAD  [DennySPB]
+
  * system/core
+12512ef  healthd: Add support for BMS, WiPower, Main.  [codeworkx]
 eb76e16  adb: defer acknowledgement of pushed files until the end.  [Josh Gao]
 
 =============
-   2020-03-23
+   2020-03-24
 =============
 
- * kernel/xiaomi/laurel_sprout
-8209232  arm64: configs: Enable CONFIG_CPU_FREQ_STAT  [HarukeyUA]
-
-=============
-   2020-03-22
-=============
+ * frameworks/base
+0e1f363  Apply proper displayCutout rotation in density 480 dpi and 270 degrees rotation.  [Mark Hong]
+ccb0f21  Visualizer: Ensure multi-thread safety  [Mikhail Naganov]
+32bb87e  bugfix for noteResetVideoLocked  [wangqiuling]
+741452c  AlarmManagerService: Fix FWR before boot completed  [jianzhou]
+baf6c00  MediaCodec: Release lock before calling onFrameRendered()  [Pawin Vongmasa]
+024d727  Sanitize Bluetooth device names without regex  [Dan Sandler]
 
