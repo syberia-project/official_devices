@@ -1,335 +1,233 @@
 =============
-   2020-03-14
+   2020-03-30
 =============
 
  * device/xiaomi/laurel_sprout
-40dcf97  laurel_sprout: Include ANX camera  [HarukeyUA]
-d18f7d9  laurel_sprout: Correct fod hbm node and params  [HarukeyUA]
-40768e6  laurel_sprout: fod: use 630nit fod value  [Demon000]
-d21ed18  Revert "laurel_sprout: fod: adjust nit value used based on screen brightness"  [Demon000]
+1d535f3  Revert "Revert "Include google/vendor/customization""  [HarukeyUA]
+6c09070  laurel_sprout: Disable hashtree verification  [HarukeyUA]
+2704e64  laurel_sprout: Correct offsets  [HarukeyUA]
 
- * frameworks/base
-b25d512  Update rounded corner radius path for Android 10  [Pranav Vashi]
-57f3e53  ScreenDecorations: Clean up tuner API  [Pranav Vashi]
-3bdde71  Rounded Corner: Code improvement and clean up  [neobuddy89]
-539de01  Custom Rounded Corner and Padding preferences [1/2]  [Kshitij Gupta]
-80cd82e  Fixes a system crash in VibratorService on x86 hosts  [Chris Wailes]
+=============
+   2020-03-29
+=============
 
- * hardware/qcom/display-caf/sm8150
-f406ba3  Merge tag 'LA.UM.8.1.r1-14500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into lineage-17.0-caf-sm8150  [HarukeyUA]
-f7d27c1  Merge tag 'LA.UM.8.1.r1-14500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/display-commonsys-intf into lineage-17.0-caf-sm8150  [HarukeyUA]
-
- * kernel/xiaomi/laurel_sprout
-943ee07  Merge branch 'kernel.lnx.4.14.r4-rel' of https://github.com/android-linux-stable/msm-4.14 into dtbo  [HarukeyUA]
+ * device/xiaomi/laurel_sprout
+408406d  laurel_sprout: fod: Update HBM params from stock display service  [stenkinevgeniy@gmail.com]
+288bf65  Revert "laurel_sprout: Correct fod hbm node and params"  [HarukeyUA]
+61618c2  laurel_sprout: Drop CDSchedtuneBoost powerhint  [HarukeyUA]
 
  * official_devices
-35372ee  enchilada: build done  [blinoff82]
-
- * packages/apps/SyberiaSettings
-6bcc8e8  Custom Rounded Corner and Padding preferences [2/2]  [Kshitij Gupta]
-32eb68c  Network traffic: Update RU translation  [blinoff82]
-
- * vendor/MiuiCamera
-c4c5f47  Adapt to our needs  [HarukeyUA]
+76623d4  laurel_sprout: Build done  [HarukeyUA]
+cd7f88a  raphael build 28/03/2020x  [kondors1995]
 
 =============
-   2020-03-13
+   2020-03-28
 =============
- * art
-98169a0  constify JNINativeMethod tables  [Daniel Micay]
 
- * frameworks/av
-764ce82  Merge tag 'LA.UM.8.1.r1-14500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPB]
+ * device/xiaomi/laurel_sprout
+fa188f9  Revert "Include google/vendor/customization"  [DennySPB]
+3f8f09e  sepolicy: mark /sys/class/drm/sde-crtc-0/measured_fps as sysfs_graphics type  [DennySPB]
+
+ * official_devices
+31007aa  enchilada: update 03/27/20  [blinoff82]
+
+=============
+   2020-03-27
+=============
+
+ * device/xiaomi/laurel_sprout
+697fabb  add FPS overlay  [Lup Gabriel]
 
  * frameworks/base
-d3badbc  ProgressBar: Media volume bar indicates a wrong value  [Tetsutoki Shiozawa]
-b7d55d6  Send battery low intent when battery warning boundary changed  [Xin Guan]
-c19d6d6  SystemUI: Disable heads up debugging on non eng builds  [Han Wang]
-4b53665  Pad ime_switcher same as navbar buttons  [codingkerensa]
-55c63d3  Add Network Traffic Layout [1/2]  [AnkitGourav]
-541ca69  NetworkTraffic: Add Dynamic Mode [1/2]  [AnkitGourav]
-de6df1a  NetworkTraffic: Fix Net Text Getting Cut at DPI Changes  [SuperDroidBond]
-8caab55  NetworkTraffic: Allow user to choose positioning [1/2]  [calebcabob]
-a9fdf34  Bring back traffic indicator for Notch Devices !!!  [Alex Cruz]
-51940e0  NetworkTraffic: Fix gravity  [xyyx]
-498aad2  TrafficSB: Pass the animate bool  [ganeshi4u]
-863061b  NetworkTraffic: Fix gravity  [xyyx]
-6e34006  Network Traffic: Add Option for Users to select size of Single Traffic (Up/Down) Font Size  [SuperDroidBond]
-664b863  Hide arrows in network traffic indicators [1/2]  [Nico60]
-b37c5e7  Network traffic: Retain our notch check  [Alex]
-676248d  Option for Up, Down as well for Network Traffic [1/2]  [ezio84]
-efacb7f  Add network traffic monitor properly to statusbar icons  [SpiritCroc]
-d73e529  Bring back traffic indicator for all!  [Alex Cruz]
-ba88363  Revert network traffic  [DennySPB]
-17fbfa5  TextureView rebind GL texture, if AHB content has changed  [Stan Iliev]
-09adfb6  base: New font-pack [1/2]  [blinoff82]
-8bb3b01  VoWifi notification for emergency calls  [Sukanya Rajkhowa]
+a7dfdf4  Revert "FODCircleView: disable touch detection on screen off"  [kondors1995]
+a16ec23  ambientdisplay: Fix volume key music control  [Christopher R. Palmer]
+6682558  Flashlight toggle API improvements  [ezio84]
+41a34db  Screenshot: remove white flash if dark mode is enabled  [ezio84]
+2087e26  Freedom windows: fix drag [1/2]  [Jon West]
+984a8ee  Navbar: Ensure 2/3 button layout options play nice with gesture navbar  [Alex]
+4dc1dac  Update RU translation  [DennySPB]
+b3ea13a  ActionUtils: use longshot api in screenshot helper  [DennySPB]
+2dfca5c  Remove no longer used NavBarUtils helper  [DennySPB]
+bc5c9e8  Improve gesture navigation handle length [1/2]  [Nicolas Dhouailly]
+be7c784  ActionUtils: don't crash on voice search if package not installed  [DennySPB]
+f910389  LongSwipeGestures: Vibrate on action if gesture haptic feedback enabled  [DennySPB]
+4e361c2  base: Move actions into its own class [SQUASHED]  [Alex Cruz]
+dd40597  ActionUtils: Reverse actions for QS and notification panel  [ezio84]
+0c83f38  base: allow for customizing the length of the navigation handle [1/2]  [Anay Wadhera]
+f2db924  Extended swipe double arrow: don't show if option is disabled  [ezio84]
+3f469cf  Gesture nav extended swipe: show a double arrow when almost triggered  [Nico]
+41b2f15  Gestures: Back long swipe improvements  [Anushek Prasal]
 
  * frameworks/native
-95e0e72  Merge tag 'LA.UM.8.1.r1-14500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/native into HEAD  [DennySPB]
-
- * frameworks/opt/net/ims
-e9a546c  Merge tag 'LA.UM.8.1.r1-14500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/ims into HEAD  [DennySPB]
+d0de44e  Freedom windows: fix drag [2/2]  [Jon West]
 
  * frameworks/opt/telephony
-c68d74a  Merge tag 'LA.UM.8.1.r1-14500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPB]
+ae203f0  Merge branch '10.0' of https://github.com/syberia- */platform_frameworks_opt_telephony  [DennySPB]
 
  * packages/apps/Launcher3
-70757cd  Merge "Revert "Increase all apps top padding to avoid visual glitch in recents"" into 10.0  [dennyspb]
+4a7f089  dimens: adjust to avoid icon crop on recents  [DennySPB]
+1409958  Globally disable debug logging  [Bruno Martins]
+
+ * packages/apps/Settings
+2d6f99b  Update RU translation  [DennySPB]
+d48adf1  Gestures: move back arrow animation option into gesture tweaks  [DennySPB]
+3c46722  Gestures: Move gestures haptic to gestures tweaks  [DennySPB]
+45833b6  Improve gesture navigation handle length [2/2]  [Nicolas Dhouailly]
 
  * packages/apps/SyberiaSettings
-787579f  Add Network Traffic Layout [2/2]  [AnkitGourav]
-1504071  NetworkTraffic: Add Dynamic Mode [2/2]  [AnkitGourav]
-67b3e42  NetworkTraffic: Allow user to choose positioning [2/2]  [DJ Calphonic]
-01da4e4  Network Traffic:Add Option for Users to select size of Single Traffic (Up/Down) Font Size [2/2]  [SuperDroidBond]
-7067957  Hide arrows in network traffic indicators [2/2]  [Nico60]
-b3fa86d  Status network traffic [2/2]  [ezio84]
-b8e1f02  Drop network traffic  [DennySPB]
+fd86776  Merge "Import Custom switch and category" into 10.0  [dennyspb]
 
- * packages/services/Telecomm
-383f4c8  Merge tag 'LA.UM.8.1.r1-14500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm into HEAD  [DennySPB]
+=============
+   2020-03-26
+=============
 
- * packages/services/Telephony
-38fed79  Merge tag 'LA.UM.8.1.r1-14500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony into HEAD  [DennySPB]
+ * device/xiaomi/laurel_sprout
+3efe80c  laurel_sprout: Fixup powerhints  [HarukeyUA]
+741fb5d  Revert "[DNM] laurel_sprout: Don't build dtbo"  [HarukeyUA]
+8db39d7  laurel_sprout: enable PSI monitor  [UtsavisGreat]
+8a801e4  laurel_sprout: add lmkd options from coral  [UtsavisGreat]
+e7752ca  laurel_sprout: overlay: Enable VoWiFi & ViLTE for Airtel (UP)  [Shubham Das]
+f3461a9  laurel_sprout: overlay: Enable ViLTE for Airtel (India) & 404 mcc  [Shubham Das]
+be71e95  laurel_sprout: overlay: Enable VoLTE/VoWIFI for Digi Malaysia  [Dyneteve]
+21666bc  laurel_sprout: overlay: Enable voWIFI for Airtel  [Dyneteve]
+3900e5b  laurel_sprout: overlay: Enable voLTE/voWIFI/ViLTE for entire 460 mcc  [Dyneteve]
+d4f58f4  laurel_sprout: overlay: Make WiFi Calling preference editable for Jio (India)  [Shubham Das]
+e2d16ce  laurel_sprout: overlay: Enable VoLTE/voWIFI for entire 226 mcc  [Dyneteve]
+dfff021  laurel_sprout: IMS: Enable IMS feature flags for supported carriers  [Ravi Paluri]
+257cd6a  laurel_sprout: overlay: Get VoLTE/VoWIFI for Digi Mobil going  [Dyneteve]
+f52dce9  laurel_sprout: Enable VoWIFI for MTS (Russia)  [Henrique Pereira]
+99b0405  laurel_sprout: overlay: Enable VoLTE for Viettel Vietnam  [Dyneteve]
+85ac16b  laurel_sprout: overlay: Enable VoWIFI for Airtel (#12)  [Shubham Das]
+223c515  laurel_sprout: overlay: Enable VoLTE/VoWIFI for Turkcell/Digi  [Dyneteve]
+43e8744  laurel_sprout: Enable VoLTE/WoWIFI for Megafone, MTS and Tele2/ECC/Volgogr  [Henrique Pereira]
+2400e66  laurel_sprout: overlay: Enable VoLTE/VoWIFI for Digi Mobil  [Dyneteve]
+31c178c  laurel_sprout: IMS-VT: Hide hold/add button for video call  [pengfeix]
+2150741  laurel_sprout: overlay: Enable VoLTE/VoWIFI for all indian cariers  [Dyneteve]
+19cc338  laurel_sprout: Add 404/94 for Airtel/TN (#10)  [Rooban]
+13120fa  laurel_sprout: Updated CarrierConfig for Indian carriers  [David Delima]
+49cb4fa  laurel_sprout: IMS: Disable filtering out conference host for some carriers  [Zhao Fan]
+9451d7a  laurel_sprout: Update CarrierConfig xml's  [David Delima]
+7e61742  laurel_sprout: IMS: Support to notify user when video call failed  [Zhao Fan]
+e911a80  laurel_sprout: IMS: Enable IMS feature flags for supported carriers  [Ashit Sood]
+a473e4a  laurel_sprout: IMS: Add config flag for VT one way options  [Wileen Chiu]
+e240253  laurel_sprout: Disable HD logo  [Dyneteve]
+b786346  laurel_sprout: Update CarrierConfig overlay from LA.UM.8.1.r1-08800-sm8150.0  [Dyneteve]
+66c4c5b  laurel_sprout: Add debug IMS props to workaround CarrierConfig restrictions  [LuK1337]
+06b6d6f  laurel_sprout: Fix props formatting, sort props  [HarukeyUA]
+ae16885  Remove qti fw boost and disable services in favor of libperfmgr  [DennySPB]
+c361cf5  powerhint: add controls for schedtune boost  [TheHitMan7]
+ad14ed6  libperfmgr: Reduce TASchedtuneBoost for touch hints  [Nauval Rizky]
+aafdd2a  libperfmgr: Update performance hint timeout  [TheHitMan7]
+a66d78b  powerhint: Adjust for sm6125  [TheHitMan7]
+828e3d3  laurel_sprout: Sync powerhints with sm6150  [HarukeyUA]
+fa578d2  laurel_sprout: init.rc: disable sched_stats  [DennySPB]
+76c506b  laurel_sprout: sepolicy: Fix debugfs_sched_features  [kondors1995]
+116a7d4  laurel_sprout: init.qcom.rc: Mask up legacy PowerHAL  [Nauval Rizky]
+b577d38  laurel_sprout: Sepolicy: allow audio hal to do binder calls to libperfmgr  [DennySPB]
+b144de1  laurel_sprout: Cleanup  [kondors1995]
+a6bd3d2  laurel_sprout: sepolicy: Allow libpergmr to acces rpmh_stats  [kondors1995]
+7ed4702  laurel_sprout: sepolicy: allow libperfmgr do binder calls to audio hal  [DennySPB]
+39ed374  laurel_sprout: sepolicy: Allow powerhal to modifiy cpu_dma_latency  [kondors1995]
+2cb8f77  laurel_sprout: sepolicy: allow libperfmgr read wlan powerstats  [DennySPB]
+dcd2e30  laurel_sprout: sepolicy: setup for libperfmgr  [DennySPB]
+912574e  laurel_sprout: Power: Add explicit initialization for last timestamp and fix time unit  [Wei Wang]
+585c315  laurel_sprout: modified system variant of libperfmgr  [kondors1995]
 
- * prebuilts/gcc/linux-x86/aarch64/aarch64-elf
-811a3bc  Import GCC 9.3, binutils 2.34  [Park Ju Hyung]
+ * frameworks/base
+7ec471a  Add kill app action to nav swipe actions [1/3]  [ezio84]
+555fa67  Add kill-app api (with new fresh implementation)  [ezio84]
+97434ca  Allow long back swipe on bottom screen when launcher is showing [1/2]  [ezio84]
+62a9fa3  Allow a wider back swipe to trigger actions (instead of timeout) [1/2]  [ezio84]
+e6915dd  Move actions to ActionUtils [1/2]  [ezio84]
+a5e561e  Allow long back swipe to trigger custom actions/app/activities [1/2]  [ezio84]
+e742062  Don't include the data dir in zygote library paths.  [Torne (Richard Coles)]
+8edc02b  Fix for recycling key events when sending global button broadcast  [Hiroaki.Kojima]
+ec8e58b  Make sure the right DND config is used  [Daniel Hunt]
+0c45317  Fix ThumbnailUtils thumbnail pts calculation  [Chong Zhang]
+9d464e2  SystemUI: FPS Info Overlay & Tile  [Marko Man]
 
- * prebuilts/gcc/linux-x86/arm/arm-eabi
-566df57  Import GCC 9.3, binutils 2.34  [Park Ju Hyung]
+ * packages/apps/Settings
+2d36107  Allow for customizing the length of the navigation handle [2/2]  [Alex]
+5c8c238  Allow long back swipe on bottom screen when launcher is showing [2/2]  [ezio84]
+efce5e1  Allow a wider back swipe to trigger actions (instead of timeout) [2/2]  [ezio84]
+f4e1f39  Allow long back swipe to trigger custom actions/app/activities [2/2]  [ezio84]
+3f13071  MobileNetwork: always enable NETWORK_INTERNET_V2 feature  [DennySPB]
+
+ * packages/apps/SyberiaSettings
+70f2f07  Import Custom switch and category  [Alex]
 
  * vendor/xiaomi/laurel_sprout
-e948c9c  laurel_sprout: Import ANT+ blobs  [HarukeyUA]
+a2d5634  laurel_sprout: Drop perf blobs  [HarukeyUA]
 
 =============
-   2020-03-12
+   2020-03-25
 =============
 
- * device/xiaomi/laurel_sprout
-ac22cc6  laurel_sprout: Add ANT+ support  [LuK1337]
-1f25b48  laurel_sprout: disable a2dp offload and switch to default bt audio HAL  [Peter Cai]
+ * frameworks/av
+cb29545  Merge tag 'LA.UM.8.3.r1-07600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPB]
+
+ * frameworks/base
+46ef8d0  Fix wrong variable in AccountManagerService's TokenCache  [Haohua Li]
+9e6fc68  Telephony: Rename VoWiFi Emergency notification intent.  [Muhammed Siju]
+66c1131  IMS: Add new Carrier Config.  [Sonalika Paul]
+f1fdc7b  [1/2] SystemUI: change layout of keyguard status slice view  [maxwen]
+f88e1f7  SystemUI: also use mobile data panel on celular qs tile  [maxwen]
+8f546de  SystemUI: revert the special long click handling of dual target qs tiles  [maxwen]
+9b2b1d1  QS: Add and use Mobile Data panel  [Joe Maples]
+0bca8c4  QS: Add and use Bluetooth Panel instead of full Settings  [Joe Maples]
+f6ab049  QS: Use Settings.Panel intents for WiFi and NFC  [Joe Maples]
+28944bf  SystemUI: Disable heads up debugging on debug builds as well.  [Jake Weinstein]
+bff5ba3  NotificationLightsView: omit debug messages spam  [DennySPB]
+
+ * frameworks/native
+3c22a08  Merge tag 'LA.UM.8.3.r1-07600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/frameworks/native into HEAD  [DennySPB]
+
+ * frameworks/opt/net/ims
+2465838  Merge tag 'LA.UM.8.3.r1-07600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/ims into HEAD  [DennySPB]
+
+ * frameworks/opt/telephony
+4580f82  Restore getSubIdFromNetworkRequest method  [Alex Koskovich]
+ea8dbf7  Merge tag 'LA.UM.8.3.r1-07600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPB]
 
  * kernel/xiaomi/laurel_sprout
-c3ea7e6  Merge 4.14.173 into kernel.lnx.4.14.r4-rel  [Nathan Chancellor]
+a8437f5  Revert "dts: Disable AVB for vendor and product"  [HarukeyUA]
+64a90ab  arm64: configs: Switch to userspace lmkd  [HarukeyUA]
+3bfe5e2  arm64: configs: Enable PSI  [HarukeyUA]
+8f2e2a56  BACKPORT: block: annotate refault stalls from IO submission  [Johannes Weiner]
+f1cee5f  UPSTREAM: sched/psi: Do not require setsched permission from the trigger creator  [Suren Baghdasaryan]
+34dc3a7  UPSTREAM: psi: get poll_work to run when calling poll syscall next time  [Jason Xing]
+e175b59  UPSTREAM: sched/psi: Reduce psimon FIFO priority  [Peter Zijlstra]
+a78f24a  psi: Use deferrable psi_avgs_work  [Patrick Daly]
 
- * packages/services/OmniJaws
-df22e4d  OmniJaws: add corner radius to widget background  [maxwen]
+ * official_devices
+7333c24  Update sanders.json  [rlshukhov]
+ae997aa  Update sanders.json  [rlshukhov]
+10e8f9c  Update README.md  [rlshukhov]
+42d4e87  Update README.md  [rlshukhov]
 
-=============
-   2020-03-11
-=============
+ * packages/apps/Settings
+bb3c889  panels: fix data usage display on mobile panel  [maxwen]
+b077817  QS panels: Improvements  [Alex]
+65492d7  Settings: add pair new to BT panel slice  [maxwen]
+6986996  panels: Add Bluetooth panel  [Joe Maples]
+811eb8f  panels: Add Mobile Data panel  [Joe Maples]
 
- * external/skia
-f36296a  Allow to rebind GL texture if AHB content has changed  [Stan Iliev]
+ * packages/services/Telephony
+d394240  Merge tag 'LA.UM.8.3.r1-07600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony into HEAD  [DennySPB]
 
- * kernel/xiaomi/laurel_sprout
-12cd844  Linux 4.14.173  [Greg Kroah-Hartman]
-3023806  ASoC: topology: Fix memleak in soc_tplg_manifest_load()  [Dragos Tarcatu]
-df4bf4d  xhci: handle port status events for removed USB3 hcd  [Mathias Nyman]
-ec6ddb1a  dm integrity: fix a deadlock due to offloading to an incorrect workqueue  [Mikulas Patocka]
-d789344  powerpc: fix hardware PMU exception bug on PowerVM compatibility mode systems  [Desnes A. Nunes do Rosario]
-956b5b1  dmaengine: coh901318: Fix a double lock bug in dma_tc_handle()  [Dan Carpenter]
-5c5cdae  hwmon: (adt7462) Fix an error return in ADT7462_REG_VOLT()  [Dan Carpenter]
-09192ee  ARM: imx: build v7_cpu_resume() unconditionally  [Ahmad Fatoum]
-de374e1  IB/hfi1, qib: Ensure RCU is locked when accessing list  [Dennis Dalessandro]
-3c1099c  RMDA/cm: Fix missing ib_cm_destroy_id() in ib_cm_insert_listen()  [Jason Gunthorpe]
-8457a77  RDMA/iwcm: Fix iwcm work deallocation  [Bernard Metzler]
-9b2c4c1  ASoC: dapm: Correct DAPM handling of active widgets during shutdown  [Charles Keepax]
-5c17ed4  ASoC: pcm512x: Fix unbalanced regulator enable call in probe error path  [Matthias Reichl]
-6dfcfe0  ASoC: pcm: Fix possible buffer overflow in dpcm state sysfs output  [Takashi Iwai]
-7c4e080  ASoC: intel: skl: Fix possible buffer overflow in debug outputs  [Takashi Iwai]
-543eafe  ASoC: intel: skl: Fix pin debug prints  [Takashi Iwai]
-c40c33a  ASoC: topology: Fix memleak in soc_tplg_link_elems_load()  [Dragos Tarcatu]
-77ed33b  ARM: dts: ls1021a: Restore MDIO compatible to gianfar  [Vladimir Oltean]
-165dc07  dm cache: fix a crash due to incorrect work item cancelling  [Mikulas Patocka]
-3e4c735  dmaengine: tegra-apb: Prevent race conditions of tasklet vs free list  [Dmitry Osipenko]
-04b3163  dmaengine: tegra-apb: Fix use-after-free  [Dmitry Osipenko]
-a350eee  x86/pkeys: Manually set X86_FEATURE_OSPKE to preserve existing changes  [Sean Christopherson]
-a4719f6  vt: selection, push sel_lock up  [Jiri Slaby]
-64489a2  vt: selection, push console lock down  [Jiri Slaby]
-432ef54  vt: selection, close sel_buffer race  [Jiri Slaby]
-7336a80  serial: 8250_exar: add support for ACCES cards  [Jay Dolan]
-b0960a0  tty:serial:mvebu-uart:fix a wrong return  [tangbin]
-414de95  arm: dts: dra76x: Fix mmc3 max-frequency  [Faiz Abbas]
-265b81a  fat: fix uninit-memory access for partial initialized inode  [OGAWA Hirofumi]
-ebf46a9  mm, numa: fix bad pmd by atomically check for pmd_trans_huge when marking page tables prot_numa  [Mel Gorman]
-1855aac  vgacon: Fix a UAF in vgacon_invert_region  [Zhang Xiaoxu]
-8389c9d  usb: core: port: do error out if usb_autopm_get_interface() fails  [Eugeniu Rosca]
-af20d8c  usb: core: hub: do error out if usb_autopm_get_interface() fails  [Eugeniu Rosca]
-bc6da5b  usb: core: hub: fix unhandled return by employing a void function  [Eugeniu Rosca]
-504a02d4  usb: quirks: add NO_LPM quirk for Logitech Screen Share  [Dan Lazewatsky]
-5c4d9b1  usb: storage: Add quirk for Samsung Fit flash  [Jim Lin]
-18a7af5  cifs: don't leak -EAGAIN for stat() during reconnect  [Ronnie Sahlberg]
-34bf8ca  net: thunderx: workaround BGX TX Underflow issue  [Tim Harvey]
-e2de3b9  x86/xen: Distribute switch variables for initialization  [Kees Cook]
-bdb5136  nvme: Fix uninitialized-variable warning  [Keith Busch]
-a8dc797  x86/boot/compressed: Don't declare __force_order in kaslr_64.c  [H.J. Lu]
-8ea1411  s390/cio: cio_ignore_proc_seq_next should increase position index  [Vasily Averin]
-5f07ae5  watchdog: da9062: do not ping the hw during stop()  [Marco Felsch]
-29c2765  net: ks8851-ml: Fix 16-bit IO operation  [Marek Vasut]
-af49001  net: ks8851-ml: Fix 16-bit data access  [Marek Vasut]
-ea29d94  net: ks8851-ml: Remove 8-bit bus accessors  [Marek Vasut]
-89e30bb  drm/msm/dsi: save pll state before dsi host is powered off  [Harigovindan P]
-892afde  drm: msm: Fix return type of dsi_mgr_connector_mode_valid for kCFI  [John Stultz]
-3824b96  drm/msm/mdp5: rate limit pp done timeout warnings  [Brian Masney]
-60fe004  usb: gadget: serial: fix Tx stall after buffer overflow  [Sergey Organov]
-e476b55  usb: gadget: ffs: ffs_aio_cancel(): Save/restore IRQ flags  [Lars-Peter Clausen]
-e2dc64f  usb: gadget: composite: Support more than 500mA MaxPower  [Jack Pham]
-dd3a97b  selftests: fix too long argument  [Jiri Benc]
-6d53f29  serial: ar933x_uart: set UART_CS_{RX,TX}_READY_ORIDE  [Daniel Golle]
-53647b8  kprobes: Fix optimize_kprobe()/unoptimize_kprobe() cancellation logic  [Masami Hiramatsu]
-b2c7753  RDMA/core: Fix use of logical OR in get_new_pps  [Nathan Chancellor]
-c18a10e  RDMA/core: Fix pkey and port assignment in get_new_pps  [Maor Gottlieb]
-e1e85c0  net: dsa: bcm_sf2: Forcibly configure IMP port for 1Gb/sec  [Florian Fainelli]
-5b5295b  EDAC/amd64: Set grain per DIMM  [Yazen Ghannam]
-7a4139c  x86/mce: Handle varying MCA bank counts  [Yazen Ghannam]
-ff8e12b  vhost: Check docket sk_family instead of call getname  [Eugenio Pérez]
-c7cba03  audit: always check the netlink payload length in audit_receive_msg()  [Paul Moore]
-0abb54a  Revert "char/random: silence a lockdep splat with printk()"  [Greg Kroah-Hartman]
-2630ea3  mm, thp: fix defrag setting if newline is not used  [David Rientjes]
-b200a5d  mm/huge_memory.c: use head to check huge zero page  [Wei Yang]
-28a5ca2  perf hists browser: Restore ESC as "Zoom out" of DSO/thread/etc  [Arnaldo Carvalho de Melo]
-b996b66  kprobes: Set unoptimized flag after unoptimizing code  [Masami Hiramatsu]
-cf66af9  drivers: net: xgene: Fix the order of the arguments of 'alloc_etherdev_mqs()'  [Christophe JAILLET]
-380a732  tuntap: correctly set SOCKWQ_ASYNC_NOSPACE  [Jason Wang]
-0bdc639  KVM: Check for a bad hva before dropping into the ghc slow path  [Sean Christopherson]
-e12afc7  KVM: SVM: Override default MMIO mask if memory encryption is enabled  [Tom Lendacky]
-3b30e19  mwifiex: drop most magic numbers from mwifiex_process_tdls_action_frame()  [Brian Norris]
-7345a19  namei: only return -ECHILD from follow_dotdot_rcu()  [Aleksa Sarai]
-713f632  net: ena: make ena rxfh support ETH_RSS_HASH_NO_CHANGE  [Arthur Kiyanovski]
-31909a6  net: atlantic: fix potential error handling  [Pavel Belous]
-c05073e  net: netlink: cap max groups which will be considered in netlink_bind()  [Nikolay Aleksandrov]
-04fb39b  include/linux/bitops.h: introduce BITS_PER_TYPE  [Chris Wilson]
-35dc93e  ecryptfs: Fix up bad backport of fe2e082f5da5b4a0a92ae32978f81507ef37ec66  [Nathan Chancellor]
-ebc406a  usb: charger: assign specific number for enum value  [Peter Chen]
-b67d1c34  drm/i915/gvt: Separate display reset from ALL_ENGINES reset  [Tina Zhang]
-60493d0  i2c: jz4780: silence log flood on txabrt  [Wolfram Sang]
-ee850f0  i2c: altera: Fix potential integer overflow  [Gustavo A. R. Silva]
-dea270c  MIPS: VPE: Fix a double free and a memory leak in 'release_vpe()'  [Christophe JAILLET]
-9539c5c  HID: hiddev: Fix race in in hiddev_disconnect()  [dan.carpenter@oracle.com]
-596e029  Revert "PM / devfreq: Modify the device name as devfreq(X) for sysfs"  [Orson Zhai]
-581695e  tracing: Disable trace_printk() on post poned tests  [Steven Rostedt (VMware)]
-3353318  HID: core: increase HID report buffer size to 8KiB  [Johan Korsnes]
-67e4371  HID: core: fix off-by-one memset in hid_report_raw_event()  [Johan Korsnes]
-b011c72  HID: ite: Only bind to keyboard USB interface on Acer SW5-012 keyboard dock  [Hans de Goede]
-634572f  KVM: VMX: check descriptor table exits on instruction emulation  [Oliver Upton]
-dbaf976  ACPI: watchdog: Fix gas->access_width usage  [Mika Westerberg]
-0a94e10  ACPICA: Introduce ACPI_ACCESS_BYTE_WIDTH() macro  [Mika Westerberg]
-edde9fc  audit: fix error handling in audit_data_to_entry()  [Paul Moore]
-267e0a9  ext4: potential crash on allocation error in ext4_alloc_flex_bg_array()  [Dan Carpenter]
-7c9fbd9  net: sched: correct flower port blocking  [Jason Baron]
-eca56a6  qede: Fix race between rdma destroy workqueue and link change event  [Michal Kalderon]
-84c4d66  ipv6: Fix route replacement with dev-only route  [Benjamin Poirier]
-14d5cc5  ipv6: Fix nlmsg_flags when splitting a multipath route  [Benjamin Poirier]
-4dfb483  sctp: move the format error check out of __sctp_sf_do_9_1_abort  [Xin Long]
-a1229fc8  nfc: pn544: Fix occasional HW initialization failure  [Dmitry Osipenko]
-385b8a8  net: phy: restore mdio regs in the iproc mdio driver  [Arun Parameswaran]
-4c5b727  net: fib_rules: Correctly set table field when table number exceeds 8 bits  [Jethro Beekman]
-ac5ea06  sysrq: Remove duplicated sysrq message  [Petr Mladek]
-28178a8  sysrq: Restore original console_loglevel when sysrq disabled  [Petr Mladek]
-ffe09a4  cfg80211: add missing policy for NL80211_ATTR_STATUS_CODE  [Sergey Matyukevich]
-125ccba  cifs: Fix mode output in debugging statements  [Frank Sorenson]
-3f4d2bb  net: ena: ena-com.c: prevent NULL pointer dereference  [Arthur Kiyanovski]
-ce54eb5  net: ena: ethtool: use correct value for crc32 hash  [Sameeh Jubran]
-135c5af  net: ena: fix incorrectly saving queue numbers when setting RSS indirection table  [Arthur Kiyanovski]
-ef28d60  net: ena: rss: store hash function as values and not bits  [Arthur Kiyanovski]
-092a633  net: ena: rss: fix failure to get indirection table  [Sameeh Jubran]
-304b62b  net: ena: fix incorrect default RSS key  [Arthur Kiyanovski]
-d13a5be  net: ena: add missing ethtool TX timestamping indication  [Arthur Kiyanovski]
-482c613  net: ena: fix uses of round_jiffies()  [Arthur Kiyanovski]
-670f5c6  net: ena: fix potential crash when rxfh key is NULL  [Arthur Kiyanovski]
-c4806d0  qmi_wwan: unconditionally reject 2 ep interfaces  [Bjørn Mork]
-83b3ac0  qmi_wwan: re-add DW5821e pre-production variant  [Bjørn Mork]
-6306a60  cfg80211: check wiphy driver existence for drvinfo report  [Sergey Matyukevich]
-518b947  mac80211: consider more elements in parsing CRC  [Johannes Berg]
-de02083  dax: pass NOWAIT flag to iomap_apply  [Jeff Moyer]
-3138109  drm/msm: Set dma maximum segment size for mdss  [Sean Paul]
-45004f2  ipmi:ssif: Handle a possible NULL pointer reference  [Corey Minyard]
-453cc45  ext4: fix potential race between s_group_info online resizing and access  [Suraj Jitindar Singh]
-4d830e8  ext4: fix potential race between s_flex_groups online resizing and access  [Suraj Jitindar Singh]
-2afeb56  ext4: fix potential race between online resizing and write operations  [Theodore Ts'o]
-da79135a  netfilter: nf_conntrack: resolve clash for matching conntracks  [Martynas Pumputis]
-864ef06  iwlwifi: pcie: fix rb_allocator workqueue allocation  [Johannes Berg]
-b22de1e  Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' into kernel.lnx.4.14.r4-rel  [Nathan Chancellor]
-19a75ca  Merge tag 'LA.UM.8.1.r1-13500-sm8150.0' into kernel.lnx.4.14.r4-rel  [Nathan Chancellor]
-
- * packages/apps/Launcher3
-de8f236  IconPack: restore lost code after new tag merge  [DennySPB]
+ * system/core
+12512ef  healthd: Add support for BMS, WiPower, Main.  [codeworkx]
+eb76e16  adb: defer acknowledgement of pushed files until the end.  [Josh Gao]
 
 =============
-   2020-03-10
-=============
-
-=============
-   2020-03-09
+   2020-03-24
 =============
 
  * frameworks/base
-4c2b9fa  [2/3] Add kill app back button toggle  [Danesh M]
-cf15a1c  [1/3] Add kill app back button toggle  [luk1337]
-
- * kernel/xiaomi/laurel_sprout
-94a1749  mkdtimg: Bundle upstream python rewrite as submodule  [Jason A. Donenfeld]
-2d8041b  dtbo.img: build device tree overlay partition image  [Woody Lin]
-
- * official_devices
-c1795bc  Update README.md  [rlshukhov]
-2124b53  Update README.md  [rlshukhov]
-0cd4beb  Update README.md  [rlshukhov]
-e0f619d  Update README.md  [rlshukhov]
-bbed3b7  raphael:build done  [kondors1995]
-
- * vendor/syberia
-72613bf  New font-pack [2/2]  [blinoff82]
-
-=============
-   2020-03-08
-=============
-
- * build/make
-c363521  Merge " Add cortex-A76 to known v8-2a cores" into 10.0  [blinov.in]
-1770072  Merge "Create 0 compression ratio jar files" into 10.0  [blinov.in]
-5dd64eb  Merge "Remove [jni_]link_type files" into 10.0  [blinov.in]
-f8789c8  Merge "Remove ro.bionic.ld.warning" into 10.0  [blinov.in]
-23891e7  Merge "Revamp nopreload configuration" into 10.0  [blinov.in]
-
- * device/xiaomi/laurel_sprout
-264b86d  [DNM] laurel_sprout: Don't build dtbo  [HarukeyUA]
-ea540cd  laurel_sprout: Disable usage of binutils  [HarukeyUA]
-8a92258  laurel_sprout: Correct product model  [HarukeyUA]
-fbf2808  laurel_sprout: Patch qti-telephony-common.jar for compatibility with r9  [LuK1337]
-9b05678  laurel_sprout: Update qti-telephony-common from DRG  [LuK1337]
-3908d4d  Include google/vendor/customization  [DennySPB]
-b5fcc77  laurel_sprout: Set loop.max_part to 16  [Dyneteve]
-8959423  laurel_sprout: Build libqdMetaData  [HarukeyUA]
-795c0e3  Enabled updateable APEX  [Luca Stefani]
-
- * frameworks/base
-8dd99e7  Make aspect ratio hack configable on app level [1/2]  [maxwen]
-c44582e  FODCircleView: adjust dim amount based on changes in brightness  [TheScarastic]
-9cd6cdb  FODCircleView: split boost and dim into separate functions  [Demon000]
-32383e9  FODCircleView: update position of icon before show  [Demon000]
-5627702  FODCircleView: bring closer to LOS impl  [kondors1995]
-c70445f  FODCircleView: disable touch detection on screen off  [Demon000]
-2ca4563  fw/b torch: Let long press power turn torch off when screen is on.  [Sam Mortimer]
-c4eafbd  SettingsProvider: Disable Bluetooth by default  [nysascape]
-
- * official_devices
-bb9a056  laurel_sprout: Build done  [HarukeyUA]
-22e86c4  enchilada: build done  [blinoff82]
-
- * packages/apps/SyberiaSettings
-c0b9e7d  [3/3] Add kill app back button toggle  [carpe462]
-
- * vendor/qcom/opensource/fm-commonsys
-c6f6bde  Merge tag 'LA.UM.8.1.r1-14300-sm8150.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/fm-commonsys into lineage-17.1  [Michael Bestas]
-
- * vendor/syberia
-8e0718e  Merge "Syberia version: bump to 3.5" into 10.0  [blinov.in]
-1def34b  Merge "Revert "make use proton clang 11 toolchain"" into 10.0  [dennyspb]
-bda64b2  Revert "make use proton clang 11 toolchain"  [dennyspb]
-4a9acd1  Merge "qcom: Proper add UM 4.14 platforms" into 10.0  [blinov.in]
-204326c  Merge "Revert "build: add support for trinket"" into 10.0  [blinov.in]
-80b602c  Merge "Update Google prebuilts" into 10.0  [blinov.in]
-c91bdff  Merge "make use proton clang 11 toolchain" into 10.0  [blinov.in]
+0e1f363  Apply proper displayCutout rotation in density 480 dpi and 270 degrees rotation.  [Mark Hong]
+ccb0f21  Visualizer: Ensure multi-thread safety  [Mikhail Naganov]
+32bb87e  bugfix for noteResetVideoLocked  [wangqiuling]
+741452c  AlarmManagerService: Fix FWR before boot completed  [jianzhou]
+baf6c00  MediaCodec: Release lock before calling onFrameRendered()  [Pawin Vongmasa]
+024d727  Sanitize Bluetooth device names without regex  [Dan Sandler]
 
