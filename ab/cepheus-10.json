@@ -1,8 +1,8 @@
 {
    "response": [
      {
-       "url": "https://sourceforge.net/projects/syberiaos/files/cepheus/syberia_cepheus-v3.6-20200411-0600-OFFICIAL.zip", 
-       "device_model": "Xiaomi Mi 9", 
+       "url": "https://sourceforge.net/projects/syberiaos/files/cepheus/syberia_cepheus-v3.6-20200411-0600-OFFICIAL.zip/download",
+       "device_model": "Mi 9",
        "filename": "syberia_cepheus-v3.6-20200411-0600-OFFICIAL.zip", 
        "device_codename": "cepheus", 
        "romtype": "OFFICIAL", 
