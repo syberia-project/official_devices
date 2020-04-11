@@ -1,0 +1,164 @@
+=============
+   2020-04-11
+=============
+
+ * frameworks/base
+2b46ea0  base: do not use new lockscreen layout for bypass  [Ethan Halsall]
+
+ * packages/apps/Settings
+3afb709  devices: drop fajita  [DennySPB]
+
+=============
+   2020-04-10
+=============
+
+ * device/xiaomi/cepheus
+501da00  cepheus: Add vendor_google_customization to dependencies  [ecrosoftxiao]
+090ed43  cepheus: Update build fingerprint to coral april  [jhenrique09]
+662a21c  cepheus: fod: use backlight level for brightness  [Demon000]
+
+ * kernel/xiaomi/sm8150
+8a7388b  ARM64: dts: define doze lpm and hpm backlight levels  [Demon000]
+976a6b9  dsi: display: expose backlight level  [Demon000]
+0af2743  dsi: display: implement fod hbm mode  [Demon000]
+66560dc  dsi: display: implement doze mode  [Demon000]
+0f2e60c  dsi: display: create empty attributes group  [Demon000]
+0095f31  Revert "drm: msm: implement aod mode"  [Demon000]
+4820698  Revert "drm: msm: add fod hbm node"  [Demon000]
+e7af353  Revert "drm: msm: use display fod hbm mode"  [Demon000]
+5cd0011  Revert "drm: msm: remove dimming handling"  [Demon000]
+6276455  Revert "drm: msm: disable doze on screen off"  [Demon000]
+3498ba3  Revert "drm: msm: allow brightness updates during fod hbm"  [Demon000]
+
+ * vendor/syberia
+a8a0367  v3.6  [DennySPB]
+
+=============
+   2020-04-09
+=============
+
+ * frameworks/base
+a34cde0  Revert "Revert "Use non-wakeup alarm for delay constraint.""  [DennySPB]
+9f7dc5e  Prevent HandlerThread from losing interrupted flag  [Michael Hoogasian]
+ed789399  [3/4] Port face unlock feature  [jhenrique09]
+e3364a0  Proper fix of Android Auto  [Hikari-no-Tenshi]
+33f1013  [Re-Apply] FODCircleView: Fix position if cutout is hidden  [jhenrique09]
+
+ * packages/apps/Settings
+ad723dd  [4/4] Port face unlock feature  [jhenrique09]
+e70680d  Merge "team: Add maintainer for Xiaomi Mi 9" into 10.0  [dennyspb]
+
+ * vendor/syberia
+37142cd  [2/4] Port face unlock feature  [jhenrique09]
+a5b249e   kernel: Add option for using LLD as linker  [mydongistiny]
+
+=============
+   2020-04-08
+=============
+
+ * build/make
+9b3fef8  Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/build into HEAD  [DennySPB]
+
+ * frameworks/av
+0e965b3  Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPB]
+
+ * frameworks/base
+902d13a  QS: add right/left padding even if it's 0 for collapsed statusbar  [ezio84]
+89ba9cc  Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPB]
+
+ * packages/apps/Settings
+e5a4b25  Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPB]
+
+ * system/bt
+942ae80  Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
+
+=============
+   2020-04-07
+=============
+
+ * external/motorola/faceunlock
+6b03cdf  Automatic translation import  [jhenrique09]
+
+ * frameworks/base
+b337cda  Revert "SystemUI: Show charging status in addition to trust granted/transient status"  [Luca Stefani]
+4bd641a  Allow to show music heads up on new tracks [1/2]  [ezio84]
+ec200cf  AndroidRuntime: Remove support for image classes  [Mathieu Chartier]
+b371dda  Whitelist OVERRIDE_WIFI_CONFIG for phone app  [Pranav Vashi]
+ae30ddd  Audioservice:do not supress music volume adjustment  [liuxiaoyu7]
+7bc2a21  a11y: don't crash the system when illegal component name encounted  [wangmingming1]
+978b555  Modify start/stop condition for mScreenDozeTimer.  [zhuguangqing]
+28a523f  DefaultPermissionGrantPolicy: Silence harmless errors  [Pranav Vashi]
+d98091b  AudioService: communicate audio HAL process pids to native audioserver  [Eric Laurent]
+eb28ff1  Subscribe ActivityManagerService to receive lmkd kill notifications  [Suren Baghdasaryan]
+d19f45c  Support unsolicited message from lmkd  [Jing Ji]
+34bd304  Implement ActivityManager to LMKD reconnect functionality  [Suren Baghdasaryan]
+b2100c1  os: Process: Fix wrong code in isThreadInProcess  [leo zhang]
+ce7709b  [hwui] fix -Wimplicit-int-float-conversion  [Nick Desaulniers]
+43785ac  Catch IllegalStateException when verify APK  [Zhuying Li]
+4243539  PMS and WMS deadlock when uninstalling APP  [Zhuying Li]
+9265221  lib/androidfw: Fix reversed logic  [Yi Kong]
+eed4791  Gestures: add back HideNavBar overlay  [DennySPB]
+6c54c36  Handle negative background data usage  [Pavan Kumar M]
+
+ * packages/apps/Settings
+b6b010a  team: Add maintainer for Xiaomi Mi 9  [ecrosoftxiao]
+
+ * packages/apps/SyberiaSettings
+07d7687  HW Keys: Fix custom app selection dialog  [xyyx]
+68222ef  Allow to show music heads up on new tracks [2/2]  [ezio84]
+
+ * vendor/syberia
+44ce76e  Add cepheus to official devices  [ecrosoftxiao]
+
+=============
+   2020-04-06
+=============
+ * art
+e228bbe  Simplify name verification in ClassLoaderContext.  [Vladimir Marko]
+
+ * device/xiaomi/cepheus
+a8ab25a  cepheus: Update Display blobs to LA.UM.8.1.r1-14500-sm8150.0  [ecrosoftxiao]
+
+ * packages/apps/Settings
+840082b  Legacy suggestions: Remove alpha for close vector  [Alex]
+8c6cb6e  Settings: panels: Improvements  [Alex]
+
+=============
+   2020-04-05
+=============
+
+ * device/xiaomi/cepheus
+7e81ad3  cepheus: Update Media blobs to LA.UM.8.1.r1-14500-sm8150.0  [Akash]
+424495b  cepheus: Update GPS blobs to LA.UM.8.1.r1-14500-sm8150.0  [Akash]
+14042a8  cepheus: Update graphics blobs to LA.UM.8.1.r1-14500-sm8150.0  [Akash]
+0a1ea43  cepheus: Import update-sha1sums.py from LOS  [Akash]
+8c92ef7  cepheus: rootdir: import coral fs tuning  [Demon000]
+4801efb  raphael: remove libdpps  [Demon Singur]
+2f4c02f  raphael: Remove read ahead configuration  [Demon Singur]
+5aa9bb3  raphael: remove unused panel info script  [Demon Singur]
+e4ef708  raphael: Remove unused props  [Demon Singur]
+45fb4f6  cepheus: sepolicy: Add more missing rules  [ecrosoftxiao]
+01a985a  cepheus: sepolicy: Address qti_init denials  [ecrosoftxiao]
+e68b251  cepheus: sepolicy: Address IR denials  [ecrosoftxiao]
+61af1ed  cepheus: sepolicy: Make perf hal happy  [ecrosoftxiao]
+
+ * external/motorola/faceunlock
+f79c7fe  faceunlock: Import blobs  [jhenrique09]
+
+ * frameworks/av
+11854da  Revert "cameraservice: Resolve message vs start/stop preview races"  [Han Wang]
+214d126  TimeCheck: fix use of uninitialized variable  [Mikhail Naganov]
+c398887  ld.config: add libashmemd_client.so to platform shared libs  [Pranav Vashi]
+e859954  media utils: dump audio HAL service before restarting audioserver  [Eric Laurent]
+d5b249d  audiopolicy: Fixup 7f84dfd and re-sync with CAF  [Bruno Martins]
+
+ * kernel/xiaomi/sm8150
+176f9fa  ARM64: Regenerate  [ecrosoftxiao]
+
+ * vendor/xiaomi/cepheus
+dacf5cb  cepheus: Sync with device tree  [Akash]
+b8393e1  cepheus: Update display blobs to LA.UM.8.1.r1-14500-sm8150.0  [Akash]
+2c34c71  cepheus: Updare Media blobs to LA.UM.8.1.r1-14500-sm8150.0  [Akash]
+ab2ecc0  cepheus: Update GPS blobs to LA.UM.8.1.r1-14500-sm8150.0  [Akash]
+5720bf5  cepheus: Update graphics blobs to LA.UM.8.1.r1-14500-sm8150.0  [Akash]
+
