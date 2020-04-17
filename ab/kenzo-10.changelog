@@ -1,0 +1,90 @@
+=============
+   2020-04-17
+=============
+
+=============
+   2020-04-16
+=============
+5e431ce  Do not clean up ART profiles during OTAs  [Calin Juravle]
+802d208  QS: Fix extra lines when icon number is small  [Alex Yustasov]
+704af4c  UninstallAlertDialogFragment: Catch IllegalArgumentException  [jhenrique09]
+cf636ad  Need to check current user when triggering notification lights  [woongki min]
+f7215f6  SettingsProvider: Resolve package name that requires permission  [Pranav Vashi]
+ff2bd5e  fw/b: Prevent double interface restriction remove on interface name change  [Sam Mortimer]
+6779c233  Revert "Fix deletion of VkSemaphores in VulkanManager."  [Rohan Hasabe (Hasaber8)]
+b8af500  Add a separate flag in the installer for keeping ART profiles  [Calin Juravle]
+7b31403  scripts/dtc: Update to upstream version v1.4.6-21-g84e414b0b5bc  [Rob Herring]
+6cd377a  dtc: checks: drop warning for missing PCI bridge bus-range  [Rob Herring]
+aefeea5  Merge changes I12ef069a,I7b082b9f into 10.0  [dennyspb]
+e97cfe4  team: Add maintainer for Xiaomi Redmi Note 3  [blinoff82]
+183b7c0  Buttons: Remove duplicate switches  [DennySPB]
+02b714a  Merge changes Iace8ecc9,I7c3879cb into 10.0  [dennyspb]
+2b43e9c  Add kenzo to official devices  [blinoff82]
+=============
+   2020-04-15
+=============
+49b76e1  ART: Showcase for Loop Versioning - Unrolling  [Artem Serov]
+24ee9ab  ART: Introduce Loop Versioning in SuberblockCloner  [Artem Serov]
+d10b0a2  ART: Fix a compiler crash for VectorizeDef() idioms  [Artem Serov]
+cb50099  Remove dex2oat image-classes support  [Mathieu Chartier]
+4a259d5  ART: Add support for SVE feature for ARM64  [Artem Serov]
+90eecb5  Prevent overflow for AOT hotness counters  [Mathieu Chartier]
+ddd7b6c  Fix profile saver hotness for AOT code  [Mathieu Chartier]
+73593b1  ARM/ARM64: Clean up artFindNativeMethod()  [Vladimir Marko]
+c6f4505  Fix pruning invoke environment for StringBuilder append pattern  [Vladimir Marko]
+2e4f92f  Loop vectorizer should not remove instructions that can throw  [Georgia Kouveli]
+e17db45  Remove requirement of a ProfilingInfo for jitted code  [Nicolas Geoffray]
+106fcae  ART: Improve ArraySet codegen  [Vladimir Marko]
+e856edc  Eliminate dead LoadClass when pruning ClinitCheck  [Vladimir Marko]
+07b4c1e  Add default argument kIsInstrumented=true  [Vladimir Marko]
+cf4d5d8  TWS-A2DP: Add TWS+ codec to DevUI support  [pramod kotreshappa]
+5e86428  BT: Adding aptX-Adaptive codec entry to Framework  [Gurpreet Ghai]
+1487a58  scripts: Silent all dtc warnings by default  [Bruno Martins]
+42ade18  of: batterydata: use generic node if no node is found  [Luca Stefani]
+a8dca50  ARM64/dts: trinket: fix memory overlap  [Dede Dindin Qudsy]
+f7763c0  Merge tag 'LA.UM.8.11.r1-03300-NICOBAR.0' of https://source.codeaurora.org/quic/la/platform/vendor/opensource/audio-kernel into ten  [HarukeyUA]
+af5fb0e  Merge tag 'LA.UM.8.11.r1-03300-NICOBAR.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into ten  [HarukeyUA]
+e0e2239  Merge tag 'LA.UM.8.11.r1-03300-NICOBAR.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn into ten  [HarukeyUA]
+74faee2  Merge tag 'LA.UM.8.11.r1-03300-NICOBAR.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/fw-api into ten  [HarukeyUA]
+859bcf3  Merge tag 'LA.UM.8.11.r1-03300-NICOBAR.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.14 into ten  [HarukeyUA]
+1140d6f  Merge branch 'kernel.lnx.4.14.r4-rel' of https://github.com/android-linux-stable/msm-4.14 into ten  [HarukeyUA]
+0357580  Fix setting of BLE scan parameters  [Subramanian Srinivasan]
+bb94bca  Add BLE Scan Phy parameter to scan API  [Subramanian Srinivasan]
+917e9d3  BT: Set aptX Adaptive codec priority  [Gurpreet Ghai]
+7446ed8  Buttons: add missing hw key disable switch  [DennySPB]
+1daf7cd  TWS-A2DP: Add TWS+ codec index  [pramod kotreshappa]
+04dcb47  BT: Adding APTX-Adaptive codec to BT HAL  [Gurpreet Ghai]
+df51ed9  Add BLE Scan Phy parameter to scan API Add BLE Scan Phy parameter to set scan parameters API.  [Subramanian Srinivasan]
+=============
+   2020-04-14
+=============
+7f00d9c  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPB]
+97e6ba0  QSDetail: match QSPanel background color  [Lucchetto]
+fa2810b  base: use bypassEnabledBiometric consistently  [Ethan Halsall]
+3ebd55c  fw/b: Squash of app fw restriction commits  [Danesh M]
+9d39b48  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/native into HEAD  [DennySPB]
+13dca56  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPB]
+a43b956  team: Add maintainer for Xiaomi Redmi Note 4  [blinoff82]
+74ef972  Settings: per-app cellular data, vpn and wifi restrictions  [Uldiniad]
+2184dcc  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm into HEAD  [DennySPB]
+dba0f29  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony into HEAD  [DennySPB]
+2c73358  system/netd: Add BPF support for lineage network restrictions  [Sam Mortimer]
+ecfe86e  system/netd: Squash of app fw restriction commits  [Uldiniad]
+554885a  Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/system/netd into HEAD  [DennySPB]
+2c6155e  Add mido to official devices  [blinoff82]
+=============
+   2020-04-13
+=============
+b408364  syberia: Move some system props to PRODUCT_SYSTEM_DEFAULT_PROPERTIES  [Rashed Abdel-Tawab]
+=============
+   2020-04-12
+=============
+745cac8  livedisplay: sdm: Do not create intermediate string  [Ethan Chen]
+00d6634  livedisplay: sdm: Default initialize objects created with new  [Ethan Chen]
+=============
+   2020-04-11
+=============
+08d7c67  cepheus: Update cepheus.json  [ecrosoftxiao]
+64a5a82  cepheus: Update 04/11/20  [ecrosoftxiao]
+5af6b60  Merge branch 'master' of https://github.com/syberia- */official_devices  [kondors1995]
+2a4ecc8  raphael: build 11/04/2020  [kondors1995]
