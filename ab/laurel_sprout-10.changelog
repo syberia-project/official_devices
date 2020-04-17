@@ -1,233 +1,148 @@
 =============
-   2020-03-30
+   2020-04-17
 =============
-
- * device/xiaomi/laurel_sprout
-1d535f3  Revert "Revert "Include google/vendor/customization""  [HarukeyUA]
-6c09070  laurel_sprout: Disable hashtree verification  [HarukeyUA]
-2704e64  laurel_sprout: Correct offsets  [HarukeyUA]
-
-=============
-   2020-03-29
-=============
-
- * device/xiaomi/laurel_sprout
-408406d  laurel_sprout: fod: Update HBM params from stock display service  [stenkinevgeniy@gmail.com]
-288bf65  Revert "laurel_sprout: Correct fod hbm node and params"  [HarukeyUA]
-61618c2  laurel_sprout: Drop CDSchedtuneBoost powerhint  [HarukeyUA]
-
- * official_devices
-76623d4  laurel_sprout: Build done  [HarukeyUA]
-cd7f88a  raphael build 28/03/2020x  [kondors1995]
+59b0823  laurel_sprout: Include offline charger resources  [HarukeyUA]
+a1e55a9  laurel_sprout: Switch to shrp  [HarukeyUA]
+7dccc7e  laurel_sprout: We are using f2fs for userdata  [HarukeyUA]
+178c198  laurel_sprout: fod: Add support for display feature  [TheScarastic]
+600d56a  laurel_sprout: Import Xiaomi dispalyfeature HAL definitions  [Pierre-Hugues Husson]
+6d9609a  laurel_sprout: parts: Drop pick up sensor functionality  [HarukeyUA]
+3f27d2b  laurel_sprout: Update userdata partition size  [HarukeyUA]
+94f2293  Revert "Include google/vendor/customization"  [DennySPB]
+8c0fdb3  net: merge WireGuard version v0.0.20200215  [Park Ju Hyung]
+a8d8855  Changelog: don't use repo for dir walking  [DennySPB]
 
 =============
-   2020-03-28
+   2020-04-16
 =============
-
- * device/xiaomi/laurel_sprout
-fa188f9  Revert "Include google/vendor/customization"  [DennySPB]
-3f8f09e  sepolicy: mark /sys/class/drm/sde-crtc-0/measured_fps as sysfs_graphics type  [DennySPB]
-
- * official_devices
-31007aa  enchilada: update 03/27/20  [blinoff82]
-
-=============
-   2020-03-27
-=============
-
- * device/xiaomi/laurel_sprout
-697fabb  add FPS overlay  [Lup Gabriel]
-
- * frameworks/base
-a7dfdf4  Revert "FODCircleView: disable touch detection on screen off"  [kondors1995]
-a16ec23  ambientdisplay: Fix volume key music control  [Christopher R. Palmer]
-6682558  Flashlight toggle API improvements  [ezio84]
-41a34db  Screenshot: remove white flash if dark mode is enabled  [ezio84]
-2087e26  Freedom windows: fix drag [1/2]  [Jon West]
-984a8ee  Navbar: Ensure 2/3 button layout options play nice with gesture navbar  [Alex]
-4dc1dac  Update RU translation  [DennySPB]
-b3ea13a  ActionUtils: use longshot api in screenshot helper  [DennySPB]
-2dfca5c  Remove no longer used NavBarUtils helper  [DennySPB]
-bc5c9e8  Improve gesture navigation handle length [1/2]  [Nicolas Dhouailly]
-be7c784  ActionUtils: don't crash on voice search if package not installed  [DennySPB]
-f910389  LongSwipeGestures: Vibrate on action if gesture haptic feedback enabled  [DennySPB]
-4e361c2  base: Move actions into its own class [SQUASHED]  [Alex Cruz]
-dd40597  ActionUtils: Reverse actions for QS and notification panel  [ezio84]
-0c83f38  base: allow for customizing the length of the navigation handle [1/2]  [Anay Wadhera]
-f2db924  Extended swipe double arrow: don't show if option is disabled  [ezio84]
-3f469cf  Gesture nav extended swipe: show a double arrow when almost triggered  [Nico]
-41b2f15  Gestures: Back long swipe improvements  [Anushek Prasal]
-
- * frameworks/native
-d0de44e  Freedom windows: fix drag [2/2]  [Jon West]
-
- * frameworks/opt/telephony
-ae203f0  Merge branch '10.0' of https://github.com/syberia- */platform_frameworks_opt_telephony  [DennySPB]
-
- * packages/apps/Launcher3
-4a7f089  dimens: adjust to avoid icon crop on recents  [DennySPB]
-1409958  Globally disable debug logging  [Bruno Martins]
-
- * packages/apps/Settings
-2d6f99b  Update RU translation  [DennySPB]
-d48adf1  Gestures: move back arrow animation option into gesture tweaks  [DennySPB]
-3c46722  Gestures: Move gestures haptic to gestures tweaks  [DennySPB]
-45833b6  Improve gesture navigation handle length [2/2]  [Nicolas Dhouailly]
-
- * packages/apps/SyberiaSettings
-fd86776  Merge "Import Custom switch and category" into 10.0  [dennyspb]
+5e431ce  Do not clean up ART profiles during OTAs  [Calin Juravle]
+802d208  QS: Fix extra lines when icon number is small  [Alex Yustasov]
+704af4c  UninstallAlertDialogFragment: Catch IllegalArgumentException  [jhenrique09]
+cf636ad  Need to check current user when triggering notification lights  [woongki min]
+f7215f6  SettingsProvider: Resolve package name that requires permission  [Pranav Vashi]
+ff2bd5e  fw/b: Prevent double interface restriction remove on interface name change  [Sam Mortimer]
+6779c233  Revert "Fix deletion of VkSemaphores in VulkanManager."  [Rohan Hasabe (Hasaber8)]
+b8af500  Add a separate flag in the installer for keeping ART profiles  [Calin Juravle]
+7b31403  scripts/dtc: Update to upstream version v1.4.6-21-g84e414b0b5bc  [Rob Herring]
+6cd377a  dtc: checks: drop warning for missing PCI bridge bus-range  [Rob Herring]
+aefeea5  Merge changes I12ef069a,I7b082b9f into 10.0  [dennyspb]
+e97cfe4  team: Add maintainer for Xiaomi Redmi Note 3  [blinoff82]
+183b7c0  Buttons: Remove duplicate switches  [DennySPB]
+02b714a  Merge changes Iace8ecc9,I7c3879cb into 10.0  [dennyspb]
+2b43e9c  Add kenzo to official devices  [blinoff82]
 
 =============
-   2020-03-26
+   2020-04-15
 =============
-
- * device/xiaomi/laurel_sprout
-3efe80c  laurel_sprout: Fixup powerhints  [HarukeyUA]
-741fb5d  Revert "[DNM] laurel_sprout: Don't build dtbo"  [HarukeyUA]
-8db39d7  laurel_sprout: enable PSI monitor  [UtsavisGreat]
-8a801e4  laurel_sprout: add lmkd options from coral  [UtsavisGreat]
-e7752ca  laurel_sprout: overlay: Enable VoWiFi & ViLTE for Airtel (UP)  [Shubham Das]
-f3461a9  laurel_sprout: overlay: Enable ViLTE for Airtel (India) & 404 mcc  [Shubham Das]
-be71e95  laurel_sprout: overlay: Enable VoLTE/VoWIFI for Digi Malaysia  [Dyneteve]
-21666bc  laurel_sprout: overlay: Enable voWIFI for Airtel  [Dyneteve]
-3900e5b  laurel_sprout: overlay: Enable voLTE/voWIFI/ViLTE for entire 460 mcc  [Dyneteve]
-d4f58f4  laurel_sprout: overlay: Make WiFi Calling preference editable for Jio (India)  [Shubham Das]
-e2d16ce  laurel_sprout: overlay: Enable VoLTE/voWIFI for entire 226 mcc  [Dyneteve]
-dfff021  laurel_sprout: IMS: Enable IMS feature flags for supported carriers  [Ravi Paluri]
-257cd6a  laurel_sprout: overlay: Get VoLTE/VoWIFI for Digi Mobil going  [Dyneteve]
-f52dce9  laurel_sprout: Enable VoWIFI for MTS (Russia)  [Henrique Pereira]
-99b0405  laurel_sprout: overlay: Enable VoLTE for Viettel Vietnam  [Dyneteve]
-85ac16b  laurel_sprout: overlay: Enable VoWIFI for Airtel (#12)  [Shubham Das]
-223c515  laurel_sprout: overlay: Enable VoLTE/VoWIFI for Turkcell/Digi  [Dyneteve]
-43e8744  laurel_sprout: Enable VoLTE/WoWIFI for Megafone, MTS and Tele2/ECC/Volgogr  [Henrique Pereira]
-2400e66  laurel_sprout: overlay: Enable VoLTE/VoWIFI for Digi Mobil  [Dyneteve]
-31c178c  laurel_sprout: IMS-VT: Hide hold/add button for video call  [pengfeix]
-2150741  laurel_sprout: overlay: Enable VoLTE/VoWIFI for all indian cariers  [Dyneteve]
-19cc338  laurel_sprout: Add 404/94 for Airtel/TN (#10)  [Rooban]
-13120fa  laurel_sprout: Updated CarrierConfig for Indian carriers  [David Delima]
-49cb4fa  laurel_sprout: IMS: Disable filtering out conference host for some carriers  [Zhao Fan]
-9451d7a  laurel_sprout: Update CarrierConfig xml's  [David Delima]
-7e61742  laurel_sprout: IMS: Support to notify user when video call failed  [Zhao Fan]
-e911a80  laurel_sprout: IMS: Enable IMS feature flags for supported carriers  [Ashit Sood]
-a473e4a  laurel_sprout: IMS: Add config flag for VT one way options  [Wileen Chiu]
-e240253  laurel_sprout: Disable HD logo  [Dyneteve]
-b786346  laurel_sprout: Update CarrierConfig overlay from LA.UM.8.1.r1-08800-sm8150.0  [Dyneteve]
-66c4c5b  laurel_sprout: Add debug IMS props to workaround CarrierConfig restrictions  [LuK1337]
-06b6d6f  laurel_sprout: Fix props formatting, sort props  [HarukeyUA]
-ae16885  Remove qti fw boost and disable services in favor of libperfmgr  [DennySPB]
-c361cf5  powerhint: add controls for schedtune boost  [TheHitMan7]
-ad14ed6  libperfmgr: Reduce TASchedtuneBoost for touch hints  [Nauval Rizky]
-aafdd2a  libperfmgr: Update performance hint timeout  [TheHitMan7]
-a66d78b  powerhint: Adjust for sm6125  [TheHitMan7]
-828e3d3  laurel_sprout: Sync powerhints with sm6150  [HarukeyUA]
-fa578d2  laurel_sprout: init.rc: disable sched_stats  [DennySPB]
-76c506b  laurel_sprout: sepolicy: Fix debugfs_sched_features  [kondors1995]
-116a7d4  laurel_sprout: init.qcom.rc: Mask up legacy PowerHAL  [Nauval Rizky]
-b577d38  laurel_sprout: Sepolicy: allow audio hal to do binder calls to libperfmgr  [DennySPB]
-b144de1  laurel_sprout: Cleanup  [kondors1995]
-a6bd3d2  laurel_sprout: sepolicy: Allow libpergmr to acces rpmh_stats  [kondors1995]
-7ed4702  laurel_sprout: sepolicy: allow libperfmgr do binder calls to audio hal  [DennySPB]
-39ed374  laurel_sprout: sepolicy: Allow powerhal to modifiy cpu_dma_latency  [kondors1995]
-2cb8f77  laurel_sprout: sepolicy: allow libperfmgr read wlan powerstats  [DennySPB]
-dcd2e30  laurel_sprout: sepolicy: setup for libperfmgr  [DennySPB]
-912574e  laurel_sprout: Power: Add explicit initialization for last timestamp and fix time unit  [Wei Wang]
-585c315  laurel_sprout: modified system variant of libperfmgr  [kondors1995]
-
- * frameworks/base
-7ec471a  Add kill app action to nav swipe actions [1/3]  [ezio84]
-555fa67  Add kill-app api (with new fresh implementation)  [ezio84]
-97434ca  Allow long back swipe on bottom screen when launcher is showing [1/2]  [ezio84]
-62a9fa3  Allow a wider back swipe to trigger actions (instead of timeout) [1/2]  [ezio84]
-e6915dd  Move actions to ActionUtils [1/2]  [ezio84]
-a5e561e  Allow long back swipe to trigger custom actions/app/activities [1/2]  [ezio84]
-e742062  Don't include the data dir in zygote library paths.  [Torne (Richard Coles)]
-8edc02b  Fix for recycling key events when sending global button broadcast  [Hiroaki.Kojima]
-ec8e58b  Make sure the right DND config is used  [Daniel Hunt]
-0c45317  Fix ThumbnailUtils thumbnail pts calculation  [Chong Zhang]
-9d464e2  SystemUI: FPS Info Overlay & Tile  [Marko Man]
-
- * packages/apps/Settings
-2d36107  Allow for customizing the length of the navigation handle [2/2]  [Alex]
-5c8c238  Allow long back swipe on bottom screen when launcher is showing [2/2]  [ezio84]
-efce5e1  Allow a wider back swipe to trigger actions (instead of timeout) [2/2]  [ezio84]
-f4e1f39  Allow long back swipe to trigger custom actions/app/activities [2/2]  [ezio84]
-3f13071  MobileNetwork: always enable NETWORK_INTERNET_V2 feature  [DennySPB]
-
- * packages/apps/SyberiaSettings
-70f2f07  Import Custom switch and category  [Alex]
-
- * vendor/xiaomi/laurel_sprout
-a2d5634  laurel_sprout: Drop perf blobs  [HarukeyUA]
+49b76e1  ART: Showcase for Loop Versioning - Unrolling  [Artem Serov]
+24ee9ab  ART: Introduce Loop Versioning in SuberblockCloner  [Artem Serov]
+d10b0a2  ART: Fix a compiler crash for VectorizeDef() idioms  [Artem Serov]
+cb50099  Remove dex2oat image-classes support  [Mathieu Chartier]
+4a259d5  ART: Add support for SVE feature for ARM64  [Artem Serov]
+90eecb5  Prevent overflow for AOT hotness counters  [Mathieu Chartier]
+ddd7b6c  Fix profile saver hotness for AOT code  [Mathieu Chartier]
+73593b1  ARM/ARM64: Clean up artFindNativeMethod()  [Vladimir Marko]
+c6f4505  Fix pruning invoke environment for StringBuilder append pattern  [Vladimir Marko]
+2e4f92f  Loop vectorizer should not remove instructions that can throw  [Georgia Kouveli]
+e17db45  Remove requirement of a ProfilingInfo for jitted code  [Nicolas Geoffray]
+106fcae  ART: Improve ArraySet codegen  [Vladimir Marko]
+e856edc  Eliminate dead LoadClass when pruning ClinitCheck  [Vladimir Marko]
+07b4c1e  Add default argument kIsInstrumented=true  [Vladimir Marko]
+cf4d5d8  TWS-A2DP: Add TWS+ codec to DevUI support  [pramod kotreshappa]
+5e86428  BT: Adding aptX-Adaptive codec entry to Framework  [Gurpreet Ghai]
+1487a58  scripts: Silent all dtc warnings by default  [Bruno Martins]
+42ade18  of: batterydata: use generic node if no node is found  [Luca Stefani]
+a8dca50  ARM64/dts: trinket: fix memory overlap  [Dede Dindin Qudsy]
+f7763c0  Merge tag 'LA.UM.8.11.r1-03300-NICOBAR.0' of https://source.codeaurora.org/quic/la/platform/vendor/opensource/audio-kernel into ten  [HarukeyUA]
+af5fb0e  Merge tag 'LA.UM.8.11.r1-03300-NICOBAR.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into ten  [HarukeyUA]
+e0e2239  Merge tag 'LA.UM.8.11.r1-03300-NICOBAR.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn into ten  [HarukeyUA]
+74faee2  Merge tag 'LA.UM.8.11.r1-03300-NICOBAR.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/fw-api into ten  [HarukeyUA]
+859bcf3  Merge tag 'LA.UM.8.11.r1-03300-NICOBAR.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.14 into ten  [HarukeyUA]
+1140d6f  Merge branch 'kernel.lnx.4.14.r4-rel' of https://github.com/android-linux-stable/msm-4.14 into ten  [HarukeyUA]
+0357580  Fix setting of BLE scan parameters  [Subramanian Srinivasan]
+bb94bca  Add BLE Scan Phy parameter to scan API  [Subramanian Srinivasan]
+917e9d3  BT: Set aptX Adaptive codec priority  [Gurpreet Ghai]
+7446ed8  Buttons: add missing hw key disable switch  [DennySPB]
+1daf7cd  TWS-A2DP: Add TWS+ codec index  [pramod kotreshappa]
+04dcb47  BT: Adding APTX-Adaptive codec to BT HAL  [Gurpreet Ghai]
+df51ed9  Add BLE Scan Phy parameter to scan API Add BLE Scan Phy parameter to set scan parameters API.  [Subramanian Srinivasan]
 
 =============
-   2020-03-25
+   2020-04-14
 =============
-
- * frameworks/av
-cb29545  Merge tag 'LA.UM.8.3.r1-07600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPB]
-
- * frameworks/base
-46ef8d0  Fix wrong variable in AccountManagerService's TokenCache  [Haohua Li]
-9e6fc68  Telephony: Rename VoWiFi Emergency notification intent.  [Muhammed Siju]
-66c1131  IMS: Add new Carrier Config.  [Sonalika Paul]
-f1fdc7b  [1/2] SystemUI: change layout of keyguard status slice view  [maxwen]
-f88e1f7  SystemUI: also use mobile data panel on celular qs tile  [maxwen]
-8f546de  SystemUI: revert the special long click handling of dual target qs tiles  [maxwen]
-9b2b1d1  QS: Add and use Mobile Data panel  [Joe Maples]
-0bca8c4  QS: Add and use Bluetooth Panel instead of full Settings  [Joe Maples]
-f6ab049  QS: Use Settings.Panel intents for WiFi and NFC  [Joe Maples]
-28944bf  SystemUI: Disable heads up debugging on debug builds as well.  [Jake Weinstein]
-bff5ba3  NotificationLightsView: omit debug messages spam  [DennySPB]
-
- * frameworks/native
-3c22a08  Merge tag 'LA.UM.8.3.r1-07600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/frameworks/native into HEAD  [DennySPB]
-
- * frameworks/opt/net/ims
-2465838  Merge tag 'LA.UM.8.3.r1-07600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/ims into HEAD  [DennySPB]
-
- * frameworks/opt/telephony
-4580f82  Restore getSubIdFromNetworkRequest method  [Alex Koskovich]
-ea8dbf7  Merge tag 'LA.UM.8.3.r1-07600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPB]
-
- * kernel/xiaomi/laurel_sprout
-a8437f5  Revert "dts: Disable AVB for vendor and product"  [HarukeyUA]
-64a90ab  arm64: configs: Switch to userspace lmkd  [HarukeyUA]
-3bfe5e2  arm64: configs: Enable PSI  [HarukeyUA]
-8f2e2a56  BACKPORT: block: annotate refault stalls from IO submission  [Johannes Weiner]
-f1cee5f  UPSTREAM: sched/psi: Do not require setsched permission from the trigger creator  [Suren Baghdasaryan]
-34dc3a7  UPSTREAM: psi: get poll_work to run when calling poll syscall next time  [Jason Xing]
-e175b59  UPSTREAM: sched/psi: Reduce psimon FIFO priority  [Peter Zijlstra]
-a78f24a  psi: Use deferrable psi_avgs_work  [Patrick Daly]
-
- * official_devices
-7333c24  Update sanders.json  [rlshukhov]
-ae997aa  Update sanders.json  [rlshukhov]
-10e8f9c  Update README.md  [rlshukhov]
-42d4e87  Update README.md  [rlshukhov]
-
- * packages/apps/Settings
-bb3c889  panels: fix data usage display on mobile panel  [maxwen]
-b077817  QS panels: Improvements  [Alex]
-65492d7  Settings: add pair new to BT panel slice  [maxwen]
-6986996  panels: Add Bluetooth panel  [Joe Maples]
-811eb8f  panels: Add Mobile Data panel  [Joe Maples]
-
- * packages/services/Telephony
-d394240  Merge tag 'LA.UM.8.3.r1-07600-sdm845.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony into HEAD  [DennySPB]
-
- * system/core
-12512ef  healthd: Add support for BMS, WiPower, Main.  [codeworkx]
-eb76e16  adb: defer acknowledgement of pushed files until the end.  [Josh Gao]
+7f00d9c  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPB]
+97e6ba0  QSDetail: match QSPanel background color  [Lucchetto]
+fa2810b  base: use bypassEnabledBiometric consistently  [Ethan Halsall]
+3ebd55c  fw/b: Squash of app fw restriction commits  [Danesh M]
+9d39b48  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/native into HEAD  [DennySPB]
+13dca56  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPB]
+a43b956  team: Add maintainer for Xiaomi Redmi Note 4  [blinoff82]
+74ef972  Settings: per-app cellular data, vpn and wifi restrictions  [Uldiniad]
+2184dcc  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm into HEAD  [DennySPB]
+dba0f29  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony into HEAD  [DennySPB]
+2c73358  system/netd: Add BPF support for lineage network restrictions  [Sam Mortimer]
+ecfe86e  system/netd: Squash of app fw restriction commits  [Uldiniad]
+554885a  Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/system/netd into HEAD  [DennySPB]
+2c6155e  Add mido to official devices  [blinoff82]
 
 =============
-   2020-03-24
+   2020-04-13
 =============
+0f7c871  Merge 4.14.176 into kernel.lnx.4.14.r4-rel  [Nathan Chancellor]
+c10b57a  Linux 4.14.176  [Greg Kroah-Hartman]
+7ed7184  drm/msm: Use the correct dma_sync calls in msm_gem  [Rob Clark]
+df9c43b  rpmsg: glink: smem: Support rx peak for size less than 4 bytes  [Arun Kumar Neelakantam]
+7d89ff9  drm_dp_mst_topology: fix broken drm_dp_sideband_parse_remote_dpcd_read()  [Hans Verkuil]
+55d9ff5  usb: dwc3: don't set gadget->is_otg flag  [Roger Quadros]
+c886880  rpmsg: glink: Remove chunk size word align warning  [Chris Lew]
+0b3c8d5  arm64: Fix size of __early_cpu_boot_status  [Arun KS]
+3e1b159  drm/msm: stop abusing dma_map/unmap for cache  [Rob Clark]
+2e390ca  clk: qcom: rcg: Return failure for RCG update  [Taniya Das]
+63108f2  acpi/nfit: Fix bus command validation  [Dan Williams]
+90d2773  fbcon: fix null-ptr-deref in fbcon_switch  [Qiujun Huang]
+b51bea6  RDMA/cm: Update num_paths in cma_resolve_iboe_route error flow  [Avihai Horon]
+0da9c03  Bluetooth: RFCOMM: fix ODEBUG bug in rfcomm_dev_ioctl  [Qiujun Huang]
+4452a6c  ceph: canonicalize server path in place  [Ilya Dryomov]
+9218bca  ceph: remove the extra slashes in the server path  [Xiubo Li]
+88c2729  IB/hfi1: Fix memory leaks in sysfs registration and unregistration  [Kaike Wan]
+596bd9d  IB/hfi1: Call kobject_put() when kobject_init_and_add() fails  [Kaike Wan]
+3c97c94  ASoC: jz4740-i2s: Fix divider written at incorrect offset in register  [Paul Cercueil]
+bbe3eda  hwrng: imx-rngc - fix an error path  [Martin Kaiser]
+316b572  tools/accounting/getdelays.c: fix netlink attribute length  [David Ahern]
+1335dd6  random: always use batched entropy for get_random_u{32,64}  [Jason A. Donenfeld]
+982a76b  mlxsw: spectrum_flower: Do not stop at FLOW_ACTION_VLAN_MANGLE  [Petr Machata]
+d0a7c33  slcan: Don't transmit uninitialized stack data in padding  [Richard Palethorpe]
+ca66bbe  net: stmmac: dwmac1000: fix out-of-bounds mac address reg setting  [Jisheng Zhang]
+575698a  net: phy: micrel: kszphy_resume(): add delay after genphy_resume() before accessing PHY registers  [Oleksij Rempel]
+697c52f  net: dsa: bcm_sf2: Ensure correct sub-node is parsed  [Florian Fainelli]
+7575719  ipv6: don't auto-add link-local address to lag ports  [Jarod Wilson]
+c51609a  mm: mempolicy: require at least one nodeid for MPOL_PREFERRED  [Randy Dunlap]
+2d8260b  padata: always acquire cpu_hotplug_lock before pinst->lock  [Daniel Jordan]
+9469e98  coresight: do not use the BIT() macro in the UAPI header  [Eugene Syromiatnikov]
+cbd8aa4  misc: pci_endpoint_test: Fix to support > 10 pci-endpoint-test devices  [Kishon Vijay Abraham I]
+f46117c  blk-mq: Allow blocking queue tag iter callbacks  [Keith Busch]
+574eb13  blk-mq: sync the update nr_hw_queues with blk_mq_queue_tag_busy_iter  [Jianchao Wang]
+c0eab61  drm/etnaviv: replace MMU flush marker with flush sequence  [Lucas Stach]
+3069eab  tools/power turbostat: Fix gcc build warnings  [Len Brown]
+389f041  initramfs: restore default compression behavior  [Eugeniy Paltsev]
+f8c1e65  drm/bochs: downgrade pci_request_region failure from error to warning  [Gerd Hoffmann]
+cfc370c  sctp: fix possibly using a bad saddr with a given dst  [Marcelo Ricardo Leitner]
+968f831  sctp: fix refcount bug in sctp_wfree  [Qiujun Huang]
+b57327d  net, ip_tunnel: fix interface lookup with no key  [William Dauchy]
+545d742  ipv4: fix a RCU-list lock in fib_triestat_seq_show  [Qian Cai]
+b408364  syberia: Move some system props to PRODUCT_SYSTEM_DEFAULT_PROPERTIES  [Rashed Abdel-Tawab]
 
- * frameworks/base
-0e1f363  Apply proper displayCutout rotation in density 480 dpi and 270 degrees rotation.  [Mark Hong]
-ccb0f21  Visualizer: Ensure multi-thread safety  [Mikhail Naganov]
-32bb87e  bugfix for noteResetVideoLocked  [wangqiuling]
-741452c  AlarmManagerService: Fix FWR before boot completed  [jianzhou]
-baf6c00  MediaCodec: Release lock before calling onFrameRendered()  [Pawin Vongmasa]
-024d727  Sanitize Bluetooth device names without regex  [Dan Sandler]
+=============
+   2020-04-12
+=============
+745cac8  livedisplay: sdm: Do not create intermediate string  [Ethan Chen]
+00d6634  livedisplay: sdm: Default initialize objects created with new  [Ethan Chen]
+
+=============
+   2020-04-11
+=============
+08d7c67  cepheus: Update cepheus.json  [ecrosoftxiao]
+64a5a82  cepheus: Update 04/11/20  [ecrosoftxiao]
+5af6b60  Merge branch 'master' of https://github.com/syberia- */official_devices  [kondors1995]
+2a4ecc8  raphael: build 11/04/2020  [kondors1995]
 
