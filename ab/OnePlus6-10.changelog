@@ -1,305 +1,201 @@
 =============
-   2020-04-10
+   2020-04-17
 =============
 
-[1m * frameworks/base/[m
-2b46ea0  base: do not use new lockscreen layout for bypass  [Ethan Halsall]
-
-[1m * kernel/oneplus/sdm845/[m
-7b7c6b2  rcutorture: Suppress forward-progress complaints during early boot  [Paul E. McKenney]
-194035a  rcu: Make rcu_barrier() account for offline no-CBs CPUs  [Paul E. McKenney]
-e688acd  rcu: Mark rcu_state.gp_seq to detect concurrent writes  [Paul E. McKenney]
-4185410  rcutorture: Manually clean up after rcu_barrier() failure  [Paul E. McKenney]
-e6d1a4c  rcutorture: Make rcu_torture_barrier_cbs() post from corresponding CPU  [Paul E. McKenney]
-05150e8  rcuperf: Measure memory footprint during kfree_rcu() test  [Joel Fernandes (Google)]
-7b53710  rcutorture: Annotation lockless accesses to rcu_torture_current  [Paul E. McKenney]
-b4f3345  rcutorture: Add READ_ONCE() to rcu_torture_count and rcu_torture_batch  [Paul E. McKenney]
-c07da13  rcutorture: Fix stray access to rcu_fwd_cb_nodelay  [Paul E. McKenney]
-07ff598  rcutorture: Fix rcu_torture_one_read()/rcu_torture_writer() data race  [Paul E. McKenney]
-afaca23  rcutorture: Suppress boottime bad-sequence warnings  [Paul E. McKenney]
-a0f0b33  rcutorture: Allow boottime stall warnings to be suppressed  [Paul E. McKenney]
-f793d17  rcutorture: Refrain from callback flooding during boot  [Paul E. McKenney]
-1c98f5a  srcu: Hold srcu_struct ->lock when updating ->srcu_gp_seq  [Paul E. McKenney]
-ed384e1  srcu: Fix process_srcu()/srcu_batches_completed() datarace  [Paul E. McKenney]
-0c500c4  srcu: Fix __call_srcu()/srcu_get_delay() datarace  [Paul E. McKenney]
-170daa9  srcu: Fix __call_srcu()/process_srcu() datarace  [Paul E. McKenney]
-02442b1  rcu: Add missing annotation for exit_tasks_rcu_finish()  [Jules Irenge]
-8c28bab  rcu: Add missing annotation for exit_tasks_rcu_start()  [Jules Irenge]
-1ea2c3f  rcu-tasks: *_ONCE() for rcu_tasks_cbs_head  [Paul E. McKenney]
-6624a7f  rcu: Update __call_rcu() comments  [Paul E. McKenney]
-9b13b1b  rcu: Fix spelling mistake "leval" -> "level"  [Colin Ian King]
-428bc6d  rcu: React to callback overload by boosting RCU readers  [Paul E. McKenney]
-28f93e2  rcu: React to callback overload by aggressively seeking quiescent states  [Paul E. McKenney]
-95b4cda  rcu: Clear ->core_needs_qs at GP end or self-reported QS  [Paul E. McKenney]
-2d9dfca  rcu: Add a trace event for kfree_rcu() use of kfree_bulk()  [Uladzislau Rezki (Sony)]
-18233fa  rcu: Support kfree_bulk() interface in kfree_rcu()  [Uladzislau Rezki (Sony)]
-69c2782  rcu: Make nocb_gp_wait() double-check unexpected-callback warning  [Paul E. McKenney]
-7725ba2  rcu: Tighten rcu_lockdep_assert_cblist_protected() check  [Paul E. McKenney]
-d924eb6  rcu: Optimize and protect atomic_cmpxchg() loop  [Paul E. McKenney]
-7c3ca8d  rcu/nocb: Add missing annotation for rcu_nocb_bypass_unlock()  [Jules Irenge]
-265dd4b  rcu: Add missing annotation for rcu_nocb_bypass_lock()  [Jules Irenge]
-a41e801  rcu: Don't flag non-starting GPs before GP kthread is running  [Paul E. McKenney]
-ecccbcf  rcu: Fix rcu_barrier_callback() race condition  [Paul E. McKenney]
-ee07d1a  rcu: Add WRITE_ONCE() to rcu_state ->gp_start  [Paul E. McKenney]
-8aa2cd1  rcu: Remove dead code from rcu_segcblist_insert_pend_cbs()  [Paul E. McKenney]
-15eeff7  rcu: Add *_ONCE() to rcu_node ->boost_kthread_status  [Paul E. McKenney]
-420c36a  rcu: Add *_ONCE() to rcu_data ->rcu_forced_tick  [Paul E. McKenney]
-6a6bdfd9  rcu: Add READ_ONCE() to rcu_data ->gpwrap  [Paul E. McKenney]
-b08b4c9  rcu: Fix typos in file-header comments  [SeongJae Park]
-3c811c8  rcu: Add *_ONCE() for grace-period progress indicators  [Paul E. McKenney]
-437eacd  rcu: Add READ_ONCE() to rcu_segcblist ->tails[]  [Paul E. McKenney]
-990f0fd  rcu: Add WRITE_ONCE() to rcu_node ->qsmaskinitnext  [Paul E. McKenney]
-b0c8cac  rcu: Add WRITE_ONCE() to rcu_state ->gp_req_activity  [Paul E. McKenney]
-331fe19  rcu: Add READ_ONCE() to rcu_node ->gp_seq  [Paul E. McKenney]
-e4519e0  rcu: Add WRITE_ONCE to rcu_node ->exp_seq_rq store  [Paul E. McKenney]
-ad08660  rcu: Add WRITE_ONCE() to rcu_node ->qsmask update  [Paul E. McKenney]
-452f279  rcu: Provide debug symbols and line numbers in KCSAN runs  [Paul E. McKenney]
-09f06e1  rcu: Fix exp_funnel_lock()/rcu_exp_wait_wake() datarace  [Paul E. McKenney]
-e8b6963  rcu: Warn on for_each_leaf_node_cpu_mask() from non-leaf  [Paul E. McKenney]
-ae82220  rcu: Forgive slow expedited grace periods at boot time  [Paul E. McKenney]
-77d9202  rcu: Remove unused stop-machine #include  [Paul E. McKenney]
-85cc0c5  rcu: Switch force_qs_rnp() to for_each_leaf_node_cpu_mask()  [Paul E. McKenney]
-94e3830  rcu: Move rcu_{expedited,normal} definitions into rcupdate.h  [Ben Dooks]
-ec0ee42  rcu: swait_event_timeout_exclusive -> swait_event_timeout  [DennySPB]
-abe1fbd  RCU, workqueue: Implement rcu_work  [Tejun Heo]
-b15548d  rcu: Move gp_state_names[] and gp_state_getname() to tree_stall.h  [Lai Jiangshan]
-b834a11  rcu: Remove the declaration of call_rcu() in tree.h  [Lai Jiangshan]
-18beed2  rcu: Fix tracepoint tracking RCU CPU kthread utilization  [Lai Jiangshan]
-6fa40ba  rcu: Fix harmless omission of "CONFIG_" from #if condition  [Lai Jiangshan]
-2d96c7f  rcu: Avoid tick_dep_set_cpu() misordering  [Paul E. McKenney]
-a4f72cf  rcu: Clear ->rcu_read_unlock_special only once  [Lai Jiangshan]
-58cd1c6  rcu: Clear .exp_hint only when deferred quiescent state has been reported  [Lai Jiangshan]
-f424d68  rcu: Remove kfree_call_rcu_nobatch()  [Joel Fernandes (Google)]
-dd763b5  rcu: Remove kfree_rcu() special casing and lazy-callback handling  [Joel Fernandes (Google)]
-ca89917  rcu: Add support for debug_objects debugging for kfree_rcu()  [Joel Fernandes (Google)]
-738e890  rcu: Add multiple in-flight batches of kfree_rcu() work  [Joel Fernandes (Google)]
-231a9ab  rcu: Make kfree_rcu() use a non-atomic ->monitor_todo  [Joel Fernandes]
-3c10fe7  rcuperf: Add kfree_rcu() performance Tests  [Joel Fernandes (Google)]
-6678c47  rcu: Add basic support for kfree_rcu() batching  [Byungchul Park]
-57477df  rcu: Mark non-global functions and variables as static  [Paul E. McKenney]
-1708e00  rcutorture: Dynamically allocate rcu_fwds structure  [Paul E. McKenney]
-69fdff6  rcutorture: Complete threading rcu_fwd pointers through functions  [Paul E. McKenney]
-f308e92  rcutorture: Move to dynamic initialization of rcu_fwds  [Paul E. McKenney]
-cfb2d1f  rcutorture: Thread rcu_fwd pointer through forward-progress functions  [Paul E. McKenney]
-b33b6e1  rcutorture: Pull callback forward-progress data into rcu_fwd struct  [Paul E. McKenney]
-88b682e  rcu: Make PREEMPT_RCU be a modifier to TREE_RCU  [Lai Jiangshan]
-1876a84  rcu: Use lockdep rather than comment to enforce lock held  [Paul E. McKenney]
-43a9c04  rcu: Enable tick for nohz_full CPUs slow to provide expedited QS  [Paul E. McKenney]
-d767035  rcu: Replace synchronize_sched_expedited_wait() "_sched" with "_rcu"  [Paul E. McKenney]
-e1a5103  rcu: Update tree_exp.h function-header comments  [Paul E. McKenney]
-17f9dc6  rcu: Rename sync_rcu_preempt_exp_done() to sync_rcu_exp_done()  [Paul E. McKenney]
-aa61f43  rcu: Substitute lookup for bit-twiddling in sync_rcu_exp_select_node_cpus()  [Paul E. McKenney]
-b0ea51a  rcu: Avoid modifying mask_ofl_ipi in sync_rcu_exp_select_node_cpus()  [Boqun Feng]
-9d8e77a  rcu: Ensure that ->rcu_urgent_qs is set before resched IPI  [Joel Fernandes (Google)]
-8754641  rcu: Make kernel-mode nohz_full CPUs invoke the RCU core processing  [Paul E. McKenney]
-e2dbed3  rcu: Confine ->core_needs_qs accesses to the corresponding CPU  [Paul E. McKenney]
-6d7973b  rcu: Reset CPU hints when reporting a quiescent state  [Joel Fernandes (Google)]
-78c55c3  rcu: Force nohz_full tick on upon irq enter instead of exit  [Paul E. McKenney]
-4d22117  rcu: Force tick on for nohz_full CPUs not reaching quiescent states  [Paul E. McKenney]
-6fa6a4b  rcutorture: Make in-kernel-loop testing more brutal  [Paul E. McKenney]
-c6e590d  rcutorture: Separate warnings for each failure type  [Paul E. McKenney]
-f137207  rcu: Remove unused variable rcu_perf_writer_state  [Ethan Hansen]
-79d3d67  rcu: Remove unused function rcutorture_record_progress()  [Ethan Hansen]
-aac7d38  rcutorture: Emulate dyntick aspect of userspace nohz_full sojourn  [Paul E. McKenney]
-dfbef31  rcu: Make CPU-hotplug removal operations enable tick  [Paul E. McKenney]
-5906b5c  stop_machine: Provide RCU quiescent state in multi_cpu_stop()  [Paul E. McKenney]
-343a9e1  rcutorture: Force on tick for readers and callback flooders  [Paul E. McKenney]
-e79e9d8  rcu: Force on tick when invoking lots of callbacks  [Paul E. McKenney]
-463c077  rcu: Suppress levelspread uninitialized messages  [Paul E. McKenney]
-c484ac9  rcu: Provide wrappers for uses of ->rcu_read_lock_nesting  [Lai Jiangshan]
-75eaed0  sched/fair: Reorder enqueue/dequeue_task_fair path  [Vincent Guittot]
-7dd14c0  sched/fair: Load balance aggressively for SCHED_IDLE CPUs  [Viresh Kumar]
-5a2764f  sched/core: Create task_has_idle_policy() helper  [Viresh Kumar]
-f29c48d  sched/fair: Fall back to sched-idle CPU if idle CPU isn't found  [Viresh Kumar]
-8c3abb7  sched/fair: Start tracking SCHED_IDLE tasks count in cfs_rq  [Viresh Kumar]
-9d873d0  Revert "pocket: Introduce pocket judge"  [DennySPB]
-
-[1m * packages/apps/Settings/[m
-3afb709  devices: drop fajita  [DennySPB]
-
 =============
-   2020-04-09
-=============
-
-[1m * frameworks/base/[m
-a34cde0  Revert "Revert "Use non-wakeup alarm for delay constraint.""  [DennySPB]
-9f7dc5e  Prevent HandlerThread from losing interrupted flag  [Michael Hoogasian]
-
-[1m * vendor/syberia/[m
-c335fe6  v3.6  [DennySPB]
-
-=============
-   2020-04-08
-=============
-
-[1m * frameworks/base/[m
-ed789399  [3/4] Port face unlock feature  [jhenrique09]
-e3364a0  Proper fix of Android Auto  [Hikari-no-Tenshi]
-33f1013  [Re-Apply] FODCircleView: Fix position if cutout is hidden  [jhenrique09]
-902d13a  QS: add right/left padding even if it's 0 for collapsed statusbar  [ezio84]
-
-[1m * packages/apps/Settings/[m
-ad723dd  [4/4] Port face unlock feature  [jhenrique09]
-e70680d  Merge "team: Add maintainer for Xiaomi Mi 9" into 10.0  [dennyspb]
-
-[1m * vendor/syberia/[m
-cb3bba2  [2/5] Port face unlock feature  [jhenrique09]
-a5b249e   kernel: Add option for using LLD as linker  [mydongistiny]
-
-=============
-   2020-04-07
-=============
-
-[1m * build/make/[m
-9b3fef8  Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/build into HEAD  [DennySPB]
-
-[1m * frameworks/av/[m
-0e965b3  Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPB]
-
-[1m * frameworks/base/[m
-89ba9cc  Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPB]
-b337cda  Revert "SystemUI: Show charging status in addition to trust granted/transient status"  [Luca Stefani]
-4bd641a  Allow to show music heads up on new tracks [1/2]  [ezio84]
-ec200cf  AndroidRuntime: Remove support for image classes  [Mathieu Chartier]
-b371dda  Whitelist OVERRIDE_WIFI_CONFIG for phone app  [Pranav Vashi]
-ae30ddd  Audioservice:do not supress music volume adjustment  [liuxiaoyu7]
-7bc2a21  a11y: don't crash the system when illegal component name encounted  [wangmingming1]
-978b555  Modify start/stop condition for mScreenDozeTimer.  [zhuguangqing]
-28a523f  DefaultPermissionGrantPolicy: Silence harmless errors  [Pranav Vashi]
-d98091b  AudioService: communicate audio HAL process pids to native audioserver  [Eric Laurent]
-eb28ff1  Subscribe ActivityManagerService to receive lmkd kill notifications  [Suren Baghdasaryan]
-d19f45c  Support unsolicited message from lmkd  [Jing Ji]
-34bd304  Implement ActivityManager to LMKD reconnect functionality  [Suren Baghdasaryan]
-b2100c1  os: Process: Fix wrong code in isThreadInProcess  [leo zhang]
-ce7709b  [hwui] fix -Wimplicit-int-float-conversion  [Nick Desaulniers]
-43785ac  Catch IllegalStateException when verify APK  [Zhuying Li]
-4243539  PMS and WMS deadlock when uninstalling APP  [Zhuying Li]
-9265221  lib/androidfw: Fix reversed logic  [Yi Kong]
-eed4791  Gestures: add back HideNavBar overlay  [DennySPB]
-6c54c36  Handle negative background data usage  [Pavan Kumar M]
-
-[1m * kernel/oneplus/sdm845/[m
-4048ccb  defconfig: enable BPF JIT compiler and regen  [DennySPB]
-7fa362a  UPSTREAM: security,selinux,smack: kill security_task_wait hook  [Stephen Smalley]
-486878b  BACKPORT: perf_event: Add support for LSM and SELinux checks  [Joel Fernandes (Google)]
-43db2af  Optionally killable freezer  [Marco Ballesio]
-
-[1m * packages/apps/Settings/[m
-e5a4b25  Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPB]
-
-[1m * system/bt/[m
-942ae80  Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
-
-=============
-   2020-04-06
-=============
-
-[1m * kernel/oneplus/sdm845/[m
-7fd930f  Merge branch 'android-4.9-q' of https://android.googlesource.com/kernel/common  [DennySPB]
-8b2f833  Revert "driver core: Print device when resources present in really_probe()"  [Ethan Halsall]
-4486007  defconfig: enable wireguard  [firebird11]
-5c76465  wireguard: Fix compilation after totalram_pages atomic conversion  [Park Ju Hyung]
-51a4c68  net: import WireGuard version 1.0.20200401  [GtrCraft]
-39e57a3  net: import WireGuard version 0.0.20200318  [GtrCraft]
-b3a14dd  net: import WireGuard version v0.0.20200215  [dragonGR]
-05c7ff3  cpuidle: lpm-levels: Enable ipi prediction  [Maulik Shah]
-f648821  cpuidle: lpm-levels: Track and predict next rescheduling ipi  [Maulik Shah]
-9521e55  lpm-levels: revert static residency values commits  [DennySPB]
-948710f  pocket: Introduce pocket judge  [Chris Lahaye]
-e7f1d4a  defconfig: disable some tracing and debug drivers for performance  [DennySPB]
-
-[1m * packages/apps/Settings/[m
-b6b010a  team: Add maintainer for Xiaomi Mi 9  [ecrosoftxiao]
-
-[1m * packages/apps/SyberiaSettings/[m
-07d7687  HW Keys: Fix custom app selection dialog  [xyyx]
-68222ef  Allow to show music heads up on new tracks [2/2]  [ezio84]
-
-[1m * vendor/syberia/[m
-44ce76e  Add cepheus to official devices  [ecrosoftxiao]
-
-=============
-   2020-04-05
+   2020-04-16
 =============
 [1m * art/[m
-e228bbe  Simplify name verification in ClassLoaderContext.  [Vladimir Marko]
+49b76e1  ART: Showcase for Loop Versioning - Unrolling  [Artem Serov]
+24ee9ab  ART: Introduce Loop Versioning in SuberblockCloner  [Artem Serov]
+d10b0a2  ART: Fix a compiler crash for VectorizeDef() idioms  [Artem Serov]
+cb50099  Remove dex2oat image-classes support  [Mathieu Chartier]
+4a259d5  ART: Add support for SVE feature for ARM64  [Artem Serov]
+90eecb5  Prevent overflow for AOT hotness counters  [Mathieu Chartier]
+ddd7b6c  Fix profile saver hotness for AOT code  [Mathieu Chartier]
+73593b1  ARM/ARM64: Clean up artFindNativeMethod()  [Vladimir Marko]
+c6f4505  Fix pruning invoke environment for StringBuilder append pattern  [Vladimir Marko]
 
-[1m * packages/apps/Settings/[m
-840082b  Legacy suggestions: Remove alpha for close vector  [Alex]
-8c6cb6e  Settings: panels: Improvements  [Alex]
+[1m * frameworks/base/[m
+5e431ce  Do not clean up ART profiles during OTAs  [Calin Juravle]
+802d208  QS: Fix extra lines when icon number is small  [Alex Yustasov]
+704af4c  UninstallAlertDialogFragment: Catch IllegalArgumentException  [jhenrique09]
+cf636ad  Need to check current user when triggering notification lights  [woongki min]
+f7215f6  SettingsProvider: Resolve package name that requires permission  [Pranav Vashi]
+ff2bd5e  fw/b: Prevent double interface restriction remove on interface name change  [Sam Mortimer]
+6779c233  Revert "Fix deletion of VkSemaphores in VulkanManager."  [Rohan Hasabe (Hasaber8)]
 
-[1m * prebuilts/clang/host/linux-x86/clang-11/[m
-65f65a0  Update to 20200404 build  [Danny]
-
-=============
-   2020-04-04
-=============
-
-[1m * frameworks/av/[m
-11854da  Revert "cameraservice: Resolve message vs start/stop preview races"  [Han Wang]
-214d126  TimeCheck: fix use of uninitialized variable  [Mikhail Naganov]
-c398887  ld.config: add libashmemd_client.so to platform shared libs  [Pranav Vashi]
-e859954  media utils: dump audio HAL service before restarting audioserver  [Eric Laurent]
-d5b249d  audiopolicy: Fixup 7f84dfd and re-sync with CAF  [Bruno Martins]
+[1m * frameworks/native/[m
+b8af500  Add a separate flag in the installer for keeping ART profiles  [Calin Juravle]
 
 [1m * kernel/oneplus/sdm845/[m
-787423f  Revert "driver core: platform: Prevent resouce overflow from causing infinite loops"  [Ethan Halsall]
-ba86b8c  genirq: Provide irq_fixup_move_pending()  [Thomas Gleixner]
-3957308  genirq/debugfs: Add proper debugfs interface  [Thomas Gleixner]
-8a034ab  genirq/irqdomain: Add map counter  [Thomas Gleixner]
-b612131  genirq: Allow fwnode to carry name information only  [Thomas Gleixner]
-b2d0eeb  genirq/msi: Prevent overwriting domain name  [Thomas Gleixner]
-9b8f16c  posix-cpu-timers: Make timespec to nsec conversion safe  [Thomas Gleixner]
-9de4597  itimer: Make timeval to nsec conversion range limited  [Thomas Gleixner]
-830aa38  timers: Fix parameter description of try_to_del_timer_sync()  [Peter Meerwald-Stadler]
-3ea54df  sched/core: Drop the unused try_get_task_struct() helper function  [Davidlohr Bueso]
-7313460  sched/wait: Disambiguate wq_entry->task_list and wq_head->task_list naming  [Ingo Molnar]
-934de0a  sched/wait: Move bit_wait_table[] and related functionality from sched/core.c to sched/wait_bit.c  [Ingo Molnar]
-a8fc00d  sched/wait: Split out the wait_bit*() APIs from <linux/wait.h> into <linux/wait_bit.h>  [Ingo Molnar]
-9b219c6  sched/wait: Standardize wait_bit_queue naming  [Ingo Molnar]
-12fb35c  sched/wait: Standardize 'struct wait_bit_queue' wait-queue entry field name  [Ingo Molnar]
-515743e  sched/wait: Standardize internal naming of wait-queue heads  [Ingo Molnar]
-e0ce6ee  sched/wait: Standardize internal naming of wait-queue entries  [Ingo Molnar]
-24cedfa  sched/wait: Rename wait_queue_t => wait_queue_entry_t  [Ingo Molnar]
-c934e4a  locking/rtmutex: Don't initialize lockdep when not required  [Levin, Alexander (Sasha Levin)]
-e342a37  posix-timers: Make nanosleep timespec argument const  [Thomas Gleixner]
-d494276  posix-cpu-timers: Avoid timespec conversion in do_cpu_nanosleep()  [Thomas Gleixner]
-bc8321f  time: Move compat_gettimeofday()/settimeofday() to native  [Al Viro]
-6706b7a  time: Move compat_time()/stime() to native  [Al Viro]
-82691b7  posix-timers: Move compat_timer_create() to native, get rid of set_fs()  [Al Viro]
-9ad67cb8  posix-timers: Move compat versions of clock_gettime/settime/getres  [Al Viro]
-c66d6a4  itimers: Move compat itimer syscalls to native ones  [Al Viro]
-5167da3  posix-timers: Take compat timer_gettime(2) to native one  [Al Viro]
-9e06bc7  posix-timers: Take compat timer_settime(2) to native one  [Al Viro]
-b1c1688  ntp: Move adjtimex related compat syscalls to native counterparts  [Al Viro]
-121b0a7  posix-timers: Kill ->nsleep_restart()  [Al Viro]
-c6b3beb  hrtimers/posix-timers: Merge nanosleep timespec copyout logics into a new helper  [Al Viro]
-8c09814  time/posix-timers: Move the compat copyouts to the nanosleep implementations  [Al Viro]
-b7efb05  posix-timers: Store rmtp into restart_block in sys_clock_nanosleep()  [Al Viro]
-2c21b3f  hrtimer: Move copyout of remaining time to do_nanosleep()  [Al Viro]
-b9bbe41  hrtimer_nanosleep(): Pass rmtp in restart_block  [Al Viro]
-ef3f536  alarmtimer: Move copyout and freeze handling into alarmtimer_do_nsleep()  [Al Viro]
-0d7a2bc  posix-cpu-timers: Move copyout of timespec into do_cpu_nanosleep()  [Al Viro]
-0063808  printk: add __printf attributes to internal functions  [Nicolas Iooss]
-b265a31  posix-timers: Handle relative posix-timers correctly  [Thomas Gleixner]
-67f46a8  posix-timers: Zero out oldval itimerspec  [Thomas Gleixner]
-f47c522  tick/broadcast: Make tick_broadcast_setup_oneshot() static  [Stephen Boyd]
-9aadfbb  posix-timers: Fix inverted SIGEV_NONE logic in common_timer_get()  [Thomas Gleixner]
-2483e16  Revert "printk: fix double printing with earlycon"  [Petr Mladek]
-aa9bdf2  rt_mutex: Add lockdep annotations  [Peter Zijlstra]
-c14e22d  irq/generic-chip: Provide devm_irq_setup_generic_chip()  [Bartosz Golaszewski]
-d72f171  irq/generic-chip: Provide devm_irq_alloc_generic_chip()  [Bartosz Golaszewski]
-8767766  irq/generic-chip: Export irq_init_generic_chip() locally  [Bartosz Golaszewski]
-6dccfee  sched/idle: Add deferrable vmstat_updater back  [Aubrey Li]
-8b9052f  sched/pelt: Fix update of blocked PELT ordering  [Vincent Guittot]
-35db670  sched/isolation: Rename housekeeping_overriden to housekeeping_overridden  [Ethan Halsall]
-78a4be0  sched/isolation: Prefer housekeeping CPU in local node  [Wanpeng Li]
-3575809  sched/isolation: Require a present CPU in housekeeping mask  [Nicholas Piggin]
-054ed99  sched/fair: Use non-atomic cpumask_{set,clear}_cpu()  [Viresh Kumar]
-64d9e6e  FROMGIT: sched/rt: cpupri_find: Trigger a full search as fallback  [Qais Yousef]
-ece7a6b  FROMGIT: sched/rt: Remove unnecessary push for unfit tasks  [Qais Yousef]
-3865010  FROMGIT: sched/rt: Optimize cpupri_find() on non-heterogenous systems  [Qais Yousef]
-69d1d74  FROMGIT: sched/rt: Re-instate old behavior in select_task_rq_rt()  [Qais Yousef]
-8fe7cc9  BACKPORT: FROMGIT: sched/rt: cpupri_find: Implement fallback mechanism for !fit case  [Qais Yousef]
-e0da3ca  Revert "sched: avoid scheduling RT threads on cores currently handling softirqs"  [DennySPB]
+b2e6271  Merge tag 'LE.UM.2.3.2-10100-SDX24' of https://source.codeaurora.org/quic/la/kernel/msm-4.9 into HEAD  [DennySPB]
+61dd02e  disp: msm: remove unnecessary vblank get and put  [Samantha Tran]
+4da61be  drm/msm/dsi-staging: use usleep_range instead of msleep in dsi enable  [Vara Reddy]
+2dc3f7c  disp: msm: queue vblank work on event thread  [Samantha Tran]
+abd0c30  arm64: dts: sdm845: Fix up CPU topology  [Amit Kucheria]
+
+[1m * packages/apps/Settings/[m
+6969f46  team: Add maintainer for Xiaomi Redmi Note 3  [blinoff82]
+0690359  team: Add maintainer for Xiaomi Redmi Note 4  [blinoff82]
+
+[1m * packages/apps/SyberiaSettings/[m
+183b7c0  Buttons: Remove duplicate switches  [DennySPB]
+
+[1m * system/sepolicy/[m
+8aa8403  Allow disable neverallows and use permissive domains in user builds too  [DennySPB]
+
+[1m * vendor/syberia/[m
+02b714a  Merge changes Iace8ecc9,I7c3879cb into 10.0  [dennyspb]
+2b43e9c  Add kenzo to official devices  [blinoff82]
+
+=============
+   2020-04-15
+=============
+[1m * art/[m
+49b76e1  ART: Showcase for Loop Versioning - Unrolling  [Artem Serov]
+24ee9ab  ART: Introduce Loop Versioning in SuberblockCloner  [Artem Serov]
+d10b0a2  ART: Fix a compiler crash for VectorizeDef() idioms  [Artem Serov]
+cb50099  Remove dex2oat image-classes support  [Mathieu Chartier]
+4a259d5  ART: Add support for SVE feature for ARM64  [Artem Serov]
+90eecb5  Prevent overflow for AOT hotness counters  [Mathieu Chartier]
+ddd7b6c  Fix profile saver hotness for AOT code  [Mathieu Chartier]
+73593b1  ARM/ARM64: Clean up artFindNativeMethod()  [Vladimir Marko]
+c6f4505  Fix pruning invoke environment for StringBuilder append pattern  [Vladimir Marko]
+2e4f92f  Loop vectorizer should not remove instructions that can throw  [Georgia Kouveli]
+e17db45  Remove requirement of a ProfilingInfo for jitted code  [Nicolas Geoffray]
+106fcae  ART: Improve ArraySet codegen  [Vladimir Marko]
+e856edc  Eliminate dead LoadClass when pruning ClinitCheck  [Vladimir Marko]
+07b4c1e  Add default argument kIsInstrumented=true  [Vladimir Marko]
+
+[1m * frameworks/base/[m
+cf4d5d8  TWS-A2DP: Add TWS+ codec to DevUI support  [pramod kotreshappa]
+5e86428  BT: Adding aptX-Adaptive codec entry to Framework  [Gurpreet Ghai]
+
+[1m * packages/apps/Bluetooth/[m
+0357580  Fix setting of BLE scan parameters  [Subramanian Srinivasan]
+bb94bca  Add BLE Scan Phy parameter to scan API  [Subramanian Srinivasan]
+917e9d3  BT: Set aptX Adaptive codec priority  [Gurpreet Ghai]
+
+[1m * packages/apps/SyberiaSettings/[m
+7446ed8  Buttons: add missing hw key disable switch  [DennySPB]
+
+[1m * system/bt/[m
+1daf7cd  TWS-A2DP: Add TWS+ codec index  [pramod kotreshappa]
+04dcb47  BT: Adding APTX-Adaptive codec to BT HAL  [Gurpreet Ghai]
+df51ed9  Add BLE Scan Phy parameter to scan API Add BLE Scan Phy parameter to set scan parameters API.  [Subramanian Srinivasan]
+
+[1m * vendor/syberia/[m
+2c6155e  Add mido to official devices  [blinoff82]
+
+=============
+   2020-04-14
+=============
+
+[1m * device/qcom/sepolicy/[m
+07f8f17  Merge branch 'quartz' of https://github.com/AOSPA/android_device_qcom_sepolicy into HEAD  [DennySPB]
+
+[1m * frameworks/av/[m
+7f00d9c  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPB]
+
+[1m * frameworks/base/[m
+97e6ba0  QSDetail: match QSPanel background color  [Lucchetto]
+fa2810b  base: use bypassEnabledBiometric consistently  [Ethan Halsall]
+3ebd55c  fw/b: Squash of app fw restriction commits  [Danesh M]
+
+[1m * frameworks/native/[m
+9d39b48  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/native into HEAD  [DennySPB]
+
+[1m * frameworks/opt/telephony/[m
+13dca56  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPB]
+
+[1m * kernel/oneplus/sdm845/[m
+5987f76  cpu_cooling: bring original intent of thermal pressure update  [DennySPB]
+d609d05  Merge branch 'android-4.9-q' of https://android.googlesource.com/kernel/common  [DennySPB]
+
+[1m * packages/apps/Settings/[m
+74ef972  Settings: per-app cellular data, vpn and wifi restrictions  [Uldiniad]
+
+[1m * packages/services/Telecomm/[m
+2184dcc  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm into HEAD  [DennySPB]
+
+[1m * packages/services/Telephony/[m
+dba0f29  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony into HEAD  [DennySPB]
+
+[1m * system/netd/[m
+2c73358  system/netd: Add BPF support for lineage network restrictions  [Sam Mortimer]
+ecfe86e  system/netd: Squash of app fw restriction commits  [Uldiniad]
+554885a  Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/system/netd into HEAD  [DennySPB]
+
+=============
+   2020-04-13
+=============
+
+[1m * kernel/oneplus/sdm845/[m
+6ee8be4  Merge 4.9.219 into android-4.9-q  [Greg Kroah-Hartman]
+41ac1ac  cpufreq: Register notifiers with the PM QoS framework  [Viresh Kumar]
+47cedfa  PM / QoS: Restore DEV_PM_QOS_MIN/MAX_FREQUENCY  [Leonard Crestez]
+dc5ce8e  PM / QoS: Reorder pm_qos/freq_qos/dev_pm_qos structs  [Leonard Crestez]
+acc0f5e  PM / QoS: Redefine FREQ_QOS_MAX_DEFAULT_VALUE to S32_MAX  [Leonard Crestez]
+9e008a3  PM: QoS: Invalidate frequency QoS requests after removal  [Rafael J. Wysocki]
+c493dc0  Revert "QoS: Modify data structures and function arguments for scalability."  [DennySPB]
+e6c91e6  PM: QoS: Introduce frequency QoS  [Rafael J. Wysocki]
+fcc3a69  PM: QoS: Get rid of unused flags  [Amit Kucheria]
+f0a0628  PM / QoS: Drop redundant declaration of pm_qos_get_value()  [Rafael J. Wysocki]
+997422c  PM / QoS: mark expected switch fall-throughs  [Gustavo A. R. Silva]
+697dc97  PM: QoS: Drop frequency QoS types from device PM QoS  [Rafael J. Wysocki]
+e937f70  PM / QoS: Add support for MIN/MAX frequency constraints  [Viresh Kumar]
+9278b1f  PM / QOS: Pass request type to dev_pm_qos_read_value()  [Viresh Kumar]
+7441dfb  PM / QOS: Rename __dev_pm_qos_read_value() and dev_pm_qos_raw_read_value()  [Viresh Kumar]
+f1d3636  PM / QoS: Fix device resume latency framework  [Rafael J. Wysocki]
+5188957  Linux 4.9.219  [Greg Kroah-Hartman]
+dca9888  drm/msm: Use the correct dma_sync calls in msm_gem  [Rob Clark]
+4c1baea  drm_dp_mst_topology: fix broken drm_dp_sideband_parse_remote_dpcd_read()  [Hans Verkuil]
+20fefd8  usb: dwc3: don't set gadget->is_otg flag  [Roger Quadros]
+f903a19  arm64: Fix size of __early_cpu_boot_status  [Arun KS]
+ed0445d  drm/msm: stop abusing dma_map/unmap for cache  [Rob Clark]
+fcd93da  clk: qcom: rcg: Return failure for RCG update  [Taniya Das]
+1076d21  RDMA/cm: Update num_paths in cma_resolve_iboe_route error flow  [Avihai Horon]
+5cc241a  Bluetooth: RFCOMM: fix ODEBUG bug in rfcomm_dev_ioctl  [Qiujun Huang]
+1cccf9d  ceph: canonicalize server path in place  [Ilya Dryomov]
+68d8766  ceph: remove the extra slashes in the server path  [Xiubo Li]
+792a15d  IB/hfi1: Fix memory leaks in sysfs registration and unregistration  [Kaike Wan]
+95372fb  IB/hfi1: Call kobject_put() when kobject_init_and_add() fails  [Kaike Wan]
+2bc7f1d  ASoC: jz4740-i2s: Fix divider written at incorrect offset in register  [Paul Cercueil]
+002e9ef  tools/accounting/getdelays.c: fix netlink attribute length  [David Ahern]
+5f27cae  random: always use batched entropy for get_random_u{32,64}  [Jason A. Donenfeld]
+1ee3d82  net: phy: micrel: kszphy_resume(): add delay after genphy_resume() before accessing PHY registers  [Oleksij Rempel]
+925c631  slcan: Don't transmit uninitialized stack data in padding  [Richard Palethorpe]
+d0eae22  net: stmmac: dwmac1000: fix out-of-bounds mac address reg setting  [Jisheng Zhang]
+02b303a  net: dsa: bcm_sf2: Ensure correct sub-node is parsed  [Florian Fainelli]
+c5544e7  mm: mempolicy: require at least one nodeid for MPOL_PREFERRED  [Randy Dunlap]
+b1d47d7  padata: always acquire cpu_hotplug_lock before pinst->lock  [Daniel Jordan]
+02c0b89  net: dsa: tag_brcm: Fix skb->fwd_offload_mark location  [Florian Fainelli]
+1b62259  coresight: do not use the BIT() macro in the UAPI header  [Eugene Syromiatnikov]
+d4d7444  blk-mq: Allow blocking queue tag iter callbacks  [Keith Busch]
+f530afb  blk-mq: sync the update nr_hw_queues with blk_mq_queue_tag_busy_iter  [Jianchao Wang]
+4eaf2e4  drm/etnaviv: replace MMU flush marker with flush sequence  [Lucas Stach]
+de29be7  sctp: fix possibly using a bad saddr with a given dst  [Marcelo Ricardo Leitner]
+a6a758c  sctp: fix refcount bug in sctp_wfree  [Qiujun Huang]
+4f1640e  net, ip_tunnel: fix interface lookup with no key  [William Dauchy]
+32006be  ipv4: fix a RCU-list lock in fib_triestat_seq_show  [Qian Cai]
+4d0cdd6  drm/bochs: downgrade pci_request_region failure from error to warning  [Gerd Hoffmann]
+e8b9cf5  l2tp: fix race between l2tp_session_delete() and l2tp_tunnel_closeall()  [Guillaume Nault]
+8aeff20  l2tp: ensure sessions are freed after their PPPOL2TP socket  [Guillaume Nault]
+8f1e967  PM / domains: Rework governor code to be more consistent  [Rafael J. Wysocki]
+542a308  CPU / PM: expose pm_qos_resume_latency for CPUs  [Alex Shi]
+b6ba966  PM / QOS: Pass request type to dev_pm_qos_{add|remove}_notifier()  [Viresh Kumar]
+7ffa214  PM / QoS: Fix typo in file description  [Aisheng Dong]
+efc3bc0  sched: Support Energy Aware Scheduling irrespective of governor  [Satya Durga Srinivasu Prabhala]
+
+[1m * vendor/syberia/[m
+b408364  syberia: Move some system props to PRODUCT_SYSTEM_DEFAULT_PROPERTIES  [Rashed Abdel-Tawab]
+
+=============
+   2020-04-12
+=============
+
+=============
+   2020-04-11
+=============
 
