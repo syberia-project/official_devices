@@ -1,164 +1,242 @@
 =============
-   2020-04-11
-=============
-
- * frameworks/base
-2b46ea0  base: do not use new lockscreen layout for bypass  [Ethan Halsall]
-
- * packages/apps/Settings
-3afb709  devices: drop fajita  [DennySPB]
-
-=============
-   2020-04-10
+   2020-04-19
 =============
 
  * device/xiaomi/cepheus
-501da00  cepheus: Add vendor_google_customization to dependencies  [ecrosoftxiao]
-090ed43  cepheus: Update build fingerprint to coral april  [jhenrique09]
-662a21c  cepheus: fod: use backlight level for brightness  [Demon000]
+4b321eb  props: use vulkan as default renderer  [DennySPB]
+f322e8b  cepheus: sepolicy: Label more FOD related sysfs  [Nauval Rizky]
+ab5cf9a  cepheus: libinit: set dalvik heap configuration conditionally  [Nauval Rizky]
+767c511  Revert "cepheus: Inherit dalvik for 6gb device"  [Nauval Rizky]
+8b29d0f  cepheus: correct hash of pinned telephony jar  [Nauval Rizky]
+b64b5af  cepheus: correct hash of pinned aptX blobs  [Nauval Rizky]
+11609d1  cepheus: drop qti perf blobs  [kondors1995]
+
+=============
+   2020-04-18
+=============
+
+ * device/xiaomi/cepheus
+26c017b  cepheus: Add back apex  [ecrosoftxiao]
+5a6605f  cepheus: Remove Power-OFF alarm  [ecrosoftxiao]
+f220bda  cepheus: overlay: Add multiuser support  [ecrosoftxiao]
+b81d3b1  cepheus: Remove safetynet hack  [Akash]
 
  * kernel/xiaomi/sm8150
-8a7388b  ARM64: dts: define doze lpm and hpm backlight levels  [Demon000]
-976a6b9  dsi: display: expose backlight level  [Demon000]
-0af2743  dsi: display: implement fod hbm mode  [Demon000]
-66560dc  dsi: display: implement doze mode  [Demon000]
-0f2e60c  dsi: display: create empty attributes group  [Demon000]
-0095f31  Revert "drm: msm: implement aod mode"  [Demon000]
-4820698  Revert "drm: msm: add fod hbm node"  [Demon000]
-e7af353  Revert "drm: msm: use display fod hbm mode"  [Demon000]
-5cd0011  Revert "drm: msm: remove dimming handling"  [Demon000]
-6276455  Revert "drm: msm: disable doze on screen off"  [Demon000]
-3498ba3  Revert "drm: msm: allow brightness updates during fod hbm"  [Demon000]
+4ff6a13  cepheus: defconfig: Enable exposure adjustment driver  [GuaiYiHu]
+d2fde29  drm: Let exposure adjustment switchable via sysfs  [XiNGRZ]
+9f028a5  drm: Add workaround to support under-display fingerprint  [DevriesL]
+294927d  drm: make exposure adjustment compatible with cepheus  [DevriesL]
+511464c  drm: add get_main_display  [DevriesL]
+f52a44b  drm: Introduce exposure adjustment driver  [DevriesL]
 
- * vendor/syberia
-a8a0367  v3.6  [DennySPB]
-
-=============
-   2020-04-09
-=============
-
- * frameworks/base
-a34cde0  Revert "Revert "Use non-wakeup alarm for delay constraint.""  [DennySPB]
-9f7dc5e  Prevent HandlerThread from losing interrupted flag  [Michael Hoogasian]
-ed789399  [3/4] Port face unlock feature  [jhenrique09]
-e3364a0  Proper fix of Android Auto  [Hikari-no-Tenshi]
-33f1013  [Re-Apply] FODCircleView: Fix position if cutout is hidden  [jhenrique09]
-
- * packages/apps/Settings
-ad723dd  [4/4] Port face unlock feature  [jhenrique09]
-e70680d  Merge "team: Add maintainer for Xiaomi Mi 9" into 10.0  [dennyspb]
-
- * vendor/syberia
-37142cd  [2/4] Port face unlock feature  [jhenrique09]
-a5b249e   kernel: Add option for using LLD as linker  [mydongistiny]
-
-=============
-   2020-04-08
-=============
-
- * build/make
-9b3fef8  Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/build into HEAD  [DennySPB]
-
- * frameworks/av
-0e965b3  Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPB]
-
- * frameworks/base
-902d13a  QS: add right/left padding even if it's 0 for collapsed statusbar  [ezio84]
-89ba9cc  Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPB]
-
- * packages/apps/Settings
-e5a4b25  Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPB]
-
- * system/bt
-942ae80  Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPB]
-
-=============
-   2020-04-07
-=============
-
- * external/motorola/faceunlock
-6b03cdf  Automatic translation import  [jhenrique09]
-
- * frameworks/base
-b337cda  Revert "SystemUI: Show charging status in addition to trust granted/transient status"  [Luca Stefani]
-4bd641a  Allow to show music heads up on new tracks [1/2]  [ezio84]
-ec200cf  AndroidRuntime: Remove support for image classes  [Mathieu Chartier]
-b371dda  Whitelist OVERRIDE_WIFI_CONFIG for phone app  [Pranav Vashi]
-ae30ddd  Audioservice:do not supress music volume adjustment  [liuxiaoyu7]
-7bc2a21  a11y: don't crash the system when illegal component name encounted  [wangmingming1]
-978b555  Modify start/stop condition for mScreenDozeTimer.  [zhuguangqing]
-28a523f  DefaultPermissionGrantPolicy: Silence harmless errors  [Pranav Vashi]
-d98091b  AudioService: communicate audio HAL process pids to native audioserver  [Eric Laurent]
-eb28ff1  Subscribe ActivityManagerService to receive lmkd kill notifications  [Suren Baghdasaryan]
-d19f45c  Support unsolicited message from lmkd  [Jing Ji]
-34bd304  Implement ActivityManager to LMKD reconnect functionality  [Suren Baghdasaryan]
-b2100c1  os: Process: Fix wrong code in isThreadInProcess  [leo zhang]
-ce7709b  [hwui] fix -Wimplicit-int-float-conversion  [Nick Desaulniers]
-43785ac  Catch IllegalStateException when verify APK  [Zhuying Li]
-4243539  PMS and WMS deadlock when uninstalling APP  [Zhuying Li]
-9265221  lib/androidfw: Fix reversed logic  [Yi Kong]
-eed4791  Gestures: add back HideNavBar overlay  [DennySPB]
-6c54c36  Handle negative background data usage  [Pavan Kumar M]
-
- * packages/apps/Settings
-b6b010a  team: Add maintainer for Xiaomi Mi 9  [ecrosoftxiao]
-
- * packages/apps/SyberiaSettings
-07d7687  HW Keys: Fix custom app selection dialog  [xyyx]
-68222ef  Allow to show music heads up on new tracks [2/2]  [ezio84]
-
- * vendor/syberia
-44ce76e  Add cepheus to official devices  [ecrosoftxiao]
-
-=============
-   2020-04-06
-=============
- * art
-e228bbe  Simplify name verification in ClassLoaderContext.  [Vladimir Marko]
-
- * device/xiaomi/cepheus
-a8ab25a  cepheus: Update Display blobs to LA.UM.8.1.r1-14500-sm8150.0  [ecrosoftxiao]
-
- * packages/apps/Settings
-840082b  Legacy suggestions: Remove alpha for close vector  [Alex]
-8c6cb6e  Settings: panels: Improvements  [Alex]
-
-=============
-   2020-04-05
-=============
-
- * device/xiaomi/cepheus
-7e81ad3  cepheus: Update Media blobs to LA.UM.8.1.r1-14500-sm8150.0  [Akash]
-424495b  cepheus: Update GPS blobs to LA.UM.8.1.r1-14500-sm8150.0  [Akash]
-14042a8  cepheus: Update graphics blobs to LA.UM.8.1.r1-14500-sm8150.0  [Akash]
-0a1ea43  cepheus: Import update-sha1sums.py from LOS  [Akash]
-8c92ef7  cepheus: rootdir: import coral fs tuning  [Demon000]
-4801efb  raphael: remove libdpps  [Demon Singur]
-2f4c02f  raphael: Remove read ahead configuration  [Demon Singur]
-5aa9bb3  raphael: remove unused panel info script  [Demon Singur]
-e4ef708  raphael: Remove unused props  [Demon Singur]
-45fb4f6  cepheus: sepolicy: Add more missing rules  [ecrosoftxiao]
-01a985a  cepheus: sepolicy: Address qti_init denials  [ecrosoftxiao]
-e68b251  cepheus: sepolicy: Address IR denials  [ecrosoftxiao]
-61af1ed  cepheus: sepolicy: Make perf hal happy  [ecrosoftxiao]
-
- * external/motorola/faceunlock
-f79c7fe  faceunlock: Import blobs  [jhenrique09]
-
- * frameworks/av
-11854da  Revert "cameraservice: Resolve message vs start/stop preview races"  [Han Wang]
-214d126  TimeCheck: fix use of uninitialized variable  [Mikhail Naganov]
-c398887  ld.config: add libashmemd_client.so to platform shared libs  [Pranav Vashi]
-e859954  media utils: dump audio HAL service before restarting audioserver  [Eric Laurent]
-d5b249d  audiopolicy: Fixup 7f84dfd and re-sync with CAF  [Bruno Martins]
-
- * kernel/xiaomi/sm8150
-176f9fa  ARM64: Regenerate  [ecrosoftxiao]
+ * official_devices
+de43c24  Kenzo: Update 17/04/20  [Sagarrokade006]
+86fbfda  laurel_sprout: Build done  [HarukeyUA]
+b641e93  enchilada: update 17/04/20  [DennySPB]
 
  * vendor/xiaomi/cepheus
-dacf5cb  cepheus: Sync with device tree  [Akash]
-b8393e1  cepheus: Update display blobs to LA.UM.8.1.r1-14500-sm8150.0  [Akash]
-2c34c71  cepheus: Updare Media blobs to LA.UM.8.1.r1-14500-sm8150.0  [Akash]
-ab2ecc0  cepheus: Update GPS blobs to LA.UM.8.1.r1-14500-sm8150.0  [Akash]
-5720bf5  cepheus: Update graphics blobs to LA.UM.8.1.r1-14500-sm8150.0  [Akash]
+751843f  cepheus: Drop qti perf blobs  [ecrosoftxiao]
+2148a83  cepheus: Remove Power-OFF alarm  [ecrosoftxiao]
+
+=============
+   2020-04-17
+=============
+
+ * device/xiaomi/cepheus
+045017b  cepheus: Add sepolicy rules for libpermgr  [kondors1995]
+8ab05e0  Revert "Revert "cepheus: switch to libperfmgr for powerhint""  [ecrosoftxiao]
+54c39b6  gave system permissions to kgsl-3d0 nodes  [anirudhr]
+da3abea  cepheus: Update post_boot to LA.UM.8.1.r1-14700-sm8150.0  [Akash Srivastava]
+1079107  cepheus: wifi: smarter decisions on whether to use a 2- or 5Ghz AP  [Alex Naidis]
+3a80f59  init.qcom.rc: add wakelock and BLOCK_SUSPEND to vendor.sensors  [Jun-Hyung Kwon]
+97f393b  sm8150-common: sepolicy: give NFC full access to NFC data files  [Demon000]
+1eca63c  sm8150-common: rootdir: restore persist contexts on boot  [Demon000]
+
+ * frameworks/base
+5e431ce  Do not clean up ART profiles during OTAs  [Calin Juravle]
+802d208  QS: Fix extra lines when icon number is small  [Alex Yustasov]
+704af4c  UninstallAlertDialogFragment: Catch IllegalArgumentException  [jhenrique09]
+cf636ad  Need to check current user when triggering notification lights  [woongki min]
+f7215f6  SettingsProvider: Resolve package name that requires permission  [Pranav Vashi]
+ff2bd5e  fw/b: Prevent double interface restriction remove on interface name change  [Sam Mortimer]
+6779c233  Revert "Fix deletion of VkSemaphores in VulkanManager."  [Rohan Hasabe (Hasaber8)]
+
+ * frameworks/native
+b8af500  Add a separate flag in the installer for keeping ART profiles  [Calin Juravle]
+
+ * kernel/xiaomi/sm8150
+75568ea  ARM64: Regenerate  [ecrosoftxiao]
+
+ * packages/apps/Settings
+aefeea5  Merge changes I12ef069a,I7b082b9f into 10.0  [dennyspb]
+
+ * packages/apps/SyberiaSettings
+183b7c0  Buttons: Remove duplicate switches  [DennySPB]
+
+ * vendor/syberia
+02b714a  Merge changes Iace8ecc9,I7c3879cb into 10.0  [dennyspb]
+
+=============
+   2020-04-16
+=============
+ * art
+49b76e1  ART: Showcase for Loop Versioning - Unrolling  [Artem Serov]
+24ee9ab  ART: Introduce Loop Versioning in SuberblockCloner  [Artem Serov]
+d10b0a2  ART: Fix a compiler crash for VectorizeDef() idioms  [Artem Serov]
+cb50099  Remove dex2oat image-classes support  [Mathieu Chartier]
+4a259d5  ART: Add support for SVE feature for ARM64  [Artem Serov]
+90eecb5  Prevent overflow for AOT hotness counters  [Mathieu Chartier]
+ddd7b6c  Fix profile saver hotness for AOT code  [Mathieu Chartier]
+73593b1  ARM/ARM64: Clean up artFindNativeMethod()  [Vladimir Marko]
+c6f4505  Fix pruning invoke environment for StringBuilder append pattern  [Vladimir Marko]
+2e4f92f  Loop vectorizer should not remove instructions that can throw  [Georgia Kouveli]
+e17db45  Remove requirement of a ProfilingInfo for jitted code  [Nicolas Geoffray]
+106fcae  ART: Improve ArraySet codegen  [Vladimir Marko]
+e856edc  Eliminate dead LoadClass when pruning ClinitCheck  [Vladimir Marko]
+07b4c1e  Add default argument kIsInstrumented=true  [Vladimir Marko]
+
+ * frameworks/base
+cf4d5d8  TWS-A2DP: Add TWS+ codec to DevUI support  [pramod kotreshappa]
+5e86428  BT: Adding aptX-Adaptive codec entry to Framework  [Gurpreet Ghai]
+
+ * kernel/xiaomi/sm8150
+4f7f42d  Revert "Revert "Revert "input:touchscreen: Change DT2W keycode"""  [Akash]
+4f9834c  fts_521: forcefully reconfigure the mode  [Demon000]
+
+ * packages/apps/Bluetooth
+0357580  Fix setting of BLE scan parameters  [Subramanian Srinivasan]
+bb94bca  Add BLE Scan Phy parameter to scan API  [Subramanian Srinivasan]
+917e9d3  BT: Set aptX Adaptive codec priority  [Gurpreet Ghai]
+
+ * packages/apps/Settings
+e97cfe4  team: Add maintainer for Xiaomi Redmi Note 3  [blinoff82]
+
+ * packages/apps/SyberiaSettings
+7446ed8  Buttons: add missing hw key disable switch  [DennySPB]
+
+ * system/bt
+1daf7cd  TWS-A2DP: Add TWS+ codec index  [pramod kotreshappa]
+04dcb47  BT: Adding APTX-Adaptive codec to BT HAL  [Gurpreet Ghai]
+df51ed9  Add BLE Scan Phy parameter to scan API Add BLE Scan Phy parameter to set scan parameters API.  [Subramanian Srinivasan]
+
+ * vendor/syberia
+2b43e9c  Add kenzo to official devices  [blinoff82]
+
+=============
+   2020-04-15
+=============
+
+ * device/xiaomi/cepheus
+b3e6fbf  cepheus: remap AI key to VOICE_ASSIST  [Demon Singur]
+
+ * frameworks/av
+7f00d9c  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPB]
+
+ * frameworks/base
+97e6ba0  QSDetail: match QSPanel background color  [Lucchetto]
+fa2810b  base: use bypassEnabledBiometric consistently  [Ethan Halsall]
+3ebd55c  fw/b: Squash of app fw restriction commits  [Danesh M]
+
+ * frameworks/native
+9d39b48  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/native into HEAD  [DennySPB]
+
+ * frameworks/opt/telephony
+13dca56  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPB]
+
+ * kernel/xiaomi/sm8150
+54af476  mm: Stop kswapd early when nothing's waiting for it to free pages  [Sultan Alsawaf]
+009ba4b  Merge tag '2a0a2c7890cae615b49267c73e2d8516243d2d1b' into HEAD  [Akash Srivastava]
+83a0b7c  Merge tag 'LE.UM.3.3.2-07600-SDX55' of https://source.codeaurora.org/quic/la/kernel/msm-4.14 into HEAD  [Akash Srivastava]
+47855d5  Merge tag 'LA.UM.8.9.r1-08700-SM6xx.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.14 into HEAD  [Akash Srivastava]
+
+ * packages/apps/Settings
+a43b956  team: Add maintainer for Xiaomi Redmi Note 4  [blinoff82]
+74ef972  Settings: per-app cellular data, vpn and wifi restrictions  [Uldiniad]
+
+ * packages/services/Telecomm
+2184dcc  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm into HEAD  [DennySPB]
+
+ * packages/services/Telephony
+dba0f29  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony into HEAD  [DennySPB]
+
+ * system/netd
+2c73358  system/netd: Add BPF support for lineage network restrictions  [Sam Mortimer]
+ecfe86e  system/netd: Squash of app fw restriction commits  [Uldiniad]
+554885a  Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/system/netd into HEAD  [DennySPB]
+
+ * vendor/syberia
+2c6155e  Add mido to official devices  [blinoff82]
+
+=============
+   2020-04-14
+=============
+
+ * device/xiaomi/cepheus
+9dbfd0f  cepheus: sepolicy: let MiuiCamera read FOD property  [Demon000]
+91a3c3e  cepheus: Adress sensor denials  [Akash Srivastava]
+06db69c  cepheus: Update Wifi config  [Akash Srivastava]
+
+ * kernel/xiaomi/sm8150
+b2db2ee  Merge branch 'kernel.lnx.4.14.r4-rel' of https://github.com/android-linux-stable/msm-4.14 into HEAD  [Akash Srivastava]
+0f7c871  Merge 4.14.176 into kernel.lnx.4.14.r4-rel  [Nathan Chancellor]
+48548c8  Merge tag 'LA.UM.8.11.r1-03300-NICOBAR.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.14 into quartz  [Akash Srivastava]
+cd52e4f  qcacld-3.0: Don't compile newly added loggings  [Akash Srivastava]
+bb82764  qcacld-3.0: do not compile logging  [Yaroslav Furman]
+ac8e00e  Merge tag 'c2d24d9d264281ad694322df5cb5a5cb648c4497' into quartz  [Akash Srivastava]
+f3d3237  Merge tag 'bdd74d1c749ff8aa9ace580d08ad8731a7380681' into quartz  [Akash Srivastava]
+f0a92ef  Merge tag 'c95195731febf04fd116feefc2db8f62daeacf4f' into quartz  [Akash Srivastava]
+0bdf116  Merge tag '745df4d747389860a2826cda1c7ca0a966411f44' into quartz  [Akash Srivastava]
+2907d54  Merge tag 'b584ea5f34cbf30e8792bd247e3aadd391326b39' into quartz  [Akash Srivastava]
+391243b  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.14 into quartz  [Akash Srivastava]
+c10b57a  Linux 4.14.176  [Greg Kroah-Hartman]
+7ed7184  drm/msm: Use the correct dma_sync calls in msm_gem  [Rob Clark]
+df9c43b  rpmsg: glink: smem: Support rx peak for size less than 4 bytes  [Arun Kumar Neelakantam]
+7d89ff9  drm_dp_mst_topology: fix broken drm_dp_sideband_parse_remote_dpcd_read()  [Hans Verkuil]
+55d9ff5  usb: dwc3: don't set gadget->is_otg flag  [Roger Quadros]
+c886880  rpmsg: glink: Remove chunk size word align warning  [Chris Lew]
+0b3c8d5  arm64: Fix size of __early_cpu_boot_status  [Arun KS]
+3e1b159  drm/msm: stop abusing dma_map/unmap for cache  [Rob Clark]
+2e390ca  clk: qcom: rcg: Return failure for RCG update  [Taniya Das]
+63108f2  acpi/nfit: Fix bus command validation  [Dan Williams]
+90d2773  fbcon: fix null-ptr-deref in fbcon_switch  [Qiujun Huang]
+b51bea6  RDMA/cm: Update num_paths in cma_resolve_iboe_route error flow  [Avihai Horon]
+0da9c03  Bluetooth: RFCOMM: fix ODEBUG bug in rfcomm_dev_ioctl  [Qiujun Huang]
+4452a6c  ceph: canonicalize server path in place  [Ilya Dryomov]
+9218bca  ceph: remove the extra slashes in the server path  [Xiubo Li]
+88c2729  IB/hfi1: Fix memory leaks in sysfs registration and unregistration  [Kaike Wan]
+596bd9d  IB/hfi1: Call kobject_put() when kobject_init_and_add() fails  [Kaike Wan]
+3c97c94  ASoC: jz4740-i2s: Fix divider written at incorrect offset in register  [Paul Cercueil]
+bbe3eda  hwrng: imx-rngc - fix an error path  [Martin Kaiser]
+316b572  tools/accounting/getdelays.c: fix netlink attribute length  [David Ahern]
+1335dd6  random: always use batched entropy for get_random_u{32,64}  [Jason A. Donenfeld]
+982a76b  mlxsw: spectrum_flower: Do not stop at FLOW_ACTION_VLAN_MANGLE  [Petr Machata]
+d0a7c33  slcan: Don't transmit uninitialized stack data in padding  [Richard Palethorpe]
+ca66bbe  net: stmmac: dwmac1000: fix out-of-bounds mac address reg setting  [Jisheng Zhang]
+575698a  net: phy: micrel: kszphy_resume(): add delay after genphy_resume() before accessing PHY registers  [Oleksij Rempel]
+697c52f  net: dsa: bcm_sf2: Ensure correct sub-node is parsed  [Florian Fainelli]
+7575719  ipv6: don't auto-add link-local address to lag ports  [Jarod Wilson]
+c51609a  mm: mempolicy: require at least one nodeid for MPOL_PREFERRED  [Randy Dunlap]
+2d8260b  padata: always acquire cpu_hotplug_lock before pinst->lock  [Daniel Jordan]
+9469e98  coresight: do not use the BIT() macro in the UAPI header  [Eugene Syromiatnikov]
+cbd8aa4  misc: pci_endpoint_test: Fix to support > 10 pci-endpoint-test devices  [Kishon Vijay Abraham I]
+f46117c  blk-mq: Allow blocking queue tag iter callbacks  [Keith Busch]
+574eb13  blk-mq: sync the update nr_hw_queues with blk_mq_queue_tag_busy_iter  [Jianchao Wang]
+c0eab61  drm/etnaviv: replace MMU flush marker with flush sequence  [Lucas Stach]
+3069eab  tools/power turbostat: Fix gcc build warnings  [Len Brown]
+389f041  initramfs: restore default compression behavior  [Eugeniy Paltsev]
+f8c1e65  drm/bochs: downgrade pci_request_region failure from error to warning  [Gerd Hoffmann]
+cfc370c  sctp: fix possibly using a bad saddr with a given dst  [Marcelo Ricardo Leitner]
+968f831  sctp: fix refcount bug in sctp_wfree  [Qiujun Huang]
+b57327d  net, ip_tunnel: fix interface lookup with no key  [William Dauchy]
+545d742  ipv4: fix a RCU-list lock in fib_triestat_seq_show  [Qian Cai]
+
+ * vendor/syberia
+b408364  syberia: Move some system props to PRODUCT_SYSTEM_DEFAULT_PROPERTIES  [Rashed Abdel-Tawab]
+
+=============
+   2020-04-13
+=============
+
+ * device/xiaomi/cepheus
+5829782  cepheus: Drop apex stuff.  [ecrosoftxiao]
 
