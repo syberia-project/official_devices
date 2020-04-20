@@ -1,4 +1,21 @@
 =============
+   2020-04-20
+=============
+
+ * device/xiaomi/cepheus
+b6bc50d  Revert "cepheus: Add sepolicy rules for libpermgr"  [EcrosoftXiao]
+ce2f229  Revert "cepheus: drop qti perf blobs"  [EcrosoftXiao]
+e8124b7  Revert "Revert "Revert "cepheus: switch to libperfmgr for powerhint"""  [EcrosoftXiao]
+
+ * official_devices
+0218196  raphael: build 19/04/2020  [kondors1995]
+f6e93e9  cepheus: hotfix  [EcrosoftXiao]
+96d894b  cepheus: Update 19/04/20  [EcrosoftXiao]
+
+ * vendor/xiaomi/cepheus
+468370e  Revert "cepheus: Drop qti perf blobs"  [EcrosoftXiao]
+
+=============
    2020-04-19
 =============
 
@@ -10,16 +27,25 @@ ab5cf9a  cepheus: libinit: set dalvik heap configuration conditionally  [Nauval 
 8b29d0f  cepheus: correct hash of pinned telephony jar  [Nauval Rizky]
 b64b5af  cepheus: correct hash of pinned aptX blobs  [Nauval Rizky]
 11609d1  cepheus: drop qti perf blobs  [kondors1995]
+26c017b  cepheus: Add back apex  [ecrosoftxiao]
+
+ * vendor/xiaomi/cepheus
+751843f  cepheus: Drop qti perf blobs  [ecrosoftxiao]
 
 =============
    2020-04-18
 =============
 
  * device/xiaomi/cepheus
-26c017b  cepheus: Add back apex  [ecrosoftxiao]
 5a6605f  cepheus: Remove Power-OFF alarm  [ecrosoftxiao]
 f220bda  cepheus: overlay: Add multiuser support  [ecrosoftxiao]
 b81d3b1  cepheus: Remove safetynet hack  [Akash]
+045017b  cepheus: Add sepolicy rules for libpermgr  [kondors1995]
+8ab05e0  Revert "Revert "cepheus: switch to libperfmgr for powerhint""  [ecrosoftxiao]
+54c39b6  gave system permissions to kgsl-3d0 nodes  [anirudhr]
+da3abea  cepheus: Update post_boot to LA.UM.8.1.r1-14700-sm8150.0  [Akash Srivastava]
+1079107  cepheus: wifi: smarter decisions on whether to use a 2- or 5Ghz AP  [Alex Naidis]
+3a80f59  init.qcom.rc: add wakelock and BLOCK_SUSPEND to vendor.sensors  [Jun-Hyung Kwon]
 
  * kernel/xiaomi/sm8150
 4ff6a13  cepheus: defconfig: Enable exposure adjustment driver  [GuaiYiHu]
@@ -28,6 +54,7 @@ d2fde29  drm: Let exposure adjustment switchable via sysfs  [XiNGRZ]
 294927d  drm: make exposure adjustment compatible with cepheus  [DevriesL]
 511464c  drm: add get_main_display  [DevriesL]
 f52a44b  drm: Introduce exposure adjustment driver  [DevriesL]
+75568ea  ARM64: Regenerate  [ecrosoftxiao]
 
  * official_devices
 de43c24  Kenzo: Update 17/04/20  [Sagarrokade006]
@@ -35,7 +62,6 @@ de43c24  Kenzo: Update 17/04/20  [Sagarrokade006]
 b641e93  enchilada: update 17/04/20  [DennySPB]
 
  * vendor/xiaomi/cepheus
-751843f  cepheus: Drop qti perf blobs  [ecrosoftxiao]
 2148a83  cepheus: Remove Power-OFF alarm  [ecrosoftxiao]
 
 =============
@@ -43,12 +69,6 @@ b641e93  enchilada: update 17/04/20  [DennySPB]
 =============
 
  * device/xiaomi/cepheus
-045017b  cepheus: Add sepolicy rules for libpermgr  [kondors1995]
-8ab05e0  Revert "Revert "cepheus: switch to libperfmgr for powerhint""  [ecrosoftxiao]
-54c39b6  gave system permissions to kgsl-3d0 nodes  [anirudhr]
-da3abea  cepheus: Update post_boot to LA.UM.8.1.r1-14700-sm8150.0  [Akash Srivastava]
-1079107  cepheus: wifi: smarter decisions on whether to use a 2- or 5Ghz AP  [Alex Naidis]
-3a80f59  init.qcom.rc: add wakelock and BLOCK_SUSPEND to vendor.sensors  [Jun-Hyung Kwon]
 97f393b  sm8150-common: sepolicy: give NFC full access to NFC data files  [Demon000]
 1eca63c  sm8150-common: rootdir: restore persist contexts on boot  [Demon000]
 
@@ -63,9 +83,6 @@ ff2bd5e  fw/b: Prevent double interface restriction remove on interface name cha
 
  * frameworks/native
 b8af500  Add a separate flag in the installer for keeping ART profiles  [Calin Juravle]
-
- * kernel/xiaomi/sm8150
-75568ea  ARM64: Regenerate  [ecrosoftxiao]
 
  * packages/apps/Settings
 aefeea5  Merge changes I12ef069a,I7b082b9f into 10.0  [dennyspb]
@@ -94,6 +111,9 @@ e17db45  Remove requirement of a ProfilingInfo for jitted code  [Nicolas Geoffra
 106fcae  ART: Improve ArraySet codegen  [Vladimir Marko]
 e856edc  Eliminate dead LoadClass when pruning ClinitCheck  [Vladimir Marko]
 07b4c1e  Add default argument kIsInstrumented=true  [Vladimir Marko]
+
+ * device/xiaomi/cepheus
+b3e6fbf  cepheus: remap AI key to VOICE_ASSIST  [Demon Singur]
 
  * frameworks/base
 cf4d5d8  TWS-A2DP: Add TWS+ codec to DevUI support  [pramod kotreshappa]
@@ -127,7 +147,9 @@ df51ed9  Add BLE Scan Phy parameter to scan API Add BLE Scan Phy parameter to se
 =============
 
  * device/xiaomi/cepheus
-b3e6fbf  cepheus: remap AI key to VOICE_ASSIST  [Demon Singur]
+9dbfd0f  cepheus: sepolicy: let MiuiCamera read FOD property  [Demon000]
+91a3c3e  cepheus: Adress sensor denials  [Akash Srivastava]
+06db69c  cepheus: Update Wifi config  [Akash Srivastava]
 
  * frameworks/av
 7f00d9c  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPB]
@@ -170,11 +192,6 @@ ecfe86e  system/netd: Squash of app fw restriction commits  [Uldiniad]
 =============
    2020-04-14
 =============
-
- * device/xiaomi/cepheus
-9dbfd0f  cepheus: sepolicy: let MiuiCamera read FOD property  [Demon000]
-91a3c3e  cepheus: Adress sensor denials  [Akash Srivastava]
-06db69c  cepheus: Update Wifi config  [Akash Srivastava]
 
  * kernel/xiaomi/sm8150
 b2db2ee  Merge branch 'kernel.lnx.4.14.r4-rel' of https://github.com/android-linux-stable/msm-4.14 into HEAD  [Akash Srivastava]
@@ -232,11 +249,4 @@ b57327d  net, ip_tunnel: fix interface lookup with no key  [William Dauchy]
 
  * vendor/syberia
 b408364  syberia: Move some system props to PRODUCT_SYSTEM_DEFAULT_PROPERTIES  [Rashed Abdel-Tawab]
-
-=============
-   2020-04-13
-=============
-
- * device/xiaomi/cepheus
-5829782  cepheus: Drop apex stuff.  [ecrosoftxiao]
 

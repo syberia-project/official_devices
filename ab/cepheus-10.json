@@ -1,17 +1,17 @@
 {
   "response": [
     {
-      "url": "https://sourceforge.net/projects/syberiaos/files/cepheus/syberia_cepheus-v3.6-20200419-0528-OFFICIAL.zip/download", 
+      "url": "https://sourceforge.net/projects/syberiaos/files/cepheus/syberia_cepheus-v3.6-20200420-0259-OFFICIAL.zip/download", 
       "device_model": "Mi 9", 
-      "filename": "syberia_cepheus-v3.6-20200419-0528-OFFICIAL.zip", 
+      "filename": "syberia_cepheus-v3.6-20200420-0259-OFFICIAL.zip", 
       "device_codename": "cepheus", 
       "romtype": "OFFICIAL", 
       "version": "v3.6", 
       "device_brand": "Xiaomi", 
       "developer": "Evasi0nXiao", 
-      "datetime": 1587274030, 
-      "id": "5608f0dab119cd130dc051671020d4cced096b81418e57641878937b56896a9c", 
-      "size": "1099967793"
+      "datetime": 1587351530, 
+      "id": "b49f8e44678a7e65a90aadc294038fa8946997928998a7a32c3f42d13db656b8", 
+      "size": "1101065089"
     }
   ]
 }
