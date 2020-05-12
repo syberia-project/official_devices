@@ -1,0 +1,152 @@
+=============
+   2020-05-12
+=============
+
+=============
+   2020-05-11
+=============
+
+=============
+   2020-05-10
+=============
+
+[* frameworks/base *]
+aec5907  Navbar: Add navigation bar visibility control  [maxwen]
+
+
+[* packages/apps/SyberiaSettings *]
+bce0469  Merge "NavigationBar visible from DUI: Initial checkin for Oreo" into 10.0  [blinov.in]
+
+
+=============
+   2020-05-09
+=============
+
+[* external/angle *]
+742e716  Add missing vulkan headers into gpuinfo  [DennySPb]
+682abc5  Add assets to ANGLE package  [DennySPb]
+e6a2333  Add permissions and whitelist ANGLE  [DennySPb]
+f71ca9f  Remove unsupported options from blueprint  [DennySPb]
+
+
+[* frameworks/base *]
+6946c39  VolumePanel: fix my derp  [DennySPb]
+f35e133  FODCircleView: Show while bouncer is requesting Pattern or PIN  [TheScarastic]
+9d6b8a7  SystemUI: Redesign volume dialog  [Stylogey]
+1950dc7  base: Redo expanded volume panel for 10.x  [HrX03]
+e81cf62  Revert "Volume panel: Long press settings button to launch Sound Settings"  [DennySPb]
+f1481c0  Revert "core: Add camera intents for camera state"  [kondors1995]
+18877a6  Revert "CameraServiceProxy: Improve code for camera state intent"  [kondors1995]
+
+
+[* packages/apps/Launcher3 *]
+97fe86f  Fixup uninstall shortcut factory  [DennySPb]
+4cd9d3b  Update RU translation  [DennySPb]
+be49d32  Launcher3: Improve work banner layout at the bottom of the app drawer  [Amir Zaidi]
+d52144d  Launcher3: Change padding in work tab footer  [Amir Zaidi]
+cf7e1c1  Launcher3: Do not check fast scroll movement to fix unresponsiveness  [Amir Zaidi]
+d939bd1  AospLauncher: Clear all icon overrides when changing global icon pack  [Amir Zaidi]
+686c68e  AospLauncher: Bypass adaptive icon wrapping with icon pack icons  [Amir Zaidi]
+2170d44  IconLoader: Add config hint to bypass adaptive icon wrapping  [Amir Zaidi]
+67a8980  Launcher3: Add Icon Pack Support from Shade Launcher  [Amir Zaidi]
+471e3a3  Launcher3: Add AppInfo Bottom Sheet from Shade Launcher  [Amir Zaidi]
+f5e1ae6  Add two lines app label option  [DennySPb]
+83f7979  Add toggle for desktop and drawer labels  [Joey]
+8eb1811  Allow disabling workspace edit  [Joey]
+
+
+[* vendor/syberia *]
+70f1570  Merge "v3.7" into 10.0  [dennyspb]
+baf80c1  Merge "Update google prebuilts from QQ2A.200501.001.B2" into 10.0  [dennyspb]
+034024e  v3.7  [DennySPb]
+cd48967  changelog: use echo instead of printf  [DennySPb]
+4a8a5dd  Update google prebuilts from QQ2A.200501.001.B2  [DennySPb]
+fd45cb1  vendor: treblize makefiles  [DennySPb]
+c9426ff  Build ANGLE  [DennySPb]
+c77d9b0  Merge "vendor: Ignore neverallows on user builds to" into 10.0  [dennyspb]
+
+
+=============
+   2020-05-08
+=============
+
+[* frameworks/base *]
+7e81c43  BGDexopt: Clean up ordering  [Andreas Gampe]
+38b9eb4  Pass system server class loader context when asking GetDexOptNeeded  [Calin Juravle]
+6f2084c  fw/b data restrictions: Don't call getNetworkCapabilities() in the callback  [Oliver Scott]
+1520902  TypeClock: Properly calculate the height  [El Dainosor]
+
+
+[* packages/apps/Launcher3 *]
+3ce8328  Rearrange settings  [Alex Cruz]
+4996998  Revert previous iconpack implementation  [DennySPb]
+
+
+[* packages/apps/Settings *]
+cdbf54b  Merge "team: Add maintainer for jasmine_sprout and wayne" into 10.0  [blinov.in]
+
+
+[* vendor/syberia *]
+3273739  Add jasmine_sprout and wayne to official devices  [blinoff82]
+
+
+=============
+   2020-05-07
+=============
+
+[* art *]
+4af66d5  ART: Fix some types  [Andreas Gampe]
+9353e4c  jni: Fix templates for clang-r377782 update.  [Yabin Cui]
+384b962  Fix incorrect narrowing type cast  [Yi Kong]
+00674a5  Move @CriticalNative arguments in registers.  [Vladimir Marko]
+cac9616  Move entry spills determination to JNI compiler.  [Vladimir Marko]
+87d5cba  Remove MIPS support from JNI/trampoline compiler.  [Vladimir Marko]
+574f2f2  Add assembly support for -fsanitize=hwaddress tagged globals.  [Peter Collingbourne]
+
+
+[* build/make *]
+d05a9b4  Merge tag 'android-10.0.0_r36' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
+
+
+[* frameworks/av *]
+1810492  Merge tag 'android-10.0.0_r36' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
+
+
+[* frameworks/base *]
+4196ba1  Merge tag 'android-10.0.0_r36' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+
+
+[* frameworks/native *]
+2fa67dd  Allow native driver to be ANGLE  [Courtney Goeltzenleuchter]
+78eb7ea  Enable context virtualization only for GL  [Courtney Goeltzenleuchter]
+702618b  Clean up egl_connection_t::shouldUseAngle  [Yiwei Zhang]
+5f6dfd3  Remove unused egl_connection_t::angleDecided  [Yiwei Zhang]
+
+
+[* packages/apps/Settings *]
+58ec170  Merge tag 'android-10.0.0_r36' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
+
+
+[* packages/services/Telephony *]
+394cdcc  Merge tag 'android-10.0.0_r36' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD  [DennySPb]
+
+
+[* system/bt *]
+ed70284  Merge tag 'android-10.0.0_r36' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPb]
+
+
+[* system/core *]
+02c366a  Remove more duplicated symlinks  [Luca Stefani]
+dec8817  Remove duplicated debugfs symlink  [Luca Stefani]
+f7e7f10  init.rc: use default dirty writeout policy  [Jaegeuk Kim]
+9e92012  init.rc: disable kernel module autoloading  [Eric Biggers]
+
+
+[* vendor/syberia *]
+7ad9e72  vendor: Ignore neverallows on user builds to  [kondors1995]
+
+
+=============
+   2020-05-06
+=============
+
