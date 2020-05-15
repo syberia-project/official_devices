@@ -1,281 +1,165 @@
 =============
-   2020-05-08
-=============
-
-[* device/oneplus/oneplus6 *]
-136cc03  sdm845-common: power-libperfmgr: checkout to hardware/google/pixel  [Ethan Halsall]
-be2c880  sepolicy: add powerstats rules  [DennySPb]
-39f7a09  powerstats: cleanup  [DennySPb]
-466b1d3  sdm845-common: Import powerstats from crosshatch  [Henrique Pereira]
-e4089c2  sdm845-common: Change the weight of blkio background group  [Rick Yiu]
-
-
-[* external/angle *]
-742e716  Add missing vulkan headers into gpuinfo  [DennySPb]
-682abc5  Add assets to ANGLE package  [DennySPb]
-e6a2333  Add permissions and whitelist ANGLE  [DennySPb]
-f71ca9f  Remove unsupported options from blueprint  [DennySPb]
-
-
-[* frameworks/base *]
-62ed587  Revert "cgroup follow for procs in the same cgroup.procs"  [DennySPb]
-af9664c  Start process of next activity with top priority in advance  [Riddle Hsu]
-9d6b8a7  SystemUI: Redesign volume dialog  [Stylogey]
-1950dc7  base: Redo expanded volume panel for 10.x  [HrX03]
-e81cf62  Revert "Volume panel: Long press settings button to launch Sound Settings"  [DennySPb]
-f1481c0  Revert "core: Add camera intents for camera state"  [kondors1995]
-18877a6  Revert "CameraServiceProxy: Improve code for camera state intent"  [kondors1995]
-
-
-[* kernel/oneplus/sdm845 *]
-a38cd23  defconfig: enable sched thermal pressure and regen  [DennySPb]
-02da9ea  drivers: thermal: step_wise: Clear mitigation on reaching clear threshold  [Ram Chandrasekar]
-176c2f2  drivers: thermal: Return zero on success for qmi_tmd_send_state_request  [Manaf Meethalavalappu Pallikunhi]
-
-
-[* vendor/syberia *]
-034024e  v3.7  [DennySPb]
-cd48967  changelog: use echo instead of printf  [DennySPb]
-fd45cb1  vendor: treblize makefiles  [DennySPb]
-c9426ff  Build ANGLE  [DennySPb]
-c77d9b0  Merge "vendor: Ignore neverallows on user builds to" into 10.0  [dennyspb]
-
-
-=============
-   2020-05-07
-=============
-
-[* frameworks/base *]
-7e81c43  BGDexopt: Clean up ordering  [Andreas Gampe]
-38b9eb4  Pass system server class loader context when asking GetDexOptNeeded  [Calin Juravle]
-6f2084c  fw/b data restrictions: Don't call getNetworkCapabilities() in the callback  [Oliver Scott]
-1520902  TypeClock: Properly calculate the height  [El Dainosor]
-
-
-[* packages/apps/Launcher3 *]
-f072f23  Fixup uninstall shortcut factory  [DennySPb]
-85d2853  Update RU translation  [DennySPb]
-b933740  Launcher3: Improve work banner layout at the bottom of the app drawer  [Amir Zaidi]
-401836b  Launcher3: Change padding in work tab footer  [Amir Zaidi]
-0814b35  Launcher3: Do not check fast scroll movement to fix unresponsiveness  [Amir Zaidi]
-ca018a1  AospLauncher: Clear all icon overrides when changing global icon pack  [Amir Zaidi]
-446c911  AospLauncher: Bypass adaptive icon wrapping with icon pack icons  [Amir Zaidi]
-65be2a5  IconLoader: Add config hint to bypass adaptive icon wrapping  [Amir Zaidi]
-9100033  Launcher3: Add Icon Pack Support from Shade Launcher  [Amir Zaidi]
-c6b51b8  Launcher3: Add AppInfo Bottom Sheet from Shade Launcher  [Amir Zaidi]
-cb86af6  Add two lines app label option  [DennySPb]
-7b45c48  Trebuchet: add toggle for desktop and drawer labels  [Joey]
-c6ae35b  Trebuchet: allow disabling workspace edit  [Joey]
-3ce8328  Rearrange settings  [Alex Cruz]
-4996998  Revert previous iconpack implementation  [DennySPb]
-
-
-[* vendor/syberia *]
-3273739  Add jasmine_sprout and wayne to official devices  [blinoff82]
-
-
-=============
-   2020-05-06
+   2020-05-15
 =============
 
 [* art *]
-4af66d5  ART: Fix some types  [Andreas Gampe]
-9353e4c  jni: Fix templates for clang-r377782 update.  [Yabin Cui]
-384b962  Fix incorrect narrowing type cast  [Yi Kong]
-00674a5  Move @CriticalNative arguments in registers.  [Vladimir Marko]
-cac9616  Move entry spills determination to JNI compiler.  [Vladimir Marko]
-87d5cba  Remove MIPS support from JNI/trampoline compiler.  [Vladimir Marko]
-574f2f2  Add assembly support for -fsanitize=hwaddress tagged globals.  [Peter Collingbourne]
+a75c2a4  dex2oat: default to speed-profile if we have a profile  [Vladimir Marko]
+cee8304  Fix MethodHandle::GetTargetClass bug  [Alex Light]
 
 
-[* build/make *]
-d05a9b4  Merge tag 'android-10.0.0_r36' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
-
-
-[* frameworks/av *]
-1810492  Merge tag 'android-10.0.0_r36' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
+[* device/oneplus/oneplus6 *]
+7e75ef6  overlay: Use Bonito brightness curve  [gilliu]
+36826d9  overlays: remove no longer used brightness settings  [DennySPb]
+0fb3446  Enable lmkd max swap utilization and kill timeout  [Suren Baghdasaryan]
+dcaa69e  sdm845-common: Enable memory stats logging in user mode LMKD  [Rajeev Kumar]
+ceab156  sdm845-common: Switch lmkd to use minfree levels for kill decisions  [Suren Baghdasaryan]
+27af56e  sdm845-common: Set lmkd configuration properties  [Suren Baghdasaryan]
+2e00b49  Properties: move from makefile to dedicated prop file  [DennySPb]
+9dc1535  Revert "oneplus6: customize vibration overlays"  [DennySPb]
 
 
 [* frameworks/base *]
-4196ba1  Merge tag 'android-10.0.0_r36' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+fb88750  SystemUI: decrease margin between qs and text  [ctwoon]
+d76ae34  base: Make 'R style' notification headers toggleable [1/2]  [Ido Ben-Hur]
+bf1d288  fw_base: Implement R style notification section headers  [shagbag913]
+604a1cd  DozeSensors: only use proximity sensor if supported  [Demon000]
+26768c2  Revert "Volume panel: avoid multiple animations on touch spam"  [DennySPb]
+f478321  Automatic translation import  [DennySPb]
+5ffdc8d  DO NOT MERGE Make the disconnecting list from activity up-to-date  [Riddle Hsu]
+ab6aeff  fw_base: OxygenOS styled dismiss all button [1/2]  [00day0]
 
 
 [* frameworks/native *]
-2fa67dd  Allow native driver to be ANGLE  [Courtney Goeltzenleuchter]
-78eb7ea  Enable context virtualization only for GL  [Courtney Goeltzenleuchter]
-702618b  Clean up egl_connection_t::shouldUseAngle  [Yiwei Zhang]
-5f6dfd3  Remove unused egl_connection_t::angleDecided  [Yiwei Zhang]
+28d8207  [RenderEngine] Reorder when ImageManager thread starts  [Alec Mouri]
 
 
 [* kernel/oneplus/sdm845 *]
-cc14a44  Revert "msm: adsprpc: Avoid race condition during map creation and free"  [Eva Huang]
-3de284b  Merge branch 'android-4.9-q' of https://android.googlesource.com/kernel/common into HEAD  [DennySPb]
-ed9b657  f2fs: don't use the submitted bio for a new page  [Sahitya Tummala]
-1cc2b2e  f2fs: Fix data corruption issue with FBE  [Sahitya Tummala]
-5da84b2  Merge 4.9.222 into android-4.9-q  [Greg Kroah-Hartman]
-ffd00fb  Linux 4.9.222  [Greg Kroah-Hartman]
-39c4c5c  drm/qxl: qxl_release use after free  [Vasily Averin]
-6affa87  selinux: properly handle multiple messages in selinux_netlink_send()  [Paul Moore]
-e66e968  dmaengine: dmatest: Fix iteration non-stop logic  [Andy Shevchenko]
-f92f290  nfs: Fix potential posix_acl refcnt leak in nfs3_set_acl  [Andreas Gruenbacher]
-a4dc992  ALSA: opti9xx: shut up gcc-10 range warning  [Arnd Bergmann]
-a6d4fb7  iommu/amd: Fix legacy interrupt remapping for x2APIC-enabled system  [Suravee Suthikulpanit]
-f9980f5  vfio/type1: Fix VA->PA translation for PFNMAP VMAs in vaddr_get_pfn()  [Sean Christopherson]
-7fbf531  RDMA/mlx4: Initialize ib_spec on the stack  [Alaa Hleihel]
-779bb36  dm verity fec: fix hash block number in verity_fec_decode  [Sunwook Eom]
-9199193  PM: hibernate: Freeze kernel threads in software_resume()  [Dexuan Cui]
-9802ad3  PM: ACPI: Output correct message on target power state  [Kai-Heng Feng]
-a448f0b  ALSA: pcm: oss: Place the plugin buffer overflow checks correctly  [Takashi Iwai]
-cd8f76d  ALSA: hda/hdmi: fix without unlocked before return  [Wu Bo]
-a05346d  btrfs: fix block group leak when removing fails  [Xiyu Yang]
-9148b1a  drm/qxl: qxl_release leak in qxl_hw_surface_alloc()  [Vasily Averin]
-c1dcdab  drm/qxl: qxl_release leak in qxl_draw_dirty_fb()  [Vasily Averin]
-9669600  drm/edid: Fix off-by-one in DispID DTD pixel clock  [Ville Syrjälä]
-fb57d4e  ext4: fix special inode number checks in __ext4_iget()  [Theodore Ts'o]
+d3cc4f3  sched: use rq_clock in util update handler  [DennySPb]
+13c5aec  msm: ipa3: increase rmnet_ipa timeout value  [Pooja Kumari]
+e8a90a9  defconfig: set tickrate to 100Hz  [DennySPb]
+
+
+[* packages/apps/Launcher3 *]
+2d87e25  Automatic translation import  [DennySPb]
 
 
 [* packages/apps/Settings *]
-58ec170  Merge tag 'android-10.0.0_r36' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
+66d60eb  Automatic translation import  [DennySPb]
 
 
 [* packages/apps/SyberiaSettings *]
-9ed84af  Import zh-CN translation  [atfmxyl]
-
-
-[* packages/services/Telephony *]
-394cdcc  Merge tag 'android-10.0.0_r36' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD  [DennySPb]
-
-
-[* prebuilts/clang/host/linux-x86/clang-11 *]
-a9f843e  Merge pull request #1 from ElXreno/patch-1  [Danny Lin]
-
-
-[* system/bt *]
-ed70284  Merge tag 'android-10.0.0_r36' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPb]
+af85118  Make 'R style' notification headers toggleable [2/2]  [Ido Ben-Hur]
+e0df4c4  NavBar visibility switch: show only for hwkey devices  [DennySPb]
+319f430  Automatic translation import  [DennySPb]
+0fb4fbf  OxygenOS styled dismiss all button [2/2]  [00day0]
+438c79c  Revert "Update Crowdin configuration file"  [DennySPb]
 
 
 [* system/core *]
-02c366a  Remove more duplicated symlinks  [Luca Stefani]
-dec8817  Remove duplicated debugfs symlink  [Luca Stefani]
-f7e7f10  init.rc: use default dirty writeout policy  [Jaegeuk Kim]
-9e92012  init.rc: disable kernel module autoloading  [Eric Biggers]
+b7d5126  lmkd: enable ro.lmk.kill_timeout_ms to be used with kill notifications  [Suren Baghdasaryan]
+28a325a  lmkd: polling code cleanup  [Suren Baghdasaryan]
+7686bbe  lmkd: add kill when swap utilization is too high  [Suren Baghdasaryan]
 
 
-[* vendor/syberia *]
-7ad9e72  vendor: Ignore neverallows on user builds to  [kondors1995]
-
-
-=============
-   2020-05-05
-=============
-
-[* prebuilts/clang/host/linux-x86/clang-11 *]
-3ded1a8  Fixed link to Telegram channel  [ElXreno]
+[* system/sepolicy *]
+2bf100b  property_contexts: Add missing ro.lmk.swap_util_max property context  [Suren Baghdasaryan]
 
 
 =============
-   2020-05-04
-=============
-
-=============
-   2020-05-03
+   2020-05-14
 =============
 
 [* kernel/oneplus/sdm845 *]
-cf77b7c  Merge 4.9.221 into android-4.9-q  [Greg Kroah-Hartman]
-
-
-[* prebuilts/clang/host/linux-x86/clang-11 *]
-c761922  Update to 20200502 build  [Danny]
-7741dbe  Add LLVM license  [Danny Lin]
+584414b  mbcache: make sure c_entry_count is not decremented past zero  [Jiang Biao]
+2fc88ba  mbcache: make mbcache naming more generic  [Tahsin Erdogan]
+e21af97  mbcache: document that "find" functions only return reusable entries  [Eric Biggers]
+bf66ff8  mbcache: use consistent type for entry count  [Eric Biggers]
+1069919  mbcache: remove unnecessary module_get/module_put  [Eric Biggers]
+abf5bfc  mbcache: don't BUG() if entry cache cannot be allocated  [Eric Biggers]
+33d349f  mbcache: correctly handle 'e_referenced' bit  [Eric Biggers]
+c1911d0  mm: vmpressure: Ignore allocation orders above PAGE_ALLOC_COSTLY_ORDER  [Sultan Alsawaf]
+4b6ab20  qcacld-3.0: Correct misleading indentation to fix compile errors  [Jake Weinstein]
+c731099  sched/core: Streamle calls to task_rq_unlock()  [Mathieu Poirier]
+e904904  sched/topology: Add partition_sched_domains_locked()  [Mathieu Poirier]
+927c95e  sched/cpufreq: Move the cfs_rq_util_change() call to cpufreq_update_util()  [Vincent Guittot]
+7472f17  sched/fair: Fix O(nr_cgroups) in the load balancing path  [Vincent Guittot]
+4150fd4  Merge branch 'android-4.9-q' of https://android.googlesource.com/kernel/common into HEAD  [DennySPb]
 
 
 =============
-   2020-05-02
+   2020-05-13
 =============
+
+[* bionic *]
+184f62a  string: Add optimized memrchr  [Wilco Dijkstra]
+ada617a  string: Improve strnlen performance  [Wilco Dijkstra]
+629047a  libc: arm64: move macro for defining labels to bionic_asm_arm64.h  [Jake Weinstein]
+10bc085  string: Improve strrchr performance  [Wilco Dijkstra]
+5e30483  string: Improve strchr performance  [Wilco Dijkstra]
+
+
+[* packages/apps/SyberiaSettings *]
+fc32ef6  Update Crowdin configuration file  [DennySPb]
+
+
+=============
+   2020-05-12
+=============
+
+[* device/oneplus/oneplus6 *]
+cbe019e  power: fix dt2w issue  [DennySPb]
+
+
+[* frameworks/base *]
+8216707  Revert "Ensure cgroup.procs in the same cgroup"  [DennySPb]
+72781ca  Revert "cgroup follow for procs in the same cgroup.procs"  [DennySPb]
+63190ad  Start process of next activity with top priority in advance  [Riddle Hsu]
+
+
+=============
+   2020-05-11
+=============
+
+=============
+   2020-05-10
+=============
+
+[* frameworks/base *]
+aec5907  Navbar: Add navigation bar visibility control  [maxwen]
+
 
 [* kernel/oneplus/sdm845 *]
-fccd884  ANDROID: cuttlefish_defconfig: Fix dm-verity related options  [Alistair Delva]
-775dfa8c  Linux 4.9.221  [Greg Kroah-Hartman]
-fcd4181  propagate_one(): mnt_set_mountpoint() needs mount_lock  [Al Viro]
-b188090  ext4: check for non-zero journal inum in ext4_calculate_overhead  [Ritesh Harjani]
-5a905c2  ext4: unsigned int compared against zero  [Colin Ian King]
-12140f9  ext4: fix block validity checks for journal inodes using indirect blocks  [Theodore Ts'o]
-2130aae  ext4: don't perform block validity checks on the journal inode  [Theodore Ts'o]
-a985526  ext4: protect journal inode's blocks using block_validity  [Theodore Ts'o]
-553f7c0  ext4: avoid declaring fs inconsistent due to invalid file handles  [Theodore Ts'o]
-9368835  hwmon: (jc42) Fix name to have no illegal characters  [Sascha Hauer]
-ae8bbfe  ext4: convert BUG_ON's to WARN_ON's in mballoc.c  [Theodore Ts'o]
-ae52960  xen/xenbus: ensure xenbus_map_ring_valloc() returns proper grant status  [Juergen Gross]
-1d97e72  objtool: Support Clang non-section symbols in ORC dump  [Josh Poimboeuf]
-e1f81c9  objtool: Fix CONFIG_UBSAN_TRAP unreachable warnings  [Josh Poimboeuf]
-a474af1  scsi: target: fix PR IN / READ FULL STATUS for FC  [Bodo Stroesser]
-83693a5  xfs: fix partially uninitialized structure in xfs_reflink_remap_extent  [Darrick J. Wong]
-2cb2bcf  bpf, x86: Fix encoding for lower 8-bit registers in BPF_STX BPF_B  [Luke Nelson]
-ed0e49c  perf/core: fix parent pid/tid in task exit events  [Ian Rogers]
-024bb46  net/cxgb4: Check the return from t4_query_params properly  [Jason Gunthorpe]
-0ebb056  nfsd: memory corruption in nfsd4_lock()  [Vasily Averin]
-e75dc45  usb: gadget: udc: bdc: Remove unnecessary NULL checks in bdc_req_complete  [Nathan Chancellor]
-5487985  mtd: cfi: fix deadloop in cfi_cmdset_0002.c do_write_buffer  [Liu Jian]
-5aae6c4  fuse: fix possibly missed wake-up after abort  [Miklos Szeredi]
-8cb3f02  remoteproc: Fix wrong rvring index computation  [Clement Leger]
-d51a00d  usb: f_fs: Clear OS Extended descriptor counts to zero in ffs_data_reset()  [Udipto Goswami]
-2aac729  UAS: fix deadlock in error handling and PM flushing work  [Oliver Neukum]
-dbb6527  UAS: no use logging any details in case of ENODEV  [Oliver Neukum]
-9e07de0  staging: vt6656: Power save stop wake_up_count wrap around.  [Malcolm Priestley]
-b591ebe  staging: vt6656: Fix drivers TBTT timing counter.  [Malcolm Priestley]
-264274d  staging: comedi: Fix comedi_device refcnt leak in comedi_open  [Xiyu Yang]
-607dd7b  staging: comedi: dt2815: fix writing hi byte of analog output  [Ian Abbott]
-e454dc8  ARM: imx: provide v7_cpu_resume() only on ARM_CPU_SUSPEND=y  [Ahmad Fatoum]
-90c75e8  ASoC: dapm: fixup dapm kcontrol widget  [Gyeongtaek Lee]
-3fb1c81  audit: check the length of userspace generated audit records  [Paul Moore]
-be76ff0  usb-storage: Add unusual_devs entry for JMicron JMS566  [Alan Stern]
-315ecf5  tty: rocket, avoid OOB access  [Jiri Slaby]
-8ecdbc1  tty: hvc: fix buffer overflow during hvc_alloc().  [Andrew Melnychenko]
-f497d009c  KVM: VMX: Enable machine check support for 32bit targets  [Uros Bizjak]
-a57c01c  KVM: Check validity of resolved slot when searching memslots  [Sean Christopherson]
-e102270  tpm/tpm_tis: Free IRQ if probing fails  [Jarkko Sakkinen]
-b0fb9cb  ALSA: usb-audio: Filter out unsupported sample rates on Focusrite devices  [Alexander Tsoy]
-0c29fea  ALSA: usb-audio: Fix usb audio refcnt leak when getting spdif  [Xiyu Yang]
-7a89acb  ALSA: usx2y: Fix potential NULL dereference  [Takashi Iwai]
-f8e84d7  vmalloc: fix remap_vmalloc_range() bounds checks  [Jann Horn]
-e00b056  overflow.h: Add arithmetic shift helper  [Jason Gunthorpe]
-fcef2fd  USB: hub: Fix handling of connect changes during sleep  [Alan Stern]
-ab20e85  USB: core: Fix free-while-in-use bug in the USB S-Glibrary  [Alan Stern]
-37de96d  USB: Add USB_QUIRK_DELAY_CTRL_MSG and USB_QUIRK_DELAY_INIT for Corsair K70 RGB RAPIDFIRE  [Jonathan Cox]
-f14c64e  USB: sisusbvga: Change port variable from signed to unsigned  [Changming Liu]
-91e9979  fs/namespace.c: fix mountpoint reference counter race  [Piotr Krysiuk]
-3d275f1  iio: xilinx-xadc: Fix sequencer configuration for aux channels in simultaneous mode  [Lars-Peter Clausen]
-066bb35  iio: xilinx-xadc: Fix clearing interrupt when enabling trigger  [Lars-Peter Clausen]
-4120828  iio: xilinx-xadc: Fix ADC-B powerdown  [Lars-Peter Clausen]
-cfd559a  ALSA: hda: Remove ASUS ROG Zenith from the blacklist  [Takashi Iwai]
-d95f959  xfrm: Always set XFRM_TRANSFORMED in xfrm{4,6}_output_finish  [David Ahern]
-4245e14  net: dsa: b53: Fix ARL register definitions  [Florian Fainelli]
-edd12ef  team: fix hang in team_mode_get()  [Taehee Yoo]
-32004fb  tcp: cache line align MAX_TCP_HEADER  [Eric Dumazet]
-74f971a  net/x25: Fix x25_neigh refcnt leak when receiving frame  [Xiyu Yang]
-9d98358  net: netrom: Fix potential nr_neigh refcnt leak in nr_add_node  [Xiyu Yang]
-72ddf7b  macvlan: fix null dereference in macvlan_device_event()  [Taehee Yoo]
-e46d552  macsec: avoid to set wrong mtu  [Taehee Yoo]
-a737ff3  ipv6: fix restrict IPV6_ADDRFORM operation  [John Haxby]
-947a17f  PCI/ASPM: Allow re-enabling Clock PM  [Heiner Kallweit]
-4c237ff  pwm: bcm2835: Dynamically allocate base  [Florian Fainelli]
-ba37c3b  pwm: renesas-tpu: Fix late Runtime PM enablement  [Geert Uytterhoeven]
-fdcb9ad  s390/cio: avoid duplicated 'ADD' uevents  [Cornelia Huck]
-2edb90c  ipc/util.c: sysvipc_find_ipc() should increase position index  [Vasily Averin]
-7526678  kernel/gcov/fs.c: gcov_seq_next() should increase position index  [Vasily Averin]
-8c90458  ASoC: Intel: atom: Take the drv->lock mutex before calling sst_send_slot_map()  [Hans de Goede]
-1a4a92c  scsi: iscsi: Report unbind session event when the target has been removed  [Wu Bo]
-3c33445  pwm: rcar: Fix late Runtime PM enablement  [Geert Uytterhoeven]
-a263d55  ceph: don't skip updating wanted caps when cap is stale  [Yan, Zheng]
-debfa1e  ceph: return ceph_mdsc_do_request() errors from __get_parent()  [Qiujun Huang]
-f5fce91  scsi: lpfc: Fix kasan slab-out-of-bounds error in lpfc_unreg_login  [James Smart]
-21abb35  watchdog: reset last_hw_keepalive time at start  [Tero Kristo]
-1dd76d0  vti4: removed duplicate log message.  [Jeremy Sowden]
-32b13c5  crypto: mxs-dcp - make symbols 'sha1_null_hash' and 'sha256_null_hash' static  [Wei Yongjun]
-dca9d4e  drm/msm: Use the correct dma_sync calls harder  [Rob Clark]
-bcdb7d9  net: ipv4: avoid unused variable warning for sysctl  [Arnd Bergmann]
-5656000  net: ipv4: emulate READ_ONCE() on ->hdrincl bit-field in raw_sendmsg()  [Nicolai Stange]
-6f362a4  ext4: fix extent_status fragmentation for plain files  [Dmitry Monakhov]
+2d2170b  Merge 4.9.223 into android-4.9-q  [Greg Kroah-Hartman]
+270f791  Linux 4.9.223  [Greg Kroah-Hartman]
+9bb734d  mac80211: add ieee80211_is_any_nullfunc()  [Thomas Pedersen]
+fccabc8  ALSA: hda: Match both PCI ID and SSID for driver blacklist  [Takashi Iwai]
+0bd7476  sctp: Fix SHUTDOWN CTSN Ack in the peer restart case  [Jere Leppänen]
+882a1e6  MIPS: perf: Remove incorrect odd/even counter handling for I6400  [Marcin Nowakowski]
+c8cd218  xprtrdma: Fix backchannel allocation of extra rpcrdma_reps  [Chuck Lever]
+c630681  net: systemport: suppress warnings on failed Rx SKB allocations  [Doug Berger]
+8e6b521  net: bcmgenet: suppress warnings on failed Rx SKB allocations  [Doug Berger]
+566ff29  lib/mpi: Fix building for powerpc with clang  [Nathan Chancellor]
+34e95e9  net: dsa: b53: Rework ARL bin logic  [Florian Fainelli]
+4323eed  scripts/config: allow colons in option strings for sed  [Jeremie Francois (on alpha)]
+3f9b0d0  cifs: protect updating server->dstaddr with a spinlock  [Ronnie Sahlberg]
+8256b97  net: stmmac: Fix sub-second increment  [Julien Beraud]
+5e76d93  wimax/i2400m: Fix potential urb refcnt leak  [Xiyu Yang]
+de37cb9  ASoC: sgtl5000: Fix VAG power-on handling  [Sebastian Reichel]
+bca8fdc1  selftests/ipc: Fix test failure seen after initial test run  [Tyler Hicks]
+855341a  iio:ad7797: Use correct attribute_group  [YueHaibing]
+f443284  powerpc/pci/of: Parse unassigned resources  [Alexey Kardashevskiy]
+6194537  vhost: vsock: kick send_pkt worker once device is started  [Jia He]
+
+
+[* packages/apps/SyberiaSettings *]
+bce0469  Merge "NavigationBar visible from DUI: Initial checkin for Oreo" into 10.0  [blinov.in]
+
+
+=============
+   2020-05-09
+=============
+
+[* frameworks/base *]
+6946c39  VolumePanel: fix my derp  [DennySPb]
 
 
