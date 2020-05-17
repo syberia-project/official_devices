@@ -1,225 +1,151 @@
 =============
-   2020-05-10
+   2020-05-17
 =============
 
 [* device/xiaomi/cepheus *]
-b6ee67e  [DNM] Actions: Init actions  [Evasi0nXiao]
-
-
-=============
-   2020-05-09
-=============
-
-[* device/xiaomi/cepheus *]
-89b1ce7  cepheus: Update build fingerprint to coral May  [EcrosoftXiao]
-50ad77b  cepheus: Update carrireroverlay from CAF  [Akash]
-92a8841  cepheus: Update input boost configs to match that of caf  [EcrosoftXiao]
-a92a30e  cepheus: Update CDSP blobs to LA.UM.8.1.r1-14500-sm8150.0  [Akash]
-
-
-[* external/angle *]
-742e716  Add missing vulkan headers into gpuinfo  [DennySPb]
-682abc5  Add assets to ANGLE package  [DennySPb]
-e6a2333  Add permissions and whitelist ANGLE  [DennySPb]
-f71ca9f  Remove unsupported options from blueprint  [DennySPb]
-
-
-[* frameworks/base *]
-0e7dd6d  DozeSensors: only use proximity sensor if supported  [Demon000]
-6946c39  VolumePanel: fix my derp  [DennySPb]
-f35e133  FODCircleView: Show while bouncer is requesting Pattern or PIN  [TheScarastic]
-9d6b8a7  SystemUI: Redesign volume dialog  [Stylogey]
-1950dc7  base: Redo expanded volume panel for 10.x  [HrX03]
-e81cf62  Revert "Volume panel: Long press settings button to launch Sound Settings"  [DennySPb]
-
-
-[* kernel/xiaomi/sm8150 *]
-d1770b0a  cepheus: defconfig: enable CONFIG_IP_NF_TARGET_TTL for TTL  [EcrosoftXiao]
-b49d1c8  cepheus: defconfig: enable CONFIG_NETFILTER_XT_TARGET_HL for TTL  [EcrosoftXiao]
-da7aa10  ARM64: dts: Bring back some thermal zones  [EcrosoftXiao]
-6538cf0  ARM64: Regenerate  [ecrosoftxiao]
-
-
-[* official_devices *]
-4178865  enchilada: Update 08/05/20  [DennySPb]
-
-
-[* vendor/ANXCamera *]
-2cd6b75  Update ANXCamera to V180  [DarkDampSquib]
-
-
-[* vendor/syberia *]
-70f1570  Merge "v3.7" into 10.0  [dennyspb]
-baf80c1  Merge "Update google prebuilts from QQ2A.200501.001.B2" into 10.0  [dennyspb]
-034024e  v3.7  [DennySPb]
-cd48967  changelog: use echo instead of printf  [DennySPb]
-4a8a5dd  Update google prebuilts from QQ2A.200501.001.B2  [DennySPb]
+9a637b4  cepheus: dont build camera provider  [DarkDampSquib]
+5eee5e9  cepheus: Enable Pixel atrace HAL  [Ethan Chen]
+b7a24b3  raphael: sepolicy: Label soundtrigger property  [PIPIPIG233666]
+887ad64  cepheus: sepolicy: Correct some Xiaomi specific labels  [PIPIPIG233666]
 
 
 [* vendor/xiaomi/cepheus *]
-334f8a2  cepheus: Update CDSP blobs to LA.UM.8.1.r1-14500-sm8150.0  [Akash]
+41f1122  cepheus: add prebuilt camera provider  [EcrosoftXiao]
 
 
 =============
-   2020-05-08
+   2020-05-16
 =============
+
+[* device/xiaomi/cepheus *]
+5845e6d  cepheus: sepolicy: Label mius  [Pig]
+b5cf196  cepheus: sepolicy: remove unused sepolicy for ANX  [EcrosoftXiao]
+
 
 [* frameworks/base *]
-f1481c0  Revert "core: Add camera intents for camera state"  [kondors1995]
-18877a6  Revert "CameraServiceProxy: Improve code for camera state intent"  [kondors1995]
-7e81c43  BGDexopt: Clean up ordering  [Andreas Gampe]
-38b9eb4  Pass system server class loader context when asking GetDexOptNeeded  [Calin Juravle]
-6f2084c  fw/b data restrictions: Don't call getNetworkCapabilities() in the callback  [Oliver Scott]
-1520902  TypeClock: Properly calculate the height  [El Dainosor]
+6c07d80  SystemUI: decrease margin between qs and text  [ctwoon]
+021447e  base: Make 'R style' notification headers toggleable [1/2]  [Ido Ben-Hur]
+5ecd68f  fw_base: Implement R style notification section headers  [shagbag913]
+fb9ddae  DozeSensors: only use proximity sensor if supported  [Demon000]
+2b0d3bc  Revert "Volume panel: avoid multiple animations on touch spam"  [DennySPb]
+218565d  Automatic translation import  [DennySPb]
 
 
 [* kernel/xiaomi/sm8150 *]
-8414fdb  Merge branch 'android-4.14-q' of https://android.googlesource.com/kernel/common into ten  [Akash]
+3cf0ee1  Merge https://github.com/markakash/kernel_xiaomi_sm8150 into HEAD  [EcrosoftXiao]
 
 
 [* packages/apps/Launcher3 *]
-97fe86f  Fixup uninstall shortcut factory  [DennySPb]
-4cd9d3b  Update RU translation  [DennySPb]
-be49d32  Launcher3: Improve work banner layout at the bottom of the app drawer  [Amir Zaidi]
-d52144d  Launcher3: Change padding in work tab footer  [Amir Zaidi]
-cf7e1c1  Launcher3: Do not check fast scroll movement to fix unresponsiveness  [Amir Zaidi]
-d939bd1  AospLauncher: Clear all icon overrides when changing global icon pack  [Amir Zaidi]
-686c68e  AospLauncher: Bypass adaptive icon wrapping with icon pack icons  [Amir Zaidi]
-2170d44  IconLoader: Add config hint to bypass adaptive icon wrapping  [Amir Zaidi]
-67a8980  Launcher3: Add Icon Pack Support from Shade Launcher  [Amir Zaidi]
-471e3a3  Launcher3: Add AppInfo Bottom Sheet from Shade Launcher  [Amir Zaidi]
-f5e1ae6  Add two lines app label option  [DennySPb]
-83f7979  Add toggle for desktop and drawer labels  [Joey]
-8eb1811  Allow disabling workspace edit  [Joey]
-3ce8328  Rearrange settings  [Alex Cruz]
-4996998  Revert previous iconpack implementation  [DennySPb]
+66f40c8  Automatic translation import  [DennySPb]
+415e60d  Revert "Update Crowdin configuration file"  [DennySPb]
 
 
 [* packages/apps/Settings *]
-cdbf54b  Merge "team: Add maintainer for jasmine_sprout and wayne" into 10.0  [blinov.in]
-
-
-[* vendor/syberia *]
-fd45cb1  vendor: treblize makefiles  [DennySPb]
-c9426ff  Build ANGLE  [DennySPb]
-c77d9b0  Merge "vendor: Ignore neverallows on user builds to" into 10.0  [dennyspb]
-3273739  Add jasmine_sprout and wayne to official devices  [blinoff82]
-
-
-=============
-   2020-05-07
-=============
-
-[* frameworks/native *]
-2fa67dd  Allow native driver to be ANGLE  [Courtney Goeltzenleuchter]
-78eb7ea  Enable context virtualization only for GL  [Courtney Goeltzenleuchter]
-702618b  Clean up egl_connection_t::shouldUseAngle  [Yiwei Zhang]
-5f6dfd3  Remove unused egl_connection_t::angleDecided  [Yiwei Zhang]
-
-
-[* kernel/xiaomi/sm8150 *]
-df3ee3c  Merge tag 'LA.UM.8.1.r1-14900-sm8150.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.14 into ten  [Akash]
-9f8f854  Merge branch 'kernel.lnx.4.14.r4-rel' of https://github.com/android-linux-stable/msm-4.14 into ten  [Akash]
-
-
-[* packages/apps/Settings *]
-58ec170  Merge tag 'android-10.0.0_r36' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
-
-
-=============
-   2020-05-06
-=============
-
-[* art *]
-4af66d5  ART: Fix some types  [Andreas Gampe]
-9353e4c  jni: Fix templates for clang-r377782 update.  [Yabin Cui]
-384b962  Fix incorrect narrowing type cast  [Yi Kong]
-00674a5  Move @CriticalNative arguments in registers.  [Vladimir Marko]
-cac9616  Move entry spills determination to JNI compiler.  [Vladimir Marko]
-87d5cba  Remove MIPS support from JNI/trampoline compiler.  [Vladimir Marko]
-574f2f2  Add assembly support for -fsanitize=hwaddress tagged globals.  [Peter Collingbourne]
-
-
-[* build/make *]
-d05a9b4  Merge tag 'android-10.0.0_r36' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
-
-
-[* frameworks/av *]
-1810492  Merge tag 'android-10.0.0_r36' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
-
-
-[* frameworks/base *]
-4196ba1  Merge tag 'android-10.0.0_r36' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
-
-
-[* kernel/xiaomi/sm8150 *]
-3f378d5  Merge 4.14.179 into kernel.lnx.4.14.r4-rel  [Nathan Chancellor]
-0aa1460  Merge 4.14.179 into android-4.14-q  [Greg Kroah-Hartman]
-d71f695  Linux 4.14.179  [Greg Kroah-Hartman]
-90d4469  selinux: properly handle multiple messages in selinux_netlink_send()  [Paul Moore]
-bd9339b  dmaengine: dmatest: Fix iteration non-stop logic  [Andy Shevchenko]
-4d6df33  nfs: Fix potential posix_acl refcnt leak in nfs3_set_acl  [Andreas Gruenbacher]
-dc4a358  ALSA: opti9xx: shut up gcc-10 range warning  [Arnd Bergmann]
-41c978d  iommu/amd: Fix legacy interrupt remapping for x2APIC-enabled system  [Suravee Suthikulpanit]
-9ecf556  scsi: target/iblock: fix WRITE SAME zeroing  [David Disseldorp]
-ecf93ef  iommu/qcom: Fix local_base status check  [Tang Bin]
-440e152  vfio/type1: Fix VA->PA translation for PFNMAP VMAs in vaddr_get_pfn()  [Sean Christopherson]
-b4324db6  vfio: avoid possible overflow in vfio_iommu_type1_pin_pages  [Yan Zhao]
-28acd21  RDMA/mlx4: Initialize ib_spec on the stack  [Alaa Hleihel]
-2b6131e  RDMA/mlx5: Set GRH fields in query QP on RoCE  [Aharon Landau]
-74381a0c  dm verity fec: fix hash block number in verity_fec_decode  [Sunwook Eom]
-3ad04be  PM: hibernate: Freeze kernel threads in software_resume()  [Dexuan Cui]
-79a3b3b  PM: ACPI: Output correct message on target power state  [Kai-Heng Feng]
-5505273  ALSA: pcm: oss: Place the plugin buffer overflow checks correctly  [Takashi Iwai]
-7d8378c  ALSA: hda/hdmi: fix without unlocked before return  [Wu Bo]
-a088316  ALSA: hda/realtek - Two front mics on a Lenovo ThinkCenter  [Hui Wang]
-08e05f4  mmc: sdhci-pci: Fix eMMC driver strength for BYT-based controllers  [Adrian Hunter]
-a923cdf  mmc: sdhci-xenon: fix annoying 1.8V regulator warning  [Marek Behún]
-3aaee8e  btrfs: fix partial loss of prealloc extent past i_size after fsync  [Filipe Manana]
-4f7ade4  btrfs: fix block group leak when removing fails  [Xiyu Yang]
-500a886  drm/qxl: qxl_release use after free  [Vasily Averin]
-1c78ac3  drm/qxl: qxl_release leak in qxl_hw_surface_alloc()  [Vasily Averin]
-f4027b7  drm/qxl: qxl_release leak in qxl_draw_dirty_fb()  [Vasily Averin]
-4ad0ae8  drm/edid: Fix off-by-one in DispID DTD pixel clock  [Ville Syrjälä]
-b4586e0  ext4: fix special inode number checks in __ext4_iget()  [Theodore Ts'o]
-
-
-[* packages/services/Telephony *]
-394cdcc  Merge tag 'android-10.0.0_r36' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD  [DennySPb]
-
-
-[* system/bt *]
-ed70284  Merge tag 'android-10.0.0_r36' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPb]
-
-
-[* system/core *]
-02c366a  Remove more duplicated symlinks  [Luca Stefani]
-dec8817  Remove duplicated debugfs symlink  [Luca Stefani]
-f7e7f10  init.rc: use default dirty writeout policy  [Jaegeuk Kim]
-9e92012  init.rc: disable kernel module autoloading  [Eric Biggers]
-
-
-[* vendor/syberia *]
-7ad9e72  vendor: Ignore neverallows on user builds to  [kondors1995]
-
-
-=============
-   2020-05-05
-=============
-
-[* official_devices *]
-9e98f1f  ginkgo: Update 04/05/2020  [TheHitMan7]
-
-
-=============
-   2020-05-04
-=============
-
-[* official_devices *]
-5a35ca5  cepheus: Update 03/05/2020  [EcrosoftXiao]
+6404b27  Merge "Automatic translation import" into 10.0  [dennyspb]
 
 
 [* packages/apps/SyberiaSettings *]
-20e409f  Import zh-CN translation  [atfmxyl]
+af85118  Make 'R style' notification headers toggleable [2/2]  [Ido Ben-Hur]
+e0df4c4  NavBar visibility switch: show only for hwkey devices  [DennySPb]
+
+
+[* vendor/ANXCamera *]
+615f8be  Revert "include script to generate files on sdcard on boot"  [DarkDampSquib]
+
+
+=============
+   2020-05-15
+=============
+
+[* art *]
+a75c2a4  dex2oat: default to speed-profile if we have a profile  [Vladimir Marko]
+cee8304  Fix MethodHandle::GetTargetClass bug  [Alex Light]
+
+
+[* frameworks/base *]
+5ffdc8d  DO NOT MERGE Make the disconnecting list from activity up-to-date  [Riddle Hsu]
+ab6aeff  fw_base: OxygenOS styled dismiss all button [1/2]  [00day0]
+
+
+[* frameworks/native *]
+28d8207  [RenderEngine] Reorder when ImageManager thread starts  [Alec Mouri]
+
+
+[* packages/apps/Settings *]
+bee4517  Automatic translation import  [DennySPb]
+
+
+[* packages/apps/SyberiaSettings *]
+319f430  Automatic translation import  [DennySPb]
+0fb4fbf  OxygenOS styled dismiss all button [2/2]  [00day0]
+438c79c  Revert "Update Crowdin configuration file"  [DennySPb]
+
+
+[* system/core *]
+b7d5126  lmkd: enable ro.lmk.kill_timeout_ms to be used with kill notifications  [Suren Baghdasaryan]
+28a325a  lmkd: polling code cleanup  [Suren Baghdasaryan]
+7686bbe  lmkd: add kill when swap utilization is too high  [Suren Baghdasaryan]
+
+
+[* system/sepolicy *]
+2bf100b  property_contexts: Add missing ro.lmk.swap_util_max property context  [Suren Baghdasaryan]
+
+
+=============
+   2020-05-14
+=============
+
+[* kernel/xiaomi/sm8150 *]
+8da9b15  Merge tag 'LA.UM.8.9.r1-09200-SM6xx.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.14 into ten  [Akash]
+958e77b  Merge tag 'LE.UM.3.3.2-08000-SDX55' of https://source.codeaurora.org/quic/la/kernel/msm-4.14 into ten  [Akash]
+
+
+[* packages/apps/Launcher3 *]
+a76ce80  Update Crowdin configuration file  [DennySPb]
+
+
+[* packages/apps/SyberiaSettings *]
+fc32ef6  Update Crowdin configuration file  [DennySPb]
+
+
+=============
+   2020-05-13
+=============
+
+[* bionic *]
+184f62a  string: Add optimized memrchr  [Wilco Dijkstra]
+ada617a  string: Improve strnlen performance  [Wilco Dijkstra]
+629047a  libc: arm64: move macro for defining labels to bionic_asm_arm64.h  [Jake Weinstein]
+10bc085  string: Improve strrchr performance  [Wilco Dijkstra]
+5e30483  string: Improve strchr performance  [Wilco Dijkstra]
+
+
+[* kernel/xiaomi/sm8150 *]
+b02e41d  qcacld-3.0: Disable CONFIG_WLAN_HANG_EVENT  [idkwhoiam322]
+90cddd4  Merge tag '1a1dc9cf1c6bb2677f8c89db52c3e179ae57fe86' into ten  [Akash]
+c6a1bc3  Merge tag '23152720723075b86b200a9b7d4d62cffabbc77c' into ten  [Akash]
+1d78d01  Merge tag 'b0862d3d8f82c1f73895eee8ebeffe8993eb361d' into ten  [Akash]
+
+
+=============
+   2020-05-12
+=============
+
+[* frameworks/base *]
+8216707  Revert "Ensure cgroup.procs in the same cgroup"  [DennySPb]
+72781ca  Revert "cgroup follow for procs in the same cgroup.procs"  [DennySPb]
+63190ad  Start process of next activity with top priority in advance  [Riddle Hsu]
+
+
+=============
+   2020-05-11
+=============
+
+[* device/xiaomi/cepheus *]
+41acfcc  cepheus: leave space for FOD while bouncer is requesting Pattern or PIN  [EcrosoftXiao]
+
+
+[* kernel/xiaomi/sm8150 *]
+7280b97  Merge tag 'v4.14.180' of https://source.codeaurora.org/quic/la/kernel/msm-4.14 into ten  [Akash]
 
 
