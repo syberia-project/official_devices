@@ -1,4 +1,32 @@
 =============
+   2020-05-21
+=============
+
+[* device/xiaomi/cepheus *]
+7dd1d9b  cepheus: Build libdisplayconfig  [EcrosoftXiao]
+
+
+[* vendor/xiaomi/cepheus *]
+d22da6d  cepheus: Build libdisplayconfig from source  [Akash]
+
+
+=============
+   2020-05-20
+=============
+
+=============
+   2020-05-19
+=============
+
+[* device/xiaomi/cepheus *]
+371a477  Revert "cepheus: sepolicy: Label mius"  [EcrosoftXiao]
+
+
+=============
+   2020-05-18
+=============
+
+=============
    2020-05-17
 =============
 
@@ -7,6 +35,10 @@
 5eee5e9  cepheus: Enable Pixel atrace HAL  [Ethan Chen]
 b7a24b3  raphael: sepolicy: Label soundtrigger property  [PIPIPIG233666]
 887ad64  cepheus: sepolicy: Correct some Xiaomi specific labels  [PIPIPIG233666]
+
+
+[* kernel/xiaomi/sm8150 *]
+3cf0ee1  Merge https://github.com/markakash/kernel_xiaomi_sm8150 into HEAD  [EcrosoftXiao]
 
 
 [* vendor/xiaomi/cepheus *]
@@ -31,10 +63,6 @@ fb9ddae  DozeSensors: only use proximity sensor if supported  [Demon000]
 218565d  Automatic translation import  [DennySPb]
 
 
-[* kernel/xiaomi/sm8150 *]
-3cf0ee1  Merge https://github.com/markakash/kernel_xiaomi_sm8150 into HEAD  [EcrosoftXiao]
-
-
 [* packages/apps/Launcher3 *]
 66f40c8  Automatic translation import  [DennySPb]
 415e60d  Revert "Update Crowdin configuration file"  [DennySPb]
@@ -42,11 +70,13 @@ fb9ddae  DozeSensors: only use proximity sensor if supported  [Demon000]
 
 [* packages/apps/Settings *]
 6404b27  Merge "Automatic translation import" into 10.0  [dennyspb]
+bee4517  Automatic translation import  [DennySPb]
 
 
 [* packages/apps/SyberiaSettings *]
 af85118  Make 'R style' notification headers toggleable [2/2]  [Ido Ben-Hur]
 e0df4c4  NavBar visibility switch: show only for hwkey devices  [DennySPb]
+319f430  Automatic translation import  [DennySPb]
 
 
 [* vendor/ANXCamera *]
@@ -71,12 +101,12 @@ ab6aeff  fw_base: OxygenOS styled dismiss all button [1/2]  [00day0]
 28d8207  [RenderEngine] Reorder when ImageManager thread starts  [Alec Mouri]
 
 
-[* packages/apps/Settings *]
-bee4517  Automatic translation import  [DennySPb]
+[* kernel/xiaomi/sm8150 *]
+8da9b15  Merge tag 'LA.UM.8.9.r1-09200-SM6xx.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.14 into ten  [Akash]
+958e77b  Merge tag 'LE.UM.3.3.2-08000-SDX55' of https://source.codeaurora.org/quic/la/kernel/msm-4.14 into ten  [Akash]
 
 
 [* packages/apps/SyberiaSettings *]
-319f430  Automatic translation import  [DennySPb]
 0fb4fbf  OxygenOS styled dismiss all button [2/2]  [00day0]
 438c79c  Revert "Update Crowdin configuration file"  [DennySPb]
 
@@ -89,63 +119,5 @@ b7d5126  lmkd: enable ro.lmk.kill_timeout_ms to be used with kill notifications 
 
 [* system/sepolicy *]
 2bf100b  property_contexts: Add missing ro.lmk.swap_util_max property context  [Suren Baghdasaryan]
-
-
-=============
-   2020-05-14
-=============
-
-[* kernel/xiaomi/sm8150 *]
-8da9b15  Merge tag 'LA.UM.8.9.r1-09200-SM6xx.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.14 into ten  [Akash]
-958e77b  Merge tag 'LE.UM.3.3.2-08000-SDX55' of https://source.codeaurora.org/quic/la/kernel/msm-4.14 into ten  [Akash]
-
-
-[* packages/apps/Launcher3 *]
-a76ce80  Update Crowdin configuration file  [DennySPb]
-
-
-[* packages/apps/SyberiaSettings *]
-fc32ef6  Update Crowdin configuration file  [DennySPb]
-
-
-=============
-   2020-05-13
-=============
-
-[* bionic *]
-184f62a  string: Add optimized memrchr  [Wilco Dijkstra]
-ada617a  string: Improve strnlen performance  [Wilco Dijkstra]
-629047a  libc: arm64: move macro for defining labels to bionic_asm_arm64.h  [Jake Weinstein]
-10bc085  string: Improve strrchr performance  [Wilco Dijkstra]
-5e30483  string: Improve strchr performance  [Wilco Dijkstra]
-
-
-[* kernel/xiaomi/sm8150 *]
-b02e41d  qcacld-3.0: Disable CONFIG_WLAN_HANG_EVENT  [idkwhoiam322]
-90cddd4  Merge tag '1a1dc9cf1c6bb2677f8c89db52c3e179ae57fe86' into ten  [Akash]
-c6a1bc3  Merge tag '23152720723075b86b200a9b7d4d62cffabbc77c' into ten  [Akash]
-1d78d01  Merge tag 'b0862d3d8f82c1f73895eee8ebeffe8993eb361d' into ten  [Akash]
-
-
-=============
-   2020-05-12
-=============
-
-[* frameworks/base *]
-8216707  Revert "Ensure cgroup.procs in the same cgroup"  [DennySPb]
-72781ca  Revert "cgroup follow for procs in the same cgroup.procs"  [DennySPb]
-63190ad  Start process of next activity with top priority in advance  [Riddle Hsu]
-
-
-=============
-   2020-05-11
-=============
-
-[* device/xiaomi/cepheus *]
-41acfcc  cepheus: leave space for FOD while bouncer is requesting Pattern or PIN  [EcrosoftXiao]
-
-
-[* kernel/xiaomi/sm8150 *]
-7280b97  Merge tag 'v4.14.180' of https://source.codeaurora.org/quic/la/kernel/msm-4.14 into ten  [Akash]
 
 
