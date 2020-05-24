@@ -1,17 +1,17 @@
 {
   "response": [
     {
-      "url": "https://sourceforge.net/projects/syberiaos/files/ginkgo/syberia_ginkgo-v3.6-20200504-1253-OFFICIAL.zip/download", 
-      "device_model": "Redmi Note 8", 
-      "filename": "syberia_ginkgo-v3.6-20200504-1253-OFFICIAL.zip", 
-      "device_codename": "ginkgo", 
-      "romtype": "OFFICIAL", 
-      "version": "v3.6", 
-      "device_brand": "Xiaomi", 
-      "developer": "TheHitMan", 
-      "datetime": 1588596780, 
-      "id": "2cdcd5b88a78cfba3fbc2c3d671eeab8616bded9e91be6f5fc88826e34f88890", 
-      "size": "865434118"
+      "datetime": 1590297360,
+      "filename": "syberia_ginkgo-v3.7-20200524-0516-OFFICIAL.zip",
+      "id": "f3ebd54db3a00a81f2b843b00f5b2ea962f243c535f44d6e24be8c044fa61649",
+      "romtype": "OFFICIAL",
+      "size": "874948851",
+      "url": "https://sourceforge.net/projects/syberiaos/files/ginkgo/syberia_ginkgo-v3.7-20200524-0516-OFFICIAL.zip/download",
+      "version": "v3.7",
+      "device_brand": "Xiaomi",
+      "device_model": "Redmi Note 8",
+      "device_codename": "ginkgo",
+      "developer": "TheHitMan"
     }
   ]
 }

@@ -1,78 +1,28 @@
 =============
-   2020-05-04
+   2020-05-24
 =============
 
 =============
-   2020-05-03
+   2020-05-23
 =============
 
 =============
-   2020-05-02
+   2020-05-22
 =============
 
 =============
-   2020-05-01
+   2020-05-21
 =============
 
 =============
-   2020-04-30
+   2020-05-20
 =============
 
-[* frameworks/base *]
-c695e87  ui: make QS tiles color tinting optional [1/2]  [DennySPb]
-0644338  QSTileHost: add reloadAllTiles() public function  [Kshitij Gupta]
-
-[* frameworks/native *]
-ffd7ed5  Don't destroy ART profiles after package move.  [Alan Stokes]
-
-[* packages/apps/SyberiaSettings *]
-64c459e  make QS tiles color tinting optional [2/2]  [DennySPb]
-
 =============
-   2020-04-29
+   2020-05-19
 =============
 
-[* frameworks/av *]
-2bcda13  Merge tag 'LA.UM.8.4.1.r1-01700-8x98.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av  [DennySPb]
-
-[* frameworks/base *]
-0177bf0  avoid duplicate doFrame calls.  [binzhang]
-85cd284  Fix WebView vulnerability by disallowing file access  [Chen Xu]
-d923f36  Don't change public API  [Luca Stefani]
-4c1e1e4  Phone ringtone setting for Multi SIM device  [Ting Yu]
-325023b7  Revert "base: Phone ringtone setting for Multi SIM device [1/3]"  [Pranav Vashi]
-dc74951  Revert "Fix no default ringtone for slot2"  [Pranav Vashi]
-2e53607  Clean up duplicated uses-permission  [jay]
-
-[* frameworks/native *]
-ed4e164  Merge tag 'LA.UM.8.4.1.r1-01700-8x98.0' of https://source.codeaurora.org/quic/la/platform/frameworks/native  [DennySPb]
-
-[* frameworks/opt/telephony *]
-78a9e5c  Merge tag 'LA.UM.8.4.1.r1-01700-8x98.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony  [DennySPb]
-
-[* packages/apps/Settings *]
-508e332  Phone ringtone setting for Multi SIM device  [Ting Yu]
-2f469ae  Revert "Settings: Phone ringtone setting for Multi SIM device [2/3]"  [Pranav Vashi]
-
-[* packages/services/Telecomm *]
-e02edbd  Phone ringtone setting for Multi SIM device  [Ting Yu]
-37f5407  Revert "Telecomm: Phone ringtone setting for Multi SIM device [3/3]"  [Pranav Vashi]
-
 =============
-   2020-04-28
+   2020-05-18
 =============
-
-[* frameworks/base *]
-9ac0c2e  Add switch last app to gesture actions [1/2]  [DennySPb]
-
-[* packages/apps/Settings *]
-a072f9a  Add switch last app to gesture actions [2/2]  [DennySPb]
-b006cc9  Allow a "L" back swipe to trigger more actions [2/2]  [ezio84]
-c9fa073  Unlink AoD switch pref from AoD on charge  [ezio84]
-d2e22fd  Settings: add option to enable AOD on charging only [2/2]  [darkobas]
-
-[* packages/apps/SyberiaSettings *]
-961962a  Merge "SyberiaSettings: Introduce Adaptive Playback [2/2]" into 10.0  [dennyspb]
-94bf592  SyberiaSettings: Introduce Adaptive Playback [2/2]  [Anushek Prasal]
-25d5d1a  Syberia: Sensor block per-package switch [2/2]  [LorDClockaN]
 
