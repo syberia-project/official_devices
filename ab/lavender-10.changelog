@@ -1,0 +1,54 @@
+=============
+   2020-05-24
+=============
+
+=============
+   2020-05-23
+=============
+
+=============
+   2020-05-22
+=============
+
+[* device/xiaomi/lavender *]
+307903e  lavender: sepolicy: fix hal_audio_default denials  [z3nitsu]
+1d6038d  lavender: import thermal HAL  [z3nitsu]
+45b1463  lavender: sepolicy: fix time_daemon denials  [z3nitsu]
+070f154  lavender:disable the clang compile  [z3nitsu]
+3c8524d  lavender:lets go offical  [z3nitsu]
+754a241  lavender:fix rro error for syberia  [z3nitsu]
+e50d781  lavender: import power HAL  [z3nitsu]
+bb8e8e2  rosy: fwk-detect: Use log/log.h instead of utils/Log.h  [Ethan Chen]
+a4a0403  lavender: import libqti_vndfwk_detect  [z3nitsu]
+a3d98d1  lavender:bringup for syberia  [z3nitsu]
+
+
+=============
+   2020-05-21
+=============
+
+[* external/arm-optimized-routines *]
+52c039f  Merge pull request #1 from SOVIET-ANDROID/10.0  [DennySPb]
+
+
+=============
+   2020-05-20
+=============
+
+[* frameworks/native *]
+86b4e48  Merge tag 'LA.UM.8.12.r1-11300-sm8250.0' of https://source.codeaurora.org/quic/la/platform/frameworks/native into HEAD  [DennySPb]
+
+
+=============
+   2020-05-19
+=============
+
+[* external/arm-optimized-routines *]
+c14a0dc  Merge branch 'master' of https://github.com/ARM-software/optimized-routines into HEAD  [kondors1995]
+a99a1a9  string: Improve strrchr-mte performance  [Wilco Dijkstra]
+
+
+=============
+   2020-05-18
+=============
+
