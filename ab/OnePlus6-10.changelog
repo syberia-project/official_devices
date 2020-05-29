@@ -1,165 +1,386 @@
 =============
-   2020-05-15
+   2020-05-29
 =============
 
-[* art *]
-a75c2a4  dex2oat: default to speed-profile if we have a profile  [Vladimir Marko]
-cee8304  Fix MethodHandle::GetTargetClass bug  [Alex Light]
-
-
 [* device/oneplus/oneplus6 *]
-7e75ef6  overlay: Use Bonito brightness curve  [gilliu]
-36826d9  overlays: remove no longer used brightness settings  [DennySPb]
-0fb3446  Enable lmkd max swap utilization and kill timeout  [Suren Baghdasaryan]
-dcaa69e  sdm845-common: Enable memory stats logging in user mode LMKD  [Rajeev Kumar]
-ceab156  sdm845-common: Switch lmkd to use minfree levels for kill decisions  [Suren Baghdasaryan]
-27af56e  sdm845-common: Set lmkd configuration properties  [Suren Baghdasaryan]
-2e00b49  Properties: move from makefile to dedicated prop file  [DennySPb]
-9dc1535  Revert "oneplus6: customize vibration overlays"  [DennySPb]
+ef735d9  Setup QTI bluetooth  [DennySPb]
+703eee9  overlay: Use OnePlus pocket sensor for Pocket Judge  [DennySPb]
 
 
 [* frameworks/base *]
-fb88750  SystemUI: decrease margin between qs and text  [ctwoon]
-d76ae34  base: Make 'R style' notification headers toggleable [1/2]  [Ido Ben-Hur]
-bf1d288  fw_base: Implement R style notification section headers  [shagbag913]
-604a1cd  DozeSensors: only use proximity sensor if supported  [Demon000]
-26768c2  Revert "Volume panel: avoid multiple animations on touch spam"  [DennySPb]
-f478321  Automatic translation import  [DennySPb]
-5ffdc8d  DO NOT MERGE Make the disconnecting list from activity up-to-date  [Riddle Hsu]
-ab6aeff  fw_base: OxygenOS styled dismiss all button [1/2]  [00day0]
-
-
-[* frameworks/native *]
-28d8207  [RenderEngine] Reorder when ImageManager thread starts  [Alec Mouri]
-
-
-[* kernel/oneplus/sdm845 *]
-d3cc4f3  sched: use rq_clock in util update handler  [DennySPb]
-13c5aec  msm: ipa3: increase rmnet_ipa timeout value  [Pooja Kumari]
-e8a90a9  defconfig: set tickrate to 100Hz  [DennySPb]
+22c431b1  BT_Audio: Updated Check for TWS+ switch  [Gurpreet Ghai]
+094eec7  TWS_A2DP: Handle active device change between TWS+ earbuds  [pramod kotreshappa]
+b197caa  audio: Add support for APTX TWSP audio codec  [Dhananjay Kumar]
+62560a9  audio: Add support for audio extended codecs  [Naresh Tanniru]
+bdc5b9f  Use BluetoothUtils instead of Utils  [Diego Wilson]
+def5d1f  GAP: Handle the race condition cases in auto connect logic  [Venkata Jagadeesh Garaga]
+37ed728  Obex: Squashed commit of the following  [Sravan Kumar V]
+14c5405  Add scan filter for Transport Discovery data  [Subramanian Srinivasan]
+71ba067  Add support for Transport discovery AD type (1/2)  [Subramanian Srinivasan]
+8203728  Bluetooth: TWSP: Support Battery Status information display  [Bhakthavatsala Raghavendra]
+e9c1e41  GAP: Reset bondingInitiatedLocally flag(1/3)  [Venkata Jagadeesh Garaga]
+72378dc  Bluetooth-TWS: Disable outgoing connection to 2nd earbud  [Kiran Kelageri]
+3b594e3  Bluetooth-TWS: Disable outgoing connection for 2nd earbud.  [Kiran Kelageri]
+2ee9540  Bluetooth: Rename bluetooth property to support new P Treble rules  [Safoorah Banu Shaik]
+44bff7b  Bluetooth: Unpair both earbuds on unpair.  [Kiran Kelageri]
+0b271c7  Bluetooth: Add SDK API support for TWS feature (2)  [Bandari Ramesh]
+7ed9d85  Keep the BluetoothHeadset finalize() method protected  [Diego Wilson]
+1aad499  Bluetooth: Fix for Global reference table overflow issue[1/2]  [Bandari Ramesh]
+fb32764  BT: Add new intent to broadcast IOT device details  [Gurpreet Ghai]
+a901455  Revert the change: AudioService: remove dead BT code.  [Samyak Jain]
+0512d18  Add BluetoothQualityReport class(1/2)  [Mingbo Zhang]
+e2718ec  PocketJudge: allow register vendor pocket sensor  [DennySPb]
+b62f251  Automatic translation import  [DennySPb]
 
 
 [* packages/apps/Launcher3 *]
-2d87e25  Automatic translation import  [DennySPb]
+2795c2a  Automatic translation import  [DennySPb]
 
 
 [* packages/apps/Settings *]
-66d60eb  Automatic translation import  [DennySPb]
+1319605  AmbientDisplay: Add custom pref for devices with custom doze packages  [jhenrique09]
+dd7f274  Bluetooth-TWS: UI updates based on Filter matched  [zhenchao]
+409f488  Bluetooth-TWS: UI updates based on profile connection.  [Kiran Kelageri]
+36cf8a0  Fix build error  [Jiyong Park]
+7e00d97  Bluetooth-TWS: Filter TWS devices  [Kiran Kelageri]
+4683953  Bluetooth: Create new catogory for earbuds  [Kiran Kelageri]
+9097bab  Automatic translation import  [DennySPb]
 
 
 [* packages/apps/SyberiaSettings *]
-af85118  Make 'R style' notification headers toggleable [2/2]  [Ido Ben-Hur]
-e0df4c4  NavBar visibility switch: show only for hwkey devices  [DennySPb]
-319f430  Automatic translation import  [DennySPb]
-0fb4fbf  OxygenOS styled dismiss all button [2/2]  [00day0]
-438c79c  Revert "Update Crowdin configuration file"  [DennySPb]
+707d7a1  Automatic translation import  [DennySPb]
+250b683  Fix some mistakes in strings  [DennySPb]
 
 
-[* system/core *]
-b7d5126  lmkd: enable ro.lmk.kill_timeout_ms to be used with kill notifications  [Suren Baghdasaryan]
-28a325a  lmkd: polling code cleanup  [Suren Baghdasaryan]
-7686bbe  lmkd: add kill when swap utilization is too high  [Suren Baghdasaryan]
+[* system/bt *]
+efb000e  Bluetooth: Enable bt_stack.conf from QC stack [2/2]  [M Safoorah Banu]
+2a2f17a  GAP: Reset bondingInitiatedLocally flag(3/3)  [Venkata Jagadeesh Garaga]
+549cdc9  BT: API to update quiet mode status in Adapter service [3/3]  [M Safoorah Banu]
+7164926  Bluetooth: Add SDK API support for TWS feature (1)  [Ramesh Bandari]
+6dd92d2  Bluetooth: Enable Hybrid Audio from stack  [Srinu Jella]
+6b953dc  Add scan filter for Transport Discovery data  [Subramanian Srinivasan]
 
 
-[* system/sepolicy *]
-2bf100b  property_contexts: Add missing ro.lmk.swap_util_max property context  [Suren Baghdasaryan]
+[* vendor/oneplus *]
+dcb05b0  Revert "Updade telephony binaries from LA.UM.8.9.r1-08300-SM6xx.0"  [DennySPb]
 
 
-=============
-   2020-05-14
-=============
-
-[* kernel/oneplus/sdm845 *]
-584414b  mbcache: make sure c_entry_count is not decremented past zero  [Jiang Biao]
-2fc88ba  mbcache: make mbcache naming more generic  [Tahsin Erdogan]
-e21af97  mbcache: document that "find" functions only return reusable entries  [Eric Biggers]
-bf66ff8  mbcache: use consistent type for entry count  [Eric Biggers]
-1069919  mbcache: remove unnecessary module_get/module_put  [Eric Biggers]
-abf5bfc  mbcache: don't BUG() if entry cache cannot be allocated  [Eric Biggers]
-33d349f  mbcache: correctly handle 'e_referenced' bit  [Eric Biggers]
-c1911d0  mm: vmpressure: Ignore allocation orders above PAGE_ALLOC_COSTLY_ORDER  [Sultan Alsawaf]
-4b6ab20  qcacld-3.0: Correct misleading indentation to fix compile errors  [Jake Weinstein]
-c731099  sched/core: Streamle calls to task_rq_unlock()  [Mathieu Poirier]
-e904904  sched/topology: Add partition_sched_domains_locked()  [Mathieu Poirier]
-927c95e  sched/cpufreq: Move the cfs_rq_util_change() call to cpufreq_update_util()  [Vincent Guittot]
-7472f17  sched/fair: Fix O(nr_cgroups) in the load balancing path  [Vincent Guittot]
-4150fd4  Merge branch 'android-4.9-q' of https://android.googlesource.com/kernel/common into HEAD  [DennySPb]
+[* vendor/qcom/opensource/interfaces *]
+be81071  interfaces: Introduce qcom bluetooth_audio and btconfigstore HALs  [TheStrix]
 
 
 =============
-   2020-05-13
+   2020-05-28
 =============
 
-[* bionic *]
-184f62a  string: Add optimized memrchr  [Wilco Dijkstra]
-ada617a  string: Improve strnlen performance  [Wilco Dijkstra]
-629047a  libc: arm64: move macro for defining labels to bionic_asm_arm64.h  [Jake Weinstein]
-10bc085  string: Improve strrchr performance  [Wilco Dijkstra]
-5e30483  string: Improve strchr performance  [Wilco Dijkstra]
+[* art *]
+0f3059c  ART: Introduce stackmap with no DexRegInfo.  [Artem Serov]
+7c9ad27  ART: Encapsulate init-optimization fields  [Andreas Gampe]
+be93500  ART: Use bitset in dex file verifier  [Andreas Gampe]
+22488c0  ART: Change unordered_set to HashSet  [Andreas Gampe]
+39a2ea6  ART: Cache type index validity  [Andreas Gampe]
+96b7671  Stack maps: Micro-optimize LoadBits  [David Srbecky]
+d3a7c5d  Stack maps: Micro-optimize ReadInterleavedVarints  [David Srbecky]
+f9b4b99  Revert^2 "Stack maps: Interleave consecutive varints."  [David Srbecky]
+57a292b  Stack maps: Handle special cases using flags.  [David Srbecky]
+9429562  Avoid coercing to key type in SafeMap  [Alex Light]
+7daf733  ARM64: Combine LSR+ADD into ADD_shift for Int32 HDiv/HRem  [Evgeny Astigeevich]
+0ae4242  ART: Optimize ADD/SUB+ADD_shift into ADDS/SUBS+CINC for HDiv/HRem  [Evgeny Astigeevich]
+248a517  ARM64: Combine LSR+ASR into ASR for Int32 HDiv/HRem  [Evgeny Astigeevich]
+bc95b6f  ART: Refactor InstructionCodeGeneratorARM64::GenerateDivRemWithAnyConstant  [Evgeny Astigeevich]
 
-
-[* packages/apps/SyberiaSettings *]
-fc32ef6  Update Crowdin configuration file  [DennySPb]
-
-
-=============
-   2020-05-12
-=============
 
 [* device/oneplus/oneplus6 *]
-cbe019e  power: fix dt2w issue  [DennySPb]
+d8a17b4  sdm845-common: Switch to common usb-in-recovery configuration  [LuK1337]
+30ef794  Import Doze from Lineage  [DennySPb]
+b806e4c  DeviceParts: remove Pocketmode and Doze  [DennySPb]
 
 
-[* frameworks/base *]
-8216707  Revert "Ensure cgroup.procs in the same cgroup"  [DennySPb]
-72781ca  Revert "cgroup follow for procs in the same cgroup.procs"  [DennySPb]
-63190ad  Start process of next activity with top priority in advance  [Riddle Hsu]
-
-
-=============
-   2020-05-11
-=============
-
-=============
-   2020-05-10
-=============
-
-[* frameworks/base *]
-aec5907  Navbar: Add navigation bar visibility control  [maxwen]
+[* external/arm-optimized-routines *]
+c8ee104  Merge branch 'master' of https://github.com/ARM-software/optimized-routines into HEAD  [kondors1995]
 
 
 [* kernel/oneplus/sdm845 *]
-2d2170b  Merge 4.9.223 into android-4.9-q  [Greg Kroah-Hartman]
-270f791  Linux 4.9.223  [Greg Kroah-Hartman]
-9bb734d  mac80211: add ieee80211_is_any_nullfunc()  [Thomas Pedersen]
-fccabc8  ALSA: hda: Match both PCI ID and SSID for driver blacklist  [Takashi Iwai]
-0bd7476  sctp: Fix SHUTDOWN CTSN Ack in the peer restart case  [Jere Leppänen]
-882a1e6  MIPS: perf: Remove incorrect odd/even counter handling for I6400  [Marcin Nowakowski]
-c8cd218  xprtrdma: Fix backchannel allocation of extra rpcrdma_reps  [Chuck Lever]
-c630681  net: systemport: suppress warnings on failed Rx SKB allocations  [Doug Berger]
-8e6b521  net: bcmgenet: suppress warnings on failed Rx SKB allocations  [Doug Berger]
-566ff29  lib/mpi: Fix building for powerpc with clang  [Nathan Chancellor]
-34e95e9  net: dsa: b53: Rework ARL bin logic  [Florian Fainelli]
-4323eed  scripts/config: allow colons in option strings for sed  [Jeremie Francois (on alpha)]
-3f9b0d0  cifs: protect updating server->dstaddr with a spinlock  [Ronnie Sahlberg]
-8256b97  net: stmmac: Fix sub-second increment  [Julien Beraud]
-5e76d93  wimax/i2400m: Fix potential urb refcnt leak  [Xiyu Yang]
-de37cb9  ASoC: sgtl5000: Fix VAG power-on handling  [Sebastian Reichel]
-bca8fdc1  selftests/ipc: Fix test failure seen after initial test run  [Tyler Hicks]
-855341a  iio:ad7797: Use correct attribute_group  [YueHaibing]
-f443284  powerpc/pci/of: Parse unassigned resources  [Alexey Kardashevskiy]
-6194537  vhost: vsock: kick send_pkt worker once device is started  [Jia He]
+2786457  msm: kgsl: Offload mementry destroy work to separate thread  [Deepak Kumar]
+d9c5d9d  input: synaptics: s3320: Silence log spam  [Sultanxda]
+ae19773  Merge branch 'android-4.9-q' of https://android.googlesource.com/kernel/common  [DennySPb]
+ca8aaf9  Merge 4.9.225 into android-4.9-q  [Greg Kroah-Hartman]
+82dddeb  Linux 4.9.225  [Greg Kroah-Hartman]
+5bb2fcf  iio: sca3000: Remove an erroneous 'get_device()'  [Christophe JAILLET]
+ba324db  rapidio: fix an error in get_user_pages_fast() error handling  [John Hubbard]
+ca2e298  mei: release me_cl object reference  [Alexander Usyskin]
+119590e  iio: dac: vf610: Fix an error handling path in 'vf610_dac_probe()'  [Christophe JAILLET]
+b193514  staging: greybus: Fix uninitialized scalar variable  [Oscar Carter]
+15e86bf  staging: iio: ad2s1210: Fix SPI reading  [Dragos Bogdan]
+f085290  Revert "gfs2: Don't demote a glock until its revokes are written"  [Bob Peterson]
+5107771  cxgb4/cxgb4vf: Fix mac_hlist initialization and free  [Arjun Vynipadath]
+138545f  cxgb4: free mac_hlist properly  [Arjun Vynipadath]
+da9de00  libnvdimm/btt: Remove unnecessary code in btt_freelist_init  [Vishal Verma]
+5307944  platform/x86: alienware-wmi: fix kfree on potentially uninitialized pointer  [Colin Ian King]
+eff8c03  ubsan: build ubsan.c more conservatively  [Arnd Bergmann]
+bd44630  x86/uaccess, ubsan: Fix UBSAN vs. SMAP  [Peter Zijlstra]
+e6cfc10  l2tp: device MTU setup, tunnel socket needs a lock  [R. Parameswaran]
+6ec8ac2  dmaengine: tegra210-adma: Fix an error handling path in 'tegra_adma_probe()'  [Christophe JAILLET]
+bf77564  ALSA: pcm: fix incorrect hw_base increase  [Brent Lu]
+ad6c13e  l2tp: initialise PPP sessions before registering them  [Guillaume Nault]
+5803ecd  l2tp: protect sock pointer of struct pppol2tp_session with RCU  [Guillaume Nault]
+96985ed  l2tp: initialise l2tp_eth sessions before registering them  [Guillaume Nault]
+12b5fb5  l2tp: don't register sessions in l2tp_session_create()  [Guillaume Nault]
+1ede832  l2tp: fix l2tp_eth module loading  [Guillaume Nault]
+feaed88  l2tp: pass tunnel pointer to ->session_create()  [Guillaume Nault]
+880cd40  l2tp: prevent creation of sessions on terminated tunnels  [Guillaume Nault]
+e20c980  l2tp: hold tunnel used while creating sessions with netlink  [Guillaume Nault]
+4c15cdb  l2tp: hold tunnel while handling genl TUNNEL_GET commands  [Guillaume Nault]
+00cf405  l2tp: hold tunnel while handling genl tunnel updates  [Guillaume Nault]
+0b21fa7  l2tp: hold tunnel while processing genl delete command  [Guillaume Nault]
+523e6d7  l2tp: hold tunnel while looking up sessions in l2tp_netlink  [Guillaume Nault]
+11a0837  l2tp: initialise session's refcount before making it reachable  [Guillaume Nault]
+d4504d1  l2tp: define parameters of l2tp_tunnel_find*() as "const"  [Guillaume Nault]
+eb61cab  l2tp: define parameters of l2tp_session_get*() as "const"  [Guillaume Nault]
+e27738d  l2tp: remove l2tp_session_find()  [Guillaume Nault]
+6729e73  l2tp: remove useless duplicate session detection in l2tp_netlink  [Guillaume Nault]
+fa5b41c  L2TP:Adjust intf MTU, add underlay L3, L2 hdrs.  [R. Parameswaran]
+b25415f  New kernel function to get IP overhead on a socket.  [R. Parameswaran]
+6df792e  net: l2tp: ppp: change PPPOL2TP_MSG_* => L2TP_MSG_*  [Asbjørn Sloth Tønnesen]
+cc84b4d  net: l2tp: deprecate PPPOL2TP_MSG_* in favour of L2TP_MSG_*  [Asbjørn Sloth Tønnesen]
+18dc6fb  net: l2tp: export debug flags to UAPI  [Asbjørn Sloth Tønnesen]
+f76905c  watchdog: Fix the race between the release of watchdog_core_data and cdev  [Kevin Hao]
+a5233a3  arm64: fix the flush_icache_range arguments in machine_kexec  [Christoph Hellwig]
+bae3b50  padata: purge get_cpu and reorder_via_wq from padata_do_serial  [Daniel Jordan]
+52a3af1  padata: initialize pd->cpu with effective cpumask  [Daniel Jordan]
+f501513  padata: Replace delayed timer with immediate workqueue in padata_reorder  [Herbert Xu]
+251716d  padata: set cpu_index of unused CPUs to -1  [Mathias Krause]
+c0d3439  i2c: dev: Fix the race between the release of i2c_dev and cdev  [Kevin Hao]
+7a5c2b7  ARM: futex: Address build warning  [Thomas Gleixner]
+e09cb4c  platform/x86: asus-nb-wmi: Do not load on Asus T100TA and T200TA  [Hans de Goede]
+21851aa  USB: core: Fix misleading driver bug report  [Alan Stern]
+1de356b  ceph: fix double unlock in handle_cap_export()  [Wu Bo]
+2e7f7b2  gtp: set NLM_F_MULTI flag in gtp_genl_dump_pdp()  [Yoshiyuki Kurauchi]
+2700d2c  component: Silence bind error on -EPROBE_DEFER  [James Hilliard]
+1957df4  configfs: fix config_item refcnt leak in configfs_rmdir()  [Xiyu Yang]
+f477b49  HID: multitouch: add eGalaxTouch P80H84 support  [Sebastian Reichel]
+ebf9988ee  gcc-common.h: Update for GCC 10  [Frédéric Pierret (fepitre)]
+350d523  i2c: mux: demux-pinctrl: Fix an error handling path in 'i2c_demux_pinctrl_probe()'  [Christophe JAILLET]
+57dd229  iommu/amd: Fix over-read of ACPI UID from IVRS table  [Alexander Monakov]
+26204c4  fix multiplication overflow in copy_fdtable()  [Al Viro]
+d8d4da8  ima: Fix return value of ima_write_policy()  [Roberto Sassu]
+ab97e5a  evm: Check also if *tfm is an error pointer in init_desc()  [Roberto Sassu]
+6953f88c  padata: ensure padata_do_serial() runs on the correct CPU  [Mathias Krause]
+08257da  padata: ensure the reorder timer callback runs on the correct CPU  [Mathias Krause]
+7174609  padata: get_next is never NULL  [Jason A. Donenfeld]
+c4c5322  padata: Remove unused but set variables  [Tobias Klauser]
+0b3bc1f  igb: use igb_adapter->io_addr instead of e1000_hw->hw_addr  [Cao jin]
 
 
-[* packages/apps/SyberiaSettings *]
-bce0469  Merge "NavigationBar visible from DUI: Initial checkin for Oreo" into 10.0  [blinov.in]
+[* packages/apps/Etar *]
+bafe5a0  Etar: Don't optimize out no-arg Fragment constructors  [LuK1337]
+5a76d6d  Etar: Enable usage of local proguard.flags file  [LuK1337]
 
 
 =============
-   2020-05-09
+   2020-05-27
 =============
 
 [* frameworks/base *]
-6946c39  VolumePanel: fix my derp  [DennySPb]
+2bf2e6f  Don't send interaction hint for unnecessary events  [Alex Naidis]
+41b8e90  SystemUI: use primary colors for dark theme where possible  [DennySPb]
+3c592a0  SystemUI: refactor qs bg color into dedicated color resource  [maxwen]
+cfd876d  translate="false" -> translatable="false"  [Edward Savage-Jones]
+1551f22  Add Light/Dark theme for bugreport warning dialog  [Abhijeet Kaur]
+1c21aca  Fix bugreport warning dialog  [Abhijeet Kaur]
+
+
+[* frameworks/native *]
+01d197b  sf: Fix issue with dequeueBuffer when multiple display present  [Baldev Sahu]
+
+
+[* frameworks/opt/telephony *]
+d22a579  telephony: Revert caf's APN changes  [Dyneteve]
+564d330  Remove outdated hax that adds ims-ext-common into static libraries  [DennySPb]
+
+
+[* packages/apps/Bluetooth *]
+3c3394e  Merge tag 'LA.UM.8.12.r1-11700-sm8250.0' of https://source.codeaurora.org/quic/la/platform/packages/apps/Bluetooth into quartz  [Park Ju Hyung]
+
+
+[* packages/apps/Contacts *]
+10a31ff  Contacts: manually configure dark theme for list  [Jesse Chan]
+d7535cb  Contacts: allow framework to do dark theming automatically  [Jesse Chan]
+3d8e885  AOSP/Contacts - Updated to sdkVersion 29.  [Raman Tenneti]
+b78ec10  Automatic translation import  [Michael Bestas]
+1ffdbfc  Automatic translation import  [Michael Bestas]
+3568b42  Automatic translation import  [Michael Bestas]
+919189b  Automatic translation import  [Michael Bestas]
+ae58cf4  Contacts: use white nav bar  [Joey]
+30a7755  Allow calling contacts via specific phone accounts.  [Danny Baumann]
+c77e561  Place EmergencyInfo shortcut on drawer  [yuichiro fujiwara]
+764641d  Place MyInfo shortcut on drawer  [yuichiro fujiwara]
+0c4791c  Contacts: Enable support for device contact.  [Toha]
+8c07f0b  Contacts: Remove unused boolean resource  [Michael Bestas]
+47db7ca  Contacts: Up minimum SDK to 26  [Nolen Johnson]
+6e43397  Contacts: update splash screen to match the new icon  [Joey]
+ff4b4d5  Contacts: adaptive icon  [Asher Simonds]
+a292fc0  Contacts: define app category  [Joey]
+
+
+[* packages/apps/Dialer *]
+ff22bc8   Failed to show hold call when user click swap and merge simultaneously  [rongmei.li]
+f54bc7c  Fix FATAL Exception in PostCallActivity  [Taesu Lee]
+9afb50e  AOSP/Dialer - Fix improperly formatted resource string in Dialer across many languages.  [Raman Tenneti]
+5773a83  Fix the issue that automatic mute state remains ON after adding VT call  [Sekine Yasuaki]
+9564e5c  Fix error case which session change request failed when pausing video  [Sekine Yasuaki]
+ba3b9c3  Fix for button flickering issue when video call screen rotates  [Hideki Ishii]
+5b2ea6f  Fix to update peer dimensions when video screen resumes foreground  [Sekine Yasuaki]
+8a460b6  Fix issue that the hold label is not shown during remote video holding  [Oya Masafumi]
+ed8190a  Fix preview image overlaps a call button during video call  [Shalika Pathirathna]
+ab61e4e  Dialer: allow framework to do dark theming automatically  [Jesse Chan]
+96110b0  Updated target SDK from 28 to 29.  [Raman Tenneti]
+
+
+[* packages/apps/Etar *]
+7c9c8da  Accept "application/ics" in ImportActivity intent-filter  [Tom Hacohen]
+3ffbcb7  Use correct app bar color  [Gitsaibot]
+
+
+[* packages/apps/Launcher3 *]
+1684cc0  Launcher3: fix dark primary folder bg color  [maxwen]
+9f78863  Launcher3: add dark primary support  [maxwen]
+
+
+[* packages/apps/Messaging *]
+bafc2f4  Import translations. DO NOT MERGE  [Bill Yi]
+865c207  Rescheduling pending messages after outside window failure  [Taesu Lee]
+1557257  Fix NPE on MultiConversationNotificationState  [Taesu Lee]
+1b1eb20  Hide APN prefs if platform APIs are used  [Taesu Lee]
+3eb24ba  Use ic_add_white for consistency instead  [Taesu Lee]
+264239b  Fix to show APN prefs correctly  [Taesu Lee]
+30a7a9d  Fix NPE  [Taesu Lee]
+8c1c891  Handle delivered messages as completed messages  [Taesu Lee]
+a6936d3  Messaging: Contact Colors  [Blaise]
+eeec6fc  Messaging: disable auto dark theming on message bubble  [Jesse Chan]
+b98ee5c  Messaging: allow framework to do dark theming automatically  [Jesse Chan]
+2b79db3  Messaging: bump target SDK version to 29  [Jesse Chan]
+a8785ef  Messaging: Fix sysconfig whitelist filename  [Michael Bestas]
+180ef81  Messaging: Add sysconfig whitelist xml  [Michael Bestas]
+
+
+[* packages/apps/Settings *]
+2b10464  Settings: Hide carrier settings version if empty  [Wang Han]
+4069795  Fixes ApnEditor not restoring previous UI  [Lee Chou]
+0f61512  translate="false" -> translatable="false"  [Niclas Rokicki]
+c8c9592  Add primary color picker from Styles & Wallpapers  [pimpmaneaton]
+
+
+[* packages/apps/SyberiaSettings *]
+eeae7fb  Make sound settings fragment  [DennySPb]
+
+
+[* system/extras *]
+e54a72f  verity: Update the build rules for verity tools  [Tao Bao]
+da84220  ext4.h: add EXT4_FEATURE_INCOMPAT_CASEFOLD  [Daniel Rosenberg]
+857321f  Allow casefolding and project quotas for f2fs  [Daniel Rosenberg]
+41927c6  ext4_utils: disable secure discard globally  [Jake Weinstein]
+
+
+[* vendor/syberia *]
+5097b0e  Themes: use primary for dark theme where possible  [DennySPb]
+5a2f212  vendor: add back Syberia primary  [Nick C]
+7bc1d9d  Build Etar instead of Google Calendar  [DennySPb]
+
+
+=============
+   2020-05-26
+=============
+
+[* frameworks/base *]
+8807cde  fwb: Intruduce Primary Colors  [Marko Man]
+bc97fa7a  Fix current formating on lockscreen for devices, that report directly in Ampere.  [Jens Lody]
+42a813d  Always notify listeners when switching mobile data in QS  [Alex Yustasov]
+b76f9c2  base: Guard some functions against face unlock  [jhenrique09]
+0b1787c  Fix NPE when resizing with transferring focus failed  [utzcoz]
+e25a562  Fix freeform window moving/resizing doesn't work  [utzcoz]
+7c0e91d  Revert "Freedom windows: fix drag [1/2]"  [DennySPb]
+7c6f6f8  fixup - Camera: Ignore torch status update for aux or compsite camera  [jhenrique09]
+c845607  camera: Support exposing aux camera to apps  [Sauhard Pande]
+eaf2f14  Camera: Revert old code for aux camera exposing  [jhenrique09]
+72477f2  PowerManager: Move custom API definition to end of AIDL  [Han Wang]
+3474ac1  SystemUI: Initialize proper visibility for notification icons container  [LuK1337]
+b4b1e55  LTE+ indicator not shown when attached to CA network  [Rambo Wang]
+4a03034  Check user unlocked before write to /data/system_ce/0/snapshots  [Guo Li]
+1758f93  AlarmManagerService.setKernelTime: fix incorrect limit.  [Elliott Hughes]
+fb61ecd  base: Live Volume Steps [1/2]  [Meticulus]
+fcdad74  base: Fix notification LED blink for missed calls  [Vaisakh Murali]
+
+
+[* kernel/oneplus/sdm845 *]
+d4f8967  Revert "hrtimer: Annotate lockless access to timer->state"  [DennySPb]
+967ede2  sched/fair: Fix unthrottle_cfs_rq() for leaf_cfs_rq list  [Vincent Guittot]
+64bbfb7  sched/fair: Fix enqueue_task_fair() warning some more  [Phil Auld]
+36a0021  sched/fair: Fix negative imbalance in imbalance calculation  [Aubrey Li]
+f9f34c1  sched/fair: Fix race between runtime distribution and assignment  [Huaixin Chang]
+7c84544  sched/fair: Fix enqueue_task_fair warning  [Vincent Guittot]
+74dca72  sched/fair: Fix insertion in rq->leaf_cfs_rq_list  [Vincent Guittot]
+b84dbb3  sched/fair: Optimize update_blocked_averages()  [Vincent Guittot]
+791e56a0  staging: android: vsoc: fix copy_from_user overrun  [Vincent Stehlé]
+fe1894c  staging: android: ashmem: Don't call fallocate() with ashmem_mutex held.  [Tetsuo Handa]
+9e11fd6  Revert some more ion commits  [DennySPb]
+c2acf0d  Revert "ION: Improve cache accounting"  [Ethan Halsall]
+306698b  Merge tag 'e5063b578cd13f91feb4cf56141a8ba24e3e6d22'  [DennySPb]
+37c4912  Merge tag '7b3cc8eda8e702d6cf6c81210673cb537ba5e03b'  [DennySPb]
+c3c3c40  Merge tag '3fa2d1d8e5ffb3b712b8b6c7249b944dd629b5c0'  [DennySPb]
+01e7730  Merge tag 'LA.UM.8.3.r1-07900-sdm845.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.9  [DennySPb]
+
+
+[* packages/apps/SyberiaSettings *]
+2ccee55  Live Volume Steps [2/2]  [Meticulus]
+
+
+=============
+   2020-05-25
+=============
+
+[* packages/apps/Etar *]
+27cafb4  Etar: Modify about page  [Michael Bestas]
+f3d2170  Etar: Rename package to org.lineageos.etar  [Michael Bestas]
+547aeae  Etar: Switch back to AOSP application name  [Michael Bestas]
+e52b092  Etar: adaptive icon  [Asher Simonds]
+8a3e3cf  Say hello to Android.bp and farewell to Android.mk  [LuK1337]
+
+
+=============
+   2020-05-24
+=============
+
+[* packages/apps/Etar *]
+5188ba3  Fix retrieving resource ids after --rename-manifest-package (#705)  [luk1337]
+
+
+=============
+   2020-05-23
+=============
+
+[* external/arm-optimized-routines *]
+09b21d9  string: Cleanup strchrnul test  [Wilco Dijkstra]
+620b09f  string: Cleanup strchr test  [Wilco Dijkstra]
+f5edabe  string: Cleanup strrchr test  [Wilco Dijkstra]
+e3b6fdf  string: Cleanup stpcpy test  [Wilco Dijkstra]
+76203e7  string: Cleanup strcpy test  [Wilco Dijkstra]
+edfa34d  string: Cleanup strnlen test  [Wilco Dijkstra]
+833a1ea  string: Cleanup strlen test  [Wilco Dijkstra]
+
+
+[* kernel/oneplus/sdm845 *]
+3425be0  Revert "qcacld-3.0: Enable SAE and GCMP by default"  [Sultan Alsawaf]
+8031059  Wireguard: update to 1.0.20200520  [DennySPb]
+9bdfc42  Revert "wireguard: remove ipv6_dst_lookup_flow macro"  [DennySPb]
+
+
+[* packages/apps/Bluetooth *]
+6b33aab  Merge 6274a12a3d5b1d603e89d9d981732169704508c0 on remote branch  [Linux Build Service Account]
+
+
+[* packages/apps/Etar *]
+dd179aa  Fix export to SD card (#701)  [joost]
+0da38bc  Change search provider url  [Gitsaibot]
 
 
