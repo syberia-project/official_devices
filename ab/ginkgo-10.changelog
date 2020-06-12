@@ -1,28 +1,33 @@
 =============
-   2020-05-24
+   2020-06-12
 =============
 
 =============
-   2020-05-23
+   2020-06-11
 =============
 
 =============
-   2020-05-22
+   2020-06-10
 =============
 
 =============
-   2020-05-21
+   2020-06-09
 =============
+\n[* frameworks/base *]\ne4c6d9a  Add isApplicationOnUicc API  [Hyungjun Park]
+d75d17a  BT: Don't allow isBleScanAlwaysAvailable API call for non foreground users  [Mingbo Zhang]\n
 
 =============
-   2020-05-20
+   2020-06-08
 =============
+\n[* packages/services/Telephony *]\n6081844  fixup! Add isApplicationOnUicc API  [LuK1337]
+b6d39a2  Add isApplicationOnUicc API  [Hyungjun Park]\n
 
 =============
-   2020-05-19
+   2020-06-07
 =============
+\n[* packages/apps/Etar *]\n2062211  Move input field for location under the guest field  [Gitsaibot]\n
 
 =============
-   2020-05-18
+   2020-06-06
 =============
 
