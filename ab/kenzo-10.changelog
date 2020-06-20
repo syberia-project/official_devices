@@ -1,163 +1,90 @@
 =============
-   2020-06-20
+   2020-04-17
 =============
 
 =============
-   2020-06-19
+   2020-04-16
 =============
-
-[* frameworks/opt/telephony *]
-0cbcf4a  Revert "Remove outdated hax that adds ims-ext-common into static libraries"  [Sagarrokade006]
-
-
-[* vendor/xiaomi *]
-44d91a2  Fix camera-daemon crash  [Sagarrokade006]
-951f2f9  msm8956-common: Update qti-telephony-common from daisy  [mosimchah]
-d4e184c  Revert "Add mm-qcamera-daemon"  [Sagarrokade006]
-
-
+5e431ce  Do not clean up ART profiles during OTAs  [Calin Juravle]
+802d208  QS: Fix extra lines when icon number is small  [Alex Yustasov]
+704af4c  UninstallAlertDialogFragment: Catch IllegalArgumentException  [jhenrique09]
+cf636ad  Need to check current user when triggering notification lights  [woongki min]
+f7215f6  SettingsProvider: Resolve package name that requires permission  [Pranav Vashi]
+ff2bd5e  fw/b: Prevent double interface restriction remove on interface name change  [Sam Mortimer]
+6779c233  Revert "Fix deletion of VkSemaphores in VulkanManager."  [Rohan Hasabe (Hasaber8)]
+b8af500  Add a separate flag in the installer for keeping ART profiles  [Calin Juravle]
+7b31403  scripts/dtc: Update to upstream version v1.4.6-21-g84e414b0b5bc  [Rob Herring]
+6cd377a  dtc: checks: drop warning for missing PCI bridge bus-range  [Rob Herring]
+aefeea5  Merge changes I12ef069a,I7b082b9f into 10.0  [dennyspb]
+e97cfe4  team: Add maintainer for Xiaomi Redmi Note 3  [blinoff82]
+183b7c0  Buttons: Remove duplicate switches  [DennySPB]
+02b714a  Merge changes Iace8ecc9,I7c3879cb into 10.0  [dennyspb]
+2b43e9c  Add kenzo to official devices  [blinoff82]
 =============
-   2020-06-18
+   2020-04-15
 =============
-
-[* frameworks/native *]
-25468d9  libui: Allow extension of valid gralloc 1.0 buffer usage bits  [Kevin F. Haggerty]
-875d822  Fix  [Sagarrokade006]
-23334b7  Revert "SurfaceFlinger: Exclude CAF extensions from non-QC devices"  [Sagarrokade006]
-28e68db  Revert " surfaceflinger: Exclude qcom code on unsupported platforms "  [Sagarrokade006]
-
-
-[* packages/apps/Etar *]
-e06e35c  Etar: Properly align preferences  [Michael W]
-bf4f066  Etar: Fix crash when opening "Quick responses"  [Michael W]
-
-
-[* vendor/syberia *]
-bd18779  Extend Flag For Legacy Camera HAL1  [Sagarrokade006]
-
-
+49b76e1  ART: Showcase for Loop Versioning - Unrolling  [Artem Serov]
+24ee9ab  ART: Introduce Loop Versioning in SuberblockCloner  [Artem Serov]
+d10b0a2  ART: Fix a compiler crash for VectorizeDef() idioms  [Artem Serov]
+cb50099  Remove dex2oat image-classes support  [Mathieu Chartier]
+4a259d5  ART: Add support for SVE feature for ARM64  [Artem Serov]
+90eecb5  Prevent overflow for AOT hotness counters  [Mathieu Chartier]
+ddd7b6c  Fix profile saver hotness for AOT code  [Mathieu Chartier]
+73593b1  ARM/ARM64: Clean up artFindNativeMethod()  [Vladimir Marko]
+c6f4505  Fix pruning invoke environment for StringBuilder append pattern  [Vladimir Marko]
+2e4f92f  Loop vectorizer should not remove instructions that can throw  [Georgia Kouveli]
+e17db45  Remove requirement of a ProfilingInfo for jitted code  [Nicolas Geoffray]
+106fcae  ART: Improve ArraySet codegen  [Vladimir Marko]
+e856edc  Eliminate dead LoadClass when pruning ClinitCheck  [Vladimir Marko]
+07b4c1e  Add default argument kIsInstrumented=true  [Vladimir Marko]
+cf4d5d8  TWS-A2DP: Add TWS+ codec to DevUI support  [pramod kotreshappa]
+5e86428  BT: Adding aptX-Adaptive codec entry to Framework  [Gurpreet Ghai]
+1487a58  scripts: Silent all dtc warnings by default  [Bruno Martins]
+42ade18  of: batterydata: use generic node if no node is found  [Luca Stefani]
+a8dca50  ARM64/dts: trinket: fix memory overlap  [Dede Dindin Qudsy]
+f7763c0  Merge tag 'LA.UM.8.11.r1-03300-NICOBAR.0' of https://source.codeaurora.org/quic/la/platform/vendor/opensource/audio-kernel into ten  [HarukeyUA]
+af5fb0e  Merge tag 'LA.UM.8.11.r1-03300-NICOBAR.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into ten  [HarukeyUA]
+e0e2239  Merge tag 'LA.UM.8.11.r1-03300-NICOBAR.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn into ten  [HarukeyUA]
+74faee2  Merge tag 'LA.UM.8.11.r1-03300-NICOBAR.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/fw-api into ten  [HarukeyUA]
+859bcf3  Merge tag 'LA.UM.8.11.r1-03300-NICOBAR.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.14 into ten  [HarukeyUA]
+1140d6f  Merge branch 'kernel.lnx.4.14.r4-rel' of https://github.com/android-linux-stable/msm-4.14 into ten  [HarukeyUA]
+0357580  Fix setting of BLE scan parameters  [Subramanian Srinivasan]
+bb94bca  Add BLE Scan Phy parameter to scan API  [Subramanian Srinivasan]
+917e9d3  BT: Set aptX Adaptive codec priority  [Gurpreet Ghai]
+7446ed8  Buttons: add missing hw key disable switch  [DennySPB]
+1daf7cd  TWS-A2DP: Add TWS+ codec index  [pramod kotreshappa]
+04dcb47  BT: Adding APTX-Adaptive codec to BT HAL  [Gurpreet Ghai]
+df51ed9  Add BLE Scan Phy parameter to scan API Add BLE Scan Phy parameter to set scan parameters API.  [Subramanian Srinivasan]
 =============
-   2020-06-17
+   2020-04-14
 =============
-
-[* art *]
-bf1ac97  Fix memfd_create_compat() F_DUPFD call.  [Vladimir Marko]
-e6ee1be  Revert^2 "Add AddToDexClassloader JVMTI extension functions"  [Alex Light]
-ab94aa5  Include evacuated bytes in heap size trace  [Lokesh Gidra]
-59de1e3  Improve printing for heap verification failures  [Mathieu Chartier]
-
-
-[* frameworks/base *]
-eee6521  Revert "telephony: URI cannot be created with negative subIds"  [DennySPb]
-685cb58  Make sensor block package list configurable [1/2]  [Hikari-no-Tenshi]
-118534b  fw/b: Add support for per app network isolation  [Sam Mortimer]
-fb69349  Add Accelerometer and Linear Acceleration sensors in blocking list  [SuperDroidBond]
-88176bb  PATCHUP: DozeSensors: only use proximity sensor if supported  [Demon000]
-c09d78b  base: Add vibration patterns from OOS [1/3]  [rituj]
-e5408c5  Bluetooth: Serialize sending sendBluetoothServiceUpCallback  [zhenchao]
-3642fd4  BT: Added bind retry logic to handle race condition in Bluetooth off/on  [Bandari Ramesh]
-40c4456  SystemUI: Make clock truly invisible  [Michael W]
-f4444cc  base: Fix NPE on some devices by checking for null client  [Pierre-Hugues Husson]
-f55442f  [BACKPORT] Config of LTE signal strength default value remove SNR  [SongFerngWang]
-b7a2731  Revert "telephony: Conditionally ignore RSSNR signal level"  [DennySPb]
-9e79e8b  SystemUI: Fix pink progress animation color in expanded Wi-Fi tile  [Arne Coucheron]
-d963e85  DO NOT MERGE: Add support to send notification from Zygote to system_server  [Jing Ji]
-
-
+7f00d9c  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPB]
+97e6ba0  QSDetail: match QSPanel background color  [Lucchetto]
+fa2810b  base: use bypassEnabledBiometric consistently  [Ethan Halsall]
+3ebd55c  fw/b: Squash of app fw restriction commits  [Danesh M]
+9d39b48  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/native into HEAD  [DennySPB]
+13dca56  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPB]
+a43b956  team: Add maintainer for Xiaomi Redmi Note 4  [blinoff82]
+74ef972  Settings: per-app cellular data, vpn and wifi restrictions  [Uldiniad]
+2184dcc  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm into HEAD  [DennySPB]
+dba0f29  Merge tag 'LA.UM.8.1.r1-14700-sm8150.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony into HEAD  [DennySPB]
+2c73358  system/netd: Add BPF support for lineage network restrictions  [Sam Mortimer]
+ecfe86e  system/netd: Squash of app fw restriction commits  [Uldiniad]
+554885a  Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/system/netd into HEAD  [DennySPB]
+2c6155e  Add mido to official devices  [blinoff82]
 =============
-   2020-06-16
+   2020-04-13
 =============
-
+b408364  syberia: Move some system props to PRODUCT_SYSTEM_DEFAULT_PROPERTIES  [Rashed Abdel-Tawab]
 =============
-   2020-06-15
+   2020-04-12
 =============
-
-[* art *]
-e423d9a  Add fast path for exception vreg copying.  [David Srbecky]
-4b7cd1e  Stack maps: Refactor constructors.  [David Srbecky]
-71ef4ee  Stack walk: Cache CodeInfo and StackMap for current PC.  [David Srbecky]
-04060e5  ART: Introduce stackmap with no DexRegInfo.  [Artem Serov]
-5786aab  ART: Encapsulate init-optimization fields  [Andreas Gampe]
-e0792cc  ART: Use bitset in dex file verifier  [Andreas Gampe]
-c0e327e  ART: Change unordered_set to HashSet  [Andreas Gampe]
-c6cfbac  ART: Cache type index validity  [Andreas Gampe]
-65c591e  Stack maps: Micro-optimize LoadBits  [David Srbecky]
-f64f093  Stack maps: Micro-optimize ReadInterleavedVarints  [David Srbecky]
-9a9097b  Revert^2 "Stack maps: Interleave consecutive varints."  [David Srbecky]
-a1fab55  Stack maps: Handle special cases using flags.  [David Srbecky]
-2fdf2ca  Avoid coercing to key type in SafeMap  [Alex Light]
-beebee9  Revert^2 "Improve ArraySet codegen."  [Vladimir Marko]
-a266496  ARM64: Combine LSR+ADD into ADD_shift for Int32 HDiv/HRem  [Evgeny Astigeevich]
-1d60d2d  ART: Optimize ADD/SUB+ADD_shift into ADDS/SUBS+CINC for HDiv/HRem  [Evgeny Astigeevich]
-33637ab  ARM64: Combine LSR+ASR into ASR for Int32 HDiv/HRem  [Evgeny Astigeevich]
-696ddd1  ART: Refactor InstructionCodeGeneratorARM64::GenerateDivRemWithAnyConstant  [Evgeny Astigeevich]
-37ab5c0  Add default argument kIsInstrumented=true.  [Vladimir Marko]
-7dcee37  ART: Fix some types  [Andreas Gampe]
-6ffb44a  Fix mterp assembly to use uxtw instead of lsl where needed.  [David Srbecky]
-f56125d  jni: Fix templates for clang-r377782 update.  [Yabin Cui]
-ba557c0  Fix incorrect narrowing type cast  [Yi Kong]
-dcbdfef  Add assembly support for -fsanitize=hwaddress tagged globals.  [Peter Collingbourne]
-6e8c2d3  Make the $/# in front of constants optional  [Pirama Arumuga Nainar]
-71a4972  Remove MIPS support from JNI/trampoline compiler.  [Vladimir Marko]
-47259b4  Move @CriticalNative arguments in registers.  [Vladimir Marko]
-aff60d7  Move entry spills determination to JNI compiler.  [Vladimir Marko]
-34692da  jni: Do not create a managed frame for @CriticalNative.  [Vladimir Marko]
-32b5470  Reduce cache memory use of libdexfile.  [David Srbecky]
-df3678e  dex2oat: Fix repeatedly preparing dex files for oat file  [wulonghua]
-99736ec  Avoid dex2dex initialization if not compiling.  [Vladimir Marko]
-d49fca0  constify JNINativeMethod tables  [Daniel Micay]
-07c0f9a  Enable support of VecLoad/VecStore in LSE  [xueliang.zhong]
-051dcd0  Utilize partially used TLABs  [Lokesh Gidra]
-4ac5544  ARM64: FP16 greater/less/greaterEquals/lessEquals intrinsics for ARMv8  [Usama Arif]
-011ffb8  ARM64: FP16.rint() intrinsic for ARMv8  [Usama Arif]
-94a2e5b  ARM64: FP16.ceil() intrinsic for ARMv8  [Usama Arif]
-57333ce  ARM64: FP16.floor() intrinsic for ARMv8  [Usama Arif]
-b4b41c1  ARM64: Pass simd half floating point feature to VIXL macroassembler.  [Usama Arif]
-7c5cffb  ARM: Remove unnecessary kCoreAlwaysSpillRegister.  [Vladimir Marko]
-ec80518  Remove ShadowFrame::HasReferenceArray()  [David Srbecky]
-8e62ca5  ARM/ARM64: Use trampolines for slow-path entrypoint calls.  [Vladimir Marko]
-63b63c2  ARM64: Improve BoundsCheck for constant inputs.  [Georgia Kouveli]
-8437e3c  ART: ARM64: Optimize frame size for SIMD graphs.  [Artem Serov]
-1e98e73  ART: ARM64: Fix saved fpu stack offsets for SIMD.  [Artem Serov]
-f9a441a  ARM/ARM64: Improve frame entry/exit codegen.  [Vladimir Marko]
-56aa1c4  [optimizing] Improve constant folding on logical and  [Balaram Makam]
-8a12ad9  ART: Preallocate offset map  [Andreas Gampe]
-2b9897f  Fix intersecting live ranges created by instruction scheduler  [Evgeny Astigeevich]
-b1c2f9b  ART: Refactor SchedulingGraph for consistency and clarity  [Evgeny Astigeevich]
-22a3209  Optimize stack maps: add fast path for no inline info.  [David Srbecky]
-7fad1d6  Optimize stack map decoding.  [David Srbecky]
-f7b87a7  ART: Improve VisitStringGetCharsNoCheck intrinsic for compressed strings, using SIMD  [David Horstmann]
-479b76b  Revert^2 "ARM64: toHalf() intrinsic for ARMv8"  [Vladimir Marko]
-ff22447  ARM64: toFloat() intrinsics with ARMv8 FP16.  [xueliang.zhong]
-dc80ac8  ART: Optimize StringBuilder append pattern.  [Vladimir Marko]
-5651976  ART: Mark StringBuilder.append()s as intrinsics.  [Vladimir Marko]
-02782c9  Allow disabling apex test module  [Chris Crump]
-a1e7bd0  Revert "ART: Add version check for memfd_create()"  [Nicholas Lim]
-462e565  Add an option to disable sse4.2 features  [Luca Stefani]
-4e8517a  libartbase: Check kernel support for membarrier(2)  [Wang Han]
-bbacc7a  art: extend the supported cpu_variant list for arm64  [Wei Wang]
-
-
-[* frameworks/opt/telephony *]
-505bf08  Avoid SubscriptionManager#getUriForSubscriptionId calls with invalid subIds  [Bruno Martins]
-6066518  Remove setIsoCountryProperty method along with partially dead code  [Bruno Martins]
-
-
-[* packages/apps/Settings *]
-c411a30  Settings: Add support for per app network isolation  [Sam Mortimer]
-
-
-[* packages/apps/SyberiaSettings *]
-55a976e  Make sensor block package list configurable [2/2]  [Hikari-no-Tenshi]
-
-
-[* system/netd *]
-96183c1  netd: restrict DNS names  [Eric Chang]
-f21044b  Netd: Add support for quotaReachedAlert event  [Pavan Kumar M]
-9818066  system/netd: Add support for per app network isolation  [Sam Mortimer]
-
-
+745cac8  livedisplay: sdm: Do not create intermediate string  [Ethan Chen]
+00d6634  livedisplay: sdm: Default initialize objects created with new  [Ethan Chen]
 =============
-   2020-06-14
+   2020-04-11
 =============
-
+08d7c67  cepheus: Update cepheus.json  [ecrosoftxiao]
+64a5a82  cepheus: Update 04/11/20  [ecrosoftxiao]
+5af6b60  Merge branch 'master' of https://github.com/syberia- */official_devices  [kondors1995]
+2a4ecc8  raphael: build 11/04/2020  [kondors1995]
