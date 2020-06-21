@@ -1,30 +1,17 @@
 {
-  "addons": [
+  "response": [
     {
-      "title": "Magisk",
-      "summary": "Magisk",
-      "url": "\"http://tiny.cc/latestmagisk"
-    },
-    {
-      "title": "Magisk",
-      "summary": "Magisk Uninstaller",
-      "url": "http://tiny.cc/latestuninstaller"
+      "url": "https://sourceforge.net/projects/syberiaos/files/tulip/syberia_tulip-v3.8-20200621-0413-OFFICIAL.zip/download",
+      "device_codename": "tulip",
+      "id": "3990e92806122e2bc92280c9d6e2e1fd564065a3869b2272b55dbbfd171dbf26",
+      "device_brand": "Xiaomi",
+      "size": "773884732",
+      "datetime": 1592712780,
+      "version": "v3.8",
+      "romtype": "OFFICIAL",
+      "developer": "Niteshkumar15",
+      "filename": "syberia_tulip-v3.8-20200621-0413-OFFICIAL.zip",
+      "device_model": "Redmi Note 6 Pro"
     }
-  ],
-  "filename": "syberia_tulip-v2.9-20190921-2033-OFFICIAL.zip",
-  "changelog": "",
-  "filesize": "693369251",
-  "md5": "8449b62ce46e7d2a04d25af7b1f60227",
-  "build_date": "20190921",
-  "device": "tulip",
-  "url": "https://sourceforge.net/projects/syberiaos/files/tulip/syberia_tulip-v2.9-20190921-2033-OFFICIAL.zip/download",
-  "donate_url": "https://syberiaos.com/links",
-  "developer_url": "http://github.com/syberia-project",
-  "news_url": "http://github.com/syberia-project",
-  "developer": "Pavanpatel",
-  "error": "false",
-  "website_url": "http://syberiaos.com",
-  "forum_url": "https://forum.xda-developers.com/redmi-note-6-pro/development/rom-syberia-project-t3914219",
-  "device_brand": "Xiaomi",
-  "device_model": "Redmi Note 6 Pro"
+  ]
 }
