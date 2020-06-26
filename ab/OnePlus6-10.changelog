@@ -3,13 +3,7 @@
 =============
 
 [* art *]
-9af9efe  ARM/ARM64: Clean up artFindNativeMethod().  [Vladimir Marko]
-509f91d  Only put resolved classes inside the dex cache.  [Nicolas Geoffray]
-
-
-[* bionic *]
-d650dd6  Add randomized padding around shared library mappings.  [Evgenii Stepanov]
-58919da  Use PROT_NONE on the unused parts of CFI shadow.  [Evgenii Stepanov]
+84696b1  Revert "Only put resolved classes inside the dex cache."  [DennySPb]
 
 
 [* frameworks/base *]
@@ -30,10 +24,6 @@ baa5b56  SystemUI: Add EMUI VoLTE icon [1/2]  [DennySPb]
 e26f714  SystemUI: support VoWIFI icons  [Weijie Wang]
 
 
-[* kernel/oneplus/sdm845 *]
-049bb1f  Merge tag 'LA.UM.8.8.r1-07600-SDM710.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.9  [DennySPb]
-
-
 [* packages/apps/Launcher3 *]
 fe1e72d  Automatic translation import  [DennySPb]
 
@@ -52,7 +42,18 @@ fe1e72d  Automatic translation import  [DennySPb]
 =============
 
 [* art *]
+9af9efe  ARM/ARM64: Clean up artFindNativeMethod().  [Vladimir Marko]
+509f91d  Only put resolved classes inside the dex cache.  [Nicolas Geoffray]
 0730473  Make the ART thread pool implementation use default-sized stacks on Bionic  [Daniel Colascione]
+
+
+[* bionic *]
+d650dd6  Add randomized padding around shared library mappings.  [Evgenii Stepanov]
+58919da  Use PROT_NONE on the unused parts of CFI shadow.  [Evgenii Stepanov]
+
+
+[* kernel/oneplus/sdm845 *]
+049bb1f  Merge tag 'LA.UM.8.8.r1-07600-SDM710.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.9  [DennySPb]
 
 
 [* packages/apps/Dialer *]
@@ -91,28 +92,12 @@ ccf1520  DayView: Revert all whitespace changes  [Michael Bestas]
 882b00c  Etar: Fix android:targetPackage for shortcut  [Han Wang]
 
 
-[* packages/apps/SyberiaSettings *]
-b18a5d4  Add EMUI VoLTE icon [2/2]  [DennySPb]
-
-
 =============
    2020-06-23
 =============
 
-[* device/oneplus/oneplus6 *]
-d245349  prebuilt: update OnePlusCamera to v3.8.107  [DennySPb]
-
-
-[* external/angle *]
-07b7c41  Merge branch 'master' of https://android.googlesource.com/platform/external/angle into HEAD  [DennySPb]
-
-
-[* frameworks/native *]
-e233ac0  surfaceflinger: Fix the uninitialized layer type  [Ray Zhang]
-
-
 [* packages/apps/SyberiaSettings *]
-4001c4c  Optional VoWiFi icon [2/2]  [DennySPb]
+b18a5d4  Add EMUI VoLTE icon [2/2]  [DennySPb]
 
 
 =============
@@ -127,17 +112,25 @@ f62dbdf  separate madvise calling from critical section  [Pin-Chuan Liu]
 8c650ce  ART: Add classes having intrinsics to boot image  [Evgeny Astigeevich]
 
 
+[* device/oneplus/oneplus6 *]
+d245349  prebuilt: update OnePlusCamera to v3.8.107  [DennySPb]
+
+
+[* external/angle *]
+07b7c41  Merge branch 'master' of https://android.googlesource.com/platform/external/angle into HEAD  [DennySPb]
+
+
+[* frameworks/native *]
+e233ac0  surfaceflinger: Fix the uninitialized layer type  [Ray Zhang]
+
+
 [* kernel/oneplus/sdm845 *]
 4de02f4  Merge tag 'LE.UM.2.3.2-10400-SDX24' of https://source.codeaurora.org/quic/la/kernel/msm-4.9  [DennySPb]
 9e157b7  Merge branch 'android-4.9-q' of https://android.googlesource.com/kernel/common  [DennySPb]
 
 
-[* packages/apps/Etar *]
-b338355  Etar: String improvements  [Michael Bestas]
-b288818  Etar: Restore tests  [LuK1337]
-3284faa  AOSP/Calendar - Minimal calendar app.  [Raman Tenneti]
-2fd1c76  Update code coverage filter  [Sebastien Hertz]
-414c864  Etar: Fix translatables  [Michael Bestas]
+[* packages/apps/SyberiaSettings *]
+4001c4c  Optional VoWiFi icon [2/2]  [DennySPb]
 
 
 [* vendor/oneplus *]
@@ -148,11 +141,12 @@ b288818  Etar: Restore tests  [LuK1337]
    2020-06-21
 =============
 
-[* kernel/oneplus/sdm845 *]
-0f1687e  Merge 4.9.228 into android-4.9-q  [Greg Kroah-Hartman]
-
-
 [* packages/apps/Etar *]
+b338355  Etar: String improvements  [Michael Bestas]
+b288818  Etar: Restore tests  [LuK1337]
+3284faa  AOSP/Calendar - Minimal calendar app.  [Raman Tenneti]
+2fd1c76  Update code coverage filter  [Sebastien Hertz]
+414c864  Etar: Fix translatables  [Michael Bestas]
 2d78047  Etar: Fix content provider rebrand  [Michael Bestas]
 
 
@@ -164,15 +158,8 @@ b288818  Etar: Restore tests  [LuK1337]
    2020-06-20
 =============
 
-[* device/oneplus/oneplus6 *]
-ae2e0b4  props: prevent FOD service for run  [DennySPb]
-
-
-[* frameworks/base *]
-5206eed  FOD: do not allow FOD to start if the disable prop is true  [Chris Crump]
-
-
 [* kernel/oneplus/sdm845 *]
+0f1687e  Merge 4.9.228 into android-4.9-q  [Greg Kroah-Hartman]
 45b83c1  Linux 4.9.228  [Greg Kroah-Hartman]
 74c9406  perf symbols: Fix debuginfo search for Ubuntu  [Adrian Hunter]
 a1d8696  perf probe: Do not show the skipped events  [Masami Hiramatsu]
