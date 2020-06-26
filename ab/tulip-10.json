@@ -1,0 +1,17 @@
+{
+  "response": [
+    {
+      "url": "https://sourceforge.net/projects/syberiaos/files/tulip/syberia_tulip-v3.8-20200621-0413-OFFICIAL.zip/download",
+      "device_codename": "tulip",
+      "id": "3990e92806122e2bc92280c9d6e2e1fd564065a3869b2272b55dbbfd171dbf26",
+      "device_brand": "Xiaomi",
+      "size": "773884732",
+      "datetime": 1592712780,
+      "version": "v3.8",
+      "romtype": "OFFICIAL",
+      "developer": "Niteshkumar15",
+      "filename": "syberia_tulip-v3.8-20200621-0413-OFFICIAL.zip",
+      "device_model": "Redmi Note 6 Pro"
+    }
+  ]
+}

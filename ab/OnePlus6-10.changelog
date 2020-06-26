@@ -1,273 +1,293 @@
 =============
-   2020-06-19
+   2020-06-26
 =============
 
-[* device/oneplus/oneplus6 *]
-ae2e0b4  props: prevent FOD service for run  [DennySPb]
+[* bionic *]
+1a01b6e  Revert recently added commits  [DennySPb]
 
 
 [* frameworks/base *]
-5206eed  FOD: do not allow FOD to start if the disable prop is true  [Chris Crump]
-cc4ba53  Automatic translation import  [DennySPb]
-
-
-[* kernel/oneplus/sdm845 *]
-6d8c487  f2fs: use a seperate mutex for setting wakelock  [Park Ju Hyung]
-f1b651c  f2fs: trigger rapid GC only when screen state actually changes  [Park Ju Hyung]
-b645fc6  f2fs: unlock wakelock properly when f2fs_stop_rapid_gc() is called  [Park Ju Hyung]
-a342048  f2fs: catch a global wakelock instead of per gc_kthread  [Park Ju Hyung]
-fb40a84  f2fs: improve naming schemes for rapid GC  [Park Ju Hyung]
-bc502a8  f2fs: mark gc_threads() functions as static  [Park Ju Hyung]
-f294d63  f2fs: use a more reasonable discard policy for high utilization  [Park Ju Hyung]
-47a4dcc  f2fs: rename /sys/fs/f2fs  [Park Ju Hyung]
-8510601  f2fs: do not expose tunables that doesn't work with rapid GC  [Park Ju Hyung]
-d52c9e6  f2fs: drop caches upon rapid GC exit  [Park Ju Hyung]
-91913e6  f2fs: explicitly flush device upon foreground GC  [Park Ju Hyung]
-9d2fc6e  f2fs/rapid_gc: Clean up return codes  [Artem Labazov]
-a2f6d84  f2fs/rapid_gc: do not wait until all invalid blocks are discarded  [Park Ju Hyung]
-c08f248  f2fs: switch FB notifier API to MSM DRM notifier  [Park Ju Hyung]
-5f13f4f  f2fs: convert wakelock APIs to wakeup_source  [Park Ju Hyung]
-8ff7e13  f2fs: implement rapid GC for Android  [Park Ju Hyung]
-754a219  f2fs: set ioprio of GC kthread to idle  [Park Ju Hyung]
+628b881  Automatic translation import  [DennySPb]
+f35676a  Fix a race conditon in `incident`.  [Boleyn Su]
+482686e  Filter preferred activities before committing to storage  [Hans Månsson]
+54c639c  trigger file removal when slice permission is removed  [Pinyao Ting]
+28785cb  Throw XmlParserException when client tag cannot be found when parsing slice permissions.  [Pinyao Ting]
+92bc5d3  TextClock: Make French strings more consistent  [Jake Weinstein]
+aa46b95  SystemUI: Fix text clock translations  [Anushek Prasal]
+9263bc0  TextClock: Bring back the translations  [El Dainosor]
+cafdf8a  SystemUI: Fix issue with Bluetooth tile  [Michael W]
+726c62d  SystemUI: QS Details: Fix layout issues  [Michael W]
+7ba01eb  SystemUI: Improve VoLTE detection logic  [Pranav Vashi]
+baa5b56  SystemUI: Add EMUI VoLTE icon [1/2]  [DennySPb]
+072031c  SystemUI: Add four more selectable VoWiFi icons [1/2]  [DennySPb]
+31c932c  SystemUI: Optional VoWiFi icon [1/2]  [DennySPb]
+e26f714  SystemUI: support VoWIFI icons  [Weijie Wang]
 
 
 [* packages/apps/Launcher3 *]
-513c781  Automatic translation import  [DennySPb]
+fe1e72d  Automatic translation import  [DennySPb]
 
 
 [* packages/apps/Settings *]
-9339fc9  Automatic translation import  [DennySPb]
+41cc436  Automatic translation import  [DennySPb]
 
 
 [* packages/apps/SyberiaSettings *]
-0145821  Automatic translation import  [DennySPb]
+9fddf36  Automatic translation import  [DennySPb]
+1644a7e  Add four more selectable VoWiFi icons [2/2]  [DennySPb]
 
 
 =============
-   2020-06-18
+   2020-06-25
 =============
 
-[* frameworks/base *]
-7087eec  bluetooth: fixup! communication / icon after clean flash and first pairing  [pengus77]
-c6c225e  bluetooth: fix communication / icon after clean flash and first pairing  [pengus77]
+[* art *]
+9af9efe  ARM/ARM64: Clean up artFindNativeMethod().  [Vladimir Marko]
+509f91d  Only put resolved classes inside the dex cache.  [Nicolas Geoffray]
+0730473  Make the ART thread pool implementation use default-sized stacks on Bionic  [Daniel Colascione]
+
+
+[* bionic *]
+d650dd6  Add randomized padding around shared library mappings.  [Evgenii Stepanov]
+58919da  Use PROT_NONE on the unused parts of CFI shadow.  [Evgenii Stepanov]
+
+
+[* kernel/oneplus/sdm845 *]
+049bb1f  Merge tag 'LA.UM.8.8.r1-07600-SDM710.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.9  [DennySPb]
+
+
+[* packages/apps/Dialer *]
+6c45d89  Reorder proximity check calls in custom functions  [DennySPb]
 
 
 [* packages/apps/Etar *]
-e06e35c  Etar: Properly align preferences  [Michael W]
-bf4f066  Etar: Fix crash when opening "Quick responses"  [Michael W]
+4d6a7d0  Fix errors caught by aapt2  [Colin Cross]
+50a3718  Allow app to upgrade database on install.  [Sam Blitzstein]
+e843e7d  Force a manual, incremental sync one time, as early as possible.  [Sam Blitzstein]
+cf6b510  Abort onClick if no Window Focus  [Alon Albert]
+4f87c9e  Remove negative margin fron all day label  [Isaac Katzenelson]
+ae370cf  Call build() on the Builder, not the Style.  [Daniel Sandler]
+376634a  Small workaround when text is slight bigger then all day event rect.  [Paul Sliwowski]
+9fd778b  Fix small typos in I9490f478681783200a5cb8309a58243723bda4c1.  [Paul Sliwowski]
+388a6f9  Fix bug in recurrent event dialog picker when setting monthly day of the week.  [Paul Sliwowski]
+b09b345  Add in-memory cache to dismiss alerts that we haven't seen yet.  [Paul Sliwowski]
+c3af36b  Fix mokey NullPointerException when there is no colors to save.  [Paul Sliwowski]
+0bef07a  Fixed ISE issue when subscribing to gcm groups from the main thread.  [Paul Sliwowski]
+3b909ea  Fix crash when dismissing notification.  [Paul Sliwowski]
+603fd19  Fix calander crash where getTimezone was call without a looper.  [Paul Sliwowski]
+8e51d7a  Fix issue with error message being displayed on tablets.  [Paul Sliwowski]
+3a6b04a  Remove dead code in AlarmService.  [Paul Sliwowski]
+706f692  Display error when a viewed event has been deleted.  [Paul Sliwowski]
+ee72ce0  Capitalize Noon and Midnight in event edit view.  [Paul Sliwowski]
+a6ee26e  Fixed leak cursor in AlertReciever  [Paul Sliwowski]
+ccf1520  DayView: Revert all whitespace changes  [Michael Bestas]
 
 
 =============
-   2020-06-17
+   2020-06-24
 =============
 
-[* art *]
-bf1ac97  Fix memfd_create_compat() F_DUPFD call.  [Vladimir Marko]
-e6ee1be  Revert^2 "Add AddToDexClassloader JVMTI extension functions"  [Alex Light]
-ab94aa5  Include evacuated bytes in heap size trace  [Lokesh Gidra]
-59de1e3  Improve printing for heap verification failures  [Mathieu Chartier]
-
-
-[* build/make *]
-9401020  Refactor how MODULES-IN-* is defined  [Dan Willemsen]
-
-
-[* frameworks/base *]
-eee6521  Revert "telephony: URI cannot be created with negative subIds"  [DennySPb]
-685cb58  Make sensor block package list configurable [1/2]  [Hikari-no-Tenshi]
-118534b  fw/b: Add support for per app network isolation  [Sam Mortimer]
-fb69349  Add Accelerometer and Linear Acceleration sensors in blocking list  [SuperDroidBond]
-88176bb  PATCHUP: DozeSensors: only use proximity sensor if supported  [Demon000]
-c09d78b  base: Add vibration patterns from OOS [1/3]  [rituj]
-e5408c5  Bluetooth: Serialize sending sendBluetoothServiceUpCallback  [zhenchao]
-3642fd4  BT: Added bind retry logic to handle race condition in Bluetooth off/on  [Bandari Ramesh]
-40c4456  SystemUI: Make clock truly invisible  [Michael W]
-f4444cc  base: Fix NPE on some devices by checking for null client  [Pierre-Hugues Husson]
-f55442f  [BACKPORT] Config of LTE signal strength default value remove SNR  [SongFerngWang]
-b7a2731  Revert "telephony: Conditionally ignore RSSNR signal level"  [DennySPb]
-9e79e8b  SystemUI: Fix pink progress animation color in expanded Wi-Fi tile  [Arne Coucheron]
-d963e85  DO NOT MERGE: Add support to send notification from Zygote to system_server  [Jing Ji]
-
-
-[* frameworks/native *]
-b7398f3  surfaceflinger: change usageBits type to uint64_t  [Pierre-Hugues Husson]
-
-
-[* kernel/oneplus/sdm845 *]
-9b05598  Extend replace in cmdline for veritymode 'enforcing' SafetyNet  [tbalden]
-ad1c79b  Replace instead of remove in cmdline for SafetyNet CTS pass  [tbalden]
-82e6c87  printk: use buffer from the stack space  [Park Ju Hyung]
-4a98519  ext4: Allocate 128-byte allocation context on the stack  [Sultan Alsawaf]
-19cf240  msm: adsprpc: Check fastrpc file pointer before accessing it  [Jeya R]
-6e176aa  tcp: allow TLP in ECN CWR  [Neal Cardwell]
-fa77d27  scsi: ufs: Release clock if DMA map fails  [Can Guo]
-6cf63f6  tcp: up initial rmem to 128KB and SYN rwin to around 64KB  [Yuchung Cheng]
+[* packages/apps/Etar *]
+199c3df  Etar: Fix invalid string parameter  [Nicholas Lim]
+882b00c  Etar: Fix android:targetPackage for shortcut  [Han Wang]
 
 
 =============
-   2020-06-16
+   2020-06-23
+=============
+
+[* packages/apps/SyberiaSettings *]
+b18a5d4  Add EMUI VoLTE icon [2/2]  [DennySPb]
+
+
+=============
+   2020-06-22
 =============
 
 [* art *]
-e423d9a  Add fast path for exception vreg copying.  [David Srbecky]
-4b7cd1e  Stack maps: Refactor constructors.  [David Srbecky]
-71ef4ee  Stack walk: Cache CodeInfo and StackMap for current PC.  [David Srbecky]
-04060e5  ART: Introduce stackmap with no DexRegInfo.  [Artem Serov]
-5786aab  ART: Encapsulate init-optimization fields  [Andreas Gampe]
-e0792cc  ART: Use bitset in dex file verifier  [Andreas Gampe]
-c0e327e  ART: Change unordered_set to HashSet  [Andreas Gampe]
-c6cfbac  ART: Cache type index validity  [Andreas Gampe]
-65c591e  Stack maps: Micro-optimize LoadBits  [David Srbecky]
-f64f093  Stack maps: Micro-optimize ReadInterleavedVarints  [David Srbecky]
-9a9097b  Revert^2 "Stack maps: Interleave consecutive varints."  [David Srbecky]
-a1fab55  Stack maps: Handle special cases using flags.  [David Srbecky]
-2fdf2ca  Avoid coercing to key type in SafeMap  [Alex Light]
-beebee9  Revert^2 "Improve ArraySet codegen."  [Vladimir Marko]
-a266496  ARM64: Combine LSR+ADD into ADD_shift for Int32 HDiv/HRem  [Evgeny Astigeevich]
-1d60d2d  ART: Optimize ADD/SUB+ADD_shift into ADDS/SUBS+CINC for HDiv/HRem  [Evgeny Astigeevich]
-33637ab  ARM64: Combine LSR+ASR into ASR for Int32 HDiv/HRem  [Evgeny Astigeevich]
-696ddd1  ART: Refactor InstructionCodeGeneratorARM64::GenerateDivRemWithAnyConstant  [Evgeny Astigeevich]
-37ab5c0  Add default argument kIsInstrumented=true.  [Vladimir Marko]
-7dcee37  ART: Fix some types  [Andreas Gampe]
-6ffb44a  Fix mterp assembly to use uxtw instead of lsl where needed.  [David Srbecky]
-f56125d  jni: Fix templates for clang-r377782 update.  [Yabin Cui]
-ba557c0  Fix incorrect narrowing type cast  [Yi Kong]
-dcbdfef  Add assembly support for -fsanitize=hwaddress tagged globals.  [Peter Collingbourne]
-6e8c2d3  Make the $/# in front of constants optional  [Pirama Arumuga Nainar]
-71a4972  Remove MIPS support from JNI/trampoline compiler.  [Vladimir Marko]
-47259b4  Move @CriticalNative arguments in registers.  [Vladimir Marko]
-aff60d7  Move entry spills determination to JNI compiler.  [Vladimir Marko]
-34692da  jni: Do not create a managed frame for @CriticalNative.  [Vladimir Marko]
-32b5470  Reduce cache memory use of libdexfile.  [David Srbecky]
-df3678e  dex2oat: Fix repeatedly preparing dex files for oat file  [wulonghua]
-99736ec  Avoid dex2dex initialization if not compiling.  [Vladimir Marko]
-d49fca0  constify JNINativeMethod tables  [Daniel Micay]
-07c0f9a  Enable support of VecLoad/VecStore in LSE  [xueliang.zhong]
-051dcd0  Utilize partially used TLABs  [Lokesh Gidra]
-4ac5544  ARM64: FP16 greater/less/greaterEquals/lessEquals intrinsics for ARMv8  [Usama Arif]
-011ffb8  ARM64: FP16.rint() intrinsic for ARMv8  [Usama Arif]
-94a2e5b  ARM64: FP16.ceil() intrinsic for ARMv8  [Usama Arif]
-57333ce  ARM64: FP16.floor() intrinsic for ARMv8  [Usama Arif]
-b4b41c1  ARM64: Pass simd half floating point feature to VIXL macroassembler.  [Usama Arif]
-7c5cffb  ARM: Remove unnecessary kCoreAlwaysSpillRegister.  [Vladimir Marko]
-ec80518  Remove ShadowFrame::HasReferenceArray()  [David Srbecky]
-8e62ca5  ARM/ARM64: Use trampolines for slow-path entrypoint calls.  [Vladimir Marko]
-63b63c2  ARM64: Improve BoundsCheck for constant inputs.  [Georgia Kouveli]
-8437e3c  ART: ARM64: Optimize frame size for SIMD graphs.  [Artem Serov]
-1e98e73  ART: ARM64: Fix saved fpu stack offsets for SIMD.  [Artem Serov]
-f9a441a  ARM/ARM64: Improve frame entry/exit codegen.  [Vladimir Marko]
-56aa1c4  [optimizing] Improve constant folding on logical and  [Balaram Makam]
-8a12ad9  ART: Preallocate offset map  [Andreas Gampe]
-2b9897f  Fix intersecting live ranges created by instruction scheduler  [Evgeny Astigeevich]
-b1c2f9b  ART: Refactor SchedulingGraph for consistency and clarity  [Evgeny Astigeevich]
-22a3209  Optimize stack maps: add fast path for no inline info.  [David Srbecky]
-7fad1d6  Optimize stack map decoding.  [David Srbecky]
-f7b87a7  ART: Improve VisitStringGetCharsNoCheck intrinsic for compressed strings, using SIMD  [David Horstmann]
-479b76b  Revert^2 "ARM64: toHalf() intrinsic for ARMv8"  [Vladimir Marko]
-ff22447  ARM64: toFloat() intrinsics with ARMv8 FP16.  [xueliang.zhong]
-dc80ac8  ART: Optimize StringBuilder append pattern.  [Vladimir Marko]
-5651976  ART: Mark StringBuilder.append()s as intrinsics.  [Vladimir Marko]
-02782c9  Allow disabling apex test module  [Chris Crump]
+9d22167  ART: Transform Sub+Sub into Sub+Add to merge Shl  [Evgeny Astigeevich]
+f62dbdf  separate madvise calling from critical section  [Pin-Chuan Liu]
+875ad89  ART: Add recognition of optimized HRems in BCE  [Evgeny Astigeevich]
+62df45d  ART: Simplify HRem to reuse existing HDiv  [Evgeny Astigeevich]
+8c650ce  ART: Add classes having intrinsics to boot image  [Evgeny Astigeevich]
 
 
 [* device/oneplus/oneplus6 *]
-721e5d7  power-libperfmgr: remove Google-specific display LPM control  [Jesse Chan]
-c682761  power-libperfmgr: simply wait if idle state node is not present  [Jesse Chan]
+d245349  prebuilt: update OnePlusCamera to v3.8.107  [DennySPb]
+
+
+[* external/angle *]
+07b7c41  Merge branch 'master' of https://android.googlesource.com/platform/external/angle into HEAD  [DennySPb]
+
+
+[* frameworks/native *]
+e233ac0  surfaceflinger: Fix the uninitialized layer type  [Ray Zhang]
 
 
 [* kernel/oneplus/sdm845 *]
-8f9f063  PM / wakeirq: Enable dedicated wakeirq for suspend  [Grygorii Strashko]
-1ab1de47  PM / suspend: Default to suspend-to-idle instead of deep suspend  [Danny Lin]
-dd53ea6  Revert "defconfig: disable ZRAM"  [DennySPb]
-b9b768f  zswap: use B-tree for search  [Vitaly Wool]
-f39abcc  zswap: add zswap_compact()  [Park Ju Hyung]
-7652dd5  zsmalloc: add compaction callbacks  [Vitaly Wool]
-b1d0b9c  zpool: add compaction api  [Vitaly Wool]
-1fe31e5  zswap: select CRYPTO_LZ4 instead of CRYPTO_LZO  [Park Ju Hyung]
-9d08876  zswap: report total pool size in kb  [Park Ju Hyung]
-75c69e5  zswap: initialize ret on all paths  [Park Ju Hyung]
-23fc9cb  zswap: purge pool limit writeback function  [Park Ju Hyung]
-668c146  Revert "zswap: only save zswap header when necessary"  [Park Ju Hyung]
-bf12733  zswap: set default parameters  [Park Ju Hyung]
-e191743  mm: merge Samsung mm hacks  [Park Ju Hyung]
-4ef1bd0  vnswap: drop dependency to zswap  [Park Ju Hyung]
-69b338a  vnswap: static-ify everything  [Park Ju Hyung]
-2f3c898  vnswap: get rid of vnswap_sysfs.c  [Park Ju Hyung]
-b8d400b  vnswap: import from starlte  [Park Ju Hyung]
-502f858  zswap: add __GFP_HIGHMEM and __GFP_MOVABLE  [Park Ju Hyung]
-72f6c15  mm/zsmalloc.c: fix fall-through annotation  [Gustavo A. R. Silva]
-2d2ee10  mm/zsmalloc.c: make several functions and a struct static  [Colin Ian King]
-2a665a9  mm, swap, frontswap: fix THP swap if frontswap enabled  [Huang Ying]
-0e954de  zsmalloc: use U suffix for negative literals being shifted  [Nick Desaulniers]
-b51efb0  zswap: only save zswap header when necessary  [Yu Zhao]
-72e9c40  mm/zsmalloc: simplify shrinker init/destroy  [Aliaksei Karaliou]
-236294a  zswap: same-filled pages handling  [Srividya Desireddy]
-b1e2cde  mm/zsmalloc.c: include fs.h  [Sergey Senozhatsky]
-19202bc  mm/migrate: new migrate mode MIGRATE_SYNC_NO_COPY  [Jérôme Glisse]
-e816a6d  zsmalloc: zs_page_migrate: skip unnecessary loops but not return -EBUSY if zspage is not inuse  [Hui Zhu]
-dfbe68c  zram: do not free pool->size_class  [Minchan Kim]
-332853a  mm/zsmalloc: simplify zs_max_alloc_size handling  [Jerome Marchand]
-edcce91  mm/zswap.c: delete an error message for a failed memory allocation in zswap_dstmem_prepare()  [Markus Elfring]
-9fb4b53  mm/zswap.c: improve a size determination in zswap_frontswap_init()  [Markus Elfring]
-b9c2c6d  mm/zswap.c: delete an error message for a failed memory allocation in zswap_pool_create()  [Markus Elfring]
-7a82e2f  zswap: don't param_set_charp while holding spinlock  [Dan Streetman]
-cb6f302  zswap: clear compressor or zpool param if invalid at init  [Dan Streetman]
-bcc753a  zswap: allow initialization at boot without pool  [Dan Streetman]
-e8003dc  mm/zsmalloc: fix comment in zsmalloc  [Yisheng Xie]
-301673b  mm/zsmalloc: remove redundant SetPagePrivate2 in create_page_chain  [Yisheng Xie]
-49f8ede  mm: fix some typos in mm/zsmalloc.c  [Xishi Qiu]
-27a4377  mm/zswap: Convert pool to hotplug state machine  [Sebastian Andrzej Siewior]
-52d7e24  mm/zswap: Convert dst-mem to hotplug state machine  [Sebastian Andrzej Siewior]
-
-
-[* packages/apps/Settings *]
-c411a30  Settings: Add support for per app network isolation  [Sam Mortimer]
+4de02f4  Merge tag 'LE.UM.2.3.2-10400-SDX24' of https://source.codeaurora.org/quic/la/kernel/msm-4.9  [DennySPb]
+9e157b7  Merge branch 'android-4.9-q' of https://android.googlesource.com/kernel/common  [DennySPb]
 
 
 [* packages/apps/SyberiaSettings *]
-55a976e  Make sensor block package list configurable [2/2]  [Hikari-no-Tenshi]
+4001c4c  Optional VoWiFi icon [2/2]  [DennySPb]
 
 
-[* system/netd *]
-96183c1  netd: restrict DNS names  [Eric Chang]
-
-
-=============
-   2020-06-15
-=============
-
-[* art *]
-a1e7bd0  Revert "ART: Add version check for memfd_create()"  [Nicholas Lim]
-462e565  Add an option to disable sse4.2 features  [Luca Stefani]
-4e8517a  libartbase: Check kernel support for membarrier(2)  [Wang Han]
-bbacc7a  art: extend the supported cpu_variant list for arm64  [Wei Wang]
-
-
-[* frameworks/opt/telephony *]
-505bf08  Avoid SubscriptionManager#getUriForSubscriptionId calls with invalid subIds  [Bruno Martins]
-6066518  Remove setIsoCountryProperty method along with partially dead code  [Bruno Martins]
-
-
-[* kernel/oneplus/sdm845 *]
-8669240  qcacld: disable CONFIG_WLAN_HANG_EVENT  [Park Ju Hyung]
-b744c87  Merge branch 'android-4.9-q' of https://android.googlesource.com/kernel/common  [DennySPb]
-5a89245  arm64: Inline the spin lock function family  [Sultan Alsawaf]
-7916020  pinctrl: msm: Remove explicit barriers from mmio ops where unneeded  [Sultan Alsawaf]
-
-
-[* system/netd *]
-f21044b  Netd: Add support for quotaReachedAlert event  [Pavan Kumar M]
-9818066  system/netd: Add support for per app network isolation  [Sam Mortimer]
+[* vendor/oneplus *]
+9998961  sdm845-common: Patch ims.apk to remove HD notification  [Anirudh Gupta]
 
 
 =============
-   2020-06-14
+   2020-06-21
 =============
+
+[* packages/apps/Etar *]
+b338355  Etar: String improvements  [Michael Bestas]
+b288818  Etar: Restore tests  [LuK1337]
+3284faa  AOSP/Calendar - Minimal calendar app.  [Raman Tenneti]
+2fd1c76  Update code coverage filter  [Sebastien Hertz]
+414c864  Etar: Fix translatables  [Michael Bestas]
+2d78047  Etar: Fix content provider rebrand  [Michael Bestas]
+
 
 [* prebuilts/clang/host/linux-x86/clang-11 *]
-0e8da7c  Update to 20200613 build  [Danny]
+9b695de  Update to 20200620 build  [Danny]
 
 
 =============
-   2020-06-13
+   2020-06-20
 =============
+
+[* kernel/oneplus/sdm845 *]
+0f1687e  Merge 4.9.228 into android-4.9-q  [Greg Kroah-Hartman]
+45b83c1  Linux 4.9.228  [Greg Kroah-Hartman]
+74c9406  perf symbols: Fix debuginfo search for Ubuntu  [Adrian Hunter]
+a1d8696  perf probe: Do not show the skipped events  [Masami Hiramatsu]
+05f3752  w1: omap-hdq: cleanup to add missing newline for some dev_dbg  [H. Nikolaus Schaller]
+0772531  mtd: rawnand: pasemi: Fix the probe error path  [Miquel Raynal]
+4b5e5d1  mtd: rawnand: brcmnand: fix hamming oob layout  [Álvaro Fernández Rojas]
+d32887e  sunrpc: clean up properly in gss_mech_unregister()  [NeilBrown]
+59b68ca  sunrpc: svcauth_gss_register_pseudoflavor must reject duplicate registrations.  [NeilBrown]
+5295e74  kbuild: force to build vmlinux if CONFIG_MODVERSION=y  [Masahiro Yamada]
+3255c26  drivers/macintosh: Fix memleak in windfarm_pm112 driver  [Michael Ellerman]
+7dda6eb  ARM: tegra: Correct PL310 Auxiliary Control Register initialization  [Dmitry Osipenko]
+b7827de  kernel/cpu_pm: Fix uninitted local in cpu_pm  [Douglas Anderson]
+3f94803  sparc64: fix misuses of access_process_vm() in genregs32_[sg]et()  [Al Viro]
+9c90a2d  sparc32: fix register window handling in genregs32_[gs]et()  [Al Viro]
+c346341  pinctrl: samsung: Save/restore eint_mask over suspend for EINT_TYPE GPIOs  [Jonathan Bakker]
+efb8d87  power: vexpress: add suppress_bind_attrs to true  [Anders Roxell]
+dc46fcf  igb: Report speed and duplex as unknown when device is runtime suspended  [Kai-Heng Feng]
+f67f751  b43_legacy: Fix connection problem with WPA3  [Larry Finger]
+4646d00  b43: Fix connection problem with WPA3  [Larry Finger]
+7581e7d  b43legacy: Fix case where channel status is corrupted  [Larry Finger]
+3e70f20  media: go7007: fix a miss of snd_card_free  [Chuhong Yuan]
+bd16f8d  carl9170: remove P2P_GO support  [Christian Lamparter]
+831e063  e1000e: Relax condition to trigger reset for ME workaround  [Punit Agrawal]
+0872772  PCI: Program MPS for RCiEP devices  [Ashok Raj]
+6754baa  blk-mq: move blk_mq_update_nr_hw_queues synchronize_rcu call  [Giuliano Procida]
+ed80f40  btrfs: fix error handling when submitting direct I/O bio  [Omar Sandoval]
+8649864  ext4: fix race between ext4_sync_parent() and rename()  [Eric Biggers]
+b61a98f7  ext4: fix EXT_MAX_EXTENT/INDEX to check for zeroed eh_max  [Harshad Shirwadkar]
+4b9d238  evm: Fix possible memory leak in evm_calc_hmac_or_hash()  [Roberto Sassu]
+63125a4  ima: Directly assign the ima_default_policy pointer to ima_rules  [Roberto Sassu]
+446e391  ima: Fix ima digest hash table key calculation  [Krzysztof Struczynski]
+d93d7bd  mm: thp: make the THP mapcount atomic against __split_huge_pmd_locked()  [Andrea Arcangeli]
+9e36fae  btrfs: send: emit file capabilities after chown  [Marcos Paulo de Souza]
+42b548b  cpuidle: Fix three reference count leaks  [Qiushi Wu]
+d604387  spi: dw: Return any value retrieved from the dma_transfer callback  [Serge Semin]
+109f1be  mmc: sdhci-esdhc-imx: fix the mask for tuning start point  [Haibo Chen]
+74b775b  ixgbe: fix signed-integer-overflow warning  [Xie XiuQi]
+bf14387  staging: greybus: sdio: Respect the cmd->busy_timeout from the mmc core  [Ulf Hansson]
+cf4c788  MIPS: Fix IRQ tracing when call handle_fpe() and handle_msa_fpe()  [YuanJunQing]
+97aad0a  PCI: Don't disable decoding when mmio_always_on is set  [Jiaxun Yang]
+9c8ca9e  macvlan: Skip loopback packets in RX handler  [Alexander Sverdlin]
+04c01ac  m68k: mac: Don't call via_flush_cache() on Mac IIfx  [Finn Thain]
+eeb233a  x86/mm: Stop printing BRK addresses  [Arvind Sankar]
+b935463  mips: Add udelay lpj numbers adjustment  [Serge Semin]
+93b6beb  x86/boot: Correct relocation destination on old linkers  [Arvind Sankar]
+33c2268  mwifiex: Fix memory corruption in dump_station  [Pali Rohár]
+5f78833  rtlwifi: Fix a double free in _rtl_usb_tx_urb_setup()  [Dan Carpenter]
+9e9b57c  md: don't flush workqueue unconditionally in md_open  [Guoqing Jiang]
+fb228bf  kgdb: Fix spurious true from in_dbg_master()  [Daniel Thompson]
+bb3bcde  mips: cm: Fix an invalid error code of INTVN_*_ERR  [Serge Semin]
+8b01fb1  MIPS: Truncate link address into 32bit for 32bit kernel  [Jiaxun Yang]
+123a8d0  powerpc/spufs: fix copy_to_user while atomic  [Jeremy Kerr]
+720b4f2  net: allwinner: Fix use correct return type for ndo_start_xmit()  [Yunjian Wang]
+e6eadb1  net: lpc-enet: fix error return code in lpc_mii_init()  [Wei Yongjun]
+1e587ce  exit: Move preemption fixup up, move blocking operations down  [Jann Horn]
+ed3cbbf  lib/mpi: Fix 64-bit MIPS build with Clang  [Nathan Chancellor]
+fbe0bd6  netfilter: nft_nat: return EOPNOTSUPP if type or flags are not supported  [Pablo Neira Ayuso]
+6ff43399  MIPS: Make sparse_init() using top-down allocation  [Tiezhu Yang]
+6ac24bd  media: platform: fcp: Set appropriate DMA parameters  [Kieran Bingham]
+cef6694  media: dvb: return -EREMOTEIO on i2c transfer failure.  [Colin Ian King]
+c76a7a4  dt-bindings: display: mediatek: control dpi pins mode to avoid leakage  [Jitao Shi]
+ede1f11  e1000: Distribute switch variables for initialization  [Kees Cook]
+40e12d9  staging: android: ion: use vmap instead of vm_map_ram  [Christoph Hellwig]
+f1e015f  net: vmxnet3: fix possible buffer overflow caused by bad DMA value in vmxnet3_get_rss()  [Jia-Ju Bai]
+64a3108  x86/kvm/hyper-v: Explicitly align hcall param for kvm_hyperv_exit  [Jon Doron]
+58708a2  ARM: 8978/1: mm: make act_mm() respect THREAD_SIZE  [Linus Walleij]
+814d5b6f  btrfs: do not ignore error from btrfs_next_leaf() when inserting checksums  [Filipe Manana]
+ec718fc  clocksource: dw_apb_timer_of: Fix missing clockevent timers  [Serge Semin]
+3824e01  spi: dw: Enable interrupts in accordance with DMA xfer mode  [Serge Semin]
+d39bb8e  kgdb: Prevent infinite recursive entries to the debugger  [Douglas Anderson]
+5b0660c  Bluetooth: Add SCO fallback for invalid LMP parameters error  [Hsin-Yu Chao]
+3801eff  spi: dw: Zero DMA Tx and Rx configurations on stack  [Andy Shevchenko]
+966de7b  net: ena: fix error returning in ena_com_get_hash_function()  [Arthur Kiyanovski]
+b1f3bcd  objtool: Ignore empty alternatives  [Julien Thierry]
+4688ba5  media: si2157: Better check for running tuner in init  [Brad Love]
+7cfcf05  ACPI: GED: use correct trigger type field in _Exx / _Lxx handling  [Ard Biesheuvel]
+77d5f7f  media: dvb_frontend: ensure that inital front end status initialized  [Colin Ian King]
+c8ed03b  can: kvaser_usb: kvaser_usb_leaf: Fix some info-leaks to USB devices  [Xiaolong Huang]
+35de820  agp/intel: Reinforce the barrier after GTT updates  [Chris Wilson]
+9bf3b36  perf: Add cond_resched() to task_function_call()  [Barret Rhoden]
+cadb31d  fat: don't allow to mount if the FAT length == 0  [OGAWA Hirofumi]
+248bd05  mm/slub: fix a memory leak in sysfs_slab_add()  [Wang Hai]
+d901002  Smack: slab-out-of-bounds in vsscanf  [Casey Schaufler]
+5317abc  ath9k: Fix general protection fault in ath9k_hif_usb_rx_cb  [Qiujun Huang]
+4c87598  ath9x: Fix stack-out-of-bounds Write in ath9k_hif_usb_rx_cb  [Qiujun Huang]
+435f90a  ath9k: Fix use-after-free Write in ath9k_htc_rx_msg  [Qiujun Huang]
+4473660  ath9k: Fix use-after-free Read in ath9k_wmi_ctrl_rx  [Qiujun Huang]
+3fce258  KVM: arm64: Make vcpu_cp1x() work on Big Endian hosts  [Marc Zyngier]
+cb671aa0  KVM: MIPS: Fix VPN2_MASK definition for variable cpu_vmbits  [Xing Li]
+8ab5aec  KVM: MIPS: Define KVM_ENTRYHI_ASID to cpu_asid_mask(&boot_cpu_data)  [Xing Li]
+99a9857  KVM: nVMX: Consult only the "basic" exit reason when routing nested exit  [Sean Christopherson]
+5e9cc6e  KVM: nSVM: leave ASID aside in copy_vmcb_control_area  [Paolo Bonzini]
+b8ef224  video: fbdev: w100fb: Fix a potential double free.  [Christophe JAILLET]
+5b85bf5  proc: Use new_inode not new_inode_pseudo  [Eric W. Biederman]
+fd50ed6  ovl: initialize error in ovl_copy_xattr  [Yuxuan Shui]
+8263323  spi: bcm2835: Fix controller unregister order  [Lukas Wunner]
+97cf608  spi: pxa2xx: Fix controller unregister order  [Lukas Wunner]
+c7e41e1  spi: Fix controller unregister order  [Lukas Wunner]
+7bc16ca  spi: No need to assign dummy value in spi_unregister_controller()  [Andy Shevchenko]
+35654d4  spi: dw: Fix controller unregister order  [Lukas Wunner]
+79645f0  spi: dw: fix possible race condition  [Sasha Levin]
+db39004  x86/speculation: PR_SPEC_FORCE_DISABLE enforcement for indirect branches.  [Anthony Steinhauser]
+38be87f  x86/speculation: Avoid force-disabling IBPB based on STIBP and enhanced IBRS.  [Anthony Steinhauser]
+5eaa7ef  x86/speculation: Add support for STIBP always-on preferred mode  [Thomas Lendacky]
+669ce55  x86/speculation: Change misspelled STIPB to STIBP  [Waiman Long]
+496d422f  ALSA: pcm: disallow linking stream to itself  [Michał Mirosław]
+855995d  spi: bcm-qspi: when tx/rx buffer is NULL set to 0  [Justin Chen]
+639cd86  spi: bcm2835aux: Fix controller unregister order  [Lukas Wunner]
+0b23abc  nilfs2: fix null pointer dereference at nilfs_segctor_do_construct()  [Ryusuke Konishi]
+d4341f4  cgroup, blkcg: Prepare some symbols for module and !CONFIG_CGROUP usages  [Tejun Heo]
+744aa65  ACPI: PM: Avoid using power resources if there are none for D0  [Rafael J. Wysocki]
+ac0a272  ACPI: GED: add support for _Exx / _Lxx handler methods  [Ard Biesheuvel]
+17cac70  ACPI: CPPC: Fix reference count leak in acpi_cppc_processor_probe()  [Qiushi Wu]
+bdce493  ACPI: sysfs: Fix reference count leak in acpi_sysfs_add_hotplug_profile()  [Qiushi Wu]
+f4df2c5  ALSA: usb-audio: Fix inconsistent card PM state after resume  [Takashi Iwai]
+008eaa9  ALSA: es1688: Add the missed snd_card_free()  [Chuhong Yuan]
+1e8fd13  efi/efivars: Add missing kobject_put() in sysfs entry creation error path  [Ard Biesheuvel]
+cc66d80  x86/reboot/quirks: Add MacBook6,1 reboot quirk  [Hill Ma]
+fc0abf5  x86/speculation: Prevent rogue cross-process SSBD shutdown  [Anthony Steinhauser]
+4046a2e  x86/PCI: Mark Intel C620 MROMs as having non-compliant BARs  [Xiaochun Lee]
+79138a2  x86_64: Fix jiffies ODR violation  [Bob Haarman]
+42133b6  ath9k_htc: Silence undersized packet warnings  [Masashi Honma]
+c465ee6  drivers/net/ibmvnic: Update VNIC protocol version reporting  [Thomas Falcon]
+4205ab1  sched/fair: Don't NUMA balance for kthreads  [Jens Axboe]
+d95c626  ARM: 8977/1: ptrace: Fix mask for thumb breakpoint hook  [Fredrik Strupe]
+adbbd08  crypto: talitos - fix ECB and CBC algs ivsize  [Su Kang Yin]
+07e0b16  scsi: return correct blkprep status code in case scsi_init_io() fails.  [Johannes Thumshirn]
+72787b0  vxlan: Avoid infinite loop when suppressing NS messages with invalid options  [Ido Schimmel]
+47fb864  ipv6: fix IPV6_ADDRFORM operation logic  [Hangbin Liu]
+
+

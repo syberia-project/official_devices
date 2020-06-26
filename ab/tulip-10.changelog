@@ -2,17 +2,14 @@
    2020-06-21
 =============
 
-[* packages/apps/Etar *]
-2d78047  Etar: Fix content provider rebrand  [Michael Bestas]
-
-
 =============
    2020-06-20
 =============
 
-=============
-   2020-06-19
-=============
+[* device/xiaomi/tulip *]
+86a5aae  tulip: we only have a white LED  [PainKiller3]
+8d66e78  tulip:Updated auto brightness values  [Akhil MS]
+
 
 [* frameworks/base *]
 5206eed  FOD: do not allow FOD to start if the disable prop is true  [Chris Crump]
@@ -32,21 +29,11 @@ b01da0d  Automatic translation import  [DennySPb]
 
 
 =============
+   2020-06-19
+=============
+
+=============
    2020-06-18
-=============
-
-[* frameworks/base *]
-7087eec  bluetooth: fixup! communication / icon after clean flash and first pairing  [pengus77]
-c6c225e  bluetooth: fix communication / icon after clean flash and first pairing  [pengus77]
-
-
-[* packages/apps/Etar *]
-e06e35c  Etar: Properly align preferences  [Michael W]
-bf4f066  Etar: Fix crash when opening "Quick responses"  [Michael W]
-
-
-=============
-   2020-06-17
 =============
 
 [* art *]
@@ -61,6 +48,8 @@ ab94aa5  Include evacuated bytes in heap size trace  [Lokesh Gidra]
 
 
 [* frameworks/base *]
+7087eec  bluetooth: fixup! communication / icon after clean flash and first pairing  [pengus77]
+c6c225e  bluetooth: fix communication / icon after clean flash and first pairing  [pengus77]
 eee6521  Revert "telephony: URI cannot be created with negative subIds"  [DennySPb]
 685cb58  Make sensor block package list configurable [1/2]  [Hikari-no-Tenshi]
 118534b  fw/b: Add support for per app network isolation  [Sam Mortimer]
@@ -76,6 +65,15 @@ b7a2731  Revert "telephony: Conditionally ignore RSSNR signal level"  [DennySPb]
 9e79e8b  SystemUI: Fix pink progress animation color in expanded Wi-Fi tile  [Arne Coucheron]
 d963e85  DO NOT MERGE: Add support to send notification from Zygote to system_server  [Jing Ji]
 
+
+[* packages/apps/Etar *]
+e06e35c  Etar: Properly align preferences  [Michael W]
+bf4f066  Etar: Fix crash when opening "Quick responses"  [Michael W]
+
+
+=============
+   2020-06-17
+=============
 
 [* frameworks/native *]
 b7398f3  surfaceflinger: change usageBits type to uint64_t  [Pierre-Hugues Husson]
@@ -145,6 +143,15 @@ ff22447  ARM64: toFloat() intrinsics with ARMv8 FP16.  [xueliang.zhong]
 dc80ac8  ART: Optimize StringBuilder append pattern.  [Vladimir Marko]
 5651976  ART: Mark StringBuilder.append()s as intrinsics.  [Vladimir Marko]
 02782c9  Allow disabling apex test module  [Chris Crump]
+a1e7bd0  Revert "ART: Add version check for memfd_create()"  [Nicholas Lim]
+462e565  Add an option to disable sse4.2 features  [Luca Stefani]
+4e8517a  libartbase: Check kernel support for membarrier(2)  [Wang Han]
+bbacc7a  art: extend the supported cpu_variant list for arm64  [Wei Wang]
+
+
+[* frameworks/opt/telephony *]
+505bf08  Avoid SubscriptionManager#getUriForSubscriptionId calls with invalid subIds  [Bruno Martins]
+6066518  Remove setIsoCountryProperty method along with partially dead code  [Bruno Martins]
 
 
 [* packages/apps/Settings *]
@@ -157,26 +164,11 @@ c411a30  Settings: Add support for per app network isolation  [Sam Mortimer]
 
 [* system/netd *]
 96183c1  netd: restrict DNS names  [Eric Chang]
+f21044b  Netd: Add support for quotaReachedAlert event  [Pavan Kumar M]
+9818066  system/netd: Add support for per app network isolation  [Sam Mortimer]
 
 
 =============
    2020-06-15
 =============
-
-[* art *]
-a1e7bd0  Revert "ART: Add version check for memfd_create()"  [Nicholas Lim]
-462e565  Add an option to disable sse4.2 features  [Luca Stefani]
-4e8517a  libartbase: Check kernel support for membarrier(2)  [Wang Han]
-bbacc7a  art: extend the supported cpu_variant list for arm64  [Wei Wang]
-
-
-[* frameworks/opt/telephony *]
-505bf08  Avoid SubscriptionManager#getUriForSubscriptionId calls with invalid subIds  [Bruno Martins]
-6066518  Remove setIsoCountryProperty method along with partially dead code  [Bruno Martins]
-
-
-[* system/netd *]
-f21044b  Netd: Add support for quotaReachedAlert event  [Pavan Kumar M]
-9818066  system/netd: Add support for per app network isolation  [Sam Mortimer]
-
 

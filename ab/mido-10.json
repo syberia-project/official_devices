@@ -1,17 +1,17 @@
 {
   "response": [
     {
-      "url": "https://sourceforge.net/projects/syberiaos/files/mido/syberia_mido-v3.7-20200512-0559-OFFICIAL.zip/download", 
+      "url": "https://sourceforge.net/projects/syberiaos/files/mido/syberia_mido-v3.8-20200622-0414-OFFICIAL.zip/download", 
       "device_model": "Redmi Note 4", 
-      "filename": "syberia_mido-v3.7-20200512-0559-OFFICIAL.zip", 
+      "filename": "syberia_mido-v3.8-20200622-0414-OFFICIAL.zip", 
       "device_codename": "mido", 
       "romtype": "OFFICIAL", 
-      "version": "v3.7", 
+      "version": "v3.8", 
       "device_brand": "Xiaomi", 
       "developer": "hnaamdev41", 
-      "datetime": 1589263100, 
-      "id": "442dc93479c692ef20a52f2b3b8953c650525891aa5e97ccec36723be4459578", 
-      "size": "666591571"
+      "datetime": 1592799240, 
+      "id": "8b2067d2f22e6631ff1fd43dea886e02c26cd07723694b3587ba3412039f0fd9", 
+      "size": "652817803"
     }
   ]
 }
