@@ -1,227 +1,263 @@
 =============
-   2020-06-19
+   2020-06-27
 =============
+
+[* bionic *]
+d72c4de  Revert recently added commits  [DennySPb]
+
 
 [* device/xiaomi/raphael *]
-becaccb  FodExtension: Update libfod extension function prototypes  [Akhil Narang]
-f4ab8bf  Adding com.skyhook.blp into the whitelist  [joaquins]
-749849b  qcom : device : Update static iuicc names in device  [melia]
-
-
-[* frameworks/base *]
-5206eed  FOD: do not allow FOD to start if the disable prop is true  [Chris Crump]
-cc4ba53  Automatic translation import  [DennySPb]
+aebd74e  prebuilts: add Lawnchair  [DennySPB]
+63c25b1  raphael: Address DC Dimming denials  [Akash]
+a325496  raphael: parts: Add DC-Dimming QS tile  [Anirudh Gupta]
+48a83eb  raphael: parts: disable dc dimming if it's not supported  [Nauval Rizky]
+2a583ba  raphael: parts: implement dc dimming preference  [Nauval Rizky]
 
 
 [* kernel/xiaomi/sm8150 *]
-4a2beaf  Revert "raphael: enable embedded dtbo"  [Yaroslav Furman]
-ea734af  net: import WireGuard version v1.0.20200520  [Adam W. Willis]
-c4d5ade  net: import WireGuard version 1.0.20200506  [Yaroslav Furman]
-971131f  Revert "net/wireguard: add wireguard importer"  [Yaroslav Furman]
-f1f64b0  Makefile: Set KBUILD_OUTPUT to out by default  [Sultan Alsawaf]
-d51e5ae  Makefile: Force ARCH to be arm64  [Sultan Alsawaf]
-1b9d9d8  vdso32: Invoke clang with correct path to GCC toolchain  [Daniel Mentz]
-ed1cff3  dtc: remove in-tree dtc and ufdt rewrites  [Yaroslav Furman]
-74decf6  drm: msm: modify lp11 mode logic  [Demon000]
-b1d95f8  drm: msm: handle ss dcs type  [Demon000]
-a70b4cf  ARM64: dts: latest mi9fod changes  [Yaroslav Furman]
-fa9cd74  drm: msm: dsi-staging: cleanup notifier implementation  [Demon000]
-bfd8bf2  drm: msm: extend qcom drm notifier  [Demon000]
-1df0171  drm: msm: dsi-staging: trigger drm notifier  [Demon000]
-69b78e0  drm: msm: atomic: do not trigger drm notifier  [Demon000]
-ddfb091  drm: msm: notify sysfs for fod ui changes  [Demon000]
-8a3911b  drm: msm: implement fod handling  [Demon000]
-3703de83  drm: msm: dsi-staging: add dsi_panel_get_backlight  [Demon000]
-90f9b94  drm: msm: dsi-staging: add get_main_display  [DevriesL]
-263ffbf  drm: msm: sde: translate zpos property to fod property  [Demon000]
-cf9411d  drm: msm: dsi-staging: implement doze mode  [Demon000]
-df3e48e  drm: msm: dsi-staging: create empty attributes group  [Demon000]
-c7d3f7b  Revert "drivers: gpu: import xiaomi changes"  [Yaroslav Furman]
-b4d831b  drm: revert latest Losfod changes  [Yaroslav Furman]
-62f057d  Revert "Revert "mutex: Add a delay into the SPIN_ON_OWNER wait loop.""  [Yaroslav Furman]
-a387954a  Revert "msm: kgsl: Do not enable adreno core features by default"  [Yaroslav Furman]
-bb44d9e  Revert "sched: do not allocate window cpu arrays separately"  [Yaroslav Furman]
-63cdf987  Revert "ipa3:msm: Added debugfs support for drop packet stats"  [Yaroslav Furman]
-
-
-[* packages/apps/Launcher3 *]
-309523f  Automatic translation import  [DennySPb]
-
-
-[* packages/apps/Settings *]
-2211d92  Automatic translation import  [DennySPb]
-
-
-[* packages/apps/SyberiaSettings *]
-b01da0d  Automatic translation import  [DennySPb]
-
-
-[* vendor/xiaomi/raphael *]
-87b2fd8  Revert "raphael: Update ADSP blobs to LA.UM.8.1.r1-14500-sm8150.0"  [carpe462]
-
-
-=============
-   2020-06-18
-=============
-
-=============
-   2020-06-17
-=============
-
-[* art *]
-bf1ac97  Fix memfd_create_compat() F_DUPFD call.  [Vladimir Marko]
-e6ee1be  Revert^2 "Add AddToDexClassloader JVMTI extension functions"  [Alex Light]
-ab94aa5  Include evacuated bytes in heap size trace  [Lokesh Gidra]
-59de1e3  Improve printing for heap verification failures  [Mathieu Chartier]
-
-
-[* build/make *]
-9401020  Refactor how MODULES-IN-* is defined  [Dan Willemsen]
-
-
-[* frameworks/base *]
-7087eec  bluetooth: fixup! communication / icon after clean flash and first pairing  [pengus77]
-c6c225e  bluetooth: fix communication / icon after clean flash and first pairing  [pengus77]
-eee6521  Revert "telephony: URI cannot be created with negative subIds"  [DennySPb]
-685cb58  Make sensor block package list configurable [1/2]  [Hikari-no-Tenshi]
-118534b  fw/b: Add support for per app network isolation  [Sam Mortimer]
-fb69349  Add Accelerometer and Linear Acceleration sensors in blocking list  [SuperDroidBond]
-88176bb  PATCHUP: DozeSensors: only use proximity sensor if supported  [Demon000]
-c09d78b  base: Add vibration patterns from OOS [1/3]  [rituj]
-e5408c5  Bluetooth: Serialize sending sendBluetoothServiceUpCallback  [zhenchao]
-3642fd4  BT: Added bind retry logic to handle race condition in Bluetooth off/on  [Bandari Ramesh]
-40c4456  SystemUI: Make clock truly invisible  [Michael W]
-f4444cc  base: Fix NPE on some devices by checking for null client  [Pierre-Hugues Husson]
-f55442f  [BACKPORT] Config of LTE signal strength default value remove SNR  [SongFerngWang]
-b7a2731  Revert "telephony: Conditionally ignore RSSNR signal level"  [DennySPb]
-9e79e8b  SystemUI: Fix pink progress animation color in expanded Wi-Fi tile  [Arne Coucheron]
-d963e85  DO NOT MERGE: Add support to send notification from Zygote to system_server  [Jing Ji]
-
-
-[* kernel/xiaomi/sm8150 *]
-17bab53  fkm: f1xy 0.22  [Yaroslav Furman]
-6516d06  Revert "drm: msm: implement FOD dimlayer bl block"  [Yaroslav Furman]
-2bb0373  Revert "drm: msm: atomic: do not trigger drm notifier"  [Yaroslav Furman]
+8c495e1  Revert "Revert "drm/sde: use stack allocations in sde_crtc_atomic_check""  [Yaroslav Furman]
+84a1341  raphael: some CPU related changes  [Yaroslav Furman]
+cc5928d  raphael:enable Exposure Adjustment driver  [kondors1995]
+8b1a7ac  drm: msm: temporary disable DC dimming when in fod_hbm mode  [Nauval Rizky]
+30934e5  drm: msm: adapt exposure adjustment methods to raphael  [Nauval Rizky]
+f2a8a39  drm: Let exposure adjustment switchable via sysfs  [XiNGRZ]
+c966eba  drm: Introduce exposure adjustment driver  [DevriesL]
 
 
 [* packages/apps/Etar *]
-e06e35c  Etar: Properly align preferences  [Michael W]
-bf4f066  Etar: Fix crash when opening "Quick responses"  [Michael W]
+4b38c76  Automatic translation import  [Michael Bestas]
 
 
 =============
-   2020-06-16
-=============
-
-[* frameworks/native *]
-b7398f3  surfaceflinger: change usageBits type to uint64_t  [Pierre-Hugues Husson]
-
-
-=============
-   2020-06-15
+   2020-06-26
 =============
 
 [* art *]
-e423d9a  Add fast path for exception vreg copying.  [David Srbecky]
-4b7cd1e  Stack maps: Refactor constructors.  [David Srbecky]
-71ef4ee  Stack walk: Cache CodeInfo and StackMap for current PC.  [David Srbecky]
-04060e5  ART: Introduce stackmap with no DexRegInfo.  [Artem Serov]
-5786aab  ART: Encapsulate init-optimization fields  [Andreas Gampe]
-e0792cc  ART: Use bitset in dex file verifier  [Andreas Gampe]
-c0e327e  ART: Change unordered_set to HashSet  [Andreas Gampe]
-c6cfbac  ART: Cache type index validity  [Andreas Gampe]
-65c591e  Stack maps: Micro-optimize LoadBits  [David Srbecky]
-f64f093  Stack maps: Micro-optimize ReadInterleavedVarints  [David Srbecky]
-9a9097b  Revert^2 "Stack maps: Interleave consecutive varints."  [David Srbecky]
-a1fab55  Stack maps: Handle special cases using flags.  [David Srbecky]
-2fdf2ca  Avoid coercing to key type in SafeMap  [Alex Light]
-beebee9  Revert^2 "Improve ArraySet codegen."  [Vladimir Marko]
-a266496  ARM64: Combine LSR+ADD into ADD_shift for Int32 HDiv/HRem  [Evgeny Astigeevich]
-1d60d2d  ART: Optimize ADD/SUB+ADD_shift into ADDS/SUBS+CINC for HDiv/HRem  [Evgeny Astigeevich]
-33637ab  ARM64: Combine LSR+ASR into ASR for Int32 HDiv/HRem  [Evgeny Astigeevich]
-696ddd1  ART: Refactor InstructionCodeGeneratorARM64::GenerateDivRemWithAnyConstant  [Evgeny Astigeevich]
-37ab5c0  Add default argument kIsInstrumented=true.  [Vladimir Marko]
-7dcee37  ART: Fix some types  [Andreas Gampe]
-6ffb44a  Fix mterp assembly to use uxtw instead of lsl where needed.  [David Srbecky]
-f56125d  jni: Fix templates for clang-r377782 update.  [Yabin Cui]
-ba557c0  Fix incorrect narrowing type cast  [Yi Kong]
-dcbdfef  Add assembly support for -fsanitize=hwaddress tagged globals.  [Peter Collingbourne]
-6e8c2d3  Make the $/# in front of constants optional  [Pirama Arumuga Nainar]
-71a4972  Remove MIPS support from JNI/trampoline compiler.  [Vladimir Marko]
-47259b4  Move @CriticalNative arguments in registers.  [Vladimir Marko]
-aff60d7  Move entry spills determination to JNI compiler.  [Vladimir Marko]
-34692da  jni: Do not create a managed frame for @CriticalNative.  [Vladimir Marko]
-32b5470  Reduce cache memory use of libdexfile.  [David Srbecky]
-df3678e  dex2oat: Fix repeatedly preparing dex files for oat file  [wulonghua]
-99736ec  Avoid dex2dex initialization if not compiling.  [Vladimir Marko]
-d49fca0  constify JNINativeMethod tables  [Daniel Micay]
-07c0f9a  Enable support of VecLoad/VecStore in LSE  [xueliang.zhong]
-051dcd0  Utilize partially used TLABs  [Lokesh Gidra]
-4ac5544  ARM64: FP16 greater/less/greaterEquals/lessEquals intrinsics for ARMv8  [Usama Arif]
-011ffb8  ARM64: FP16.rint() intrinsic for ARMv8  [Usama Arif]
-94a2e5b  ARM64: FP16.ceil() intrinsic for ARMv8  [Usama Arif]
-57333ce  ARM64: FP16.floor() intrinsic for ARMv8  [Usama Arif]
-b4b41c1  ARM64: Pass simd half floating point feature to VIXL macroassembler.  [Usama Arif]
-7c5cffb  ARM: Remove unnecessary kCoreAlwaysSpillRegister.  [Vladimir Marko]
-ec80518  Remove ShadowFrame::HasReferenceArray()  [David Srbecky]
-8e62ca5  ARM/ARM64: Use trampolines for slow-path entrypoint calls.  [Vladimir Marko]
-63b63c2  ARM64: Improve BoundsCheck for constant inputs.  [Georgia Kouveli]
-8437e3c  ART: ARM64: Optimize frame size for SIMD graphs.  [Artem Serov]
-1e98e73  ART: ARM64: Fix saved fpu stack offsets for SIMD.  [Artem Serov]
-f9a441a  ARM/ARM64: Improve frame entry/exit codegen.  [Vladimir Marko]
-56aa1c4  [optimizing] Improve constant folding on logical and  [Balaram Makam]
-8a12ad9  ART: Preallocate offset map  [Andreas Gampe]
-2b9897f  Fix intersecting live ranges created by instruction scheduler  [Evgeny Astigeevich]
-b1c2f9b  ART: Refactor SchedulingGraph for consistency and clarity  [Evgeny Astigeevich]
-22a3209  Optimize stack maps: add fast path for no inline info.  [David Srbecky]
-7fad1d6  Optimize stack map decoding.  [David Srbecky]
-f7b87a7  ART: Improve VisitStringGetCharsNoCheck intrinsic for compressed strings, using SIMD  [David Horstmann]
-479b76b  Revert^2 "ARM64: toHalf() intrinsic for ARMv8"  [Vladimir Marko]
-ff22447  ARM64: toFloat() intrinsics with ARMv8 FP16.  [xueliang.zhong]
-dc80ac8  ART: Optimize StringBuilder append pattern.  [Vladimir Marko]
-5651976  ART: Mark StringBuilder.append()s as intrinsics.  [Vladimir Marko]
-02782c9  Allow disabling apex test module  [Chris Crump]
-a1e7bd0  Revert "ART: Add version check for memfd_create()"  [Nicholas Lim]
-462e565  Add an option to disable sse4.2 features  [Luca Stefani]
-4e8517a  libartbase: Check kernel support for membarrier(2)  [Wang Han]
-bbacc7a  art: extend the supported cpu_variant list for arm64  [Wei Wang]
+9af9efe  ARM/ARM64: Clean up artFindNativeMethod().  [Vladimir Marko]
 
 
-[* frameworks/opt/telephony *]
-505bf08  Avoid SubscriptionManager#getUriForSubscriptionId calls with invalid subIds  [Bruno Martins]
-6066518  Remove setIsoCountryProperty method along with partially dead code  [Bruno Martins]
+[* device/xiaomi/raphael *]
+2932d2e  raphael: Build some camera libs from source  [markakash]
+
+
+[* frameworks/base *]
+628b881  Automatic translation import  [DennySPb]
+f35676a  Fix a race conditon in `incident`.  [Boleyn Su]
+482686e  Filter preferred activities before committing to storage  [Hans Månsson]
+54c639c  trigger file removal when slice permission is removed  [Pinyao Ting]
+28785cb  Throw XmlParserException when client tag cannot be found when parsing slice permissions.  [Pinyao Ting]
+92bc5d3  TextClock: Make French strings more consistent  [Jake Weinstein]
+aa46b95  SystemUI: Fix text clock translations  [Anushek Prasal]
+9263bc0  TextClock: Bring back the translations  [El Dainosor]
+cafdf8a  SystemUI: Fix issue with Bluetooth tile  [Michael W]
+726c62d  SystemUI: QS Details: Fix layout issues  [Michael W]
+7ba01eb  SystemUI: Improve VoLTE detection logic  [Pranav Vashi]
+baa5b56  SystemUI: Add EMUI VoLTE icon [1/2]  [DennySPb]
+072031c  SystemUI: Add four more selectable VoWiFi icons [1/2]  [DennySPb]
+31c932c  SystemUI: Optional VoWiFi icon [1/2]  [DennySPb]
+e26f714  SystemUI: support VoWIFI icons  [Weijie Wang]
 
 
 [* kernel/xiaomi/sm8150 *]
-f4cc328  Revert "drm: msm: dsi-staging: Add support for C-PHY dynamic clock switch"  [Yaroslav Furman]
-f06336d  Revert "drm: msm: dsi-staging: Add support to skip phy timing update"  [Yaroslav Furman]
-2ea74da  drm: msm: atomic: do not trigger drm notifier  [Demon000]
-9740e82  drm/sde: use stack allocations in sde_crtc_atomic_check  [Yaroslav Furman]
-1b14fb5  sock: inline SELinux's sk_security to struct sock  [Park Ju Hyung]
+70e9619  raphael: lower min freq for lp cluster  [YaroST12]
+
+
+[* packages/apps/Launcher3 *]
+fe1e72d  Automatic translation import  [DennySPb]
 
 
 [* packages/apps/Settings *]
-c411a30  Settings: Add support for per app network isolation  [Sam Mortimer]
+41cc436  Automatic translation import  [DennySPb]
 
 
 [* packages/apps/SyberiaSettings *]
-55a976e  Make sensor block package list configurable [2/2]  [Hikari-no-Tenshi]
+9fddf36  Automatic translation import  [DennySPb]
+1644a7e  Add four more selectable VoWiFi icons [2/2]  [DennySPb]
 
 
-[* system/netd *]
-96183c1  netd: restrict DNS names  [Eric Chang]
-f21044b  Netd: Add support for quotaReachedAlert event  [Pavan Kumar M]
-9818066  system/netd: Add support for per app network isolation  [Sam Mortimer]
+[* vendor/xiaomi/raphael *]
+f58157b  raphael:Build some camera libs from source  [kondors1995]
 
 
 =============
-   2020-06-14
+   2020-06-25
 =============
+
+[* art *]
+509f91d  Only put resolved classes inside the dex cache.  [Nicolas Geoffray]
+0730473  Make the ART thread pool implementation use default-sized stacks on Bionic  [Daniel Colascione]
+
+
+[* bionic *]
+d650dd6  Add randomized padding around shared library mappings.  [Evgenii Stepanov]
+58919da  Use PROT_NONE on the unused parts of CFI shadow.  [Evgenii Stepanov]
+
+
+[* device/xiaomi/raphael *]
+8c11b83  raphael:Add CNE configs from stock  [kondors1995]
+065e2b6  raphael: pin display calibration to miui 11.0.8.0  [kondors1995]
+
+
+[* kernel/xiaomi/sm8150 *]
+ea85784  net: import WireGuard version v1.0.20200611  [Adam W. Willis]
+bca7730  raphael: Disbale ThinLTO & Enable LLVM's Polly optimizer  [kondors1995]
+bbeaf53  kbuild: Add support for LLVM's Polly optimizer  [Danny Lin]
+1999922  Revert "raphael: enable embedded dtbo"  [Yaroslav Furman]
+218ab1a  net: import WireGuard version v1.0.20200520  [Adam W. Willis]
+91937e0  net: import WireGuard version 1.0.20200506  [Yaroslav Furman]
+1d70296  Revert "net/wireguard: add wireguard importer"  [Yaroslav Furman]
+0c6a4aa  Makefile: Set KBUILD_OUTPUT to out by default  [Sultan Alsawaf]
+78661fe  Makefile: Force ARCH to be arm64  [Sultan Alsawaf]
+3c5f372  vdso32: Invoke clang with correct path to GCC toolchain  [Daniel Mentz]
+9009a6c  dtc: remove in-tree dtc and ufdt rewrites  [Yaroslav Furman]
+6b31311  Merge remote-tracking branch 'yaro/mi9fod-stuff-v3' into HEAD  [kondors1995]
+
+
+[* packages/apps/Dialer *]
+6c45d89  Reorder proximity check calls in custom functions  [DennySPb]
+
+
+[* packages/apps/Etar *]
+4d6a7d0  Fix errors caught by aapt2  [Colin Cross]
+50a3718  Allow app to upgrade database on install.  [Sam Blitzstein]
+e843e7d  Force a manual, incremental sync one time, as early as possible.  [Sam Blitzstein]
+cf6b510  Abort onClick if no Window Focus  [Alon Albert]
+4f87c9e  Remove negative margin fron all day label  [Isaac Katzenelson]
+ae370cf  Call build() on the Builder, not the Style.  [Daniel Sandler]
+376634a  Small workaround when text is slight bigger then all day event rect.  [Paul Sliwowski]
+9fd778b  Fix small typos in I9490f478681783200a5cb8309a58243723bda4c1.  [Paul Sliwowski]
+388a6f9  Fix bug in recurrent event dialog picker when setting monthly day of the week.  [Paul Sliwowski]
+b09b345  Add in-memory cache to dismiss alerts that we haven't seen yet.  [Paul Sliwowski]
+c3af36b  Fix mokey NullPointerException when there is no colors to save.  [Paul Sliwowski]
+0bef07a  Fixed ISE issue when subscribing to gcm groups from the main thread.  [Paul Sliwowski]
+3b909ea  Fix crash when dismissing notification.  [Paul Sliwowski]
+603fd19  Fix calander crash where getTimezone was call without a looper.  [Paul Sliwowski]
+8e51d7a  Fix issue with error message being displayed on tablets.  [Paul Sliwowski]
+3a6b04a  Remove dead code in AlarmService.  [Paul Sliwowski]
+706f692  Display error when a viewed event has been deleted.  [Paul Sliwowski]
+ee72ce0  Capitalize Noon and Midnight in event edit view.  [Paul Sliwowski]
+a6ee26e  Fixed leak cursor in AlertReciever  [Paul Sliwowski]
+ccf1520  DayView: Revert all whitespace changes  [Michael Bestas]
+199c3df  Etar: Fix invalid string parameter  [Nicholas Lim]
+
+
+[* vendor/xiaomi/raphael *]
+332b8e6  raphael: import CNE configs from MIUI 12.0.2.0  [kondors1995]
+9559ff7  reset display config to inital import  [kondors1995]
+
+
+=============
+   2020-06-24
+=============
+
+[* kernel/xiaomi/sm8150 *]
+8eaaa6d  fkm: f1xy 0.23  [Yaroslav Furman]
+be5cc00  Merge remote-tracking branch 'als/kernel.lnx.4.14.r4-rel' into Q-raphael  [Yaroslav Furman]
+916cbbd  Revert "selinux: Relocate ss_initialized and selinux_enforcing to separate 4k"  [Nick Desaulniers]
+b862f44  Revert "drm/sde: use stack allocations in sde_crtc_atomic_check"  [Yaroslav Furman]
+9e43d57  Revert "msm: kgsl: Add gpu_frequency trace during SLUMBER entry and exit"  [Yaroslav Furman]
+8ca4351  Revert "msm: kgsl: Add gpu_frequency tracepoint to power trace system"  [Yaroslav Furman]
+
+
+[* packages/apps/Etar *]
+882b00c  Etar: Fix android:targetPackage for shortcut  [Han Wang]
+
+
+[* packages/apps/SyberiaSettings *]
+b18a5d4  Add EMUI VoLTE icon [2/2]  [DennySPb]
+
+
+=============
+   2020-06-23
+=============
+
+[* device/xiaomi/raphael *]
+c0a9c5f  raphael:rootdir: Add macro to configurate UX cgroups  [RenderBroken]
+c04fb36  raphael: Switch to qpowermode  [Akash]
+
+
+[* external/angle *]
+07b7c41  Merge branch 'master' of https://android.googlesource.com/platform/external/angle into HEAD  [DennySPb]
+
+
+[* frameworks/native *]
+e233ac0  surfaceflinger: Fix the uninitialized layer type  [Ray Zhang]
+
+
+[* kernel/xiaomi/sm8150 *]
+cef9c16  Merge 4.14.185 into kernel.lnx.4.14.r4-rel  [Nathan Chancellor]
+
+
+[* packages/apps/SyberiaSettings *]
+4001c4c  Optional VoWiFi icon [2/2]  [DennySPb]
+
+
+[* vendor/xiaomi/raphael *]
+325f1b6  raphael: update blobs from raphael-user-10-QKQ1.190825.002-V12.0.2.0.QFKCNXM-release-keys  [kondors1995]
+
+
+=============
+   2020-06-22
+=============
+
+[* art *]
+9d22167  ART: Transform Sub+Sub into Sub+Add to merge Shl  [Evgeny Astigeevich]
+f62dbdf  separate madvise calling from critical section  [Pin-Chuan Liu]
+875ad89  ART: Add recognition of optimized HRems in BCE  [Evgeny Astigeevich]
+62df45d  ART: Simplify HRem to reuse existing HDiv  [Evgeny Astigeevich]
+8c650ce  ART: Add classes having intrinsics to boot image  [Evgeny Astigeevich]
+
+
+[* device/xiaomi/raphael *]
+3767eaa  raphael: pin few more blobs  [kondors1995]
+fc897a9  raphael: pin OK google hotword blobs  [kondors1995]
+30820c5  raphael: overlay: don't let burn in protection shift too far  [XiNGRZ]
+9cb0e84  raphael: Enable burnin protection  [XiNGRZ]
+061fa70  raphael:overlay update light sensor Debounce  [carpe462]
+673956c  FodExtension: Update libfod extension function prototypes  [Akhil Narang]
+5175629  Adding com.skyhook.blp into the whitelist  [joaquins]
+b89789c  qcom : device : Update static iuicc names in device  [melia]
+
+
+[* packages/apps/Etar *]
+b338355  Etar: String improvements  [Michael Bestas]
+b288818  Etar: Restore tests  [LuK1337]
+3284faa  AOSP/Calendar - Minimal calendar app.  [Raman Tenneti]
+2fd1c76  Update code coverage filter  [Sebastien Hertz]
+414c864  Etar: Fix translatables  [Michael Bestas]
+
+
+[* packages/apps/FMRadio *]
+8ba2e5d  Automatic translation import  [Michael Bestas]
+
+
+[* packages/resources/devicesettings *]
+7a3adac  Automatic translation import  [Michael Bestas]
+
+
+[* vendor/qcom/opensource/fm-commonsys *]
+1f27002  Automatic translation import  [Michael Bestas]
+
+
+[* vendor/xiaomi/raphael *]
+ae341bc  QTI BT  [kondors1995]
+3734c96  Revert "raphael: Update ADSP blobs to LA.UM.8.1.r1-14500-sm8150.0"  [kondors1995]
+
+
+=============
+   2020-06-21
+=============
+
+[* kernel/xiaomi/sm8150 *]
+395a79d  msm/sde_fence: ifdef name from sde_fence_context struct  [Yaroslav Furman]
+fb1ae2e  Revert "genirq/generic_pending: Do not lose pending affinity update"  [Yaroslav Furman]
+
+
+[* packages/apps/Etar *]
+2d78047  Etar: Fix content provider rebrand  [Michael Bestas]
+
 
 [* prebuilts/clang/host/linux-x86/clang-11 *]
-0e8da7c  Update to 20200613 build  [Danny]
+9b695de  Update to 20200620 build  [Danny]
 
 
-=============
-   2020-06-13
-=============
