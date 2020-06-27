@@ -7,7 +7,6 @@ d72c4de  Revert recently added commits  [DennySPb]
 
 
 [* device/xiaomi/raphael *]
-aebd74e  prebuilts: add Lawnchair  [DennySPB]
 63c25b1  raphael: Address DC Dimming denials  [Akash]
 a325496  raphael: parts: Add DC-Dimming QS tile  [Anirudh Gupta]
 48a83eb  raphael: parts: disable dc dimming if it's not supported  [Nauval Rizky]
@@ -31,10 +30,6 @@ c966eba  drm: Introduce exposure adjustment driver  [DevriesL]
 =============
    2020-06-26
 =============
-
-[* art *]
-9af9efe  ARM/ARM64: Clean up artFindNativeMethod().  [Vladimir Marko]
-
 
 [* device/xiaomi/raphael *]
 2932d2e  raphael: Build some camera libs from source  [markakash]
@@ -84,6 +79,7 @@ f58157b  raphael:Build some camera libs from source  [kondors1995]
 =============
 
 [* art *]
+9af9efe  ARM/ARM64: Clean up artFindNativeMethod().  [Vladimir Marko]
 509f91d  Only put resolved classes inside the dex cache.  [Nicolas Geoffray]
 0730473  Make the ART thread pool implementation use default-sized stacks on Bionic  [Daniel Colascione]
 
@@ -95,22 +91,6 @@ d650dd6  Add randomized padding around shared library mappings.  [Evgenii Stepan
 
 [* device/xiaomi/raphael *]
 8c11b83  raphael:Add CNE configs from stock  [kondors1995]
-065e2b6  raphael: pin display calibration to miui 11.0.8.0  [kondors1995]
-
-
-[* kernel/xiaomi/sm8150 *]
-ea85784  net: import WireGuard version v1.0.20200611  [Adam W. Willis]
-bca7730  raphael: Disbale ThinLTO & Enable LLVM's Polly optimizer  [kondors1995]
-bbeaf53  kbuild: Add support for LLVM's Polly optimizer  [Danny Lin]
-1999922  Revert "raphael: enable embedded dtbo"  [Yaroslav Furman]
-218ab1a  net: import WireGuard version v1.0.20200520  [Adam W. Willis]
-91937e0  net: import WireGuard version 1.0.20200506  [Yaroslav Furman]
-1d70296  Revert "net/wireguard: add wireguard importer"  [Yaroslav Furman]
-0c6a4aa  Makefile: Set KBUILD_OUTPUT to out by default  [Sultan Alsawaf]
-78661fe  Makefile: Force ARCH to be arm64  [Sultan Alsawaf]
-3c5f372  vdso32: Invoke clang with correct path to GCC toolchain  [Daniel Mentz]
-9009a6c  dtc: remove in-tree dtc and ufdt rewrites  [Yaroslav Furman]
-6b31311  Merge remote-tracking branch 'yaro/mi9fod-stuff-v3' into HEAD  [kondors1995]
 
 
 [* packages/apps/Dialer *]
@@ -143,28 +123,37 @@ ccf1520  DayView: Revert all whitespace changes  [Michael Bestas]
 
 [* vendor/xiaomi/raphael *]
 332b8e6  raphael: import CNE configs from MIUI 12.0.2.0  [kondors1995]
-9559ff7  reset display config to inital import  [kondors1995]
 
 
 =============
    2020-06-24
 =============
 
+[* device/xiaomi/raphael *]
+065e2b6  raphael: pin display calibration to miui 11.0.8.0  [kondors1995]
+
+
 [* kernel/xiaomi/sm8150 *]
-8eaaa6d  fkm: f1xy 0.23  [Yaroslav Furman]
-be5cc00  Merge remote-tracking branch 'als/kernel.lnx.4.14.r4-rel' into Q-raphael  [Yaroslav Furman]
-916cbbd  Revert "selinux: Relocate ss_initialized and selinux_enforcing to separate 4k"  [Nick Desaulniers]
-b862f44  Revert "drm/sde: use stack allocations in sde_crtc_atomic_check"  [Yaroslav Furman]
-9e43d57  Revert "msm: kgsl: Add gpu_frequency trace during SLUMBER entry and exit"  [Yaroslav Furman]
-8ca4351  Revert "msm: kgsl: Add gpu_frequency tracepoint to power trace system"  [Yaroslav Furman]
+ea85784  net: import WireGuard version v1.0.20200611  [Adam W. Willis]
+bca7730  raphael: Disbale ThinLTO & Enable LLVM's Polly optimizer  [kondors1995]
+bbeaf53  kbuild: Add support for LLVM's Polly optimizer  [Danny Lin]
+1999922  Revert "raphael: enable embedded dtbo"  [Yaroslav Furman]
+218ab1a  net: import WireGuard version v1.0.20200520  [Adam W. Willis]
+91937e0  net: import WireGuard version 1.0.20200506  [Yaroslav Furman]
+1d70296  Revert "net/wireguard: add wireguard importer"  [Yaroslav Furman]
+0c6a4aa  Makefile: Set KBUILD_OUTPUT to out by default  [Sultan Alsawaf]
+78661fe  Makefile: Force ARCH to be arm64  [Sultan Alsawaf]
+3c5f372  vdso32: Invoke clang with correct path to GCC toolchain  [Daniel Mentz]
+9009a6c  dtc: remove in-tree dtc and ufdt rewrites  [Yaroslav Furman]
+6b31311  Merge remote-tracking branch 'yaro/mi9fod-stuff-v3' into HEAD  [kondors1995]
 
 
 [* packages/apps/Etar *]
 882b00c  Etar: Fix android:targetPackage for shortcut  [Han Wang]
 
 
-[* packages/apps/SyberiaSettings *]
-b18a5d4  Add EMUI VoLTE icon [2/2]  [DennySPb]
+[* vendor/xiaomi/raphael *]
+9559ff7  reset display config to inital import  [kondors1995]
 
 
 =============
@@ -185,10 +174,17 @@ e233ac0  surfaceflinger: Fix the uninitialized layer type  [Ray Zhang]
 
 
 [* kernel/xiaomi/sm8150 *]
+8eaaa6d  fkm: f1xy 0.23  [Yaroslav Furman]
+be5cc00  Merge remote-tracking branch 'als/kernel.lnx.4.14.r4-rel' into Q-raphael  [Yaroslav Furman]
+916cbbd  Revert "selinux: Relocate ss_initialized and selinux_enforcing to separate 4k"  [Nick Desaulniers]
+b862f44  Revert "drm/sde: use stack allocations in sde_crtc_atomic_check"  [Yaroslav Furman]
+9e43d57  Revert "msm: kgsl: Add gpu_frequency trace during SLUMBER entry and exit"  [Yaroslav Furman]
+8ca4351  Revert "msm: kgsl: Add gpu_frequency tracepoint to power trace system"  [Yaroslav Furman]
 cef9c16  Merge 4.14.185 into kernel.lnx.4.14.r4-rel  [Nathan Chancellor]
 
 
 [* packages/apps/SyberiaSettings *]
+b18a5d4  Add EMUI VoLTE icon [2/2]  [DennySPb]
 4001c4c  Optional VoWiFi icon [2/2]  [DennySPb]
 
 
@@ -211,12 +207,6 @@ f62dbdf  separate madvise calling from critical section  [Pin-Chuan Liu]
 [* device/xiaomi/raphael *]
 3767eaa  raphael: pin few more blobs  [kondors1995]
 fc897a9  raphael: pin OK google hotword blobs  [kondors1995]
-30820c5  raphael: overlay: don't let burn in protection shift too far  [XiNGRZ]
-9cb0e84  raphael: Enable burnin protection  [XiNGRZ]
-061fa70  raphael:overlay update light sensor Debounce  [carpe462]
-673956c  FodExtension: Update libfod extension function prototypes  [Akhil Narang]
-5175629  Adding com.skyhook.blp into the whitelist  [joaquins]
-b89789c  qcom : device : Update static iuicc names in device  [melia]
 
 
 [* packages/apps/Etar *]
@@ -247,6 +237,15 @@ ae341bc  QTI BT  [kondors1995]
 =============
    2020-06-21
 =============
+
+[* device/xiaomi/raphael *]
+30820c5  raphael: overlay: don't let burn in protection shift too far  [XiNGRZ]
+9cb0e84  raphael: Enable burnin protection  [XiNGRZ]
+061fa70  raphael:overlay update light sensor Debounce  [carpe462]
+673956c  FodExtension: Update libfod extension function prototypes  [Akhil Narang]
+5175629  Adding com.skyhook.blp into the whitelist  [joaquins]
+b89789c  qcom : device : Update static iuicc names in device  [melia]
+
 
 [* kernel/xiaomi/sm8150 *]
 395a79d  msm/sde_fence: ifdef name from sde_fence_context struct  [Yaroslav Furman]
