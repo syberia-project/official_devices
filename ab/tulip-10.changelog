@@ -1,174 +1,100 @@
 =============
-   2020-06-21
+   2020-07-12
 =============
 
 =============
-   2020-06-20
-=============
-
-[* device/xiaomi/tulip *]
-86a5aae  tulip: we only have a white LED  [PainKiller3]
-8d66e78  tulip:Updated auto brightness values  [Akhil MS]
-
-
-[* frameworks/base *]
-5206eed  FOD: do not allow FOD to start if the disable prop is true  [Chris Crump]
-cc4ba53  Automatic translation import  [DennySPb]
-
-
-[* packages/apps/Launcher3 *]
-309523f  Automatic translation import  [DennySPb]
-
-
-[* packages/apps/Settings *]
-2211d92  Automatic translation import  [DennySPb]
-
-
-[* packages/apps/SyberiaSettings *]
-b01da0d  Automatic translation import  [DennySPb]
-
-
-=============
-   2020-06-19
+   2020-07-11
 =============
 
 =============
-   2020-06-18
+   2020-07-10
 =============
 
 [* art *]
-bf1ac97  Fix memfd_create_compat() F_DUPFD call.  [Vladimir Marko]
-e6ee1be  Revert^2 "Add AddToDexClassloader JVMTI extension functions"  [Alex Light]
-ab94aa5  Include evacuated bytes in heap size trace  [Lokesh Gidra]
-59de1e3  Improve printing for heap verification failures  [Mathieu Chartier]
+add0720  Increase kNotifyNativeInterval on host  [Hans Boehm]
+
+
+[* frameworks/base *]
+146908d  TextClock: Fix Korean strings(2)  [carpe462]
+c0cfa2d  base: overlays: Add new icon shapes from Android R  [Andrew Thomas]
+29be14e  Add rounded hexagon icon overlay  [Pranav Vashi]
+639164e  Fix typos related to sortSelectionIndices  [Wang Han]
+34324dc  Fix app crash if the selection is from reverse direction.  [Joanne Chung]
+9c0f29c  BT: Always update service object in BluetoothDevice Class  [Srinu Jella]
+7acfe95  Avoid potential fd leaks from jniCreateFileDescriptor (2/2)  [Orion Hodson]
+c4fb59f  Avoid potential fd leak from jniCreateFileDescriptor (1/2)  [Orion Hodson]
+9646488  API changes due to importing RI BigInteger  [Hans Boehm]
+32b1d0d  Move battery icon to QS header  [00day0]
+abb1cff  Add three more selectable VoWiFi icons [1/2]  [blinoff82]
+
+
+[* libcore *]
+f1ec023  Revert^2 "Avoid fd leaks when jniCreateFileDescriptor encounters OOME"  [Orion Hodson]
+908e2a5  Reduce unnecessary get operations  [Plain]
+ef58a17  Switch to OpenJDK 8 java/math  [Hans Boehm]
+f8f27db  Pass in callsite of SurfaceControl constructor explicitly (2/3)  [Jorim Jaggi]
+2e9cd78  Support convert string similar to FE87-9640 to UUID  [linzj1]
+
+
+[* packages/apps/Dialer *]
+5996359  Fix theme for PostCallActivity  [Sungjae]
+d1c47c3  Dialer: Fix proto warning with optmize for lite  [Luca Stefani]
+9107b6c  Fix translation of 'contacts' tab title and main menu.  [Danny Baumann]
+8696b62  Dialer: Use a DayNight launch theme  [Scott Warner]
+
+
+[* packages/apps/Settings *]
+e08d3dd  Automatic translation import  [DennySPb]
+
+
+[* packages/apps/SyberiaSettings *]
+9ba5ee5  Automatic translation import  [DennySPb]
+02f48ca  Merge "Add three more selectable VoWiFi icons [2/2]" into 10.0  [dennyspb]
+
+
+=============
+   2020-07-09
+=============
+
+[* art *]
+71465c8  ARM: Optimize Div/Rem by positive const for non-negative dividends  [Evgeny Astigeevich]
+fb3fa91  ARM: Optimize Div/Rem by 2^n for non-negative dividends  [Evgeny Astigeevich]
 
 
 [* build/make *]
-9401020  Refactor how MODULES-IN-* is defined  [Dan Willemsen]
+6d597bb  Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
 
 
 [* frameworks/base *]
-7087eec  bluetooth: fixup! communication / icon after clean flash and first pairing  [pengus77]
-c6c225e  bluetooth: fix communication / icon after clean flash and first pairing  [pengus77]
-eee6521  Revert "telephony: URI cannot be created with negative subIds"  [DennySPb]
-685cb58  Make sensor block package list configurable [1/2]  [Hikari-no-Tenshi]
-118534b  fw/b: Add support for per app network isolation  [Sam Mortimer]
-fb69349  Add Accelerometer and Linear Acceleration sensors in blocking list  [SuperDroidBond]
-88176bb  PATCHUP: DozeSensors: only use proximity sensor if supported  [Demon000]
-c09d78b  base: Add vibration patterns from OOS [1/3]  [rituj]
-e5408c5  Bluetooth: Serialize sending sendBluetoothServiceUpCallback  [zhenchao]
-3642fd4  BT: Added bind retry logic to handle race condition in Bluetooth off/on  [Bandari Ramesh]
-40c4456  SystemUI: Make clock truly invisible  [Michael W]
-f4444cc  base: Fix NPE on some devices by checking for null client  [Pierre-Hugues Husson]
-f55442f  [BACKPORT] Config of LTE signal strength default value remove SNR  [SongFerngWang]
-b7a2731  Revert "telephony: Conditionally ignore RSSNR signal level"  [DennySPb]
-9e79e8b  SystemUI: Fix pink progress animation color in expanded Wi-Fi tile  [Arne Coucheron]
-d963e85  DO NOT MERGE: Add support to send notification from Zygote to system_server  [Jing Ji]
+a28823e  BLE: Fix NPE during start advertising  [Sravan Voleti]
+3139a8d  Fix edge case in statsd alarms  [Tej Singh]
+fe268d2  SystemUI: No PIN input dialog pop up  [sxia]
+d366fe0  RecordingActivityMonitor: remove spam from death events  [Manisha Agarwal]
+894896e  SystemUI: Reset PUK StateMachine after PUK is unlocked  [Weijie Wang]
+92bdcfd  Remove carrierconfig for emergency notification  [Sukanya Rajkhowa]
+4b81c44  SystemUI: there is unexpected SIM PIN input dialog.  [sxia]
+17ad3f8  Re-adds a trace  point that was accidentally removed.  [Chris Wailes]
+62e2557  Moved some thread priority changes.  [Chris Wailes]
+0f45151  Adjust Java Language thread priority in new processes.  [Chris Wailes]
 
-
-[* packages/apps/Etar *]
-e06e35c  Etar: Properly align preferences  [Michael W]
-bf4f066  Etar: Fix crash when opening "Quick responses"  [Michael W]
-
-
-=============
-   2020-06-17
-=============
 
 [* frameworks/native *]
-b7398f3  surfaceflinger: change usageBits type to uint64_t  [Pierre-Hugues Husson]
+cbf3c52  Remove unsafe cast in Client::createWithSurfaceParent  [Vishnu Nair]
+
+
+[* packages/services/Telephony *]
+ca74ffa  Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD  [DennySPb]
 
 
 =============
-   2020-06-16
+   2020-07-08
 =============
 
-[* art *]
-e423d9a  Add fast path for exception vreg copying.  [David Srbecky]
-4b7cd1e  Stack maps: Refactor constructors.  [David Srbecky]
-71ef4ee  Stack walk: Cache CodeInfo and StackMap for current PC.  [David Srbecky]
-04060e5  ART: Introduce stackmap with no DexRegInfo.  [Artem Serov]
-5786aab  ART: Encapsulate init-optimization fields  [Andreas Gampe]
-e0792cc  ART: Use bitset in dex file verifier  [Andreas Gampe]
-c0e327e  ART: Change unordered_set to HashSet  [Andreas Gampe]
-c6cfbac  ART: Cache type index validity  [Andreas Gampe]
-65c591e  Stack maps: Micro-optimize LoadBits  [David Srbecky]
-f64f093  Stack maps: Micro-optimize ReadInterleavedVarints  [David Srbecky]
-9a9097b  Revert^2 "Stack maps: Interleave consecutive varints."  [David Srbecky]
-a1fab55  Stack maps: Handle special cases using flags.  [David Srbecky]
-2fdf2ca  Avoid coercing to key type in SafeMap  [Alex Light]
-beebee9  Revert^2 "Improve ArraySet codegen."  [Vladimir Marko]
-a266496  ARM64: Combine LSR+ADD into ADD_shift for Int32 HDiv/HRem  [Evgeny Astigeevich]
-1d60d2d  ART: Optimize ADD/SUB+ADD_shift into ADDS/SUBS+CINC for HDiv/HRem  [Evgeny Astigeevich]
-33637ab  ARM64: Combine LSR+ASR into ASR for Int32 HDiv/HRem  [Evgeny Astigeevich]
-696ddd1  ART: Refactor InstructionCodeGeneratorARM64::GenerateDivRemWithAnyConstant  [Evgeny Astigeevich]
-37ab5c0  Add default argument kIsInstrumented=true.  [Vladimir Marko]
-7dcee37  ART: Fix some types  [Andreas Gampe]
-6ffb44a  Fix mterp assembly to use uxtw instead of lsl where needed.  [David Srbecky]
-f56125d  jni: Fix templates for clang-r377782 update.  [Yabin Cui]
-ba557c0  Fix incorrect narrowing type cast  [Yi Kong]
-dcbdfef  Add assembly support for -fsanitize=hwaddress tagged globals.  [Peter Collingbourne]
-6e8c2d3  Make the $/# in front of constants optional  [Pirama Arumuga Nainar]
-71a4972  Remove MIPS support from JNI/trampoline compiler.  [Vladimir Marko]
-47259b4  Move @CriticalNative arguments in registers.  [Vladimir Marko]
-aff60d7  Move entry spills determination to JNI compiler.  [Vladimir Marko]
-34692da  jni: Do not create a managed frame for @CriticalNative.  [Vladimir Marko]
-32b5470  Reduce cache memory use of libdexfile.  [David Srbecky]
-df3678e  dex2oat: Fix repeatedly preparing dex files for oat file  [wulonghua]
-99736ec  Avoid dex2dex initialization if not compiling.  [Vladimir Marko]
-d49fca0  constify JNINativeMethod tables  [Daniel Micay]
-07c0f9a  Enable support of VecLoad/VecStore in LSE  [xueliang.zhong]
-051dcd0  Utilize partially used TLABs  [Lokesh Gidra]
-4ac5544  ARM64: FP16 greater/less/greaterEquals/lessEquals intrinsics for ARMv8  [Usama Arif]
-011ffb8  ARM64: FP16.rint() intrinsic for ARMv8  [Usama Arif]
-94a2e5b  ARM64: FP16.ceil() intrinsic for ARMv8  [Usama Arif]
-57333ce  ARM64: FP16.floor() intrinsic for ARMv8  [Usama Arif]
-b4b41c1  ARM64: Pass simd half floating point feature to VIXL macroassembler.  [Usama Arif]
-7c5cffb  ARM: Remove unnecessary kCoreAlwaysSpillRegister.  [Vladimir Marko]
-ec80518  Remove ShadowFrame::HasReferenceArray()  [David Srbecky]
-8e62ca5  ARM/ARM64: Use trampolines for slow-path entrypoint calls.  [Vladimir Marko]
-63b63c2  ARM64: Improve BoundsCheck for constant inputs.  [Georgia Kouveli]
-8437e3c  ART: ARM64: Optimize frame size for SIMD graphs.  [Artem Serov]
-1e98e73  ART: ARM64: Fix saved fpu stack offsets for SIMD.  [Artem Serov]
-f9a441a  ARM/ARM64: Improve frame entry/exit codegen.  [Vladimir Marko]
-56aa1c4  [optimizing] Improve constant folding on logical and  [Balaram Makam]
-8a12ad9  ART: Preallocate offset map  [Andreas Gampe]
-2b9897f  Fix intersecting live ranges created by instruction scheduler  [Evgeny Astigeevich]
-b1c2f9b  ART: Refactor SchedulingGraph for consistency and clarity  [Evgeny Astigeevich]
-22a3209  Optimize stack maps: add fast path for no inline info.  [David Srbecky]
-7fad1d6  Optimize stack map decoding.  [David Srbecky]
-f7b87a7  ART: Improve VisitStringGetCharsNoCheck intrinsic for compressed strings, using SIMD  [David Horstmann]
-479b76b  Revert^2 "ARM64: toHalf() intrinsic for ARMv8"  [Vladimir Marko]
-ff22447  ARM64: toFloat() intrinsics with ARMv8 FP16.  [xueliang.zhong]
-dc80ac8  ART: Optimize StringBuilder append pattern.  [Vladimir Marko]
-5651976  ART: Mark StringBuilder.append()s as intrinsics.  [Vladimir Marko]
-02782c9  Allow disabling apex test module  [Chris Crump]
-a1e7bd0  Revert "ART: Add version check for memfd_create()"  [Nicholas Lim]
-462e565  Add an option to disable sse4.2 features  [Luca Stefani]
-4e8517a  libartbase: Check kernel support for membarrier(2)  [Wang Han]
-bbacc7a  art: extend the supported cpu_variant list for arm64  [Wei Wang]
-
-
-[* frameworks/opt/telephony *]
-505bf08  Avoid SubscriptionManager#getUriForSubscriptionId calls with invalid subIds  [Bruno Martins]
-6066518  Remove setIsoCountryProperty method along with partially dead code  [Bruno Martins]
-
-
-[* packages/apps/Settings *]
-c411a30  Settings: Add support for per app network isolation  [Sam Mortimer]
-
-
-[* packages/apps/SyberiaSettings *]
-55a976e  Make sensor block package list configurable [2/2]  [Hikari-no-Tenshi]
-
-
-[* system/netd *]
-96183c1  netd: restrict DNS names  [Eric Chang]
-f21044b  Netd: Add support for quotaReachedAlert event  [Pavan Kumar M]
-9818066  system/netd: Add support for per app network isolation  [Sam Mortimer]
-
+=============
+   2020-07-07
+=============
 
 =============
-   2020-06-15
+   2020-07-06
 =============
 
