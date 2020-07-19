@@ -1,0 +1,17 @@
+{
+  "response": [
+    {
+      "url": "https://sourceforge.net/projects/syberiaos/files/riva/syberia_riva-v3.8-20200719-1320-OFFICIAL.zip/download", 
+      "device_model": "Redmi 5A", 
+      "filename": "syberia_riva-v3.8-20200719-1320-OFFICIAL.zip", 
+      "device_codename": "riva", 
+      "romtype": "OFFICIAL", 
+      "version": "v3.8", 
+      "device_brand": "Xiaomi", 
+      "developer": "erwinabs", 
+      "datetime": 1595164800, 
+      "id": "6051e7a0953ee1f2cac7d3c627917352178fc45e93fa79d39a918b2e6489765a", 
+      "size": "626670825"
+    }
+  ]
+}

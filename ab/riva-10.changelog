@@ -1,0 +1,51 @@
+=============
+   2020-07-19
+=============
+
+=============
+   2020-07-18
+=============
+
+=============
+   2020-07-17
+=============
+
+[* frameworks/base *]
+efc34a9  Lockscreen timeout: Make timeout configurable  [Alex Cruz]
+
+
+[* vendor/syberia *]
+d88bd4c  Add riva to official devices  [blinoff82]
+
+
+=============
+   2020-07-16
+=============
+
+=============
+   2020-07-15
+=============
+
+[* frameworks/base *]
+3bfc997  SystemUI: Use only 18px size icon for notification count  [Ido Ben-Hur]
+e139805  Show infinity for large notification counts  [d34d]
+85565b0  SystemUI: Forward-port notification counters [1/2]  [Steve Kondik]
+
+
+[* packages/apps/Settings *]
+56f9ebc  Lockscreen timeout: Add settings part  [Alex Cruz]
+31ae53c  team: Add maintainer for riva  [blinoff82]
+
+
+[* vendor/syberia *]
+0c7fcf0  syberia: update GMS updater component disable list  [Oliver Scott]
+
+
+=============
+   2020-07-14
+=============
+
+=============
+   2020-07-13
+=============
+
