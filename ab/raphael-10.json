@@ -1,17 +1,17 @@
 {
   "response": [
     {
-      "url": "https://sourceforge.net/projects/syberiaos/files/raphael/syberia_raphael-v3.8-20200711-1520-OFFICIAL.zip/download", 
+      "url": "https://sourceforge.net/projects/syberiaos/files/raphael/syberia_raphael-v3.8-20200726-1142-OFFICIAL.zip/download", 
       "device_model": "Redmi K20 Pro", 
-      "filename": "syberia_raphael-v3.8-20200711-1520-OFFICIAL.zip", 
+      "filename": "syberia_raphael-v3.8-20200726-1142-OFFICIAL.zip", 
       "device_codename": "raphael", 
       "romtype": "OFFICIAL", 
       "version": "v3.8", 
       "device_brand": "Xiaomi", 
       "developer": "NATO666613", 
-      "datetime": 1594480730, 
-      "id": "6229ffb9e607764ea6ede2426da50f39f9f8162872fa67e37eb7c1f0ad925f17", 
-      "size": "909514956"
+      "datetime": 1595763763, 
+      "id": "9520191ee39b02a5f3ba2a54fa71f624c2c6d4d715ada9b034b51e40109922b1", 
+      "size": "909624753"
     }
   ]
 }

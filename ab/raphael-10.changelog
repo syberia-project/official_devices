@@ -1,144 +1,229 @@
 =============
-   2020-07-11
+   2020-07-26
 =============
 
-[* device/xiaomi/raphael *]
-18e1ddf  raphael: Address selinux denials  [rituj]
-666e22d  raphael: Adjust brightness nits for index 1  [TheScarastic]
-
-
-=============
-   2020-07-10
-=============
-
-[* art *]
-add0720  Increase kNotifyNativeInterval on host  [Hans Boehm]
-
-
-[* device/xiaomi/raphael *]
-3080610  raphael: Enable fluence voice recording  [Akash]
-ef5781d  raphael: Update Listen blobs to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
-8135181  raphael: Update Time blobs to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
-906658b  raphael: Update perf blobs to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
-3f563e8  raphael: Update Pasrmanager to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
-b5724be  raphael: Update media blobs to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
-30bae54  raphael: Update keymaster to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
-bce36f6  raphael: Update GPS blobs to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
-a9a5f0d  raphael: Update CDSP blobs to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
-af0046c  raphael: Update adreno blobs to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
-
-
-[* frameworks/base *]
-146908d  TextClock: Fix Korean strings(2)  [carpe462]
-c0cfa2d  base: overlays: Add new icon shapes from Android R  [Andrew Thomas]
-29be14e  Add rounded hexagon icon overlay  [Pranav Vashi]
-639164e  Fix typos related to sortSelectionIndices  [Wang Han]
-34324dc  Fix app crash if the selection is from reverse direction.  [Joanne Chung]
-9c0f29c  BT: Always update service object in BluetoothDevice Class  [Srinu Jella]
-7acfe95  Avoid potential fd leaks from jniCreateFileDescriptor (2/2)  [Orion Hodson]
-c4fb59f  Avoid potential fd leak from jniCreateFileDescriptor (1/2)  [Orion Hodson]
-9646488  API changes due to importing RI BigInteger  [Hans Boehm]
-32b1d0d  Move battery icon to QS header  [00day0]
-abb1cff  Add three more selectable VoWiFi icons [1/2]  [blinoff82]
-
-
-[* libcore *]
-f1ec023  Revert^2 "Avoid fd leaks when jniCreateFileDescriptor encounters OOME"  [Orion Hodson]
-908e2a5  Reduce unnecessary get operations  [Plain]
-ef58a17  Switch to OpenJDK 8 java/math  [Hans Boehm]
-f8f27db  Pass in callsite of SurfaceControl constructor explicitly (2/3)  [Jorim Jaggi]
-2e9cd78  Support convert string similar to FE87-9640 to UUID  [linzj1]
-
-
-[* packages/apps/Dialer *]
-5996359  Fix theme for PostCallActivity  [Sungjae]
-d1c47c3  Dialer: Fix proto warning with optmize for lite  [Luca Stefani]
-9107b6c  Fix translation of 'contacts' tab title and main menu.  [Danny Baumann]
-8696b62  Dialer: Use a DayNight launch theme  [Scott Warner]
-
-
-[* packages/apps/Settings *]
-e08d3dd  Automatic translation import  [DennySPb]
-
-
-[* packages/apps/SyberiaSettings *]
-9ba5ee5  Automatic translation import  [DennySPb]
-02f48ca  Merge "Add three more selectable VoWiFi icons [2/2]" into 10.0  [dennyspb]
-
-
-[* vendor/xiaomi/raphael *]
-ea43ea1  raphael: Update Listen blobs to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
-4c7646c  raphael: Update Time blobs to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
-6439a4d  raphael: Update Perf blobs to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
-ac75428  raphael: Update Pasrmanager to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
-bbd4271  raphael: Update Media blobs to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
-1db5985  raphael: Update keymaster to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
-55736cc  raphael: Update GPS blobs to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
-c7b0e59  raphael: Update CDSP blobs to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
-99aa9ce  raphael: Update adreno blobs to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
-e797ca8  raphael: import CNE configs from stock  [kondors1995]
-f4c4624  raphael: update blobs from raphael-user-10-QKQ1.190825.002-V12.0.2.0.QFKCNXM-release-keys  [kondors1995]
-
-
-=============
-   2020-07-09
-=============
-
-[* art *]
-71465c8  ARM: Optimize Div/Rem by positive const for non-negative dividends  [Evgeny Astigeevich]
-fb3fa91  ARM: Optimize Div/Rem by 2^n for non-negative dividends  [Evgeny Astigeevich]
-
-
-[* build/make *]
-6d597bb  Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
-
-
-[* device/xiaomi/raphael *]
-000c775  raphael: Cleanup LMKD setup  [kondors1995]
-
-
-[* frameworks/base *]
-a28823e  BLE: Fix NPE during start advertising  [Sravan Voleti]
-3139a8d  Fix edge case in statsd alarms  [Tej Singh]
-fe268d2  SystemUI: No PIN input dialog pop up  [sxia]
-d366fe0  RecordingActivityMonitor: remove spam from death events  [Manisha Agarwal]
-894896e  SystemUI: Reset PUK StateMachine after PUK is unlocked  [Weijie Wang]
-92bdcfd  Remove carrierconfig for emergency notification  [Sukanya Rajkhowa]
-4b81c44  SystemUI: there is unexpected SIM PIN input dialog.  [sxia]
-17ad3f8  Re-adds a trace  point that was accidentally removed.  [Chris Wailes]
-62e2557  Moved some thread priority changes.  [Chris Wailes]
-0f45151  Adjust Java Language thread priority in new processes.  [Chris Wailes]
-
-
-[* frameworks/native *]
-cbf3c52  Remove unsafe cast in Client::createWithSurfaceParent  [Vishnu Nair]
-
-
-[* packages/services/Telephony *]
-ca74ffa  Merge tag 'android-10.0.0_r40' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD  [DennySPb]
-
-
-=============
-   2020-07-08
-=============
-
-=============
-   2020-07-07
-=============
-
-=============
-   2020-07-06
-=============
-
-=============
-   2020-07-05
-=============
-
-[* packages/apps/SyberiaSettings *]
-767f3c7  SyberiaSettings: Add Default USB Configuration switch  [ZeNiXxX]
+[* kernel/xiaomi/sm8150 *]
+f248924  arm64: vdso32: Fix '--prefix=' value for newer versions of clang  [Nathan Chancellor]
+bc9130a  vdso32: Invoke clang with correct path to GCC toolchain  [Daniel Mentz]
+827c0d3  Revert "ANDROID: arm64: vdso32: fix CC=clang build"  [Danny Lin]
+fd01c4c  Revert "vdso32: Invoke clang with correct path to GCC toolchain"  [kondors1995]
+4a24639  Makefile: Fix GCC_TOOLCHAIN_DIR prefix for Clang cross compilation  [Fangrui Song]
 
 
 [* prebuilts/clang/host/linux-x86/clang-11 *]
-ce095cc  Update to 20200704 build  [Danny]
+a819e2f  readme: Document solutions for some common problems  [Danny Lin]
+fa815f5  Update to 20200725 build  [Danny]
 
+
+=============
+   2020-07-25
+=============
+
+[* device/xiaomi/raphael *]
+dbbac35  raphael: pin some libs that are missing in MIUI 12  [kondors1995]
+93a23f5  raphael:init: Use raphael code name for all regions  [kondors1995]
+bd72af6  raphael: Update GPS blobs to LA.UM.8.9.r1-07100-SM6xx.0  [Akash]
+093f6e1  raphael: Update GPS Hal to LA.UM.8.9.r1-09300-SM6xx.0  [Akash]
+49a4be7  raphael: Enable hapticTextHandle  [Akash]
+8729fed  raphael: Use stock vibration pattern  [Akash]
+0349675  raphael: bluetooth: Enable WBS  [1582130940]
+7570cf4  raphael: Switch back to stock Pasrmanager  [Akash Srivastava]
+13cd18a  raphael: Remove useless GPU flag  [Jake Weinstein]
+fb4aa2e  raphael: Disable GL comp backpressure  [Han Wang]
+
+
+[* frameworks/base *]
+14e462f  Merge "QSDetail: add missing end padding in header" into 10.0  [blinov.in]
+0d196b8  Merge "KeyguardIndication: fix fc for certain devices on lockscreen charging info" into 10.0  [blinov.in]
+4658891  Automatic translation import  [DennySPb]
+
+
+[* hardware/qcom/audio-caf/sm8150 *]
+e4c4806  Merge tag 'LA.UM.8.1.r1-15100-sm8150.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into 10.0-8150  [kondors1995]
+
+
+[* kernel/xiaomi/sm8150 *]
+5f4bacd  Merge branch 'yaro-upstream' into 10.0  [kondors1995]
+d8ab842  Revert "msm: sde: fix a few mismerges"  [kondors1995]
+d073d68  Revert "Revert "drm/msm/dsi-staging: handle panel init failure properly""  [kondors1995]
+7dc6d28  Revert "FIXUP: 76deb8e5d7e10eec1bfbf7a4177677a4fa67cf59: sde: fix a mismerge"  [kondors1995]
+
+
+[* packages/apps/Settings *]
+de47b7a  team: Mido's maintainer is gone  [blinoff82]
+cf02312  Automatic translation import  [DennySPb]
+
+
+[* packages/apps/SyberiaSettings *]
+199a475  Automatic translation import  [DennySPb]
+
+
+[* packages/services/Telephony *]
+dfa0fba  Conditionally ship qti Sim Settings  [DennySPb]
+
+
+[* vendor/syberia *]
+b5f7d5a  devices: Drop mido  [blinoff82]
+
+
+=============
+   2020-07-24
+=============
+
+[* device/xiaomi/raphael *]
+e30eb95  raphael: Build netd from source  [theimpulson]
+3565afc  raphael: Add AOSP RCS packages  [Ethan Chen]
+741bc04  raphael: Remove dead RCS packages  [Ethan Chen]
+2adae35  raphael: Disable VSync for CPU rendered apps  [Hazari PraveenKumar]
+4eab05e  raphael: Enable bss_no_flush  [Akash]
+831b2fc  raphael: Update GPS Hal to LA.UM.8.1.r1-15400-sm8150.0  [Akash Srivastava]
+9f36359  raphael: Update GPS configs to MIUI 12  [Akash Srivastava]
+12822da  raphael: Add Qcom bluetooth boardflag  [Akash Srivastava]
+352c2c5  raphael: Switch to QTI bluetooth stack  [dianlujitao]
+6c11a3f  raphael: Build vendor.qti.hardware.btconfigstore@1.0 from source  [PIPIPIG233666]
+e06dc84  raphael: BT: Enable use of QTI stack on the device  [Gurpreet Ghai]
+3cd63de  raphael: bluetooth: Fix undefined PROPERTY_VALUE_MAX  [dianlujitao]
+7391c2a  raphael: Fix path to SystemUI.apk for pinner service  [razorloves]
+3cce6b9  raphael: remove TARGET_USES_64_BIT_BINDER  [Kilian von Pflugk]
+7b8f45c  raphael: Address selinux denials  [rituj]
+a9e901a  raphael: Adjust brightness nits for index 1  [TheScarastic]
+45070ab  raphael: Enable fluence voice recording  [Akash]
+cf4e0fa  raphael: Update Listen blobs to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
+e8ee900  raphael: Update Time blobs to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
+d4fabd4  raphael: Update perf blobs to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
+5c087e6  raphael: Update Pasrmanager to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
+8b3d0e4  raphael: Update media blobs to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
+9033603  raphael: Update keymaster to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
+2fa34b1  raphael: Update GPS blobs to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
+9cba763  raphael: Update CDSP blobs to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
+907005f  raphael: Update adreno blobs to LA.UM.8.1.r1-15100-sm8150.0  [Akash]
+4ecb3b6  raphael: Cleanup LMKD setup  [kondors1995]
+fc24c2e  raphael:Add CNE configs from stock  [kondors1995]
+b5f3dad  raphael: pin display calibration to miui 11.0.8.0  [kondors1995]
+3c093fc  raphael:rootdir: Add macro to configurate UX cgroups  [RenderBroken]
+
+
+[* frameworks/base *]
+c79d262  SystemUI: Fix multiple issues with hiding unprovisioned SIMs  [LuK1337]
+d36c9d7  StatusBarSignalPolicy: Hide signal icons for disabled SIMs  [Paul Keith]
+
+
+[* kernel/xiaomi/sm8150 *]
+dd25912  proc: cmdline: Patch vbmeta device state flag for SafetyNet  [Danny Lin]
+
+
+[* packages/apps/Settings *]
+d60f69a  Telephony(MSIM): Add SIM Cards menu option  [Sandeep Gutta]
+a94b349  Telephony(MSIM): Disable user selection pop-up  [Sandeep Gutta]
+
+
+[* vendor/xiaomi/raphael *]
+13ad740  Merge remote-tracking branch 'mark/ten' into 10.0  [kondors1995]
+9b1065e  raphael: Update GPS blobs to LA.UM.8.9.r1-07100-SM6xx.0  [Akash]
+
+
+=============
+   2020-07-23
+=============
+
+[* art *]
+1afdddc  Switch-interpreter: Add new 'next' instruction field.  [David Srbecky]
+8bbe5d4  Switch-interpreter: Reduce copy-pasted code in array handling.  [David Srbecky]
+afb9f66  Switch-interpreter: Reduce amount of copy-pasted code.  [David Srbecky]
+bed984c  Switch-interpreter: Add boolean return value to opcodes.  [David Srbecky]
+5feb825  Switch-interpreter: Add GetVReg/SetVReg forwarding helpers.  [David Srbecky]
+6fee98b  Switch-interpreter: Use more helpers for opcode arguments.  [David Srbecky]
+3abf4d3  Switch-interpreter: Add helpers to get opcode arguments.  [David Srbecky]
+30cf2c7  ART: Fix exception stash in stack dump  [Andreas Gampe]
+fd14be1  Revert "ARM64: Move from FPRegister to VRegister based API"  [DennySPb]
+434a1da  Clean up JNI dlsym lookup trampoline.  [Vladimir Marko]
+b713647  ObjPtr<>-ify instrumentation.  [Vladimir Marko]
+2873861  Make .bss stores atomic release operations.  [Vladimir Marko]
+40d192e  Refactor oat.h.  [Vladimir Marko]
+5a4aba6  Fix uses of MaybeRecordImplicitNullCheck without special scopes  [Evgeny Astigeevich]
+702d114  ARM64: Move from FPRegister to VRegister based API  [Evgeny Astigeevich]
+aa1108c  ART: Use memoization for type id table check  [Andreas Gampe]
+80caac4  Avoid NanoTime in InitializeClass unless stats are enabled  [Mathieu Chartier]
+ef96886  ART: Correctly exclude super-init times in classlinker  [Andreas Gampe]
+a082d7a  ARM64: Change code emitted by ClinitCheck.  [Vladimir Marko]
+2620c97  Use ClassStatus::kVisiblyInitialized in reflection.  [Vladimir Marko]
+24e00bb  Use ClassStatus::kVisiblyInitialized in interpreter.  [Vladimir Marko]
+755794c  Make classes visibly initialized faster.  [Vladimir Marko]
+74384b7  Use ClassStatus::kVisiblyInitialized for allocations.  [Vladimir Marko]
+c2f4d8e  Do not hold lock when making class visibly initialized.  [Vladimir Marko]
+71ba772  Implement ClassStatus::kVisiblyInitialized.  [Vladimir Marko]
+8e1b53a  Move IntrusiveForwardList<> to libartbase.  [Vladimir Marko]
+1652e0e  Initialize array classes in pre-fence visitor.  [Vladimir Marko]
+d4af2d8  Add default template args to Heap::Alloc*Object*().  [Vladimir Marko]
+0cd9a5a  Only start timer in IncrementDisableThreadFlip when waiting  [Eric Holk]
+19358cb  ART: ARM64: Improve FP IsInfinity intrinsic.  [Artem Serov]
+
+
+[* frameworks/av *]
+b5862db  Finer synchronization for nuplayer stats  [Ray Essick]
+
+
+[* frameworks/base *]
+10d2a85  Fix color mismatch of pointers  [xuejianbao]
+ec21886  Merge "Replace direct pid writes with setting task profiles" into 10.0  [dennyspb]
+ce6d8c7  SystemUI: VolumePanel: Version 1.1  [rituj]
+ee41b4f  SystemUI: Use different drawables for notification volume  [Anushek Prasal]
+6cdbb91  Add requiredSystemPropertyValue support in idmap2  [Gabriel Siqueira]
+cecea55  Merge "StateMachine: check for null curState in dump()" into 10.0  [dennyspb]
+a0d0552  Replace direct pid writes with setting task profiles  [Suren Baghdasaryan]
+
+
+[* kernel/xiaomi/sm8150 *]
+c580862  ion: system_heap: fix a constant-conversion warning  [Yaroslav Furman]
+6b9fbd7  raphael_defconfig: Make Ion allocate in page-sized chunks  [Sultan Alsawaf]
+
+
+[* libcore *]
+388639e  Make System.nanoTime and currentTimeMillis critical native.  [Pete Bentley]
+1f5428c  Make System.nanoTime and currentTimeMillis CriticalNative.  [Pete Bentley]
+
+
+[* packages/apps/Dialer *]
+268b58f  Revert night mode theming  [blinoff82]
+
+
+[* packages/apps/Settings *]
+65175e4  Settings: Change kernel preference behavior  [Alex]
+9dfdaaf  Settings: Show full proc/version information  [xoomdev]
+7532866  Settings: Use same icons for sliders as fw_base  [Anushek Prasal]
+41f5731  team: cepheus: new maintainer  [blinoff82]
+
+
+[* vendor/syberia *]
+4c4f4cb  Merge changes If4f1b12b,Icafc3450,I4b44ce88 into 10.0  [dennyspb]
+487b844  New maintainer for cepheus  [blinoff82]
+
+
+=============
+   2020-07-22
+=============
+
+=============
+   2020-07-21
+=============
+
+[* kernel/xiaomi/sm8150 *]
+6c0f123  arm64: dts: sm8150-v2: optimize throttling presets  [Yaroslav Furman]
+88944c2  msm: thermal: simple: optimize battery temperature accounting  [Yaroslav Furman]
+f436e7f  techpack: shut the fuck up  [Yaroslav Furman]
+e76872e  techpack: silence some more debugging  [Yaroslav Furman]
+6e6c0bb  drivers: thermal_core: add sysfs nodes to silence mi_thermald  [Yaroslav Furman]
+7352d77  techpack: q6asm: stfu  [Yaroslav Furman]
+7edd3b3  techpack: Fix uninitialized header usage  [Sultan Alsawaf]
+7d8eef2  techpack: compile out elliptic garbage  [Yaroslav Furman]
+98780bf  techpack: checkout to https://github.com/UtsavBalar1231/kernel_xiaomi_raphael/commit/bb56551c339e6baae139f0c707aa6eaacbdc5577  [Yaroslav Furman]
+
+
+[* vendor/xiaomi/raphael *]
+231db41  raphael: Downgrade Pasrmanager blobs to MIUI 12  [Akash]
+
+
+=============
+   2020-07-20
+=============
 
