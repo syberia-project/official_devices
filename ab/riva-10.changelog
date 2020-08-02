@@ -1,51 +1,54 @@
 =============
-   2020-07-19
+   2020-08-02
 =============
 
 =============
-   2020-07-18
+   2020-08-01
 =============
 
 =============
-   2020-07-17
-=============
-
-[* frameworks/base *]
-efc34a9  Lockscreen timeout: Make timeout configurable  [Alex Cruz]
-
-
-[* vendor/syberia *]
-d88bd4c  Add riva to official devices  [blinoff82]
-
-
-=============
-   2020-07-16
+   2020-07-31
 =============
 
 =============
-   2020-07-15
+   2020-07-30
 =============
 
-[* frameworks/base *]
-3bfc997  SystemUI: Use only 18px size icon for notification count  [Ido Ben-Hur]
-e139805  Show infinity for large notification counts  [d34d]
-85565b0  SystemUI: Forward-port notification counters [1/2]  [Steve Kondik]
-
-
-[* packages/apps/Settings *]
-56f9ebc  Lockscreen timeout: Add settings part  [Alex Cruz]
-31ae53c  team: Add maintainer for riva  [blinoff82]
-
-
-[* vendor/syberia *]
-0c7fcf0  syberia: update GMS updater component disable list  [Oliver Scott]
+[* hardware/lineage/livedisplay *]
+ce63fc9  livedisplay: sysfs: Add generic implementation for simple sysfs modes  [dianlujitao]
+b8ca32c  livedisplay: sysfs: Modularize all components  [dianlujitao]
+22462db  livedisplay: sysfs: Refine interface registration  [dianlujitao]
+8a01e72  livedisplay: sysfs: Miscellaneous clean-ups  [dianlujitao]
+d0580f3  livedisplay: sysfs: Use POSIX api to check file access  [dianlujitao]
+b1a97e0  livedisplay: sysfs: Move string literals to anonymous namespace  [dianlujitao]
+8888a4b  livedisplay: sysfs: Follow naming rules of Google C++ Style Guide  [dianlujitao]
+44e1a1f  livedisplay: sdm: Modularize all components  [dianlujitao]
+5e27e56  livedisplay: sdm: Fix a mismatched data type  [dianlujitao]
+4afd662  livedisplay: sdm: Miscellaneous clean-ups  [dianlujitao]
+5c154dc  livedisplay: sdm: Improve SendDppsCommand  [dianlujitao]
+bb5ff4a  livedisplay: sdm: Move constants and helpers to anonymous namespace  [dianlujitao]
+b8a246a  livedisplay: sdm: Move SDM feature version check to utils  [dianlujitao]
+39b8735  livedisplay: sdm: Convert Utils class to namespace  [dianlujitao]
+07e4ea4  livedisplay: sdm: Use default member initializers  [dianlujitao]
+143150e  livedisplay: sdm: Follow naming rules of Google C++ Style Guide  [dianlujitao]
+9d5a9c9  livedisplay: sdm: Implement a sane callback to update default PA  [dianlujitao]
+a15a1f3  livedisplay: sdm: Restart when any QDCM backend not ready  [dianlujitao]
+7468c41  livedisplay: sdm: Use RAII semantics where possible  [dianlujitao]
 
 
 =============
-   2020-07-14
+   2020-07-29
 =============
 
 =============
-   2020-07-13
+   2020-07-28
+=============
+
+[* system/memory/lmkd *]
+5410bc5  Merge branch 'master' of https://android.googlesource.com/platform/system/memory/lmkd  [DennySPb]
+
+
+=============
+   2020-07-27
 =============
 
