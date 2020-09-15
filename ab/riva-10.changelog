@@ -1,54 +1,254 @@
 =============
-   2020-08-02
+   2020-09-13
 =============
 
-=============
-   2020-08-01
-=============
-
-=============
-   2020-07-31
-=============
-
-=============
-   2020-07-30
-=============
-
-[* hardware/lineage/livedisplay *]
-ce63fc9  livedisplay: sysfs: Add generic implementation for simple sysfs modes  [dianlujitao]
-b8ca32c  livedisplay: sysfs: Modularize all components  [dianlujitao]
-22462db  livedisplay: sysfs: Refine interface registration  [dianlujitao]
-8a01e72  livedisplay: sysfs: Miscellaneous clean-ups  [dianlujitao]
-d0580f3  livedisplay: sysfs: Use POSIX api to check file access  [dianlujitao]
-b1a97e0  livedisplay: sysfs: Move string literals to anonymous namespace  [dianlujitao]
-8888a4b  livedisplay: sysfs: Follow naming rules of Google C++ Style Guide  [dianlujitao]
-44e1a1f  livedisplay: sdm: Modularize all components  [dianlujitao]
-5e27e56  livedisplay: sdm: Fix a mismatched data type  [dianlujitao]
-4afd662  livedisplay: sdm: Miscellaneous clean-ups  [dianlujitao]
-5c154dc  livedisplay: sdm: Improve SendDppsCommand  [dianlujitao]
-bb5ff4a  livedisplay: sdm: Move constants and helpers to anonymous namespace  [dianlujitao]
-b8a246a  livedisplay: sdm: Move SDM feature version check to utils  [dianlujitao]
-39b8735  livedisplay: sdm: Convert Utils class to namespace  [dianlujitao]
-07e4ea4  livedisplay: sdm: Use default member initializers  [dianlujitao]
-143150e  livedisplay: sdm: Follow naming rules of Google C++ Style Guide  [dianlujitao]
-9d5a9c9  livedisplay: sdm: Implement a sane callback to update default PA  [dianlujitao]
-a15a1f3  livedisplay: sdm: Restart when any QDCM backend not ready  [dianlujitao]
-7468c41  livedisplay: sdm: Use RAII semantics where possible  [dianlujitao]
+[* device/xiaomi/riva *]
+ba7c81b  riva: Move creation of persist directories into qcom rc file  [SunnyRaj84348]
+412639d  riva: add vendor to console config property  [Prateek Sood]
+52257cc  riva: IMS: Filter out the conference host in the CEP for some carriers  [Zhao Fan]
+acc27d8  riva: IMS: Enable IMS feature flags for supported carriers  [pengfeix]
+09aeb38  riva: drop livedisplay los  [erwinabs]
+47c1945  riva: overlay: Enable VoLTE for Smartfren Indonesia  [Rizky Benggolo]
+9087730  riva: overlay: Enable VoLTE for Viettel Vietname  [Dyneteve]
+f2e5f28  riva: Enable Smooth Streaming for secure video playback  [Shalaj Jain]
+198ab80  riva: overlay: Inflate signal strength  [Rahul Krishna]
+69dfbcd  riva: Workaround VoLTE SIM Slot switching issue  [ZeeLog]
+c7d5edd  riva: overlay: telephony: Implementation of IWLAN  [Sukanya Rajkhowa]
+816cff6  riva: add IWLAN assist to manifest  [darkbeast69]
+7a7cfad  riva: Enable IWLAN overlays  [Alexander Koskovich]
+6d4d4ae  riva: add props for iwlan  [Nick]
+faacf31  riva: post_boot: updating post_boot for <=2 GB devices  [Divyanand Rangu]
+539c762  riva: init.qcom.early_boot.sh: enable memory hotplug  [Jiacheng Zheng]
+5ae5b73  riva : post_boot: Ensure SLAB_STORE_USER is disabled for zram kmem_caches  [Patrick Daly]
+ba686a2  riva: update rootdir  [erwinabs]
+0f6472d  riva: Import SnapdragonCamera  [Thagoo]
+27c3a20  riva: sepolicy: Address FPS Info denial  [erwinabs]
+2b90537  rica: overlay: SystemUI: Increase system_icon_area weight  [SKULSHADY]
+c1f19f2  riva : Update the default network mode to T/L/G/W/1x/Evdo on both sub.  [qiongz]
+5523855  riva: wifi: Reduce battery drain  [SubhrajyotiSen]
+5fc2b95  riva: Removing unused setprop persist.camera.gyro.disable  [Amit Kushwaha]
+601cc88  riva: Disable NearbyMessagingService  [Michael W]
+e2a82f5  riva: Disable DiscoveryService  [Michael W]
+99989ff  riva: overlay: Ignore RSSNR signal level  [Henrique Silva]
 
 
-=============
-   2020-07-29
-=============
-
-=============
-   2020-07-28
-=============
-
-[* system/memory/lmkd *]
-5410bc5  Merge branch 'master' of https://android.googlesource.com/platform/system/memory/lmkd  [DennySPb]
+[* frameworks/native *]
+7c9cfb9  Revert "Merge tag 'LA.UM.8.12.c3-12900-sm8250.0' of https://source.codeaurora.org/quic/la/platform/frameworks/native into HEAD"  [kondors1995]
+3bbdea4  Revert "Merge tag 'LA.UM.8.3.r1-08500-sdm845.0' of https://source.codeaurora.org/quic/la/platform/frameworks/native into HEAD"  [kondors1995]
 
 
 =============
-   2020-07-27
+   2020-09-12
 =============
+
+[* packages/apps/Etar *]
+f2e6416  Automatic translation import  [LineageOS Builder]
+
+
+=============
+   2020-09-11
+=============
+
+[* external/asus/stichimage *]
+6771881  StitchImage: use accent for buttons  [El Dainosor]
+f5d11a3  StitchImage: Make it system friendly  [El Dainosor]
+
+
+[* external/libjpeg-turbo *]
+cb2ff34  Implement fast DCT using Arm NEON intrinsics  [Jonathan Wright]
+8c52691  Specify 16-byte alignment for assembly functions  [Jonathan Wright]
+
+
+=============
+   2020-09-10
+=============
+
+[* build/make *]
+dea4102  Fix year in security patch  [DennySPb]
+0072051  Update Security String to 2019-09-05 Bug: 137199979 (cherry picked from commit ac6e24e5b1885981dfbc2297646aac9e29c37060)  [Elisa Pascual Trevino]
+
+
+[* external/selinux *]
+8c1c527  Don't require seinfo for privapps  [Ashwini Oruganti]
+
+
+[* external/sonivox *]
+536a5d4  Check data consistency in mdls parsing  [Harish Mahendrakar]
+
+
+[* frameworks/av *]
+7591f7c  mediaplayerservice: alleviate a/v sync issue at starting  [Jiajia Cong]
+8ecf025  AudioFlinger: fix fast capture silence  [Eric Laurent]
+a69942d  Delete an uninitialized object in AACExtractor  [Chuangjie Xia]
+522b9c8  clearkey hidl: fix oob read in decrypt  [Robert Shih]
+45a25f3  audio policy: fix regression in USB audio  [Eric Laurent]
+
+
+[* frameworks/base *]
+f8d06a4  PocketLock: fix flickering on animations  [jhenrique09]
+2834a75  Revert "PocketLock: Remove animations"  [DennySPb]
+68bc567  Automatic translation import  [DennySPb]
+e1681a7  Mark implicit PendingIntents as immutable  [Steve Elliott]
+9e61481  DO NOT MERGE: Remove unused intent in NiNotification  [Yu-Han Yang]
+7340091  Add missing isShellUser check  [John Reck]
+064323e  Do not set referrerUri on SessionInfo for non-owners  [Patrick Baumann]
+167d083  Tests no screenshot is copied when user consent timed out  [Rhed Jao]
+1f37e24  Revert "Ignores protected broadcasts if not priv-app"  [Winson Chiu]
+896ec27  Make view intent immutable  [Beth Thibodeau]
+40d5e20  Remove unused intent in NFW notification  [Yu-Han Yang]
+4885897  Only autoVerify at install for new hosts  [Christopher Tate]
+0c38385  DO NOT MERGE: Verify INSTALL_PACKAGES permissions when adding installer package  [Winson]
+d821fdc  Revert "Revoke 'always' web handler status when not autoverifying"  [Chris Tate]
+f045b18  Merge changes from topic "Screen off fod" into 10.0  [dennyspb]
+
+
+[* frameworks/native *]
+0442aad  Call Layer::getLayerDebugInfo from the main thread  [Vishnu Nair]
+8e56483  Copy Screenshot to fd if and only if user consent approved  [Abhijeet Kaur]
+
+
+[* frameworks/opt/net/wifi *]
+1cbc121  [Passpoint] Remove R2 broadcasts  [Hai Shalom]
+
+
+[* frameworks/opt/telephony *]
+799aaff  Add package checking with Uid in EuiccController#getEid  [Shuo Qian]
+b1db345  Use FLAG_IMMUTABLE for InstallCarrierAppUtils  [Shuo Qian]
+ff044a6  Use FLAG_IMMUTABLE for InboundSmsHandler  [Shuo Qian]
+a662e9e  Use FLAG_IMMUTABLE for CarrierKeyDownloadManager  [Shuo Qian]
+4bf1124  Use FLAG_IMMUTABLE for CarrierServiceStateTracker  [Shuo Qian]
+5c8b8cd  Use FLAG_IMMUTABLE for ServiceStateTracker  [Shuo Qian]
+a90fc0c  Restrict access to the resolution PendingIntent created by EuiccController to EuiccResolutionUiDispatcherActivity  [Peter Wang]
+705af7c  Added FLAG_IMMUTABLE flag for security purposes  [Jack Yu]
+
+
+[* packages/apps/Bluetooth *]
+14bcd95  SAP: Ensure pending intent is immutable  [Chienyuan]
+
+
+[* packages/apps/Contacts *]
+6a3e645  Correct vulnerability when setting pending intents on import/export notifications by setting FLAG_IMMUTABLE  [John Shao]
+
+
+[* packages/apps/PermissionController *]
+8d100ac  DO NOT MERGE Use permission group definintion if defined in PermissionController  [Evan Severson]
+
+
+[* packages/apps/Settings *]
+9d561f3  Remove useless png and add vector drawable  [Raff Tsai]
+f21dc2f  Remove "storage type" preference from Settings  [joffenberg]
+2cbedbd  Automatic translation import  [DennySPb]
+53be98b  Enable the filterTouchesWhenObscured in Special app access  [Sunny Shao]
+0654a34  Prevent overlay drawing on top of Bluetooth discovery request dialog  [Jakub Pawlowski]
+8f6307c  Prevent overlay drawing on top of Bluetooth pairing dialog  [Jakub Pawlowski]
+bf9d284  Screen off fod: Make it optional  [Joey Huab]
+3cdfebf  Settings: Screen off fod [2/2]  [TheScarastic]
+
+
+[* packages/apps/SyberiaSettings *]
+f290574  Automatic translation import  [DennySPb]
+
+
+[* packages/providers/DownloadProvider *]
+f076b46  Switch from deprecated/removed JobInfo method.  [Kweku Adams]
+7284f57  Fix "Invalid columns in request:" errors, when there are multiple columns  [Pierre-Hugues Husson]
+
+
+[* packages/services/Telephony *]
+da86c24  Use PendingIntent.FLAG_IMMUTABLE in PendingIntent in NotificationMgr  [Shuo Qian]
+a6f91e0  Restrict access to the resolution PendingIntent created by EuiccController to EuiccResolutionUiDispatcherActivity  [Peter Wang]
+83f5684  Specify the component for the ACTION_SHOW_ECM_EXIT_DIALOG Intent  [Brad Ebinger]
+
+
+[* system/bt *]
+150582c  Fix possible OOB when receive gatt read type response data  [weichinweng]
+e92bb83  Remove pairing on incoming bond request  [Myles Watson]
+eabe84e  Enable bitpool sanity checks  [Joseph Pirozzo]
+
+
+[* system/core *]
+c29df56  libutils: check vsnprintf error  [Steven Moreland]
+53800ea  String16::remove - avoid overflow  [Steven Moreland]
+
+
+[* system/sepolicy *]
+68f3f17  Don't give uid-based categories to app_zygote and isolated processes.  [Martijn Coenen]
+
+
+[* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth *]
+5de8821  SAP: Ensure pending intent is immutable  [Chienyuan]
+
+
+[* vendor/syberia *]
+29f2fea  Update google prebuilts and drop unused  [DennySPb]
+3130377  Drop SettingsIntelligenceGooglePrebuilt  [DennySPb]
+93a7d68  vendor: Force disable some components from SettingsIntelligenceGooglePrebuilt  [jhenrique09]
+f712d6d  v3.9  [DennySPb]
+
+
+=============
+   2020-09-09
+=============
+
+[* external/asus/stichimage *]
+825e1a2  Automatic translation import  [jhenrique09]
+
+
+[* external/libjpeg-turbo *]
+a993bf8  Implement quantization using Arm NEON intrinsics  [Jonathan Wright]
+
+
+[* external/motorola/faceunlock *]
+f3fb331  Automatic translation import  [jhenrique09]
+
+
+[* packages/apps/Etar *]
+f239068  Automatic translation import  [Michael Bestas]
+04673c6  Automatic translation import  [Michael Bestas]
+
+
+[* vendor/syberia *]
+59174cb  Merge changes I09deebda,Ie729c637 into 10.0  [dennyspb]
+
+
+=============
+   2020-09-08
+=============
+
+[* external/motorola/faceunlock *]
+64ce698  Update prebuilt apk  [jhenrique09]
+
+
+[* packages/apps/SyberiaSettings *]
+03b81f1  Revert "QS battery: disable estimates"  [DennySPb]
+
+
+=============
+   2020-09-07
+=============
+
+[* frameworks/base *]
+e7ce254  Fix Wifi icon in inactive state when using Custom icon pack  [rajadeja]
+3c6b354  Quick settings: Add method for getting estimated battery time  [jhenrique09]
+050af1f  PackageManagerService: Protect forced enabled components at runtime  [jhenrique09]
+cde62c8  PackageManager: allow build-time disabling of components  [Pawit Pornkitprasan]
+49d2e18  Revert "PackageManager: allow build-time disabling of components"  [DennySPb]
+0982a56  Fix CDM.requestNotificationAccess() in profile.  [Oasis Feng]
+
+
+[* packages/apps/Nfc *]
+b36c19e  Avoid NFC continuous crash  [Maoliang Tang]
+4d22706  Fix style name DialogAlertDayNight  [George Chang]
+b8a32db  Add dark mode support for AlertDialog  [George Chang]
+
+
+[* system/netd *]
+d5f9bc4  netd: Support wildcards in cached hosts file  [Tom Marshall]
+2b87409  netd: Sort and cache hosts file data for fast lookup  [Tom Marshall]
+
+
+[* vendor/syberia *]
+d4b7601  vendor: Keep some packages enabled  [jhenrique09]
+b0e5bbf  vendor: Rename config_disabledComponents  [Michael W]
+
 
