@@ -1,0 +1,228 @@
+====================
+     2020-10-02    
+====================
+
+* device/syberia/sepolicy
+ba56ce7  common: Make it compile  [LuK1337]
+
+
+* frameworks/av
+39da4a5  Revert "av: Allow providing camera server and service"  [DennySPb]
+f9bfe2c  Revert "cameraserver: Fix libcameraserver location"  [DennySPb]
+4065ac0  cameraserver: Fix libcameraserver location  [jhenrique09]
+dcfb30d  av: Allow providing camera server and service  [jhenrique09]
+ef26ef5  Revert "Camera: Release all composite streams during "detachDevice""  [DennySPb]
+7fed6b7  Revert "Camera: don't stop preview on disconnecting device"  [DennySPb]
+c3f6642  libstagefright: use 64-bit usage for native_window_set_usage  [Milos Ratkovic]
+8baf326  stagefright: ACodec: Resolve empty vendor parameters usage  [Adrian DC]
+247d9df  libstagefright: Support YVU420SemiPlanar camera format  [Ethan Chen]
+
+
+* frameworks/base
+a0f16c1  base: SystemUI: make QS columns count configurable  [Marko Man]
+fb24061  Update RU translation  [DennySPb]
+1ca2078  SystemUI: draw qs panel without side margins  [Lucchetto]
+42cc266  SystemUI: remove notifications panel peek  [Lucchetto]
+5eea661  [1/2] base: Double tap to sleep on lockscreen  [Lucchetto]
+f671c77  [1/2] base: double tap to sleep on statusbar  [maxwen]
+1e93ef4  Disable PIN entry after successful quick unlock  [Veeti Paananen]
+41fcbf1  Keyguard: Forward port lockscreen quick unlock (1/2)  [Matt Mower]
+01fdb52  LiveDisplayTile: fixup modes cycling for aosp implementation  [DennySPB]
+981896a  LiveDisplay: Switch to ColorDisplayManager  [LuK1337]
+46f7e0b  LiveDisplayTile: Remove tile if unavailable  [jhenrique09]
+3a26aa5  LiveDisplayManager: Perform null check in getConfig()  [dianlujitao]
+2eedd0b  OutdoorModeController: Unconditionally enable auto mode on HWC2  [dianlujitao]
+6140a78  OutdoorModeController: Advertise MODE_AUTO  [dianlujitao]
+edb8d8e  LiveDisplayService: Properly disable ColorTemperature  [dianlujitao]
+896fd93  LiveDisplayTile: Refresh state after livedisplay initialization  [dianlujitao]
+88cf8f2  LiveDisplayTile: Enable for outdoor mode and skip night display on HWC2  [dianlujitao]
+c9eaec4  LiveDisplayService: Notify SystemUI after initialization finished  [dianlujitao]
+7c07564  LiveDisplayService: Disable ColorTemperature when NightDisplay is available  [Bruno Martins]
+9d412c6  LiveDisplay: Use Google's algorithm to convert color temperature to RGB  [Paul Keith]
+b5bc4ff  LiveDisplay: Change night/day mode transition behavior  [Paul Keith]
+1f023e3  LiveDisplay: Disable by default  [Henrique Silva]
+6d91381  LiveDisplay: don't start services if phone is encrypted  [Henrique Silva]
+be96639  SystemUI: Add reading mode tile  [Joey]
+92fba1f  SystemUI: Add LiveDisplay tile  [Steve Kondik]
+51f4957  Introduce LiveDisplay from Lineage  [Henrique Silva]
+
+
+* packages/apps/Settings
+430b8c8  Keyguard: Forward port lockscreen quick unlock (2/2)  [Matt Mower]
+d023a3e  LiveDisplaySettings: Hide automatic outdoor mode preference on HWC2  [dianlujitao]
+26245e8  LiveDisplaySettings: Reenable display mode preference for outdoor mode  [dianlujitao]
+36d340c  Settings: Don't index display mode and color temperature on HWC2  [Henrique Silva]
+d607e78  LiveDisplaySettings: Fix outdoor mode preference on hwc2  [jhenrique09]
+bb3ea65  livedisplay: Don't show display mode and color tempertature on HWC2  [Rashed Abdel-Tawab]
+073f350  Settings: Update RU transation for LiveDisplay  [blinoff82]
+9cd7426  LiveDisplay: Add illustration into picture and color adjustment  [Henrique Silva]
+8cf5421  Settings: Changes for LiveDisplay  [Henrique Silva]
+
+
+* packages/apps/SyberiaSettings
+5d21a9e  Add double tap to sleep preferences  [DennySPB]
+
+
+====================
+     2020-10-01    
+====================
+
+* build/make
+8da564a  build: Add Syberia build support (take 2)  [Luca Stefani]
+
+
+* frameworks/av
+92b0eb0  Merge tag 'LA.QSSI.11.0.r1-06200-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into 11.0  [DennySPb]
+a1c1969  Allow graceful degradation of MediaProfile with broken configuration.  [Alex Zhang]
+cbd14aa  Camera: Fix deadlock caused by ordering of mStatusLock and mCameraStatesLock.  [Jayant Chowdhary]
+9fb2756  MTP: Fix crash when no storages are available  [Tom Marshall]
+5be40f2  nuplayer: Avoid crash when codec fails to load  [Steve Kondik]
+9b61b50  libstagefright: Free buffers on observer died  [Manikanta Kanamarlapudi]
+82991d6  Stagefright: Do not skip frames in time-lapse-source for high-speed  [Praveen Chavan]
+
+
+* frameworks/base
+7628e20  NFC tile: Make inactive drawable match other tiles  [Alex Cruz]
+b238348  SystemUI: DigitalClock: increase linespacing  [DennySPB]
+d4f83dc  Battery icon: fix requestLayout() calls spam when in lockscreen  [ezio84]
+a99bdc8  [BACKPORT] Config of LTE signal strength default value remove SNR  [SongFerngWang]
+9a2a94b  base: Lower the internal audio capture restriction  [El Dainosor]
+b9dddec  Overscroll: modified velocitytracker  [PrimeDirective]
+d19a505  Make Build.TYPE and Build.FINGERPRINT consistent for apps  [Danny Baumann]
+c9a82c8  SystemUI: Optimize system statusbar icons  [ZeNiXxX]
+0376913  SystemUI: optimize statusbar content padding  [ZeNiXxX]
+262903a  SystemUI: Reduce System Icon paddings  [SKULSHADY]
+d9015403  SystemUI: keyguard show charging watt  [maxwen]
+2f2fab4  Lockscreen charging info: show decimal in battery temperature  [Lucchetto]
+6dc9f89  Dash charging: Add the battery percent back  [Alex Cruz]
+a8ac7f3  KeyguardIndication: fix fc for certain devices on lockscreen charging info  [rohan]
+ba53e48  Fix current formating on lockscreen for devices, that report directly in Ampere.  [Jens Lody]
+6473cc5  fw/b: Use ro.build.date to signal OTA upgrades  [dhacker29]
+59a31f8  Revert "[fixup] fw/b: Use ro.build.date to signal OTA upgrades"  [DennySPb]
+2ec8b48  Revert "StorageManagerService: Disable FUSE by default"  [Henrique Silva]
+ad19bcd  Don't send interaction hint for unnecessary events  [Alex Naidis]
+16389e5  Add synchronization for invokeForAllObservers call  [Devi Sandeep Endluri V V]
+a5a4384  Fixes crash/race condition when destroyActivity  [katao]
+8715e4b  wm: Passing a new ArraySet instance to avoid crash  [Qiushi.Han]
+6232dd8  Extend the watchdog timeout of main thread  [zhiyong.wang]
+52249e8  DragSurface: destroy surfacecontrol in view site  [guyunjian]
+a98f749  Restore cache clean up code in PackageManagerService  [Pranav Vashi]
+5afaeaa  BatteryService: add dash charging support  [thecrazyskull]
+540eb5d  LockscreenCharging: squashed (1/3)  [xyyx]
+5bf8996  Tuner: Hide icon in QS  [xyyx]
+3e40b7d  Framework: Volume key cursor control (1/2) This feature is moved to framework so it also works with third party keyboards.  [Konsta]
+4703432  BurnInProtection: Fix null object reference with timer  [mydongistiny]
+bce24ca  Fix advanced menu strings  [DennySPb]
+6f8684e  SystemUI: fixup analog clock for aod support  [maxwen]
+9bc4ed9  SystemUI: TypeClock: adapt to recents clock keyguard changes  [DennySPB]
+7206bfc  SystemUI: custom keyguard clock kick off  [maxwen]
+6650fea  charging: Allow using vibration without sounds  [xyyx]
+d4156d0  ScreenshotSound: Fix playing screenshot's sound when camera's sounds off. This bug actually because Screenshot uses Camera Shutter Sound  [xyyx]
+
+
+* packages/apps/Launcher3
+35337d8  Use ThemePicker as wallpaper picker package  [paphonb]
+cf690e2  Revert "Specify the wallpaper picker package"  [DennySPb]
+
+
+* packages/apps/SyberiaSettings
+fbd700f  Volume rocker cursor control (2/2)  [Konsta]
+f08271e  Team: don't show toast on json error  [DennySPb]
+22b57cf  Disable navbar tuner for now  [DennySPb]
+857f15f  LockscreenCharging: squashed (3/3)  [xyyx]
+
+
+* vendor/syberia
+b2682b3  Use component-override to configure GMS/Vending  [Luca Stefani]
+72147b0  Build Matlog  [DennySPb]
+8b26627  kernel: Import function to install kernel modules from Q  [Alessandro Astone]
+ec2ae02  kernel: Use Clang as HOST_{CC,CXX}  [LuK1337]
+dffb4cc  Use $(HOST_PREBUILT_TAG) where possible  [Bruno Martins]
+
+
+====================
+     2020-09-30    
+====================
+
+* external/sqlite
+37d27c3  dist: Tune flags according to sqlite documentation  [xNombre]
+202bf9a  sqite3: Reduce sync safety levels from 3 to 1  [Dave Kessler]
+93dc259  Update to 3.33.0  [DennySPb]
+
+
+* packages/apps/Launcher3
+6662b47  Properly expose GridOptionsProvider  [Luca Stefani]
+92eb5c3  manifest: move trust activity declaration to quickstep  [DennySPb]
+
+
+* packages/apps/ThemePicker
+f47a9e9  ThemePicker: Fix READ_EXTERNAL_STORAGE permission and ask on start  [micky387]
+
+
+* vendor/syberia
+4bee30b  Themes: extend stub package with custom clocks  [DennySPb]
+410dd06  changelog: switch back printf to echo  [DennySPb]
+
+
+====================
+     2020-09-29    
+====================
+
+* frameworks/opt/telephony
+78b4e4e  Truncate baseband version string to 45 characters at most  [Yujing Gu]
+
+
+* packages/apps/Nfc
+a914afa  NFC: Adding new vendor specific interface to NFC Service  [Puneet Mishra]
+
+
+* packages/apps/Settings
+f061a96  SoundSettings: Add charging vibration settings  [xyyx]
+
+
+====================
+     2020-09-28    
+====================
+
+* bionic
+ee28e2f  Gwp-asan: Return false in ShouldGwpAsanSampleProcess always  [Rishiraj Manwatkar]
+
+
+* packages/apps/Launcher3
+f16f156  Revert "Launcher3: Include manifests properly"  [DennySPb]
+1707e2f  Revert "Launcher3: Add SearchLauncher target"  [DennySPb]
+
+
+* packages/apps/ThemePicker
+65d7342  ThemePicker: Handle themes with no specified wallpaper.  [shagbag913]
+de035ec  Add an exported flag in manifest.  [Ashwini Oruganti]
+2a33a7c  Bugfixes and make this app more robust.  [maxwen]
+d916ce6  Don't trash whole theme when missing icon preview.  [paphonb]
+6c321ff  Fix preview tile in grid option picker.  [Marc K]
+3f3270b  Fix ugly black/transparent bar under navigation area.  [LuK1337]
+b062d62  Show item name under the category name.  [El Dainosor]
+0053740  Enable vertical scrollbar for options container.  [LuK1337]
+3794f16  Limit number of icon previews shown.  [Demon000]
+64fa0e0  Specify we read and write launcher settings.  [Luca Stefani]
+2cb9485  Properly catch exceptions.  [Luca Stefani]
+9996401  Add wallpaper default permissions.  [LuK1337]
+b0a983b  Add wallpaper privapp whitelist.  [Luca Stefani]
+
+
+====================
+     2020-09-27    
+====================
+
+====================
+     2020-09-26    
+====================
+
+* frameworks/base
+014cc56  CarrierConfigManager: enable LTE+ icon by default  [Jake Weinstein]
+fb4b8bb  Remove face unlock for now  [DennySPb]
+
+
+* packages/apps/Settings
+fe28cb7  Cutout force fullscreen: Disable fast scroller  [Henrique Silva]
+
+
