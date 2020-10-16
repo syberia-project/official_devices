@@ -1,360 +1,306 @@
 ====================
-     2020-10-09    
+     2020-10-16    
 ====================
 
-* development
-753c972  privapp_permissions: Check product privapp_permissions  [Christian Oder]
+* art
+95940c3  Merge tag 'android-11.0.0_r8' of https://android.googlesource.com/platform/art into 11.0  [DennySPb]
 
 
-* device/qcom/sepolicy_q
-f357026  makefile: add prefix for pre-R policy location  [DennySPb]
-6499696  sepolicy: Solve some problematic rules  [sourajitk]
+* bionic
+e891684  Merge tag 'android-11.0.0_r8' of https://android.googlesource.com/platform/bionic into HEAD  [DennySPb]
 
-
-* packages/apps/Settings
-8d6578b  Selinux status: switch to ro.boot.selinux prop  [DennySPb]
-c8c1f0f  Shortcuts: replace data usage by notification history  [DennySPb]
-e31ea35  Settings: add back selinux status in about  [maxwen]
-
-
-* packages/services/OmniJaws
-8908a15  Omnijaws: widget: Uncouple the temperature from the image  [George Zacharia]
-489ce75  OmniJaws: Let go of the apache http client  [George Zacharia]
-272b9a9  OmniJaws: add ACCESS_BACKGROUND_LOCATION permission  [maxwen]
-
-
-====================
-     2020-10-08    
-====================
-
-* frameworks/av
-45f3afa  camera: Only link and use vendor.qti.hardware.camera.device if specified  [Rashed Abdel-Tawab]
-bc0f086  Merge tag 'LA.QSSI.11.0.r1-06300-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into 11.0  [DennySPb]
-
-
-* frameworks/base
-13a8918  Camera: Force HAL1 for predefined package list.  [Sai Kumar Sanagavarapu]
-30bc745  Camera: Don't crash when trying to disable shutter sound  [jhenrique09]
-9176454  Camera: Clearing exception for Extended Face  [Sauhard Pande]
-9df698f  Camera: Extend face detection  [Shuzhen Wang]
-6696574  base: Actually fix the padding on StatusBar  [ElDainosor]
-aa4bab6  SystemUI: Reduce padding between battery & signal  [Ido Ben-Hur]
-067e882  Update power menu icons  [Alex Cruz]
-996a2df  Fix action bar font family on material themes  [Henrique Silva]
-637d993  base: Fix list style alert dialog to use system font  [maxwen]
-1df213d  base: Nice looking black theme  [HrX03]
-a36f7cc  PackageInstaller: Remove side padding from the dialog  [Anushek Prasal]
-17b93b8  SystemUI: weather qs tile keep long press to show details  [maxwen]
-903d27d  SystemUI: keyguardslice code cleanup  [Ali B]
-1092e12  base: SystemUI: add keyguard weather style (1/2)  [Ali B]
-a1b4a65  base: SystemUI: fix keyguard weather color update  [maxwen]
-6c8233b  SystemUI: add weather to keyguardSlice  [Ali B]
-5f03046  SystemUI: fix LS weather view merge  [Marko Man]
-bc77d87  [1/3] base: SystemUI: keyguard weather view  [maxwen]
-f3a639d  [1/3] base: add back weather parts  [maxwen]
-0062559  base: Live Volume Steps [1/3]  [Meticulus]
-34a13ff  Configurable 0, 90, 180 and 270 degree rotation [1/2]  [Ricardo Cerqueira]
-9fba5be  data: Update permissions whitelist for PackageInstaller  [Jason Edson]
-a95ea5d  PackageInstaller: show current/new version on apk installation  [ezio84]
-b618583  Hide power menu on secure lockscreen [1/2]  [Altaf-Mahdi]
-75dbf3a  SystemUI: use primary colors for dark theme where possible  [DennySPb]
-e51805c  SystemUI: refactor qs bg color into dedicated color resource  [maxwen]
-5eb47cb  fwb: Intruduce Primary Colors  [Marko Man]
-e8d44d7  SystemUI: adjust powermenu and qs customizer background for black theme consistence  [DennySPB]
-1174ece  SystemUI: DataSwitchTile: update SIMs QS icons.  [Hernán Castañón Álvarez]
-55639db  SystemUI: remove media player top divider  [Lucchetto]
-aa3bfd6  Add colors to assistant animation  [paphonb]
-10e0359  base: Remove keyguard delay completely  [Saikiran]
-83072a6  base: Let legacy apps scale fully to the display's aspect ratio  [rituj]
-
-
-* hardware/interfaces
-edb6af5  camera: Only link and use vendor.qti.hardware.camera.device if specified  [Rashed Abdel-Tawab]
-607c531  Camera: fill in bufferSize correctly  [Yin-Chia Yeh]
-17cafa3  Camed HAL extension: Added support in HIDL for Extended FD.  [Sauhard Pande]
-
-
-* packages/apps/Etar
-f989937  Etar: Fix build errors in translated strings  [LuK1337]
-
-
-* packages/apps/Settings
-eb99b17  Settings: export OmniJaws settings activity  [maxwen]
-8146b89  Add primary color picker from Styles & Wallpapers  [pimpmaneaton]
-fea92ac  Configurable 0, 90, 180 and 270 degree rotation [2/2]  [kufikugel]
-9c3a237  Settings: Live Volume Steps [2/3]  [Meticulus]
-465392d  bluetooth: update SavedBluetoothTwsDeviceUpdater for superclass ctor signature change  [Steven Laver]
-f4566ec  Implement abstract method getPreferenceKey in SavedBluetoothTwsDeviceUpdater  [Justin DeMartino]
-ebc76af  BT: Use translated a2dp codec strings  [dianlujitao]
-28051f5  A2dpSrc: DEV-UI support for Blutooth Audio codec.  [Satheesh Kumar Pallemoni]
-eed06ad  A2dpSrc: Bluetooth codec Dev-UI support for QVA codecs  [Satheesh Kumar Pallemoni]
-a848131  Bluetooth-TWS: UI updates based on Filter matched  [zhenchao]
-f3d735f  Bluetooth-TWS: UI updates based on profile connection.  [Kiran Kelageri]
-5fb7682  Fix build error  [Jiyong Park]
-ac5b8b4  Bluetooth-TWS: Filter TWS devices  [Kiran Kelageri]
-99332ab  Bluetooth: Create new catogory for earbuds  [Kiran Kelageri]
-dae2446  Power: remove dividers  [DennySPb]
-9b6b2da  Remove battery percentage switch from main Battery menu  [blinoff82]
-ac569e1  Settings: fix icon tinting in power detail pages  [maxwen]
-f9d65b7  Settings: Power detail pages: Finish off the rest of the icon tinting  [Alex]
-2d74f41  Settings: Use correct icon for ring volume  [Michael Bestas]
-e94b1e8  fingerprint: Remove unnecessary spacing in enroll layout  [LuK1337]
-2d9d9af  fingerprint: Allow devices to configure sensor location  [d34d]
-ddf42b4  Settings: make AppPackageName copyable  [Ali B]
-
-
-* packages/apps/SyberiaSettings
-d487290  Add keyguard weather style (2/2)  [Ali B]
-a68aa0c  add back weather parts [3/3]  [maxwen]
-6bea0f2  Buttons: add missing hw key disable switch  [DennySPB]
-4f5efb5  Live Volume Steps [3/3]  [Meticulus]
-31692d2  Hide power menu on secure lockscreen [2/2]  [Altaf-Mahdi]
-
-
-* packages/apps/ThemePicker
-8005fa7  Revert "Bugfixes and make this app more robust."  [DennySPb]
-
-
-* packages/services/OmniJaws
-df184db  OmniJaws: Add privapp permissions xml  [Ali B]
-
-
-* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
-ac58c1c  BT: Prefer LDAC over aptX family  [dianlujitao]
-f1f6568  Bluetooth string: removed id="sender" in bt_sm_2_1_  [Yinchu Chen]
-5649a84  translate="false" -> translatable="false"  [Edward Savage-Jones]
-4ce834c  Remove intent filter without any action  [Bruno Martins]
-d416ec4  Fix null pointer exception on AvrcpTargetService  [slki.shin]
-e7dbc4a  Bluetooth: Remove unused string resources  [Michael Bestas]
-bd67684  Rebrand to BluetoothQti  [dianlujitao]
-
-
-* vendor/syberia
-19989b2  vendor: build OmniJaws  [DennySPb]
-
-
-====================
-     2020-10-07    
-====================
-
-* frameworks/base
-8fa2a44  Bluetooth: Avoid reentrant lock in getService method  [Venkata Jagadeesh Garaga]
-af4e458  BtHelper: Set BT device name as empty string when it is null  [Satish Kodishala]
-ba8ec6b  Bluetooth: Remove bind timeout message on service connection  [Venkata Jagadeesh Garaga]
-093ac7a  BT: Clearing BLE app count while processing network settings reset.(1/2)  [Bandari Ramesh]
-6be88b9  Audio: Do not disconnect profiles till Bluetooth Off  [Gurpreet Ghai]
-de27ad1  Audio: use cached BT codec info during disconnecting  [Zhou Song]
-deb94c3  Audio: Update current active bt device of mApmConnectedDevices.  [Manisha Agarwal]
-d984b3a  BT-Audio: Keep track of Active TWS+ EB device in BTHelper  [Sagar Verma]
-e71906a  BLE: Fix NPE during start advertising  [Sravan Voleti]
-f62c27f  Fix build errors  [Scott Lobdell]
-bc9f5ad  Fix BLE transport discovery scan filter  [Subramanian Srinivasan]
-0d7b3cf  BT: Relocate A2DP codec strings for translation  [dianlujitao]
-3c66957  Enable codec change request when mode changes in aptX-adaptive  [Naval saini]
-9d30e68  Keep a null check before accessing the BluetoothA2dpWrapper APIs.  [Satheesh Kumar Pallemoni]
-374d358  Bluetooth: Fix for out of bound exception  [pramod kotreshappa]
-7bbac1c  BT Dev: Increase array size for codec selection in Dev Op  [Gurpreet Ghai]
-e954f01  Keep the BluetoothHeadset finalize() method protected  [Diego Wilson]
-a1cb8d7  Bluetooth: Fix for Global reference table overflow issue[1/2]  [Bandari Ramesh]
-bdb4cee  BT: Add new intent to broadcast IOT device details  [Gurpreet Ghai]
-eed635d  BT_Audio: Updated Check for TWS+ switch  [Gurpreet Ghai]
-f6b01ae  TWS_A2DP: Handle active device change between TWS+ earbuds  [pramod kotreshappa]
-a84f814  audio: Add support for APTX TWSP audio codec  [Dhananjay Kumar]
-d249b8c  audio: Add support for audio extended codecs  [Naresh Tanniru]
-345d0ad  Use BluetoothUtils instead of Utils  [Diego Wilson]
-9e1d7ff  GAP: Handle the race condition cases in auto connect logic  [Venkata Jagadeesh Garaga]
-3f14cb3  Obex: Squashed commit of the following  [Sravan Kumar V]
-a2854de  Add scan filter for Transport Discovery data  [Subramanian Srinivasan]
-72296ec  Support CALLBACK_TYPE_SENSOR_ROUTING  [Mingbo Zhang]
-a1e6ff8  Add support for Transport discovery AD type (1/2)  [Subramanian Srinivasan]
-e4ebd6d  Bluetooth: TWSP: Support Battery Status information display  [Bhakthavatsala Raghavendra]
-e792acd  BT: Send info if call is CS type from telecomm service to BT apps.  [Sumit Bajpai]
-c6ab168  GAP: Reset bondingInitiatedLocally flag(1/3)  [Venkata Jagadeesh Garaga]
-0ff815e  Bluetooth-TWS: Disable outgoing connection to 2nd earbud  [Kiran Kelageri]
-764c20b  Bluetooth-TWS: Disable outgoing connection for 2nd earbud.  [Kiran Kelageri]
-5882ff4  Bluetooth: Rename bluetooth property to support new P Treble rules  [Safoorah Banu Shaik]
-fb97845  Bluetooth: Unpair both earbuds on unpair.  [Kiran Kelageri]
-caec01d  Bluetooth: Add SDK API support for TWS feature (2)  [Bandari Ramesh]
-cfff223  Revert the change: AudioService: remove dead BT code.  [Samyak Jain]
-00cdbbe  TWS-A2DP: Add TWS+ codec to DevUI support  [pramod kotreshappa]
-c8e42ce  BT: Adding aptX-Adaptive codec entry to Framework  [Gurpreet Ghai]
-38750f8  Add BluetoothQualityReport class(1/2)  [Mingbo Zhang]
-34907e6  Restore AOSP toast theme  [DennySPB]
-3fbf6c0  core: Materialize Toast notifications  [Joe Maples]
-207a658  Fonts: Restore light font styling of AOSP  [Pranav Vashi]
-0a5cb98  Fonts: Add regular / light font config  [Pranav Vashi]
-8f38582  Update default config for headline fonts  [Pranav Vashi]
-8ff1c42  Wire up default fonts with font engine  [Pranav Vashi]
-cc9437c  ChooserActivity: remove ugly separator  [Lucchetto]
-725d687  base: set alert dialog message to use system font  [maxwen]
-68b9df7  Move battery icon to QS header  [00day0]
-6b2fa40  Battery Styles: Clean-Up for Settings Observer  [SuperDroidBond]
-a7a7b0c  [android11-gsi] Fix navigation input consumer not working when first window is invisible  [arthurhung]
-fb981fe  [master] Fix deadlock between AppOpsService and HistoricalRegistry.  [Hai Zhang]
-cd88809  [android11-gsi] Do not re-initialize synthetic password  [Rubin Xu]
-b1b9565  [master] Excessive battery usage fix.  [Alex Buynytskyy]
-f12e5e4  [master] Fix override setBufferCount  [John Reck]
-12e451e  try to fix upstream status bar+keyguard bug  [inthewaves]
-
-
-* hardware/interfaces
-abe3c98  keymasterV4_0: Tags support for FBE wrapped key.  [Shivaprasad Hongal]
-
-
-* packages/apps/Bluetooth
-dbbdf95  Stub two more QTI functions  [DennySPb]
-ef62d87  Stub TWS related APIs  [dianlujitao]
-c53b5e1  GAP: Reset bondingInitiatedLocally flag(2/3)  [Venkata Jagadeesh Garaga]
-e16e7d8  BT: API to update quiet mode status in Adapter service [1/3]  [M Safoorah Banu]
-487977c  Add BLE Scan Phy parameter to scan API  [Subramanian Srinivasan]
-
-
-* packages/apps/SyberiaSettings
-99135ca  Allow to disable HOME key when ringing [2/2]  [xyyx]
-fc8162e  StatusBar battery: add big and big dotted circle [2/2]  [DennySPB]
-bc04a67  Add Solid battery style from PA [2/2]  [Pranav Vashi]
-04b5eb5  Add battery styles and customizations for Android 11 [2/2]  [Pranav Vashi]
-b3c474c  hw keys: Fix custom app selection dialog  [xyyx]
-56421aa  Add preference for Accidental Touch  [Anas Karbila]
-1e76720  HW Keys customization support [1/2]  [bigrushdog]
-
-
-* packages/services/Telecomm
-063e0fb  add support to check if Cs Call InProgress  [himta ram]
-f429159  Bluetooth: Support to know if there is High Def call  [Nivedita Sarkar]
-
-
-* system/bt
-d549610  Merge tag 'LA.QSSI.11.0.r1-06000-qssi.0' of https://source.codeaurora.org/quic/la/platform/system/bt into 11.0  [DennySPb]
-cdc6a28  gd: proto: Remove optimize_for = LITE_RUNTIME  [Luca Stefani]
-24ffd58  gd: Remove unneeded optimize_for lite  [Luca Stefani]
-
-
-* system/core
-b8f583d  Add wrapped key support  [dianlujitao]
-
-
-* system/vold
-b677bf6  vold: Bring in more wrapped key changes  [Pig]
-b41613b  system: vold: Upgrade the FBE key  [Neeraj Soni]
-3902c87  vold: Enable legacy support for wrapped key  [Neeraj Soni]
-fb49004  system: vold: Use wrapped key for metadata encryption  [Neeraj Soni]
-
-
-* vendor/qcom/opensource/commonsys-intf/bluetooth
-07a0ad9  Merge tag 'LA.QSSI.11.0.r1-06300-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/bluetooth-commonsys-intf into 11.0  [DennySPb]
-
-
-* vendor/qcom/opensource/commonsys/system/bt
-ab382fb  bt: Rename QTI stack config to avoid conflict w/ AOSP one  [dianlujitao]
-
-
-* vendor/qcom/opensource/interfaces
-ad4b22b  interfaces: Introduce vendor.qti.hardware.btconfigstore@2.0 HAL  [Volodymyr Zhdanov]
-
-
-* vendor/syberia
-6244fe1  vendor: Allow hide gesture navbar [3/3]  [DennySPb]
-eec00dc  venodr: allow customizing the length of gesture navbar [3/3]  [Anay Wadhera]
-
-
-====================
-     2020-10-06    
-====================
 
 * build/make
-309b89e  Merge tag 'android-11.0.0_r5' of https://android.googlesource.com/platform/build into 11.0  [DennySPb]
+83eb848  Merge tag 'android-11.0.0_r8' of https://android.googlesource.com/platform/build into 11.0  [DennySPb]
+
+
+* build/soong
+c5c593d  Merge tag 'android-11.0.0_r8' of https://android.googlesource.com/platform/build/soong into HEAD  [DennySPb]
+
+
+* external/tinycompress
+8ae03cc  tinycompress: Conditionally enable extended compress format  [Michael Bestas]
+21aa98d  tinycompress: Use generated kernel headers  [Sam Mortimer]
+
+
+* frameworks/av
+c612bfd  Merge tag 'android-11.0.0_r8' of https://android.googlesource.com/platform/frameworks/av into 11.0  [DennySPb]
 
 
 * frameworks/base
-d8c8506  avoid duplicate doFrame calls.  [binzhang]
-ebd66cd  make ui touch optimization work normally.  [binzhang]
-368eb42  add VSYNC scheduled flag and avoid two doFrame calls in one period  [binzhang]
-aa79ead  core: touch response optimizations  [zfu]
-357267e  Optimize AbsListView to reduce click operation latency  [Jun Wang]
-c5830d9  Quick settings: Add method for getting estimated battery time  [jhenrique09]
-34f5e74  StatusBar battery: add big and big dotted circle [1/2]  [DennySPB]
-180692d  base: Add Solid battery style from PA [1/2]  [TheStrix]
-3549cfa  DataSwitchTile: collapse notification panel onClick  [DennySPB]
-615a975  base: Introduce DataSwitchTile  [Christian Oder]
-07fe002  Add battery styles and customizations for Android 11 [1/2]  [neobuddy89]
-4553f56  SystemUI: Show estimates on QS only if battery percentage is unavailable or disabled  [jhenrique09]
-163153f  SystemUI: BatteryPercentage: Detect when overlay changes  [Henrique Silva]
-727d5e5  base: Allow hide gesture navbar [1/3]  [DennySPb]
-d1866d2  base: allow customizing the length of gesture navbar [1/3]  [Anay Wadhera]
-94461e9  HWKeys: Fix haptic feedback on navbar when hwkeys is disabled  [xyyx]
-7a36445  base: Introduce Accidental Touch  [Thecrazyskull]
-aebe55f  base: Introduce new navigation bar key event source  [Carlo Savignano]
-ce9dd12  Keyguard: disable menu key on lockscreen  [xyyx]
-1f127f2  HWKeys: Fix annoying trouble with wakeup from hw keys  [xyyx]
-b0af419  AmbientDisplay: Disable hw keys Prevent stop dozing after hw keys tapping  [xyyx]
-022f4c1  HwKeys: Rework kill logic with LOS code  [xyyx]
-72be922  HardkeyActionHandler: Adapt to Android 11  [xyyx]
-64f5771  Allow to disable HOME key when ringing [1/2]  [xyyx]
-4a1dbf0  Fix Hardware keys backlight not turning of with disabler  [Randall Rushing]
-42131af  HWKeys: Disable haptic on keyguard  [xyyx]
-b27a927  Buttons: Hardware key disable support with M adaptations  [Randall Rushing]
-735c54a  Don't report existing menu key if it was remapped. [2/3]  [Kyrylo Mikos]
-115452c  HW Keys customization support [1/2]  [bigrushdog]
-57557b7  PowerManager: Allow to distinguish different keypresses  [Corinna Vinschen]
-28d8eb5  PowerManagerService: Allow to light up buttons only when pressed  [Anas Karbila]
-a84e954  fw/b: Button backlight brightness  [Ricardo Cerqueira]
-7a6f79c  SystemUI: Optional haptic feedback on back gesture [1/2]  [DennySPb]
-2113640  Merge tag 'android-11.0.0_r5' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+3d9ea35  Merge changes Ic12d15d6,Ibeda964b,Id9ad37f0,Ic18f48c8,I47e0ae88 into 11.0  [dennyspb]
+3720fa9  Merge tag 'android-11.0.0_r8' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+a830808  SystemUI: fix QS autobrightness icon tint  [DennySPB]
+45c54bf  SystemUI: use OnePlus drawables for autobrightness icon  [DennySPB]
+2f1b03e  QS brightness slider: Update brightness thumb vector  [JBCDroid2]
+e0a665e  SystemUI: Fix showing duplicated charging status  [Scott Warner]
+43b3a83  Relax LOCATION_BACKGROUND_PERMISSION  [DennySPb]
+9d7fb353  base: Add vibration patterns from OOS [1/3]  [rituj]
+062bf29  Grant OmniJaws always location permissions  [DennySPb]
+a1bf941  FaceUnlock: drop lockouts completely  [DennySPb]
+7ebfe1a  Revert "Persist face error message for permanent lockout"  [DennySPb]
+bf0b793  require unlocking to use work mode tile  [inthewaves]
+8d64e78  require unlocking to use battery saver tile  [inthewaves]
+cddbf25  require unlocking to use cellular quick tile  [inthewaves]
+49c6c21  require unlocking to use hotspot quick tile  [inthewaves]
+5e1c99e  require unlocking to use data saver quick tile  [inthewaves]
+645845a  require unlocking to use Wi-Fi quick tile  [inthewaves]
+b3b3590  require unlocking to use airplane mode quick tile  [inthewaves]
+31809c4  require unlocking to use Bluetooth quick tile  [inthewaves]
+e18e84c  require unlocking to use NFC quick tile  [inthewaves]
+a7eebfa  SystemUI: Add heads up tile  [Michael Bestas]
+4153c78  Add partial/full screenshot QS tile single tap to choose the mode, long press to fire  [ezio84]
+514543b  Reboot/Recovery QS Tile @xyyx: Adapted and reworked to 10 @qjohn: Vectorized icons  [fusionjack]
+fb67117  caffein: stop crashing during boot  [maxwen]
+f867036  SystemUI: add caffeine qs tile  [Keith Mok]
+0c8350c  base: SystemUI: stop crashing qs tiles during boot  [maxwen]
+b175f22  Add Sound tile to Quick Settings  [Yoshinori Hirano]
+4e450b6  SystemUI: HeadsUp blacklists (1/2)  [Decad3nce]
+d9949f5  Notifications light: Add @hide to fix build  [faust93]
+2a8e081  Notification lights: use default resources for color on and off [2/2]  [Ezio Lacandia Bijelkic]
+4c37e7b  LEDs: fix default color  [ezio84]
+24f7d53  Allow to customize notification led light [2/2]  [ezio84]
+dafc521  Enable notifications led light by default [1/2]  [ezio84]
+08ad3c4  Led light preview: switch led off before changing the color  [ezio84]
+dbf3e82  Add api to force show led lights  [ezio84]
+eb945a8  Battery light customization [1/2]  [Sam Mortimer]
+41b02e0  Add switch for data saver and roaming icons  [xyyx]
+c0c39a7  PackageManager: allow build-time disabling of components  [Pawit Pornkitprasan]
+a34f2c0  Revert "PackageManager: allow build-time disabling of components"  [DennySPb]
+8b23636  Port "Option to hide Adb notification icon (1/2)"  [Tanguy Pruvot]
+68dd984  SystemUI: Add navbar layout inversion tuning  [LuK1337]
+546b51f  core: Add support for MicroG  [gudenau]
+820ef41  base: remove updatable flag from com.android.permission  [maxwen]
+17e58bc  Implement quick QS brightness slider [1/2]  [Jesse Chan]
+0cbcdf0  SystemUI: Port brightness slider changes  [Alberto97]
+fc204c1  base: add missing shape overlays  [maxwen]
+12289f1  SettingsLib: mutate drawable before tinting for buildBtRainbowDrawable  [maxwen]
+1662d50  Update ElectronBeam screen off animation  [bigrushdog]
+9f5c886  base: catch what you cant explain  [maxwen]
+252351b  ScreenOffAnimation: fix surface.destroy usage  [DennySPB]
+6fb8efa  Screen off animations [1/2]  [bigrushdog]
+0b27f7f  Port face unlock feature  [jhenrique09]
 
 
 * frameworks/native
-8a806c8  touch response optimizations  [zfu]
-e09eaa2  Don't quantize max range with a resolution of 0  [Anthony Stange]
-280eee0  Fix captureScreen when 90/180/270 LCM  [xiaodan zhang]
-67ca150  SurfaceFlingerProperties: Use proper prop scope  [Luca Stefani]
-870e566  [cleanup] Fix a clang-tidy warning  [Yurii Zubrytskyi]
-a9a1409  InputDispatcher: On keypress, deliver keycode to pokeUserActivity  [Corinna Vinschen]
-8f3e607  PowerManager.h: Define USER_ACTIVITY_FLAG values  [Corinna Vinschen]
-1d234e8  Merge tag 'android-11.0.0_r5' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
+4a1cb9b  Merge tag 'android-11.0.0_r8' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
+
+
+* frameworks/opt/net/wifi
+7da0a6e  Merge tag 'android-11.0.0_r8' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD  [DennySPb]
 
 
 * frameworks/opt/telephony
-641f334  Merge tag 'android-11.0.0_r5' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPb]
+a09a907  Merge tag 'android-11.0.0_r8' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPb]
+
+
+* hardware/interfaces
+fdac436  Merge tag 'android-11.0.0_r8' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPb]
+
+
+* packages/apps/Bluetooth
+49b1efc  Merge tag 'android-11.0.0_r8' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPb]
+
+
+* packages/apps/DeskClock
+f458c58  Update RU translation  [blinoff82]
 
 
 * packages/apps/Launcher3
-a22e711  Merge tag 'android-11.0.0_r5' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD  [DennySPb]
+82147bb  Merge "Update RU translation" into 11.0  [dennyspb]
+6da9784  Update RU translation  [blinoff82]
+072bdbd  Merge tag 'android-11.0.0_r8' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD  [DennySPb]
+
+
+* packages/apps/Nfc
+9c331a5  Merge tag 'android-11.0.0_r8' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPb]
 
 
 * packages/apps/Settings
-187fb00  Settings: Allow hide gesture navbar [2/3]  [DennySPb]
-c2c90dd  Settings: allow customizing the length of gesture navbar [2/3]  [Anay Wadhera]
+e136d65  Merge "Update RU translation" into 11.0  [dennyspb]
+674861b  Update RU translation  [blinoff82]
+afb2e86  Merge tag 'android-11.0.0_r8' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
+b8855f1  BT: Don't display previously connected devices in BLE_ON  [Venkata Jagadeesh Garaga]
+a0a461e  Settings: Hide notification light color preference if no multicolor led  [Vol Zhdanov]
+ac28189  Allow to customize notification led light [1/2]  [xyyx]
+5f83b6d  Enable notifications led light by default [2/2]  [ezio84]
+
+
+* packages/apps/SettingsIntelligence
+95002a4  Merge tag 'android-11.0.0_r8' of https://android.googlesource.com/platform/packages/apps/SettingsIntelligence into HEAD  [DennySPb]
 
 
 * packages/apps/SyberiaSettings
-76afd3c  buttons: converting to float  [xyyx]
-b43a38c  ButtonBrightness: use switch for devices without variable button brightness  [xyyx]
-e931860  Buttons: Add buttons brightness and button backlight timeout options  [xyyx]
+87e0166  Update RU translation  [blinoff82]
+61b1391  Add vibration patterns from OOS [3/3]  [rituj]
+b0e392d  Add fixed PackageListAdapter  [Marko Man]
+9b24f5c  HeadsUp blacklists (2/2)  [Adnan]
+8956b4c  HeadsUp: Stop showing notifications when selected applications on top [2/2]  [xyyx]
+42990fe  Allow run notification's settings from SyberiaSettings  [xyyx]
+468acc6  Battery led customization: activate led light preview  [ezio84]
+6919756  Color picker: allow to activate ongoing led light as color preview  [ezio84]
+da34728  Battery light colors: show reset to default button  [ezio84]
+dc68a3b  Disable useless alphaslider for battery led customization  [ezio84]
+62152d2  Battery light customization [2/2]  [ezio84]
+9f9a114  SyberiaSettings: Add Default USB Configuration switch  [ZeNiXxX]
+03181e4  Port "Option to hide Adb notification icon (2/2)"  [Tanguy Pruvot]
+900f868  Add 'Invert layout' to navigation bar settings  [LuK1337]
 
 
-* system/core
-9fa4744  libutils: check vsnprintf error  [Steven Moreland]
+* packages/apps/ThemePicker
+9b9b306  Don't trash whole theme when missing icon preview.  [paphonb]
+746cc3b  Fix preview tile in grid option picker.  [Marc K]
+7543592  Show item name under the category name.  [El Dainosor]
+54b74ae  Enable vertical scrollbar for options container.  [LuK1337]
+a89104d  Specify we read and write launcher settings.  [Luca Stefani]
+cac296b  Properly catch exceptions.  [Luca Stefani]
+6a615ba  Add wallpaper default permissions.  [LuK1337]
+4a1f27b  Add wallpaper privapp whitelist.  [Luca Stefani]
+b4501f9  Merge tag 'android-11.0.0_r8' of https://android.googlesource.com/platform/packages/apps/ThemePicker into HEAD  [DennySPb]
+4974458  [squash] revert all custom commits  [DennySPb]
 
 
-* vendor/qcom/opensource/interfaces
-b4bcf6f  Merge tag 'LA.QSSI.11.0.r1-06200-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/interfaces into HEAD  [DennySPb]
-56e4b9f  Remove blueprint for cleaner caf merge  [DennySPb]
+* packages/providers/DownloadProvider
+c0625e4  Merge tag 'android-11.0.0_r8' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD  [DennySPb]
+
+
+* packages/services/OmniJaws
+4c0b673  Omnijaws: widget: Uncouple the temperature from the image  [George Zacharia]
+8e7d821  OmniJaws: Let go of the apache http client  [George Zacharia]
+983fcd1  Build as product module  [DennySPb]
+704d018  OmniJaws: add ACCESS_BACKGROUND_LOCATION permission  [maxwen]
+
+
+* packages/services/Telecomm
+f95e2b8  Merge tag 'android-11.0.0_r8' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
+ee85bd1  Telecomm: Add vibration patterns from OOS [2/3]  [rituj]
+
+
+* system/bt
+535b1cb  Merge tag 'android-11.0.0_r8' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPb]
+
+
+* system/sepolicy
+0b23035  Merge tag 'android-11.0.0_r8' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPb]
+
+
+* system/vold
+ac86af6  Merge tag 'android-11.0.0_r8' of https://android.googlesource.com/platform/system/vold into HEAD  [DennySPb]
+
+
+* vendor/syberia
+75a7091  v4.1  [DennySPb]
+05d0d2f  Cleanup priv-app permissions  [DennySPb]
+bc11313  soong: Add AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT  [Michael Bestas]
 
 
 ====================
-     2020-10-05    
+     2020-10-15    
+====================
+
+* frameworks/native
+7e5ffd2  sf: Fix virtual display related issues.  [Ramakant Singh]
+
+
+* packages/apps/DeskClock
+e047fec  DeskClock: Move notification channel strings for translation  [Michael Bestas]
+79040ed  DeskClock: Fix german translation of "days"  [Michael W]
+bb8b011  DeskClock: Setup data model before calling super.onStart()  [LuK1337]
+21b8326  DeskClock: Fix FAB not being shown everytime  [Michael W]
+b81e838  DeskClock: Replace ViewPager with manual fragment handling  [Michael W]
+54e3aea  DeskClock: Move navigation bar to bottom  [Michael W]
+3cbc2d2  DeskClock: also apply disabled color to annotations  [Jesse Chan]
+b0ee218  DeskClock: Come to the dark side...  [Michael W]
+cffc2af  DeskClock: Modernize timer_setup_time look  [LuK1337]
+08ec8d9  DeskClock: Update drawables  [LuK1337]
+4d512e9  DeskClock: Use sans-serif-thin font for the clock widget  [Arne Coucheron]
+a875dfe  DeskClock: Add some more visible shadow to the clock widget  [Arne Coucheron]
+945a1fd  DeskClock: Use POWER_OFF_ALARM permission  [Mao Jinlong]
+1ba7fa2  DeskClock: Add support of power off alarm feature  [Mao Jinlong]
+4ac2bab  DeskClock: Add back flip and shake actions  [Wilhelm Fitzpatrick]
+ff15950  DeskClock: adaptive icon  [Asher Simonds]
+0bd2b11  Deskclock: define app category  [Joey]
+e20e8c0  DeskClock: Add sysconfig whitelist xml  [Michael Bestas]
+3447f2c  AOSP/DeskClock - Clean up some TODOs and deprecated calls  [Colin Marsch]
+42bfacd  AOSP/DeskClock - Fix deprecated calls: ScreensaverSettings,SettingsActivity  [Colin Marsch]
+af0c0e8  AOSP/DeskClock - Upgrade Handler inits to use undeprecated constructor  [Colin Marsch]
+0f81b4a  AOSP/DeskClock - Update Fragment related code to use AndroidX  [Colin Marsch]
+1cc0616  DeskClock: Rework notification channel implementation  [Michael W]
+cd74416  AOSP/DeskClock: Improve AlarmNotification priority to pop up alarm  notification.  [Raman Tenneti]
+c56cd43  DeskClock: Fix alarm clock screen show black  when screen locked;  [Raman Tenneti]
+23127d8  AOSP/DeskClock - Call executePendingTransactions only if mFragmentManager is not destroyed. Fixes the crash bug. Code matches internal code.  [Raman Tenneti]
+dde24b8  Import translations. DO NOT MERGE  [Bill Yi]
+ff8eb52  AOSP/DeskClock - Added SET_ALARM permission check  [Colin Marsch]
+894499c  AOSP/DeskClock - Updated to sdkVersion 29.  [Raman Tenneti]
+4ab7587  Change most notfications category  [Marko Man]
+7808cd9  Require USE_FULL_SCREEN_INTENT permission  [Marko Man]
+
+
+====================
+     2020-10-14    
+====================
+
+* frameworks/av
+8a0c499  Merge tag 'LA.QSSI.11.0.r1-06500-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av  [DennySPb]
+
+
+====================
+     2020-10-13    
+====================
+
+* frameworks/base
+f5ee4fa  Revert "Move battery icon to QS header"  [DennySPb]
+c7147bd  TelephonyRegistry: Avoid adding duplicate listener  [Wileen Chiu]
+9a6dd83  Add Network Traffic Layout [1/2]  [AnkitGourav]
+65e7cde  NetworkTraffic: Set default font size of Single Traffic to 24dp.  [Jayant-Deshmukh]
+f45270e  [SQUASHED] Add Combined & Dynamic Network Traffic Mode [1/2]  [AnkitGourav]
+7d1db8c  NetworkTraffic: Set default font size of Single Traffic to 42dp.  [spezi77]
+c1ef860  NetworkTraffic: Fix Net Text Getting Cut at DPI Changes  [SuperDroidBond]
+803e5f9  NetworkTraffic: Allow user to choose positioning [1/2]  [calebcabob]
+f539cb0  Bring back traffic indicator for Notch Devices !!!  [Alex Cruz]
+0e33cfa  TrafficSB: Pass the animate bool  [ganeshi4u]
+c867de5  NetworkTraffic: Fix gravity  [xyyx]
+03c72a2  Network Traffic: Add Option for Users to select size of Single Traffic (Up/Down) Font Size  [SuperDroidBond]
+3ad788a  NetworkTraffic: Show arrows in statusbar [1/2]  [Nico60]
+3166f6a  Option for Up, Down as well for Network Traffic [1/2]  [ezio84]
+48713e6  Add network traffic monitor properly to statusbar icons  [SpiritCroc]
+1dca882  Bring back traffic indicator for all!  [Alex Cruz]
+
+
+* packages/apps/Settings
+0309d37  Revert "Revert "Port face unlock feature""  [DennySPb]
+
+
+* packages/apps/SyberiaSettings
+1ae38c7  Brightness slider options [2/2]  [Jesse Chan]
+d4b94c4  Screen off animations [2/2]  [Author: bigrushdog]
+b23572a  NetworkTraffic: Add Option for Users to select size of Single Traffic (Up/Down) Font Size [2/2]  [SuperDroidBond]
+f26160c  Add Network Traffic Layout [2/2]  [AnkitGourav]
+bd778cc  NetworkTraffic: Add Combined & Dynamic Mode [2/2]  [AnkitGourav]
+293b22b  Add network traffic type [2/2]  [Jon Haus]
+260526a  NetworkTraffic positioning: Adapt to new settings flags.  [spezi77]
+c96b4a8  Network traffic location [2/2]  [Anushek Prasal]
+cdbfb2c  Hide arrows in Network Traffic indicators [2/2]  [Nico60]
+b5aa6e9  Status network traffic [2/2]  [ezio84]
+
+
+====================
+     2020-10-12    
+====================
+
+* frameworks/base
+08dfa97  Fix SystemUI crash  [Ido Ben-Hur]
+
+
+====================
+     2020-10-11    
+====================
+
+====================
+     2020-10-10    
 ====================
 
 * packages/apps/Settings
-b68737c  Settings: Optional haptic feedback on back gesture [1/2]  [DennySPb]
+d1bb425  Selinux status: switch to ro.boot.selinux prop reading  [DennySPb]
 
-
-====================
-     2020-10-04    
-====================
-
-====================
-     2020-10-03    
-====================
 
