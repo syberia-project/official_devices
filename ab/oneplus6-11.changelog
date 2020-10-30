@@ -1,186 +1,204 @@
 ====================
-     2020-10-23    
+     2020-10-30    
 ====================
 
-* frameworks/base
-e249786  overlays: replace brightness thumb drawable in all SystemUI overlays  [DennySPb]
-7b4f362  SystemUI: remove black bg from power menu  [Vachounet]
-e73ca83  Disable dashboards conditions and suggestions (1/2)  [xyyx]
-15fa707  AutoBrightness: Remove handler's messages before send.  [yangyankai1]
-04703d4  IdleMaint: run IdleMaint if battery is charging  [Jaegeuk Kim]
-53fdc65  SystemUI: Add visualizer feature  [Utkarsh Gupta]
-
-
-* packages/apps/Settings
-8a3ec07  Disable dashboards conditions and suggestions (2/2)  [xyyx]
-
-
-* packages/apps/SyberiaSettings
-6289a3f  Gaming mode: stop using masterswitch preference  [DennySPb]
-655f4a6  Add visualizer feature [2/2]  [Bruno Martins]
-
-
-* system/core
-04905d5  Revert safetynet workaround commits  [DennySPb]
-
-
-* vendor/syberia
-aadcd67  official_devices: OnePlus6 -> oneplus6  [DennySPb]
-
-
-====================
-     2020-10-22    
-====================
-
-* bionic
-5e8928a  Expose per-process memory init.  [Steven Moreland]
-edb8953  Add an API for per-process disabling memory initialization.  [Peter Collingbourne]
-
-
-* build/make
-6f338ea  envsetup: Enable ccache and compression by default  [ganeshi4u]
-1633682  recovery: allow to ship prebuilt recovery ramdisk image  [DennySPb]
-
-
-* external/scudo
-2b76b34  [master] scudo: Re-order Allocator fields for improved performance. NFCI.  [Peter Collingbourne]
+* external/zlib
+8024d64  Merge branch 'upstream-master' of https://android.googlesource.com/platform/external/zlib into 11.0  [DennySPb]
+8ec967e  Android.bp: unroll loops  [Park Ju Hyung]
+b32eb9b  Enable the other optimizations.  [Elliott Hughes]
+af75740  Reland (again) "Enable the various chrome zlib optimizations."  [Elliott Hughes]
+a238d1f  Android.bp: enable unaligned memory access  [Park Ju Hyung]
 
 
 * frameworks/base
-204c1a1  GamingMode: Fix gaming mode from turning off instantly on some apps & games  [AnkitGourav]
-a27fc37  base: Bring back Gaming mode [1/3]  [Pranav Vashi]
-53d12d9  Less boring heads up option: always show alarm clock headsup  [Pranav Vashi]
-971b0c2  Less boring heads up option [1/2]  [ezio84]
-7e17f04  fw/b torch: Let long press power turn torch off when screen is on.  [Sam Mortimer]
-5d21634  SystemUI: Allow to enable Lockscreen Media Art [1/2]  [beanstown106]
-449271c  base: correct package names for Launcher/ThemePicker overlays  [Anay Wadhera]
-19f33d7  SystemUI: Name Cellular Tile based on carrier  [Manojkumar Murugeshan]
-75cacc8  base: fix tapered rect overlay  [Anay Wadhera]
-a895fd9  base: Remove useless cutout overlays.  [Sourajit Karmakar]
-b0454d7  Quick statusbar tiles header: expand panel on longpress for details view  [ezio84]
-2791be3  WifiTile: Fix detail view after requiring unlock commit  [xyyx]
-b845129  SystemUI: Enable and fix QS detail view, adapt layout to 11  [eray orçunus]
-ee85e21  UpdateEngine: Add perf mode binder interface  [Luca Stefani]
-ca0e9f3  Add Dialer's public strings  [DennySPB]
-63847da  Check UID's process state before restricting its network.  [xiamengsen]
-e6342dcd  base: SystemUI: Disable 3 columns in landscape  [Ido Ben-Hur]
+c562c02  base: add more notification channels to blockable  [maxwen]
+4f61964  base: fix google copy pasta error :)  [maxwen]
+6f8b1fa  QS: Add CPUInfo toggle tile  [Pranav Vashi]
+a24d867  base: SystemUI: adjust CPU overlay style  [maxwen]
+803d6a2  base: fix num cpu check for CPU overlay  [Max Weninger]
+192696e  [1/2] base: add CPU info overlay  [Max Weninger]
+5231849  Update RU translation  [DennySPb]
+35e7533  overlays: Extend d318d235afc29c4a70d1508fb997eb4ed0acafc5 to Google's new icon packs  [Adithya R]
+fc22951  overlays: Fix background colouring for settings themed icons  [Adithya R]
 
 
-* hardware/interfaces
-fccdfe3  camera 2.4: conditionally disable memory init  [Steven Moreland]
-
-
-* packages/apps/Settings
-d50a346  Settings: Bring back Gaming mode [2/3]  [Pranav Vashi]
-
-
-* packages/apps/SyberiaSettings
-926a897  Prevent NPE in gaming mode settings  [Pranav Vashi]
-a1a2a6f  GameMode: remove hwkeys toggle on non-hwkeys devices  [Lup Gabriel]
-ce47459  Bring back Gaming mode [3/3]  [Pranav Vashi]
-b060d24  Less boring heads up option [2/2]  [ezio84]
-bd23797  Allow to disable Lockscreen Media Art [2/2]  [beanstown106]
-
-
-* system/core
-298e8ef  libcutils: API to disable memory mitigations  [Steven Moreland]
-
-
-* system/extras
-6fd693f  Remove AOSP su implementation  [Lars Greiss]
-
-
-* vendor/syberia
-d1f19d2  vendor: copy backuptool files to system  [TheScarastic]
-
-
-====================
-     2020-10-21    
-====================
-
-* build/make
-351816c  backuptool: do not unmap dynamic partition after finished  [Jesse Chan]
-4d24773  releasetools: support dynamic partitions for backuptool  [Jesse Chan]
-886631a  [fixup] releasetools: Move system mount handling to backuptool  [Davide Garberi]
-a7da529  [fixup] releasetools: squash backuptool support  [Chris Soyars]
-
-
-* packages/services/OmniJaws
-041d993  Omnijaws: widget: Uncouple the temperature from the image  [George Zacharia]
-4f527d1  OmniJaws: Let go of the apache http client  [George Zacharia]
-994cd68  Build as product module  [DennySPb]
-
-
-====================
-     2020-10-20    
-====================
-
-* build/soong
-b755ed0  soong: Whitelist cpio for prebuilt ramdisk extraction  [Christian Oder]
-
-
-====================
-     2020-10-19    
-====================
-
-* build/make
-3acb24a  Merge "fix: include vendor mk for pathmaps" into 11.0  [dennyspb]
-563bea3  fix: include vendor mk for pathmaps  [Gabor Meszaros]
-
-
-* device/syberia/sepolicy
-ca0d486  updater_app: Allow updater_app domain to access the network  [Eamon Powell]
-234f3ad  common: Switch Updater app to its own SELinux domain  [LuK1337]
-
-
-* frameworks/base
-4c5e61c  base: SystemUI: add back QS hide label  [maxwen]
-eeca1cc  base: SystemUI: qs quickbar columns config  [maxwen]
-
-
-* packages/apps/Dialer
-e01ee0b  [fixup!] Re-add call recording.  [Danny Baumann]
-52c5262  Revert "Allow using private framework API."  [Raman Tenneti]
-8d9ef94  Merge branch '10.0' of https://github.com/syberia-project/platform_packages_apps_Dialer into HEAD  [DennySPb]
-
-
-* system/update_engine
-b5e4b54  update_engine: Transition to backuptool domain  [Luca Stefani]
-4fb18c6  update_engine: Run backuptool script before normal postinstall script  [Dan Pasanen]
-f25e089  update_engine: Add performance mode  [Gabriele M]
-
-
-====================
-     2020-10-18    
-====================
-
-====================
-     2020-10-17    
-====================
-
-* frameworks/base
-3d9ea35  Merge changes Ic12d15d6,Ibeda964b,Id9ad37f0,Ic18f48c8,I47e0ae88 into 11.0  [dennyspb]
-3720fa9  Merge tag 'android-11.0.0_r8' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
-
-
-* packages/apps/DeskClock
-f458c58  Update RU translation  [blinoff82]
+* frameworks/native
+89267b1  Gralloc2: Mark some gralloc bits as valid  [Padmanabhan Komanduru]
+44e7bf3  [master] SurfaceFlinger: use TFD_TIMER_ABSTIME for VSP timer  [Ady Abraham]
+f3a632f  VSR: dispatch cbs skipped due to timer lag.  [Kevin DuBois]
 
 
 * packages/apps/Launcher3
-82147bb  Merge "Update RU translation" into 11.0  [dennyspb]
-6da9784  Update RU translation  [blinoff82]
+239ef0d  Revert "Change icon drawable padding"  [DennySPb]
 
 
 * packages/apps/Settings
-e136d65  Merge "Update RU translation" into 11.0  [dennyspb]
+dfd8803  Unlink AoD switch pref from AoD on charge  [ezio84]
+493dfaa  Settings: add option to enable AOD on charging only [2/2]  [darkobas]
+
+
+====================
+     2020-10-29    
+====================
+
+* build/make
+bc497ad  add cortex-a76 to known arm8v2a cores  [mesziman]
+
+
+* device/syberia/sepolicy
+c2f60e1  sepolicy: qcom: RIP legacy  [LuK1337]
+93c728a  qcom: Align types with QCOM upstream using BOARD_SEPOLICY_M4DEFS  [LuK1337]
+
+
+* frameworks/base
+fd0ad965  SystemUI: Allow changing duration and repeats count of ambient edge light [1/2]  [Ido Ben-Hur]
+b31122d  SystemUI: fix notification light pulse for repeating notifications  [maxwen]
+addc471  SystemUI: fix possible case where aod stays on after notification pulse  [maxwen]
+a706967  [1/2] SystemUI: support using notification color for pulse light  [maxwen]
+b3bf7f2  SystemUI: day 0 notification light puilse fixes  [Marko Man]
+8813fba  [1/2] SystemUI: Add custom color to ambient pulse notification lights  [Marko Man]
+062a30d  SystemUI: add timeout for ambient notification pulse  [Marko Man]
+71e4377  SystemUI: add Ambient Lights always on hide aod content option  [Marko Man]
+dfcaca6  base: cleanup notification pulse values  [maxwen]
+e397dd7  SystemUI: replace pulse light drawable with our own vector  [Marko Man]
+a6000d5  SystemUI: use ROWS_HIGH_PRIORITY for active notification pulse check  [maxwen]
+fd8c14d  SystemUI: kill any leftover notification pulse on new pulse start  [maxwen]
+2f36fa9  SystemUI: Pulse light accent color option  [Marko Man]
+73497c9  SystemUI: trigger pulse light only for notifications  [DennySPb]
+2e53149  [1/2] SystemUI: add Pulse and Ambient notification bars  [kldoc]
+71838cb  [1/2] base: add option to enable AOD on charging only  [Marko Man]
+c02cb95  ActivityManagerService: dont be so hectic on cpu battery stats  [Simao Gomes Viana]
+282c3a7  BatteryStats: Fix Another SystemUI crash  [SuperDroidBond]
+916f440  SQLiteDatabase: Catch corrupt exception during transaction  [muzbit.kim]
+36d0958  SQLite: Do integrity_check only once  [yi.jang]
+c71bf80  FrameLayout: Fix NPE when view is missing  [Pranav Vashi]
+
+
+* frameworks/native
+28c4fa8  blur: Downscale source FBO to 20% size  [Danny Lin]
+ace54cd  blur: Don't limit number of Kawase blur passes  [Danny Lin]
 
 
 * packages/apps/SyberiaSettings
-87e0166  Update RU translation  [blinoff82]
+65f3db6  Add ambient pulse and aod notifications [2/2]  [maxwen]
+d738161  Move charging led, notification led, adb notification to proper fragment  [DennySPb]
+9536f17  Create Notifications fragment  [DennySPb]
+
+
+====================
+     2020-10-28    
+====================
+
+* art
+e64b480  Revert^2 "Improve libcore_util_CharsetUtils performance."  [Vladimir Marko]
+f2e8111  Revert^2 "Improve mirror::String implementation."  [Vladimir Marko]
+
+
+* device/syberia/sepolicy
+708f95f  Add Flipendo rules  [Dyneteve]
+
+
+* frameworks/av
+952df6d  Merge tag 'LA.QSSI.11.0.r1-06900-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into 11.0  [DennySPb]
+
+
+* frameworks/base
+d4f304ae  DisplayManager: Fix synchronization issue  [Rajavenu Kyatham]
+
+
+* packages/apps/Launcher3
+7be4a9c  Launcher3: move clear all button to actions view  [Vachounet]
+
+
+* packages/apps/Settings
+c992a1f  DevelopmentSettings: Hide OEM unlock by default  [Bruno Martins]
+72ce327  Disable more useless classes  [ezio84]
+f74b5c9  Developer options: Remove system heap dump preference  [Alex Cruz]
+
+
+* packages/apps/SyberiaSettings
+b9ac985  Rename notification to qs panel for clarify  [DennySPb]
+deab5b3  Fix RU translation for Gaming Mode  [DennySPb]
 
 
 * vendor/syberia
-75a7091  v4.1  [DennySPb]
+b509b82  vendor: Introduce Flipendo ( Extreme Battery Saver )  [Dyneteve]
+
+
+====================
+     2020-10-27    
+====================
+
+* frameworks/base
+c29af50  overlays: replace brightness thumb drawable in all SystemUI overlays  [DennySPb]
+bc9e63c  Bluetooth: Add APTX-Adaptive and APTX-TWS+ entries.  [Kiran Kelageri]
+a2473ff  SystemUI: Bring back expanded volume panel  [HrX03]
+98b8edd  DefaultPermissionGrantPolicy: Silence harmless errors  [Pranav Vashi]
+ee7556b  audio: Don't play sound effects if stream is muted  [Steve Kondik]
+802be0e  Avoid MotionEvent no finish raise unnecessary ANR  [dingxiaobo]
+4035e8c  ListView: Disable dividers by default  [Pranav Vashi]
+e42a607  Fix NullPointerException of AMS  [xiaohuin]
+96ccb5d  add more guards against nulls from loadDrawable  [inthewaves]
+7d528b5  fix SystemUI crash from null stored in non-nullable  [inthewaves]
+
+
+* packages/apps/ThemePicker
+7b57254  ThemePicker: show scrollbar on clock faces  [Anay Wadhera]
+1cfb2f8  ThemePicker: catch exceptions when creating custom themes  [maxwen]
+
+
+* vendor/syberia
+0b6ff8f  config: Add conversation notification allowlist for older  apps  [Danny Lin]
+
+
+====================
+     2020-10-26    
+====================
+
+* bionic
+5d4cb0e  [master] pthread_cond: only call futex_wake when there are waiters  [Tim Murray]
+
+
+* external/sqlite
+2a89724  Fix parameter checking logic error in tokenize  [Jinguang Dong]
+
+
+* packages/apps/Launcher3
+22ff70e  CustomLauncher: google feed integration  [Edward Cross]
+
+
+* vendor/syberia
+01a870b  repopick: cmp() is not available in Python 3, define it manually  [Luca Weiss]
+
+
+====================
+     2020-10-25    
+====================
+
+====================
+     2020-10-24    
+====================
+
+* frameworks/base
+1e5098d  Don't start fingerprint for FOD devices early  [mesziman]
+ae27026  FODCircleView: Only reset brightness if brightness boost is enabled  [TheScarastic]
+31de8d7  FODCircleView: Add support for custom FP pressed icon  [TheScarastic]
+d203758  FODCircleView: Add support for pressed fod layer  [TheScarastic]
+0a0eefe  Revert "FODCircleView: dispatch onPress to HAL only after dimming is applied"  [Demon000]
+39e9a25  FODCircleView: Let us call show() when mIsBouncer() && !isPinOrPattern()  [LuK1337]
+53b5f08  FODCircleView: Show while bouncer is requesting Pattern or PIN  [TheScarastic]
+fea5479  FODCircleView: update position of icon before show  [Demon000]
+76815e3  FODCircleView: disable touch detection on screen off  [Demon000]
+79484c6  FODCircleView: dispatch onPress to HAL only after dimming is applied  [XiNGRZ]
+027e2c1  FODCircleView: invert default icon path and add #20000000 bg  [XiNGRZ]
+282cd21  KeyguardView: report transiting bouncer as shown  [Demon000]
+d347d34  FODCircleView: rewrite and simplify implementation  [Demon000]
+cd86e2d  FODCircleView: place above other UI elements  [Demon000]
+6a3ad10  FODCircleView: defer removal to next re-layout  [Peter Cai]
+d10bd7f  Initial support for in-display fingerprint sensors  [kondors1995]
+
+
+* packages/apps/Launcher3
+bbf7b0d  Create Custom Launcher  [Chris Crump]
 
 
