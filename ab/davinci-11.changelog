@@ -1,0 +1,255 @@
+====================
+     2020-11-07
+====================
+
+* frameworks/base
+e2744d9  AbsListView: Fix widget couldn't find any view fc  [Prema Chand Alugu]
+04825b5  SystemUI: Add statusbar NFC icon  [xyyx]
+9e56335  Automatic translation import  [DennySPb]
+d720ccf  Base: fix facelock crash when lock screen is disabled  [Altaf-Mahdi]
+0a1225c  screenrec: Save recordings in ScreenRecords  [El Dainosor]
+74d86a9  SystemUI: Sync sw600dp and sw600dp-port notification_panel_width  [LuK1337]
+0bd7016  Themes: ensure some elements are fine and dandy after overlay  [Dil3mm4]
+437e775  webkit: SystemImpl: Make systemIsDebuggable() check IS_ENG as well  [LuK1337]
+f2bc08e  Calm down attention service logspam  [Adhitya Mohan]
+0084ae2  AutoFillUI: Don't show a "null" toast  [Ido Ben-Hur]
+e4d4c16  SystemUI: Apply theme by using notification context  [Zhao Dong]
+4292bd7  overlays: Fix inactive state Wifi Icon in Kai Icon Pack  [amanrajOO7]
+131ecce  overlays: Fix inactive state Wifi Icon in Circular & Filled Icon Pack  [Aman Singh]
+
+
+* packages/apps/Launcher3
+718f0fb  Automatic translation import  [DennySPb]
+
+
+* packages/apps/Settings
+dc18784  Automatic translation import  [DennySPb]
+66f2128  Settings: Add setup UI for minimum delay between an app's notification sounds  [Danny Baumann]
+ce00654  Legacy WFD output video mode settings [2/3]  [DennySPb]
+996f7cd  Settings: Swipe up on keyguard to use Face Unlock [2/2]  [Anushek Prasal]
+f9bff28  Screen off fod: Make it optional  [Joey Huab]
+
+
+* packages/apps/SyberiaSettings
+8db87c9  Automatic translation import  [DennySPb]
+0c3a722  SyberiaSettings: Add kill button to notification guts [2/2]  [SpiritCroc]
+8362684  Animations: use SysUi context for Toast  [DennySPb]
+d3a95b8  PowerMenu animations: remove translucent  [DennySPb]
+e131281  Update RU traslation  [DennySPb]
+
+
+====================
+     2020-11-06
+====================
+
+* frameworks/av
+20201ac  Codec2: Initialize InputSurfaceWrapper::Config structure fields  [Shrikara B]
+a4600eb  Nuplayer: Handle a corner case during stop  [Shrikara B]
+
+
+* frameworks/base
+efa2803  base: Grant storage permissions to Google Markup  [DennySPB]
+552dc96  base: Grant wallpaper permissions to prebuilt wp picker  [ezio84]
+3fbd435  base: Grant suspend permission to Wellbeing  [Surge Raval]
+4249697  base: Grant storage permission to ThemePicker  [Anushek Prasal]
+27e7078  Fix Google dialer FC due to missing permissions  [Alex Cruz]
+d91f669  Allow chromium to sign in  [spaceman860]
+e0320f1  Fix Google Calendar FC  [Josh Chasky]
+0a4d622  Fix Fi permissions  [Kshitij Gupta]
+558bee0  Fix Android 7.0 GApps permisions which were causing F/C  [Alex Naidis]
+4e02a3d  Support enforcing a minimum delay between notification sounds of an app.  [Danny Baumann]
+d715f64  Add kill button to notification guts [1/2]  [Daniel Koman]
+0846231  Update RU translation  [DennySPb]
+6d814b1  SystemUI: increase global action icon size  [Jason Edson]
+8cb25fc  FWBase: Add 7 more power menu animations [1/2]  [westcripp]
+3a4dd72  Power Menu animations [1/2]  [Alex Cruz]
+bce052b  Add interpolators to qs tiles animation [1/2]  [Nico60]
+78a96f6  Add animations to quick settings tiles [1/2]  [Nico60]
+7915bc1  Return: Listanimation Views and Interpolator [1/2]  [jkl5616]
+e3cf456  Allow toggling animations off [1/2]  [Shuhao Wu]
+55b7264  Add option to disable scrolling cache [1/2]  [Sang Tae Park]
+82f7ba9  AppTransitions: Remove hackery for controls duration  [Pranav Vashi]
+260fa8c  FW_Base - XuiMod: Toast Animations [1/2]  [GwonHyeok]
+968699f  Add Ethans animations  [Alexey Derendyaev]
+298b2ce  AOKP custom system animations (1/2)  [Stevespear426]
+18cb281  Add MicroG GmsCore to location providers  [lyceris-chan]
+6ce5ffc  Support UnifiedNlp (microG)  [Simon Polack]
+8fa7480  libs: hwui: Build using ThinLTO  [mydongistiny]
+533cf1e  SystemUI: Add tuner switches for privacy icons  [SKULSHADY]
+b0400e6  Updates to various icons:  [Dan Sandler]
+690d662  Sharesheet: Set max ranked items to 8  [LuK1337]
+6771e68  SystemUI: Reset horizontal panel position when on keyguard  [LuK1337]
+01b624f  base: Fix Settings & endless SystemUI crash  [AnkitGourav]
+4fe8ec4  SystemUI: hide lock icon while dozing  [Ali B]
+9c39bb3  overlays: Build 2-button navigation bar overlay  [Danny Lin]
+19c119d  Revert "overlays: Unify icon packs category name"  [DennySPb]
+354d6e9  Legacy WFD output video mode settings[1/3]  [DennySPb]
+eaafb00  Language toggle QS  [SpiritCroc]
+5c06fb8  base: Check early if CPU temp is available  [Stefan Berger]
+a1ec4c4  base: Fix CPU info overlay text layout  [Stefan Berger]
+7b1edf1  base: Bring back CPU temperature to CPU info overlay  [Stefan Berger]
+3e69609  Screenshot: Add delete action chip intent  [ganeshi4u]
+077e831  am: Add property to enable cgroup freezer by default per device  [DennySPb]
+24eac70  Automatic translation import  [DennySPb]
+7e165bc  DozeSensors: only use proximity sensor if supported  [kondors1995]
+8744cd3  base: add more notification channels to blockable  [maxwen]
+673391e  base: fix google copy pasta error :)  [maxwen]
+4d77c83  QS: Add CPUInfo toggle tile  [Pranav Vashi]
+1ef77be  base: SystemUI: adjust CPU overlay style  [maxwen]
+a9a05d3  base: fix num cpu check for CPU overlay  [Max Weninger]
+4a975f3  [1/2] base: add CPU info overlay  [Max Weninger]
+2d5c654  Update RU translation  [DennySPb]
+b48e286  overlays: Extend d318d235afc29c4a70d1508fb997eb4ed0acafc5 to Google's new icon packs  [Adithya R]
+
+
+* packages/apps/SyberiaSettings
+30389c2  Allow toggling animations off [2/2]  [Shuhao Wu]
+8fc3f7d  Add option to disable scrolling cache [2/2]  [Sang Tae Park]
+b6649e8  XuiMod: Toast Animations [2/2]  [GwonHyeok]
+c55da67  Add 7 more power menu animations [2/2]  [westcripp]
+437e35e  Power Menu animations [2/2]  [Alex Cruz]
+39a6212  Return: Listanimation Views and Interpolator [2/2]  [jkl5616]
+3da42a1  SyberiaSettings: Add interpolators to qs tiles animation [2/2]  [Nico60]
+4364bc3  SyberiaSettings: Add animations to qs tiles [2/2]  [Nico60]
+d3a3951  SyberiaSettings: AOKP custom system animations [2/2]  [Stevespear426]
+
+
+* system/core
+452a55e  Modifying /dev/memcg permissions.  [Karthik Gopalan]
+50d5c60  Ueventd: Fix a corner case in ReadUevent() that triggers duplicate firmware loading.  [P.Adarsh Reddy]
+3db76fa  ueventd: bump UEVENT_MSG_LEN to 8192  [Tom Cherry]
+652fa36  Boost init priority before main loop  [Wei Wang]
+
+
+====================
+     2020-11-05
+====================
+
+* device/syberia/sepolicy
+511c965  Legacy WFD video mode settings  [DennySPb]
+
+
+* frameworks/av
+f710db5  Legacy WFD output video mode settings [3/3]  [DennySPb]
+
+
+* frameworks/base
+ec17a84  overlays: Fix background colouring for settings themed icons  [Adithya R]
+7ba8c63  base: Swipe up on keyguard to use Face Unlock [1/2]  [Anushek Prasal]
+e5b5d9a  SystemUI: tuner: Allow Tuner API for System settings  [Zhao Wei Liew]
+be71027  Base: screen off FOD [1/2]  [TheScarastic]
+
+
+* hardware/google/pixel
+e51165d  Merge branch 'android-11.0.0' of https://github.com/UtsavBalar1231/hardware_google_pixel into android-11.0.0  [SVB22]
+
+
+* packages/apps/Settings
+9101867  Settings: Screen off fod [2/2]  [TheScarastic]
+
+
+====================
+     2020-11-04
+====================
+
+* art
+5fe1472  Rename String.concat() implementation function.  [Vladimir Marko]
+
+
+* bionic
+bbc32ce  pthread_cond: only call futex_wake when there are waiters  [Tim Murray]
+e1b480d  bionic: Support case-insensitive domain name hash  [Devi Sandeep Endluri V V]
+632d51d  Avoid recording backtrace if alloc-size is outside range of interest  [Shibin George]
+6e53ee0  Add vendor in visibility of bionic_libc_platform_headers  [Sungwook Jung]
+66afe57  Gwp-asan: Return false in ShouldGwpAsanSampleProcess always  [Rishiraj Manwatkar]
+b488c09  bionic: Support wildcards in cached hosts file  [Tom Marshall]
+c9f152d  bionic: Sort and cache hosts file data for fast lookup  [Tom Marshall]
+
+
+* frameworks/native
+5a63994  Collect Parcel statistics using std::atomics.  [Jeff Sharkey]
+2432800  SF: hwvsync on for more samples on recalibration  [Kevin DuBois]
+c3e8602  SF: Add retry to EventThread postEvent  [Varun Arora]
+
+
+====================
+     2020-11-03
+====================
+
+* build/make
+b09c895  Merge tag 'android-11.0.0_r15' of https://android.googlesource.com/platform/build into 11.0  [DennySPb]
+
+
+* frameworks/av
+509e6aa  Enable Wifi Display to support 1920*1080 60fps  [wangwei_b]
+6ac0b5b  libstagefright_wfd: Adapt to A11 changes  [DennySPb]
+c5e0339  libstagefright: Remove libmediaextractor dependency  [Adithya R]
+6c64c86  audioflinger: Fix audio for WifiDisplay  [myfluxi]
+638df11  Remove libmediaextractor dependency from libstagefright_wfd  [Nico]
+ac477d9  Revert "Move unused classes out of stagefright foundataion"  [Nico]
+f51eadb  libstagefright_wfd: video encoder does not actually release MediaBufferBase when done  [Vladimir Oltean]
+a1a5135  stagefright: Fix buffer handle retrieval in signalBufferReturned  [Angelo G. Del Regno]
+c8f412d  stagefright: Fix SurfaceMediaSource getting handle from wrong position issue  [zhangbo_a]
+d7bfc82  libstagefright_wfd: libmediaplayer2: compilation fixes  [Vladimir Oltean]
+59080ca  Revert "stagefright: remove Miracast sender code"  [Vladimir Oltean]
+cfd149e  Revert "Removed unused class and its test"  [Vladimir Oltean]
+
+
+* frameworks/base
+a8ea668  Merge tag 'android-11.0.0_r15' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+
+
+* frameworks/native
+90dd7fe  Merge tag 'android-11.0.0_r15' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
+
+
+* frameworks/opt/telephony
+225c983  Merge tag 'android-11.0.0_r15' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPb]
+
+
+* packages/apps/Bluetooth
+4f1c420  Merge tag 'android-11.0.0_r15' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPb]
+
+
+* packages/apps/Nfc
+80391ec  Merge tag 'android-11.0.0_r15' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPb]
+
+
+* packages/apps/Settings
+919202f  Automatic translation import  [DennySPb]
+8b616dc  Unlink AoD switch pref from AoD on charge  [ezio84]
+9755fa1  Settings: add option to enable AOD on charging only [2/2]  [darkobas]
+21ab98b  Merge tag 'android-11.0.0_r15' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
+
+
+* packages/apps/SyberiaSettings
+d841c52  Automatic translation import  [DennySPb]
+
+
+* packages/providers/DownloadProvider
+ed98b21  Merge tag 'android-11.0.0_r15' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD  [DennySPb]
+
+
+* packages/services/Telecomm
+414778e  Merge tag 'android-11.0.0_r15' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
+
+
+* system/bt
+c850de3  Merge tag 'android-11.0.0_r15' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPb]
+
+
+* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
+2a7b672  Pass whether the local device is an atv device to the native  [Rahul Sabnis]
+
+
+* vendor/qcom/opensource/commonsys/system/bt
+1949b13  Check whether local device is an ATV device to determine  [Rahul Sabnis]
+1fa3449  Shows a consent dialog on the local device when pairing a  [Rahul Sabnis]
+
+
+====================
+     2020-11-02
+====================
+
+* packages/apps/Launcher3
+150dfac  Automatic translation import  [DennySPb]
