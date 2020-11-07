@@ -1,0 +1,42 @@
+#!/bin/bash
+#put script in syberia source folder, make executable (chmod +x update.sh) and run it (./update.sh)
+
+#modify values below
+#leave blank if not used
+zip="syberia_davinci-v4.1-20201107-0925-OFFICIAL.zip"
+device="davinci"
+brand="Xiaomi"
+model="Mi 9T"
+developer="VladimirS"
+#don't modify from here
+script_path="`dirname \"$0\"`"
+zip_name=$script_path/out/target/product/$device/$zip
+buildprop=$script_path/out/target/product/$device/system/build.prop
+romtype="OFFICIAL"
+
+if [ -f $script_path/$device'-11'.json ]; then
+  rm $script_path/$device'-11'.json
+fi
+
+linenr=`grep -n "ro.system.build.date.utc" $buildprop | cut -d':' -f1`
+datetime=`sed -n $linenr'p' < $buildprop | cut -d'=' -f2`
+zip_only=`basename "$zip_name"`
+id=`md5sum "$zip_name" | cut -d' ' -f1`
+size=`stat -c "%s" "$zip_name"` version=`echo "$zip_only" | cut -d'-' -f2 `
+echo '{
+  "response": [
+    {
+       "datetime": '$datetime',
+       "filename": "'$zip_only'",
+       "id": "'$id'",
+       "romtype": "'$romtype'",
+       "size": '$size',
+       "url": "https://sourceforge.net/projects/syberiaos/files/'$device'/'$zip_only'/download",
+       "version": "'$version'",
+       "device_brand": "'$brand'",
+       "device_model": "'$model'",
+       "device_codename": "'$device'",
+       "developer": "'$developer'"
+    }
+  ]
+}' >> $device'-11'.json
