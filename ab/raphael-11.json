@@ -1,0 +1,17 @@
+{
+  "response": [
+    {
+      "url": "https://sourceforge.net/projects/syberiaos/files/raphael/syberia_raphael-v4.1-20201125-1151-OFFICIAL.zip/download", 
+      "device_model": "Redmi K20 Pro", 
+      "filename": "syberia_raphael-v4.1-20201125-1151-OFFICIAL.zip", 
+      "device_codename": "raphael", 
+      "romtype": "OFFICIAL", 
+      "version": "v4.1", 
+      "device_brand": "Xiaomi", 
+      "developer": "NATO666613", 
+      "datetime": 1606305081, 
+      "id": "441a531488e40cf4303b05d078238b8a9ca52aa2e0261add68e8d3e5efba39b7", 
+      "size": "916876452"
+    }
+  ]
+}

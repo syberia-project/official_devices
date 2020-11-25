@@ -1,0 +1,90 @@
+====================
+     2020-11-25    
+====================
+
+* device/syberia/sepolicy
+4b6093e  qcom: Label new AIDL power HAL  [Michael Bestas]
+9098a00  sepolicy: vendor: Migrate to power 1.2  [Davide Garberi]
+b60e394  sepolicy: vendor: Label CryptfsHW HIDL HAL  [Artem Borisov]
+
+
+* frameworks/base
+9327ace  Automatic translation import  [DennySPb]
+464143b  ThreeFingerScreenshot: Use screenshot api to take full screenshot  [DennySPb]
+b2ba6bb  LongSwipe: add partial screenshot action [1/2]  [DennySPb]
+
+
+* frameworks/native
+2ddb7e8  libui: Allow extension of valid gralloc 1.0 buffer usage bits  [Kevin F. Haggerty]
+
+
+* packages/apps/Settings
+2892471  Automatic translation import  [DennySPb]
+5d1844d  LongSwipe: add partial screenshot action [2/2]  [DennySPb]
+
+
+* packages/apps/SyberiaSettings
+a74320c  Automatic translation import  [DennySPb]
+
+
+====================
+     2020-11-24    
+====================
+
+* frameworks/av
+dbbb493  Merge tag 'LA.UM.9.8.r1-03000-SDM710.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPb]
+
+
+* frameworks/base
+73dc27b  screenrecord: Show dialog on bottom  [El Dainosor]
+5ce33e6  LongSwipe: change helper for screenshot action  [DennySPb]
+1bc586a  fixup! SystemUI: implement better partial screenshot  [LuK1337]
+ae8c010  Led lights: don't skip dialer and other ones  [ezio84]
+6b68130  Update RU translation  [DennySPb]
+184476c  Extended swipe: show a double arrow when almost triggered  [Nico]
+62a957a  Allow back swipe on bottom screen if launcher is showing  [ezio84]
+c82b633  LongSwipeGestures: Vibrate on action if gesture haptic feedback enabled  [DennySPB]
+
+
+====================
+     2020-11-23    
+====================
+
+* frameworks/base
+1e05491  Add switch last app to gesture actions [1/2]  [DennySPb]
+dc1fff9  ActionUtils: don't crash on voice search if package not installed  [DennySPB]
+1f7146f  Allow extended/"L" back swipe to trigger actions/app/activities [1/2]  [ezio84]
+99085e8  ActionUtils: Reverse actions for QS and notification panel  [ezio84]
+05e4c4e  base: Move actions into its own class [SQUASHED]  [Alex Cruz]
+b1d1661  Add api to get or kill foreground app  [ezio84]
+
+
+* packages/apps/Settings
+c0bbb84  Add switch last app to gesture actions [2/2]  [DennySPb]
+5a754af  Allow extended/"L" back swipe to trigger actions/app/activities [2/2]  [ezio84]
+
+
+====================
+     2020-11-22    
+====================
+
+====================
+     2020-11-21    
+====================
+
+====================
+     2020-11-20    
+====================
+
+====================
+     2020-11-19    
+====================
+
+* frameworks/base
+fc77bdb  [1/2] base: navigation mode settings  [maxwen]
+
+
+* packages/apps/Settings
+0992f5c  [2/2] Settings: navigation mode settings  [maxwen]
+
+
