@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1605618960,
-      "filename": "syberia_davinci-v4.1-20201117-1316-OFFICIAL.zip",
-      "id": "b5e0fcfba569fa82bf6d5087e30c51e0552fe5ed49475e301a85b0ebe1a85825",
+      "datetime": 1606293900,
+      "filename": "syberia_davinci-v4.1-20201125-0845-OFFICIAL.zip",
+      "id": "053918609120c220bdea0b8b2763e34597092826e26a0f86e1055d4352564450",
       "romtype": "OFFICIAL",
-      "size": "1035909460",
-      "url": "https://sourceforge.net/projects/syberiaos/files/davinci/syberia_davinci-v4.1-20201117-1316-OFFICIAL.zip/download",
+      "size": "1039172207",
+      "url": "https://sourceforge.net/projects/syberiaos/files/davinci/syberia_davinci-v4.1-20201125-0845-OFFICIAL.zip/download",
       "version": "v4.1",
       "device_brand": "Xiaomi",
       "device_model": "MI 9T",

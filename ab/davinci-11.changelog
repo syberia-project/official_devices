@@ -1,227 +1,140 @@
 ====================
-     2020-11-17    
+     2020-11-25    
 ====================
 
-* art
-056ffb1  Clean up generated operator<<(os, enum).  [Vladimir Marko]
-90be245  Move MethodLoadKind out of HInvokeStaticOrDirect.  [Nicolas Geoffray]
-c883b40  Move HandleCache to HGraph.  [Vladimir Marko]
-8feeb15  Move implementations from class_root.h to -inl.h .  [Vladimir Marko]
-a046e6c  Add Handle::GetFromGdb function  [Alex Light]
-44d96ef  Optimizing: Create fewer handles in inliner.  [Vladimir Marko]
-018a842  Add explicit compiler option to enable test-specific features.  [David Srbecky]
-b6d82c7  Add extra failed inlining reasons  [Mathieu Chartier]
-7f43d42  Fix dlsym lookup trampoline for @CriticalNative.  [Vladimir Marko]
-c711ab4  [tests] Move @CriticalNative arguments in registers.  [Vladimir Marko]
-fce9825  ARM: Allow FP args in core regs for @CriticalNative.  [Vladimir Marko]
-ca0d40b  Optimizing: Introduce {Increase,Decrease}Frame().  [Vladimir Marko]
-ef38f07  Direct calls to @CriticalNative methods.  [Vladimir Marko]
-
-
-* build/make
-9b3b736  Fix zipalign alignment error  [Fabien Sanglard]
+* frameworks/av
+dbbb493  Merge tag 'LA.UM.9.8.r1-03000-SDM710.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPb]
 
 
 * frameworks/base
-1b9625f  FODAnimation: Check if view is null before adding a new one  [jhenrique09]
-e6e5ffc  FODCircleView: Hide animation when auth fails  [jhenrique09]
-89edcb7  FODAnimation: Allow to set vertical position offset  [Hikari-no-Tenshi]
-da9132d  SystemUI: Separate FODAnimation into it's own class  [TheScarastic]
-d544bc5  FODCircleView: cleanup FOD animation implementation  [Nauval Rizky]
-457203b  SystemUI: Recognizing FP animation effects [1/2]  [Joey Huab]
-a166832  FODCircleView: Recognizing fingerprint animation [1/2]  [00day0]
-44bf24e  Automatic translation import  [DennySPb]
-bff297c  SystemUI: Show carrier name of opposite slot in DataSwitch tile label  [DennySPb]
-7c706ff  StatusBarIconController: Guard yet another function from cast exception  [Ido Ben-Hur]
-3d31b69  Avoid casting network traffic to StatusBarIconView to prevent crash  [SpiritCroc]
-ec91701  Use proper coded alphabet when a contact is written into EF_ADN of USIM.  [Umashankar Godachi]
-146dc2f  base: Tune some dimens to make icon spacing on SB equal  [Ido Ben-Hur]
-6b76eb8  SystemUI: Update Bluetooth battery level assets.  [Hernán Castañón Álvarez]
-442db6e  base: Add haptic feedback for torch when screen is off  [spezi77]
-775832acc  base: SystemUI: add qs AOD tile  [Marko Man]
-ac3d6582  Fix DominatorTree for locale and mcc/mnc config  [Ryan Mitchell]
-78549f3  [aosp-master] Unregistering PackageMonitor only when has registered it  [Zhuying Li]
-c886d64  [aosp-master] Fix NetworkPolicyManagerService deadlock  [Zhengyu Zhan]
-5027243  graphics: Adjust ripple animation for immediate feedback  [Danny Lin]
-9b944a4  SystemUI: implement better partial screenshot  [Demon000]
-
-
-* packages/apps/Launcher3
-dc2dd8e  Automatic translation import  [DennySPb]
+12fb2c3  FODAnimation: Check if view is null before adding a new one  [jhenrique09]
+fb2c6cb  FODCircleView: Hide animation when auth fails  [jhenrique09]
+2f21e04  FODAnimation: Allow to set vertical position offset  [Hikari-no-Tenshi]
+fc115a2  SystemUI: Separate FODAnimation into it's own class  [TheScarastic]
+8d72d9b  FODCircleView: cleanup FOD animation implementation  [Nauval Rizky]
+4d12ed2  SystemUI: Recognizing FP animation effects [1/2]  [Joey Huab]
+a1a8b76  FODCircleView: Recognizing fingerprint animation [1/2]  [00day0]
+9327ace  Automatic translation import  [DennySPb]
+464143b  ThreeFingerScreenshot: Use screenshot api to take full screenshot  [DennySPb]
+b2ba6bb  LongSwipe: add partial screenshot action [1/2]  [DennySPb]
+73dc27b  screenrecord: Show dialog on bottom  [El Dainosor]
+5ce33e6  LongSwipe: change helper for screenshot action  [DennySPb]
+1bc586a  fixup! SystemUI: implement better partial screenshot  [LuK1337]
 
 
 * packages/apps/Settings
-a2a2ed3  Hide FOD Animations preferences if device does not support it  [daniml3]
-044e925  Add recognizing FP animation effects  [Joey Huab]
-a621147  Add recognizing FP animation effects Change-Id: I7935f0a2095d44305c9330ed5754589a4cd0c47e  [00day0]
-44ca7cc  Automatic translation import  [DennySPb]
-72f5fb2  Enable Quick Wallet settings for all devices with NFC  [xyyx]
+aced795  Hide FOD Animations preferences if device does not support it  [daniml3]
+85cecd6  Add recognizing FP animation effects  [Joey Huab]
+e511312  Add recognizing FP animation effects Change-Id: I7935f0a2095d44305c9330ed5754589a4cd0c47e  [00day0]
+2892471  Automatic translation import  [DennySPb]
+5d1844d  LongSwipe: add partial screenshot action [2/2]  [DennySPb]
 
 
 * packages/apps/SyberiaSettings
-257c419  Automatic translation import  [DennySPb]
-20af25f  Add hasFeatureNfc() to Utils  [xyyx]
-
-
-* vendor/syberia
-63aae1f  vendor: add davinci  [SVB22]
-faa6bc8  Exclude all syberia overlays from RRO  [Rashed Abdel-Tawab]
-85262c7  Remove deprecated system_rro  [DennySPb]
+a74320c  Automatic translation import  [DennySPb]
 
 
 ====================
-     2020-11-16    
-====================
-
-* art
-a8ffd21  profman: Change the default new min methods/classes percent change for compilation to 20%.  [yawanng]
-9e8da73  profman: Move min new classes and methods limit to argument.  [yawanng]
-
-
-* build/make
-c7ef304  Merge changes from topic "backuptool" into 11.0  [dennyspb]
-
-
-* frameworks/base
-5dcbbff  BrightnessDialog: Dismiss on focus lost  [Giuseppe Maggio]
-0fb96de  CameraManager: Fixup exposing aux camera to apps  [Ido Ben-Hur]
-537edbe  Revert "Require permission to create trusted displays"  [Charles Chen]
-
-
-* frameworks/native
-d097909  Dexopt: read min new methods/classes percent change from properties.  [yawanng]
-3f9d11f  SurfaceFlinger: captureScreen buffer set GRALLOC_USAGE_HW_COMPOSER usage  [Richard Liu]
-5c45afb  [RenderEngine] Introduce non-linear display color transform.  [KaiChieh Chuang]
-f26da27  binder: fix google-runtime-int  [Jiyong Park]
-e50fa5a  libbinder: Log 'Waiting for service...' message outside of retry loop  [Tom Cherry]
-2095050  binder: fix google-default-arguments  [Jiyong Park]
-f8a19b2  binder: fix google-build-using-namespace  [Jiyong Park]
-8c26c54  binder: fix google-explicit-constructor  [Jiyong Park]
-b841954  binder: fix performance-unnecessary-value-param  [Jiyong Park]
-7bb0f46  binder: enable tidy  [Jiyong Park]
-
-
-* system/core
-255ade4  init: Don't run update_sys_usb_config if /data isn't mounted  [Michael Bestas]
-
-
-* system/sepolicy
-3f42675  Added permissions for new dexopt flags on methods/classes percent change.  [yawanng]
-
-
-* vendor/syberia
-99be74f  SystemUI: Whitelist QuickAccessWallet plugin  [kdrag0n]
-83dbdbb  overlay: Build QuickAccessWallet plugin for SystemUI  [kdrag0n]
-c7b231d  permissions: add matlog permission  [DennySPb]
-
-
-====================
-     2020-11-15    
-====================
-
-====================
-     2020-11-14    
+     2020-11-24    
 ====================
 
 * frameworks/base
-f5baa8e  LockSettingsService : Restrict access to getpassword API  [Prerna Kalla]
-d3d4150  Fix Build Credentials refactored to use byte[]  [Justin DeMartino]
-3383c79  frameworks: base: Port password retention feature  [AnilKumar Chimata]
-a7ebc2c  data: permissions: update usage permissions  [DennySPb]
-
-
-* vendor/syberia
-c3a674d  prebuilt: backuptool: Implement dynamic system mount for A-only  [Davide Garberi]
-3cf0737  prebuilt: backuptool: Drop addond version check on A-only  [Davide Garberi]
-b6e212e  soong: add flags for qcom cryptfs and qseecom  [DennySPb]
-
-
-====================
-     2020-11-13    
-====================
-
-* build/make
-9ee48f7  Installation script: advise the user that BackupTools is running  [B--B]
-631d94d  releasetools: Use the first entry of a mount point when reading fstab  [Brint E. Kriebel]
-fc354d6  releasetools: delete duplicates  [SVB22]
-3f6077f  copy files to zip from system  [TheScarastic]
-
-
-* device/qcom/sepolicy
-e93539f  sepolicy: Unlabel aux camera whitelist prop  [dianlujitao]
-
-
-* packages/apps/Launcher3
-4ec5646  Merge changes from topic "blur" into 11.0  [dennyspb]
+ae8c010  Led lights: don't skip dialer and other ones  [ezio84]
+6b68130  Update RU translation  [DennySPb]
+184476c  Extended swipe: show a double arrow when almost triggered  [Nico]
+62a957a  Allow back swipe on bottom screen if launcher is showing  [ezio84]
+c82b633  LongSwipeGestures: Vibrate on action if gesture haptic feedback enabled  [DennySPB]
+1e05491  Add switch last app to gesture actions [1/2]  [DennySPb]
+dc1fff9  ActionUtils: don't crash on voice search if package not installed  [DennySPB]
+1f7146f  Allow extended/"L" back swipe to trigger actions/app/activities [1/2]  [ezio84]
+99085e8  ActionUtils: Reverse actions for QS and notification panel  [ezio84]
+05e4c4e  base: Move actions into its own class [SQUASHED]  [Alex Cruz]
 
 
 * packages/apps/Settings
-3b4604b  Enable and set the default account provider.  [jhenrique09]
-3c7add4  Settings: Fix bluetooth pan memory leakage  [juwei]
-471a25c  Suggestion cards: align them to searchbar  [Dil3mm4]
-3ae6542  Settings: Use global fonts in styles  [Pranav Vashi]
-
-
-* system/vold
-c83631b  cryptfs: Fix build for QCOM HW crypto devices  [Bruno Martins]
-eacc4f9  Add "changepw" command to vdc.  [LuK1337]
-ee7363e  vold: Adapt req-crypt based HW disk encryption  [Neeraj Soni]
-92508bb  vold: Move QCOM HW FDE inclusion under syberia namespace  [Michael Bestas]
-eee6ed8  system: vold: Close crypto block device if it was created  [Neeraj Soni]
-10b9633  Updates for migrated code upstream  [Yifan Hong]
-5442826  system: vold: fix block disk encryption to work with metadata encryption  [Neeraj Soni]
-c209f59  Fix for CTS test CtsAppSecurityHostTestCases  [Shivaprasad Hongal]
-5dfe506  system: vold: Remove crypto block device creation  [AnilKumar Chimata]
-de67726  vold: Add Hardware FDE feature  [AnilKumar Chimata]
-41c4799  Utils: Add missing exfat  [xyyx]
-cc7601b  vold: Accept Linux GPT partitions on external SD cards  [lambdadroid]
-c4b8bf3  vold: skip first disk change when converting MBR to GPT  [Scott Mertz]
-608d01a  Fix the group permissions of the sdcard root.  [Jani Lusikka]
-659a2cc  vold ext4/f2fs: do not use dirsync if we're mounting adopted storage  [Sam Mortimer]
-b4fbfdc  vold: Mount ext4/f2fs portable storage with sdcard_posix  [Jani Lusikka]
-ce29e3c  vold: Honor mount options for ext4/f2fs partitions  [Tom Marshall]
-aa146d8  vold: Support internal storage partitions  [Tom Marshall]
-f8a9c4a  vold: Fix fsck on public volumes  [Michael Bestas]
-add6e76  vold: add support for more filesystems for public storage  [Dan Pasanen]
-
-
-* vendor/qcom/opensource/interfaces
-d93e32f  interfaces: Regenerate {bluetooth_audio,btconfigstore,cryptfshw} blueprints  [Arian]
-1cea64d  Introduce vendor.qti.hardware.cryptfshw@1.0 HAL  [Michael Bestas]
+c0bbb84  Add switch last app to gesture actions [2/2]  [DennySPb]
+5a754af  Allow extended/"L" back swipe to trigger actions/app/activities [2/2]  [ezio84]
 
 
 ====================
-     2020-11-12    
+     2020-11-23    
 ====================
 
 * frameworks/base
-74a1230  SystemUI: Add statusbar NFC icon  [xyyx]
-3dc86b6  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
-00aa417  Additional LMK diagnostic information  [Ioannis Ilkos]
-
-
-* packages/apps/Settings
-ddaec3f  Settings: Improve OverlayCategoryPreferenceController for icon packs  [Adithya R]
-b87fcc2  Settings: per-app cellular data, vpn and wifi restrictions  [Uldiniad]
-
-
-* system/memory/lmkd
-2a6906c  Merge branch 'master' of https://android.googlesource.com/platform/system/memory/lmkd into HEAD  [DennySPb]
+b1d1661  Add api to get or kill foreground app  [ezio84]
 
 
 ====================
-     2020-11-11    
+     2020-11-22    
+====================
+
+====================
+     2020-11-21    
+====================
+
+====================
+     2020-11-20    
+====================
+
+====================
+     2020-11-19    
 ====================
 
 * bionic
-6a25733  libm: Remove duplicate symbol  [Akash Srivastava]
+50f424f  Merge tag 'android-11.0.0_r16' of https://android.googlesource.com/platform/bionic into HEAD  [DennySPb]
 
 
-* external/arm-optimized-routines
-1a972ab  Merge branch 'master' of https://github.com/ARM-software/optimized-routines into HEAD  [DennySPb]
+* build/make
+843a9b4  Merge tag 'android-11.0.0_r16' of https://android.googlesource.com/platform/build into 11.0  [DennySPb]
+
+
+* build/soong
+f43dacb  Merge tag 'android-11.0.0_r16' of https://android.googlesource.com/platform/build/soong into HEAD  [DennySPb]
+
+
+* frameworks/av
+67e9e75  Merge tag 'android-11.0.0_r16' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
 
 
 * frameworks/base
-19725eb  FOD: do not allow FOD to start if the disable prop is true  [Chris Crump]
+fc77bdb  [1/2] base: navigation mode settings  [maxwen]
+a1b920c  Merge tag 'android-11.0.0_r16' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+
+
+* frameworks/native
+976c7c1  Merge tag 'android-11.0.0_r16' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
+
+
+* frameworks/opt/net/wifi
+4d0e053  Merge tag 'android-11.0.0_r16' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD  [DennySPb]
+
+
+* hardware/interfaces
+816139b  Merge tag 'android-11.0.0_r16' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPb]
+
+
+* packages/apps/Bluetooth
+bcc024e  Merge tag 'android-11.0.0_r16' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPb]
+
+
+* packages/apps/Settings
+0992f5c  [2/2] Settings: navigation mode settings  [maxwen]
+490d324  Merge tag 'android-11.0.0_r16' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
+
+
+* packages/services/Telecomm
+5ecbe03  Merge tag 'android-11.0.0_r16' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
+
+
+* system/bt
+d41d104  Merge tag 'android-11.0.0_r16' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPb]
+
+
+* system/media
+11d2cf5  Merge tag 'android-11.0.0_r16' of https://android.googlesource.com/platform/system/media into HEAD  [DennySPb]
+
+
+* system/sepolicy
+bd166b0  Merge tag 'android-11.0.0_r16' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPb]
 
 
