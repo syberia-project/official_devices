@@ -1,90 +1,182 @@
 ====================
-     2020-11-25    
+     2020-12-10    
 ====================
 
-* device/syberia/sepolicy
-4b6093e  qcom: Label new AIDL power HAL  [Michael Bestas]
-9098a00  sepolicy: vendor: Migrate to power 1.2  [Davide Garberi]
-b60e394  sepolicy: vendor: Label CryptfsHW HIDL HAL  [Artem Borisov]
-
-
-* frameworks/base
-9327ace  Automatic translation import  [DennySPb]
-464143b  ThreeFingerScreenshot: Use screenshot api to take full screenshot  [DennySPb]
-b2ba6bb  LongSwipe: add partial screenshot action [1/2]  [DennySPb]
-
-
-* frameworks/native
-2ddb7e8  libui: Allow extension of valid gralloc 1.0 buffer usage bits  [Kevin F. Haggerty]
-
-
-* packages/apps/Settings
-2892471  Automatic translation import  [DennySPb]
-5d1844d  LongSwipe: add partial screenshot action [2/2]  [DennySPb]
-
-
-* packages/apps/SyberiaSettings
-a74320c  Automatic translation import  [DennySPb]
+* build/make
+459caa1  Merge "revert : build: Disable backuptool on user instead of GMS builds" into 11.0  [dennyspb]
 
 
 ====================
-     2020-11-24    
+     2020-12-09    
 ====================
 
 * frameworks/av
-dbbb493  Merge tag 'LA.UM.9.8.r1-03000-SDM710.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPb]
+0dcbb35  Merge tag 'android-11.0.0_r25' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
 
 
 * frameworks/base
-73dc27b  screenrecord: Show dialog on bottom  [El Dainosor]
-5ce33e6  LongSwipe: change helper for screenshot action  [DennySPb]
-1bc586a  fixup! SystemUI: implement better partial screenshot  [LuK1337]
-ae8c010  Led lights: don't skip dialer and other ones  [ezio84]
-6b68130  Update RU translation  [DennySPb]
-184476c  Extended swipe: show a double arrow when almost triggered  [Nico]
-62a957a  Allow back swipe on bottom screen if launcher is showing  [ezio84]
-c82b633  LongSwipeGestures: Vibrate on action if gesture haptic feedback enabled  [DennySPB]
+5435e56  Automatic translation import  [DennySPb]
+28dfe13  FODCircleView: changes to FOD circle and animation visibility  [daniml3]
+40b9bfd  Add OP8T Cyberpunk 2077 FOD icon  [oey Huab]
+2629bd0  LockIcon: refresh icon on overlay changes  [Dil3mm4]
+438469f  Restore one-click to add/remove tiles after r21 merge  [ezio84]
+3c8d0ae  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
 
 
-====================
-     2020-11-23    
-====================
+* frameworks/native
+3bf89e9  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
 
-* frameworks/base
-1e05491  Add switch last app to gesture actions [1/2]  [DennySPb]
-dc1fff9  ActionUtils: don't crash on voice search if package not installed  [DennySPB]
-1f7146f  Allow extended/"L" back swipe to trigger actions/app/activities [1/2]  [ezio84]
-99085e8  ActionUtils: Reverse actions for QS and notification panel  [ezio84]
-05e4c4e  base: Move actions into its own class [SQUASHED]  [Alex Cruz]
-b1d1661  Add api to get or kill foreground app  [ezio84]
+
+* frameworks/opt/telephony
+a835b8d  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPb]
+
+
+* hardware/interfaces
+3e60062  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPb]
+
+
+* hardware/libhardware
+e5830b5  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/hardware/libhardware into HEAD  [DennySPb]
+
+
+* packages/apps/Bluetooth
+7d41afa  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPb]
+
+
+* packages/apps/Launcher3
+970bef5  Automatic translation import  [DennySPb]
+b7b6717  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD  [DennySPb]
+
+
+* packages/apps/Nfc
+13f5dc8  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPb]
 
 
 * packages/apps/Settings
-c0bbb84  Add switch last app to gesture actions [2/2]  [DennySPb]
-5a754af  Allow extended/"L" back swipe to trigger actions/app/activities [2/2]  [ezio84]
+76e8e3d  Automatic translation import  [DennySPb]
+82543ee  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
+
+
+* packages/apps/SyberiaSettings
+81c469a  Automatic translation import  [DennySPb]
+79cd4bf  Syberia: OP8T Cyberpunk 2077 FOD icon  [Stallix]
+c596cae  Syberia: Update name for Cyberpunk 2077 FOD animation  [Joey Huab]
+
+
+* packages/apps/ThemePicker
+76852d0  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/packages/apps/ThemePicker into HEAD  [DennySPb]
+
+
+* packages/services/Telecomm
+f66c2b3  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
+
+
+* packages/services/Telephony
+31624d0  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD  [DennySPb]
+
+
+* system/bt
+bd717fb  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPb]
+
+
+* system/core
+ab72230  fastboot: add new oem command for post wipe userdata  [josephjang]
+bb524a0  adbd: Fix check against valid payload size  [Mayank Rana]
+de595c2  Allow shell to write to /sdcard/Android/data and /sdcard/Android/obb.  [Martijn Coenen]
+ac110d7  Assume UNSUPPORTED if the battery capacity level sysfs node does not exist.  [Stephane Lee]
+629c4f5  init.rc: remove initializations to cg2_bpf path  [Marco Ballesio]
+6c65017  libprocessgroup: json prototype for cgroups v2  [Marco Ballesio]
+2789499  libprocessgroup: switch freezer to cgroup v2  [Marco Ballesio]
+d0975fe  fuzzy_fastboot: use 'tcp:' prefix to identify fastboot protocol.  [sirius.wang]
+11f2f0d  libprocessgroup: support for cgroup v2 hierarchy  [Marco Ballesio]
+fe8dee0  libsnapshot_test: skip global setup on non-VAB devices.  [Yifan Hong]
+492046e  Re-enable libsnapshot ImageManagerTest  [Alessio Balsini]
+8cfa60f  fs_mgr: Revert "Try to recover corrupted ext4 /data with backup superblock"  [Eric Biggers]
+
+
+* system/extras
+949d24e  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/system/extras into HEAD  [DennySPb]
+
+
+* system/netd
+5bb748d  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/system/netd into HEAD  [DennySPb]
+
+
+* system/sepolicy
+2b9f343  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPb]
+
+
+* system/vold
+9611970  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/system/vold into HEAD  [DennySPb]
+
+
+* vendor/syberia
+623c4c3  v4.2  [DennySPb]
 
 
 ====================
-     2020-11-22    
+     2020-12-08    
+====================
+
+* art
+9742f58  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/art  [DennySPb]
+
+
+* bionic
+01ddcd9  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/bionic into HEAD  [DennySPb]
+
+
+* build/make
+4cb2f32  revert : build: Disable backuptool on user instead of GMS builds  [kondors1995]
+5732350  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
+
+
+* build/soong
+8faa0b2  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/build/soong into HEAD  [DennySPb]
+
+
+* frameworks/av
+bc14da7  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
+
+
+* frameworks/opt/net/ims
+1e09cea  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/frameworks/opt/net/ims into HEAD  [DennySPb]
+
+
+* frameworks/opt/net/wifi
+7f50962  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD  [DennySPb]
+
+
+* vendor/syberia
+9385cf7  kernel: Add prebuilt m4 to build environment  [Alessandro Astone]
+37f6d74  kernel: Add bison and flex to build environment  [dianlujitao]
+
+
+====================
+     2020-12-07    
 ====================
 
 ====================
-     2020-11-21    
+     2020-12-06    
 ====================
 
 ====================
-     2020-11-20    
+     2020-12-05    
 ====================
 
 ====================
-     2020-11-19    
+     2020-12-04    
 ====================
 
-* frameworks/base
-fc77bdb  [1/2] base: navigation mode settings  [maxwen]
+* external/sqlite
+1eb911e  Update to 3.34.0  [DennySPb]
 
 
-* packages/apps/Settings
-0992f5c  [2/2] Settings: navigation mode settings  [maxwen]
+* packages/services/Telecomm
+a87d9ac  Merge tag 'LA.QSSI.11.0.r1-07900-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm into HEAD  [DennySPb]
+
+
+* packages/services/Telephony
+0da38c8  PhoneCommon: Add description text item for each clear code  [Li Wei]
 
 
