@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1607587283,
-      "filename": "syberia_raphael-v4.2-20201210-0804-OFFICIAL.zip",
-      "id": "8f93d98479d72f3b9aeffca128d025f02322a95e0841540d8bb15617ed4b80e0",
+      "datetime": 1609407472,
+      "filename": "syberia_raphael-v4.2-20201231-0938-OFFICIAL.zip",
+      "id": "0af15fb3c5b8dc30a530d8274fc6c53ae58b1c90767bb5545030b733e17649d6",
       "romtype": "OFFICIAL",
-      "size": "1038089475",
-      "url": "https://sourceforge.net/projects/syberiaos/files/raphael/syberia_raphael-v4.2-20201210-0804-OFFICIAL.zip/download",
+      "size": "1074918028",
+      "url": "https://sourceforge.net/projects/syberiaos/files/raphael/syberia_raphael-v4.2-20201231-0938-OFFICIAL.zip/download",
       "version": "v4.2",
       "device_brand": "Xiaomi",
       "device_model": "Redmi K20 Pro",
