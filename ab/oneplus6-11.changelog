@@ -1,233 +1,254 @@
 ====================
-     2020-12-09    
+     2021-01-15    
+====================
+
+====================
+     2021-01-14    
 ====================
 
 * frameworks/av
-0dcbb35  Merge tag 'android-11.0.0_r25' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
+56f7401  CCodec: store flushed config as work items  [Wonsik Kim]
+c5d1aed  ACodec: submit extra output metadata buffers if in low latency mode  [Wonsik Kim]
+1493f17  OMX Opus decoder omits sample rate / channel count  [Ray Essick]
+6ab1502  CCodec: fix underflow issue on handleImageData  [Taehwan Kim]
+87af6ac  CCodec: workaround for frame drops  [Wonsik Kim]
+d910978  Merge tag 'LA.QSSI.11.0.r1-09400-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPb]
 
 
 * frameworks/base
-5435e56  Automatic translation import  [DennySPb]
-28dfe13  FODCircleView: changes to FOD circle and animation visibility  [daniml3]
-40b9bfd  Add OP8T Cyberpunk 2077 FOD icon  [oey Huab]
-2629bd0  LockIcon: refresh icon on overlay changes  [Dil3mm4]
-438469f  Restore one-click to add/remove tiles after r21 merge  [ezio84]
+8ec410f  ims: Version support for uce feature tags  [Ayishwarya Narasimhan]
+a5e7e51  IMS: Add property PROPERTY_IS_PARTICIPANT_HOST  [Zhao Fan]
+e1decfd  Fix black screen issue due to wallpaper decoding exceptions  [Weijie Wang]
+595bc0c  Audio: Update mApmConnectedDevice properly  [Gautam Manam]
+3e5be8d  Add media.hwcodec to native watchdog.  [Mahesh Lanka]
+1c96675  Revert "Revert "Restore preferred activity filter if it not inside""  [Songchun Fan]
+df25ce8  Revert "Restore preferred activity filter if it not inside"  [Wale Ogunwale]
+1e8704c  Restore preferred activity filter if it not inside  [vend_wsd_am_052]
+6ec7616  KeyStore: Block key attestation for Google Play Services  [Danny Lin]
+95643b3  VolumeDialogImpl: Reschedule the timeout on clicks on captions  [Arian]
 
 
 * frameworks/native
-3bf89e9  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
+a2227cd  Fix coordinate error after rotation and scaling in TouchInputMapper  [arthurhung]
+ea0c01b  gralloc4: fix PlaneLayout encode typecasting  [SeYeong Byeon]
 
 
 * frameworks/opt/telephony
-a835b8d  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPb]
-
-
-* packages/apps/Launcher3
-970bef5  Automatic translation import  [DennySPb]
-
-
-* packages/apps/Settings
-76e8e3d  Automatic translation import  [DennySPb]
-82543ee  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
-
-
-* packages/apps/SyberiaSettings
-81c469a  Automatic translation import  [DennySPb]
-79cd4bf  Syberia: OP8T Cyberpunk 2077 FOD icon  [Stallix]
-c596cae  Syberia: Update name for Cyberpunk 2077 FOD animation  [Joey Huab]
-
-
-* packages/services/Telecomm
-f66c2b3  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
-
-
-* packages/services/Telephony
-31624d0  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD  [DennySPb]
-
-
-* vendor/syberia
-623c4c3  v4.2  [DennySPb]
-
-
-====================
-     2020-12-08    
-====================
-
-* art
-9742f58  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/art  [DennySPb]
-
-
-* bionic
-01ddcd9  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/bionic into HEAD  [DennySPb]
-
-
-* build/make
-5732350  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
-
-
-* build/soong
-8faa0b2  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/build/soong into HEAD  [DennySPb]
-
-
-* frameworks/av
-bc14da7  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
-
-
-* frameworks/base
-3c8d0ae  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
-
-
-* frameworks/opt/net/ims
-1e09cea  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/frameworks/opt/net/ims into HEAD  [DennySPb]
-
-
-* frameworks/opt/net/wifi
-7f50962  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD  [DennySPb]
+b8d068d  Merge tag 'LA.QSSI.11.0.r1-09400-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPb]
 
 
 * hardware/interfaces
-3e60062  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPb]
+e5a648a  Adjust the parameters of accelerometer and hinge angle sensor  [Hsin-Yi Chen]
+704b022  Set default value for pressure sensor  [Hsin-Yi Chen]
 
 
-* hardware/libhardware
-e5830b5  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/hardware/libhardware into HEAD  [DennySPb]
+* packages/apps/PermissionController
+7201cf0  [DO NOT MERGE] Deep-update live datas and update on isStale in getInitializedValue  [Eugene Susla]
 
 
-* packages/apps/Bluetooth
-7d41afa  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPb]
+* packages/apps/Settings
+cb3d579  Fix crash on "Connection preferences"  [Hugh Chen]
 
 
-* packages/apps/Launcher3
-b7b6717  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD  [DennySPb]
-
-
-* packages/apps/Nfc
-13f5dc8  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPb]
-
-
-* packages/apps/SettingsIntelligence
-123e435  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/packages/apps/SettingsIntelligence into HEAD  [DennySPb]
-
-
-* packages/apps/ThemePicker
-76852d0  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/packages/apps/ThemePicker into HEAD  [DennySPb]
-
-
-* packages/providers/DownloadProvider
-935d091  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD  [DennySPb]
-
-
-* system/bt
-bd717fb  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPb]
-
-
-* system/core
-ab72230  fastboot: add new oem command for post wipe userdata  [josephjang]
-bb524a0  adbd: Fix check against valid payload size  [Mayank Rana]
-de595c2  Allow shell to write to /sdcard/Android/data and /sdcard/Android/obb.  [Martijn Coenen]
-ac110d7  Assume UNSUPPORTED if the battery capacity level sysfs node does not exist.  [Stephane Lee]
-629c4f5  init.rc: remove initializations to cg2_bpf path  [Marco Ballesio]
-6c65017  libprocessgroup: json prototype for cgroups v2  [Marco Ballesio]
-2789499  libprocessgroup: switch freezer to cgroup v2  [Marco Ballesio]
-d0975fe  fuzzy_fastboot: use 'tcp:' prefix to identify fastboot protocol.  [sirius.wang]
-11f2f0d  libprocessgroup: support for cgroup v2 hierarchy  [Marco Ballesio]
-fe8dee0  libsnapshot_test: skip global setup on non-VAB devices.  [Yifan Hong]
-492046e  Re-enable libsnapshot ImageManagerTest  [Alessio Balsini]
-8cfa60f  fs_mgr: Revert "Try to recover corrupted ext4 /data with backup superblock"  [Eric Biggers]
-
-
-* system/extras
-949d24e  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/system/extras into HEAD  [DennySPb]
-
-
-* system/netd
-5bb748d  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/system/netd into HEAD  [DennySPb]
-
-
-* system/sepolicy
-2b9f343  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPb]
-
-
-* system/update_engine
-e5ec1b1  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/system/update_engine into HEAD  [DennySPb]
-
-
-* system/vold
-9611970  Merge tag 'android-11.0.0_r21' of https://android.googlesource.com/platform/system/vold into HEAD  [DennySPb]
-
-
-* vendor/syberia
-9385cf7  kernel: Add prebuilt m4 to build environment  [Alessandro Astone]
-37f6d74  kernel: Add bison and flex to build environment  [dianlujitao]
-
-
-====================
-     2020-12-07    
-====================
-
-====================
-     2020-12-06    
-====================
-
-====================
-     2020-12-05    
-====================
-
-====================
-     2020-12-04    
-====================
-
-====================
-     2020-12-03    
-====================
-
-* external/sqlite
-1eb911e  Update to 3.34.0  [DennySPb]
-
-
-* frameworks/base
-07e5531  IMS: Add doAnswer API  [Ashit Sood]
-c8f0fc6  IMS: Allow VT calls when tty-on  [Alvin Dey]
-985ffff  FR30706: Add a playing tone setting.  [qiongz]
-959f5a1  Add vibrating for outgoing call accepted support  [Mengjun Leng]
-6a9aac3  IMS: Add new carrier config.  [Sonalika Paul]
-ec2c94a  IMS: Add new Carrier Config.  [Sonalika Paul]
-6d49e69  Telephony: Rename VoWiFi Emergency notification intent.  [Muhammed Siju]
-4701286  VoWifi notification for emergency calls  [Sukanya Rajkhowa]
-e65c49d  Ims: Add suppport for "Ims Preferred" WFC Preference  [Ravi Paluri]
-10cbb96  Add ICCID into CarrierIdentifier  [Mengjun Leng]
-7e42816  IMS: Propagate RTT capability of the called party to UI  [Benergy Meenan Ravuri]
-a2b5b65  Telephony: Add DisconnectCause values for clear code  [Qiang Chen]
-ff7df9d  IMS: Add UT interface to query CF setting for service class.  [pengfeix]
-82455f6  IMS: Add flag to control reset UT capability  [pengfei xiao]
-a4ef5b3  Add config to disable CDMA call forward/waiting  [pengfeix]
-
-
-* frameworks/opt/net/ims
-b86d0ee  Merge tag 'LA.QSSI.11.0.r1-07900-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/ims into HEAD  [DennySPb]
-
-
-* frameworks/opt/telephony
-6e1ee8c  2G wants proper signal strength too  [Arne Coucheron]
-1ddaa28  Restore getSubIdFromNetworkRequest method  [Alex Koskovich]
-24d9a32  RIL: Fix manual network selection with old modem  [faust93]
-362ce7c  Restore isEmergency method  [Alex Koskovich]
-70c4381  Revert "SEEMP: framework instrumentation and SMS security"  [Christian Oder]
-cdb3c0e  Merge tag 'LA.QSSI.11.0.r1-07900-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPb]
+* packages/apps/SyberiaSettings
+8150831  Move statusbar brightness slider to gestures  [DennySPb]
+32351ad  Statusbar Clock n Date customization (2/2)  [Lars Greiss]
 
 
 * packages/services/Telecomm
-a87d9ac  Merge tag 'LA.QSSI.11.0.r1-07900-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm into HEAD  [DennySPb]
+7fa122b  Merge tag 'LA.QSSI.11.0.r1-09400-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm into HEAD  [DennySPb]
 
 
 * packages/services/Telephony
-0da38c8  PhoneCommon: Add description text item for each clear code  [Li Wei]
-19e42a3  Telephony: Break qti-telephony-framework dependency  [maxwen]
-5de4541  Telephony: Support muting by RIL command  [Artem Borisov]
-748e5f7  Merge tag 'LA.QSSI.11.0.r1-07900-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony into HEAD  [DennySPb]
+b4f3ea7  Merge tag 'LA.QSSI.11.0.r1-09400-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony into HEAD  [DennySPb]
 
 
-* vendor/codeaurora/telephony
-ca76f56  Merge tag 'LA.QSSI.11.0.r1-07900-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/codeaurora/telephony into HEAD  [DennySPb]
+* system/bpf
+4f37285  4.9 kernels must support eBPF (as of Android S)  [Maciej Żenczykowski]
 
+
+* system/core
+7bfc39a  Adding 'postinstall' root dir unconditionally.  [Bowgo Tsai]
+e3603de  Store result of mount_all for mounted userdata by metadata encryption  [Qilin Tan]
+0356af4  Only store result of mount_all that mounted userdata  [Nikita Ioffe]
+
+
+* system/netd
+c563331  Stop printing BPF support level.  [Maciej Żenczykowski]
+c08ceb4  Clat eBPF is always enabled (and required)  [Maciej Żenczykowski]
+
+
+* system/sepolicy
+0c40dc7  Export ro.vendor.product.cpu.abilist*  [SzuWei Lin]
+683ee0c  Sepolicy for dumsys suspend_control in bugreport  [Kalesh Singh]
+57c6cde  Add ro.cpuvulkan.version to property_contexts  [Inseob Kim]
+ecf3b21  Add ro.cdma.home.operator. properties  [Inseob Kim]
+e4fbc6a  Allow dumpstate to dump hal_light  [Roman Kiryanov]
+594412f  Allow dumpstate to get thermal and power hal debug info  [TeYuan Wang]
+
+
+* vendor/qcom/opensource/audio
+1af5a76  Merge tag 'LA.QSSI.11.0.r1-09400-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/audio into HEAD  [DennySPb]
+
+
+====================
+     2021-01-13    
+====================
+
+* art
+d6c265f  [master] Add newStringFromUtf8Bytes native implementation.  [Rock.Yeh]
+
+
+* frameworks/av
+3465346  Merge 66a608b8a5582a891bcc4ea4964751aa781c4ea4 on remote branch  [Linux Build Service Account]
+
+
+* frameworks/base
+f874d76  SystemUI: statusbar clock date customization (1/2)  [Lars Greiss]
+372e3ac  SystemUI: Port statusbar brightness control [1/2]  [Danesh Mondegarian]
+443eb49  audio: Discard QTI only codecs when AOSP BT stack is in use  [LuK1337]
+d93f3cc  Cache stream volumes to prevent ANR  [Sungsoo Lim]
+dec5735  Fix the wrong lastBackgroundTime in UidRecord  [lihuan3]
+5427fdd  iorap: Enable by default  [Pranav Vashi]
+
+
+* frameworks/native
+d5ff84c  Check window token when extending timeout  [Siarhei Vishniakou]
+257cbf7  Ensure mNoFocusedWindowTimeoutTime is null when new Focused Window come  [dingxiaobo]
+e0fccb7  Check for focused window before raising 'no focused window' ANR  [Siarhei Vishniakou]
+
+
+* libcore
+d556c5a  [master] Add newStringFromUtf8Bytes native implementation.  [Rock.Yeh]
+
+
+* packages/apps/Etar
+8617d87  Merge https://github.com/LineageOS/android_packages_apps_Etar  [DennySPb]
+
+
+* packages/apps/SyberiaSettings
+d39df04  SyberiaSettings: statusbar brightness control [2/2]  [carpe462]
+
+
+* vendor/qcom/opensource/commonsys/system/bt
+d3007b3  [system][bt] fix -Wdangling-gsl  [Nick Desaulniers]
+b922dc1  Fix read out of bounds in BtifAvEvent::DeepCopy  [Jakub Pawlowski]
+f01a119  Fix a security issue in sdp_server.cc  [Hansong Zhang]
+93757d9  Check Classic key before cross-key derivation  [Chen Chen]
+801d7e4  Send a response to an smp security request depending on the callback event  [Rahul Sabnis]
+2efc0bd  ACL: Drop broadcasts  [Myles Watson]
+45787ee  Fix potential OOB write in libbluetooth  [Ted Wang]
+3300a95  Changed HID_DEV_MTU_SIZE from 64 to 512  [Danny Trunk]
+979c4ff  Return after removing sample LTK device  [li-wei.cheng]
+a5c5905  Fix possible OOB when receive gatt read type response data  [weichinweng]
+ff2233a  Remove pairing on incoming bond request  [Myles Watson]
+24fbaa6  GattServcer: Check invalid offset  [Hansong Zhang]
+
+
+====================
+     2021-01-12    
+====================
+
+* bionic
+bd173cd  libc: Import cortex-strings strlen for A7/A15/A53/A53.A57/Denver/Krait  [Bernhard Rosenkraenzer]
+
+
+* frameworks/native
+43a11dc  libbinder_ndk: simplify AStatus get  [Steven Moreland]
+ec657b1  Vulkan: load built-in driver into default namespace as a fallback  [Yiwei Zhang]
+437ffb1  ScopedFileDescriptor: better error on close  [Steven Moreland]
+4863d1c  Run restorecon on new profile directories.  [Alan Stokes]
+fb196c1  Add XML files for dEQP feature flags  [Alastair Donaldson]
+44fb23c  VirtualDisplaySurface propagate reallocation to VDS producer  [KaiChieh Chuang]
+5d54602  libgralloctypes: remove AIDL comparison operators  [Steven Moreland]
+1910ed9  Use C++ thread_local rather than libcutils.  [Elliott Hughes]
+da6133d  binderSafeInterfaceTest: avoid zombie  [Steven Moreland]
+bbf0bd4  libbinder: finish{F,Unf}lattenBinder symmetry  [Steven Moreland]
+f6fe46a  libbinder: ProcessState - force mark SM stability  [Steven Moreland]
+2cca907  remove extra semicolons [-Wextra-semi]  [Jooyung Han]
+bd7f15d  Use eBPF-based time-in-state monitoring for groups of threads  [Dmitri Plotnikov]
+0eb313f  libbinder: schd-dbg test FIXME -> TODO  [Steven Moreland]
+b755561  libbinder: avoid BpBinder subclasses  [Steven Moreland]
+17afa4b  libbinder: BpBinder. move handle  [Steven Moreland]
+3f6a567  libbinder_ndk: Expose UTF-8 interface descriptor string  [Stephen Crane]
+06a1c21  libbinder_ndk: Add APIs for lazy services  [Devin Moore]
+55440a3  libbinder_ndk: APIs for polling  [Steven Moreland]
+5763d34  Allow AIBinder<->IBinder when sharing libbinder.  [Steven Moreland]
+d25d816  libbinder_ndk: AIBinder_{setRequesting,getCalling}Sid  [Steven Moreland]
+f6ef373  libvibrator: Updated to build both static and shared library,  [Ayushi Khopkar]
+b9dd85e  Add android.hardware.uwb feature  [Brian Stack]
+900185c  Parcel: add "optional" variant of writeParcelableVector  [Jooyung Han]
+44ba90a  Move libdvr.google into system_ext  [Roman Kiryanov]
+aa60c25  Move libvr_hwc-hal and vr_hwc into system_ext  [Roman Kiryanov]
+c9966c6  Move performanced into system_ext  [Roman Kiryanov]
+08af4fb  Move pdx_tool into system_ext  [Roman Kiryanov]
+2089204  Move bufferhubd into system_ext  [Roman Kiryanov]
+998e675  Retire libgtest_prod from dependencies  [Roman Kiryanov]
+01b9257  Dexopt: fix a bug due to unsign int.  [yawanng]
+d996ff9  libbinder: disable implicit unique_fd get  [Steven Moreland]
+c27707c  libbinder: Status s/stringstream/ostream/  [Steven Moreland]
+d366cbe  libbinder: Parcel, remove mOwnerCookie  [Steven Moreland]
+
+
+* system/bpf
+561dd9f  Allow multiple processes' threads tracked at the same time  [Dmitri Plotnikov]
+aab743a  Use eBPF-based time-in-state monitoring for groups of threads  [Dmitri Plotnikov]
+
+
+* system/bpfprogs
+8c45442  Allow multiple processes' threads tracked at the same time  [Dmitri Plotnikov]
+f078bb5  Use eBPF-based time-in-state monitoring for groups of threads  [Dmitri Plotnikov]
+
+
+====================
+     2021-01-11    
+====================
+
+* build/make
+dc3095e  Merge tag 'android-11.0.0_r27' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
+
+
+* frameworks/av
+e39f3a0  Merge tag 'android-11.0.0_r27' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
+
+
+* frameworks/base
+97b187a  Merge tag 'android-11.0.0_r27' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+
+
+* frameworks/native
+9859936  Merge tag 'android-11.0.0_r27' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
+
+
+* packages/apps/SettingsIntelligence
+59ad71c  Merge tag 'android-11.0.0_r27' of https://android.googlesource.com/platform/packages/apps/SettingsIntelligence into HEAD  [DennySPb]
+
+
+* packages/providers/DownloadProvider
+1d8c8fd  Merge tag 'android-11.0.0_r27' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD  [DennySPb]
+
+
+* system/bt
+3ef9f6e  Merge tag 'android-11.0.0_r27' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPb]
+
+
+* system/media
+ccb1cdf  Merge tag 'android-11.0.0_r27' of https://android.googlesource.com/platform/system/media into HEAD  [DennySPb]
+
+
+* system/memory/lmkd
+e6f1378  Merge branch 'master' of https://android.googlesource.com/platform/system/memory/lmkd into HEAD  [DennySPb]
+
+
+* system/update_engine
+481f1a5  Merge tag 'android-11.0.0_r27' of https://android.googlesource.com/platform/system/update_engine into HEAD  [DennySPb]
+
+
+====================
+     2021-01-10    
+====================
+
+====================
+     2021-01-09    
+====================
 
