@@ -1,265 +1,244 @@
 ====================
-     2020-12-31    
+     2021-01-16    
 ====================
 
-* art
-d61c02e  ARM64: Enable SDOT/UDOT instructions emission  [Artem Serov]
-
-
 * frameworks/base
-f0526e1  SystemUI: Don't show FOD icon/pad keyguard if strong auth is required  [Dil3mm4]
-9ede2f3  fixup! FODCircleView: various improvements.  [Pig]
-f416a5b  FODCircleView: detect touch outside and take action accordingly  [Dil3mm4]
-8152e2f  FODCircleView: change window type to don't clash with GlobalActionDialogs  [Dil3mm4]
-aa23bbd3  fixup! FODCircleView: various improvements.  [LuK1337]
-0f111e8  FODCircleView: ensure that when we check for bouncer, we're on keyguard.  [Dil3mm4]
-0985737  SystemUI: Don't shift KeyguardSecurityContainer when FOD isn't available  [Dil3mm4]
-42aff7a3  FODCircleView: various improvements.  [Dil3mm4]
-963377d  SystemUI: Increase icon padding in QS privacy chip  [Danny Lin]
-28f4949  base: Add back the delete action for the screen recorder notification.  [Sourajit Karmakar]
-656a1f0  Only play sound effects if stream is not muted.  [David Overton]
-cfe5b3e  SystemUI: Convert global actions to translucent overlay with blur  [Danny Lin]
-8921431  base: Properly regenerate the share drawable.  [Sourajit Karmakar]
-2146d70  Allow media art with enabled facelock lockscreen bypass  [DennySPb]
-7832483  Allow to configure or disable lockscreen media art blur [1/2]  [ezio84]
-6e877f7  Lockscreen MediaArt: hide if media is not playing  [ezio84]
-1433f87  Nfc adapter randomly returns null on devices having Nfc  [Jack Yu]
-c308605  Improve NfcAdapter APIs to report correct nfc state  [Jack Yu]
-70db35d  Cache pin algorithms in PinSet  [Till Kottmann]
-4177932  Cache the global proxy to avoid fetching it for every request  [Till Kottmann]
-be09754  Cache KeyStoreService  [Till Kottmann]
-88e865c  base: Grant suspend permission to Flipendo  [Adithya R]
-d779555  SystemUI: Make sure notification icons are sticked to the left  [Ido Ben-Hur]
-bc9a001  Whitelist WRITE_DEVICE_CONFIG for shell  [Pranav Vashi]
-46c1f20  fw/b: [Squash] Add capability to allow tethering to use VPN upstreams  [Sam Mortimer]
-ae549b9  SmartCharging: add reset battery stats option [1/2]  [DennySPB]
-6682695  SmartCharging: allow user set resume level [1/2]  [DennySPB]
-234b4ac  Smart Charging: allow using device overlays  [DennySPB]
-dfac0d3  Smart Charging: rework for using more common sysfs node [1/2]  [DennySPB]
-e87bf85  base: Smart Charging (1/4)  [Lucchetto]
-a4d38e8  frameworks: Reset battery stats [1/2]  [Jorge Ruesga]
+68761c8  FODCircleView: fix for Screen off FOD  [SVB22]
 
 
-* packages/apps/PermissionController
-cb5fab5  PermissionController: Implement getPermissionUsages API  [Danny Lin]
-aea645d  PermissionController: Remove warning from permission dashboard  [Danny Lin]
+* frameworks/native
+0992365  InputDispatcher:do not freeze recent on event from FOD  [SVB22]
 
 
 * packages/apps/Settings
-0bc20e9  Don't change nouns in summaries to lower case for German  [Danny Baumann]
-68ac26f  Settings: Fix the failing strings  [Michael Bestas]
-b1914c8  get outer NFC preference to listen for changes  [inthewaves]
-2b95301  Remove unused translations  [Michael Bestas]
-15bbac1  Set highest priority as default value to Bluetooth codec  [timhypeng]
-d931dcf  [Telephony settings] Settings crashes when rotate screen in Preferred network type  [changbetty]
-799cbc1  Fix for incorrect display of preferred network type on UI  [Avinash Nalluri]
-c9ca999  Avoid unexpected state changes for enhanced preferences  [Taesu Lee]
-0038ae0  [Settings] subscription UI should be closed when SIM is removed  [Bonian Chen]
-3c8de6d  Add NR network type to "Global" mode preference  [Avinash Nalluri]
-287866a  Settings: Fix exception in about phone during SIM swap  [hoffc]
-8018426  Prevent errors when updating operator pref summary  [Sneh Bansal]
-890ac51  Improve the performance of displaying preference - multithread.  [Zoey Chen]
-412e47e  Fix mvno data field summary not update issue  [Wei Huang]
-ca84dd1  Fix NPE if default supervisor is not defined  [Wang Han]
-fae91fe  Disable 'Mobile data' selection after removing SIM  [Grace Jia]
-761d5de  Settings: Hide carrier settings version if empty  [Wang Han]
-7c9eccb  Preserve icon for "manage space"  [Wang Han]
-7ae4e1b  Button text for app space management is overwritten  [Pingzhi Wang]
-2031c9b  Usb preference title changed when rotating  [Xinli Zhang]
-ade2cc4  Fix NPE in PanelFragment  [Daniel Hunt]
-96c8e1d  Fix for User edit info dialog during rotation  [Rafael Matias de Lima]
-b3667c3  Settings: Pass Locale.US when formatting refresh rate string  [LuK1337]
-bcca476  Settings: Add preference for KEY_MIN_REFRESH_RATE  [LuK1337]
-6a31417  Settings: Check if we have any color modes declared in overlay  [Luca Stefani]
-35c9a18  Revert "Remove permission bar chart in Privacy setting"  [Michael Bestas]
-37f85b0  NightDisplay Settings: Use List Preference for NightLight settings  [Akash]
-c84fc8f  Settings: QR Scanner pass proper frame Width and Height  [hoffc]
-afff472  Settings: Ignore custom app space management activities  [Danny Lin]
-fa591a8  Settings: Remove app uninstall and disable confirmation dialogs  [Danny Lin]
-3d355b4  Settings: Remove roaming warning dialog  [Danny Lin]
-5e47cbe  Settings: Fix inconsistent USB preference screen title  [Danny Lin]
-c5a7efb  Settings: Fix stray divider in connected devices screen  [Danny Lin]
-c1d23f0  Settings: Tint data usage bar with activated control color  [Danny Lin]
-2a4dfc1  Settings: Fix invalid private DNS help text if URI is missing  [Danny Lin]
-a9fc1c8  Smart Charging: Make it optional  [spezi77]
-2d8043f  SmartCharging: add reset battery stats option [2/2]  [DennySPB]
-a5be100  SmartCharging: allow user set resume level [2/2]  [DennySPB]
-997c521  Settings: Smart Charging (2/4)  [Lucchetto]
-6caaf72  Settings: Add hotspot setting to allow VPN upstreams  [Sam Mortimer]
-3f25570  Settings: Make phone number clickable  [Joey Huab]
-b1ebcca  Remove "storage type" preference from Settings  [joffenberg]
-8a0287b  Give new life to reset buttons  [Alex Cruz]
-2060dfd  Make kernel version clickable  [SagarMakhar]
-17fa4b3  Settings: Remove storage manager activation warning  [Danny Lin]
-eb596a0  Settings: Unlock mobile network settings when airplane mode is on  [Danny Lin]
-5e9b9e0  Settings: Launch APN settings on main activity stack  [Danny Lin]
-d7e7bb0  DarkMode Settings: Use List Preference rather ugly Drop Down  [Pranav Vashi]
-c97695e  Settings: Launch mobile network settings in main activity stack  [Danny Lin]
-366e696  Settings: Reset battery stats [2/2]  [Jorge Ruesga]
-
-
-* packages/apps/SyberiaSettings
-8be91be  [2/2] lock screen media artwork blur  [ezio84]
-
-
-* vendor/syberia
-67df6c3  overlay: Enable privacy indicators  [Danny Lin]
-fe08186  overlay: Delegate DeviceConfig permissions to custom provisioning service  [Danny Lin]
-a0cb861  config: Build simple DeviceConfig provisioning service  [Danny Lin]
+a6ba36f  BatteryHealth: show Charge Cycles Completed  [SuperDroidBond]
+2caf71e  BatteryHealth: Make it optional  [AshutoshSundresh]
+2525266  add BatteryHealth section  [Lucchetto]
 
 
 ====================
-     2020-12-30    
+     2021-01-15    
 ====================
 
-* art
-07b2edd  LSE: Fix tracking heap values for small types  [Vladimir Marko]
-1b941a8  ART: Fix incorrect LSE across throwing ArraySet  [Vladimir Marko]
-e998555  Handle unresolved field type in compiler  [Nicolas Geoffray]
-8cba6d3  Introduce an enum for the compilation kind  [Nicolas Geoffray]
-e4b1324  ART: Make GVN handle HDeoptimize better  [Alex Light]
-3978258  ART: Introduce predicated vector instructions  [Artem Serov]
-cf7d49d  ART: Run LSA as a part of the LSE pass  [Vladimir Marko]
-1b89f26  Add compiler type to CompilerOptions  [Vladimir Marko]
-a8e9679  ART: Introduce Loop Versioning in SuberblockCloner  [Artem Serov]
-4a230e1  ART: Fix vectorizer HalvingAdd idiom  [Artem Serov]
-754bc77  Enable FromRuntimeDetection on all platforms  [Daniil Riazanovskiy]
-ae62533  Integrate cpu_features external library  [Daniil Riazanovskiy]
-
-
-* build/make
-cd049d0  releasetools: ota_from_target_files: fix build for A-Only dynamic devices not building vendor  [Akhil Narang]
-8a1cff7  build_image: Allow disabling custom inode count calculation  [Christian Oder]
-3efd693  releasetools: do not remove dynamic partitions in system-only builds  [Peter Cai]
-6fb7fb4  Merge changes Ic2dcfd9e,I36fe03fb into 11.0  [dennyspb]
-
-
-* external/cpu_features
-2f8e626  Revert "Rename ART release APEX to com.android.art."  [Akash]
+* external/libjpeg-turbo
+3674cf6  Merge tag 'LA.QSSI.11.0.r1-09400-qssi.0' of https://source.codeaurora.org/quic/la/platform/external/libjpeg-turbo into HEAD  [Alexander Koskovich]
 
 
 * frameworks/av
-a4ec8a5  Merge tag 'LA.QSSI.11.0.r1-08800-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPb]
+56f7401  CCodec: store flushed config as work items  [Wonsik Kim]
+c5d1aed  ACodec: submit extra output metadata buffers if in low latency mode  [Wonsik Kim]
+1493f17  OMX Opus decoder omits sample rate / channel count  [Ray Essick]
+6ab1502  CCodec: fix underflow issue on handleImageData  [Taehwan Kim]
+87af6ac  CCodec: workaround for frame drops  [Wonsik Kim]
+d910978  Merge tag 'LA.QSSI.11.0.r1-09400-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPb]
 
 
 * frameworks/base
-c031041  base: Add IconShapeMallowOverlay  [MrSluffy]
-f76765e  Revert "Only allow system apps to be forceQueryable"  [Danny Lin]
-18c1c7e  SystemUI: Don't render snooze undo button in all-caps  [Danny Lin]
-2bc52b8  Catch IllegalStateException when verify APK  [Zhuying Li]
-da4a4b5  Add callback onA2dpCodecConfigChanged  [Mingbo Zhang]
-61b050d  SystemUI:SIM PIN1 lock screen abnormal  [sxia]
-18e9aab  Allow to hide arrow for back gesture [1/2]  [eyosen]
-f77b7c0  MediaCodecInfo: do not alter performance points for 32-bit processes  [Wonsik Kim]
-5b94854  MediaCodecInfo: limit resolution to 4K for 32-bit processes  [Wonsik Kim]
-1ca4144  Keyguard: Lock icon improvements  [Dil3mm4]
-9d46148  SystemUI: Fix notification guts layout  [George Zacharia]
-357cc31  fw/b: Add support for per app network isolation  [Sam Mortimer]
-630ab6c  fw/b: Squash of app fw restriction commits  [Danesh M]
-4be33bd  Revert previous app fw restriction commits  [DennySPb]
-6d747ec  Fix to attach listener to transient session  [Ravindra]
-d4367f7  overlays: fix volume panel arrow in Viktor and Sam icon packs  [Abhay Kshatriya]
-33e7c36  SystemUI: fix layout of qs header info  [maxwen]
-f6be5e8  SystemUI: disable KeyguardConstants DEBUG  [maxwen]
-5d29f9b  SystemUI: Fix bug with user_setup_complete setting  [SagarMakhar]
-8e994a2  GamingMode: Fix initial value of gaming mode  [Pranav Vashi]
-ed7a78c  iorap: Terminate iorapd process when both tracing and prefetching are off.  [yawanng]
-bc6b49b  SystemUI: Resolve faulty keyguard clock logs outputs  [Adrian DC]
-37825e8  Properly set fonts and icons on keyguard when changing styles  [ezio84]
-f7d420b  Properly theme ScreenshotUI buttons  [AshutoshSundresh]
-5987bf1  base: Fix edge lights when sensitive notification content is hidden on keyguard  [Ido Ben-Hur]
+8ec410f  ims: Version support for uce feature tags  [Ayishwarya Narasimhan]
+a5e7e51  IMS: Add property PROPERTY_IS_PARTICIPANT_HOST  [Zhao Fan]
+e1decfd  Fix black screen issue due to wallpaper decoding exceptions  [Weijie Wang]
+595bc0c  Audio: Update mApmConnectedDevice properly  [Gautam Manam]
+3e5be8d  Add media.hwcodec to native watchdog.  [Mahesh Lanka]
+1c96675  Revert "Revert "Restore preferred activity filter if it not inside""  [Songchun Fan]
+df25ce8  Revert "Restore preferred activity filter if it not inside"  [Wale Ogunwale]
+1e8704c  Restore preferred activity filter if it not inside  [vend_wsd_am_052]
+
+
+* frameworks/native
+ea0c01b  gralloc4: fix PlaneLayout encode typecasting  [SeYeong Byeon]
 
 
 * frameworks/opt/telephony
-45067ea  Merge tag 'LA.QSSI.11.0.r1-08800-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPb]
+b8d068d  Merge tag 'LA.QSSI.11.0.r1-09400-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPb]
 
 
-* hardware/qcom-caf/wlan
-78a8ba5  Merge tag 'LA.UM.9.2.r1-01800-SDMxx0.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/wlan into HEAD  [DennySPb]
+* hardware/interfaces
+e5a648a  Adjust the parameters of accelerometer and hinge angle sensor  [Hsin-Yi Chen]
+704b022  Set default value for pressure sensor  [Hsin-Yi Chen]
 
 
-* packages/apps/Settings
-21b9b47  [fixup] fw restriction api changes  [DennySPb]
-9fcd759  Settings: Allow to hide arrow for back gesture [2/2]  [Nicolas Dhouailly]
+* packages/apps/PermissionController
+7201cf0  [DO NOT MERGE] Deep-update live datas and update on isStale in getInitializedValue  [Eugene Susla]
+
+
+* packages/apps/SyberiaSettings
+8150831  Move statusbar brightness slider to gestures  [DennySPb]
+
+
+* packages/services/Telecomm
+7fa122b  Merge tag 'LA.QSSI.11.0.r1-09400-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm into HEAD  [DennySPb]
 
 
 * packages/services/Telephony
-b7a981b  Merge tag 'LA.QSSI.11.0.r1-08800-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony into HEAD  [DennySPb]
+b4f3ea7  Merge tag 'LA.QSSI.11.0.r1-09400-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony into HEAD  [DennySPb]
 
 
-* vendor/qcom/opensource/audio
-b73442f  Merge tag 'LA.QSSI.11.0.r1-08800-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/audio into HEAD  [DennySPb]
+* system/bpf
+4f37285  4.9 kernels must support eBPF (as of Android S)  [Maciej Żenczykowski]
 
 
-====================
-     2020-12-29    
-====================
-
-====================
-     2020-12-28    
-====================
-
-====================
-     2020-12-27    
-====================
-
-* external/cldr
-bca0ad9  RESTRICT AUTOMERGE CLDR-14225 tz database 2020b updates [R]  [Neil Fuller]
-1b1fe92  RESTRICT AUTOMERGE CLDR-13739 Changed some tzdata files to rear-guard version. (#445)  [Neil Fuller]
-
-
-* external/icu
-56b88bc  RESTRICT AUTOMERGE Update Android to tzdb 2020d [R]  [Neil Fuller]
-e0583f3  RESTRICT AUTOMERGE Update Android to tzdb 2020c [R]  [Neil Fuller]
-394ae3d  RESTRICT AUTOMERGE Update Android to tzdb 2020b [R]  [Neil Fuller]
-
-
-* system/timezone
-16a8d2a  RESTRICT AUTOMERGE Update Android from 2020c to 2020d [R]  [Neil Fuller]
-927672e  RESTRICT AUTOMERGE Update Android from 2020b to 2020c [R]  [Neil Fuller]
-5c9bf9b  RESTRICT AUTOMERGE Update Android from 2020a to 2020b [R]  [Neil Fuller]
-
-
-====================
-     2020-12-26    
-====================
-
-* frameworks/av
-e8df05d  CCodec: simplify format change logic  [Wonsik Kim]
-30b6b81  aacdec: don't report DRC_COMPRESSION_MODE back  [Wonsik Kim]
-63a36ff  CCodecConfig: don't read DRC_COMPRESSION_MODE back  [Wonsik Kim]
-46e434e  C2OMXNode: read delay from component to determine buffer count  [Wonsik Kim]
-02b3afc  Fix exception when Release Audio Input Effect  [wendy lin]
-355a2a7  CCodecConfig: don't dup input format  [Wonsik Kim]
-efc7b6f  codec2 client: add a missing transaction status check  [Wonsik Kim]
-24f8b47  CCodec: GraphicBufferSourceWrapper: fix to apply nBufferCountActual for deciding number of inputs  [Taehwan Kim]
-3a807f6  Mediaserver memory increase after record  [Yanqiang Fan]
-dbb4a1d  CCodec: Increase max linear buffer size for 8K video  [Sungtak Lee]
-97c24b5  C2AllocatorBlob: allow multiple maps  [Wonsik Kim]
-f4b624d  OMX AAC decode don't support getting DRC parameters  [Chuangjie Xia]
-1758704  Codec2 components: Updated to build both static and shared libray  [S Vasudev Prasad]
-7924563  libcodec2: Updated to build both static and shared libray  [S Vasudev Prasad]
-c498e89  libstagefright: Increase retry count in Frame Decoder  [Harish Mahendrakar]
-85c5bc7  mpeg4dec: Check for invalid quant matrix  [Harish Mahendrakar]
-6237c34  libsfplugin_ccodec_utils: Updated to build both static and shared libray  [S Vasudev Prasad]
-d3cc057  libcodec2_vndk: Updated to build both static and shared libray  [S Vasudev Prasad]
-e96609d  MediaCodec: Report error when render surface is obsolete  [Sungtak Lee]
-1fc97e8  CCodec: fix ByteBuffer mode image  [Wonsik Kim]
-06047e8  ACodec: Handle HDR10+ metadata at OutputPortSettingsChangedState  [Houxiang Dai]
-
-
-====================
-     2020-12-25    
-====================
-
-* build/make
-9546297  build: add org.codeaurora to package whitelist  [maxwen]
-2657abe  build: dont include tasks from tests and platform_testing  [maxwen]
+* system/core
+7bfc39a  Adding 'postinstall' root dir unconditionally.  [Bowgo Tsai]
+e3603de  Store result of mount_all for mounted userdata by metadata encryption  [Qilin Tan]
+0356af4  Only store result of mount_all that mounted userdata  [Nikita Ioffe]
 
 
 * system/netd
-b8a87ed  system/netd: Add support for per app network isolation  [Sam Mortimer]
-e2a2670  system/netd: Squash of netd uid bandwidth restriction commits  [Uldiniad]
-4ed15d5  Revert previous fw restriction commits  [DennySPb]
+c563331  Stop printing BPF support level.  [Maciej Żenczykowski]
+c08ceb4  Clat eBPF is always enabled (and required)  [Maciej Żenczykowski]
 
+
+* system/sepolicy
+0c40dc7  Export ro.vendor.product.cpu.abilist*  [SzuWei Lin]
+683ee0c  Sepolicy for dumsys suspend_control in bugreport  [Kalesh Singh]
+57c6cde  Add ro.cpuvulkan.version to property_contexts  [Inseob Kim]
+ecf3b21  Add ro.cdma.home.operator. properties  [Inseob Kim]
+e4fbc6a  Allow dumpstate to dump hal_light  [Roman Kiryanov]
+594412f  Allow dumpstate to get thermal and power hal debug info  [TeYuan Wang]
+
+
+* vendor/qcom/opensource/audio
+1af5a76  Merge tag 'LA.QSSI.11.0.r1-09400-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/audio into HEAD  [DennySPb]
+
+
+====================
+     2021-01-14    
+====================
+
+* frameworks/av
+3465346  Merge 66a608b8a5582a891bcc4ea4964751aa781c4ea4 on remote branch  [Linux Build Service Account]
+
+
+* frameworks/base
+6ec7616  KeyStore: Block key attestation for Google Play Services  [Danny Lin]
+95643b3  VolumeDialogImpl: Reschedule the timeout on clicks on captions  [Arian]
+f874d76  SystemUI: statusbar clock date customization (1/2)  [Lars Greiss]
+372e3ac  SystemUI: Port statusbar brightness control [1/2]  [Danesh Mondegarian]
+443eb49  audio: Discard QTI only codecs when AOSP BT stack is in use  [LuK1337]
+d93f3cc  Cache stream volumes to prevent ANR  [Sungsoo Lim]
+dec5735  Fix the wrong lastBackgroundTime in UidRecord  [lihuan3]
+5427fdd  iorap: Enable by default  [Pranav Vashi]
+
+
+* packages/apps/Etar
+8617d87  Merge https://github.com/LineageOS/android_packages_apps_Etar  [DennySPb]
+
+
+* packages/apps/SyberiaSettings
+32351ad  Statusbar Clock n Date customization (2/2)  [Lars Greiss]
+d39df04  SyberiaSettings: statusbar brightness control [2/2]  [carpe462]
+
+
+* vendor/qcom/opensource/commonsys/system/bt
+d3007b3  [system][bt] fix -Wdangling-gsl  [Nick Desaulniers]
+b922dc1  Fix read out of bounds in BtifAvEvent::DeepCopy  [Jakub Pawlowski]
+f01a119  Fix a security issue in sdp_server.cc  [Hansong Zhang]
+93757d9  Check Classic key before cross-key derivation  [Chen Chen]
+801d7e4  Send a response to an smp security request depending on the callback event  [Rahul Sabnis]
+2efc0bd  ACL: Drop broadcasts  [Myles Watson]
+45787ee  Fix potential OOB write in libbluetooth  [Ted Wang]
+3300a95  Changed HID_DEV_MTU_SIZE from 64 to 512  [Danny Trunk]
+979c4ff  Return after removing sample LTK device  [li-wei.cheng]
+a5c5905  Fix possible OOB when receive gatt read type response data  [weichinweng]
+ff2233a  Remove pairing on incoming bond request  [Myles Watson]
+24fbaa6  GattServcer: Check invalid offset  [Hansong Zhang]
+
+
+====================
+     2021-01-13    
+====================
+
+* frameworks/native
+d5ff84c  Check window token when extending timeout  [Siarhei Vishniakou]
+257cbf7  Ensure mNoFocusedWindowTimeoutTime is null when new Focused Window come  [dingxiaobo]
+e0fccb7  Check for focused window before raising 'no focused window' ANR  [Siarhei Vishniakou]
+
+
+====================
+     2021-01-12    
+====================
+
+* bionic
+bd173cd  libc: Import cortex-strings strlen for A7/A15/A53/A53.A57/Denver/Krait  [Bernhard Rosenkraenzer]
+
+
+* build/make
+dc3095e  Merge tag 'android-11.0.0_r27' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
+
+
+* frameworks/av
+e39f3a0  Merge tag 'android-11.0.0_r27' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
+
+
+* frameworks/base
+97b187a  Merge tag 'android-11.0.0_r27' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+
+
+* frameworks/native
+43a11dc  libbinder_ndk: simplify AStatus get  [Steven Moreland]
+ec657b1  Vulkan: load built-in driver into default namespace as a fallback  [Yiwei Zhang]
+437ffb1  ScopedFileDescriptor: better error on close  [Steven Moreland]
+4863d1c  Run restorecon on new profile directories.  [Alan Stokes]
+fb196c1  Add XML files for dEQP feature flags  [Alastair Donaldson]
+44fb23c  VirtualDisplaySurface propagate reallocation to VDS producer  [KaiChieh Chuang]
+5d54602  libgralloctypes: remove AIDL comparison operators  [Steven Moreland]
+1910ed9  Use C++ thread_local rather than libcutils.  [Elliott Hughes]
+da6133d  binderSafeInterfaceTest: avoid zombie  [Steven Moreland]
+bbf0bd4  libbinder: finish{F,Unf}lattenBinder symmetry  [Steven Moreland]
+f6fe46a  libbinder: ProcessState - force mark SM stability  [Steven Moreland]
+2cca907  remove extra semicolons [-Wextra-semi]  [Jooyung Han]
+bd7f15d  Use eBPF-based time-in-state monitoring for groups of threads  [Dmitri Plotnikov]
+0eb313f  libbinder: schd-dbg test FIXME -> TODO  [Steven Moreland]
+b755561  libbinder: avoid BpBinder subclasses  [Steven Moreland]
+17afa4b  libbinder: BpBinder. move handle  [Steven Moreland]
+3f6a567  libbinder_ndk: Expose UTF-8 interface descriptor string  [Stephen Crane]
+06a1c21  libbinder_ndk: Add APIs for lazy services  [Devin Moore]
+55440a3  libbinder_ndk: APIs for polling  [Steven Moreland]
+5763d34  Allow AIBinder<->IBinder when sharing libbinder.  [Steven Moreland]
+d25d816  libbinder_ndk: AIBinder_{setRequesting,getCalling}Sid  [Steven Moreland]
+f6ef373  libvibrator: Updated to build both static and shared library,  [Ayushi Khopkar]
+b9dd85e  Add android.hardware.uwb feature  [Brian Stack]
+900185c  Parcel: add "optional" variant of writeParcelableVector  [Jooyung Han]
+44ba90a  Move libdvr.google into system_ext  [Roman Kiryanov]
+aa60c25  Move libvr_hwc-hal and vr_hwc into system_ext  [Roman Kiryanov]
+c9966c6  Move performanced into system_ext  [Roman Kiryanov]
+08af4fb  Move pdx_tool into system_ext  [Roman Kiryanov]
+2089204  Move bufferhubd into system_ext  [Roman Kiryanov]
+998e675  Retire libgtest_prod from dependencies  [Roman Kiryanov]
+01b9257  Dexopt: fix a bug due to unsign int.  [yawanng]
+d996ff9  libbinder: disable implicit unique_fd get  [Steven Moreland]
+c27707c  libbinder: Status s/stringstream/ostream/  [Steven Moreland]
+d366cbe  libbinder: Parcel, remove mOwnerCookie  [Steven Moreland]
+9859936  Merge tag 'android-11.0.0_r27' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
+
+
+* system/bpf
+561dd9f  Allow multiple processes' threads tracked at the same time  [Dmitri Plotnikov]
+aab743a  Use eBPF-based time-in-state monitoring for groups of threads  [Dmitri Plotnikov]
+
+
+* system/bpfprogs
+8c45442  Allow multiple processes' threads tracked at the same time  [Dmitri Plotnikov]
+f078bb5  Use eBPF-based time-in-state monitoring for groups of threads  [Dmitri Plotnikov]
+
+
+* system/bt
+3ef9f6e  Merge tag 'android-11.0.0_r27' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPb]
+
+
+* system/media
+ccb1cdf  Merge tag 'android-11.0.0_r27' of https://android.googlesource.com/platform/system/media into HEAD  [DennySPb]
+
+
+* system/memory/lmkd
+e6f1378  Merge branch 'master' of https://android.googlesource.com/platform/system/memory/lmkd into HEAD  [DennySPb]
+
+
+====================
+     2021-01-11    
+====================
+
+====================
+     2021-01-10    
+====================
 
