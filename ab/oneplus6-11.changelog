@@ -1,269 +1,166 @@
 ====================
-     2021-01-29    
-====================
-
-* system/libhwbinder
-ebd9640  hwbinder: remove blockUntilThreadAvailable  [Steven Moreland]
-79ea399  avoid global mutex every binder call  [Steven Moreland]
-d1e9f01  Use atomic, not lock, for parcel allocation counters  [Daniel Colascione]
-
-
-====================
-     2021-01-28    
-====================
-
-* art
-d9c7d4f  [master] Add andw for memory to x86 assembler.  [Nicolas Geoffray]
-4e536c9  [master] X86: Add test for movw  [Andra Danciu]
-fd76fd6  [master] Add andw to x64 assembler.  [Nicolas Geoffray]
-f49c1fd  [master] Support access checks in mterp.  [Nicolas Geoffray]
-de5ff51  [master] Handle missing methods in compiler and nterp.  [Nicolas Geoffray]
-607d9b4  [master] Support VERIFY_ERROR_CLASS_CHANGE in nterp and compiler.  [Nicolas Geoffray]
-8f10468  [master] Disable VMRuntime_preloadDexCaches  [David Srbecky]
-0f8dcb4  [master] nterp: only do string.<init> check on invokedirect.  [Nicolas Geoffray]
-654b2ba  [master] Fix another typo in nterp.  [Nicolas Geoffray]
-eefbfc3  [master] Fix typo in nterp.  [Nicolas Geoffray]
-b12ae72  [master] Support access checks in nterp.  [Nicolas Geoffray]
-b540e74  [master] Handle nterp when precompiling with JIT zygote.  [Nicolas Geoffray]
-ac6c802  [master] Introduce a kTieredHotnessMask.  [Nicolas Geoffray]
-f8896d0  [master] Change detection of counter overflow in nterp x64.  [Nicolas Geoffray]
-76ff762  [master] Optimizing: Fix weak field access check.  [Vladimir Marko]
-1d71d05  [master] Reland^2 "Cover more cases in nterp."  [Nicolas Geoffray]
-a17a157  [master] Disable support for proxy method in nterp.  [Nicolas Geoffray]
-43d2ae5  [master] Fix brainos in UpdateHotness.  [Nicolas Geoffray]
-2dce3e1  [master] [nterp] Export PC before overwiting it in op_aput_object.  [Nicolas Geoffray]
-e40a56f  [master] Increment hotness in nterp when doing lookups.  [Nicolas Geoffray]
-2783be3  [master] Couple of runtime fixes for nterp.  [Nicolas Geoffray]
-823f7e0  [master] nterp: Address old x86-64 comments.  [Vladimir Marko]
-ea1b339  [master] Split nterp frame alignment.  [Vladimir Marko]
-663ad43  [master] [nterp] Add arm64 implementation.  [Nicolas Geoffray]
-
-
-* bionic
-ee75b5a  Revert "libm: Remove duplicate symbol"  [DennySPb]
-
-
-* development
-03dd61c  privapp_permissions: Check product privapp_permissions  [Christian Oder]
-
-
-* frameworks/av
-bb008bb  Fix software decoder display issue.  [ming.zhou]
-38645ee  ACodec: Reduce the TWOmxNode wrapper in GraphicBufferSource  [Yichi Chen]
-
-
-* frameworks/base
-7319ef9  NetworkStatsHistory: Prevent IllegalArgumentException  [Henrique Silva]
-faa5cce  VolumeUI: Track dialogCornerRadius for CaptionsToggle and RingerToggle  [IacobIonut01]
-950647d  Make all activities resizable  [Andy CrossGate Yan]
-942aa6d  Fix NPE when AOSP ambient display preference is removed  [Alex Cruz]
-ed67415  SystemUI: make screenshot action chip to have correct primary colors in dark mode  [Yusuf]
-
-
-====================
-     2021-01-27    
-====================
-
-* external/arm-optimized-routines
-efdd72d  Merge branch 'master' of https://android.googlesource.com/platform/external/arm-optimized-routines into HEAD  [DennySPb]
-b501e3a  Merge https://github.com/ARM-software/optimized-routines into HEAD  [DennySPb]
-
-
-* external/jemalloc_new
-478df65  TEMP: jemalloc: enable MADV_FREE usage  [Park Ju Hyung]
-77da6df  Merge branch 'quartz' of https://github.com/AOSPA/android_external_jemalloc-new into 11.0  [DennySPb]
-
-
-* external/scudo
-e0d65df  Merge branch 'master' of https://android.googlesource.com/platform/external/scudo into HEAD  [DennySPb]
-
-
-* external/sqlite
-2146b12  Update SQLite to 3.34.1  [xNombre]
-
-
-* frameworks/av
-66014d2  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
-
-
-* frameworks/base
-78ec930  Fix guest icon is not clickable after adding user  [Artem Radchenko]
-952cdb8  Fix anr when installing package  [Sun Changqing]
-81d6df3  Fix setType() return value for high angle sensor  [Wang Han]
-e8daa32  camera2: Remove partial result nodes for error frames.  [Jayant Chowdhary]
-c51bfc5  camera2: Improve code readability for FrameNumberTracker.  [Jayant Chowdhary]
-6cefe01  Fixed Handler Leak on RecyclerView  [Jiwon Kim]
-1a6b565  Fixed Handler Leak on WrapperInit  [hyung4.kim]
-d40344d  Persist screen brightness setting through upgrade  [Fiona Campbell]
-d2ff850  KernelWakelockReader: provide class level lock when updates staleStats  [Michael Sun]
-409be92  HwBlob: explicit size check  [Steven Moreland]
-82b7188  AbsSeekBar: Fix growRect computation  [Adrian Roos]
-ddff120  AbsSeekBarTest: Fix dpToPixel computation  [Adrian Roos]
-412d349  fix broadcast receivers overflow for system_server  [Sergii Piatakov]
-07b68f6  FileBridge: fix fd ownership mismanagement.  [Josh Gao]
-4d447f6  Add synchronized to make sure data correctness  [lucaslin]
-b08c3e5  Prevent going through unnecessary networks  [Chiachang Wang]
-3eb8f6e  Use name instead of package name  [Zhuying Li]
-eceeca1  Fix NPE  [wangshouchun]
-16f082c  Thread.sleep takes milliseconds, not seconds.  [Josh Gao]
-defa009  fdtrack: GC before checking fd count.  [Josh Gao]
-ebe235f  Move system_server fdtrack implementation to Java.  [Josh Gao]
-421ca99  Statusbar clock: make it play better with expanded QS date  [ezio84]
-23051e8  SystemUI: Declare new permissions for VPN tile  [George Zacharia]
-d07d80c  SystemUI: Add VPN tile  [Danny Baumann]
-
-
-* frameworks/native
-8bd8f20  Avoid integer underflow involving maxFreqCount.  [Peter Collingbourne]
-
-
-* system/memory/lmkd
-33c4482  Merge branch 'master' of https://android.googlesource.com/platform/system/memory/lmkd into HEAD  [DennySPb]
-
-
-====================
-     2021-01-26    
+     2021-02-12    
 ====================
 
 * frameworks/av
-3727260  Camera: fix wrong metadata pointer  [Yin-Chia Yeh]
+e090988  Merge tag 'LA.QSSI.11.0.r1-09900-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPb]
 
 
 * frameworks/base
-82c61bd  SystemUI: use simple check for isFaceDisabled  [Ali B]
-ca1593b  Revert "SystemUI: Never animate on wakeup"  [Danny Lin]
-521d096  core: Smoother Upload and Download Animation  [Muhammed Nazim]
+82aacc2  Make sensor block package list configurable [1/2]  [Hikari-no-Tenshi]
+7b5ecc9  base: Add Accelerometer and Linear Acceleration sensors in blocking list  [HolyAngel]
+2df68aa  base: Sensor block per-package switch (1/2)  [LorDClockaN]
+9f7a8e9  Increase debounce time for DISCONNECT processing  [Sriharsha Allenki]
+7aa8419  configure same GID based APNs as per carrier requirements  [Avinash Nalluri]
+e6e5513  Bring back "Post a silent notification if screenshot is dismissed"  [Miranda Kephart]
+f26356f  base: media_seekbar: make it sexy  [vladrevers]
+b354db0  Automatic translation import  [DennySPb]
+4bcc3eb  SystemUI: Improve touch width of volume panel  [drpradsms]
+0ff0f09  fixup! fix font size scale validator after r29 merge  [Joey Huab]
+11afb53  NavigationBarView: Fixup IME arrows after r19 merge  [Ido Ben-Hur]
 
 
-* hardware/syberia
-fcca5f9  Allow override charging suspend node  [DennySPb]
+* frameworks/opt/net/ims
+94ec96d  Merge tag 'LA.QSSI.11.0.r1-09900-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/ims into HEAD  [DennySPb]
 
 
-* packages/apps/DeskClock
-e1b94a1  Theme: use primary and accent colors  [DennySPb]
+* frameworks/opt/telephony
+d04d8d3  Merge tag 'LA.QSSI.11.0.r1-09900-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPb]
 
 
-* packages/apps/Messaging
-02b1446  Messaging: Use a DayNight launch theme  [Scott Warner]
-0c38268  Messaging: disable auto dark theming on message bubble  [Jesse Chan]
-9a54793  Messaging: allow framework to do dark theming automatically  [Jesse Chan]
-b1604d5  Messaging: Require external legacy storage  [Han Wang]
-0df6533  Messaging: bump target SDK version to 29  [Jesse Chan]
-be38673  Messaging: Add sysconfig whitelist xml  [Michael Bestas]
-f08e77a  Messaging: Notification channel string fixes  [Michael Bestas]
-c5d8d79  Messaging: Implement per conversation channels. Update API level to 28.  [Luca Stefani]
-db633b3  Don't build with platform certificate  [Luca Stefani]
-335d6e8  Messaging: use white nav bar  [Joey]
-e2251c4  MediaPicker: Check for NPE  [Ankit Gupta]
-12d701e  Play an audible notification on receiving a class zero message.  [Arun Valiaparambil]
-fe776c6  Messaging: bring back accent color  [jrizzoli]
-41207a4  Messaging: Toggable keyboard emoticons access  [AdrianDC]
-82e928b  Messaging: Implement option for swipe right to delete.  [Adnan Begovic]
-7d99c64  Messaging: adaptive icon  [Asher Simonds]
-fa8b126  Messaging: define app category  [Joey]
-12c1187  Fix NoSuchMethodError for getTypeInfo()  [Taesu Lee]
-010543c  Remove advanced category if no preference  [Taesu Lee]
-160ba24  AOSP/Messaging - Changed minSdkVersion to 19.  [Raman Tenneti]
-a54b396  Fix SecurityException at getActiveSubscriptionInfoList() on N and O  [Taesu Lee]
-4f8c6f1  Fix app initialization issue if no permissions  [Taesu Lee]
-5f0fede  AOSP/Messaging - Changed midSdkVersion to 14 and reverted to using Telephony.Carriers.CONTENT_URI instead of  Telephony.Carriers.SIM_APN_URI.  [Raman Tenneti]
-bfac33e  Remove only one Lambda Exp for JAVA 7  [Taesu Lee]
-5124bce  Fix handling format based on API level accordingly.  [Taesu Lee]
-f3a714a  Fix creating ConnectivityUtil to work on any platform  [Taesu Lee]
-a5a2853  Fix missing computeIfAbsent() method in L_MR1 and M  [Taesu Lee]
-1b0a753  Remove unnecessary methods from MmsUtils  [Taesu Lee]
-773dcca  Allow call to phone numbers or voice mail numbers only  [Taesu Lee]
-8b23d64  Check CONFIG_SEND_MULTIPART_SMS_AS_SEPARATE_MESSAGES always  [Taesu Lee]
-54b6921  Fix ConcurrentModificationException  [Taesu Lee]
-08e5f64  Parse recipients from RESPOND_VIA_MESSAGE correctly  [Taesu Lee]
-eb18448  Remove dead code  [Taesu Lee]
-253ac17  Disallow making a call to emergency numbers  [Taesu Lee]
-8f50e15  Check whether dialable only  [Taesu Lee]
-012b24e  Auto re-sending MMS for all the transient failures  [Taesu Lee]
-a04694e  Rescheduling pending messages after outside window failure  [Taesu Lee]
-cdd2167  Fix NPE on MultiConversationNotificationState  [Taesu Lee]
-2dc3fab  Hide APN prefs if platform APIs are used  [Taesu Lee]
-324660e  Use ic_add_white for consistency instead  [Taesu Lee]
-4bebe83  Fix to show APN prefs correctly  [Taesu Lee]
-9c02762  Fix NPE  [Taesu Lee]
-58612ca  Handle delivered messages as completed messages  [Taesu Lee]
-fd11417  Dismiss SnackBar when detached  [Taesu Lee]
-47df136  Fix assert fail during onSaveInstanceState()  [Taesu Lee]
-27fb49f  Fix WindowLeaked issue on AttachmentPreview  [Taesu Lee]
-697235d  Fix undesirable ripple effect on GalleryGridView  [Taesu Lee]
-55d8eb4  New interface to pick a contact as attachment  [Taesu Lee]
-1922027  ProcessPendingMessagesAction works based on subscriptions  [Taesu Lee]
-8fe51db  Allow intent shared subject or title to be mms subject  [Marco Sirabella]
-d579d7c  Update runner to AndroidJUnittest  [Julien Desprez]
-
-
-====================
-     2021-01-25    
-====================
-
-* art
-f48d249  [master] Optimize JNI:GetStringRegion() for compressed strings.  [Vladimir Marko]
-
-
-* frameworks/base
-d65857c  TypeClock: Improve English strings  [Anushek Prasal]
-066a665  Keyguard: ReInflate views when density or font scale change  [Alex]
-09949ef  LockscreenCharging: Calculate power from voltage and current  [SagarMakhar]
-d568573  Fix an edge case in KeyguardUpdateMonitor pocket callback  [paphonb]
-08be5a8  Avoid interface name copy in HwParcel  [Daniel Colascione]
-119db59  Binder interface tokens: remove extra mallocs  [Steven Moreland]
-08ad371  Avoid potential fd leaks from jniCreateFileDescriptor (2/2)  [Orion Hodson]
-30b5d64  Avoid potential fd leak from jniCreateFileDescriptor (1/2)  [Orion Hodson]
-eeb694f  Avoid allocation on Java Binder fast path  [Daniel Colascione]
-9f8d0e6  NetworkTraffic: Remove screen on/off triggers  [Pranav Vashi]
-096f6f8  NfcTile: Don't create an error when editing tiles  [Michael W]
-dbbf7da  QS: fix glitch with brightness slider in landscape mode  [DennySPb]
-
-
-* frameworks/native
-50f1997  [master] libbinder: writeInterfaceToken char16_t* variant  [Steven Moreland]
-999bf65  [master] libbinder - avoid pthread_cond_broadcast per call  [Steven Moreland]
-0943d6b  Revert "Revert "libbinder: Parcel, remove mOwnerCookie""  [DennySPb]
-
-
-* libcore
-464cdc8  [master] Revert^2 "Avoid fd leaks when jniCreateFileDescriptor encounters OOME"  [Orion Hodson]
-665a2a8  [master] Add newStringFromUtf8Bytes native implementation.  [Rock.Yeh]
-
-
-* packages/apps/DeskClock
-57e6840  DeskClock: Properly align settings  [Michael W]
+* packages/apps/Launcher3
+dc4e294  Automatic translation import  [DennySPb]
 
 
 * packages/apps/Settings
-cb5c970  SmartCharge: update for HAL implementation  [DennySPb]
-01c8c4b  Settings: Fix default brightness level display 0  [hoffc]
-8bb27b4  Define notch category and hide it on non-notch devices  [DennySPB]
-8984c6e  Hide notch switch  [Vachounet]
-7bfd8dc  Make battery temp preference looks like others  [Pranav Vashi]
+1d5e290  Automatic translation import  [DennySPb]
+845f5ed  Multisim rington: adjust preference priority  [DennySPb]
 
 
 * packages/apps/SyberiaSettings
-de7eb94  CustomSeekBar: notify changes when value was set  [DennySPb]
-7a5e87e  Fix RU translation for clock options  [DennySPb]
+bbef866  Make sensor block package list configurable [2/2]  [Pranav Vashi]
+b7bf425  Automatic translation import  [DennySPb]
+
+
+* packages/services/Telecomm
+c88a2df  Merge tag 'LA.QSSI.11.0.r1-09900-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm into HEAD  [DennySPb]
+
+
+* packages/services/Telephony
+fb782da  Merge tag 'LA.QSSI.11.0.r1-09900-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony into HEAD  [DennySPb]
+
+
+* vendor/codeaurora/telephony
+b3b442e  Merge tag 'LA.QSSI.11.0.r1-09900-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/codeaurora/telephony into HEAD  [DennySPb]
+
+
+* vendor/qcom/opensource/audio
+5e1f18a  Merge tag 'LA.QSSI.11.0.r1-09900-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/audio into HEAD  [DennySPb]
+
+
+* vendor/qcom/opensource/dataservices
+f0ecb7f  Merge tag 'LA.UM.9.8.r1-03600-SDM710.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/dataservices into HEAD  [DennySPb]
+
+
+* vendor/qcom/opensource/healthd-ext
+d5f07e7  Merge tag 'LA.UM.9.8.r1-03600-SDM710.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/healthd-ext into HEAD  [DennySPb]
 
 
 ====================
-     2021-01-24    
+     2021-02-11    
 ====================
 
+* art
+dfee688  build/Android.oat: Disable debug  [Miguel Martinez]
+2098e53  art: Enable compiler/dalvikvm/dex2oat/runtime -O3  [dkati]
+194398e  build: switch ART to performance mode if possible  [Alex Naidis]
+
+
+* bionic
+99a3ef1  [master] Sync libm with upstream FreeBSD.  [Elliott Hughes]
+
+
+* build/make
+65ecf7a  check_boot_jars: Add QCOM WFD to whitelist  [LuK1337]
+7123000  check_boot_jars: Add IFAA Manager to whitelist  [Michael Bestas]
+de6c2c9  check_boot_jars: Add CAF IMS to whitelist  [Felix]
+948a3c5  Switch boot jars package check to use dexdump xml output  [Paul Duffin]
+ff4fa92  Bring old CheckJar back and use for non-dex jars  [LuK1337]
+58d025c  Switch boot jars package check to using dex jars  [Paul Duffin]
+
+
+* frameworks/base
+7954bed  Multisim rington: Don't change public API  [Luca Stefani]
+765e095  Stop manually mixing /dev/hw_random.  [Elliott Hughes]
+f44dcab  Update language to comply with Android's inclusive language guidance  [Jeff Sharkey]
+ea59c92  No need to 'addChild' when start 'FLAG_ACTIVITY_CLEAR_TOP' Activity.  [yangyankai1]
+7d0ab99  Fix a bug in the USAP Pool refill logic.  [Chris Wailes]
+6581ca4  Partially revert "Wake up to lock screen when bouncer is visible"  [Sultan Alsawaf]
+c3b2143  Phone ringtone setting for Multi SIM device [1/3]  [Ting Yu]
+089cd89  SystemUI: fix NPE on ExpandableNotificationRow  [Chenyang Zhong]
+a5e5830  SoundPool: Fix clang-tidy warning in StreamManager  [Adithya R]
+
+
+* frameworks/native
+2921c0b  SF: VSyncPredictor should be robust with inconsistent vsyncs  [Ady Abraham]
+
+
+* packages/apps/Launcher3
+1f5db11  Update RU translation  [DennySPb]
+1ab686d  Switch back to "deprecated" fragment api  [DennySPb]
+01173a4  Launcher3: Re-add priv app permissions  [Pranav Vashi]
+
+
+* packages/apps/Settings
+9077fc8  Phone ringtone setting for Multi SIM device [2/3]  [Ting Yu]
+d6353b7  Settings: Whitelist WRITE_DEVICE_CONFIG permission  [saikiran2001]
+
+
 ====================
-     2021-01-23    
+     2021-02-10    
+====================
+
+* frameworks/av
+3d03498  CCodec: make HDR10/+ support detection logic work for encoders  [Lajos Molnar]
+a9e708d  mediaplayer: Fix constructor calling sequence  [Ramakant Singh]
+
+
+* frameworks/native
+b77e11b  libvulkan: revert the false surface support implementation  [Yiwei Zhang]
+
+
+====================
+     2021-02-09    
 ====================
 
 * frameworks/base
-4ecf421  SmartCharge: move logic to HAL  [DennySPb]
-bd670fe  core: Defy usage of NGA in Google Assistant  [Danny Lin]
+bea18a1  Fix lockscreen wallpaper not being set if different from the Home one  [ezio84]
 
 
-* hardware/syberia
-44b6765  Handle increased supsend level  [DennySPb]
-cdc3078  Implement main SmartCharge logic  [DennySPb]
-96ddb0f  Initial HIDL based simple SmartCharge implementation  [DennySPb]
+* packages/apps/Launcher3
+9cda29c  Launcher3: Extend notification listener with proxy  [Amir Zaidi]
+36e0b10  Launcher3: Use app opening animation for notification opening  [Amir Zaidi]
+e84b582  LauncherPreviewRenderer: Fix crash with icon cache  [Pranav Vashi]
 
+
+* packages/services/Telecomm
+465b1d1  Phone ringtone setting for Multi SIM device [3/3]  [Ting Yu]
+
+
+* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
+f7db45e  Check permission before sending batch scan result  [Jakub Pawlowski]
+802b1b8  Check if advertiserId value matches valid advertiser  [Jakub Pawlowski]
+
+
+====================
+     2021-02-08    
+====================
+
+====================
+     2021-02-07    
+====================
+
+====================
+     2021-02-06    
+====================
 
