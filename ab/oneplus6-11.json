@@ -1,13 +1,13 @@
 {
   "response": [
     {
-      "datetime": 1613128701,
-      "filename": "syberia_oneplus6-v4.3-20210212-1118-OFFICIAL.zip",
-      "id": "d8f574cd7e93dddc365678bb1f186a64be764006f222d0925452a04aeae90768",
+      "datetime": 1614934525,
+      "filename": "syberia_oneplus6-v4.4-20210305-0918-OFFICIAL.zip",
+      "id": "2d7b3d45e46961deed52f98d458144c6751066ebbc9fd3f28cf3060c22a9e2c0",
       "romtype": "OFFICIAL",
-      "size": "883761962",
-      "url": "https://sourceforge.net/projects/syberiaos/files/enchilada/syberia_oneplus6-v4.3-20210212-1118-OFFICIAL.zip/download",
-      "version": "v4.3",
+      "size": "880212426",
+      "url": "https://sourceforge.net/projects/syberiaos/files/enchilada/syberia_oneplus6-v4.4-20210305-0918-OFFICIAL.zip/download",
+      "version": "v4.4",
       "device_brand": "OnePlus",
       "device_model": "OnePlus 6",
       "device_codename": "enchilada",
