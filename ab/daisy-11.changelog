@@ -1,36 +1,136 @@
 ====================
-     2021-02-25    
+     2021-03-16    
 ====================
+
+* vendor/xiaomi
+75e5a65  msm8953-common: Include msm_irqbalance  [GeoPD]
+
+
+====================
+     2021-03-15    
+====================
+
+* device/xiaomi/daisy
+530de2f  Revert "daisy: configs: remove divx/xvid support from swcodecs"  [lupesoltec]
+ff01714  Revert "daisy: configs: Update Media Files From Daisy Q Release"  [lupesoltec]
+ed38e18  daisy: fix bluetooth does not turn on  [TogoFire]
+9cf7269  daisy: Manifest: Add Bluetooth SAR 1.1 hidl version  [Satish kumar sugasi]
+75246ba  daisy: Update btconfigstore vintf version to 2.0  [Nitin Shivpure]
+
+
+* vendor/xiaomi
+e52870a  msm8953-common: Update CNE Blobs From LA.UM.9.6.2.r1-03600-89xx.0  [Lostark13]
+17b2756  msm8953-common: Update DPM Blobs From LA.UM.9.6.2.r1.3600  [Lostark13]
+baef67b  msm8953-common: update Postprocessing from LA.UM.9.6.2.r1-02800-89xx.0  [abhinavgupta371]
+
+
+====================
+     2021-03-14    
+====================
+
+* device/xiaomi/daisy
+169b732  daisy: Build some Wifi hals from source  [GeoPD]
+a6e9c75  daisy: Build Qti hostpad & supplicant hals  [AlexThundrous]
+601f46e  daisy: sepolicy: Fix avc denials related to vendor/radio.te  [lupesoltec]
+7bf0363  msm8953-common: Import missing Media blobs from LA.UM.9.6.2.r1-03300-89xx.0  [lupesoltec]
+ddd996b  msm8953-common: Update BT stack from LA.UM.9.6.2.r1-03600-89xx.0  [lupesoltec]
+
+
+* vendor/xiaomi
+0f7bed5  daisy: Include liblocdiagiface for userdebug.  [Alexander Koskovich]
+ff70fa2  msm8953-common: wifi: Update and modify wcnss_service  [Quallenauge]
+b6992ae  msm8953-common: Update media stack from LA.UM.9.6.2.r1-03600-89xx.0  [abhinavgupta371]
+61e14a4  msm8953-common: Import missing Media blobs from LA.UM.9.6.2.r1-03300-89xx.0  [ZeeLog]
+255c0c3  msm8953-common: Update BT stack from LA.UM.9.6.2.r1-03600-89xx.0  [Pranav Vashi]
+
+====================
+     2021-03-12    
+====================
+
+* device/xiaomi/daisy
+203a488  daisy: Disable WPA2 to WPA3 auto-upgrade in P17 device  [Hai Shalom]
+ed3871d  daisy: overlay: Change wifi tether regex  [Roshan Pius]
+4b88ca7  daisy: TetheringOverlay: Remove bnep\d from tetherable BT interfaces  [LuK1337]
+c87f383  daisy: Sign Tether RROs with default cert  [Bruno Martins]
+3603f03  daisy: Don't sign Wifi RROs with platform cert  [David Su]
+ec82345  daisy: TetheringOverlay: Drop custom dhcp range  [Michael Bestas]
+1cea8c3  daisy: WifiOverlay: Disable AP MAC randomization  [baunilla]
+ef4626b  daisy: Add TetheringOverlay  [Weilun Du]
+7d15d7f  daisy: Add WifiOverlay  [Roshan Pius]
+670f2d6  daisy: Update denials  [ItsVixano]
+97f9250  daisy: Audio: System prop to configure parser buffer size  [Manish Dewangan]
+d1735d3  daisy: Update time related properties  [ZeeLog]
+e74d5ec  daisy: rootdir: Fixup gps.conf path  [ZeeLog]
+
+====================
+     2021-03-10    
+====================
+
+* device/xiaomi/daisy
+0ecda34  daisy: init.qcom.usb.rc: Fix fallback to default composition from RNDIS  [Sriharsha Allenki]
+
+====================
+     2021-03-05    
+====================
+
+* art
+7e61fbe  Add a new kind of verifier error with unresolved type checks.  [Nicolas Geoffray]
+f4c7854  arm: Fix and improve JNI frame entry/exit.  [Vladimir Marko]
+b3cc619  Fix Entry in CheckVTableHasNoDuplicates().  [Vladimir Marko]
+068a502  Remove unused VERIFY_ERROR_NO_FIELD.  [Nicolas Geoffray]
+
+
+* bionic
+83190e4  SCUDO fill options only when USE_SCUDO  [Steven Moreland]
+9fc3bf0  [libc] Zero and pattern initialization of heap memory.  [Evgenii Stepanov]
+
+
+* build/make
+cf50fdd  arm64: Rework A53 Errata Fixing logic  [Alex Naidis]
+be057c2  build: condition A53 errata workarounds in RenderScript  [Alex Naidis]
+ac4f073  Create 0 compression ratio jar files  [arter97]
+969b2db  Reflect MALLOC_ZERO_CONTENTS default true.  [Steven Moreland]
+2014292  [make] Zero and pattern initialization of heap memory.  [Evgenii Stepanov]
+
+
+* build/soong
+521a91b  Zero C++ heap by default.  [Steven Moreland]
+85216cc  [soong] Zero and pattern initialization of heap memory.  [Evgenii Stepanov]
+
+
+* external/skia
+26d54ff  Avoid heap initialization for skia allocations.  [Steven Moreland]
+
+
+* frameworks/av
+93f806c  stagefright: fix stop-error-release crash  [Wonsik Kim]
+dec48de  CCodec: move lower-res workaround to C2OMXNode  [Wonsik Kim]
+
+
+* frameworks/base
+a3d9ff3  Zygote: disable heap 0'ing in apps.  [Steven Moreland]
+2b47799  Automatic translation import  [DennySPb]
+71494e4  Make Quick Unlock compatible with long PIN/Password [1/2]  [Hikari-no-Tenshi]
+
+
+* frameworks/native
+8015b8b  PGO for libbinder  [Yi Kong]
+9c9e9eb  libui: Avoid heap initialization for buffer alloc.  [Steven Moreland]
+
 
 * packages/apps/Launcher3
-a64601b  Fix crash in developer settings and notification dots  [DennySPb]
+2fc2740  Automatic translation import  [DennySPb]
+d4b4faa  Launcher3: Make bottom app info sheet and icon pack strings translatables  [DennySPb]
 
 
-====================
-     2021-02-24    
-====================
-
-====================
-     2021-02-23    
-====================
-
-====================
-     2021-02-22    
-====================
-
-====================
-     2021-02-21    
-====================
-
-====================
-     2021-02-20    
-====================
-
-* packages/apps/Launcher3
-9772169  Launcher: Change BG color of App info Bottom sheet  [Jyotiraditya]
+* packages/apps/Settings
+7073b22  Automatic translation import  [DennySPb]
+4abab92  Make Quick Unlock compatible with long PIN/Password [2/2]  [Hikari-no-Tenshi]
 
 
-====================
-     2021-02-19    
-====================
+* packages/apps/SyberiaSettings
+1b90756  Automatic translation import  [DennySPb]
 
+
+* system/core
+6a5dbc6  liblog: Enable PGO  [Yi Kong]
