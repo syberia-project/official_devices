@@ -1,291 +1,147 @@
 ====================
-     2021-03-05    
+     2021-03-20    
 ====================
 
-* art
-7e61fbe  Add a new kind of verifier error with unresolved type checks.  [Nicolas Geoffray]
-f4c7854  arm: Fix and improve JNI frame entry/exit.  [Vladimir Marko]
-b3cc619  Fix Entry in CheckVTableHasNoDuplicates().  [Vladimir Marko]
-068a502  Remove unused VERIFY_ERROR_NO_FIELD.  [Nicolas Geoffray]
-
-
-* bionic
-83190e4  SCUDO fill options only when USE_SCUDO  [Steven Moreland]
-9fc3bf0  [libc] Zero and pattern initialization of heap memory.  [Evgenii Stepanov]
-
-
-* build/make
-cf50fdd  arm64: Rework A53 Errata Fixing logic  [Alex Naidis]
-be057c2  build: condition A53 errata workarounds in RenderScript  [Alex Naidis]
-ac4f073  Create 0 compression ratio jar files  [arter97]
-969b2db  Reflect MALLOC_ZERO_CONTENTS default true.  [Steven Moreland]
-2014292  [make] Zero and pattern initialization of heap memory.  [Evgenii Stepanov]
-
-
-* build/soong
-521a91b  Zero C++ heap by default.  [Steven Moreland]
-85216cc  [soong] Zero and pattern initialization of heap memory.  [Evgenii Stepanov]
-
-
-* frameworks/av
-93f806c  stagefright: fix stop-error-release crash  [Wonsik Kim]
-dec48de  CCodec: move lower-res workaround to C2OMXNode  [Wonsik Kim]
+* device/syberia/sepolicy
+d7fd604  selinux: Introduce Applock [3/3]  [rituj]
 
 
 * frameworks/base
-9059e6d  Merge changes I60563712,Ie05271b8,I6f3212d2 into 11.0  [dennyspb]
-a3d9ff3  Zygote: disable heap 0'ing in apps.  [Steven Moreland]
-2b47799  Automatic translation import  [DennySPb]
-71494e4  Make Quick Unlock compatible with long PIN/Password [1/2]  [Hikari-no-Tenshi]
-68eec2a  Merge "FODCircleView: fix for Screen off FOD" into 11.0  [dennyspb]
+ba7af74  Update RU translation  [DennySPb]
+e20c137  NetworkRegistrationInfo: add Parcel recycle  [Steven Moreland]
+98c4a0c  SystemUI: Improve qs detail theming  [jhenrique09]
+d789a82  base: Introduce Applock [1/3]  [rituj]
 
 
 * frameworks/native
-8015b8b  PGO for libbinder  [Yi Kong]
-9c9e9eb  libui: Avoid heap initialization for buffer alloc.  [Steven Moreland]
-
-
-* packages/apps/Launcher3
-2fc2740  Automatic translation import  [DennySPb]
-d4b4faa  Launcher3: Make bottom app info sheet and icon pack strings translatables  [DennySPb]
+19497ff  libtimeinstate: check for invalid buckets when reading map  [Connor O'Brien]
 
 
 * packages/apps/Settings
-17882b1  BatteryHealth: show Charge Cycles Completed  [SuperDroidBond]
-994fd06  BatteryHealth: Make it optional  [AshutoshSundresh]
-41f839b  add BatteryHealth section  [Lucchetto]
-7073b22  Automatic translation import  [DennySPb]
-4abab92  Make Quick Unlock compatible with long PIN/Password [2/2]  [Hikari-no-Tenshi]
-
-
-* packages/apps/SyberiaSettings
-1b90756  Automatic translation import  [DennySPb]
-
-
-* system/core
-6a5dbc6  liblog: Enable PGO  [Yi Kong]
+e1bc01b  BatteryHealth: show Charge Cycles Completed  [SuperDroidBond]
+4b9fe37  BatteryHealth: Make it optional  [AshutoshSundresh]
+6ca8f1e  add BatteryHealth section  [Lucchetto]
+7a2be10  Update RU translation  [DennySPb]
+b57df5f  Settings: Introduce Applock [2/3]  [rituj]
 
 
 ====================
-     2021-03-04    
+     2021-03-19    
 ====================
 
-* art
-e650816  Unified sampling PGO for art  [Yi Kong]
+* frameworks/base
+715d802  SoundPool: Improve single stream SoundPool handling  [Andy Hung]
+7aa34c8  SoundPool: Avoid busy waiting during stream restart  [Andy Hung]
 
+
+====================
+     2021-03-18    
+====================
 
 * frameworks/av
-76ec129  Merge tag 'LA.QSSI.11.0.r1-10400-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPb]
+6d467e7  stagefright: fix stop-error-error crash  [Wonsik Kim]
 
 
 * frameworks/base
-1293f83  SystemUI: prevent crash in MediaOuptutReceiver  [DennySPb]
-8f108c5  Revert "No need to 'addChild' when start 'FLAG_ACTIVITY_CLEAR_TOP' Activity."  [Han Wang]
-
-
-* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
-7b90d62  Prevent drawing on top of Bluetooth activities  [Jakub Pawlowski]
-
-
-* vendor/syberia
-9810a43  v4.4  [DennySPb]
-
-
-====================
-     2021-03-03    
-====================
-
-* bionic
-4ef13d8  libm: Support -ffp-contract=fast  [dkati]
-d949bfb  bionic: Enable -O3  [dkati]
-2bf9c9a  linker: Enable PGO  [Yi Kong]
-
-
-* build/make
-c8b3663  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
-
-
-* build/soong
-a6c4cd3  Support multiple dists per Android.bp module, and dist output selection.  [Jingwen Chen]
-6520fbe  Always generate profiling debug info  [Yi Kong]
-786ff73  [pgo] Return updated Flags after adding flags for PGO/AFDO  [Pirama Arumuga Nainar]
-39954a6  [pgo] Allow profile gather and use flags to coexist for sampling PGO  [Yi Kong]
-a026c70  [pgo] Sampling PGO does not require benchmark property  [Yi Kong]
-375246b  [cc/pgo] Fix incorrect project name  [Pirama Arumuga Nainar]
-2a8e661  Forbid -fwhole_program_vtables  [Yi Kong]
-da2d252  Tweak ThinLTO inling heuristics in absense of PGO profile  [Yi Kong]
-f332ea9  Introduce LTO property for -fwhole-program-vtables cflag  [Yi Kong]
-
-
-* frameworks/av
-5f18d92  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
-
-
-* frameworks/base
-f08cfd3  Install seccomp filter even if selinux is permissive  [Han Wang]
-5c92e57  SystemUI: HeadsUpStatusBarView: ensure cutout start if cutout bounds are not null  [Vachounet]
-0cfa43f  NetworkTrafficSB: Better workaround for RequestLayout() spam  [Gobinda Joy]
-1ab45ec  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
-
-
-* frameworks/native
-806a8ca  Use the newly introduced whole_program_vtables property  [Yi Kong]
-c9fc191  Make otapreopt actually print dexopt error messages  [Alex Light]
-439fa5a  /proc/net/xt_qtaguid/ is long deprecated and never present/used  [Maciej Żenczykowski]
-4ae7ddc  libgui: Enable ThinLTO  [Yi Kong]
-f5d69eb  libgui: Enable PGO  [Yi Kong]
-05260d1  surfaceflinger: Enable PGO  [Yi Kong]
-
-
-* frameworks/opt/telephony
-2a8bd60  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPb]
+028f884  Merge changes I4d149e87,I9360b91c,Id8601789,I791146f3,I1419c371, ... into 11.0  [dennyspb]
+4b7b3ec  Allow SBC as HD audio codec in Bluetooth device configuration  [ValdikSS]
+af93a3e  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
+8d56357  Add CHANNEL_MODE_DUAL_CHANNEL constant  [ValdikSS]
+75826fb  Cache bluetooth A2DP in AudioService callback thread  [Sungsoo Lim]
+5c106cd  SystemUI: Fix Wakelock issue  [Alberto Ponces]
+58655ba  Fix for TestDirectBootEmulated testcase  [N Harish]
+29797d3  VolumeDialogControllerImpl: Stop log spam with no caption service  [Pranav Vashi]
 
 
 * packages/apps/Settings
-50fe5be  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
-
-
-* packages/services/Telephony
-16574b4  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD  [DennySPb]
-
-
-* system/memory/lmkd
-f5fe6a2  Merge branch 'master' of https://android.googlesource.com/platform/system/memory/lmkd into HEAD  [DennySPb]
-
-
-* vendor/qcom/opensource/commonsys/system/bt
-dc5e729  SDP: Only start discovery once  [Myles Watson]
-
-
-====================
-     2021-03-02    
-====================
-
-* art
-10cfa12  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/art into HEAD  [DennySPb]
-
-
-* bionic
-bc43614  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/bionic into HEAD  [DennySPb]
-
-
-* bootable/recovery
-01a0bbc  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/bootable/recovery into HEAD  [DennySPb]
-
-
-* build/soong
-1e0d18f  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/build/soong into HEAD  [DennySPb]
-
-
-* frameworks/native
-46e8c18  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
-
-
-* frameworks/opt/net/wifi
-dd51315  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD  [DennySPb]
-
-
-* hardware/interfaces
-5acf789  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPb]
-
-
-* libcore
-77d7c6f  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/libcore into HEAD  [DennySPb]
-
-
-* packages/apps/Bluetooth
-168cd46  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPb]
-
-
-* packages/apps/Launcher3
-ec706cf  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/packages/apps/Launcher3  [DennySPb]
-
-
-* packages/apps/Nfc
-18db29b  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPb]
-
-
-* packages/apps/PermissionController
-3d9db60  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/packages/apps/PackageInstaller into HEAD  [DennySPb]
+f7002eb  MediaOutputPanel: Handle the case of missing packageName  [Arian]
+e438600  Team: remove extra comma for fix maintainer cards  [DennySPb]
 
 
 * packages/apps/SettingsIntelligence
-5d779b7  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/packages/apps/SettingsIntelligence into HEAD  [DennySPb]
+96456f0  Import translations from pixel  [jhenrique09]
+102244a  Give permission to read device config  [mukesh22584]
 
 
-* packages/apps/ThemePicker
-634bcf6  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/packages/apps/ThemePicker into HEAD  [DennySPb]
+* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
+6d6aba7  Bluetooth: Require libbluetooth_qti instead of libbluetooth  [Pig]
+4b89138  Remove dependency on telephony-common from Bluetooth  [Zongheng Wang]
+51b41bc  Revert "Rebrand to BluetoothQti"  [Volodymyr Zhdanov]
 
 
-* packages/providers/DownloadProvider
-0e1ad20  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD  [DennySPb]
+* vendor/qcom/opensource/commonsys/system/bt
+ecfbbd5  Merge "Don't advertise dual channel mode support in any case" into 11.0  [dennyspb]
 
 
-* packages/services/Telecomm
-43aec27  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
-
-
-* system/bt
-4ae0d76  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPb]
-
-
-* system/core
-dc3488d  Fix potential use-after-free bug in reboot  [Nikita Ioffe]
-
-
-* system/media
-35feb1b  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/system/media into HEAD  [DennySPb]
-
-
-* system/netd
-d941c3e  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/system/netd into HEAD  [DennySPb]
-
-
-* system/sepolicy
-ede459c  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPb]
-
-
-* system/update_engine
-e85aad4  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/system/update_engine into HEAD  [DennySPb]
-
-
-* system/vold
-81d005b  Merge tag 'android-11.0.0_r33' of https://android.googlesource.com/platform/system/vold into HEAD  [DennySPb]
+* vendor/syberia
+3c7f9ce  config: Enable IORap app launch prefetching  [Danny Lin]
 
 
 ====================
-     2021-03-01    
+     2021-03-17    
+====================
+
+* external/sqlite
+7162ad9  Update sqlite to 3.35.1  [DennySPb]
+
+
+* packages/apps/Bluetooth
+280499f  Bluetooth: Reset packages/apps/Bluetooth to upstream  [Steven Laver]
+
+
+* packages/apps/Settings
+080be5b  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
+
+
+* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
+4be6202  Use component flag to configure profile support flag.  [weichinweng]
+
+
+* vendor/syberia
+58d74ac  config: Setup soong namespaces for TARGET_USE_QTI_BT_STACK  [Pig]
+
+
+====================
+     2021-03-16    
 ====================
 
 * frameworks/base
-f66a62b  Pocket Lock: Don't show immersive confirmation ui  [jhenrique09]
-4f9919d  AppTransition: Fix watchdog when adding new display  [jhenrique09]
+24cfb1b  BrightnessController: Fix thread exception  [jhenrique09]
 
 
-* packages/apps/Dialer
-bc0a464  Dialer: Notify content observers upon call log entry deletion  [LuK1337]
-4bd80f8  Dialer: Fix video call simulation  [Danny Lin]
+* frameworks/native
+7d019c4  Fix sensor activate after SensorEventConnection removed  [xiamengsen]
 
 
-* packages/apps/Launcher3
-b2c3cb5  Launcher3: Fix up widget theming  [Pranav Vashi]
-95a671b  Launcher3: appinfo_bottom_sheet: Tint Headline text with accent color.  [doc HD]
-615db00  Launcher3: Fix font family for App Info sheet  [Pranav Vashi]
-5b97a04  Launcher3: Do not attempt to show promise icon when info is null  [Amir Zaidi]
-3b36ce1  Launcher3: remove Uninstall option for system apps  [Ali B]
+* packages/apps/Bluetooth
+d944519  Assume optional codecs are supported if were supported previously  [ValdikSS]
+34cac65  SBC Dual Channel (SBC HD Audio) support  [ValdikSS]
+
+
+* packages/apps/Settings
+72cedc2  Settings: Use correct icon to reset battery stats  [Pranav Vashi]
+
+
+* packages/apps/SettingsIntelligence
+7a3ae90  SettingsIntelligence: Use separate search panel background color  [Danny Lin]
+4ae2ee7  SettingsIntelligence: Remove action bar shadow  [Danny Lin]
+87a8029  Normalize dynamic search result in Japanese  [Qiang Wu]
+1fd79f6  Scrolling search results and autorotate cause crash  [Pingzhi Wang]
+32fd660  SettingsIntelligence: Regen database on build version change  [Luca Stefani]
+dbc6a24  SettingsIntelligence: Match Settings style  [Luca Stefani]
+
+
+* system/bt
+e5fc05c  Allow using alternative (higher) SBC HD bitrates with a property  [ValdikSS]
+e397a37  Explicit SBC Dual Channel (SBC HD) support  [ValdikSS]
+d59620c  Increase maximum Bluetooth SBC codec bitrate for SBC HD  [ValdikSS]
 
 
 ====================
-     2021-02-28    
+     2021-03-15    
 ====================
 
 ====================
-     2021-02-27    
+     2021-03-14    
 ====================
-
-* system/memory/lmkd
-bd6991a  Log killed process swap size am: 4884890305  [Ioannis Ilkos]
-2c432ea  Replace mentions of "oom_adj" with "oom_score_adj" am: 74b4df95b4  [Chris Morin]
-4884890  Log killed process swap size  [Ioannis Ilkos]
-
 
