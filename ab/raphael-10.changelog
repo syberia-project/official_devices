@@ -1,32 +1,608 @@
-=============
-   2020-09-21
-=============
+====================
+     2021-04-13    
+====================
 
-[* device/xiaomi/raphael *]
-ab03c93  raphael: switch to walleye fp for cts  [kondors1995]
+* device/xiaomi/raphael
+2b615a9  Revert "raphael: WifiOverlay: Relax RSSI thresholds"  [UtsavBalar1231]
+0cfbce0  raphael: wifi: Relax WiFi re-association RSSI thresholds  [Sultanxda]
+3bbcea6  raphael: ini: Remove TDLS INI from ini file  [Jyoti Kumari]
+fd6a5af  raphael: ini: Remove TxPower2g and 5g from config file  [Ashish Kumar Dhanotiya]
+9053bb3  raphael: ini: Remove drop_bcn_on_chan_mismatch ini  [sheenam monga]
 
 
-=============
-   2020-09-20
-=============
+* kernel/xiaomi/raphael
+2210842  scsi: ufs: Fix unused function when tracepoints are disabled  [0ctobot]
+085da59  qcom: hyp_core_ctl: add a missing header  [Yaroslav Furman]
+53578a8  mailbox: msm_qmp: Remove IRQF_NO_SUSPEND  [Chris Lew]
+b5721f7  rpmsg: glink: Remove IRQF_NO_SUSPEND  [Chris Lew]
+e740e0e  soc: qcom: smp2p: Remove IRQF_NO_SUSPEND  [Chris Lew]
+dda5c2d  i2c-qcom-geni: move geni_i2c_driver_init to async probe  [Rick Yiu]
+dbdf1ae  msm: kgsl: move kgsl_3d_init to async probe  [Rick Yiu]
+1da5362  soc/qcom: move icnss_initialize to async probe  [Rick Yiu]
+9875dad  ion/msm: move msm_ion_init to async probe  [Rick Yiu]
+d6429ab  drm/msm: move msm_drm_register to async probe  [Rick Yiu]
+245899c  drivers: i2c: support per-device async suspend  [Harpreet "Eli" Sangha]
+853294e  arm64: debug: Separate debug hooks based on target exception level  [Will Deacon]
+50518de  Revert "Revert "select: use freezable blocking call""  [Tim Murray]
+e9af27a  sched/idle: Move quiet_vmstate() into the NOHZ code  [Peter Zijlstra]
+73bc0de  locking/atomics, asm-generic/bitops/atomic.h: Rewrite using atomic_*() APIs  [Will Deacon]
+b92e350  msm: kgsl: adreno: Properly set GPU timeout  [celtare21]
+c5a294b  perf: arm64: Use the correct uaccess.h header  [Sultan Alsawaf]
+876eb15   ARM64: configs: raphael: Remove UNMAP_KERNEL_AT_EL0  [Miguel de Dios]
+e5450ad  msm: camera: fix gcc warnings  [Yaroslav Furman]
+6161569  sysctl: fix -Wunused-variable warning  [kondors1995]
+59fbf9c  sm8150: squashed commit for code quality fixes  [UtsavBalar1231]
+724bcfe  kernel: Use the stock raphael config for /proc/config.gz  [Sultan Alsawaf]
+5368fa0  arm64/bpf: don't allocate BPF JIT programs in module memory  [Ard Biesheuvel]
+fdad6fc  bpf: add __weak hook for allocating executable memory  [Ard Biesheuvel]
+c538165  bpf: fix subprog verifier bypass by div/mod by 0 exception  [Daniel Borkmann]
+ab90e02  bpf: fix net.core.bpf_jit_enable race  [Alexei Starovoitov]
+9ca1927  raphael_defconfig: Enable basic tracing for IORap  [Danny Lin]
+a917ae3  raphael_defconfig: Disable sysrq keys over serial  [Danny Lin]
+76167ac  rapahel_defconfig: Remove unused errata fixes  [kondors1995]
+3bb8b25   defconfig: Disable redundant Spectre variant 2 mitigations  [Danny Lin]
+2915955   defconfig: Enable iptables TTL-altering targets  [Danny Lin]
+32a1105  kernel: Use the stock raphael config for /proc/config.gz  [Sultan Alsawaf]
+a3831d4  drm/msm/sde: Skip prefill calculations on command mode panels  [Sultan Alsawaf]
+4741d4d  Revert "drm/msm/sde: Skip prefill calculations on command mode panels"  [nato6613]
+d056432  restore stock freq curve  [nato6613]
+6c8e58e  clk: qcom: clk-cpu-osm: Set each CPU clock to its max when waking up  [Sultan Alsawaf]
+5e0bcc6  arm64: dts: sm8150: Optimize frequency tables and energy model  [Danny Lin]
+7eba290  arm64: dts: sm8150: Add full CPU frequency tables  [Danny Lin]
+5c04de3  clk: qcom: clk-cpu-osm: Allow overriding CPU frequency tables in DT  [Danny Lin]
+2e18398  mm: Micro-optimize PID map reads for arm64 while retaining output format  [Sultan Alsawaf]
+a1efd3f  msm: kgsl: Avoid busy waiting for fenced GMU writes  [Sultan Alsawaf]
+f9b71ab  bpf: Eliminate CONFIG_MODULES limitation from JIT for arm64  [Sultan Alsawaf]
+83f8ec2  msm: kgsl: Use lock-less list for page pools  [Sultan Alsawaf]
+01180b9  drm/msm/sde: Don't clear dim layers when there aren't any applied  [Sultan Alsawaf]
+8f05c65  msm: kgsl: Remove unneeded time profiling from ringbuffer submission  [Sultan Alsawaf]
+708b1ad  scsi: ufs: Add simple IRQ-affined PM QoS operations  [Sultan Alsawaf]
+3ad8326  scsi: ufs: disallow SECURITY_PROTOCOL_IN without _OUT  [Jaegeuk Kim]
+54c1481  scsi: ufs: Scrap Qualcomm's PM QoS implementation  [Sultan Alsawaf]
+50b8f6f  qos: Remove pm_qos_update_request_timeout() API  [Sultan Alsawaf]
+a1e9a80  msm: kgsl: Remove L2PC PM QoS feature  [Sultan Alsawaf]
+d3fbf20  drm/msm/sde: Don't read and clear VBIF errors upon commit  [Sultan Alsawaf]
+9dca59f  drm/msm/sde: Stub out debug log macros and compile them out  [Sultan Alsawaf]
+be2a05c  sched/core: Free dead mm structs asynchronously in finish_task_switch()  [Sultan Alsawaf]
+0bb9bbc  sched/core: Free dead tasks asynchronously in finish_task_switch()  [Sultan Alsawaf]
+cd0e36c  drm/msm: Reduce latency while completing non-blocking commits  [Sultan Alsawaf]
+3e83275  drm/msm: Offload commit cleanup onto an unbound worker  [Sultan Alsawaf]
+eea5b9c  drm/msm/sde: Remove redundant write memory barriers from IRQ routines  [Sultan Alsawaf]
+fda58d2  drm/msm/sde: Consolidate IRQ status reads into IRQ dispatcher  [Sultan Alsawaf]
+1e81ad3  qos: Speed up pm_qos_set_value_for_cpus()  [Sultan Alsawaf]
+9e95a37  rcu: Run nocb kthreads on little CPUs  [Sultan Alsawaf]
+ff5fc66  ARM64: configs: Disable stack frame size warning  [Sultan Alsawaf]
+e4c3736  ARM64: configs: Disable SLUB per-CPU partial caches  [Sultan Alsawaf]
+a04eb1c  binder: Stub out debug prints by default  [Sultan Alsawaf]
+502b788  selinux: Avoid dynamic memory allocation for INITCONTEXTLEN buffers  [Sultan Alsawaf]
+5f949ce  bpf: Avoid allocating small buffers for map keys and values  [Sultan Alsawaf]
+98bbee5  drm/msm/sde: Don't allocate memory dynamically for CRTC atomic check  [Sultan Alsawaf]
+18d5638  msm: kgsl: Avoid dynamically allocating small command buffers  [Sultan Alsawaf]
+736b07d  ALSA: control_compat: Don't dynamically allocate single-use structs  [Sultan Alsawaf]
+c57ae1d  kernfs: Avoid dynamic memory allocation for small write buffers  [Sultan Alsawaf]
+4735fb6  ashmem: Rewrite to improve clarity and performance  [Sultan Alsawaf]
+5ea10b9  workqueue: Affine unbound workqueues to little CPUs by default  [Sultan Alsawaf]
+b71c7fb  ion: Mark workqueues freeing buffers asynchronously as CPU intensive  [Sultan Alsawaf]
+09642c2  ion: Rewrite to improve clarity and performance  [Sultan Alsawaf]
+13bf542  floral_defconfig: Disable full refcount validation  [Sultan Alsawaf]
+215b8ee  sched/rt: Change default SCHED_RR timeslice from 100 ms to 1 jiffy  [Sultan Alsawaf]
+d397be2  sched/core: Use SCHED_RR in place of SCHED_FIFO for all users  [Sultan Alsawaf]
+27e26d2  drm/msm/sde: Don't allocate memory dynamically for plane states  [Sultan Alsawaf]
+c51f2c7  drm/msm/sde: Remove debug print from sde_reg_write()  [Sultan Alsawaf]
+cb59804  drm/msm/sde: Skip unneeded register reads when getting write line count  [Sultan Alsawaf]
+149e4a5  drm/msm/sde: Skip prefill calculations on command mode panels  [Sultan Alsawaf]
+d258deb  drm/msm/sde: Skip heavy autorefresh checks when it's not enabled  [Sultan Alsawaf]
+48daa37  kernel: Extend the perf-critical API to little CPUs  [Sultan Alsawaf]
+6d5382e  drm: Reduce latency while processing atomic ioctls  [Sultan Alsawaf]
+db37bf7  msm: kgsl: Reduce latency while processing ioctls  [Sultan Alsawaf]
+a7cd3c9  PM / devfreq: Make the monitor workqueue high priority  [Sultan Alsawaf]
+a329fbb  kernel: Affine hwcomposer to big CPUs  [Sultan Alsawaf]
+cc16bba  raphael_defconfig: Always report stock kernel version to fsck.f2fs This is the stock kernel version as of  raphael-user-10-QKQ1.190825.002-V12.0.6.0.QFKCNXM-release-keys  [kondors1995]
+7376898  f2fs: Add support for reporting a fake kernel version to fsck  [Danny Lin]
+30d7759  binder: Fix log spam caused by interrupted waits  [Danny Lin]
+9fc9f5e  ARM64: configs: Enable devfreq boosting  [Sultan Alsawaf]
+bde0668  kernel: Boost DDR bus for a short amount of time when zygote forks  [Sultan Alsawaf]
+d0efccb  drm: Boost DDR bus upon running an atomic ioctl  [Sultan Alsawaf]
+4476a26  devfreq_boost: Run boost kthreads on big CPU cluster  [Sultan Alsawaf]
+a2ab9d0  devfreq: Introduce devfreq boost driver  [Sultan Alsawaf]
+e85ec3b  qcacmn: Disable all of qdf_trace when WLAN_DEBUG is disabled  [Sultan Alsawaf]
+c0abdd0  qcacld-3.0: Nuke as much debug bloat as possible  [Sultan Alsawaf]
+6e06fff  msm: camera: Stub out the camera_debug_util API and compile it out  [Sultan Alsawaf]
+f5b27f3  msm/sde/rotator: Remove unneeded PM QoS requests  [Sultan Alsawaf]
+1d11eaa  drm/msm/sde: Remove unneeded PM QoS requests  [Sultan Alsawaf]
+893d2a3  irqchip/gic-v3: Remove pr_devel message containing smp_processor_id()  [Sultan Alsawaf]
+7b50b4f  mbcache: Speed up cache entry creation  [Sultan Alsawaf]
+3b98ffa  pinctrl: msm: Remove explicit barriers from mmio ops where unneeded  [Sultan Alsawaf]
+dd20c61  locking/rwsem: Don't hog RCU read lock while optimistically spinning  [Sultan Alsawaf]
+83bded3  locking/mutex: Don't hog RCU read lock while optimistically spinning  [Sultan Alsawaf]
+3d200f6  cpuidle: Mark CPUs idle as late as possible to avoid unneeded IPIs  [Sultan Alsawaf]
+b62158c  cpuidle: Optimize pm_qos notifier callback and IPI semantics  [Sultan Alsawaf]
+ac42e75  arm64: Allow IPI_WAKEUP to be used outside of the ACPI parking protocol  [Sultan Alsawaf]
+e0f80ae  qos: Don't disable interrupts while holding pm_qos_lock  [Sultan Alsawaf]
+0c32da6  qos: Replace cpumasks with atomic bitwise operations  [Sultan Alsawaf]
+01328ce  Revert "mutex: Add a delay into the SPIN_ON_OWNER wait loop."  [Sultan Alsawaf]
+5321c51  Revert "usb: gadget: mtp: Increase RX transfer length to 1M"  [Sultan Alsawaf]
+77078cd  Revert "usb: gadget: f_mtp: Increase default TX buffer size"  [Sultan Alsawaf]
+f417f26  iommu: msm: Rewrite to improve clarity and performance  [Sultan Alsawaf]
+15c0ffc  scatterlist: Don't allocate sg lists using __get_free_page  [Sultan Alsawaf]
+80edee2  mm: kmemleak: Don't die when memory allocation fails  [Sultan Alsawaf]
+56a9133  mm: kmemleak: Don't require global debug options or debugfs  [Sultan Alsawaf]
+9c16ad8  msm: kgsl: Don't allocate memory dynamically for drawobj sync structs  [Sultan Alsawaf]
+65c193d  msm: kgsl: Don't try to wait for fences that have been signaled  [Sultan Alsawaf]
+316df93  spi: spi-geni-qcom: Add a function to get the IRQ of a device's master  [Sultan Alsawaf]
+ad43f57  i2c: i2c-qcom-geni: Add a function to get the IRQ of a client's adapter  [Sultan Alsawaf]
+835eef9  Revert "power: qos: Use effective affinity mask"  [Sultan Alsawaf]
+e48923d  kernel: Warn when an IRQ's affinity notifier gets overwritten  [Sultan Alsawaf]
+6293779  kernel: Only set one CPU in the default IRQ affinity mask  [Sultan Alsawaf]
+c607431  kernel: Don't allow IRQ affinity masks to have more than one CPU  [Sultan Alsawaf]
+9a5313a  cpuidle: lpm-levels: Remove debug event logging  [Danny Lin]
+ba113d7  dma-buf/sync_file: Speed up ioctl by omitting debug names  [Sultan Alsawaf]
+1416672  qos: Don't allow userspace to impose restrictions on CPU idle levels  [Sultan Alsawaf]
+b63129a  cpuidle: lpm-levels: Allow exit latencies equal to target latencies  [Sultan Alsawaf]
+198101d  msm: kgsl: Remove sync fence names  [Sultan Alsawaf]
+1c34f31  msm: kgsl: Remove POPP  [Sultan Alsawaf]
+ef3b9ff  msm: kgsl: Wake GPU upon receiving an ioctl rather than upon touch input  [Sultan Alsawaf]
+1004d20  input: fingerprint: goodix_ta: Affine IRQ to the big CPU cluster  [Sultan Alsawaf]
+b061a2d  fingerprint: goodix_ta: disable capacitive key event reporting  [Peter Cai]
+4c0ff51  fingerprint: goodix_ta: Refactor for sanity and consistency  [UtsavisGreat]
+190febb  touchscreen: goodix_driver_gt9886: Affine IRQ to the big CPU cluster  [Sultan Alsawaf]
+136642a  input: touchscreen: goodix_driver_gt9886: Require low latency  [Siarhei Vishniakou]
+712f96b  msm: kgsl: Increase worker thread priority  [Sultan Alsawaf]
+c30efa6  drm/msm: Affine important kthreads to the prime CPU cluster  [Sultan Alsawaf]
+cfa03c0  drm: Affine IRQ to the prime CPU cluster  [Sultan Alsawaf]
+8088c69  msm: kgsl: Affine IRQ and worker kthread to the big CPU cluster  [Sultan Alsawaf]
+90445c5  kernel: Add tri-cluster API to affine IRQs and kthreads to fast CPUs  [Sultan Alsawaf]
+a80f402  ARM64: configs: Configure big, LITTLE, and prime CPU masks  [Sultan Alsawaf]
+80a9eff  cpumask: Add cpumasks for big, LITTLE, and prime CPU clusters  [Sultan Alsawaf]
+9fa47a6  arm64: dts: sm8150: Remove unused 36 MiB memdump region  [Danny Lin]
+ecd67c9  cpuidle: don't disable cpuidle when entering suspend  [Tim Murray]
+ce077bb  arm64: lse: Prefetch operands to speed up atomic operations  [Danny Lin]
+af0d40f  proc: cmdline: Patch vbmeta device state flag for SafetyNet  [Danny Lin]
+88d2ed3  proc: cmdline: Patch SafetyNet flags  [Sultan Alsawaf]
+fd3aaed  selinux: Remove audit dependency  [Sultan Alsawaf]
+f264c9b  init: Kconfig: Don't force DEBUG_KERNEL when EXPERT is enabled  [Sultan Alsawaf]
+da99dcf  raphael_defconfig: Enable EXPOSURE_ADJUSTMENT  [nato6613]
+e61b8a4  exposure_adjustment: adjust PCC coefficient and elvss threshold  [UtsavBalar1231]
+80631e0  drm: msm: adapt exposure adjustment methods to raphael  [Nauval Rizky]
+c3e085f  drm: Let exposure adjustment switchable via sysfs  [XiNGRZ]
+0b0fd3a  drm: Introduce exposure adjustment driver  [DevriesL]
+983acde  wireguard: Update to version 1.0.20210219  [nato6613]
+15b9aa7  Don't ignore wireguard, we'll be periodically updating the snapshots in here  [Akhil Narang]
+d293120  scripts/fetch-latest-wireguard.sh always update  [Felipe Leon]
+1a597b0  scripts/wireguard: Auto apply wireguard updates as a commit  [idkwhoiam322]
+18498dc  net: wireguard: Add tools to import source automatically  [Jason A. Donenfeld]
+0c03ff2  Revert "Add 'net/wireguard/' from commit '8a88669a47a90908e766895f6243ffa6c999293c'"  [nato6613]
+d57cf3a  Revert "net: build wireguard in-kernel"  [nato6613]
+c4f7375  Revert "ARM64: configs: Build Wireguard in-kernel"  [nato6613]
+32cbfff  ARM64: configs: raphael: Switch to BBR TCP congestion algorithm  [UtsavisGreat]
+3b67232  FROMLIST: tcp_bbr: fix quantization code to not raise cwnd if not probing bandwidth  [Kevin(Yudong) Yang]
+49de0890  tcp_bbr: clarify that bbr_bdp() rounds up in comments  [Luke Hsiao]
+d37e0f1  BACKPORT: FROMGIT: net-tcp_bbr: v2: shrink delivered_mstamp, first_tx_mstamp to u32 to free up 8 bytes  [Neal Cardwell]
+96f5aed  BACKPORT: FROMGIT: net-tcp_rate: consolidate inflight tracking approaches in TCP  [Yuchung Cheng]
+9756136  FROMGIT: net-tcp_bbr: broaden app-limited rate sample detection  [Neal Cardwell]
+e2de875  tcp_bbr: adapt cwnd based on ack aggregation estimation  [Priyaranjan Jha]
+2197b23  tcp_bbr: refactor bbr_target_cwnd() for general inflight provisioning  [Priyaranjan Jha]
+f2d07339  tcp_bbr: centralize code to set gains  [Neal Cardwell]
+9a3bc17  tcp_bbr: apply PROBE_RTT cwnd cap even if acked==0  [Kevin Yang]
+cfeb1148c  tcp_bbr: in restart from idle, see if we should exit PROBE_RTT  [Kevin Yang]
+701ac3b  tcp_bbr: add bbr_check_probe_rtt_done() helper  [Kevin Yang]
+6860e33  tcp_bbr: fix bbr pacing rate for internal pacing  [Eric Dumazet]
+972d47a  net-tcp_bbr: set tp->snd_ssthresh to BDP upon STARTUP exit  [Yousuk Seung]
+2fc6de2  tcp_bbr: remove bbr->tso_segs_goal  [Eric Dumazet]
+fc3939d  tcp_bbr: better deal with suboptimal GSO (II)  [Eric Dumazet]
+ca5537c  tcp: avoid min RTT bloat by skipping RTT from delayed-ACK in BBR  [Yuchung Cheng]
+805c422  tcp: avoid min-RTT overestimation from delayed ACKs  [Yuchung Cheng]
+1f1093c  ipv6: remove redundant null pointer check before kfree_skb  [zhong jiang]
+e6acc5d  ipv4: remove redundant null pointer check before kfree_skb  [zhong jiang]
+1d7a582  tcp: Enable ECN negotiation by default  [Danny Lin]
+9f2014f  tcp: allow TLP in ECN CWR  [Neal Cardwell]
+f78495a  raphael: Enable RELR & LLD  [kondors1995]
+8456db2  ANDROID: Makefile: set -Qunused-arguments sooner  [Nick Desaulniers]
+735fddf  FROMLIST: Makefile: lld: tell clang to use lld  [Nick Desaulniers]
+6eec4ea  Makefile: Use O3 optimization level for Clang LTO  [Danny Lin]
+f4a9589  sm8150: squashed commit for code-quality fixes using gcc-9.3.0 with -O3  [UtsavBalar1231]
+9539c0a  sm8150: squashed commit for fixing maybe-uninitialised variable warnings  [UtsavBalar1231]
+2722fa2  Makefile: properly call optimization setup  [UtsavisGreat]
+32dcf11  Makefile: Use -O3 on Clang  [Danny Lin]
+1cf7e72  Makefile: Optimize for sm8150's Kryo 485 CPU setup  [Danny Lin]
+2e8a7d7  kbuild: remove redundent optimization flag  [UtsavBalar1231]
+10ee262  kbuild: Don't try to add '-fcatch-undefined-behavior' flag  [Nathan Chancellor]
+5f4e400  Makefile: Use pipes rather than temporary files for intermediate steps  [Danny Lin]
+b7ab666  kbuild: Allow forcing the alternative LLD linker via Kconfig  [Danny Lin]
+141f701  f2fs: Demote GC thread to idle scheduler class  [Danny Lin]
+49d4256  f2fs: set ioprio of GC kthread to idle  [Park Ju Hyung]
+88bbf90  ARM: dts: sm8150: Disable unhandled or broken IRQ monitoring  [Danny Lin]
+64f9fff  Revert "ARM: dts: msm: Set rcu_expedited for sdm855"  [Danny Lin]
+0e0099f  arm64: dts: sm8150: Force GPU idle timeout to 58 ms  [Sultan Alsawaf]
+90cac09  arm64: dts: sm8150: Power off DSI PHY during idle PC  [Danny Lin]
+de214f1  dts: sm8150: enable new GPU step introduced by CAF for sm855  [freak07]
+0f8f85d  add build scrip  [kondors1995]
+b30f8c0  ANDROID: sched: fair: balance for single core cluster  [Wei Wang]
+b03a5af  sched/walt: Avoid taking rq lock for every IRQ update  [Pavankumar Kondeti]
+e4b2c9d  sched/fair: Add timeout for detach_tasks() in load balance  [Pavankumar Kondeti]
+88be255  sched/fair: Tighten prefer_spread feature  [Pavankumar Kondeti]
+f2c76a4  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+0673f89  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+9775bcc  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+66934ec  sched/walt: Improve the scheduler  [Abhijeet Dharmapurikar]
+4987698  sched: Add support to spread tasks  [Lingutla Chandrasekhar]
+7ab6069  sched/fair: Avoid force newly idle load balance if have iowait task  [Maria Yu]
+9a28dae  sched/fair: Force gold cpus to do idle lb when silver has big tasks  [Pavankumar Kondeti]
+3be3cb8  sched/fair: Cleanup for incoming upstream changes  [Zachariah Kennedy]
+23bda40  sched/fair: Cleanup for incoming upstream changes  [Zachariah Kennedy]
+1dcc8eb  sched/fair: remove unused variable  [Satya Durga Srinivasu Prabhala]
+a5b78d7  sched: fair: Improve the scheduler  [Lingutla Chandrasekhar]
+84ace04  sched: Improve the scheduler  [Lingutla Chandrasekhar]
+f8fdaaa  sched: fair: Stop running idle_balance on active migration kick  [Lingutla Chandrasekhar]
+03029dc  cpufreq: Avoid leaving stale IRQ work items during CPU offline  [Rafael J. Wysocki]
+f4a7dc5  cpufreq: schedutil: Queue sugov irq work on policy online cpu  [Maria Yu]
+9d8e438  sched/cpufreq_schedutil: create a function for common steps  [Abhijeet Dharmapurikar]
+8601883  sched/fair: Don't place wakee on waker cpu if colocate enabled  [Biao Long]
+72507be  defconfig: Enable CONFIG_HZ=250  [Zachariah Kennedy]
+9b7e0b5  sched: core_ctl: Improve the scheduler  [Lingutla Chandrasekhar]
+188d0b6  sched/walt: Fix kernel panic issue by uninitialized data  [Biao Long]
+e2d1249  sched: walt: Improve the scheduler  [Lingutla Chandrasekhar]
+57dde83  sched: walt: Improve the scheduler  [Abhijeet Dharmapurikar]
+0442756  sched/walt: Improve the scheduler  [Lingutla Chandrasekhar]
+9ba601e  sched: walt: improve the scheduler  [Abhijeet Dharmapurikar]
+e6b442c  sched/walt: cleanup unused code  [Zachariah Kennedy]
+a33ebcf  sched/walt: Improve the scheduler  [Sai Harshini Nimmala]
+582c417  sched: Improve the scheduler  [Lingutla Chandrasekhar]
+ca0a0ab  sched/walt: Avoid walt irq work in offlined cpu  [Maria Yu]
+2670350  sched: walt: Improve the scheduler  [Lingutla Chandrasekhar]
+bcf375b  sched: core: Use sched_clusters for updown migration handler  [Lingutla Chandrasekhar]
+616dfe7  sched: walt: fix sched_cluster initialization  [Lingutla Chandrasekhar]
+276ff38  sched/walt: Improve the scheduler  [Sai Harshini Nimmala]
+71925eb  sched/walt: Improve the scheduler  [Sai Harshini Nimmala]
+c698369  sched: walt: Dump walt status on BUG_ON  [Lingutla Chandrasekhar]
+3366cd2  sched/walt: Improve the scheduler  [Jonathan Avila]
+b46bc08  sched/walt: Improve the scheduler  [Jonathan Avila]
+5c0ced5  sched/walt: Improve the scheduler  [Sai Harshini Nimmala]
+a8f97c3  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+0a8cbbe  sched: improve the scheduler  [Lingutla Chandrasekhar]
+db642f6  sched: walt: remove unused variable  [Lingutla Chandrasekhar]
+e7ea547  sched: walt: Improve the Scheduler  [Shaleen Agrawal]
+4543b1a  sched/walt: Improve the scheduler  [Amir Vajid]
+cc9cafa  sched/walt: Improve the scheduler  [Amir Vajid]
+facfee4  cpuidle: lpm-levels: get bias time from scheduler  [Amir Vajid]
+6b1e097  lpm-levels: Optimize and make way for upstream changes  [Zachariah Kennedy]
+33d95a0  sched: Remove unused code in sched_avg.c  [Pavankumar Kondeti]
+8ff5bf1  sched: Use bitmask for sched_busy_hysteresis_enable_cpus tunable  [Pavankumar Kondeti]
+4ec8a76  sched: Introduce sched_busy_hysteresis_enable_cpus tunable  [Pavankumar Kondeti]
+d563004  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+834321e  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+2c99a96  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+2d611d5  sched: core: Fix usage of cpu core group mask  [Lingutla Chandrasekhar]
+3f85bf0  arch_topology: Add possible sibling cpu mask for cpu_topology  [Lingutla Chandrasekhar]
+a25719b  arm64/kernel/topology: Cleanup for upstream commit  [Zachariah Kennedy]
+e3bae83  sched: Improve the scheduler  [Abhijeet Dharmapurikar]
+9990dee  sched/walt: Improve the scheduler  [Abhijeet Dharmapurikar]
+3ae8342  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+5c94ee0  sched: Improve the scheduler  [Lingutla Chandrasekhar]
+92e14b0  sched/core_ctl: Improve the scheduler  [Pavankumar Kondeti]
+8964743  sched/core_ctl: Improve the scheduler  [Pavankumar Kondeti]
+bd092bf  sched/walt: Improve the scheduler  [Abhijeet Dharmapurikar]
+1ce7c8a  sched/walt: drop preferred_cluster from rtg  [Abhijeet Dharmapurikar]
+5ef4e5c  sched/isolcpus: Fix "isolcpus=" boot parameter handling when !CONFIG_CPUMASK_OFFSTACK  [Rakib Mullick]
+16dc974  sched/fair: Fix incorrect CPU access in check_for_migration()  [Pavankumar Kondeti]
+c66e488  sched/walt: Improve the scheduler  [Abhijeet Dharmapurikar]
+ca3cf0c  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+f00a643  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+ecb2fca  Revert "sched/walt: Fix clusters sorting when cpufreq is disabled"  [kondors1995]
+2d4e6b3  sched/walt: Improve the scheduler  [Puja Gupta]
+0d15436  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+5e8ba22  sched/walt: Improve the scheduler  [Abhijeet Dharmapurikar]
+b3bb2f6  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+44961a7  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+336a707  sched: Improve the scheduler  [Lingutla Chandrasekhar]
+e265dcc  sched: Improve the scheduler  [Lingutla Chandrasekhar]
+baa8d42  sched: Improve the scheduler  [Lingutla Chandrasekhar]
+994a047  sched: Improve the scheduler  [Lingutla Chandrasekhar]
+863d26d  sched: Improve the scheduler  [Lingutla Chandrasekhar]
+0e96857  sched: Cleanup unused variables in walt  [Lingutla Chandrasekhar]
+ad12d47  sched: walt: Improve the scheduler  [Lingutla Chandrasekhar]
+e9fb7c0  sched: Improve the scheduler  [Lingutla Chandrasekhar]
+f79c18f  sched: clean-up unused/duplicate functions & variables  [Satya Durga Srinivasu Prabhala]
+08fc238  sched/fair: upadte adjust_cpus_for_packing()  [Pavankumar Kondeti]
+a88cad8  sched/fair: Fix excessive packing on the max capacity CPU  [Lingutla Chandrasekhar]
+1fe0f64  sched/fair: Allow prev cpu in find best target  [Abhijeet Dharmapurikar]
+64813e3  sched: improve the scheduler  [Abhijeet Dharmapurikar]
+cf6c2a2  sched/fair: Refactor packing eligible test  [Pavankumar Kondeti]
+e376cd4  sched: Improve the scheduler  [Pavankumar Kondeti]
+b1d4f5b  sched/walt: Improve the scheduler  [Abhijeet Dharmapurikar]
+51e64c1  sched/fair: Derive the downmigration margin wrt the destination CPU  [Pavankumar Kondeti]
+8cb322b  Revert "sched/core: Fix migration to invalid CPU in __set_cpus_allowed_ptr()"  [Blagovest Kolenichev]
+4abca04a  trace: Lets also track flags when a task is skipped for load balancing  [Zachariah Kennedy]
+92dbe09  raphael_defconfig: enable HBTP input  [Raphiel Rollerscaperers]
+a4a0dee  raphael_defconfig:disbale IKHEADERS  [kondors1995]
+03a2b34  Makefile: Force ARCH to be arm64  [Sultan Alsawaf]
+621cf9c  Makefile: Set KBUILD_OUTPUT to out by default  [Sultan Alsawaf]
 
-=============
-   2020-09-19
-=============
 
-=============
-   2020-09-18
-=============
+====================
+     2021-04-12    
+====================
 
-=============
-   2020-09-17
-=============
+* device/syberia/sepolicy
+11ad140  Add permissions for Flipendo to PowerHAL  [Wilson Chan]
 
-=============
-   2020-09-16
-=============
 
-=============
-   2020-09-15
-=============
+* device/xiaomi/raphael
+2063bdc  raphael: Update Hotword permisions & import necesary blobs  [nato6613]
+3ef2ee0  raphael: wifi: Enable QPower and Deep sleep at the same time  [Alex Naidis]
+0276b74  raphael: wifi: smarter decisions on whether to use a 2- or 5Ghz AP  [Alex Naidis]
+1601430  raphael: parts: Add DC-Dimming QS tile  [Anirudh Gupta]
+b5f6451  raphael: parts: implement dc dimming preference  [naveenjohnsonv]
+15549f7  raphael: audio: enforce 24-bit audio for offload playback  [justinweng]
+7ce6985  raphael: Lets take adavntage of master backports  [kondors1995]
+6a23d26   raphael: Build GoogleCamera app  [kondors1995]
+34e14e8  raphael: parts: Add ACTION_SCREEN_ON intent filter  [Adithya R]
+7d44559  raphael: Build sensorservice 1.0 HAL  [Alexandru Scurtu]
+c936479  raphael: Update graphics blobs from LA.UM.9.1.r1-09100-SMxxx0.0  [Alexandru Scurtu]
+2093cd1  raphael: proprietary-files: Reorganize  [Alexandru Scurtu]
+cf53bd0  raphael: Lets move back to syberia LLD  [kondors1995]
+a511465  raphael: light: Update LOG_TAG  [UtsavBalar1231]
+104c3af  raphael: Correct TARGET_RECOVERY_PIXEL_FORMAT  [Han Wang]
+8553a0b  raphael: Enabling PASR  [Piyush Balwani]
+7a8bd10  raphael: overlay: Update config_safe_media_volume_index  [Michael Bestas]
+33659df  raphael: Set voice call volume steps to 7  [rago]
+630d7ea  raphael: Media volume: from 15 to 25 steps  [Jean-Michel Trivi]
+b3cb5ff  raphael: audio: Add built-in/Back mic and remove TelePhony Rx from primary input  [Shalini Manjunatha]
+1249f67  raphael: Disable BT A2DP AAC whitelist  [dianlujitao]
+3602442  raphael: Support A2DP offload for Bluetooth Audio HAL V2  [Cheney Ni]
+5481c1a  raphael: Enable AOSP bluetooth audio HAL v2  [dianlujitao]
+b68fa47  raphael: Load A2DP configuration from a2dp_audio_policy_configuration.xml  [LuK1337]
+1b08f47  raphael: Reset to stock audio configs  [UtsavBalar1231]
+b5fecaa  raphael:reland audio configs to 4bcbf94f  [nato6613]
+
+
+* tools/metalava
+126b028  Check isInteresting for methods and fields in ApiLint  [Aurimas Liutikas]
+
+
+* vendor/xiaomi/raphael
+4a6f95d  raphael: Import Hotword Blobs from Hentai  [nato6613]
+3aea191  raphael: Update graphics blobs from LA.UM.9.1.r1-09100-SMxxx0.0  [Alexandru Scurtu]
+f99c4de  raphael: update blobs from miui_RAPHAEL_21.4.7  [nato6613]
+
+
+====================
+     2021-04-11    
+====================
+
+* kernel/xiaomi/raphael
+8f6630e  Merge remote-tracking branch 'origin/android11-base' into android11  [UtsavBalar1231]
+1badb2e  fixup: eda3eca1b36dd0b68e5442121056b02eb52c8672: dm verity: skip verity work on I/O errors when system is shutting down  [UtsavBalar1231]
+0576660  ARM64: configs: Build Wireguard in-kernel  [UtsavBalar1231]
+0081a26  net: build wireguard in-kernel  [UtsavBalar1231]
+649aaf9  Add 'net/wireguard/' from commit '8a88669a47a90908e766895f6243ffa6c999293c'  [UtsavBalar1231]
+0b3548b  Merge remote-tracking branch 'origin/android11-base' into android11  [UtsavBalar1231]
+97ab9b4  Merge tag '74c99511a3711abcbc3e3274b1516c7f72cf9fb4' into android11-base  [UtsavBalar1231]
+d79af67  Merge tag '4f71e51da8f48ae7c0bdf410aaba3556caf605e0' into android11-base  [UtsavBalar1231]
+0ab4b7b  Merge tag '4777695135b105bbb7c225f9fd503171f65cf66b' into android11-base  [UtsavBalar1231]
+7874a53  Merge tag 'a72946f9a1de52fadef6902442e6dc861f45aa0c' into android11-base  [UtsavBalar1231]
+d048b10  Merge tag 'c58176bac41113662f56243a330ba16272004a42' into android11-base  [UtsavBalar1231]
+c188008  Merge tag 'LA.UM.9.1.r1-09200-SMxxx0.0' into android11-base  [UtsavBalar1231]
+f5daca7  Merge remote-tracking branch 'aosp/android-4.14-stable' into android11-base  [UtsavBalar1231]
+7368be9  Merge 4.14.230 into android-4.14-stable  [Greg Kroah-Hartman]
+958e517  Linux 4.14.230  [Greg Kroah-Hartman]
+1bba268  can: flexcan: flexcan_chip_freeze(): fix chip freeze for missing bitrate  [Angelo Dureghello]
+4086850  init/Kconfig: make COMPILE_TEST depend on HAS_IOMEM  [Masahiro Yamada]
+fa42614  init/Kconfig: make COMPILE_TEST depend on !S390  [Heiko Carstens]
+32f9a87  bpf, x86: Validate computation of branch displacements for x86-64  [Piotr Krysiuk]
+fee67e9  cifs: Silently ignore unknown oplock break handle  [Vincent Whitchurch]
+9e62e36  cifs: revalidate mapping when we open files for SMB1 POSIX  [Ronnie Sahlberg]
+12e4976  ia64: mca: allocate early mca with GFP_ATOMIC  [Sergei Trofimovich]
+a922246  scsi: target: pscsi: Clean up after failure in pscsi_map_sg()  [Martin Wilck]
+533dbcd  x86/build: Turn off -fcf-protection for realmode targets  [Arnd Bergmann]
+c36b82c  platform/x86: thinkpad_acpi: Allow the FnLock LED to change state  [Esteve Varela Colominas]
+0865d92  drm/msm: Ratelimit invalid-fence message  [Rob Clark]
+d601353  mac80211: choose first enabled channel for monitor  [Karthikeyan Kathirvel]
+f2600b3  mISDN: fix crash in fritzpci  [Tong Zhang]
+25c101b  net: pxa168_eth: Fix a potential data race in pxa168_eth_remove  [Pavel Andrianov]
+7c12753  ARM: dts: am33xx: add aliases for mmc interfaces  [Mans Rullgard]
+
+
+* prebuilts/clang/host/linux-x86/clang-proton
+08a35cd  Update to 20210410 build  [Danny]
+
+
+* system/core
+3e464d0  Revert uclamp libprocessgroup changes for now  [DennySPb]
+
+
+====================
+     2021-04-10    
+====================
+
+* frameworks/base
+3e673e8  Automatic translation import  [DennySPb]
+9d6af6d  QuickSettings: Add Haptic Feedback to tiles [1/2]  [Evisceration]
+6e3ce91  Revert "Pre-emptively take a snapshot when finishing an activity before changing visibility"  [Danny Lin]
+74b69f0  LayoutInflater: Opportunistically create views directly for performance  [Danny Lin]
+e2783ea  SystemServiceRegistry: Replace ArrayMap with HashMap for performance  [Danny Lin]
+932b322  PackageManagerService: Replace ArrayMap with HashMap for performance  [Danny Lin]
+9460eed  InsetsStateController: Replace ArrayMap with HashMap for performance  [Danny Lin]
+1b5fd57  LocalServices: Replace ArrayMap with HashMap for performance  [Danny Lin]
+98e8ba0  ThemedResourceCache: Replace ArrayMap with HashMap for performance  [Danny Lin]
+5d4a582  Trace: Disable debug tracing in production builds  [Danny Lin]
+3be5ae9  statsd: Disable native stats collection service  [Danny Lin]
+ae888ad  PackageInfo: Optimize ApplicationInfo creation  [Danny Lin]
+371a459  EventLog: Disable event writing in production builds  [Danny Lin]
+e89f362  Merge changes Iab4d3902,Idd72ec6a,I8ce288ec,I61983778 into 11.0  [dennyspb]
+
+
+* libcore
+ec7afef  Switch to OpenJDK 8 java/math  [Hans Boehm]
+
+
+* packages/apps/Launcher3
+14d99e2  Automatic translation import  [DennySPb]
+
+
+* packages/apps/Settings
+e2bca44  Automatic translation import  [DennySPb]
+
+
+* packages/apps/SyberiaSettings
+bb3364e  Automatic translation import  [DennySPb]
+df8daac  QuickSettings: Add Haptic Feedback to tiles [2/2]  [amartinz]
+
+
+* vendor/syberia
+0fe0766  v4.5  [DennySPb]
+4fb9782  SystemUI: Use custom component factory  [Danny Lin]
+de0bfe6  device_config: Enable maching learning back gesture  [Danny Lin]
+6d71977  device_config: Disable deep press input classification  [Danny Lin]
+
+
+====================
+     2021-04-09    
+====================
+
+* bionic
+c2ccaa1  Fix "deprecated instruction in IT block" warning  [Chih-Hung Hsieh]
+6338966  Inline call_array for clearer stack traces.  [Elliott Hughes]
+7523b16  Sync upstream fts.c.  [Elliott Hughes]
+56356fc  fortify: remove `static`  [George Burgess IV]
+c12eda3  tmpfile(3): use O_TMPFILE where available.  [Elliott Hughes]
+
+
+* device/xiaomi/raphael
+06b69ca  raphael: Add flag for shipping QTI Sim Settings  [DennySPb]
+f404eb1  raphael:partial revert of 60971fac  [kondors1995]
+
+
+* vendor/qcom/opensource/commonsys/system/bt
+7aa3a70  avrc_copy_packet: Zero initialize packet  [Hansong Zhang]
+ed68e14  AVRCP: Use calloc to zero reserved fields  [Myles Watson]
+73a8a7b  Legacy pairing: Reject device with same BD_ADDR  [Hansong Zhang]
+
+
+====================
+     2021-04-08    
+====================
+
+* art
+35d1d9a  art: Disable debug tracing in production builds  [Danny Lin]
+03b888c  Add nativeZygoteJitEnabled  [Hans Boehm]
+
+
+* frameworks/base
+8f642bd  Merge changes Ibb6c48f7,I90d2e381 into 11.0  [dennyspb]
+99d2995  Remove malloc/free for inline overlay values  [Ryan Mitchell]
+a350877  API and boot image updates to import RI BigInteger  [Hans Boehm]
+0cb08ca  SystemUI: Import TensorFlow Lite model for back gesture  [Danny Lin]
+f7a0c72  SystemUI: Add machine learning back gesture provider  [Danny Lin]
+
+
+* frameworks/native
+f946205  libbinder: Suppress log spam when unlinking death recipients  [Danny Lin]
+687b528  vulkan: avoid waiting for service.sf.present_timestamp creation  [Yiwei Zhang]
+9cbde52  libbinder: avoid global mutex every binder call  [Steven Moreland]
+
+
+* kernel/xiaomi/raphael
+843d2d2  Merge 4.14.229 into android-4.14-stable  [Greg Kroah-Hartman]
+0cc2440  Linux 4.14.229  [Greg Kroah-Hartman]
+1e35385  drivers: video: fbcon: fix NULL dereference in fbcon_cursor()  [Du Cheng]
+2bcc14f  staging: rtl8192e: Change state information from u16 to u8  [Atul Gopinathan]
+6981144  staging: rtl8192e: Fix incorrect source in memcpy()  [Atul Gopinathan]
+6b4aa86  usb: gadget: udc: amd5536udc_pci fix null-ptr-dereference  [Tong Zhang]
+a110a1d  USB: cdc-acm: fix use-after-free after probe failure  [Johan Hovold]
+88fc6e1  USB: cdc-acm: downgrade message to debug  [Oliver Neukum]
+0ea1607  USB: cdc-acm: untangle a circular dependency between callback and softint  [Oliver Neukum]
+5b00c60  cdc-acm: fix BREAK rx code path adding necessary calls  [Oliver Neukum]
+7d8a401  usb: xhci-mtk: fix broken streams issue on 0.96 xHCI  [Chunfeng Yun]
+5dc2a68  usb: musb: Fix suspend with devices connected for a64  [Tony Lindgren]
+99b948b  USB: quirks: ignore remote wake-up on Fibocom L850-GL LTE modem  [Vincent Palatin]
+ae6d3a9  usbip: vhci_hcd fix shift out-of-bounds in vhci_hub_control()  [Shuah Khan]
+8aa6e54  firewire: nosy: Fix a use-after-free bug in nosy_ioctl()  [Zheyu Ma]
+2d956c5  extcon: Fix error handling in extcon_dev_register  [Dinghao Liu]
+8fb4f3e  extcon: Add stubs for extcon_register_notifier_all() functions  [Krzysztof Kozlowski]
+b48ed84  pinctrl: rockchip: fix restore error in resume  [Wang Panzhenzhuan]
+f34769a  mm: writeback: use exact memcg dirty counts  [Greg Thelen]
+6f59937  mm: fix oom_kill event handling  [Roman Gushchin]
+ad6e289  mem_cgroup: make sure moving_account, move_lock_task and stat_cpu in the same cacheline  [Aaron Lu]
+09031a8  mm: memcg: make sure memory.events is uptodate when waking pollers  [Johannes Weiner]
+cfc5a8f  mm: memcontrol: fix NR_WRITEBACK leak in memcg and system stats  [Johannes Weiner]
+323900f  reiserfs: update reiserfs_xattrs_initialized() condition  [Tetsuo Handa]
+e357ab3  drm/amdgpu: check alignment on CPU page for bo map  [Xℹ Ruoyao]
+495751b  drm/amdgpu: fix offset calculation in amdgpu_vm_bo_clear_mappings()  [Nirmoy Das]
+40f7d9a  mm: fix race by making init_zero_pfn() early_initcall  [Ilya Lipnitskiy]
+2640938  tracing: Fix stack trace event size  [Steven Rostedt (VMware)]
+18f8d1f  ALSA: hda/realtek: call alc_update_headset_mode() in hp_automute_hook  [Hui Wang]
+f88cacc  ALSA: hda/realtek: fix a determine_headset_type issue for a Dell AIO  [Hui Wang]
+90e3a4a  ALSA: usb-audio: Apply sample rate quirk to Logitech Connect  [Ikjoon Jang]
+64cf6c3  bpf: Remove MTU check in __bpf_skb_max_len  [Jesper Dangaard Brouer]
+462634b  net: wan/lmc: unregister device when no matching device is found  [Tong Zhang]
+8194423  appletalk: Fix skb allocation size in loopback case  [Doug Brown]
+a348e10  net: ethernet: aquantia: Handle error cleanup of start on open  [Nathan Rossi]
+bd68155  brcmfmac: clear EAP/association status bits on linkdown events  [Luca Pesce]
+d962f1b  ext4: do not iput inode under running transaction in ext4_rename()  [zhangyi (F)]
+8b35f14  ASoC: rt5659: Update MCLK rate in set_sysclk()  [Sameer Pujar]
+a58b76a  staging: comedi: cb_pcidas64: fix request_irq() warn  [Tong Zhang]
+775ddfc  staging: comedi: cb_pcidas: fix request_irq() warn  [Tong Zhang]
+bd784f9  scsi: qla2xxx: Fix broken #endif placement  [Alexey Dobriyan]
+e022f09  scsi: st: Fix a use after free in st_open()  [Lv Yunlong]
+9fc7088  vhost: Fix vhost_vq_reset()  [Laurent Vivier]
+a3e7104  powerpc: Force inlining of cpu_has_feature() to avoid build failure  [Christophe Leroy]
+67bf16c  ASoC: cs42l42: Always wait at least 3ms after reset  [Lucas Tanure]
+4acbc66  ASoC: cs42l42: Fix mixer volume control  [Lucas Tanure]
+16966e8  ASoC: es8316: Simplify adc_pga_gain_tlv table  [Hans de Goede]
+f83e0ef  ASoC: sgtl5000: set DAP_AVC_CTRL register to correct default value on probe  [Benjamin Rood]
+0e1e1af  ASoC: rt5651: Fix dac- and adc- vol-tlv values being off by a factor of 10  [Hans de Goede]
+3ad11d6  ASoC: rt5640: Fix dac- and adc- vol-tlv values being off by a factor of 10  [Hans de Goede]
+863b887  rpc: fix NULL dereference on kmalloc failure  [J. Bruce Fields]
+b323438  ext4: fix bh ref count on error paths  [Zhaolong Zhang]
+365c1c4  ipv6: weaken the v4mapped source check  [Jakub Kicinski]
+8569d30  selinux: vsock: Set SID for socket returned by accept()  [David Brazdil]
+
+
+* system/core
+f69e54c  init.rc: Disable native stats collection service  [Danny Lin]
+51c470b  libprocessgroup: Support per-API level task profiles  [Suren Baghdasaryan]
+f19a568  fastboot: f2fs: handle return code correctly  [Jaegeuk Kim]
+2054252  fastboot: add casefold/projid/compress options  [Jaegeuk Kim]
+d4f05a1  fs_mgr.cpp: fix casefold feature not enabled for the data partition  [Yongqin Liu]
+534b822  fs_mgr: try tune2fs for casefolding on /data only  [Jaegeuk Kim]
+58c1fd6  support f2fs casefolding formatting tool  [Jaegeuk Kim]
+917cddc  init.rc: correct the obsolete comment  [Wei Wang]
+17ff55a  Add system-background cpu group  [Wei Wang]
+7757c4b  init.rc: create camera-deamon stune cgroup  [Wei Wang]
+23facf3  init.rc: Create camera-daemon groups  [Rick Yiu]
+59812fe  rootdir/init.rc: Remove duplicated settings  [Rick Yiu]
+795a6ea  init.rc: migrate tasks from root cpu cgroup to a subgroup  [Wei Wang]
+0204620  init: add a copy_per_line built-in command  [Wei Wang]
+ad825bb  task_profiles: use system subgroup for NormalPerformance  [Wei Wang]
+d3c9e9b  init: Add cpu controller hierarchy to use utilclamp controller  [Suren Baghdasaryan]
+5345dee  libprocessgroup: Replace stune with utilclamp profiles  [Suren Baghdasaryan]
+940dba5  libprocessgroup: Support write to file feature  [Rick Yiu]
+65db386  Let the kernel hwrng thread manage hw_random mixing  [Elliott Hughes]
+e8710cf  add generic symlink to access userdata sysfs  [Jaegeuk Kim]
+7e1a187  Revert "Format formattable partitions if mount fails"  [Tom Marshall]
+
+
+* system/sepolicy
+c809dc7  sepolicy: Add uclamp file nodes to proc_sched  [Rick Yiu]
+d49f375  Enable read access to cgroups.json from shell  [Suren Baghdasaryan]
+
+
+====================
+     2021-04-07    
+====================
+
+* frameworks/av
+c891110  Remove unneccessary a2dpDeviceChanged variable  [Dean Wheatley]
+
+
+* frameworks/base
+218bd96  Revert "Zygote: enable zygote preforking (USAP pool) by default"  [DennySPb]
+275af98  Add zygote native fork loop  [Hans Boehm]
+04a52ac  Merge "[master] FIx issue: https://issuetracker.google.com/issues/183024999" into 11.0  [dennyspb]
+
+
+* packages/apps/Launcher3
+7591fdb  Merge tag 'android-11.0.0_r35' of https://android.googlesource.com/platform/packages/apps/Launcher3  [DennySPb]
+
 
