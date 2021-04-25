@@ -1,202 +1,138 @@
 ====================
-     2021-04-11    
+     2021-04-24    
 ====================
-
-* hardware/google/pixel
-1c11064  adpt for davinci  [SVB22]
-
-
-* tools/metalava
-26b8aec  Check isInteresting for methods and fields in ApiLint  [Aurimas Liutikas]
-
-
-====================
-     2021-04-10    
-====================
-
-* frameworks/base
-4cd7896  SystemUI: Allow listening for face only on pin/pass view  [jhenrique09]
-
 
 * packages/apps/Settings
-0326aed  BatteryHealth: show Charge Cycles Completed  [SuperDroidBond]
-3fe1779  BatteryHealth: Make it optional  [AshutoshSundresh]
-c382195  add BatteryHealth section  [Lucchetto]
-
-
-* system/core
-3e464d0  Revert uclamp libprocessgroup changes for now  [DennySPb]
+c9e1f54  BatteryHealth: show Charge Cycles Completed  [SuperDroidBond]
+7ea6c63  BatteryHealth: Make it optional  [AshutoshSundresh]
+6dddefd  add BatteryHealth section  [Lucchetto]
 
 
 ====================
-     2021-04-09    
+     2021-04-23    
 ====================
-
-* bionic
-c2ccaa1  Fix "deprecated instruction in IT block" warning  [Chih-Hung Hsieh]
-
 
 * frameworks/base
-3e673e8  Automatic translation import  [DennySPb]
-9d6af6d  QuickSettings: Add Haptic Feedback to tiles [1/2]  [Evisceration]
-6e3ce91  Revert "Pre-emptively take a snapshot when finishing an activity before changing visibility"  [Danny Lin]
-74b69f0  LayoutInflater: Opportunistically create views directly for performance  [Danny Lin]
-e2783ea  SystemServiceRegistry: Replace ArrayMap with HashMap for performance  [Danny Lin]
-932b322  PackageManagerService: Replace ArrayMap with HashMap for performance  [Danny Lin]
-9460eed  InsetsStateController: Replace ArrayMap with HashMap for performance  [Danny Lin]
-1b5fd57  LocalServices: Replace ArrayMap with HashMap for performance  [Danny Lin]
-98e8ba0  ThemedResourceCache: Replace ArrayMap with HashMap for performance  [Danny Lin]
-5d4a582  Trace: Disable debug tracing in production builds  [Danny Lin]
-3be5ae9  statsd: Disable native stats collection service  [Danny Lin]
-ae888ad  PackageInfo: Optimize ApplicationInfo creation  [Danny Lin]
-371a459  EventLog: Disable event writing in production builds  [Danny Lin]
-e89f362  Merge changes Iab4d3902,Idd72ec6a,I8ce288ec,I61983778 into 11.0  [dennyspb]
-
-
-* libcore
-ec7afef  Switch to OpenJDK 8 java/math  [Hans Boehm]
+4c31dc0  Automatic translation import  [DennySPb]
 
 
 * packages/apps/Launcher3
-14d99e2  Automatic translation import  [DennySPb]
+f81313f  Automatic translation import  [DennySPb]
 
 
 * packages/apps/Settings
-e2bca44  Automatic translation import  [DennySPb]
+3d001fa  Automatic translation import  [DennySPb]
 
 
 * packages/apps/SyberiaSettings
-bb3364e  Automatic translation import  [DennySPb]
-df8daac  QuickSettings: Add Haptic Feedback to tiles [2/2]  [amartinz]
-
-
-* vendor/qcom/opensource/commonsys/system/bt
-7aa3a70  avrc_copy_packet: Zero initialize packet  [Hansong Zhang]
-ed68e14  AVRCP: Use calloc to zero reserved fields  [Myles Watson]
-73a8a7b  Legacy pairing: Reject device with same BD_ADDR  [Hansong Zhang]
-
-
-* vendor/syberia
-0fe0766  v4.5  [DennySPb]
-4fb9782  SystemUI: Use custom component factory  [Danny Lin]
-de0bfe6  device_config: Enable maching learning back gesture  [Danny Lin]
-6d71977  device_config: Disable deep press input classification  [Danny Lin]
+3ccf172  Automatic translation import  [DennySPb]
 
 
 ====================
-     2021-04-08    
+     2021-04-22    
 ====================
 
-* bionic
-6338966  Inline call_array for clearer stack traces.  [Elliott Hughes]
-7523b16  Sync upstream fts.c.  [Elliott Hughes]
-56356fc  fortify: remove `static`  [George Burgess IV]
-c12eda3  tmpfile(3): use O_TMPFILE where available.  [Elliott Hughes]
+* frameworks/native
+1fef4b9  inputflinger: Enable ThinLTO  [Adithya R]
+8d786ea  binder: Enable ThinLTO  [xNombre]
+1bf3a66  sf/inputflinger: Switch to -O3 and disable debugging  [Adithya R]
+
+
+====================
+     2021-04-21    
+====================
+
+* device/qcom/sepolicy
+3eaf9f2  Merge tag 'LA.QSSI.11.0.r1-11400-qssi.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into HEAD  [DennySPb]
+
+
+* device/qcom/sepolicy_vndr
+fe20674  Merge tag 'LA.UM.9.12.r1-11000-SMxx50.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy_vndr into HEAD  [DennySPb]
 
 
 * frameworks/base
-8f642bd  Merge changes Ibb6c48f7,I90d2e381 into 11.0  [dennyspb]
+df4dfba  Fix Polish TypeClock strings  [ejbtrd]
+
+
+* frameworks/opt/telephony
+5966f2c  Merge tag 'LA.QSSI.11.0.r1-11400-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPb]
+
+
+* hardware/qcom-caf/wlan
+91b6295  Merge tag 'LA.UM.9.12.r1-11000-SMxx50.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/wlan into HEAD  [DennySPb]
+
+
+* vendor/qcom/opensource/audio
+c33cb1f  Merge tag 'LA.QSSI.11.0.r1-11400-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/audio into HEAD  [DennySPb]
+
+
+* vendor/qcom/opensource/data-ipa-cfg-mgr
+071c2d2  Merge tag 'LA.UM.9.12.r1-11000-SMxx50.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/data-ipa-cfg-mgr into HEAD  [DennySPb]
 
 
 ====================
-     2021-04-07    
+     2021-04-20    
+====================
+
+* system/core
+7aad86a  Revert recent f2fs changes  [DennySPb]
+
+
+====================
+     2021-04-19    
 ====================
 
 * art
-35d1d9a  art: Disable debug tracing in production builds  [Danny Lin]
-03b888c  Add nativeZygoteJitEnabled  [Hans Boehm]
+a60ef10  ARM64: FP16 min and max intrinsic for ARMv8  [Usama Arif]
 
 
 * frameworks/base
-99d2995  Remove malloc/free for inline overlay values  [Ryan Mitchell]
-a350877  API and boot image updates to import RI BigInteger  [Hans Boehm]
-0cb08ca  SystemUI: Import TensorFlow Lite model for back gesture  [Danny Lin]
-f7a0c72  SystemUI: Add machine learning back gesture provider  [Danny Lin]
-
-
-* frameworks/native
-f946205  libbinder: Suppress log spam when unlinking death recipients  [Danny Lin]
-687b528  vulkan: avoid waiting for service.sf.present_timestamp creation  [Yiwei Zhang]
-9cbde52  libbinder: avoid global mutex every binder call  [Steven Moreland]
-
-
-* system/core
-f69e54c  init.rc: Disable native stats collection service  [Danny Lin]
-51c470b  libprocessgroup: Support per-API level task profiles  [Suren Baghdasaryan]
-f19a568  fastboot: f2fs: handle return code correctly  [Jaegeuk Kim]
-2054252  fastboot: add casefold/projid/compress options  [Jaegeuk Kim]
-d4f05a1  fs_mgr.cpp: fix casefold feature not enabled for the data partition  [Yongqin Liu]
-534b822  fs_mgr: try tune2fs for casefolding on /data only  [Jaegeuk Kim]
-58c1fd6  support f2fs casefolding formatting tool  [Jaegeuk Kim]
-917cddc  init.rc: correct the obsolete comment  [Wei Wang]
-17ff55a  Add system-background cpu group  [Wei Wang]
-7757c4b  init.rc: create camera-deamon stune cgroup  [Wei Wang]
-23facf3  init.rc: Create camera-daemon groups  [Rick Yiu]
-59812fe  rootdir/init.rc: Remove duplicated settings  [Rick Yiu]
-795a6ea  init.rc: migrate tasks from root cpu cgroup to a subgroup  [Wei Wang]
-0204620  init: add a copy_per_line built-in command  [Wei Wang]
-ad825bb  task_profiles: use system subgroup for NormalPerformance  [Wei Wang]
-d3c9e9b  init: Add cpu controller hierarchy to use utilclamp controller  [Suren Baghdasaryan]
-5345dee  libprocessgroup: Replace stune with utilclamp profiles  [Suren Baghdasaryan]
-940dba5  libprocessgroup: Support write to file feature  [Rick Yiu]
-65db386  Let the kernel hwrng thread manage hw_random mixing  [Elliott Hughes]
-e8710cf  add generic symlink to access userdata sysfs  [Jaegeuk Kim]
-7e1a187  Revert "Format formattable partitions if mount fails"  [Tom Marshall]
-
-
-* system/sepolicy
-c809dc7  sepolicy: Add uclamp file nodes to proc_sched  [Rick Yiu]
-d49f375  Enable read access to cgroups.json from shell  [Suren Baghdasaryan]
-
-
-====================
-     2021-04-06    
-====================
-
-* build/make
-e8413fe  Merge tag 'android-11.0.0_r35' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
-
-
-* frameworks/av
-c891110  Remove unneccessary a2dpDeviceChanged variable  [Dean Wheatley]
-940351d  Fix RefBase Explicit destruction  [Jintao Zhu]
-7a1f046  stagefright: add nullptr check in MediaCodecSource  [Wonsik Kim]
-ba73b12  mp4: fix potential dereferences of NULL  [George Burgess IV]
-302767c  Merge tag 'android-11.0.0_r35' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
-
-
-* frameworks/base
-218bd96  Revert "Zygote: enable zygote preforking (USAP pool) by default"  [DennySPb]
-275af98  Add zygote native fork loop  [Hans Boehm]
-04a52ac  Merge "[master] FIx issue: https://issuetracker.google.com/issues/183024999" into 11.0  [dennyspb]
-2b58fde  Merge tag 'android-11.0.0_r35' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
-
-
-* hardware/interfaces
-0ae078e  Merge tag 'android-11.0.0_r35' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPb]
+e24137b  SystemUI: Extend quick qs slider position [1/2]  [rohan]
+4e488c1  SystemUI: Animate brightness slider  [Lucchetto]
+212bd85  SystemUI: Refactor QS Brightness slider options [2/2]  [spezi77]
+88f7a38  SystemUI: move brightness slider to top of footer  [Ali B]
+185d539  base: SystemUI: add tuner pref for qs brightness slider position (1/2)  [maxwen]
+c26ad0d  SystemUI: Add time refresh capabilities for added clock controllers  [Adhitya Mohan]
+718b43a  Keyguard: analog clock: update positioning  [Ali B]
+2dd4d74  sfyny clock: Fix preview  [Anushek Prasal]
+7508e53  SfunyClock: Update from crdroid  [Pranav Vashi]
+a5f4e76  DividerLines Clock: Fix margin issue in layout  [Pranav Vashi]
+0e1403e  MNML Clock: Add proper preview layout  [Pranav Vashi]
+60a245e  DividedLines Clock: Add proper preview layout  [Pranav Vashi]
+5cc69e8  Fix up preview for ShapeShift clock  [Pranav Vashi]
+b19ff25  KeyguardClockPositionAlgorithm: Allow forcing default clockY positioning  [Christian Oder]
+84526b3  SystemUI: Fix ShapeShift clock on 24h format  [MezzLasha]
+f9be6c8  Add ShapeShift lockscreen clock  [MezzLasha]
+56fe58e  FluidClock: Fix up preview rendering  [Pranav Vashi]
+5126345  Introduce Fluid lockscreen clock  [AndroBuddy]
+12fcae4  IDEClock: Fix preview not displaying  [Pranav Vashi]
+bc13f08  KeyguardClockSwitch: IS_DEBUGGABLE -> IS_ENG  [Simão Gomes Viana]
+ceeb568  Clock: Introduce 404 IDE Clock  [Akash Srivastava]
+44df205  SystemUI: DividedLinesClock: Fix NPE on setTextColor  [rohan]
+1e0e9e4  SystemUI: Add MNML based clock designs  [El Dainosor]
+b6edcde  SystemUI: Add SFUNY clock  [El Dainosor]
+70d8d2e  SystemUI: Add Custom Spectrum Analog Clock  [rohan]
+6c28c48  SystemUI: Add Sammy highlight clock  [El Dainosor]
+e7edac2  SystemUI: Add center style Typographic clock  [Pranav Vashi]
+71d9f2e  SystemUI: fix binary clock update  [maxwen]
+4a3d1cb  Keyguard: add binary custom clock face  [maxwen]
+03f46ab  base: Fix unnecessary truncation in Slice  [Stallix]
+6e26e02  base: Order the clocks  [El Dainosor]
+cd05336  base: dos2unix on DividedLines clock  [Filippo Roggi]
+ccecb8c  DividerLines Clock: Set 24-hr time format as well  [Pranav Vashi]
+62cc859  base: Add Divided Lines Clock  [El Dainosor]
+001cae3  Add time refresh capabilities for bold, digital and Samsung lockscreen clocks  [Adhitya Mohan]
 
 
 * packages/apps/Launcher3
-7591fdb  Merge tag 'android-11.0.0_r35' of https://android.googlesource.com/platform/packages/apps/Launcher3  [DennySPb]
+da4aa25  SystemShortcuts: fix fc with InfoBottomSheet  [Ali B]
 
 
-* packages/apps/Settings
-4cf02b4  Merge tag 'android-11.0.0_r35' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
-
-
-* system/bt
-96076b7  Merge tag 'android-11.0.0_r35' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPb]
-
-
-* system/core
-8f3d399  init: do not create dev.mnt. properties for emulated mounts  [Tom Cherry]
+* packages/apps/SyberiaSettings
+d6549eb  Add pref for qs brightness slider position (2/2)  [maxwen]
 
 
 ====================
-     2021-04-05    
+     2021-04-18    
 ====================
-
-* libcore
-5102032  Add Zygotehooks.indefiniteThreadSuspensionOK  [Hans Boehm]
-
 
