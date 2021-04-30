@@ -1,144 +1,118 @@
 ====================
-     2021-04-23    
+     2021-04-30    
 ====================
 
 * frameworks/base
-4c31dc0  Automatic translation import  [DennySPb]
-
-
-* packages/apps/Launcher3
-f81313f  Automatic translation import  [DennySPb]
-
-
-* packages/apps/Settings
-3d001fa  Automatic translation import  [DennySPb]
-
-
-* packages/apps/SyberiaSettings
-3ccf172  Automatic translation import  [DennySPb]
-
-
-====================
-     2021-04-22    
-====================
-
-* art
-7d03977  [master] Fix inliner instruction/register limits  [Tim Murray]
-
-
-* frameworks/native
-886116f  inputflinger: Enable ThinLTO  [Adithya R]
-
-
-====================
-     2021-04-21    
-====================
-
-* build/soong
-ded47cb  [pgo] Do not explicitly link profile runtime  [Pirama Arumuga Nainar]
-dde9e20  Set block-size for XZ mini-debug-info compression  [David Srbecky]
-6e9dbe3  Turn on ninja phony outputs  [Dan Willemsen]
-
-
-* device/qcom/sepolicy
-3eaf9f2  Merge tag 'LA.QSSI.11.0.r1-11400-qssi.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into HEAD  [DennySPb]
-
-
-* device/qcom/sepolicy_vndr
-fe20674  Merge tag 'LA.UM.9.12.r1-11000-SMxx50.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy_vndr into HEAD  [DennySPb]
-
-
-* frameworks/base
-df4dfba  Fix Polish TypeClock strings  [ejbtrd]
-
-
-* frameworks/native
-b3b0e8a  sf/inputflinger: Switch to -O3 and disable debugging  [Adithya R]
-
-
-* frameworks/opt/telephony
-5966f2c  Merge tag 'LA.QSSI.11.0.r1-11400-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPb]
+c06d35e  Automatic translation import  [DennySPb]
+90b143f  Fix two problems in the ExecuteBinary function.  [Peter Collingbourne]
 
 
 * hardware/qcom-caf/wlan
-91b6295  Merge tag 'LA.UM.9.12.r1-11000-SMxx50.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/wlan into HEAD  [DennySPb]
+f8870fc  Merge tag 'LA.UM.9.3.r1-01700-sdm845.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/wlan into HEAD  [DennySPb]
 
 
-* vendor/qcom/opensource/audio
-c33cb1f  Merge tag 'LA.QSSI.11.0.r1-11400-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/audio into HEAD  [DennySPb]
-
-
-* vendor/qcom/opensource/data-ipa-cfg-mgr
-071c2d2  Merge tag 'LA.UM.9.12.r1-11000-SMxx50.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/data-ipa-cfg-mgr into HEAD  [DennySPb]
-
-
-====================
-     2021-04-20    
-====================
-
-* art
-a60ef10  ARM64: FP16 min and max intrinsic for ARMv8  [Usama Arif]
+* packages/apps/Etar
+9298ad8  Merge https://github.com/LineageOS/android_packages_apps_Etar into HEAD  [DennySPb]
 
 
 * packages/apps/Launcher3
-da4aa25  SystemShortcuts: fix fc with InfoBottomSheet  [Ali B]
+334391d  Automatic translation import  [DennySPb]
+ad06052  QsbContainerView: Fix NPE in preview mode  [Pranav Vashi]
+
+
+* packages/apps/Settings
+5625749  Automatic translation import  [DennySPb]
+bacbffc  BatteryHealth: show Charge Cycles Completed  [SuperDroidBond]
+56bb322  BatteryHealth: Make it optional  [AshutoshSundresh]
+5d0826f  add BatteryHealth section  [Lucchetto]
 
 
 * packages/apps/SyberiaSettings
-d6549eb  Add pref for qs brightness slider position (2/2)  [maxwen]
+646a1da  Automatic translation import  [DennySPb]
 
 
-* system/core
-7aad86a  Revert recent f2fs changes  [DennySPb]
+* packages/apps/ThemePicker
+fc786a9  ThemePicker: Remove unwanted space under clock faces container  [Adithya R]
+
+
+* packages/apps/Updater
+57ff4f6  Updater: appbar: Set the collapsing animation duration to 0ms  [Dhina17]
+579f862  UpdatesDbHelper: Move identical code into helper method  [Pavel Salomatov]
+
+
+* system/memory/lmkd
+bd8dda9  Revert "Switch to Bionic's pidfd wrappers."  [DennySPb]
+c025573  Merge branch 'master' of https://android.googlesource.com/platform/system/memory/lmkd into HEAD  [DennySPb]
+5263aa7  lmkd: Do not treat RSS=0 as a sign of a process being dead  [Suren Baghdasaryan]
+
+
+* system/sepolicy
+8f0e460  update: Allow system_server read access to SurfaceFlinger  [Kevin Jeon]
+1ec0d6a  Allow system_server read access to SurfaceFlinger  [Kevin Jeon]
+
+
+* system/update_engine
+6f48192  Move performance mode to top app  [Luca Stefani]
+17ae523  Improve ASCII look while flashing  [Nathan Chancellor]
+0a34548  Ignore timestamp check in DeltaPerformer  [Surge Raval]
+251ac74  Report more info in sideload UI  [Surge Raval]
+bb48793  Add sideload UI and split reporting into thirds  [Surge Raval]
 
 
 ====================
-     2021-04-19    
+     2021-04-29    
+====================
+
+* frameworks/av
+7e82463  Merge tag 'LA.QSSI.11.0.r1-11600-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPb]
+
+
+* frameworks/base
+667e26e  [SQUASH]base: Revert secondary home handle  [Ido Ben-Hur]
+85c05b6  clock: Add Oroño clock  [El Dainosor]
+7841d4b  KeyguardClockSwitch: Fix missing status view on custom clocks  [Pranav Vashi]
+a1f19ca  base: add missing device config permissions for settings  [Ali B]
+
+
+====================
+     2021-04-28    
 ====================
 
 * frameworks/base
-e24137b4  SystemUI: Extend quick qs slider position [1/2]  [rohan]
-4e488c1  SystemUI: Animate brightness slider  [Lucchetto]
-212bd85  SystemUI: Refactor QS Brightness slider options [2/2]  [spezi77]
-88f7a38  SystemUI: move brightness slider to top of footer  [Ali B]
-185d539  base: SystemUI: add tuner pref for qs brightness slider position (1/2)  [maxwen]
-c26ad0d  SystemUI: Add time refresh capabilities for added clock controllers  [Adhitya Mohan]
-718b43a  Keyguard: analog clock: update positioning  [Ali B]
-2dd4d74  sfyny clock: Fix preview  [Anushek Prasal]
-7508e53  SfunyClock: Update from crdroid  [Pranav Vashi]
-a5f4e76  DividerLines Clock: Fix margin issue in layout  [Pranav Vashi]
-0e1403e  MNML Clock: Add proper preview layout  [Pranav Vashi]
-60a245e  DividedLines Clock: Add proper preview layout  [Pranav Vashi]
-5cc69e8  Fix up preview for ShapeShift clock  [Pranav Vashi]
-b19ff25  KeyguardClockPositionAlgorithm: Allow forcing default clockY positioning  [Christian Oder]
-84526b3  SystemUI: Fix ShapeShift clock on 24h format  [MezzLasha]
-f9be6c8  Add ShapeShift lockscreen clock  [MezzLasha]
-56fe58e  FluidClock: Fix up preview rendering  [Pranav Vashi]
-5126345  Introduce Fluid lockscreen clock  [AndroBuddy]
-12fcae4  IDEClock: Fix preview not displaying  [Pranav Vashi]
-bc13f08  KeyguardClockSwitch: IS_DEBUGGABLE -> IS_ENG  [Simão Gomes Viana]
-ceeb568  Clock: Introduce 404 IDE Clock  [Akash Srivastava]
-44df205  SystemUI: DividedLinesClock: Fix NPE on setTextColor  [rohan]
-1e0e9e4  SystemUI: Add MNML based clock designs  [El Dainosor]
-b6edcde  SystemUI: Add SFUNY clock  [El Dainosor]
-70d8d2e  SystemUI: Add Custom Spectrum Analog Clock  [rohan]
-6c28c48  SystemUI: Add Sammy highlight clock  [El Dainosor]
-e7edac2  SystemUI: Add center style Typographic clock  [Pranav Vashi]
-71d9f2e  SystemUI: fix binary clock update  [maxwen]
-4a3d1cb  Keyguard: add binary custom clock face  [maxwen]
-03f46ab  base: Fix unnecessary truncation in Slice  [Stallix]
-6e26e02  base: Order the clocks  [El Dainosor]
-cd05336  base: dos2unix on DividedLines clock  [Filippo Roggi]
-ccecb8c  DividerLines Clock: Set 24-hr time format as well  [Pranav Vashi]
-62cc859  base: Add Divided Lines Clock  [El Dainosor]
-001cae3  Add time refresh capabilities for bold, digital and Samsung lockscreen clocks  [Adhitya Mohan]
+f428cc6  base: Allow user to block individual apps from resuming  [Beth Thibodeau]
+5cf795d  User switch: Unbind headsetservice in bluetooth Off state.  [Jagadish Koppula]
+b814828  DeviceConfig: Add telephony to public namespaces.  [spezi77]
+e03be20  VolumeDialogImpl: Remove insets listener on dismiss  [HrX03]
+493f1429  VolumeDialogImpl: Get the location in window instead of on screen  [HrX03]
+
+
+* packages/apps/Settings
+baf5795  Settings: Make media player allowed list dependent on toggle  [Adithya R]
+b0f11ee  Settings: Allow user to block individual apps from resuming  [Beth Thibodeau]
+
+
+* system/core
+1d89d69  libprocessgroup: Use default android R cgroups profiles  [DennySPb]
+39f6ecf  Partially "Revert uclamp libprocessgroup changes for now"  [DennySPb]
 
 
 ====================
-     2021-04-18    
+     2021-04-27    
 ====================
 
 ====================
-     2021-04-17    
+     2021-04-26    
 ====================
+
+====================
+     2021-04-25    
+====================
+
+====================
+     2021-04-24    
+====================
+
+* system/memory/lmkd
+9f1be12  lmkd: Handle cases when proc_get_name() might return NULL  [Suren Baghdasaryan]
+
 
