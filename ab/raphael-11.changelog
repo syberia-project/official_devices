@@ -1,201 +1,227 @@
 ====================
-     2021-04-24    
+     2021-04-30    
 ====================
 
 * frameworks/base
-4c31dc0  Automatic translation import  [DennySPb]
+2670112  Merge "FixUp!: Doubletap to Sleep on lockscreen" into 11.0  [dennyspb]
+c06d35e  Automatic translation import  [DennySPb]
+90b143f  Fix two problems in the ExecuteBinary function.  [Peter Collingbourne]
+
+
+* kernel/xiaomi/raphael
+1fc0040  tree: fiiixeeeess I don't caaare  [Yaroslav Furman]
+4ed059e  thermal: thermal_core: resolve a KASAN wild-memory-access  [Yaroslav Furman]
+c4784ab  msm: camera: Fix memory leak in cam_res_mgr_probe()  [Sultan Alsawaf]
+ede614f  msm: camera: smmu: Unmap and detach secure DMA attachments to fix leaks  [Sultan Alsawaf]
+9e8838d  Makefile: Remove obsolete -fno-builtin flag  [Danny Lin]
+b7a6bed  Merge remote-tracking branch 'aosp/android-4.14-stable' into dev/11.0  [nato6613]
+a51d449  simple_lmk: Optimize victim finder to eliminate hard-coded adj ranges  [Sultan Alsawaf]
+6ab340c  simple_lmk: Cacheline-align the victims array and mm_free_lock on SMP  [Sultan Alsawaf]
+dee8bb3  simple_lmk: Pass a custom swap function to sort()  [Sultan Alsawaf]
+037d0fd  simple_lmk: Skip victim reduction when all victims need to be killed  [Sultan Alsawaf]
+e63bdeb  simple_lmk: Use MIN_FREE_PAGES wherever pages_needed is used  [Sultan Alsawaf]
+00ec0f6  simple_lmk: Don't block in simple_lmk_mm_freed() on mm_free_lock  [Sultan Alsawaf]
+
+
+* packages/apps/Etar
+9298ad8  Merge https://github.com/LineageOS/android_packages_apps_Etar into HEAD  [DennySPb]
 
 
 * packages/apps/Launcher3
-f81313f  Automatic translation import  [DennySPb]
+334391d  Automatic translation import  [DennySPb]
+ad06052  QsbContainerView: Fix NPE in preview mode  [Pranav Vashi]
 
 
 * packages/apps/Settings
-3d001fa  Automatic translation import  [DennySPb]
+5625749  Automatic translation import  [DennySPb]
+bacbffc  BatteryHealth: show Charge Cycles Completed  [SuperDroidBond]
+56bb322  BatteryHealth: Make it optional  [AshutoshSundresh]
+5d0826f  add BatteryHealth section  [Lucchetto]
 
 
 * packages/apps/SyberiaSettings
-3ccf172  Automatic translation import  [DennySPb]
+646a1da  Automatic translation import  [DennySPb]
 
 
-* vendor/xiaomi/raphael
-57d77ca  raphael: update blobs from miui_RAPHAEL_21.4.21  [nato6613]
+* packages/apps/ThemePicker
+fc786a9  ThemePicker: Remove unwanted space under clock faces container  [Adithya R]
+
+
+* packages/apps/Updater
+2d84a1f  Manifest: Add missing permissions for local update  [DennySPb]
+57ff4f6  Updater: appbar: Set the collapsing animation duration to 0ms  [Dhina17]
+579f862  UpdatesDbHelper: Move identical code into helper method  [Pavel Salomatov]
+
+
+* system/memory/lmkd
+bd8dda9  Revert "Switch to Bionic's pidfd wrappers."  [DennySPb]
+c025573  Merge branch 'master' of https://android.googlesource.com/platform/system/memory/lmkd into HEAD  [DennySPb]
+5263aa7  lmkd: Do not treat RSS=0 as a sign of a process being dead  [Suren Baghdasaryan]
+
+
+* system/sepolicy
+8f0e460  update: Allow system_server read access to SurfaceFlinger  [Kevin Jeon]
+1ec0d6a  Allow system_server read access to SurfaceFlinger  [Kevin Jeon]
 
 
 ====================
-     2021-04-23    
+     2021-04-29    
 ====================
 
-* kernel/xiaomi/raphael
-861d51e  raphael_defconfig: Enable basic tracing for IORap [Fixup 9ca1927e]  [Danny Lin]
-
-
-====================
-     2021-04-22    
-====================
-
-* device/qcom/sepolicy
-3eaf9f2  Merge tag 'LA.QSSI.11.0.r1-11400-qssi.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into HEAD  [DennySPb]
-
-
-* device/qcom/sepolicy_vndr
-fe20674  Merge tag 'LA.UM.9.12.r1-11000-SMxx50.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy_vndr into HEAD  [DennySPb]
+* frameworks/av
+7e82463  Merge tag 'LA.QSSI.11.0.r1-11600-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPb]
 
 
 * frameworks/base
-df4dfba  Fix Polish TypeClock strings  [ejbtrd]
-
-
-* frameworks/native
-1fef4b9  inputflinger: Enable ThinLTO  [Adithya R]
-8d786ea  binder: Enable ThinLTO  [xNombre]
-1bf3a66  sf/inputflinger: Switch to -O3 and disable debugging  [Adithya R]
-
-
-* frameworks/opt/telephony
-5966f2c  Merge tag 'LA.QSSI.11.0.r1-11400-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPb]
-
-
-* hardware/qcom-caf/wlan
-91b6295  Merge tag 'LA.UM.9.12.r1-11000-SMxx50.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/wlan into HEAD  [DennySPb]
-
-
-* kernel/xiaomi/raphael
-fd0a58a  Merge remote-tracking branch 'aosp/android-4.14-stable' into dev/11  [nato6613]
-c43d064  Merge remote-tracking branch 'cunt/android11-base' into dev/11  [nato6613]
-
-
-* vendor/qcom/opensource/audio
-c33cb1f  Merge tag 'LA.QSSI.11.0.r1-11400-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/audio into HEAD  [DennySPb]
-
-
-* vendor/qcom/opensource/data-ipa-cfg-mgr
-071c2d2  Merge tag 'LA.UM.9.12.r1-11000-SMxx50.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/data-ipa-cfg-mgr into HEAD  [DennySPb]
-
-
-* vendor/xiaomi/raphael
-17e1afc  raphael: update blobs from miui_RAPHAEL_21.4.19  [nato6613]
+667e26e  [SQUASH]base: Revert secondary home handle  [Ido Ben-Hur]
+85c05b6  clock: Add Oroño clock  [El Dainosor]
+7841d4b  KeyguardClockSwitch: Fix missing status view on custom clocks  [Pranav Vashi]
+a1f19ca  base: add missing device config permissions for settings  [Ali B]
 
 
 ====================
-     2021-04-21    
+     2021-04-28    
 ====================
-
-====================
-     2021-04-20    
-====================
-
-* art
-a60ef10  ARM64: FP16 min and max intrinsic for ARMv8  [Usama Arif]
-
-
-* device/xiaomi/raphael
-c8d5114  raphael: Enable proximity usage during doze  [sashascurtu]
-72ef3e8  raphael: Set overlay for custom doze package  [Adhitya Mohan]
-9b19564  raphael: Rename doze target * To prevent conflicts with other trees  [Adhitya Mohan]
-70903e1  raphael: Deprecate XiaomiDoze  [poad42]
-1812167  raphael: doze: Allow to wake the screen instead of pulsing * based on https://github.com/nullxception/device_xiaomi_raphael/commit/17cfbf52e518e3f89a3d28b295f8d07526808097 [poad42] 	* simpler code stuff and adapt for our doze impl  [Adhitya Mohan]
-396c33e  raphael: doze: Use Xiaomi tilt sensor  [Anirudh Gupta]
-f0ad38a  Correct doze typos  [Josh Chasky]
-802b08f  Preference category: Match system theme  [Alex]
-a38bb62  Themes: Match custom options navbar with Settings  [Alex]
-ef867db  Doze: Update DozeSettings to AndroidX  [Alex]
-0767ae3  CustomDoze: Change strings to match with Settings  [Alex]
-bc27d08  Migrate to blueprint where applicable  [Alex Koskovich]
-ed7fe6b  doze: Change name to CustomDoze  [Alex Koskovich]
-9eebafb  doze: Set LOCAL_SDK_VERSION where possible  [Anton Hansson]
-27295a7  doze: Respect RTL  [Alex]
-47f9edb  doze: Use ExecutorService to handle sensor listener  [Ezio Lacandia Bijelkic]
-7cbeb76  doze: Fix CustomDoze receiver protected broadcast logspam  [Ezio Lacandia Bijelkic]
-452a8f0  doze: Custom Doze service improvements  [ezio84]
-6b67ae5  doze: Allow to enable Doze proximity actions without the notifications one  [Ezio Lacandia Bijelkic]
-dcc9afe  doze: Change SDK to 29  [Alex Koskovich]
-3de8b39  doze: Change SDK to 27  [Alex Cruz]
-3987819  doze: Remove Doze dialog  [Alex Cruz]
-b0daee9  doze: Change package name for uniformity  [Alex Cruz]
-75afc8b  doze: Further Refactoring, change theme to match Pixel  [Alex Cruz]
-067ed21  doze: Clean up doze  [Altaf-Mahdi]
-d354c21  doze: Doze improvements  [Altaf-Mahdi]
-98c41c6  doze: Refactoring for the Xiaomi devices  [Patrick Lower]
-04220be  doze: Remove summary for Doze  [TheStrix]
-db858b8  doze: ScreenType utility from CM SDK  [Michael Bestas]
-be837d7  doze: Fix typo  [Dave Daynard]
-b709711  doze: Properly fix future timestamp error  [Patrick Lower]
-a5a3b65  doze: Prevent a PM wakeup with a timestamp in the future  [Brandon McAnsh]
-1fd4b3a  doze: Restore proximity wake preference on boot  [Dave Daynard]
-f072bbb  doze: Add proximity wake  [Dave Daynard]
-8476918  doze: Add back button to action bar  [luca020400]
-9a4ed8e  doze: Fix defaults  [Dave Daynard]
-21f12f4  doze: Consolidate Doze settings  [Christopher R. Palmer]
-6000062  Doze: Set gesture to disabled by default  [Arne Coucheron]
-0cb658b  doze: Add service for using proximity sensor for wake-up  [Patrick Lower]
-a8ec7b6  raphael: audio: Create socket audio_hw_socket for misoundfx  [UtsavBalar1231]
-
 
 * frameworks/base
-e24137b  SystemUI: Extend quick qs slider position [1/2]  [rohan]
-4e488c1  SystemUI: Animate brightness slider  [Lucchetto]
-212bd85  SystemUI: Refactor QS Brightness slider options [2/2]  [spezi77]
-88f7a38  SystemUI: move brightness slider to top of footer  [Ali B]
-185d539  base: SystemUI: add tuner pref for qs brightness slider position (1/2)  [maxwen]
-c26ad0d  SystemUI: Add time refresh capabilities for added clock controllers  [Adhitya Mohan]
-718b43a  Keyguard: analog clock: update positioning  [Ali B]
-2dd4d74  sfyny clock: Fix preview  [Anushek Prasal]
-7508e53  SfunyClock: Update from crdroid  [Pranav Vashi]
-a5f4e76  DividerLines Clock: Fix margin issue in layout  [Pranav Vashi]
-0e1403e  MNML Clock: Add proper preview layout  [Pranav Vashi]
-60a245e  DividedLines Clock: Add proper preview layout  [Pranav Vashi]
-5cc69e8  Fix up preview for ShapeShift clock  [Pranav Vashi]
-b19ff25  KeyguardClockPositionAlgorithm: Allow forcing default clockY positioning  [Christian Oder]
-84526b3  SystemUI: Fix ShapeShift clock on 24h format  [MezzLasha]
-f9be6c8  Add ShapeShift lockscreen clock  [MezzLasha]
-56fe58e  FluidClock: Fix up preview rendering  [Pranav Vashi]
-5126345  Introduce Fluid lockscreen clock  [AndroBuddy]
-12fcae4  IDEClock: Fix preview not displaying  [Pranav Vashi]
-bc13f08  KeyguardClockSwitch: IS_DEBUGGABLE -> IS_ENG  [Simão Gomes Viana]
-ceeb568  Clock: Introduce 404 IDE Clock  [Akash Srivastava]
-44df205  SystemUI: DividedLinesClock: Fix NPE on setTextColor  [rohan]
-1e0e9e4  SystemUI: Add MNML based clock designs  [El Dainosor]
-b6edcde  SystemUI: Add SFUNY clock  [El Dainosor]
-70d8d2e  SystemUI: Add Custom Spectrum Analog Clock  [rohan]
-6c28c48  SystemUI: Add Sammy highlight clock  [El Dainosor]
-e7edac2  SystemUI: Add center style Typographic clock  [Pranav Vashi]
-71d9f2e  SystemUI: fix binary clock update  [maxwen]
-4a3d1cb  Keyguard: add binary custom clock face  [maxwen]
-03f46ab  base: Fix unnecessary truncation in Slice  [Stallix]
-6e26e02  base: Order the clocks  [El Dainosor]
-cd05336  base: dos2unix on DividedLines clock  [Filippo Roggi]
-ccecb8c  DividerLines Clock: Set 24-hr time format as well  [Pranav Vashi]
-62cc859  base: Add Divided Lines Clock  [El Dainosor]
-001cae3  Add time refresh capabilities for bold, digital and Samsung lockscreen clocks  [Adhitya Mohan]
+f428cc6  base: Allow user to block individual apps from resuming  [Beth Thibodeau]
+5cf795d  User switch: Unbind headsetservice in bluetooth Off state.  [Jagadish Koppula]
+b814828  DeviceConfig: Add telephony to public namespaces.  [spezi77]
+e03be20  VolumeDialogImpl: Remove insets listener on dismiss  [HrX03]
+493f1429  VolumeDialogImpl: Get the location in window instead of on screen  [HrX03]
 
 
 * kernel/xiaomi/raphael
-1bfca16  UPSTREAM: kbuild: test --build-id linker flag by ld-option instead of cc-ldoption  [Masahiro Yamada]
-28dbd06  Merge remote-tracking branch 'aosp/android-4.14-stable' into android11-base  [UtsavBalar1231@gmail.com]
+1e3baee  Merge 4.14.232 into android-4.14-stable  [Greg Kroah-Hartman]
+7d7d1c0  Linux 4.14.232  [Greg Kroah-Hartman]
+cecc654  USB: CDC-ACM: fix poison/unpoison imbalance  [Oliver Neukum]
+24b699b  net: hso: fix NULL-deref on disconnect regression  [Johan Hovold]
+d9eb417  x86/crash: Fix crash_setup_memmap_entries() out-of-bounds access  [Mike Galbraith]
+65ade76  ia64: tools: remove duplicate definition of ia64_mf() on ia64  [John Paul Adrian Glaubitz]
+ecdc811  ia64: fix discontig.c section mismatches  [Randy Dunlap]
+3c01333  cavium/liquidio: Fix duplicate argument  [Wan Jiabing]
+e890d60  xen-netback: Check for hotplug-status existence before watching  [Michael Brown]
+1b0f2c4  s390/entry: save the caller of psw_idle  [Vasily Gorbik]
+8b8794f  net: geneve: check skb is large enough for IPv4/IPv6 header  [Phillip Potter]
+2205208  ARM: dts: Fix swapped mmc order for omap3  [Tony Lindgren]
+7757b54  HID: wacom: Assign boolean values to a bool variable  [Jiapeng Zhong]
+a0ee704  HID: alps: fix error return code in alps_input_configured()  [Jia-Ju Bai]
+95427f1  pinctrl: lewisburg: Update number of pins in community  [Yuanyuan Zhong]
+457ac0f  ext4: correct error label in ext4_rename()  [Zhang Yi]
+caf5ac9  net: hso: fix null-ptr-deref during tty device unregistration  [Anirudh Rayabharam]
+407faed  gup: document and work around "COW can break either way" issue  [Linus Torvalds]
+44fcc6d  ARM: 9071/1: uprobes: Don't hook on thumb instructions  [Fredrik Strupe]
+532747f  ARM: footbridge: fix PCI interrupt mapping  [Russell King]
+c6f366a  ibmvnic: remove duplicate napi_schedule call in open function  [Lijun Pan]
+ccf31dd  ibmvnic: remove duplicate napi_schedule call in do_reset function  [Lijun Pan]
+40fd715  ibmvnic: avoid calling napi_disable() twice  [Lijun Pan]
+aedcc0c  i40e: fix the panic when running bpf in xdpdrv mode  [Jason Xing]
+be48757  net: sit: Unregister catch-all devices  [Hristo Venev]
+c62710c  net: davicom: Fix regulator not turned off on failed probe  [Christophe JAILLET]
+9065ccb  netfilter: nft_limit: avoid possible divide error in nft_limit_init  [Eric Dumazet]
+c7159cd  netfilter: conntrack: do not print icmpv6 as unknown via /proc  [Pablo Neira Ayuso]
+3344bddc  scsi: libsas: Reset num_scatter if libata marks qc as NODATA  [Jolly Shah]
+b8ae95b  arm64: alternatives: Move length validation in alternative_{insn, endif}  [Nathan Chancellor]
+013940a  arm64: fix inline asm in load_unaligned_zeropad()  [Peter Collingbourne]
+a0ea6bb  readdir: make sure to verify directory entry for legacy interfaces too  [Linus Torvalds]
+49d6cb8  HID: wacom: set EV_KEY and EV_ABS only for non-HID_GENERIC type of devices  [Ping Cheng]
+c2d754b  Input: i8042 - fix Pegatron C15B ID entry  [Arnd Bergmann]
+22bc2a4  mac80211: clear sta->fast_rx when STA removed from 4-addr VLAN  [Seevalamuthu Mariappan]
+1a561c5  usbip: Fix incorrect double assignment to udc->ud.tcp_rx  [Colin Ian King]
+0b9a598  pcnet32: Use pci_resource_len to validate PCI resource  [Guenter Roeck]
+2c25d3a  net: ieee802154: forbid monitor for add llsec seclevel  [Alexander Aring]
+d099e23  net: ieee802154: stop dump llsec seclevels for monitors  [Alexander Aring]
+f79e959  net: ieee802154: forbid monitor for add llsec devkey  [Alexander Aring]
+f112ac8  net: ieee802154: stop dump llsec devkeys for monitors  [Alexander Aring]
+35e2550  net: ieee802154: forbid monitor for add llsec dev  [Alexander Aring]
+1a7f986  net: ieee802154: stop dump llsec devs for monitors  [Alexander Aring]
+3e33f3e  net: ieee802154: stop dump llsec keys for monitors  [Alexander Aring]
+533ec82  scsi: scsi_transport_srp: Don't block target in SRP_PORT_LOST state  [Martin Wilck]
+d4e87be  ASoC: fsl_esai: Fix TDM slot setup for I2S mode  [Alexander Shiyan]
+0ed4b74  ARM: keystone: fix integer overflow warning  [Arnd Bergmann]
+ad90596  neighbour: Disregard DEAD dst in neigh_update  [Tong Zhu]
+604173b  arc: kernel: Return -EFAULT if copy_to_user() fails  [Wang Qing]
+d0a2b1d  ARM: dts: Fix moving mmc devices with aliases for omap4 & 5  [Tony Lindgren]
+d74a01f  dmaengine: dw: Make it dependent to HAS_IOMEM  [Andy Shevchenko]
+19efde9  Input: nspire-keypad - enable interrupts only when opened  [Fabian Vogt]
+54b63c7  net/sctp: fix race condition in sctp_destroy_sock  [Or Cohen]
 
 
-* packages/apps/Launcher3
-da4aa25  SystemShortcuts: fix fc with InfoBottomSheet  [Ali B]
-
-
-* packages/apps/SyberiaSettings
-d6549eb  Add pref for qs brightness slider position (2/2)  [maxwen]
+* packages/apps/Settings
+baf5795  Settings: Make media player allowed list dependent on toggle  [Adithya R]
+b0f11ee  Settings: Allow user to block individual apps from resuming  [Beth Thibodeau]
 
 
 * system/core
-7aad86a  Revert recent f2fs changes  [DennySPb]
-
-
-* vendor/xiaomi/raphael
-5f5ea79  raphael: update blobs from miui_RAPHAEL_21.4.14  [nato6613]
+1d89d69  libprocessgroup: Use default android R cgroups profiles  [DennySPb]
+39f6ecf  Partially "Revert uclamp libprocessgroup changes for now"  [DennySPb]
 
 
 ====================
-     2021-04-19    
+     2021-04-27    
 ====================
 
 ====================
-     2021-04-18    
+     2021-04-26    
 ====================
+
+* kernel/xiaomi/raphael
+74cfd88  raphael_defconfig: Switch to use Simple LMK  [nato6613]
+5cc18c8  simple_lmk: Run reclaim kthread on big CPU cluster  [Sultan Alsawaf]
+fce49ed  mm: vmpressure: Don't export tunables to userspace  [Sultan Alsawaf]
+b933fa4e  simple_lmk: Update Kconfig description for VM pressure change  [Sultan Alsawaf]
+65638fd  simple_lmk: Add !PSI dependency  [Sultan Alsawaf]
+cc7927a  simple_lmk: Print a message when the timeout is reached  [Sultan Alsawaf]
+f698e5a  VFS: use synchronize_rcu_expedited() in namespace_unlock()  [NeilBrown]
+1b2d535  simple_lmk: Remove unnecessary clean-up when timeout is reached  [Sultan Alsawaf]
+b76ad98  simple_lmk: Hold an RCU read lock instead of the tasklist read lock  [Sultan Alsawaf]
+b06293b  mm: Don't stop kswapd on a per-node basis when there are no waiters  [Sultan Alsawaf]
+9b75568  simple_lmk: Consider all positive adjs when finding victims  [Sultan Alsawaf]
+4813522  mm: vmpressure: Ignore allocation orders above PAGE_ALLOC_COSTLY_ORDER  [Sultan Alsawaf]
+6e54b4a  mm: Don't warn on page allocation failures for OOM-killed processes  [Sultan Alsawaf]
+a0593ea  mm: Adjust tsk_is_oom_victim() for Simple LMK  [Sultan Alsawaf]
+b4e61ba  mm: vmpressure: Don't cache the window size  [Sultan Alsawaf]
+764984f  mm: vmpressure: Interpret zero scanned pages as 100% pressure  [Sultan Alsawaf]
+2b82903  mm: vmpressure: Don't exclude any allocation types  [Sultan Alsawaf]
+6008dbd  simple_lmk: Update adj targeting for Android 10  [Sultan Alsawaf]
+1c19965  simple_lmk: Use vmpressure notifier to trigger kills  [Sultan Alsawaf]
+dbcceea  mm: Stop kswapd early when nothing's waiting for it to free pages  [Sultan Alsawaf]
+5b84ab8  simple_lmk: Include swap memory usage in the size of victims  [Sultan Alsawaf]
+7225df2  simple_lmk: Relax memory barriers and clean up some styling  [Sultan Alsawaf]
+e4afa2f  simple_lmk: Place victims onto SCHED_RR  [Sultan Alsawaf]
+75ef9a28  simple_lmk: Add a timeout to stop waiting for victims to die  [Sultan Alsawaf]
+b7f137e  simple_lmk: Ignore tasks that won't free memory  [Sultan Alsawaf]
+317823c  simple_lmk: Simplify tricks used to speed up the death process  [Sultan Alsawaf]
+aa812c4  simple_lmk: Report mm as freed as soon as exit_mmap() finishes  [Sultan Alsawaf]
+8ef9fea  simple_lmk: Mark victim thread group with TIF_MEMDIE  [Sultan Alsawaf]
+e3026aa  simple_lmk: Disable OOM killer when Simple LMK is enabled  [Sultan Alsawaf]
+81cfdca  simple_lmk: Print a message when there are no processes to kill  [Sultan Alsawaf]
+691086b  simple_lmk: Remove compat cruft not specific to 4.14  [Sultan Alsawaf]
+c240627  simple_lmk: Update copyright to 2020  [Sultan Alsawaf]
+be9ebc4d  simple_lmk: Don't queue up new reclaim requests during reclaim  [Sultan Alsawaf]
+d72a4be  simple_lmk: Increase default minfree value  [Sultan Alsawaf]
+a119f3e  simple_lmk: Clean up some code style nitpicks  [Sultan Alsawaf]
+4d1a8a7  simple_lmk: Make reclaim deterministic  [Sultan Alsawaf]
+9366e17  simple_lmk: Fix broken multicopy atomicity for victims_to_kill  [Sultan Alsawaf]
+4aa4a39  simple_lmk: Use proper atomic_* operations where needed  [Sultan Alsawaf]
+264294a  simple_lmk: Remove kthread_should_stop() exit condition  [Sultan Alsawaf]
+f267522  simple_lmk: Fix pages_found calculation  [Sultan Alsawaf]
+ef784ea  simple_lmk: Introduce Simple Low Memory Killer for Android  [Sultan Alsawaf]
+
+
+====================
+     2021-04-25    
+====================
+
+====================
+     2021-04-24    
+====================
+
+* packages/apps/Matlog
+9dfa0f7  Automatic translation import  [maxwen]
+
+
+* system/memory/lmkd
+9f1be12  lmkd: Handle cases when proc_get_name() might return NULL  [Suren Baghdasaryan]
+
 
