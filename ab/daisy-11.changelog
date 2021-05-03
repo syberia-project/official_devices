@@ -1,99 +1,122 @@
 ====================
-     2021-04-15    
-====================
-
-====================
-     2021-04-14    
-====================
-
-====================
-     2021-04-13    
+     2021-04-30    
 ====================
 
 * device/xiaomi/daisy
-c17fa4b  daisy: overlay: Enable subtle tick vibration when revealing shelf  [Danny Lin]
-13823e7  daisy: overlay: Disable global mode and CDMA choices  [Jake Weinstein]
-
-
-====================
-     2021-04-12    
-====================
-
-====================
-     2021-04-11    
-====================
-
-* system/core
-3e464d0  Revert uclamp libprocessgroup changes for now  [DennySPb]
-
-
-====================
-     2021-04-10    
-====================
-
-* bionic
-c2ccaa1  Fix "deprecated instruction in IT block" warning  [Chih-Hung Hsieh]
+645014e  daisy: sepolicy: fix some denials  [lupesoltec]
 
 
 * frameworks/base
-3e673e8  Automatic translation import  [DennySPb]
-9d6af6d  QuickSettings: Add Haptic Feedback to tiles [1/2]  [Evisceration]
-6e3ce91  Revert "Pre-emptively take a snapshot when finishing an activity before changing visibility"  [Danny Lin]
-74b69f0  LayoutInflater: Opportunistically create views directly for performance  [Danny Lin]
-e2783ea  SystemServiceRegistry: Replace ArrayMap with HashMap for performance  [Danny Lin]
-932b322  PackageManagerService: Replace ArrayMap with HashMap for performance  [Danny Lin]
-9460eed  InsetsStateController: Replace ArrayMap with HashMap for performance  [Danny Lin]
-1b5fd57  LocalServices: Replace ArrayMap with HashMap for performance  [Danny Lin]
-98e8ba0  ThemedResourceCache: Replace ArrayMap with HashMap for performance  [Danny Lin]
-5d4a582  Trace: Disable debug tracing in production builds  [Danny Lin]
-3be5ae9  statsd: Disable native stats collection service  [Danny Lin]
-ae888ad  PackageInfo: Optimize ApplicationInfo creation  [Danny Lin]
-371a459  EventLog: Disable event writing in production builds  [Danny Lin]
-e89f362  Merge changes Iab4d3902,Idd72ec6a,I8ce288ec,I61983778 into 11.0  [dennyspb]
+2670112  Merge "FixUp!: Doubletap to Sleep on lockscreen" into 11.0  [dennyspb]
+c06d35e  Automatic translation import  [DennySPb]
+90b143f  Fix two problems in the ExecuteBinary function.  [Peter Collingbourne]
 
 
-* libcore
-ec7afef  Switch to OpenJDK 8 java/math  [Hans Boehm]
+* hardware/interfaces
+ad6efa1  wifi: Add provision to create/remove dynamic interface(s).  [Purushottam Kushwaha]
+
+
+* packages/apps/Etar
+9298ad8  Merge https://github.com/LineageOS/android_packages_apps_Etar into HEAD  [DennySPb]
 
 
 * packages/apps/Launcher3
-14d99e2  Automatic translation import  [DennySPb]
+334391d  Automatic translation import  [DennySPb]
+ad06052  QsbContainerView: Fix NPE in preview mode  [Pranav Vashi]
 
 
 * packages/apps/Settings
-e2bca44  Automatic translation import  [DennySPb]
+5625749  Automatic translation import  [DennySPb]
+bacbffc  BatteryHealth: show Charge Cycles Completed  [SuperDroidBond]
+56bb322  BatteryHealth: Make it optional  [AshutoshSundresh]
+5d0826f  add BatteryHealth section  [Lucchetto]
 
 
 * packages/apps/SyberiaSettings
-bb3364e  Automatic translation import  [DennySPb]
-df8daac  QuickSettings: Add Haptic Feedback to tiles [2/2]  [amartinz]
+646a1da  Automatic translation import  [DennySPb]
 
 
-* vendor/qcom/opensource/commonsys/system/bt
-7aa3a70  avrc_copy_packet: Zero initialize packet  [Hansong Zhang]
-ed68e14  AVRCP: Use calloc to zero reserved fields  [Myles Watson]
-73a8a7b  Legacy pairing: Reject device with same BD_ADDR  [Hansong Zhang]
+* packages/apps/ThemePicker
+fc786a9  ThemePicker: Remove unwanted space under clock faces container  [Adithya R]
 
 
-* vendor/syberia
-0fe0766  v4.5  [DennySPb]
-4fb9782  SystemUI: Use custom component factory  [Danny Lin]
-de0bfe6  device_config: Enable maching learning back gesture  [Danny Lin]
-6d71977  device_config: Disable deep press input classification  [Danny Lin]
+* packages/apps/Updater
+2d84a1f  Manifest: Add missing permissions for local update  [DennySPb]
+57ff4f6  Updater: appbar: Set the collapsing animation duration to 0ms  [Dhina17]
+579f862  UpdatesDbHelper: Move identical code into helper method  [Pavel Salomatov]
+
+
+* system/memory/lmkd
+bd8dda9  Revert "Switch to Bionic's pidfd wrappers."  [DennySPb]
+c025573  Merge branch 'master' of https://android.googlesource.com/platform/system/memory/lmkd into HEAD  [DennySPb]
+
+
+* system/sepolicy
+8f0e460  update: Allow system_server read access to SurfaceFlinger  [Kevin Jeon]
+1ec0d6a  Allow system_server read access to SurfaceFlinger  [Kevin Jeon]
+
+
+* vendor/codeaurora/telephony
+1d8d448  ims-ext-common: Forward the legacy getAutoReject call to  obtain compatibility with older ims.apk  [Arian]
+
+
+* vendor/qcom/opensource/data-ipa-cfg-mgr
+0b4cdac  ipacm: Add correct ihl_offset eq bitmap on MTU rules HW < IPA3.0  [Michael Adisumarta]
+21996d6  ipacm: Fix WLAN tethering offload  [S-trace]
 
 
 ====================
-     2021-04-09    
+     2021-04-29    
 ====================
 
-* bionic
-6338966  Inline call_array for clearer stack traces.  [Elliott Hughes]
-7523b16  Sync upstream fts.c.  [Elliott Hughes]
-56356fc  fortify: remove `static`  [George Burgess IV]
-c12eda3  tmpfile(3): use O_TMPFILE where available.  [Elliott Hughes]
+* frameworks/av
+7e82463  Merge tag 'LA.QSSI.11.0.r1-11600-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPb]
 
 
 * frameworks/base
-8f642bd  Merge changes Ibb6c48f7,I90d2e381 into 11.0  [dennyspb]
+667e26e  [SQUASH]base: Revert secondary home handle  [Ido Ben-Hur]
+85c05b6  clock: Add Oroño clock  [El Dainosor]
+7841d4b  KeyguardClockSwitch: Fix missing status view on custom clocks  [Pranav Vashi]
+a1f19ca  base: add missing device config permissions for settings  [Ali B]
 
 
+* system/memory/lmkd
+5263aa7  lmkd: Do not treat RSS=0 as a sign of a process being dead  [Suren Baghdasaryan]
+
+
+====================
+     2021-04-28    
+====================
+
+* device/xiaomi/daisy
+d3d01a0  daisy: Remove gnss hidl entries in manifest.xml  [Yingjie Wang]
+60a35c9  daisy: rootdir: tune zram performance  [Wei Wang]
+89091c1  Daisy: Use Pixel charger animation  [Arseniy Graur]
+d7cbc9d  daisy: Remove deprecated telephony flag  [Bruno Martins]
+0c8beb2  daisy: Don't explicitly build configstore@1.0-service  [elektroschmock]
+70b9f23  daisy: rootdir: Fix default RT uclamp.min tunable  [GeoPD]
+f2cdf96  daisy: media: Enable width/height swap feature for H.264 codec  [Sanjay Singh]
+286b439  daisy: wifi: add parameters for Hotspot 2.0  [eccopark]
+17be38d  daisy: wifi: Disable BSS flush  [xshu]
+fe82d12  daisy: Dirac: Add bass booster preset for MiSound  [ghostrider-reborn]
+048d3e2  daisy: sepolicy: Fix avc denials related to untrusted_app_27.te  [lupesoltec]
+b153c55  daisy: sepolicy: Fix avc denials related to qti_init_shell.te  [lupesoltec]
+8506b78  daisy: sepolicy: Fix avc denials related to priv_app.te  [lupesoltec]
+
+
+* frameworks/base
+f428cc6  base: Allow user to block individual apps from resuming  [Beth Thibodeau]
+5cf795d  User switch: Unbind headsetservice in bluetooth Off state.  [Jagadish Koppula]
+b814828  DeviceConfig: Add telephony to public namespaces.  [spezi77]
+e03be20  VolumeDialogImpl: Remove insets listener on dismiss  [HrX03]
+493f1429  VolumeDialogImpl: Get the location in window instead of on screen  [HrX03]
+
+
+* packages/apps/Settings
+baf5795  Settings: Make media player allowed list dependent on toggle  [Adithya R]
+b0f11ee  Settings: Allow user to block individual apps from resuming  [Beth Thibodeau]
+
+
+* system/core
+1d89d69  libprocessgroup: Use default android R cgroups profiles  [DennySPb]
+39f6ecf  Partially "Revert uclamp libprocessgroup changes for now"  [DennySPb]
