@@ -1,118 +1,184 @@
 ====================
-     2021-04-30    
+     2021-05-14    
 ====================
 
+* bionic
+342dc2f  [master] Make res_init() work again.  [Elliott Hughes]
+21e4cb5  [master] Initialize _nres only once  [Luke Huang]
+
+
+* build/make
+4a765cf  Fix ordering of checks based on llvm-readobj output  [Stephen Hines]
+
+
+* frameworks/av
+462cdd5  CCodec: read formats after setupInputSurface  [Wonsik Kim]
+
+
 * frameworks/base
-c06d35e  Automatic translation import  [DennySPb]
-90b143f  Fix two problems in the ExecuteBinary function.  [Peter Collingbourne]
-
-
-* hardware/qcom-caf/wlan
-f8870fc  Merge tag 'LA.UM.9.3.r1-01700-sdm845.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/wlan into HEAD  [DennySPb]
-
-
-* packages/apps/Etar
-9298ad8  Merge https://github.com/LineageOS/android_packages_apps_Etar into HEAD  [DennySPb]
+1150361  [master] [UPSTREAM] Reset PAC keys on thread creation instead of on zygote fork.  [Peter Collingbourne]
+630c693  Automatic translation import  [DennySPb]
+67c17c0  SystemUI: Remove QS drag handle  [Danny Lin]
+2c8a83b  base: Redo Pocket mode view like OOS  [Jyotiraditya Panda]
 
 
 * packages/apps/Launcher3
-334391d  Automatic translation import  [DennySPb]
-ad06052  QsbContainerView: Fix NPE in preview mode  [Pranav Vashi]
+2fa1e2b  Automatic translation import  [DennySPb]
 
 
 * packages/apps/Settings
-5625749  Automatic translation import  [DennySPb]
-bacbffc  BatteryHealth: show Charge Cycles Completed  [SuperDroidBond]
-56bb322  BatteryHealth: Make it optional  [AshutoshSundresh]
-5d0826f  add BatteryHealth section  [Lucchetto]
+a35cef8  Device picker: add title to fix offset in progressbar  [Timi]
+c9928fc  Automatic translation import  [DennySPb]
 
 
 * packages/apps/SyberiaSettings
-646a1da  Automatic translation import  [DennySPb]
+4f2a716  Automatic translation import  [DennySPb]
 
 
-* packages/apps/ThemePicker
-fc786a9  ThemePicker: Remove unwanted space under clock faces container  [Adithya R]
+====================
+     2021-05-13    
+====================
+
+* art
+aac9e6b  [master] Refactor Escape-analysis to use visitors  [Alex Light]
+fbf84c5  [master] Generalize Main.compiledWithOptimizing.  [Nicolas Geoffray]
+e708c84  Fix unwinding for art_quick_generic_jni_trampoline  [David Srbecky]
+43d1b40  [master] Fix inliner instruction/register limits  [Tim Murray]
+
+
+* frameworks/base
+ca2c7a5  SystemUI: Remove black QS status bar background  [Danny Lin]
+
+
+* frameworks/native
+c204132  [master] installd: Fix set dex2oat to background after boot_complete  [Wei Wang]
+2ee04dd  [master] Fix the secure flag check for blackout layer issue  [yuhui.zhang]
 
 
 * packages/apps/Updater
-57ff4f6  Updater: appbar: Set the collapsing animation duration to 0ms  [Dhina17]
-579f862  UpdatesDbHelper: Move identical code into helper method  [Pavel Salomatov]
+44bc247  Updater: add permissions check for local install  [Ali B]
+e2b82fd  Support local file selection from external sdcards  [Ali B]
+b829237  UpdatesActivity: Add missing return value  [Pranav Vashi]
 
 
-* system/memory/lmkd
-bd8dda9  Revert "Switch to Bionic's pidfd wrappers."  [DennySPb]
-c025573  Merge branch 'master' of https://android.googlesource.com/platform/system/memory/lmkd into HEAD  [DennySPb]
-5263aa7  lmkd: Do not treat RSS=0 as a sign of a process being dead  [Suren Baghdasaryan]
+* vendor/interfaces
+cee010f  SmartCharge: move to system_ext  [DennySPb]
 
 
-* system/sepolicy
-8f0e460  update: Allow system_server read access to SurfaceFlinger  [Kevin Jeon]
-1ec0d6a  Allow system_server read access to SurfaceFlinger  [Kevin Jeon]
+* vendor/qcom/opensource/interfaces
+56419e4  btconfigstore@2.0: make system_ext specific  [DennySPb]
+8f314e9  Add reversed perf HAL interfaces  [dianlujitao]
 
 
-* system/update_engine
-6f48192  Move performance mode to top app  [Luca Stefani]
-17ae523  Improve ASCII look while flashing  [Nathan Chancellor]
-0a34548  Ignore timestamp check in DeltaPerformer  [Surge Raval]
-251ac74  Report more info in sideload UI  [Surge Raval]
-bb48793  Add sideload UI and split reporting into thirds  [Surge Raval]
+* vendor/syberia
+a5a32ab  [Fixup] kernel: Add bison and flex to build environment  [DennySPb]
+73b2ac6  audio: Use AOSP Material sounds and Material Product Sounds by default  [Danny Lin]
+41ca575  v4.6  [DennySPb]
+3a968a7  overlay: Define blur radius in device-independent pixels  [Danny Lin]
+590393e  SystemUI: Bump background blur radius to 175 px  [Danny Lin]
 
 
 ====================
-     2021-04-29    
+     2021-05-12    
 ====================
 
 * frameworks/av
-7e82463  Merge tag 'LA.QSSI.11.0.r1-11600-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPb]
+840c617  Merge tag 'LA.QSSI.11.0.r1-11900-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPb]
 
 
 * frameworks/base
-667e26e  [SQUASH]base: Revert secondary home handle  [Ido Ben-Hur]
-85c05b6  clock: Add Oroño clock  [El Dainosor]
-7841d4b  KeyguardClockSwitch: Fix missing status view on custom clocks  [Pranav Vashi]
-a1f19ca  base: add missing device config permissions for settings  [Ali B]
+a4943fa  [DO NOT MERGE] Handle landscape and portrait display for PIP rotation  [Salini Venate]
+5307097  IMS: Fix issue with answering call for some 3rd party apps  [Muhammed Siju]
+d7845f0  BT: Don't allow isBleScanAlwaysAvailable API call for non foreground users  [Mingbo Zhang]
+b2e3ccc  Revert "SystemUI: Fix issues with VoWiFi icon"  [DennySPb]
+50d37529  [DO NOT MERGE] Use loadDrawableAsUser in MediaDataManager  [Isak Lilja]
+08bb5f8  Revert "fix SystemUI crash from null stored in non-nullable"  [DennySPb]
+486b15e  wm: don't move home stack to front in freeform mode  [cjybyjk]
+000bd2c  HwAudioSource: wrong native handle check  [Francois Gaffie]
+44ca2d8  use more loadDrawableAsUser in MediaDataManager  [inthewaves]
+e7c8bc0  Revert "add more guards against nulls from loadDrawable"  [DennySPb]
+63e1c64  Remove wtf about JobScheduler.Background  [Anshul Aggarwal]
+
+
+* frameworks/opt/telephony
+8d000b3  Merge tag 'LA.QSSI.11.0.r1-11900-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPb]
+
+
+* packages/apps/SyberiaSettings
+c18bca1  SyberiaSettings: Add CustomDoze  [SKULSHADY]
+
+
+* packages/services/Telecomm
+1ade49d  Merge tag 'LA.QSSI.11.0.r1-11900-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm into HEAD  [DennySPb]
+
+
+* packages/services/Telephony
+4f870f1  Merge tag 'LA.QSSI.11.0.r1-11900-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony into HEAD  [DennySPb]
 
 
 ====================
-     2021-04-28    
+     2021-05-11    
 ====================
+
+* external/libjpeg-turbo
+0e9de35  Revert "[LSC] Add LOCAL_LICENSE_KINDS to external/libjpeg-turbo"  [DennySPb]
+4cf4e17  Merge branch 'master' of https://android.googlesource.com/platform/external/libjpeg-turbo into HEAD  [DennySPb]
+
+
+* frameworks/av
+251fa34  Further ID3 parsing work  [Ray Essick]
+920a506  Configurable AudioPolicyEngine: Skip device count assert  [Andy Hung]
+97f3594  Improve ID3V2.4 handling unsynchronization  [Ray Essick]
+de0435f  Codec2BufferUtils.cpp: Fix integer-overflows  [Harish Mahendrakar]
+6e17fbf  C2SoftAvcEnc: revert flex YUV handling  [Harish Mahendrakar]
+c67b650  C2SoftAvcDec: revert flex YUV handling  [Wonsik Kim]
+5b2ac51  C2SoftAvc: handle flexible YUV  [Wonsik Kim]
+1a82f34  C2SoftAvcEnc: Use dimensions from mSize instead of input buffer  [Harish Mahendrakar]
+a5914e9  audio:fix incomplete devices of duplicated output  [wudongzhe]
+6a66cc0  cameraserver: Enforce system camera rules for setTorchMode and torch callbacks.  [Jayant Chowdhary]
+4718df4  sfplugin utils: expand libyuv coverage  [Wonsik Kim]
+db67551  audiopolicy: Avoid logspam about engine config parsing error  [Mikhail Naganov]
+e13c479  codec2: use libyuv for copying planes  [Wonsik Kim]
+f561781  C2SoftAacDec: Compute output port delay from stream info  [Harish Mahendrakar]
+c051981  MediaCodec: add methods to query/subscribe vendor parameters  [Wonsik Kim]
+4017d01  lvm: Format the code using clang-format  [Harish Mahendrakar]
+a1684b8  libeffects: Removed an extraneous semi-colon in a macro definition  [Saketh Sathuvalli]
+6c0b9a7  libeffects: Introduced on the fly allocation of memories in LVM module  [Saketh Sathuvalli]
+63b53d2  libeffects: SUPPORT_MC macro clean up  [Saketh Sathuvalli]
+cc15532  libeffects: Add multichannel support to Reverb  [Saketh Sathuvalli]
+7b2431f  libeffects: Reverb Testbench  [Saketh Sathuvalli]
+c8ea02c  [BUG] AudioFlinger: Patch Panel: Fix SwBridge Patch leak  [Francois Gaffie]
+069c022  AudioFlinger: Make Direct AudioTrack behavior more flexible for underrun  [Andy Hung]
+f50d570  Codec2 Components: reset OutputBlockPool after use  [Sungtak Lee]
+f7c30c0  libdatasource: fix null dereference  [Yuxiu Zhang]
+
 
 * frameworks/base
-f428cc6  base: Allow user to block individual apps from resuming  [Beth Thibodeau]
-5cf795d  User switch: Unbind headsetservice in bluetooth Off state.  [Jagadish Koppula]
-b814828  DeviceConfig: Add telephony to public namespaces.  [spezi77]
-e03be20  VolumeDialogImpl: Remove insets listener on dismiss  [HrX03]
-493f1429  VolumeDialogImpl: Get the location in window instead of on screen  [HrX03]
+8f89915  SystemUI: Add flipendo to Battery Saver QSTile  [Jason Edson]
 
 
 * packages/apps/Settings
-baf5795  Settings: Make media player allowed list dependent on toggle  [Adithya R]
-b0f11ee  Settings: Allow user to block individual apps from resuming  [Beth Thibodeau]
-
-
-* system/core
-1d89d69  libprocessgroup: Use default android R cgroups profiles  [DennySPb]
-39f6ecf  Partially "Revert uclamp libprocessgroup changes for now"  [DennySPb]
+1e266a4  Runtime UI background blur toggle [2/2]  [DennySPb]
 
 
 ====================
-     2021-04-27    
+     2021-05-10    
 ====================
 
 ====================
-     2021-04-26    
+     2021-05-09    
 ====================
 
 ====================
-     2021-04-25    
+     2021-05-08    
 ====================
 
-====================
-     2021-04-24    
-====================
-
-* system/memory/lmkd
-9f1be12  lmkd: Handle cases when proc_get_name() might return NULL  [Suren Baghdasaryan]
+* frameworks/base
+891905e0  Runtime UI background blur toggle [1/2]  [DennySPb]
+a5f9f01  NotificationShade: Make blur crossfading more gradual  [Danny Lin]
+2e76b69  SystemUI: Fix possible incorrect position of QS page indicator  [daniml3]
+11418e3  SystemUI: Fix QS auto-brightness icon color  [Danny Lin]
+46c7921  SystemUI: Add ripple effect to QS auto-brightness toggle  [Danny Lin]
+b7e0e3a  Link dialog radius to config_dialogCornerRadius  [Lucchetto]
 
 
