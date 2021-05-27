@@ -1,0 +1,12 @@
+====================
+     2021-05-27    
+====================
+
+* kernel
+ - Upstreamed to 4.19.192
+
+
+* device
+ - Update blobs from EEA Global_V12.0.5.0.RKHEUXM
+ - Fixed UI glitches
+ - R/W support
