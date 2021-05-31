@@ -1,12 +1,21 @@
 ====================
-     2021-05-27    
+     2021-05-31
 ====================
 
-* kernel
- - Upstreamed to 4.19.192
+Kernel:
+ - Locking and RCU updates from 5.10 Linux kernel
+ - Tweak schedutil configs
 
+Rom:
+ - Fixed issue with VoWiFi icon
+ - Fixed adb sepolicy denials
+ - Merge tag 'LA.QSSI.11.0.r1-12100-qssi.0' in some repo
 
-* device
- - Update blobs from EEA Global_V12.0.5.0.RKHEUXM
- - Fixed UI glitches
- - R/W support
+Device:
+ - Fixed reading Mifare Classic tags
+ - Fixed SafetyNet check without Magisk
+ - Fixed in-call loudspeaker volume control
+ - Fixed GPU max freq
+ - Fixed HDR for f3 and k40
+ - Increased volume steps and improved audio
+ - Improved UI smoothness
