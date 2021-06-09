@@ -1,184 +1,201 @@
 ====================
-     2021-05-14    
+     2021-06-09    
 ====================
-
-* bionic
-342dc2f  [master] Make res_init() work again.  [Elliott Hughes]
-21e4cb5  [master] Initialize _nres only once  [Luke Huang]
-
-
-* build/make
-4a765cf  Fix ordering of checks based on llvm-readobj output  [Stephen Hines]
-
 
 * frameworks/av
-462cdd5  CCodec: read formats after setupInputSurface  [Wonsik Kim]
+d193057  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
 
 
 * frameworks/base
-1150361  [master] [UPSTREAM] Reset PAC keys on thread creation instead of on zygote fork.  [Peter Collingbourne]
-630c693  Automatic translation import  [DennySPb]
-67c17c0  SystemUI: Remove QS drag handle  [Danny Lin]
-2c8a83b  base: Redo Pocket mode view like OOS  [Jyotiraditya Panda]
-
-
-* packages/apps/Launcher3
-2fa1e2b  Automatic translation import  [DennySPb]
-
-
-* packages/apps/Settings
-a35cef8  Device picker: add title to fix offset in progressbar  [Timi]
-c9928fc  Automatic translation import  [DennySPb]
-
-
-* packages/apps/SyberiaSettings
-4f2a716  Automatic translation import  [DennySPb]
-
-
-====================
-     2021-05-13    
-====================
-
-* art
-aac9e6b  [master] Refactor Escape-analysis to use visitors  [Alex Light]
-fbf84c5  [master] Generalize Main.compiledWithOptimizing.  [Nicolas Geoffray]
-e708c84  Fix unwinding for art_quick_generic_jni_trampoline  [David Srbecky]
-43d1b40  [master] Fix inliner instruction/register limits  [Tim Murray]
-
-
-* frameworks/base
-ca2c7a5  SystemUI: Remove black QS status bar background  [Danny Lin]
+acf3ba0  Camera: allow camera to use power key as shutter  [Danesh M]
+c2ebd55  Automatic translation import  [DennySPb]
+764630f  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
 
 
 * frameworks/native
-c204132  [master] installd: Fix set dex2oat to background after boot_complete  [Wei Wang]
-2ee04dd  [master] Fix the secure flag check for blackout layer issue  [yuhui.zhang]
+54fd886  CompositionEngine: always request device composition for the FOD layers  [daniml3]
 
 
-* packages/apps/Updater
-44bc247  Updater: add permissions check for local install  [Ali B]
-e2b82fd  Support local file selection from external sdcards  [Ali B]
-b829237  UpdatesActivity: Add missing return value  [Pranav Vashi]
-
-
-* vendor/interfaces
-cee010f  SmartCharge: move to system_ext  [DennySPb]
-
-
-* vendor/qcom/opensource/interfaces
-56419e4  btconfigstore@2.0: make system_ext specific  [DennySPb]
-8f314e9  Add reversed perf HAL interfaces  [dianlujitao]
-
-
-* vendor/syberia
-a5a32ab  [Fixup] kernel: Add bison and flex to build environment  [DennySPb]
-73b2ac6  audio: Use AOSP Material sounds and Material Product Sounds by default  [Danny Lin]
-41ca575  v4.6  [DennySPb]
-3a968a7  overlay: Define blur radius in device-independent pixels  [Danny Lin]
-590393e  SystemUI: Bump background blur radius to 175 px  [Danny Lin]
-
-
-====================
-     2021-05-12    
-====================
-
-* frameworks/av
-840c617  Merge tag 'LA.QSSI.11.0.r1-11900-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPb]
-
-
-* frameworks/base
-a4943fa  [DO NOT MERGE] Handle landscape and portrait display for PIP rotation  [Salini Venate]
-5307097  IMS: Fix issue with answering call for some 3rd party apps  [Muhammed Siju]
-d7845f0  BT: Don't allow isBleScanAlwaysAvailable API call for non foreground users  [Mingbo Zhang]
-b2e3ccc  Revert "SystemUI: Fix issues with VoWiFi icon"  [DennySPb]
-50d37529  [DO NOT MERGE] Use loadDrawableAsUser in MediaDataManager  [Isak Lilja]
-08bb5f8  Revert "fix SystemUI crash from null stored in non-nullable"  [DennySPb]
-486b15e  wm: don't move home stack to front in freeform mode  [cjybyjk]
-000bd2c  HwAudioSource: wrong native handle check  [Francois Gaffie]
-44ca2d8  use more loadDrawableAsUser in MediaDataManager  [inthewaves]
-e7c8bc0  Revert "add more guards against nulls from loadDrawable"  [DennySPb]
-63e1c64  Remove wtf about JobScheduler.Background  [Anshul Aggarwal]
-
-
-* frameworks/opt/telephony
-8d000b3  Merge tag 'LA.QSSI.11.0.r1-11900-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPb]
-
-
-* packages/apps/SyberiaSettings
-c18bca1  SyberiaSettings: Add CustomDoze  [SKULSHADY]
-
-
-* packages/services/Telecomm
-1ade49d  Merge tag 'LA.QSSI.11.0.r1-11900-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm into HEAD  [DennySPb]
-
-
-* packages/services/Telephony
-4f870f1  Merge tag 'LA.QSSI.11.0.r1-11900-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony into HEAD  [DennySPb]
-
-
-====================
-     2021-05-11    
-====================
-
-* external/libjpeg-turbo
-0e9de35  Revert "[LSC] Add LOCAL_LICENSE_KINDS to external/libjpeg-turbo"  [DennySPb]
-4cf4e17  Merge branch 'master' of https://android.googlesource.com/platform/external/libjpeg-turbo into HEAD  [DennySPb]
-
-
-* frameworks/av
-251fa34  Further ID3 parsing work  [Ray Essick]
-920a506  Configurable AudioPolicyEngine: Skip device count assert  [Andy Hung]
-97f3594  Improve ID3V2.4 handling unsynchronization  [Ray Essick]
-de0435f  Codec2BufferUtils.cpp: Fix integer-overflows  [Harish Mahendrakar]
-6e17fbf  C2SoftAvcEnc: revert flex YUV handling  [Harish Mahendrakar]
-c67b650  C2SoftAvcDec: revert flex YUV handling  [Wonsik Kim]
-5b2ac51  C2SoftAvc: handle flexible YUV  [Wonsik Kim]
-1a82f34  C2SoftAvcEnc: Use dimensions from mSize instead of input buffer  [Harish Mahendrakar]
-a5914e9  audio:fix incomplete devices of duplicated output  [wudongzhe]
-6a66cc0  cameraserver: Enforce system camera rules for setTorchMode and torch callbacks.  [Jayant Chowdhary]
-4718df4  sfplugin utils: expand libyuv coverage  [Wonsik Kim]
-db67551  audiopolicy: Avoid logspam about engine config parsing error  [Mikhail Naganov]
-e13c479  codec2: use libyuv for copying planes  [Wonsik Kim]
-f561781  C2SoftAacDec: Compute output port delay from stream info  [Harish Mahendrakar]
-c051981  MediaCodec: add methods to query/subscribe vendor parameters  [Wonsik Kim]
-4017d01  lvm: Format the code using clang-format  [Harish Mahendrakar]
-a1684b8  libeffects: Removed an extraneous semi-colon in a macro definition  [Saketh Sathuvalli]
-6c0b9a7  libeffects: Introduced on the fly allocation of memories in LVM module  [Saketh Sathuvalli]
-63b53d2  libeffects: SUPPORT_MC macro clean up  [Saketh Sathuvalli]
-cc15532  libeffects: Add multichannel support to Reverb  [Saketh Sathuvalli]
-7b2431f  libeffects: Reverb Testbench  [Saketh Sathuvalli]
-c8ea02c  [BUG] AudioFlinger: Patch Panel: Fix SwBridge Patch leak  [Francois Gaffie]
-069c022  AudioFlinger: Make Direct AudioTrack behavior more flexible for underrun  [Andy Hung]
-f50d570  Codec2 Components: reset OutputBlockPool after use  [Sungtak Lee]
-f7c30c0  libdatasource: fix null dereference  [Yuxiu Zhang]
-
-
-* frameworks/base
-8f89915  SystemUI: Add flipendo to Battery Saver QSTile  [Jason Edson]
+* packages/apps/Launcher3
+c39c3b4  Automatic translation import  [DennySPb]
 
 
 * packages/apps/Settings
-1e266a4  Runtime UI background blur toggle [2/2]  [DennySPb]
+32718cc  Fix typo in device specific features  [DennySPb]
+70682a1  fixup! PowerUsageSummary: cleanup  [DennySPb]
+e0fab67  Automatic translation import  [DennySPb]
+9dff15f  BatteryHealth: Redo how we check for aviability  [DennySPb]
+6dbdb1c  PowerUsageSummary: cleanup  [DennySPb]
+6953669  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
+
+
+* packages/apps/SyberiaSettings
+b9ac804  Automatic translation import  [DennySPb]
+
+
+* system/vold
+84fc9fb  Show names of processes killed by KillProcessesWithOpenFiles()  [Eric Biggers]
+
+
+* vendor/syberia
+4f368cc  v4.7  [DennySPb]
 
 
 ====================
-     2021-05-10    
+     2021-06-08    
+====================
+
+* art
+40a82dc  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/art into HEAD  [DennySPb]
+63cb095  art: Remove madvise tests  [Pranav Vashi]
+
+
+* bootable/recovery
+09448fe  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/bootable/recovery into HEAD  [DennySPb]
+
+
+* build/make
+627f440  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
+
+
+* build/soong
+07c2651  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/build/soong into HEAD  [DennySPb]
+
+
+* frameworks/base
+d7ba200  Revert "Add switch to select SBC HD by default [1/3]"  [Jens Gulin]
+
+
+* frameworks/native
+2fdf7eb  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
+
+
+* frameworks/opt/net/ims
+4fb36a4  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/opt/net/ims into HEAD  [DennySPb]
+
+
+* frameworks/opt/net/wifi
+8355735  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD  [DennySPb]
+
+
+* frameworks/opt/telephony
+6c693ba  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPb]
+
+
+* hardware/interfaces
+23e7513  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPb]
+
+
+* libcore
+c1f4760  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/libcore into HEAD  [DennySPb]
+
+
+* packages/apps/Bluetooth
+dc3c758  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPb]
+
+
+* packages/apps/Launcher3
+913cf23  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/Launcher3 into tst  [DennySPb]
+
+
+* packages/apps/Nfc
+369dcce  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPb]
+
+
+* packages/apps/PermissionController
+dbdf03e  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/PackageInstaller into HEAD  [DennySPb]
+
+
+* packages/apps/Settings
+881b1c1  Revert "fuelgauge: add back battery level animation"  [DennySPb]
+09e618a  Revert "Fix crash when going back from battery"  [DennySPb]
+fbb4abc  Merge "team: Add maintainer for Poco F3" into 11.0  [dennyspb]
+
+
+* packages/apps/ThemePicker
+7514923  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/ThemePicker into HEAD  [DennySPb]
+
+
+* packages/providers/DownloadProvider
+4ca83d3  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD  [DennySPb]
+
+
+* packages/services/Telecomm
+71e3a45  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
+
+
+* packages/services/Telephony
+fd974fa  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD  [DennySPb]
+
+
+* system/bt
+049a84e  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPb]
+
+
+* system/netd
+a3f8394  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/system/netd into HEAD  [DennySPb]
+
+
+* system/sepolicy
+336cfb4  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPb]
+
+
+* system/update_engine
+12d9466  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/system/update_engine into HEAD  [DennySPb]
+
+
+====================
+     2021-06-07    
+====================
+
+* art
+cdee7d6  test: Remove art_licensing from madvise.  [Vishalcj17]
+732b287  Add madvising of .odex, .vdex and .art files  [Jagadeesh Pakaravoor]
+107ebf5  make the art thread pool use the exact stack_size  [eric.yan]
+
+
+* frameworks/base
+12599e1  Add madvising of .odex, .vdex and .art files  [Jagadeesh Pakaravoor]
+d792bc4  base: AppLock: Call activityStopped when activity has stopped  [Rituj Beniwal]
+66e34d9  Use SystemUI reboot view also for OTA uncrypt  [Timi Rautamäki]
+a48f9ac  Cancel NotificationTimeout alarms when canceling notification  [Henrik Baard]
+
+
+* system/core
+acfa665  KillZramBackingDevice: Return immediately if backing_dev is none.  [shisiyuan]
+
+
+====================
+     2021-06-06    
 ====================
 
 ====================
-     2021-05-09    
+     2021-06-05    
 ====================
 
 ====================
-     2021-05-08    
+     2021-06-04    
 ====================
 
 * frameworks/base
-891905e0  Runtime UI background blur toggle [1/2]  [DennySPb]
-a5f9f01  NotificationShade: Make blur crossfading more gradual  [Danny Lin]
-2e76b69  SystemUI: Fix possible incorrect position of QS page indicator  [daniml3]
-11418e3  SystemUI: Fix QS auto-brightness icon color  [Danny Lin]
-46c7921  SystemUI: Add ripple effect to QS auto-brightness toggle  [Danny Lin]
-b7e0e3a  Link dialog radius to config_dialogCornerRadius  [Lucchetto]
+314f268  Close the FileStream to avoid resource leak  [Naga Venkata Durga Ashok Mutyala]
+b6bfafc  Use finally block for Binder.restoreCallingIdentity  [Alice Kuo]
+9dbfb8e  Fix NPE when notification icon is empty  [timhypeng]
+a3eac4e  Hide keyguard when SIM transitions to READY  [Michele Berionne]
+1a5f1d0  Remove duplicate import  [utzcoz]
+e5a6151  Prevent guest user from toggling mobile data Quick Setting  [Torbjorn Eklund]
+2144101  setCurrentState(DESTROYED) called from main thread  [Fabian Kozynski]
+c69224a  Enforce setCurrentState calls are on main thread  [Fabian Kozynski]
+8d42379  QSTileImpl is set to DESTROYED when handleDestroy  [Fabian Kozynski]
+2d775a6  Fix LegacyGlobalActions broadcast receiver  [Artem Radchenko]
+de1e4c2  unregister FileCleanupReceiver when disableHistory  [hongyang.dong]
+
+
+====================
+     2021-06-03    
+====================
+
+* frameworks/base
+4910975  Explicitly make SBC Dual Channel an optional (HD) codec  [Alessandro Astone]
 
 
