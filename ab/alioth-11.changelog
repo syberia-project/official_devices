@@ -1,21 +1,22 @@
 ====================
-     2021-05-31
+     2021-06-09
 ====================
 
 Kernel:
- - Locking and RCU updates from 5.10 Linux kernel
- - Tweak schedutil configs
+ - Upstreamed to 4.19.193
+ - Improved memory management
+ - Merged LA.UM.9.15.1.r1-03300-KAMORTA.0 CAF tag
+ - Other fixes and improvements
 
 Rom:
- - Fixed issue with VoWiFi icon
- - Fixed adb sepolicy denials
- - Merge tag 'LA.QSSI.11.0.r1-12100-qssi.0' in some repo
+ - v4.7
+ - Merged android_11.0.0_r38 June tag
+ - Built with Thin LTO
+ - Art improvements
+ - Translations updates
+ - Other improvements and fixes under the hood
 
 Device:
- - Fixed reading Mifare Classic tags
- - Fixed SafetyNet check without Magisk
- - Fixed in-call loudspeaker volume control
- - Fixed GPU max freq
- - Fixed HDR for f3 and k40
- - Increased volume steps and improved audio
- - Improved UI smoothness
+ - Enabled ZRAM
+ - Camera2 replaced with Snap
+ - Fixed scheduler settings
