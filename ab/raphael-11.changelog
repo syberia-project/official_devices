@@ -1,128 +1,226 @@
 ====================
-     2021-05-14    
-====================
-\n* bionic\n342dc2f  [master] Make res_init() work again.  [Elliott Hughes]
-21e4cb5  [master] Initialize _nres only once  [Luke Huang]\n
-\n* device/xiaomi/raphael\nc7e8e36  raphael: Enable Blur support  [kondors1995]\n
-\n* frameworks/base\n5fb9f4f  Merge "Automatic translation import" into 11.0  [dennyspb]
-4c81846  Merge "[master] [UPSTREAM] Reset PAC keys on thread creation instead of on zygote fork." into 11.0  [dennyspb]
-630c693  Automatic translation import  [DennySPb]
-67c17c0  SystemUI: Remove QS drag handle  [Danny Lin]
-2c8a83b  base: Redo Pocket mode view like OOS  [Jyotiraditya Panda]\n
-\n* kernel/xiaomi/raphael\nb0dbd0b  sched/core: Optimize sched_feat() for !CONFIG_SCHED_DEBUG builds  [Patrick Bellasi]
-564ad47  char: mem: link /dev/{u}random to /dev/srandom  [Jebaitedneko]
-ad69736  build.sh:adapt for my laptop  [kondors1995]
-f91156b  raphael: Enable SRANDOM  [kondors1995]
-929d2a7  char: srandom: change TIMESPEC struct variable to tsp  [Jebaitedneko]
-19ad58f  char: srandom: switch to kzalloc  [Jebaitedneko]
-7727adc  char: srandom: expose sdevice_{read,write} and sfops for treewide usage  [Jebaitedneko]
-dad92e6  char: srandom: use ktime_get_real_ts64 and timespec64  [Jebaitedneko]
-d909853  char: srandom: expose new Makefile and Kconfig interfaces  [Jebaitedneko]
-bbf3cc3  Add 'drivers/char/srandom/' from commit '939c5e0980875b1c51b3cbb2b00ad91de6b90719'  [Alex Winkowski]\n
-\n* packages/apps/Launcher3\n2fa1e2b  Automatic translation import  [DennySPb]\n
-\n* packages/apps/Settings\nc9928fc  Automatic translation import  [DennySPb]\n
-\n* packages/apps/SyberiaSettings\n4f2a716  Automatic translation import  [DennySPb]\n
-
-====================
-     2021-05-13    
-====================
-\n* art\naac9e6b  [master] Refactor Escape-analysis to use visitors  [Alex Light]
-fbf84c5  [master] Generalize Main.compiledWithOptimizing.  [Nicolas Geoffray]
-e708c84  Fix unwinding for art_quick_generic_jni_trampoline  [David Srbecky]
-43d1b40  [master] Fix inliner instruction/register limits  [Tim Murray]\n
-\n* device/xiaomi/raphael\n6230d27  raphael:overlay: Add configs for Battery Health  [kondors1995]
-858057f  raphael: gps: New configs for better stability & accuracy  [Alfeal]
-007d559  raphael: gps: Localise NTP to improve GPS TTFF  [Gareth Kitchen]
-288bc6f  raphael: rootdir: Hide Magisk Better  [srfarias]
-01dc74b  raphael: Flatten APEXs for performance  [Danny Lin]
-ea9104c  raphael: Enable proximity usage during doze  [sashascurtu]
-431fba5  raphael:overlay: Use xiaomi tilt sensor for Costomdoze  [kondors1995]
-9acb911  raphael: Deprecate XiaomiDoze  [kondors1995]\n
-\n* kernel/xiaomi/raphael\neb163a4  Merge remote-tracking branch 'cunt/android11-base' into HEAD  [kondors1995]
-a3b534f  msm: kgsl: Increase events worker thread priority  [Hareesh Gundu]
-883fd46  mm: Perform PID map reads on the little CPU cluster  [Sultan Alsawaf]
-a65e0d5  sched: Add API to migrate the current process to a given cpumask  [Sultan Alsawaf]
-cdeb673  sched/idle: Micro-optimize the idle loop  [Cheng Jian]
-5480083  proc: cmdline: Don't patch flags in recovery mode  [Danny Lin]\n
-\n* vendor/interfaces\ncee010f  SmartCharge: move to system_ext  [DennySPb]\n
-\n* vendor/qcom/opensource/interfaces\n56419e4  btconfigstore@2.0: make system_ext specific  [DennySPb]
-8f314e9  Add reversed perf HAL interfaces  [dianlujitao]\n
-\n* vendor/syberia\na5a32ab  [Fixup] kernel: Add bison and flex to build environment  [DennySPb]
-73b2ac6  audio: Use AOSP Material sounds and Material Product Sounds by default  [Danny Lin]
-41ca575  v4.6  [DennySPb]
-3a968a7  overlay: Define blur radius in device-independent pixels  [Danny Lin]
-590393e  SystemUI: Bump background blur radius to 175 px  [Danny Lin]\n
-
-====================
-     2021-05-12    
-====================
-\n* frameworks/av\n840c617  Merge tag 'LA.QSSI.11.0.r1-11900-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPb]\n
-\n* frameworks/base\n8840c69  [master] [UPSTREAM] Reset PAC keys on thread creation instead of on zygote fork.  [Peter Collingbourne]
-ca2c7a5  SystemUI: Remove black QS status bar background  [Danny Lin]
-a4943fa  [DO NOT MERGE] Handle landscape and portrait display for PIP rotation  [Salini Venate]
-5307097  IMS: Fix issue with answering call for some 3rd party apps  [Muhammed Siju]
-d7845f0  BT: Don't allow isBleScanAlwaysAvailable API call for non foreground users  [Mingbo Zhang]
-b2e3ccc  Revert "SystemUI: Fix issues with VoWiFi icon"  [DennySPb]
-50d37529  [DO NOT MERGE] Use loadDrawableAsUser in MediaDataManager  [Isak Lilja]
-08bb5f8  Revert "fix SystemUI crash from null stored in non-nullable"  [DennySPb]
-486b15e  wm: don't move home stack to front in freeform mode  [cjybyjk]
-000bd2c  HwAudioSource: wrong native handle check  [Francois Gaffie]
-44ca2d8  use more loadDrawableAsUser in MediaDataManager  [inthewaves]
-e7c8bc0  Revert "add more guards against nulls from loadDrawable"  [DennySPb]
-63e1c64  Remove wtf about JobScheduler.Background  [Anshul Aggarwal]\n
-\n* frameworks/native\nc204132  [master] installd: Fix set dex2oat to background after boot_complete  [Wei Wang]
-2ee04dd  [master] Fix the secure flag check for blackout layer issue  [yuhui.zhang]\n
-\n* frameworks/opt/telephony\n8d000b3  Merge tag 'LA.QSSI.11.0.r1-11900-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPb]\n
-\n* packages/apps/SyberiaSettings\nc18bca1  SyberiaSettings: Add CustomDoze  [SKULSHADY]\n
-\n* packages/apps/Updater\n44bc247  Updater: add permissions check for local install  [Ali B]
-e2b82fd  Support local file selection from external sdcards  [Ali B]
-b829237  UpdatesActivity: Add missing return value  [Pranav Vashi]\n
-\n* packages/services/Telecomm\n1ade49d  Merge tag 'LA.QSSI.11.0.r1-11900-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm into HEAD  [DennySPb]\n
-\n* packages/services/Telephony\n4f870f1  Merge tag 'LA.QSSI.11.0.r1-11900-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony into HEAD  [DennySPb]\n
-
-====================
-     2021-05-11    
-====================
-\n* external/libjpeg-turbo\n0e9de35  Revert "[LSC] Add LOCAL_LICENSE_KINDS to external/libjpeg-turbo"  [DennySPb]
-4cf4e17  Merge branch 'master' of https://android.googlesource.com/platform/external/libjpeg-turbo into HEAD  [DennySPb]\n
-\n* frameworks/av\n251fa34  Further ID3 parsing work  [Ray Essick]
-920a506  Configurable AudioPolicyEngine: Skip device count assert  [Andy Hung]
-97f3594  Improve ID3V2.4 handling unsynchronization  [Ray Essick]
-de0435f  Codec2BufferUtils.cpp: Fix integer-overflows  [Harish Mahendrakar]
-6e17fbf  C2SoftAvcEnc: revert flex YUV handling  [Harish Mahendrakar]
-c67b650  C2SoftAvcDec: revert flex YUV handling  [Wonsik Kim]
-5b2ac51  C2SoftAvc: handle flexible YUV  [Wonsik Kim]
-1a82f34  C2SoftAvcEnc: Use dimensions from mSize instead of input buffer  [Harish Mahendrakar]
-a5914e9  audio:fix incomplete devices of duplicated output  [wudongzhe]
-6a66cc0  cameraserver: Enforce system camera rules for setTorchMode and torch callbacks.  [Jayant Chowdhary]
-4718df4  sfplugin utils: expand libyuv coverage  [Wonsik Kim]
-db67551  audiopolicy: Avoid logspam about engine config parsing error  [Mikhail Naganov]
-e13c479  codec2: use libyuv for copying planes  [Wonsik Kim]
-f561781  C2SoftAacDec: Compute output port delay from stream info  [Harish Mahendrakar]
-c051981  MediaCodec: add methods to query/subscribe vendor parameters  [Wonsik Kim]
-4017d01  lvm: Format the code using clang-format  [Harish Mahendrakar]
-a1684b8  libeffects: Removed an extraneous semi-colon in a macro definition  [Saketh Sathuvalli]
-6c0b9a7  libeffects: Introduced on the fly allocation of memories in LVM module  [Saketh Sathuvalli]
-63b53d2  libeffects: SUPPORT_MC macro clean up  [Saketh Sathuvalli]
-cc15532  libeffects: Add multichannel support to Reverb  [Saketh Sathuvalli]
-7b2431f  libeffects: Reverb Testbench  [Saketh Sathuvalli]
-c8ea02c  [BUG] AudioFlinger: Patch Panel: Fix SwBridge Patch leak  [Francois Gaffie]
-069c022  AudioFlinger: Make Direct AudioTrack behavior more flexible for underrun  [Andy Hung]
-f50d570  Codec2 Components: reset OutputBlockPool after use  [Sungtak Lee]
-f7c30c0  libdatasource: fix null dereference  [Yuxiu Zhang]\n
-\n* frameworks/base\n8f89915  SystemUI: Add flipendo to Battery Saver QSTile  [Jason Edson]\n
-\n* packages/apps/Settings\n1e266a4  Runtime UI background blur toggle [2/2]  [DennySPb]\n
-
-====================
-     2021-05-10    
+     2021-06-11    
 ====================
 
-====================
-     2021-05-09    
-====================
-\n* prebuilts/clang/host/linux-x86/clang-proton\n828f85c  Update to 20210509 build  [Danny]\n
+* device/xiaomi/raphael
+210b467  raphael: fod: Remove dimlayer  [Alexandru Scurtu]
+83cb5a7  raphael: WFD Green Display Fix  [Einar Gednochsson]
+310cc98  raphael: Add missing WFD blobs from MIUI  [Marc Bourgoin]
+
 
 ====================
-     2021-05-08    
+     2021-06-10    
 ====================
+
+* device/xiaomi/raphael
+1821138  raphael: overlay: Enable config for dual LTE capability  [Qiang Chen]
+2b49ccf  raphael: parts: Dirac: Add bass booster preset  [ghostrider-reborn]
+c99bb2e  raphael:  Build mock powerstat HAL  [nato6613]
+dec51dd  raphael: overlay: Adjust device rounded corners  [yankarinRG]
+4ec62e9  raphael: Enable freeform window management  [XsaviXander]
+acbdc15  raphael: adjust zram write back policy  [Martin Liu]
+b153440  raphael:Bump zram to 2G  [Wei Wang]
+743787b  raphael:fstab: correct zram parameter names  [Minchan Kim]
+e7cfcf6  raphael: Enable zram writeback  [Jenhao Chen]
+f611384  raphael: tune zram performance  [weivincewang]
+dbe2c8e  raphael: Move zram handing to init.target.rc  [nato6613]
+6ab4ded  raphael: popup: Simulate a back key code when "no" is pressed  [Adhitya Mohan]
+4ef1eba  raphael: Switch to use QTI Health HAL  [UtsavBalar1231]
+a19d4cf  Revert "raphael:overlay: Add configs for Battery Health"  [nato6613]
+
+
+* frameworks/base
+acf3ba0  Camera: allow camera to use power key as shutter  [Danesh M]
+
+
+* frameworks/native
+e2ccee7  Merge "CompositionEngine: always request device composition for the FOD layers" into 11.0  [dennyspb]
+
+
+* kernel/xiaomi/raphael
+9be770f  Revert "WIP:disp: msm: Implement fod dim layer sysfs node"  [nato6613]
+
+
+* vendor/xiaomi/raphael
+57d35a1  raphael: Add missing WFD blobs from MIUI  [Marc Bourgoin]
+
+
+====================
+     2021-06-09    
+====================
+
+* frameworks/av
+d193057  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
+
+
+* frameworks/base
+c2ebd55  Automatic translation import  [DennySPb]
+764630f  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+
+
+* kernel/xiaomi/raphael
+ca1236d  initramfs: Pre-patch with Magisk's want_initramfs hack  [Danny Lin]
+25d1260  tty: Fix merge error that caused random reboots on shell  [Adhitya Mohan]
+bccd800  Merge branch 'dev/11.0' into 11.0  [nato6613]
+dc9a9d3  Revert "f2fs: avoid needless checkpoint during fsync"  [nato6613]
+a1857eb4  Revert "f2fs: add trim stop mechanism"  [nato6613]
+
+
+* packages/apps/Launcher3
+c39c3b4  Automatic translation import  [DennySPb]
+
+
+* packages/apps/Settings
+32718cc  Fix typo in device specific features  [DennySPb]
+70682a1  fixup! PowerUsageSummary: cleanup  [DennySPb]
+e0fab67  Automatic translation import  [DennySPb]
+9dff15f  BatteryHealth: Redo how we check for aviability  [DennySPb]
+6dbdb1c  PowerUsageSummary: cleanup  [DennySPb]
+6953669  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
+
+
+* packages/apps/SyberiaSettings
+b9ac804  Automatic translation import  [DennySPb]
+
+
+* vendor/syberia
+4f368cc  v4.7  [DennySPb]
+
+
+====================
+     2021-06-08    
+====================
+
+* art
+40a82dc  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/art into HEAD  [DennySPb]
+63cb095  art: Remove madvise tests  [Pranav Vashi]
+cdee7d6  test: Remove art_licensing from madvise.  [Vishalcj17]
+732b287  Add madvising of .odex, .vdex and .art files  [Jagadeesh Pakaravoor]
+107ebf5  make the art thread pool use the exact stack_size  [eric.yan]
+
+
+* bootable/recovery
+09448fe  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/bootable/recovery into HEAD  [DennySPb]
+
+
+* build/make
+627f440  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
+
+
+* build/soong
+07c2651  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/build/soong into HEAD  [DennySPb]
+
+
+* frameworks/base
+d7ba200  Revert "Add switch to select SBC HD by default [1/3]"  [Jens Gulin]
+12599e1  Add madvising of .odex, .vdex and .art files  [Jagadeesh Pakaravoor]
+d792bc4  base: AppLock: Call activityStopped when activity has stopped  [Rituj Beniwal]
+66e34d9  Use SystemUI reboot view also for OTA uncrypt  [Timi Rautamäki]
+
+
+* frameworks/native
+2fdf7eb  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
+
+
+* frameworks/opt/net/ims
+4fb36a4  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/opt/net/ims into HEAD  [DennySPb]
+
+
+* frameworks/opt/net/wifi
+8355735  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD  [DennySPb]
+
+
+* frameworks/opt/telephony
+6c693ba  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPb]
+
+
+* hardware/interfaces
+23e7513  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPb]
+
+
+* libcore
+c1f4760  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/libcore into HEAD  [DennySPb]
+
+
+* packages/apps/Bluetooth
+dc3c758  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPb]
+
+
+* packages/apps/Launcher3
+913cf23  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/Launcher3 into tst  [DennySPb]
+
+
+* packages/apps/Nfc
+369dcce  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPb]
+
+
+* packages/apps/PermissionController
+dbdf03e  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/PackageInstaller into HEAD  [DennySPb]
+
+
+* packages/apps/Settings
+881b1c1  Revert "fuelgauge: add back battery level animation"  [DennySPb]
+09e618a  Revert "Fix crash when going back from battery"  [DennySPb]
+fbb4abc  Merge "team: Add maintainer for Poco F3" into 11.0  [dennyspb]
+
+
+* packages/apps/ThemePicker
+7514923  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/ThemePicker into HEAD  [DennySPb]
+
+
+* packages/providers/DownloadProvider
+4ca83d3  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD  [DennySPb]
+
+
+* packages/services/Telecomm
+71e3a45  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
+
+
+* packages/services/Telephony
+fd974fa  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD  [DennySPb]
+
+
+* system/netd
+a3f8394  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/system/netd into HEAD  [DennySPb]
+
+
+* system/sepolicy
+336cfb4  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPb]
+
+
+* system/update_engine
+12d9466  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/system/update_engine into HEAD  [DennySPb]
+
+
+====================
+     2021-06-07    
+====================
+
+* frameworks/base
+a48f9ac  Cancel NotificationTimeout alarms when canceling notification  [Henrik Baard]
+
+
+* kernel/xiaomi/raphael
+127cbc9  Merge remote-tracking branch 'cunt/android11-base' into dev/11.0  [nato6613]
+0a847a9  Merge tag '1c6db23aa39673433b59146dcc427030b2a7ca33' into android11-stable  [UtsavBalar1231]
+031525b  Merge tag '96dcda419170a94fdb1825bb7e447d617811d733' into android11-stable  [UtsavBalar1231]
+30dd630  Merge tag 'LA.UM.9.1.r1-10200-SMxxx0.0' into android11-base  [UtsavBalar1231]
+cc4166a  Merge remote-tracking branch 'aosp/android-4.14-stable' into android11-stable  [UtsavBalar1231]
+
+
+* system/core
+acfa665  KillZramBackingDevice: Return immediately if backing_dev is none.  [shisiyuan]
+
+
+====================
+     2021-06-06    
+====================
+
+====================
+     2021-06-05    
+====================
+
+* frameworks/native
+f19b5d6  CompositionEngine: always request device composition for the FOD layers  [daniml3]
+
 
