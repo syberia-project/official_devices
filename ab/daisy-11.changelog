@@ -1,188 +1,66 @@
 ====================
-     2021-05-17    
+     2021-06-18    
 ====================
 
 * device/xiaomi/daisy
-f4436d2  daisy: Update to sunfish may fingerprint  [GtrCraft]
-3b25c96  daisy: sepolicy: setprop alarm service for qcom early boot script  [wight554]
-30c0f84  daisy: Change how we set the alarm property  [Michael Bestas]
-42de897  daisy: rootdir: Add vendor prefix to power_off_alarm service  [Mao Jinlong]
-4a098d4  daisy: rootdir: Add power off alarm service  [Mao Jinlong]
-d6cab41  daisy: manifest: add vendor.qti.hardware.alarm HIDL  [Vachounet]
-c5e9746  daisy: Remove obsolete ro.sys.fw.dex2oat_thread_count  [Arne Coucheron]
-d2a841a  Revert "sakura: overlay: Set config_avoidGfxAccel to true"  [lupesoltec]
-423ba18  daisy: Unset DEXPREOPT_GENERATE_APEX_IMAGE  [Bruno Martins]
-fb89bd1  daisy: Trim QTI whitelists  [Bruno Martins]
-72fff36  daisy: sepolicy: Fix neverallow  [GeoPD]
-1bb70fb  daisy: sepolicy: Add vendor prefix to props to avoid naming colision  [GeoPD]
-fbf5795  daisy: rootdir: Tune cpusets  [Stargazer19]
-f32e6f8  daisy: Set voice call volume steps to 6  [Brock5555]
-d89bf39  daisy: audio: Remove surround recording support from audio policy config xml  [Dhananjay Kumar]
-d74bea4  Revert "sakura: configs: Add voip_tx profile to policy conf"  [lupesoltec]
-
-
-* vendor/codeaurora/telephony
-fbe6a31  ims-ext-common: Forward the legacy getAutoReject call to  obtain compatibility with older ims.apk  [Arian]
+dd1634b  daisy: Update build fingerprint to daisy V11.0.20.0  [lupesoltec]
+fff2973  daisy: sepolicy: Fix Sepolicy Denials  [lupesoltec]
+03caaf0  daisy: Enable AOSP low_latency in audio output config  [ShubhamB]
+80ab969  daisy: init: Implement Magiskhide  [GeoPD]
+8d9399e  daisy: drop BUILD_FINGERPRINT  [lupesoltec]
+a9916a5  daisy: init: Override All Build fingerprints  [GeoPD]
+6d6c93b  daisy: audio: Add mixer controls for call screen support  [Anver sadhique]
+207909d  daisy: audio: Remove reset value for ADC MUX  [Vatsal Bucha]
+4bffdf2  daisy: audio: Update missing SPKR and HP combo device usecase path  [Soumya Managoli]
+7494afc  daisy: audio: Add speaker and headphones paths  [pavanc]
+0e2e10a  daisy: audio: fix incall mic with headphones  [Damar131]
+0e53d97  daisy: Fix audio recording distortion  [BealeStBluesBoy]
 
 
 ====================
-     2021-05-16    
+     2021-06-17    
+====================
+
+* device/xiaomi/daisy
+961fb9f  daisy: audio: Disable ULL mode for speakers  [LuK1337]
+e6b7703  daisy: audio: enable incall music and add incall music profile  [Anver sadhique]
+23fd335  daisy: Update Audio Configs from daisy-user-10-QKQ1.191002.002-V11.0.5.0.QDLMIXM-release-keys  [Tushar Mahajan]
+b6ec9b1  daisy: audio: Add built-in/Back mic and remove TelePhony Rx from primary input  [Shalini Manjunatha]
+91752e7  daisy: audio: Add "Built-In (Back) Mic" to "primary input" sink  [LuK1337]
+0f1afb6  daisy: audio: Enable Stereo channel support for voip over audio path  [Lakshman Chaluvaraju]
+2400d87  daisy: audio: add support for 32/48KHz voip  [Aalique Grahame]
+55fafcd  daisy: audio: Remove surround recording support from audio policy config xml  [Dhananjay Kumar]
+eb499dc  daisy: Boardconfig: disable AUDIO_FEATURE_ENABLED_KPI_OPTIMIZE  [Sultanxda]
+20799f9  daisy: Update qti priv-permission whitelist from LA.UM.8.6.2.r1-06600-89xx.0  [abhinavgupta371]
+95b8b43  daisy: Change how we set the alarm property  [Michael Bestas]
+6a7713d  daisy: rootdir: run sensors daemon as system user instead of root  [Brian Duddie]
+4aef96f  Revert "daisy: cleanup persist permissions"  [lupesoltec]
+7d88599  daisy: rootdir: Add vendor prefix to power_off_alarm service  [Mao Jinlong]
+e866ce3  daisy: rootdir: Add power off alarm service  [Mao Jinlong]
+13a7229  daisy: Fix Drain Issue From msm_irqbalance  [kondors1995]
+8fbb42e  daisy: Include msm_irqbalance_little_big.conf  [Maria Yu]
+68fa407  daisy: manifest: add vendor.qti.hardware.alarm HIDL  [Vachounet]
+a52de95  daisy: Bring back msm_irqbalance service  [ZèD]
+42f1047  daisy: Don't explicitly build configstore@1.0-service  [elektroschmock]
+be4b558  daisy: Build libtinycompress  [solidv]
+
+====================
+     2021-06-16    
 ====================
 
 ====================
-     2021-05-15    
+     2021-06-15    
 ====================
 
 ====================
-     2021-05-14    
+     2021-06-14    
 ====================
 
-* bionic
-342dc2f  [master] Make res_init() work again.  [Elliott Hughes]
-21e4cb5  [master] Initialize _nres only once  [Luke Huang]
-
-
-* frameworks/base
-5fb9f4f  Merge "Automatic translation import" into 11.0  [dennyspb]
-4c81846  Merge "[master] [UPSTREAM] Reset PAC keys on thread creation instead of on zygote fork." into 11.0  [dennyspb]
-630c693  Automatic translation import  [DennySPb]
-67c17c0  SystemUI: Remove QS drag handle  [Danny Lin]
-2c8a83b  base: Redo Pocket mode view like OOS  [Jyotiraditya Panda]
-
-
-* packages/apps/Launcher3
-2fa1e2b  Automatic translation import  [DennySPb]
-
-
-* packages/apps/Settings
-c9928fc  Automatic translation import  [DennySPb]
-
-
-* packages/apps/SyberiaSettings
-4f2a716  Automatic translation import  [DennySPb]
-
-
 ====================
-     2021-05-13    
+     2021-06-13    
 ====================
 
-* art
-aac9e6b  [master] Refactor Escape-analysis to use visitors  [Alex Light]
-fbf84c5  [master] Generalize Main.compiledWithOptimizing.  [Nicolas Geoffray]
-e708c84  Fix unwinding for art_quick_generic_jni_trampoline  [David Srbecky]
-43d1b40  [master] Fix inliner instruction/register limits  [Tim Murray]
-
-
-* packages/apps/Updater
-44bc247  Updater: add permissions check for local install  [Ali B]
-e2b82fd  Support local file selection from external sdcards  [Ali B]
-b829237  UpdatesActivity: Add missing return value  [Pranav Vashi]
-
-
-* vendor/interfaces
-cee010f  SmartCharge: move to system_ext  [DennySPb]
-
-
-* vendor/qcom/opensource/interfaces
-56419e4  btconfigstore@2.0: make system_ext specific  [DennySPb]
-8f314e9  Add reversed perf HAL interfaces  [dianlujitao]
-
-
-* vendor/syberia
-a5a32ab  [Fixup] kernel: Add bison and flex to build environment  [DennySPb]
-73b2ac6  audio: Use AOSP Material sounds and Material Product Sounds by default  [Danny Lin]
-41ca575  v4.6  [DennySPb]
-3a968a7  overlay: Define blur radius in device-independent pixels  [Danny Lin]
-590393e  SystemUI: Bump background blur radius to 175 px  [Danny Lin]
-
-
 ====================
-     2021-05-12    
+     2021-06-12    
 ====================
-
-* frameworks/av
-840c617  Merge tag 'LA.QSSI.11.0.r1-11900-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPb]
-
-
-* frameworks/base
-8840c69  [master] [UPSTREAM] Reset PAC keys on thread creation instead of on zygote fork.  [Peter Collingbourne]
-ca2c7a5  SystemUI: Remove black QS status bar background  [Danny Lin]
-a4943fa  [DO NOT MERGE] Handle landscape and portrait display for PIP rotation  [Salini Venate]
-5307097  IMS: Fix issue with answering call for some 3rd party apps  [Muhammed Siju]
-d7845f0  BT: Don't allow isBleScanAlwaysAvailable API call for non foreground users  [Mingbo Zhang]
-b2e3ccc  Revert "SystemUI: Fix issues with VoWiFi icon"  [DennySPb]
-50d37529  [DO NOT MERGE] Use loadDrawableAsUser in MediaDataManager  [Isak Lilja]
-08bb5f8  Revert "fix SystemUI crash from null stored in non-nullable"  [DennySPb]
-486b15e  wm: don't move home stack to front in freeform mode  [cjybyjk]
-000bd2c  HwAudioSource: wrong native handle check  [Francois Gaffie]
-44ca2d8  use more loadDrawableAsUser in MediaDataManager  [inthewaves]
-e7c8bc0  Revert "add more guards against nulls from loadDrawable"  [DennySPb]
-63e1c64  Remove wtf about JobScheduler.Background  [Anshul Aggarwal]
-
-
-* frameworks/native
-c204132  [master] installd: Fix set dex2oat to background after boot_complete  [Wei Wang]
-2ee04dd  [master] Fix the secure flag check for blackout layer issue  [yuhui.zhang]
-
-
-* frameworks/opt/telephony
-8d000b3  Merge tag 'LA.QSSI.11.0.r1-11900-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPb]
-
-
-* packages/apps/SyberiaSettings
-c18bca1  SyberiaSettings: Add CustomDoze  [SKULSHADY]
-
-
-* packages/services/Telecomm
-1ade49d  Merge tag 'LA.QSSI.11.0.r1-11900-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm into HEAD  [DennySPb]
-
-
-* packages/services/Telephony
-4f870f1  Merge tag 'LA.QSSI.11.0.r1-11900-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony into HEAD  [DennySPb]
-
-
-====================
-     2021-05-11    
-====================
-
-* external/libjpeg-turbo
-0e9de35  Revert "[LSC] Add LOCAL_LICENSE_KINDS to external/libjpeg-turbo"  [DennySPb]
-4cf4e17  Merge branch 'master' of https://android.googlesource.com/platform/external/libjpeg-turbo into HEAD  [DennySPb]
-
-
-* frameworks/av
-251fa34  Further ID3 parsing work  [Ray Essick]
-920a506  Configurable AudioPolicyEngine: Skip device count assert  [Andy Hung]
-97f3594  Improve ID3V2.4 handling unsynchronization  [Ray Essick]
-de0435f  Codec2BufferUtils.cpp: Fix integer-overflows  [Harish Mahendrakar]
-6e17fbf  C2SoftAvcEnc: revert flex YUV handling  [Harish Mahendrakar]
-c67b650  C2SoftAvcDec: revert flex YUV handling  [Wonsik Kim]
-5b2ac51  C2SoftAvc: handle flexible YUV  [Wonsik Kim]
-1a82f34  C2SoftAvcEnc: Use dimensions from mSize instead of input buffer  [Harish Mahendrakar]
-a5914e9  audio:fix incomplete devices of duplicated output  [wudongzhe]
-6a66cc0  cameraserver: Enforce system camera rules for setTorchMode and torch callbacks.  [Jayant Chowdhary]
-4718df4  sfplugin utils: expand libyuv coverage  [Wonsik Kim]
-db67551  audiopolicy: Avoid logspam about engine config parsing error  [Mikhail Naganov]
-e13c479  codec2: use libyuv for copying planes  [Wonsik Kim]
-f561781  C2SoftAacDec: Compute output port delay from stream info  [Harish Mahendrakar]
-c051981  MediaCodec: add methods to query/subscribe vendor parameters  [Wonsik Kim]
-4017d01  lvm: Format the code using clang-format  [Harish Mahendrakar]
-a1684b8  libeffects: Removed an extraneous semi-colon in a macro definition  [Saketh Sathuvalli]
-6c0b9a7  libeffects: Introduced on the fly allocation of memories in LVM module  [Saketh Sathuvalli]
-63b53d2  libeffects: SUPPORT_MC macro clean up  [Saketh Sathuvalli]
-cc15532  libeffects: Add multichannel support to Reverb  [Saketh Sathuvalli]
-7b2431f  libeffects: Reverb Testbench  [Saketh Sathuvalli]
-c8ea02c  [BUG] AudioFlinger: Patch Panel: Fix SwBridge Patch leak  [Francois Gaffie]
-069c022  AudioFlinger: Make Direct AudioTrack behavior more flexible for underrun  [Andy Hung]
-f50d570  Codec2 Components: reset OutputBlockPool after use  [Sungtak Lee]
-f7c30c0  libdatasource: fix null dereference  [Yuxiu Zhang]
-
-
-* frameworks/base
-8f89915  SystemUI: Add flipendo to Battery Saver QSTile  [Jason Edson]
-
-
-* packages/apps/Settings
-1e266a4  Runtime UI background blur toggle [2/2]  [DennySPb]
-
 
