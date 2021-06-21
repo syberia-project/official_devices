@@ -1,201 +1,108 @@
 ====================
-     2021-06-09    
-====================
-
-* frameworks/av
-d193057  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
-
-
-* frameworks/base
-acf3ba0  Camera: allow camera to use power key as shutter  [Danesh M]
-c2ebd55  Automatic translation import  [DennySPb]
-764630f  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
-
-
-* frameworks/native
-54fd886  CompositionEngine: always request device composition for the FOD layers  [daniml3]
-
-
-* packages/apps/Launcher3
-c39c3b4  Automatic translation import  [DennySPb]
-
-
-* packages/apps/Settings
-32718cc  Fix typo in device specific features  [DennySPb]
-70682a1  fixup! PowerUsageSummary: cleanup  [DennySPb]
-e0fab67  Automatic translation import  [DennySPb]
-9dff15f  BatteryHealth: Redo how we check for aviability  [DennySPb]
-6dbdb1c  PowerUsageSummary: cleanup  [DennySPb]
-6953669  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
-
-
-* packages/apps/SyberiaSettings
-b9ac804  Automatic translation import  [DennySPb]
-
-
-* system/vold
-84fc9fb  Show names of processes killed by KillProcessesWithOpenFiles()  [Eric Biggers]
-
-
-* vendor/syberia
-4f368cc  v4.7  [DennySPb]
-
-
-====================
-     2021-06-08    
+     2021-06-21    
 ====================
 
 * art
-40a82dc  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/art into HEAD  [DennySPb]
-63cb095  art: Remove madvise tests  [Pranav Vashi]
-
-
-* bootable/recovery
-09448fe  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/bootable/recovery into HEAD  [DennySPb]
-
-
-* build/make
-627f440  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
-
-
-* build/soong
-07c2651  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/build/soong into HEAD  [DennySPb]
+63e1c09  [master] Faster Class::FindClassMethod().  [Vladimir Marko]
+0123e64  Remove FileDescriptor ownerId field from Core Platform API bypass  [Orion Hodson]
+a28143b  [master] Fix GetDirectBufferCapacity for zero length direct buffer  [Orion Hodson]
+8a4bbdc  [master] Revert "Revert "Additional checks in GetDirectBuffer{Address,Capacity}""  [Jake Weinstein]
 
 
 * frameworks/base
-d7ba200  Revert "Add switch to select SBC HD by default [1/3]"  [Jens Gulin]
-
-
-* frameworks/native
-2fdf7eb  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
-
-
-* frameworks/opt/net/ims
-4fb36a4  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/opt/net/ims into HEAD  [DennySPb]
-
-
-* frameworks/opt/net/wifi
-8355735  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD  [DennySPb]
-
-
-* frameworks/opt/telephony
-6c693ba  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPb]
-
-
-* hardware/interfaces
-23e7513  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPb]
-
-
-* libcore
-c1f4760  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/libcore into HEAD  [DennySPb]
+4ef37a2f  ScrollView: Remove static modifier  [Trần Mạnh Cường]
+8940d0a  fixup! DisplayPowerController: make brightness ramp rate overlay-able  [Rituj Beniwal]
+5a8160c  AppLock: Don't trigger if starting new intent of current running package  [jhenrique09]
+70102b7  Add broadcast profile id  [pramod kotreshappa]
+c572fd9  Bluetooth: Add BC profile entry  [Bhakthavatsala Raghavendra]
+da30f6c  Enhanced Attribute protocol support  [Subramanian Srinivasan]
+0471cb6  Periodic Advertisment Sync Transfer feature support  [pramod kotreshappa]
+354cdd8d  AppLock: Update tasks snapshot when needed  [jhenrique09]
 
 
 * packages/apps/Bluetooth
-dc3c758  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPb]
-
-
-* packages/apps/Launcher3
-913cf23  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/Launcher3 into tst  [DennySPb]
-
-
-* packages/apps/Nfc
-369dcce  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPb]
-
-
-* packages/apps/PermissionController
-dbdf03e  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/PackageInstaller into HEAD  [DennySPb]
-
-
-* packages/apps/Settings
-881b1c1  Revert "fuelgauge: add back battery level animation"  [DennySPb]
-09e618a  Revert "Fix crash when going back from battery"  [DennySPb]
-fbb4abc  Merge "team: Add maintainer for Poco F3" into 11.0  [dennyspb]
-
-
-* packages/apps/ThemePicker
-7514923  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/ThemePicker into HEAD  [DennySPb]
-
-
-* packages/providers/DownloadProvider
-4ca83d3  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD  [DennySPb]
-
-
-* packages/services/Telecomm
-71e3a45  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
-
-
-* packages/services/Telephony
-fd974fa  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD  [DennySPb]
+ca06d42  Support for broadcast active api  [pramod kotreshappa]
+daa25a9  PAST feature implementation  [pramod kotreshappa]
+f5a358b  Enhanced Attribute protocol support  [Subramanian Srinivasan]
+46f550a  DeviceGroup: Add Binder method in Bluetooth App  [Sravan voleti]
+946f279  Periodic Sync Feature implementation  [pramod kotreshappa]
 
 
 * system/bt
-049a84e  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPb]
+e11784a  Add broadcast active api  [pramod kotreshappa]
+0ac9c21  BLE Broadcast Isochronous channel support  [Sunny Kapdi]
+28b3240  DeviceGroup: Add new system API's to support Group UI.  [Sravan voleti]
+85fb536  Enhanced Attribute protocol support  [Subramanian Srinivasan]
+28df307  Periodic Adv Sync Transfer feature support  [pramod kotreshappa]
 
 
-* system/netd
-a3f8394  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/system/netd into HEAD  [DennySPb]
+* vendor/qcom/opensource/commonsys-intf/bluetooth
+73aa4ad  Merge tag 'LA.QSSI.11.0.r1-12300-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/bluetooth-commonsys-intf into HEAD  [DennySPb]
 
 
-* system/sepolicy
-336cfb4  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPb]
+* vendor/qcom/opensource/commonsys/bluetooth_ext
+f5c387c  Merge tag 'LA.QSSI.11.0.r1-12300-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/bluetooth_ext into HEAD  [DennySPb]
 
 
-* system/update_engine
-12d9466  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/system/update_engine into HEAD  [DennySPb]
+* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
+fcadff5  Merge tag 'LA.QSSI.11.0.r1-12300-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/packages/apps/Bluetooth into HEAD  [DennySPb]
+064124d  Revert "Pass whether the local device is an atv device to the native"  [DennySPb]
+0964dab  Bluetooth: sync dialog layout for consistency  [Timi]
+f495ad9  Bluetooth: follow system theme in dialogs  [Timi]
+c2f5fd6  Don't print passkey to logcat on non-debug builds  [Jakub Pawlowski]
+
+
+* vendor/qcom/opensource/commonsys/system/bt
+28e9370  Revert a few commits before QSSI merge  [DennySPb]
 
 
 ====================
-     2021-06-07    
+     2021-06-20    
+====================
+
+====================
+     2021-06-19    
+====================
+
+====================
+     2021-06-18    
+====================
+
+====================
+     2021-06-17    
+====================
+
+====================
+     2021-06-16    
+====================
+
+* frameworks/base
+afac342  Check for a2dp profile when removing stale connection events  [Zhou Song]
+
+
+====================
+     2021-06-15    
 ====================
 
 * art
-cdee7d6  test: Remove art_licensing from madvise.  [Vishalcj17]
-732b287  Add madvising of .odex, .vdex and .art files  [Jagadeesh Pakaravoor]
-107ebf5  make the art thread pool use the exact stack_size  [eric.yan]
+7058b22  Use verify when speed-profile gets an empty profile  [Calin Juravle]
+0b4698d  Introduce `art::FastExit` to replace all uses of `quick_exit` in ART.  [Roland Levillain]
+
+
+* frameworks/av
+d9aca89  cameraservice: Avoid calling getSystemCameraKind if the camera was not mapped yet  [Timi Rautamäki]
+58ac119  Merge tag 'LA.QSSI.11.0.r1-12300-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPb]
 
 
 * frameworks/base
-12599e1  Add madvising of .odex, .vdex and .art files  [Jagadeesh Pakaravoor]
-d792bc4  base: AppLock: Call activityStopped when activity has stopped  [Rituj Beniwal]
-66e34d9  Use SystemUI reboot view also for OTA uncrypt  [Timi Rautamäki]
-a48f9ac  Cancel NotificationTimeout alarms when canceling notification  [Henrik Baard]
+049f0c6  Fix inconsistency in ringtone list  [akansha.shukla]
 
 
-* system/core
-acfa665  KillZramBackingDevice: Return immediately if backing_dev is none.  [shisiyuan]
+* packages/services/Telephony
+60501e0  Removing dead code from Telephony which uses wakelock.  [Tyler Gunn]
 
 
-====================
-     2021-06-06    
-====================
-
-====================
-     2021-06-05    
-====================
-
-====================
-     2021-06-04    
-====================
-
-* frameworks/base
-314f268  Close the FileStream to avoid resource leak  [Naga Venkata Durga Ashok Mutyala]
-b6bfafc  Use finally block for Binder.restoreCallingIdentity  [Alice Kuo]
-9dbfb8e  Fix NPE when notification icon is empty  [timhypeng]
-a3eac4e  Hide keyguard when SIM transitions to READY  [Michele Berionne]
-1a5f1d0  Remove duplicate import  [utzcoz]
-e5a6151  Prevent guest user from toggling mobile data Quick Setting  [Torbjorn Eklund]
-2144101  setCurrentState(DESTROYED) called from main thread  [Fabian Kozynski]
-c69224a  Enforce setCurrentState calls are on main thread  [Fabian Kozynski]
-8d42379  QSTileImpl is set to DESTROYED when handleDestroy  [Fabian Kozynski]
-2d775a6  Fix LegacyGlobalActions broadcast receiver  [Artem Radchenko]
-de1e4c2  unregister FileCleanupReceiver when disableHistory  [hongyang.dong]
-
-
-====================
-     2021-06-03    
-====================
-
-* frameworks/base
-4910975  Explicitly make SBC Dual Channel an optional (HD) codec  [Alessandro Astone]
+* system/bt
+7d7191d  LDAC: Use INFO log when library not found  [Myles Watson]
 
 
