@@ -1,22 +1,24 @@
 ====================
-     2021-06-09
+     2021-05-31
 ====================
 
 Kernel:
- - Upstreamed to 4.19.193
- - Improved memory management
- - Merged LA.UM.9.15.1.r1-03300-KAMORTA.0 CAF tag
- - Other fixes and improvements
+ - Upstreamed to 4.19.195
+ - Merged tag 'LA.UM.9.12.r1-11800-SMxx50.QSSI12.0'
 
 Rom:
- - v4.7
- - Merged android_11.0.0_r38 June tag
- - Built with Thin LTO
  - Art improvements
- - Translations updates
- - Other improvements and fixes under the hood
+ - Merged tag 'LA.QSSI.11.0.r1-12300-qssi.0' in some repo
+ - Fixed inertia scrolling in some apps
+ - Added Pixel 5 Sounds
+ - Other fixes and improvements
 
 Device:
- - Enabled ZRAM
- - Camera2 replaced with Snap
- - Fixed scheduler settings
+ - Added Live Display
+ - Adapted powerhint values for kona
+ - Added vibrate haptics for UI elements
+ - Some SystemUI improvements
+ - Set 4k video quality for Snap
+ - Updater app fixes
+ - Sepolicy fixes
+ - Zram fixes
