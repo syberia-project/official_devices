@@ -1,24 +1,10 @@
 ====================
-     2021-05-31
+     2021-06-27
 ====================
 
 Kernel:
- - Upstreamed to 4.19.195
- - Merged tag 'LA.UM.9.12.r1-11800-SMxx50.QSSI12.0'
-
-Rom:
- - Art improvements
- - Merged tag 'LA.QSSI.11.0.r1-12300-qssi.0' in some repo
- - Fixed inertia scrolling in some apps
- - Added Pixel 5 Sounds
- - Other fixes and improvements
+ - Changes from Linux kernel 5.10 for better deep sleep 
 
 Device:
- - Added Live Display
- - Adapted powerhint values for kona
- - Added vibrate haptics for UI elements
- - Some SystemUI improvements
- - Set 4k video quality for Snap
- - Updater app fixes
- - Sepolicy fixes
- - Zram fixes
+ - Added Moto Dolby v3
+ - Update blobs from MIUI V12.5.1.0.RKHMIXM
