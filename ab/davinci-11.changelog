@@ -1,88 +1,32 @@
 ====================
-     2021-06-26    
-====================
-
-====================
-     2021-06-25    
-====================
-
-====================
-     2021-06-24    
-====================
-
-====================
-     2021-06-23    
-====================
-
-====================
-     2021-06-22    
-====================
-
-* external/sqlite
-4c9f0e3  sqlite: update to 3.36.0  [DennySPb]
-
-
-====================
-     2021-06-21    
+     2021-07-02    
 ====================
 
 * art
-5af9f80  [master] Faster Class::FindClassMethod().  [Vladimir Marko]
-0123e64  Remove FileDescriptor ownerId field from Core Platform API bypass  [Orion Hodson]
-a28143b  [master] Fix GetDirectBufferCapacity for zero length direct buffer  [Orion Hodson]
-8a4bbdc  [master] Revert "Revert "Additional checks in GetDirectBuffer{Address,Capacity}""  [Jake Weinstein]
-
-
-* frameworks/base
-4ef37a2f  ScrollView: Remove static modifier  [Trần Mạnh Cường]
-8940d0a  fixup! DisplayPowerController: make brightness ramp rate overlay-able  [Rituj Beniwal]
-5a8160c  AppLock: Don't trigger if starting new intent of current running package  [jhenrique09]
-70102b7  Add broadcast profile id  [pramod kotreshappa]
-c572fd9  Bluetooth: Add BC profile entry  [Bhakthavatsala Raghavendra]
-da30f6c  Enhanced Attribute protocol support  [Subramanian Srinivasan]
-0471cb6  Periodic Advertisment Sync Transfer feature support  [pramod kotreshappa]
-354cdd8d  AppLock: Update tasks snapshot when needed  [jhenrique09]
-
-
-* packages/apps/Bluetooth
-ca06d42  Support for broadcast active api  [pramod kotreshappa]
-daa25a9  PAST feature implementation  [pramod kotreshappa]
-f5a358b  Enhanced Attribute protocol support  [Subramanian Srinivasan]
-46f550a  DeviceGroup: Add Binder method in Bluetooth App  [Sravan voleti]
-946f279  Periodic Sync Feature implementation  [pramod kotreshappa]
-
-
-* system/bt
-74a5fd9  Merge changes I862696e1,I0c230328,I294f60b5,I4d9630d6,I964667d5 into 11.0  [dennyspb]
-09f7b29  Add broadcast active api  [pramod kotreshappa]
-7a8ea54  BLE Broadcast Isochronous channel support  [Sunny Kapdi]
-c6cdfbc  DeviceGroup: Add new system API's to support Group UI.  [Sravan voleti]
-c77f8b2  Enhanced Attribute protocol support  [Subramanian Srinivasan]
-0b2c91f  Periodic Adv Sync Transfer feature support  [pramod kotreshappa]
-
-
-* vendor/qcom/opensource/commonsys-intf/bluetooth
-73aa4ad  Merge tag 'LA.QSSI.11.0.r1-12300-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/bluetooth-commonsys-intf into HEAD  [DennySPb]
-
-
-* vendor/qcom/opensource/commonsys/bluetooth_ext
-f5c387c  Merge tag 'LA.QSSI.11.0.r1-12300-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/bluetooth_ext into HEAD  [DennySPb]
-
-
-* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
-fcadff5  Merge tag 'LA.QSSI.11.0.r1-12300-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/packages/apps/Bluetooth into HEAD  [DennySPb]
-064124d  Revert "Pass whether the local device is an atv device to the native"  [DennySPb]
-0964dab  Bluetooth: sync dialog layout for consistency  [Timi]
-f495ad9  Bluetooth: follow system theme in dialogs  [Timi]
-c2f5fd6  Don't print passkey to logcat on non-debug builds  [Jakub Pawlowski]
-
-
-* vendor/qcom/opensource/commonsys/system/bt
-36a2adb  Merge tag 'LA.QSSI.11.0.r1-12300-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/system/bt into HEAD  [DennySPb]
-28e9370  Revert a few commits before QSSI merge  [DennySPb]
+155b7e0  Revert "Use verify when speed-profile gets an empty profile"  [SVB22]
 
 
 ====================
-     2021-06-20    
+     2021-07-01    
+====================
+
+====================
+     2021-06-30    
+====================
+
+====================
+     2021-06-29    
+====================
+
+====================
+     2021-06-28    
+====================
+
+====================
+     2021-06-27    
+====================
+
+====================
+     2021-06-26    
 ====================
 
