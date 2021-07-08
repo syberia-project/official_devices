@@ -1,108 +1,98 @@
 ====================
-     2021-06-21    
+     2021-07-19    
 ====================
 
-* art
-63e1c09  [master] Faster Class::FindClassMethod().  [Vladimir Marko]
-0123e64  Remove FileDescriptor ownerId field from Core Platform API bypass  [Orion Hodson]
-a28143b  [master] Fix GetDirectBufferCapacity for zero length direct buffer  [Orion Hodson]
-8a4bbdc  [master] Revert "Revert "Additional checks in GetDirectBuffer{Address,Capacity}""  [Jake Weinstein]
-
-
 * frameworks/base
-4ef37a2f  ScrollView: Remove static modifier  [Trần Mạnh Cường]
-8940d0a  fixup! DisplayPowerController: make brightness ramp rate overlay-able  [Rituj Beniwal]
-5a8160c  AppLock: Don't trigger if starting new intent of current running package  [jhenrique09]
-70102b7  Add broadcast profile id  [pramod kotreshappa]
-c572fd9  Bluetooth: Add BC profile entry  [Bhakthavatsala Raghavendra]
-da30f6c  Enhanced Attribute protocol support  [Subramanian Srinivasan]
-0471cb6  Periodic Advertisment Sync Transfer feature support  [pramod kotreshappa]
-354cdd8d  AppLock: Update tasks snapshot when needed  [jhenrique09]
+43b7d21  Keyguard: Allow disabling fingerprint wake-and-unlock  [Steve Kondik]
+9206b79  SystemUI: add SyberiaSettingsService  [maxwen]
+9dc38db  DataSwitchTile: Improve the code  [Ido Ben-Hur]
+7b5e9e4  Drop the O_NOFOLLOW flag.  [Nicolas Geoffray]
 
 
-* packages/apps/Bluetooth
-ca06d42  Support for broadcast active api  [pramod kotreshappa]
-daa25a9  PAST feature implementation  [pramod kotreshappa]
-f5a358b  Enhanced Attribute protocol support  [Subramanian Srinivasan]
-46f550a  DeviceGroup: Add Binder method in Bluetooth App  [Sravan voleti]
-946f279  Periodic Sync Feature implementation  [pramod kotreshappa]
+* frameworks/native
+0af5fac  Properly scale touch input window through resolution changes  [Aaron Kling]
 
 
-* system/bt
-e11784a  Add broadcast active api  [pramod kotreshappa]
-0ac9c21  BLE Broadcast Isochronous channel support  [Sunny Kapdi]
-28b3240  DeviceGroup: Add new system API's to support Group UI.  [Sravan voleti]
-85fb536  Enhanced Attribute protocol support  [Subramanian Srinivasan]
-28df307  Periodic Adv Sync Transfer feature support  [pramod kotreshappa]
+* frameworks/opt/telephony
+ede1528  Merge tag 'LA.QSSI.11.0.r1-12600-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPb]
 
 
-* vendor/qcom/opensource/commonsys-intf/bluetooth
-73aa4ad  Merge tag 'LA.QSSI.11.0.r1-12300-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/bluetooth-commonsys-intf into HEAD  [DennySPb]
+* packages/apps/Dialer
+4955200  Dialer: set statusbar color same as activity background  [Timi Rautamäki]
+0081e7b  Dialer: improve search bar  [Timi Rautamäki]
+b90168d  Dialer: update ripple color  [Timi Rautamäki]
+7f595d9  Dialer: update dark theme colors  [Timi Rautamäki]
+6d113bf  Dialer: correct the expanded search bar height  [Timi Rautamäki]
+
+
+* packages/apps/Launcher3
+9403950  Launcher3: Update RU translation  [blinoff82]
+0dd8973  Revert "Launcher3: make all apps grid independent from workspace"  [blinoff82]
+fb18b47  Launcher3: Fix crash in StaggeredWorkspaceAnim  [Pranav Vashi]
+ca70fe0  Add missing default workspace changes in LauncherFiles  [Michael Bestas]
+a99d141  Disable MULTI_DB_GRID_MIRATION_ALGO  [Michael Bestas]
+13e6c36  Launcher3: restart Launcher on changing font size  [Omkar Chandorkar]
+561bcb8  Launcher3: Delink font size settings  [Pranav Vashi]
+4014dd7  Launcher3: Use custom seekbar for icon size  [Pranav Vashi]
+f65bac5  Launcher3: Add option to change icon size  [hundeva]
+538854e  Launcher3: Set 5x6 grid to 5 hotseat icons  [Sam Mortimer]
+beab4c2  Launcher3: Add 5x6, 5x7 and 6x6 default workspaces  [dwardo]
+472d85d  Launcher3: Replace 4x4 grid option with a 4x5 one  [Arne Coucheron]
+cfd6462  Revert grid and icon size commits  [DennySPb]
+
+
+* packages/apps/Settings
+a121d6d  security: Add fingerprint wake unlock mode list preference  [ganeshi4u]
+
+
+* packages/services/Telecomm
+d31ee81  Merge tag 'LA.QSSI.11.0.r1-12600-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm into HEAD  [DennySPb]
+
+
+* system/core
+a1d8080  fs_mgr: try tune2fs for casefolding on /data only  [Jaegeuk Kim]
+df9a9b7  fastboot: f2fs: handle return code correctly  [Jaegeuk Kim]
+8b1231e  fastboot: add casefold/projid options  [Jaegeuk Kim]
+0624578  support f2fs casefolding formatting tool  [Jaegeuk Kim]
 
 
 * vendor/qcom/opensource/commonsys/bluetooth_ext
-f5c387c  Merge tag 'LA.QSSI.11.0.r1-12300-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/bluetooth_ext into HEAD  [DennySPb]
+9016619  Merge tag 'LA.QSSI.11.0.r1-12600-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/bluetooth_ext into HEAD  [DennySPb]
 
 
 * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
-fcadff5  Merge tag 'LA.QSSI.11.0.r1-12300-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/packages/apps/Bluetooth into HEAD  [DennySPb]
-064124d  Revert "Pass whether the local device is an atv device to the native"  [DennySPb]
-0964dab  Bluetooth: sync dialog layout for consistency  [Timi]
-f495ad9  Bluetooth: follow system theme in dialogs  [Timi]
-c2f5fd6  Don't print passkey to logcat on non-debug builds  [Jakub Pawlowski]
+7759d1b  Merge tag 'LA.QSSI.11.0.r1-12600-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/packages/apps/Bluetooth into HEAD  [DennySPb]
 
 
 * vendor/qcom/opensource/commonsys/system/bt
-28e9370  Revert a few commits before QSSI merge  [DennySPb]
+9318881  Merge tag 'LA.QSSI.11.0.r1-12600-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/system/bt into HEAD  [DennySPb]
 
 
 ====================
-     2021-06-20    
+     2021-07-18    
 ====================
 
 ====================
-     2021-06-19    
+     2021-07-17    
 ====================
 
 ====================
-     2021-06-18    
+     2021-07-16    
 ====================
 
 ====================
-     2021-06-17    
+     2021-07-15    
 ====================
 
 ====================
-     2021-06-16    
+     2021-07-14    
 ====================
 
-* frameworks/base
-afac342  Check for a2dp profile when removing stale connection events  [Zhou Song]
-
-
 ====================
-     2021-06-15    
+     2021-07-13    
 ====================
 
-* art
-7058b22  Use verify when speed-profile gets an empty profile  [Calin Juravle]
-0b4698d  Introduce `art::FastExit` to replace all uses of `quick_exit` in ART.  [Roland Levillain]
-
-
-* frameworks/av
-d9aca89  cameraservice: Avoid calling getSystemCameraKind if the camera was not mapped yet  [Timi Rautamäki]
-58ac119  Merge tag 'LA.QSSI.11.0.r1-12300-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPb]
-
-
-* frameworks/base
-049f0c6  Fix inconsistency in ringtone list  [akansha.shukla]
-
-
-* packages/services/Telephony
-60501e0  Removing dead code from Telephony which uses wakelock.  [Tyler Gunn]
-
-
-* system/bt
-7d7191d  LDAC: Use INFO log when library not found  [Myles Watson]
+* system/sepolicy
+febc4dd  sepolicy: Fix some ActivityManager denials  [Jason Edson]
 
 
