@@ -1,24 +1,26 @@
 ====================
-     2021-07-04
+     2021-07-10
 ====================
 
 Kernel:
- - Upstream to 4.19.196
+ - Upstream from 4.19-q Linux kernel
 
 Rom:
- - Merge tag 'LA.QSSI.11.0.r1-12400-qssi.0'
- - Merge tag 'LA.UM.8.12.c3-12900-sm8250.0'
- - Fixed some apps crash (like Yandex Go)
- - Other fixes under the hood
+ - Merged July android security patch
+ - Art improvements
+ - Bionic optimization for arm
+ - Merge tag 'LA.UM.9.12.r1-12000-SMxx50.0' in HALs
+ - Add Launcher icons size
+ - Add 3 new Launcher grid sizes
+ - Updated translations (huge thanks to all contributors!)
+ - Other improvements and fixes under the hood
 
 Device:
- - Reorganize Device Specific Settings
- - Implemented DC Dimming (experimental)
- - Move Dolby Atmos into Sound settings
- - Fixed display modes for Live Display
- - Update some graphics props from stock
- - Move to kryo585 arch variant
- - Update Carrier Configs
- - Fixed Storage manager FC
- - Sepolicy fixes
- - Update translation
+ - Update blobs from MIUI V12.5.2.0.RKHMIXM
+ - Add 90 Hz screen refresh rate
+ - Switch to QTI Bluetooth stack
+ - Fixed microphone low volume in certain instances
+ - Import OnePlus audio configs
+ - Restore thermal profiles
+ - Add back hwui and display props
+ - Update fingerpint from redfin
