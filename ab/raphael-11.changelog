@@ -1,226 +1,186 @@
 ====================
-     2021-06-11    
+     2021-07-13    
 ====================
 
 * device/xiaomi/raphael
-210b467  raphael: fod: Remove dimlayer  [Alexandru Scurtu]
-83cb5a7  raphael: WFD Green Display Fix  [Einar Gednochsson]
-310cc98  raphael: Add missing WFD blobs from MIUI  [Marc Bourgoin]
-
-
-====================
-     2021-06-10    
-====================
-
-* device/xiaomi/raphael
-1821138  raphael: overlay: Enable config for dual LTE capability  [Qiang Chen]
-2b49ccf  raphael: parts: Dirac: Add bass booster preset  [ghostrider-reborn]
-c99bb2e  raphael:  Build mock powerstat HAL  [nato6613]
-dec51dd  raphael: overlay: Adjust device rounded corners  [yankarinRG]
-4ec62e9  raphael: Enable freeform window management  [XsaviXander]
-acbdc15  raphael: adjust zram write back policy  [Martin Liu]
-b153440  raphael:Bump zram to 2G  [Wei Wang]
-743787b  raphael:fstab: correct zram parameter names  [Minchan Kim]
-e7cfcf6  raphael: Enable zram writeback  [Jenhao Chen]
-f611384  raphael: tune zram performance  [weivincewang]
-dbe2c8e  raphael: Move zram handing to init.target.rc  [nato6613]
-6ab4ded  raphael: popup: Simulate a back key code when "no" is pressed  [Adhitya Mohan]
-4ef1eba  raphael: Switch to use QTI Health HAL  [UtsavBalar1231]
-a19d4cf  Revert "raphael:overlay: Add configs for Battery Health"  [nato6613]
-
-
-* frameworks/base
-acf3ba0  Camera: allow camera to use power key as shutter  [Danesh M]
-
-
-* frameworks/native
-e2ccee7  Merge "CompositionEngine: always request device composition for the FOD layers" into 11.0  [dennyspb]
+22bbc24  raphael: update blobs from raphael-user 11 RKQ1.200826.002 V12.5.1.0.RFKEUXM  [nato6613]
+ef7a1bb  raphael:Use raphael-firmware for releasetools  [UtsavBalar1231]
 
 
 * kernel/xiaomi/raphael
-9be770f  Revert "WIP:disp: msm: Implement fod dim layer sysfs node"  [nato6613]
+7ec8387  BACKPORT: ext4: optimize file overwrites  [Ritesh Harjani]
+71971dd  f2fs: Enlarge min_fsync_blocks to 20  [Jesse Chan]
 
 
 * vendor/xiaomi/raphael
-57d35a1  raphael: Add missing WFD blobs from MIUI  [Marc Bourgoin]
+9c511cb  raphael: Update Hotword Enrollment blobs from new hentai  [nato6613]
+cd90372  raphael: update blobs from raphael-user 11 RKQ1.200826.002 V12.5.1.0.RFKEUXM  [nato6613]
 
 
 ====================
-     2021-06-09    
-====================
-
-* frameworks/av
-d193057  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
-
-
-* frameworks/base
-c2ebd55  Automatic translation import  [DennySPb]
-764630f  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
-
-
-* kernel/xiaomi/raphael
-ca1236d  initramfs: Pre-patch with Magisk's want_initramfs hack  [Danny Lin]
-25d1260  tty: Fix merge error that caused random reboots on shell  [Adhitya Mohan]
-bccd800  Merge branch 'dev/11.0' into 11.0  [nato6613]
-dc9a9d3  Revert "f2fs: avoid needless checkpoint during fsync"  [nato6613]
-a1857eb4  Revert "f2fs: add trim stop mechanism"  [nato6613]
-
-
-* packages/apps/Launcher3
-c39c3b4  Automatic translation import  [DennySPb]
-
-
-* packages/apps/Settings
-32718cc  Fix typo in device specific features  [DennySPb]
-70682a1  fixup! PowerUsageSummary: cleanup  [DennySPb]
-e0fab67  Automatic translation import  [DennySPb]
-9dff15f  BatteryHealth: Redo how we check for aviability  [DennySPb]
-6dbdb1c  PowerUsageSummary: cleanup  [DennySPb]
-6953669  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
-
-
-* packages/apps/SyberiaSettings
-b9ac804  Automatic translation import  [DennySPb]
-
-
-* vendor/syberia
-4f368cc  v4.7  [DennySPb]
-
-
-====================
-     2021-06-08    
+     2021-07-12    
 ====================
 
 * art
-40a82dc  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/art into HEAD  [DennySPb]
-63cb095  art: Remove madvise tests  [Pranav Vashi]
-cdee7d6  test: Remove art_licensing from madvise.  [Vishalcj17]
-732b287  Add madvising of .odex, .vdex and .art files  [Jagadeesh Pakaravoor]
-107ebf5  make the art thread pool use the exact stack_size  [eric.yan]
+804dc3f  ART: Support kryo485 CPU.  [kondors1995]
 
 
-* bootable/recovery
-09448fe  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/bootable/recovery into HEAD  [DennySPb]
+* bionic
+6304880  Bionic: Support kryo485 CPU  [kondors1995]
 
 
 * build/make
-627f440  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
+4e66b8d  Add kryo485 to known v8* cores  [kondors1995]
 
 
 * build/soong
-07c2651  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/build/soong into HEAD  [DennySPb]
-
-
-* frameworks/base
-d7ba200  Revert "Add switch to select SBC HD by default [1/3]"  [Jens Gulin]
-12599e1  Add madvising of .odex, .vdex and .art files  [Jagadeesh Pakaravoor]
-d792bc4  base: AppLock: Call activityStopped when activity has stopped  [Rituj Beniwal]
-66e34d9  Use SystemUI reboot view also for OTA uncrypt  [Timi Rautamäki]
-
-
-* frameworks/native
-2fdf7eb  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
-
-
-* frameworks/opt/net/ims
-4fb36a4  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/opt/net/ims into HEAD  [DennySPb]
-
-
-* frameworks/opt/net/wifi
-8355735  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD  [DennySPb]
-
-
-* frameworks/opt/telephony
-6c693ba  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPb]
-
-
-* hardware/interfaces
-23e7513  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPb]
-
-
-* libcore
-c1f4760  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/libcore into HEAD  [DennySPb]
-
-
-* packages/apps/Bluetooth
-dc3c758  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPb]
-
-
-* packages/apps/Launcher3
-913cf23  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/Launcher3 into tst  [DennySPb]
-
-
-* packages/apps/Nfc
-369dcce  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPb]
-
-
-* packages/apps/PermissionController
-dbdf03e  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/PackageInstaller into HEAD  [DennySPb]
-
-
-* packages/apps/Settings
-881b1c1  Revert "fuelgauge: add back battery level animation"  [DennySPb]
-09e618a  Revert "Fix crash when going back from battery"  [DennySPb]
-fbb4abc  Merge "team: Add maintainer for Poco F3" into 11.0  [dennyspb]
-
-
-* packages/apps/ThemePicker
-7514923  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/apps/ThemePicker into HEAD  [DennySPb]
-
-
-* packages/providers/DownloadProvider
-4ca83d3  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD  [DennySPb]
-
-
-* packages/services/Telecomm
-71e3a45  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
-
-
-* packages/services/Telephony
-fd974fa  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD  [DennySPb]
-
-
-* system/netd
-a3f8394  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/system/netd into HEAD  [DennySPb]
-
-
-* system/sepolicy
-336cfb4  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPb]
-
-
-* system/update_engine
-12d9466  Merge tag 'android-11.0.0_r38' of https://android.googlesource.com/platform/system/update_engine into HEAD  [DennySPb]
-
-
-====================
-     2021-06-07    
-====================
-
-* frameworks/base
-a48f9ac  Cancel NotificationTimeout alarms when canceling notification  [Henrik Baard]
+b3a75ae  Enable dot product feature for Kryo485 & Kryo585  [raphielscape]
+fac0a79  DNM: remove krait & kryo from arm64 struct  [kondors1995]
+21222c6  Support Qualcomm Kryo 485 CPU variant.  [kondors1995]
+445b1c4  Remove workaround for Qualcomm Kryo 385  [Raphiel Rollerscaperers]
 
 
 * kernel/xiaomi/raphael
-127cbc9  Merge remote-tracking branch 'cunt/android11-base' into dev/11.0  [nato6613]
-0a847a9  Merge tag '1c6db23aa39673433b59146dcc427030b2a7ca33' into android11-stable  [UtsavBalar1231]
-031525b  Merge tag '96dcda419170a94fdb1825bb7e447d617811d733' into android11-stable  [UtsavBalar1231]
-30dd630  Merge tag 'LA.UM.9.1.r1-10200-SMxxx0.0' into android11-base  [UtsavBalar1231]
-cc4166a  Merge remote-tracking branch 'aosp/android-4.14-stable' into android11-stable  [UtsavBalar1231]
-
-
-* system/core
-acfa665  KillZramBackingDevice: Return immediately if backing_dev is none.  [shisiyuan]
+e0dba02  qcacld-3.0: Fix warnings caused by mismatched function parameter types  [Sultan Alsawaf]
+45d8d43  msm: camera: Fix trivial misleading indentation warnings  [Sultan Alsawaf]
+e1e7338  mm: vmpressure: Fix rampant inaccuracies caused by stale data usage  [Sultan Alsawaf]
+d519384  mm: vmpressure: Fix a race that would erroneously clear accumulated data  [Sultan Alsawaf]
+a4bc85b  ASoC: dsp: msm-dts-srs-tm-config: Fix trivial unguarded pr_debug()  [Sultan Alsawaf]
+dc35363  msm: vidc: Fix uninitialized tag_data usage  [Sultan Alsawaf]
+aee7b55  lib/nlattr.c: Fix warning due to incorrect strlen() variable type  [Sultan Alsawaf]
+b0a94c5  ASoC: dsp: amrwb_in: Fix AUDIO_GET_AMRWB_ENC_CONFIG ioctl  [Sultan Alsawaf]
+c5ed3ee  Merge remote-tracking branch 'aosp/android-4.14-stable' into 11.0  [nato6613]
+3220829  Merge 4.14.239 into android-4.14-stable  [Greg Kroah-Hartman]
 
 
 ====================
-     2021-06-06    
+     2021-07-11    
+====================
+
+* kernel/xiaomi/raphael
+4e68c9b  Linux 4.14.239  [Greg Kroah-Hartman]
+c75310b  xen/events: reset active flag for lateeoi events later  [Juergen Gross]
+5f0185c  kthread: prevent deadlock when kthread_mod_delayed_work() races with kthread_cancel_delayed_work_sync()  [Petr Mladek]
+5f7c8a4  kthread_worker: split code for canceling the delayed work timer  [Petr Mladek]
+d63af6c  kfifo: DECLARE_KIFO_PTR(fifo, u64) does not work on arm 32 bit  [Sean Young]
+fb2479d  drm/nouveau: fix dma_address check for CPU/GPU sync  [Christian König]
+4164c07  scsi: sr: Return appropriate error code when disk is ejected  [ManYi Li]
+c5bb560  mm, futex: fix shared futex pgoff on shmem huge page  [Hugh Dickins]
+fc30845  mm/thp: another PVMW_SYNC fix in page_vma_mapped_walk()  [Hugh Dickins]
+3a5f1cd  mm/thp: fix page_vma_mapped_walk() if THP mapped by ptes  [Hugh Dickins]
+329d4fb  mm: page_vma_mapped_walk(): get vma_address_end() earlier  [Hugh Dickins]
+ca054d4  mm: page_vma_mapped_walk(): use goto instead of while (1)  [Hugh Dickins]
+72b2b0d  mm: page_vma_mapped_walk(): add a level of indentation  [Hugh Dickins]
+1c1ea4e  mm: page_vma_mapped_walk(): crossing page table boundary  [Hugh Dickins]
+43d4005  mm: page_vma_mapped_walk(): prettify PVMW_MIGRATION block  [Hugh Dickins]
+3d98b80  mm: page_vma_mapped_walk(): use pmde for *pvmw->pmd  [Hugh Dickins]
+084d41a  mm: page_vma_mapped_walk(): settle PageHuge on entry  [Hugh Dickins]
+66c4888  mm: page_vma_mapped_walk(): use page for pvmw->page  [Hugh Dickins]
+b5acf9a  mm: thp: replace DEBUG_VM BUG with VM_WARN when unmap fails for split  [Yang Shi]
+d5d912c  mm/thp: fix page_address_in_vma() on file THP tails  [Jue Wang]
+4dfa0d6  mm/thp: fix vma_address() if virtual address below file offset  [Hugh Dickins]
+97cd3ba  mm/thp: try_to_unmap() use TTU_SYNC for safe splitting  [Hugh Dickins]
+1decdcd  mm/rmap: use page_not_mapped in try_to_unmap()  [Miaohe Lin]
+a369974  mm/rmap: remove unneeded semicolon in page_not_mapped()  [Miaohe Lin]
+37a4a68  mm: add VM_WARN_ON_ONCE_PAGE() macro  [Alex Shi]
+951fe4b  include/linux/mmdebug.h: make VM_WARN* non-rvals  [Michal Hocko]
+
+
+====================
+     2021-07-10    
 ====================
 
 ====================
-     2021-06-05    
+     2021-07-09    
 ====================
 
-* frameworks/native
-f19b5d6  CompositionEngine: always request device composition for the FOD layers  [daniml3]
+* device/xiaomi/raphael
+947cc0d  raphael: parts: ThermalUtils startService -> initialize  [Astile97]
+6442e2b  raphael: parts: Add switchbar to disable dynamic thermal  [Pranav Vashi]
+4cac5f9  raphael: parts: Remove icon for ThermalActivity pref  [kubersharma001]
+
+
+====================
+     2021-07-08    
+====================
+
+* build/make
+06a0c4e  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
+
+
+* external/arm-optimized-routines
+b1dbd3a  Merge branch 'master' of https://android.googlesource.com/platform/external/arm-optimized-routines into HEAD  [DennySPb]
+
+
+* frameworks/base
+917a024  Automatic translation import  [DennySPb]
+4a024fb  Automatic translation import  [DennySPb]
+dde3585  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+
+
+* hardware/interfaces
+008017f  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPb]
+
+
+* kernel/xiaomi/raphael
+d7dfdef  Merge remote-tracking branch 'jaegeuk/linux-4.14.y' into 11.0  [nato6613]
+
+
+* packages/apps/Bluetooth
+0e51473  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPb]
+
+
+* packages/apps/Contacts
+f2a616b  Merge tag 'android-11.0.0_r39' into staging/lineage-18.1_merge-android-11.0.0_r39  [Kevin F. Haggerty]
+
+
+* packages/apps/Launcher3
+8788fea  Automatic translation import  [DennySPb]
+981b12f  Automatic translation import  [DennySPb]
+
+
+* packages/apps/Nfc
+f953b46  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPb]
+
+
+* packages/apps/Settings
+efce938  Automatic translation import  [DennySPb]
+e9e4814  Automatic translation import  [DennySPb]
+2232474  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
+
+
+* packages/apps/SyberiaSettings
+83ec581  Automatic translation import  [DennySPb]
+823fcf9  Automatic translation import  [DennySPb]
+
+
+* system/bt
+9a01d89  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPb]
+
+
+* system/libhwbinder
+97030ae  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/system/libhwbinder into HEAD  [DennySPb]
+
+
+====================
+     2021-07-07    
+====================
+
+* art
+ac53d37  Merge changes I6d45f738,Iae75b179 into 11.0  [dennyspb]
+
+
+* device/xiaomi/raphael
+acf3ba3   Revert "raphael: Switch to Skia's Vulkan rendering backend"  [Danny Lin]
+0de7587  raphael: Move to Kryo 485 arch  [nato6613]
+
+
+* kernel/xiaomi/raphael
+59410d7  coresight-placeholder: Adapt AMBA id's to sdm845/sm8150  [DennySPb]
+d06172f  msm: kgsl: Omit code for GPUs other than Adreno 640  [Danny Lin]
+cef9c49  coresight: Eliminate coresight in adreno by adding a dummy driver  [Panchajanya1999]
+55620b1  GKI: ARM: dts: msm: disable coresight for msmnile  [Will McVicker]
+bd3c30c  GKI: hwtracing: Add a driver for disabling coresight clocks  [J. Avila]
+eab51b7  f2fs: drop dirty node pages when cp is in error status  [Jaegeuk Kim]
 
 
