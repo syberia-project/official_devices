@@ -1,26 +1,20 @@
 ====================
-     2021-07-10
+     2021-07-16
 ====================
 
 Kernel:
- - Upstream from 4.19-q Linux kernel
+ - Upstream to 4.19.197
+ - Scheduler improvements
+ - Update timings for 60/120 Hz from MIUI 12.5.2
 
 Rom:
- - Merged July android security patch
- - Art improvements
- - Bionic optimization for arm
- - Merge tag 'LA.UM.9.12.r1-12000-SMxx50.0' in HALs
- - Add Launcher icons size
- - Add 3 new Launcher grid sizes
- - Updated translations (huge thanks to all contributors!)
- - Other improvements and fixes under the hood
+ - Fixed Launcher crash when changing icon size
+ - Add Launcher fonts size
 
 Device:
- - Update blobs from MIUI V12.5.2.0.RKHMIXM
- - Add 90 Hz screen refresh rate
- - Switch to QTI Bluetooth stack
- - Fixed microphone low volume in certain instances
- - Import OnePlus audio configs
- - Restore thermal profiles
- - Add back hwui and display props
- - Update fingerpint from redfin
+ - Update Adreno and Vulkan blobs from LA.UM.9.12.r1-10800-SMxx50.0
+ - Update Neural networks and Snapdragon Computer Vision Engine blobs
+ - Update audio configs and improve sound in some apps
+ - Improved DSP-accelerated HDR for Gcam
+ - Update translations
+ - Other fixes under the hood
