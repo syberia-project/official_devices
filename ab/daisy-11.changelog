@@ -1,66 +1,32 @@
 ====================
-     2021-06-18    
-====================
-
-* device/xiaomi/daisy
-dd1634b  daisy: Update build fingerprint to daisy V11.0.20.0  [lupesoltec]
-fff2973  daisy: sepolicy: Fix Sepolicy Denials  [lupesoltec]
-03caaf0  daisy: Enable AOSP low_latency in audio output config  [ShubhamB]
-80ab969  daisy: init: Implement Magiskhide  [GeoPD]
-8d9399e  daisy: drop BUILD_FINGERPRINT  [lupesoltec]
-a9916a5  daisy: init: Override All Build fingerprints  [GeoPD]
-6d6c93b  daisy: audio: Add mixer controls for call screen support  [Anver sadhique]
-207909d  daisy: audio: Remove reset value for ADC MUX  [Vatsal Bucha]
-4bffdf2  daisy: audio: Update missing SPKR and HP combo device usecase path  [Soumya Managoli]
-7494afc  daisy: audio: Add speaker and headphones paths  [pavanc]
-0e2e10a  daisy: audio: fix incall mic with headphones  [Damar131]
-0e53d97  daisy: Fix audio recording distortion  [BealeStBluesBoy]
-
-
-====================
-     2021-06-17    
-====================
-
-* device/xiaomi/daisy
-961fb9f  daisy: audio: Disable ULL mode for speakers  [LuK1337]
-e6b7703  daisy: audio: enable incall music and add incall music profile  [Anver sadhique]
-23fd335  daisy: Update Audio Configs from daisy-user-10-QKQ1.191002.002-V11.0.5.0.QDLMIXM-release-keys  [Tushar Mahajan]
-b6ec9b1  daisy: audio: Add built-in/Back mic and remove TelePhony Rx from primary input  [Shalini Manjunatha]
-91752e7  daisy: audio: Add "Built-In (Back) Mic" to "primary input" sink  [LuK1337]
-0f1afb6  daisy: audio: Enable Stereo channel support for voip over audio path  [Lakshman Chaluvaraju]
-2400d87  daisy: audio: add support for 32/48KHz voip  [Aalique Grahame]
-55fafcd  daisy: audio: Remove surround recording support from audio policy config xml  [Dhananjay Kumar]
-eb499dc  daisy: Boardconfig: disable AUDIO_FEATURE_ENABLED_KPI_OPTIMIZE  [Sultanxda]
-20799f9  daisy: Update qti priv-permission whitelist from LA.UM.8.6.2.r1-06600-89xx.0  [abhinavgupta371]
-95b8b43  daisy: Change how we set the alarm property  [Michael Bestas]
-6a7713d  daisy: rootdir: run sensors daemon as system user instead of root  [Brian Duddie]
-4aef96f  Revert "daisy: cleanup persist permissions"  [lupesoltec]
-7d88599  daisy: rootdir: Add vendor prefix to power_off_alarm service  [Mao Jinlong]
-e866ce3  daisy: rootdir: Add power off alarm service  [Mao Jinlong]
-13a7229  daisy: Fix Drain Issue From msm_irqbalance  [kondors1995]
-8fbb42e  daisy: Include msm_irqbalance_little_big.conf  [Maria Yu]
-68fa407  daisy: manifest: add vendor.qti.hardware.alarm HIDL  [Vachounet]
-a52de95  daisy: Bring back msm_irqbalance service  [ZèD]
-42f1047  daisy: Don't explicitly build configstore@1.0-service  [elektroschmock]
-be4b558  daisy: Build libtinycompress  [solidv]
-
-====================
-     2021-06-16    
+     2021-07-16    
 ====================
 
 ====================
-     2021-06-15    
+     2021-07-15    
+====================
+
+* system/vold
+0919c04  vold: Build exfatprogs & declare support of exFAT.  [Alexander Koskovich]
+
+
+====================
+     2021-07-14    
 ====================
 
 ====================
-     2021-06-14    
+     2021-07-13    
 ====================
 
 ====================
-     2021-06-13    
+     2021-07-12    
 ====================
 
 ====================
-     2021-06-12    
+     2021-07-11    
+====================
+
+====================
+     2021-07-10    
 ====================
 
