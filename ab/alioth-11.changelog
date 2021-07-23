@@ -1,20 +1,27 @@
 ====================
-     2021-07-16
+     2021-07-23
 ====================
 
 Kernel:
- - Upstream to 4.19.197
- - Scheduler improvements
- - Update timings for 60/120 Hz from MIUI 12.5.2
+ - Upstream to 4.19.198
+ - Upstream from 4.19-q Linux kernel
+ - Fixed "small pictures" bug for messengers
 
 Rom:
- - Fixed Launcher crash when changing icon size
- - Add Launcher fonts size
+ - Merge tag 'LA.QSSI.11.0.r1-12600-qssi.0' in some repo
+ - Add Wakelock Blocker
+ - Add 3 new VoLTE icons
+ - Add Radio info into "About phone"
+ - Other improvements and fixes under the hood
 
 Device:
- - Update Adreno and Vulkan blobs from LA.UM.9.12.r1-10800-SMxx50.0
- - Update Neural networks and Snapdragon Computer Vision Engine blobs
- - Update audio configs and improve sound in some apps
- - Improved DSP-accelerated HDR for Gcam
- - Update translations
- - Other fixes under the hood
+ - Build Open Camera instead of Snap
+ - Update adreno drivers to the latest QSSI(12100)/MANNAR(05700)
+ - Update GPS blobs from LA.UM.9.12.r1-10800-SMxx50.0
+ - Update audio blobs and configs from MIUI 12.5.2.0
+ - Update all other blobs from LA.UM.9.12.r1-10800-SMxx50.0
+ - Add Touch Polling Rate support in Device Settings
+ - Auto brightness improvements
+ - Add background blurring
+ - Refactor haptic vibration for alioth
+ - Update wifi/tethering overlays
