@@ -1,98 +1,194 @@
 ====================
-     2021-07-19    
+     2021-07-28    
 ====================
 
+* external/asus/stichimage
+27b3266  stitchimage: Enable dexpreopt  [Albert I]
+6e79705  Remove Firebase from prebuilt manifest  [Pranav Vashi]
+8e7ecef  Update prebuilt apps  [Laker]
+
+
+* frameworks/av
+4456a04  mp3dec: Ignore integer overflow in pvmp3_st_intensity  [Neelkamal Semwal]
+f528a39  C2SoftMp3Dec: Treat timestamps as signed values  [Harish Mahendrakar]
+
+
 * frameworks/base
-43b7d21  Keyguard: Allow disabling fingerprint wake-and-unlock  [Steve Kondik]
-9206b79  SystemUI: add SyberiaSettingsService  [maxwen]
-9dc38db  DataSwitchTile: Improve the code  [Ido Ben-Hur]
-7b5e9e4  Drop the O_NOFOLLOW flag.  [Nicolas Geoffray]
+a0ce0e5  Automatic translation import  [DennySPb]
+77c5210  SystemUI: Bring back ic_qs_bluetooth_connected.xml  [LuK1337]
+18001e3  ZipUtils: use FileChannel#size  [Jooyung Han]
+66e14ce  core: Allow non-market apps installation by default  [dkati]
+ab962b2  LightsService: Mute an annoying error message  [spezi77]
+77bbd49  GpsNetInitiatedHandler: Disable more debugging  [Chet Kener]
+d4b8774  SystemUI: Reduce padding between clock and notification area  [maxwen]
+8ee75a8  ActivityThread: Remove Failed to find provider info logspam  [Immanuel Raj]
+33b569b  [DO NOT MERGE] VibratorService: bypass AppOps check  [Park Ju Hyung]
+ed65fad  Revert "DO NOT MERGE Disable privacy indicators"  [Joey Huab]
+c795149  SystemUI: VPN tile: Collapse panel when opening app  [George Zacharia]
+04474df  settingslib: Tile: Add more checks if mMetaData is null.  [spezi77]
+267b110  systemui: add alpha to the media icon  [El Dainosor]
+b507e7c  SystemUI: Redesign Media Player View  [hpnightowl]
+4bb2e7e  fonts: Fix reference to Noto Sans Javanese  [Albert I]
+cd874af  core: Wipe package cache on upgrade even on user build  [Albert I]
+3d814b3  Merge changes Iabfd8ab0,I7712ad41,I0f6fe013,I72ef7f68,I59780d33, ... into 11.0  [dennyspb]
+d21bc1f  Merge "Drop the O_NOFOLLOW flag." into 11.0  [dennyspb]
+81b1cc8  NotificationHeaderViewWrapper: use app icon instead of notification icon small  [Dil3mm4]
+7676961  Make colored Statusbar Icons optional [1/2]  [spkal01]
+b5c5854  StatusBarIconView: use app icons instead of provided notif one  [Dil3mm4]
+866a0da  Add toggle to completely hide status bar on lockscreen [1/2]  [Pranav Vashi]
+232e494  base: Add more Switch styles [1/3]  [TikkiX2]
+81ed5e2  base: Introduce Switch styles [1/3]  [SKULSHADY]
+727cc04  Custom Rounded Corner preference [1/2]  [Kshitij Gupta]
+8a76085  Rounded Corner styles [1/4]  [Pranav Vashi]
+0232aa1  base: Add Wakelock Blocker [1/2]  [maxwen]
 
 
 * frameworks/native
-0af5fac  Properly scale touch input window through resolution changes  [Aaron Kling]
-
-
-* frameworks/opt/telephony
-ede1528  Merge tag 'LA.QSSI.11.0.r1-12600-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPb]
-
-
-* packages/apps/Dialer
-4955200  Dialer: set statusbar color same as activity background  [Timi Rautamäki]
-0081e7b  Dialer: improve search bar  [Timi Rautamäki]
-b90168d  Dialer: update ripple color  [Timi Rautamäki]
-7f595d9  Dialer: update dark theme colors  [Timi Rautamäki]
-6d113bf  Dialer: correct the expanded search bar height  [Timi Rautamäki]
+125d966  Check if /dev/input exists before accessing the path  [Usama Arif]
+1cba2b4  Use std::filesystem for input event devices scan.  [Chris Ye]
 
 
 * packages/apps/Launcher3
-9403950  Launcher3: Update RU translation  [blinoff82]
-0dd8973  Revert "Launcher3: make all apps grid independent from workspace"  [blinoff82]
-fb18b47  Launcher3: Fix crash in StaggeredWorkspaceAnim  [Pranav Vashi]
-ca70fe0  Add missing default workspace changes in LauncherFiles  [Michael Bestas]
-a99d141  Disable MULTI_DB_GRID_MIRATION_ALGO  [Michael Bestas]
-13e6c36  Launcher3: restart Launcher on changing font size  [Omkar Chandorkar]
-561bcb8  Launcher3: Delink font size settings  [Pranav Vashi]
-4014dd7  Launcher3: Use custom seekbar for icon size  [Pranav Vashi]
-f65bac5  Launcher3: Add option to change icon size  [hundeva]
-538854e  Launcher3: Set 5x6 grid to 5 hotseat icons  [Sam Mortimer]
-beab4c2  Launcher3: Add 5x6, 5x7 and 6x6 default workspaces  [dwardo]
-472d85d  Launcher3: Replace 4x4 grid option with a 4x5 one  [Arne Coucheron]
-cfd6462  Revert grid and icon size commits  [DennySPb]
+a9ae071  Automatic translation import  [DennySPb]
 
 
 * packages/apps/Settings
-a121d6d  security: Add fingerprint wake unlock mode list preference  [ganeshi4u]
+d974eb6  Automatic translation import  [DennySPb]
+09114ce  Settings: Add more Switch styles [2/3]  [TikkiX2]
+
+
+* packages/apps/SyberiaSettings
+7056e81  Automatic translation import  [DennySPb]
+b576ba4  Rounded Corner styles [4/4]  [Pranav Vashi]
+3d00fc2  Custom Rounded Corner preference [2/2]  [Pranav Vashi]
+d2ad03c  SyberiaSettings: Make colored StatusBar Icons optional [2/2]  [spkal01]
+c0af819  Add toggle to completely hide status bar on lockscreen [2/2]  [Pranav]
+b1b8213  Merge "SyberiaSettings: Add Wakelock Blocker [2/2]" into 11.0  [dennyspb]
 
 
 * packages/services/Telecomm
-d31ee81  Merge tag 'LA.QSSI.11.0.r1-12600-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm into HEAD  [DennySPb]
+7364a16  Merge tag 'LA.QSSI.11.0.r1-12700-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm into HEAD  [DennySPb]
 
 
 * system/core
-a1d8080  fs_mgr: try tune2fs for casefolding on /data only  [Jaegeuk Kim]
-df9a9b7  fastboot: f2fs: handle return code correctly  [Jaegeuk Kim]
-8b1231e  fastboot: add casefold/projid options  [Jaegeuk Kim]
-0624578  support f2fs casefolding formatting tool  [Jaegeuk Kim]
+509f3e1  fiemap: add fsync after write split file name  [lijiazi]
+41fdf74  libfiemap: Fix removal of corrupted split fiemaps.  [David Anderson]
 
 
 * vendor/qcom/opensource/commonsys/bluetooth_ext
-9016619  Merge tag 'LA.QSSI.11.0.r1-12600-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/bluetooth_ext into HEAD  [DennySPb]
+4cfe80c  Merge tag 'LA.QSSI.11.0.r1-12700-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/bluetooth_ext into HEAD  [DennySPb]
 
 
 * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
-7759d1b  Merge tag 'LA.QSSI.11.0.r1-12600-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/packages/apps/Bluetooth into HEAD  [DennySPb]
+359f08e  Merge tag 'LA.QSSI.11.0.r1-12700-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/packages/apps/Bluetooth into HEAD  [DennySPb]
 
 
 * vendor/qcom/opensource/commonsys/system/bt
-9318881  Merge tag 'LA.QSSI.11.0.r1-12600-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/system/bt into HEAD  [DennySPb]
+36b7819  Merge tag 'LA.QSSI.11.0.r1-12700-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/system/bt into HEAD  [DennySPb]
 
 
 ====================
-     2021-07-18    
+     2021-07-27    
+====================
+
+* packages/apps/Dialer
+a473cb3  Dialer: Redesign according to Nezuko UI.  [Maitreya29]
+
+
+* packages/apps/Etar
+250b123  Merge https://github.com/LineageOS/android_packages_apps_Etar into HEAD  [DennySPb]
+
+
+* packages/apps/Settings
+84b43b9  Settings: Introduce Switch styles [2/3]  [SKULSHADY]
+
+
+* vendor/syberia
+72e190e  vendor: themes: Add more Switch styles [3/3]  [TikkiX2]
+44cfe69  vendor: Introduce Switch styles [3/3]  [Agent24015]
+e91f9c5  Rounded Corner styles [3/4]  [Pranav Vashi]
+44e1055  Rounded Corner styles [2/4]  [Pranav Vashi]
+
+
+====================
+     2021-07-26    
 ====================
 
 ====================
-     2021-07-17    
+     2021-07-25    
 ====================
 
 ====================
-     2021-07-16    
+     2021-07-24    
 ====================
 
-====================
-     2021-07-15    
-====================
+* frameworks/base
+580a6cb  Add Vivo Vowifi Icon [1/2]  [spkal01]
+a22a44a  SystemUI: Add Vivo X60 Pro VoLTE Icon [1/2]  [AshutoshSundresh]
+d7a92b8  SystemUI: Add 2 more VoLTE icons [1/2]  [Advaith Bhat]
+b667304  Keyguard: Allow disabling fingerprint wake-and-unlock  [Steve Kondik]
+566537c  SystemUI: add SyberiaSettingsService  [maxwen]
+
+
+* packages/apps/Dialer
+d0de5b0  CallLogFragment: Move Un-registering call log observer to destroy  [Varun Date]
+
+
+* packages/apps/Settings
+bd31e20  Settings: Expose radio info (*#*#4636#*#*)  [xyyx]
+
+
+* packages/apps/SyberiaSettings
+4166c61  SyberiaSettings: Add Vivo Vowifi Icon [2/2]  [spkal01]
+678ca2e  SyberiaSettings: Add Vivo X60 Pro VoLTE Icon [2/2]  [Joker-V2]
+d4a5453  SyberiaSettings: Add 2 more VoLTE Icons [2/2]  [Joker-V2]
+
+
+* vendor/syberia
+9ccdbe3  Sync backuptool scripts with LOS  [DennySPb]
+
 
 ====================
-     2021-07-14    
+     2021-07-23    
 ====================
 
+* packages/apps/SyberiaSettings
+91754ed  SyberiaSettings: Add Wakelock Blocker [2/2]  [Alex Cruz]
+
+
+* system/core
+df33281  libprocessgroup: Do not remove uid cgroups directory  [Li Li]
+
+
+* vendor/syberia
+6387e87  backuptool_ab: Use mv instead of cp for restore step  [razorloves]
+
+
 ====================
-     2021-07-13    
+     2021-07-22    
 ====================
 
-* system/sepolicy
-febc4dd  sepolicy: Fix some ActivityManager denials  [Jason Edson]
+* packages/apps/Messaging
+d7d079f  Messaging: drop ugly actionbar colors  [blinoff82]
+ab698be  Messaging: restore AOSP colors for selected messages  [Timi Rautamäki]
+3d7fa20  Messaging: Remove unused resources  [Michael Bestas]
+beca422  Messaging: Update cellbroadcast package name  [z3DD3r]
+2f13c4f  Messaging: Contact Colors  [Blaise]
+
+
+* packages/services/Telecomm
+d812868  Merge 5b11c3672e911798eb8fac5c6e23151bc3df6cc0 on remote branch  [Linux Build Service Account]
+
+
+* vendor/qcom/opensource/commonsys/bluetooth_ext
+e5a3cb0  Merge 536e5deb6d9caf1da054b316343bd7079ad2b3f4 on remote branch  [Linux Build Service Account]
+
+
+* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
+66cb75c  Merge 8e8bc78573e7ee6bf39ca6ba25e5d61ae5d5b097 on remote branch  [Linux Build Service Account]
+
+
+* vendor/qcom/opensource/commonsys/system/bt
+2d50b96  Merge ba7a9f9f00e2e77e821e055e06056714826ea33c on remote branch  [Linux Build Service Account]
 
 
