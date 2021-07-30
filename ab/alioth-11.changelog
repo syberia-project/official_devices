@@ -1,27 +1,36 @@
 ====================
-     2021-07-23
+     2021-07-30
 ====================
 
 Kernel:
- - Upstream to 4.19.198
+ - Upstream to 4.19.199
  - Upstream from 4.19-q Linux kernel
- - Fixed "small pictures" bug for messengers
 
 Rom:
- - Merge tag 'LA.QSSI.11.0.r1-12600-qssi.0' in some repo
- - Add Wakelock Blocker
- - Add 3 new VoLTE icons
- - Add Radio info into "About phone"
- - Other improvements and fixes under the hood
+ - Add Rounded Corner styles
+ - Add Switch styles
+ - Add colored statusbar icons
+ - Add old style mobile data indicators
+ - Add 2 vowifi icons
+ - Redesigned Media player view in statusbar
+ - Add toggle to hide status bar on lockscreen
+ - Update Etar and Messaging
+ - Update Asus stitchimage
+ - Merge tag 'LA.QSSI.11.0.r1-12700-qssi.0' into some repo
+ - User interface improvements
+ - Fixed appdrawer grid size 
+ - Fixed blur not always displayed
+ - Automatic translation import
+ - Other fixes under the hood
 
 Device:
- - Build Open Camera instead of Snap
- - Update adreno drivers to the latest QSSI(12100)/MANNAR(05700)
- - Update GPS blobs from LA.UM.9.12.r1-10800-SMxx50.0
- - Update audio blobs and configs from MIUI 12.5.2.0
- - Update all other blobs from LA.UM.9.12.r1-10800-SMxx50.0
- - Add Touch Polling Rate support in Device Settings
- - Auto brightness improvements
- - Add background blurring
- - Refactor haptic vibration for alioth
- - Update wifi/tethering overlays
+ - Introduce Pocket Mode
+ - Show accent ring on the front camera cutout
+ - Sync Wi-Fi config with stock MIUI 12.5.3
+ - Import Network stack overlays
+ - Update QTI thermal service
+ - Update network attributes overlay
+ - Import stock config for tcp buffers
+ - Disable Bluetooth absolute volume by default
+ - Fixed bug with default dialer on vanilla builds
+ - Fixed OK Google
