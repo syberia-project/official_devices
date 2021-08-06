@@ -1,36 +1,22 @@
 ====================
-     2021-07-30
+     2021-08-06
 ====================
 
 Kernel:
- - Upstream to 4.19.199
+ - Upstream to 4.19.200
  - Upstream from 4.19-q Linux kernel
 
 Rom:
- - Add Rounded Corner styles
- - Add Switch styles
- - Add colored statusbar icons
- - Add old style mobile data indicators
- - Add 2 vowifi icons
- - Redesigned Media player view in statusbar
- - Add toggle to hide status bar on lockscreen
- - Update Etar and Messaging
- - Update Asus stitchimage
- - Merge tag 'LA.QSSI.11.0.r1-12700-qssi.0' into some repo
- - User interface improvements
- - Fixed appdrawer grid size 
- - Fixed blur not always displayed
- - Automatic translation import
- - Other fixes under the hood
+ - August security patch "android-11.0.0_r40"
+ - Add Lottie animations for subSettings
+ - Add Android S clocks
 
 Device:
- - Introduce Pocket Mode
- - Show accent ring on the front camera cutout
- - Sync Wi-Fi config with stock MIUI 12.5.3
- - Import Network stack overlays
- - Update QTI thermal service
- - Update network attributes overlay
- - Import stock config for tcp buffers
- - Disable Bluetooth absolute volume by default
- - Fixed bug with default dialer on vanilla builds
- - Fixed OK Google
+ - Fixed accent ring halo for front camera
+ - Fixes for audio mixer paths
+ - Update blobs from LA.UM.9.12.r1-11500-SMxx50.0
+ - Update audio policy and routing for VoIP
+ - Fixed mic issues in apps like WhatsApp
+ - Enabled 6 GHz Wi-Fi
+ - Resolved sepolicy denials
+ - Update redfin fingerprint
