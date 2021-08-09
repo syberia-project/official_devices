@@ -1,186 +1,154 @@
 ====================
-     2021-07-13    
+     2021-08-09    
 ====================
 
 * device/xiaomi/raphael
-22bbc24  raphael: update blobs from raphael-user 11 RKQ1.200826.002 V12.5.1.0.RFKEUXM  [nato6613]
-ef7a1bb  raphael:Use raphael-firmware for releasetools  [UtsavBalar1231]
+51427f5  2  [nato6613]
+b91fd24  raphael:Build thermal v2.0  [PIPIPIG233666]
+bcf68d0  thermal: rebrand to xiaomi_msmnile  [Adhitya Mohan]
+6586917  sm8150-common: Import pixel thermal hal  [Francescodario Cuzzocrea]
+6b8e2ba   rootdir: Make fastrpc_shell_3 publicly available  [dianlujitao]
+655adad  raphael: update grapfics blobs from LA.UM.9.1.r1-10200-SMxxx0.0  [nato6613]
 
 
 * kernel/xiaomi/raphael
-7ec8387  BACKPORT: ext4: optimize file overwrites  [Ritesh Harjani]
-71971dd  f2fs: Enlarge min_fsync_blocks to 20  [Jesse Chan]
-
-
-* vendor/xiaomi/raphael
-9c511cb  raphael: Update Hotword Enrollment blobs from new hentai  [nato6613]
-cd90372  raphael: update blobs from raphael-user 11 RKQ1.200826.002 V12.5.1.0.RFKEUXM  [nato6613]
+2c7d553  raphael_defconfig: Move to Full LTO  [nato6613]
+556da89  Merge branch 'android-4.14-stable' of https://github.com/aosp-mirror/kernel_common into 11.0  [nato6613]
+5bd2299  Merge remote-tracking branch 'jaegeuk/linux-4.14.y' into 11.0  [nato6613]
+6c5bc69  ANDROID: staging: ion: move buffer kmap from begin/end_cpu_access()  [Hridya Valsaraju]
 
 
 ====================
-     2021-07-12    
-====================
-
-* art
-804dc3f  ART: Support kryo485 CPU.  [kondors1995]
-
-
-* bionic
-6304880  Bionic: Support kryo485 CPU  [kondors1995]
-
-
-* build/make
-4e66b8d  Add kryo485 to known v8* cores  [kondors1995]
-
-
-* build/soong
-b3a75ae  Enable dot product feature for Kryo485 & Kryo585  [raphielscape]
-fac0a79  DNM: remove krait & kryo from arm64 struct  [kondors1995]
-21222c6  Support Qualcomm Kryo 485 CPU variant.  [kondors1995]
-445b1c4  Remove workaround for Qualcomm Kryo 385  [Raphiel Rollerscaperers]
-
-
-* kernel/xiaomi/raphael
-e0dba02  qcacld-3.0: Fix warnings caused by mismatched function parameter types  [Sultan Alsawaf]
-45d8d43  msm: camera: Fix trivial misleading indentation warnings  [Sultan Alsawaf]
-e1e7338  mm: vmpressure: Fix rampant inaccuracies caused by stale data usage  [Sultan Alsawaf]
-d519384  mm: vmpressure: Fix a race that would erroneously clear accumulated data  [Sultan Alsawaf]
-a4bc85b  ASoC: dsp: msm-dts-srs-tm-config: Fix trivial unguarded pr_debug()  [Sultan Alsawaf]
-dc35363  msm: vidc: Fix uninitialized tag_data usage  [Sultan Alsawaf]
-aee7b55  lib/nlattr.c: Fix warning due to incorrect strlen() variable type  [Sultan Alsawaf]
-b0a94c5  ASoC: dsp: amrwb_in: Fix AUDIO_GET_AMRWB_ENC_CONFIG ioctl  [Sultan Alsawaf]
-c5ed3ee  Merge remote-tracking branch 'aosp/android-4.14-stable' into 11.0  [nato6613]
-3220829  Merge 4.14.239 into android-4.14-stable  [Greg Kroah-Hartman]
-
-
-====================
-     2021-07-11    
+     2021-08-08    
 ====================
 
 * kernel/xiaomi/raphael
-4e68c9b  Linux 4.14.239  [Greg Kroah-Hartman]
-c75310b  xen/events: reset active flag for lateeoi events later  [Juergen Gross]
-5f0185c  kthread: prevent deadlock when kthread_mod_delayed_work() races with kthread_cancel_delayed_work_sync()  [Petr Mladek]
-5f7c8a4  kthread_worker: split code for canceling the delayed work timer  [Petr Mladek]
-d63af6c  kfifo: DECLARE_KIFO_PTR(fifo, u64) does not work on arm 32 bit  [Sean Young]
-fb2479d  drm/nouveau: fix dma_address check for CPU/GPU sync  [Christian König]
-4164c07  scsi: sr: Return appropriate error code when disk is ejected  [ManYi Li]
-c5bb560  mm, futex: fix shared futex pgoff on shmem huge page  [Hugh Dickins]
-fc30845  mm/thp: another PVMW_SYNC fix in page_vma_mapped_walk()  [Hugh Dickins]
-3a5f1cd  mm/thp: fix page_vma_mapped_walk() if THP mapped by ptes  [Hugh Dickins]
-329d4fb  mm: page_vma_mapped_walk(): get vma_address_end() earlier  [Hugh Dickins]
-ca054d4  mm: page_vma_mapped_walk(): use goto instead of while (1)  [Hugh Dickins]
-72b2b0d  mm: page_vma_mapped_walk(): add a level of indentation  [Hugh Dickins]
-1c1ea4e  mm: page_vma_mapped_walk(): crossing page table boundary  [Hugh Dickins]
-43d4005  mm: page_vma_mapped_walk(): prettify PVMW_MIGRATION block  [Hugh Dickins]
-3d98b80  mm: page_vma_mapped_walk(): use pmde for *pvmw->pmd  [Hugh Dickins]
-084d41a  mm: page_vma_mapped_walk(): settle PageHuge on entry  [Hugh Dickins]
-66c4888  mm: page_vma_mapped_walk(): use page for pvmw->page  [Hugh Dickins]
-b5acf9a  mm: thp: replace DEBUG_VM BUG with VM_WARN when unmap fails for split  [Yang Shi]
-d5d912c  mm/thp: fix page_address_in_vma() on file THP tails  [Jue Wang]
-4dfa0d6  mm/thp: fix vma_address() if virtual address below file offset  [Hugh Dickins]
-97cd3ba  mm/thp: try_to_unmap() use TTU_SYNC for safe splitting  [Hugh Dickins]
-1decdcd  mm/rmap: use page_not_mapped in try_to_unmap()  [Miaohe Lin]
-a369974  mm/rmap: remove unneeded semicolon in page_not_mapped()  [Miaohe Lin]
-37a4a68  mm: add VM_WARN_ON_ONCE_PAGE() macro  [Alex Shi]
-951fe4b  include/linux/mmdebug.h: make VM_WARN* non-rvals  [Michal Hocko]
+30311cd  Merge 4.14.243 into android-4.14-stable  [Greg Kroah-Hartman]
+46914f9  Linux 4.14.243  [Greg Kroah-Hartman]
+f9143be  spi: mediatek: Fix fifo transfer  [Guenter Roeck]
+be23195  Revert "watchdog: iTCO_wdt: Account for rebooting on second timeout"  [Greg Kroah-Hartman]
+ff7f4da  KVM: Use kvm_pfn_t for local PFN variable in hva_to_pfn_remapped()  [Sean Christopherson]
+46d75ff  KVM: do not allow mapping valid but non-reference-counted pages  [Nicholas Piggin]
+ac8ce7e  KVM: do not assume PTE is writable after follow_pfn  [Paolo Bonzini]
+25ef872  Revert "Bluetooth: Shutdown controller after workqueues are flushed or cancelled"  [Greg Kroah-Hartman]
+9ffd108  net: Fix zero-copy head len calculation.  [Pravin B Shelar]
+5bfc9b4  qed: fix possible unpaired spin_{un}lock_bh in _qed_mcp_cmd_and_union()  [Jia He]
+ac1f88d  r8152: Fix potential PM refcount imbalance  [Takashi Iwai]
+0e4c9ad  regulator: rt5033: Fix n_voltages settings for BUCK and LDO  [Axel Lin]
+bc75bb2  btrfs: mark compressed range uptodate only if all bio succeed  [Goldwyn Rodrigues]
 
 
 ====================
-     2021-07-10    
+     2021-08-07    
 ====================
 
+* frameworks/base
+de5957a  SystemUI: Add time refresh capabilities for S clock controllers  [Joey Huab]
+f849489  layout: android-s-clock: remove drop shadows  [Chenyang Zhong]
+d6d015c  AndroidSClockController: set clock text color based on wallpapers  [Chenyang Zhong]
+447c0b6  Add Android S Clocks[SQUASHED]  [TikkiTikki]
+33af3ac  Merge "Add support to Slice in ClockPlugin" into 11.0  [blinov.in]
+1bf3ef1  Merge "Add support to see if there are visible notifications in ClockPlugin" into 11.0  [blinov.in]
+
+
 ====================
-     2021-07-09    
+     2021-08-06    
 ====================
 
-* device/xiaomi/raphael
-947cc0d  raphael: parts: ThermalUtils startService -> initialize  [Astile97]
-6442e2b  raphael: parts: Add switchbar to disable dynamic thermal  [Pranav Vashi]
-4cac5f9  raphael: parts: Remove icon for ThermalActivity pref  [kubersharma001]
+* kernel/xiaomi/raphael
+7b4893b  Merge branch 'android11-base' of https://github.com/UtsavBalar1231/kernel_xiaomi_raphael into 11.0  [nato6613]
+79a989e  f2fs: extent cache: support unaligned extent  [Chao Yu]
+5def86b  f2fs: Kconfig: clean up config options about compression  [Tiezhu Yang]
 
 
 ====================
-     2021-07-08    
+     2021-08-05    
 ====================
 
 * build/make
-06a0c4e  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
-
-
-* external/arm-optimized-routines
-b1dbd3a  Merge branch 'master' of https://android.googlesource.com/platform/external/arm-optimized-routines into HEAD  [DennySPb]
+2031215  Merge tag 'android-11.0.0_r40' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
 
 
 * frameworks/base
-917a024  Automatic translation import  [DennySPb]
-4a024fb  Automatic translation import  [DennySPb]
-dde3585  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+4d6dcdb  Merge tag 'android-11.0.0_r40' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
 
 
-* hardware/interfaces
-008017f  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPb]
+* frameworks/opt/telephony
+e8587a9  Merge tag 'android-11.0.0_r40' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPb]
 
 
 * kernel/xiaomi/raphael
-d7dfdef  Merge remote-tracking branch 'jaegeuk/linux-4.14.y' into 11.0  [nato6613]
-
-
-* packages/apps/Bluetooth
-0e51473  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPb]
-
-
-* packages/apps/Contacts
-f2a616b  Merge tag 'android-11.0.0_r39' into staging/lineage-18.1_merge-android-11.0.0_r39  [Kevin F. Haggerty]
-
-
-* packages/apps/Launcher3
-8788fea  Automatic translation import  [DennySPb]
-981b12f  Automatic translation import  [DennySPb]
-
-
-* packages/apps/Nfc
-f953b46  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPb]
+2b73949  f2fs: reduce the scope of setting fsck tag when de->name_len is zero  [Yangtao Li]
+b264614  f2fs: fix to stop filesystem update once CP failed  [Chao Yu]
+d0f1e44  f2fs: introduce discard_unit mount option  [Chao Yu]
+cb0932e  f2fs: fix min_seq_blocks can not make sense in some scenes.  [Laibin Qiu]
+40e31d5  f2fs: fix to force keeping write barrier for strict fsync mode  [Chao Yu]
+e4de1ad  f2fs: fix wrong checkpoint_changed value in f2fs_remount()  [Chao Yu]
+94f52ee  f2fs: show sbi status in debugfs/f2fs/status  [Jaegeuk Kim]
+a1e8450  f2fs: turn back remapped address in compressed page endio  [Daeho Jeong]
+45f8923  f2fs: change fiemap way in printing compression chunk  [Daeho Jeong]
+b76b3c3  f2fs: do not submit NEW_ADDR to read node block  [Jaegeuk Kim]
+2befda0  f2fs: compress: remove unneeded read when rewrite whole cluster  [Fengnan Chang]
+5d67c93  Merge 4.14.242 into android-4.14-stable  [Greg Kroah-Hartman]
+94cb1fe  Linux 4.14.242  [Greg Kroah-Hartman]
+c925d06  Revert "perf map: Fix dso->nsinfo refcounting"  [Arnaldo Carvalho de Melo]
+af3493a  can: hi311x: fix a signedness bug in hi3110_cmd()  [Dan Carpenter]
+6846170  sis900: Fix missing pci_disable_device() in probe and remove  [Wang Hai]
+b5c7e5b  tulip: windbond-840: Fix missing pci_disable_device() in probe and remove  [Wang Hai]
+1ad35d7  sctp: fix return value check in __sctp_rcv_asconf_lookup  [Marcelo Ricardo Leitner]
+766807b  net/mlx5: Fix flow table chaining  [Maor Gottlieb]
+f3f6b1e  net: llc: fix skb_over_panic  [Pavel Skripkin]
+3af1c18  mlx4: Fix missing error code in mlx4_load_one()  [Jiapeng Chong]
+cf76aa1  tipc: fix sleeping in tipc accept routine  [Hoang Le]
+37fb1aa  netfilter: nft_nat: allow to specify layer 4 protocol NAT only  [Pablo Neira Ayuso]
+d510362  netfilter: conntrack: adjust stop timestamp to real expiry value  [Florian Westphal]
+c788a29  cfg80211: Fix possible memory leak in function cfg80211_bss_update  [Nguyen Dinh Phi]
+f51e522  x86/asm: Ensure asm/proto.h can be included stand-alone  [Jan Kiszka]
+546b6dc  nfc: nfcsim: fix use after free during module unload  [Krzysztof Kozlowski]
+0be68b8  NIU: fix incorrect error return, missed in previous revert  [Paul Jakma]
+27be2b5  can: esd_usb2: fix memory leak  [Pavel Skripkin]
+ad3f586  can: ems_usb: fix memory leak  [Pavel Skripkin]
+9434410  can: usb_8dev: fix memory leak  [Pavel Skripkin]
+8c85c00  can: mcba_usb_start(): add missing urb->transfer_dma initialization  [Pavel Skripkin]
+919c9a0  can: raw: raw_setsockopt(): fix raw_rcv panic for sock UAF  [Ziyang Xuan]
+bed6296  ocfs2: issue zeroout to EOF blocks  [Junxiao Bi]
+97bb422  ocfs2: fix zero out valid data  [Junxiao Bi]
+5e6cfcc  x86/kvm: fix vcpu-id indexed array sizes  [Juergen Gross]
+b2ac545  gro: ensure frag0 meets IP header alignment  [Eric Dumazet]
+2789bc0  virtio_net: Do not pull payload in skb->head  [Eric Dumazet]
+316f526  ARM: dts: versatile: Fix up interrupt controller node names  [Sudeep Holla]
+b744d40  hfs: add lock nesting notation to hfs_find_init  [Desmond Cheong Zhi Xi]
+7aefafe  hfs: fix high memory mapping in hfs_bnode_read  [Desmond Cheong Zhi Xi]
+6004efa  hfs: add missing clean-up in hfs_fill_super  [Desmond Cheong Zhi Xi]
+43b699d  sctp: move 198 addresses from unusable to private scope  [Xin Long]
+e7d0a26  net: annotate data race around sk_ll_usec  [Eric Dumazet]
+0b38430  net/802/garp: fix memleak in garp_request_join()  [Yang Yingliang]
+4d565fc  net/802/mrp: fix memleak in mrp_request_join()  [Yang Yingliang]
+ad7ae9e  workqueue: fix UAF in pwq_unbound_release_workfn()  [Yang Yingliang]
+af3e2b8  af_unix: fix garbage collect vs MSG_PEEK  [Miklos Szeredi]
+eee65a1  net: split out functions related to registering inflight socket files  [Jens Axboe]
+7b6b8db3  KVM: x86: determine if an exception has an error code only when injecting it.  [Maxim Levitsky]
+53e61d6  selftest: fix build error in tools/testing/selftests/vm/userfaultfd.c  [Greg Kroah-Hartman]
 
 
 * packages/apps/Settings
-efce938  Automatic translation import  [DennySPb]
-e9e4814  Automatic translation import  [DennySPb]
-2232474  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
+499ca15  Merge tag 'android-11.0.0_r40' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
 
 
-* packages/apps/SyberiaSettings
-83ec581  Automatic translation import  [DennySPb]
-823fcf9  Automatic translation import  [DennySPb]
-
-
-* system/bt
-9a01d89  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPb]
-
-
-* system/libhwbinder
-97030ae  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/system/libhwbinder into HEAD  [DennySPb]
+* packages/services/Telephony
+167a760  Merge tag 'android-11.0.0_r40' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD  [DennySPb]
 
 
 ====================
-     2021-07-07    
+     2021-08-04    
 ====================
 
-* art
-ac53d37  Merge changes I6d45f738,Iae75b179 into 11.0  [dennyspb]
+* frameworks/base
+3f2a088  Add support to Slice in ClockPlugin  [TikkiTikki]
+3fe1c82  Add support to see if there are visible notifications in ClockPlugin  [TikkiTikki]
 
 
-* device/xiaomi/raphael
-acf3ba3   Revert "raphael: Switch to Skia's Vulkan rendering backend"  [Danny Lin]
-0de7587  raphael: Move to Kryo 485 arch  [nato6613]
-
-
-* kernel/xiaomi/raphael
-59410d7  coresight-placeholder: Adapt AMBA id's to sdm845/sm8150  [DennySPb]
-d06172f  msm: kgsl: Omit code for GPUs other than Adreno 640  [Danny Lin]
-cef9c49  coresight: Eliminate coresight in adreno by adding a dummy driver  [Panchajanya1999]
-55620b1  GKI: ARM: dts: msm: disable coresight for msmnile  [Will McVicker]
-bd3c30c  GKI: hwtracing: Add a driver for disabling coresight clocks  [J. Avila]
-eab51b7  f2fs: drop dirty node pages when cp is in error status  [Jaegeuk Kim]
-
+====================
+     2021-08-03    
+====================
 
