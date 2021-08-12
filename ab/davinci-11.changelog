@@ -1,82 +1,41 @@
 ====================
-     2021-07-14    
+     2021-08-12    
 ====================
 
 ====================
-     2021-07-13    
+     2021-08-11    
 ====================
 
 ====================
-     2021-07-12    
+     2021-08-10    
+====================
+
+* system/vold
+47d1832  vold: Build exfatprogs & declare support of exFAT.  [Alexander Koskovich]
+
+
+====================
+     2021-08-09    
 ====================
 
 ====================
-     2021-07-11    
+     2021-08-08    
 ====================
 
 ====================
-     2021-07-10    
+     2021-08-07    
 ====================
-
-====================
-     2021-07-09    
-====================
-
-====================
-     2021-07-08    
-====================
-
-* build/make
-06a0c4e  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
-
-
-* external/arm-optimized-routines
-b1dbd3a  Merge branch 'master' of https://android.googlesource.com/platform/external/arm-optimized-routines into HEAD  [DennySPb]
-
 
 * frameworks/base
-917a024  Automatic translation import  [DennySPb]
-4a024fb  Automatic translation import  [DennySPb]
-dde3585  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+de5957a  SystemUI: Add time refresh capabilities for S clock controllers  [Joey Huab]
+f849489  layout: android-s-clock: remove drop shadows  [Chenyang Zhong]
+d6d015c  AndroidSClockController: set clock text color based on wallpapers  [Chenyang Zhong]
+447c0b6  Add Android S Clocks[SQUASHED]  [TikkiTikki]
+33af3ac  Merge "Add support to Slice in ClockPlugin" into 11.0  [blinov.in]
+1bf3ef1  Merge "Add support to see if there are visible notifications in ClockPlugin" into 11.0  [blinov.in]
 
 
-* hardware/interfaces
-008017f  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPb]
-
-
-* packages/apps/Bluetooth
-0e51473  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPb]
-
-
-* packages/apps/Contacts
-f2a616b  Merge tag 'android-11.0.0_r39' into staging/lineage-18.1_merge-android-11.0.0_r39  [Kevin F. Haggerty]
-
-
-* packages/apps/Launcher3
-8788fea  Automatic translation import  [DennySPb]
-981b12f  Automatic translation import  [DennySPb]
-
-
-* packages/apps/Nfc
-f953b46  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPb]
-
-
-* packages/apps/Settings
-efce938  Automatic translation import  [DennySPb]
-e9e4814  Automatic translation import  [DennySPb]
-2232474  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
-
-
-* packages/apps/SyberiaSettings
-83ec581  Automatic translation import  [DennySPb]
-823fcf9  Automatic translation import  [DennySPb]
-
-
-* system/bt
-9a01d89  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPb]
-
-
-* system/libhwbinder
-97030ae  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/system/libhwbinder into HEAD  [DennySPb]
-
+====================
+     2021-08-06    
+====================
 
