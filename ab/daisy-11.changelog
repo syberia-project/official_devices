@@ -1,32 +1,17 @@
 ====================
-     2021-07-16    
+     2021-08-25
 ====================
 
-====================
-     2021-07-15    
-====================
+Kernel:
+- Upstream to 4.9.279 Rename™
 
-* system/vold
-0919c04  vold: Build exfatprogs & declare support of exFAT.  [Alexander Koskovich]
+Rom:
+- August security patch "android-11.0.0_r40"
+- Add Lottie animations for subSettings
+- Add Android S clocks
 
-
-====================
-     2021-07-14    
-====================
-
-====================
-     2021-07-13    
-====================
-
-====================
-     2021-07-12    
-====================
-
-====================
-     2021-07-11    
-====================
-
-====================
-     2021-07-10    
-====================
-
+Device:
+- Fix support of exFAT
+- Prebuilt OrangeFox-R11.0_1-Stable
+- Address sepolicy denials
+- Other fixes and improvements
