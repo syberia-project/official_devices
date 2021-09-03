@@ -1,194 +1,254 @@
 ====================
-     2021-07-28    
+     2021-09-03    
 ====================
 
-* external/asus/stichimage
-27b3266  stitchimage: Enable dexpreopt  [Albert I]
-6e79705  Remove Firebase from prebuilt manifest  [Pranav Vashi]
-8e7ecef  Update prebuilt apps  [Laker]
-
-
-* frameworks/av
-4456a04  mp3dec: Ignore integer overflow in pvmp3_st_intensity  [Neelkamal Semwal]
-f528a39  C2SoftMp3Dec: Treat timestamps as signed values  [Harish Mahendrakar]
-
-
 * frameworks/base
-a0ce0e5  Automatic translation import  [DennySPb]
-77c5210  SystemUI: Bring back ic_qs_bluetooth_connected.xml  [LuK1337]
-18001e3  ZipUtils: use FileChannel#size  [Jooyung Han]
-66e14ce  core: Allow non-market apps installation by default  [dkati]
-ab962b2  LightsService: Mute an annoying error message  [spezi77]
-77bbd49  GpsNetInitiatedHandler: Disable more debugging  [Chet Kener]
-d4b8774  SystemUI: Reduce padding between clock and notification area  [maxwen]
-8ee75a8  ActivityThread: Remove Failed to find provider info logspam  [Immanuel Raj]
-33b569b  [DO NOT MERGE] VibratorService: bypass AppOps check  [Park Ju Hyung]
-ed65fad  Revert "DO NOT MERGE Disable privacy indicators"  [Joey Huab]
-c795149  SystemUI: VPN tile: Collapse panel when opening app  [George Zacharia]
-04474df  settingslib: Tile: Add more checks if mMetaData is null.  [spezi77]
-267b110  systemui: add alpha to the media icon  [El Dainosor]
-b507e7c  SystemUI: Redesign Media Player View  [hpnightowl]
-4bb2e7e  fonts: Fix reference to Noto Sans Javanese  [Albert I]
-cd874af  core: Wipe package cache on upgrade even on user build  [Albert I]
-3d814b3  Merge changes Iabfd8ab0,I7712ad41,I0f6fe013,I72ef7f68,I59780d33, ... into 11.0  [dennyspb]
-d21bc1f  Merge "Drop the O_NOFOLLOW flag." into 11.0  [dennyspb]
-81b1cc8  NotificationHeaderViewWrapper: use app icon instead of notification icon small  [Dil3mm4]
-7676961  Make colored Statusbar Icons optional [1/2]  [spkal01]
-b5c5854  StatusBarIconView: use app icons instead of provided notif one  [Dil3mm4]
-866a0da  Add toggle to completely hide status bar on lockscreen [1/2]  [Pranav Vashi]
-232e494  base: Add more Switch styles [1/3]  [TikkiX2]
-81ed5e2  base: Introduce Switch styles [1/3]  [SKULSHADY]
-727cc04  Custom Rounded Corner preference [1/2]  [Kshitij Gupta]
-8a76085  Rounded Corner styles [1/4]  [Pranav Vashi]
-0232aa1  base: Add Wakelock Blocker [1/2]  [maxwen]
-
-
-* frameworks/native
-125d966  Check if /dev/input exists before accessing the path  [Usama Arif]
-1cba2b4  Use std::filesystem for input event devices scan.  [Chris Ye]
+78a34c5  Automatic translation import  [DennySPb]
+7982baa  display: Make Night Light transition more gradual  [Danny Lin]
+cce9f94  TwilightService: Save and use last fetched location  [Ido Ben-Hur]
+44e50ef  Add the support of the three fields in MMS/SMS database  [Mengjun Leng]
+bcdbf5f  SUPL: Don't send IMSI / Phone number to SUPL server  [MSe1969]
+2d911be  Private DNS: Add Adguard DNS as a private DNS provider  [LordShenron]
+1da42c5  Fix Cloudflare private DNS provider  [Oliver Scott]
+2bbeb2d  Add Cloudflare DNS as a private DNS provider  [Chirayu Desai]
 
 
 * packages/apps/Launcher3
-a9ae071  Automatic translation import  [DennySPb]
+38c0f5d  Automatic translation import  [DennySPb]
 
 
 * packages/apps/Settings
-d974eb6  Automatic translation import  [DennySPb]
-09114ce  Settings: Add more Switch styles [2/3]  [TikkiX2]
+97947d7  Automatic translation import  [DennySPb]
+768c909  Automatic translation import  [DennySPb]
 
 
 * packages/apps/SyberiaSettings
-7056e81  Automatic translation import  [DennySPb]
-b576ba4  Rounded Corner styles [4/4]  [Pranav Vashi]
-3d00fc2  Custom Rounded Corner preference [2/2]  [Pranav Vashi]
-d2ad03c  SyberiaSettings: Make colored StatusBar Icons optional [2/2]  [spkal01]
-c0af819  Add toggle to completely hide status bar on lockscreen [2/2]  [Pranav]
-b1b8213  Merge "SyberiaSettings: Add Wakelock Blocker [2/2]" into 11.0  [dennyspb]
-
-
-* packages/services/Telecomm
-7364a16  Merge tag 'LA.QSSI.11.0.r1-12700-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telecomm into HEAD  [DennySPb]
-
-
-* system/core
-509f3e1  fiemap: add fsync after write split file name  [lijiazi]
-41fdf74  libfiemap: Fix removal of corrupted split fiemaps.  [David Anderson]
-
-
-* vendor/qcom/opensource/commonsys/bluetooth_ext
-4cfe80c  Merge tag 'LA.QSSI.11.0.r1-12700-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/bluetooth_ext into HEAD  [DennySPb]
-
-
-* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
-359f08e  Merge tag 'LA.QSSI.11.0.r1-12700-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/packages/apps/Bluetooth into HEAD  [DennySPb]
-
-
-* vendor/qcom/opensource/commonsys/system/bt
-36b7819  Merge tag 'LA.QSSI.11.0.r1-12700-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/system/bt into HEAD  [DennySPb]
+295138c  Automatic translation import  [DennySPb]
+df72279  Add Syberia settings animation  [mdeejay]
 
 
 ====================
-     2021-07-27    
-====================
-
-* packages/apps/Dialer
-a473cb3  Dialer: Redesign according to Nezuko UI.  [Maitreya29]
-
-
-* packages/apps/Etar
-250b123  Merge https://github.com/LineageOS/android_packages_apps_Etar into HEAD  [DennySPb]
-
-
-* packages/apps/Settings
-84b43b9  Settings: Introduce Switch styles [2/3]  [SKULSHADY]
-
-
-* vendor/syberia
-72e190e  vendor: themes: Add more Switch styles [3/3]  [TikkiX2]
-44cfe69  vendor: Introduce Switch styles [3/3]  [Agent24015]
-e91f9c5  Rounded Corner styles [3/4]  [Pranav Vashi]
-44e1055  Rounded Corner styles [2/4]  [Pranav Vashi]
-
-
-====================
-     2021-07-26    
-====================
-
-====================
-     2021-07-25    
-====================
-
-====================
-     2021-07-24    
+     2021-09-02    
 ====================
 
 * frameworks/base
-580a6cb  Add Vivo Vowifi Icon [1/2]  [spkal01]
-a22a44a  SystemUI: Add Vivo X60 Pro VoLTE Icon [1/2]  [AshutoshSundresh]
-d7a92b8  SystemUI: Add 2 more VoLTE icons [1/2]  [Advaith Bhat]
-b667304  Keyguard: Allow disabling fingerprint wake-and-unlock  [Steve Kondik]
-566537c  SystemUI: add SyberiaSettingsService  [maxwen]
+abfbea5  Remove S clock  [DennySPb]
+b9c3254  Fix app afterimage flashing while device unlocking  [Yingren Wang]
+75080e1  [Re-apply] DisplayModeDirector: Make sure we apply refresh rate on startup  [Ido Ben-Hur]
+e2d3d53  Graphics: Fix NPE on GradientDrawable  [ZeNiXxX]
+e30d30b  base: kill more debugging  [jhonboy121]
+8d9250a  Revert "[DO NOT MERGE] VibratorService: bypass AppOps check"  [mdeejay]
+360db8b  SystemUI: VolumeDialog: Fix animation when ringer and notification are unlinked  [Rituj Beniwal]
+9df2909  Fix reading /proc/locks when lock is held by another process  [xNombre]
+1926da6   PixelPropUtils: Add more gapps and props to the list  [Pranav Vashi]
+8d914dd  PixelPropsUtils: Spoof Pixel XL for Samsung wearables  [LordShenron]
+97a7d0e  BatteryService: Add support for oem fast charger detection Allows to indicate, whether a device is charged using a proprietary oem fast charge solution, which write their status to sysfs.  [Alexander Martinz]
+b6ef14e  TtsEngines: avoid crashes caused by null engine name  [Oliver Scott]
+78e4642  base: Set ic_avatar_user and ic_avatar_guest_user to follow system accent  [elpaablo]
+c0c23ad  AudioSystem: startAudioSource: ensure port handle initialized  [Francois Gaffie]
+bb70e61  telephony: show ICCID by default for all  [Omkar Chandorkar]
+b8da4a6  KeyStore: Prevent NPE with trust manager service  [Pranav Vashi]
+2f41a99  PixelPropsUtils: Update to August 2021 fingerprint  [Stallix]
+b28bd0e  PixelPropsUtils: Update to July 2021 fingerprint  [Stallix]
+afc9ef6  PixelPropsUtils: Make build property spoofing more reliable  [Danny Lin]
+19fcacb  PixelPropsUtils: Switch to Marlin for Google Photos  [Joey Huab]
+62588f2  PixelPropsUtils: Update to June 2021 fingerprint  [Pranav Vashi]
+548794e  PixelPropsUtils: Bump FP to Redfin May 2021  [Lup Gabriel]
+091bc43  PixelPropsUtils: Update packages  [Joey Huab]
+2068570  PixelPropsUtils: Add more apps  [Joey Huab]
+872858d  PixelPropsUtils: Set device model to Pixel 3 XL for Google  [Anushek Prasal]
+b0d7f24  Introduce PixelPropsUtils  [jhenrique09]
+fbd4196  Revert "core: Defy usage of NGA in Google Assistant"  [nato6613]
+91df584  fixup! base: In-call vibration haptics options [1/3] * This works with google and aosp dialer: )  [beanstown106]
+fce5dfe  base: Allow choosing a custom vibration pattern [1/3] Change-Id: I0d00f94b185a1032deb3e8413720d47a411cd6f7  [Ido Ben-Hur]
+2780af4  SystemUI: Fix Lockscreen charging animation not changing instantly * Switch to using TunerService  [Joey Huab]
+d65c1ae  Dont show charging animation if battery is charged  [spkal01]
+49abbc1  SystemUI: Show keyguard charging animation on AOD  [AnkitGourav]
+43470f6  add more charging animations  [mdeejay]
+b54499f  SystemUI: KG Charging Animation: Add more animations [1/3]  [SuperDroidBond]
+9b1ac96  Add toggle for charging animation [1/2]  [neobuddy89]
+1dd229a  SystemUI: Animate the keyguard when charging  [Chris Crump]
 
 
-* packages/apps/Dialer
-d0de5b0  CallLogFragment: Move Un-registering call log observer to destroy  [Varun Date]
+* packages/apps/Etar
+721c19e  Merge branch 'lineage-18.1' of https://github.com/LineageOS/android_packages_apps_Etar into HEAD  [DennySPb]
 
 
 * packages/apps/Settings
-bd31e20  Settings: Expose radio info (*#*#4636#*#*)  [xyyx]
+2b72baa  Private DNS: add adguard DNS to private DNS [2/2]  [LordShenron]
+7110eaf  Add Cloudflare DNS as a private DNS provider  [Chirayu Desai]
+2cd207b  Settings: Update Security Settings drawables from Android 12  [Andrew Thomas]
+ded255e  Enable NetworkScan for 5G SA  [Avinash Nalluri]
+1ecb1fd  Add resource network_5G_lte support  [Mengjun Leng]
+c521465  Settings: Move charging vibro to vibration settings  [mdeejay]
+e098877  Settings: vibrations: Update RU translations  [mdeejay]
+78152f2  Settings: Update vibration patterns and add haptic feedback intensity  [rituj]
+6ff1c16  Settings: Respect default vibration strength  [Anushek Prasal]
+c61b0dc  Settings: Move custom vib pattern to its own preference  [Ido Ben-Hur]
+0c08f8b  Settings: Add vibration patterns from OOS, Intensities and In-call Feedback  [rituj]
+63ecc9f  TopLevelBatteryPref: Remove BatteryStatusFeatureProvider  [Pranav Vashi]
+015431c  Settings: use colorPrimary to fix WiFi icon themeing  [mukesh22584]
+1a4b702  Settings: Add lottie animations [SQUASH]  [rohan]
+0a4012c  partially revert 3d001fa1e26d6a484be8bdc0827b74817602cd2f  [mdeejay]
 
 
 * packages/apps/SyberiaSettings
-4166c61  SyberiaSettings: Add Vivo Vowifi Icon [2/2]  [spkal01]
-678ca2e  SyberiaSettings: Add Vivo X60 Pro VoLTE Icon [2/2]  [Joker-V2]
-d4a5453  SyberiaSettings: Add 2 more VoLTE Icons [2/2]  [Joker-V2]
-
-
-* vendor/syberia
-9ccdbe3  Sync backuptool scripts with LOS  [DennySPb]
-
-
-====================
-     2021-07-23    
-====================
-
-* packages/apps/SyberiaSettings
-91754ed  SyberiaSettings: Add Wakelock Blocker [2/2]  [Alex Cruz]
-
-
-* system/core
-df33281  libprocessgroup: Do not remove uid cgroups directory  [Li Li]
-
-
-* vendor/syberia
-6387e87  backuptool_ab: Use mv instead of cp for restore step  [razorloves]
-
-
-====================
-     2021-07-22    
-====================
-
-* packages/apps/Messaging
-d7d079f  Messaging: drop ugly actionbar colors  [blinoff82]
-ab698be  Messaging: restore AOSP colors for selected messages  [Timi Rautamäki]
-3d7fa20  Messaging: Remove unused resources  [Michael Bestas]
-beca422  Messaging: Update cellbroadcast package name  [z3DD3r]
-2f13c4f  Messaging: Contact Colors  [Blaise]
+8a1b8e6  Revert "Add vibration patterns from OOS [3/3]"  [mdeejay]
+03956c3  Revert: "incall vibration options [3/3]"  [mdeejay]
+7ed4edb  add more charging animations  [mdeejay]
 
 
 * packages/services/Telecomm
-d812868  Merge 5b11c3672e911798eb8fac5c6e23151bc3df6cc0 on remote branch  [Linux Build Service Account]
+371b6ec  fixup! Telecomm: In-call vibration haptics options [2/3] commit 9dd00fd Author: AmolAmrit <amol.amrit03@outlook.com> Date:   Sat Mar 2 18:04:54 2019 +0530  [beanstown106]
+db8b1b1  Telecomm: Update ringer vibration patterns  [rituj]
+3107b84  Telecomm: Add a null check to custom ring vibration  [Ido Ben-Hur]
+6dce9e9  Telecomm: Allow choosing a custom vibration pattern [2/3]  [Ido Ben-Hur]
+
+
+* system/memory/lmkd
+be924e4  lmkd: Do not re-initialize lmkd when persistent properties are loaded  [Suren Baghdasaryan]
+
+
+* vendor/syberia
+655637c  device_config: Enable cached app freezer on supported devices  [Danny Lin]
+eac41d1  device_config: Allow more cached apps in the background  [Danny Lin]
+b7a3e39  device_config: Compact cached app heaps in the background  [Danny Lin]
+81c54c2  v4.8  [DennySPb]
+
+
+====================
+     2021-09-01    
+====================
+
+* frameworks/av
+e930fd2  Merge tag 'LA.QSSI.11.0.r1-13000.02-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPb]
+7718f7d  Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
+
+
+* frameworks/native
+7b5851b  Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
+
+
+* frameworks/opt/net/ims
+3e38029  Merge tag 'LA.QSSI.11.0.r1-13000.02-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/ims into HEAD  [DennySPb]
+
+
+* frameworks/opt/telephony
+37c053b  Merge tag 'LA.QSSI.11.0.r1-13000.02-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPb]
+
+
+* hardware/interfaces
+0f885ae  Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
+
+
+* libcore
+664aada  libcore: Add hooks for Dynamite module support in GmsCompat  [Danny Lin]
+6cbc658  ZipFile: Add support for opening zip files by fd paths  [Danny Lin]
+
+
+* packages/apps/Dialer
+562dfd8  Dialer: Declare missing view  [Rahul]
+3367661  Dialer: Patches and fixes  [Rahul]
+e064e80  Dialer: don't make it black  [Rahul]
+5518968  Dialer: revamp with OOS like UI  [Dixzz]
+4177e83  Revert "Incoming call screen & incall screen: contact name on 2 lines"  [Alexey Derendyaev]
+162dce4  Revert "Improve contatcts layout"  [DennySPb]
+0655ff4  Revert "The ability to set a contact photo on the whole screen for incoming and outgoing calls is added."  [DennySPb]
+
+
+* packages/apps/Settings
+0193a2f  Move UI and theme settings to Syberia Settings  [DennySPb]
+
+
+* packages/apps/SyberiaSettings
+b6f0885  KG Charging Animation: Add more animations [2/3] Signed-off-by: spezi77 <spezi7713@gmx.net> Signed-off-by: Joey Huab <joey@evolution-x.org> Signed-off-by: Sagarrokade006 <Sagarrokade006@gmail.com>  [SuperDroidBond]
+b018c3c  Consolidate UI and theme settings  [DennySPb]
+
+
+* packages/services/Telephony
+4dab74b  Merge tag 'LA.QSSI.11.0.r1-13000.02-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony into HEAD  [DennySPb]
+
+
+* system/core
+fcbd3b5  Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
+
+
+* system/extras
+b69f9cf  Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
+
+
+* system/iorap
+bb0dbca  Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
+
+
+* system/memory/lmkd
+5de949c  Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
+
+
+* system/vold
+3738274  Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
+
+
+* vendor/codeaurora/telephony
+8dafb7d  Merge tag 'LA.QSSI.11.0.r1-13000.02-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/codeaurora/telephony into HEAD  [DennySPb]
 
 
 * vendor/qcom/opensource/commonsys/bluetooth_ext
-e5a3cb0  Merge 536e5deb6d9caf1da054b316343bd7079ad2b3f4 on remote branch  [Linux Build Service Account]
-
-
-* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
-66cb75c  Merge 8e8bc78573e7ee6bf39ca6ba25e5d61ae5d5b097 on remote branch  [Linux Build Service Account]
+57c9c84  Merge tag 'LA.QSSI.11.0.r1-13000.02-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/bluetooth_ext into HEAD  [DennySPb]
 
 
 * vendor/qcom/opensource/commonsys/system/bt
-2d50b96  Merge ba7a9f9f00e2e77e821e055e06056714826ea33c on remote branch  [Linux Build Service Account]
+c919e24  Merge tag 'LA.QSSI.11.0.r1-13000.02-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/system/bt into HEAD  [DennySPb]
 
+
+====================
+     2021-08-31    
+====================
+
+* frameworks/base
+365ce51  Introduce A12 Brightness Slider [1/2]  [spkal01]
+11bffa7  Introduce Brightness Slider Styles [1/2]  [spkal01]
+3b11c02  Disable QS pulldown on secure lockscreen (1/2)  [Hikari-no-Tenshi]
+
+
+* hardware/qcom-caf/wlan
+a639ccd  Merge tag 'LA.UM.9.15.r1-03400-KAMORTA.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/wlan into HEAD  [DennySPb]
+
+
+* hardware/syberia
+7834a2b  SmartCharge: Fix resume logic  [DennySPb]
+
+
+* packages/apps/SyberiaSettings
+bdf03f4  SyberiaSettings: Introduce A12 Brightness Slider [2/2]  [spkal01]
+8c96c90  SyberiaSettings: Introduce Brightness Slider Styles [2/2]  [spkal01]
+70b05c2  Disable QS pulldown on secure lockscreen (2/2)  [Pranav Vashi]
+
+
+* system/core
+0271155  Increase the minimal remount scratch size to 64MiB for F2FS scratch  [Yi-Yo Chiang]
+
+
+====================
+     2021-08-30    
+====================
+
+* frameworks/base
+cb1c971  Fix mMobileIfaces is not protected by lock  [Junyu Lai]
+7317048  ServiceManager: waitForService uses allowBlocking  [Steven Moreland]
+c883bdc  Avoid the scenario where Contexts list filled with null value in ShowAnrDialogs()  [Ashok Mutyala]
+47ba8ab  RESTRICT AUTOMERGE Avoid the scenario Where taskdisplayarea is null  [Ashok Mutyala]
+
+
+* libcore
+fc70ea0  Fix BigInteger.remainder check and BigInteger TODOs  [Hans Boehm]
+
+
+====================
+     2021-08-29    
+====================
+
+====================
+     2021-08-28    
+====================
 
