@@ -1,35 +1,26 @@
 ====================
-     2021-09-06
+     2021-09-08
 ====================
 
 Kernel:
- - Upstream to 4.19.206
+ - Kernel compiled with ThinLTO and Proton Clang 14
+ - Revert updates to latest stable 4.19.204
 
 Rom:
- - Syberia v4.8
- - Consolidated UI and themes settings under Syberia settings
- - Added brighness slider styles
- - Added lottie keyguard charge animations
- - Revamp Dialer with OOS like UI
- - InCall vibration options rework
- - Added prebuilt private DNS settings (Adguard, Cloudflare)
- - Disable QS pulldown on secure lockscreen option
- - Merged LA.QSSI.11.0.r1-13000.02-qssi.0 in some repos
- - Update SmartCharge resume logic
- - Fixed SafetyNet (without modules)
- - Updated translations
- - Other improvements and fixes under the hood
+ - September security patch android-11.0.0_r45
+ - Rom compiled with ThinLTO & Clang 13
+ - New Gaming Mode
+ - New Montserrat font
+ - New options in Screen Recorder
+ - Fix icon tint for UI subsettings
+ - Increase blur quality
+ - Other fixes and improvements under the hood
 
 Device:
- - Rom built with Clang 13.0.1
- - Kernel built with Azure Clang 14
- - Update blobs from Miui 12.5.5.0 and 21.8.11 CN
- - Update Media and OMX blobs from miui_ELISH_V12.5.8.0.RKYCNXM
- - Import Miracast blobs
- - Merge tag LA.UM.9.12.r1-12800-SMxx50.0 (Media, Display, Audio)
- - Merge tag LA.UM.9.12.r1-12500-SMxx50.0 (Thermal)
- - Update radio props
- - Fixed partitions (diff gapps packages)
- - Fixed AOD deep sleep
- - Resolve sepolicy denials
- - Update usage of Bluetooth MAC address
+ - Fixed random reboots in different environments
+ - Audio: Fully reimplemented audio Configs from latest Miui Stable
+ - Audio: Bump quality of main Speaker up to 24_BIT_PACKED
+ - Audio: Loudness of sound increased to Miui level
+ - Update Display Colour blobs from Pstar
+ - Update Ardeno Firmware Blobs from Pstar
+ - Set Proper model names (Poco F3/Redmi K40/ Mi11x)
