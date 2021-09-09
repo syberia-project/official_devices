@@ -1,4 +1,315 @@
 ====================
+     2021-09-09    
+====================
+
+* bionic
+b079a62  Switch to jemalloc memory allocator  [Danny Lin]
+0325da4  Revert "Add an API for per-process disabling memory initialization."  [kondors1995]
+e441c59  Revert "Implement a new mechanism to let Scudo access the TLS slot"  [kondors1995]
+cc9daa8  Revert "[libc] Zero and pattern initialization of heap memory."  [kondors1995]
+948ed66  Revert "SCUDO fill options only when USE_SCUDO"  [kondors1995]
+
+
+* external/libjpeg-turbo
+a44ce7f  Merge branch 'master' of https://android.googlesource.com/platform/external/libjpeg-turbo into HEAD  [DennySPb]
+
+
+* frameworks/base
+1df05c2  Revert "Zygote: disable heap 0'ing in apps."  [kondors1995]
+710109d  Automatic translation import  [DennySPb]
+61adafb  graphics: Override system fonts with user-selected overlays  [Danny Lin]
+968fcdf  styles: Use user fonts for Material UI themes  [Danny Lin]
+3f236a6  PixelPropsUtils: Update Fingerprints to September 2021  [pavanpaps]
+95cb0517  PixelPropsUtils: add galaxy watch 4 plugin to spoof list  [LordShenron]
+a34a321  Automatic translation import  [DennySPb]
+
+
+* hardware/interfaces
+f015e34  Revert "camera 2.4: conditionally disable memory init"  [kondors1995]
+
+
+* packages/apps/Dialer
+06fa58e  Fix themes issues  [DennySPb]
+7df2b6e  Fix selecting phone account dialog show error.  [Grace Jia]
+56dd6b1  Dialer: nuke decorator for now  [Rahul]
+3e4d400  Dialer: Introduce swipe to call  [Rahul]
+
+
+* packages/apps/GamingMode
+c48ef0a  Automatic translation import  [DennySPb]
+0a1741b  Automatic translation import  [DennySPb]
+
+
+* packages/apps/Settings
+055b5c4  Automatic translation import  [DennySPb]
+
+
+* packages/apps/SyberiaSettings
+3b89ecf  Automatic translation import  [DennySPb]
+383471f7  Automatic translation import  [DennySPb]
+
+
+* system/core
+75a0533  Add a system property to init that drops caches  [Michael Rosenfeld]
+4ae90a6  libprocessgroup: remove a false error message  [Suren Baghdasaryan]
+bb59a02  libprocessgroup: remove failure log for aggregate profiles  [Wei Wang]
+059f794  init: fix to set sd device label correctly for FS  [Guo Weichao]
+8617bb5  Revert "libcutils: API to disable memory mitigations"  [kondors1995]
+
+
+====================
+     2021-09-08    
+====================
+
+* art
+2e03e97  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/art into HEAD  [DennySPb]
+
+
+* bionic
+982df61  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/bionic into HEAD  [DennySPb]
+
+
+* bootable/recovery
+13281dd  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/bootable/recovery into HEAD  [DennySPb]
+
+
+* build/make
+9357e42  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
+
+
+* build/soong
+5ff3dcd  soong: Allow arm-linux-androidkernel-{as,ld}  [Jayant-Deshmukh]
+74f6ded  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/build/soong into HEAD  [DennySPb]
+
+
+* device/syberia/sepolicy
+65dad7a  sepolicy: Add exTHmUI custom setprop rule  [ReallySnow]
+
+
+* external/libjpeg-turbo
+42da129  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/external/libjpeg-turbo into HEAD  [DennySPb]
+
+
+* external/scudo
+a00c980  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/external/scudo into HEAD  [DennySPb]
+
+
+* frameworks/av
+fec1484  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
+
+
+* frameworks/base
+93f8d7f  fonts: Montserrat [1/2]  [blinoff82]
+56ebeab5  GamingMode: opt-out performance profile support [1/3]  [DennySPb]
+5202c1a  Mark classes as final that have final destructors  [Liz Kammer]
+2a777e1  APK signature verification: use FileChannel#size  [Jooyung Han]
+88a3d4f  Fix thread safety issues;  [jiayongqiang]
+7887617  Acquire lock:mResourcesManager->LoadedApk->mResourcesManager may cause deadlock.  [yangyankai1]
+3ffcb13  Fit the Android 11 easter egg in landscape mode.  [“aditya.jadhav”]
+feed527  AMS: Fix touch issue in splitscreen  [sai-gairuboina]
+1007f07  [BugFix][HWASAN] stack-buffer-overflow  [chenguanyou]
+cd8a586  Stop using `group_static_libs` property  [LaMont Jones]
+744e89e  Fix unused-but-set-variable warning  [Yi Kong]
+c084728  PixelPropsUtils: Spoof Pixel 2 for GMS  [PainKiller3]
+fa9249c  SystemUI: move RecordingService into main process  [cjybyjk]
+9ff7254  SystemUI: export screenrecord.RecordingService for GamingMode  [cjybyjk]
+d2b884a  Screenrecord: Add an option to record for longer  [Ido Ben-Hur]
+b0f65b9  Screenrecord: Save and load set preferences  [Ido Ben-Hur]
+873f2cd  ScreenRecord: Improve low quality screen record  [Pranav Vashi]
+8f0e6e1  SystemUI: allow to limit the max framerate of built-in screen recorder  [Kuba Wojciechowski]
+9c6400c  Screenrecord: add blinking stop dot and low quality options  [ezio84]
+b7a8d9d  base: GamingMode: Add option for customizing menu opacity [3/3]  [Nauval Rizky]
+52ab068  base: GamingModeHelper: ignore TopAppChanged event if top app is Gaming Mode Core  [cjybyjk]
+9ca0fc5  base: Add GamingMode support [1/3]  [cjybyjk]
+fe8f55d  fwb: Revert previous GamingMode implementation  [DennySPb]
+c7e20b6  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+
+
+* frameworks/native
+1b7d594  blur: Increase max number of render passes  [Adithya R]
+4601d1f  Revert "blur: Don't limit number of Kawase blur passes"  [Adithya R]
+d0eea72  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
+
+
+* frameworks/opt/net/ims
+9895e16  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/frameworks/opt/net/ims into HEAD  [DennySPb]
+
+
+* frameworks/opt/net/wifi
+0a50927  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD  [DennySPb]
+
+
+* frameworks/opt/telephony
+31da631  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPb]
+
+
+* hardware/interfaces
+10dbed4  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPb]
+
+
+* hardware/libhardware
+ca6db4f  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/hardware/libhardware into HEAD  [DennySPb]
+
+
+* libcore
+db47aa2  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/libcore into HEAD  [DennySPb]
+
+
+* packages/apps/Bluetooth
+b88cb1f  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPb]
+
+
+* packages/apps/Contacts
+d895406  Contacts: Fix light dropdown lists on dark theme  [Hikari-no-Tenshi]
+44d8caa  Contacts: Fix light dialogs on dark theme  [Hikari-no-Tenshi]
+d7c154c  Contacts: Fix light popup menu on dark theme  [Hikari-no-Tenshi]
+fbeae58  Contacts: style fast scroll thumb like in Dialer  [maxwen]
+e0fc2b6  Contacts: Do not use accent color for dark style  [Pranav Vashi]
+fb9b48f  Contacts: add dark mode support  [Marko Man]
+
+
+* packages/apps/GamingMode
+6c11890  GamingMode: Mark date/time format strings as non-translatable  [DennySPb]
+
+
+* packages/apps/Launcher3
+10c3fc0  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/apps/Launcher3 into tst  [DennySPb]
+
+
+* packages/apps/Nfc
+5eb8487  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPb]
+
+
+* packages/apps/PermissionController
+2ed7df2  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/apps/PackageInstaller into HEAD  [DennySPb]
+
+
+* packages/apps/Settings
+1859ea9  Revert "Settings: Bring back Gaming mode [2/3]"  [DennySPb]
+74c0077  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
+
+
+* packages/apps/SettingsIntelligence
+3f84adf  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/apps/SettingsIntelligence into HEAD  [DennySPb]
+
+
+* packages/apps/WallpaperPicker2
+ba1dab6  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/apps/WallpaperPicker2 into HEAD  [DennySPb]
+
+
+* packages/providers/DownloadProvider
+0011280  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD  [DennySPb]
+
+
+* packages/services/Telecomm
+c2e8de5  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
+
+
+* packages/services/Telephony
+d65aa16  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD  [DennySPb]
+
+
+* system/bt
+b624614  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPb]
+
+
+* system/core
+6ae099a  charger: fix charger display stuck  [Xiaohui Niu]
+062d46f  Rename two local variables  [Bart Van Assche]
+638a634  Set the I/O scheduler of loop devices to 'none'  [Bart Van Assche]
+6628f3d  healthd: Add support for HVDCP_3P5 chargers  [Dyneteve]
+
+
+* system/extras
+037b1a4  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/extras into HEAD  [DennySPb]
+
+
+* system/libhwbinder
+bba5e02  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/libhwbinder into HEAD  [DennySPb]
+
+
+* system/linkerconfig
+fc5bba4  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/linkerconfig into HEAD  [DennySPb]
+
+
+* system/media
+b74deb6  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/media into HEAD  [DennySPb]
+
+
+* system/netd
+20dd1f9  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/netd into HEAD  [DennySPb]
+
+
+* system/sepolicy
+6afd4a7  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPb]
+
+
+* system/update_engine
+1e9a2db  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/update_engine into HEAD  [DennySPb]
+
+
+* system/vold
+b252ee3  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/vold into HEAD  [DennySPb]
+
+
+* tools/metalava
+c9ae159  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/tools/metalava into HEAD  [DennySPb]
+
+
+* vendor/qcom/opensource/commonsys/system/bt
+100a1ad  SMP: Reject pairing if public_key.x match  [Hansong Zhang]
+
+
+* vendor/syberia
+4ce3904  Add Add pixel_2016_exclusive.xml  [kondors1995]
+6471f46  fonts: Montserrat [2/2]  [blinoff82]
+7828718  vendor: Add GamingMode support [2/3]  [cjybyjk]
+3ec29aa  backuptool: Support tab-delimited fstab  [Erik Jensen]
+780bfc4  kernel: Fix vdso32 building for 4.19+ kernels  [LibXZR]
+e9d7d8a  apns: Add IPV4V6 to EE (UK)  [Alessandro Astone]
+04d04c6  vendor: apns: Add Digi Mobil  [AnierinB]
+50c9b23  Fix Three UK / FreedomPop APN (MCC 234 MNC 20)  [TheJaffaMeme]
+da91fea  vendor: themes: Add missing values for Rounded Corner styles  [Joey Huab]
+
+
+====================
+     2021-09-07    
+====================
+
+* packages/apps/GamingMode
+3b3f3dc  GamingMode: update RU translation  [blinoff82]
+397cf0f  GamingMode: opt-out performance profile support [2/3]  [DennySPb]
+80b060f  GamingMode: Limit the button coordinate to the inside of screen only  [Nauval Rizky]
+3a3e75d  GamingMode: Hide danmaku container immediately when config is changed  [Nauval Rizky]
+ae93427  GamingMode: Hide floating button after periods of time  [Nauval Rizky]
+
+
+* packages/apps/SyberiaSettings
+c348c6f  Fix UI icon tint  [DennySPb]
+287db92  GamingMode: opt-out performance profile support [3/3]  [DennySPb]
+d8a8da9  GamingMode: Add option for customizing menu opacity [2/3]  [Nauval Rizky]
+2568ef0  Add GamingMode support [3/3]  [cjybyjk]
+3955e8d  Revert previous GamingMode implementation  [DennySPb]
+
+
+====================
+     2021-09-06    
+====================
+
+* packages/apps/Dialer
+1825862  [Re-Apply] Dialer: theme fixes  [Marko Man]
+52dc5a1  [Re-apply] Dialer: welcome to night mode  [Marko Man]
+
+
+====================
+     2021-09-05    
+====================
+
+====================
+     2021-09-04    
+====================
+
+====================
      2021-09-03    
 ====================
 
@@ -18,7 +329,6 @@ bcdbf5f  SUPL: Don't send IMSI / Phone number to SUPL server  [MSe1969]
 
 
 * packages/apps/Settings
-97947d7  Automatic translation import  [DennySPb]
 768c909  Automatic translation import  [DennySPb]
 
 
@@ -26,229 +336,4 @@ bcdbf5f  SUPL: Don't send IMSI / Phone number to SUPL server  [MSe1969]
 295138c  Automatic translation import  [DennySPb]
 df72279  Add Syberia settings animation  [mdeejay]
 
-
-====================
-     2021-09-02    
-====================
-
-* frameworks/base
-abfbea5  Remove S clock  [DennySPb]
-b9c3254  Fix app afterimage flashing while device unlocking  [Yingren Wang]
-75080e1  [Re-apply] DisplayModeDirector: Make sure we apply refresh rate on startup  [Ido Ben-Hur]
-e2d3d53  Graphics: Fix NPE on GradientDrawable  [ZeNiXxX]
-e30d30b  base: kill more debugging  [jhonboy121]
-8d9250a  Revert "[DO NOT MERGE] VibratorService: bypass AppOps check"  [mdeejay]
-360db8b  SystemUI: VolumeDialog: Fix animation when ringer and notification are unlinked  [Rituj Beniwal]
-9df2909  Fix reading /proc/locks when lock is held by another process  [xNombre]
-1926da6   PixelPropUtils: Add more gapps and props to the list  [Pranav Vashi]
-8d914dd  PixelPropsUtils: Spoof Pixel XL for Samsung wearables  [LordShenron]
-97a7d0e  BatteryService: Add support for oem fast charger detection Allows to indicate, whether a device is charged using a proprietary oem fast charge solution, which write their status to sysfs.  [Alexander Martinz]
-b6ef14e  TtsEngines: avoid crashes caused by null engine name  [Oliver Scott]
-78e4642  base: Set ic_avatar_user and ic_avatar_guest_user to follow system accent  [elpaablo]
-c0c23ad  AudioSystem: startAudioSource: ensure port handle initialized  [Francois Gaffie]
-bb70e61  telephony: show ICCID by default for all  [Omkar Chandorkar]
-b8da4a6  KeyStore: Prevent NPE with trust manager service  [Pranav Vashi]
-2f41a99  PixelPropsUtils: Update to August 2021 fingerprint  [Stallix]
-b28bd0e  PixelPropsUtils: Update to July 2021 fingerprint  [Stallix]
-afc9ef6  PixelPropsUtils: Make build property spoofing more reliable  [Danny Lin]
-19fcacb  PixelPropsUtils: Switch to Marlin for Google Photos  [Joey Huab]
-62588f2  PixelPropsUtils: Update to June 2021 fingerprint  [Pranav Vashi]
-548794e  PixelPropsUtils: Bump FP to Redfin May 2021  [Lup Gabriel]
-091bc43  PixelPropsUtils: Update packages  [Joey Huab]
-2068570  PixelPropsUtils: Add more apps  [Joey Huab]
-872858d  PixelPropsUtils: Set device model to Pixel 3 XL for Google  [Anushek Prasal]
-b0d7f24  Introduce PixelPropsUtils  [jhenrique09]
-fbd4196  Revert "core: Defy usage of NGA in Google Assistant"  [nato6613]
-91df584  fixup! base: In-call vibration haptics options [1/3] * This works with google and aosp dialer: )  [beanstown106]
-fce5dfe  base: Allow choosing a custom vibration pattern [1/3] Change-Id: I0d00f94b185a1032deb3e8413720d47a411cd6f7  [Ido Ben-Hur]
-2780af4  SystemUI: Fix Lockscreen charging animation not changing instantly * Switch to using TunerService  [Joey Huab]
-d65c1ae  Dont show charging animation if battery is charged  [spkal01]
-49abbc1  SystemUI: Show keyguard charging animation on AOD  [AnkitGourav]
-43470f6  add more charging animations  [mdeejay]
-b54499f  SystemUI: KG Charging Animation: Add more animations [1/3]  [SuperDroidBond]
-9b1ac96  Add toggle for charging animation [1/2]  [neobuddy89]
-1dd229a  SystemUI: Animate the keyguard when charging  [Chris Crump]
-
-
-* packages/apps/Etar
-721c19e  Merge branch 'lineage-18.1' of https://github.com/LineageOS/android_packages_apps_Etar into HEAD  [DennySPb]
-
-
-* packages/apps/Settings
-2b72baa  Private DNS: add adguard DNS to private DNS [2/2]  [LordShenron]
-7110eaf  Add Cloudflare DNS as a private DNS provider  [Chirayu Desai]
-2cd207b  Settings: Update Security Settings drawables from Android 12  [Andrew Thomas]
-ded255e  Enable NetworkScan for 5G SA  [Avinash Nalluri]
-1ecb1fd  Add resource network_5G_lte support  [Mengjun Leng]
-c521465  Settings: Move charging vibro to vibration settings  [mdeejay]
-e098877  Settings: vibrations: Update RU translations  [mdeejay]
-78152f2  Settings: Update vibration patterns and add haptic feedback intensity  [rituj]
-6ff1c16  Settings: Respect default vibration strength  [Anushek Prasal]
-c61b0dc  Settings: Move custom vib pattern to its own preference  [Ido Ben-Hur]
-0c08f8b  Settings: Add vibration patterns from OOS, Intensities and In-call Feedback  [rituj]
-63ecc9f  TopLevelBatteryPref: Remove BatteryStatusFeatureProvider  [Pranav Vashi]
-015431c  Settings: use colorPrimary to fix WiFi icon themeing  [mukesh22584]
-1a4b702  Settings: Add lottie animations [SQUASH]  [rohan]
-0a4012c  partially revert 3d001fa1e26d6a484be8bdc0827b74817602cd2f  [mdeejay]
-
-
-* packages/apps/SyberiaSettings
-8a1b8e6  Revert "Add vibration patterns from OOS [3/3]"  [mdeejay]
-03956c3  Revert: "incall vibration options [3/3]"  [mdeejay]
-7ed4edb  add more charging animations  [mdeejay]
-
-
-* packages/services/Telecomm
-371b6ec  fixup! Telecomm: In-call vibration haptics options [2/3] commit 9dd00fd Author: AmolAmrit <amol.amrit03@outlook.com> Date:   Sat Mar 2 18:04:54 2019 +0530  [beanstown106]
-db8b1b1  Telecomm: Update ringer vibration patterns  [rituj]
-3107b84  Telecomm: Add a null check to custom ring vibration  [Ido Ben-Hur]
-6dce9e9  Telecomm: Allow choosing a custom vibration pattern [2/3]  [Ido Ben-Hur]
-
-
-* system/memory/lmkd
-be924e4  lmkd: Do not re-initialize lmkd when persistent properties are loaded  [Suren Baghdasaryan]
-
-
-* vendor/syberia
-655637c  device_config: Enable cached app freezer on supported devices  [Danny Lin]
-eac41d1  device_config: Allow more cached apps in the background  [Danny Lin]
-b7a3e39  device_config: Compact cached app heaps in the background  [Danny Lin]
-81c54c2  v4.8  [DennySPb]
-
-
-====================
-     2021-09-01    
-====================
-
-* frameworks/av
-e930fd2  Merge tag 'LA.QSSI.11.0.r1-13000.02-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPb]
-7718f7d  Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
-
-
-* frameworks/native
-7b5851b  Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
-
-
-* frameworks/opt/net/ims
-3e38029  Merge tag 'LA.QSSI.11.0.r1-13000.02-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/ims into HEAD  [DennySPb]
-
-
-* frameworks/opt/telephony
-37c053b  Merge tag 'LA.QSSI.11.0.r1-13000.02-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/telephony into HEAD  [DennySPb]
-
-
-* hardware/interfaces
-0f885ae  Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
-
-
-* libcore
-664aada  libcore: Add hooks for Dynamite module support in GmsCompat  [Danny Lin]
-6cbc658  ZipFile: Add support for opening zip files by fd paths  [Danny Lin]
-
-
-* packages/apps/Dialer
-562dfd8  Dialer: Declare missing view  [Rahul]
-3367661  Dialer: Patches and fixes  [Rahul]
-e064e80  Dialer: don't make it black  [Rahul]
-5518968  Dialer: revamp with OOS like UI  [Dixzz]
-4177e83  Revert "Incoming call screen & incall screen: contact name on 2 lines"  [Alexey Derendyaev]
-162dce4  Revert "Improve contatcts layout"  [DennySPb]
-0655ff4  Revert "The ability to set a contact photo on the whole screen for incoming and outgoing calls is added."  [DennySPb]
-
-
-* packages/apps/Settings
-0193a2f  Move UI and theme settings to Syberia Settings  [DennySPb]
-
-
-* packages/apps/SyberiaSettings
-b6f0885  KG Charging Animation: Add more animations [2/3] Signed-off-by: spezi77 <spezi7713@gmx.net> Signed-off-by: Joey Huab <joey@evolution-x.org> Signed-off-by: Sagarrokade006 <Sagarrokade006@gmail.com>  [SuperDroidBond]
-b018c3c  Consolidate UI and theme settings  [DennySPb]
-
-
-* packages/services/Telephony
-4dab74b  Merge tag 'LA.QSSI.11.0.r1-13000.02-qssi.0' of https://source.codeaurora.org/quic/la/platform/packages/services/Telephony into HEAD  [DennySPb]
-
-
-* system/core
-fcbd3b5  Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
-
-
-* system/extras
-b69f9cf  Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
-
-
-* system/iorap
-bb0dbca  Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
-
-
-* system/memory/lmkd
-5de949c  Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
-
-
-* system/vold
-3738274  Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
-
-
-* vendor/codeaurora/telephony
-8dafb7d  Merge tag 'LA.QSSI.11.0.r1-13000.02-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/codeaurora/telephony into HEAD  [DennySPb]
-
-
-* vendor/qcom/opensource/commonsys/bluetooth_ext
-57c9c84  Merge tag 'LA.QSSI.11.0.r1-13000.02-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/bluetooth_ext into HEAD  [DennySPb]
-
-
-* vendor/qcom/opensource/commonsys/system/bt
-c919e24  Merge tag 'LA.QSSI.11.0.r1-13000.02-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/system/bt into HEAD  [DennySPb]
-
-
-====================
-     2021-08-31    
-====================
-
-* frameworks/base
-365ce51  Introduce A12 Brightness Slider [1/2]  [spkal01]
-11bffa7  Introduce Brightness Slider Styles [1/2]  [spkal01]
-3b11c02  Disable QS pulldown on secure lockscreen (1/2)  [Hikari-no-Tenshi]
-
-
-* hardware/qcom-caf/wlan
-a639ccd  Merge tag 'LA.UM.9.15.r1-03400-KAMORTA.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/wlan into HEAD  [DennySPb]
-
-
-* hardware/syberia
-7834a2b  SmartCharge: Fix resume logic  [DennySPb]
-
-
-* packages/apps/SyberiaSettings
-bdf03f4  SyberiaSettings: Introduce A12 Brightness Slider [2/2]  [spkal01]
-8c96c90  SyberiaSettings: Introduce Brightness Slider Styles [2/2]  [spkal01]
-70b05c2  Disable QS pulldown on secure lockscreen (2/2)  [Pranav Vashi]
-
-
-* system/core
-0271155  Increase the minimal remount scratch size to 64MiB for F2FS scratch  [Yi-Yo Chiang]
-
-
-====================
-     2021-08-30    
-====================
-
-* frameworks/base
-cb1c971  Fix mMobileIfaces is not protected by lock  [Junyu Lai]
-7317048  ServiceManager: waitForService uses allowBlocking  [Steven Moreland]
-c883bdc  Avoid the scenario where Contexts list filled with null value in ShowAnrDialogs()  [Ashok Mutyala]
-47ba8ab  RESTRICT AUTOMERGE Avoid the scenario Where taskdisplayarea is null  [Ashok Mutyala]
-
-
-* libcore
-fc70ea0  Fix BigInteger.remainder check and BigInteger TODOs  [Hans Boehm]
-
-
-====================
-     2021-08-29    
-====================
-
-====================
-     2021-08-28    
-====================
 
