@@ -1,210 +1,430 @@
 ====================
-     2021-08-24    
+     2021-09-12    
 ====================
 
-* device/xiaomi/raphael
-c817b16  raphael: parts: Add headphones warning for clear speaker  [Adithya R]
-40e8a50  raphael: parts: Update clear speaker audio from MIUI 12  [Adithya R]
-c6f38f1  raphael: parts: Add icon for Clear Speaker  [AshutoshSundresh]
-cdcabdb  pars: update Android.bp  [nato66613]
-9920f0e  raphael: overlay: Update power profile to match framework change  [Alessandro Astone]
+* bionic
+a20b6c3  Merge branch 'dev/clang-12' into HEAD Change-Id: I57345b618721e99025a3ec9c24633d35b0517fe2  [kondors1995]
 
 
-* device/xiaomi/raphael-sepolicy
-363a41b  wip  [nato66613]
+* build/soong
+0fa167a  Merge branch 'dev/clang-12' into HEAD Change-Id: I57345b618721e99025a3ec9c24633d35b0517fe2  [kondors1995]
 
 
-* hardware/qcom-caf/wlan
-e271111  Merge tag 'LA.UM.9.14.r1-17900-LAHAINA.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/wlan into HEAD  [nato66613]
-
-
-* kernel/xiaomi/sm8150
-41623c1  [Fixup] memlat: Optimize perf event reads when possible  [Sultan Alsawaf]
-
-
-* vendor/qcom/opensource/power
-168cd76  Merge remote-tracking branch 'yaap/eleven' into HEAD  [nato66613]
+* system/core
+de5132d  rootdir: init.rc: Don't enable f2fs iostat by default  [xNombre]
 
 
 * vendor/syberia
-e24dcae  device_config: Allow more cached apps in the background  [Danny Lin]
-c56b1b7  device_config: Compact cached app heaps in the background  [Danny Lin]
+126228d  Add Add pixel_2016_exclusive.xml  [kondors1995]
 
 
 ====================
-     2021-08-23    
-====================
-
-* hardware/qcom-caf/sm8150/audio
-8fda481  Merge tag 'LA.UM.9.1.r1-10600-SMxxx0.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into HEAD  [nato66613]
-
-
-* hardware/qcom-caf/sm8150/display
-94f4dad  isplay-commonsys-intf: gralloc/libqdmetadata: Silence build warnings  [mikeNG]
-43d8f25  Merge tag 'LA.QSSI.11.0.r1-12900-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/display-commonsys-intf into HEAD  [nato66613]
-
-
-* hardware/qcom-caf/sm8150/media
-69427cb  Merge tag 'LA.UM.9.1.r1-10600-SMxxx0.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into HEAD  [nato66613]
-
-
-* kernel/xiaomi/sm8150
-adec76a  Revert "soc: qcom: scm: add tracing for scm calls"  [nato66613]
-1141985  memlat: Optimize perf event reads  [Sultan Alsawaf]
-b151b87  soc: qcom: scm: Fix scm_call_count when used with GCC and LSE atomics  [Sultan Alsawaf]
-d3048cd  memlat: don't read perf event if other CPU is under scm call  [Minchan Kim]
-6c0c485  soc: qcom: scm: add tracing for scm calls  [Wei Wang]
-00b7ff0  cpuidle: lpm-levels: Only cancel the bias timer when it's used  [Sultan Alsawaf]
-10f2c5b  sched/core: Always panic when scheduling in atomic context  [Sultan Alsawaf]
-0c50f8d  haptics: qti: Remove flag for calibration after each 8 periods  [Demon000]
-515a4f2  power: msm: Set custom restart reasons  [Demon000]
-9366536  Revert "kernel: Implement sysfs to get powerup restart reason"  [UtsavBalar1231]
-cca0cd3  Revert "power: msm-poweroff: Disable edl mode"  [UtsavBalar1231]
-0e64604  Merge remote-tracking branch 'cunt/android11-base' into dev/11.0  [nato66613]
-
-
-====================
-     2021-08-22    
+     2021-09-11    
 ====================
 
 ====================
-     2021-08-21    
+     2021-09-10    
 ====================
 
-* kernel/xiaomi/sm8150
-bd13f5b  ARM: dts: msm: update frame threshold time for msmnile  [UtsavBalar1231]
-d1a0152  dt-bindings: Add frame threshold property for dsi controller  [Vara Reddy]
-478374e  drm/msm/sde: trigger single frame_done evt for vid encoder  [Ray Zhang]
-737b39d  drm/msm/sde: avoid frame_done event trigger for idle scenario  [Ray Zhang]
-8dfd46e  drm/msm/sde: initialize sde_encoder_wait_info before usage  [Ray Zhang]
-996eb8d  disp: msm: dsi: update dsi pclk in panel mode settings  [Vara Reddy]
-21e9991  drm/msm/dsi-staging: update frame transfer time calculations  [Vara Reddy]
-ff4a483  drm/msm/dsi-staging: update dsi clock calculations  [Vara Reddy]
-7461257  disp: msm: sde: avoid multiple frame-done encoder events  [Ray Zhang]
-3c5a795  disp: msm: sde: signal retire fence in wr_ptr timeout  [Raviteja Tamatam]
-6a89325  disp: msm: sde: handle another case for lost pp-done interrupt  [Veera Sundaram Sankaran]
-cdc5563  disp: msm: sde: avoid encoder power-collapse with pending frames  [Veera Sundaram Sankaran]
-aa0f619  disp: msm: sde: fix handling the missing pp-done interrupt cases  [Veera Sundaram Sankaran]
-5882f3d  disp: msm: sde: wait for specific pp_done instead of zero  [Dhaval Patel]
-de7f36f  disp: msm: sde: fix release fence signaling in error cases  [Veera Sundaram Sankaran]
-c2e7bef  disp: msm: sde: reset ctl during wr_ptr_irq timeout  [Veera Sundaram Sankaran]
-ccf680f  disp: msm: sde: use wr_ptr interrupt instead of ctl_start  [Veera Sundaram Sankaran]
-5ed047a  drm/msm/sde: trigger frame done if ctl is idle  [Dhaval Patel]
-d3a6d64  drm/msm/sde: avoid frame done event during autorefresh  [Dhaval Patel]
-6b26fd1  drm/msm/sde: add connector property for frame trigger mode  [Dhaval Patel]
-d431f37  drm/msm/sde: delay reset frame by a frame for posted trigger  [Dhaval Patel]
-2a099cf  drm/msm/sde: support posted frame trigger for cmd mode  [Dhaval Patel]
-0f98131  drm/msm/sde: use atomic counter for pending frame done  [Dhaval Patel]
-2ee39ea  usb: dwc3: dwc3-msm: Avoid overriding DBM_GEN_CFG register  [Mayank Rana]
-1df2e0e  diag: Prevent resource leakage of task structure  [Manoj Prabhu B]
-de68be1  ARM: dts: msm: Allocate fifos from DDR memory for USB BAM usage on sm8150  [Mayank Rana]
-fd61903  ARM: dts: msm: Enable vopcie for sm8150-sdxmarmot  [Anurag Chouhan]
+* frameworks/base
+43d4b89  Merge "Revert "Zygote: disable heap 0'ing in apps."" into 11.0  [dennyspb]
 
 
-* packages/apps/Contacts
-631ce50  Automatic translation import  [Michael Bestas]
-
-
-* packages/apps/FMRadio
-608e0ec  Automatic translation import  [Michael Bestas]
-
-
-* packages/resources/devicesettings
-b259f67  Automatic translation import  [Michael Bestas]
-
-
-* vendor/qcom/opensource/fm-commonsys
-8920992  Automatic translation import  [Michael Bestas]
+* system/core
+110efee  Revert "libcutils: API to disable memory mitigations"  [kondors1995]
+cbc80c5  Add a system property to init that drops caches  [Michael Rosenfeld]
+d4fa8f2  libprocessgroup: remove a false error message  [Suren Baghdasaryan]
+4966c6e  libprocessgroup: remove failure log for aggregate profiles  [Wei Wang]
+91eb614  init: fix to set sd device label correctly for FS  [Guo Weichao]
 
 
 ====================
-     2021-08-20    
+     2021-09-09    
 ====================
+
+* bionic
+925e966  [master] Switch libc.so and linker to prebuilt LLVM libunwind  [Ryan Prichard]
+7e04389  [master] Stop exporting unwinder from arm32 libc.a  [Ryan Prichard]
+9cd7ba4  [master] Add -Wno-ignored-pragmas.  [Chih-Hung Hsieh]
+
+
+* build/make
+e74bc9f  Merge branch 'dev/clang12' into HEAD  [kondors1995]
+
+
+* build/soong
+8085f0b  soong: Switch to clang-r416183b1  [Pirama Arumuga Nainar]
+8152f93  soong: Disable LLVM polly globally  [Adithya R]
+d7059f1  soong: Switch to AOSP clang 12  [Adithya R]
+6fb0409  Clean up toc.sh and use of LLVM binutils  [Yi Kong]
+9c31c89  Move gen_sorted_bss_symbols.sh to use LLVM binutils  [Yi Kong]
+0df4b60  Set block-size for XZ mini-debug-info compression  [David Srbecky]
+9a4f25e  config: Force disable bugprone-narrowing-conversions clang-tidy check  [Adithya R]
+7f101da  Enable clang-analyzer-optin.performance.* checks  [Chih-Hung Hsieh]
+fcc6363  Add clang-analyzer check if selected.  [Chih-Hung Hsieh]
+38a17f7  Do not enable all clang-analyzer-* checks,  [Chih-Hung Hsieh]
+9441821  Add more global default checks  [Chih-Hung Hsieh]
+1e6ee6d  Add bugprone to global clang-tidy default checks  [Chih-Hung Hsieh]
+1fec674  config: Disable another clang-tidy check  [Adithya R]
+c8e695f  soong: Disable -Wunknown-warning-option for external projects  [Adithya R]
+057ba0c  clang: disable another tidy check for r415010  [Jason Edson]
+f0f843f  soong: Add custom clang with polly support  [Jason Edson]
+bb78560  Clean up unused flags for LLD  [Stephen Hines]
+dd1c372  Prefer armv8.2-a to armv8.2a for GNU as compatibility  [Stephen Hines]
+fbd76ea  Move odexes of non-system apps into system_other  [Anton Hansson]
+028b430  [master] Switch to clang r416183b 12.0.5.  [Pirama Arumuga Nainar]
+1812558  [master] Disable compound-token-split-by-macro warning  [Danny Lin]
+9bc528e  [master] Disable gnu-folding-constant warning.  [Chih-Hung Hsieh]
+e2e1b4b  [master] Switch platform EH unwinder to prebuilt LLVM libunwind  [Ryan Prichard]
+2429499  [ProtonAOSP] Update to Clang 12.0.4 (r416183)  [Danny Lin]
+6a2eab5  [master] Switch to clang-r407598 (12.0.1).  [Yabin Cui]
+e5f8b90  Switch to clang-r399163.  [Stephen Hines]
+1674fa4  [master] Allow globally disabling some clang-tidy checks.  [Dan Albert]
+
 
 * device/xiaomi/raphael
-115ba1b  raphael: nfc: Tone down debugging  [Bruno Martins]
-13a3162  raphael: wifi: Disable TDLS offchannel  [Sunil Ravi]
-713a7e0  raphael: wifi: Ignore tracking if any NUD failure occurs  [UtsavBalar1231]
-a9e84f1  raphael: wifi: Enable nl broadcast logging and disable packet logging  [Venkata Sharath Chandra Manchala]
-5b26f40  raphael: wifi: Disable WLAN Firmware loggings  [Panchajanya1999]
-9687ad9  raphael: lights: Change LED behavior  [Ashu7397]
-fa10a7c  raphael: light: Avoid calling an empty function  [Chenyang Zhong]
-1a61dc6  raphael: Update HotwordEnrollment permissions XML  [TH779]
-1692d50  raphael: Remove USE_XML_AUDIO_POLICY_CONF  [Sebastiano Barezzi]
-9b24f87  raphael: Kill deprecated/unneeded board flags  [Nolen Johnson]
-6cb8673  raphael: Kill deprecated TARGET_USES_MKE2FS  [Nolen Johnson]
-ecbe09e  raphael: Fix Mifare Classic reading  [xyyx]
-cba9f53   raphael: overlay: Sync color modes with coral  [ghostrider-reborn]
-505882a  raphael: update dependecies  [nato66613]
-e73d08c  GoogleCamera: move to sperate repo  [nato66613]
-ce58377  raphael: Import dynamic thermal from sm6150  [nato66613]
-5612818  raphael: update dependecies  [nato66613]
-a081e18  raphael:Build thermal v2.0  [PIPIPIG233666]
-332e65d  thermal: rebrand to xiaomi_msmnile  [Adhitya Mohan]
-7be0581  sm8150-common: Import pixel thermal hal  [Francescodario Cuzzocrea]
-1698c98   rootdir: Make fastrpc_shell_3 publicly available  [dianlujitao]
-b1731d7  raphael: update grapfics blobs from LA.UM.9.1.r1-10200-SMxxx0.0  [nato6613]
+c47b6a8  raphael: rootdir: Remove modprobe as we don't build kernel modules  [Official-Ayrton990]
+3d6a574  raphael: parts: Bump target SDK version to 30  [kubersharma001]
+
+
+* external/libjpeg-turbo
+a44ce7f  Merge branch 'master' of https://android.googlesource.com/platform/external/libjpeg-turbo into HEAD  [DennySPb]
+
+
+* external/wpa_supplicant_8
+b7ed40c  Merge branch '11.0' into HEAD Change-Id: If67c7d1e5b7ddbd119c39c85da9f683ce6c7c862  [kondors1995]
+
+
+* frameworks/base
+710109d  Automatic translation import  [DennySPb]
+0daa4e0  Revert "Zygote: disable heap 0'ing in apps."  [kondors1995]
+61adafb  graphics: Override system fonts with user-selected overlays  [Danny Lin]
+968fcdf  styles: Use user fonts for Material UI themes  [Danny Lin]
+3f236a6  PixelPropsUtils: Update Fingerprints to September 2021  [pavanpaps]
+95cb0517  PixelPropsUtils: add galaxy watch 4 plugin to spoof list  [LordShenron]
+a34a321  Automatic translation import  [DennySPb]
+
+
+* frameworks/libs/native_bridge_support
+2f00304  Merge branch '11.0' into HEAD Change-Id: Iba8cd4c6bb0349cd5aa9138d856bcfadfb95cbbc  [kondors1995]
+
+
+* packages/apps/Dialer
+06fa58e  Fix themes issues  [DennySPb]
+7df2b6e  Fix selecting phone account dialog show error.  [Grace Jia]
+56dd6b1  Dialer: nuke decorator for now  [Rahul]
+3e4d400  Dialer: Introduce swipe to call  [Rahul]
+
+
+* packages/apps/GamingMode
+c48ef0a  Automatic translation import  [DennySPb]
+0a1741b  Automatic translation import  [DennySPb]
+
+
+* packages/apps/Settings
+055b5c4  Automatic translation import  [DennySPb]
+
+
+* packages/apps/SyberiaSettings
+3b89ecf  Automatic translation import  [DennySPb]
+383471f  Automatic translation import  [DennySPb]
+
+
+* system/security
+8cdab0e  Merge branch '11.0' into HEAD Change-Id: Ia90d8e33fd7222103d84dade99a44372b80058f8  [kondors1995]
+
+
+* vendor/qcom/opensource/commonsys/system/bt
+1fc4661  bt: osi: ignore frame warnings from clang 12  [Anay Wadhera]
+
+
+* vendor/syberia
+082c536  Kernel: switch to Clang r416183d (12.0.7).  [kondors1995]
 
 
 ====================
-     2021-08-19    
+     2021-09-08    
 ====================
 
+* art
+2e03e97  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/art into HEAD  [DennySPb]
+
+
+* bionic
+1592946  Switch to jemalloc memory allocator  [Danny Lin]
+4273a9d  Revert "Add an API for per-process disabling memory initialization."  [kondors1995]
+b84c15d  Revert "Implement a new mechanism to let Scudo access the TLS slot"  [kondors1995]
+d98cd15  Revert "[libc] Zero and pattern initialization of heap memory."  [kondors1995]
+da0e338  Revert "SCUDO fill options only when USE_SCUDO"  [kondors1995]
+982df61  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/bionic into HEAD  [DennySPb]
+
+
+* bootable/recovery
+13281dd  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/bootable/recovery into HEAD  [DennySPb]
+
+
+* build/make
+9357e42  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
+
+
+* build/soong
+5ff3dcd  soong: Allow arm-linux-androidkernel-{as,ld}  [Jayant-Deshmukh]
+74f6ded  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/build/soong into HEAD  [DennySPb]
+
+
+* device/xiaomi/raphael
+4e77d44  raphael:parts:remove thermal profile support  [kondors1995]
+
+
+* external/libjpeg-turbo
+42da129  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/external/libjpeg-turbo into HEAD  [DennySPb]
+
+
+* external/scudo
+a00c980  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/external/scudo into HEAD  [DennySPb]
+
+
+* frameworks/av
+fec1484  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
+
+
+* frameworks/base
+93f8d7f  fonts: Montserrat [1/2]  [blinoff82]
+56ebeab5  GamingMode: opt-out performance profile support [1/3]  [DennySPb]
+5202c1a  Mark classes as final that have final destructors  [Liz Kammer]
+2a777e1  APK signature verification: use FileChannel#size  [Jooyung Han]
+88a3d4f  Fix thread safety issues;  [jiayongqiang]
+7887617  Acquire lock:mResourcesManager->LoadedApk->mResourcesManager may cause deadlock.  [yangyankai1]
+3ffcb13  Fit the Android 11 easter egg in landscape mode.  [“aditya.jadhav”]
+feed527  AMS: Fix touch issue in splitscreen  [sai-gairuboina]
+1007f07  [BugFix][HWASAN] stack-buffer-overflow  [chenguanyou]
+cd8a586  Stop using `group_static_libs` property  [LaMont Jones]
+744e89e  Fix unused-but-set-variable warning  [Yi Kong]
+c084728  PixelPropsUtils: Spoof Pixel 2 for GMS  [PainKiller3]
+fa9249c  SystemUI: move RecordingService into main process  [cjybyjk]
+9ff7254  SystemUI: export screenrecord.RecordingService for GamingMode  [cjybyjk]
+d2b884a  Screenrecord: Add an option to record for longer  [Ido Ben-Hur]
+b0f65b9  Screenrecord: Save and load set preferences  [Ido Ben-Hur]
+873f2cd  ScreenRecord: Improve low quality screen record  [Pranav Vashi]
+8f0e6e1  SystemUI: allow to limit the max framerate of built-in screen recorder  [Kuba Wojciechowski]
+9c6400c  Screenrecord: add blinking stop dot and low quality options  [ezio84]
+b7a8d9d  base: GamingMode: Add option for customizing menu opacity [3/3]  [Nauval Rizky]
+52ab068  base: GamingModeHelper: ignore TopAppChanged event if top app is Gaming Mode Core  [cjybyjk]
+9ca0fc5  base: Add GamingMode support [1/3]  [cjybyjk]
+fe8f55d  fwb: Revert previous GamingMode implementation  [DennySPb]
+c7e20b6  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+
+
+* frameworks/native
+1b7d594  blur: Increase max number of render passes  [Adithya R]
+4601d1f  Revert "blur: Don't limit number of Kawase blur passes"  [Adithya R]
+d0eea72  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
+
+
+* frameworks/opt/net/ims
+9895e16  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/frameworks/opt/net/ims into HEAD  [DennySPb]
+
+
+* frameworks/opt/net/wifi
+0a50927  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD  [DennySPb]
+
+
+* frameworks/opt/telephony
+31da631  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPb]
+
+
+* hardware/interfaces
+1d11684  Revert "camera 2.4: conditionally disable memory init"  [kondors1995]
+10dbed4  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPb]
+
+
+* hardware/libhardware
+ca6db4f  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/hardware/libhardware into HEAD  [DennySPb]
+
+
+* kernel/xiaomi/raphael
+28024e1  raphael_defconfig: enable additional inline optimization  [RealJohnGalt]
+170ed47  Makefile: inlining: close gap with gcc lto  [John Galt]
+1ef1c64  Makefile: Increase clang automatic inline instruction limit to 1000 for LTO  [XeonDead]
+de21e09  kbuild: Add a config to optimise inlining.  [Diab Neiroukh]
+
+
+* libcore
+db47aa2  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/libcore into HEAD  [DennySPb]
+
+
+* packages/apps/Bluetooth
+b88cb1f  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPb]
+
+
+* packages/apps/Launcher3
+10c3fc0  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/apps/Launcher3 into tst  [DennySPb]
+
+
+* packages/apps/Nfc
+5eb8487  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPb]
+
+
+* packages/apps/PermissionController
+2ed7df2  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/apps/PackageInstaller into HEAD  [DennySPb]
+
+
+* packages/apps/Settings
+1859ea9  Revert "Settings: Bring back Gaming mode [2/3]"  [DennySPb]
+74c0077  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
+
+
+* packages/apps/SettingsIntelligence
+3f84adf  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/apps/SettingsIntelligence into HEAD  [DennySPb]
+
+
+* packages/apps/WallpaperPicker2
+ba1dab6  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/apps/WallpaperPicker2 into HEAD  [DennySPb]
+
+
+* packages/providers/DownloadProvider
+0011280  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD  [DennySPb]
+
+
+* packages/services/Telecomm
+c2e8de5  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
+
+
+* packages/services/Telephony
+d65aa16  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD  [DennySPb]
+
+
+* system/bt
+b624614  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPb]
+
+
+* system/core
+6ae099a  charger: fix charger display stuck  [Xiaohui Niu]
+062d46f  Rename two local variables  [Bart Van Assche]
+638a634  Set the I/O scheduler of loop devices to 'none'  [Bart Van Assche]
+6628f3d  healthd: Add support for HVDCP_3P5 chargers  [Dyneteve]
+
+
+* system/extras
+037b1a4  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/extras into HEAD  [DennySPb]
+
+
+* system/libhwbinder
+bba5e02  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/libhwbinder into HEAD  [DennySPb]
+
+
+* system/linkerconfig
+fc5bba4  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/linkerconfig into HEAD  [DennySPb]
+
+
+* system/media
+b74deb6  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/media into HEAD  [DennySPb]
+
+
+* system/netd
+20dd1f9  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/netd into HEAD  [DennySPb]
+
+
+* system/sepolicy
+6afd4a7  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPb]
+
+
+* system/update_engine
+1e9a2db  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/update_engine into HEAD  [DennySPb]
+
+
+* system/vold
+b252ee3  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/vold into HEAD  [DennySPb]
+
+
+* tools/metalava
+c9ae159  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/tools/metalava into HEAD  [DennySPb]
+
+
+* vendor/qcom/opensource/commonsys/system/bt
+100a1ad  SMP: Reject pairing if public_key.x match  [Hansong Zhang]
+
+
+* vendor/syberia
+6471f46  fonts: Montserrat [2/2]  [blinoff82]
+7828718  vendor: Add GamingMode support [2/3]  [cjybyjk]
+3ec29aa  backuptool: Support tab-delimited fstab  [Erik Jensen]
+780bfc4  kernel: Fix vdso32 building for 4.19+ kernels  [LibXZR]
+e9d7d8a  apns: Add IPV4V6 to EE (UK)  [Alessandro Astone]
+04d04c6  vendor: apns: Add Digi Mobil  [AnierinB]
+50c9b23  Fix Three UK / FreedomPop APN (MCC 234 MNC 20)  [TheJaffaMeme]
+da91fea  vendor: themes: Add missing values for Rounded Corner styles  [Joey Huab]
+
+
 ====================
-     2021-08-18    
+     2021-09-07    
 ====================
 
-* kernel/xiaomi/sm8150
-49292ce  Revert "bdi: Do not use freezable workqueue"  [freak07]
-3bbd0d1  Merge remote-tracking branch 'aosp/android-4.14-stable' into android11-base  [UtsavBalar1231]
-f37dc43  raphael_defconfig: switch to bbr2  [nato66613]
-c067ffb  treewide: move more selectively to Ofast  [John Galt]
-3f8c87d  ipv4/tcp: Force applications to use `TCP_NODELAY` to improve network latency  [Panchajanya1999]
-bd59775  BACKPORT: tcp_cubic: use memset and offsetof init  [Yejune Deng]
-bcbc817  ipv6: icmp: use percpu allocation  [Kefeng Wang]
-63dc9b5  ipv6: icmp: use icmpv6_sk_exit()  [Kefeng Wang]
-6db149c  ipv6/icmp: l3mdev: Perform icmp error route lookup on source device routing table (v2)  [Mathieu Desnoyers]
-96e6d8f  ipv6: fix cleanup ordering for pingv6 registration  [Sabrina Dubroca]
-cdceac5  net/ipv4: fib_trie: Avoid cryptic ternary expressions  [Matthias Kaehlcke]
-c6f5540  net: ipv4: Reduce TCP performance spikes  [Panchajanya1999]
-6ea7e66  [BACKPORT]tcp: change pingpong threshold to 3  [Wei Wang]
-359ee45  [BACKPORT]tcp: Refactor pingpong code  [Wei Wang]
-20de541  net-tcp_bbr: v2: additive component for non-CE-marked bw probing  [Neal Cardwell]
-263a4b7  net-tcp_bbr: v2: after seeing ECN, probe on first non-CE-marked ACK  [Neal Cardwell]
-bce1516  net-tcp: re-generalize TSO sizing in TCP CC module API  [Neal Cardwell]
-055386f  tcp_bbr2: remove unsupported debugging  [THEBOSS]
-bffb300  net-tcp: add fast_ack_mode=1: skip rwin check in tcp_fast_ack_mode__tcp_ack_snd_check()  [Neal Cardwell]
-b9ad927  net-tcp_bbr: v2: rename bw_hi to max_bw  [Neal Cardwell]
-80e761d  net-tcp_bbr: v2: have ECN cut bw_lo as well as inflight_lo  [Neal Cardwell]
-a19f695  net-tcp_bbr: v2: change ecn_factor to 0.5  [Neal Cardwell]
-33aa9e7  net-tcp_bbr: v2: fix off-by-one in check for "ECN mark rate too high"  [Neal Cardwell]
-8a2bc54  net-tcp_bbr: v2: remove unnecessary rs.delivered_ce logic upon loss  [Neal Cardwell]
-2f9c090  BACKPORT: FROMGIT: net-tcp_bbr: BBRv2 for Linux TCP  [Neal Cardwell]
-4505544  BACKPORT: tcp: do not change tcp_wstamp_ns in tcp_mstamp_refresh  [Eric Dumazet]
-fed51e8  UPSTREAM: tcp: add tcp_wstamp_ns socket field  [Eric Dumazet]
-d4c5440  FROMGIT: net-tcp: add new ca opts flag TCP_CONG_WANTS_CE_EVENTS  [Yousuk Seung]
-d7d8fdd  BACKPORT: FROMGIT: net-tcp_bbr: v2: set tx.in_flight for skbs in repair write queue  [Neal Cardwell]
-e42f48e  BACKPORT: FROMGIT: net-tcp_bbr: v2: adjust skb tx.in_flight upon split in tcp_fragment()  [Neal Cardwell]
-e4b2b35  FROMGIT: net-tcp_bbr: v2: adjust skb tx.in_flight upon merge in tcp_shifted_skb()  [Neal Cardwell]
-1192324  FROMGIT: net-tcp_bbr: v2: factor out tx.in_flight setting into tcp_set_tx_in_flight()  [Neal Cardwell]
-4203505  FROMGIT: net-tcp_bbr: v2: introduce ca_ops->skb_marked_lost() CC module callback API  [Neal Cardwell]
-2e22546  FROMGIT: net-tcp_bbr: v2: export FLAG_ECE in rate_sample.is_ece  [Neal Cardwell]
-73eeabe  FROMGIT: net-tcp_bbr: v2: count packets lost over TCP rate sampling interval  [Neal Cardwell]
-8e5f57e  FROMGIT: net-tcp_bbr: v2: snapshot packets in flight at transmit time and pass in rate_sample  [Neal Cardwell]
-ddd99a1  net: add an optimization for dealing with raw sockets  [Felix Fietkau]
-2386f4d  net_sched/codel: do not defer queue length update  [Konstantin Khlebnikov]
-30347a6  tcp: start receiver buffer autotuning sooner  [Yuchung Cheng]
-dbb16f6  FROMGIT: net-tcp_rate: account for CE marks in rate sample  [Yuchung Cheng]
-bff207c  tcp: up initial rmem to 128KB and SYN rwin to around 64KB  [Yuchung Cheng]
-62832bd  BACKPORT: tcp: track total bytes delivered with ECN CE marks  [Yuchung Cheng]
-591c561  BACKPORT: tcp: new helper to calculate newly delivered  [Yuchung Cheng]
-cc0ac37  UPSTREAM: tcp: refactor DCTCP ECN ACK handling  [Yuchung Cheng]
-bd884d9  UPSTREAM: tcp: avoid resetting ACK timer in DCTCP  [Yuchung Cheng]
-44be35d  BACKPORT: tcp: mandate a one-time immediate ACK  [Yuchung Cheng]
-134b176  tcp: retire FACK loss detection  [Yuchung Cheng]
-906b64c  tcp: Reduce SYN resend delay if a suspicous ACK is received  [SeongJae Park]
-bf0e28f  netfilter: xt_HARDIDLETIMER: fix sysfs callback function type  [Sami Tolvanen]
-b3c5208  do accept() in LIFO order for cache efficiency  [Arjan van de Ven]
-f4ffd76  ipv4/tcp: allow the memory tuning for tcp to go a little bigger than default  [Arjan van de Ven]
+* device/syberia/sepolicy
+21a392f  sepolicy: Add exTHmUI custom setprop rule  [ReallySnow]
+
+
+* packages/apps/GamingMode
+6c11890  GamingMode: Mark date/time format strings as non-translatable  [DennySPb]
+3b3f3dc  GamingMode: update RU translation  [blinoff82]
+397cf0f  GamingMode: opt-out performance profile support [2/3]  [DennySPb]
+80b060f  GamingMode: Limit the button coordinate to the inside of screen only  [Nauval Rizky]
+3a3e75d  GamingMode: Hide danmaku container immediately when config is changed  [Nauval Rizky]
+ae93427  GamingMode: Hide floating button after periods of time  [Nauval Rizky]
+
+
+* packages/apps/SyberiaSettings
+c348c6f  Fix UI icon tint  [DennySPb]
+287db92  GamingMode: opt-out performance profile support [3/3]  [DennySPb]
+d8a8da9  GamingMode: Add option for customizing menu opacity [2/3]  [Nauval Rizky]
+2568ef0  Add GamingMode support [3/3]  [cjybyjk]
+3955e8d  Revert previous GamingMode implementation  [DennySPb]
+
+
+====================
+     2021-09-06    
+====================
+
+* build/make
+692535f  Fix ordering of checks based on llvm-readobj output  [Stephen Hines]
+86738b2  [master] Disable unsigned-shift-base by default.  [Yabin Cui]
+
+
+* external/compiler-rt
+5142f34  Switch libcompiler_rt to the LLVM prebuilt libunwind  [Ryan Prichard]
+a35df37  Switch RenderScript's compiler-rt to existing unwinders.  [Stephen Hines]
+fdc5eed  [master] Remove mips workarounds.  [Elliott Hughes]
+
+
+* external/honggfuzz
+e0d92d2  honggfuzz: Switch to LLVM libunwind prebuilt  [Danny Lin]
+
+
+* external/python/cpython2
+58c2d96  [master] Add -Wno-strict-prototypes to suppress new warnings.  [Stephen Hines]
+
+
+* external/wpa_supplicant_8
+2fbec69  Replace -Wno-error-* with -Wno-error=*  [Chih-Hung Hsieh]
+24cbe86  Remove obsolete workaround.  [Elliott Hughes]
+
+
+* frameworks/libs/native_bridge_support
+02f7b94  Use exported variants of arm32 builtins  [Ryan Prichard]
+
+
+* kernel/xiaomi/raphael
+83d97d4  ARM: dts: xiaomi: Decrease battery empty voltage for raphael  [Julian Liu]
+61e441f  smb1930: Enable smb1930 in dts  [Stephen Xian]
+11efaea  pm8150b: Update charging dts from MIUI 12.5  [Stephen Xian]
+
+
+* packages/apps/Dialer
+1825862  [Re-Apply] Dialer: theme fixes  [Marko Man]
+52dc5a1  [Re-apply] Dialer: welcome to night mode  [Marko Man]
+
+
+* system/security
+11e1fbc  [master] Switch from `count` to `N` for template due to ambiguity with `std::count`  [Stephen Hines]
 
 
