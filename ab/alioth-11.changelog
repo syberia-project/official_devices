@@ -11,7 +11,7 @@ Rom:
  - Automatic translation import
  - Some UI and theming fixes
  - Update sepolicy rules
- - Other fixes under
+ - Other fixes under the hood
  
 Device:
  - Sound configs synced from Miui China Weekly
