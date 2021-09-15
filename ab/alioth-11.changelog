@@ -2,6 +2,10 @@
      2021-09-15
 ====================
 
+Kernel:
+ - Upstream to 4.19.206
+ - Scheduler aligned with redbull kernel (на следующий релиз)
+
 Rom:
  - Gaming Mode: Add performance seekbar
  - GamingMode: Option for disable menu overlay
@@ -11,7 +15,7 @@ Rom:
  - Automatic translation import
  - Some UI and theming fixes
  - Update sepolicy rules
- - Other fixes under the hood
+ - Other fixes under
  
 Device:
  - Sound configs synced from Miui China Weekly
