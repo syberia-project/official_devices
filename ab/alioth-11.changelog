@@ -1,26 +1,33 @@
 ====================
-     2021-09-08
+     2021-09-15
 ====================
 
 Kernel:
- - Kernel compiled with ThinLTO and Proton Clang 14
- - Revert updates to latest stable 4.19.204
+ - Upstream to 4.19.206
+ - Scheduler aligned with redbull kernel
 
 Rom:
- - September security patch android-11.0.0_r45
- - Rom compiled with ThinLTO & Clang 13
- - New Gaming Mode
- - New Montserrat font
- - New options in Screen Recorder
- - Fix icon tint for UI subsettings
- - Increase blur quality
- - Other fixes and improvements under the hood
-
+ - Gaming Mode: Add performance seekbar
+ - GamingMode: Option for disable menu overlay
+ - Impovements and fixes for Dialer
+ - Using custom font throughout the system
+ - Impovements for system smoothness and stability
+ - Automatic translation import
+ - Some UI and theming fixes
+ - Update sepolicy rules
+ - Other fixes under
+ 
 Device:
- - Fixed random reboots in different environments
- - Audio: Fully reimplemented audio Configs from latest Miui Stable
- - Audio: Bump quality of main Speaker up to 24_BIT_PACKED
- - Audio: Loudness of sound increased to Miui level
- - Update Display Colour blobs from Pstar
- - Update Ardeno Firmware Blobs from Pstar
- - Set Proper model names (Poco F3/Redmi K40/ Mi11x)
+ - Sound configs synced from Miui China Weekly
+ - Updated Camera Blobs from Miui 12.5.4.0 Global Mi
+ - Updated Thermal Configs  from Miui 12.5.4.0 Global Mi
+ - Fixed IMS workaround for Global Mi RIL implementation
+ - Updated Sensors from Miui 21.9.8
+ - MiThermald, ADSP, and DRM blobs updated from Miui 21.9.8
+ - Bluetooth , HotwordEnrollment, IMS, Listen, NFC, NVRAM,
+   QMI, RIL and Off Charging blobs updated from Miui 12.5.4.0 Global Mi
+ - Updated Haptics Vibrations from latest China Weekly
+ - Updated MotoDolby Configurations
+ - Volume of speakers increased
+ - Additional Ultrasound Fixes
+ - Added more cameras for AUX support
