@@ -2,10 +2,6 @@
      2021-09-15
 ====================
 
-Kernel:
- - Upstream to 4.19.206
- - Scheduler aligned with redbull kernel
-
 Rom:
  - Gaming Mode: Add performance seekbar
  - GamingMode: Option for disable menu overlay
