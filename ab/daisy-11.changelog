@@ -1,17 +1,25 @@
 ====================
-     2021-08-25
+     2021-09-17
 ====================
 
 Kernel:
-- Upstream to 4.9.279 Rename™
+- Upstream to 4.9.280 Rename
 
 Rom:
-- August security patch "android-11.0.0_r40"
-- Add Lottie animations for subSettings
-- Add Android S clocks
+- September security patch android-11.0.0_r45
+- New Gaming Mode
+- New Montserrat font
+- New options in Screen Recorder
+- Fixed icon tint for UI subsettings
+- Fixed Dialer theming and crash in call log
+- Fixed SafetyNet CTS profile issue
+- Increase blur quality
+- Other fixes and improvements under the hood
 
 Device:
-- Fix support of exFAT
+- Fix Offline Charging (Use Pixel charger animation)
+- Enable zram-writeback job
+- Wifi: Set IPA low/med/high bandwidth
 - Prebuilt OrangeFox-R11.0_1-Stable
 - Address sepolicy denials
 - Other fixes and improvements
