@@ -1,29 +1,28 @@
 ====================
-     2021-09-15
+     2021-09-22
 ====================
 
+Kernel:
+ - Upstream to 4.19.206
+ - Scheduler aligned with Benzo Redbull kernel
+ - Imported changes for faster console FrameBuffer
+ - Improved haptics and disabled logspam
+ - Disabled various debuggings
+
 Rom:
- - Gaming Mode: Add performance seekbar
- - GamingMode: Option for disable menu overlay
- - Impovements and fixes for Dialer
- - Using custom font throughout the system
- - Impovements for system smoothness and stability
- - Automatic translation import
- - Some UI and theming fixes
- - Update sepolicy rules
+ - Merge tag 'LA.QSSI.11.0.r1-13300-qssi.0'
+ - Add OOS style notification clear all button
+ - Fixed BT icon color on lockscreen
+ - Improved Low memory killer
  - Other fixes under the hood
  
 Device:
- - Sound configs synced from Miui China Weekly
- - Updated Camera Blobs from Miui 12.5.4.0 Global Mi
- - Updated Thermal Configs  from Miui 12.5.4.0 Global Mi
- - Fixed IMS workaround for Global Mi RIL implementation
- - Updated Sensors from Miui 21.9.8
- - MiThermald, ADSP, and DRM blobs updated from Miui 21.9.8
- - Bluetooth , HotwordEnrollment, IMS, Listen, NFC, NVRAM,
-   QMI, RIL and Off Charging blobs updated from Miui 12.5.4.0 Global Mi
- - Updated Haptics Vibrations from latest China Weekly
- - Updated MotoDolby Configurations
- - Volume of speakers increased
- - Additional Ultrasound Fixes
- - Added more cameras for AUX support
+ - Back gesture vibration unified with system wide haptics
+ - Rootdir improvements: now device knows it's hwversion
+ - Fixed MotoDolby processing for Bluetooth audio
+ - Disabled VOIP audio compression
+ - Disabled more debug services
+ - Additional Ultrasound fixes
+ - Enabled zram-writeback job
+ - Disabled LMKD logging
+ - Enable IORap
