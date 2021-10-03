@@ -1,305 +1,163 @@
 ====================
-     2021-09-09    
+     2021-10-02    
 ====================
 
-* external/libjpeg-turbo
-a44ce7f  Merge branch 'master' of https://android.googlesource.com/platform/external/libjpeg-turbo into HEAD  [DennySPb]
+* system/vold
+273ecec  vold: Build exfatprogs & declare support of exFAT.  [Alexander Koskovich]
 
 
-* frameworks/base
-710109d  Automatic translation import  [DennySPb]
-61adafb  graphics: Override system fonts with user-selected overlays  [Danny Lin]
-968fcdf  styles: Use user fonts for Material UI themes  [Danny Lin]
-3f236a6  PixelPropsUtils: Update Fingerprints to September 2021  [pavanpaps]
-95cb0517  PixelPropsUtils: add galaxy watch 4 plugin to spoof list  [LordShenron]
-a34a321  Automatic translation import  [DennySPb]
-
-
-* packages/apps/Dialer
-06fa58e  Fix themes issues  [DennySPb]
-7df2b6e  Fix selecting phone account dialog show error.  [Grace Jia]
-56dd6b1  Dialer: nuke decorator for now  [Rahul]
-3e4d400  Dialer: Introduce swipe to call  [Rahul]
-
-
-* packages/apps/GamingMode
-c48ef0a  Automatic translation import  [DennySPb]
-0a1741b  Automatic translation import  [DennySPb]
-
+====================
+     2021-10-01    
+====================
 
 * packages/apps/Settings
-055b5c4  Automatic translation import  [DennySPb]
+395a8f3  Settings: Make lottie animations non clickable  [DarkJoker360]
+407d234  Merge changes Iacd5b2e3,I53924a33,I47bb9872,I15f25ad2,Id87843eb into 11.0  [dennyspb]
 
 
 * packages/apps/SyberiaSettings
-3b89ecf  Automatic translation import  [DennySPb]
-383471f  Automatic translation import  [DennySPb]
+d6fb32d  SyberiaSettings: Make lottie animations non clickable  [blinoff82]
 
 
 ====================
-     2021-09-08    
+     2021-09-30    
 ====================
-
-* art
-2e03e97  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/art into HEAD  [DennySPb]
-
-
-* bionic
-982df61  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/bionic into HEAD  [DennySPb]
-
-
-* bootable/recovery
-13281dd  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/bootable/recovery into HEAD  [DennySPb]
-
-
-* build/make
-9357e42  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
-
-
-* build/soong
-5ff3dcd  soong: Allow arm-linux-androidkernel-{as,ld}  [Jayant-Deshmukh]
-74f6ded  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/build/soong into HEAD  [DennySPb]
-
-
-* external/libjpeg-turbo
-42da129  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/external/libjpeg-turbo into HEAD  [DennySPb]
-
-
-* external/scudo
-a00c980  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/external/scudo into HEAD  [DennySPb]
-
 
 * frameworks/av
-fec1484  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
+bd103ea  codec2: switch HAL passing of C2FrameDate to clarified C2InfoBuffer  [Lajos Molnar]
 
 
 * frameworks/base
-93f8d7f  fonts: Montserrat [1/2]  [blinoff82]
-56ebeab5  GamingMode: opt-out performance profile support [1/3]  [DennySPb]
-5202c1a  Mark classes as final that have final destructors  [Liz Kammer]
-2a777e1  APK signature verification: use FileChannel#size  [Jooyung Han]
-88a3d4f  Fix thread safety issues;  [jiayongqiang]
-7887617  Acquire lock:mResourcesManager->LoadedApk->mResourcesManager may cause deadlock.  [yangyankai1]
-3ffcb13  Fit the Android 11 easter egg in landscape mode.  [“aditya.jadhav”]
-feed527  AMS: Fix touch issue in splitscreen  [sai-gairuboina]
-1007f07  [BugFix][HWASAN] stack-buffer-overflow  [chenguanyou]
-cd8a586  Stop using `group_static_libs` property  [LaMont Jones]
-744e89e  Fix unused-but-set-variable warning  [Yi Kong]
-c084728  PixelPropsUtils: Spoof Pixel 2 for GMS  [PainKiller3]
-fa9249c  SystemUI: move RecordingService into main process  [cjybyjk]
-9ff7254  SystemUI: export screenrecord.RecordingService for GamingMode  [cjybyjk]
-d2b884a  Screenrecord: Add an option to record for longer  [Ido Ben-Hur]
-b0f65b9  Screenrecord: Save and load set preferences  [Ido Ben-Hur]
-873f2cd  ScreenRecord: Improve low quality screen record  [Pranav Vashi]
-8f0e6e1  SystemUI: allow to limit the max framerate of built-in screen recorder  [Kuba Wojciechowski]
-9c6400c  Screenrecord: add blinking stop dot and low quality options  [ezio84]
-b7a8d9d  base: GamingMode: Add option for customizing menu opacity [3/3]  [Nauval Rizky]
-52ab068  base: GamingModeHelper: ignore TopAppChanged event if top app is Gaming Mode Core  [cjybyjk]
-9ca0fc5  base: Add GamingMode support [1/3]  [cjybyjk]
-fe8f55d  fwb: Revert previous GamingMode implementation  [DennySPb]
-c7e20b6  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+2960f9d  Revert PixelCopy commits  [DennySPb]
 
 
 * frameworks/native
-1b7d594  blur: Increase max number of render passes  [Adithya R]
-4601d1f  Revert "blur: Don't limit number of Kawase blur passes"  [Adithya R]
-d0eea72  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
-
-
-* frameworks/opt/net/ims
-9895e16  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/frameworks/opt/net/ims into HEAD  [DennySPb]
-
-
-* frameworks/opt/net/wifi
-0a50927  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD  [DennySPb]
-
-
-* frameworks/opt/telephony
-31da631  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPb]
-
-
-* hardware/interfaces
-10dbed4  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPb]
-
-
-* hardware/libhardware
-ca6db4f  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/hardware/libhardware into HEAD  [DennySPb]
-
-
-* libcore
-db47aa2  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/libcore into HEAD  [DennySPb]
-
-
-* packages/apps/Bluetooth
-b88cb1f  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPb]
-
-
-* packages/apps/Launcher3
-10c3fc0  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/apps/Launcher3 into tst  [DennySPb]
-
-
-* packages/apps/Nfc
-5eb8487  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPb]
-
-
-* packages/apps/PermissionController
-2ed7df2  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/apps/PackageInstaller into HEAD  [DennySPb]
+a83bc29  Revert "Add a better getLastQueuedBuffer"  [DennySPb]
+cd9a9dc  libbinder: support BR_ONEWAY_SPAM_SUSPECT  [Hang Lu]
 
 
 * packages/apps/Settings
-1859ea9  Revert "Settings: Bring back Gaming mode [2/3]"  [DennySPb]
-74c0077  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
+40e3c89  Settings: Avoid enforcing weird backgrounds  [El Dainosor]
+1411a5d  Settings: Show avatar on search bar in all it's glory  [George Zacharia]
+625713d  Settings: Improve search bar layout  [Nauval Rizky]
+166447f  Settings: Conditionally enable multi-user avatar  [Anushek Prasal]
+af4e1d3  SearchBar: Add avatar to search bar  [Alex]
 
 
-* packages/apps/SettingsIntelligence
-3f84adf  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/apps/SettingsIntelligence into HEAD  [DennySPb]
+* packages/apps/SyberiaSettings
+407b1e5  SyberiaSettings: fix typo in ru translation  [SVB22]
 
 
-* packages/apps/WallpaperPicker2
-ba1dab6  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/apps/WallpaperPicker2 into HEAD  [DennySPb]
+====================
+     2021-09-29    
+====================
+
+* device/qcom/sepolicy_vndr
+3284037  legacy: Add write permission to proc file system  [Ankita Bajaj]
+0ff52df  legacy: Allow writing WLAN driver/fw version into property  [Bruno Martins]
 
 
-* packages/providers/DownloadProvider
-0011280  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD  [DennySPb]
+* frameworks/av
+c0d8eda  codec2: clarify infoBuffers in C2FrameData  [Lajos Molnar]
+4274304  codec2: implement C2InfoBuffer  [Lajos Molnar]
+a276602  codec2 HAL: Enable C2InfoBuffer passing in from client to HAL  [Sungtak Lee]
+3e60212  codec2: add audio encoder input frame size  [Wonsik Kim]
+8dc19c2  codec2: define secure mode SM_READ_PROTECTED_WITH_ENCRYPTED  [Lajos Molnar]
+3954990  Close sidebandHandle to avoid fd leakage  [Houxiang Dai]
+6ab0459  Fix enum comparison to reenable -Wenum-compare  [Liz Kammer]
+5e0e5d3  CCodec: FrameReassembler to accept 0-size frames  [Wonsik Kim]
+680fe61  CCodec: support audio encoders requesting frame size  [Wonsik Kim]
+bc97e1a  CCodec: Support SM_READ_PROTECTED_WITH_ENCRYPTED mode for secure decoders  [Sungtak Lee]
+eb22731  CCodec: Report error when display surface is obsolete  [Sungtak Lee]
+9dc5bd2  CCodec: fix handling buffers in extra slots  [Wonsik Kim]
+2048843  AAC: Don't fail configuration on older HALs  [Ben Murdoch]
+b62514f  C2SoftMpeg4Dec: fix null pointer dereference issue  [Aayush Soni]
+15763a5  C2SoftMpeg4Dec: Fix memory leak in onRelease  [Aayush Soni]
+190ef15  C2SoftMpeg4Enc: Do not return 0 byte CSD for H263  [Harish Mahendrakar]
+6c2224f  NdkMediaCodec: fix AMediaCodec_configure to keep input format constant.  [Manisha Jajoo]
+0430e4a  Suppress ordered-compare-function-pointers warning  [Yi Kong]
+b9c0dc2  MediaCodec: manage resources for hardware audio codecs  [Wonsik Kim]
+4bdf041  mpeg4enc: Ignore integer overflow in encoder idct functions  [Aayush Soni]
+94b630a  libeffects: Fix unused-but-set-variable warnings  [Harish Mahendrakar]
+b0ee2d2  media: Implement CodecBase interfaces in ACodec  [jiangli.liu]
+72533e4  Fix logic error in SkipCutBuffer.cpp  [xiahong.bao]
 
 
-* packages/services/Telecomm
-c2e8de5  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
+* frameworks/base
+48653bf  Unregister configuration listener after the WindowProcessController was disallowed to be overridden.  [gepeng]
+2912cff  [fixup] SystemUI: fix my derp in content observer  [DennySPb]
 
 
-* packages/services/Telephony
-d65aa16  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD  [DennySPb]
-
-
-* system/bt
-b624614  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPb]
-
-
-* system/core
-6ae099a  charger: fix charger display stuck  [Xiaohui Niu]
-062d46f  Rename two local variables  [Bart Van Assche]
-638a634  Set the I/O scheduler of loop devices to 'none'  [Bart Van Assche]
-6628f3d  healthd: Add support for HVDCP_3P5 chargers  [Dyneteve]
-
-
-* system/extras
-037b1a4  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/extras into HEAD  [DennySPb]
+* frameworks/native
+9fb9092  Tilt scale correction for certain resolutions  [Tatsunosuke Tobita]
+d25872f  Add a better getLastQueuedBuffer  [John Reck]
 
 
 * system/libhwbinder
-bba5e02  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/libhwbinder into HEAD  [DennySPb]
-
-
-* system/linkerconfig
-fc5bba4  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/linkerconfig into HEAD  [DennySPb]
-
-
-* system/media
-b74deb6  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/media into HEAD  [DennySPb]
-
-
-* system/netd
-20dd1f9  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/netd into HEAD  [DennySPb]
+88e1b3f  further downgrade oneway spam log  [Steven Moreland]
+512cc5c  Failing to enable oneway spam detection is not an error.  [Martijn Coenen]
+f39c623  libhwbinder: support BR_ONEWAY_SPAM_SUSPECT  [Hang Lu]
 
 
 * system/sepolicy
-6afd4a7  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPb]
-
-
-* system/update_engine
-1e9a2db  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/update_engine into HEAD  [DennySPb]
-
-
-* system/vold
-b252ee3  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/system/vold into HEAD  [DennySPb]
-
-
-* tools/metalava
-c9ae159  Merge tag 'android-11.0.0_r45' of https://android.googlesource.com/platform/tools/metalava into HEAD  [DennySPb]
-
-
-* vendor/qcom/opensource/commonsys/system/bt
-100a1ad  SMP: Reject pairing if public_key.x match  [Hansong Zhang]
-
-
-* vendor/syberia
-6471f46  fonts: Montserrat [2/2]  [blinoff82]
-7828718  vendor: Add GamingMode support [2/3]  [cjybyjk]
-3ec29aa  backuptool: Support tab-delimited fstab  [Erik Jensen]
-780bfc4  kernel: Fix vdso32 building for 4.19+ kernels  [LibXZR]
-e9d7d8a  apns: Add IPV4V6 to EE (UK)  [Alessandro Astone]
-04d04c6  vendor: apns: Add Digi Mobil  [AnierinB]
-50c9b23  Fix Three UK / FreedomPop APN (MCC 234 MNC 20)  [TheJaffaMeme]
-da91fea  vendor: themes: Add missing values for Rounded Corner styles  [Joey Huab]
+4b14fcd  sepolicy: allow BINDER_ENABLE_ONEWAY_SPAM_DETECTION for all processes  [Hang Lu]
+2748d9f  public/file.te: add 'allow proc_net proc:filesystem associate'  [Maciej Żenczykowski]
 
 
 ====================
-     2021-09-07    
-====================
-
-* device/syberia/sepolicy
-21a392f  sepolicy: Add exTHmUI custom setprop rule  [ReallySnow]
-
-
-* packages/apps/GamingMode
-6c11890  GamingMode: Mark date/time format strings as non-translatable  [DennySPb]
-3b3f3dc  GamingMode: update RU translation  [blinoff82]
-397cf0f  GamingMode: opt-out performance profile support [2/3]  [DennySPb]
-80b060f  GamingMode: Limit the button coordinate to the inside of screen only  [Nauval Rizky]
-3a3e75d  GamingMode: Hide danmaku container immediately when config is changed  [Nauval Rizky]
-ae93427  GamingMode: Hide floating button after periods of time  [Nauval Rizky]
-
-
-* packages/apps/SyberiaSettings
-c348c6f  Fix UI icon tint  [DennySPb]
-287db92  GamingMode: opt-out performance profile support [3/3]  [DennySPb]
-d8a8da9  GamingMode: Add option for customizing menu opacity [2/3]  [Nauval Rizky]
-2568ef0  Add GamingMode support [3/3]  [cjybyjk]
-3955e8d  Revert previous GamingMode implementation  [DennySPb]
-
-
-====================
-     2021-09-06    
-====================
-
-* packages/apps/Dialer
-1825862  [Re-Apply] Dialer: theme fixes  [Marko Man]
-52dc5a1  [Re-apply] Dialer: welcome to night mode  [Marko Man]
-
-
-====================
-     2021-09-05    
-====================
-
-====================
-     2021-09-04    
-====================
-
-====================
-     2021-09-03    
+     2021-09-28    
 ====================
 
 * frameworks/base
-78a34c5  Automatic translation import  [DennySPb]
-7982baa  display: Make Night Light transition more gradual  [Danny Lin]
-cce9f94  TwilightService: Save and use last fetched location  [Ido Ben-Hur]
-44e50ef  Add the support of the three fields in MMS/SMS database  [Mengjun Leng]
-bcdbf5f  SUPL: Don't send IMSI / Phone number to SUPL server  [MSe1969]
-2d911be  Private DNS: Add Adguard DNS as a private DNS provider  [LordShenron]
-1da42c5  Fix Cloudflare private DNS provider  [Oliver Scott]
-2bbeb2d  Add Cloudflare DNS as a private DNS provider  [Chirayu Desai]
-
-
-* packages/apps/Launcher3
-38c0f5d  Automatic translation import  [DennySPb]
+0c93b3e  Need shrink for pixel copy  [Chun Jiang]
+c6384f4  Avoid sampling outside BQ crop rect  [John Reck]
+9c6693f  Fix PixelCopy & BQ crop  [John Reck]
+9d9e605  fix google widget timing issue  [Ruoyao Liu]
+1de6a92  base: Expose system icon area weight  [Anushek Prasal]
 
 
 * packages/apps/Settings
-768c909  Automatic translation import  [DennySPb]
+c264ee5  team: Add maintainer for Xiaomi Mi A3  [blinoff82]
 
 
-* packages/apps/SyberiaSettings
-295138c  Automatic translation import  [DennySPb]
-df72279  Add Syberia settings animation  [mdeejay]
+* system/libhwbinder
+f20caef  libhwbinder: support '0' fd for binder  [Steven Moreland]
 
+
+* vendor/syberia
+0f306b3  Add Xiaomi Mi A3 to official devices  [blinoff82]
+d408245  Changelog: Fix device name generation for some devices  [koron393]
+1f26688  vendor: include Volume plugins  [DennySPb]
+
+
+====================
+     2021-09-27    
+====================
+
+* frameworks/base
+d505720  [fixup!] Fix some haptic issues with gestural navigation  [DennySPb]
+e8ba807  [fixup] Add toggle for floating notification dismiss button  [DennySPb]
+3afa7c4  graphics: Fix crash when system body font family is invalid  [Danny Lin]
+4fc04695  SystemUI: Fix NPE on Volume panel plugins  [ZeNiXxX]
+e341313  VolumePanel: Drop aosp plugin [1/3]  [NurKeinNeid]
+5924542  base: Add ShapeShift Volume Panel Style [1/3]  [AshutoshSundresh]
+6ec83f8  Introduce Material (P404 Style) Volume panel [1/3]  [spkal01]
+7991df7  Plugins: Introduce OOS Vol Panel [1/3]  [spkal01]
+d968ea5  VolumePluginManager: More fixes toggling panel  [Pranav Vashi]
+6b4c809  VolumePluginManager: Fix SystemUI FC on stock volume Dialog  [Varun Date]
+2f700e6  Add MIUI volume style plugin [1/3]  [00day0]
+ae31ce8  VolumeDialogImpl: Remove alert slider hide icon  [Pranav Vashi]
+32403b6  SystemUI: Fix NPE on Volume panel plugins  [ZeNiXxX]
+6478872  fwb: Allow using plugins even on production  [HrX03]
+d8a1c53  base: VolumePluginManager: Add default constructor  [Kshitij Gupta]
+697a89b  fwb: Implement VolumePluginManager  [HrX03]
+46f320b  GamingMode: FPS info overlay [1/3]  [DennySPb]
+472c554  Change Shallow Copy to Deep Copy in UsageStats  [zhuyunyi]
+397bfe8  Broadcast Bluetooth state to OFF properly  [Ugo Yu]
+197014a  Avoid Bluetooth gets turned on by enableBle  [Ugo Yu]
+
+
+====================
+     2021-09-26    
+====================
 
