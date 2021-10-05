@@ -1,135 +1,190 @@
 ====================
-     2021-09-24    
+     2021-10-05    
 ====================
 
-* device/syberia/sepolicy
-42cd709  Allow system app to read graphics node     * needed for FPS meter  [DennySPb]
+* build/make
+9344c26  Merge tag 'android-11.0.0_r48' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
 
-
-* frameworks/base
-50c3f3b  [fixup] Add toggle for floating notification dismiss button  [DennySPb]
-fdb33dc  graphics: Fix crash when system body font family is invalid  [Danny Lin]
-814fef7  SystemUI: Fix NPE on Volume panel plugins  [ZeNiXxX]
-f130a08  VolumePanel: Drop aosp plugin [1/3]  [NurKeinNeid]
-72c1359  base: Add ShapeShift Volume Panel Style [1/3]  [AshutoshSundresh]
-bc0c156  Introduce Material (P404 Style) Volume panel [1/3]  [spkal01]
-4604252  Plugins: Introduce OOS Vol Panel [1/3]  [spkal01]
-1701c4f  VolumePluginManager: More fixes toggling panel  [Pranav Vashi]
-082cbc8  VolumePluginManager: Fix SystemUI FC on stock volume Dialog  [Varun Date]
-f9633d4  Add MIUI volume style plugin [1/3]  [00day0]
-bfbab93  VolumeDialogImpl: Remove alert slider hide icon  [Pranav Vashi]
-0fe22a9  SystemUI: Fix NPE on Volume panel plugins  [ZeNiXxX]
-99ce097  fwb: Allow using plugins even on production  [HrX03]
-0d4ad41  base: VolumePluginManager: Add default constructor  [Kshitij Gupta]
-016082b  fwb: Implement VolumePluginManager  [HrX03]
-e56b05f  GamingMode: FPS info overlay [1/3]  [DennySPb]
-
-
-* packages/apps/GamingMode
-d1a40f8  GamingMode: FPS Info overlay [2/3]  [DennySPb]
-
-
-* packages/apps/SyberiaSettings
-0edf3f4  GamingMode: FPS info overlay [3/3]  [DennySPb]
-461b518  SyberiaSettings: Drop aosp volume plugin [2/3]  [NurKeinNeid]
-28b52c7  SyberiaSettings: add Shapeshift Volume panel style [2/3]  [mezzlasha]
-9ad7e07  SyberiaSettings: Implement p404 volume panel [2/3]  [spkal01]
-5f9a27d  SyberiaSettings: Introduce OOS Volume Panel [2/3]  [spkal01]
-b9409b6  SyberiaSettings: Add MIUI compact volume panel style [2/3]  [00day0]
-62532a6  SyberiaSettings: Set default Volume Panel style to stock AOSP  [Varun Date]
-218a596  SyberiaSettings: Volume Panel Plugin Values should not be translatable  [Joey Huab]
-b341ffe  SyberiaSettings: POSP Vol panel styles  [Tejasvp25]
-
-
-* vendor/syberia
-949f0d0  vendor: include Volume plugins  [DennySPb]
-
-
-====================
-     2021-09-23    
-====================
-
-====================
-     2021-09-22    
-====================
 
 * frameworks/av
-b7ef89f  camera: Return error code ERROR_CAMERA_IN_USE if setTorchMode return busy  [Dijack Dong]
+d0361c2  Merge tag 'android-11.0.0_r48' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
 
 
 * frameworks/base
-cf0ead0c  Change Shallow Copy to Deep Copy in UsageStats  [zhuyunyi]
-40e71a3  Broadcast Bluetooth state to OFF properly  [Ugo Yu]
-c229e01  Avoid Bluetooth gets turned on by enableBle  [Ugo Yu]
-acfa482  [fixup!] Fix some haptic issues with gestural navigation  [DennySPb]
+55278b9  Automatic translation import  [DennySPb]
+2987e68  Merge tag 'android-11.0.0_r48' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
 
 
-====================
-     2021-09-21    
-====================
-
-* frameworks/base
-12c9fd4  SystemUI: Move charging animation above FOD icon if In-display fingerprint is active  [Hikari-no-Tenshi]
-72b2162  SystemUI:  fix showing duplicated charging status  [Scott Warner]
+* frameworks/opt/telephony
+b001ef6  Merge tag 'android-11.0.0_r48' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPb]
 
 
 * hardware/qcom-caf/wlan
-8c2a8fb  Merge tag 'LA.UM.9.8.r1-04000-SDM710.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/wlan into HEAD  [DennySPb]
+b202cb1  Merge tag 'LA.UM.9.12.r1-13200-SMxx50.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/wlan into HEAD  [DennySPb]
 
 
-====================
-     2021-09-20    
-====================
-
-* frameworks/av
-e5ca939  Merge tag 'LA.QSSI.11.0.r1-13300-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/av into HEAD  [DennySPb]
+* packages/apps/GamingMode
+672f0cb  Automatic translation import  [DennySPb]
 
 
-* frameworks/base
-796275a  Fix an instance of -Wunused-but-set-variable.  [Yi Kong]
-569e1a5  Add toggle for floating notification dismiss button [1/2]  [Pranav Vashi]
-a870eff  SystemUI: Introduce OOS style notification clear all button  [00day0]
-7f01e92  fixup! SystemUI: Show bluetooth battery level when available  [Luca Stefani]
-10aa18b  Revert "SystemUI: Update Bluetooth battery level assets."  [DennySPb]
-
-
-* frameworks/native
-e28aabc  Handle R16G16B16A16_FLOAT in AHardwareBuffer_bytesPerPixel  [Jason Macnak]
-d026b56  Read ro.hardware.egl for ANGLE's filename  [Tim Van Patten]
-3e71f70  OpenGL: fix initializeAnglePlatform with built-in ANGLE driver  [Yiwei Zhang]
-a467aca  Update checking debug.vulkan.layer.* system props  [Jason Macnak]
-50258a0  Fix setting the dequeueBuffer timeout to -1  [Nicolas Capens]
-
-
-* frameworks/opt/net/ims
-3b65a11  Merge tag 'LA.QSSI.11.0.r1-13300-qssi.0' of https://source.codeaurora.org/quic/la/platform/frameworks/opt/net/ims into HEAD  [DennySPb]
+* packages/apps/Settings
+607da4b  Automatic translation import  [DennySPb]
+1222703  Merge tag 'android-11.0.0_r48' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
 
 
 * packages/apps/SyberiaSettings
-8ca1fa3  Add toggle for floating notification dismiss button [2/2]  [Pranav Vashi]
+e81a007  Automatic translation import  [DennySPb]
 
 
-* vendor/qcom/opensource/audio
-2bf491e  Merge tag 'LA.QSSI.11.0.r1-13300-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/audio into HEAD  [DennySPb]
+* packages/apps/ThemePicker
+3c26920  Merge tag 'android-11.0.0_r48' of https://android.googlesource.com/platform/packages/apps/ThemePicker into HEAD  [DennySPb]
 
 
-* vendor/qcom/opensource/commonsys-intf/bluetooth
-4b9c0ab  Merge tag 'LA.QSSI.11.0.r1-13300-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/bluetooth-commonsys-intf into HEAD  [DennySPb]
+* system/core
+e5564eb  Use std::shared_ptr in Epoll's callback list.  [David Anderson]
 
 
-* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
-d36b66c  Merge tag 'LA.QSSI.11.0.r1-13300-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/packages/apps/Bluetooth into HEAD  [DennySPb]
-
-
-* vendor/qcom/opensource/commonsys/system/bt
-694aac2  Merge tag 'LA.QSSI.11.0.r1-13300-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/system/bt into HEAD  [DennySPb]
+* vendor/syberia
+0634c19  v4.9  [DennySPb]
+d4725e6  extract_utils: add support for /vendor/odm/etc case  [DennySPb]
+126a740  extract_utils: Add "check_elf_files: false" also for binaries  [Sebastiano Barezzi]
+bc4568a  extract_utils: generate_prop_list: Ignore vdex/odex files too  [Alessandro Astone]
+0484005  extract_utils: Seperate multiple override targets with comma  [Arian]
+686b146  extract_utils: Don't fixup pinned files when they are supposed to be kept  [Arian]
+10cee3b  extract_utils: Display the fixup hash when keeping pinned files  [Arian]
+41650d1  fixup! extract_utils: Add support for overriding packages  [LuK1337]
+22de9d6  extract_utils: Add support for overriding packages  [TheStrix]
+9a6321f  extract_utils: Skip colored echo when piped  [Bruno Martins]
+0100ed4  extract_utils: Add a bit of color to the output  [Bruno Martins]
+7ad4ebb  extract_utils: Introduce colored echo helper function  [Bruno Martins]
 
 
 ====================
-     2021-09-19    
+     2021-10-04    
+====================
+
+* external/chromium-webview
+9e193c9  Update arm{,64} Chromium Webview to 94.0.4606.71 and rebuild x86{,_64}  [Kevin F. Haggerty]
+
+
+====================
+     2021-10-03    
 ====================
 
 ====================
-     2021-09-18    
+     2021-10-02    
 ====================
+
+* system/vold
+bb8daa9  vold: Build exfatprogs & declare support of exFAT.  [Alexander Koskovich]
+
+
+====================
+     2021-10-01    
+====================
+
+* art
+087c72c  Do not acquire runtime_shutdown_lock_ in Abort()  [Hans Boehm]
+82f4d77  Replace weak-ref access disable checkpoint with STW pause  [Lokesh Gidra]
+c6578ea  Catch clauses should only have throwable types.  [Nicolas Geoffray]
+a56927f  Explicitly note ignored return result  [Yi Kong]
+54f2c9b  Remove entry SuspendCheck for methods which only call on the slow path  [Santiago Aboy Solanes]
+f63fdaf  Do not mark large objects for evacuation  [Hans Boehm]
+3238508  Handle the case the enclosing class is missing.  [Nicolas Geoffray]
+d2c781e  Fix missing suspend check in nterp for goto32 +0  [Nicolas Geoffray]
+0ee7e75  Simplify IRTEntry  [Hans Boehm]
+be3589a  Don't do a recursive call when there are CHA guards.  [Nicolas Geoffray]
+4049352  optimization of gc load, reduce gc in some scenarios  [zengkaifa]
+
+
+* packages/apps/Settings
+395a8f3  Settings: Make lottie animations non clickable  [DarkJoker360]
+407d234  Merge changes Iacd5b2e3,I53924a33,I47bb9872,I15f25ad2,Id87843eb into 11.0  [dennyspb]
+
+
+* packages/apps/SyberiaSettings
+d6fb32d  SyberiaSettings: Make lottie animations non clickable  [blinoff82]
+
+
+====================
+     2021-09-30    
+====================
+
+* frameworks/base
+2960f9d  Revert PixelCopy commits  [DennySPb]
+
+
+* frameworks/native
+a83bc29  Revert "Add a better getLastQueuedBuffer"  [DennySPb]
+cd9a9dc  libbinder: support BR_ONEWAY_SPAM_SUSPECT  [Hang Lu]
+
+
+* packages/apps/Settings
+40e3c89  Settings: Avoid enforcing weird backgrounds  [El Dainosor]
+1411a5d  Settings: Show avatar on search bar in all it's glory  [George Zacharia]
+625713d  Settings: Improve search bar layout  [Nauval Rizky]
+166447f  Settings: Conditionally enable multi-user avatar  [Anushek Prasal]
+af4e1d3  SearchBar: Add avatar to search bar  [Alex]
+
+
+* packages/apps/SyberiaSettings
+407b1e5  SyberiaSettings: fix typo in ru translation  [SVB22]
+
+
+====================
+     2021-09-29    
+====================
+
+* device/qcom/sepolicy_vndr
+3284037  legacy: Add write permission to proc file system  [Ankita Bajaj]
+0ff52df  legacy: Allow writing WLAN driver/fw version into property  [Bruno Martins]
+
+
+* frameworks/av
+bd103ea  codec2: switch HAL passing of C2FrameDate to clarified C2InfoBuffer  [Lajos Molnar]
+c0d8eda  codec2: clarify infoBuffers in C2FrameData  [Lajos Molnar]
+4274304  codec2: implement C2InfoBuffer  [Lajos Molnar]
+a276602  codec2 HAL: Enable C2InfoBuffer passing in from client to HAL  [Sungtak Lee]
+3e60212  codec2: add audio encoder input frame size  [Wonsik Kim]
+8dc19c2  codec2: define secure mode SM_READ_PROTECTED_WITH_ENCRYPTED  [Lajos Molnar]
+3954990  Close sidebandHandle to avoid fd leakage  [Houxiang Dai]
+6ab0459  Fix enum comparison to reenable -Wenum-compare  [Liz Kammer]
+5e0e5d3  CCodec: FrameReassembler to accept 0-size frames  [Wonsik Kim]
+680fe61  CCodec: support audio encoders requesting frame size  [Wonsik Kim]
+bc97e1a  CCodec: Support SM_READ_PROTECTED_WITH_ENCRYPTED mode for secure decoders  [Sungtak Lee]
+eb22731  CCodec: Report error when display surface is obsolete  [Sungtak Lee]
+9dc5bd2  CCodec: fix handling buffers in extra slots  [Wonsik Kim]
+2048843  AAC: Don't fail configuration on older HALs  [Ben Murdoch]
+b62514f  C2SoftMpeg4Dec: fix null pointer dereference issue  [Aayush Soni]
+15763a5  C2SoftMpeg4Dec: Fix memory leak in onRelease  [Aayush Soni]
+190ef15  C2SoftMpeg4Enc: Do not return 0 byte CSD for H263  [Harish Mahendrakar]
+6c2224f  NdkMediaCodec: fix AMediaCodec_configure to keep input format constant.  [Manisha Jajoo]
+0430e4a  Suppress ordered-compare-function-pointers warning  [Yi Kong]
+b9c0dc2  MediaCodec: manage resources for hardware audio codecs  [Wonsik Kim]
+4bdf041  mpeg4enc: Ignore integer overflow in encoder idct functions  [Aayush Soni]
+94b630a  libeffects: Fix unused-but-set-variable warnings  [Harish Mahendrakar]
+b0ee2d2  media: Implement CodecBase interfaces in ACodec  [jiangli.liu]
+72533e4  Fix logic error in SkipCutBuffer.cpp  [xiahong.bao]
+
+
+* frameworks/base
+48653bf  Unregister configuration listener after the WindowProcessController was disallowed to be overridden.  [gepeng]
+2912cff  [fixup] SystemUI: fix my derp in content observer  [DennySPb]
+
+
+* frameworks/native
+9fb9092  Tilt scale correction for certain resolutions  [Tatsunosuke Tobita]
+d25872f  Add a better getLastQueuedBuffer  [John Reck]
+
+
+* system/libhwbinder
+88e1b3f  further downgrade oneway spam log  [Steven Moreland]
+512cc5c  Failing to enable oneway spam detection is not an error.  [Martijn Coenen]
+f39c623  libhwbinder: support BR_ONEWAY_SPAM_SUSPECT  [Hang Lu]
+
+
+* system/sepolicy
+4b14fcd  sepolicy: allow BINDER_ENABLE_ONEWAY_SPAM_DETECTION for all processes  [Hang Lu]
+2748d9f  public/file.te: add 'allow proc_net proc:filesystem associate'  [Maciej Żenczykowski]
+
 
