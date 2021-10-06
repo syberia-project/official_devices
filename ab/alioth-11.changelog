@@ -1,28 +1,24 @@
 ====================
-     2021-09-22
+     2021-10-06
 ====================
 
 Kernel:
- - Upstream to 4.19.206
- - Scheduler aligned with Benzo Redbull kernel
- - Imported changes for faster console FrameBuffer
- - Improved haptics and disabled logspam
- - Disabled various debuggings
+ - Upstream to 4.19.208
+ - Merged LA.UM.9.12.r1-13200-SMxx50.0 caf tag
+ - Merged 4.19-q Linux kernel
 
 Rom:
- - Merge tag 'LA.QSSI.11.0.r1-13300-qssi.0'
- - Add OOS style notification clear all button
- - Fixed BT icon color on lockscreen
- - Improved Low memory killer
- - Other fixes under the hood
- 
+ - Syberia v4.9
+ - Merged October security patch 'android-11.0.0_r48'
+ - Added unlimited storage for Google Photos
+ - Added volume panel styles
+ - Added avatar to search bar
+ - Fixed accidentally broken switch styles
+ - Improved system responsiveness in ART environment
+ - Other fixes and improvements under the hood
+ - Updated translations
+
 Device:
- - Back gesture vibration unified with system wide haptics
- - Rootdir improvements: now device knows it's hwversion
- - Fixed MotoDolby processing for Bluetooth audio
- - Disabled VOIP audio compression
- - Disabled more debug services
- - Additional Ultrasound fixes
- - Enabled zram-writeback job
- - Disabled LMKD logging
- - Enable IORap
+ - Added FPS info in Game Mode
+ - Update camera, sensor and charger blobs
+ - Reduced delay time for auto brightness brightening
