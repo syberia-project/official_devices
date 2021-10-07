@@ -1,10 +1,87 @@
 ====================
-     2021-10-02    
+     2021-10-07    
 ====================
 
-* system/vold
-273ecec  vold: Build exfatprogs & declare support of exFAT.  [Alexander Koskovich]
+====================
+     2021-10-06    
+====================
 
+====================
+     2021-10-05    
+====================
+
+* build/make
+9344c26  Merge tag 'android-11.0.0_r48' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
+
+
+* frameworks/av
+d0361c2  Merge tag 'android-11.0.0_r48' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
+
+
+* frameworks/base
+55278b9  Automatic translation import  [DennySPb]
+2987e68  Merge tag 'android-11.0.0_r48' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+
+
+* frameworks/opt/telephony
+b001ef6  Merge tag 'android-11.0.0_r48' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPb]
+
+
+* packages/apps/GamingMode
+672f0cb  Automatic translation import  [DennySPb]
+
+
+* packages/apps/Settings
+607da4b  Automatic translation import  [DennySPb]
+1222703  Merge tag 'android-11.0.0_r48' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
+
+
+* packages/apps/SyberiaSettings
+e81a007  Automatic translation import  [DennySPb]
+
+
+* packages/apps/ThemePicker
+3c26920  Merge tag 'android-11.0.0_r48' of https://android.googlesource.com/platform/packages/apps/ThemePicker into HEAD  [DennySPb]
+
+
+* system/core
+e5564eb  Use std::shared_ptr in Epoll's callback list.  [David Anderson]
+
+
+* vendor/syberia
+a482f80  Merge changes I6d0441ae,I1d8b55ed,I93c1524f,Ibe77e8b9,I154ee3a4, ... into 11.0  [dennyspb]
+5a23070  v4.9  [DennySPb]
+d4725e6  extract_utils: add support for /vendor/odm/etc case  [DennySPb]
+
+
+====================
+     2021-10-04    
+====================
+
+* vendor/syberia
+126a740  extract_utils: Add "check_elf_files: false" also for binaries  [Sebastiano Barezzi]
+bc4568a  extract_utils: generate_prop_list: Ignore vdex/odex files too  [Alessandro Astone]
+0484005  extract_utils: Seperate multiple override targets with comma  [Arian]
+686b146  extract_utils: Don't fixup pinned files when they are supposed to be kept  [Arian]
+10cee3b  extract_utils: Display the fixup hash when keeping pinned files  [Arian]
+41650d1  fixup! extract_utils: Add support for overriding packages  [LuK1337]
+22de9d6  extract_utils: Add support for overriding packages  [TheStrix]
+9a6321f  extract_utils: Skip colored echo when piped  [Bruno Martins]
+0100ed4  extract_utils: Add a bit of color to the output  [Bruno Martins]
+7ad4ebb  extract_utils: Introduce colored echo helper function  [Bruno Martins]
+
+
+====================
+     2021-10-03    
+====================
+
+* external/chromium-webview
+9e193c9  Update arm{,64} Chromium Webview to 94.0.4606.71 and rebuild x86{,_64}  [Kevin F. Haggerty]
+
+
+====================
+     2021-10-02    
+====================
 
 ====================
      2021-10-01    
@@ -19,145 +96,7 @@
 d6fb32d  SyberiaSettings: Make lottie animations non clickable  [blinoff82]
 
 
-====================
-     2021-09-30    
-====================
+* system/vold
+bb8daa9  vold: Build exfatprogs & declare support of exFAT.  [Alexander Koskovich]
 
-* frameworks/av
-bd103ea  codec2: switch HAL passing of C2FrameDate to clarified C2InfoBuffer  [Lajos Molnar]
-
-
-* frameworks/base
-2960f9d  Revert PixelCopy commits  [DennySPb]
-
-
-* frameworks/native
-a83bc29  Revert "Add a better getLastQueuedBuffer"  [DennySPb]
-cd9a9dc  libbinder: support BR_ONEWAY_SPAM_SUSPECT  [Hang Lu]
-
-
-* packages/apps/Settings
-40e3c89  Settings: Avoid enforcing weird backgrounds  [El Dainosor]
-1411a5d  Settings: Show avatar on search bar in all it's glory  [George Zacharia]
-625713d  Settings: Improve search bar layout  [Nauval Rizky]
-166447f  Settings: Conditionally enable multi-user avatar  [Anushek Prasal]
-af4e1d3  SearchBar: Add avatar to search bar  [Alex]
-
-
-* packages/apps/SyberiaSettings
-407b1e5  SyberiaSettings: fix typo in ru translation  [SVB22]
-
-
-====================
-     2021-09-29    
-====================
-
-* device/qcom/sepolicy_vndr
-3284037  legacy: Add write permission to proc file system  [Ankita Bajaj]
-0ff52df  legacy: Allow writing WLAN driver/fw version into property  [Bruno Martins]
-
-
-* frameworks/av
-c0d8eda  codec2: clarify infoBuffers in C2FrameData  [Lajos Molnar]
-4274304  codec2: implement C2InfoBuffer  [Lajos Molnar]
-a276602  codec2 HAL: Enable C2InfoBuffer passing in from client to HAL  [Sungtak Lee]
-3e60212  codec2: add audio encoder input frame size  [Wonsik Kim]
-8dc19c2  codec2: define secure mode SM_READ_PROTECTED_WITH_ENCRYPTED  [Lajos Molnar]
-3954990  Close sidebandHandle to avoid fd leakage  [Houxiang Dai]
-6ab0459  Fix enum comparison to reenable -Wenum-compare  [Liz Kammer]
-5e0e5d3  CCodec: FrameReassembler to accept 0-size frames  [Wonsik Kim]
-680fe61  CCodec: support audio encoders requesting frame size  [Wonsik Kim]
-bc97e1a  CCodec: Support SM_READ_PROTECTED_WITH_ENCRYPTED mode for secure decoders  [Sungtak Lee]
-eb22731  CCodec: Report error when display surface is obsolete  [Sungtak Lee]
-9dc5bd2  CCodec: fix handling buffers in extra slots  [Wonsik Kim]
-2048843  AAC: Don't fail configuration on older HALs  [Ben Murdoch]
-b62514f  C2SoftMpeg4Dec: fix null pointer dereference issue  [Aayush Soni]
-15763a5  C2SoftMpeg4Dec: Fix memory leak in onRelease  [Aayush Soni]
-190ef15  C2SoftMpeg4Enc: Do not return 0 byte CSD for H263  [Harish Mahendrakar]
-6c2224f  NdkMediaCodec: fix AMediaCodec_configure to keep input format constant.  [Manisha Jajoo]
-0430e4a  Suppress ordered-compare-function-pointers warning  [Yi Kong]
-b9c0dc2  MediaCodec: manage resources for hardware audio codecs  [Wonsik Kim]
-4bdf041  mpeg4enc: Ignore integer overflow in encoder idct functions  [Aayush Soni]
-94b630a  libeffects: Fix unused-but-set-variable warnings  [Harish Mahendrakar]
-b0ee2d2  media: Implement CodecBase interfaces in ACodec  [jiangli.liu]
-72533e4  Fix logic error in SkipCutBuffer.cpp  [xiahong.bao]
-
-
-* frameworks/base
-48653bf  Unregister configuration listener after the WindowProcessController was disallowed to be overridden.  [gepeng]
-2912cff  [fixup] SystemUI: fix my derp in content observer  [DennySPb]
-
-
-* frameworks/native
-9fb9092  Tilt scale correction for certain resolutions  [Tatsunosuke Tobita]
-d25872f  Add a better getLastQueuedBuffer  [John Reck]
-
-
-* system/libhwbinder
-88e1b3f  further downgrade oneway spam log  [Steven Moreland]
-512cc5c  Failing to enable oneway spam detection is not an error.  [Martijn Coenen]
-f39c623  libhwbinder: support BR_ONEWAY_SPAM_SUSPECT  [Hang Lu]
-
-
-* system/sepolicy
-4b14fcd  sepolicy: allow BINDER_ENABLE_ONEWAY_SPAM_DETECTION for all processes  [Hang Lu]
-2748d9f  public/file.te: add 'allow proc_net proc:filesystem associate'  [Maciej Żenczykowski]
-
-
-====================
-     2021-09-28    
-====================
-
-* frameworks/base
-0c93b3e  Need shrink for pixel copy  [Chun Jiang]
-c6384f4  Avoid sampling outside BQ crop rect  [John Reck]
-9c6693f  Fix PixelCopy & BQ crop  [John Reck]
-9d9e605  fix google widget timing issue  [Ruoyao Liu]
-1de6a92  base: Expose system icon area weight  [Anushek Prasal]
-
-
-* packages/apps/Settings
-c264ee5  team: Add maintainer for Xiaomi Mi A3  [blinoff82]
-
-
-* system/libhwbinder
-f20caef  libhwbinder: support '0' fd for binder  [Steven Moreland]
-
-
-* vendor/syberia
-0f306b3  Add Xiaomi Mi A3 to official devices  [blinoff82]
-d408245  Changelog: Fix device name generation for some devices  [koron393]
-1f26688  vendor: include Volume plugins  [DennySPb]
-
-
-====================
-     2021-09-27    
-====================
-
-* frameworks/base
-d505720  [fixup!] Fix some haptic issues with gestural navigation  [DennySPb]
-e8ba807  [fixup] Add toggle for floating notification dismiss button  [DennySPb]
-3afa7c4  graphics: Fix crash when system body font family is invalid  [Danny Lin]
-4fc04695  SystemUI: Fix NPE on Volume panel plugins  [ZeNiXxX]
-e341313  VolumePanel: Drop aosp plugin [1/3]  [NurKeinNeid]
-5924542  base: Add ShapeShift Volume Panel Style [1/3]  [AshutoshSundresh]
-6ec83f8  Introduce Material (P404 Style) Volume panel [1/3]  [spkal01]
-7991df7  Plugins: Introduce OOS Vol Panel [1/3]  [spkal01]
-d968ea5  VolumePluginManager: More fixes toggling panel  [Pranav Vashi]
-6b4c809  VolumePluginManager: Fix SystemUI FC on stock volume Dialog  [Varun Date]
-2f700e6  Add MIUI volume style plugin [1/3]  [00day0]
-ae31ce8  VolumeDialogImpl: Remove alert slider hide icon  [Pranav Vashi]
-32403b6  SystemUI: Fix NPE on Volume panel plugins  [ZeNiXxX]
-6478872  fwb: Allow using plugins even on production  [HrX03]
-d8a1c53  base: VolumePluginManager: Add default constructor  [Kshitij Gupta]
-697a89b  fwb: Implement VolumePluginManager  [HrX03]
-46f320b  GamingMode: FPS info overlay [1/3]  [DennySPb]
-472c554  Change Shallow Copy to Deep Copy in UsageStats  [zhuyunyi]
-397bfe8  Broadcast Bluetooth state to OFF properly  [Ugo Yu]
-197014a  Avoid Bluetooth gets turned on by enableBle  [Ugo Yu]
-
-
-====================
-     2021-09-26    
-====================
 
