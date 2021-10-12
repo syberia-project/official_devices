@@ -1,126 +1,44 @@
 ====================
-     2021-09-28    
+     2021-10-12    
 ====================
 
-* bootable/recovery
-bfaddb8  recovery: bring back some menu items to userdebug and user builds  [Magicxavi]
-03a1e89  Revert "recovery: Remove the "Format system partition" menu on A/B devices"  [Richard Hansen]
-4e813ba  recovery: make wiping dynamic partitions work  [Tim Zimmermann]
-fa0d16b  gitreview  [Magicxavi]
-148cb9b  Revert "recovery: New install/progress animation"  [Tom Marshall]
-408ce58  ui: Syberia UI  [Magicxavi]
-0e86d30  ui: Sort menu items and rename them  [Magicxavi]
-21f7f5b  ui: Edit title strings for Syberia  [Magicxavi]
+* packages/apps/SyberiaSettings
+363398c  Revert "Syberia:Add Screen off fod shortcut to FOD tweaks category"  [Magicxavi]
 
+
+====================
+     2021-10-11    
+====================
+
+====================
+     2021-10-10    
+====================
+
+====================
+     2021-10-09    
+====================
+
+====================
+     2021-10-08    
+====================
+
+====================
+     2021-10-07    
+====================
+
+====================
+     2021-10-06    
+====================
 
 * build/make
-1d88dec  releasetools: Use bsdiff for recovery patch by default  [Nicholas Lim]
+3237712  releasetools: Use bsdiff for recovery patch by default  [Nicholas Lim]
 
 
 * frameworks/av
-4aab60d  camera: remove vendor.qti.hardware.camera.device@1.0 from shared_lib_headers  [Magicxavi]
-85be0080  Revert "MediaPlayer: don't explicit constructor"  [Magicxavi]
-586915e  MediaPlayer: don't explicit constructor  [Magicxavi]
-
-
-* frameworks/base
-d505720  [fixup!] Fix some haptic issues with gestural navigation  [DennySPb]
-e8ba807  [fixup] Add toggle for floating notification dismiss button  [DennySPb]
-3afa7c4  graphics: Fix crash when system body font family is invalid  [Danny Lin]
-4fc04695  SystemUI: Fix NPE on Volume panel plugins  [ZeNiXxX]
-e341313  VolumePanel: Drop aosp plugin [1/3]  [NurKeinNeid]
-5924542  base: Add ShapeShift Volume Panel Style [1/3]  [AshutoshSundresh]
-6ec83f8  Introduce Material (P404 Style) Volume panel [1/3]  [spkal01]
-7991df7  Plugins: Introduce OOS Vol Panel [1/3]  [spkal01]
-d968ea5  VolumePluginManager: More fixes toggling panel  [Pranav Vashi]
-6b4c809  VolumePluginManager: Fix SystemUI FC on stock volume Dialog  [Varun Date]
-2f700e6  Add MIUI volume style plugin [1/3]  [00day0]
-ae31ce8  VolumeDialogImpl: Remove alert slider hide icon  [Pranav Vashi]
-32403b6  SystemUI: Fix NPE on Volume panel plugins  [ZeNiXxX]
-6478872  fwb: Allow using plugins even on production  [HrX03]
-d8a1c53  base: VolumePluginManager: Add default constructor  [Kshitij Gupta]
-697a89b  fwb: Implement VolumePluginManager  [HrX03]
-46f320b  GamingMode: FPS info overlay [1/3]  [DennySPb]
-472c554  Change Shallow Copy to Deep Copy in UsageStats  [zhuyunyi]
-397bfe8  Broadcast Bluetooth state to OFF properly  [Ugo Yu]
-197014a  Avoid Bluetooth gets turned on by enableBle  [Ugo Yu]
-
-
-* packages/apps/Settings
-9193ba5  team: Add maintainer for Xiaomi Mi A3  [blinoff82]
+221566a  camera: remove vendor.qti.hardware.camera.device@1.0 from shared_lib_headers  [Magicxavi]
 
 
 * system/core
-cdaf92f  ziptool: restore unzip for recovery  [Alessandro Astone]
-
-
-* system/sepolicy
-9870a6d  Fix storaged access to /sys/block/mmcblk0/stat after 48027a00  [Vladimir Oltean]
-7da88c5  sepolicy: merge api 30 changes to common folders  [Magicxavi]
-
-
-* vendor/syberia
-5fa3889  Add Xiaomi Mi A3 to official devices  [blinoff82]
-d408245  Changelog: Fix device name generation for some devices  [koron393]
-1f26688  vendor: include Volume plugins  [DennySPb]
-
-
-====================
-     2021-09-27    
-====================
-
-====================
-     2021-09-26    
-====================
-
-====================
-     2021-09-25    
-====================
-
-* device/syberia/sepolicy
-43185c9  Allow system app to read graphics node  [DennySPb]
-
-
-* packages/apps/GamingMode
-b647fbe  GamingMode: Fix danmaku container layoutParam on config changed  [Nauval Rizky]
-43b5ae1  GamingMode: Fix views obscuring other window that needs interaction  [Nauval Rizky]
-3a969f4  GamingMode: FPS Info overlay [2/3]  [DennySPb]
-
-
-* packages/apps/Plugins
-5491e95  Adapt to Syberia needs  [DennySPb]
-
-
-* packages/apps/SyberiaSettings
-0edf3f4  GamingMode: FPS info overlay [3/3]  [DennySPb]
-461b518  SyberiaSettings: Drop aosp volume plugin [2/3]  [NurKeinNeid]
-28b52c7  SyberiaSettings: add Shapeshift Volume panel style [2/3]  [mezzlasha]
-9ad7e07  SyberiaSettings: Implement p404 volume panel [2/3]  [spkal01]
-5f9a27d  SyberiaSettings: Introduce OOS Volume Panel [2/3]  [spkal01]
-b9409b6  SyberiaSettings: Add MIUI compact volume panel style [2/3]  [00day0]
-62532a6  SyberiaSettings: Set default Volume Panel style to stock AOSP  [Varun Date]
-218a596  SyberiaSettings: Volume Panel Plugin Values should not be translatable  [Joey Huab]
-b341ffe  SyberiaSettings: POSP Vol panel styles  [Tejasvp25]
-
-
-====================
-     2021-09-24    
-====================
-
-====================
-     2021-09-23    
-====================
-
-* system/update_engine
-4a4a7d1  Check allocatable space correctly when sideloading on VAB  [Eric Arseneau]
-
-
-====================
-     2021-09-22    
-====================
-
-* frameworks/base
-12c9fd4  SystemUI: Move charging animation above FOD icon if In-display fingerprint is active  [Hikari-no-Tenshi]
-72b2162  SystemUI:  fix showing duplicated charging status  [Scott Warner]
+cb5939e  ziptool: restore unzip for recovery  [Alessandro Astone]
 
 
