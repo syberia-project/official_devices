@@ -1,102 +1,28 @@
 ====================
-     2021-10-07    
+     2021-10-22    
 ====================
 
 ====================
-     2021-10-06    
+     2021-10-21    
 ====================
 
 ====================
-     2021-10-05    
-====================
-
-* build/make
-9344c26  Merge tag 'android-11.0.0_r48' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
-
-
-* frameworks/av
-d0361c2  Merge tag 'android-11.0.0_r48' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
-
-
-* frameworks/base
-55278b9  Automatic translation import  [DennySPb]
-2987e68  Merge tag 'android-11.0.0_r48' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
-
-
-* frameworks/opt/telephony
-b001ef6  Merge tag 'android-11.0.0_r48' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPb]
-
-
-* packages/apps/GamingMode
-672f0cb  Automatic translation import  [DennySPb]
-
-
-* packages/apps/Settings
-607da4b  Automatic translation import  [DennySPb]
-1222703  Merge tag 'android-11.0.0_r48' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
-
-
-* packages/apps/SyberiaSettings
-e81a007  Automatic translation import  [DennySPb]
-
-
-* packages/apps/ThemePicker
-3c26920  Merge tag 'android-11.0.0_r48' of https://android.googlesource.com/platform/packages/apps/ThemePicker into HEAD  [DennySPb]
-
-
-* system/core
-e5564eb  Use std::shared_ptr in Epoll's callback list.  [David Anderson]
-
-
-* vendor/syberia
-a482f80  Merge changes I6d0441ae,I1d8b55ed,I93c1524f,Ibe77e8b9,I154ee3a4, ... into 11.0  [dennyspb]
-5a23070  v4.9  [DennySPb]
-d4725e6  extract_utils: add support for /vendor/odm/etc case  [DennySPb]
-
-
-====================
-     2021-10-04    
-====================
-
-* vendor/syberia
-126a740  extract_utils: Add "check_elf_files: false" also for binaries  [Sebastiano Barezzi]
-bc4568a  extract_utils: generate_prop_list: Ignore vdex/odex files too  [Alessandro Astone]
-0484005  extract_utils: Seperate multiple override targets with comma  [Arian]
-686b146  extract_utils: Don't fixup pinned files when they are supposed to be kept  [Arian]
-10cee3b  extract_utils: Display the fixup hash when keeping pinned files  [Arian]
-41650d1  fixup! extract_utils: Add support for overriding packages  [LuK1337]
-22de9d6  extract_utils: Add support for overriding packages  [TheStrix]
-9a6321f  extract_utils: Skip colored echo when piped  [Bruno Martins]
-0100ed4  extract_utils: Add a bit of color to the output  [Bruno Martins]
-7ad4ebb  extract_utils: Introduce colored echo helper function  [Bruno Martins]
-
-
-====================
-     2021-10-03    
-====================
-
-* external/chromium-webview
-9e193c9  Update arm{,64} Chromium Webview to 94.0.4606.71 and rebuild x86{,_64}  [Kevin F. Haggerty]
-
-
-====================
-     2021-10-02    
+     2021-10-20    
 ====================
 
 ====================
-     2021-10-01    
+     2021-10-19    
 ====================
 
-* packages/apps/Settings
-395a8f3  Settings: Make lottie animations non clickable  [DarkJoker360]
-407d234  Merge changes Iacd5b2e3,I53924a33,I47bb9872,I15f25ad2,Id87843eb into 11.0  [dennyspb]
+====================
+     2021-10-18    
+====================
 
+====================
+     2021-10-17    
+====================
 
-* packages/apps/SyberiaSettings
-d6fb32d  SyberiaSettings: Make lottie animations non clickable  [blinoff82]
-
-
-* system/vold
-bb8daa9  vold: Build exfatprogs & declare support of exFAT.  [Alexander Koskovich]
-
+====================
+     2021-10-16    
+====================
 
