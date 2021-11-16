@@ -1,0 +1,167 @@
+====================
+     2021-11-16    
+====================
+
+* bootable/recovery
+7d3a95c  [hack] use old gptfdisk  [Magicxavi]
+3e86bb7  Merge tag 'android-12.0.0_r13' into syberia Change-Id: I7d0f51722e7df6b42272cf99b7f7882140e90051  [Magicxavi]
+
+
+* external/e2fsprogs
+cc863df  Mark libext2_blkid as vendor available  [LuK1337]
+
+
+* hardware/interfaces
+626c2af  keymasterV4_0: Tags support for FBE wrapped key.  [Shivaprasad Hongal]
+
+
+* system/core
+712d998  fs_mgr: autodetect filesystem type  [Dan Pasanen]
+6a643c2  core: mark libsysutils and libdiskconfig recovery_available  [Alessandro]
+
+
+* system/security
+6a01805  Handle key parameter conversion for FBE_ICE tag  [Phanindra Babu Pabba]
+
+
+====================
+     2021-11-15    
+====================
+
+* device/qcom/sepolicy_vndr
+6e5ab8f  sepolicy_vndr: allow cnd to get wifi_hal_props  [Chenyang Zhong]
+053ff99  sepolicy_vndr: Label clearkey and widevine DRM 1.4 HAL  [Sebastiano Barezzi]
+e9549de  sepolicy: Switch to SYSTEM_EXT_{PUBLIC,PRIVATE}_SEPOLICY_DIRS  [Michael Bestas]
+
+
+* device/syberia/sepolicy
+04580c4  sepolicy: allow settings to read selinux status  [maxwen]
+
+
+* frameworks/base
+2de78a8  Add show|hide udfps view callbacks to IBiometricsFingerprint@2.3 [1/2]  [SagarMakhar]
+
+
+* system/sepolicy
+7fb22de  sepolicy: Optionally build sepolicy_freeze_test  [Nick Reuter]
+d78c4f8  sepolicy: Allow platform_app to use nfc_service for NFC tile  [Daniel Micay]
+0ccb0d7  sepolicy: Allow recovery to alter /  [Gabriele M]
+953698f  sepolicy: whitelist recovery from node creation neverallow  [Alessandro Astone]
+faae297  sepolicy: Add sdcard_posix_contextmount_type attribute  [LuK1337]
+
+
+====================
+     2021-11-14    
+====================
+
+====================
+     2021-11-13    
+====================
+
+====================
+     2021-11-12    
+====================
+
+====================
+     2021-11-11    
+====================
+
+====================
+     2021-11-10    
+====================
+
+* frameworks/base
+2786bb7  Advanced nav gestures: improve code and fix glitches  [ezio84]
+92c0384  Extended swipe: show a double arrow when almost triggered  [Nico]
+81fe995  Allow back swipe on bottom screen if launcher is showing  [ezio84]
+30b4f11  LongSwipeGestures: Vibrate on action if gesture haptic feedback enabled  [DennySPB]
+13a4f8d  Allow extended/"L" back swipe to trigger actions/app/activities [1/2]  [ezio84]
+860e309  core: Expose method to start assistant through Binder  [Danny Lin]
+dc1fc00  ActionUtils: Reverse actions for QS and notification panel  [ezio84]
+ee7fa7e  base: Move actions into its own class [SQUASHED]  [Alex Cruz]
+c3b8c27  Hardware key: Customization support [1/2]  [bigrushdog]
+5e74363  Add api to get or kill foreground app  [ezio84]
+4b64005  [1/2] base: navigation mode settings  [maxwen]
+5c6c6c5  SystemUI: Optional haptic feedback on back gesture [1/2]  [DennySPb]
+2d8b87d  SystemUI: Hide mobile data indicator when VoLTE icon enabled  [DennySPb]
+8ace6a2  TelephonyIcons: make new icons public  [DennySPb]
+f41d39e  Add Margaritov's style VoWifi Icon [1/2]  [blinoff82]
+ae310fa  Add Vivo Vowifi Icon [1/2]  [spkal01]
+8224fe2  SystemUI: Add Vivo X60 Pro VoLTE Icon [1/2]  [AshutoshSundresh]
+1a59d73  SystemUI: Add 2 more VoLTE icons [1/2]  [Advaith Bhat]
+e7765d8  SystemUI: Fix issues with VoWiFi icon  [Adithya R]
+b1988e0  [SQUASH] SystemUI: Addd more selectable VoWiFi icons [1/2]  [DennySPb]
+08104700  SystemUI: Optional VoWiFi icon [1/2]  [DennySPb]
+5a248ee  SystemUI: add CAF VoLTE HD icon [1/2]  [DennySPB]
+12a61e7  SystemUI: support VoWIFI icons  [Weijie Wang]
+525239c  SystemUI: Add EMUI VoLTE icon [1/2]  [DennySPb]
+59796e2  Add MIUI 11 VoLTE icon [1/2]  [Lup Gabriel]
+1b1d671  SystemUI: Add Asus VoLTE Icon [1/2]  [PainKiller3]
+997cceb  VoLTE Icon - User Selectable VoLTE Icon [1/2]  [SuperDroidBond]
+4095cf9  Add VOLTE icon toggle [1/2]  [SagarMakhar]
+b1f45aa  Allow using 4G icon instead of LTE [1/2]  [Pranav Vashi]
+6420fe5  Fix volume rocker skip track on Ambient Display  [ezio84]
+deedc2e  DreamManager: Expose doze state  [Christopher R. Palmer]
+df82303  base: volume key music control [1/2]  [maxwen]
+6a23bf1  Volume Rocker Wake [1/2]  [rascarlo]
+105dff9  ScreenOff torch: Allow to disable torch when screen is on  [DennySPb]
+13eb021  Allow doubletap/longpress power to toggle torch [1/2]  [ezio84]
+08a6605  Double tap to sleep on statusbar [1/2]  [maxwen]
+f712f85  Double tap to sleep on lockscreen [1/2]  [ezio84]
+0c0fc8e  Keyguard: Forward port lockscreen quick unlock (1/2)  [Matt Mower]
+0faf4a0  Keyguard: Add option to scramble pin layout when unlocking (2/2)  [Adnan]
+b36e87a  LayoutInflater: Opportunistically create views directly for performance  [Danny Lin]
+dec1be0  SystemServiceRegistry: Replace ArrayMap with HashMap for performance  [Danny Lin]
+29f38d8  InsetsStateController: Replace ArrayMap with HashMap for performance  [Danny Lin]
+209b089  LocalServices: Replace ArrayMap with HashMap for performance  [Danny Lin]
+1927ee0  ThemedResourceCache: Replace ArrayMap with HashMap for performance  [Danny Lin]
+504a36c  graphics: Blend ARGB colors using Oklab  [Danny Lin]
+a05173a  WallpaperColors: Use CIELAB for light/dark wallpaper detection  [Danny Lin]
+13fd9b6  ColorStateList: Switch to ZCAM for lightness modulation  [Danny Lin]
+70c1919  graphics: Add ZCAM implementation with sRGB interface  [Danny Lin]
+de5177d  SystemUI: Update lock screen clock typography for Inter font  [Danny Lin]
+4c058c4  SystemUI: Fix QS status font weight mismatch in dark mode  [Danny Lin]
+ec31333  Paint: Enable subpixel text positioning by default  [Danny Lin]
+b5ce397  SystemUI: Remove nav bar background in QS customizer  [Danny Lin]
+bf20735  SystemUI: theme: Override modulated dark QS background color  [Danny Lin]
+16cb8f2  SystemUI: Add dual-tone light and dark themes for QS  [Danny Lin]
+91d5f25  SystemUI: Initialize QS tiles in inactive state  [Danny Lin]
+b6758e6  SystemUI: Follow light/dark theme in quick settings  [Danny Lin]
+6986481  Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE"  [Danny Lin]
+48817f3  Revert "Make QS always use dark theme colors"  [Danny Lin]
+362b569  SystemUI: Always refresh power menu on UI mode change  [Danny Lin]
+a9fb481  SystemUI: Reduce scrim color animation duration to 375 ms  [Danny Lin]
+0d4c661  SystemUI: Fix uneven volume icon padding in status bar  [Danny Lin]
+b06d73c  SystemUI: theme: Log generated colors  [Danny Lin]
+af6c180  SystemUI: Use colorkt-based dynamic theme engine for Monet  [Danny Lin]
+576443b  Revert "UI: Always render windows into cutouts"  [DennySPb]
+ddc0578  CarrierConfigManager: Enable LTE+ icon  [Jake Weinstein]
+4f30f7b  Revert "SystemUI: allow devices override audio panel location"  [SVB22]
+d50e1e4  udfps: Add support for udfps on aod without having dedicated sensor  [TheScarastic]
+7ae5e6f  udfps: Allow to configure hbm overlay type  [TheScarastic]
+3e038a2  udfps: Implement UdfpsHbmProvider  [TheScarastic]
+ffb50a2  udfps: change window type to TYPE_DISPLAY_OVERLAY  [TheScarastic]
+ca4d45d  Udfps: Make pressed udfp view configurable  [TheScarastic]
+
+
+* frameworks/native
+8e1e46c  Merge changes from topic "FOD" into 12.0  [dennyspb]
+
+
+* packages/apps/Settings
+d3367bc  Add switch last app to gesture actions [2/2]  [DennySPb]
+0c0080a  Allow extended/"L" back swipe to trigger actions/app/activities [2/2]  [ezio84]
+22cbdc0  [2/2] Settings: navigation mode settings  [maxwen]
+f512580  Settings: Optional haptic feedback on back gesture [1/2]  [DennySPb]
+
+
+* packages/apps/SyberiaSettings
+3df8cab  Allow doubletap/longpress power to toggle torch [2/2]  [ezio84]
+
+
+* vendor/syberia
+c8d6b2d  Merge changes Ib942ed20,I10647e67 into 12.0  [dennyspb]
+fec8e04  Restore accidentally removed config.xml  [DennySPb]
+2070802  Add back turbo prebuilt  [DennySPb]
+
+
