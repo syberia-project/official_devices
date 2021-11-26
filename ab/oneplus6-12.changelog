@@ -1,501 +1,255 @@
 ====================
-     2021-11-02    
+     2021-11-26    
 ====================
 
 * build/make
-c3eb2f6  Merge tag 'android-12.0.0_r13' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
-
-
-* device/qcom/sepolicy_vndr
-e7399d5  legacy: allow cnd to get wifi_hal_props  [Chenyang Zhong]
-7786fd3  Merge tag 'LA.UM.10.3.r1-00300-sdm845.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy_vndr into HEAD  [DennySPb]
-d4b201c  SEPolicy.mk: switch to SYSTEM_EXT_{PUBLIC,PRIVATE}_SEPOLICY_DIRS  [Chenyang Zhong]
-
-
-* external/sqlite
-e8e5823  Revert "SQLite: Update to pre-release of 3.37.0"  [DennySPb]
+b17d6da  Don't enable ADB by default on userdebug builds  [Michael Bestas]
+2ec0e53  build: Prefer using "user" buildtype prop for userdebug aswell  [Henrique Silva]
+4cf3555  Merge "core: sysprop: Use 'release-keys' for build tag" into 12.0  [dennyspb]
+8c7ca88  build: Erase package_cache upon flashing  [Ido Ben-Hur]
+da96818  build: copy files to zip from $OUT/install as well  [jjpprrrr]
+33669c5  copy files to zip from system  [TheScarastic]
+fec4e9e  core: sysprop: Use 'release-keys' for build tag  [Sultanxda]
+07e4651  Don't build useless html viewer  [ezio84]
 
 
 * frameworks/base
-335b180  UI: Always render windows into cutouts  [Andy CrossGate Yan]
-e9afb31  Keyguard/UI: Fix status bar / quick settings margins and paddings  [Andy CrossGate Yan]
-7f99de0  SystemUI: allow devices override audio panel location  [a.derendyaev]
-479c628  PixelPropsUtils: Update fingerprints for crosshatch and raven  [Joey Huab]
-76927eb  Adapt tuner prefs to S settings style  [SagarMakhar]
-9125ca2  TunerServiceImpl: Blacklist Settings.System from tuner reset  [dianlujitao]
-034cbf9  SystemUI: tuner: Allow Tuner API for System settings  [Zhao Wei Liew]
-f2ba651  Tuner: Don't clear out prefs, it's not disabled  [Joe Maples]
-9f029d1  SystemUI: Adapt screenshot sound to ringer modes  [Ashwin R C]
-073acf4  Calm down attention service logspam  [Adhitya Mohan]
-1d216a7  SystemUI: Better QS detail clip animation  [dongwan0605.kim]
-8dca5a5  Fix WindowInsetsBehaviorTests failure  [shawnlin]
-8bf42c3  DMS: Reduce the THRESHOLD_FOR_REFRESH_RATES_DIVIDERS  [Marin Shalamanov]
-ab08a54  PixelPropsUtils: Update to raven (P6P) props  [Dobsgw]
-d69afaa  base: PixelPropsUtils: Add Calculator to party  [PainKiller3]
-8b35db6  base: PixelPropsUtils: Add Gmail & Chrome to party  [maitreya29]
-3dea551  base: Install seccomp filter even if selinux is permissive  [Han Wang]
-7459949  [master] NetworkStats: Avoid Division By 0  [Tyler Wear]
-e9a7fdb  SettingsLib: Update LTE+ icon as per new Silk design  [Adithya]
-1f57cac  base: add zen mode off hook to prevent problems with ringer mode  [maxwen]
-66ec342  Re-add two-button overlay to default overlays  [kubersharma001]
-4f27b24  GLSurfaceView: report draw finished after first onDrawFrame in GLThread  [shoudil]
-f0a53c3  framework-sysconfig: Add deskclock to whitelist  [Qimeng Pan]
-89cbd2b  Updates to various icons:  [Dan Sandler]
-5eab55e  Add whitelist permissions needed for SystemUIGoogle  [Surge1223]
-14bf2eb  disable safe volume everywhere, not just the US  [Rusty Bird]
-b7bce6a  add Settings.System boolean helper methods  [codex-corp]
-33012b4  SystemUI: add more notification snooze times  [Chris]
-c4178b8  Fix NPE when AOSP ambient display preference is removed  [Alex Cruz]
-51dbef0  Revert "Move font overlay packages to Pixel."  [Akash]
-2ef238d  base: Update few drawables  [Jesus R]
-b65f9ff  core: Smoother Upload and Download Animation  [Muhammed Nazim]
-a505878  Cache pin algorithms in PinSet  [Till Kottmann]
-fe085fe  Cache KeyStoreService  [Till Kottmann]
-8979d6f  (Point) Only calculate sin and cos once  [Till Kottmann]
-6ab4082  Make all activities resizable  [Andy CrossGate Yan]
-676a4e9  ParcelFileDescriptor: Stop the panic  [Simao Gomes Viana]
-dcdf0ea  Add synchronization for invokeForAllObservers call  [Devi Sandeep Endluri V V]
-00ad60e  wm: Passing a new ArraySet instance to avoid crash  [Qiushi.Han]
-62033da  Extend the watchdog timeout of main thread  [zhiyong.wang]
-ed09cbc  DragSurface: destroy surfacecontrol in view site  [guyunjian]
-080e4ee  MountService: ensure VolumeRecord with UUID exists before modifying  [Scott Mertz]
-02e8cb6  Crash occured due to null pointer exception.  [Niraj kumar Mishra]
-580a447  frameworks: Fix null pointer Issue  [mqi]
-ef9901e  view: add null check for dispatch touch view  [jianzhou]
-9414b7b  PMS and WMS deadlock when uninstalling APP  [Zhuying Li]
-c028505  The surface hang up when screen on and screen off  [Guo Li]
-7202c4d  Allow APK signature scheme v1 for API 30+ apps  [Danny Lin]
-4853323  StatusBar: Silence logspam  [Harsh Shandilya]
-ced51a2  Shorten wait time for shutdown time optimization  [zljing]
-4982f5f  InputWrapper: Opt out early if session == null  [Lars Greiss]
-91d4a2d  Avoid needless Integer.valueOf() object allocation.  [Tobias Thierer]
-ae498c0  Prevent deadlock when going out of idle state  [Gabriele M]
-e226e8b  DEBUG: Turn off some debugging we don't need.  [mydongistiny]
-c5f3c59  Fix incorrect context classloader initialization in system_server  [yuanhuihui]
-b0e41a4  StorageManagerService: Fix for system_server crash while booting  [peter.zhang]
-1e03f32  Fix MtpDatabase multithreading NullPointerException  [katao]
-8377830  BackupAgent: Add backup shared mode  [Arthur Shuai]
-379a6c7  ViewRootImpl: Fixed memory leak caussed by viewrootImpl objects  [Qin Jing]
-a7eabed  ViewGroup: Remove child parent when a new view is added  [mydongistiny]
-74fd408  Enable KEY_WFC_SPN_FORMAT_IDX_INT universally  [timocapa]
-95ad5ef  SystemUI: Tiny expanding improvement  [BigBrother1984]
-211bb9a  Call log limit 500=>5000  [psyafter]
-5b38ba6  SettingsProvider: Fix for google backup and restore  [PlayfulGod]
-7a16203  Makes the loading "spinner" animation smoother  [Sar Castillo]
-988d747  BluetoothAdapter: disable logspew  [Alexander Martinz]
-8aaf9ee  base: Use MD2 icon for missed call notification  [Anushek Prasal]
-c47e041  base: Update some icons to MD2  [Anushek Prasal]
-d0dd04e  base: Update ic_doc_folder drawable to MD2  [Anushek Prasal]
-ed4a91d  WallpaperService: Fix half black wallpaper after rotating quickly  [jianhuac]
-6a22514  base: Add rounded corners to activity open/close animation  [paphonb]
-402bc57  Apply JNI optimizations to HwParcel  [Daniel Colascione]
-7a3dd02  fix error com.google.android.gms.persistent  [rc420head]
-0e987fc  SystemUI: Fix pink progress animation color in expanded Wi-Fi tile  [Arne Coucheron]
-d998f1d  SettingsProvider: Resolve package name that requires permission  [Pranav Vashi]
-f885a35  Disable cursor drag by default for editable TextViews  [Andy CrossGate Yan]
-4fca98d  SystemUI: Fix Wakelock issue  [Alberto Ponces]
-25234cb  Fingerprints: Increase MAX_FAILED_ATTEMPTS  [xyyx]
-dd918f8  Fix Photosphere/Camera FCs  [Jostein Kjønigsen]
-ed2a591  SystemUI: Bring back ic_qs_bluetooth_connected.xml  [LuK1337]
-f49085f  SettingsProvider: use READ_DEVICE_CONFIG permission  [Ali B]
-f09a506  fixup! SystemUI: Show bluetooth battery level when available  [Luca Stefani]
-cfccbfc  SystemUI: Show bluetooth battery level when available  [LuK1337]
-9992fbb  BiometricScheduler: Cancel operation if not idle  [SagarMakhar]
-8985c52  power: Disable keyboard/button lights while dozing/dreaming  [Steve Kondik]
-6e9fe66  storage: Do not notify for volumes on non-removable disks  [Tom Marshall]
-f7c2363  base: Add START_ACTIVITIES_FROM_BACKGROUND on phone priv-app whitelist  [jhenrique09]
-d7c43a2  PixelPropsUtils: Switch to ro.build.version.incremental instead of ro.build.date  [Alexandre Rangel]
-6f17114  PixelPropsUtils: Make build property spoofing more reliable  [Danny Lin]
-86ac55c  base: PixelPropsUtils: Add Google Assistant to Enable 2.0 UI  [shivatejapeddi]
-6931637  base: PixelPropsUtils: Update Fingerprint To October Security Patch  [maitreya29]
-f33ba3b  base: PixelPropsUtils: Add Material You redesigned apps to spoof list.  [maitreya29]
-533113f  PixelPropsUtils: Don't set model prop if gms  [jhenrique09]
-f3d33f5  PixelPropsUtils: Spoof Pixel XL for Google Photos  [Jarl-Penguin]
-c5583db  PixelPropsUtils: add Google Play Store to party as well  [Pulkit077]
-10d2a13  PixelPropsUtils: Update packages  [Joey Huab]
-d8eb642  PixelPropsUtils: Set redfin build fingerprint  [jhenrique09]
-f215f63  PixelPropsUtils: Switch back to Pixel 5 props for all apps  [jhenrique09]
-f3621ac  PixelPropsUtils: Set pixel 5 props for specific apps  [jhenrique09]
-f5f865e  PixelPropsUtils: Change props to crosshatch  [jhenrique09]
-7ec8374  PixelPropsUtils: bring back wallpaper collection  [Chenyang Zhong]
-89fccc7  PixelPropsUtils: Cleanup apps  [jhenrique09]
-1dd022f  base: PixelPropsUtils: Don't set build type/build debug props  [jhenrique09]
-6e8fba9  base: PixelPropsUtils: Override fingerprint for SettingsIntelligence  [jhenrique09]
-f263ce5  base: Introduce PixelPropsUtils  [jhenrique09]
-b815ada  SystemServer: Only enable fd leak tracker on eng  [Simao Gomes Viana]
-1e6e7e2  Don't update OverScroller fling state if improper time passed  [Jun Wang]
-57bcaec  SQLite: Do integrity_check only once  [yi.jang]
-950be75  SQLiteDatabase: Catch corrupt exception during transaction  [muzbit.kim]
-47232c9  os: Process: Fix wrong code in isThreadInProcess  [leo zhang]
-b77b5eb  SystemUI: Prevent loop with display timeout  [Sam Mortimer]
-cb4941e  ActivityManagerService: Disallow requestSystemServerHeapDump on non-eng builds  [jhenrique09]
-463228a  Fix NPE with void android.view.VelocityTracker.clear()  [Alex Cruz]
-51d08b1  Turn off some debugs  [AndroidRul3z]
-cd92652  Treat default value that wasn't found as empty value  [Danny Baumann]
-aa5647e  ServiceRegistry: Don't throw an exception if OEM_LOCK is missing  [Scott Warner]
-cbfea1a  SystemUI: fix MediaProjection cast crash  [Pawit Pornkitprasan]
-8370f33  aapt2: disable leak detection  [Steven Moreland]
-69cceb2  aapt: Fix compiler warning (clobbered by longjmp)  [Christopher R. Palmer]
-d80ddee  aapt: add check for untranslatable "string-array"s  [Chirayu Desai]
-9a2079c  aapt: Use a std::map instead of a SortedVector  [Christopher R. Palmer]
-d5d86a8  aapt: Speed up the style pruning  [Christopher R. Palmer]
-9a371a7  SystemUI: Use AVCProfileMain for screen recorder  [Arne Coucheron]
-0a1c791  base: Add back the delete action for the screen recorder notification.  [Sourajit Karmakar]
-8c38b2a  screenrec: Save recordings in ScreenRecords  [El Dainosor]
-2293843  Fixed a crash in settings in tts engine selection screen.  [Deve]
-2c487d3  SystemUI: Require unlocking to use sensitive QS tiles  [Danny Lin]
-23d3e08  AutofillManager: Turn off logging by default  [Jason Edson]
-25d91ac  SystemUI: Only add GarbageMonitor tile to default tiles on ENG builds  [Arne Coucheron]
-4acc6b4  webkit: SystemImpl: Make systemIsDebuggable() check IS_ENG as well  [LuK1337]
-c44f0ec  [SQUASH] SystemUI: Add support for displaying Volte icon  [Weijie Wang]
-0db8e97  Legacy WFD output video mode settings[1/3]  [DennySPb]
-fd28428  Statusbar: Add switch for vpn icon  [xyyx]
-053d5de  TunerService: Prevent NPE with tunable  [Pranav Vashi]
-e2c05ab  fwb: Seperate statusbar from tuner and launch externally  [mydongistiny]
-483f1e5  Global Actions with Advanced Reboot [1/3]  [maxwen]
-ead47d6  SystemUI: Name Cellular Tile based on carrier  [Manojkumar Murugeshan]
-e64b222  data: Update PackageInstaller/PermissionController whitelist  [Jason Edson]
-e6e6bdc  PackageInstaller: show current/new version on sideload  [ezio84]
-46dd6c9  SystemUI: Update keyguard clock metrics for Inter font  [Danny Lin]
-01f4d62  Screenshot: Add delete action chip intent  [ganeshi4u]
-9273a4b  base: Switch to ro.build.version.incremental instead of ro.build.date  [Michael Bestas]
-b443aec  PackageManager: allow build-time disabling of components  [Pawit Pornkitprasan]
-ad73f4c  Use new gradient dialog also for recovery/factory reset action  [maxwen]
-180ea39  Fix black screen issue due to wallpaper decoding exceptions  [Weijie Wang]
-a590b50  bootanimation: Always use normal bootanimation  [jhenrique09]
-f529794  PowerProfile: allow overriding default power profile  [Alexander Martinz]
-93ac8a9  SettingsLib: Don't show system overlays on apps list  [Henrique Silva]
-8f351c9  SystemUI: Always disable rotation on lockscreen  [jhenrique09]
-9b5c6e0  SystemUI: Allow overlaying max notification icons  [LuK1337]
-ea495f6  PackageManager: Add configuration to specify vendor platform signatures  [Ethan Chen]
-6edbeb6  AlertSlider: add RU translation to some extras  [DennySPb]
-74308ad  AlertSlider: Adapt to our needs  [DennySPb]
-e766756  AlertSlider: Fix layout for 180 rotation  [Pranav Vashi]
-9f960e1  base: AlertSlider: update resources  [Ali B]
-6462843  AlertSlider: refactor to reflect slider state  [Ali B]
-ead3e9a  Alert Slider: Improve layout  [Pranav Vashi]
-d22adba  Alert slider: Use default position behaviour if position not specified in intent  [Hikari-no-Tenshi]
-6108c6f  Alert slider: Do not hardcode slider position based on ringer mode  [Pranav Vashi]
-158f809  Alert slider: Work better with Key Handlers  [Pranav Vashi]
-0e367f3  SystemUI: Make tri-state SystemUI dialog dimensions conditional  [ZVNexus]
-1b81594  SystemUI: Introduce user interface for Alert Sliders  [Chris Crump]
-5afcbb5  LiveDisplay: Adapt tiles for A12 implementation changes  [DennySPb]
-107437a  LiveDisplay: Don't break lint  [DennySPb]
-50c85a3  SystemUI/Livedisplay: Add anti flicker tile  [Arian]
-a43c282  LiveDisplay: Mark all pending intents as immutable  [Han Wang]
-2b19370  Introduce anti flicker mode in LiveDisplay  [Arian]
-f76948c  LiveDisplayTile: fixup modes cycling for aosp implementation  [DennySPB]
-c327132  LiveDisplay: Switch to ColorDisplayManager  [LuK1337]
-1a21b85  LiveDisplayTile: Remove tile if unavailable  [jhenrique09]
-56f49fa  LiveDisplayManager: Perform null check in getConfig()  [dianlujitao]
-c23db55  OutdoorModeController: Unconditionally enable auto mode on HWC2  [dianlujitao]
-0a651bf  OutdoorModeController: Advertise MODE_AUTO  [dianlujitao]
-d4c49b9  LiveDisplayService: Properly disable ColorTemperature  [dianlujitao]
-b3418bd  LiveDisplayTile: Refresh state after livedisplay initialization  [dianlujitao]
-07df4e2  LiveDisplayTile: Enable for outdoor mode and skip night display on HWC2  [dianlujitao]
-5ff71e3  LiveDisplayService: Notify SystemUI after initialization finished  [dianlujitao]
-014af50  LiveDisplayService: Disable ColorTemperature when NightDisplay is available  [Bruno Martins]
-1382256  LiveDisplay: Use Google's algorithm to convert color temperature to RGB  [Paul Keith]
-d3e3f59  LiveDisplay: Change night/day mode transition behavior  [Paul Keith]
-6eed669  LiveDisplay: Disable by default  [Henrique Silva]
-627e1ca  LiveDisplay: don't start services if phone is encrypted  [Henrique Silva]
-92c02c5  SystemUI: Add reading mode tile  [Joey]
-e8e52e5  SystemUI: Add LiveDisplay tile  [Steve Kondik]
-e5e2957  Introduce LiveDisplay from Lineage  [Henrique Silva]
-d0c940d  base: Add three-fingers-swipe to screenshot [1/2]  [ghbhaha]
-edaf655  base: Redo Pocket mode view like OOS  [Jyotiraditya Panda]
-bd498a7  Fix an edge case in KeyguardUpdateMonitor pocket callback  [paphonb]
-0f3b562  PocketJudge: allow register vendor pocket sensor  [DennySPb]
-f898820  PocketLock: fix flickering on animations  [jhenrique09]
-62c465a  Pocket lock: Add config_pocketModeSupported overlay  [jhenrique09]
-7f31631  pocket: Reduce sleep timeout for pocket lock  [RadixCube]
-47581c3  pocket: Use MD2 lock drawable  [Anushek Prasal]
-0969dd4  Pocket lock improvements  [Henrique Silva]
-611f257  pocket: Fix pocket lock view for display cutouts  [TheStrix]
-0eca40f  pocket: Adjust sleep timeout for pocket lock view to 10 secs  [TheStrix]
-9a4f7d8  pocket: introduce pocket bridge  [Chris Lahaye]
-442b7c9  PocketService: Adjust light sensor rate to 400ms  [Alex Naidis]
-dd43673  pocket: Add hardware acceleration and properly maintain SYSTEM_UI flags  [Chris Lahaye]
-4c8906c  policy: introduce pocket lock  [Carlo Savignano]
-c13e7f1  pocket: introduce pocket judge  [Carlo Savignano]
-056e376  Merge tag 'android-12.0.0_r13' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
-
-
-* frameworks/native
-d40d0c4  Merge tag 'android-12.0.0_r13' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
+d4a54d7  Led lights: don't skip dialer and other ones  [ezio84]
+d0d3e12  Notifications light: Add @hide to fix build  [faust93]
+0883988  Notification lights: use default resources for color on and off [2/2]  [Ezio Lacandia Bijelkic]
+68879b2  LEDs: fix default color  [ezio84]
+7094e60  Allow to customize notification led light [2/2]  [ezio84]
+b71a6c6  Enable notifications led light by default [1/2]  [ezio84]
+a003be8  Battery light customization [1/2]  [Sam Mortimer]
+3254a6a  base: Add api to force show led lights  [ezio84]
+11a98a1  StatusBarIconController: Avoid cast exceptions  [Harsh Shandilya]
+b1ec5d1  Fix net traffic view being white on QQS Header  [SagarMakhar]
+e445305  [SQUASHED] Add Combined & Dynamic Network Traffic Mode [1/2]  [AnkitGourav]
+cae8662  NetworkTraffic: Set default font size of Single Traffic to 42dp.  [spezi77]
+ca66d7c  NetworkTraffic: Fix Net Text Getting Cut at DPI Changes  [SuperDroidBond]
+14b78c5  Avoid casting network traffic to StatusBarIconView to prevent crash  [SpiritCroc]
+2bc41fc  NetworkTraffic: Allow user to choose positioning [1/2]  [calebcabob]
+5f36c9a  Bring back traffic indicator for Notch Devices !!!  [Alex Cruz]
+d1cff92  TrafficSB: Pass the animate bool  [ganeshi4u]
+4df5f7b  NetworkTraffic: Fix gravity  [xyyx]
+687b8a2  Network Traffic: Add Option for Users to select size of Single Traffic (Up/Down) Font Size  [SuperDroidBond]
+155fa66  NetworkTraffic: Show arrows in statusbar [1/2]  [Nico60]
+6198a2d  Option for Up, Down as well for Network Traffic [1/2]  [ezio84]
+aeb2725  Add network traffic monitor properly to statusbar icons  [SpiritCroc]
+b86e957  Bring back traffic indicator for all!  [Alex Cruz]
+837e14d  SystemUI: Add navbar layout inversion tuning  [LuK1337]
+ceb4566  WM: Handle primary display orientation when calculating the transform hint  [Vishnu Nair]
+90ae9d7  Use tmpArgBuffer correctly when argBuffer is null  [Wang Han]
+beeb2e8  fonts: Montserrat [1/2]  [blinoff82]
+2d20b66  base: New font-pack [1/2]  [blinoff82]
+7ebe56d  base: Add San Francisco Display Pro font [1/2]  [blinoff82]
+c956010  base: Add some our fonts from Pie [1/2]  [blinoff82]
+d6be0d4  fonts: Nokia Pure and Fifa2018 [1/2]  [DennySPB]
+d6aa1cb  Update Google Sans font style [1/2]  [Pranav Vashi]
+16030fc  Add Google Sans and Comic Sans font styles [1/2]  [Pranav Vashi]
+9b30f2b  Add semi bold font alias for custom fonts  [Pranav Vashi]
+d8c3d8c  Add OnePlus Slate and SamsungOne font styles [1/2]  [Pranav Vashi]
+40453d0  Add our favourite fonts in AOSP FontEngine [1/2]  [SuperDroidBond]
+36df2b4  base: SystemUI: Unblock alarm and vibrate status bar icons  [Andy CrossGate Yan]
+e879f8f  SystemUI: Allow Wi-Fi/cell tiles to co-exist with provider model  [Danny Lin]
+a29a30d  core: PinSet: fixup and improve code  [jhonboy121]
+79ec920d  core: jni: use -O3  [Simao Gomes Viana]
+28a4dda  Keyguard: Refine indication text  [Andy CrossGate Yan]
+f5b2fde  SettingsLib: Update 4G+ icon to Silk design as well  [TH779]
+dd3b3ae  Fixes crash/race condition when destroyActivity  [katao]
+66d481d  SystemUI: Dismiss keyguard on boot if disabled by current profile  [Gabriele M]
+f01fe62  keyguard: Do not trigger a wake up when hiding lockscreen  [Arne Coucheron]
+c50bd0e  SystemUI: Don't forcefully show lock icon background  [hpnightowl]
+ecac5b1c  base: Expose system icon area weight  [Anushek Prasal]
+a6856ed  [BugFix][HWASAN] stack-buffer-overflow  [chenguanyou]
+b356c79  Fix: "Clear All" recent app screen loop bug  [vincent.cw_lee]
+a964975  Fix protected broadcast error for doze intents  [ezio84]
 
 
 * packages/apps/Settings
-15c7464  Merge tag 'android-12.0.0_r13' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
+326506d  Settings: Hide notification light color preference if no multicolor led  [Vol Zhdanov]
+2838ebf  Allow to customize notification led light [1/2]  [xyyx]
+7593c80  Enable notifications led light by default [2/2]  [ezio84]
+9b28228  InstalledAppDetails: fix refreshing storage summary after force stop  [Altaf-Mahdi]
+62f7c3a  Settings: Show all available SIMs in provider model  [Adithya R]
+368a4e2  Settings: Bring in missing lottie animations  [Adithya R]
+c20e389  fixup! Settings: Add back theming under display settings  [saikiran2001]
+0834e8d  Settings: Add back theming under display settings  [SagarMakhar]
+0194448  Settings: Move Notch Cutout to Display  [shivatejapeddi]
+2c39441  AmbientDisplay: Add custom pref for devices with custom doze packages  [jhenrique09]
+4a82473  Revert "Settings: Add config for SuggestionServiceComponent"  [DennySPb]
+fee8e3b  Remove aosp battery percentage option  [ezio84]
 
 
 * packages/apps/SyberiaSettings
-ae9de1a  Bring back some features  [DennySPb]
-21a79e6  Update syberia settings icon  [DennySPb]
+2cc145c  Restore battery lights settings  [DennySPb]
+10a4c19  Traffic: Change to if/else from switch for updateTrafficLocation()  [sb6596]
+1c74783  NetTraffic: Update default font size for single text  [Arghya Chanda]
+f032395  NetworkTraffic: Add Option for Users to select size of Single Traffic (Up/Down) Font Size [2/2]  [SuperDroidBond]
+bbbb630  Add network traffic type [2/2]  [Jon Haus]
+68198ef  NetworkTraffic positioning: Adapt to new settings flags  [spezi77]
+ab2828f  Network traffic location [2/2]  [Anushek Prasal]
+59c4a60  Hide arrows in Network Traffic indicators [2/2]  [Nico60]
+63d3f31  Status network traffic [2/2]  [ezio84]
+460fec0  Restore NavBar settings  [DennySPb]
+
+
+====================
+     2021-11-25    
+====================
+
+====================
+     2021-11-24    
+====================
+
+* build/make
+f1a1734  combo: Add cortex-a76 to known v8-2a cores  [Jason Edson]
+f139bba  Use Unix epoch time for build number  [Danny Lin]
+bca501e  build: Only use RRO for framework on mainline products  [Danny Lin]
+02a5ef7  build: Don't build legacy WallpaperPicker  [Danny Lin]
+ff78a6a  core: Remove ro.kernel.android.checkjni  [Chet Kener]
+ee4a071  core: Disable Dalvik lock contention logging  [beanstown106]
+569f620  product: Disable dataroaming by default  [Pawit Pornkitprasan]
+68f85b5  Add ext2, ext3, and vfat to releasetools  [Brandon Bennett]
+31316de  Create 0 compression ratio jar files  [arter97]
+d044763  Use 0 compression when creating the target_files package  [Park Ju Hyung]
+e25deaf  core: sysprop: Use 'test-keys' only on eng build type  [kubersharma001]
+
+
+* packages/apps/Launcher3
+0a81e50  Launcher3: fix all app search overlap  [Volodymyr Zhdanov]
+24105a4  Launcher3: Fix all apps view not dismissing  [Timi Rautamäki]
 
 
 * system/core
-b1aba09  libdm: Export ExtractBlockDeviceName()  [Bart Van Assche]
-1cca570  libdm: Make ExtractBlockDeviceName() return its result  [Bart Van Assche]
-ebc8596  Rename two local variables  [Bart Van Assche]
-0f411e6  Reduce the queue depth of loop devices used by the zram driver  [Bart Van Assche]
-0debb8c  init: Weaken property override security for the init extension  [Alex Naidis]
+3307b42  Set the I/O scheduler of loop devices to 'none'  [Bart Van Assche]
+ddf8e43  KeyMint: don't mix Binder and std shared pointers  [David Drysdale]
+be3e47e  llkd: Disable in userdebug builds by default  [Suren Baghdasaryan]
+0a1445d  task_profiles: add ServicePerformance to legacy device policy  [Wei Wang]
+7631568  libprocessgroup: Activate controllers in cgroup v2 hierarchy at intermediate levels  [Suren Baghdasaryan]
 
 
 ====================
-     2021-11-01    
+     2021-11-23    
 ====================
 
-====================
-     2021-10-31    
-====================
+* device/qcom/sepolicy
+ca7bacd  Merge tag 'LA.QSSI.12.0.r1-05000-qssi.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into HEAD  [DennySPb]
 
-* packages/apps/Settings
-e3a0f6f  Remove no longer exists proguard config  [DennySPb]
-0da2deb  Initial syberia team  [DennySPb]
-45edf97  fuelgauge: Use Enhanced Battery Prediction from Turbo  [Joe Maples]
-f49f05d  Settings: Allow sorting Applications by size  [Roman Royer]
-383e5b5  Settings: Add config for SuggestionServiceComponent  [Jason Edson]
-ee9ef13  Show user's Google avatar on the homepage  [Jason Edson]
-2278f4b  Legacy WFD output video mode settings [2/3]  [DennySPb]
-491391a  AnimationSeekbar: Accept digit vales in the hundredths  [Jason Edson]
-a43fd68  Settings: Use seekbar to allow setting arbitrary animation values  [Steve Kondik]
-ba374d3  Settings: Add pocket lock toggle  [Chris Lahaye]
-332e8bd  Settings: Add a toggle for anti flicker mode in LiveDisplay settings  [Arian]
-18a4df7  LiveDisplaySettings: Hide automatic outdoor mode preference on HWC2  [dianlujitao]
-b82e532  LiveDisplaySettings: Reenable display mode preference for outdoor mode  [dianlujitao]
-37d0e40  Settings: Don't index display mode and color temperature on HWC2  [Henrique Silva]
-d3cbee2  LiveDisplaySettings: Fix outdoor mode preference on hwc2  [jhenrique09]
-ace61ba  livedisplay: Don't show display mode and color tempertature on HWC2  [Rashed Abdel-Tawab]
-c17c1fa  Settings: Update RU transation for LiveDisplay  [blinoff82]
-755e0b8  LiveDisplay: Add illustration into picture and color adjustment  [Henrique Silva]
-710e369  Settings: Changes for LiveDisplay  [Henrique Silva]
+
+* device/qcom/sepolicy_vndr
+4fd68a0  sepolicy:kona: drop mediatranscoding  [Akash]
 
 
 ====================
-     2021-10-30    
-====================
-
-* external/sqlite
-3a55546  Fix parameter checking logic error in tokenize  [Jinguang Dong]
-ee041de  dist: Tune flags according to sqlite documentation  [xNombre]
-
-
-* packages/apps/DeskClock
-5fc6271  Add exact alarm permission to deskclock  [Suprabh Shukla]
-6fafaa3  [LSC] Add LOCAL_LICENSE_KINDS to packages/apps/DeskClock  [Bob Badour]
-d6bccd4  DeskClock: Don't test ringtone holder size  [Luca Stefani]
-bdf938c  DeskClock: Squashed AOSP changes before java app was removed.  [Colin Marsch]
-ccb1ad4  Add an exported flag in manifest  [Ashwini Oruganti]
-1ff7289  Remove MODULE_LICENSE_APACHE2 from DeskClock  [Bob Badour]
-
-
-* packages/apps/Nfc
-8990fa2  Merge branch '12.0' of https://github.com/syberia-project/platform_packages_apps_Nfc into HEAD  [DennySPb]
-
-
-* system/sepolicy
-f6920a2  Allow permissive domains in user builds too  [DennySPB]
-bc5a841  Allow ignore neverallows in user builds  [Zhenxiang]
-
-
-====================
-     2021-10-29    
+     2021-11-22    
 ====================
 
 * bionic
-d3b7544  Merge "libc: Mark libstdc++ as vendor available" into 12.0  [dennyspb]
-6f8f42f  Merge tag 'android-12.0.0_r7' of https://android.googlesource.com/platform/bionic into HEAD  [DennySPb]
+79570e9  Optimize the mbs fast path slightly.  [Elliott Hughes]
+1e7ad86  uchar.h tests: small improvements.  [Elliott Hughes]
+eb25e56  Add the missing '--' to shell invocations.  [Elliott Hughes]
+e3ad11f  Don't open /dev/null until we need to.  [Elliott Hughes]
+47b1309  Treat static binaries "the same" for the profiling signals.  [Elliott Hughes]
+21448cb  Switch to jemalloc memory allocator  [Danny Lin]
+d3e6b9f  bionic: Support wildcards in cached hosts file  [Tom Marshall]
+41875ff  bionic: Sort and cache hosts file data for fast lookup  [Tom Marshall]
+5ef6e41  on 64-bit, zero the leading stack canary byte  [Daniel Micay]
+b7be4b1  replace VLA formatting with dprintf-like function  [Daniel Micay]
+0d8b51e  fix undefined out-of-bounds accesses in sched.h  [Daniel Micay]
+828b9fe  replace brk and sbrk with stubs  [Daniel Micay]
 
 
-* build/make
-f4176b6  Merge tag 'android-12.0.0_r7' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
+* device/qcom/sepolicy_vndr
+7ade236  sepolicy_vndr: qva: Update vendor property types  [Arian]
+ea38f4d  sepolicy_vndr: qva: Remove qsedhal hwservice rule  [Arian]
+dbfd9fb  sepolicy_vndr: qva: Update sxrhalservice label from new qssi sepolicy  [Arian]
+ffc6dcb  sepolicy_vndr: test: Replace qti-testscripts usage with vendor-qti-testscripts  [Arian]
+d8fa1a5  sepolicy_vndr: generic: Add app_data_file_type to vendor_radio_data_file  [Arian]
+94d8d7a  sepolicy_vndr: generic: Fix compilation issues for newer upgrade  [Himanshu Agrawal]
 
 
-* build/soong
-f7b84e4  Merge tag 'android-12.0.0_r7' of https://android.googlesource.com/platform/build/soong into HEAD  [DennySPb]
-
-
-* external/tinycompress
-33b07d5  tinycompress: Conditionally enable extended compress format  [Michael Bestas]
-262b0de  Merge tag 'android-12.0.0_r7' of https://android.googlesource.com/platform/external/tinycompress into HEAD  [DennySPb]
+* external/jemalloc_new
+a1f619c  Merge branch 'sc' of https://github.com/ProtonAOSP/android_external_jemalloc_new into HEAD  [DennySPb]
 
 
 * frameworks/av
-10a75c8  Merge rest of privileged client camera stream bypass  [DennySPb]
-9792ccd  Camera: Exif: Fix ANDROID_SENSOR_PIXEL_MODE check  [Susmitha Gummalla]
-b578b42  Camera: Master callback mode support for MCX raw  [Pavan Kumar Mc]
-49960ee  Camera: Master callback mode support for MCX raw  [Pavan Kumar Mc]
-0ca88aa  Camera: Support raw stream creation for priviledged APPs  [Pavan Kumar Mc]
-5f0fd5f  Camera: Increase aspect ratio threshold for thumbnail  [Shuzhen Wang]
-a099377  Camera: Add support for preview frame fd  [Susmitha Gummalla]
-dfa8669  Camera: Add support for manual 3A.  [Peng Zhu]
-3623e11  camera: allow device to append camera parameters  [Konsta]
-68ece3a  camera: Don't segfault if we get a NULL parameter  [Steve Kondik]
-0342fea  camera: Workaround for GCC-compiled HAL3 drivers  [Steve Kondik]
-
-
-* frameworks/base
-f13b378  monet: Add support for monet (cam16)  [TheScarastic]
-2684799  MediaCodecInfo: do not alter performance points for 32-bit processes (2)  [Wonsik Kim]
-92b7b92  Revert "Use exact brightnesses values for comparison."  [Alex Sarraf]
-de9cd7e  frameworks/base:NPE in ImageWallpaper  [sxia]
-d7caedf  Display: Fix dump dead lock  [Ramakant Singh]
-d526e46  proto: metrics: add syberia metric  [alexxxdev]
-0048dd2  storage: Set all sdcards to visible  [Andreas Schneider]
-333b01a  SystemUI: Remove Android build number from QS footer  [Danny Lin]
-a32be80  Add missing INTERACT_ACROSS_USERS_FULL permission  [AdrianDC]
-57b3bd6  Kill off provider info logspam  [Harsh Shandilya]
-09132c1  Add "android.permission.READ_PHONE_STATE" to manifest  [Janson Kang]
-701d479  Reduce log verbosity: Don't spam logcat  [fusionjack]
-2f35f1f  base: Remove unnecessary videos  [Janson Kang]
-a23281d  base: Delete media tests  [Evan Anderson]
-426522c  fwb: SystemUI: Remove GarbageMonitor tile  [jhenrique09]
-b960cc4  KernelCpuUidTimeReader: Decrease log level on non-eng builds  [Han Wang]
-7fa835f  aapt: Default to 0 compression ratio  [arter97]
-d90e5c0  NightLight: Allow lower temperatures  [Joe Maples]
-3386b51  SystemUI: Disable heads up debugging on user builds  [Wang Han]
-82b7185  base: Change dividers from Holo Blue to Pixel Blue  [David]
-0cbe351  Correction in logic of roundend size calculation of SD card  [Chetan Gurjar]
-8f4faac  aapt2: silence positional arguments warnings  [Park Ju Hyung]
-dd4dea7  MountService: Prevent NPE with DropBoxManager  [AdrianDC]
-28286cc  FATAL EXCEPTION IN SYSTEM PROCESS: android.ui  [yangbingqian]
-f000b09  Allow user to add/remove QS with one click  [Andrzej Ressel]
-231d88f  Turn on development settings by default  [xyyx]
-e5d9b51  Enable Binder Proxy Tracking by Uid only on eng builds  [dianlujitao]
-5970ca8  Alter model name to avoid SafetyNet HW attestation enforcement  [Danny Lin]
-6585a12  keystore: Block key attestation for SafetyNet  [Danny Lin]
-3a21044  Spoof build fingerprint for Google Play Services  [Danny Lin]
-1fb1766  base: add settings for device features  [maxwen]
-dc6ad13  base: add DeviceKeyHandler  [maxwen]
-bf73cf9  Add Dialer's public strings  [DennySPB]
-fdc7461  CameraManager: Fixup exposing aux camera to apps  [Ido Ben-Hur]
-fdabcd9  Camera: Don't crash when trying to disable shutter sound  [jhenrique09]
-8f8482c  Guard in short-circuit evaluations for stringSplit methods.  [Mohammed Irfan]
-366916a  Camera: Don't throw exceptions when value pairs have spaces in them  [Ricardo Cerqueira]
-1ab774c  [fixup] camera: Support exposing aux camera to apps  [DennySPb]
-a87a814  Allow sending vendor- or device-specific commands to the camera HAL.  [Danny Baumann]
-d8a6a3e  Camera: Add feature extensions  [Shuzhen Wang]
-3c67fad  fixup - Camera: Ignore torch status update for aux or compsite camera  [jhenrique09]
-2bb84f1  camera: Support exposing aux camera to apps  [Sauhard Pande]
-aadea57  Camera: Skip stream size check for whitelisted apps..  [Gaoxiang Chen]
-70972f0  Select the proper request list size  [Guruprasad Gaonkar]
-276b16e  Camera: Ignore torch status update for aux or compsite camera  [Gaoxiang Chen]
-ff364c9  camera: Skip HFR checks for privileged apps.  [Sai Kumar Sanagavarapu]
-bd7639d  Camera2: Notify fps as Session Based Parameter  [Sauhard Pande]
-4a2cc55  SyberiaUtils: add isPackageInstalled boolean  [romanbb]
-e9023b1  Add api to take screenshots abc: extracted from DUI  [bigrushdog]
-cf40af7  Add a sendKeycode api to SyberiaUtils code borrowed from com.android.systemui.statusbar.policy.KeyButtonView  [ezio84]
-f7e5cf5  base: add camera flash toggle api  [Rabih Salamey]
-2349cfa  SystemUI: adpat flashlight api to R  [DennySPb]
-2598c69  Add some static custom utilities  [ezio84]
-3d9c0be  Merge tag 'android-12.0.0_r7' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
-7eae8e8  Merge "Revert "Don't show USB notification during normal USB usage"" into 12.0  [dennyspb]
-0ad806e  Revert "Don't show USB notification during normal USB usage"  [DennySPb]
+764a3bc  libstagefright: use 64-bit usage for native_window_set_usage  [Milos Ratkovic]
+a9ab189  apex: Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
+75aad6d  mediaextractor: Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
+201e72a  mediacodec: Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
+965f6fb  codec2: Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
+7b5a67c  drmserver: Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
+6a57ac6  clearkey: Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
 
 
 * frameworks/native
-c041dac  Add vendor version for libgui  [Vinay Verma]
-a40ef70  Merge tag 'android-12.0.0_r7' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
+69df6c0  Dispatch vsync when receiving vsync timeout to handle vsync loss.  [Cheng Shi]
+1e1e358  GLConsumer: add HW_TEXTURE usage when create texture  [SOOJONG HWANG]
+a321fcf  SF: Temporarily expose primary display id  [Vishnu Nair]
+1094146  Minor cleanups.  [Alex Buynytskyy]
+bc462b5  Migrate mount/umount operations to a dedicated mMountsLock.  [Alex Buynytskyy]
+8a5ce8b  Remove unnecessary locks.  [Alex Buynytskyy]
+2fff426  RenderEngine: Don't crash skiagl backend  [Alec Mouri]
+e8c8520  Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
 
 
-* hardware/interfaces
-14b673d  keymasterV4_0: Tags support for FBE wrapped key.  [Shivaprasad Hongal]
-
-
-* hardware/libhardware
-ab6231c  Merge tag 'android-12.0.0_r7' of https://android.googlesource.com/platform/hardware/libhardware into HEAD  [DennySPb]
-
-
-* packages/apps/Nfc
-b52d971  Merge tag 'android-12.0.0_r7' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPb]
-
-
-* packages/apps/Settings
-52b5668  Changelog: fix possible title pattern mismatches  [Vol Zhdanov]
-a247707  Changelog: use normal font instead of italic for commiter name  [Vol Zhdanov]
-0c2f4c8  Changelog: Add left padding  [xyyx]
-53c96e1  Settings: update changelog activity * improve code  [dadi11]
-09f3256  Changelog: Fix text selection with dot  [xyyx]
-039a9ea  Changelog: clean and make themeable before: https://imgur.com/a/ylSQG after: https://imgur.com/a/GdnPN  [xyyx]
-8741559  Changelog: prettify  [pcarenza]
-132ee55  Settings: Changelog  [david]
-841bbd5  Expose face-based auto-rotate settings  [Danny Lin]
-074a49e  Ignore custom app space management activities  [Danny Lin]
-ca5f74f  Remove app uninstall and disable confirmation dialogs  [Danny Lin]
-9d4b345  Fix inconsistent USB preference screen title  [Danny Lin]
-71f4a97  Remove storage manager activation warning  [Danny Lin]
-280bb7a  Remove roaming warning dialog  [Danny Lin]
-ed05842  Unlock mobile network settings when airplane mode is on  [Danny Lin]
-94b94be  Launch APN settings on main activity stack  [Danny Lin]
-327b553  Launch mobile network settings on main activity stack  [Danny Lin]
-7349533  Expand abbreviation in average memory usage string  [Danny Lin]
-82585e1  Settings: Expose feature flag UI on all builds  [Danny Lin]
-b9d97de  Settings: Add missing gesture and battery animations  [Jason Edson]
-dcdfdc7  Open app when clicking on icon in App Info  [deadman96385]
-53c4781  Settings: Show me more than 4 items in the menus!  [Dan Cartier]
-31fa194  Settings: PowerUsageSummary: open advanced usage on header click  [Vachounet]
-0fb2073  Settings: IS_DEBUGGABLE -> IS_ENG  [jhenrique09]
-576a74d  Settings: Check if we have any color modes declared in overlay  [Luca Stefani]
-86ddaf6  Settings: Hide unsupported USB modes automatically  [Wang Han]
-70cd583  Disable notification channel warnings by default  [Bruno Martins]
-39f5335  Remove the Automatic ota check option but be sure it's disabled  [ezio84]
-8e4e778  Settings: Add package name to installed app details  [Luca Stefani]
-fc2ea7b  DevelopmentSettings: Disable automatic updates  [Henrique Silva]
-73a99d1  BasebandVersionDialogController: Trim duplicated baseband if needed  [jhenrique09]
-7f2d28a  Remove feedback and bug report stuff  [ezio84]
-0f31b69  Allow the user to change the BackupTransport  [Torsten Grote]
-e7d5e58  Fix type in smart_battery_detail pref  [SagarMakhar]
-1eea0db  SyberiaSettings: reorder preferences and cleanup for Android 12  [xyyx]
-112a696  Settings: Make Syberia icon match others  [mydongistiny]
-012afb9  Add Syberia logo  [alexxxdev]
-fbf47bb  Fix Syberia dashboard integration in 11  [DennySPb]
-773f0c8  Add SyberiaSettings dashboard  [maxwen]
-daa7269  Add device parts to system settings  [DennySPB]
-6663a71  Add Syberia version and build date to Settings  [Chris Soyars]
-ffe1527  Merge tag 'android-12.0.0_r7' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
-
-
-* prebuilts/build-tools
-ef5e6f9  Merge tag 'android-12.0.0_r7' of https://android.googlesource.com/platform/prebuilts/build-tools into HEAD  [DennySPb]
-
-
-* prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
-4e5044b  Merge tag 'android-12.0.0_r7' of https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 into HEAD  [DennySPb]
-
-
-* prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9
-8f77993  Merge tag 'android-12.0.0_r7' of https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 into HEAD  [DennySPb]
-
-
-* prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8
-cf5cca6  Merge tag 'android-12.0.0_r7' of https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8 into HEAD  [DennySPb]
+* packages/apps/Launcher3
+a50a85d  Reduce excessive top padding on the app drawer  [Nauval Rizky]
+1da768d  Icons: Update vector icons to their optimized version  [Nauval Rizky]
+8062353  Icons: Update SoundCloud Icon  [Nauval Rizky]
+8ca79f6  404Launcher: Update clear all icon  [humanglitch191]
+94f7f16  404Launcher: convert all themed icons png to vector  [hpnightowl]
+24b10e6  Fix top-margin on the app suggestion too  [Nauval Rizky]
+35b7e28  Launcher3: Edit Google feed strings to be inline with Pixels  [Andrew Thomas]
+afc3ef3  Launcher3: Use custom LocalColorExtractor implementation  [Danny Lin]
+9361e6b  Launcher3: Use regular body font for app labels  [Adithya R]
+bf1b9a3  Launcher3: Disable prototype app close animation  [Adithya R]
+a555cbf  Launcher3: Adapt home settings UI to Android 12 style  [Adithya R]
+98bc33a  Use existing StatusBarTouchController to handle swipe down  [Suphon Thanakornpakapong]
+875a88d  Launcher3: No Calendarwidget 4x4 widget displayed  [ningl]
+0e5ab22  Disable MULTI_DB_GRID_MIRATION_ALGO  [Michael Bestas]
+d19a307  Launcher3: Add 5x6, 5x7 and 6x6 default workspaces  [dwardo]
+2c6542f  Replace 4x4 grid option with a 4x5 one  [Arne Coucheron]
+ce1bd47  Launcher3: Update default workspace  [Bruno Martins]
+220f42a  Launcher3: Add toggle for DT2S  [DennySPB]
+28c1964  Launcher3: Import more themed icons  [Adithya R]
+cc194c2  Launcher3 Add support for themed icons  [TheScarastic]
+547bc8e  Launcher3: Add kill action to app shortcuts popup  [ezio84]
+0cb17c5  Launcher3: Add uninstall button to system shortcuts  [Ali B]
+1370547  Launcher3: Double tap on home screen to turn off screen  [Thecrazyskull]
+3c861ab  Implement LocalColorExtractor using colorkt-based theme engine  [Danny Lin]
+97747b5  Launcher3: Round search bar in drawer  [Danny Lin]
+47d6046  Enable local colors for popup menu items  [Danny Lin]
+4b1909d  Launcher3: Add smartspace widget to 2x2 and 3x3 grids  [Danny Lin]
+e582747  Add Smartspace Widget.  [Jyotiraditya]
+c325ed3  Launcher3: Reduce app label text size  [Danny Lin]
+31e3c6e  Launcher3: Add 2x2 workspace grid option  [Danny Lin]
+6367adb  Launcher3: Add Settings to center of default 5x5 dock  [Danny Lin]
+4b8d48a  Add ripple animation to task menu items  [Danny Lin]
+9cd4094  Launcher3: Don't discard custom grid on config changes  [LuK1337]
+4e3d6fc  Launcher3: Move clear all button to actions view  [Vachounet]
+67dce41  fixup! allapps: remove dynamic header background  [daniml3]
+0d4a4f4  allapps: remove dynamic header background  [daniml3]
+8e04486  CustomLauncher: google feed integration  [Anay Wadhera]
+512939a  Create Custom Launcher  [Chris Crump]
+b9e1704  Merge tag 'android-12.0.0_r13' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD  [DennySPb]
 
 
 * system/core
-faf143c  Camera: Add feature extensions  [Sauhard Pande]
-cc105f8  Add wrapped key support  [dianlujitao]
-648c133  fastboot: Revert to Android 11 method of checking lock status  [Danny Lin]
-6a50f07  init: Set properties to make SafetyNet pass  [Danny Lin]
-
-
-* system/sepolicy
-66999ce  Merge tag 'android-12.0.0_r7' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPb]
-
-
-* vendor/interfaces
-c1deb1c  Drop cryptfs HAL  [DennySPb]
+d625e0e  libsnapshot: Error handling after QuerySnapshotStatus  [Akilesh Kailash]
+5c448cf  libsnapshot: Fix new partitions not transitioning in second-stage init.  [David Anderson]
+9e848b3  libsnapshot: Fix missing source partitions when adding a new partition.  [David Anderson]
+453eb89  cutils: only support safe list iteration.  [Elliott Hughes]
+83f4ab5  libdebuggerd: fix process uptime.  [Elliott Hughes]
+4727502  Increase coverage of Timers to 100%.  [Elliott Hughes]
 
 
 ====================
-     2021-10-28    
+     2021-11-21    
 ====================
 
 ====================
-     2021-10-27    
+     2021-11-20    
 ====================
-
-* packages/resources/devicesettings
-8a0301d  devicesettings: Remove useless resources after S adaptation  [TheScarastic]
-
 
