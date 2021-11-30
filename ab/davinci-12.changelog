@@ -1,300 +1,203 @@
 ====================
-     2021-11-17    
+     2021-11-29    
 ====================
 
-* frameworks/base
-287e104  Added features flash-call-on-waiting [1/3]  [Alexey Derendyaev]
-6063bc0  Add Sound tile to Quick Settings  [Yoshinori Hirano]
-be8ecf5  SystemUI: add caffeine qs tile  [Keith Mok]
-d26e3f2  SystemUI: Bring back separate wifi & data QS tiles  [Adithya R]
-e371959  SystemUI: Extend reboot tile to add power off  [Pranav Vashi]
-421d29e  SystemUI: Add Reboot/Recovery QS Tile  [fusionjack]
-e7ef332  [SQUASH] Port brightness slider changes [1/2]  [SagarMakhar]
-f1d7048  QuickSettings: Add Haptic Feedback to tiles [1/2]  [Evisceration]
-2d3c3b0  SystemUI: QS: Add flipendo to Battery Saver tile  [Jason Edson]
-5992e6b  Enable lockscreen media artwork even if qs media is enabled  [SagarMakhar]
-0574e89  SystemUI/Statusbar: Add back big dotted and big circle battery indicator  [DennySPb]
-daf159a  Allow changing monet settings from extensions [1/2]  [SagarMakhar]
-25af9a3  SystemUI: theme: Expose theme engine parameters as settings  [Danny Lin]
-22fe132  Battery icon: fix requestLayout() calls spam when in lockscreen  [ezio84]
-e3908b2  Battery icon: fix signal icon padding when using Hidden style  [Ezio Lacandia Bijelkic]
-424918d  Battery options cleanup [1/2]  [Ezio Lacandia Bijelkic]
-1cfc1e9  Battery Styles: Remove unneeded function parameter in BatteryMeterView  [Nicolas Dhouailly]
-3431c9e  Battery Styles: Introduce full circle battery style  [Christian Oder]
-f692a64  Battery Styles: Hide plus when showing battery percentage inside icon  [Christian Oder]
-5e1ef76  Battery Styles: Readd dotted Circle to Kotlin impl  [Christian Oder]
-5869532  Battery Styles: Show a bolt ⚡ when charging  [ezio84]
-39dddbb  Battery Styles: Bring back good ol' circle battery style  [Luca Stefani]
-13445ed  Battery Styles: BatteryPercentage: Detect when overlay changes  [Henrique Silva]
-d289384  base: Add toggle to disable wired charging animation [1/2]  [Anushek Prasal]
-2628820  EnhancedEstimates: Get estimates from Device Health Services  [Jason Edson]
-203287a  SystemUI: Implement burn-in protection for status/navbar  [Park Ju Hyung]
-647af2d  base: Enable burn-in protection by default  [Adhitya Mohan]
-
-
-* packages/apps/SyberiaSettings
-3fb7eba  Re-add dialer settings  [DennySPb]
-bb3e105  [SQUASH] Port brightness slider changes [2/2]  [SagarMakhar]
-d6d75eb  QuickSettings: Add Haptic Feedback to tiles [2/2]  [Evisceration]
-bd7bef4  Monet: improve strings and fix limits  [DennySPb]
-90bcdf6  Allow changing monet settings from extensions [2/2]  [SagarMakhar]
-d3bc80a  drawable: fixup our logo  [DennySPb]
-edd6563  Add UI Settings fragment  [DennySPb]
-bd83f1a  Add back some more of customization from A11  [DennySPb]
-
-
-* packages/services/Telecomm
-f95fca2  Added features flash-call-on-waiting [2/3]  [Alexey Derendyaev]
-
-
-* vendor/syberia
-24d5006  Merge "privapp permissions: Add REBOOT and RECOVERY permissions for com.android.systemui" into 12.0  [dennyspb]
-
-
-====================
-     2021-11-16    
-====================
-
-* bootable/recovery
-1c183c6  Bring back file-based OTA edify functions  [Michael Bestas]
+* bionic
+8432cdf  Optimize the mbs fast path slightly.  [Elliott Hughes]
+fc76c97  uchar.h tests: small improvements.  [Elliott Hughes]
+dd75ef9  Add the missing '--' to shell invocations.  [Elliott Hughes]
+d2f5c8c  Don't open /dev/null until we need to.  [Elliott Hughes]
+8a2f591  Treat static binaries "the same" for the profiling signals.  [Elliott Hughes]
+85583d9  Switch to jemalloc memory allocator  [Danny Lin]
+e8bf23e  bionic: Support wildcards in cached hosts file  [Tom Marshall]
+a323a5e  bionic: Sort and cache hosts file data for fast lookup  [Tom Marshall]
+927f29d  on 64-bit, zero the leading stack canary byte  [Daniel Micay]
+bf509bf  replace VLA formatting with dprintf-like function  [Daniel Micay]
+24e0150  fix undefined out-of-bounds accesses in sched.h  [Daniel Micay]
+50b2643  replace brk and sbrk with stubs  [Daniel Micay]
 
 
 * frameworks/base
-8e17a8b  Fingerprint authentication vibration [1/2]  [beanstown106]
-44518df  Lockscreen no blur option: fix SysUI FC  [ezio84]
-b323382  Allow to disable lockscreen media artwork  [beanstown106]
-4276951  Lockscreen art blur: smaller seekbar range and allow no blur [1/2]  [ezio84]
-beb8b47  Losckreen blur level: code fixes  [ezio84]
-e6ebb97  [1/2] base: configure lock screen media artwork blur level  [Marko Man]
-49d603cc  SystemUI: Add visualizer feature [1/2]  [Bruno Martins]
-d1fe301  Hardware key disable support  [Randall Rushing]
-a9e5699  Volume key cursor control (1/2)  [Konsta]
-62b62b3  SystemUI: statusbar clock date customization (1/2)  [Lars Greiss]
-da3327a  Merge "UdfpsController: Call onFingerDown on action down events" into 12.0  [dennyspb]
-a472d7b  ripple: Replace with Fluent Design-inspired ripple animation  [Danny Lin]
-0add32e  display: Render screen-off fade animation in linear sRGB space  [Danny Lin]
-ba976e7  Editor: Disable magnifier position animation  [Danny Lin]
-b240155  display: NightDisplay: Use chromatic adaptation when possible  [Danny Lin]
-a53ebdb  display: ChromaticAdaptation: Fix matrix formatting in logs  [Danny Lin]
-109161f  display: ColorBalance: Add support for non-linear native color spaces  [Danny Lin]
-1b4d731  display: Improve matrix formatting for easier debugging  [Danny Lin]
-52d5174  display: Create common chromatic adaptation tint controller  [Danny Lin]
-cb5b831  display: Use CAT16 for display white balance transform  [Danny Lin]
-40fe9f7  graphics: Add CAT16 sensor space for chromatic adaptation  [Danny Lin]
-50133dc  display: Add simple RGB color balance transform  [Danny Lin]
-21ec8ca  display: Make Night Light transition more gradual  [Danny Lin]
-e615fc3  increase default max password length to 64  [Daniel Micay]
-535a250  Revert "monet: Add support for monet (cam16)"  [kondors1995]
-a9d90eb  Revert "Pre-emptively take a snapshot when finishing an activity before changing visibility"  [Danny Lin]
-9dbfb37  PackageInfo: Optimize ApplicationInfo creation  [Danny Lin]
-0f571ca  Trace: Disable debug tracing on production builds  [Danny Lin]
-2447104  SystemUI: Show carrier name of opposite slot in DataSwitch tile label  [DennySPb]
-eb1142b  DataSwitchTile: dont show toast on click  [micky387]
-95f4e17  DataSwitchTile: collapse notification panel onClick  [DennySPB]
-d41ce01  SystemUI: DataSwitchTile: update SIMs QS icons  [Hernán Castañón Álvarez]
-7828345  SystemUI: Introduce DataSwitchTile  [Christian Oder]
-6eaa3f1  LockscreenCharging: Calculate power from voltage and current  [SagarMakhar]
-6ee3c51  KeyguardIndication: fix fc on lockscreen charging info  [rohan]
-7673509  SystemUI: Fix current formatting on lockscreen  [Jens Lody]
-b4c2a6f  Dash charging: Add the battery percent back  [Alex Cruz]
-d25064e  Lockscreen charging info: show decimal in battery temperature  [Lucchetto]
-06dc701  SystemUI: keyguard show charging watt  [maxwen]
-0b9ec0f  SystemUI: Keyguard: Check for a null errString  [Scott Warner]
-de9d68e  BatteryService: add dash charging support  [thecrazyskull]
-44c548b  LockscreenCharging: squashed (1/3)  [xyyx]
-7e25bad  camera: allow GPU usage for isSurfaceForHwVideoEncoder  [Lajos Molnar]
-5a47d43  Don't send interaction hint for unnecessary events  [Alex Naidis]
-c78367d  Increase the time limit for low performance fail  [yunyue.qiao]
-5692664  SystemUI: Allow privileged system apps to access screenshot service  [Danny Lin]
-dc777e2  Bluetooth: Add constructor for sending address type  [Bhakthavatsala Raghavendra]
-4c6bf99  A2dpSrc: Align legacy codec enumeration with AOSP(4/7)  [Satheesh Kumar Pallemoni]
-5502dbe  Revert "Matching codec index between frameworks and stack"  [Satheesh Kumar Pallemoni]
-c70a497  hfp: define STATE_AUDIO_DISCONNECTING audio state  [himta ram]
-ec0bd2f  DeviceGroup: UI frameworks changes  [Sravan voleti]
-2c71654  Group-UI: UI frameworks changes  [Sravan voleti]
-8be9b64  Bluetooth: Add BC profile entry  [Bhakthavatsala Raghavendra]
-61edec0  Bluetooth: Check AdapterService instance before getState.  [Sumit Deshmukh]
-3e926a5  Use BLUETOOTH_CONNECT permission instead of legacy permission  [pramod kotreshappa]
-55a0497  Bluetooth: Update Bluetooth permissions for internal APIS. (2/4)  [Sravan voleti]
-cc98803  DeviceGroup: Frameworks changes (for dual mode devices).  [Sumit Deshmukh]
-5643513  Bluetooth: Ensure BLE/BT is turned on before Bonding.  [Sumit Deshmukh]
-0e614ba  Add Broadcast profile id  [pramod kotreshappa]
-77b4ba7  DeviceGroup: Framework changes for Group Device operations.  [Sumit Deshmukh]
-afd1317  BT build fixes  [DennySPb]
-a82a23f  Periodic Advertisment Sync Transfer feature support  [pramod kotreshappa]
-5a37131  Add LC3 codec type.  [pramod kotreshappa]
-5a8a915  Audio: Add support for lc3 codec.  [Manisha Agarwal]
-58ba9fb  Bluetooth: Add APTX-Adaptive and APTX-TWS+ entries.  [Kiran Kelageri]
-ff1b475  Add callback onA2dpCodecConfigChanged  [Mingbo Zhang]
-3e4ed8f  Audio: Do not disconnect profiles till Bluetooth Off  [Gurpreet Ghai]
-013a1bf  Audio: use cached BT codec info during disconnecting  [Zhou Song]
-89f2850  Audio: Update current active bt device of mApmConnectedDevices.  [Manisha Agarwal]
-3d4ac17  BT-Audio: Keep track of Active TWS+ EB device in BTHelper  [Sagar Verma]
-c3c0946  BLE: Fix NPE during start advertising  [Sravan Voleti]
-92a2b6d  Fix build errors  [Scott Lobdell]
-ae8bffb  BT: Relocate A2DP codec strings for translation  [dianlujitao]
-c0270a0  Enable codec change request when mode changes in aptX-adaptive  [Naval saini]
-321709b  Keep a null check before accessing the BluetoothA2dpWrapper APIs.  [Satheesh Kumar Pallemoni]
-5dc9984  Bluetooth: Fix for out of bound exception  [pramod kotreshappa]
-1575989  BT Dev: Increase array size for codec selection in Dev Op  [Gurpreet Ghai]
-2b9ad88  Keep the BluetoothHeadset finalize() method protected  [Diego Wilson]
-58d6b4e  Bluetooth: Fix for Global reference table overflow issue[1/2]  [Bandari Ramesh]
-00f33c3  BT: Add new intent to broadcast IOT device details  [Gurpreet Ghai]
-53bce20  BT_Audio: Updated Check for TWS+ switch  [Gurpreet Ghai]
-f2e1615  TWS_A2DP: Handle active device change between TWS+ earbuds  [pramod kotreshappa]
-9b986f0  audio: Add support for APTX TWSP audio codec  [Dhananjay Kumar]
-11184f3  audio: Add support for audio extended codecs  [Naresh Tanniru]
-05b24a8  Use BluetoothUtils instead of Utils  [Diego Wilson]
-7aa380f  GAP: Handle the race condition cases in auto connect logic  [Venkata Jagadeesh Garaga]
-aa627e3  Obex: Squashed commit of the following  [Sravan Kumar V]
-63b0012  BLE: Add support for Group AD Type based scan filtering.  [Sumit Deshmukh]
-0eb5297  Add scan filter for Transport Discovery data  [Subramanian Srinivasan]
-90c705b  Support CALLBACK_TYPE_SENSOR_ROUTING  [Mingbo Zhang]
-95fe2f2  Add support for Transport discovery AD type (1/2)  [Subramanian Srinivasan]
-01b8436  Bluetooth: TWSP: Support Battery Status information display  [Bhakthavatsala Raghavendra]
-cd31ffc  BT: Send info if call is CS type from telecomm service to BT apps.  [Sumit Bajpai]
-21cd140  GAP: Reset bondingInitiatedLocally flag(1/3)  [Venkata Jagadeesh Garaga]
-88f64d8  Bluetooth-TWS: Disable outgoing connection to 2nd earbud  [Kiran Kelageri]
-3e859a3  Bluetooth-TWS: Disable outgoing connection for 2nd earbud.  [Kiran Kelageri]
-24d47c0  Bluetooth: Rename bluetooth property to support new P Treble rules  [Safoorah Banu Shaik]
-b13dd2d  Bluetooth: Unpair both earbuds on unpair.  [Kiran Kelageri]
-17bfbed  Revert the change: AudioService: remove dead BT code.  [Samyak Jain]
-ea646a6  Bluetooth: Add SDK API support for TWS feature (2)  [Bandari Ramesh]
-f3131c0  TWS-A2DP: Add TWS+ codec to DevUI support  [pramod kotreshappa]
-22ab825  BT: Adding aptX-Adaptive codec entry to Framework  [Gurpreet Ghai]
-d0b9df9  Add BluetoothQualityReport class(1/2)  [Mingbo Zhang]
-
-
-* packages/apps/Bluetooth
-727a177  AdapterService: Rework stubs for QTI APIs  [DennySPb]
+60d54cf  SystemUI: QS: Add CPUInfo toggle tile  [mydongistiny]
+e83d0ad  Cpu overlay: Add CPU info overlay [2/2]  [maxwen]
+d6fc3fb  SystemUI: Enable NFC tile  [Thecrazyskull]
+9da4cbe  SystemUI: Add statusbar NFC icon  [xyyx]
 
 
 * packages/apps/Settings
-4609be5  Add back arrow to Desktop backup password  [Alex Cruz]
-9bd745f  Expose the notification log  [Alex]
-fcdf952  Settings: Add missing illustration for camera gesture  [Adithya R]
-0d2aaf5  Keyguard: Forward port lockscreen quick unlock (2/2)  [Matt Mower]
-86e1c0f  Add option to scramble pin layout when unlocking (1/2)  [Adnan]
-4e15391  A2dpSrc: Bluetooth codec Dev-UI support for QVA codecs  [Satheesh Kumar Pallemoni]
-858279e  bluetooth: update SavedBluetoothTwsDeviceUpdater for superclass ctor signature change  [Steven Laver]
-a31fe7d  Implement abstract method getPreferenceKey in SavedBluetoothTwsDeviceUpdater  [Justin DeMartino]
-ffdfb26  BT: Use translated a2dp codec strings  [dianlujitao]
-b13bc83  A2dpSrc: DEV-UI support for Blutooth Audio codec.  [Satheesh Kumar Pallemoni]
-c6e1fea  Bluetooth-TWS: UI updates based on Filter matched  [zhenchao]
-0b6a2b0  Bluetooth-TWS: UI updates based on profile connection.  [Kiran Kelageri]
-42e15de  Fix build error  [Jiyong Park]
-42a868c  Bluetooth-TWS: Filter TWS devices  [Kiran Kelageri]
-8bbc0ac  Bluetooth: Create new catogory for earbuds  [Kiran Kelageri]
+80f1475  DisplaySettings: font size in 5% steps from 80% to 130%  [Jean-Pierre Rasquin]
 
 
-* system/bt
-7abdd64  le_manager: Adapt to QTI API changes  [DennySPb]
-
-
-* system/core
-121d5f6  init.rc: Disable native stats collection service  [Danny Lin]
-141a4fa  init.rc: don't start console unless asked to  [Alex Naidis]
-b24e7e5  init: always allow local.prop overrides  [Dan Pasanen]
-f1ec85c  Set permissions on /system/addon.d/ and files within.  [beanstown106]
-c1a7ad0  Set /system/etc/init.d/* permissions  [beanstown106]
-
-
-* system/security
-b3a4c48  Handle key parameter conversion for FBE_ICE tag  [Phanindra Babu Pabba]
-
-
-* vendor/qcom/opensource/commonsys/bluetooth_ext
-85b7ccc  Drop dependency on proprietary stuff  [DennySPb]
-
-
-* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
-de7a101  Drop overrides in getSocketOpt/setSocketOpt  [DennySPb]
-c96d778  Drop dependency on proprietary stuff  [DennySPb]
-
-
-* vendor/qcom/opensource/commonsys/system/bt
-9d52e49  Drop dependency on proprietary stuff  [DennySPb]
-e0fbf1a  bt: Rename QTI stack config to avoid conflict w/ AOSP one  [dianlujitao]
-eaf0bd4  Revert "v/../system/bt: compile bt adv audio only if present"  [DennySPb]
-
-
-* vendor/syberia
-b97a61e  privapp permissions: Add REBOOT and RECOVERY permissions for com.android.systemui  [Serhij Kyryljan]
-9b7e1e4  config: Setup soong namespaces for TARGET_USE_QTI_BT_STACK  [Pig]
+* packages/apps/SyberiaSettings
+0526f0e  SyberiaSettings: Cpu overlay: Add CPU info overlay [1/2]  [xyyx]
 
 
 ====================
-     2021-11-15    
-====================
-
-* packages/apps/Bluetooth
-7582b02  PAST feature implementation  [pramod kotreshappa]
-bd22258  Periodic Sync Feature implementation  [pramod kotreshappa]
-
-
-* system/bt
-c29158f  DeviceGroup: Add new system API's to support Group UI.  [Sravan voleti]
-
-
-====================
-     2021-11-14    
+     2021-11-28    
 ====================
 
 ====================
-     2021-11-13    
+     2021-11-27    
 ====================
 
 ====================
-     2021-11-12    
-====================
-
-* system/bt
-051d2f7  Add broadcast active api  [pramod kotreshappa]
-438ae65  Update Bluetooth permissions for internal APIS. (3/4)  [Sravan voleti]
-604e649  DeviceGroup: AIDL Interface changes for dual mode devices.  [Sumit Deshmukh]
-22dc6e9  DeviceGroup: AIDL Interface.  [Sumit Deshmukh]
-f6a19b2  BLE Broadcast Isochronous channel support  [Sunny Kapdi]
-
-
-====================
-     2021-11-11    
+     2021-11-26    
 ====================
 
 * frameworks/base
-5da7a93  UdfpsController: Call onFingerDown on action down events  [Arian]
+d4a54d7  Led lights: don't skip dialer and other ones  [ezio84]
+d0d3e12  Notifications light: Add @hide to fix build  [faust93]
+0883988  Notification lights: use default resources for color on and off [2/2]  [Ezio Lacandia Bijelkic]
+68879b2  LEDs: fix default color  [ezio84]
+7094e60  Allow to customize notification led light [2/2]  [ezio84]
+b71a6c6  Enable notifications led light by default [1/2]  [ezio84]
+a003be8  Battery light customization [1/2]  [Sam Mortimer]
+3254a6a  base: Add api to force show led lights  [ezio84]
+11a98a1  StatusBarIconController: Avoid cast exceptions  [Harsh Shandilya]
+b1ec5d1  Fix net traffic view being white on QQS Header  [SagarMakhar]
+e445305  [SQUASHED] Add Combined & Dynamic Network Traffic Mode [1/2]  [AnkitGourav]
+cae8662  NetworkTraffic: Set default font size of Single Traffic to 42dp.  [spezi77]
+ca66d7c  NetworkTraffic: Fix Net Text Getting Cut at DPI Changes  [SuperDroidBond]
+14b78c5  Avoid casting network traffic to StatusBarIconView to prevent crash  [SpiritCroc]
+2bc41fc  NetworkTraffic: Allow user to choose positioning [1/2]  [calebcabob]
+5f36c9a  Bring back traffic indicator for Notch Devices !!!  [Alex Cruz]
+d1cff92  TrafficSB: Pass the animate bool  [ganeshi4u]
+4df5f7b  NetworkTraffic: Fix gravity  [xyyx]
+687b8a2  Network Traffic: Add Option for Users to select size of Single Traffic (Up/Down) Font Size  [SuperDroidBond]
+155fa66  NetworkTraffic: Show arrows in statusbar [1/2]  [Nico60]
+6198a2d  Option for Up, Down as well for Network Traffic [1/2]  [ezio84]
+aeb2725  Add network traffic monitor properly to statusbar icons  [SpiritCroc]
+b86e957  Bring back traffic indicator for all!  [Alex Cruz]
+837e14d  SystemUI: Add navbar layout inversion tuning  [LuK1337]
 
 
-* packages/apps/Bluetooth
-aff0686  Bluetooth: Reset packages/apps/Bluetooth to upstream  [Steven Laver]
-f9b6d89  Stub TWS related APIs  [dianlujitao]
-713af10  GAP: Reset bondingInitiatedLocally flag(2/3)  [Venkata Jagadeesh Garaga]
-66065a5  BT: API to update quiet mode status in Adapter service [1/3]  [M Safoorah Banu]
-2b00d9a  Add BLE Scan Phy parameter to scan API  [Subramanian Srinivasan]
+* packages/apps/Settings
+326506d  Settings: Hide notification light color preference if no multicolor led  [Vol Zhdanov]
+2838ebf  Allow to customize notification led light [1/2]  [xyyx]
+7593c80  Enable notifications led light by default [2/2]  [ezio84]
 
 
-* system/bt
-30bcbde  A2dpSrc: Align legacy codec enumeration with AOSP(3/7)  [Satheesh Kumar Pallemoni]
-cc390fd  Periodic Adv Sync Transfer feature support  [pramod kotreshappa]
-47349b0  bluetooth: select bluetooth modules by fully qualified namespace.  [Steven Laver]
-cff551d  GAP: Reset bondingInitiatedLocally flag(3/3)  [Venkata Jagadeesh Garaga]
-20a00cf  BLE: Group AD Type based filtering.  [Sumit Deshmukh]
-0a8f768  Add scan filter for Transport Discovery data  [Subramanian Srinivasan]
-53c00e8  TWS-A2DP: Add TWS+ codec index  [pramod kotreshappa]
-5f5d9dd  BT: API to update quiet mode status in Adapter service [3/3]  [M Safoorah Banu]
-6ab4295  BT: Adding APTX-Adaptive codec to BT HAL  [Gurpreet Ghai]
-8d2ea95  Add BLE Scan Phy parameter to scan API  [Subramanian Srinivasan]
-ee98d89  Bluetooth: Add SDK API support for TWS feature (1)  [Ramesh Bandari]
+* packages/apps/SyberiaSettings
+2cc145c  Restore battery lights settings  [DennySPb]
+10a4c19  Traffic: Change to if/else from switch for updateTrafficLocation()  [sb6596]
+1c74783  NetTraffic: Update default font size for single text  [Arghya Chanda]
+f032395  NetworkTraffic: Add Option for Users to select size of Single Traffic (Up/Down) Font Size [2/2]  [SuperDroidBond]
+bbbb630  Add network traffic type [2/2]  [Jon Haus]
 
 
-* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
-81a3155  Use component flag to configure profile support flag.  [weichinweng]
-0d28f91  BT: Prefer LDAC over aptX family  [dianlujitao]
-2ef1235  Bluetooth string: removed id="sender" in bt_sm_2_1_  [Yinchu Chen]
-fcf30e4  translate="false" -> translatable="false"  [Edward Savage-Jones]
-01a6273  Remove intent filter without any action  [Bruno Martins]
-071a2ec  Fix null pointer exception on AvrcpTargetService  [slki.shin]
-971e8ac  Bluetooth: Remove unused string resources  [Michael Bestas]
-194208d  Bluetooth: Require libbluetooth_qti instead of libbluetooth  [Pig]
-ac62e0e  Remove dependency on telephony-common from Bluetooth  [Zongheng Wang]
+====================
+     2021-11-25    
+====================
+
+* build/make
+b17d6da  Don't enable ADB by default on userdebug builds  [Michael Bestas]
+2ec0e53  build: Prefer using "user" buildtype prop for userdebug aswell  [Henrique Silva]
+4cf3555  Merge "core: sysprop: Use 'release-keys' for build tag" into 12.0  [dennyspb]
+8c7ca88  build: Erase package_cache upon flashing  [Ido Ben-Hur]
+da96818  build: copy files to zip from $OUT/install as well  [jjpprrrr]
+33669c5  copy files to zip from system  [TheScarastic]
+fec4e9e  core: sysprop: Use 'release-keys' for build tag  [Sultanxda]
+07e4651  Don't build useless html viewer  [ezio84]
+
+
+* frameworks/av
+eb15349  libstagefright: use 64-bit usage for native_window_set_usage  [Milos Ratkovic]
+a4819be  apex: Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
+b0d41b0  mediaextractor: Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
+5888220  mediacodec: Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
+c1d7795  codec2: Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
+c0a0bba  drmserver: Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
+e880444  clearkey: Replace writepid with task_profiles command for cgroup migration  [Suren Baghdasaryan]
+
+
+* frameworks/base
+ceb4566  WM: Handle primary display orientation when calculating the transform hint  [Vishnu Nair]
+90ae9d7  Use tmpArgBuffer correctly when argBuffer is null  [Wang Han]
+beeb2e8  fonts: Montserrat [1/2]  [blinoff82]
+2d20b66  base: New font-pack [1/2]  [blinoff82]
+7ebe56d  base: Add San Francisco Display Pro font [1/2]  [blinoff82]
+c956010  base: Add some our fonts from Pie [1/2]  [blinoff82]
+d6be0d4  fonts: Nokia Pure and Fifa2018 [1/2]  [DennySPB]
+d6aa1cb  Update Google Sans font style [1/2]  [Pranav Vashi]
+16030fc  Add Google Sans and Comic Sans font styles [1/2]  [Pranav Vashi]
+9b30f2b  Add semi bold font alias for custom fonts  [Pranav Vashi]
+d8c3d8c  Add OnePlus Slate and SamsungOne font styles [1/2]  [Pranav Vashi]
+40453d0  Add our favourite fonts in AOSP FontEngine [1/2]  [SuperDroidBond]
+36df2b4  base: SystemUI: Unblock alarm and vibrate status bar icons  [Andy CrossGate Yan]
+e879f8f  SystemUI: Allow Wi-Fi/cell tiles to co-exist with provider model  [Danny Lin]
+a29a30d  core: PinSet: fixup and improve code  [jhonboy121]
+79ec920d  core: jni: use -O3  [Simao Gomes Viana]
+28a4dda  Keyguard: Refine indication text  [Andy CrossGate Yan]
+f5b2fde  SettingsLib: Update 4G+ icon to Silk design as well  [TH779]
+dd3b3ae  Fixes crash/race condition when destroyActivity  [katao]
+66d481d  SystemUI: Dismiss keyguard on boot if disabled by current profile  [Gabriele M]
+f01fe62  keyguard: Do not trigger a wake up when hiding lockscreen  [Arne Coucheron]
+c50bd0e  SystemUI: Don't forcefully show lock icon background  [hpnightowl]
+ecac5b1c  base: Expose system icon area weight  [Anushek Prasal]
+a6856ed  [BugFix][HWASAN] stack-buffer-overflow  [chenguanyou]
+b356c79  Fix: "Clear All" recent app screen loop bug  [vincent.cw_lee]
+a964975  Fix protected broadcast error for doze intents  [ezio84]
+
+
+* frameworks/native
+13b1e37  Merge changes Ibfa7a301,Icac81da9,I2b0a9219,I438f2eab,I9b08cd3c, ... into 12.0  [dennyspb]
+
+
+* packages/apps/Settings
+9b28228  InstalledAppDetails: fix refreshing storage summary after force stop  [Altaf-Mahdi]
+62f7c3a  Settings: Show all available SIMs in provider model  [Adithya R]
+368a4e2  Settings: Bring in missing lottie animations  [Adithya R]
+c20e389  fixup! Settings: Add back theming under display settings  [saikiran2001]
+0834e8d  Settings: Add back theming under display settings  [SagarMakhar]
+0194448  Settings: Move Notch Cutout to Display  [shivatejapeddi]
+2c39441  AmbientDisplay: Add custom pref for devices with custom doze packages  [jhenrique09]
+4a82473  Revert "Settings: Add config for SuggestionServiceComponent"  [DennySPb]
+fee8e3b  Remove aosp battery percentage option  [ezio84]
+
+
+* packages/apps/SyberiaSettings
+68198ef  NetworkTraffic positioning: Adapt to new settings flags  [spezi77]
+ab2828f  Network traffic location [2/2]  [Anushek Prasal]
+59c4a60  Hide arrows in Network Traffic indicators [2/2]  [Nico60]
+63d3f31  Status network traffic [2/2]  [ezio84]
+460fec0  Restore NavBar settings  [DennySPb]
+
+
+====================
+     2021-11-24    
+====================
+
+* build/make
+f1a1734  combo: Add cortex-a76 to known v8-2a cores  [Jason Edson]
+f139bba  Use Unix epoch time for build number  [Danny Lin]
+bca501e  build: Only use RRO for framework on mainline products  [Danny Lin]
+02a5ef7  build: Don't build legacy WallpaperPicker  [Danny Lin]
+ff78a6a  core: Remove ro.kernel.android.checkjni  [Chet Kener]
+ee4a071  core: Disable Dalvik lock contention logging  [beanstown106]
+569f620  product: Disable dataroaming by default  [Pawit Pornkitprasan]
+68f85b5  Add ext2, ext3, and vfat to releasetools  [Brandon Bennett]
+31316de  Create 0 compression ratio jar files  [arter97]
+d044763  Use 0 compression when creating the target_files package  [Park Ju Hyung]
+e25deaf  core: sysprop: Use 'test-keys' only on eng build type  [kubersharma001]
+
+
+* system/core
+3307b42  Set the I/O scheduler of loop devices to 'none'  [Bart Van Assche]
+ddf8e43  KeyMint: don't mix Binder and std shared pointers  [David Drysdale]
+be3e47e  llkd: Disable in userdebug builds by default  [Suren Baghdasaryan]
+0a1445d  task_profiles: add ServicePerformance to legacy device policy  [Wei Wang]
+7631568  libprocessgroup: Activate controllers in cgroup v2 hierarchy at intermediate levels  [Suren Baghdasaryan]
+
+
+====================
+     2021-11-23    
+====================
+
+* device/qcom/sepolicy
+ca7bacd  Merge tag 'LA.QSSI.12.0.r1-05000-qssi.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into HEAD  [DennySPb]
+
+
+* device/qcom/sepolicy_vndr
+4fd68a0  sepolicy:kona: drop mediatranscoding  [Akash]
 
 
