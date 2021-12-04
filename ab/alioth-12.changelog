@@ -1,5 +1,29 @@
 ====================
-     2021-11-22
+     2021-12-04
 ====================
 
-- Initial build
+Rom:
+ - Network traffic
+ - Inverted navbar
+ - Fonts and Icons
+ - NFC and CPU tiles
+ - Option to hide navbar strip
+ - Old style mobile data indicators
+ - Hide power menu on secure lockscreen
+ - Suppress notifications if screen is on
+ - Unblock alarm and vibrate status bar icons
+ - Font size in 5% steps from 80% to 130%
+ - Statusbar icons improvements
+ - QS tiles improvements
+ - Update translations
+ - Other fixes under the hood
+
+Device:
+ - Lawnchair 12 by default launcher
+ - Update blobs from LA.UM.9.12.r1-13300-SMxx50.QSSI12.0
+ - Switch to HW accelerated Codec2
+
+Kernel:
+ - Upstream to 4.19.219
+ - Uclamp tuning
+ - Merge tag 'LA.UM.9.12.r1-13300-SMxx50.QSSI12.0'
