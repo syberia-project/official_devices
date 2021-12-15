@@ -1,29 +1,28 @@
 ====================
-     2021-12-04
+     2021-12-15
 ====================
 
 Rom:
- - Network traffic
- - Inverted navbar
- - Fonts and Icons
- - NFC and CPU tiles
- - Option to hide navbar strip
- - Old style mobile data indicators
- - Hide power menu on secure lockscreen
- - Suppress notifications if screen is on
- - Unblock alarm and vibrate status bar icons
- - Font size in 5% steps from 80% to 130%
- - Statusbar icons improvements
- - QS tiles improvements
+ - December security patch
+ - Enforcing + user build
+ - Update raven fp
+ - Introduce Syberia recovery
+ - Add Pulse notification bars
+ - Add AOD tile
+ - Option to enable AOD on charging only
+ - Add deep sleep info to uptime
+ - Add 'Syberia settings' shortcut
+ - Add Radio info into "About phone"
+ - Quick unlock for long PIN
+ - Fixed tiles in quick settings
+ - Fixed changelog view in settings
+ - Art improvements
  - Update translations
  - Other fixes under the hood
 
 Device:
- - Lawnchair 12 by default launcher
- - Update blobs from LA.UM.9.12.r1-13300-SMxx50.QSSI12.0
- - Switch to HW accelerated Codec2
+ - Fixed IMS IService HAL registration
+ - Fixed dt2w not working after reboot
 
 Kernel:
- - Upstream to 4.19.219
- - Uclamp tuning
- - Merge tag 'LA.UM.9.12.r1-13300-SMxx50.QSSI12.0'
+ - Upstream to 4.19.220
