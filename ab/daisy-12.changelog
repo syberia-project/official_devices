@@ -1,0 +1,27 @@
+====================
+     2021-12-15
+====================
+
+Rom:
+ - December security patch
+ - Enforcing + user build
+ - Update raven fp
+ - Introduce Syberia recovery
+ - Add Pulse notification bars
+ - Add AOD tile
+ - Option to enable AOD on charging only
+ - Add deep sleep info to uptime
+ - Add 'Syberia settings' shortcut
+ - Add Radio info into "About phone"
+ - Quick unlock for long PIN
+ - Fixed tiles in quick settings
+ - Fixed changelog view in settings
+ - Art improvements
+ - Update translations
+ - Other fixes under the hood
+
+Device:
+ - Initial build
+
+Kernel:
+ - Upstream to 4.9.280 Rename
