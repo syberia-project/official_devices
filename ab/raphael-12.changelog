@@ -1,0 +1,172 @@
+====================
+     2021-12-19    
+====================
+
+====================
+     2021-12-18    
+====================
+
+* build/make
+ba78a5d  Build Google audio files from android12 [1/2]  [beanstown106]
+
+
+* frameworks/base
+f463140  Build Google audio files from android12 [2/2]  [BeansTown106]
+
+
+* vendor/syberia
+215a249  vendor: Add iorap prefetch prop to mendel flags  [jjpprrrr]
+d0f6055  vendor: guard Pixel offline charging animation  [kondors1995]
+ad33216  vendor: charger: Import latest offline charging animation  [Dyneteve]
+6a94f9f  vendor: Use Pixel charger animation  [Arseniy Graur]
+f907c9c  vendor: remove audio  [kondors1995]
+
+
+====================
+     2021-12-17    
+====================
+
+====================
+     2021-12-16    
+====================
+
+====================
+     2021-12-15    
+====================
+
+====================
+     2021-12-14    
+====================
+
+* art
+9c53e1f  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/art into HEAD  [DennySPb]
+
+
+* bionic
+21c8fa4  Use -fno-builtin for libc and libm.  [Elliott Hughes]
+
+
+* build/make
+8e93a89  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
+
+
+* build/soong
+14552b6  Remove workaround for Qualcomm Kryo 385  [Raphiel Rollerscaperers]
+9b458ba  Add qcom.fmradio and org.codeaurora.internal to allowlist  [Scott Lobdell]
+
+
+* external/ant-wireless/ant_service
+968df9e  Revert "Fix compilation error."  [LuK1337]
+
+
+* frameworks/av
+b2b23d0  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
+
+
+* frameworks/base
+481ec9d  Merge "udfps: Add overlay for vendor code" into 12.0  [dennyspb]
+36abf7d  Revert skip screen-on animation commits  [DennySPb]
+27948eb  base: PixelPropsUtils: update raven fp from raven-user-12-SQ1D.211205.016.A1-7957957-release-keys  [jhonboy121]
+3cf8ad7  Revert "PixelProps: Switch to redfin december fp"  [DennySPb]
+16b001b  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+6e4641c  SoundPool: Update queue only if streamID matches  [Andy Hung]
+88913e8  RefreshRatePolicy: set both min and max refresh rate when camera is used  [Ady Abraham]
+56f11a8  base: Properly regenerate the share drawable.  [Sourajit Karmakar]
+6cb4bad  QSPanel: Don't crash when not using media player  [Ido Ben-Hur]
+
+
+* frameworks/native
+6ee962e  Merge changes Iba93246a,I097b78a1 into 12.0  [dennyspb]
+e07a695  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
+
+
+* hardware/interfaces
+b108c3a  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPb]
+
+
+* packages/apps/Bluetooth
+7783ed5  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPb]
+
+
+* packages/apps/Launcher3
+57b3896  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD  [DennySPb]
+
+
+* packages/apps/Nfc
+b5f711a  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPb]
+
+
+* packages/apps/Settings
+8ef8055  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
+
+
+* packages/services/Telecomm
+26d2bc7  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
+
+
+* system/core
+63a7eef  libutils: do not follow process's group  [Wei Wang]
+d612438  storageproxyd: discard writes when checkpointing, if necessary  [Thurston Dang]
+
+
+* system/memory/lmkd
+9ef9ed3  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/system/memory/lmkd into HEAD  [DennySPb]
+
+
+* system/security
+5d7dcbb  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/system/security into HEAD  [DennySPb]
+
+
+* system/sepolicy
+b65b912  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPb]
+
+
+* vendor/qcom/opensource/data-ipa-cfg-mgr
+e0711bf  Merge tag 'LA.UM.9.1.1.r1-00700-RENNELL.QSSI12.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/data-ipa-cfg-mgr into HEAD  [DennySPb]
+
+
+====================
+     2021-12-13    
+====================
+
+* frameworks/av
+59e68fd  CCodecBufferChannel: stash flushed input buffers from PipelineWatcher  [Wonsik Kim]
+
+
+* frameworks/base
+417fcc8  Fix deadlock issue.  [jiayongqiang]
+df75eb6  res: Move screenrecorder delete action strings to custom  [DennySPb]
+
+
+* packages/apps/SyberiaSettings
+29508a3  Revert "preference: MasterSwitchPreference: Fix settings not applying"  [DennySPb]
+
+
+* system/core
+fbd2bb7  libprocessgroup: Use WriteStringToFd for WriteFileAction  [Rick Yiu]
+5e7aa73  init: Report valid verified boot for SafetyNet checks  [Danny Lin]
+c49ecb3  Revert "init: Set properties to make SafetyNet pass"  [Danny Lin]
+2e80599  Revert "fastboot: Revert to Android 11 method of checking lock status"  [Danny Lin]
+
+
+* vendor/qcom/opensource/commonsys/bluetooth_ext
+4808136  Merge tag 'LA.QSSI.12.0.r1-05300.04-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/bluetooth_ext into HEAD  [DennySPb]
+
+
+* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
+5d00481  Merge tag 'LA.QSSI.12.0.r1-05300.04-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/packages/apps/Bluetooth into HEAD  [DennySPb]
+
+
+* vendor/qcom/opensource/commonsys/system/bt
+017bd9b  Merge tag 'LA.QSSI.12.0.r1-05300.04-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/system/bt into HEAD  [DennySPb]
+
+
+* vendor/qcom/opensource/healthd-ext
+efb930a  Merge tag 'LA.UM.9.1.1.r1-00700-RENNELL.QSSI12.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/healthd-ext into HEAD  [DennySPb]
+
+
+* vendor/syberia
+13bb0b0  config: Disable Async MTE on System Server  [Vinay Verma]
+44f33ee  v5.1  [DennySPb]
+
+
