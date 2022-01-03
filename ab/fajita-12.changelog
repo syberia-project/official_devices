@@ -1,4 +1,25 @@
 ====================
+     2022-01-03    
+====================
+
+* frameworks/base
+14bc27f  Add show|hide udfps view callbacks to IBiometricsFingerprint@2.3 [1/2]  [SagarMakhar]
+
+
+* hardware/interfaces
+95c0777  Add show|hide udfps view callbacks to IBiometricsFingerprint@2.3 [2/2]  [SagarMakhar]
+
+
+* packages/apps/Settings
+8cf0c96  team: Add OnePlus 6T maintainer  [blinoff82]
+1413622  team: Add Redmi K20 Pro maintainer  [blinoff82]
+
+
+* vendor/syberia
+4a9e38f  chore(Devices): Fajita is now official!  [SevralT]
+
+
+====================
      2022-01-02    
 ====================
 
@@ -69,8 +90,4 @@ e55582c  Track elapsed time for 'waitStreamEnd' timeout  [Matthew Bouyack]
 * frameworks/native
 25e98bf  Mark setInputWindows of IInputFlinger interface as "sync".  [Guanyou Chen]
 
-
-====================
-     2021-12-27    
-====================
 
