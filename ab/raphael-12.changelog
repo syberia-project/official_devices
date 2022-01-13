@@ -1,172 +1,200 @@
 ====================
-     2021-12-19    
+     2022-01-13    
 ====================
 
 ====================
-     2021-12-18    
-====================
-
-* build/make
-ba78a5d  Build Google audio files from android12 [1/2]  [beanstown106]
-
-
-* frameworks/base
-f463140  Build Google audio files from android12 [2/2]  [BeansTown106]
-
-
-* vendor/syberia
-215a249  vendor: Add iorap prefetch prop to mendel flags  [jjpprrrr]
-d0f6055  vendor: guard Pixel offline charging animation  [kondors1995]
-ad33216  vendor: charger: Import latest offline charging animation  [Dyneteve]
-6a94f9f  vendor: Use Pixel charger animation  [Arseniy Graur]
-f907c9c  vendor: remove audio  [kondors1995]
-
-
-====================
-     2021-12-17    
+     2022-01-12    
 ====================
 
 ====================
-     2021-12-16    
-====================
-
-====================
-     2021-12-15    
-====================
-
-====================
-     2021-12-14    
+     2022-01-11    
 ====================
 
 * art
-9c53e1f  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/art into HEAD  [DennySPb]
+d5994eb  ARM64: Disable implicit suspend checks.  [Vladimir Marko]
 
 
 * bionic
-21c8fa4  Use -fno-builtin for libc and libm.  [Elliott Hughes]
+063d6f2  linker: Add support for opening zip files by fd paths  [Danny Lin]
+
+
+* bootable/recovery
+a320a4d  bootable: Read all asserts in case there are more than one  [Hernán Castañón]
+9de5e65  Revert "Add recovery support of dynamic fingerprints"  [palaych]
 
 
 * build/make
-8e93a89  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
+eb93abd  Build Google audio files from android12 [1/2]  [beanstown106]
 
 
 * build/soong
-14552b6  Remove workaround for Qualcomm Kryo 385  [Raphiel Rollerscaperers]
-9b458ba  Add qcom.fmradio and org.codeaurora.internal to allowlist  [Scott Lobdell]
+a731461  Replace qti_kernel_headers with generated_kernel_headers  [Nolen Johnson]
+c5a164b  Replace device_kernel_headers with generated_kernel_headers  [Chirayu Desai]
+3f9c4a8  cc/lto: without profiles, more aggressively inline  [John Galt]
 
 
-* external/ant-wireless/ant_service
-968df9e  Revert "Fix compilation error."  [LuK1337]
-
-
-* frameworks/av
-b2b23d0  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
-
-
-* frameworks/base
-481ec9d  Merge "udfps: Add overlay for vendor code" into 12.0  [dennyspb]
-36abf7d  Revert skip screen-on animation commits  [DennySPb]
-27948eb  base: PixelPropsUtils: update raven fp from raven-user-12-SQ1D.211205.016.A1-7957957-release-keys  [jhonboy121]
-3cf8ad7  Revert "PixelProps: Switch to redfin december fp"  [DennySPb]
-16b001b  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
-6e4641c  SoundPool: Update queue only if streamID matches  [Andy Hung]
-88913e8  RefreshRatePolicy: set both min and max refresh rate when camera is used  [Ady Abraham]
-56f11a8  base: Properly regenerate the share drawable.  [Sourajit Karmakar]
-6cb4bad  QSPanel: Don't crash when not using media player  [Ido Ben-Hur]
-
-
-* frameworks/native
-6ee962e  Merge changes Iba93246a,I097b78a1 into 12.0  [dennyspb]
-e07a695  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
-
-
-* hardware/interfaces
-b108c3a  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [DennySPb]
-
-
-* packages/apps/Bluetooth
-7783ed5  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD  [DennySPb]
-
-
-* packages/apps/Launcher3
-57b3896  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD  [DennySPb]
-
-
-* packages/apps/Nfc
-b5f711a  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPb]
-
-
-* packages/apps/Settings
-8ef8055  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
-
-
-* packages/services/Telecomm
-26d2bc7  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
-
-
-* system/core
-63a7eef  libutils: do not follow process's group  [Wei Wang]
-d612438  storageproxyd: discard writes when checkpointing, if necessary  [Thurston Dang]
-
-
-* system/memory/lmkd
-9ef9ed3  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/system/memory/lmkd into HEAD  [DennySPb]
-
-
-* system/security
-5d7dcbb  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/system/security into HEAD  [DennySPb]
-
-
-* system/sepolicy
-b65b912  Merge tag 'android-12.0.0_r20' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPb]
-
-
-* vendor/qcom/opensource/data-ipa-cfg-mgr
-e0711bf  Merge tag 'LA.UM.9.1.1.r1-00700-RENNELL.QSSI12.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/data-ipa-cfg-mgr into HEAD  [DennySPb]
-
-
-====================
-     2021-12-13    
-====================
-
-* frameworks/av
-59e68fd  CCodecBufferChannel: stash flushed input buffers from PipelineWatcher  [Wonsik Kim]
+* device/qcom/sepolicy_vndr
+cb905d7  sepolicy:msmnile: drop mediatranscoding  [kondors1995]
+7ac61af  Merge tag 'LA.UM.10.3.r1-00600-sdm845.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy_vndr into HEAD  [kondors1995]
 
 
 * frameworks/base
-417fcc8  Fix deadlock issue.  [jiayongqiang]
-df75eb6  res: Move screenrecorder delete action strings to custom  [DennySPb]
+73f076b  SettingsLib: use Cloudflare DNS servers as hints  [Daniel Micay]
+26b9d86  use Cloudflare DNS as the default fallback  [Daniel Micay]
+2903ee8  net: Notify ConnectivityService of runtime permission changes  [Danny Lin]
+13633be  SystemUI: Use new privacy indicators for location  [Danny Lin]
+d16e0d5  appop: Save discrete app op history for more permissions  [Danny Lin]
+b50a002  appop: Keep up to 7 days of permission usage history  [Danny Lin]
+7265fa3  use rounded corners in system UI  [Daniel Micay]
+b75062b  SystemUI: Require unlocking to use Internet quick tile  [flawedworld]
+50d2a19  Add colors to assistant animation  [paphonb]
+c59c764  SystemUI: Fix keyguard clock/status and AOD layouts without smartspace  [Danny Lin]
+7d8fb36  SystemUI: Apply monet to fingerprint authentication ripple animation  [SagarMakhar]
+b122b5a  gmscompat: don't check whether Google account removal is allowed  [Dmitry Muhomor]
+95fc442  gmscompat: improve account sign-in UI  [Dmitry Muhomor]
+199262b  gmscompat: add recently bound pids to getRunningAppProcesses() result  [Dmitry Muhomor]
+a4434d1  Allow PackageInstaller UI to become hidden if it starts another activity  [Dmitry Muhomor]
+888c629  gmscompat: set foregroundServiceType of location services  [Dmitry Muhomor]
+69e9bca  gmscompat: System.exit(1) if package uninstallation is declined  [Dmitry Muhomor]
+63d3686  gmscompat: use a reliable "is app foreground" check  [Dmitry Muhomor]
+9944346  gmscompat: make sure PackageInstaller UI returns a result  [Dmitry Muhomor]
+143be98  gmscompat: fix push notifications in secondary user profiles  [Dmitry Muhomor]
+5f0f275  gmscompat: mark confirmation notification from Play Store as ongoing  [Dmitry Muhomor]
+9502108  gmscompat: compatibility with Play Store self-update  [Dmitry Muhomor]
+1952929  minor style fix  [Daniel Micay]
+3c56b6e  gmscompat: improve Play Store compatibility  [Dmitry Muhomor]
+08c7687  gmscompat: use new API for long-running AppOps  [Daniel Micay]
+53688e0  gmscompat: Handle all exact alarm denials  [Danny Lin]
+463ab77  gmscompat: Add compatibility layer for unprivileged Google Play services  [Danny Lin]
+3c3daa4  add special runtime permission for other sensors  [Daniel Micay]
+d617845  add a NETWORK permission group for INTERNET  [Daniel Micay]
+a2033ec  make INTERNET into a special runtime permission  [Daniel Micay]
+2634676  support new special runtime permissions  [inthewaves]
+8ca17e7  enable secondary user logout support by default  [Daniel Micay]
+d1bc684  stop auto-granting location to system browsers  [Daniel Micay]
+2f787ec  Build Google audio files from android12 [2/2]  [BeansTown106]
 
 
-* packages/apps/SyberiaSettings
-29508a3  Revert "preference: MasterSwitchPreference: Fix settings not applying"  [DennySPb]
+* libcore
+37872a1  libcore: Add hooks for Dynamite module support in GmsCompat  [Danny Lin]
+b29bc54  ZipFile: Add support for opening zip files by fd paths  [Danny Lin]
 
 
-* system/core
-fbd2bb7  libprocessgroup: Use WriteStringToFd for WriteFileAction  [Rick Yiu]
-5e7aa73  init: Report valid verified boot for SafetyNet checks  [Danny Lin]
-c49ecb3  Revert "init: Set properties to make SafetyNet pass"  [Danny Lin]
-2e80599  Revert "fastboot: Revert to Android 11 method of checking lock status"  [Danny Lin]
+* packages/apps/SettingsIntelligence
+08986ba  Style search bar to match new Settings UI  [Danny Lin]
+8f65a68  SettingsIntelligence: Match Settings style  [Luca Stefani]
 
 
-* vendor/qcom/opensource/commonsys/bluetooth_ext
-4808136  Merge tag 'LA.QSSI.12.0.r1-05300.04-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/bluetooth_ext into HEAD  [DennySPb]
+* packages/modules/Connectivity
+a512db7  skip reportNetworkConnectivity() when permission is revoked  [Dmitry Muhomor]
+8a5eeec  default to GrapheneOS connectivity check server  [flawedworld]
+4d286dc  Use Cloudflare DNS servers instead of Google DNS servers for diagnostics, connectivity checking and tethering  [flawedworld]
+db924f4  Remove DUN requirement for tethering  [Dave Daynard]
+ca33e18  use uid instead of app id  [Pratyush]
+8b3707b  gmscompat: Add ConnectivityManager hook for baseline compatibility  [Danny Lin]
+fe2a0c2  Add callback for enforcing INTERNET permission changes  [Danny Lin]
 
 
-* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
-5d00481  Merge tag 'LA.QSSI.12.0.r1-05300.04-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/packages/apps/Bluetooth into HEAD  [DennySPb]
+* packages/modules/Permission
+fe8f086  Utils: add FAKE_PACKAGE_SIGNATURE to platform permissions  [Vachounet]
+741ed27  stop auto-granting location to system browsers  [Daniel Micay]
+2655b43  fix usage UI summary for Network/Sensors  [Daniel Micay]
+daf4953  SystemUI: Use new privacy indicators for location  [Daniel Micay]
+8d33c00  ui fix for special runtime permission  [Pratyush]
+f645145  PermissionController: Show up to 7 days of permission usage history  [Danny Lin]
+39704a3  PermissionController: Enable usage timeline for all permission groups  [Danny Lin]
+5ffeaa8  don't auto revoke Network and Sensors  [inthewaves]
+15db87f  refactor handling of special runtime permissions  [inthewaves]
+8f9251a  add OTHER_SENSORS permission group  [Daniel Micay]
+42ee30b  always treat OTHER_SENSORS as a runtime permission  [Daniel Micay]
+35efaa2  add INTERNET permission toggle  [Daniel Micay]
+29ddf76  always treat INTERNET as a runtime permission  [Daniel Micay]
 
 
-* vendor/qcom/opensource/commonsys/system/bt
-017bd9b  Merge tag 'LA.QSSI.12.0.r1-05300.04-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/system/bt into HEAD  [DennySPb]
+* packages/modules/Wifi
+2dc0eb1  gmscompat: Add WifiManager hooks for baseline compatibility  [Danny Lin]
 
 
-* vendor/qcom/opensource/healthd-ext
-efb930a  Merge tag 'LA.UM.9.1.1.r1-00700-RENNELL.QSSI12.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/healthd-ext into HEAD  [DennySPb]
+* packages/providers/DownloadProvider
+c1a8204  gmscompat: allow harmless COLUMN_NOTIFICATION_CLASS  [Dmitry Muhomor]
+1400f1f  remove legacy NETWORK permission group reference  [Daniel Micay]
 
 
 * vendor/syberia
-13bb0b0  config: Disable Async MTE on System Server  [Vinay Verma]
-44f33ee  v5.1  [DennySPb]
+e578333   config: Add standalone UnifiedNlp location provider  [Danny Lin]
+9d23d19  vendor: Add iorap prefetch prop to mendel flags  [jjpprrrr]
+1a59457  vendor: guard Pixel offline charging animation  [kondors1995]
+229d239  vendor: charger: Import latest offline charging animation  [Dyneteve]
+a233681  vendor: Use Pixel charger animation  [Arseniy Graur]
+a838db9  vendor: remove audio  [kondors1995]
+
+
+====================
+     2022-01-10    
+====================
+
+* build/make
+2d21d0f  Merge tag 'android-12.0.0_r26' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
+
+
+* frameworks/av
+900eff6  Merge tag 'android-12.0.0_r26' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
+
+
+* frameworks/base
+c47014e  audio: Discard QTI only codecs when AOSP BT stack is in use  [LuK1337]
+5ae3020  Zygote: Fix an issue when empty the usap pool.  [zhangjianqiu]
+97c1b70  DisplayDeviceRepository: Don't spam log when display state changes  [Adithya R]
+e17875d  ThemeOverlayApplier: Catch a potential NPE.  [spezi77]
+e0add66  libs: PipTaskOrganizer: do not start fade out animation for pip if surfacecontrol leash is null  [jhonboy121]
+8a90da1  [TMP] PixelPropUtils: Use redfin fp January 2022  [alanndz]
+f128aa1  VolumeDialog: notifyVisible after the volume panel is fully hidden  [Jesse Chan]
+a9bfc1e  base: set alert dialog message to use system font  [maxwen]
+19efe75  base: fix list style alert dialog to use system font  [maxwen]
+5486e08  BatteryMeterView: Fix NPE that occurs when onDensityOrFontScaleChanged() is called.  [spezi77]
+954d0e2  MediaDataManager: use safe cast to avoid NPE  [Chenyang Zhong]
+fac32cd  graphics: Override system fonts with user-selected overlays  [Danny Lin]
+760c77c  Merge tag 'android-12.0.0_r26' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+
+
+* frameworks/native
+99d7461  Merge tag 'android-12.0.0_r26' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
+
+
+* packages/apps/Bluetooth
+2cbc5e3  Don't assign codecs to a size fixed array  [Luca Stefani]
+
+
+* packages/apps/Dialer
+2cb25f1  Merge tag 'android-12.0.0_r26' of https://android.googlesource.com/platform/packages/apps/Dialer into HEAD  [DennySPb]
+
+
+* packages/apps/Settings
+8f78573  Merge tag 'android-12.0.0_r26' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
+
+
+* packages/services/Telecomm
+38e5b21  Merge tag 'android-12.0.0_r26' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
+
+
+* vendor/syberia
+ed36345  Add 5 more Custom Statusbar Signal & Wi-Fi icons [2/2]  [Aston-Martinn]
+b341d18  themes: Introduce Custom Statusbar Signal & Wi-Fi icons [3/3]  [Aston-Martinn]
+
+
+====================
+     2022-01-09    
+====================
+
+====================
+     2022-01-08    
+====================
+
+====================
+     2022-01-07    
+====================
+
+* packages/modules/adb
+3ea98c6  adb_root: Move to system_ext  [Alessandro Astone]
 
 
