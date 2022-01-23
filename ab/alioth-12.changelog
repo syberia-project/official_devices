@@ -1,21 +1,38 @@
 ====================
-     2021-12-30
+     2022-01-21
 ====================
 
 Kernel:
- - Upstream to 4.19.221
- - Fully implemented GS101 (Pixel 6) scheduler based on tracepoint hooks
+ - Upstream to 4.19.225
+ - Fixed abnormal high frequency usage on big and primary cluster
 
 Rom:
- - Add support for app signature spoofing
- - Add custom statusbar signal & wifi icons
- - Add landscape battery shape
- - Add possibility for blocking statusbar call strength icon
- - Some SystemUI improvements
- - Art improvements
- - Fixed battery stats
+ - January security patch android-12.0.0_r27
+ - Add Gaming mode
+ - Add support for gmscompat
+ - Add increasing ring feature
+ - Add switch for linked ring and media notification
+ - Add require unlocking to use Internet quick tile
+ - Add ringtone settings for Multi SIM devices
+ - Add Cloudflare DNS as the default fallback
+ - Add colors to assistant animation
+ - Add volume panel on left toggle
+ - Add small keyguard clock switch
+ - Add custom lockscreen clocks
+ - Add lockscreen clock options
+ - Add pixel charger animation
+ - Add screen off animations
+ - Fixes for camera and audio stream
+ - SystemUI fixes and improvements
+ - Art and bionic improvements
+ - Fix landscape battery size
+ - Updater app fixes
  - Other fixes under the hood
 
 Device:
- - Switch to GS101 scheduler tuning
- - Enabled ADPF (Android Dynamic Performance Framework)
+ - Update powerhints to improve energy saving
+ - Drop touch boost feature from thermal profiles
+ - Update supported audio sampling rates
+ - Add support for WiFi 6 mobile hotspots
+ - VoIP calls improvements
+ - Fixed mic in apps when OK Google is activated
