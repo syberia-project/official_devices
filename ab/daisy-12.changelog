@@ -1,27 +1,42 @@
 ====================
-     2021-12-15
+     2022-01-28
 ====================
 
+Kernel:
+- Upstream to 4.9.297-Rename
+
 Rom:
- - December security patch
- - Enforcing + user build
- - Update raven fp
- - Introduce Syberia recovery
- - Add Pulse notification bars
- - Add AOD tile
- - Option to enable AOD on charging only
- - Add deep sleep info to uptime
- - Add 'Syberia settings' shortcut
- - Add Radio info into "About phone"
- - Quick unlock for long PIN
- - Fixed tiles in quick settings
- - Fixed changelog view in settings
- - Art improvements
- - Update translations
- - Other fixes under the hood
+- January security patch android-12.0.0_r27
+- Add Gaming mode
+- Add support for gmscompat
+- Add increasing ring feature
+- Add switch for linked ring and media notification
+- Add require unlocking to use Internet quick tile
+- Add ringtone settings for Multi SIM devices
+- Add Cloudflare DNS as the default fallback
+- Add colors to assistant animation
+- Add volume panel on left toggle
+- Add small keyguard clock switch
+- Add custom lockscreen clocks
+- Add pixel charger animation
+- Add screen off animations
+- Fixes for camera and audio stream
+- SystemUI fixes and improvements
+- Art and bionic improvements
+- Fix landscape battery size
+- Updater app fixes
+- Other fixes under the hood
 
 Device:
- - Initial build
+ - parts: Adapt to S style
+ - wifi: Pull wifi configs from daisy V11.0.21.0.QDLMIXM
+ - Drop MMS user agent overlays
+ - Remove unnecessary iop service
+ - Disable window rounded corner animations
+ - power: Enable idle_state mechanism
+ - rootdir: Remove unnecessary QTI logkit directories
+ - rootdir: Remove hbtp components
+ - gpt_utils: fsync after block device writes
+ - Address sepolicy denials
+ - Other fixes and improvements
 
-Kernel:
- - Upstream to 4.9.280 Rename
