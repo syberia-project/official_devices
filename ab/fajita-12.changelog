@@ -1,93 +1,41 @@
 ====================
-     2022-01-03    
+     2022-01-31    
+====================
+
+* packages/resources/devicesettings
+da73d49  Revert "res: Remove no longer used switchbar texts"  [SevralT]
+
+
+====================
+     2022-01-30    
+====================
+
+====================
+     2022-01-29    
+====================
+
+====================
+     2022-01-28    
+====================
+
+====================
+     2022-01-27    
+====================
+
+====================
+     2022-01-26    
+====================
+
+====================
+     2022-01-25    
 ====================
 
 * frameworks/base
-14bc27f  Add show|hide udfps view callbacks to IBiometricsFingerprint@2.3 [1/2]  [SagarMakhar]
+890c641  Add show|hide udfps view callbacks to IBiometricsFingerprint@2.3 [1/2]  [SagarMakhar]
+a2f307b  SystemUI/CommandQueue: Add missing break  [DennySPb]
 
 
 * hardware/interfaces
-95c0777  Add show|hide udfps view callbacks to IBiometricsFingerprint@2.3 [2/2]  [SagarMakhar]
-
-
-* packages/apps/Settings
-8cf0c96  team: Add OnePlus 6T maintainer  [blinoff82]
-1413622  team: Add Redmi K20 Pro maintainer  [blinoff82]
-
-
-* vendor/syberia
-4a9e38f  chore(Devices): Fajita is now official!  [SevralT]
-
-
-====================
-     2022-01-02    
-====================
-
-====================
-     2022-01-01    
-====================
-
-====================
-     2021-12-31    
-====================
-
-====================
-     2021-12-30    
-====================
-
-* frameworks/base
-18f8fd0  Merge changes I336facff,I8b067426,I16262500,I0c1a4dde,I5babd4f3, ... into 12.0  [dennyspb]
-6c2c912  Core: Extend Pixel experience Blacklist For Google Photos  [kondors1995]
-4c6453c  [Fixup] Add support for app signature spoofing  [Danny Lin]
-0e40dc4  SystemUI: set proper height and width for vibrate icon drawable  [jhonboy121]
-a0878c2  Option for blocking annoying statusbar call strength icon  [xyyx]
-5a05769  SoundPool: Implement generic garbage collection  [Andy Hung]
-bbf9556  Delete skipCallbacks when Exception dispatchInputEvent beacuse calling finishInputEvent twice will cause 'Native Crash'  [chenxinyu]
-ef74dba  Remove reference to nonplat sepolicy  [Inseob Kim]
-d5e3f58  Remove getProcessGroup usage in OomAdjuster  [Riddle Hsu]
-e3b587e  [BUG] AudioService: PlaybackActivityMonitor: fix exploding list  [Francois Gaffie]
-cc57e67  [BUG] AudioService: fix stategy/groups attributes introspection  [Francois Gaffie]
-41ad58a  SystemUI: NetworkTraffic: Remove screen on/off triggers  [Pranav Vashi]
-9bcecd0  SystemUI: Introduce Battery Landscape [1/2]  [703joko]
-87cc9aa  SystemUI: fix / suppress new kotlin compiler warnings after r18  [jhonboy121]
-617b84f  Redesign seekbar  [SagarMakhar]
-7a5a395  base: limit direct share targets to reduce lag  [Joey]
-6f7bc85  configure same GID based APNs as per carrier requirements  [Avinash Nalluri]
-1b5a8a0  Include saved battery history chunks into BatteryUsageStats parcel  [Dmitri Plotnikov]
-9d8e2de  Fix concurrency issue with BatteryUsageStats  [Dmitri Plotnikov]
-5d79864  NavigationBar: Prevent a rare crash  [Ido Ben-Hur]
-fd8c1a0c  Fix build warning of Supported source version being RELEASE_8  [Tari Bence]
-
-
-* packages/apps/SyberiaSettings
-2839160  Introduce Battery Landscape [2/2]  [703joko]
-
-
-* system/core
-a1632e7  Revert "init: Allow forcing custom build fingerprint [2/2]"  [jhenrique09]
-d929e22  core: Don't spoof props in recovery mode  [Jarl-Penguin]
-627c84b  core: Add more props for snet spoofing  [jhenrique09]
-9b764ed  init: Only set safetynet props if not eng build  [jhenrique09]
-9fe30c0  init: Allow forcing custom build fingerprint [2/2]  [jhenrique09]
-bb7553e  init: Weaken property override security only when spoofing safetynet  [jhenrique09]
-f904136  init: add vendor.*  keys to spoof safetynet  [Chris Renshaw]
-5e50736  init: workaround SafetyNet check  [Park Ju Hyung]
-41fff3d  Revert "init: Report valid verified boot for SafetyNet checks"  [SevralT]
-
-
-====================
-     2021-12-29    
-====================
-
-====================
-     2021-12-28    
-====================
-
-* frameworks/av
-e55582c  Track elapsed time for 'waitStreamEnd' timeout  [Matthew Bouyack]
-
-
-* frameworks/native
-25e98bf  Mark setInputWindows of IInputFlinger interface as "sync".  [Guanyou Chen]
+b00e014  Add show|hide udfps view callbacks to IBiometricsFingerprint@2.3 [2/2]  [SagarMakhar]
 
 
