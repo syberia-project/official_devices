@@ -1,10 +1,26 @@
 ====================
-     2022-01-31    
+     2022-02-01    
 ====================
 
 * packages/resources/devicesettings
 da73d49  Revert "res: Remove no longer used switchbar texts"  [SevralT]
 
+
+* system/core
+e3f202d  Revert "init: Allow forcing custom build fingerprint [2/2]"  [jhenrique09]
+6131600  core: Don't spoof props in recovery mode  [Jarl-Penguin]
+bbe014a  core: Add more props for snet spoofing  [jhenrique09]
+f593708  init: Only set safetynet props if not eng build  [jhenrique09]
+77c3427  init: Allow forcing custom build fingerprint [2/2]  [jhenrique09]
+b67e850  init: Weaken property override security only when spoofing safetynet  [jhenrique09]
+d6dd337  init: add vendor.*  keys to spoof safetynet  [Chris Renshaw]
+a3e90bd  init: workaround SafetyNet check  [Park Ju Hyung]
+eeed88c  Revert "init: Report valid verified boot for SafetyNet checks"  [SevralT]
+
+
+====================
+     2022-01-31    
+====================
 
 ====================
      2022-01-30    
@@ -25,17 +41,4 @@ da73d49  Revert "res: Remove no longer used switchbar texts"  [SevralT]
 ====================
      2022-01-26    
 ====================
-
-====================
-     2022-01-25    
-====================
-
-* frameworks/base
-890c641  Add show|hide udfps view callbacks to IBiometricsFingerprint@2.3 [1/2]  [SagarMakhar]
-a2f307b  SystemUI/CommandQueue: Add missing break  [DennySPb]
-
-
-* hardware/interfaces
-b00e014  Add show|hide udfps view callbacks to IBiometricsFingerprint@2.3 [2/2]  [SagarMakhar]
-
 
