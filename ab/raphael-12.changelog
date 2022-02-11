@@ -1,200 +1,162 @@
 ====================
-     2022-01-13    
+     2022-02-11    
 ====================
-
-====================
-     2022-01-12    
-====================
-
-====================
-     2022-01-11    
-====================
-
-* art
-d5994eb  ARM64: Disable implicit suspend checks.  [Vladimir Marko]
-
-
-* bionic
-063d6f2  linker: Add support for opening zip files by fd paths  [Danny Lin]
-
-
-* bootable/recovery
-a320a4d  bootable: Read all asserts in case there are more than one  [Hernán Castañón]
-9de5e65  Revert "Add recovery support of dynamic fingerprints"  [palaych]
-
-
-* build/make
-eb93abd  Build Google audio files from android12 [1/2]  [beanstown106]
-
 
 * build/soong
-a731461  Replace qti_kernel_headers with generated_kernel_headers  [Nolen Johnson]
-c5a164b  Replace device_kernel_headers with generated_kernel_headers  [Chirayu Desai]
-3f9c4a8  cc/lto: without profiles, more aggressively inline  [John Galt]
-
-
-* device/qcom/sepolicy_vndr
-cb905d7  sepolicy:msmnile: drop mediatranscoding  [kondors1995]
-7ac61af  Merge tag 'LA.UM.10.3.r1-00600-sdm845.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy_vndr into HEAD  [kondors1995]
-
-
-* frameworks/base
-73f076b  SettingsLib: use Cloudflare DNS servers as hints  [Daniel Micay]
-26b9d86  use Cloudflare DNS as the default fallback  [Daniel Micay]
-2903ee8  net: Notify ConnectivityService of runtime permission changes  [Danny Lin]
-13633be  SystemUI: Use new privacy indicators for location  [Danny Lin]
-d16e0d5  appop: Save discrete app op history for more permissions  [Danny Lin]
-b50a002  appop: Keep up to 7 days of permission usage history  [Danny Lin]
-7265fa3  use rounded corners in system UI  [Daniel Micay]
-b75062b  SystemUI: Require unlocking to use Internet quick tile  [flawedworld]
-50d2a19  Add colors to assistant animation  [paphonb]
-c59c764  SystemUI: Fix keyguard clock/status and AOD layouts without smartspace  [Danny Lin]
-7d8fb36  SystemUI: Apply monet to fingerprint authentication ripple animation  [SagarMakhar]
-b122b5a  gmscompat: don't check whether Google account removal is allowed  [Dmitry Muhomor]
-95fc442  gmscompat: improve account sign-in UI  [Dmitry Muhomor]
-199262b  gmscompat: add recently bound pids to getRunningAppProcesses() result  [Dmitry Muhomor]
-a4434d1  Allow PackageInstaller UI to become hidden if it starts another activity  [Dmitry Muhomor]
-888c629  gmscompat: set foregroundServiceType of location services  [Dmitry Muhomor]
-69e9bca  gmscompat: System.exit(1) if package uninstallation is declined  [Dmitry Muhomor]
-63d3686  gmscompat: use a reliable "is app foreground" check  [Dmitry Muhomor]
-9944346  gmscompat: make sure PackageInstaller UI returns a result  [Dmitry Muhomor]
-143be98  gmscompat: fix push notifications in secondary user profiles  [Dmitry Muhomor]
-5f0f275  gmscompat: mark confirmation notification from Play Store as ongoing  [Dmitry Muhomor]
-9502108  gmscompat: compatibility with Play Store self-update  [Dmitry Muhomor]
-1952929  minor style fix  [Daniel Micay]
-3c56b6e  gmscompat: improve Play Store compatibility  [Dmitry Muhomor]
-08c7687  gmscompat: use new API for long-running AppOps  [Daniel Micay]
-53688e0  gmscompat: Handle all exact alarm denials  [Danny Lin]
-463ab77  gmscompat: Add compatibility layer for unprivileged Google Play services  [Danny Lin]
-3c3daa4  add special runtime permission for other sensors  [Daniel Micay]
-d617845  add a NETWORK permission group for INTERNET  [Daniel Micay]
-a2033ec  make INTERNET into a special runtime permission  [Daniel Micay]
-2634676  support new special runtime permissions  [inthewaves]
-8ca17e7  enable secondary user logout support by default  [Daniel Micay]
-d1bc684  stop auto-granting location to system browsers  [Daniel Micay]
-2f787ec  Build Google audio files from android12 [2/2]  [BeansTown106]
-
-
-* libcore
-37872a1  libcore: Add hooks for Dynamite module support in GmsCompat  [Danny Lin]
-b29bc54  ZipFile: Add support for opening zip files by fd paths  [Danny Lin]
-
-
-* packages/apps/SettingsIntelligence
-08986ba  Style search bar to match new Settings UI  [Danny Lin]
-8f65a68  SettingsIntelligence: Match Settings style  [Luca Stefani]
-
-
-* packages/modules/Connectivity
-a512db7  skip reportNetworkConnectivity() when permission is revoked  [Dmitry Muhomor]
-8a5eeec  default to GrapheneOS connectivity check server  [flawedworld]
-4d286dc  Use Cloudflare DNS servers instead of Google DNS servers for diagnostics, connectivity checking and tethering  [flawedworld]
-db924f4  Remove DUN requirement for tethering  [Dave Daynard]
-ca33e18  use uid instead of app id  [Pratyush]
-8b3707b  gmscompat: Add ConnectivityManager hook for baseline compatibility  [Danny Lin]
-fe2a0c2  Add callback for enforcing INTERNET permission changes  [Danny Lin]
-
-
-* packages/modules/Permission
-fe8f086  Utils: add FAKE_PACKAGE_SIGNATURE to platform permissions  [Vachounet]
-741ed27  stop auto-granting location to system browsers  [Daniel Micay]
-2655b43  fix usage UI summary for Network/Sensors  [Daniel Micay]
-daf4953  SystemUI: Use new privacy indicators for location  [Daniel Micay]
-8d33c00  ui fix for special runtime permission  [Pratyush]
-f645145  PermissionController: Show up to 7 days of permission usage history  [Danny Lin]
-39704a3  PermissionController: Enable usage timeline for all permission groups  [Danny Lin]
-5ffeaa8  don't auto revoke Network and Sensors  [inthewaves]
-15db87f  refactor handling of special runtime permissions  [inthewaves]
-8f9251a  add OTHER_SENSORS permission group  [Daniel Micay]
-42ee30b  always treat OTHER_SENSORS as a runtime permission  [Daniel Micay]
-35efaa2  add INTERNET permission toggle  [Daniel Micay]
-29ddf76  always treat INTERNET as a runtime permission  [Daniel Micay]
-
-
-* packages/modules/Wifi
-2dc0eb1  gmscompat: Add WifiManager hooks for baseline compatibility  [Danny Lin]
-
-
-* packages/providers/DownloadProvider
-c1a8204  gmscompat: allow harmless COLUMN_NOTIFICATION_CLASS  [Dmitry Muhomor]
-1400f1f  remove legacy NETWORK permission group reference  [Daniel Micay]
-
-
-* vendor/syberia
-e578333   config: Add standalone UnifiedNlp location provider  [Danny Lin]
-9d23d19  vendor: Add iorap prefetch prop to mendel flags  [jjpprrrr]
-1a59457  vendor: guard Pixel offline charging animation  [kondors1995]
-229d239  vendor: charger: Import latest offline charging animation  [Dyneteve]
-a233681  vendor: Use Pixel charger animation  [Arseniy Graur]
-a838db9  vendor: remove audio  [kondors1995]
-
-
-====================
-     2022-01-10    
-====================
-
-* build/make
-2d21d0f  Merge tag 'android-12.0.0_r26' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
-
-
-* frameworks/av
-900eff6  Merge tag 'android-12.0.0_r26' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
-
-
-* frameworks/base
-c47014e  audio: Discard QTI only codecs when AOSP BT stack is in use  [LuK1337]
-5ae3020  Zygote: Fix an issue when empty the usap pool.  [zhangjianqiu]
-97c1b70  DisplayDeviceRepository: Don't spam log when display state changes  [Adithya R]
-e17875d  ThemeOverlayApplier: Catch a potential NPE.  [spezi77]
-e0add66  libs: PipTaskOrganizer: do not start fade out animation for pip if surfacecontrol leash is null  [jhonboy121]
-8a90da1  [TMP] PixelPropUtils: Use redfin fp January 2022  [alanndz]
-f128aa1  VolumeDialog: notifyVisible after the volume panel is fully hidden  [Jesse Chan]
-a9bfc1e  base: set alert dialog message to use system font  [maxwen]
-19efe75  base: fix list style alert dialog to use system font  [maxwen]
-5486e08  BatteryMeterView: Fix NPE that occurs when onDensityOrFontScaleChanged() is called.  [spezi77]
-954d0e2  MediaDataManager: use safe cast to avoid NPE  [Chenyang Zhong]
-fac32cd  graphics: Override system fonts with user-selected overlays  [Danny Lin]
-760c77c  Merge tag 'android-12.0.0_r26' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
-
-
-* frameworks/native
-99d7461  Merge tag 'android-12.0.0_r26' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
-
-
-* packages/apps/Bluetooth
-2cbc5e3  Don't assign codecs to a size fixed array  [Luca Stefani]
-
-
-* packages/apps/Dialer
-2cb25f1  Merge tag 'android-12.0.0_r26' of https://android.googlesource.com/platform/packages/apps/Dialer into HEAD  [DennySPb]
+a5b7f3c  cc/lto: remove instr limit  [John Galt]
 
 
 * packages/apps/Settings
-8f78573  Merge tag 'android-12.0.0_r26' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
+93b2258  Revert "fuelgauge: Use Enhanced Battery Prediction from Turbo"  [kondors1995]
 
 
-* packages/services/Telecomm
-38e5b21  Merge tag 'android-12.0.0_r26' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
+* system/netd
+24dbeca  netd: use ThinLTO  [John Galt]
+
+
+====================
+     2022-02-10    
+====================
+
+* bionic
+0f57322  Change default block size alignment to be 4 for memory saving on 32-bit arch  [Eric Miao]
+f89469f  Keep allocation of `tail_` outside of LinkedList  [Eric Miao]
+cd888ca  Fix possible nullptr dereference.  [Christopher Ferris]
+
+
+* frameworks/base
+936a474  Check the data directory before mount tmpfs  [Zaijian Lin]
+1b34101  Fix BatteryStats counts foreground activity time.  [Lang Yu]
+5bfd143  Revert "display: NightDisplay: Use chromatic adaptation when possible"  [Omkar Chandorkar]
+a614acf  PixelPropsUtils: Update to February 2022 fingerprints  [Joey Huab]
+94de6d6  SystemUI: Fix method for disabling unlock ripple animation  [Nauval Rizky]
+
+
+* frameworks/native
+a387c66  BlastBufferQueue: Fix async worker deadlock  [Vishnu Nair]
+
+
+* packages/apps/Settings
+8bf97d1  Settings: align user avatar with homepage title  [jhonboy121]
+b3ed066  Merge tag 'android-12.0.0_r29' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
+dc15d90  Merge "team: Add Xiaomi Mi A2 Lite maintainer" into 12.0  [blinov.in]
+
+
+* system/core
+c7c9bf8  libutils: Remove a little dead code  [Greg Kaiser]
+87d9b02  libutils -= libprocessgroup dep  [Steven Moreland]
+c90dd8a  libutils: don't call SetTaskProfiles around priority  [Tim Murray]
+
+
+====================
+     2022-02-09    
+====================
+
+* bootable/recovery
+30f9cbd  recovery: Make recovery usable on user builds  [Christian Oder]
+
+
+* build/make
+4b1cf3c  Merge tag 'android-12.0.0_r29' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
+
+
+* device/syberia/sepolicy
+ec71ae7  Drop flipendo rules  [DennySPb]
+
+
+* frameworks/av
+b37bcec  Merge tag 'android-12.0.0_r29' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
+
+
+* frameworks/base
+dff7717  EnhancedEstimates: Rewrite estimates in kotlin  [Jason Edson]
+849ae5ab  Revert "Make Udfps haptic feedback optional [1/2]"  [kondors1995]
+a3b2a7a  [SQUASH] Bring back UDFPS icons and animations [1/3]  [SagarMakhar]
+6a7f600  base: allow disabling ripple effect on unlock [1/2]  [Rishawn]
+0e7616598  Black theme [1/2]  [SagarMakhar]
+9964da6  PixelPropUtils: Bail out early when required  [Pranav Vashi]
+5233e77  PixelPropUtils: Add GamesProps  [rdkng1]
+0ca983b  base: PixelPropsUtils: Add Material You redesigned apps to spoof list.  [Maitreya29]
+089dc61e  Base: PPU: Add Gmail to spoof list Another app blessed with monet compatibility.  [Maitreya29]
+ae24a6e  PixelPropsUtils: bring back wallpaper collection  [jjpprrrr]
+7e34f98  PixelPropsUtils: Invite streaming apps to the party  [neobuddy89]
+cf95dff  [SQUASH] Update PixelProps utils from PixelExperience  [jhenrique09]
+6483aa6  Merge tag 'android-12.0.0_r29' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+
+
+* packages/apps/Settings
+178d5a0  display: Observe auto brightness mode changes  [Ido Ben-Hur]
+eb97911  AppInfo: Add time spent in app from Wellbeing  [Jason Edson]
+8faf060  Settings: Hardcode moduleProvider to com.google.android.modulemetadata.  [Alexander Koskovich]
+ad92eb3  Settings: Implement RoutinesActionBroadcastReceiver  [Dyneteve]
+6da80c9  Settings: Import PowerUsageFeatureGoogle  [Anay Wadhera]
+5fd3e1c  Settings: Initial implementation of FeatureFactory from Pixel  [jhenrique09]
+
+
+* packages/apps/SyberiaSettings
+b9c8407  Remove Udfps haptic feedback  [kondors1995]
+f99f976  Bring back UDFPS icons and Animations [2/3]  [SagarMakhar]
+a122d3c  Allow disabling ripple effect on unlock [2/2]  [Pranav Vashi]
+ff084cc  Black theme [2/3]  [SagarMakhar]
+
+
+* system/bt
+17930a3  Merge tag 'android-12.0.0_r29' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPb]
+
+
+* vendor/google/gms
+501917b  Disable some packages  [DennySPb]
+
+
+* vendor/google/pixel
+16b6a4a  Add missing Settings overlay for SettingsIntellegence  [DennySPb]
+2182074  Add flipendo and turbo_adapter policies  [DennySPb]
 
 
 * vendor/syberia
-ed36345  Add 5 more Custom Statusbar Signal & Wi-Fi icons [2/2]  [Aston-Martinn]
-b341d18  themes: Introduce Custom Statusbar Signal & Wi-Fi icons [3/3]  [Aston-Martinn]
+b3c163e  Lawnchair: Update prebuildts  [kondors1995]
+efc3636  syberia: properties: Enable the IORap I/O prefetching feature.  [Abhimanyu Garg]
+63cfd2a  UdfpsResources: Convert remaining png to to webp  [kondors1995]
+f0f2ab8  [SQUASH] Bring back Udfps icons and animations [3/3]  [SagarMakhar]
 
 
 ====================
-     2022-01-09    
+     2022-02-08    
+====================
+
+* frameworks/base
+89d078e  Revert recent bootanimation related changes  [Joker-V2]
+370531f6  libs: hwui: Build using ThinLTO  [mydongistiny]
+6bcbf98  base: Power menu fixes  [maxwen]
+1e4f558  KeyguardIndication: Fix glitchy charging info on lockscreen  [Pranav Vashi]
+50eb533  fixup! Add Broadcast profile id  [Pranav Vashi]
+15285ef  Battery Styles: Set proper battery style on init  [Pranav Vashi]
+61e069a  neko/Cat: Mark FLAG_IMMUTABLE PendingIntent with FLAG_MUTABLE  [PainKiller3]
+8611812  base: AudioService: bail out if ringer mode is not recognized  [jhonboy121]
+bc4bfc3  SystemUI: PeopleSpaceWidgetManager: don't spam logcat  [jhonboy121]
+
+
+* packages/apps/Updater
+66106e5  Changelog: Target to A12 builds  [DennySPb]
+
+
+* vendor/syberia
+f6e6fdc  Include GMS and Pixel makefiles  [DennySPb]
+2bf0b45  Black theme [3/3]  [SagarMakhar]
+0021156  lawnchair: Update [check_description]  [Omkar Chandorkar]
+eb58ee4  lawnchair: overlay: default hidden apps  [Omkar Chandorkar]
+1e48238  lawnchair: Import Lawnicons  [Omkar Chandorkar]
+
+
+====================
+     2022-02-07    
 ====================
 
 ====================
-     2022-01-08    
+     2022-02-06    
 ====================
 
 ====================
-     2022-01-07    
+     2022-02-05    
 ====================
-
-* packages/modules/adb
-3ea98c6  adb_root: Move to system_ext  [Alessandro Astone]
-
 
