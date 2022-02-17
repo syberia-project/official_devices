@@ -1,44 +1,44 @@
 ====================
-     2022-02-01    
+     2022-02-19    
+====================
+
+====================
+     2022-02-18    
 ====================
 
 * packages/resources/devicesettings
-da73d49  Revert "res: Remove no longer used switchbar texts"  [SevralT]
+61353c2  Revert "res: Remove no longer used switchbar texts"  [SevralT]
 
 
 * system/core
-e3f202d  Revert "init: Allow forcing custom build fingerprint [2/2]"  [jhenrique09]
-6131600  core: Don't spoof props in recovery mode  [Jarl-Penguin]
-bbe014a  core: Add more props for snet spoofing  [jhenrique09]
-f593708  init: Only set safetynet props if not eng build  [jhenrique09]
-77c3427  init: Allow forcing custom build fingerprint [2/2]  [jhenrique09]
-b67e850  init: Weaken property override security only when spoofing safetynet  [jhenrique09]
-d6dd337  init: add vendor.*  keys to spoof safetynet  [Chris Renshaw]
-a3e90bd  init: workaround SafetyNet check  [Park Ju Hyung]
-eeed88c  Revert "init: Report valid verified boot for SafetyNet checks"  [SevralT]
+d5db9ef  Revert "init: Allow forcing custom build fingerprint [2/2]"  [jhenrique09]
+3432e17  core: Don't spoof props in recovery mode  [Jarl-Penguin]
+dd8787f  core: Add more props for snet spoofing  [jhenrique09]
+d846c56  init: Only set safetynet props if not eng build  [jhenrique09]
+4d38564  init: Allow forcing custom build fingerprint [2/2]  [jhenrique09]
+4b981dc  init: Weaken property override security only when spoofing safetynet  [jhenrique09]
+57515b3  init: add vendor.*  keys to spoof safetynet  [Chris Renshaw]
+6dfbfd5  init: workaround SafetyNet check  [Park Ju Hyung]
+a05d523  Revert "init: Report valid verified boot for SafetyNet checks"  [SevralT]
 
 
 ====================
-     2022-01-31    
+     2022-02-17    
 ====================
 
 ====================
-     2022-01-30    
+     2022-02-16    
 ====================
 
 ====================
-     2022-01-29    
+     2022-02-15    
 ====================
 
 ====================
-     2022-01-28    
+     2022-02-14    
 ====================
 
 ====================
-     2022-01-27    
-====================
-
-====================
-     2022-01-26    
+     2022-02-13    
 ====================
 
