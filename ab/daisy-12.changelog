@@ -1,42 +1,33 @@
 ====================
-     2022-01-28
+     2022-02-20
 ====================
 
-Kernel:
-- Upstream to 4.9.297-Rename
-
 Rom:
-- January security patch android-12.0.0_r27
-- Add Gaming mode
-- Add support for gmscompat
-- Add increasing ring feature
-- Add switch for linked ring and media notification
-- Add require unlocking to use Internet quick tile
-- Add ringtone settings for Multi SIM devices
-- Add Cloudflare DNS as the default fallback
-- Add colors to assistant animation
-- Add volume panel on left toggle
-- Add small keyguard clock switch
-- Add custom lockscreen clocks
-- Add pixel charger animation
-- Add screen off animations
-- Fixes for camera and audio stream
-- SystemUI fixes and improvements
-- Art and bionic improvements
-- Fix landscape battery size
-- Updater app fixes
+- February security patch android-12.0.0_r29
+- Syberia ver. 5.2
+- Implemented Pixel Smartspace
+- Enabled some pixel exclusive features (AI autorotation, Adaptive sound etc...)
+- PixelProps: update spoof list
+- Add Full black theme
+- Add disable ripple effect on unlock switch
+- Updated Lawnchair to 12.0.0 Alpha 5
+- Add Lawnicons for launcher
+- Fixed user avatar for dashboard
+- Fixed battery stile on init
+- Fixed changelog for Updater
+- Fixes for power menu
+- Fixed OTA postinstall backup/restore scripts execution
 - Other fixes under the hood
 
 Device:
- - parts: Adapt to S style
- - wifi: Pull wifi configs from daisy V11.0.21.0.QDLMIXM
- - Drop MMS user agent overlays
- - Remove unnecessary iop service
- - Disable window rounded corner animations
- - power: Enable idle_state mechanism
- - rootdir: Remove unnecessary QTI logkit directories
- - rootdir: Remove hbtp components
- - gpt_utils: fsync after block device writes
+ - Change launcher to Lawnchair (default in syberia now)
+ - Remove android.hardware.graphics.composer@2.1-impl
+ - Add OpenGL ES and update Vulkan dEQP feature flags.
+ - Modify Vulkan and OpenGL versions to 2020-03-01.
+ - audio: upgrade audio.usb.default from v1 to v2
+ - init: Apply aggressive write caching.
+ - Add MALLOC_SVELTE := true configuration
+ - Add 0x2000U to additional gralloc usage bits
  - Address sepolicy denials
  - Other fixes and improvements
 
