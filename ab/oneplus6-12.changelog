@@ -1,163 +1,214 @@
 ====================
-     2022-02-10    
-====================
-
-* packages/apps/Settings
-8bf97d1  Settings: align user avatar with homepage title  [jhonboy121]
-b3ed066  Merge tag 'android-12.0.0_r29' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
-
-
-* vendor/syberia
-9dfc18a  version: Bump to 5.2  [DennySPb]
-
-
-====================
-     2022-02-09    
+     2022-02-25    
 ====================
 
 * bionic
-0f57322  Change default block size alignment to be 4 for memory saving on 32-bit arch  [Eric Miao]
-f89469f  Keep allocation of `tail_` outside of LinkedList  [Eric Miao]
-cd888ca  Fix possible nullptr dereference.  [Christopher Ferris]
+af48338  libc: arm64: Merge MTE versions of strcpy/stpcpy/strcmp/strncmp  [Jake Weinstein]
 
 
-* build/make
-4b1cf3c  Merge tag 'android-12.0.0_r29' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
-
-
-* device/syberia/sepolicy
-ec71ae7  Drop flipendo rules  [DennySPb]
-
-
-* frameworks/av
-b37bcec  Merge tag 'android-12.0.0_r29' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
+* external/arm-optimized-routines
+be1bf6e  AOR: remove MTE versions of strcpy/stpcpy/strcmp/strncmp  [Jake Weinstein]
+a7f991a  Merge branch 'master' of https://github.com/ARM-software/optimized-routines into HEAD  [DennySPb]
 
 
 * frameworks/base
-936a474  Check the data directory before mount tmpfs  [Zaijian Lin]
-1b34101  Fix BatteryStats counts foreground activity time.  [Lang Yu]
-5bfd143  Revert "display: NightDisplay: Use chromatic adaptation when possible"  [Omkar Chandorkar]
-a614acf  PixelPropsUtils: Update to February 2022 fingerprints  [Joey Huab]
-94de6d6  SystemUI: Fix method for disabling unlock ripple animation  [Nauval Rizky]
-dff7717  EnhancedEstimates: Rewrite estimates in kotlin  [Jason Edson]
-849ae5ab  Revert "Make Udfps haptic feedback optional [1/2]"  [kondors1995]
-a3b2a7a  [SQUASH] Bring back UDFPS icons and animations [1/3]  [SagarMakhar]
-6a7f600  base: allow disabling ripple effect on unlock [1/2]  [Rishawn]
-0e7616598  Black theme [1/2]  [SagarMakhar]
-9964da6  PixelPropUtils: Bail out early when required  [Pranav Vashi]
-5233e77  PixelPropUtils: Add GamesProps  [rdkng1]
-0ca983b  base: PixelPropsUtils: Add Material You redesigned apps to spoof list.  [Maitreya29]
-089dc61e  Base: PPU: Add Gmail to spoof list Another app blessed with monet compatibility.  [Maitreya29]
-ae24a6e  PixelPropsUtils: bring back wallpaper collection  [jjpprrrr]
-7e34f98  PixelPropsUtils: Invite streaming apps to the party  [neobuddy89]
-cf95dff  [SQUASH] Update PixelProps utils from PixelExperience  [jhenrique09]
-6483aa6  Merge tag 'android-12.0.0_r29' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+be7d93f  Fix Statusbar Icon Colors on Lockscreen  [kqixs]
+a72a5e3  Make colored Statusbar Icons optional [1/2]  [spkal01]
+e54440f  StatusBarIconView: use app icons instead of provided notif one  [Dil3mm4]
+0757a1a  [Bugfix][Media] Fix ISessionControllerCallback leaks in the system_server when the far side died  [xi yu]
+a09a6be  Fix potential exception while pressing volume up and volume down  [Arthur Hung]
+59d4896  Fix the empty selection issue when onCreateActionMode returns false  [Tony Mak]
+d0a07de  Fix StageCoordinator unexpected onDisplayAreaVanished  [ot903107]
+16bae96  Add null check after getApplicationInfo in InstantAppNotifier  [Håkan Kvist]
+35ad6b6  Fix handling usb notification after pr_swap complete  [Ray Chi]
+8eb0a58  Fix inaccuracy in biometric timeout  [jiangkun5]
+f14c942  SystemUI: Introduce Adaptive Playback [1/2]  [Jyotiraditya]
+e7a49de  Base: SystemUI: Android 13 inspired Media Output Picker  [Maitreya29]
+5f0d7a3  QSTiles: Re-write Caffeine tile in Kotlin  [Jason Edson]
+819f43b  SystemUI: Add HBM provider for UDFPS on Pixel devices  [Danny Lin]
+71ca0e1  Revert "udfps: Implement UdfpsHbmProvider"  [Omkar Chandorkar]
+0179b6a  Base: SystemUI: Use same background for Internet dialog title  [maitreya29]
+5f992fc  Base: SystemUI: Use same background color for Internet and Screen record  [maitreya29]
+bc7ec00  Base: SystemUI: Android 12L style Internet and Screenrecord dialogs  [maitreya29]
+c9f81c5  base: match track height of volume slider with progress drawable  [kleidione Freitas]
+92cd6fa  PixelPropsUtils: Remove Pubg New State from GamesProps  [Ivan Martynov]
+6ab6180  PixelPropsUtils: Update Raven to 2nd February 2022 Security patch fingerprint  [Joey Huab]
 
 
 * frameworks/native
-a387c66  BlastBufferQueue: Fix async worker deadlock  [Vishnu Nair]
-
-
-* packages/apps/Settings
-dc15d90  Merge "team: Add Xiaomi Mi A2 Lite maintainer" into 12.0  [blinov.in]
-178d5a0  display: Observe auto brightness mode changes  [Ido Ben-Hur]
-eb97911  AppInfo: Add time spent in app from Wellbeing  [Jason Edson]
-8faf060  Settings: Hardcode moduleProvider to com.google.android.modulemetadata.  [Alexander Koskovich]
-ad92eb3  Settings: Implement RoutinesActionBroadcastReceiver  [Dyneteve]
-6da80c9  Settings: Import PowerUsageFeatureGoogle  [Anay Wadhera]
-5fd3e1c  Settings: Initial implementation of FeatureFactory from Pixel  [jhenrique09]
+a3f8fa7  ProcessState: thread name includes driver  [Steven Moreland]
 
 
 * packages/apps/SyberiaSettings
-b9c8407  Remove Udfps haptic feedback  [kondors1995]
-f99f976  Bring back UDFPS icons and Animations [2/3]  [SagarMakhar]
-a122d3c  Allow disabling ripple effect on unlock [2/2]  [Pranav Vashi]
-ff084cc  Black theme [2/3]  [SagarMakhar]
-
-
-* prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
-b6427ce  Merge tag 'android-12.0.0_r29' of https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 into HEAD  [DennySPb]
-
-
-* prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9
-d23a38a  Merge tag 'android-12.0.0_r29' of https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 into HEAD  [DennySPb]
-
-
-* prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8
-1a32cf6  Merge tag 'android-12.0.0_r29' of https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8 into HEAD  [DennySPb]
-
-
-* system/bt
-17930a3  Merge tag 'android-12.0.0_r29' of https://android.googlesource.com/platform/system/bt into HEAD  [DennySPb]
+fac3717  Make colored Statusbar Icons optional [2/2]  [spkal01]
 
 
 * system/core
-c7c9bf8  libutils: Remove a little dead code  [Greg Kaiser]
-87d9b02  libutils -= libprocessgroup dep  [Steven Moreland]
-c90dd8a  libutils: don't call SetTaskProfiles around priority  [Tim Murray]
+589c25a  init.rc: disable creation of bootreceiver tracing instance for kernels >=4.9 and <= 5.4  [Alexander Potapenko]
 
+
+====================
+     2022-02-24    
+====================
+
+====================
+     2022-02-23    
+====================
 
 * system/libhwbinder
-7240df0  Revert "Disallow shrinking threadpool size once started."  [DennySPb]
+a4c6b08  Revert "Disallow shrinking threadpool size once started."  [DennySPb]
 
 
-* vendor/google/gms
-501917b  Disable some packages  [DennySPb]
+====================
+     2022-02-22    
+====================
+
+* bionic
+a6a8e3a  libm: sync with upstream.  [Elliott Hughes]
+
+
+* build/make
+6a53712  Merge tag 'android-12.0.0_r32' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
+
+
+* build/soong
+85845cc  cc/lto: remove instr limit  [John Galt]
+
+
+* external/jemalloc_new
+6159bf7  jemalloc: enable MADV_FREE usage  [Juhyung Park]
+d906483  jemalloc: always assume overcommitting memory  [Park Ju Hyung]
+906da9a  jemalloc: remove THP support  [Park Ju Hyung]
+372f562  jemalloc: disable config parsing altogether  [Park Ju Hyung]
+bf00f32  jemalloc: remove deprecated size_classes.h  [Park Ju Hyung]
+
+
+* frameworks/av
+87e28c1  Merge tag 'android-12.0.0_r32' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
+
+
+* frameworks/base
+80b5dfd  Merge tag 'android-12.0.0_r32' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+4d2c194  fixup! BiometricScheduler: Cancel operation if not idle  [SagarMakhar]
+df87aa3  VolumeDialog: Fix live caption tooltip when on left side  [jhenrique09]
+96bccd8  WalletActivity: Don't explicity request fp/face auth  [jhenrique09]
+331d554  Reset face auth on occluding app when authenticated  [jhenrique09]
+e1fabd4  SystemUI: Improve pt-br translation for fingerprint_dialog_use_fingerprint_instead  [jhenrique09]
+2ba7692  FaceService: Allow our face unlock to be used on third-party apps  [jhenrique09]
+f31e33e  [1/2] Allow changing face unlock method when locked  [jhenrique09]
+2eed1a0  base: Remove AOSP translations of face vendor error messages  [jhenrique09]
+cb57a62  SystemUI: Tell user when face unlock detection is running  [jhenrique09]
+4d68b40  KeyguardBouncer: Don't delay showing if face auth running  [jhenrique09]
+30de801  base: do not use new lockscreen layout for bypass  [Ethan Halsall]
+72967e2  Add idle lockout message for FaceUnlock  [jhenrique09]
+e5702a2  SystemUI: Allow listening for face only on pin/pass view  [jhenrique09]
+2e997a7  Initial import of Face Unlock for S  [jhenrique09]
+f59688b  SystemUI: Fix CalledFromWrongThread exceptions  [jhenrique09]
+2e0604f  SystemUI: Port elmyra (squeeze) from SQ1D  [jhenrique09]
+0947895  Lazy load Properties::isDrawingEnabled.  [Brett Chabot]
+ff38ea9  Backport 'Add ability to disable GL draws'.  [Brett Chabot]
+9ffa795  zygote: Enable USAP by default for S.  [Vishalcj17]
+fa0a821  Revert "hwui: Fix HWUI_COMPILE_FOR_PERF for non-arm"  [Omkar Chandorkar]
+d68ecbb  Revert "Add show|hide udfps view callbacks to IBiometricsFingerprint@2.3 [1/2]"  [kondors1995]
+08bb027  PixelPropsUtils: Don't spoof ARCore  [Joey Huab]
+4bef8ff  EdgeBackGesture: Remove assistant action  [DennySPb]
+d3cdb49  SystemUI: Port columbus (quick tap) from SQ1D  [jhenrique09]
+42866b9  Use CopyOnWriteArrayList for mGroupDevices  [wentjin]
+7d7c49f  BT: Add entry for MCP Service in Frameworks  [Gurpreet Ghai]
+811f644  Fix an instance of -Wunused-but-set-variable.  [Yi Kong]
+9649669  Remove unused but set variables  [Yi Kong]
+17d8f91  Fix full draw  power usage increase issue  [Jiang Tian]
+0a5b13a  HwRemoteBinder: fix race for concurrent binderDied  [Steven Moreland]
+98396bd  stop enforcing camera sound for certain carriers  [Daniel Micay]
+39ac658  [temporary] suppress SystemUI ANRs  [Daniel Micay]
+c53298a  Do not mark dun APN types as read only  [flawedworld]
+4be51e2  SystemUI: allow to limit the max framerate of built-in screen recorder  [Kuba Wojciechowski]
+b8acb1b  VolumeDialogControllerImpl: Stop log spam with no caption service  [Pranav Vashi]
+52c3388  base: SystemUI: Allow user to add/remove QS with one click  [Andrzej Ressel]
+3545d9d  Revert "Allow user to add/remove QS with one click"  [blinoff82]
+ed9b187  Add missing STORAGE_INTERNAL permission for BackupRestoreConfirmation  [c_jyuan]
+1338ab1  Allow adjusting screen density to smaller sizes.  [Danny Baumann]
+09532ef  Download: Add support to manually pause/resume download  [qqzhou]
+36ccadc  GlobalActions: Increase the button drawable size  [Jason Edson]
+60891d2  Cancel the existing recents animation before any initialization  [Winson Chung]
+
+
+* frameworks/native
+f67f742  Merge tag 'android-12.0.0_r32' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
+
+
+* packages/apps/Dialer
+f2f9738  Merge tag 'android-12.0.0_r32' of https://android.googlesource.com/platform/packages/apps/Dialer into HEAD  [DennySPb]
+
+
+* packages/apps/Settings
+679b82c  AdaptivePlayback: Add a intro text to the fragment  [Mesquita]
+e01e3cd  AdaptivePlayback: Rename it to 'Smart Pause' to keep a better fluency  [Mesquita]
+8e98dc1  Settings: Move "Adaptive Playback" option to Sound Settings.  [Mesquita]
+52a8cb8  Settings: Introduce Adaptive Playback [2/2]  [Chris Crump]
+4d19c6f  Merge tag 'android-12.0.0_r32' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
+c0778c6  Update RU translation  [DennySPb]
+a54b05e  Settings: Allow using face as auth method for apps  [jhenrique09]
+4354451  [2/2] Allow changing face unlock method when locked  [jhenrique09]
+0a3e478  Initial import of Face Unlock for S  [jhenrique09]
+0e6d83b  get outer NFC preference to listen for changes  [inthewaves]
+
+
+* packages/apps/SyberiaSettings
+7147a4c  Use PreferenceScreen for GamingMode preference  [DennySPb]
+
+
+* prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
+dd53fd8  Merge tag 'android-12.0.0_r32' of https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 into HEAD  [DennySPb]
+
+
+* prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9
+3f153b1  Merge tag 'android-12.0.0_r32' of https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 into HEAD  [DennySPb]
+
+
+* prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8
+475fcfb  Merge tag 'android-12.0.0_r32' of https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8 into HEAD  [DennySPb]
+
+
+* system/core
+73f2035  Fix a race condition in Service::Start()  [Bart Van Assche]
+
+
+* vendor/syberia
+dd47d59  vendor: Restore FaceUnlock  [jhenrique09]
+
+
+====================
+     2022-02-21    
+====================
+
+* packages/apps/FaceUnlockService
+a8e18ef  Cleanup resources and improve UX  [jhenrique09]
+51bc17f  Add missing perms  [jhenrique09]
+4414e14  Refactor deps structure  [jhenrique09]
+4be660d  Cleanup vendor impl  [jhenrique09]
+302e800  Changes for Android 12  [jhenrique09]
 
 
 * vendor/google/pixel
-16b6a4a  Add missing Settings overlay for SettingsIntellegence  [DennySPb]
-2182074  Add flipendo and turbo_adapter policies  [DennySPb]
+6f331a4  pixel: add feature xml for call recording  [Omkar Chandorkar]
+9d92249  pixel: Add quick_tap feature sysconfig  [Adithya R]
 
 
 * vendor/syberia
-b3c163e  Lawnchair: Update prebuildts  [kondors1995]
-efc3636  syberia: properties: Enable the IORap I/O prefetching feature.  [Abhimanyu Garg]
-63cfd2a  UdfpsResources: Convert remaining png to to webp  [kondors1995]
-f0f2ab8  [SQUASH] Bring back Udfps icons and animations [3/3]  [SagarMakhar]
+fdb4435  overlay: SystemUI: Switch to Syberia vendor service  [Adithya R]
+7861aec  Disable google adaptive sound  [DennySPb]
 
 
 ====================
-     2022-02-08    
-====================
-
-* frameworks/base
-89d078e  Revert recent bootanimation related changes  [Joker-V2]
-370531f6  libs: hwui: Build using ThinLTO  [mydongistiny]
-6bcbf98  base: Power menu fixes  [maxwen]
-1e4f558  KeyguardIndication: Fix glitchy charging info on lockscreen  [Pranav Vashi]
-50eb533  fixup! Add Broadcast profile id  [Pranav Vashi]
-15285ef  Battery Styles: Set proper battery style on init  [Pranav Vashi]
-61e069a  neko/Cat: Mark FLAG_IMMUTABLE PendingIntent with FLAG_MUTABLE  [PainKiller3]
-8611812  base: AudioService: bail out if ringer mode is not recognized  [jhonboy121]
-bc4bfc3  SystemUI: PeopleSpaceWidgetManager: don't spam logcat  [jhonboy121]
-
-
-* vendor/syberia
-f6e6fdc  Include GMS and Pixel makefiles  [DennySPb]
-2bf0b45  Black theme [3/3]  [SagarMakhar]
-0021156  lawnchair: Update [check_description]  [Omkar Chandorkar]
-eb58ee4  lawnchair: overlay: default hidden apps  [Omkar Chandorkar]
-1e48238  lawnchair: Import Lawnicons  [Omkar Chandorkar]
-
-
-====================
-     2022-02-07    
-====================
-
-* packages/apps/Updater
-66106e5  Changelog: Target to A12 builds  [DennySPb]
-
-
-====================
-     2022-02-06    
+     2022-02-20    
 ====================
 
 ====================
-     2022-02-05    
+     2022-02-19    
 ====================
 
-====================
-     2022-02-04    
-====================
+* device/syberia/sepolicy
+f9b5055  Allow Settings to set powerusage provider prop  [DennySPb]
+
 
