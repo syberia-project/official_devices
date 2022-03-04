@@ -2,6 +2,19 @@
      2022-03-04    
 ====================
 
+* frameworks/base
+c078db8  Remove navbar inset for UDFPS BiometricPrompt  [LuK1337]
+130ceab  Workaround to support low-area UDFPS on BP  [Kevin Chyn]
+
+
+* vendor/google/gms
+8381f9a  gms: add google tts  [Omkar Chandorkar]
+
+
+====================
+     2022-03-03    
+====================
+
 * bionic
 a3af28d  libc: arm64: Merge MTE versions of strcpy/stpcpy/strcmp/strncmp  [Jake Weinstein]
 48ce8a0  DNM: fix building with thinLTO GLOBAL_THINLTO=1  [Gabor Meszaros]
@@ -29,8 +42,6 @@ ebc3a1a  jemalloc: disable config parsing altogether  [Park Ju Hyung]
 
 
 * frameworks/base
-c078db8  Remove navbar inset for UDFPS BiometricPrompt  [LuK1337]
-130ceab  Workaround to support low-area UDFPS on BP  [Kevin Chyn]
 468b65e  core: Enable smart battery for everyone  [mydongistiny]
 fc2e404  WifiDisplayController: handle preexisting p2p connection status  [Li Sun]
 a57e0f5  Merge changes for launching wifidisplay from system settings  [Indranil Chakraborty]
@@ -41,17 +52,12 @@ f656bc3  Wifi: Ingore miracast scan from connectivity manager  [Xin Deng]
 
 
 * vendor/google/gms
-8381f9a  gms: add google tts  [Omkar Chandorkar]
 d60b0dc  restore some apps  [kondors1995]
 
 
 * vendor/syberia
 0ccceff  build: Renable GlobalThinLO & ThinLTO chache  [kondors1995]
 
-
-====================
-     2022-03-03    
-====================
 
 ====================
      2022-03-02    
