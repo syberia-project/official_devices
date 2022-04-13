@@ -1,0 +1,44 @@
+====================
+     2022-04-13    
+====================
+
+* device/xiaomi/mi439
+c38a30d  Official flag for syberia project  [Jake]
+
+
+====================
+     2022-04-12    
+====================
+
+====================
+     2022-04-11    
+====================
+
+====================
+     2022-04-10    
+====================
+
+====================
+     2022-04-09    
+====================
+
+====================
+     2022-04-08    
+====================
+
+* device/qcom/sepolicy-legacy-um
+308a9f3  Revert "sepolicy: Remove duplicate property definition"  [Jake]
+
+
+* device/xiaomi/sdm439-common
+833734c  Update raven fingerprint to april  [Jake]
+
+
+====================
+     2022-04-07    
+====================
+
+* external/ant-wireless/ant_service
+c178182  ant_service: Bring in the new icon  [Asher Simonds]
+
+
