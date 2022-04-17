@@ -1,167 +1,228 @@
 ====================
-     2021-11-16    
+     2022-04-17    
 ====================
 
 * bootable/recovery
-7d3a95c  [hack] use old gptfdisk  [Magicxavi]
-3e86bb7  Merge tag 'android-12.0.0_r13' into syberia Change-Id: I7d0f51722e7df6b42272cf99b7f7882140e90051  [Magicxavi]
+10443bc  updater: Don't fail when trying to run set_metadata  [jhenrique09]
+6febe4e  Fully remove downgrade/verify checks for A/B  [Magicxavi]
+c9aecd0  Revert "recovery: Remove the "Format system partition" menu on A/B devices"  [Richard Hansen]
 
 
-* external/e2fsprogs
-cc863df  Mark libext2_blkid as vendor available  [LuK1337]
+====================
+     2022-04-16    
+====================
+
+* frameworks/base
+24516d5  udfps  [Magicxavi]
+fa171a6  Add show|hide udfps view callbacks to IBiometricsFingerprint@2.3 [1/2]  [SagarMakhar]
+941f672  [SQUASH] base: introduce app lock [1/4]  [jhonboy121]
+df00eb8  [Fixup] VolumePanel: more fixes from LOS  [DennySPb]
+b086c17  PixelProps: Restore our 12.0 version  [DennySPb]
+050c23b  Columbus/SyberiaSystemUI: Make crosshatch is default model  [DennySPb]
+d1e3aff  media: fix ImageReader to handle P010 images  [Wonsik Kim]
+defe2b4  Bad lock object.  [Kai Peng]
+27c7682  Fix for run cts-on-gsi -m CtsOsTestCases -t android.os.cts.VibratorTest  [hupengcheng]
+6d8850b  Fix cts test failure of EnsureBarContrastTest  [shawnlin]
+a895744  Dont throw exception if admin is null  [Ayush Sharma]
+4eed2bc  Add keylayout mapping for Xbox360 compatible controllers.  [tingting.jiang]
+531d645  SystemUI: Whitelist new priv-app permissions  [Pranav Vashi]
+514ef2b  [SQUASH] SystemUI: fix qs tiles init on split notification shade open  [maxwen]
+55b8920  Catch IllegalArgumentException for invalid phone id  [Wileen Chiu]
+293135c  Fix Wakelock issue  [Alberto Ponces]
+d09f152  Don't update OverScroller fling state if improper time passed  [Jun Wang]
+9ac4409  SQLite: Do integrity_check only once  [yi.jang]
+af707f7  DisplayPowerController: Fix incall proximity not turning off display  [sooti]
+d285306  AlarmManagerService: null check the alarm operation  [William Bellavance]
+9f7ce0f  Catch SQLiteFullException in AccountManagerService  [huyuxin]
+9a2b6e1  unregister FileCleanupReceiver when disableHistory  [hongyang.dong]
+cada732  Close the FileStream to avoid resource leak  [Naga Venkata Durga Ashok Mutyala]
+1329cc7  SystemUI: Face Unlock animation  [Dil3mm4]
+7c16493  fwb: [Bugfix] Fix the issue of transition animation splash screen in split screen mode.  [Cheng Shi]
+c6a3dd2  SystemUI: Make the volume dialog expandable  [Arian]
+f644714  VolumeDialogImpl: Respect multiple visible rows in landscape  [Arian]
+1cf20e7  VolumeDialogImpl: Don't hide the default stream when adjusting the music stream  [Arian]
+2e96502  fwb: Bring in the new icon  [Asher Simonds]
+b072e6e  charging: Allow using vibration without sounds  [xyyx]
+6476145  SystemUI/Syberia: Update Google assets to 12L  [Anay Wadhera]
 
 
 * hardware/interfaces
-626c2af  keymasterV4_0: Tags support for FBE wrapped key.  [Shivaprasad Hongal]
+a985071  Add show|hide udfps view callbacks to IBiometricsFingerprint@2.3 [2/2]  [SagarMakhar]
 
 
-* system/core
-712d998  fs_mgr: autodetect filesystem type  [Dan Pasanen]
-6a643c2  core: mark libsysutils and libdiskconfig recovery_available  [Alessandro]
+* packages/apps/GamingMode
+f0da0da  Revert "Revert "GamingMode: don't show notification overlay for secure notifications""  [DennySPb]
 
 
-* system/security
-6a01805  Handle key parameter conversion for FBE_ICE tag  [Phanindra Babu Pabba]
-
-
-====================
-     2021-11-15    
-====================
-
-* device/qcom/sepolicy_vndr
-6e5ab8f  sepolicy_vndr: allow cnd to get wifi_hal_props  [Chenyang Zhong]
-053ff99  sepolicy_vndr: Label clearkey and widevine DRM 1.4 HAL  [Sebastiano Barezzi]
-e9549de  sepolicy: Switch to SYSTEM_EXT_{PUBLIC,PRIVATE}_SEPOLICY_DIRS  [Michael Bestas]
-
-
-* device/syberia/sepolicy
-04580c4  sepolicy: allow settings to read selinux status  [maxwen]
-
-
-* frameworks/base
-2de78a8  Add show|hide udfps view callbacks to IBiometricsFingerprint@2.3 [1/2]  [SagarMakhar]
-
-
-* system/sepolicy
-7fb22de  sepolicy: Optionally build sepolicy_freeze_test  [Nick Reuter]
-d78c4f8  sepolicy: Allow platform_app to use nfc_service for NFC tile  [Daniel Micay]
-0ccb0d7  sepolicy: Allow recovery to alter /  [Gabriele M]
-953698f  sepolicy: whitelist recovery from node creation neverallow  [Alessandro Astone]
-faae297  sepolicy: Add sdcard_posix_contextmount_type attribute  [LuK1337]
-
-
-====================
-     2021-11-14    
-====================
-
-====================
-     2021-11-13    
-====================
-
-====================
-     2021-11-12    
-====================
-
-====================
-     2021-11-11    
-====================
-
-====================
-     2021-11-10    
-====================
-
-* frameworks/base
-2786bb7  Advanced nav gestures: improve code and fix glitches  [ezio84]
-92c0384  Extended swipe: show a double arrow when almost triggered  [Nico]
-81fe995  Allow back swipe on bottom screen if launcher is showing  [ezio84]
-30b4f11  LongSwipeGestures: Vibrate on action if gesture haptic feedback enabled  [DennySPB]
-13a4f8d  Allow extended/"L" back swipe to trigger actions/app/activities [1/2]  [ezio84]
-860e309  core: Expose method to start assistant through Binder  [Danny Lin]
-dc1fc00  ActionUtils: Reverse actions for QS and notification panel  [ezio84]
-ee7fa7e  base: Move actions into its own class [SQUASHED]  [Alex Cruz]
-c3b8c27  Hardware key: Customization support [1/2]  [bigrushdog]
-5e74363  Add api to get or kill foreground app  [ezio84]
-4b64005  [1/2] base: navigation mode settings  [maxwen]
-5c6c6c5  SystemUI: Optional haptic feedback on back gesture [1/2]  [DennySPb]
-2d8b87d  SystemUI: Hide mobile data indicator when VoLTE icon enabled  [DennySPb]
-8ace6a2  TelephonyIcons: make new icons public  [DennySPb]
-f41d39e  Add Margaritov's style VoWifi Icon [1/2]  [blinoff82]
-ae310fa  Add Vivo Vowifi Icon [1/2]  [spkal01]
-8224fe2  SystemUI: Add Vivo X60 Pro VoLTE Icon [1/2]  [AshutoshSundresh]
-1a59d73  SystemUI: Add 2 more VoLTE icons [1/2]  [Advaith Bhat]
-e7765d8  SystemUI: Fix issues with VoWiFi icon  [Adithya R]
-b1988e0  [SQUASH] SystemUI: Addd more selectable VoWiFi icons [1/2]  [DennySPb]
-08104700  SystemUI: Optional VoWiFi icon [1/2]  [DennySPb]
-5a248ee  SystemUI: add CAF VoLTE HD icon [1/2]  [DennySPB]
-12a61e7  SystemUI: support VoWIFI icons  [Weijie Wang]
-525239c  SystemUI: Add EMUI VoLTE icon [1/2]  [DennySPb]
-59796e2  Add MIUI 11 VoLTE icon [1/2]  [Lup Gabriel]
-1b1d671  SystemUI: Add Asus VoLTE Icon [1/2]  [PainKiller3]
-997cceb  VoLTE Icon - User Selectable VoLTE Icon [1/2]  [SuperDroidBond]
-4095cf9  Add VOLTE icon toggle [1/2]  [SagarMakhar]
-b1f45aa  Allow using 4G icon instead of LTE [1/2]  [Pranav Vashi]
-6420fe5  Fix volume rocker skip track on Ambient Display  [ezio84]
-deedc2e  DreamManager: Expose doze state  [Christopher R. Palmer]
-df82303  base: volume key music control [1/2]  [maxwen]
-6a23bf1  Volume Rocker Wake [1/2]  [rascarlo]
-105dff9  ScreenOff torch: Allow to disable torch when screen is on  [DennySPb]
-13eb021  Allow doubletap/longpress power to toggle torch [1/2]  [ezio84]
-08a6605  Double tap to sleep on statusbar [1/2]  [maxwen]
-f712f85  Double tap to sleep on lockscreen [1/2]  [ezio84]
-0c0fc8e  Keyguard: Forward port lockscreen quick unlock (1/2)  [Matt Mower]
-0faf4a0  Keyguard: Add option to scramble pin layout when unlocking (2/2)  [Adnan]
-b36e87a  LayoutInflater: Opportunistically create views directly for performance  [Danny Lin]
-dec1be0  SystemServiceRegistry: Replace ArrayMap with HashMap for performance  [Danny Lin]
-29f38d8  InsetsStateController: Replace ArrayMap with HashMap for performance  [Danny Lin]
-209b089  LocalServices: Replace ArrayMap with HashMap for performance  [Danny Lin]
-1927ee0  ThemedResourceCache: Replace ArrayMap with HashMap for performance  [Danny Lin]
-504a36c  graphics: Blend ARGB colors using Oklab  [Danny Lin]
-a05173a  WallpaperColors: Use CIELAB for light/dark wallpaper detection  [Danny Lin]
-13fd9b6  ColorStateList: Switch to ZCAM for lightness modulation  [Danny Lin]
-70c1919  graphics: Add ZCAM implementation with sRGB interface  [Danny Lin]
-de5177d  SystemUI: Update lock screen clock typography for Inter font  [Danny Lin]
-4c058c4  SystemUI: Fix QS status font weight mismatch in dark mode  [Danny Lin]
-ec31333  Paint: Enable subpixel text positioning by default  [Danny Lin]
-b5ce397  SystemUI: Remove nav bar background in QS customizer  [Danny Lin]
-bf20735  SystemUI: theme: Override modulated dark QS background color  [Danny Lin]
-16cb8f2  SystemUI: Add dual-tone light and dark themes for QS  [Danny Lin]
-91d5f25  SystemUI: Initialize QS tiles in inactive state  [Danny Lin]
-b6758e6  SystemUI: Follow light/dark theme in quick settings  [Danny Lin]
-6986481  Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE"  [Danny Lin]
-48817f3  Revert "Make QS always use dark theme colors"  [Danny Lin]
-362b569  SystemUI: Always refresh power menu on UI mode change  [Danny Lin]
-a9fb481  SystemUI: Reduce scrim color animation duration to 375 ms  [Danny Lin]
-0d4c661  SystemUI: Fix uneven volume icon padding in status bar  [Danny Lin]
-b06d73c  SystemUI: theme: Log generated colors  [Danny Lin]
-af6c180  SystemUI: Use colorkt-based dynamic theme engine for Monet  [Danny Lin]
-576443b  Revert "UI: Always render windows into cutouts"  [DennySPb]
-ddc0578  CarrierConfigManager: Enable LTE+ icon  [Jake Weinstein]
-4f30f7b  Revert "SystemUI: allow devices override audio panel location"  [SVB22]
-d50e1e4  udfps: Add support for udfps on aod without having dedicated sensor  [TheScarastic]
-7ae5e6f  udfps: Allow to configure hbm overlay type  [TheScarastic]
-3e038a2  udfps: Implement UdfpsHbmProvider  [TheScarastic]
-ffb50a2  udfps: change window type to TYPE_DISPLAY_OVERLAY  [TheScarastic]
-ca4d45d  Udfps: Make pressed udfp view configurable  [TheScarastic]
-
-
-* frameworks/native
-8e1e46c  Merge changes from topic "FOD" into 12.0  [dennyspb]
+* packages/apps/Launcher3
+5eecc8d  Launcher3: Add restart action for toggling settings  [hundeva]
+cb56f15  Launcher3: Add Google Lens scan button to recents  [Suphon Thanakornpakapong]
+e33cbdb  Launcher3: Skip suggestions on twoline labels  [George Zacharia]
+9d43a6d  IconPlatte: Don't crash when the app gives us an invalid color  [Ido Ben-Hur]
+74c352d  Quickstep: fix NPE with swipe down  [Ali B]
+e5b546f  Launcher3: Re-enable header protection  [Danny Lin]
+ead6052  Use existing StatusBarTouchController to handle swipe down  [Suphon Thanakornpakapong]
+1e7521a  Launcher3: Use same corner radius dimens for searchboxes  [maxwen]
+65ef514  NavbarButtonsViewController: Support navbar layout inversion  [Bruno Martins]
+0ed9cad  Enable crossfade when changing theme  [Danny Lin]
+43385d6  Update search icon to match Settings  [Michael Bestas]
+74133f0  Fix search bar UI in All Apps  [Michael Bestas]
+3b4c6b1  Improve search bar UI in All Apps  [Danny Lin]
+10a1da9  Fix header protection height calculation  [Danny Lin]
+73ff9ce  Workspace: Allow resizing any widget  [Nebojsa Cvetkovic]
+cc67e89  Launcher3: Fix layout for apps fast scroller  [Pranav Vashi]
+8bda14d  Launcher3: Use standard launcher method for uninstalling  [Pranav Vashi]
+1b85ac2  Launcher3: Fix NPE in SystemShortcut  [Pranav Vashi]
+f891abf  Launcher3: Add uninstall button to system shortcuts  [Ali B]
+aa38145  Launcher3: Use custom LocalColorExtractor implementation  [Danny Lin]
+807b65b  Launcher3: Adapt home settings UI to Android 12 style  [Adithya R]
+fd535d6  Launcher3: Fix icon palette crashes  [Pranav Vashi]
+43f1fd9  Launcher3: Stability NullPointer issue  [yingrenw]
+c93a82a  Launcher3: Use app opening animation for notification opening  [Amir Zaidi]
+8b71aa2  Launcher3: show clear all button in recents overview  [jhonboy121]
 
 
 * packages/apps/Settings
-d3367bc  Add switch last app to gesture actions [2/2]  [DennySPb]
-0c0080a  Allow extended/"L" back swipe to trigger actions/app/activities [2/2]  [ezio84]
-22cbdc0  [2/2] Settings: navigation mode settings  [maxwen]
-f512580  Settings: Optional haptic feedback on back gesture [1/2]  [DennySPb]
+07a222e  AppLock: Make timeout strings translatable  [DennySPb]
+e5ae5e5  Settings: Remove divider from Battery Manager  [Akash Srivastava]
+a6e0302  Settings: Fix NPE when launching accessibility settings from GMS SUW  [Alessandro Astone]
+d63466f  Settings: Accessibility wants fullscreen, too!  [Michael W]
+8677927  Settings: Fixup start padding for battery usage graph  [Adithya R]
+f3cca8c  Settings: complete the AvatarViewMixin implementation  [jhonboy121]
+69b9032  Settings: align user avatar with homepage title  [jhonboy121]
+a61655d  Settings: fix edit menu icon tints  [jhonboy121]
+6158978  Settings: introduce app lock [3/4]  [jhonboy121]
+06d6012  Revert "Revert "Revert "Update animation for fingerprint edu page"""  [xyyx]
 
 
 * packages/apps/SyberiaSettings
-3df8cab  Allow doubletap/longpress power to toggle torch [2/2]  [ezio84]
+65d2f16  Lockscreen: Use AOSP switch for forcing small clocks  [DennySPb]
+7585dc4  Fix media art key and comment out blur options  [DennySPb]
+f6436e9  Re-add incall vibration options  [DennySPb]
+c7701c1  Import BasePreferenceController and DashboardFragment from Krypton  [jhonboy121]
+
+
+* packages/services/Telecomm
+1fa9ea3  CallLog: Get rid of warning  [Michael W]
+3cbe1e6  Telecomm: Squashed phone_type switch support  [Bruno Martins]
+437ae36  Filter self managed phone accounts out when finding emergency accts.  [Tyler Gunn]
+4f220e5  Fix few issues with Blink with call  [Pranav Vashi]
+fb1f9cd  Incall vibration options [2/3]  [beanstown106]
+11816fc  Telecomm: Add a null check to custom ring vibration  [Ido Ben-Hur]
+bdd32f4  Telecomm: Allow choosing a custom vibration pattern [2/3]  [Ido Ben-Hur]
+5234748  Telecomm: Add vibration patterns from OOS [2/3]  [rituj]
 
 
 * vendor/syberia
-c8d6b2d  Merge changes Ib942ed20,I10647e67 into 12.0  [dennyspb]
-fec8e04  Restore accidentally removed config.xml  [DennySPb]
-2070802  Add back turbo prebuilt  [DennySPb]
+9370f69  Revert "Revert "overlay: SystemUI: Switch to Syberia vendor service""  [DennySPb]
 
+
+====================
+     2022-04-15    
+====================
+
+* device/syberia/sepolicy
+1000309  sepolicy: introduce app lock [2/4]  [jhonboy121]
+
+
+====================
+     2022-04-14    
+====================
+
+* frameworks/av
+05a4059  stagefright: error handling during file size limit set  [Malathi Gottam]
+a88d5e9  libmediaplayerservice: Explicitly force callbacks to stop running  [Jaideep Sharma]
+9b90054  Increase max dimensions for mpeg4 decoder in media_codecs_sw.xml  [Uma Mehta]
+308de1d  Select low latency path during voice call for voice stream  [Ramjee Singh]
+87da013  Fix -Wbitwise-instead-of-logical  [Pirama Arumuga Nainar]
+51488f1  GraphicBufferSource: Enable timestamp snapping in timelapse mode  [Shrikara B]
+75edf07  libstagefright: Allow HFR-60 in HAL-3 recording  [Manikanta Kanamarlapudi]
+80573b1  libaudioclient: fix deadlock during apm initialization  [Weiyin Jiang]
+628dce2  aaudio: set primary flag for AAUDIO_PERFORMANCE_MODE_NONE  [yidongh]
+5e416ad  Add NULL check to popFromStashAndRegister.  [Chris Gross]
+1dbc4dd  CCodec: Fix null check  [Greg Kaiser]
+e045b55  codec2: Avoid invalid access to output format while print  [Brijesh Patel]
+b6cc48e  codec2: add smoothfactor when checking n-th work  [Jiajia Cong]
+565ab2b  CCodec: fix handling buffers in extra slots  [Wonsik Kim]
+d4fef90  CCodec: FrameReassembler to accept 0-size frames  [Wonsik Kim]
+df894c5  CCodec: convert audio decoder output PCM format  [Wonsik Kim]
+b865c1d  Codec2: Detect and release component if the client process terminates  [Praveen Chavan]
+4d60cf2  C2SoftDec: Align stride to 128 for avc, hevc and mpeg2 decoders  [Harish Mahendrakar]
+6232bcd  audiopolicy: engineconfigurable: prevent illegal map access  [Francois Gaffie]
+0855f1e  Fix logic error in SkipCutBuffer.cpp  [xiahong.bao]
+708bf0a  audioflinger: fix missing track metadata  [Eric Laurent]
+f9beafe  Duration field is 64 bits  [Fang Hui]
+8e37c7a  audio: Fix AudioTrack stuck while interrupting waitStreamEndDone  [Kuowei Li]
+a4d874f  codec2: a workaround to solve backward compatibility issue  [Jiajia Cong]
+57b776a  libstagefright: Configure camcorder encoder session with "CONFIGURE_FLAG_USE_BLOCK_MODEL" flag  [Gaviraju Doddabettahalli Bettegowda]
+45a9cea  MediaMetrics: fix error for compiler update  [Yabin Cui]
+ed55429  Suppress ordered-compare-function-pointers warning  [Yi Kong]
+58c238d  Track elapsed time for 'waitStreamEnd' timeout  [Matthew Bouyack]
+42dad6a  C2 decoders: Workaround for cases where RGBA1010102 isn't supported  [Harish Mahendrakar]
+ecd49e3  stagefright: ACodec: Resolve empty vendor parameters usage  [Adrian DC]
+789e2b1  Camera: Avoid roundBufferDimensionsNearest for AIDE2 YUV streams  [Pavan Kumar Mc]
+b9865ab  Camera: Flush Improvements - Result drain optimization  [Susmitha Gummalla]
+c53b470  Codec2: optimize plane copy for formats with depth > 8  [Praveen Chavan]
+
+
+* frameworks/base
+d6a2433  SystemUI: Fix FeatureFlags imports  [Anay Wadhera]
+12f6640  SystemUI: Fix CalledFromWrongThread exceptions  [jhenrique09]
+9365532  SystemUI: Port elmyra (squeeze) from SQ1D  [jhenrique09]
+2922636  EdgeBackGesture: Remove assistant action  [DennySPb]
+3390b80  SystemUI: Port columbus (quick tap) from SQ1D  [jhenrique09]
+
+
+* frameworks/native
+0db4fea  swapchain: Fix SHARED presentation modes  [Ian Elliott]
+0949d4d  GLConsumer: add HW_TEXTURE usage when create texture  [SOOJONG HWANG]
+
+
+* frameworks/opt/telephony
+563844f  UiccSlot: Validate hotswap restart prompt component properly  [LuK1337]
+95d2492  Restore support with RadioConfig@1.0 dsds clients.  [Quallenauge]
+e9c5bf2  Release wakelock if setRadioCapability is not supported  [Sooraj Sasindran]
+0d2206c  Update external card state based on current app  [Wileen Chiu]
+
+
+* packages/apps/Launcher3
+8c21d96  Add ripple animation to task menu items  [Danny Lin]
+81eb149  LocalColorExtractor: Adapt for Android 12L  [Danny Lin]
+e69a2e8  LocalColorExtractor: Disable local colors when using system presets  [Danny Lin]
+0c3dd65  Implement LocalColorExtractor using colorkt-based theme engine  [Danny Lin]
+00252d2  Launcher3: Use regular body font for app labels  [Adithya R]
+
+
+* packages/apps/Settings
+141278a  Settings: Add missing icons in Network and Internet  [Adithya R]
+31009f8  Settings: Move Device Model to the top of Device Info  [Fabian Leuteneegger]
+a1ad7fa  Settings: Move Android Version to General Info  [Fabian Leuteneegger]
+163b2b4  Settings: Move IMEI information to SIM status  [Chris]
+
+
+* packages/services/Telephony
+9164c8a  Telephony: Bring in the new icon  [Asher Simonds]
+b9887a4  Telephony: Add ERI configuration for U.S. Cellular  [Arne Coucheron]
+7dc6bc9  Fix crash in SubscriptionInfoHelper for null display name.  [Tyler Gunn]
+0f0b78f  Telephony: use Build.VERSION.INCREMENTAL to check for system update  [maxwen]
+cabb49e  Telephony: Mark enhanced_4g_lte_mode_title_variant as untranslatable  [Michael Bestas]
+a4bc758  Telephony: adaptive icon  [Asher Simonds]
+2ef3fae  Removing dead code from Telephony which uses wakelock.  [Tyler Gunn]
+
+
+* vendor/google/pixel
+7531c7e  Revert "Revert "pixel: Add quick_tap feature sysconfig""  [DennySPb]
+
+
+====================
+     2022-04-13    
+====================
+
+====================
+     2022-04-12    
+====================
+
+====================
+     2022-04-11    
+====================
 
