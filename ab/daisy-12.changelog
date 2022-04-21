@@ -1,38 +1,19 @@
 ====================
-     2022-03-27
+     2022-04-21
 ====================
 
 Rom:
-- Merge tag android-12.0.0_r32
-- Merge tag 'LA.QSSI.12.0.r1-06100.02-qssi.0' into BT repos
-- Add FaceUnlock feature
-- Add Columbus feature to gestures
-- Option to switch Battery history graph to AOSP one instead of Pixel
-- Add colored notification icons
-- Add Android 12L style Internet and Screenrecord dialogs
-- Add Android 13 inspired Media Output Picker
-- Add Smart Pause (Adaptive Playback)
-- Add support to manually pause/resume download
-- Add screen density smaller sizes
-- Add battery temp on power summary
-- Add full proc/version information
-- Add platform and RAM to Model & Hardware
-- Improvements for art, bionic
-- Dropped Lawnicons from launcher
-- Dropped google adaptive sound
-- Fixed adding/removing QS with one click
-- Minor SystenUI fixes
+- v5.4 (we skipded the 5.3 version)
+- Rebase on April Android 12.1(L) tag
+- Some features was dropped
+- Some other features was added
 - Other fixes and improvements under the hood
 
 Device:
- - Import Fingerprint from daisy V10.0.2.0 (fix gestures for fpc users)
- - sha1sum support SonyMusic and Controllers
- - Update WCNSS caf config from LA.UM.8.6.2.r1-08100-89xx.0+
- - Update GPS configs from LA.UM.9.6.2.r1-03600-89xx.0
- - overlay: Add proper support for 5GHz hotspot
- - overlay: Better auto/screen brightness
- - overlay: enable VoLTE support for Three
- - Improved WiFi stability
+ - Switch to CAF FM Radio
+ - Sync EGL symlinks with CAF
+ - overlay: Make UI less laggy by surface flinger optimization
+ - Update GPS blobs from LA.UM.9.6.2.r1-04200-89xx.0
  - Address sepolicy denials
  - Other fixes and improvements
 
