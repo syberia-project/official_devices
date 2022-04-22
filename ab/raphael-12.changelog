@@ -1,122 +1,316 @@
 ====================
-     2022-03-04    
+     2022-04-22    
 ====================
 
-* frameworks/base
-c078db8  Remove navbar inset for UDFPS BiometricPrompt  [LuK1337]
-130ceab  Workaround to support low-area UDFPS on BP  [Kevin Chyn]
+* art
+b3f7a93  Add Math.fma (double & float versions) intrinsics for arm64  [Nikita Iashchenko]
+137b710  Support Math.fma Intrinsic for x86 and x86_64  [Shalini Salomi Bodapati]
 
-
-* vendor/google/gms
-8381f9a  gms: add google tts  [Omkar Chandorkar]
-
-
-====================
-     2022-03-03    
-====================
 
 * bionic
-a3af28d  libc: arm64: Merge MTE versions of strcpy/stpcpy/strcmp/strncmp  [Jake Weinstein]
-48ce8a0  DNM: fix building with thinLTO GLOBAL_THINLTO=1  [Gabor Meszaros]
+4d0ad16  Re-enable LTO for linker  [Yi Kong]
+06659bc  libc:Enable thinLTO for note_memtag_heap_async & note_memtag_heap_sync  [Gabor Meszaros]
 
 
 * build/soong
-406044e  cc/lto: remove instr limit  [John Galt]
-f7eafae  Add exported-to-kati namespaces to root namespace  [LuK1337]
+b63c4ec  cc/lto: remove instr limit  [John Galt]
+
+
+* device/qcom/sepolicy_vndr
+eed39c2  Merge branch 'lineage-19.1' of https://github.com/LineageOS/android_device_qcom_sepolicy_vndr into 12.1  [kondors1995]
 
 
 * external/jemalloc_new
-f56de29  jemalloc: enable MADV_FREE usage  [Juhyung Park]
-357d862  jemalloc: always assume overcommitting memory  [Park Ju Hyung]
-37fe463  jemalloc: remove THP support  [Park Ju Hyung]
-ebc3a1a  jemalloc: disable config parsing altogether  [Park Ju Hyung]
-8f38ef2  jemalloc: remove deprecated size_classes.h  [Park Ju Hyung]
+ef1fd32  jemalloc: enable MADV_FREE usage  [Juhyung Park]
+35773e5  jemalloc: always assume overcommitting memory  [Park Ju Hyung]
+2f2f189  jemalloc: remove THP support  [Park Ju Hyung]
+aa55d8c  jemalloc: disable JEMALLOC_STATS  [Park Ju Hyung]
+cfac124  jemalloc: disable config parsing altogether  [Park Ju Hyung]
+f801586  jemalloc: remove deprecated size_classes.h  [Park Ju Hyung]
 
 
 * external/libvpx
-6a22218  Workaround global ThinLTO breakage  [kondors1995]
+8ef9e27  Workaround global ThinLTO breakage  [kondors1995]
 
 
 * frameworks/av
-8b21ed6  Workaround global ThinLTO breakage  [kondors1995]
+3096268  Workaround global ThinLTO breakage  [kondors1995]
 
 
 * frameworks/base
-468b65e  core: Enable smart battery for everyone  [mydongistiny]
-fc2e404  WifiDisplayController: handle preexisting p2p connection status  [Li Sun]
-a57e0f5  Merge changes for launching wifidisplay from system settings  [Indranil Chakraborty]
+fa6796a  SystemUI: Reduce screenshot dismiss delay to 3 seconds  [Danny Lin]
+3aac739  PixelPropsUtils: avoid spoofing Shamim GCam  [John Galt]
+e01fe8b   PixelPropsUtils: Whitelist YouTube app  [Pranav Vashi]
+fdab2cd  gmscompat: add an option to match disabled packages in isGmsApp()  [Dmitry Muhomor]
+f14d8e6  gmscompat: consider disabled GMS components to be absent  [Dmitry Muhomor]
+0563e27  gmscompat: fix false positive isClientOfGmsCore() result  [Dmitry Muhomor]
+98971ca  gmscompat: export GmsCompat.isGmsApp(pkgName, userId) method  [Dmitry Muhomor]
+f28f3dc  AttestationHooks: Rename constant  [DennySPb]
+6bff630  gmscompat: conditionally stub out BluetoothAdapter.get{Address,Name}()  [Dmitry Muhomor]
+67b3cf0  gmscompat: simplify initialization  [Dmitry Muhomor]
+6cfd6ee  gmscompat: initialize GmsCompat before execution of the GMS code  [Dmitry Muhomor]
+690bd01  gmscompat: don't hide the BluetoothManager  [Dmitry Muhomor]
+5e6e5e1  gmscompat: improve the package uninstallation shim  [Dmitry Muhomor]
+dfac276  gmscompat: add queryStatsForPackage() shim  [Dmitry Muhomor]
+8cd71eb  gmscompat: improve work profile support  [Dmitry Muhomor]
+027806b  gmscompat: skip privileged DownloadRequest property  [Dmitry Muhomor]
+0f09dbb  gmscompat: filter out privileged Downloads.Impl.VISIBILITY_HIDDEN  [Dmitry Muhomor]
+36ac5be  gmscompat: handle background Activity starts  [Dmitry Muhomor]
+2df1cd8  gmscompat: notify GmsCompatApp when a notable interface is acquired  [Dmitry Muhomor]
+acedfc8  gmscompat: notify user when extra permission is needed to install an app  [Dmitry Muhomor]
+16638764  gmscompat: conditionally hide BluetoothManager  [Dmitry Muhomor]
+2114e07  gmscompat: additional shims  [Dmitry Muhomor]
+41286a3  gmscompat: add missing FLAG_ACTIVITY_NEW_TASK  [Dmitry Muhomor]
+c44390b  gmscompat: improve PlayStoreHooks  [Dmitry Muhomor]
+a1bb50a  gmscompat: use app Context in isClientOfGmsCore()  [Dmitry Muhomor]
+77edaa1  gmscompat: use AIDL instead of ContentProvider.call()  [Dmitry Muhomor]
+9a7061a  gmscompat: use a proper name to refer to the Play services app  [Dmitry Muhomor]
+9c2f204  infrastructure for privileged eSIM management apps that depend on GMS  [Dmitry Muhomor]
+e0220ad  gmscompat: stop Play Store from trying to auto-update some apps  [Dmitry Muhomor]
+d456f83  gmscompat: defer GMS client checks  [Dmitry Muhomor]
+06ff5c0  gmscompat: expand PhenotypeFlags workaround to all GMS clients  [Dmitry Muhomor]
+8d9d9d2  stop Microsoft apps from crashing without INTERNET permission  [Dmitry Muhomor]
+fd7713d  gmscompat: improve Dynamite module support  [Dmitry Muhomor]
+de448c8  gmscompat: simplify access to the FileProxyService  [Dmitry Muhomor]
+9debb81  ShortcutPackage: do not spam logcat  [jhonboy121]
+6672c16  StatusBar: dismiss qs when screen's going off if showing  [Dil3mm4]
+a6a05e7  base: Set ic_avatar_user and ic_avatar_guest_user to follow system accent  [elpaablo]
+71c114a  fix google widget timing issue  [Ruoyao Liu]
+612b7e0  Treat default value that wasn't found as empty value  [Danny Baumann]
+2b901b3  Settingslib: Remove a reflect method that can never succeed  [Soo-Hwan Na]
+cedb56a  BatteryStatsService: Fix wrong arguments passed to noteBluetoothScanStoppedFromSourceLocked.  [Shumao]
+4e4ffdf  Fix swapped backup/heavy oom adj labels  [Chris Phlipot]
+0fc980e  [AMS] Fix race condition in ProcessList.  [qinyige1]
+fd975c3  Check mAttachInfo.mSystemUiVisibility to see if a SysUI flag exists  [Tiger Huang]
+eb4a469  Use public types to update system UI visibility  [Tiger Huang]
+ddf8d18  [BugFix] acquireProvider maybe wait for timeout  [Guanyou Chen]
+9b75a0e  Don't preload into nonexistent zygote  [Hans Boehm]
+e064619  Don't MAP_POPULATE native ZygoteCommandBuffer  [Hans Boehm]
+2425d00  SystemUI: Fix alarm icon  [Michael W]
+6ece912  Allow to hide arrow for back gesture [1/2]  [Ali B]
+ae2935f  AuthService: Add support for workaround side fps props  [LuK1337]
+088a878  Avoid needless Integer.valueOf() object allocation.  [Tobias Thierer]
+ad0cb48  Optimize AbsListView to reduce click operation latency  [Jun Wang]
+e67bef3  Add Settings services to location indicator whitelist  [Chiranth A J]
+daef8f1  Do not show camera indicator for Face Unlock service  [LibXZR]
+b3e6116  Add Tethering and SystemUI to location indicator whitelist  [LibXZR]
+3b06474  Do not show location indicator for bluetooth package  [LibXZR]
+60c66c3  Reset face auth on occluding app when authenticated  [jhenrique09]
+1c9d204  SystemUI: use simple check for isFaceDisabled  [Ali B]
+1dbc353  DisplayPowerController: Don't apply brightness adjustment if NaN  [LibXZR]
+7242a55  Allow provisioning package to retrieve subGrp, clear it's own config  [Benedict Wong]
+df2fc58  SystemUI: QSTileImpl: bail out early in handleLongClick if getLongClickIntent returns null  [Alfred Mathew]
+dcee208  gmscompat: hide privileged FontManager service  [Dmitry Muhomor]
+15686a8  gmscompat: fix location service regression  [Dmitry Muhomor]
+db1425a  gmscompat: document PhenotypeFlag provider workaround  [Dmitry Muhomor]
+ff400d8  gmscompat: improve userId-related shims  [Dmitry Muhomor]
+7b492a8  gmscompat: use correct "isApplicationUid" check  [Dmitry Muhomor]
+a8d0781  gmscompat: defer isGmsApp() check  [Dmitry Muhomor]
+ce56706  gmscompat: account removal workaround  [Dmitry Muhomor]
+22ee6e1  gmscompat: mark public ModuleLoadState fields final  [Dmitry Muhomor]
+68bbf55  gmscompat: optimize file path check  [Dmitry Muhomor]
+6bc3d26  make DownloadManager.query() a no-op when INTERNET permission is revoked  [Dmitry Muhomor]
+e45975f  gmscompat: fix TOCTOU race  [Dmitry Muhomor]
+5c26f3e  gmscompat: simplify AppIntegrityManager shim  [Dmitry Muhomor]
+a5bb3a4  gmscompat: Improve GMS package info exception handling  [Danny Lin]
+391399f  Add config to exempt telephony-related app from location indicators  [Danny Lin]
+b921309  gmscompat: hide UWB system feature  [Dmitry Muhomor]
+efa2927  gmscompat: Minor code style fixes  [Danny Lin]
+1c43f6a  gmscompat: compatibility with updated Dynamite module loading sequence  [Dmitry Muhomor]
+3832661  gmscompat: enable on-demand Dynamite modules  [Dmitry Muhomor]
+23d14b4  grant Location permission to GmsCompatApp by default  [Dmitry Muhomor]
+3518640  gmscompat: perform binder redirection check in IGmsCallbacks interface  [Dmitry Muhomor]
+ef1f9b3  gmscompat: add BinderRedirector  [Dmitry Muhomor]
+7bd9339  gmscompat: add HybridBinder  [Dmitry Muhomor]
+5373f7f  gmscompat: simplify initialization  [Dmitry Muhomor]
+4415f1c  don't auto-grant special runtime permissions after update  [Dmitry Muhomor]
+6d39c91  gmscompat: make connection to GmsCompatApp unbreakable  [Dmitry Muhomor]
+b502045  gmscompat: don't make all services foreground  [Dmitry Muhomor]
+51086cd  gmscompat: improve location services compatibility  [Dmitry Muhomor]
+2d1eb8b  Revert "gmscompat: set foregroundServiceType of location services"  [Daniel Micay]
+b187b34  Move PackageManager new user logic after dispatching  [LibXZR]
+485d02d  keyguard: make disabling of fingerprint wake-and-unlock runtime configurable [1/2]  [ganeshi4u]
+5dec4be  Keyguard: Allow disabling fingerprint wake-and-unlock  [Steve Kondik]
+50c424a  SystemUI: Add back charging ripple  [aswin7469]
+304c643  Revert "SystemUI: Invoke keyguard exit animation"  [DennySPb]
 
 
-* packages/modules/Wifi
-f656bc3  Wifi: Ingore miracast scan from connectivity manager  [Xin Deng]
+* libcore
+10389ea  gmscompat: add File.mkdirsFailedHook  [Dmitry Muhomor]
+
+
+* packages/apps/Launcher3
+55c2ce1  Launcher3: Add toggle to disable hotseat searchbar  [Pranav Vashi]
+c0b6ca5  Launcher3: restart launcher on DT option change  [Ali B]
+
+
+* packages/apps/Settings
+720db15  Merge changes I772838b5,I7a4c7eca,Iae4aa3f1,I688961f1,Ia09dfd67, ... into 12.1  [dennyspb]
+c4f7587  config: Disable avatar on my device info page  [DennySPb]
+
+
+* packages/modules/Permission
+a54f182  gmscompat: restart GMS processes when permission gets granted  [Dmitry Muhomor]
 
 
 * vendor/google/gms
-d60b0dc  restore some apps  [kondors1995]
+61bd52a  Revert "Disable some packages"  [kondors1995]
+
+
+* vendor/qcom/opensource/usb
+b63c2c8  usb: Add support for SEC specific enableUsbDataSignal path  [LuK1337]
+7a895bf  enableUsbDataSignal: Handle failures in optional sysfs gracefully  [Michael Bestas]
+60b8cd4  usb: Allow overriding device/controller names  [Michael Bestas]
+6e60791  Update USB HAL to V1.3 implementation  [Albert Wang]
 
 
 * vendor/syberia
-0ccceff  build: Renable GlobalThinLO & ThinLTO chache  [kondors1995]
+7b778cd  build: Renable GlobalThinLO & ThinLTO chache  [kondors1995]
+2a21fc0  Merge changes Ia99c5579,I8f482422 into 12.1  [dennyspb]
+bbf2983  Add Repainer support  [DennySPb]
+9a8b83d  config: Disable remote keyguard animation until it's fixed  [LuK1337]
+950bec4  Merge changes Iccfa624e,I9a4d6bd5,I960f98f5,Ib864c073 into 12.1  [dennyspb]
 
 
 ====================
-     2022-03-02    
+     2022-04-21    
 ====================
 
-====================
-     2022-03-01    
-====================
+* bionic
+3bb243e  Fix unistd.exec_argv0_null for new kernels.  [Elliott Hughes]
+e824278  Avoid usage of LONG_BIT in signal headers.  [Peter Collingbourne]
+3dfe148  Skip other_malloc_functions on HWASan.  [Florian Mayer]
+40449e6  Skip mallinfo / malloc_info tests on HWASan.  [Florian Mayer]
+3af3d4a  Deprecate "/apex/<name>/ld.config.txt  [Jiyong Park]
+897cd18  Extempt calculate_gnu_hash_neon from hwasan.  [Florian Mayer]
+ab7fa9e  Fix bugs in realloc().  [Mitch Phillips]
+61d109a  In android_set_abort_message, check for nullptr.  [Christopher Ferris]
+0392ddd  Fix HWASan crashes in heapprofd initialization.  [Florian Mayer]
+8eff6de  Fix MemtagNoteTest and make it runnable on non-MTE devices.  [Evgenii Stepanov]
+159c434  Fix copy pasta in guard macro for weak symbols.  [Dan Albert]
+d6effc1  Remove availability definitions for mbs APIs.  [Dan Albert]
+cd6f1ea  Fix incorrect API level for wcstombs and mbstowcs.  [ZijunZhao]
+3fa4f11  bionic: Squash of pre-P mutex behavior restoration  [Ethan Chen]
+
+
+* frameworks/av
+10735f0  mediaresourcemanager_fuzzer: Bug Fix  [Ayushi Khopkar]
+
+
+* libcore
+34f3d93  gmscompat: update DelegateLastClassLoader hook  [Dmitry Muhomor]
+ee5b14b  gmscompat: remove DexPathList hook that is no longer needed  [Dmitry Muhomor]
+5c01b8e  gmscompat: optimize File#lastModified hook  [Dmitry Muhomor]
+2204cc7  don't throw SecurityException when INTERNET permission is revoked  [Dmitry Muhomor]
+
+
+* packages/apps/Launcher3
+7fc658c  Launcher3: Implement Hotseat searchbar  [Suphon Thanakornpakapong]
+
+
+* packages/apps/Settings
+7541411  Rearrange density options under Settings/Display  [Alex Cruz]
+a19b976  Phone fails to switch channel mode from stereo to mono  [Tim Peng]
+5859475  Settings: Allow to hide arrow for back gesture [2/2]  [Nebrassy]
+0649548  Remove empty Security status header  [Chirayu Desai]
+a21e0c3  security: Add fingerprint wake unlock mode list preference  [ganeshi4u]
+
 
 ====================
-     2022-02-28    
+     2022-04-20    
 ====================
 
-* device/qcom/sepolicy_vndr
-74f1740  Import syberia policy  [kondors1995]
+* art
+93034bb  art: Enable compiler/dalvikvm/dex2oat/runtime -O3  [dkati]
+f82180f  Enable LoopOptimization for graphs with try catch blocks  [Santiago Aboy Solanes]
+1846d70  Use the non-debug apex for userdebug builds  [Baligh Uddin]
 
 
 * external/arm-optimized-routines
-2ab0867  AOR: remove MTE versions of strcpy/stpcpy/strcmp/strncmp  [Jake Weinstein]
-5b5320c  Merge remote-tracking branch 'arm/master' into HEAD  [kondors1995]
+49cb114  Merge branch 'master' of https://github.com/ARM-software/optimized-routines into 12.1  [DennySPb]
+4b77ad7  pl/math: Add Vector/Neon log10  [Pierre Blanchard]
+38fb9e7  pl/math: Add Vector/Neon log10f  [Pierre Blanchard]
+
+
+* frameworks/libs/systemui
+58eaacb  Override IconProvider class for IconPack support  [DennySPb]
+b52bded  Add support for overriding of IconProvider  [DennySPb]
+
+
+* packages/apps/Launcher3
+d009d1b  Update RU translation  [DennySPb]
+7e99058  Settings/IconPack: Dynamically set the icon of the selected pack  [DennySPb]
+a235614  Fix crash in developer settings and notification dots  [DennySPb]
+142fcc3  Add themed icons support in 3d party IconProvider  [DennySPb]
+26dfc26  [SQUASHED] Launcher3: Add Icon Pack Support from Shade Launcher  [Amir Zaidi]
+e92b9f2  Launcher3: Add AppInfo Bottom Sheet from Shade Launcher  [Amir Zaidi]
+018c512  Add Smartspace Widget to other grids  [Jyotiraditya]
+dee2c65  quickstep: return if recentsView is null  [Pranav]
+27c6f62  Launcher3: Remove clock widget and lineage ones  [Abdulwahab Isam]
+35e1443  Launcher3: Fix NPE for QuickStep hotseat prediction controller  [Pranav Vashi]
+71c6ab2  Launcher3: AppsSearchContainerLayout: Avoid NPE  [Dil3mm4]
+11f6392  Launcher3: fix the WindowManager service access from non-visual context  [maxwen]
+98d74f2  Launcher3: buttons should no longer be textAllCaps  [maxwen]
+f7c3371  Launcher3: style grid drop down preference accordingly  [maxwen]
+1a9e57c  Launcher3: make sure getImeBgTaskbar value gets reset when going to launcher  [maxwen]
+4aaad62  Launcher3: Import remaining icons from lawnicons  [Pranav Vashi]
+a94fa7c  Launcher3: Update themed icons for launcher  [Sonal Singh]
+fc22a99  Launcher3: Add themed icons for launcher  [TheScarastic]
+a2b1505  Launcher3: Add kill action to app shortcuts popup  [ezio84]
+0f6c2ef  Launcher3: Add icon and icon text size customizations  [Pranav Vashi]
+bf8dd0e  Launcher3: Import CustomSeekBarPreference from crdroid  [Pranav Vashi]
+dfbee19  Match Pixel Launcher string for Google page  [Danny Lin]
+0647caf  Launcher3: Improve layout for 6x workspace  [Pranav Vashi]
+8b9dd29  Launcher3: Add x8 x10 workspaces  [Fran Palmero]
+48f0296  Launcher3: Update default workspace  [Pranav Vashi]
+be706cd  Launcher3: Reduce app label text size  [Danny Lin]
+999ff5c  Launcher3: add toggle for desktop and drawer labels  [Joey]
+0606a09  Launcher: Fix all apps view not dismissing  [Timi Rautamäki]
+7a16cb3  TrebuchetGo: Add Go specific default workspace  [Bruno Martins]
+3d61224  Launcher3: Add 2x2 workspace grid option  [Danny Lin]
+b6f1439  Launcher3: Add 5x6, 5x7 and 6x6 default workspaces  [dwardo]
+7a2fad4  Replace 4x4 grid option with a 4x5 one  [Arne Coucheron]
+0284bf6  Launcher3: Update default workspace  [Bruno Martins]
+5514ea1  Improve All Apps Search bar layout  [Nauval Rizky]
+a61390e  Improve App Search padding  [Nauval Rizky]
+
+
+* vendor/syberia
+14f88a3  packages: Build GmsCompat companion on vanilla  [kondors1995]
+df5b244  syberia: Guard GMS include  [kondors1995]
+cbbb6a2  UdfpsResources: Import more icons  [kondors1995]
+fda3560  Remove unused sdclang files  [kondors1995]
 
 
 ====================
-     2022-02-27    
+     2022-04-19    
 ====================
 
 ====================
-     2022-02-26    
+     2022-04-18    
 ====================
 
-* frameworks/base
-be7d93f  Fix Statusbar Icon Colors on Lockscreen  [kqixs]
-a72a5e3  Make colored Statusbar Icons optional [1/2]  [spkal01]
-e54440f  StatusBarIconView: use app icons instead of provided notif one  [Dil3mm4]
-0757a1a  [Bugfix][Media] Fix ISessionControllerCallback leaks in the system_server when the far side died  [xi yu]
-a09a6be  Fix potential exception while pressing volume up and volume down  [Arthur Hung]
-59d4896  Fix the empty selection issue when onCreateActionMode returns false  [Tony Mak]
-d0a07de  Fix StageCoordinator unexpected onDisplayAreaVanished  [ot903107]
-16bae96  Add null check after getApplicationInfo in InstantAppNotifier  [Håkan Kvist]
-35ad6b6  Fix handling usb notification after pr_swap complete  [Ray Chi]
-8eb0a58  Fix inaccuracy in biometric timeout  [jiangkun5]
-f14c942  SystemUI: Introduce Adaptive Playback [1/2]  [Jyotiraditya]
-e7a49de  Base: SystemUI: Android 13 inspired Media Output Picker  [Maitreya29]
-5f0d7a3  QSTiles: Re-write Caffeine tile in Kotlin  [Jason Edson]
-819f43b  SystemUI: Add HBM provider for UDFPS on Pixel devices  [Danny Lin]
-71ca0e1  Revert "udfps: Implement UdfpsHbmProvider"  [Omkar Chandorkar]
-0179b6a  Base: SystemUI: Use same background for Internet dialog title  [maitreya29]
-5f992fc  Base: SystemUI: Use same background color for Internet and Screen record  [maitreya29]
-bc7ec00  Base: SystemUI: Android 12L style Internet and Screenrecord dialogs  [maitreya29]
-c9f81c5  base: match track height of volume slider with progress drawable  [kleidione Freitas]
-92cd6fa  PixelPropsUtils: Remove Pubg New State from GamesProps  [Ivan Martynov]
-6ab6180  PixelPropsUtils: Update Raven to 2nd February 2022 Security patch fingerprint  [Joey Huab]
+* frameworks/libs/systemui
+bda289f  IconLoader: Create new int array for hue calculation if tmp is too small  [Amir Zaidi]
+2380856  Apply alpha from child icon to adaptive icon wrapper  [Amir Zaidi]
+c3b7662  IconLoader: Add config hint to bypass adaptive icon wrapping  [Amir Zaidi]
 
 
-* frameworks/native
-a3f8fa7  ProcessState: thread name includes driver  [Steven Moreland]
+====================
+     2022-04-17    
+====================
+
+====================
+     2022-04-16    
+====================
+
+* packages/apps/Settings
+8d06034  team: Add Xiaomi Mi 9 maintainer  [blinoff82]
+376bcdd  team: Add Xiaomi MI439-Unified maintainer  [blinoff82]
 
 
-* packages/apps/SyberiaSettings
-fac3717  Make colored Statusbar Icons optional [2/2]  [spkal01]
+* vendor/syberia
+2d3b8e5  Add Xiaomi Mi 9 to official devices  [blinoff82]
+69ccfd9  Add Xiaomi MI439-Unified to official devices  [blinoff82]
 
 
