@@ -1,38 +1,28 @@
 ====================
-     2022-01-21
+     2022-04-22
 ====================
 
 Kernel:
- - Upstream to 4.19.225
- - Fixed abnormal high frequency usage on big and primary cluster
+- Upstream to 4.19.239
 
 Rom:
- - January security patch android-12.0.0_r27
- - Add Gaming mode
- - Add support for gmscompat
- - Add increasing ring feature
- - Add switch for linked ring and media notification
- - Add require unlocking to use Internet quick tile
- - Add ringtone settings for Multi SIM devices
- - Add Cloudflare DNS as the default fallback
- - Add colors to assistant animation
- - Add volume panel on left toggle
- - Add small keyguard clock switch
- - Add custom lockscreen clocks
- - Add lockscreen clock options
- - Add pixel charger animation
- - Add screen off animations
- - Fixes for camera and audio stream
- - SystemUI fixes and improvements
- - Art and bionic improvements
- - Fix landscape battery size
- - Updater app fixes
- - Other fixes under the hood
+- Added Google QuickTap
+- Expanded volume panel
+- App Lock feature
+- Added back charging ripple animation
+- Allow disabling fingerprint wake-and-unlock
+- Allow to hide back gesture arrow
+- Art and bionic improvements
+- Launcher improvements:
+    Clear all button at bottom in recents screen​
+    Google lens integration in recents​
+    Icon Packs supports​
+    Google hotseat dock search​
+    Allow to hide app labels​
+    Allow to change icon/labels size​
+- Added Repainter integration
+- Fixed user avatar in Settings dashboard
+- Other fixes and improvements under the hood
 
 Device:
- - Update powerhints to improve energy saving
- - Drop touch boost feature from thermal profiles
- - Update supported audio sampling rates
- - Add support for WiFi 6 mobile hotspots
- - VoIP calls improvements
- - Fixed mic in apps when OK Google is activated
+ - Switch to QTI BT stack
