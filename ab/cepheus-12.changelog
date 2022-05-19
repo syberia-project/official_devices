@@ -1,4 +1,12 @@
 ====================
+     2022-05-19    
+====================
+
+====================
+     2022-05-18    
+====================
+
+====================
      2022-05-17    
 ====================
 
@@ -22,10 +30,6 @@ cfd7b6f  Fix typo in RU translation  [blinoff82]
      2022-05-14    
 ====================
 
-====================
-     2022-05-13    
-====================
-
 * system/core
 3de1d4d  Reland "libprocessgroup: return false on failure"  [Inseob Kim]
 87218c7  Use uid_t for user IDs and gid_t for group IDs  [Bart Van Assche]
@@ -42,7 +46,7 @@ eb11bd9  Use the 'override' keyword where appropriate  [Bart Van Assche]
 
 
 ====================
-     2022-05-12    
+     2022-05-13    
 ====================
 
 * build/make
@@ -78,10 +82,6 @@ b01b9e3  Launcher3: Use font configs instead sans-serif  [Pranav Vashi]
 e419a07  Advanced gestures: reorder actions [2/2]  [DennySPb]
 
 
-* packages/apps/SyberiaSettings
-c00e6a2  Fix typo in RU translation  [blinoff82]
-
-
 * packages/apps/ThemePicker
 cce32f3  Update RU translation  [DennySPb]
 d6f97ac  ThemePicker: Check initialization before saving item index  [LibXZR]
@@ -93,11 +93,6 @@ c7a2b06  ThemePicker: Import pixel themes stub package  [Adithya R]
 173ff3f  ThemePicker: Import color section from dotOS  [Anay Wadhera]
 62d2bdd  ThemePicker: Fixup color preview and adapt to Google monet  [Adithya R]
 f5672ba  ThemePicker: Clean up from CAF  [Pranav Vashi]
-daa40be  ThemePicker: implement dummy recent wallpapers provider for Pixel Launcher  [Anay Wadhera]
-3481e7b  ThemePicker: respect color override  [Anay Wadhera]
-fe1980a  ThemePicker: implement coloring in wallpaper preview fragment  [Anay Wadhera]
-bf0fb21  ThemePicker: Override WallpaperCropper  [Michael W]
-66d1722  ThemePicker: Bring in the new icon  [Asher Simonds]
 
 
 * packages/modules/Connectivity
@@ -116,20 +111,5 @@ ff9adf4  Revert "gmscompat: restart GMS processes when permission gets granted" 
 * vendor/syberia
 4fab357  overlay: Use pixel themes stub package for ThemePicker  [Pranav Vashi]
 b63a92c  Revert "packages: Build GmsCompat companion on vanilla"  [DennySPb]
-
-
-====================
-     2022-05-11    
-====================
-
-* frameworks/base
-b4b85cc  fwb : Silence some AOSP logspam  [George Zacharia]
-c8d9fb3  core: Add ENABLE_TASKBAR setting  [LuK1337]
-21a6caa  SystemUI: Add API for runtime taskbar config on phones  [Danny Lin]
-55d87f5  fix ProcessCpuTracker.java file sLoadComparator issue.  [Chunlei Zhuang]
-
-
-* packages/resources/devicesettings
-1990b59  Automatic translation import  [Michael Bestas]
 
 
