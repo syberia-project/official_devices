@@ -1,28 +1,29 @@
 ====================
-     2022-04-22
+     2022-05-26
 ====================
 
 Kernel:
-- Upstream to 4.19.239
+- Upstream to 4.19.244
+- Update WiFi qcacld-3.0 drivers
+- Update audio, video and display drivers
+  from LA.UM.9.12.r1-14100.01-SMxx50.QSSI13.0
 
 Rom:
-- Added Google QuickTap
-- Expanded volume panel
-- App Lock feature
-- Added back charging ripple animation
-- Allow disabling fingerprint wake-and-unlock
-- Allow to hide back gesture arrow
-- Art and bionic improvements
-- Launcher improvements:
-    Clear all button at bottom in recents screen​
-    Google lens integration in recents​
-    Icon Packs supports​
-    Google hotseat dock search​
-    Allow to hide app labels​
-    Allow to change icon/labels size​
-- Added Repainter integration
-- Fixed user avatar in Settings dashboard
+- Gaming mode -> GameSpace
+- Add Etar calendar 
+- Launcher:
+  add some themed icons
+  lens icon for dock bar without lens package
+  fixed bugs and impove UI
+- Add Lens to Screenshot
+- Add new settings for Screenrecord
+- Fixed FC on some apps (Mir Pay, SBP pay)
 - Other fixes and improvements under the hood
 
 Device:
- - Switch to QTI BT stack
+- Fixed Widevine L1 certification
+- Fixed MTP connection to PC
+- Fixed status bar height value
+- Build biometric HAL and OSS IFA service
+- Fixed sepolicy denials
+- Minor improvements for ultrasound sensor
