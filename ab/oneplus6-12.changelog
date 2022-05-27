@@ -1,199 +1,120 @@
 ====================
-     2022-05-18    
-====================
-
-* art
-70c67b9  dex2oat: Faster class pruning.  [Vladimir Marko]
-3b53a2b  Fix dex file lookup in DumpInfo when dex file locations have full paths.  [Martin Stjernholm]
-
-
-* device/qcom/sepolicy
-6133e2f  Merge tag 'LA.QSSI.12.0.r1-07500-qssi.0' of https://git.codelinaro.org/clo/la/device/qcom/sepolicy into 12.1  [DennySPb]
-
-
-* device/qcom/sepolicy_vndr
-c008203  Merge tag 'LA.UM.10.3.r1-01700-sdm845.0' of https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr into 12.1  [DennySPb]
-
-
-* frameworks/av
-3440963  Add format value for NULL offload info  [ziyang zhang]
-4206020  libstagefright: Bug Fix  [Ayushi Khopkar]
-c4f5eb0  libstagefright: Adding NULL check for codec instance  [Sachu George]
-ccae322  Migrate stagefright to Soong  [Trevor Radcliffe]
-e447fb3  codec2 sfplugin: remove MediaCodec.h dependency  [My Name]
-171a70e  Fixes for out-of-memory error in MediaCodec  [Arun Johnson]
-f28e15d  codec2: check a validation of HDR static info  [Taehwan Kim]
-2a7d593  codec2: add get consumeusage for C2BufferQueueBlockPool  [shuanglong.wang]
-59385c8  Codec2InfoBuilder: list FormatSurface for c2.android.* decoders  [My Name]
-6a05377  codec2: query supported pixel formats from Codec2InfoBuilder  [Wonsik Kim]
-4818069  codec2: fix gralloc4 mapping  [Wonsik Kim]
-4fc3a29  Codec2: Support locking vendor formats with gralloc4  [Praveen Chavan]
-8e71d93  C2SoftVpxEnc: Move IntfImpl definition to C2SoftVpxEnc.cpp  [Manisha Jajoo]
-c77fef8  C2SoftVp8: List profile0 as supported profile  [Harish Mahendrakar]
-7cca9b9  CCodecBufferChannel: remove assumption that pipeline clears quickly on input EOS  [Wonsik Kim]
-a6c5b4d  C2BqBuffer: Remove detach during migration  [Sungtak Lee]
-0054f97  Build with upstream lld: Fix incorrect static dependencies  [Pirama Arumuga Nainar]
-75c7386  Bug fix for leak in httplive_fuzzer  [Ayushi Khopkar]
-e1741a8  Added httplive_fuzzer  [Aditya Wazir]
-9018903  Camera: Call corresponding unlock for every lockAsync  [Shuzhen Wang]
-0360cdd  resource_manager: fix cross-type reclaim  [Wonsik Kim]
-2cf2ad5  Fix TunerFilterSetting union usage  [Jooyung Han]
-0fa3a95  Remove ndk_platform backend. Use the ndk backend.  [Jiyong Park]
-9c73aae  audio:fix audio stream issue.  [liuxiaoyu7]
-
-
-* frameworks/base
-a1dd607  core: Wipe package cache on upgrade even on user build  [Albert I]
-2d50416  SystemUI: Make isTablet() use correct API for getting window metrics  [LuK1337]
-c558689  Revert "base: Only allow edge lights on AOD when AOD is enabled [1/2]"  [bezke]
-b44cd1a  base: fix deadlock between activity manager and power manager  [jhonboy121]
-f3682c7  base: check whether device is charging when alwaysOnChargingEnabled is called  [jhonboy121]
-
-
-* system/security
-adba7dc  Keystore 2.0: Add CREATION_DATETIME only for Keymint V1 and higher.  [Janis Danisevskis]
-
-
-====================
-     2022-05-17    
+     2022-05-27    
 ====================
 
 * frameworks/base
-6b41991  MediaCodec: don't cache buffers until requested  [Wonsik Kim]
-d653420  Fix daveys when latch_unsignaled is used  [John Reck]
-7c45ce0  media jni: fix CryptoException error code to string  [Robert Shih]
-3e899b5  NavigationBarView: Show floating rotation if 2-button nav mode enabled  [jhenrique09]
-
-
-====================
-     2022-05-16    
-====================
-
-* frameworks/base
-1edd34a  PixelProps: update for May  [DennySPb]
-
-
-====================
-     2022-05-15    
-====================
-
-====================
-     2022-05-14    
-====================
-
-====================
-     2022-05-13    
-====================
-
-* external/perfetto
-b4def17  ui: enable compact sched if on S+  [Lalit Maganti]
-
-
-* frameworks/base
-66b1c56  [SQUASH REVERT] Bye GmsCompat  [DennySPb]
-5cd46b5  add com.android.phone to indicator exemptions  [Daniel Micay]
-24c3d3c  add com.android.bluetooth to indicator exemptions  [Daniel Micay]
-2eb60b4  Remove build fingerprint from screenshot EXIF  [June]
-
-
-* frameworks/native
-df44c8b  nativedisplay: fix the flicker issue in streaming video  [Ray Zhang]
-80781f5  installd: Skip profile preparation if primary.prof does not exist  [Yang Tianping]
-152214d  SF: make RefreshRateOverlay a trusted overlay  [Ady Abraham]
-
-
-* libcore
-d90d96a  [SQUASH REVERT] Bye GmsCompat  [DennySPb]
+6349b2a  Fix binderDied of an app can not be triggered in some cases.  [xi yu]
+a46e5a2  toString() of StringBuilder need to create a array copy with count, if no more memory could be made available by the garbage collector, "free list large object space" maybe oom.  [duguowei]
+6ce99ac  Delete all templates that do not match  [shijingcheng5]
+ca26f74e  Do not get portInfo if physical address is 0x0000  [daren.liao]
+92faf19  Fix indicator can't disappear in some cases  [张倞诚]
+899e1c6  AudioService: catch RuntimeException for IServiceManager.getService  [Devin Moore]
+3af343e  SystemUI: Screenshot: Avoid NPE while getting app label  [Adithya R]
+37e19c1  SystemUI: Integrate Google Lens into Screenshot UI  [AshutoshSundresh]
+4a6064a  Screenrecord: Add an option to record for longer  [Ido Ben-Hur]
+794964f  Screenrecord: Save and load set preferences  [Ido Ben-Hur]
+df95399  Screenrecord: Make low quality bitrate scalable per device  [Ido Ben-Hur]
+af9e612  Screenrecord: add blinking stop dot and low quality options  [ezio84]
+a7c8567  SystemUI: Add delete action to screen recorder notification  [Sourajit Karmakar]
 
 
 * packages/apps/Launcher3
-d5c78b0  Update RU translation  [blinoff82]
-017a8ed  Launcher3: Make taskbar untouchable during transitions  [Pranav Vashi]
-711f15f  Launcher3: Improve taskbar state controller for resume  [Pranav Vashi]
-77dae30  Launcher3: Do not attach cleanupScreenshot() to frame update event  [LibXZR]
-6783192  Launcher3: Disable ENABLE_TASKBAR_EDU  [maxwen]
-4ff858c  Launcher3: Allow enabling recents overview grid on phones  [Danny Lin]
-1a3837f  Launcher3: Fix occasional NPE  [Oliver Scott]
-065a5ae  Launcher3: Trigger to hide navbar hint settings  [Pranav Vashi]
-d818442  Launcher3: Re-add priv app permissions  [Pranav Vashi]
-a0dd669  Launcher3: Add support for enabling taskbar on phones  [Danny Lin]
-b01b9e3  Launcher3: Use font configs instead sans-serif  [Pranav Vashi]
+693854f  Merge changes I4bffbf07,I4234ab7f,I33a2fe4d,If6e81f74,Id7b0960f, ... into 12.1  [dennyspb]
+5d9fce4  Launcher3: FeatureFlags: Disable ADAPTIVE_ICON_WINDOW_ANIM  [Ido Ben-Hur]
+2685862  Launcher3: RecentsView: add null check on RemoteTargetHandle array  [jhonboy121]
+cd16db7  quickstep: RecentsView: add null check for invocations mFirstFloatingTaskView  [jhonboy121]
+ec492f3  Launcher3: Add un-themed icons to google search bar  [Adithya R]
+360ded9  Launcher3: Make lens available without lens package  [Pranav Vashi]
+8b57445  Launcher3: Enable lens icon for dock searchbar  [Pranav Vashi]
+3a42b8a  Launcher3: Import some themed icons  [Ratoriku]
 
 
 * packages/apps/Settings
-e419a07  Advanced gestures: reorder actions [2/2]  [DennySPb]
-
-
-* packages/apps/ThemePicker
-cce32f3  Update RU translation  [DennySPb]
-d6f97ac  ThemePicker: Check initialization before saving item index  [LibXZR]
-3e58104  ThemePicker: Defer color section adapter binding  [LibXZR]
-6cfd28a  ThemePicker: Fix incorrect logic in wallpapersColorsChanged  [LibXZR]
-98772f4  ThemePicker: Prevent NPE  [DarkJoker360]
-182c53a  ThemePicker: Remove override defined in global overlay  [Pranav Vashi]
-c7a2b06  ThemePicker: Import pixel themes stub package  [Adithya R]
-173ff3f  ThemePicker: Import color section from dotOS  [Anay Wadhera]
-62d2bdd  ThemePicker: Fixup color preview and adapt to Google monet  [Adithya R]
-f5672ba  ThemePicker: Clean up from CAF  [Pranav Vashi]
-
-
-* packages/modules/Connectivity
-60e077e  Revert "gmscompat: Add ConnectivityManager hook for baseline compatibility"  [DennySPb]
-7e82c0a  Revert "skip reportNetworkConnectivity() when permission is revoked"  [DennySPb]
-
-
-* packages/modules/Permission
-ff9adf4  Revert "gmscompat: restart GMS processes when permission gets granted"  [DennySPb]
-
-
-* packages/modules/Wifi
-6827545  Revert "gmscompat: Add WifiManager hooks for baseline compatibility"  [DennySPb]
-
-
-* system/core
-3de1d4d  Reland "libprocessgroup: return false on failure"  [Inseob Kim]
-87218c7  Use uid_t for user IDs and gid_t for group IDs  [Bart Van Assche]
-692054b  Simplify cgroups.json  [Bart Van Assche]
-82a3313  Support process path for WriteFileAction  [Rick Yiu]
-4fb9607  Make task profiles easier to debug  [Bart Van Assche]
-e7bded4  Introduce interface class IProfileAttribute  [Bart Van Assche]
-64a42cf  Make two error messages more detailed  [Bart Van Assche]
-eb11bd9  Use the 'override' keyword where appropriate  [Bart Van Assche]
-17a621c  libprocessgroup: Add fd caching support for SetProcessProfiles  [Suren Baghdasaryan]
-61b960a  Micro-optimize CgroupMap::ActivateControllers()  [Bart Van Assche]
-2c0f9aa  Make class SetTimerSlackAction easier to maintain  [Bart Van Assche]
-7ed1521  libprocessgroup: Move fd caching code into FdCacheHelper  [Suren Baghdasaryan]
-
-
-* vendor/syberia
-4fab357  overlay: Use pixel themes stub package for ThemePicker  [Pranav Vashi]
-b63a92c  Revert "packages: Build GmsCompat companion on vanilla"  [DennySPb]
-
-
-====================
-     2022-05-12    
-====================
-
-* frameworks/base
-b4b85cc  fwb : Silence some AOSP logspam  [George Zacharia]
-c8d9fb3  core: Add ENABLE_TASKBAR setting  [LuK1337]
-21a6caa  SystemUI: Add API for runtime taskbar config on phones  [Danny Lin]
-55d87f5  fix ProcessCpuTracker.java file sLoadComparator issue.  [Chunlei Zhuang]
-
-
-* frameworks/native
-fd46487  libtimeinstate: fix bug when cpu count exceeds CPUS_PER_ENTRY  [Connor O'Brien]
+a18d248  Settings: Add Game Space support  [Nauval Rizky]
 
 
 * packages/apps/SyberiaSettings
-b7c7f6a  Fix typo in RU translation  [blinoff82]
+ba95c00  Add GameSpace  [kondors1995]
+24268ad  Remove GameMode in perperation for adding GameSpace  [kondors1995]
 
 
-* packages/apps/ThemePicker
-daa40be  ThemePicker: implement dummy recent wallpapers provider for Pixel Launcher  [Anay Wadhera]
-3481e7b  ThemePicker: respect color override  [Anay Wadhera]
-fe1980a  ThemePicker: implement coloring in wallpaper preview fragment  [Anay Wadhera]
-bf0fb21  ThemePicker: Override WallpaperCropper  [Michael W]
-66d1722  ThemePicker: Bring in the new icon  [Asher Simonds]
+====================
+     2022-05-26    
+====================
+
+* bionic
+fe9ca80  Revert "Keep allocation of `tail_` outside of LinkedList"  [Pranav Vashi]
+2815874  Revert "Change default block size alignment to be 4 for memory saving on 32-bit arch"  [Pranav Vashi]
+
+
+* frameworks/base
+0efb5f5  SystemUI: Reset QS on UI mode change  [althafvly]
+1fd2110  SystemUI: Let screenshot window ignore screen decorations  [LuK1337]
+faecbf5  SystemUI: Add support for GameSpace  [Nauval Rizky]
+e1c49838  SystemUI: Export RecordingService for External Usage  [cjybyjk]
+86de7ce  Revert [SQUASH]base: Add GamingMode support [1/3]  [kondors1995]
+98b29cb  core: Wipe package cache on upgrade even on user build  [Albert I]
+dccf58f  SystemUI: Make isTablet() use correct API for getting window metrics  [LuK1337]
+
+
+* packages/apps/Launcher3
+a08a690  Launcher3: Specify hour index for clock themed icon  [Adithya R]
+4db86d0  Launcher3: Avoid NPE in TaskOverlayFactory  [Adithya R]
+7f881ef  Launcher3: Add graphene & miui camera themed icon  [Adithya R]
+1105119  Launcher3: Import some themed icons  [Ratoriku]
+1a32b5d  Launcher3: Import some themed icons  [Ratoriku]
+
+
+* vendor/syberia
+db35d1a  Sync kernel build tasks with LOS  [DennySPb]
+1cae554  config: Set default values for UDFPS in display HAL  [Alexander Koskovich]
+
+
+====================
+     2022-05-25    
+====================
+
+* hardware/qcom-caf/common
+81c9acf  common: Update matrix to LA.QSSI.12.0.r1-07600-qssi.0  [Alexander Koskovich]
+
+
+* prebuilts/tools-lineage
+a974c4b  tools-lineage: Add cpio 2.13  [Kevin F. Haggerty]
+58c373f  Add nproc from toybox  [dianlujitao]
+32fb962  tools-lineage: Add prebuilt DTC  [Nolen Johnson]
+
+
+* system/media
+311c11d  media: update path for vendor specific config files  [Banajit Goswami]
+
+
+* vendor/qcom/opensource/vibrator
+e22ac98  Merge https://github.com/LineageOS/android_vendor_qcom_opensource_vibrator into HEAD  [DennySPb]
+
+
+* vendor/syberia
+35c5439  qcom: Drop unused media flags for UM 5.4 family  [Arian]
+4d9ce5f  qcom: add lahaina platform  [JamieHoSzeYui]
+f28c3ca  qcom: Add bengal platform  [TheMalachite]
+
+
+====================
+     2022-05-24    
+====================
+
+====================
+     2022-05-23    
+====================
+
+====================
+     2022-05-22    
+====================
+
+====================
+     2022-05-21    
+====================
+
+* vendor/syberia
+1efa017  Build GameSpace  [kondors1995]
 
 
