@@ -1,228 +1,28 @@
 ====================
-     2022-04-17    
-====================
-
-* bootable/recovery
-10443bc  updater: Don't fail when trying to run set_metadata  [jhenrique09]
-6febe4e  Fully remove downgrade/verify checks for A/B  [Magicxavi]
-c9aecd0  Revert "recovery: Remove the "Format system partition" menu on A/B devices"  [Richard Hansen]
-
-
-====================
-     2022-04-16    
-====================
-
-* frameworks/base
-24516d5  udfps  [Magicxavi]
-fa171a6  Add show|hide udfps view callbacks to IBiometricsFingerprint@2.3 [1/2]  [SagarMakhar]
-941f672  [SQUASH] base: introduce app lock [1/4]  [jhonboy121]
-df00eb8  [Fixup] VolumePanel: more fixes from LOS  [DennySPb]
-b086c17  PixelProps: Restore our 12.0 version  [DennySPb]
-050c23b  Columbus/SyberiaSystemUI: Make crosshatch is default model  [DennySPb]
-d1e3aff  media: fix ImageReader to handle P010 images  [Wonsik Kim]
-defe2b4  Bad lock object.  [Kai Peng]
-27c7682  Fix for run cts-on-gsi -m CtsOsTestCases -t android.os.cts.VibratorTest  [hupengcheng]
-6d8850b  Fix cts test failure of EnsureBarContrastTest  [shawnlin]
-a895744  Dont throw exception if admin is null  [Ayush Sharma]
-4eed2bc  Add keylayout mapping for Xbox360 compatible controllers.  [tingting.jiang]
-531d645  SystemUI: Whitelist new priv-app permissions  [Pranav Vashi]
-514ef2b  [SQUASH] SystemUI: fix qs tiles init on split notification shade open  [maxwen]
-55b8920  Catch IllegalArgumentException for invalid phone id  [Wileen Chiu]
-293135c  Fix Wakelock issue  [Alberto Ponces]
-d09f152  Don't update OverScroller fling state if improper time passed  [Jun Wang]
-9ac4409  SQLite: Do integrity_check only once  [yi.jang]
-af707f7  DisplayPowerController: Fix incall proximity not turning off display  [sooti]
-d285306  AlarmManagerService: null check the alarm operation  [William Bellavance]
-9f7ce0f  Catch SQLiteFullException in AccountManagerService  [huyuxin]
-9a2b6e1  unregister FileCleanupReceiver when disableHistory  [hongyang.dong]
-cada732  Close the FileStream to avoid resource leak  [Naga Venkata Durga Ashok Mutyala]
-1329cc7  SystemUI: Face Unlock animation  [Dil3mm4]
-7c16493  fwb: [Bugfix] Fix the issue of transition animation splash screen in split screen mode.  [Cheng Shi]
-c6a3dd2  SystemUI: Make the volume dialog expandable  [Arian]
-f644714  VolumeDialogImpl: Respect multiple visible rows in landscape  [Arian]
-1cf20e7  VolumeDialogImpl: Don't hide the default stream when adjusting the music stream  [Arian]
-2e96502  fwb: Bring in the new icon  [Asher Simonds]
-b072e6e  charging: Allow using vibration without sounds  [xyyx]
-6476145  SystemUI/Syberia: Update Google assets to 12L  [Anay Wadhera]
-
-
-* hardware/interfaces
-a985071  Add show|hide udfps view callbacks to IBiometricsFingerprint@2.3 [2/2]  [SagarMakhar]
-
-
-* packages/apps/GamingMode
-f0da0da  Revert "Revert "GamingMode: don't show notification overlay for secure notifications""  [DennySPb]
-
-
-* packages/apps/Launcher3
-5eecc8d  Launcher3: Add restart action for toggling settings  [hundeva]
-cb56f15  Launcher3: Add Google Lens scan button to recents  [Suphon Thanakornpakapong]
-e33cbdb  Launcher3: Skip suggestions on twoline labels  [George Zacharia]
-9d43a6d  IconPlatte: Don't crash when the app gives us an invalid color  [Ido Ben-Hur]
-74c352d  Quickstep: fix NPE with swipe down  [Ali B]
-e5b546f  Launcher3: Re-enable header protection  [Danny Lin]
-ead6052  Use existing StatusBarTouchController to handle swipe down  [Suphon Thanakornpakapong]
-1e7521a  Launcher3: Use same corner radius dimens for searchboxes  [maxwen]
-65ef514  NavbarButtonsViewController: Support navbar layout inversion  [Bruno Martins]
-0ed9cad  Enable crossfade when changing theme  [Danny Lin]
-43385d6  Update search icon to match Settings  [Michael Bestas]
-74133f0  Fix search bar UI in All Apps  [Michael Bestas]
-3b4c6b1  Improve search bar UI in All Apps  [Danny Lin]
-10a1da9  Fix header protection height calculation  [Danny Lin]
-73ff9ce  Workspace: Allow resizing any widget  [Nebojsa Cvetkovic]
-cc67e89  Launcher3: Fix layout for apps fast scroller  [Pranav Vashi]
-8bda14d  Launcher3: Use standard launcher method for uninstalling  [Pranav Vashi]
-1b85ac2  Launcher3: Fix NPE in SystemShortcut  [Pranav Vashi]
-f891abf  Launcher3: Add uninstall button to system shortcuts  [Ali B]
-aa38145  Launcher3: Use custom LocalColorExtractor implementation  [Danny Lin]
-807b65b  Launcher3: Adapt home settings UI to Android 12 style  [Adithya R]
-fd535d6  Launcher3: Fix icon palette crashes  [Pranav Vashi]
-43f1fd9  Launcher3: Stability NullPointer issue  [yingrenw]
-c93a82a  Launcher3: Use app opening animation for notification opening  [Amir Zaidi]
-8b71aa2  Launcher3: show clear all button in recents overview  [jhonboy121]
-
-
-* packages/apps/Settings
-07a222e  AppLock: Make timeout strings translatable  [DennySPb]
-e5ae5e5  Settings: Remove divider from Battery Manager  [Akash Srivastava]
-a6e0302  Settings: Fix NPE when launching accessibility settings from GMS SUW  [Alessandro Astone]
-d63466f  Settings: Accessibility wants fullscreen, too!  [Michael W]
-8677927  Settings: Fixup start padding for battery usage graph  [Adithya R]
-f3cca8c  Settings: complete the AvatarViewMixin implementation  [jhonboy121]
-69b9032  Settings: align user avatar with homepage title  [jhonboy121]
-a61655d  Settings: fix edit menu icon tints  [jhonboy121]
-6158978  Settings: introduce app lock [3/4]  [jhonboy121]
-06d6012  Revert "Revert "Revert "Update animation for fingerprint edu page"""  [xyyx]
-
-
-* packages/apps/SyberiaSettings
-65d2f16  Lockscreen: Use AOSP switch for forcing small clocks  [DennySPb]
-7585dc4  Fix media art key and comment out blur options  [DennySPb]
-f6436e9  Re-add incall vibration options  [DennySPb]
-c7701c1  Import BasePreferenceController and DashboardFragment from Krypton  [jhonboy121]
-
-
-* packages/services/Telecomm
-1fa9ea3  CallLog: Get rid of warning  [Michael W]
-3cbe1e6  Telecomm: Squashed phone_type switch support  [Bruno Martins]
-437ae36  Filter self managed phone accounts out when finding emergency accts.  [Tyler Gunn]
-4f220e5  Fix few issues with Blink with call  [Pranav Vashi]
-fb1f9cd  Incall vibration options [2/3]  [beanstown106]
-11816fc  Telecomm: Add a null check to custom ring vibration  [Ido Ben-Hur]
-bdd32f4  Telecomm: Allow choosing a custom vibration pattern [2/3]  [Ido Ben-Hur]
-5234748  Telecomm: Add vibration patterns from OOS [2/3]  [rituj]
-
-
-* vendor/syberia
-9370f69  Revert "Revert "overlay: SystemUI: Switch to Syberia vendor service""  [DennySPb]
-
-
-====================
-     2022-04-15    
-====================
-
-* device/syberia/sepolicy
-1000309  sepolicy: introduce app lock [2/4]  [jhonboy121]
-
-
-====================
-     2022-04-14    
-====================
-
-* frameworks/av
-05a4059  stagefright: error handling during file size limit set  [Malathi Gottam]
-a88d5e9  libmediaplayerservice: Explicitly force callbacks to stop running  [Jaideep Sharma]
-9b90054  Increase max dimensions for mpeg4 decoder in media_codecs_sw.xml  [Uma Mehta]
-308de1d  Select low latency path during voice call for voice stream  [Ramjee Singh]
-87da013  Fix -Wbitwise-instead-of-logical  [Pirama Arumuga Nainar]
-51488f1  GraphicBufferSource: Enable timestamp snapping in timelapse mode  [Shrikara B]
-75edf07  libstagefright: Allow HFR-60 in HAL-3 recording  [Manikanta Kanamarlapudi]
-80573b1  libaudioclient: fix deadlock during apm initialization  [Weiyin Jiang]
-628dce2  aaudio: set primary flag for AAUDIO_PERFORMANCE_MODE_NONE  [yidongh]
-5e416ad  Add NULL check to popFromStashAndRegister.  [Chris Gross]
-1dbc4dd  CCodec: Fix null check  [Greg Kaiser]
-e045b55  codec2: Avoid invalid access to output format while print  [Brijesh Patel]
-b6cc48e  codec2: add smoothfactor when checking n-th work  [Jiajia Cong]
-565ab2b  CCodec: fix handling buffers in extra slots  [Wonsik Kim]
-d4fef90  CCodec: FrameReassembler to accept 0-size frames  [Wonsik Kim]
-df894c5  CCodec: convert audio decoder output PCM format  [Wonsik Kim]
-b865c1d  Codec2: Detect and release component if the client process terminates  [Praveen Chavan]
-4d60cf2  C2SoftDec: Align stride to 128 for avc, hevc and mpeg2 decoders  [Harish Mahendrakar]
-6232bcd  audiopolicy: engineconfigurable: prevent illegal map access  [Francois Gaffie]
-0855f1e  Fix logic error in SkipCutBuffer.cpp  [xiahong.bao]
-708bf0a  audioflinger: fix missing track metadata  [Eric Laurent]
-f9beafe  Duration field is 64 bits  [Fang Hui]
-8e37c7a  audio: Fix AudioTrack stuck while interrupting waitStreamEndDone  [Kuowei Li]
-a4d874f  codec2: a workaround to solve backward compatibility issue  [Jiajia Cong]
-57b776a  libstagefright: Configure camcorder encoder session with "CONFIGURE_FLAG_USE_BLOCK_MODEL" flag  [Gaviraju Doddabettahalli Bettegowda]
-45a9cea  MediaMetrics: fix error for compiler update  [Yabin Cui]
-ed55429  Suppress ordered-compare-function-pointers warning  [Yi Kong]
-58c238d  Track elapsed time for 'waitStreamEnd' timeout  [Matthew Bouyack]
-42dad6a  C2 decoders: Workaround for cases where RGBA1010102 isn't supported  [Harish Mahendrakar]
-ecd49e3  stagefright: ACodec: Resolve empty vendor parameters usage  [Adrian DC]
-789e2b1  Camera: Avoid roundBufferDimensionsNearest for AIDE2 YUV streams  [Pavan Kumar Mc]
-b9865ab  Camera: Flush Improvements - Result drain optimization  [Susmitha Gummalla]
-c53b470  Codec2: optimize plane copy for formats with depth > 8  [Praveen Chavan]
-
-
-* frameworks/base
-d6a2433  SystemUI: Fix FeatureFlags imports  [Anay Wadhera]
-12f6640  SystemUI: Fix CalledFromWrongThread exceptions  [jhenrique09]
-9365532  SystemUI: Port elmyra (squeeze) from SQ1D  [jhenrique09]
-2922636  EdgeBackGesture: Remove assistant action  [DennySPb]
-3390b80  SystemUI: Port columbus (quick tap) from SQ1D  [jhenrique09]
-
-
-* frameworks/native
-0db4fea  swapchain: Fix SHARED presentation modes  [Ian Elliott]
-0949d4d  GLConsumer: add HW_TEXTURE usage when create texture  [SOOJONG HWANG]
-
-
-* frameworks/opt/telephony
-563844f  UiccSlot: Validate hotswap restart prompt component properly  [LuK1337]
-95d2492  Restore support with RadioConfig@1.0 dsds clients.  [Quallenauge]
-e9c5bf2  Release wakelock if setRadioCapability is not supported  [Sooraj Sasindran]
-0d2206c  Update external card state based on current app  [Wileen Chiu]
-
-
-* packages/apps/Launcher3
-8c21d96  Add ripple animation to task menu items  [Danny Lin]
-81eb149  LocalColorExtractor: Adapt for Android 12L  [Danny Lin]
-e69a2e8  LocalColorExtractor: Disable local colors when using system presets  [Danny Lin]
-0c3dd65  Implement LocalColorExtractor using colorkt-based theme engine  [Danny Lin]
-00252d2  Launcher3: Use regular body font for app labels  [Adithya R]
-
-
-* packages/apps/Settings
-141278a  Settings: Add missing icons in Network and Internet  [Adithya R]
-31009f8  Settings: Move Device Model to the top of Device Info  [Fabian Leuteneegger]
-a1ad7fa  Settings: Move Android Version to General Info  [Fabian Leuteneegger]
-163b2b4  Settings: Move IMEI information to SIM status  [Chris]
-
-
-* packages/services/Telephony
-9164c8a  Telephony: Bring in the new icon  [Asher Simonds]
-b9887a4  Telephony: Add ERI configuration for U.S. Cellular  [Arne Coucheron]
-7dc6bc9  Fix crash in SubscriptionInfoHelper for null display name.  [Tyler Gunn]
-0f0b78f  Telephony: use Build.VERSION.INCREMENTAL to check for system update  [maxwen]
-cabb49e  Telephony: Mark enhanced_4g_lte_mode_title_variant as untranslatable  [Michael Bestas]
-a4bc758  Telephony: adaptive icon  [Asher Simonds]
-2ef3fae  Removing dead code from Telephony which uses wakelock.  [Tyler Gunn]
-
-
-* vendor/google/pixel
-7531c7e  Revert "Revert "pixel: Add quick_tap feature sysconfig""  [DennySPb]
-
-
-====================
-     2022-04-13    
+     2022-06-01    
 ====================
 
 ====================
-     2022-04-12    
+     2022-05-31    
 ====================
 
 ====================
-     2022-04-11    
+     2022-05-30    
+====================
+
+====================
+     2022-05-29    
+====================
+
+====================
+     2022-05-28    
+====================
+
+====================
+     2022-05-27    
+====================
+
+====================
+     2022-05-26    
 ====================
 
