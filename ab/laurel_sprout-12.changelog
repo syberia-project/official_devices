@@ -1,11 +1,21 @@
 ====================
-     2022-06-29    
+     2022-07-01    
 ====================
 
 * frameworks/base
-3e6905d  udfps: Implement framework dimming support  [Magicxavi]
-66734e2  Add show|hide udfps view callbacks to  [Magicxavi]
+8ae4838  Revert "QSPanel: Add brightness changes from DotOS 5.2"  [IacobIonut01]
+2f56d26  udfps: Implement framework dimming support  [Magicxavi]
+3557c37  Add show|hide udfps view callbacks to  [Magicxavi]
+28a9d99  fixup! base: correct QS clock size and placement  [Magicxavi]
 
+
+====================
+     2022-06-30    
+====================
+
+====================
+     2022-06-29    
+====================
 
 ====================
      2022-06-28    
@@ -199,29 +209,4 @@ fc9989e  vendor: Add Dora icon styles for wifi and signal  [F5LAYD]
 ====================
      2022-06-25    
 ====================
-
-====================
-     2022-06-24    
-====================
-
-* packages/apps/SyberiaSettings
-b4d13fc  SyberiaSettings: Toggle data usage view on QS footer [2/2]  [travarilo]
-b625345  SyberiaSettings: Bring back icon shapes, icon packs, fonts, signal icon customization  [SagarMakhar]
-5fb5399  SyberiaSettings: Add 14 New VoLTE Icon[2/2]  [R15Hi]
-b1e7ec9  Battery Styles: Added 9 more battery styles [2/2]  [R15Hi]
-d533dcd  SyberiaSettings: Introduce OOS style notification clear all button [2/2]  [Pranav Vashi]
-41ec038  SyberiaSettings: Reticker [2/2]  [Dil3mm4]
-01d48ef  SyberiaSettings: media notification background customisations[2/2]  [jhonboy121]
-8a02ca7  SyberiaSettings: Make roaming indicator optional [2/2]  [-off-by: Pranav Vashi]
-2ff533f  SyberiaSettings: Option to Display Data Disabled Indicator Icon [2/2]  [varund7726]
-6724bf9  SyberiaSettings: Add pref for qs brightness slider position  [idoybh]
-
-
-====================
-     2022-06-23    
-====================
-
-* packages/apps/Launcher3
-25df4ca  Disable extra hotseat bottom space  [Trishiraj]
-
 
