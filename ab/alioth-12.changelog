@@ -1,29 +1,39 @@
 ====================
-     2022-05-26
+     2022-07-03
 ====================
 
 Kernel:
-- Upstream to 4.19.244
-- Update WiFi qcacld-3.0 drivers
-- Update audio, video and display drivers
-  from LA.UM.9.12.r1-14100.01-SMxx50.QSSI13.0
-
+ - Merged linux 4.19.246
+ - Fixed reboots during modem crash
+ 
 Rom:
-- Gaming mode -> GameSpace
-- Add Etar calendar 
-- Launcher:
-  add some themed icons
-  lens icon for dock bar without lens package
-  fixed bugs and impove UI
-- Add Lens to Screenshot
-- Add new settings for Screenrecord
-- Fixed FC on some apps (Mir Pay, SBP pay)
-- Other fixes and improvements under the hood
+ - June 2022 security update
+ - Syberia OS ver. 5.5
+ - Reworked settings UI style
+ - Reticker feature
+ - System icon packs
+ - Added some more icon shapes for statusbar icons
+ - Added some more VoLTE icons
+ - Added some more statusbar/qsbar battery styles
+ - Added lots of signal icons
+ - Use accent color for charging animation
+ - Dayly data usage option in QS footer
+ - Screenrecord improvements
+ - Make roaming indicator optional
+ - Implemented cutout force full scree option
+ - Double tap to trigger doze option
+ - Bring back separate wifi & data QS tiles
+ - Redigned volume panel and brightness bar QS slider
+ - GameSpace improvements
+ - OOS style notification clear all button
+ - ART & bionic improvements
+ - Updated Contacts, Messaging, AOSP keyboard
+ - Fixed some themed icons
+ - Other fixes and improvements under the hood
 
 Device:
-- Fixed Widevine L1 certification
-- Fixed MTP connection to PC
-- Fixed status bar height value
-- Build biometric HAL and OSS IFA service
-- Fixed sepolicy denials
-- Minor improvements for ultrasound sensor
+ - Audio improvements
+ - Add TWS plus feature
+ - Enable Qualcomm TrueWireless™ Stereo
+ - Use QCOM implementation for audio effects
+ - Fixed sepolicy denials
