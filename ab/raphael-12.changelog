@@ -1,73 +1,146 @@
 ====================
-     2022-05-20    
+     2022-07-04    
 ====================
 
-====================
-     2022-05-19    
-====================
+* art
+f6adc2a  Increase test runner thread count for target.  [David Srbecky]
 
-* frameworks/base
-4cde539  SystemUI: Add support for GameSpace  [Nauval Rizky]
-65a2416  SystemUI: Export RecordingService for External Usage  [cjybyjk]
-4933d5c  Revert [SQUASH]base: Add GamingMode support [1/3]  [kondors1995]
-
-
-* packages/apps/Settings
-6914355  Settings: Add Game Space support  [Nauval Rizky]
-
-
-* packages/apps/SyberiaSettings
-643b976  Add GameSpace  [kondors1995]
-9dc0c27  Remove GameMode in perperation for adding GameSpace  [kondors1995]
-
-
-====================
-     2022-05-18    
-====================
 
 * bionic
-6e5119b  Re-enable LTO for linker  [Yi Kong]
-ef1e4c0  libc:Enable thinLTO for note_memtag_heap_async & note_memtag_heap_sync  [Gabor Meszaros]
+69615dd  Re-enable LTO for linker  [Yi Kong]
+88bff25  libc:Enable thinLTO for note_memtag_heap_async & note_memtag_heap_sync  [Gabor Meszaros]
 
 
 * build/soong
-1813b55  cc/lto: remove instr limit  [John Galt]
-
-
-* external/libvpx
-6f9e393  Workaround global ThinLTO breakage  [kondors1995]
+fbd3719  soong: cc: Enable global O3  [Andrzej Perczak]
+f42b03a  cc/lto: remove instr limit  [John Galt]
 
 
 * frameworks/av
-0f17aaa  Workaround global ThinLTO breakage  [kondors1995]
+5a9759f  Workaround global ThinLTO breakage  [kondors1995]
+
+
+* frameworks/base
+5156899  SystemUI: Blurs: allow blur even when GFX acceleration is disabled  [Pulkit077]
+c32c142  PixelPropsUtils: Do not change props for play store  [Pranav Vashi]
+fe1b997  base: rescuce party: check isDisabled on all public API  [maxwen]
+a94c574  SystemUI: Reduce screenshot dismiss delay to 3 seconds  [Danny Lin]
+
+
+* packages/apps/Launcher3
+2effd8a  Add preference for opening AiAi suggestion settings  [Danny Lin]
+
+
+* packages/apps/Settings
+56984f4  settings: display actual device peak refresh rate in summary  [Willy Gardiol]
+3cfd002  team: Fajita maintainer is out  [blinoff82]
 
 
 * vendor/google/gms
-7d3119f  Revert "Disable some packages"  [kondors1995]
+8f10f38  Revert "Disable some packages"  [kondors1995]
 
 
 * vendor/syberia
-6c0bb7d  Build GameSpace  [kondors1995]
-ba5abc2  build: Renable GlobalThinLO & ThinLTO chache  [kondors1995]
+2901f1e  build: Renable GlobalThinLO & ThinLTO chache  [kondors1995]
+248e511  devices: Drop fajita  [blinoff82]
 
 
 ====================
-     2022-05-17    
+     2022-07-03    
 ====================
 
-====================
-     2022-05-16    
-====================
-
-====================
-     2022-05-15    
-====================
-
-* packages/apps/Launcher3
-cfd7b6f  Fix typo in RU translation  [blinoff82]
+* packages/apps/SyberiaSettings
+a3bbc2b  Fix typo in RU translation  [blinoff82]
 
 
 ====================
-     2022-05-14    
+     2022-07-02    
+====================
+
+====================
+     2022-07-01    
+====================
+
+* bootable/recovery
+6e96de4  recovery: rewrite slot switch logic using bootcontrol APIs  [Anay Wadhera]
+0682245  recovery: add support for changing slots  [Ethan Yonker]
+90c8d0c  recovery: display current filesystem when going to format  [Anay Wadhera]
+e2622fd  recovery: add the option to choose the filesystem for /data  [Anay Wadhera]
+aba90b7  recovery: allow formatting & mounting system on user builds  [Joker-V2]
+69df7a9  updater: Don't fail when trying to run set_metadata  [jhenrique09]
+c7a05da  Fix the fuse error that cannot handle the OTA package larger than 4 GiB  [luoqiangwei1]
+9d5e015  recovery: Skip verifying packages altogether  [Pranav Vashi]
+
+
+* frameworks/base
+56811d0  Display actual charge tech in battery settings [1/2]  [Anushek Prasal]
+746fddc  Update RU translation  [DennySPb]
+a7792b8  Make DPC respect overlaid min/max brightness values  [SagarMakhar]
+e37f515  display: Force a reset if brightness adjustment is changed directly  [LibXZR]
+3ce68d2  display: Restore brightness adjustment on boot  [LibXZR]
+98ce1b4  display: Don't reset brightness adjustment on clearUserDataPoints()  [LibXZR]
+28ca6fd  display: Don't let "extra dim" affect brightness adjustment  [LibXZR]
+3fcaad0  PixelPropsUtils: Update Package spoofing lists  [kondors1995]
+780ccd1  Limit SafetyNet workarounds to unstable GMS process  [Danny Lin]
+f6713f9  Revert "Spoof build fingerprint for Google Play Services"  [kondors1995]
+b6b1132  Revert "keystore: Block key attestation for SafetyNet"  [kondors1995]
+edf92fe   PixelPropsUtils: only spoof raven to gms  [Omkar Chandorkar]
+5f731ac  PixelPropsUtils: Consolidate google app checks  [Pranav Vashi]
+36843f6  Immediately notify VM of TOP process state  [Jared Duke]
+de08bd8  Store pending override config instead of creating ActivityClientRecord  [Chilun]
+8930a90  AudioService: Fix issue with linked notification volume  [Pranav Vashi]
+
+
+* packages/apps/Dialer
+9be373a  Merge changes I72b38e94,I4a40ef49,I2caaf9fc,Ib424b21a,I4de5dbec, ... into 12.1  [dennyspb]
+
+
+* packages/apps/GameSpace
+624bc89  Update RU translation  [DennySPb]
+ace01cf  Unhardcode 'Add' string from app preference for translation  [DennySPb]
+
+
+* packages/apps/Settings
+eb8c74d  Disable "SIM card lock" when the SIM card is PUK-blocked  [Mattias Nilsson]
+3a85b38  Settings: Optimize the selected WFD route preference summary  [hoffc]
+2ad570f  Settings: Make NetworkScanHelper max search time customizable  [LuK1337]
+2b1fa6e  Datausage: Fix NPE in preference controller  [Pranav Vashi]
+8d31165  Call CardDatabaseHelper.getInstance() when used and not in onCreate  [Håkan Kvist]
+1699372  Settings: Fix loading iconpack-based Wellbeing icon  [Adithya R]
+e9b76c8  NightDisplay Settings: Use List Preference for NightLight settings  [Akash]
+8f394b0  Settings: Display 'Warp charging' for warp charge in battery settings [2/2]  [Anushek Prasal]
+31cbd18  Settings: Display 'Dash charging' for dash charge in battery settings [2/2]  [Nicolas Dhouailly]
+
+
+* vendor/syberia
+882179a  v5.5  [DennySPb]
+
+
+====================
+     2022-06-30    
+====================
+
+====================
+     2022-06-29    
+====================
+
+* art
+8e5ef26  Fix missing receiver NPE checks for field get/set MH  [Orion Hodson]
+9390652  Do not fail internally in the executable check if the file is missing.  [Martin Stjernholm]
+1915ba0  Do not preload ThreadLocalRandom class.  [Almaz Mingaleev]
+7cf7a2b  Avoid PushLocalFrame(0) CHECK failure  [Hans Boehm]
+f5bace3  Don't call entry callbacks when moving to JITed from interpreter  [Mythri Alle]
+1b71610  Add a null check for suppressed exception.  [Nicolas Geoffray]
+68cf872  Only madvise for jank-perceptible processes  [Jared Duke]
+c80525f  Avoid inopportune GC with explicit gc() call  [Hans Boehm]
+1086a05  Force inlining in `CodeInfo` constructors.  [Vladimir Marko]
+
+
+* frameworks/base
+7db07de  Change the wakeup alarms for "light-doze-maintenance step" to non-wakeup alarms  [Raj M]
+
+
+====================
+     2022-06-28    
 ====================
 
