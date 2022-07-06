@@ -1,40 +1,37 @@
 ====================
-     2022-06-16
+     2022-07-05
 ====================
 
 Kernel:
 - Upstream to 4.9.316-Rename-Daisy
 
 Rom:
-- May 2022 security update
-- Launcher3:
-    Taskbar support
-    Recents overview grid option
-    Fixed FC in some cases
-    added some themed icons
-    lens icon for dock bar without lens package
-    fixed bugs and impove UI
-- Monet section in ThemePicker
-- Added Google QuickTap
-- Expanded volume panel
-- App Lock feature
-- Added back charging ripple animation
-- Allow disabling fingerprint wake-and-unlock
-- Allow to hide back gesture arrow
-- Launcher improvements:
-- Clear all button at bottom in recents screen
-- Google lens integration in recents
-- Icon Packs supports
-- Google hotseat dock search
-- Allow to hide app labels
-- Allow to change icon/labels size
-- Added Repainter integration
-- Gaming mode replaced by GameSpace
-- Added Lens action on screenshots
-- Add new settings for Screenrecorder
-- Fixed FC on some apps (Mir Pay, SBP pay)
+- June 2022 security update
+- Syberia OS ver. 5.5
+- Reworked settings UI style
+- Reticker feature
+- System icon packs
+- Added some more icon shapes for statusbar icons
+- Added some more VoLTE icons
+- Added some more statusbar/qsbar battery styles
+- Added lots of signal icons
+- Use accent color for charging animation
+- Dayly data usage option in QS footer
+- Screenrecord improvements
+- Make roaming indicator optional
+- Implemented cutout force full scree option
+- Double tap to trigger doze option
+- Redigned volume panel and brightness bar QS slider
+- GameSpace improvements
+- OOS style notification clear all button
+- ART & bionic improvements
+- Updated Contacts, Messaging, AOSP keyboard
+- Fixed some themed icons
 - Other fixes and improvements under the hood
 
 Device:
- - Address sepolicy denials
- - Other fixes and improvements
+- media: Update Google media codecs
+- media: Update and drop deprecated media codecs
+- rootdir: Remove IO read_ahead_kb tune
+- Address sepolicy denials
+- Other fixes and improvements
