@@ -1,309 +1,372 @@
 ====================
-     2022-07-01    
+     2022-08-13    
 ====================
-
-* bootable/recovery
-6e96de4  recovery: rewrite slot switch logic using bootcontrol APIs  [Anay Wadhera]
-0682245  recovery: add support for changing slots  [Ethan Yonker]
-90c8d0c  recovery: display current filesystem when going to format  [Anay Wadhera]
-e2622fd  recovery: add the option to choose the filesystem for /data  [Anay Wadhera]
-aba90b7  recovery: allow formatting & mounting system on user builds  [Joker-V2]
-69df7a9  updater: Don't fail when trying to run set_metadata  [jhenrique09]
-c7a05da  Fix the fuse error that cannot handle the OTA package larger than 4 GiB  [luoqiangwei1]
-9d5e015  recovery: Skip verifying packages altogether  [Pranav Vashi]
-
-
-* frameworks/base
-10cbc17  Revert "fwb: Add QS Clock"  [DennySPb]
-56811d0  Display actual charge tech in battery settings [1/2]  [Anushek Prasal]
-746fddc  Update RU translation  [DennySPb]
-a7792b8  Make DPC respect overlaid min/max brightness values  [SagarMakhar]
-e37f515  display: Force a reset if brightness adjustment is changed directly  [LibXZR]
-3ce68d2  display: Restore brightness adjustment on boot  [LibXZR]
-98ce1b4  display: Don't reset brightness adjustment on clearUserDataPoints()  [LibXZR]
-28ca6fd  display: Don't let "extra dim" affect brightness adjustment  [LibXZR]
-3fcaad0  PixelPropsUtils: Update Package spoofing lists  [kondors1995]
-780ccd1  Limit SafetyNet workarounds to unstable GMS process  [Danny Lin]
-f6713f9  Revert "Spoof build fingerprint for Google Play Services"  [kondors1995]
-b6b1132  Revert "keystore: Block key attestation for SafetyNet"  [kondors1995]
-edf92fe   PixelPropsUtils: only spoof raven to gms  [Omkar Chandorkar]
-5f731ac  PixelPropsUtils: Consolidate google app checks  [Pranav Vashi]
-36843f6  Immediately notify VM of TOP process state  [Jared Duke]
-de08bd8  Store pending override config instead of creating ActivityClientRecord  [Chilun]
-8930a90  AudioService: Fix issue with linked notification volume  [Pranav Vashi]
-
-
-* packages/apps/GameSpace
-624bc89  Update RU translation  [DennySPb]
-ace01cf  Unhardcode 'Add' string from app preference for translation  [DennySPb]
-
-
-* packages/apps/Settings
-eb8c74d  Disable "SIM card lock" when the SIM card is PUK-blocked  [Mattias Nilsson]
-3a85b38  Settings: Optimize the selected WFD route preference summary  [hoffc]
-2ad570f  Settings: Make NetworkScanHelper max search time customizable  [LuK1337]
-2b1fa6e  Datausage: Fix NPE in preference controller  [Pranav Vashi]
-8d31165  Call CardDatabaseHelper.getInstance() when used and not in onCreate  [Håkan Kvist]
-1699372  Settings: Fix loading iconpack-based Wellbeing icon  [Adithya R]
-e9b76c8  NightDisplay Settings: Use List Preference for NightLight settings  [Akash]
-8f394b0  Settings: Display 'Warp charging' for warp charge in battery settings [2/2]  [Anushek Prasal]
-31cbd18  Settings: Display 'Dash charging' for dash charge in battery settings [2/2]  [Nicolas Dhouailly]
-
-
-* vendor/syberia
-882179a  v5.5  [DennySPb]
-
-
-====================
-     2022-06-30    
-====================
-
-====================
-     2022-06-29    
-====================
-
-* art
-8e5ef26  Fix missing receiver NPE checks for field get/set MH  [Orion Hodson]
-9390652  Do not fail internally in the executable check if the file is missing.  [Martin Stjernholm]
-1915ba0  Do not preload ThreadLocalRandom class.  [Almaz Mingaleev]
-7cf7a2b  Avoid PushLocalFrame(0) CHECK failure  [Hans Boehm]
-f5bace3  Don't call entry callbacks when moving to JITed from interpreter  [Mythri Alle]
-1b71610  Add a null check for suppressed exception.  [Nicolas Geoffray]
-68cf872  Only madvise for jank-perceptible processes  [Jared Duke]
-c80525f  Avoid inopportune GC with explicit gc() call  [Hans Boehm]
-1086a05  Force inlining in `CodeInfo` constructors.  [Vladimir Marko]
-
 
 * external/sqlite
-08bf1d0  sqlite: Tweak flags according to documentation  [Andrzej Perczak]
-aeb41a4  Revert "dist: Tune flags according to sqlite documentation"  [DennySPb]
-dc921fe  android, dist: Android.bp: switch to O3  [Jebaitedneko]
-57f5dd7  sqlite: Compile with O3  [Andrzej Perczak]
-5d457fa  sqlite: Allow using rowid on views  [Andrzej Perczak]
-067606b  sqlite: Update to version 3.38.5  [Andrzej Perczak]
+2d3d1cc  sqlite: Update to version 3.39.2  [Andrzej Perczak]
 
 
 * frameworks/base
-7db07de  Change the wakeup alarms for "light-doze-maintenance step" to non-wakeup alarms  [Raj M]
+6714a15  Revert "fwb: Add QS Clock"  [DennySPb]
 
 
 ====================
-     2022-06-28    
-====================
-
-====================
-     2022-06-27    
+     2022-08-12    
 ====================
 
 * art
-932a038  dex2oat: Faster class pruning.  [Vladimir Marko]
-942933a  Fix dex file lookup in DumpInfo when dex file locations have full paths.  [Martin Stjernholm]
+0522c98  Propagating values from if clauses to its successors  [Santiago Aboy Solanes]
+3c7f048  For cortex-a75/a55 validate features with hwcaps.  [Nicolas Geoffray]
+6861d9c  Remove bad code from ComputeRelativeTimeSpec  [Hans Boehm]
+1991265  Make array class with erroneous component also erroneous under AOT.  [Nicolas Geoffray]
+8321f5a  Don't cache a field if storing to it can throw.  [Nicolas Geoffray]
+35dd19c  Fix modernize-use-using clang-tidy issues  [Stefano Cianciulli]
+2acc9fd  Fix missing "f" modifier in format statement in run-libcore-tests.py  [Nikita Iashchenko]
+0116cd4  Remove debugging code.  [Nicolas Geoffray]
 
 
 * bionic
-7b99a51  arm64: memset: Use p2align instead of nop  [Andrzej Perczak]
-27a9f39  Fix it to call the lambda function  [Suchang Woo]
+1e08645  bionic: fix broken end atrace events  [Lalit Maganti]
+7749d20  Fix old python2 test issue.  [Christopher Ferris]
+aced690  Always free after getline().  [Elliott Hughes]
+fbf43c8  Rewrite function definitions with identifier lists  [Yi Kong]
 
 
-* build/make
-98122f8  Move changelog generation call vendor [1/2]  [DennySPb]
+* bootable/recovery
+2d1ac3e  recovery: Only warn on SPL downgrade  [Pranav Vashi]
+
+
+* device/qcom/sepolicy
+e68dbe0  sepolicy: Unlabel aux camera whitelist prop  [dianlujitao]
+542e734  generic: Don't dontaudit vendor_persist_camera_prop read denials  [Arian]
+d4b9700  Sepolicy: make qccsyshal service file path generic in file_contexts  [Phani Deepak Parasuramuni]
+
+
+* device/syberia/sepolicy
+dc56a92  sepolicy: Fix OTA auto-flashing with encrypted f2fs  [Nvertigo]
+4ca0805  sepolicy: allow platform_app syslog_read  [maxwen]
+3325842  sepolicy: Allow system_server to get app_zygote pgid  [Chenyang Zhong]
+2235e3e  updater_app: Address uncrypt denials  [Jabiyeff]
+
+
+* external/icu
+c14f1c0  Make peek*Array methods for Buffers FastNative.  [Miguel]
+
+
+* frameworks/av
+237f199  Changing max SampleRate limits for raw audio decoder  [Arun Johnson]
+9e8676e  Adding null check for IResourceManagerClient in dump()  [Arun Johnson]
+ad4bf16  stagefright: add -P pixelformat flag for -t (thumbnail) option in stagefright  [Lajos Molnar]
+e4c1a4c  Do not report error for playback rate/pitch of 1.0  [Bertil Åkesson]
+0c636b3  TargetAudioEncTest: use vector instead of malloc  [George Burgess IV]
+5f8067b  VideoDecTest: stop managing memory manually  [George Burgess IV]
+d0ecb21  NuPlayerDrm: explicitly use 32-bit subsample sizes  [Robert Shih]
+25e4890  Adjust the conditions for creating a duplication output to play sonification via speaker and hdmi.  [baek.kim -]
+1c6f61f  Modify incorrect output format in log  [wanggang14]
+2a8e0f3  NdkMediaDrm: send provision event with 0 data  [Robert Shih]
+66defdf  Updated mtp_fuzzer  [Devendra Singhi]
+37e7651  hidl plugin sample: notify queue condition at queue  [Wonsik Kim]
+0b27f52  Use highp to avoid float overflow in expression  [Brandon Chen]
+27ee48a  Codec2: vndk: lock P010 with gralloc4 mapper first  [Praveen Chavan]
+b178f55  Update language to comply with Android's inclusive language guidance  [Aaron Huang]
+d804271  Add H264 RHP and RHP2 for WFD R2  [Marcus Huang]
+fc26836  Improve error reporting in MediaCodec  [Arun Johnson]
 
 
 * frameworks/base
-92aeb2c  BatteryStatsImpl: Guard against OOB  [Ido Ben-Hur]
-4d7711b  Screenrecord: Use proper drawable for bigger file size limit option  [Ido Ben-Hur]
-39ad771  Screenrecord: Slightly optimize loading/saving preferences  [Pranav Vashi]
-1267fe3  Screenrecord: Save pref for skip timer switch  [Pranav Vashi]
-b40be75  Screenrecord: Allow to reduce 3 second screen record timer  [maitreya29]
-d2e7d7c  Screenrecord: Update layout to the new spec  [Nauval Rizky]
-d6ffac7  SystemUI: Add left padding for keyguard slices  [LuK1337]
-4794c23  fixup! base: BiometricScheduler: Cancel operation if not idle  [timjosten]
-4dc2c50  Import xdroid-OSS settings base layout  [xyzuan]
-74c9b86  services: AppLockManagerService: ignore uninstall intent if app is being replaced  [jhonboy121]
-d115fb2  base: Do not reset keyguard going away state  [minarypenguin]
-995a69c  SystemUI: MediaOutputController: Avoid NPE when created with empty packageName  [Arian]
-94febd8  Revert "zygote: Enable USAP by default for S."  [DennySPb]
-9fae8c9  fwb: Add QS Clock  [anupam41]
-de88872  Fonts: Add regular / light font config  [Pranav Vashi]
-f475dca  SystemUI: Toggle data usage view on QS footer [1/2]  [travarilo]
-3b0b27d  [SQUASH] SystemUI: Show daily data usage in QS footer  * Refactor existing build text view  [Adithya R]
-4ff106a  Overlay: Remove Settings icon Overlay  [anupam41]
-f674933  SystemUI: Use color accent for charging animation  [Genkzsz11]
-7f164d3  Statusbar: Added lots of signal icons (2/2)  [Hưng Phan]
-61d9de1  SystemUI: Add 5 more Custom Statusbar Signal & Wi-Fi icons [1/2] - Thanks to sis, acherus, iconicicons & cool_modules_69 for these beautiful icons.  [Aston-Martinn]
-624becd  SystemUI: Introduce Custom Statusbar Signal & Wi-Fi icons [1/3]  [Aston-Martinn]
-32c2b01  SystemUI: Add 14 New VoLTE icon [1/2  [R15Hi]
-a3b4b09  Battery Styles: Added 9 more battery styles [1/2]  [R15Hi]
-accafb9  Base: Switch secondary colors to 1_800  [Maitreya29]
-ecf13e3  Bring back ThemeUtils for Theming  [sb6596]
-cfd5f07  Privacy Indicators: Follow light/dark theme settings  [minarypenguin]
-23076e1  SystemUI: Calculate paged QS tiles height properly  [Adithya R]
-f8aa945  SystemUI: Re-inflate keyguard statusbar on theme change  [Adithya R]
-df40e78  SystemUI: QSAnimator: Hide secondary label in QQS  [Adithya R]
-2b91e90  SystemUI: Fix QS clock overlapping on UI mode change  [Adithya R]
-be598a7  SystemUI: Hide oos clear all if reticker enable  [Genkzsz11]
-5875ce3  Reticker: Cleanup  [Genkzsz11]
-6e6d224  Properly update view for reTicker  [Pranav Vashi]
-47e0cc5  SystemUI: Introduce OOS style notification clear all button [1/2]  [00day0]
-f439e49  base: Add Dora icon pack  [F5LAYD]
-db1bbe1  base: Make IME button space optional [1/2]  [Anushek Prasal]
-94a328c  VolumeDialog: Display default row when active row is notification  [Jesse Chan]
-fe37d58  VolumePanel: Design Changes [2/2]  [StarkDroid]
-7751f0f  Open Sound settings on long click at the panel button  [ProchyGaming]
-d63bd8f  Volume panel: avoid multiple animations on touch spam  [Giuseppe Maggio]
-1a93f3f  VolumePanel: Design changes [1/2]  [Trishiraj]
-c41b154  fixup! SystemUI: Allow Wi-Fi/cell tiles to co-exist with provider model  [Adithya R]
-39479b8  SystemUI: Allow Wi-Fi/cell tiles to co-exist with provider model  [Danny Lin]
-77d7ca5  SystemUI: Bring back separate wifi & data QS tiles  [Adithya R]
-c47e9ff  base: Double tap to trigger doze [1/2]  [SKULSHADY]
-fa86645  Make roaming indicator optional [1/2]  [Pranav Vashi]
-2d32870  fwb: [1/2] Implement cutout force full screen  [jhenrique09]
-195c728  SystemUI: Make media view less-gore when artwork bg is enabled  [Nauval Rizky]
-eb326d8  [SQUASH] SystemUI: media notification background customizations [1/2]  [TikkiTikki]
-b8b777d  base: Option to Display Data Disabled Indicator Icon [1/2]  [varund7726]
-a65a072  Fix QS clock being white on light theme  [SagarMakhar]
-9241329  Dividers: not here  [Dil3mm4]
-d9ef7dd  Introduce PUI iconpack  [spkal01]
-bf50ddf  overlays: Generate add'l wifi gen icons for Outline iconpack.  [spezi77]
-9dd1600  overlays: Fix missing animation crash in Outline pack  [Pranav Vashi]
-5ba6d2b  overlays: Add Outline iconpack  [Pranav Vashi]
-914b3ca8  overlays: Add more icon shape overlays  [SagarMakhar]
-dc65713  overlays: Add acherus icon pack  [npv12]
-b181e81  overlays: oos: Add dummy icons to fix preview  [Pranav Vashi]
-91e3f9e  overlays: oos: Adjust width and height for dnd and vibrate icons  [jhonboy121]
-1455de7  overlays: oos: Add statusbar bluetooth icons  [imjyotiraditya]
-4b27b6b  overlays: oos: Fix edit icon color in Settings  [AshutoshSundresh]
-4fd7761  IconPackRounded: Use correct icon for notification and ring volume  [Arian]
-c5903e1  overlays: Add unlinked ringtone and notification volume icons  [Adnan Begovic]
-e99cf45  overlays: Add an OxygenOS icon pack  [AshutoshSundresh]
-1bf7195  overlays: Restore icon shapes from A11  [Pranav Vashi]
-70d1b6e  reticker: Add color for youtube in blacklist  [SuperDroidBond]
-e4631a43  reTicker: Add youtube to blacklisted apps  [spkal01]
-31a6fab  Reticker: Remove some logging  [spkal01]
-eba5c42  Feature: reticker [1/2]  [Dil3mm4]
-e132fa18  colors: Switch to GrapheneOS blue color palette for Material You  [Danny Lin]
-c717145  core: Use two-tone icon for default profile image  [IacobIonut01]
-f916f6e  SettingsLib: CollapsingToolbarBaseActivity: Increase scrim transition duration  [Elluzion]
-93e91eb  SettingsLib: IllustrationPreference: make it minimalistic * to match with our current lottie animations changes * monet-ify the old colors in case we might want to use card layout again  [dlwlrma123]
-551529d  SettingsLib: Apply Inter Dynamic Metrics to collapsing toolbar  [Danny Lin]
-70de472  base: SettiingsLib: Change collapse mode to scale  [Blaster4385]
-a333471  base: SettingsLib: Fix collapsed header color  [Blaster4385]
-c25708b  UIModeTile: Collapse after change UI mode  [Pranav Vashi]
-de8a4fc  SettingsLib: make CollapsingToolbar like oneplus * use default spacing for dynamic metrics * reconfigure paddings and font size to make it somehow look like oneplus collapsingtoolbar * @ xyzuan for https://github.com/xdroid-oss/xd_packages_apps_Settings/commit/abb70ced8fe2193878dbab3081545436a893c561 * also update all back vector drawables to make it uniform  [dlwlrma123]
-dbd08e6  graphics: Override system fonts with user-selected overlays  [Danny Lin]
-9d5ee32  Base: SystemUI: Make Privacy Indicators better.  [Maitreya29]
-bf9b77a  SystemUI: Add dual-tone light and dark themes for QS  [Danny Lin]
-ce7d275  base: EasterEgg: Implement Android 12L Easter Egg  [Aryan Sinha]
-4fb7d16  QSPanel: Add brightness changes from DotOS 5.2  [IacobIonut01]
-f6ffaed  UsageStatsService: don't create stuff directly in /data/system_de  [Eric Biggers]
-40ff39b  bit: avoid calling strdup(NULL)  [George Burgess IV]
-b7736c4  Fix nanosleep in BootAnimation  [Keith Mok]
-1e0242f  Add truncateStringForUtf8Storage()  [Ling Ma]
-7d80ddb  android_util_Process: fix length checking logic  [Keith Mok]
-72ce53a  Fix NPE in WakeLock#finalize for unit test  [Riddle Hsu]
-42b1f77  Handle non-exist permission group correctly for pm list permissions  [utzcoz]
-ab7e8e7  Clear mInterface before calling resetIkeState()  [lucaslin]
-668abeb  NfcA: Fix an NPE in constructor  [Guche Mantuano]
-a87454a  Consolidate clearing mImeInsetsFrozenUntilStartInput  [Ming-Shin Lu]
-03d2aa5  Decode the input of both setStream and setResource calls first  [Wu Ahan]
-48318e0  NetworkPolicyManagerService: turn this into just a warning  [Simão Gomes Viana]
-87f9fd4  Freeze all package processes before killing  [T.J. Mercier]
-915ea9f  Fix JobStoreTest after adding defensive copy to NetworkRequest.Builder  [Patrick Rohr]
-8f7558f  AuthRippleController: Always finish the LightRevealScrim  [Chenyang Zhong]
-20cdab4  AuthRippleController: Only update sensor location when necessary  [Chenyang Zhong]
-0ed4d74  AlarmManagerService: Reduce log level wtf -> w  [Simão Gomes Viana]
-b34b87e  SystemUI: Disable blur wakeup animation  [Danny Lin]
-e580dac  Fix crash with protected content with ElectronBeam/Scale screen-off animation  [Matt Filetto]
-13af8ef  Add upstream fixes to ElectronBeam screen-off animation  [Pranav Vashi]
+2b4cc29  Changing max SampleRate limits for raw audio decoder  [Arun Johnson]
+5bd2209  Limit the accepted length of SIM PIN to 8 digits  [Katsuyuki Hirayama]
+572112e  Have NetworkPolicyManagerService listen onLinkPropertiesChanged callback  [Aaron Huang]
+5a98ceb  Exclude dumpsys from incident in dumpstate  [Kevin Jeon]
+d939358  identity: Fix uncompressed form encoding of P-256 EC Public Key.  [David Zeuthen]
+7f57474  cleanupOrphanPA's feature framework (2/2)*  [Thomas Stuart]
+64c3c44  NotificationPlayer: use AUDIOFOCUS_GAIN_TRANSIENT instead of AUDIOFOCUS_GAIN in looping mode  [wumin3]
+3ab7f04  noop - fix 'jobject -> jclass' in native jni code signature.  [Maciej Żenczykowski]
+04f3718  Fix virtual display cannot be relased.  [linkai]
+80128b3  Fix AutofillManager NPE  [jiajia tang]
+323a428  Require CONFIG_HID_PLAYSTATION for DualSense key layout  [Siarhei Vishniakou]
+19ea338  SystemUI: Fixes/Improvements for QS tiles count settings  [strwbrry143]
+42965c5  TileAdapter: Report 3 columns for qs customizer  [minaripenguin]
+9c15223  SystemUI: Stop using marquee on qs tile labels  [strwbrry143]
+7f1b10f  SystemUI: Cleanup QS tile count settings  [minaripenguin]
+512062a  SystemUI: Fix qs customizer corner radius  [minaripenguin]
+e8c6e1b  SystemUI: Reduce qs tile padding  [minaripenguin]
+de77c0f  SystemUI: Fix wrong context for mNumColumns  [minaripenguin]
+07aa850  SystemUI: Adapt DotOs qs tile changes for qs tile count settings  [minaripenguin]
+0bb7784  QS tile count settings: Fixes and improvements for landscape settings  [minaripenguin]
+c3639b5  SystemUI: QS tile count settings code fixup  [minarypenguin]
+eca2edc  SystemUI: Increase QS tile corner radius  [minarypenguin]
+5d832a3  SystemUI: Improve QS tile count settings  [minarypenguin]
+1f637e0  SystemUI: Refactor qs tile count settings  [minarypenguin]
+30f1914  SystemUI: Fix qs tile vertical layout scrolling  [minarypenguin]
+e806528  [1/2] SystemUI: qs hide label setting  [maxwen]
+63777de  [1/2] SystemUI: qs columns count settings  [maxwen]
+aded519  SystemUI: add OmniSettingService Hooks  [maxwen]
+b1d65b7  PixelPropsUtils: Bump to r22 raven build fingerprint  [strwbrry143]
+7fc474d  Only allow the system server to connect to sync adapters  [Makoto Onuki]
+e09f517  Stop using invalid URL to prevent unexpected crash  [Chiachang Wang]
+d93e3c8  Remove package title from notification access confirmation intent  [Raphael Kim]
+3aace3e  Make CheckOp return allowed if any attr tag for a package is excluded  [Evan Severson]
+70b372a  Allow system server uid to bypass location restriction  [Evan Severson]
+061cfce  Disallow privileged apps to bypass location restriction  [Evan Severson]
+dc96645  DO NOT MERGE. Add a permissions check to LocationManagerService.  [Brian Julian]
+41c141c  Make sure callingPackage belongs to callingUid when checking BG-FGS restrictions.  [Hui Yu]
+d77d173  DO NOT MERGE Suppress notifications when device enter lockdown  [Wenhao Wang]
+6f2e1ce  Add API support for sqlite3_set_authorizer().  [Jeff Sharkey]
+7e28e05  SQLiteDatabase: Catch corrupt exception during transaction  [muzbit.kim]
+cdd1f6e  SystemUI: VolumeDialogImpl: Fix inactive rows tint  [strwbrry143]
+6969488  Fix bug in Blend that did not use options.  [Jean-Luc Brouillet]
+be8c4be  Avoid repeated loading of mutable runtime overlays in the form of sharedLib  [zhangshuai10]
+d0b9e9d  RELAND MediaCodec: don't cache buffers until requested  [Wonsik Kim]
+1a26c07  Revert "MediaCodec: don't cache buffers until requested"  [DennySPb]
+cf6f1be  base: overlay: fix volume panel arrow in Victor and Sam icon packs  [Abhay Kshatriya]
+b09eff7  Revert "base: Don't send interaction hint for unnecessary events"  [Adithya R]
+c01509a  Revert "hwui: JankTracer: Silence Davey logs for now"  [Adithya R]
+4fc1cac  Catch IllegalStateException to avoid reboot  [zhuning3@xiaomi]
+c881e35  Avoid setting unnecessary display state when booting.  [jiayongqiang]
+c22f655  Fix the NullPointerException in Android S Version:mServicesData  [李欢欢]
+7657a59e  Fixes layer leak if window removed during fade animation  [ning xu]
+386539f  Add null check for RemoteAnimationController#onAnimationFinished  [chenchaoli]
+a0f248d  Call isServiceTokenValidLocked with lock.  [qinyige1]
+ec96eb7  Allow apps receiving MediaSession callbacks to start FGS from BG.  [Sudheer Shanka]
+a8ab813  Fix getRootTask may be null led to client NPE  [Roc Penny Young]
+d5fadf9  base: ChooserActivity: Don't show image edit button on multiple targets  [Aayush Gupta]
+1354220  DeviceIdleJobsController: don't ignore whitelisted system apps  [Dmitry Muhomor]
+fbda816  Extend splash screen exception list to SC-V2  [wilsonshih]
+e636586  media: MediaCodecInfo: Unhide COLOR_FormatYUVP010  [Gopalakrishnan Nallasamy]
+cccdd56  MediaCodecInfo: Add constant for YUVP010 color format  [Gopalakrishnan Nallasamy]
+8c98230  Updates to Dolby Vision Levels  [Baoli Yan]
+412c99c  MediaCodec:Add code for YCbCrP010 format support  [Gopalakrishnan Nallasamy]
+69f2231  Fix the wrong of dismisssurface state under multi-threading  [hanfeng3]
+0bbdce2  media: Define MPEG-H Encoder Format  [Sachin Mohan Gadag]
+2537bb7  audio: add support for extended formats  [Preetam Singh Ranawat]
+3868f66  AudioDeviceBroker: handle back to back device change requests  [Siddhesh Sahane]
+6a3ea64  media: MediaCodec: add RGBA_1010102 and RGBA_F16 format support  [Lajos Molnar]
+6943e4b  SettingsLib: Fix user profile photo picker crash  [timjosten]
+23cbc0a  Revert "PMS and WMS deadlock when uninstalling APP"  [johnmart19]
+304a8ec  core: Add telephony stack to allowed service state packages  [strwbrrylvr143]
+757f99e  use SharedPreferences to save verify results  [Bin Wang]
+4ba8a67  ResolveActivity scroll not Smooth  [Binhong Wang]
+46c0a8b  [WMS][Bugfix] Fix task snapshot leak.  [qinyige1]
+871bb68  Do not brighten when dim state or low power mode.  [linkai]
+10b5fe08  Fix storage statistical error in "roundStorageSize"  [zhuning3@xiaomi]
+3d24d0e  Only update the compat system UI visibility if the source is valid  [Tiger Huang]
+05e39e6  Sharesheet: Display two rows of max ranked targets  [LuK1337]
+5bbd247  SystemUI: VolumeDialogImpl: Change bg tint for inactive rows  [Arian]
+7ab06d6  SystemUI: Fix QS expand lag when VoLTE/VoWiFi icons are enabled  [timjosten]
+c787921  PixelPropsUtils: Fix issue with text select and copy  [minaripenguin]
+239e1f0  BatteryStatsImpl: Add parcel methods for DisplayBatteryStats.  [Shumao Hou]
+d4244cc  Fix the problem that the turn_screen_on Activity does not draw.  [Cheng Shi]
+8b03354  Revert "Freeze all package processes before killing"  [T.J. Mercier]
+a0a2aec  PixelCopy: align with legacy GLConsumer::computeTransformMatrix  [Yiwei Zhang]
+18d61a3  Fix weak global reference overflow  [ot903277]
+b157a87  Offer explicit 3-byte vs 4-byte modified UTF-8.  [Jeff Sharkey]
+b055a30  Cache least recently used output buffer.  [Alex Buynytskyy]
+7ab6e25  Revert "Remove fixed grant of READ_PHONE_STATE and cleanup"  [micky387]
+7693597  LayoutInflater: remove less frequently used apps  [Simao Gomes Viana]
+e112623  GameSpace: Fix issue with multiple users  [Pranav Vashi]
+b1377e6  [REPICK] SettingsProvider: Handle WRITE_DEVICE_CONFIG permission denial for gms  [cjh1249131356]
+c451d07  reTicker: Do not show when content/icon is null  [cjh1249131356]
+730ff1d  SystemUI: Grant INTERACT_ACROSS_USERS_FULL permission for smartspace  [cjh1249131356]
+
+
+* frameworks/native
+32449de  Do not load keylayout if required kernel module is missing  [Siarhei Vishniakou]
+87816a6  Avoid using KeyedVector in KeyLayoutMap  [Siarhei Vishniakou]
+fc610d0  Refactor input code for require_kernel_config parameter  [Siarhei Vishniakou]
+
+
+* frameworks/opt/telephony
+6232408  Change the location of lock  [keparal.li]
+c6e8eda  Protect against NPE during RTT call sessions  [Brad Ebinger]
+d17ee47  Add toString() to prevent IllegalAccessException.  [Yunjin Kim]
+243c09b  Using overrideServiceState after applying PhysicalChannelConfigList  [Jared Tsai]
+d5241b9  Handle pending update list after SIM is powered up  [Mengjun Leng]
+86a0de0  Fix the data of nDDS sub can't be tore down  [Mengjun Leng]
+afb3d69  Fix DDS switch type on call end  [Susheel Nyamala]
+d91a024  Stop evaluating default data SUB before SUB info is ready  [Mengjun Leng]
+3b62134  Telephony: Add null check for operator  [Pranav Vashi]
+33487d1  Telephony: Fix crash while updating Operator Name  [Pranav Vashi]
+98f9722  IMS: Fix incall MMI code failure after turning volte off  [Muhammed Siju]
+4bf7444  TelephonyMetrics: Add writeRilSendSms method  [ironydelerium]
+e1f787c  Handle that an operator numeric can be null  [Ruijie Bai]
+3e6d047  Bring back "Fix loading SIM phonebook redundantly"  [Jayachandran C]
+132208b  telephony: limit setSignalStrengthReportingCriteria  [William Bellavance]
+66dcf4e  Fix data detach isn't informed  [Mengjun Leng]
+ecc3d46  Allow 0 ms window for serverside manipulation  [Ling Ma]
+8111cf0  Release PDU session id when setup data call fails  [Jack Yu]
+03bf408  Checking 'phoneId' when sim status is changed  [Jinyoung Jeong]
+
+
+* libcore
+680e9b4  Migrate Buffer peek*array methods to art.  [Miguel]
+ba96de1  constify JNINativeMethod tables  [Daniel Micay]
 
 
 * packages/apps/GameSpace
-c1a2112  Gamespace: Improve memory/battery views  [minarypenguin]
-ff84e1f  GameSpace: Add memory info in game overlay  [Pranav Vashi]
-a72294a  GameSpace: Redesign battery view  [minarypenguin]
-9cc5c3b  GameSpace: Add battery remaining text  [Pranav Vashi]
-1bcdcae  Gamespace: Redo panel view style  [minarypenguin]
-1f38eb6  GameSpace: Set default panel view opacity to 100%  [Pranav Vashi]
-82757f9  GameSpace: Fix per game configure icon on light theme  [Pranav Vashi]
-bd86c15  GameSpace: Add time/date in panel view  [Pranav Vashi]
-3a4cc65  GameSpace: Add lock gesture tile  [Pranav Vashi]
-5fa16f4  GameSpace: Rearrange preferences  [Pranav Vashi]
-1e6b92e  GameSpace: Clean up strings  [Pranav Vashi]
+61e7f92  Update RU translation  [DennySPb]
 
 
-* packages/apps/Launcher3
-57ccb72  Launcher3: Sync some dimens with pixel launcher  [minarypenguin]
-155a27c  TaskViewUtils: add a null check on topMostSimulators array  [jhonboy121]
-3129ce8  Launcher3: Restore stock blur radius  [minarypenguin]
-01d949d  Launcher3: Optimize hotseat paddings  [minarypenguin]
-b3e265d  Launcher3: Use N1_50/N1_800 shades hex code for overview scrim  [minarypenguin]
-30fd457  Launcher3: Bump All apps searchbar shade to N2_800  [minarypenguin]
-5336475  SushiLauncher: Revamp overview layout  [minarypenguin]
-d806a9b  Add kill App button to recents overview  [Trishiraj]
-5a97a7b  Nuke WorkspaceStatusBarScrim color  [Trishiraj]
-e89789c  Revert "Always show screenshot in task menu"  [minarypenguin]
-8101fa8  Launcher3: Use darker shades for overview buttons  [minarypenguin]
-3ebcbdd  SushiLauncher: Overview improvements  [minaripenguin]
-24be023  Icons: Link few apps to the right icon  [StarkDroid]
-cdcbb79  quickstep: RecentsView: add null check on RemoteTargetHandle array  [jhonboy121]
-5166aad  Launcher3: Change icon drawable padding  [Arne Coucheron]
-884d338  Launcher3: Fixup themed local color overrides  [Nauval Rizky]
-47f94c4  Launcher3: respect color/chroma override  [Anay Wadhera]
-0fc6be9  Themedicons: fix unthemed prebuilt icons * also use simple drawables for google apps, the dynamic themed icons arent working nor showing themedicons for google calendar and clock  [minarypenguin]
-dbb676f  Launcher3: don't make ic_screenshot overlayable * it needs proper tint  [minarypenguin]
-2c84c83  Launcher3: overview action improvements  [minarypenguin]
-1763e1d  Launcher3: update clear all icon  [minarypenguin]
-5472014  ArcanaLauncher: add rounded bg to overview buttons  [dlwlrma123]
-fdd454a  Introduce extra top & bottom margin for overview task cards  [LibXZR]
-d6462e4  Recalculate scroll scale on layout  [LibXZR]
-1eec892  Fix discontinuous animation when dismissing taskcards on the right side  [LibXZR]
-00f10a3  Fix actions view appears unconditionally in grid mode  [LibXZR]
-e17e3b8  Always show split option in task menu  [LibXZR]
-38e025c  Always show screenshot in task menu  [LibXZR]
-bb82c0a  Introduce overview scrolling scale animation  [LibXZR]
-bfd91d3  Launcher3: Fix crash on notification icon contrast calculation  [Nauval Rizky]
-bce469c  Remove obsolete SYSTEM_TOOLS permission group  [Danny Lin]
-60cd0fa  Launcher3: Adjust the icon size for 4x5 grid  [daniml3]
-cbcbad0  Launcher: Properly disable extra hotseat space  [Trishiraj]
+* packages/providers/ContactsProvider
+ce25f9d  enforce stricter CallLogProvider query  [Thomas Stuart]
 
 
-* packages/apps/Settings
-3b83a51  Update RU translation  [DennySPb]
-79398f3  Adapt new designed look to syberia  [DennySPb]
-2ed6f3a  Settings: Rework icons  [Maitreya29]
-22e4a94  Settings: Make IME button space optional [2/2]  [Anushek Prasal]
-9c9bd1f  Settings: Double tap to trigger doze [2/2]  [SKULSHADY]
-2c63238  Add Glide library  [SagarMakhar]
-acc56f8  Settings: Improve force fullscreen settings fragment  [jhonboy121]
-37c34c9  Settings: [2/2] Implement cutout force full screen  [jhenrique09]
-1d5017b  Settings: Redesign Settings UI  [anupam41]
-c43edf7  Settings: Hide Google Games Dashboard  [Pranav Vashi]
-faeed4d  Settings: Redesign about phone  [anupam41]
-2b552cd  Settings: Redesigned settings home page  [dlwlrma123]
-a5896f1  Settings: Show Android version as 12L [1/2]  [xyzuan]
+* packages/services/Telecomm
+f15c29a  cleanupOrphanPA's feature (1/2)*  [Thomas Stuart]
+
+
+* packages/services/Telephony
+353c845  allow phone error messages from lock screen  [Thomas Stuart]
 
 
 * system/media
-24e45c6  media: update path for vendor specific config files  [Banajit Goswami]
+9bc4c27  media: update path for vendor specific config files  [Banajit Goswami]
 
 
-* vendor/qcom/opensource/interfaces
-98e1900  IQtiMapper: Add HAL for CRC buffer calculation.  [Qi Jin]
-10eb867  Merge tag 'LA.QSSI.12.0.r1-07900-qssi.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/interfaces into 12.1  [DennySPb]
+* system/sepolicy
+6a09451  sepolicy: Whitelist update_engine in dac_override neverallow  [Chris Crump]
+590e781  sepolicy: Add sdcard_posix_contextmount_type attribute  [LuK1337]
+
+
+====================
+     2022-08-11    
+====================
+
+* build/make
+5b2b2f0  Merge tag 'android-12.1.0_r22' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
+
+
+* device/syberia/sepolicy
+2a8b96d  common: Allow camera HAL to read auxiliary camera properties  [Bruno Martins]
+272e42f  Reenable camera allow- and excludelist property labels  [Michael Bestas]
+6ed5fc7  Allow apps to read auxiliary camera properties  [Arian]
+46c4a9f  Drop smart charge HAL rules  [DennySPb]
+
+
+* frameworks/av
+df722f5  Avoid read out of bounds  [Santiago Seifert]
+
+
+* frameworks/base
+b061a4c  fw/b: Add capability to allow tethering to use VPN upstreams [1/3]  [Sam Mortimer]
+e85c086  Fix possible NullPointerException in method shouldUseEmptySplashScreen.  [xuanli Gao]
+f251dd8  [Bugfix][Stability] Fix system_server kills itself by mistake.  [xi yu]
+76c07a5e  QS: improve tile state consistency  [Ali B]
+d16ad4e  QS: Locale Tile  [SpiritCroc]
+1a8012e  NetworkStatsHistory: Prevent IllegalArgumentException  [Henrique Silva]
+63e880b  base: Provide required permissions for cellbroadcastreceiver  [johnmart19]
+77a5f16  base: Provide missing permissions for SystemUI  [johnmart19]
+
+
+* frameworks/native
+5d9798c  RESTRICT AUTOMERGE SurfaceFlinger: fix a potential race condition in stealReceiveChannel  [Ady Abraham]
+534f8ce  DO NOT MERGE: SurfaceControl: Ensure unused fields are zeroed  [Robert Carr]
+
+
+* packages/apps/Settings
+71e7497  Reland "Phone ringtone setting for Multi SIM device [2/3]"  [DennySPb]
+fd849c1  Extract app label from component name in notification access confirmation UI  [Raphael Kim]
+1624d49  [DO NOT MERGE] Fix can't change notification sound for work profile.  [Tsung-Mao Fang]
+7754af7  [DO NOT MERGE] Fix Settings crash when setting a null ringtone  [Arc Wang]
+e851c02  RESTRICT AUTOMERGE Fix: policy enforcement for location wifi scanning  [Lin Yuan]
+b65dd5b  Do not let guest user disable secuer nfc via SettingsSlice  [Jack Yu]
+e8c98cc  RESTRICT AUTOMERGE Make bluetooth not discoverable via SliceDeepLinkTrampoline  [Hugh Chen]
+8643d68  Verify ringtone from ringtone picker is audio  [Arc Wang]
+941f59d  Revert "Phone ringtone setting for Multi SIM device [2/3]"  [DennySPb]
+
+
+* packages/modules/Connectivity
+4e4babe  Connectivity: Add capability to allow tethering to use VPN upstreams [2/3]  [Sam Mortimer]
+
+
+* system/bt
+2163145  VolumeControl is not interesting on S  [Jakub Pawlowski]
+8f9271e  Removing bonded device when auth fails due to missing keys  [Roopa Sattiraju]
+b34cbdf  l2cap: Verify number of channels in the CoC request  [Łukasz Rymanowski]
+
+
+* system/memory/lmkd
+31b470a  Merge branch 'master' of https://android.googlesource.com/platform/system/memory/lmkd into HEAD  [DennySPb]
+
+
+* vendor/qcom/opensource/commonsys-intf/display
+b611f83  Merge tag 'LA.QSSI.12.0.r1-08400-qssi.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/display-commonsys-intf into 12.1  [DennySPb]
+
+
+* vendor/qcom/opensource/commonsys/system/bt
+403a99e  Removing bonded device when auth fails due to missing keys  [Roopa Sattiraju]
+428ce64  Security: Fix out of bound read in AT_SKIP_REST  [Josh Wu]
+c4d901c  Check Avrcp packet vendor length before extracting length  [William Escande]
+15ad94b  Security: Fix out of bound write in HFP client  [Chen Chen]
 
 
 * vendor/syberia
-fc9989e  vendor: Add Dora icon styles for wifi and signal  [F5LAYD]
-4db66cb  vendor: Add W33d icon styles  [Pranav Vashi]
-3bccef2  vendor: Added lots of signal icons (1/2)  [R15Hi]
-305f05e  vendor: Show Android version as 12L [2/2]  [Aryan Sinha]
+9281fcc  v5.6  [DennySPb]
+f7e86a3  Revert "config: Disable remote keyguard animation until it's fixed"  [DennySPb]
+99b2168  vendor: themes: UdfpsResources: Optimize drawables by converting to webp  [minarypenguin]
+98af15b  vendor: themes: UdfpsResources: Add more UDFPS icons from realme 3.0  [minarypenguin]
+e3130a1  vendor: themes: UdfpsResources: Add new/requested udfps icons  [minarypenguin]
+018c193  device_Config: Update Now Playing database to 2021-12-12  [Danny Lin]
+0ecc83a  device_config: Update Live Caption configs for Pixel 6  [Danny Lin]
 
 
 ====================
-     2022-06-26    
+     2022-08-10    
 ====================
 
+* art
+9c294b9  Fix unused-but-set-variable warnings  [Yi Kong]
+5e399fb  Migrate Buffer peek*Array methods to art/  [Miguel]
+
+
+* device/qcom/sepolicy_vndr
+a30fb61  sepolicy_vndr: qva: Don't protect vendor_hal_qesdhal_hwservice  [Marco Marinho]
+30c3b6a  sepolicy_vndr: qva: Allow vendor_cnd to read wifi_hal_prop  [Arian]
+
+
+* system/sepolicy
+0b96d45  sepolicy: add syslog_read perms for matlog  [maxwen]
+
+
 ====================
-     2022-06-25    
+     2022-08-09    
+====================
+
+* external/jemalloc_new
+3225ae3  Force zero all allocations.  [Christopher Ferris]
+b153a4d  Fix possible "nmalloc >= ndalloc" assertion.  [Azat Khuzhin]
+27af551  Use volatile to workaround buffer overflow false positives.  [Qi Wang]
+85feee5  Purge all if the last thread migrated away from an arena.  [Qi Wang]
+4dfe2f5  Fix locking on arena_i_destroy_ctl().  [Qi Wang]
+446026c  Define JEMALLOC_HAS_ALLOCA_H for QNX  [Jin Qian]
+1bc5ccf  Use posix_madvise to purge pages when available  [Jin Qian]
+d80a9b8  Fix recursive malloc during bootstrap on QNX  [Jin Qian]
+37cee59  Disable JEMALLOC_TLS for QNX  [Jin Qian]
+e700e54  cpu instruction spin wait for arm32/64  [David Carlier]
+e6f7f96  Allow dallocx and sdallocx after tsd destruction.  [Qi Wang]
+a8e229a  Support C++17 over-aligned allocation  [Mark Santaniello]
+b32dc07  Refactor arena_bin_malloc_hard().  [Qi Wang]
+a7046d9  Reduce footprint of bin_t.  [Qi Wang]
+e3a6105  Prefer getaffinity() to detect number of CPUs.  [Qi Wang]
+a987232  Fix a typo in Makefile.  [Qi Wang]
+97afa79  Workaround the stringop-overflow check false positives.  [Qi Wang]
+71611c9  Fix large.nflushes in the merged stats.  [Qi Wang]
+1943e74  Fix large bin index accessed through cache bin descriptor.  [Qi Wang]
+50573f0  Fix tcaches mutex pre- / post-fork handling.  [Qi Wang]
+
+
+====================
+     2022-08-08    
+====================
+
+* frameworks/av
+e596f17  C2SoftAvcEnc: More QP bounding interface work  [Manisha Jajoo]
+3c1ec59  codec2 hidl plugin samples: free native handles after they are unwrapped  [Jerry Huang]
+2482160  codec2: fix issue in allocating too many 8k buffers  [Jiajia Cong]
+4884c29  C2SoftHevcDec: Initialize mStride after first header decode  [Harish Mahendrakar]
+
+
+====================
+     2022-08-07    
 ====================
 
