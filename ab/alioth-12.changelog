@@ -1,39 +1,22 @@
 ====================
-     2022-07-03
+     2022-08-14
 ====================
 
 Kernel:
- - Merged linux 4.19.246
- - Fixed reboots during modem crash
+ - Merged linux 4.19.254
  
 Rom:
- - June 2022 security update
- - Syberia OS ver. 5.5
- - Reworked settings UI style
- - Reticker feature
- - System icon packs
- - Added some more icon shapes for statusbar icons
- - Added some more VoLTE icons
- - Added some more statusbar/qsbar battery styles
- - Added lots of signal icons
- - Use accent color for charging animation
- - Dayly data usage option in QS footer
- - Screenrecord improvements
- - Make roaming indicator optional
- - Implemented cutout force full scree option
- - Double tap to trigger doze option
- - Bring back separate wifi & data QS tiles
- - Redigned volume panel and brightness bar QS slider
+ - Syberia v5.6
+ - August security update
+ - SQLite updated to 3.39.2
+ - QS columns count in portrait mode settings
+ - Fixed QS expand lag when IMS icons is showing
  - GameSpace improvements
- - OOS style notification clear all button
- - ART & bionic improvements
- - Updated Contacts, Messaging, AOSP keyboard
- - Fixed some themed icons
+ - ART improvements
  - Other fixes and improvements under the hood
 
 Device:
- - Audio improvements
- - Add TWS plus feature
- - Enable Qualcomm TrueWireless™ Stereo
- - Use QCOM implementation for audio effects
+ - Fixed status bar glitch for some apps
+ - Update radio props
+ - Some haptic improvments
  - Fixed sepolicy denials
