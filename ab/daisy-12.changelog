@@ -1,37 +1,22 @@
 ====================
-     2022-07-05
+     2022-08-27
 ====================
 
 Kernel:
 - Upstream to 4.9.316-Rename-Daisy
 
-Rom:
-- June 2022 security update
-- Syberia OS ver. 5.5
-- Reworked settings UI style
-- Reticker feature
-- System icon packs
-- Added some more icon shapes for statusbar icons
-- Added some more VoLTE icons
-- Added some more statusbar/qsbar battery styles
-- Added lots of signal icons
-- Use accent color for charging animation
-- Dayly data usage option in QS footer
-- Screenrecord improvements
-- Make roaming indicator optional
-- Implemented cutout force full scree option
-- Double tap to trigger doze option
-- Redigned volume panel and brightness bar QS slider
-- GameSpace improvements
-- OOS style notification clear all button
-- ART & bionic improvements
-- Updated Contacts, Messaging, AOSP keyboard
-- Fixed some themed icons
-- Other fixes and improvements under the hood
+ Rom:
+ - v5.6
+ - August security update (July SPL string for CTS safetynet compatibility)
+ - SQLite updated to 3.39.2
+ - QS columns count in portrait mode settigS
+ - Fixed QS expand lag when IMS icons is showing
+ - GameSpace improvements
+ - ART improvements
+ - Other fixes and improvements under the hood
 
 Device:
-- media: Update Google media codecs
-- media: Update and drop deprecated media codecs
-- rootdir: Remove IO read_ahead_kb tune
+- Update GPS from LA.UM.9.6.3.r1-06200-89xx.0
 - Address sepolicy denials
 - Other fixes and improvements
+
