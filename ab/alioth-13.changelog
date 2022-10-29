@@ -1,6 +1,16 @@
 ====================
-     2022-10-13
+     2022-10-28
 ====================
 
-- Syberia v6.0 Android 13
-- Initial release
+Kernel:
+ - Merged linux 4.19.261
+ - Merged tag 'LA.UM.9.12.r1-14800-SMxx50.QSSI13.0'
+ - F2fs improvements
+ 
+Rom:
+ - Merged Pixel 7 (android_r11) tag
+ - Art, bionic and fw_native improvements
+ - Add/remove QS with one click
+ - Launcher3 fixes
+ - QrCamera fixes
+ - Minor UI improvements

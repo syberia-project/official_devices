@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1665661018,
-      "filename": "syberia_alioth-v6.0-20221013-1137-OFFICIAL.zip",
-      "id": "83283ac6f19a5b83080f9ae00a4e61fdfd93d80c60c84e973eafc530c5f979e2",
+      "datetime": 1666984538,
+      "filename": "syberia_alioth-v6.0-20221028-1935-OFFICIAL.zip",
+      "id": "f4a7607ea407fc3a32cd09730b051a3be7303778a0f3a3f453f0ebec0cbb71e8",
       "romtype": "OFFICIAL",
-      "size": "1434413870",
-      "url": "https://sourceforge.net/projects/syberiaos/files/alioth/syberia_alioth-v6.0-20221013-1137-OFFICIAL.zip/download",
+      "size": "1429620200",
+      "url": "https://sourceforge.net/projects/syberiaos/files/alioth/syberia_alioth-v6.0-20221028-1935-OFFICIAL.zip/download",
       "version": "v6.0",
       "device_brand": "Xiaomi",
       "device_model": "Poco F3",
