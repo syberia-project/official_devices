@@ -1,0 +1,37 @@
+====================
+     2022-10-30    
+====================
+
+* frameworks/av
+03212b9  begonia: media: libstagefright: Limit max width/height to display size  [7Soldier]
+2eead10  [SQUASH] media: Import codecs/omx changes from t-alps-q0.mp1-V9.122.1  [7Soldier]
+9442c81  [SQUASH] media: Import extractor changes from t-alps-q0.mp1-V9.122.1  [7Soldier]
+3ca8781  camera: Expose aux cameras in third party apps  [Pierre-Hugues Husson]
+0febb94  stagefright: remove HW_TEXTURE usage from SurfaceMediaSource  [Erfan Abdi]
+cd04ec9  [SQUASH] audiopolicy: Add MTK FM Radio support  [Erfan Abdi]
+
+
+====================
+     2022-10-29    
+====================
+
+====================
+     2022-10-28    
+====================
+
+====================
+     2022-10-27    
+====================
+
+====================
+     2022-10-26    
+====================
+
+====================
+     2022-10-25    
+====================
+
+====================
+     2022-10-24    
+====================
+
