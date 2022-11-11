@@ -1,257 +1,329 @@
 ====================
-     2022-10-14    
+     2022-11-11    
 ====================
 
-* external/sqlite
-380001c  sqlite: Update to version 3.39.4  [Andrzej Perczak]
-90851e0  sqlite: Update to version 3.39.3  [Andrzej Perczak]
-
-
-* frameworks/base
-bc008ea  [fixup] base: SystemUI: Allow user to add/remove QS with one click  [Andrzej Ressel]
-d2eceaa  SystemUI: Set launcher activity name  [Adithya R]
-f02d6b7  fixup! CollapsedStatusbar: Fix phantom spaces in status bar  [Pranav Vashi]
-
-
-* packages/apps/Launcher3
-bafd984  Launcher3: Allow changing app suggestion settings  [Alexander Koskovich]
-d202c9b  Launcher3: Add some spacing below the all apps search bar  [str-br]
-85622ab  Launcher3: Use font configs instead hardcoded fonts  [Pranav Vashi]
-fd5bf7e  Launcher3: Return if launcher is null in notifyRecentsOfOrientation  [Pranav Santhosh]
-b1575ca  Launcher3: Add ripple animation to task menu items  [Danny Lin]
-8522236  Launcher3: Restore blur depth on configuration change  [Rituj Beniwal]
-d92c4b2  Launcher3: Don't apply disabled alpha to search hint  [str-br]
-780fbaf  Launcher3: Switch back to tertiary color for search hint  [alk3pInjection]
-58ff9a4  Launcher3: Increase end padding for search bar UI  [Pranav Vashi]
-30833e7  Launcher3: Update device profiles  [Pranav Vashi]
-8848588  Launcher3: Add x8 x10 workspaces  [Fran Palmero]
-669d993  Launcher3: Update default workspace  [Pranav Vashi]
-28bdfbb  Revert "Add Smartspace Widget."  [DennySPb]
-d409653  Launcher3: Do not attach cleanupScreenshot() to frame update event  [LibXZR]
-
-
-* packages/apps/Settings
-38007b2  Dashboard: relocate Battery pref next to sound settings  [DennySPb]
-
-
-* vendor/syberia
-dc64c3c  devices: add lemonade to the party  [DennySPb]
-d542e37  Build SyberiaPapers package  [DennySPb]
-2dd769d  Update default wallpaper for Syberia 6  [DennySPb]
-a4fb17c  Update bootanimation for Syberia 6  [DennySPb]
-
-
-====================
-     2022-10-13    
-====================
-
-* art
-cf6e16f  ART: Faster debug build image checks.  [Vladimir Marko]
-
-
-* external/sqlite
-380001c  sqlite: Update to version 3.39.4  [Andrzej Perczak]
-90851e0  sqlite: Update to version 3.39.3  [Andrzej Perczak]
-
-
-* frameworks/base
-e7572c5  Add interpolators to qs tiles animation [1/2]  [Nico60]
-6061910  Remove resource overlay check in FP wake and unlock  [DennySPb]
-ba95722  Add animations to quick settings tiles [1/2]  [Nico60]
-8225879  Base: Add 7 more power menu animations [1/2]  [westcripp]
-c311faa  Power Menu animations [1/2]  [Alex Cruz]
-07ddc49  display: Don't spam log when display state changes  [Adithya R]
-48c28a3  SystemUI: Add colors to assistant animation  [paphonb]
-
-
-* hardware/interfaces
-c56a703  Support P010 with Gralloc2 on Gralloc1 passthrough  [Jason Macnak]
-2fb3ace  audio: Verify that hal implements get_audio_port before calling  [Aaron Kling]
-
-
-* packages/apps/Launcher3
-8b4312d  Remove AOSP monet local colorextractor  [DennySPb]
-dd8545f  Launcher3: Stability NullPointer issue  [yingrenw]
-3cfe69b  Launcher3: Fix icon palette crashes  [Pranav Vashi]
-8410b80  Launcher3: Fixup themed local color overrides  [Nauval Rizky]
-09915ac  Launcher3: Respect color/chroma override  [Anay Wadhera]
-6e33d63  Launcher3: Use custom LocalColorExtractor implementation  [Danny Lin]
-
-
-* packages/apps/SyberiaSettings
-235981e  SyberiaSettings: [SQUASHED] Add animations to quick settings  [Nico60]
-338d541  Add 7 more power menu animations [2/2]  [westcripp]
-e0bd15e  Power Menu animations [2/2]  [Alex Cruz]
-8bf2c29  Allow changing monet settings from extensions [2/2]  [SagarMakhar]
-
-
-====================
-     2022-10-12    
-====================
-
-* art
-abb88f0  Remove is low memory mode for threshold adjustment and TransitionGC  [Edgar Arriaga]
-
-
-* external/libjpeg-turbo
-38577dd  Update libjpeg-turbo to upstream stable release 2.1.4  [Jake Weinstein]
-fd42b96  Android.bp: add -DNO_PUTENV  [Juhyung Park]
-825cee5  Update libjpeg-turbo to upstream stable release 2.1.3  [Jonathan Wright]
-6b25205  Update libjpeg-turbo to upstream stable release 2.1.2  [Jonathan Wright]
-d4e97d3  Update libjpeg-turbo to 2.1.1 stable release  [Jonathan Wright]
-
-
-* external/sqlite
-5a4eea7  Fix parameter checking logic error in tokenize  [Jinguang Dong]
-ea87394  reland: sqlite: Upgrade to SQLite 3.39.2  [Lalit Maganti]
-4fe8dc6  Fix percentile module build rule  [Marcin Oczeretko]
-56fd6a5  Pull in the percentile function from sqlite ext/misc  [Marcin Oczeretko]
+* bootable/recovery
+94d20eb  ui: adapt for new design  [Magicxavi]
 
 
 * frameworks/av
-e6674b7  Resume HW after forced pause during flush  [Gareth Fenn]
-63ce774  Prevent TunerHAL passthrough from going into standby  [Gareth Fenn]
-faefa83  Pause faster during audio underrun  [Brian Lindahl]
-16842c4  ACodec: Block setSurface during OutputPortSettingsChangedState  [Sungtak Lee]
+ab8e66b  StagefrightRecorder: Add "set-title" parameter  [cjh1249131356]
 
 
 * frameworks/base
-000acda  Update RU translation  [DennySPb]
-30356c3  SystemUI: Use colorkt-based dynamic theme engine for Monet  [Danny Lin]
-
-
-* system/core
-eb54e26  Do not call tune2fs for verity on non /data partitions  [Jaegeuk Kim]
-
-
-* system/memory/lmkd
-638edd8  Merge branch 'master' of https://android.googlesource.com/platform/system/memory/lmkd into HEAD  [DennySPb]
-
-
-====================
-     2022-10-11    
-====================
-
-* frameworks/base
-f92a93a  monet: Fix overly low chroma for tones below 90  [Danny Lin]
-079161b  Link dialog radius to config_dialogCornerRadius  [Lucchetto]
-16ef732  base: fix list style alert dialog to use system font  [maxwen]
-b0bfa69  SystemUI/statusbar icons: Remove dupe alarm item  [DennySPb]
-8de26e2  SystemUI: Apply surface color to brightness icons  [Harsh  Pal]
-bc5e9e6  Dark Theme "TURN ON UNTIL SUNRISE" is not retained after reboot  [Sameer Zalke]
-69e000a  Sharesheet: Display two rows of max ranked targets  [LuK1337]
-3501c87  Paint: Enable subpixel text positioning by default  [Danny Lin]
-a340806  SystemUI: Remove alarm from statusbar icon blocklist  [Adithya R]
-64c6a40  development: Address NPE when removing preferences out of developer options  [Alex Cruz]
-1755f649  BatteryMeterView: Fix NPE that occurs when onDensityOrFontScaleChanged() is called.  [spezi77]
-7f8e140  LayoutInflater: remove less frequently used apps  [Simao Gomes Viana]
-6f1e0d0  Prefer `Boolean.valueOf()` to `new Boolean()`  [Orion Hodson]
-9da73be  profcollect: Fix possible NPE in ProfcollectBGJobService  [Yi Kong]
-341d8ac  Fix the problem that system apps cannot drag  [Cheng Shi]
-f097a2d  Fix exception caused by system app setting wallpaper  [Ge Tianxiong]
-3260ef9  Fix sticky firstEventAfterDiscontinuity setting  [Brian Duddie]
-5de2252  Prevent FGS notification from exceeding allowed  [WoongKi Min]
-fcce290  Move SkiaCanvas::Clip above SkiaCanvas::SkiaCanvas  [Ryan Prichard]
-ad5c92e  app_process: Fix className check  [Mikhail Naganov]
-1291632  Telephony: Fix the record output  [Zoey Chen]
-61d142c  make sure mSurfaceLock.unlock can be executed in unlockCanvasAndPost  [xiaoxin]
-85db064  Prefer valueOf() to boxed primitive constructors  [Orion Hodson]
-4db49a3  Switch to source build of JavaPoet.  [Krzysztof Kosiński]
-b6104ee  Fix IndexOutOfBoundsException in onAnimationFinished of RemoteAnimationController  [xi yu]
-6ebbb0d  Allow passing in a category override to aapt2  [Jeremy Meyer]
-15d2b7e  Add FULL_ACCESS_CELL_BROADCAST_HISTORY permission to shell for CellBroadcast MTS test.  [Hyein Yu]
-25aa7c8  Fix SuspendPackageHelperTest after Kotlin 1.7.20  [Chaohui Wang]
-8fbd76a  fix: isMultiUserSupported in TestDevice does not reflect real value  [Anna Bauza]
-556d20d  Run additional compat checks for checkapi  [Anton Hansson]
-011b711  Replace usages of Context.getUserId() by Context.getUser()  [Alisher Alikhodjaev]
-e9f5ede  Explicitly discard released proto strings.  [Krzysztof Kosiński]
-59632b1  Add null pointer check to avoid system crash.  [Jessie Hao]
-d7f6cd3  Add ABS_MT_SLOT config to virtual touch screen.  [Zixuan Qu]
-a817e39  Unpin staledataclass-annotation-processor from Java 8  [Sorin Basca]
-b02c70c  Toast: Fix ActivityRecord does not attached to process  [hupeng3]
-9d1032b  Add null checks  [Cole Faust]
-05e4c70  Fix stack-use-after-scope for a `std::string`  [Stephen Hines]
-2405e1d  Make LoadClass collect garbage as promised  [Hans Boehm]
-7ec81ec  Allow using 4G icon instead LTE [1/2]  [Pranav Vashi]
-457ce84  biometrics: Fix udfps races  [Andrzej Perczak]
-5fa16ff  SystemUI: Fix SystemUI Crash  [mqi]
-e78bdd8  view: add null check for dispatch touch view  [jianzhou]
-59f1fe7  fix error com.google.android.gms.persistent  [rc420head]
-eaa8510  config: Allow gms to access persistent data partition  [Demon000]
-22cfd83  ProcessList: Silence lmkd retries logspam  [strwbrry143]
-7360d31  SystemUI: BatteryMeterView: Set white tint in darkmode  [althafvly]
-1d6ee4f  SystemUI: UdfpsAnimation: Don't run scaleFactor on mAnimationSize  [AnierinB]
-cdd908e  wm: Passing a new ArraySet instance to avoid crash  [Qiushi.Han]
-6b72e7c  InputWrapper: Opt out early if session == null  [Lars Greiss]
-d76808b  Fix incorrect context classloader initialization in system_server  [yuanhuihui]
-f1300c8  Fix MtpDatabase multithreading NullPointerException  [katao]
-15ad939  ServiceRegistry: Don't throw an exception if OEM_LOCK is missing  [Scott Warner]
-4054c74  core: Fix toast background color not changing with theme  [SuperDroidBond]
-b7998dd  SystemUI: Add caffeine QS tile  [Keith Mok]
-1ccbb3f  SystemUI: Reset to textColorPrimaryInverse for light theme  [Xayah]
-2a65c61  NfcA: Fix an NPE in constructor  [Guche Mantuano]
-2ff5dcc  Do not brighten when dim state or low power mode.  [linkai]
-c33bc4b  SystemUI: QS: SoundTile: Don't toggle DND  [AnkitGourav]
-8e45aab  SystemUI: Update SoundTile  [Ali B]
-c4eab60  SystemUI: Add Sound tile to Quick Settings  [Yoshinori Hirano]
-dd750d6  Allow to suppress notifications sound/vibration if screen is ON [1/2]  [ezio84]
-3a5b8e9  SystemUI: Fix QS header clock color  [Danny Baumann]
-d35e1e3  SystemUI: QSCustomizer: Fix QS tile reset text color  [althafvly]
-1768e5c  SystemUI: Follow light/dark theme in power menu  [Danny Lin]
-746f2c1  SystemUI: Fix QS clock overlapping on UI mode change  [Adithya R]
-57f7a0a  SystemUI: Add dual-tone light and dark themes for QS  [Danny Lin]
-bf191a3  SystemUI: Initialize QS tiles in inactive state  [Danny Lin]
-dc79b25  SystemUI: Follow light/dark theme in quick settings  [Danny Lin]
-57b8166  Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE"  [Danny Lin]
-94819b6  SystemUI: Make QS panel change on UI mode changes  [Danny Lin]
-5b86693  Fix double wallpaper attachment (race) when it is gone  [Dmitrii Zhestilevskii]
-26f966c  Allow dreams to redraw when device is rotated.  [Victor Truong]
-0816a93  Do not crash when duplication found in merged imsi list  [Junyu Lai]
-a187862  Remove calls to client while holding lock  [Vlad Popa]
-71e1421  [SQUASH] Revert GLES v2 implementation  [John Galt]
-2619750  SystemUI: Update and fix QS tile layout settings  [Pranav Vashi]
-a99a57a  SystemUI: Improve vertical QS tile layout & animation  [timjosten]
-041576a  SystemUI: Tune QS tile dimensions  [strwbrry143]
-4bdefc6  SystemUI: Fix qs tile vertical layout scrolling  [minarypenguin]
+a2e768e  base: Disable hide IME space feature by default  [minaripenguin37]
+ba81342  base: Make IME space optional  [minaripenguin37]
 
 
 * packages/apps/Launcher3
-0dfb78d  Launcher3: LocalColorExtractor: Adapt for Android 12L  [Danny Lin]
-ab358cf  Launcher3: LocalColorExtractor: Disable local colors when using system presets  [Danny Lin]
-9126916  Launcher3: Implement LocalColorExtractor using colorkt-based theme engine  [Danny Lin]
+9cb3919  Update RU translation  [DennySPb]
+df18d71  Launcher3: Add support for enabling taskbar on phones  [Danny Lin]
 
 
 * packages/apps/Settings
-efadd03  WiFi: Remove country code checking.  [xyyx]
-1fbd2ff  Settings: Switch to VERSION.INCREMENTAL instead of FINGERPRINT  [palaych]
-f22f2fa  Settings: Alter Smooth Display summary to match actual refresh rate  [Fabian Leuteneegger]
-9a5a223  fixup! Show user's Google avatar on the homepage  [Jason Edson]
-88f62ab  Settings: Address a memory leak  [dragonGR]
-215a960  Show user's Google avatar on the homepage  [Jason Edson]
-0827661  Revert "Settings: complete the AvatarViewMixin implementation"  [DennySPb]
+6912536  Fixup failing strings  [DennySPb]
+94aeea4  Fix RU translation in hide IME option  [DennySPb]
+482d8c8  Settings: Disable hide IME space feature by default  [minaripenguin37]
+de43eab  Settings: Battery charge warning [2/2]  [Nicolas Dhouailly]
+6580481  Update RU translation  [DennySPb]
+9ad3c4d  gestures: make IME button optional  [hydrangea07]
+89cfcf9  Settings: Allow to hide arrow for back gesture [2/2]  [Nebrassy]
 
 
-* system/memory/lmkd
-67c467d  lmkd: remove priority setting for the kill target  [Suren Baghdasaryan]
+* vendor/syberia
+18a9b4f  official_devices: Add optional ota codename key to lemonade  [DennySPb]
+af583f0  Bump version to 6.1  [DennySPb]
+e6cf0b1  Remove hide navbar overlay  [DennySPb]
 
 
 ====================
-     2022-10-10    
+     2022-11-10    
+====================
+
+* bionic
+cf6f8d5  Sync with upstream NetBSD.  [Elliott Hughes]
+404f00c  libc: Set __bionic_asm_align to 64 for arm and arm64  [Jake Weinstein]
+d3cea08  arm64: use llvm's builtins for lround/lroundf/llround/llroundf.  [Jake Weinstein]
+56a642e  arm64: use llvm's builtins for copysign() and copysignf().  [Elliott Hughes]
+54fedef  arm64: fix fesetround().  [Elliott Hughes]
+5609f7b  arm64: simplify the fenv implementation a bit.  [Elliott Hughes]
+b3210be  if_nameindex: Fix the failure for subinterfaces  [Theres Kuttappan]
+f62a929  fdsan: fix overflow in FdTableImpl::at  [Benjamin Lerman]
+e64903a  Allow larger page sizes on host Bionic on arm64.  [Peter Collingbourne]
+df86a24  libc: Do not nullify `__dtoa_locks`  [minaripenguin]
+8fbb4dc  Sync with upstream openbsd.  [Elliott Hughes]
+8f26283  bionic: Enable -O3  [dkati]
+
+
+* external/arm-optimized-routines
+28228e2  Merge branch 'master' of https://github.com/ARM-software/optimized-routines into HEAD  [DennySPb]
+cf69308  pl/math/test: Simplify ulp and bench macros  [Joe Ramsay]
+1721f53  pl/math: Add vector/Neon expm1  [Joe Ramsay]
+151020a  pl/math: Add scalar expm1  [Joe Ramsay]
+43140a8  pl/math: Add scalar and vector/Neon coshf  [Add joeram01]
+78a876a  Make fenv checking dependent on WANT_ERRNO  [Joe Ramsay]
+4ed9b49  Fix tests for WANT_SVE_MATH=1  [Joe Ramsay]
+41d08c6  pl/math: Add vector/Neon sinhf  [Joe Ramsay]
+
+
+* frameworks/base
+7d16e6d  Squashed navigation/gestures patches  [jhonboy121]
+448d92a  SystemUI: Add API for runtime taskbar config  [Danny Lin]
+27e2a81  Allow to hide arrow for back gesture [1/2]  [Ali B]
+3914efe  SystemUI: Keyguard: Adapt to r14 changes  [minaripenguin37]
+f5122dc  [BugFix] fix ViewConfiguration's ArrayIndexOutOfBoundsException  [优秀]
+5823292  Fix errorprone 2.15.0 errors  [Sorin Basca]
+df15750  [Bugfix][Stability] Fix system_server kills itself by mistake.  [xi yu]
+31662d4  Recheck the condition before really killing  [desuo wang]
+16fbf74  services: ActiveServices: drop uid check when notifying newly registered callbacks  [jhonboy121]
+cec9f88  [Bugfix] Avoid Removing uid from mActiveUids again  [lihuan3]
+80061b4  SystemUI: restart timeout causes black screen  [pengzhicai]
+70676e0  fix the result when Adj > visible  [zhuchao]
+d6e24b8  [Bugfix][ContentProvider] Fix the anr procedure of a ContentProvider no longer responding  [yuxi]
+90446ef  service/provider adj should not delivery to client when cycleReEval computeOomAdjLSP in Cycle strategy.  [ke feng]
+3cdc57a  Fix an issue when recomputing adj in cycles.  [zhuchao]
+b1a1b2c  [Bugfix] Remove publish map if provider is dying  [mositing]
+
+
+* frameworks/native
+2a6f753  binder: Enable ThinLTO  [xNombre]
+63db7de  Fix SerializeFileDescriptor.  [Florian Mayer]
+ecc233b  autogenerated reformatting by bpfmt  [Alix]
+61b8026  auto formatting from bpfmt  [Alix]
+b0419e9  Fixes ubsan shift-out-of-bounds SIGABRT  [Himanshu Agrawal]
+d0f9699  libbinder: fix one implicit cast that triggers sanitizer  [Andrei Homescu]
+47b852c  libbinder: Status - fix read at end of Parcel  [Steven Moreland]
+f4e72e3  Do not set bugprone-branch-clone as error.  [Chih-Hung Hsieh]
+6db6edc  Use dalvik.vm.background-dex2oat-* system properties for background jobs.  [Martin Stjernholm]
+
+
+* packages/apps/Settings
+fcdd2cb  Squashed navigation/gestures patches  [jhonboy121]
+
+
+* system/core
+f6dcc58  Fsync on directory after rename() call  [Kelvin Zhang]
+2ebbd11  Rectify Boottime property  [Padmanabha V]
+aae319c  libmodprobe: check blockedlist if load failed  [chungkai]
+d3655bc  libmodprobe: allow module with soft dependencies to load in parallel  [chungkai]
+0448588  Move boringssl self tests from early-init to init.  [Pete Bentley]
+96c2b6b  init.rc: Move boringssl_self_tests to 'init' stage.  [Karthik Gopalan]
+5d20938  Don't kill subcontext if it's null  [Inseob Kim]
+
+
+====================
+     2022-11-09    
 ====================
 
 * art
-548f1c9  Update boot image and system server profiles [M10C10P80S0], RESTRICT AUTOMERGE (Since these are profiles for T release only)  [art-benchmark-service]
-a7337e9  RESTRICT AUTOMERGE Since these are profiles for T release only.  [art-benchmark-service]
-1cd0bd7  Cleanup libart-compiler version script  [Dmitrii Ishcheikin]
-b312847  avoid "> >" in demangled names  [Chih-Hung Hsieh]
-ff93527  Hide internal libart-compiler symbols  [Dmitrii Ishcheikin]
+e8e2fed  Merge branch '13.0' of https://github.com/syberia-project/platform_art into HEAD  [DennySPb]
+
+
+* bionic
+2474d94  Merge branch '13.0' of https://github.com/syberia-project/platform_bionic into HEAD  [DennySPb]
+
+
+* build/make
+fc08a12  Merge tag 'android-13.0.0_r13' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
+
+
+* device/qcom/sepolicy_vndr-legacy-um
+41c6e74  Merge branch 'lineage-20.0-legacy-um' of https://github.com/LineageOS/android_device_qcom_sepolicy_vndr  [DennySPb]
+
+
+* external/arm-optimized-routines
+3830819  Merge tag 'android-13.0.0_r13' of https://android.googlesource.com/platform/external/arm-optimized-routines into HEAD  [DennySPb]
+
+
+* frameworks/av
+98339ae  Merge tag 'android-13.0.0_r13' of https://android.googlesource.com/platform/frameworks/av into 13.0  [DennySPb]
+
+
+* frameworks/base
+bb211d4  Merge tag 'android-13.0.0_r13' of https://android.googlesource.com/platform/frameworks/base into 13.0  [DennySPb]
+8c7acc9  SystemUI: use simple check for isFaceDisabled  [Ali B]
+54fbaac  SystemUI: Face Unlock animation  [Dil3mm4]
+3e2a8e1  fwb: Guard some functions against face unlock  [jhenrique09]
+5b9eb3e  Hide face recognizing message on bouncer when authenticated  [jhenrique09]
+af4b934  face: Pass requestId on our authentication client  [jhenrique09]
+79edac9  SystemUI: Tell user when face unlock detection is running  [jhenrique09]
+6ca2009  Reset face auth on occluding app when authenticated  [jhenrique09]
+ecb6082  WalletActivity: Don't explicitly request face auth  [jhenrique09]
+5716d27  Do not show camera indicator for Face Unlock service  [LibXZR]
+07bb339  [1/2] Allow changing face unlock method when locked  [jhenrique09]
+b9429e1  base: do not use new lockscreen layout for bypass  [Ethan Halsall]
+3e7dbb4  KeyguardBouncer: Don't delay showing if face auth running  [jhenrique09]
+1055fbb  FaceService: Allow our face unlock to be used on third-party apps  [jhenrique09]
+426a822  SystemUI: Improve pt-br translation for fingerprint_dialog_use_fingerprint_instead  [jhenrique09]
+cbdd266  Add idle lockout message for FaceUnlock  [jhenrique09]
+581220e  services: Merge T changes on our custom face unlock impl  [jhenrique09]
+a01c2c0  Initial import of Face Unlock for S  [jhenrique09]
+16ce205  SystemUI: Nuke oriented navbar handle  [Ido Ben-Hur]
+255b1bd  SystemUI: Fix QS header animation in RTL mode  [Adithya R]
+3a8a178  SystemUI: Fix status bar and QS margins and paddings  [Andy CrossGate Yan]
+d68da72  PIHooks: Enable Pixel spoof for ASI & GMS persistent  [Adithya R]
+2543160  SystemUI: NavigationHandle: Don't show on keyguard or doze  [Ido Ben-Hur]
+6e12709  fixup! PIHooks: Spoof device as Pixel for some Google apps  [Adithya R]
+96e7fe2  Battery charge warning [1/2]  [Nicolas Dhouailly]
+43723aa  SystemUI: Add missing location permission  [Pranav Vashi]
+eeb0717  BatteryStatsImpl: Guard against OOB  [Ido Ben-Hur]
+9f883e1  SystemUI: Darken circle battery background on expanded QS  [Ido Ben-Hur]
+322fdc6  StrictMode: Enable by default only in ENG builds  [Adithya R]
+347a6fd  StrictMode: Don't enable extra features for userdebug builds  [Sultan Alsawaf]
+bd1ab54  The surface hang up when screen on and screen off  [Guo Li]
+b5e929f  SystemUI: Limit keyguard charging stats updates  [xNombre]
+5709391  base: Silence broadcast warnings logspam  [minaripenguin37]
+c99edcb  Camera: Expose aux camera if packagename is null  [wbs306]
+9f3700a  base: PSSSSST! disable some DEBUG logspill  [maxwen]
+185522fb  base: TtsEngines: fix yet another NPE  [jhonboy121]
+d3f403b  Revert "Remove fixed grant of READ_PHONE_STATE and cleanup"  [micky387]
+1e1d56c  privapp-permissions: Grant missing TelephonyProvider perm.  [spezi77]
+5bdb961  CameraDeviceImpl: Don't crash when checking input configuration failed  [Xayah]
+b2bacee  Fix potential race condition problem  [tysonwei]
+4afb306  wm: Migrate deprecated getColor to one with Theme  [utzcoz]
+07f50bf  Fix NPE when finishing remote animation  [miaojian]
+0fa77b5  Toast: Fix the concurrency problem of mAuthenticator  [Peng Hu]
+85ad49e  AlertWindowNotification: Correctly load app label  [HZ]
+dc0784f  Make sure view is laid out before calling createBitmap  [Shen Lin]
+41e81cac  Make sure width and height are not zero before calling createBitmap  [Shen Lin]
+a81d050  Keep the order of visible tasks in the same order as the system when calling getTasks  [Bowen Li]
+d13ccee7  Attach the background-panel to DisplayContent.  [xinying]
+5958c00  SystemUI: Play all charging animator sets at the same time  [hydrangea07]
+2e7282c  SystemUI: Add charging icon to the charging animation  [minaripenguin37]
+cde0c37  SystemUI: Improve charging animation's color palette  [minaripenguin37]
+c984cd8  telephony: SmsMessage: Bring newFromCDS method back  [SamarV-121]
+d9bf9d9  StorageManager: Add dummy inCryptKeeperBounce method  [SamarV-121]
+9e5a26f  DNM Revert "Camera: Add support for readout timestamp"  [vjspranav]
+71a7b91  Change the default value of sync mode to NORMAL  [ot905302]
+042017b  Improve performance by resolving MediaCodec.BufferInfo members outside of the frequently called code (like dequeueOutputBuffer)  [Pavel Labovich]
+94e99ba  Fix binderDied of an app can not be triggered in some cases.  [xi yu]
+
+
+* frameworks/libs/systemui
+3c2f4fb  Merge tag 'android-13.0.0_r13' of https://android.googlesource.com/platform/frameworks/libs/systemui into HEAD  [DennySPb]
+
+
+* packages/apps/FaceUnlockService
+58cc0f0  Bump to sdk 33  [jhenrique09]
+
+
+* packages/apps/Settings
+248a0fb  Merge branch '13.0' of github.com:syberia-project/platform_packages_apps_Settings into 13.0  [DennySPb]
+1d94b42  Settings: Disable face enroll on Setup Wizard  [jhenrique09]
+a7e4661  [2/2] Allow changing face unlock method when locked  [jhenrique09]
+0a13211  Settings: Allow using face as auth method for apps  [jhenrique09]
+35a00bf  Initial import of Face Unlock for T  [jhenrique09]
+43964f7  Revert "Added face unicorn strings"  [vjspranav]
+
+
+* packages/modules/Wifi
+300c0a9  Merge tag 'android-13.0.0_r13' of https://android.googlesource.com/platform/packages/modules/Wifi into HEAD  [DennySPb]
+
+
+* packages/services/Telecomm
+cda2685  Merge tag 'android-13.0.0_r13' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
+
+
+* vendor/syberia
+09bfa8f  Rework rule building in aosp_generator  [SagarMakhar]
 
 
 ====================
-     2022-10-09    
+     2022-11-08    
 ====================
 
+* bionic
+4df1280  Switch to jemalloc memory allocator  [Danny Lin]
+
+
+* build/make
+38e447f  Use Unix epoch time for build number  [Danny Lin]
+
+
+* device/qcom/sepolicy
+9c1ef83  Merge branch 'lineage-20.0' of https://github.com/LineageOS/android_device_qcom_sepolicy into 13.0  [DennySPb]
+
+
+* device/syberia/sepolicy
+21eb107  Revert " sepolicy: add jamesdsp"  [DennySPb]
+4ecf2f3  Revert "sepolicy: update_engine neverallows [2/2]"  [DennySPb]
+190748c  Make backuptool permissive only in non user builds  [Luca Stefani]
+d4e4e09  qcom: gmscore_app: suppress denials on firmware  [Adam Shih]
+1b8e43b  Remove dummy_type_meant_to_prevent_selinux_compilation_from_failing_when_system_ext_public_dir_has_nothing_but_attributes  [Michael Bestas]
+
+
+* system/core
+312e71d  debuggerd: Disable scudo usage  [Adithya R]
+
+
+* system/memory/lmkd
+2957d91  Merge branch 'master' of https://android.googlesource.com/platform/system/memory/lmkd into HEAD  [DennySPb]
+
+
+* system/sepolicy
+cf30c2c  Obsolete BOARD_PLAT_*_SEPOLICY_DIR  [Dan Willemsen]
+
+
+* vendor/google/pixel
+e73fa20  pixel: drop recorder  [Omkar Chandorkar]
+eff13ea  PixelDocumentsUIOverlay: use user fonts  [Omkar Chandorkar]
+1ff5511  pixel: add documentsui overlays  [Omkar Chandorkar]
+837dd11  pixel: move to redfin-user-13-TP1A.220905.004-8927612-release-keys  [Omkar Chandorkar]
+6a0c623  pixel: Add game_service sysconfig  [Adithya R]
+fcf512f  pixel: Use PRODUCT_PACKAGE_OVERLAYS  [Adithya R]
+
+
 ====================
-     2022-10-08    
+     2022-11-07    
+====================
+
+* art
+3010b73  Cleanup: Use HBasicBlock's IsCatchBlock method  [Santiago Aboy Solanes]
+f5fdd35  Faster class retrieval in nterp.  [Vladimir Marko]
+1f27294  Don't inline methods whose basic blocks end with a throw  [Santiago Aboy Solanes]
+9531ff6  ART: Add regression test for obsolete crash.  [Vladimir Marko]
+ccc9bda  Make LoadMethod{Handle,Type} instruction throwing.  [Nicolas Geoffray]
+
+
+* frameworks/av
+3475fe0  cameraservice: fix deadlock in onewayhidl onPhysicalCameraStatusChanged  [zhangshiyang]
+0ed2991  DNM Revert "Camera: Add support for readout timestamp"  [Pranav Vashi]
+
+
+* frameworks/base
+6f3d126  reTicker: Do not jump to app when clicked in games  [cjh1249131356]
+39c3694  AuthRippleController: Always finish the LightRevealScrim  [Chenyang Zhong]
+785256b  AuthRippleController: Only update sensor location when necessary  [Chenyang Zhong]
+fed9417  SystemUI: Improve fp ripple animation color  [minaripenguin37]
+b59a2db  base: Stop the spamming of background start not allowed  [SakuraiLH]
+7449cac  Set callback before hal connection to avoid NPE on startup  [Christian Hoffmann]
+2e8b8b3  Update various corner radiuses to align with AOSP apps  [Edward Savage-Jones]
+
+
+* frameworks/native
+3bdf70c  Incorrectly dropped event because of pending overdue app switch when the App switch key event has arrived.  [hongzuo liu]
+83341f9  libbinder: rpc java detach error code  [Steven Moreland]
+
+
+* vendor/qcom/opensource/interfaces
+ec1beb1  Merge tag 'LA.QSSI.13.0.r1-07200-qssi.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/interfaces into 13.0  [DennySPb]
+
+
+====================
+     2022-11-06    
+====================
+
+* packages/apps/Settings
+ea8e132  team: Add Xiaomi Mi A2 Lite maintainer  [blinoff82]
+24c50f0  team: Add Xiaomi Redmi Note 8 Pro maintainer  [blinoff82]
+
+
+* vendor/syberia
+5830c57  Add Xiaomi Mi A2 Lite to official devices  [blinoff82]
+930d611  Add Xiaomi Redmi Note 8 Pro to official devices  [blinoff82]
+
+
+====================
+     2022-11-05    
 ====================
 
