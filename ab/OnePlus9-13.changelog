@@ -1,329 +1,255 @@
 ====================
-     2022-11-11    
+     2022-12-08    
 ====================
 
-* bootable/recovery
-94d20eb  ui: adapt for new design  [Magicxavi]
+* frameworks/base
+5b832c0  Revert "Make DPC respect overlaid min/max brightness values"  [DennySPb]
+
+
+====================
+     2022-12-07    
+====================
+
+* art
+cab0481  Update CanTriggerGC flag for ArraySet  [Santiago Aboy Solanes]
+f9fbd74  Merge tag 'android-13.0.0_r16' of https://android.googlesource.com/platform/art into HEAD  [DennySPb]
+
+
+* bionic
+9214013  Merge tag 'android-13.0.0_r16' of https://android.googlesource.com/platform/bionic into HEAD  [DennySPb]
 
 
 * frameworks/av
-ab8e66b  StagefrightRecorder: Add "set-title" parameter  [cjh1249131356]
+7ca6502  Revert "NuPlayer: Update code for channel mask conversion refactor"  [DennySPb]
+f4ea946  CCodec: Delay stop using surface until the end of stop()  [Sungtak Lee]
+6aa83ae  ImageReader ndk: Enable NDK support for P010 format  [Emilian Peev]
+5c5ab54  libstagefright: fix heap use after free issue  [Girish]
+1a501e3  CCodec: Delay stop using surface until the end of release()  [Sungtak Lee]
+82335fe  C2HIDL: Prevent OOB read in ParseParamsBlob  [Sungtak Lee]
+a428f4a  TimeCheck: Add second chance queue  [Andy Hung]
+0170706  TimeCheck: Use clock monotonic for elapsed time  [Andy Hung]
+2febe58  libaudiohal: Make effect descriptors cache thread-safe  [Mikhail Naganov]
+356dece  fix potential read null pointer  [Xu Lai]
+e04a7d2  NuPlayer: Update code for channel mask conversion refactor  [Andy Hung]
+ebb5ebb  MethodStatistics: Use const references in API  [Andy Hung]
+6a6eec1  CCodec: ignore prepareInitialInputBuffers returning NO_MEMORY error  [Wonsik Kim]
+305c820  Fix race condition in thread creation  [Keith Mok]
+7d0b293  TimeCheck: Use FixedString  [Andy Hung]
 
 
 * frameworks/base
-a2e768e  base: Disable hide IME space feature by default  [minaripenguin37]
-ba81342  base: Make IME space optional  [minaripenguin37]
+bff3124  [battery] Fix int16 overflow. (2/2)  [qinyige1]
+7cb6b70  Fix crash where trim memory resulted in HWUI deleting the surface.  [Derek Sollenberger]
+
+
+* frameworks/native
+f71b842  [battery] Fix int16 overflow. (1/2)  [qinyige1]
+a8c7902  Reduce kernel instructions for PowerAdvisor  [Alec Mouri]
+d4113fe  Fix use-after-free in SurfaceFlinger::doDump  [Alec Mouri]
 
 
 * packages/apps/Launcher3
-9cb3919  Update RU translation  [DennySPb]
-df18d71  Launcher3: Add support for enabling taskbar on phones  [Danny Lin]
-
-
-* packages/apps/Settings
-6912536  Fixup failing strings  [DennySPb]
-94aeea4  Fix RU translation in hide IME option  [DennySPb]
-482d8c8  Settings: Disable hide IME space feature by default  [minaripenguin37]
-de43eab  Settings: Battery charge warning [2/2]  [Nicolas Dhouailly]
-6580481  Update RU translation  [DennySPb]
-9ad3c4d  gestures: make IME button optional  [hydrangea07]
-89cfcf9  Settings: Allow to hide arrow for back gesture [2/2]  [Nebrassy]
-
-
-* vendor/syberia
-18a9b4f  official_devices: Add optional ota codename key to lemonade  [DennySPb]
-af583f0  Bump version to 6.1  [DennySPb]
-e6cf0b1  Remove hide navbar overlay  [DennySPb]
-
-
-====================
-     2022-11-10    
-====================
-
-* bionic
-cf6f8d5  Sync with upstream NetBSD.  [Elliott Hughes]
-404f00c  libc: Set __bionic_asm_align to 64 for arm and arm64  [Jake Weinstein]
-d3cea08  arm64: use llvm's builtins for lround/lroundf/llround/llroundf.  [Jake Weinstein]
-56a642e  arm64: use llvm's builtins for copysign() and copysignf().  [Elliott Hughes]
-54fedef  arm64: fix fesetround().  [Elliott Hughes]
-5609f7b  arm64: simplify the fenv implementation a bit.  [Elliott Hughes]
-b3210be  if_nameindex: Fix the failure for subinterfaces  [Theres Kuttappan]
-f62a929  fdsan: fix overflow in FdTableImpl::at  [Benjamin Lerman]
-e64903a  Allow larger page sizes on host Bionic on arm64.  [Peter Collingbourne]
-df86a24  libc: Do not nullify `__dtoa_locks`  [minaripenguin]
-8fbb4dc  Sync with upstream openbsd.  [Elliott Hughes]
-8f26283  bionic: Enable -O3  [dkati]
-
-
-* external/arm-optimized-routines
-28228e2  Merge branch 'master' of https://github.com/ARM-software/optimized-routines into HEAD  [DennySPb]
-cf69308  pl/math/test: Simplify ulp and bench macros  [Joe Ramsay]
-1721f53  pl/math: Add vector/Neon expm1  [Joe Ramsay]
-151020a  pl/math: Add scalar expm1  [Joe Ramsay]
-43140a8  pl/math: Add scalar and vector/Neon coshf  [Add joeram01]
-78a876a  Make fenv checking dependent on WANT_ERRNO  [Joe Ramsay]
-4ed9b49  Fix tests for WANT_SVE_MATH=1  [Joe Ramsay]
-41d08c6  pl/math: Add vector/Neon sinhf  [Joe Ramsay]
-
-
-* frameworks/base
-7d16e6d  Squashed navigation/gestures patches  [jhonboy121]
-448d92a  SystemUI: Add API for runtime taskbar config  [Danny Lin]
-27e2a81  Allow to hide arrow for back gesture [1/2]  [Ali B]
-3914efe  SystemUI: Keyguard: Adapt to r14 changes  [minaripenguin37]
-f5122dc  [BugFix] fix ViewConfiguration's ArrayIndexOutOfBoundsException  [优秀]
-5823292  Fix errorprone 2.15.0 errors  [Sorin Basca]
-df15750  [Bugfix][Stability] Fix system_server kills itself by mistake.  [xi yu]
-31662d4  Recheck the condition before really killing  [desuo wang]
-16fbf74  services: ActiveServices: drop uid check when notifying newly registered callbacks  [jhonboy121]
-cec9f88  [Bugfix] Avoid Removing uid from mActiveUids again  [lihuan3]
-80061b4  SystemUI: restart timeout causes black screen  [pengzhicai]
-70676e0  fix the result when Adj > visible  [zhuchao]
-d6e24b8  [Bugfix][ContentProvider] Fix the anr procedure of a ContentProvider no longer responding  [yuxi]
-90446ef  service/provider adj should not delivery to client when cycleReEval computeOomAdjLSP in Cycle strategy.  [ke feng]
-3cdc57a  Fix an issue when recomputing adj in cycles.  [zhuchao]
-b1a1b2c  [Bugfix] Remove publish map if provider is dying  [mositing]
-
-
-* frameworks/native
-2a6f753  binder: Enable ThinLTO  [xNombre]
-63db7de  Fix SerializeFileDescriptor.  [Florian Mayer]
-ecc233b  autogenerated reformatting by bpfmt  [Alix]
-61b8026  auto formatting from bpfmt  [Alix]
-b0419e9  Fixes ubsan shift-out-of-bounds SIGABRT  [Himanshu Agrawal]
-d0f9699  libbinder: fix one implicit cast that triggers sanitizer  [Andrei Homescu]
-47b852c  libbinder: Status - fix read at end of Parcel  [Steven Moreland]
-f4e72e3  Do not set bugprone-branch-clone as error.  [Chih-Hung Hsieh]
-6db6edc  Use dalvik.vm.background-dex2oat-* system properties for background jobs.  [Martin Stjernholm]
-
-
-* packages/apps/Settings
-fcdd2cb  Squashed navigation/gestures patches  [jhonboy121]
+46309e4  Launcher3: Add a toggle for smartspace  [Adithya R]
 
 
 * system/core
-f6dcc58  Fsync on directory after rename() call  [Kelvin Zhang]
-2ebbd11  Rectify Boottime property  [Padmanabha V]
-aae319c  libmodprobe: check blockedlist if load failed  [chungkai]
-d3655bc  libmodprobe: allow module with soft dependencies to load in parallel  [chungkai]
-0448588  Move boringssl self tests from early-init to init.  [Pete Bentley]
-96c2b6b  init.rc: Move boringssl_self_tests to 'init' stage.  [Karthik Gopalan]
-5d20938  Don't kill subcontext if it's null  [Inseob Kim]
-
-
-====================
-     2022-11-09    
-====================
-
-* art
-e8e2fed  Merge branch '13.0' of https://github.com/syberia-project/platform_art into HEAD  [DennySPb]
-
-
-* bionic
-2474d94  Merge branch '13.0' of https://github.com/syberia-project/platform_bionic into HEAD  [DennySPb]
-
-
-* build/make
-fc08a12  Merge tag 'android-13.0.0_r13' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
-
-
-* device/qcom/sepolicy_vndr-legacy-um
-41c6e74  Merge branch 'lineage-20.0-legacy-um' of https://github.com/LineageOS/android_device_qcom_sepolicy_vndr  [DennySPb]
-
-
-* external/arm-optimized-routines
-3830819  Merge tag 'android-13.0.0_r13' of https://android.googlesource.com/platform/external/arm-optimized-routines into HEAD  [DennySPb]
-
-
-* frameworks/av
-98339ae  Merge tag 'android-13.0.0_r13' of https://android.googlesource.com/platform/frameworks/av into 13.0  [DennySPb]
-
-
-* frameworks/base
-bb211d4  Merge tag 'android-13.0.0_r13' of https://android.googlesource.com/platform/frameworks/base into 13.0  [DennySPb]
-8c7acc9  SystemUI: use simple check for isFaceDisabled  [Ali B]
-54fbaac  SystemUI: Face Unlock animation  [Dil3mm4]
-3e2a8e1  fwb: Guard some functions against face unlock  [jhenrique09]
-5b9eb3e  Hide face recognizing message on bouncer when authenticated  [jhenrique09]
-af4b934  face: Pass requestId on our authentication client  [jhenrique09]
-79edac9  SystemUI: Tell user when face unlock detection is running  [jhenrique09]
-6ca2009  Reset face auth on occluding app when authenticated  [jhenrique09]
-ecb6082  WalletActivity: Don't explicitly request face auth  [jhenrique09]
-5716d27  Do not show camera indicator for Face Unlock service  [LibXZR]
-07bb339  [1/2] Allow changing face unlock method when locked  [jhenrique09]
-b9429e1  base: do not use new lockscreen layout for bypass  [Ethan Halsall]
-3e7dbb4  KeyguardBouncer: Don't delay showing if face auth running  [jhenrique09]
-1055fbb  FaceService: Allow our face unlock to be used on third-party apps  [jhenrique09]
-426a822  SystemUI: Improve pt-br translation for fingerprint_dialog_use_fingerprint_instead  [jhenrique09]
-cbdd266  Add idle lockout message for FaceUnlock  [jhenrique09]
-581220e  services: Merge T changes on our custom face unlock impl  [jhenrique09]
-a01c2c0  Initial import of Face Unlock for S  [jhenrique09]
-16ce205  SystemUI: Nuke oriented navbar handle  [Ido Ben-Hur]
-255b1bd  SystemUI: Fix QS header animation in RTL mode  [Adithya R]
-3a8a178  SystemUI: Fix status bar and QS margins and paddings  [Andy CrossGate Yan]
-d68da72  PIHooks: Enable Pixel spoof for ASI & GMS persistent  [Adithya R]
-2543160  SystemUI: NavigationHandle: Don't show on keyguard or doze  [Ido Ben-Hur]
-6e12709  fixup! PIHooks: Spoof device as Pixel for some Google apps  [Adithya R]
-96e7fe2  Battery charge warning [1/2]  [Nicolas Dhouailly]
-43723aa  SystemUI: Add missing location permission  [Pranav Vashi]
-eeb0717  BatteryStatsImpl: Guard against OOB  [Ido Ben-Hur]
-9f883e1  SystemUI: Darken circle battery background on expanded QS  [Ido Ben-Hur]
-322fdc6  StrictMode: Enable by default only in ENG builds  [Adithya R]
-347a6fd  StrictMode: Don't enable extra features for userdebug builds  [Sultan Alsawaf]
-bd1ab54  The surface hang up when screen on and screen off  [Guo Li]
-b5e929f  SystemUI: Limit keyguard charging stats updates  [xNombre]
-5709391  base: Silence broadcast warnings logspam  [minaripenguin37]
-c99edcb  Camera: Expose aux camera if packagename is null  [wbs306]
-9f3700a  base: PSSSSST! disable some DEBUG logspill  [maxwen]
-185522fb  base: TtsEngines: fix yet another NPE  [jhonboy121]
-d3f403b  Revert "Remove fixed grant of READ_PHONE_STATE and cleanup"  [micky387]
-1e1d56c  privapp-permissions: Grant missing TelephonyProvider perm.  [spezi77]
-5bdb961  CameraDeviceImpl: Don't crash when checking input configuration failed  [Xayah]
-b2bacee  Fix potential race condition problem  [tysonwei]
-4afb306  wm: Migrate deprecated getColor to one with Theme  [utzcoz]
-07f50bf  Fix NPE when finishing remote animation  [miaojian]
-0fa77b5  Toast: Fix the concurrency problem of mAuthenticator  [Peng Hu]
-85ad49e  AlertWindowNotification: Correctly load app label  [HZ]
-dc0784f  Make sure view is laid out before calling createBitmap  [Shen Lin]
-41e81cac  Make sure width and height are not zero before calling createBitmap  [Shen Lin]
-a81d050  Keep the order of visible tasks in the same order as the system when calling getTasks  [Bowen Li]
-d13ccee7  Attach the background-panel to DisplayContent.  [xinying]
-5958c00  SystemUI: Play all charging animator sets at the same time  [hydrangea07]
-2e7282c  SystemUI: Add charging icon to the charging animation  [minaripenguin37]
-cde0c37  SystemUI: Improve charging animation's color palette  [minaripenguin37]
-c984cd8  telephony: SmsMessage: Bring newFromCDS method back  [SamarV-121]
-d9bf9d9  StorageManager: Add dummy inCryptKeeperBounce method  [SamarV-121]
-9e5a26f  DNM Revert "Camera: Add support for readout timestamp"  [vjspranav]
-71a7b91  Change the default value of sync mode to NORMAL  [ot905302]
-042017b  Improve performance by resolving MediaCodec.BufferInfo members outside of the frequently called code (like dequeueOutputBuffer)  [Pavel Labovich]
-94e99ba  Fix binderDied of an app can not be triggered in some cases.  [xi yu]
-
-
-* frameworks/libs/systemui
-3c2f4fb  Merge tag 'android-13.0.0_r13' of https://android.googlesource.com/platform/frameworks/libs/systemui into HEAD  [DennySPb]
-
-
-* packages/apps/FaceUnlockService
-58cc0f0  Bump to sdk 33  [jhenrique09]
-
-
-* packages/apps/Settings
-248a0fb  Merge branch '13.0' of github.com:syberia-project/platform_packages_apps_Settings into 13.0  [DennySPb]
-1d94b42  Settings: Disable face enroll on Setup Wizard  [jhenrique09]
-a7e4661  [2/2] Allow changing face unlock method when locked  [jhenrique09]
-0a13211  Settings: Allow using face as auth method for apps  [jhenrique09]
-35a00bf  Initial import of Face Unlock for T  [jhenrique09]
-43964f7  Revert "Added face unicorn strings"  [vjspranav]
-
-
-* packages/modules/Wifi
-300c0a9  Merge tag 'android-13.0.0_r13' of https://android.googlesource.com/platform/packages/modules/Wifi into HEAD  [DennySPb]
-
-
-* packages/services/Telecomm
-cda2685  Merge tag 'android-13.0.0_r13' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
-
-
-* vendor/syberia
-09bfa8f  Rework rule building in aosp_generator  [SagarMakhar]
-
-
-====================
-     2022-11-08    
-====================
-
-* bionic
-4df1280  Switch to jemalloc memory allocator  [Danny Lin]
-
-
-* build/make
-38e447f  Use Unix epoch time for build number  [Danny Lin]
-
-
-* device/qcom/sepolicy
-9c1ef83  Merge branch 'lineage-20.0' of https://github.com/LineageOS/android_device_qcom_sepolicy into 13.0  [DennySPb]
-
-
-* device/syberia/sepolicy
-21eb107  Revert " sepolicy: add jamesdsp"  [DennySPb]
-4ecf2f3  Revert "sepolicy: update_engine neverallows [2/2]"  [DennySPb]
-190748c  Make backuptool permissive only in non user builds  [Luca Stefani]
-d4e4e09  qcom: gmscore_app: suppress denials on firmware  [Adam Shih]
-1b8e43b  Remove dummy_type_meant_to_prevent_selinux_compilation_from_failing_when_system_ext_public_dir_has_nothing_but_attributes  [Michael Bestas]
-
-
-* system/core
-312e71d  debuggerd: Disable scudo usage  [Adithya R]
+8a481d3  init starts servicemanagers in "default" mount ns  [Jooyung Han]
+b049364  init: Document that ReapOneProcess() does not modify 'pid'  [Bart Van Assche]
+22fa412  init: Log more information if stopping times out  [Bart Van Assche]
 
 
 * system/memory/lmkd
-2957d91  Merge branch 'master' of https://android.googlesource.com/platform/system/memory/lmkd into HEAD  [DennySPb]
-
-
-* system/sepolicy
-cf30c2c  Obsolete BOARD_PLAT_*_SEPOLICY_DIR  [Dan Willemsen]
-
-
-* vendor/google/pixel
-e73fa20  pixel: drop recorder  [Omkar Chandorkar]
-eff13ea  PixelDocumentsUIOverlay: use user fonts  [Omkar Chandorkar]
-1ff5511  pixel: add documentsui overlays  [Omkar Chandorkar]
-837dd11  pixel: move to redfin-user-13-TP1A.220905.004-8927612-release-keys  [Omkar Chandorkar]
-6a0c623  pixel: Add game_service sysconfig  [Adithya R]
-fcf512f  pixel: Use PRODUCT_PACKAGE_OVERLAYS  [Adithya R]
-
-
-====================
-     2022-11-07    
-====================
-
-* art
-3010b73  Cleanup: Use HBasicBlock's IsCatchBlock method  [Santiago Aboy Solanes]
-f5fdd35  Faster class retrieval in nterp.  [Vladimir Marko]
-1f27294  Don't inline methods whose basic blocks end with a throw  [Santiago Aboy Solanes]
-9531ff6  ART: Add regression test for obsolete crash.  [Vladimir Marko]
-ccc9bda  Make LoadMethod{Handle,Type} instruction throwing.  [Nicolas Geoffray]
-
-
-* frameworks/av
-3475fe0  cameraservice: fix deadlock in onewayhidl onPhysicalCameraStatusChanged  [zhangshiyang]
-0ed2991  DNM Revert "Camera: Add support for readout timestamp"  [Pranav Vashi]
-
-
-* frameworks/base
-6f3d126  reTicker: Do not jump to app when clicked in games  [cjh1249131356]
-39c3694  AuthRippleController: Always finish the LightRevealScrim  [Chenyang Zhong]
-785256b  AuthRippleController: Only update sensor location when necessary  [Chenyang Zhong]
-fed9417  SystemUI: Improve fp ripple animation color  [minaripenguin37]
-b59a2db  base: Stop the spamming of background start not allowed  [SakuraiLH]
-7449cac  Set callback before hal connection to avoid NPE on startup  [Christian Hoffmann]
-2e8b8b3  Update various corner radiuses to align with AOSP apps  [Edward Savage-Jones]
-
-
-* frameworks/native
-3bdf70c  Incorrectly dropped event because of pending overdue app switch when the App switch key event has arrived.  [hongzuo liu]
-83341f9  libbinder: rpc java detach error code  [Steven Moreland]
-
-
-* vendor/qcom/opensource/interfaces
-ec1beb1  Merge tag 'LA.QSSI.13.0.r1-07200-qssi.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/interfaces into 13.0  [DennySPb]
-
-
-====================
-     2022-11-06    
-====================
-
-* packages/apps/Settings
-ea8e132  team: Add Xiaomi Mi A2 Lite maintainer  [blinoff82]
-24c50f0  team: Add Xiaomi Redmi Note 8 Pro maintainer  [blinoff82]
+d8bc6ed  Merge tag 'android-13.0.0_r16' of https://android.googlesource.com/platform/system/memory/lmkd into HEAD  [DennySPb]
 
 
 * vendor/syberia
-5830c57  Add Xiaomi Mi A2 Lite to official devices  [blinoff82]
-930d611  Add Xiaomi Redmi Note 8 Pro to official devices  [blinoff82]
+67d6201  Add double quote in custom APN name check  [Erfan Abdi]
+de6cafa  Copy APN list to $(TARGET_COPY_OUT_PRODUCT)/etc  [Bruno Martins]
+e28729d  Dynamically add custom APNs  [Rashed Abdel-Tawab]
 
 
 ====================
-     2022-11-05    
+     2022-12-06    
 ====================
+
+* frameworks/base
+ec44331  Props to p7  [DennySPb]
+177bf73  Change DropboxRateLimiter to rate limit proto tombstones and regular tombstones separately.  [Siim Sammul]
+5825387  fix MediaRouter error callback  [ot900189]
+bd4fe29  Fix BluetoothRouteProvider unsync randon crash  [ot_chenqi.c]
+4386ee6  Apply wakelock for notification sound  [WoongKi Min]
+3e7c815  Do not assistant delay for media notifications  [WoongKi Min]
+f9fdcfd  neko/Cat: Mark FLAG_IMMUTABLE PendingIntent with FLAG_MUTABLE  [PainKiller3]
+900402f  Return no optmization info for package "android".  [Jiakai Zhang]
+5098fc6  base: Allow toggling screen off FOD [1/2]  [jhonboy121]
+9da187c  udfps: Allow devices to pulse onFingerDown instead of waking the screen  [trpsl]
+5c8a679  udfps: Add support for udfps on aod without dedicated sensor  [TheScarastic]
+b045e70  PixelProps: Update redfin fp to November 2022  [DennySPb]
+964e972  RELAND MediaCodec: don't cache buffers until requested  [Wonsik Kim]
+c035fed  audio: add support for extended formats  [Preetam Singh Ranawat]
+dcaa0d2  Make smart idle maint update write amount record every period  [Daeho Jeong]
+379ecf8  Fix include in YuvToJpegEncoder  [Kevin Lubick]
+3800c4d  profcollect: Reduce background processing job priority  [Yi Kong]
+846fa77  START_NOT_STICKY services do not start on demand  [Leif Martensson]
+1f8187e  [Bugfix]Switch back to the application on /system when UID and path changed  [Wen Zhang]
+79f313a  SystemUI: Set launcher activity name to SyberiaLauncher  [Adithya R]
+d01717d  Smartspace: Fix music indication not showing on doze/aod  [jhenrique09]
+de0f1ab  SystemUI: BcSmartspaceView: Allow setting current page  [Adithya R]
+8ae6931  SystemUI: Forward-port smartspace to Android 13  [Adithya R]
+f981ac1  SystemUI: Implement Reverse-engineered Smartspace  [Daniel Jacob Chittoor]
+f720c8b  DisplayModeDirector: Use default refresh rate as min refresh rate  [Pranav Vashi]
+028f62c  Allow user to select low power refresh rate [1/2]  [Pranav Vashi]
+056ece2  base: Allow disabling refresh rate lowering in battery saver  [Adithya R]
+5a08ff0  PIHooks: Get package name from context instead of app  [jhenrique09]
+c117bfb  QS: LocationTile: make it cycle modes  [ezio84]
+99920aa  EnhancedEstimates: Get estimates from Device Health Services  [Jason Edson]
+7b025a3  SystemUI: Remove shadows from elements like clock, charging etc on lockscreen. It doesn't fit well and makes clock font look distorted.  [Akash Srivastava]
+2a62ebc  base: Rearrange bluetooth icon on statusbar  [Adithya]
+1ecce3a  fonts: Respect font scale for dynamic tracking calculations  [Danny Lin]
+f685981  SystemUI: Use default letter spacing for QS tiles  [Danny Lin]
+3a5c8a2  base: Implement Gsans Dynamic Metrics for system UI font  [Danny Lin]
+cb476029  BluetoothControllerImpl: Fetch battery level from any device  [jhonboy121]
+a338e4d  BluetoothControllerImpl: Synchronize mConnectedDevices access  [jhonboy121]
+5834dc2  SystemUI: Implement burn-in protection for status/navbar  [Park Ju Hyung]
+1b9ee33  Fix potential race condition problem  [tysonwei]
+dbf38f9  Fix flakiness of testNativeCrash  [Yukun Yang]
+5e5516b  Make getCallingUidOrThrow() not throw in clearCallingIdentity() blocks  [mattgilbride]
+1a2c202  Avoid static initializer cycle when registering ColorSpace  [Michael Hoisie]
+4969a1c5  [BugFixed][OOM_ADJ] use max_adj to control process final adj  [guolun Xue]
+6be244f  Reduce the number of binders  [Liangliang Sui]
+
+
+* frameworks/native
+36868a0  Fix getLatestVsyncEventData deadline.  [Rachel Lee]
+97ceb76  Allow first power mode as off state  [linpeter]
+d374d77  SF: fix refresh rate scoring when frameRateMultipleThreshold is used  [Ady Abraham]
+7d15f19  Add additional tests for PowerAdvisor  [Matt Buckley]
+c561a28  Disable ADPF CPU hints for SF unless active display is on  [Matt Buckley]
+e95626f  Disable ADPF CPU hint session rate limiter  [Matt Buckley]
+b7a759e  Fix SF hint sessions for virtual multi-display case  [Matt Buckley]
+6a537eb  Get vsync period for ADPF CPU hints in SF using display mode  [Matt Buckley]
+646e6a8  Add null check in PowerAdvisor::supportsPowerHintSession  [Shao-Chuan Lee]
+89e3729  Disable early hint in SurfaceFlinger adpf cpu hints by default  [Matt Buckley]
+9aa2c95  Guard against overflow errors for transparent regions  [Alec Mouri]
+5ef8ecb  Re-use reference timing for late hint in SF hint session timing  [Matt Buckley]
+d36d8a8  Use true present fence times in PowerHintSession duration calc  [Matt Buckley]
+96f53f2  Fix early hint missing safety margin  [Matt Buckley]
+d3dce54  Rename hwc-specific methods and properties for readability  [Matt Buckley]
+b173987  Change SF power hints to use early frame predictions  [Matt Buckley]
+251645b  SF: Fix deadlock while stopping idle timer  [ramindani]
+5462410  SurfaceFlinger: add logging when changing refresh rate policy  [Ady Abraham]
+a4e4111  HW Vsync turns off correctly in Doze/AOD.  [Rachel Lee]
+5c9f2b4  Revert "sf: Check if fps scores are valid to compute best refresh rate."  [DennySPb]
+
+
+* hardware/interfaces
+0ce4f29  [DNM in any case!] Add support for passing command to set expected time in HIDL 2.4 composer  [DennySPb]
+921654d  Merge tag 'android-13.0.0_r16' of https://android.googlesource.com/platform/hardware/interfaces into 13.0  [DennySPb]
+
+
+* packages/apps/SyberiaSettings
+2c484f5  Allow toggling screen off UDFPS [2/2]  [jhonboy121]
+712ce1d  Allow to choose lockscreen or Ambient on wake gestures [2/2]  [ezio84]
+
+
+====================
+     2022-12-05    
+====================
+
+====================
+     2022-12-04    
+====================
+
+====================
+     2022-12-03    
+====================
+
+* frameworks/native
+8bd4bd4  [DNM in any case] Pass Expected present time to 2.4 HIDL composer  [DennySPb]
+2014072  Check display id of the last hover window before it is cleared  [Tommy Nordgren]
+
+
+* hardware/interfaces
+b353994  camera: Only link and use vendor.qti.hardware.camera.device if specified  [Rashed Abdel-Tawab]
+caf1e36  Camed HAL extension: Added support in HIDL for Extended FD.  [Sauhard Pande]
+
+
+====================
+     2022-12-02    
+====================
+
+* frameworks/av
+954d2e9  C2SoftVpxEnc: Correct minimum level setting code  [Harish Mahendrakar]
+337f89e  C2SoftVpxEnc: process QP bounding parameters  [Neelkamal Semwal]
+5d3fd61  C2SoftAvcEnc: More QP bounding interface work  [Manisha Jajoo]
+236a307  [PATCH] Add attribute 'startOffsetMs' to media_profiles.xsd  [derek.li]
+84444f8  Codec2 decoders: Invalidate allocated graphic buffer in stop()  [Harish Mahendrakar]
+09d08c5  MediaCodec: manage resources for sw video codecs  [Girish]
+a89a865  CCodec: fix update pixelFormatInfo for pre-S  [guochuang]
+e065d85  C2BufferQueueBlockPool: save reallocation flag for slot buffer  [xiahong.bao]
+8f744e9  C2BqBuffer: resolve 3 way deadlock  [Sungtak Lee]
+df21626  fix to set 8bit thumbnail for pre-T  [Taehwan Kim]
+82478a7  Codec2: vndk: lock P010 with gralloc4 mapper first  [Praveen Chavan]
+d51580b  aaudio: set primary flag for AAUDIO_PERFORMANCE_MODE_NONE  [yidongh]
+7ec5a3a  Add H264 RHP and RHP2 for WFD R2  [Marcus Huang]
+aca1ef2  Stagefright: add NULL check before accessing param  [Uma Mehta]
+a51f1ad  libstagefright: Adding NULL check for codec instance  [Sachu George]
+ed11d63  Fix potential memory leaks  [Chih-Hung Hsieh]
+8a7fd3f  Fix potential memory leaks  [Chih-Hung Hsieh]
+9f3ab2f  When OggWriter stops, stop codec source first before pthread_join to prevent stall  [zhenxingwang]
+1708782  libstagefright: modify "dataspace" prints ambiguously  [guochuang]
+cb8f2c1  av: audioflinger: reduce duplicate code  [SPeak Shen]
+444ad72  Fix an issue that the sensor privacy does not apply to the new camera clients  [Kwangkyu Park]
+c233ccc  cameraserver: Correct camera1 -> api2 shim layer handling for video stabilization.  [Jayant Chowdhary]
+00ccfc2  Updated max rotational velocity of head tracking to 0.8 rad/s for smooth auto-recentering  [Nikhil Bhanu]
+b81b075  Fix errorprone warnings that should be errors  [Cole Faust]
+a8a253f  libstagefright: use 64-bit usage for native_window_set_usage  [Milos Ratkovic]
+2a6457c  Add NULL check to popFromStashAndRegister.  [Chris Gross]
+8e0e2aa  Use highp to avoid float overflow in expression  [Brandon Chen]
+df57b96  VideoDecTest: stop managing memory manually  [George Burgess IV]
+7371c8e  Do not report error for playback rate/pitch of 1.0  [Bertil Åkesson]
+f451bf6  Adding null check for IResourceManagerClient in dump()  [Arun Johnson]
+5f0b68b  Set dataspace to native window  [Hongguang]
+89eb7a1  Changing max SampleRate limits for raw audio decoder  [Arun Johnson]
+7ac31cb  libstagefright: Check trackMeta for NULL  [Karthikeyan Periasamy]
+8247d07  converter: Support 24bit converter  [gmanam]
+a49ef65  libstagefright: Fix memory leak due to lock timeout  [Priyanka Gujjula]
+6263b69  libstagefright: Free buffers on observer died  [Manikanta Kanamarlapudi]
+d565935  media: Add changes to pick target specific media xml's  [Uma Mehta]
+9a4620e  audio: add encoding support for linear PCM format  [Mingming Yin]
+7d781dc  av: Initial support for 24bit encoding and 6 channels  [Pranav Vashi]
+ef4c0cc  TimedTextUnitTest: remove pointless string copy  [George Burgess IV]
+24a5c21  fix the deadloop when network is disconnect while playing rtsp streaming.  [Ming Zhou]
+26f0f0a  audio: fix setvolume crash issue  [zhangjincheng]
+3dc899b  Fix AV1/VP9 10bit caused fail  [mtk12101]
+ee0fba0  Don't drop HTTPLiveSource metadata  [mtk11204]
+18f8134  Fix multi-thread timing issue in sendOutputBuffers  [mtk17906]
+54d595b  Fix thumbnail and normal playback both in 8K  [mtk17381]
+76275a6  Handle timing issue for set surface flow  [Zhiming Jiang]
+a482c3f  fix flushed work shouldn't request input  [mtk11204]
+b06cbed  MediaCodec: Don't disconnectFromSurface when it is using  [guochuang]
+bc7de07  AMRWB Decoder: Fix integer overflow in highpass_50Hz_at_12k8 function  [Neelkamal Semwal]
+4be1aa4  fix access null pointer exception  [Yanqiang Fan]
+90c4a6e  screenrecord: Add support for temporal layer info  [Amit Shekhar]
+59c95de  codec2: Fix temporal-layering to schema conversion  [Amit Shekhar]
+8fe59cf  audio: fix camera record no audio issue [1/1]  [zirui.xiao]
+c4c5136  ATSParser: fix memory leak caused by invalid ElementaryStreamQueue mode  [Yan Minzhi]
+b8adc3c  TargetAudioEncTest: use vector instead of malloc  [George Burgess IV]
+1db7548  libstagefright: Bug Fix  [Ayushi Khopkar]
+1a38583  Fix code issues in APM found with unit tests  [Mikhail Naganov]
+1bea5cc  Bug fix for libmediautils_fuzzer_scheduling_policy_service  [Ayushi Khopkar]
+d0111c0  audio policy: fix canBeSpatialized()  [Eric Laurent]
+5c97135  sfplugin: do not fail resume call if inputs slots are active  [Malathi Gottam]
+b4b932e  audio policy service: fix spatializer locking scheme  [Eric Laurent]
+d2acf97  C2SoftGav1Dec: Update include paths  [Harish Mahendrakar]
+e92ead4  VolumeCurve file build fail  [liyong]
+9dfe1db  C2SoftVpxEnc: add support for levels upto 4.1  [Manisha Jajoo]
+028e644  CCodec: fix wrapping logic  [Wonsik Kim]
+68c307e  Replace Vector by std::vector in ACodec  [Xiao Huang]
+f058e0a  Replace List by std::list in ACodec and MediaCodec  [Xiao Huang]
+16de93e  Do not support direct effect when the non-offload effect is enabled  [Yinchu Chen]
+3fe89f6  MediaMetrics: Fix inaccurate attribution of thread device  [Andy Hung]
+9a2f022  CCodec: fix not to use YV12 format on COLOR_FormatYUV420Flexible for pre-S  [Taehwan Kim]
+ea3102a  Correct crop size for software encoders  [Patryk Busse]
+
 
