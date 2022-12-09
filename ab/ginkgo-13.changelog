@@ -1,28 +1,175 @@
 ====================
-     2022-11-20    
+     2022-12-08    
 ====================
-Device Changelog: 
-* device/xiaomi/ginkgo
-- Fixup Fingerprint
-- Fixup Nfc For Willow User
-- Other changes and improvements
 
-Soruce Changelog:
+* packages/apps/Launcher3
+6c1d9d2  Launcher3: Add a toggle for smartspace  [Adithya R]
+fc781bf  Launcher3: Fix crash in smartspace targets dump  [Adithya R]
+e2572d4  Launcher3: Open google weather on tapping smartspace  [Adithya R]
+6c5e1bd  Launcher3: Implement workspace unlock animation  [Adithya R]
+8a6a7b8  Launcher3: Bring back WorkspaceUnlockAnim  [Adithya R]
+a442a5c  Launcher3: Implement Smartspace  [Adithya R]
+7524d3b  Create Syberia Launcher.  [Chris Crump]
+83a289f  clear task snapshots remnants on 'onRecentsAnimationComplete'  [hydrangea07]
+9c815cf  Launcher3: Drop unused AdaptiveIconwrapper  [Pranav Vashi]
+
+
+====================
+     2022-12-07    
+====================
+
+====================
+     2022-12-06    
+====================
+
 * frameworks/base
-dcb8470  SystemUI: Add statusbar NFC icon  [xyyx]
-950d2a3  PreviewInflater: Fix issue with google dialer widget on keyguard  [Pranav Vashi]
+177bf73  Change DropboxRateLimiter to rate limit proto tombstones and regular tombstones separately.  [Siim Sammul]
+5825387  fix MediaRouter error callback  [ot900189]
+bd4fe29  Fix BluetoothRouteProvider unsync randon crash  [ot_chenqi.c]
+4386ee6  Apply wakelock for notification sound  [WoongKi Min]
+3e7c815  Do not assistant delay for media notifications  [WoongKi Min]
+f9fdcfd  neko/Cat: Mark FLAG_IMMUTABLE PendingIntent with FLAG_MUTABLE  [PainKiller3]
+900402f  Return no optmization info for package "android".  [Jiakai Zhang]
+5098fc6  base: Allow toggling screen off FOD [1/2]  [jhonboy121]
+9da187c  udfps: Allow devices to pulse onFingerDown instead of waking the screen  [trpsl]
+5c8a679  udfps: Add support for udfps on aod without dedicated sensor  [TheScarastic]
+b045e70  PixelProps: Update redfin fp to November 2022  [DennySPb]
+964e972  RELAND MediaCodec: don't cache buffers until requested  [Wonsik Kim]
+c035fed  audio: add support for extended formats  [Preetam Singh Ranawat]
+dcaa0d2  Make smart idle maint update write amount record every period  [Daeho Jeong]
+379ecf8  Fix include in YuvToJpegEncoder  [Kevin Lubick]
+3800c4d  profcollect: Reduce background processing job priority  [Yi Kong]
+846fa77  START_NOT_STICKY services do not start on demand  [Leif Martensson]
+1f8187e  [Bugfix]Switch back to the application on /system when UID and path changed  [Wen Zhang]
+79f313a  SystemUI: Set launcher activity name to SyberiaLauncher  [Adithya R]
+d01717d  Smartspace: Fix music indication not showing on doze/aod  [jhenrique09]
+de0f1ab  SystemUI: BcSmartspaceView: Allow setting current page  [Adithya R]
+8ae6931  SystemUI: Forward-port smartspace to Android 13  [Adithya R]
+f981ac1  SystemUI: Implement Reverse-engineered Smartspace  [Daniel Jacob Chittoor]
+f720c8b  DisplayModeDirector: Use default refresh rate as min refresh rate  [Pranav Vashi]
+028f62c  Allow user to select low power refresh rate [1/2]  [Pranav Vashi]
+056ece2  base: Allow disabling refresh rate lowering in battery saver  [Adithya R]
+5a08ff0  PIHooks: Get package name from context instead of app  [jhenrique09]
+c117bfb  QS: LocationTile: make it cycle modes  [ezio84]
+99920aa  EnhancedEstimates: Get estimates from Device Health Services  [Jason Edson]
+7b025a3  SystemUI: Remove shadows from elements like clock, charging etc on lockscreen. It doesn't fit well and makes clock font look distorted.  [Akash Srivastava]
+2a62ebc  base: Rearrange bluetooth icon on statusbar  [Adithya]
+1ecce3a  fonts: Respect font scale for dynamic tracking calculations  [Danny Lin]
+f685981  SystemUI: Use default letter spacing for QS tiles  [Danny Lin]
+3a5c8a2  base: Implement Gsans Dynamic Metrics for system UI font  [Danny Lin]
+cb476029  BluetoothControllerImpl: Fetch battery level from any device  [jhonboy121]
+a338e4d  BluetoothControllerImpl: Synchronize mConnectedDevices access  [jhonboy121]
+5834dc2  SystemUI: Implement burn-in protection for status/navbar  [Park Ju Hyung]
+1b9ee33  Fix potential race condition problem  [tysonwei]
+dbf38f9  Fix flakiness of testNativeCrash  [Yukun Yang]
+5e5516b  Make getCallingUidOrThrow() not throw in clearCallingIdentity() blocks  [mattgilbride]
+1a2c202  Avoid static initializer cycle when registering ColorSpace  [Michael Hoisie]
+4969a1c5  [BugFixed][OOM_ADJ] use max_adj to control process final adj  [guolun Xue]
+6be244f  Reduce the number of binders  [Liangliang Sui]
 
-* packages/apps/Settings
-5f4f2ba  team: Add Xiaomi Redmi Note 8 maintainer  [erwinabs]
-d3184cd  Settings: Fixup app_action preference after gestures re-order  [Jayant-Deshmukh]
+
+====================
+     2022-12-05    
+====================
+
+====================
+     2022-12-04    
+====================
+
+====================
+     2022-12-03    
+====================
+
+====================
+     2022-12-02    
+====================
 
 * frameworks/av
-bde48e8  cameraserver: Fix floating point truncation for getUHRMaxJpegBufferSize  [Jayant Chowdhary]
-ae8875d  Camera: Avoid roundBufferDimensionsNearest also for HAL_PIXEL_FORMAT_BLOB  [SGCMarkus]
-b807f8e  Camera: Avoid roundBufferDimensionsNearest for AIDE2 YUV streams  [Pavan Kumar Mc]
-e0748de  Camera: Master callback mode support for MCX raw  [Pavan Kumar Mc]
-e40214f  fixup! Camera: Skip stream size check for whitelisted apps.  [Gaoxiang Chen]
-4fb87b8  libcameraservice: HAX for depth sensor on ginkgo [2/2]  [Adithya R]
+954d2e9  C2SoftVpxEnc: Correct minimum level setting code  [Harish Mahendrakar]
+337f89e  C2SoftVpxEnc: process QP bounding parameters  [Neelkamal Semwal]
+5d3fd61  C2SoftAvcEnc: More QP bounding interface work  [Manisha Jajoo]
+236a307  [PATCH] Add attribute 'startOffsetMs' to media_profiles.xsd  [derek.li]
+84444f8  Codec2 decoders: Invalidate allocated graphic buffer in stop()  [Harish Mahendrakar]
+09d08c5  MediaCodec: manage resources for sw video codecs  [Girish]
+a89a865  CCodec: fix update pixelFormatInfo for pre-S  [guochuang]
+e065d85  C2BufferQueueBlockPool: save reallocation flag for slot buffer  [xiahong.bao]
+8f744e9  C2BqBuffer: resolve 3 way deadlock  [Sungtak Lee]
+df21626  fix to set 8bit thumbnail for pre-T  [Taehwan Kim]
+82478a7  Codec2: vndk: lock P010 with gralloc4 mapper first  [Praveen Chavan]
+d51580b  aaudio: set primary flag for AAUDIO_PERFORMANCE_MODE_NONE  [yidongh]
+7ec5a3a  Add H264 RHP and RHP2 for WFD R2  [Marcus Huang]
+aca1ef2  Stagefright: add NULL check before accessing param  [Uma Mehta]
+a51f1ad  libstagefright: Adding NULL check for codec instance  [Sachu George]
+ed11d63  Fix potential memory leaks  [Chih-Hung Hsieh]
+8a7fd3f  Fix potential memory leaks  [Chih-Hung Hsieh]
+9f3ab2f  When OggWriter stops, stop codec source first before pthread_join to prevent stall  [zhenxingwang]
+1708782  libstagefright: modify "dataspace" prints ambiguously  [guochuang]
+cb8f2c1  av: audioflinger: reduce duplicate code  [SPeak Shen]
+444ad72  Fix an issue that the sensor privacy does not apply to the new camera clients  [Kwangkyu Park]
+c233ccc  cameraserver: Correct camera1 -> api2 shim layer handling for video stabilization.  [Jayant Chowdhary]
+00ccfc2  Updated max rotational velocity of head tracking to 0.8 rad/s for smooth auto-recentering  [Nikhil Bhanu]
+b81b075  Fix errorprone warnings that should be errors  [Cole Faust]
+a8a253f  libstagefright: use 64-bit usage for native_window_set_usage  [Milos Ratkovic]
+2a6457c  Add NULL check to popFromStashAndRegister.  [Chris Gross]
+8e0e2aa  Use highp to avoid float overflow in expression  [Brandon Chen]
+df57b96  VideoDecTest: stop managing memory manually  [George Burgess IV]
+7371c8e  Do not report error for playback rate/pitch of 1.0  [Bertil Åkesson]
+f451bf6  Adding null check for IResourceManagerClient in dump()  [Arun Johnson]
+5f0b68b  Set dataspace to native window  [Hongguang]
+89eb7a1  Changing max SampleRate limits for raw audio decoder  [Arun Johnson]
+7ac31cb  libstagefright: Check trackMeta for NULL  [Karthikeyan Periasamy]
+8247d07  converter: Support 24bit converter  [gmanam]
+a49ef65  libstagefright: Fix memory leak due to lock timeout  [Priyanka Gujjula]
+6263b69  libstagefright: Free buffers on observer died  [Manikanta Kanamarlapudi]
+d565935  media: Add changes to pick target specific media xml's  [Uma Mehta]
+9a4620e  audio: add encoding support for linear PCM format  [Mingming Yin]
+7d781dc  av: Initial support for 24bit encoding and 6 channels  [Pranav Vashi]
+ef4c0cc  TimedTextUnitTest: remove pointless string copy  [George Burgess IV]
+24a5c21  fix the deadloop when network is disconnect while playing rtsp streaming.  [Ming Zhou]
+26f0f0a  audio: fix setvolume crash issue  [zhangjincheng]
+3dc899b  Fix AV1/VP9 10bit caused fail  [mtk12101]
+ee0fba0  Don't drop HTTPLiveSource metadata  [mtk11204]
+18f8134  Fix multi-thread timing issue in sendOutputBuffers  [mtk17906]
+54d595b  Fix thumbnail and normal playback both in 8K  [mtk17381]
+76275a6  Handle timing issue for set surface flow  [Zhiming Jiang]
+a482c3f  fix flushed work shouldn't request input  [mtk11204]
+b06cbed  MediaCodec: Don't disconnectFromSurface when it is using  [guochuang]
+bc7de07  AMRWB Decoder: Fix integer overflow in highpass_50Hz_at_12k8 function  [Neelkamal Semwal]
+4be1aa4  fix access null pointer exception  [Yanqiang Fan]
+90c4a6e  screenrecord: Add support for temporal layer info  [Amit Shekhar]
+59c95de  codec2: Fix temporal-layering to schema conversion  [Amit Shekhar]
+8fe59cf  audio: fix camera record no audio issue [1/1]  [zirui.xiao]
+c4c5136  ATSParser: fix memory leak caused by invalid ElementaryStreamQueue mode  [Yan Minzhi]
+b8adc3c  TargetAudioEncTest: use vector instead of malloc  [George Burgess IV]
+1db7548  libstagefright: Bug Fix  [Ayushi Khopkar]
+1a38583  Fix code issues in APM found with unit tests  [Mikhail Naganov]
+1bea5cc  Bug fix for libmediautils_fuzzer_scheduling_policy_service  [Ayushi Khopkar]
+d0111c0  audio policy: fix canBeSpatialized()  [Eric Laurent]
+5c97135  sfplugin: do not fail resume call if inputs slots are active  [Malathi Gottam]
+b4b932e  audio policy service: fix spatializer locking scheme  [Eric Laurent]
+d2acf97  C2SoftGav1Dec: Update include paths  [Harish Mahendrakar]
+e92ead4  VolumeCurve file build fail  [liyong]
+9dfe1db  C2SoftVpxEnc: add support for levels upto 4.1  [Manisha Jajoo]
+028e644  CCodec: fix wrapping logic  [Wonsik Kim]
+68c307e  Replace Vector by std::vector in ACodec  [Xiao Huang]
+f058e0a  Replace List by std::list in ACodec and MediaCodec  [Xiao Huang]
+16de93e  Do not support direct effect when the non-offload effect is enabled  [Yinchu Chen]
+3fe89f6  MediaMetrics: Fix inaccurate attribution of thread device  [Andy Hung]
+9a2f022  CCodec: fix not to use YV12 format on COLOR_FormatYUV420Flexible for pre-S  [Taehwan Kim]
+ea3102a  Correct crop size for software encoders  [Patryk Busse]
 
-* vendor/syberia
-af581ca  Add Xiaomi Redmi Note 8 to official devices  [erwinabs]
+
+* frameworks/native
+2014072  Check display id of the last hover window before it is cleared  [Tommy Nordgren]
+
+
+* hardware/interfaces
+b353994  camera: Only link and use vendor.qti.hardware.camera.device if specified  [Rashed Abdel-Tawab]
+caf1e36  Camed HAL extension: Added support in HIDL for Extended FD.  [Sauhard Pande]
+
+
+* vendor/qcom/opensource/audio-hal/st-hal
+5882b16  st-hal: Correct reversed struct definitions  [dianlujitao]
+
+
+

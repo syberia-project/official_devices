@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1668933480,
-      "filename": "syberia_ginkgo-v6.1-20221120-0838-OFFICIAL.zip",
-      "id": "2f282ca7ecaa6625b0cd4b600fe6e248ef287d3cd4265320b173c58599ce8f9a",
+      "datetime": 1670613540,
+      "filename": "syberia_ginkgo-v6.1-20221209-1919-OFFICIAL.zip",
+      "id": "f0bf56cb2b4f441a26ba66a1fedb7b87df520534caa175049960ae7ec5249406",
       "romtype": "OFFICIAL",
-      "size": "1467550912",
-      "url": "https://sourceforge.net/projects/syberiaos/files/ginkgo/syberia_ginkgo-v6.1-20221120-0838-OFFICIAL.zip/download",
+      "size": "1467904171",
+      "url": "https://sourceforge.net/projects/syberiaos/files/ginkgo/syberia_ginkgo-v6.1-20221209-1919-OFFICIAL.zip/download",
       "version": "v6.1",
       "device_brand": "Xiaomi",
       "device_model": "Redmi Note 8",
