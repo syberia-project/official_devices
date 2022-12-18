@@ -1,17 +1,17 @@
 {
   "response": [
     {
-      "url": "https://sourceforge.net/projects/syberiaos/files/daisy/syberia_daisy-v6.0-20221030-0248-OFFICIAL.zip/download", 
+      "url": "https://sourceforge.net/projects/syberiaos/files/daisy/syberia_daisy-v6.1-20221214-2055-OFFICIAL.zip/download", 
       "device_model": "Mi A2 Lite", 
-      "filename": "syberia_daisy-v6.0-20221030-0248-OFFICIAL.zip", 
+      "filename": "syberia_daisy-v6.1-20221214-2055-OFFICIAL.zip", 
       "device_codename": "daisy", 
       "romtype": "OFFICIAL", 
-      "version": "v6.0", 
+      "version": "v6.1", 
       "device_brand": "Xiaomi", 
       "developer": "lupesoltec", 
-      "datetime": 1667098080, 
-      "id": "f74f84944199b350646f6cdd44e6a4a28bcff807fbf4269bb9234670bc17cd57", 
-      "size": "1029801932"
+      "datetime": 1671051300, 
+      "id": "e33b938df477bfe776a24c6a70c27e3af5587e16823d035ec28812dd20ff4efb", 
+      "size": "761554026"
     }
   ]
 }

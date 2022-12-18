@@ -1,23 +1,32 @@
 ====================
-     2022-10-30
+     2022-12-18
 ====================
 
 Kernel:
-- Upstream to 4.9.331-Panda
+- Upstream to 4.9.333-Rename
 
- Rom:
- - v6.0
- - Merged Pixel 7 (android_r11) tag
- - Art, bionic and fw_native improvements
- - Add/remove QS with one click
- - Launcher3 fixes
- - QrCamera fixes
- - Minor UI improvements
- - ART improvements
- - Other fixes and improvements under the hood
+Rom:
+- v6.1
+- Merged November security update (android-13.0.0_r13)
+- QS tile vibration option
+- Added Face Unlock
+- Gesture pill length option
+- Hide IME space option
+- Maybe some other features...
+- ART improvements
+- Better native libs compile time optimization for ARM64
+- Implemented Google smartspace support
+- Option to trigger double tap wake to AOD first
+- Added statusbar NFC icon
+- Implemented burn-in protection for status/navbar
+- ART improvements
+- SurfaceFlinger improvements
+- Other fixes and improvements under the hood
 
 Device:
-- Initial build Android 13
+- Fix DT2W for goodix
 - Address sepolicy denials
 - Other fixes and improvements
 
+Notes:
+- Vanilla version
