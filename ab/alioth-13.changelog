@@ -1,20 +1,19 @@
 ====================
-     2022-11-12
+     2022-12-20
 ====================
- 
+Kernel:
+ - Upstream to Linux 4.19.269
+
 Rom:
- - Syberia v6.1
- - Merged November security update (android-13.0.0_r13)
- - Added Face Unlock
- - Added launcher's taskbar
- - QS tile vibration option
- - Gesture pill length option
- - Hide IME space option
- - Better native libs compile time optimization for ARM64
- - Added battery charge warning
- - ART improvements
- - SystemUI improvements
- - Added missing permissions
- - Fixed many NPE and logspam
- - Update RU translation
- - Other fixes and improvements under the hood
+ - Syberia v6.2
+ - Rebased on top of December QPR1
+ - New memory allocator by Microsoft
+ - Added power menu animations
+ - Art, bionic improvements
+ - Choose lockscreen or ambient on wake gestures
+ - Add toggle for GamesPropsUtils
+ - Update RU translations
+ - Various fixes
+ 
+Device:
+ - Added refresh rate selection
