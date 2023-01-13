@@ -1,32 +1,30 @@
 ====================
-     2022-12-18
+     2023-01-13
 ====================
 
 Kernel:
-- Upstream to 4.9.333-Rename
+- Upstream to 4.9.337-Panda
 
 Rom:
-- v6.1
-- Merged November security update (android-13.0.0_r13)
-- QS tile vibration option
-- Added Face Unlock
-- Gesture pill length option
-- Hide IME space option
-- Maybe some other features...
-- ART improvements
-- Better native libs compile time optimization for ARM64
-- Implemented Google smartspace support
-- Option to trigger double tap wake to AOD first
-- Added statusbar NFC icon
-- Implemented burn-in protection for status/navbar
-- ART improvements
-- SurfaceFlinger improvements
-- Other fixes and improvements under the hood
+- Syberia v6.2
+- Rebased on top of December QPR1
+- New memory allocator by Microsoft
+- Added power menu animations
+- Art, bionic improvements
+- Choose lockscreen or ambient on wake gestures
+- Add toggle for GamesPropsUtils
+- Update RU translations
+- Various fixes
 
 Device:
-- Fix DT2W for goodix
+- Fix Hotspot
 - Address sepolicy denials
 - Other fixes and improvements
 
 Notes:
 - Vanilla version
+
+Credits:
+- Thanks to Esteban for tests 
+- Thanks to @nyl84 for tests
+
