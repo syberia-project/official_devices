@@ -1,36 +1,23 @@
 ====================
-     2023-01-01    
+     2023-01-17    
 ====================
 
-====================
-     2022-12-31    
-====================
-
-====================
-     2022-12-30    
-====================
-
-====================
-     2022-12-29    
-====================
-
-* packages/apps/Settings
-d4fca2a  team: Add Xiaomi Poco F4 maintainer  [erwinabs]
-
-
-* vendor/syberia
-59c8536  Add Xiaomi Poco F4 to official devices  [Erwin Abu Bakar Sidik]
-
-
-====================
-     2022-12-28    
-====================
-
-====================
-     2022-12-27    
-====================
-
-====================
-     2022-12-26    
-====================
-
+Changelog: 
+- Enable Dolby Support
+- Enable MiuiCamera Support @spkal01
+- Enable show Minimum and Maximum refresh rate options
+- Update deprecated screen power items
+- Clean up ADSP-Modules
+- Fix sysfs denial 
+- Add more denial stuff
+- Checkout Audio props from miui latest
+- Disable QCRIL power saving 
+- Switch to SkiaGL Threaded
+- Enable Monet
+- Add ParallelSpace 
+- Added power menu animations
+- Art, bionic improvements
+- Choose lockscreen or ambient on wake gestures
+- Add toggle for GamesPropsUtils
+- Update RU translations
+- Various fixes
