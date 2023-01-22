@@ -1,23 +1,119 @@
 ====================
+     2023-01-22    
+====================
+
+* frameworks/av
+76eafcc  Revert "Revert "DNM Revert "Camera: Add support for readout timestamp"""  [erwinabs]
+3ef74ef  Revert "libcameraservice: Add support to set vendor tag with client package name"  [erwinabs]
+688005f  Revert "StagefrightRecorder: Add "set-title" parameter"  [erwinabs]
+
+
+* frameworks/base
+20d35a0  Revert "Revert "DNM Revert "Camera: Add support for readout timestamp"""  [erwinabs]
+b33c8e3  Revert "camera: Add backwards-compatible CaptureResultExtras constructor"  [erwinabs]
+
+
+====================
+     2023-01-21    
+====================
+
+====================
+     2023-01-20    
+====================
+
+====================
+     2023-01-19    
+====================
+
+* art
+ac6e38d  Update boot image and system server profiles [M5C5P80S0], RESTRICT AUTOMERGE Since these are profiles for T release only.  [art-benchmark-service]
+2892771  Add a write barrier elimination pass  [Santiago Aboy Solanes]
+85cc06c  Remove tries which don't contain throwing instructions  [Santiago Aboy Solanes]
+2ef05de  Swap optimizations when inlining  [Santiago Aboy Solanes]
+58a1c13  imgdiag: add memory page index for dirty entries  [Dmitrii Ishcheikin]
+4ec225b  imgdiag: don't compare zygote to bootimage  [Dmitrii Ishcheikin]
+fccea4f  Fix missing ClassCastException in VH unboxing conversion  [Orion Hodson]
+792ef30  Count app dirty pages against zygote in imgdiag  [Dmitrii Ishcheikin]
+
+
+* frameworks/av
+77569e2  add libvulkan for shared_libs to load lib dynamically  [jisunnie.lee]
+2599a2a  StagefrightRecorder: Add "set-title" parameter  [cjh1249131356]
+46128a3  libcameraservice: Add support to set vendor tag with client package name  [cjh1249131356]
+7337900  Revert "DNM Revert "Camera: Add support for readout timestamp""  [Hongguang]
+
+
+* frameworks/base
+289193e  camera: Add backwards-compatible CaptureResultExtras constructor  [Adithya R]
+92f5c3f  Revert "DNM Revert "Camera: Add support for readout timestamp""  [DennySPb]
+07599a6  Add one new method is3gpp  [Thomas Nguyen]
+1334239  Fix for GSM-8bit encoding error  [Thomas Nguyen]
+9d4f940  [Bugfix] Fix the pid the log am_crash shows when a native crash occurs.  [xi yu]
+5817f4b  Fix SystemUI mapping SIM state error issue  [Quanshui Ye]
+083d80beb  Shrink by 0.5 for YUV TextViews  [John Reck]
+1e4d01e  Fix erroneous self deletion on SkImage creation failure  [Nolan Scobie]
+ae9c1c5  ThemeOverlayController: Remove repeated monet check  [Pranav Vashi]
+a624e7a  MediaCodec: check for exceptions when creating crypto info  [George Burgess IV]
+71ac0aa  Don't check wakefulness before setting sandman summoned to false.  [Philip Junker]
+84e4423  Revert "Reset PowerGroup.mIsSandmanSummoned while waking up."  [DennySPb]
+
+
+* frameworks/native
+cb47a1d  vulkan: respect consumer default dataspace upon PASS_THROUGH  [Yiwei Zhang]
+d45cc4b  Allow PASS_THROUGH colorspace with R5G6B5, R16G16B16A16, A2B10G10R10  [Jason Macnak]
+b439597  Allow use of PASS_THROUGH colorspace with RGBA8  [Lingfeng Yang]
+f268397  SF: Don't enable expensive rendering for unknown dataspace  [Adithya R]
+025b017  Remove libbufferhubqueue, libdisplay and dependencies  [Pirama Arumuga Nainar]
+bc165fe  gui: fix an error which caused the buffers can never be released  [chengdaozhong]
+
+
+* packages/apps/ThemePicker
+dc562d5  ThemePicker: Update PixelThemesStub from cheetah-user 13 TQ1A.230105.001.A2  [Joey Huab]
+c32fc9a  Update pixelthemestub from cheetah-user 13 TD1A.220804.009.A2  [minaripenguin37]
+7b62fc4  Fix swatch colors not showing up  [Pranav Vashi]
+
+
+* system/core
+d7970cb  libutils: Fix Mutex not using monotonic clock  [Keith Mok]
+1b035ec  libutils: Improve performance of utf8_to_utf16/utf16_to_utf8  [Eric Miao]
+7f383a1  Define Android API constants  [DennySPb]
+
+
+* vendor/syberia
+425cab0  Merge changes Ibc1d941f,I616043e3,Ic2d4e780,I5907d6ca,I94d6e782 into 13.0  [dennyspb]
+
+
+====================
+     2023-01-18    
+====================
+
+====================
      2023-01-17    
 ====================
 
-Changelog: 
-- Enable Dolby Support
-- Enable MiuiCamera Support @spkal01
-- Enable show Minimum and Maximum refresh rate options
-- Update deprecated screen power items
-- Clean up ADSP-Modules
-- Fix sysfs denial 
-- Add more denial stuff
-- Checkout Audio props from miui latest
-- Disable QCRIL power saving 
-- Switch to SkiaGL Threaded
-- Enable Monet
-- Add ParallelSpace 
-- Added power menu animations
-- Art, bionic improvements
-- Choose lockscreen or ambient on wake gestures
-- Add toggle for GamesPropsUtils
-- Update RU translations
-- Various fixes
+* packages/apps/Launcher3
+19d4f91  Launcher3: Hotseat: Fix normal QSB width  [Adithya R]
+
+
+* vendor/qcom/opensource/commonsys-intf/display
+e04b0a4  Hookup GRALLOC_HANDLE_HAS_RESERVED_SIZE  [Chirayu Desai]
+
+
+* vendor/syberia
+909ad5d  Hookup GRALLOC_HANDLE_HAS_RESERVED_SIZE  [Chirayu Desai]
+8ecbeb9  soong: Add support to set vendor tag with client package name  [cjh1249131356]
+fe3c26e  backuptool: Unmount v3 partitions during backup  [TheHitMan7]
+cb5c40e  overlay: Set default status bar height to 28dp  [Michael Bestas]
+37803e0  overlays: Use rounded corners in SystemUI  [Danny Lin]
+
+
+====================
+     2023-01-16    
+====================
+
+* art
+84716ed  Merge adjacent free chunks and release them in FreeListSpace  [qiubowen]
+04dbde5  Comment and adjust system server profiling.  [Nicolas Geoffray]
+5284da3  Fix on the visiblity initialized counter logic.  [Nicolas Geoffray]
+
+

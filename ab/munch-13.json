@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1673951820,
-      "filename": "syberia_munch-v6.2-20230117-1037-OFFICIAL.zip",
-      "id": "482edf292fa32bfea59006a0b0b9dd9f94f661571214bba6ab163585f114714c",
+      "datetime": 1674388020,
+      "filename": "syberia_munch-v6.2-20230122-1147-OFFICIAL.zip",
+      "id": "e111bd502a7a2d23cb75214f14d6c58c4f6996461e139000fba045e607b5ae4c",
       "romtype": "OFFICIAL",
-      "size": "1712299771",
-      "url": "https://sourceforge.net/projects/syberiaos/files/munch/syberia_munch-v6.2-20230117-1037-OFFICIAL.zip/download",
+      "size": "1712622542",
+      "url": "https://sourceforge.net/projects/syberiaos/files/munch/syberia_munch-v6.2-20230122-1147-OFFICIAL.zip/download",
       "version": "v6.2",
       "device_brand": "Xiaomi",
       "device_model": "Poco F4",
