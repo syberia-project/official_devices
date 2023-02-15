@@ -1,0 +1,56 @@
+====================
+     2023-02-14    
+====================
+\n* bionic\n6b4bd39  bionic: use jemalloc by default and allow opt-in to scudo (3/3)  [Juhyung Park]
+2c3c34e  Verify that allocated memory is always zeroed.  [Christopher Ferris]
+07c8a11  Switch to jemalloc memory allocator  [Danny Lin]\n
+\n* build/make\nc2f2957  build: make: use jemalloc by default and allow opt-in to scudo (1/3)  [Juhyung Park]\n
+\n* build/soong\n44fb99f  build: soong: use jemalloc by default and allow opt-in to scudo (2/3)  [Juhyung Park]
+f5e0cdd  soong: cc: Enable global O3  [Andrzej Perczak]
+fa9c006  Dexpreopt: use "speed-profile" if a system server jar has a profile.  [Ulya Trafimovich]
+6eca7ad  arm_device: Change cortex-a76 mcpu from a55 to a75  [Pranav Vashi]
+cc57bb0  Remove workaround for Qualcomm Kryo 385  [Raphiel Rollerscaperers]
+2291682  arm64_device: Change cortex-a76 mcpu from a55 to a75  [Jason Edson]\n
+\n* device/qcom/sepolicy_vndr-legacy-um\n63476dd  generic: msmnile: Add some misc wakeup nodes for msmnile  [Michael Bestas]
+a0ce038  generic: kona: Add some misc wakeup nodes for kona  [Michael Bestas]
+e1d3ccd  Revert "Add fs_bpf rules for network stack."  [Michael Bestas]
+c2214e0  Revert "sepolicy_vndr: Add label for wakeup sources"  [kondors1995]\n
+\n* packages/resources/devicesettings\n080152a  Automatic translation import  [Michael Bestas]\n
+\n* system/core\n54d13f6  debuggerd: Remove scudo headers from debuggerd tests  [minaripenguin]
+77a94d2  Fix scudo fault address processing.  [liyong]\n
+
+====================
+     2023-02-13    
+====================
+
+====================
+     2023-02-12    
+====================
+
+====================
+     2023-02-11    
+====================
+\n* system/sepolicy\nb1a2bc1  servicemanager: kernel log perms  [Steven Moreland]
+8d2381f  servicemanager started property  [Steven Moreland]\n
+
+====================
+     2023-02-10    
+====================
+
+====================
+     2023-02-09    
+====================
+
+====================
+     2023-02-08    
+====================
+\n* external/jemalloc_new\nb5b76a7  jemalloc: always assume overcommitting memory  [Park Ju Hyung]
+7f943b1  jemalloc: remove THP support  [Park Ju Hyung]
+8dd8e2c  jemalloc: disable config parsing altogether  [Park Ju Hyung]
+0488224  jemalloc: remove deprecated size_classes.h  [Park Ju Hyung]\n
+\n* frameworks/av\n5656fe3  Merge tag 'android-13.0.0_r30' of https://android.googlesource.com/platform/frameworks/av into 13.0  [DennySPb]\n
+\n* frameworks/base\n5ca4768  Toast app icon display is inconsistent for system apps  [Edward Savage-Jones]\n
+\n* system/update_engine\n24c2319  update_engine: Always disable signature and downgrade checks  [jhenrique09]\n
+\n* vendor/syberia\n7963b4a  Merge "Bump version to 6.3" into 13.0  [dennyspb]
+19ff47d  Bump version to 6.3  [DennySPb]\n
+
