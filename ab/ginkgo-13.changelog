@@ -1,119 +1,173 @@
 ====================
-     2023-01-22    
+     2023-02-12    
 ====================
 
 * frameworks/av
-76eafcc  Revert "Revert "DNM Revert "Camera: Add support for readout timestamp"""  [erwinabs]
-3ef74ef  Revert "libcameraservice: Add support to set vendor tag with client package name"  [erwinabs]
-688005f  Revert "StagefrightRecorder: Add "set-title" parameter"  [erwinabs]
+72a74b0  Revert "StagefrightRecorder: Add "set-title" parameter"  [erwinabs]
+7b0d5c6  Revert "libcameraservice: Add support to set vendor tag with client package name"  [erwinabs]
+79ae959  Revert "Revert "DNM Revert "Camera: Add support for readout timestamp"""  [erwinabs]
+25de03a  libcameraservice: HAX for depth sensor on ginkgo [2/2]  [Adithya R]
 
 
 * frameworks/base
-20d35a0  Revert "Revert "DNM Revert "Camera: Add support for readout timestamp"""  [erwinabs]
-b33c8e3  Revert "camera: Add backwards-compatible CaptureResultExtras constructor"  [erwinabs]
+49f9bba  CameraManager: HAX for depth sensor on ginkgo [1/2]  [Adithya R]
+7bc3253  Revert "camera: Add backwards-compatible CaptureResultExtras constructor"  [erwinabs]
+d39bce1  Revert "Revert "DNM Revert "Camera: Add support for readout timestamp"""  [erwinabs]
+949cbf3  CameraManager: HAX for depth sensor on ginkgo [1/2]  [Adithya R]
 
 
 ====================
-     2023-01-21    
+     2023-02-11    
+====================
+
+* system/sepolicy
+b1a2bc1  servicemanager: kernel log perms  [Steven Moreland]
+8d2381f  servicemanager started property  [Steven Moreland]
+
+
+====================
+     2023-02-10    
 ====================
 
 ====================
-     2023-01-20    
+     2023-02-09    
 ====================
 
+* frameworks/av
+5656fe3  Merge tag 'android-13.0.0_r30' of https://android.googlesource.com/platform/frameworks/av into 13.0  [DennySPb]
+
+
+* frameworks/base
+5ca4768  Toast app icon display is inconsistent for system apps  [Edward Savage-Jones]
+
+
+* vendor/syberia
+7963b4a  Merge "Bump version to 6.3" into 13.0  [dennyspb]
+19ff47d  Bump version to 6.3  [DennySPb]
+
+
 ====================
-     2023-01-19    
+     2023-02-08    
 ====================
 
 * art
-ac6e38d  Update boot image and system server profiles [M5C5P80S0], RESTRICT AUTOMERGE Since these are profiles for T release only.  [art-benchmark-service]
-2892771  Add a write barrier elimination pass  [Santiago Aboy Solanes]
-85cc06c  Remove tries which don't contain throwing instructions  [Santiago Aboy Solanes]
-2ef05de  Swap optimizations when inlining  [Santiago Aboy Solanes]
-58a1c13  imgdiag: add memory page index for dirty entries  [Dmitrii Ishcheikin]
-4ec225b  imgdiag: don't compare zygote to bootimage  [Dmitrii Ishcheikin]
-fccea4f  Fix missing ClassCastException in VH unboxing conversion  [Orion Hodson]
-792ef30  Count app dirty pages against zygote in imgdiag  [Dmitrii Ishcheikin]
+e42a255  Merge tag 'android-10.0.0_r30' of https://android.googlesource.com/platform/art into HEAD  [DennySPb]
+
+
+* bootable/recovery
+b2beb75  Merge tag 'android-10.0.0_r30' of https://android.googlesource.com/platform/bootable/recovery into HEAD  [DennySPb]
+
+
+* build/make
+7945320  Merge tag 'android-13.0.0_r30' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
+
+
+* build/soong
+f29634a  Merge tag 'android-10.0.0_r30' of https://android.googlesource.com/platform/build/soong into HEAD  [DennySPb]
 
 
 * frameworks/av
-77569e2  add libvulkan for shared_libs to load lib dynamically  [jisunnie.lee]
-2599a2a  StagefrightRecorder: Add "set-title" parameter  [cjh1249131356]
-46128a3  libcameraservice: Add support to set vendor tag with client package name  [cjh1249131356]
-7337900  Revert "DNM Revert "Camera: Add support for readout timestamp""  [Hongguang]
+d9e4888  fix timestamp mismatch issue for cts android.mediav2.cts.CodecDecoderTest#testSimpleDecode  [Ming Zhou]
+d3cb864  libstagefright: Configure camcorder encoder session with "CONFIGURE_FLAG_USE_BLOCK_MODEL" flag and limit configuring block model for hw encoders  [Abdul Khalik Shaik]
+bcb6c7c  Use android::base::NoDestructor for static variables  [Wonsik Kim]
+5b84180  NuPlayer does not send MEDIA_PLAYBACK_COMPLETE message in some cases.  [Jonathan Kim]
+0bd6489  codec2: fix issue in allocating too many 8k buffers  [Jiajia Cong]
+1be2e3c  media: Add timelapse 8k UHD Camcorder profile to quality map  [Malathi Gottam]
+b3c093c  Camera: Avoid unnecessary close of buffer acquire fence fds  [Emilian Peev]
+82ae50d  cameraserver: clear all requests and signal mRequestSignal from RequestThread during disconnect().  [Jayant Chowdhary]
+1be028a  CAMX: CHI: Added support for handling jpeg debug data.  [Abhinav sohane]
 
 
 * frameworks/base
-289193e  camera: Add backwards-compatible CaptureResultExtras constructor  [Adithya R]
-92f5c3f  Revert "DNM Revert "Camera: Add support for readout timestamp""  [DennySPb]
-07599a6  Add one new method is3gpp  [Thomas Nguyen]
-1334239  Fix for GSM-8bit encoding error  [Thomas Nguyen]
-9d4f940  [Bugfix] Fix the pid the log am_crash shows when a native crash occurs.  [xi yu]
-5817f4b  Fix SystemUI mapping SIM state error issue  [Quanshui Ye]
-083d80beb  Shrink by 0.5 for YUV TextViews  [John Reck]
-1e4d01e  Fix erroneous self deletion on SkImage creation failure  [Nolan Scobie]
-ae9c1c5  ThemeOverlayController: Remove repeated monet check  [Pranav Vashi]
-a624e7a  MediaCodec: check for exceptions when creating crypto info  [George Burgess IV]
-71ac0aa  Don't check wakefulness before setting sandman summoned to false.  [Philip Junker]
-84e4423  Revert "Reset PowerGroup.mIsSandmanSummoned while waking up."  [DennySPb]
+618a91d  SystemUI: Grant additional permissions for smartspace  [Andrzej Perczak]
+42950cf  SystemUI: Open google weather on tapping smartspace  [Adithya R]
+1f98316  SystemUI: Update smartspace to 13-QPR1  [Adithya R]
+a6e8671  Merge tag 'android-13.0.0_r30' of https://android.googlesource.com/platform/frameworks/base  [DennySPb]
+36a1cf6  Fix potential crash when TaskDisplayArea is null  [Shen Lin]
+187a16b  Fix crash in RequiresPermissionChecker.java  [Cole Faust]
+a465544  Convert argument to intent in ChooseTypeAndAccountActivity  [Dmitry Dementyev]
+22ab57f  Use rule package name in addAutomaticZenRule; specify "android" for all system apps  [Yuri Lin]
+c241e7c  Add BT LE headset check for voice call to update the icon  [changbetty]
+2c4ee28  Disallow clicks on privacy chip before provisioned  [Fabian Kozynski]
+9447f09  UI can Enable/Disable VCP and CSIP  [SongFerngWang]
+af4125c  core: Fix suspend failure for privileged system components  [minaripenguin]
+4065b22  Add YCBCR_P010 in switch content in ImageUtil getNumPlanes.  [Sally Qi]
+64a30f5  Check NULL for Drm object  [Kyle Zhang]
+ba77dc8  Camera: Remove 3 processed streams combination for stream use case  [Shuzhen Wang]
+c288547  Fix stuck screen from display change timeout  [Tommy Webb]
+b98fb59  SystemUI: Fix expanded QS clock color  [minaripenguin]
+a87551b  Fix potential NPE when MessagingMessage's message is null  [Shen Lin]
+d5df41b  Fix crash when comparing messages  [Shen Lin]
+e220e34  Avoid resursion for sleep check in embedding window  [tanxiaoyan]
+257ccbf  SystemUI: Don't force small clock when media isn't allowed on keyguard  [Ido Ben-Hur]
 
 
 * frameworks/native
-cb47a1d  vulkan: respect consumer default dataspace upon PASS_THROUGH  [Yiwei Zhang]
-d45cc4b  Allow PASS_THROUGH colorspace with R5G6B5, R16G16B16A16, A2B10G10R10  [Jason Macnak]
-b439597  Allow use of PASS_THROUGH colorspace with RGBA8  [Lingfeng Yang]
-f268397  SF: Don't enable expensive rendering for unknown dataspace  [Adithya R]
-025b017  Remove libbufferhubqueue, libdisplay and dependencies  [Pirama Arumuga Nainar]
-bc165fe  gui: fix an error which caused the buffers can never be released  [chengdaozhong]
+e6d6d24  Merge tag 'android-10.0.0_r30' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
+4d408c8  Reland "servicemanager: fix lazy service issues"  [Steven Moreland]
+c99654d  servicemanager: log why we notify lazy services  [Steven Moreland]
+5c302fb  Add clarification to lazy HAL service message.  [Steven Moreland]
+4785247  servicemanager: always use kernel log  [Steven Moreland]
+1d7b5e9  servicemanager started property  [Steven Moreland]
+69086ff  servicemanager : use liblog logs  [Pawan Wagh]
+fea9904  servicemanager: log for service collision  [Steven Moreland]
+fd9ea39  Fix unintended buffer canceling  [Kwangkyu Park]
+20c0acd  libbinder: Flush excess refs after single async transaction  [Andrei Homescu]
+bb8fc6e  surfaceflinger: fix missing pure virtual declarations.  [Josh Gao]
+5646b5b  Check for data buffer size while marshalling parcel  [Pawan Wagh]
+dc007b0  DO NOT MERGE: SF: Fix a race between layer creation and apply transaction  [Vishnu Nair]
+
+
+* frameworks/opt/telephony
+dd18f56  Merge tag 'android-10.0.0_r30' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPb]
+
+
+* hardware/interfaces
+ef4d9c2  Merge tag 'android-13.0.0_r30' of https://android.googlesource.com/platform/hardware/interfaces into 13.0  [DennySPb]
+
+
+* packages/apps/Launcher3
+7ad91d6  Merge tag 'android-10.0.0_r30' of https://android.googlesource.com/platform/packages/apps/Launcher3 into 13.0  [DennySPb]
+
+
+* packages/apps/Settings
+7411a84  Merge tag 'android-13.0.0_r30' of https://android.googlesource.com/platform/packages/apps/Settings into 13.0  [DennySPb]
 
 
 * packages/apps/ThemePicker
-dc562d5  ThemePicker: Update PixelThemesStub from cheetah-user 13 TQ1A.230105.001.A2  [Joey Huab]
-c32fc9a  Update pixelthemestub from cheetah-user 13 TD1A.220804.009.A2  [minaripenguin37]
-7b62fc4  Fix swatch colors not showing up  [Pranav Vashi]
+c0942f8  Merge tag 'android-10.0.0_r30' of https://android.googlesource.com/platform/packages/apps/ThemePicker into HEAD  [DennySPb]
+
+
+* packages/providers/DownloadProvider
+1d1a094  Merge tag 'android-10.0.0_r30' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into 13.0  [DennySPb]
+
+
+* packages/services/Telecomm
+fa81e4e  Merge tag 'android-10.0.0_r30' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
 
 
 * system/core
-d7970cb  libutils: Fix Mutex not using monotonic clock  [Keith Mok]
-1b035ec  libutils: Improve performance of utf8_to_utf16/utf16_to_utf8  [Eric Miao]
-7f383a1  Define Android API constants  [DennySPb]
+754455f  qtaguid.cpp - improvements  [Maciej Żenczykowski]
 
 
-* vendor/syberia
-425cab0  Merge changes Ibc1d941f,I616043e3,Ic2d4e780,I5907d6ca,I94d6e782 into 13.0  [dennyspb]
+* system/sepolicy
+a8fce0a  Merge tag 'android-10.0.0_r30' of https://android.googlesource.com/platform/system/sepolicy into 13.0  [DennySPb]
 
 
-====================
-     2023-01-18    
-====================
-
-====================
-     2023-01-17    
-====================
-
-* packages/apps/Launcher3
-19d4f91  Launcher3: Hotseat: Fix normal QSB width  [Adithya R]
-
-
-* vendor/qcom/opensource/commonsys-intf/display
-e04b0a4  Hookup GRALLOC_HANDLE_HAS_RESERVED_SIZE  [Chirayu Desai]
-
-
-* vendor/syberia
-909ad5d  Hookup GRALLOC_HANDLE_HAS_RESERVED_SIZE  [Chirayu Desai]
-8ecbeb9  soong: Add support to set vendor tag with client package name  [cjh1249131356]
-fe3c26e  backuptool: Unmount v3 partitions during backup  [TheHitMan7]
-cb5c40e  overlay: Set default status bar height to 28dp  [Michael Bestas]
-37803e0  overlays: Use rounded corners in SystemUI  [Danny Lin]
+* system/update_engine
+24c2319  update_engine: Always disable signature and downgrade checks  [jhenrique09]
 
 
 ====================
-     2023-01-16    
+     2023-02-07    
 ====================
 
 * art
-84716ed  Merge adjacent free chunks and release them in FreeListSpace  [qiubowen]
-04dbde5  Comment and adjust system server profiling.  [Nicolas Geoffray]
-5284da3  Fix on the visiblity initialized counter logic.  [Nicolas Geoffray]
+7056e75  OnDeviceRefresh::GetSystemServerImagePath support system_ext partition  [huyuxin]
+131a672  Add phis in SimplifyIfs to enable branch redirection  [Santiago Aboy Solanes]
 
+
+====================
+     2023-02-06    
+====================
 
