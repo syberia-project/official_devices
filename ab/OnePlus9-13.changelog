@@ -1,149 +1,117 @@
 ====================
-     2023-04-12    
+     2023-05-15    
 ====================
 
-* frameworks/av
-58baea7  C2Store: disable debug logs  [Steven Moreland]
-9e22791  APM: fix log spam from getDevicesForStrategyInt when booting devices.  [jiabin]
-26e8483  Remove binder priority propagation workaround  [Ray Essick]
-db22b08  C2SoftMpeg4Enc: Add support for levels in mpeg4/h263 encoder  [Ram Mohan]
-
-
-* frameworks/base
-ef616a6  MediaCodecLinearBlock: Let input slot available for onWorkDone buffer.  [ted.sun]
-d8a98fb  Fix the problem of slow exit of boot animation  [niuwenchao]
-0faa82a  HWUI: reset buffer state after MakeCurrent  [Shih-Hsin Li]
-18d8d8d  SettingsLib: Update 5G+ icon to Silk design  [Adithya R]
-a5b2e78  SystemUI: Grant READ_PHONE_STATE permission  [Martin Bouchet]
-4a5d029  Use IPv4v6 as default protocol when APN setting is not available  [Jack Yu]
-c7b1b30  SystemUI: Reduce keyguard indication text padding  [minaripenguin]
-fce57e8  SystemUI: keyguard: preview: Catch InterruptedException  [SamarV-121]
-378583f  SystemUI: Turn on UMO turbulence noise and surface ripple by default  [NurKeinNeid]
-
-
 ====================
-     2023-04-11    
+     2023-05-14    
 ====================
 
-* build/make
-7bf9caf  Merge tag 'android-13.0.0_r41' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
-
+====================
+     2023-05-13    
+====================
 
 * build/soong
-3f02f4b  Merge tag 'android-13.0.0_r41' of https://android.googlesource.com/platform/build/soong into HEAD  [DennySPb]
+daecf57  Merge tag 'android-13.0.0_r49' of https://android.googlesource.com/platform/build/soong into HEAD  [DennySPb]
 
 
 * frameworks/av
-237d1e7  Merge tag 'android-13.0.0_r41' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
+d5e73f7  Merge tag 'android-13.0.0_r49' of https://android.googlesource.com/platform/frameworks/av into 13.0  [DennySPb]
 
 
 * frameworks/base
-dc4c974  PixelPropsUtils: Make CTS/Play Integrity pass again  [Dyneteve]
-2761bdec  PixelPropsUtils: Set shipping level to 32 for devices >=33  [Anirudh Gupta]
-b95c9b6  PixelPropsUtils: Use actual device model name  [Dyneteve]
-b168a07  PixelPropsUtils: Use spoofBuildGms for FP and model alteration  [Danny Lin]
-21903ff  Merge tag 'android-13.0.0_r41' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+3166abb  Merge tag 'android-13.0.0_r49' of https://android.googlesource.com/platform/frameworks/base  [DennySPb]
 
 
 * frameworks/native
-ea91c1c  Merge tag 'android-13.0.0_r41' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
-2eb8aee  libgui: refactor pre-rendering feature  [Jun Wang]
-b1ea200  touch response optimizations  [zfu]
-cbd0ffa  Revert "SF: Obey active display's RefreshRateConfigs"  [DennySPb]
-84410b8  Revert "SF: Fix display mode transitions for multi-display"  [DennySPb]
+c79c47c  Merge tag 'android-13.0.0_r49' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
+
+
+* frameworks/opt/telephony
+4823c00  Merge tag 'android-13.0.0_r49' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD  [DennySPb]
 
 
 * packages/apps/Launcher3
-91f3b15  Merge tag 'android-13.0.0_r41' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD  [DennySPb]
-d7cb637  fixup! Launcher3: Adapt home settings UI to Android 12 style  [jhonboy121]
-3da2469  Revert "Launcher3: Implement LocalColorExtractor using colorkt-based theme engine"  [Pranav Vashi]
+8934151  Merge tag 'android-13.0.0_r49' of https://android.googlesource.com/platform/packages/apps/Launcher3 into 13.0  [DennySPb]
 
 
 * packages/apps/Settings
-afdb1e8  Merge tag 'android-13.0.0_r41' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
-
-
-* packages/apps/SyberiaSettings
-e8201d7  Update monet options  [Pranav Vashi]
-7447d99  Sync battery customization changes  [DennySPb]
-3841df8  Revert "Disable UDFPS customization for now"  [DennySPb]
+71e096d  Merge tag 'android-13.0.0_r49' of https://android.googlesource.com/platform/packages/apps/Settings into 13.0  [DennySPb]
 
 
 * packages/modules/Wifi
-3e07da0  Merge tag 'android-13.0.0_r41' of https://android.googlesource.com/platform/packages/modules/Wifi into HEAD  [DennySPb]
+50e4342  Merge tag 'android-13.0.0_r49' of https://android.googlesource.com/platform/packages/modules/Wifi into HEAD  [DennySPb]
 
 
 * packages/services/Telecomm
-945b1f5  Merge tag 'android-13.0.0_r41' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
+459d693  Merge tag 'android-13.0.0_r49' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
 
 
 * system/sepolicy
-279bfe1  Merge tag 'android-13.0.0_r41' of https://android.googlesource.com/platform/system/sepolicy into HEAD  [DennySPb]
+fa96501  Merge tag 'android-13.0.0_r49' of https://android.googlesource.com/platform/system/sepolicy into 13.0  [DennySPb]
 
+
+====================
+     2023-05-12    
+====================
+
+* frameworks/base
+d9c4078  Reduce the number of binders  [Liangliang Sui]
+1ceb290  Remove usage of mFileName in ObbInfo  [Sam Gao]
+aec8b96  Fix the memory leak during high speed recording  [Hiroki Mine]
+a2684ab  hwui: Add NULL pointer check in AnimatorManager::pushStaging  [Phạm Tiên Sinh]
+156e7af  Revert "Fix background activity start."  [Pranav Vashi]
+4f61f9b  Ignore BIND_ABOVE_CLIENT for same-process connections  [Tomislav Novak]
+5ba356c  Revert intent filter matching enforcement.  [John Wu]
+35df758  HWUI: reset buffer state only for ES3 context  [Shih-hsin Li]
+92c854e  Adding allocation size check when creating arrays in java parcel  [Pawan Wagh]
+e773e44  hwui: Fix multiple definitions of NativeFamilyBuilder  [Tomislav Novak]
+495c0f1  Camera: Release advanced extension references  [Emilian Peev]
+bdfffb1  AbsListView: Improve scrolling cache  [Pawit Pornkitprasan]
+06ccce1  SystemUI: Enable camera & flashlight keyguard affordance  [Adithya R]
+f64ce07  binder - include calling PID/UID in uncaught remote exception code  [Steven Moreland]
+5de0309  Clear calling identity before calling to DeviceIdleController  [chiachangwang]
+ca5f756  Fixed UID mismatch in telephony registry  [Jack Yu]
+68c961c  View: Prevent NPEs when initiating surface drag  [minaripenguin]
+e425117  Revert "DragSurface: destroy surfacecontrol in view site"  [Pranav Vashi]
+68fd241d7  Discard snapshots after dropping updatable APEX support  [Karsten Tausche]
+634695d  WindowManager: finally proper desktop mode handling  [nift4]
+c3fa47e  SystemUI: Catch the remaining exceptions when re-inflating the qs panel  [minaripenguin]
+4c2444f  SystemUI: Prevent another OOB when creating tile views  [minaripenguin]
+6bbd26c  KeyguardStatusBarView: Clean up cruft  [Pranav Vashi]
+22316ae  pocket mode: Update style to latest OOS specs  [minaripenguin]
+32db8ee  libs: hwui: Avoid system crash if font contains invalid/null font data  [minaripenguin]
+a84c28d  QSPanel: Prevent systemui crash when adjusting tiles height  [minaripenguin]
+48395e8  SystemUI: Remove brightness slider top margin  [minaripenguin]
+
+
+* frameworks/native
+ae296c4  fix During the frame rate switching, the VSR status was abnormal  [Kun Ma]
+6587cad  Use cpu_number to index mapping  [Himanshu Jakhmola]
+dd40f37  servicemanager: log missing service requestor pid  [Steven Moreland]
+0490276  sf: Reconfigure Display without waiting for mode change.  [Rajat Yadav]
+77b9c86  opengl: fix resource leak when dlsym failed  [zhangjincheng]
+5528ca9  sf: Update mSendUpdateImminent on reset callback  [Rheygine Medel]
+
+
+* hardware/qcom-caf/wlan
+38be0a7  Merge tag 'LA.VENDOR.1.0.r1-21300-WAIPIO.QSSI14.0' of https://git.codelinaro.org/clo/la/platform/hardware/qcom/wlan into 13.0-caf  [DennySPb]
+
+
+====================
+     2023-05-11    
+====================
 
 * vendor/syberia
-0f71372  Switch to AOSP themes stub package  [Michael Bestas]
-9cac404  Revert "Restore stub themepicker package"  [DennySPb]
+f251b5d  overlay: SystemUI: Offload WM shell to another thread  [Danny Lin]
+e63e6b1  overlay: Add google OTA to global disabledComponent  [Rajan Palaniya]
+53203a6  overlay: Allow gms to access persistent data partition  [Demon000]
 
 
 ====================
-     2023-04-10    
-====================
-
-* system/core
-0a4d5f1  libprocessgroup: Check validity of uid and pid arguments  [Bart Van Assche]
-bad7d89  libprocessgroup: Add argument checks in KillProcessGroup()  [Bart Van Assche]
-
-
-====================
-     2023-04-09    
+     2023-05-10    
 ====================
 
 ====================
-     2023-04-08    
+     2023-05-09    
 ====================
-
-====================
-     2023-04-07    
-====================
-
-* frameworks/base
-2ca233f  SystemUI: Add dual-tone light and dark themes for QS  [Danny Lin]
-15be27b  Change stretch effect bounds of RenderNode in case of SurfaceView.  [Minkyoung Kim]
-
-
-====================
-     2023-04-06    
-====================
-
-* frameworks/av
-3e40df1  disable audio balance in voip call for mono channel  [zhangjincheng]
-
-
-* frameworks/base
-1624686  SystemUI: Forward port QS fling animation boost to NotificationPanelViewController  [Jake Weinstein]
-d207954  SystemUI: Use lighter material you shades for charging animation  [minarypenguin]
-8967b64  SystemUI: Use color accent for charging animation  [Genkzsz11]
-6bb0727  Add QS battery customization in LargeScreenShadeHeader  [DennySPb]
-
-
-* packages/apps/ThemePicker
-835b034  ThemePicker: Unify font/icon label sizes and scroll the text  [Ido Ben-Hur]
-251d720  ThemePicker: Fixup font and icon picking wrong user ID  [Ido Ben-Hur]
-958f17c  ThemePicker: Vertically center the text of customization options  [Ido Ben-Hur]
-ff837ab  ThemePicker: Fix crash when applying default icon pack  [Adithya R]
-b047158  ThemePicker: Don't setEnabledExclusiveInCategory for default icon pack  [palaych]
-f484176  ThemePicker: Bring back fonts, icon pack, shape customization  [Anay Wadhera]
-814b282  ThemePicker: Remove beta tag for themed icons  [Pranav Vashi]
-1e2162b  Automatic translation import  [Michael Bestas]
-b212212  stub: Import extra color bundles from TQ1A.221205.011  [Michael Bestas]
-a2fe027  Add new priv-app permission added in QPR2  [Michael Bestas]
-3cfbde9  Override legacy WallpaperPicker app  [Danny Lin]
-6e4e5e7  Add permission for launcher preview rendering  [Danny Lin]
-ccab664  Specify we read and write launcher settings  [Luca Stefani]
-11d153a  Add wallpaper default permissions  [LuK1337]
-5d5b548  Add wallpaper privapp whitelist  [Luca Stefani]
-b0e2525  ThemePicker: Override WallpaperCropper  [Michael W]
-db22045  ThemePicker: Bring in the new icon  [Asher Simonds]
-
 
