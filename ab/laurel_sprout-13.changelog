@@ -1,99 +1,47 @@
 ====================
-     2023-03-16    
-====================
-
-====================
-     2023-03-15    
-====================
-
-* packages/apps/Launcher3
-7b9d1bb  key phone taskbar case  [Magicxavi]
-7128a81  drop restart method  [Magicxavi]
-8c0781f  temp fixes (cleanup)  [Magicxavi]
-b25582d  icons 2  [Magicxavi]
-e953876  icons 1  [Magicxavi]
-
-
-====================
-     2023-03-14    
+     2023-05-24    
 ====================
 
 * frameworks/base
-60b6261  udfps: Implement framework dimming support  [Magicxavi]
-a540246  Add show|hide udfps view callbacks to  [Magicxavi]
-8c4186a  SystemUI: GlobalActionsDialogLite: switch to AOSP's Flashlightcontroller  [George Zacharia]
+202edad  udfps  [Magicxavi]
 
 
 ====================
-     2023-03-13    
-====================
-
-====================
-     2023-03-12    
-====================
-
-====================
-     2023-03-11    
+     2023-05-23    
 ====================
 
 * frameworks/base
-e90fdf9  base: Allow locking tasks to recents [1/2]  [SagarMakhar]
+d8cd1d2  snapchat fix  [Magicxavi]
+d8519ba  new dim  [Magicxavi]
+9a9e6a0  udfps: Implement framework dimming support  [Magicxavi]
+b669003  Add show|hide udfps view callbacks to  [Magicxavi]
 
 
-* packages/apps/Launcher3
-743a0cb  Launcher3: Taskbar: Follow light/dark settings  [minaripenguin37]
-293e70d  Launcher3: Fix taskbar all apps background  [minaripenguin37]
-84ab09a  Launcher3: Add support for enabling taskbar on phones  [Magicxavi]
-452ba8a  Revert "Launcher3: Add taskbar switch under misc settings"  [Magicxavi]
-73136a6  Revert "Launcher3: Add support for toggling taskbar"  [Magicxavi]
-101913f  follow accent color for lock icon  [Magicxavi]
-a5ad4e2  SyberiaLauncher: import icons from SyberiaSettings  [Magicxavi]
-3d70da2  SyberiaLauncher: add default workspace string  [Bruno Martins]
-3017991  Its Syberia Launcher.  [Chris Crump]
-7dfd9be  Launcher3: Theme Oneplus camera  [mukesh22584]
-b5561ba  Launcher3: Import some themed icons  [Sarthak Roy]
-5baa5bd  Launcher3: Update and import new themed icons  [Adithya R]
-c0a03d0  Launcher3: Update themed icons  [Sonal Singh]
-6d22c88  Launcher3: Add support for themed icons  [TheScarastic]
-20960e1  Launcher3: set min sdk to 29  [Magicxavi]
-7404aed  Launcher3:Update Lock recent item drawables  [darkphnx]
-bcf8ad3  Launcher3: Allow locking tasks to recents [2/2]  [SagarMakhar]
-873258c  Launcher3: Allow widgets to have 1 row as minimum size  [Saul Henriquez]
-d0f757a  Launcher3: Cleanup QsbLayout `onFinishInflate`  [minaripenguin]
-17df56f  Launcher3: Optional music search toggle for QSB  [Magicxavi]
-e5d73e2  Launcher3: Do not add more space on hotseat with taskbar  [Pranav Vashi]
-9dc08a2  Launcher3: Adjust icons on dock search bar  [Pranav Vashi]
-2be1366  Launcher3: Clean up AssistantIconView  [Pranav Vashi]
-d18e5b9  Launcher3: CustomSeekBarPreference: Improve seekbar drawables  [pri0818]
-6ce3eee  Launcher3: meminfo: Replace deprecated BigDecimal methods  [minaripenguin]
-3ff9738  Launcher3: Hotseat: Use hotseat width for QSB only on tablets  [Pranav Vashi]
-4af4a52  Launcher3: Remove light/dark support for recents overview  [minaripenguin]
-9c152c4  Launcher3: Improve hidden & protected apps  [Pranav Vashi]
-428ae4e  Launcher3: Implement hidden & protected apps  [Magicxavi]
-934ec01  Launcher3: Make MemoryInfo position optional  [Magicxavi]
-c739a90  Launcher3: Increase the Athe alpha for recents drawables  [spkal01]
-42eab0e  Launcher3: Add toggle to show/hide app drawer search bar  [Magicxavi]
-0c6c5a4  Launcher3: Fix rtl layout error  [Leonardo Hvang]
-3a6aa90  Launcher3: Add config to place memory info below action buttons  [iusmac]
-dcbe914  Launcher3: InfoBottomSheet: Fix NPE with AppTransitionManager  [DennySPb]
-a6b1888  Launcher3: Keep hotseat bottom spacing for taskbar devices  [Tobias Merkel]
-6ed2bb9  Launcher3: Adjust suggestions row vertical padding  [Adithya R]
-2038677  Launcher3: Do not skip search animation for app icons  [Adithya R]
-e3106a8  Launcher3: Do not limit the number of search results  [Adithya R]
-edfd6b3  Launcher3: Move restart check to home page  [elpaablo]
-726bbc3  Launcher3: Add transperent background color of recent action bottoms  [Ghosuto]
-14f9059  Launcher3: add support for custom themed icon pack [3/3]  [jhonboy121]
-eef3a27  Launcher3: Shorten search bar(s) hint string  [Magicxavi]
-84b377c  Launcher3: Fix taskbar crash without QSB  [Pranav Vashi]
-0bf3803  Launcher3: Hotseat: Fix normal QSB width  [Adithya R]
-1a55a42  Launcher3: Do not add more space on hotseat with taskbar  [Pranav Vashi]
-35496e6  Launcher3: Refine dock and all apps UI  [Magicxavi]
-0b929eb  Launcher3: Introduce extra top & bottom margin for overview task cards  [LibXZR]
-f45aa4b  Launcher3: Rework MeminfoView available ram calculation  [minaripenguin]
-49713fd  Launcher3: Redesign recents app view style  [Magicxavi]
+* hardware/interfaces
+f9e60ec  Add show|hide udfps view callbacks to IBiometricsFingerprint@2.3 [2/2]  [Magicxavi]
+
+
+* vendor/syberia
+6837c52  udfps: add syberia icons  [Magicxavi]
 
 
 ====================
-     2023-03-10    
+     2023-05-22    
+====================
+
+====================
+     2023-05-21    
+====================
+
+====================
+     2023-05-20    
+====================
+
+====================
+     2023-05-19    
+====================
+
+====================
+     2023-05-18    
 ====================
 
