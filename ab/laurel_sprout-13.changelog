@@ -1,64 +1,38 @@
 ====================
-     2023-05-26    
+     2023-06-17    
 ====================
 
 ====================
-     2023-05-25    
+     2023-06-16    
+====================
+
+====================
+     2023-06-15    
+====================
+
+====================
+     2023-06-14    
 ====================
 
 * frameworks/base
-0908a9b  SystemUI: Adjust qqs top margin dimension  [Magicxavi]
-9594e09  SystemUI: allow set combined QS with config  [Magicxavi]
-98e4776  snapchat  [Magicxavi]
-9d84ea5  dim  [Magicxavi]
-11545e4  new dim  [Magicxavi]
-06613df  udfps: Implement framework dimming support  [Magicxavi]
-f8e59c6  Add show|hide udfps view callbacks to  [Magicxavi]
-
-
-* packages/apps/Launcher3
-39ca8a8  Ortus Launcher: Fix memory info calculation  [minaripenguin]
-9c236c1  OrtusLauncher: Move meminfo instance creation out of runnable  [Magicxavi]
-56831d7  SushiLauncher: Rework MeminfoView available ram calculation  [minaripenguin]
-68d56b1  Launcher3: meminfo: Replace deprecated BigDecimal methods  [minaripenguin]
-fb313de  Launcher3: Update activity for Aperture camera shortcut  [Magicxavi]
-5360fbc  Launcher3: Add background chip for memory info view  [Rizky Benggolo]
-b155523  Launcher3: Add config to place memory info below action buttons  [Magicxavi]
-94a9a22  Launcher3: Display memory info above overview actions  [Magicxavi]
-9a0eb82  Launcher3: Introduce memory info in overview  [Magicxavi]
-afe74ab  Launcher3: Allow widgets to have 1 row as minimum size  [Saul Henriquez]
-815bec4  Revert "Launcher3: Implement Smartspace"  [Magicxavi]
-a582a3b  Revert "Launcher3: Implement workspace unlock animation"  [Adithya R]
-991c548  Revert "Launcher3: Fix crash in smartspace targets dump"  [Adithya R]
-8793fc8  Revert "fixup Smartspace (4d3b9fa010e5a)"  [John Galt]
-fc55cdf  Revert "Launcher3: Add a toggle for smartspace"  [Adithya R]
+2df9d61  Revert "udfps: Implement framework dimming support"  [Magicxavi]
+cdcebc4  Revert "new dim"  [Magicxavi]
 
 
 ====================
-     2023-05-24    
+     2023-06-13    
 ====================
 
-====================
-     2023-05-23    
-====================
-
-====================
-     2023-05-22    
-====================
-
-* hardware/interfaces
-f9e60ec  Add show|hide udfps view callbacks to IBiometricsFingerprint@2.3 [2/2]  [Magicxavi]
-
-
-* vendor/syberia
-6837c52  udfps: add syberia icons  [Magicxavi]
+* frameworks/base
+abcd595  new dim  [Magicxavi]
+5e8fadc  udfps: Implement framework dimming support  [Magicxavi]
 
 
 ====================
-     2023-05-21    
+     2023-06-12    
 ====================
 
 ====================
-     2023-05-20    
+     2023-06-11    
 ====================
 
