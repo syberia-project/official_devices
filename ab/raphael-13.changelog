@@ -1,58 +1,222 @@
 ====================
-     2023-05-10    
+     2023-08-10    
 ====================
 
+====================
+     2023-08-09    
+====================
+
+* art
+aa45959  VIXL Dissassembler Integration Upgrade May. 2022  [Greg Cawthorne]
+
+
 * bionic
-b2de480  Use clang's builtins for sqrt()/sqrtf() and lrint() family.  [Elliott Hughes]
-
-
-* build/soong
-5eeda24  soong: cc: Enable global O3  [Andrzej Perczak]
-4fa7387  Dexpreopt: use "speed-profile" if a system server jar has a profile.  [Ulya Trafimovich]
-ba98dc6  arm_device: Change cortex-a76 mcpu from a55 to a75  [Pranav Vashi]
-f06f225  Remove workaround for Qualcomm Kryo 385  [Raphiel Rollerscaperers]
-c440566  arm64_device: Change cortex-a76 mcpu from a55 to a75  [Jason Edson]
+a46b681  Fix elftls_dl#dtv_resize with HWASan  [Florian Mayer]
 
 
 * device/qcom/sepolicy_vndr-legacy-um
-685b1f9  2  [kondors1995]
+35abfb8  Revert "sepolicy_vndr: Add label for wakeup sources"  [kondors1995]
+
+
+* device/syberia/sepolicy
+c6a276e   sepolicy: Label Dolby Sepolicy labels  [johnmart19]
+
+
+* external/arm-optimized-routines
+a90cc5b  Merge remote-tracking branch 'cr/13.0' into HEAD  [kondors1995]
+
+
+* external/freetype
+16d8cb1  Merge remote-tracking branch 'cr/13.0' into HEAD  [kondors1995]
+
+
+* external/jemalloc_new
+df7656a  jemalloc: enable MADV_FREE usage  [Juhyung Park]
+
+
+* frameworks/av
+effdf07  Effects: add a method to retrieve audio configuration  [Mikhail Naganov]
+9753cbb  media: OMXStore: Import loading libstagefrightdolby  [johnmart19]
+5fc1a01  av: Import Dolby Effects initialization  [johnmart19]
 
 
 * frameworks/base
-23be6be  Add a config to state whether a device supports increased touch sensitivity. (#2)  [Diab Neiroukh]
-0fb0655  base: Allow disabling color inversion support [1/2]  [Ido Ben-Hur]
+8173e82  Add a config to state whether a device supports increased touch sensitivity. (#2)  [Diab Neiroukh]
+22e28a9  Cleanup 'Update battery info every second when device is charging'  [Pranav Vashi]
+b570726  Make overlay for 'Update battery info every second when device is charging'  [ShevT]
+2f85a27  Update battery info every second when device is charging  [SagarMakhar]
+7ff8e6f  SimpleDeviceConfig: Add support for non-pixel configs  [someone5678]
+2713995  SimpleDeviceConfig: Adapt recent changes into current project  [someone5678]
+c443e67  Allow resetting namespace props on boot  [jhenrique09]
+ed1a387  SimpleDeviceConfig: Add support for pixel specific configs  [jhenrique09]
+c2758bf  base: Merge SimpleDeviceConfig into frameworks  [Danny Lin]
 
 
 * packages/apps/Settings
-fcf3f82  Add preference for increased touch sensitivity (glove mode)  [Danny Lin]
-12f694d  Settings: Allow disabling color inversion pref via overlay  [Ido Ben-Hur]
+abae4ac  Add preference for increased touch sensitivity (glove mode)  [Danny Lin]
+870e556  Settings: Allow disabling color inversion pref via overlay  [Ido Ben-Hur]
+
+
+* packages/apps/SimpleDeviceConfig
+2b7fdcd  SimpleDeviceConfig: Merge SimpleDeviceConfig into frameworks  [someone5678]
+06829c6  Add soft config type for user-persistent settings  [Danny Lin]
+1e1c8f8  Don't make config values default  [Danny Lin]
+
+
+* vendor/google/gms
+ba67ed3  Revert "overlay: remove device configurator"  [DennySPb]
 
 
 * vendor/syberia
-075790d  udfps: add syberia icons  [Magicxavi]
+7b31c53  kernel: NO_GCC: Fix compilation with custom baremetal clang  [Dakkshesh]
+9e01493  udfps: add syberia icons  [Magicxavi]
+40092ad  Bump to v6.6  [DennySPb]
+e0684d5  vendor: Remove custom device configurator package name  [someone5678]
+2eb1d46  vendor: SimpleDeviceConfig: Disable WallpaperEffects  [someone5678]
+78d5608  vendor: SimpleDeviceConfig: Isolate pixel specific configs and cleanup  [jhenrique09]
+c9be8eb  vendor: device_config: Don't set url/manifests/package related configs  [someone5678]
+103384b  vendor: Merge SimpleDeviceConfig into framework  [someone5678]
+295209e  device_config: Add back ml back gesture  [aswin7469]
+0ec08f5  device_config: Remove obsolete Android 11 permission hub overlays  [Danny Lin]
+d6b858e  Updated v3 manifest to version 3060  [AmbientMusicBot]
+811dd4f  Updated v3 manifest to version 3059  [AmbientMusicBot]
+5652f96  SimpleDeviceConfig: Updated v3 manifest to version 3058  [AmbientMusicBot]
+8c69eaa  device_config: Enable wallpaper warmup ASI flag  [minaripenguin]
+a3f9965   overlay/simpledeviceconfig: drop flashlight chip  [RealJohnGalt]
 
 
 ====================
-     2023-05-09    
+     2023-08-08    
+====================
+
+* art
+b67462f  Fix odrefresh's queries on system properties.  [Jiakai Zhang]
+
+
+* bionic
+201dbed  Add aligned_alloc to linker_memory.cpp  [Ryan Prichard]
+5fbef3f  Add missing assert.h include  [Ryan Prichard]
+b3af9fe  Reuse the libm scalbn() as ldexp().  [Elliott Hughes]
+a3a8c7a  De-pessimize SigSetConverter usage.  [Elliott Hughes]
+69d25ae  Sync upstream NetBSD.  [Elliott Hughes]
+7720907  Sync upstream OpenBSD.  [Elliott Hughes]
+fe5efb3  Sync upstream FreeBSD libm (trivial changes).  [Elliott Hughes]
+f2d9454  Sync upstream FreeBSD libm (real changes).  [Elliott Hughes]
+83a0b5a  Sync upstream FreeBSD (qsort).  [Elliott Hughes]
+ecc0437  Increase time to set allocation limit.  [Christopher Ferris]
+836bcf2  Fix potential flakiness in android_mallopt test.  [Christopher Ferris]
+f681e25  Sync upstream FreeBSD libm.  [Elliott Hughes]
+
+
+* build/make
+2eaa30a  Merge tag 'android-13.0.0_r74' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
+
+
+* build/soong
+67111bc  config/arm64: do not force cortex-a76 as cortex-a55  [John Galt]
+e13aa32  soong: cc: Enable global O3  [Andrzej Perczak]
+5ca2372  Dexpreopt: use "speed-profile" if a system server jar has a profile.  [Ulya Trafimovich]
+acfa14e  arm_device: Change cortex-a76 mcpu from a55 to a75  [Pranav Vashi]
+16d540a  Remove workaround for Qualcomm Kryo 385  [Raphiel Rollerscaperers]
+
+
+* frameworks/av
+74e351e  CCodec: Control the inputs to avoid pipeline overflow  [Shrikara B]
+ae8faaa  CCodec: Use pipelineRoom only for HW decoder  [Shrikara B]
+e2542bf  Revert "Codec2: guard the dummy work signal to lahaina only"  [DennySPb]
+47d20c0  EXPERIMENTAL: CCodec: Add metadata buffer support for linear output buffers  [Praveen Chavan]
+deb75bf  codec2: Change a Info print into Verbose  [Shrikara B]
+47e167d  codec2: Use numClientBuffers to control the pipeline  [Shrikara B]
+c4a6489  Fix build log spam for libmediadrm  [Kyle Zhang]
+9552a27  C2BqPool: Invalidate when the client died  [Sungtak Lee]
+c1e0098  Revert "C2BufferQueueBlockPool: save reallocation flag for slot buffer"  [DennySPb]
+1f1319c  C2Store: disable debug logs  [Steven Moreland]
+21147ec  codec2: change to support multiple fences for single output.  [Uma Mehta]
+
+
+* frameworks/base
+4d7559b  base: Introduce PowerOffAlarmService  [Ido Ben-Hur]
+b6cbf8a  Revert "AudioService: do not log sound effects in audio dumpsys"  [jro1979oliver]
+552bcf3  NotificationPlayer: use AUDIOFOCUS_GAIN_TRANSIENT instead of AUDIOFOCUS_GAIN in looping mode  [wumin3]
+fe4e4c9  SystemUI: React to PrivacyConfig changes properly  [Tommy Webb]
+35ab3ec  Revert "hwui: renderthread/CanvasContext: Reduce the timeout for dequeueing buffers"  [exactxmpl]
+bbdd20f  [IMPR] AudioService: focus listener: enable it when using external AudioFocus  [Francois Gaffie]
+1afc413  PixelPropsUtils: Update fingerprints to August 2023 release  [Joey Huab]
+abe544c  base: ApplicationPackageManager: Return early for Tensor check  [someone5678]
+cb3b6ff  Add keylayout mapping for Dualsense Edge gamepad  [Farid Chahla]
+40fefd5   GamesPropsUtils: Add Gameprops for Battlegrounds Mobile India (BGMI)  [Signed-off-by: SwapnilVicky]
+df04e26  PixelPropsUtils: Spoof all wallpaper packages to Pixel 7 Pro  [someone5678]
+89bdcae  PixelPropsUtils: Set HARDWARE, ID, SDK_INT values  [someone5678]
+560b2ef  PixelPropsUtils: Correctly spoof unstable process  [someone5678]
+60d9d8c  base: ApplicationPackageManager: Exclude PE 2021 Midyear from tensor pixel list  [someone5678]
+6f2cb38  base: ApplicationPackageManager: Block Tensor features for Recorder  [someone5678]
+216404a  AOD: Sleep when proximity is covered for 3 secs  [PMS22]
+bc0522b  udfps: Make using Optimal display refresh rate optional  [onettboots]
+6df08e0  base: Allow disabling color inversion support [1/2]  [Ido Ben-Hur]
+30815db  Merge tag 'android-13.0.0_r74' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
+ffb1701  Fix problem of logd restarting.  [Christopher Ferris]
+58b9b1d  AudioDeviceBroker: Fix not setting proper call volume for LE Headset  [Jakub Tyszkowski]
+
+
+* packages/apps/Launcher3
+b1269ba  Merge tag 'android-13.0.0_r74' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD  [DennySPb]
+
+
+* packages/apps/SyberiaSettings
+1fcac45  Adapt spoof switches for properties  [DennySPb]
+a56f605  add SystemPropertySwitchPreference  [cjybyjk]
+
+
+* packages/services/Telecomm
+acae87c  Merge tag 'android-13.0.0_r74' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
+
+
+* system/core
+27bbd99  Re-add code to skip gettings logs on logd crashes.  [Christopher Ferris]
+
+
+* system/memory/lmkd
+9cb5c16  Merge branch 'main' of https://android.googlesource.com/platform/system/memory/lmkd into HEAD  [DennySPb]
+
+
+====================
+     2023-08-07    
+====================
+
+* bootable/recovery
+0e1a435  recovery: Simplify reboot recovery reason  [LuK1337]
+374608b  recovery: Clear BCB before rebooting to recovery  [LuK1337]
+e63ee92  recovery: Ask to reboot before installing anything after A/B update  [LuK1337]
+
+
+* frameworks/av
+3ae2fe0  Visualizer: Resolve multichannel capture  [Andy Hung]
+27ce40c  Camera: Heic: Allow grids settings override in onFormatChanged  [Shuzhen Wang]
+fd7de9b  codec2_vndk: don't spin during sync variable locking/unlocking  [Lajos Molnar]
+
+
+* frameworks/native
+70c27eb  Turn on LTO optmisations for libbinder  [Yi Kong]
+
+
+* packages/apps/Settings
+8622b9a  Settings: Update 90hz string replace hack in displayPreference  [Fabian Leutenegger]
+61bd622  Settings: Fix findPeakRefreshRate logic  [Fabian Leutenegger]
+
+
+* packages/resources/devicesettings
+eaeed69  Automatic translation import  [LineageOS Infra]
+
+
+====================
+     2023-08-06    
 ====================
 
 ====================
-     2023-05-08    
+     2023-08-05    
 ====================
 
 ====================
-     2023-05-07    
-====================
-
-====================
-     2023-05-06    
-====================
-
-====================
-     2023-05-05    
-====================
-
-====================
-     2023-05-04    
+     2023-08-04    
 ====================
 
