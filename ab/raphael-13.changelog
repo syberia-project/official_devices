@@ -1,4 +1,38 @@
 ====================
+     2023-08-14    
+====================
+
+====================
+     2023-08-13    
+====================
+
+* frameworks/base
+4685288  DeviceConfig: Change setProperties behavior  [jhenrique09]
+61cd647  DeviceConfigUtils: Make debug optional  [jhenrique09]
+2072d19  Implement DeviceConfigUtils and service  [jhenrique09]
+00c803a  [SQUASH] Revert SimpleDeviceConfig changes  [Joey Huab]
+795060a  GamesPropUtils: Switch Mobile Legends to Mi11TP  [COSMIC]
+a699ef9  PixelPropsUtils: Refactor logic and cleanup  [Henrique Silva]
+
+
+* vendor/syberia
+f011e5b  vendor: Move custom device configs to global_device_configs_override  [jhenrique09]
+84526c4  vendor: Drop SimpleDeviceConfig  [jhenrique09]
+e1e050d  vendor: Update now playing configs from gms  [jhenrique09]
+8fdc023  vendor: SimpleDeviceConfig: Isolate pixel specific configs and cleanup  [jhenrique09]
+c062006  vendor: SimpleDeviceConfig: Drop wallpaper effects  [jhenrique09]
+7e5e2be  Revert SimpleDeviceConfig changes  [kondors1995]
+
+
+====================
+     2023-08-12    
+====================
+
+====================
+     2023-08-11    
+====================
+
+====================
      2023-08-10    
 ====================
 
@@ -93,21 +127,6 @@ a3f9965   overlay/simpledeviceconfig: drop flashlight chip  [RealJohnGalt]
 b67462f  Fix odrefresh's queries on system properties.  [Jiakai Zhang]
 
 
-* bionic
-201dbed  Add aligned_alloc to linker_memory.cpp  [Ryan Prichard]
-5fbef3f  Add missing assert.h include  [Ryan Prichard]
-b3af9fe  Reuse the libm scalbn() as ldexp().  [Elliott Hughes]
-a3a8c7a  De-pessimize SigSetConverter usage.  [Elliott Hughes]
-69d25ae  Sync upstream NetBSD.  [Elliott Hughes]
-7720907  Sync upstream OpenBSD.  [Elliott Hughes]
-fe5efb3  Sync upstream FreeBSD libm (trivial changes).  [Elliott Hughes]
-f2d9454  Sync upstream FreeBSD libm (real changes).  [Elliott Hughes]
-83a0b5a  Sync upstream FreeBSD (qsort).  [Elliott Hughes]
-ecc0437  Increase time to set allocation limit.  [Christopher Ferris]
-836bcf2  Fix potential flakiness in android_mallopt test.  [Christopher Ferris]
-f681e25  Sync upstream FreeBSD libm.  [Elliott Hughes]
-
-
 * build/make
 2eaa30a  Merge tag 'android-13.0.0_r74' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
 
@@ -130,8 +149,6 @@ deb75bf  codec2: Change a Info print into Verbose  [Shrikara B]
 c4a6489  Fix build log spam for libmediadrm  [Kyle Zhang]
 9552a27  C2BqPool: Invalidate when the client died  [Sungtak Lee]
 c1e0098  Revert "C2BufferQueueBlockPool: save reallocation flag for slot buffer"  [DennySPb]
-1f1319c  C2Store: disable debug logs  [Steven Moreland]
-21147ec  codec2: change to support multiple fences for single output.  [Uma Mehta]
 
 
 * frameworks/base
@@ -162,61 +179,11 @@ ffb1701  Fix problem of logd restarting.  [Christopher Ferris]
 b1269ba  Merge tag 'android-13.0.0_r74' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD  [DennySPb]
 
 
-* packages/apps/SyberiaSettings
-1fcac45  Adapt spoof switches for properties  [DennySPb]
-a56f605  add SystemPropertySwitchPreference  [cjybyjk]
-
-
 * packages/services/Telecomm
 acae87c  Merge tag 'android-13.0.0_r74' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
-
-
-* system/core
-27bbd99  Re-add code to skip gettings logs on logd crashes.  [Christopher Ferris]
 
 
 * system/memory/lmkd
 9cb5c16  Merge branch 'main' of https://android.googlesource.com/platform/system/memory/lmkd into HEAD  [DennySPb]
 
-
-====================
-     2023-08-07    
-====================
-
-* bootable/recovery
-0e1a435  recovery: Simplify reboot recovery reason  [LuK1337]
-374608b  recovery: Clear BCB before rebooting to recovery  [LuK1337]
-e63ee92  recovery: Ask to reboot before installing anything after A/B update  [LuK1337]
-
-
-* frameworks/av
-3ae2fe0  Visualizer: Resolve multichannel capture  [Andy Hung]
-27ce40c  Camera: Heic: Allow grids settings override in onFormatChanged  [Shuzhen Wang]
-fd7de9b  codec2_vndk: don't spin during sync variable locking/unlocking  [Lajos Molnar]
-
-
-* frameworks/native
-70c27eb  Turn on LTO optmisations for libbinder  [Yi Kong]
-
-
-* packages/apps/Settings
-8622b9a  Settings: Update 90hz string replace hack in displayPreference  [Fabian Leutenegger]
-61bd622  Settings: Fix findPeakRefreshRate logic  [Fabian Leutenegger]
-
-
-* packages/resources/devicesettings
-eaeed69  Automatic translation import  [LineageOS Infra]
-
-
-====================
-     2023-08-06    
-====================
-
-====================
-     2023-08-05    
-====================
-
-====================
-     2023-08-04    
-====================
 
