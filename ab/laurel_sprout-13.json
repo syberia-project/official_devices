@@ -1,13 +1,13 @@
 {
   "response": [
     {
-      "datetime": 1685102100,
-      "filename": "syberia_laurel_sprout-v6.4-20230526-1155-OFFICIAL.zip",
-      "id": "9f573885b14ab6625f1db2c42981ec403c32cbbe036de7e7dd1acaf34f7f656e",
+      "datetime": 1693988880,
+      "filename": "syberia_laurel_sprout-v6.6-20230906-0828-OFFICIAL.zip",
+      "id": "bc7ff42324e3eef6b5bac4b90263f61d58c33d4c50165c3c288cb444693f295a",
       "romtype": "OFFICIAL",
-      "size": "1528419548",
-      "url": "https://sourceforge.net/projects/syberiaos/files/laurel_sprout/syberia_laurel_sprout-v6.4-20230526-1155-OFFICIAL.zip/download",
-      "version": "v6.4",
+      "size": "1586177515",
+      "url": "https://sourceforge.net/projects/syberiaos/files/laurel_sprout/syberia_laurel_sprout-v6.6-20230906-0828-OFFICIAL.zip/download",
+      "version": "v6.6",
       "device_brand": "Xiaomi",
       "device_model": "Mi A3",
       "device_codename": "laurel_sprout",
