@@ -1,13 +1,13 @@
 {
   "response": [
     {
-      "datetime": "1691743090",
-      "filename": "syberia_lemonade-v6.6-20230811-0838-OFFICIAL.zip",
-      "id": "404a24424494a3ae141d359679fe10084a46359592b3a949c72312495267d332",
+      "datetime": "1695374557",
+      "filename": "syberia_lemonade-v6.7-20230922-0922-OFFICIAL.zip",
+      "id": "06990b3ebd665f444bbe0ea798241a67d42d081e8ba55d552e4e2d02fbca3509",
       "romtype": "OFFICIAL",
-      "size": "2173162820",
-      "url": "https://sourceforge.net/projects/syberiaos/files/lemonade/syberia_lemonade-v6.6-20230811-0838-OFFICIAL.zip/download",
-      "version": "v6.6",
+      "size": "2173263074",
+      "url": "https://sourceforge.net/projects/syberiaos/files/lemonade/syberia_lemonade-v6.7-20230922-0922-OFFICIAL.zip/download",
+      "version": "v6.7",
       "device_brand": "OnePlus",
       "device_model": "OnePlus 9",
       "device_codename": "lemonade",

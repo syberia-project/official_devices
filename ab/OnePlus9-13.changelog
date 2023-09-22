@@ -1,291 +1,172 @@
 ====================
-     2023-08-11    
+     2023-09-22    
 ====================
 
-* bionic
-fd39f44  linker_block_alloctor: Remove 4k page size assumption  [Kalesh Singh]
-
-
-* frameworks/av
-3a24ba5  C2BqPool: Expire waiters on Surface switching  [Sungtak Lee]
-553c3eb  media codec2: Remove use of hardcoded PAGE_SIZE 4096  [Kalesh Singh]
-bc963ec  OMX: Add high bit of usage flag during conversion  [Sungtak Lee]
-134a60d  GraphicBufferSource: Use 64bit consumer usage  [Sungtak Lee]
-
-
 * frameworks/base
-fb16449  NativeLibraryHelper: Remove use of hardcoded PAGE_SIZE 4096  [Kalesh Singh]
-7ca99a2  CachedAppOptimizer: Remove use of hardcoded PAGE_SIZE 4096  [Kalesh Singh]
-3fb73d6  Add null pointer judgment processing to prevent restarting  [HanWang]
-7d55488  Unmount unusable partition instead of putting device into crashloop.  [Alex Buynytskyy]
+331b2ba  bt: Use group id to select color for icon  [Michał Narajowski]
+415d907  bt: Set alias for all devices in a set  [Michał Narajowski]
+6a05319  Mirrors calls to suspend LE Audio with those for A2DP  [Rahul Sabnis]
+d92bedd  Sort running task by focus and visibility  [Bowen Li]
 
 
 * frameworks/native
-b9a526b  libvulkan: Remove use of hardcoded PAGE_SIZE 4096  [Kalesh Singh]
-715d3bf  OMX: Add 64bit consumer usage flag parameter  [Sungtak Lee]
-
-
-* system/memory/lmkd
-667d001  lmkd: Remove uses of hardcoded 4k PAGE_SIZE macro  [Kalesh Singh]
-
-
-====================
-     2023-08-10    
-====================
-
-* device/syberia/sepolicy
-0541f34   sepolicy: Label Dolby Sepolicy labels  [johnmart19]
-
-
-* frameworks/av
-d391505  Codec2Client: remove vendor_available and apex_available  [Sungtak Lee]
-c74c2a1  audioserver: Improve logging / dumping for encoded formats  [Mikhail Naganov]
-67307e7  DO NOT MERGE audio flinger: fix initial mmap stream volume  [Eric Laurent]
-0edb8e3  Camera: Increase precapture end timeout  [Shuzhen Wang]
-30f7a80  libmkvextractor: Remove unused local filed rangeSpecified  [utzcoz]
-2128791  change ALOGD() to ALOGV() in onWorkDone() when tunneled  [Houxiang Dai]
-78a56f5  NuPlayer: signal video scaling mode to components that queue to IGBR  [guochuang]
-3fae28c  Preference exact audio profile for record  [Dean Wheatley]
-b1f2097  MPEG4Writer: remove duplicate include  [guochuang]
-82b8601  update inputdelay if changed  [Xu Lai]
-5632da0  libmediautils_fuzzer_service_utilities : Resolve timeout  [Akshata Kadam]
-e36bfa6  WebmFrameThread: Don't set mDone in WebmFrameSinkThread::stop  [Harish Mahendrakar]
-195c516  libstagefright: Use ATRACE_INT64 for 64bit fields  [Abdul Khalik Shaik]
-8e1ea80  ACodec: Set input surface parameters immediately  [Patrick Pun]
-dd750fb  libstagefright: initializes member variables in constructor  [zhangjincheng]
-7094db0  media: fix resource leak when dlsym failed  [zhangjincheng]
-59e04c2  Nuplayer: Update request input buffer delay as per fps  [Priyanka Gujjula]
-577382a  Fix incorrect buffer size in NuPlayer  [Jeffrey Kardatzke]
-66905c5  Fix segmentation fault in rtp/udp streaming  [xiahong.bao]
-79aacbf  Remove binder priority propagation workaround  [Ray Essick]
-9594138  Fix potential memory leaks  [Chih-Hung Hsieh]
-d905238  Mpeg4Extractor: Fix flac parsing in mp4  [Manisha Jajoo]
-b097676  CCodecConfig: round frame rate instead of truncating to increase the accuracy  [Dichen Zhang]
-93a88be  CCodec: remove queue timeout  [Wonsik Kim]
-f9d9cf5  CCodec: fix not to use YV12 format on COLOR_FormatYUV420Flexible for pre-S  [Taehwan Kim]
-0beb71f  Codec2Buffer: accept RGB/RGBA MediaImage layouts  [Slawomir Rosek]
-be3de31  C2SoftHevcDec: Initialize mStride after first header decode  [Harish Mahendrakar]
-729b021  C2SoftAvcEnc: Clip level to max supported level  [Ram Mohan]
-5a64808  C2SoftHevcEnc: Clip level to max supported level  [Ram Mohan]
-05a9729  Reduce the frequency of calls to get_device_api_level  [Cheng Li]
-0031ce7  Fix/suppress bugprone-branch-clone warnings  [Chih-Hung Hsieh]
-df72b41  Fix mSession NULL dereference  [Kyle Zhang]
-b22b2da  libmediadrm: fix uuid log width  [Robert Shih]
-49930f3  Repleace std::reference_wrapper with std::shared_ptr in effectsConfig  [Shunkai Yao]
-79159e7  APM: fix log spam from getDevicesForStrategyInt when booting devices.  [jiabin]
-7d10180  Set volume for playback over voice call when btsco connected  [Beibei]
-e4094e7  Update AudioEffect callers to new interface  [Atneya Nair]
-7c12a3b  AudioEffect: align the interface contract and impl on bad values  [Mikhail Naganov]
-eedb4cf  Fix arguments checking in AudioSystem::canBeSpatialized  [Ram Mohan]
-cdb74fd  Tracks: Fix memory leak.  [External Developer]
-f9c8c6f  Do not log error if HAL does not support VOIP volume.  [Alex Leung]
-5aac1ae  Avoid create preprocessing effect for playback port  [Shunkai Yao]
-d4eacfc  Avoid create preprocessing effect for playback thread  [Shunkai Yao]
-42d5656  AudioFlinger: Fix destroyTrack_l sequencing for Direct tracks  [Andy Hung]
-c8a1d60  audioflinger: Move async callback setting to onFirstRef  [Mikhail Naganov]
-2c20c0c  Disable fast capture for record thread attached to MSD  [Sampath]
-0f074ae  Import libvibratorutils instead of libvibrator  [Jeongik Cha]
-1c112e0  Code clean for libcameraservice  [Jing Mike]
-e717708  Code clean for audioflinger  [Jing Mike]
-73860db  Initialize volume level of volume control effect as lowest level.  [jiabin]
-8a2ec5b  Effects: add a method to retrieve audio configuration  [Mikhail Naganov]
-42f3822  av: Import Dolby Effects initialization  [johnmart19]
-cb0e41c  av: Nuplayer: Declare 24Bit Packed & 32Bit support  [johnmart19]
-d30cc2c  av: ACodec: Import support of Pcm32bit channel  [johnmart19]
-6984671  av: Audio Policy: Increase Max Sample Rate Hz to 384k  [johnmart19]
-
-
-* frameworks/base
-58774c5  Avoid CalledFromWrongThreadException in BubbleController  [sai.gairuboina-IN009276]
-71876bd  Fix array-related errorprone warnings  [Cole Faust]
-14e21e0  ExifInterface: Catch IOException caused by invalid image  [minaripenguin]
-76411be  Fix some memory leakage  [Houxiang Dai]
-3179624  media: fix MediaMetadataRetriever Option Intdef  [Lajos Molnar]
-c2603a6  MediaCodecInfo: consider only critical flags for level support check  [Lajos Molnar]
-f74fe30  ImageUtils: Fix estimated bytes factor for P010  [Kwangkyu Park]
-74f4e1e  Fix cts flaky issue on adt3 device.  [Sally Qi]
-9b78a58  Visualizer: use actual sampling rate of the instance  [Mikhail Naganov]
-145d1b2  Fix AudioMix.equals()  [Alex Leung]
-9469146  HwAudioSource: auto reconnect feature on AudioServer crash  [Francois Gaffie]
-
-
-* frameworks/native
-7c70502  Use hardcoded value for HapticScale  [Jeongik Cha]
-
-
-* vendor/syberia
-b2d1833  kernel: NO_GCC: Fix compilation with custom baremetal clang  [Dakkshesh]
-40092ad  Bump to v6.6  [DennySPb]
-e0684d5  vendor: Remove custom device configurator package name  [someone5678]
-2eb1d46  vendor: SimpleDeviceConfig: Disable WallpaperEffects  [someone5678]
-78d5608  vendor: SimpleDeviceConfig: Isolate pixel specific configs and cleanup  [jhenrique09]
-c9be8eb  vendor: device_config: Don't set url/manifests/package related configs  [someone5678]
-103384b  vendor: Merge SimpleDeviceConfig into framework  [someone5678]
-295209e  device_config: Add back ml back gesture  [aswin7469]
-0ec08f5  device_config: Remove obsolete Android 11 permission hub overlays  [Danny Lin]
-d6b858e  Updated v3 manifest to version 3060  [AmbientMusicBot]
-811dd4f  Updated v3 manifest to version 3059  [AmbientMusicBot]
-5652f96  SimpleDeviceConfig: Updated v3 manifest to version 3058  [AmbientMusicBot]
-8c69eaa  device_config: Enable wallpaper warmup ASI flag  [minaripenguin]
-a3f9965   overlay/simpledeviceconfig: drop flashlight chip  [RealJohnGalt]
-
-
-====================
-     2023-08-09    
-====================
-
-* frameworks/av
-74e351e  CCodec: Control the inputs to avoid pipeline overflow  [Shrikara B]
-
-
-* frameworks/base
-22e28a9  Cleanup 'Update battery info every second when device is charging'  [Pranav Vashi]
-b570726  Make overlay for 'Update battery info every second when device is charging'  [ShevT]
-2f85a27  Update battery info every second when device is charging  [SagarMakhar]
-7ff8e6f  SimpleDeviceConfig: Add support for non-pixel configs  [someone5678]
-2713995  SimpleDeviceConfig: Adapt recent changes into current project  [someone5678]
-c443e67  Allow resetting namespace props on boot  [jhenrique09]
-ed1a387  SimpleDeviceConfig: Add support for pixel specific configs  [jhenrique09]
-c2758bf  base: Merge SimpleDeviceConfig into frameworks  [Danny Lin]
-
-
-* packages/apps/SimpleDeviceConfig
-2b7fdcd  SimpleDeviceConfig: Merge SimpleDeviceConfig into frameworks  [someone5678]
-06829c6  Add soft config type for user-persistent settings  [Danny Lin]
-1e1c8f8  Don't make config values default  [Danny Lin]
-
-
-* vendor/google/gms
-ba67ed3  Revert "overlay: remove device configurator"  [DennySPb]
-
-
-====================
-     2023-08-08    
-====================
-
-* art
-b67462f  Fix odrefresh's queries on system properties.  [Jiakai Zhang]
-
-
-* bionic
-201dbed  Add aligned_alloc to linker_memory.cpp  [Ryan Prichard]
-5fbef3f  Add missing assert.h include  [Ryan Prichard]
-b3af9fe  Reuse the libm scalbn() as ldexp().  [Elliott Hughes]
-a3a8c7a  De-pessimize SigSetConverter usage.  [Elliott Hughes]
-69d25ae  Sync upstream NetBSD.  [Elliott Hughes]
-7720907  Sync upstream OpenBSD.  [Elliott Hughes]
-fe5efb3  Sync upstream FreeBSD libm (trivial changes).  [Elliott Hughes]
-f2d9454  Sync upstream FreeBSD libm (real changes).  [Elliott Hughes]
-83a0b5a  Sync upstream FreeBSD (qsort).  [Elliott Hughes]
-ecc0437  Increase time to set allocation limit.  [Christopher Ferris]
-836bcf2  Fix potential flakiness in android_mallopt test.  [Christopher Ferris]
-f681e25  Sync upstream FreeBSD libm.  [Elliott Hughes]
-
-
-* build/make
-2eaa30a  Merge tag 'android-13.0.0_r74' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
-
-
-* build/soong
-67111bc  config/arm64: do not force cortex-a76 as cortex-a55  [John Galt]
-e13aa32  soong: cc: Enable global O3  [Andrzej Perczak]
-5ca2372  Dexpreopt: use "speed-profile" if a system server jar has a profile.  [Ulya Trafimovich]
-acfa14e  arm_device: Change cortex-a76 mcpu from a55 to a75  [Pranav Vashi]
-16d540a  Remove workaround for Qualcomm Kryo 385  [Raphiel Rollerscaperers]
-
-
-* frameworks/av
-ae8faaa  CCodec: Use pipelineRoom only for HW decoder  [Shrikara B]
-e2542bf  Revert "Codec2: guard the dummy work signal to lahaina only"  [DennySPb]
-47d20c0  EXPERIMENTAL: CCodec: Add metadata buffer support for linear output buffers  [Praveen Chavan]
-deb75bf  codec2: Change a Info print into Verbose  [Shrikara B]
-47e167d  codec2: Use numClientBuffers to control the pipeline  [Shrikara B]
-c4a6489  Fix build log spam for libmediadrm  [Kyle Zhang]
-9552a27  C2BqPool: Invalidate when the client died  [Sungtak Lee]
-c1e0098  Revert "C2BufferQueueBlockPool: save reallocation flag for slot buffer"  [DennySPb]
-1f1319c  C2Store: disable debug logs  [Steven Moreland]
-21147ec  codec2: change to support multiple fences for single output.  [Uma Mehta]
-
-
-* frameworks/base
-4d7559b  base: Introduce PowerOffAlarmService  [Ido Ben-Hur]
-b6cbf8a  Revert "AudioService: do not log sound effects in audio dumpsys"  [jro1979oliver]
-552bcf3  NotificationPlayer: use AUDIOFOCUS_GAIN_TRANSIENT instead of AUDIOFOCUS_GAIN in looping mode  [wumin3]
-fe4e4c9  SystemUI: React to PrivacyConfig changes properly  [Tommy Webb]
-35ab3ec  Revert "hwui: renderthread/CanvasContext: Reduce the timeout for dequeueing buffers"  [exactxmpl]
-bbdd20f  [IMPR] AudioService: focus listener: enable it when using external AudioFocus  [Francois Gaffie]
-1afc413  PixelPropsUtils: Update fingerprints to August 2023 release  [Joey Huab]
-abe544c  base: ApplicationPackageManager: Return early for Tensor check  [someone5678]
-cb3b6ff  Add keylayout mapping for Dualsense Edge gamepad  [Farid Chahla]
-40fefd5   GamesPropsUtils: Add Gameprops for Battlegrounds Mobile India (BGMI)  [Signed-off-by: SwapnilVicky]
-df04e26  PixelPropsUtils: Spoof all wallpaper packages to Pixel 7 Pro  [someone5678]
-89bdcae  PixelPropsUtils: Set HARDWARE, ID, SDK_INT values  [someone5678]
-560b2ef  PixelPropsUtils: Correctly spoof unstable process  [someone5678]
-60d9d8c  base: ApplicationPackageManager: Exclude PE 2021 Midyear from tensor pixel list  [someone5678]
-6f2cb38  base: ApplicationPackageManager: Block Tensor features for Recorder  [someone5678]
-216404a  AOD: Sleep when proximity is covered for 3 secs  [PMS22]
-bc0522b  udfps: Make using Optimal display refresh rate optional  [onettboots]
-6df08e0  base: Allow disabling color inversion support [1/2]  [Ido Ben-Hur]
-30815db  Merge tag 'android-13.0.0_r74' of https://android.googlesource.com/platform/frameworks/base into HEAD  [DennySPb]
-ffb1701  Fix problem of logd restarting.  [Christopher Ferris]
-58b9b1d  AudioDeviceBroker: Fix not setting proper call volume for LE Headset  [Jakub Tyszkowski]
-
-
-* packages/apps/Launcher3
-b1269ba  Merge tag 'android-13.0.0_r74' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD  [DennySPb]
-
-
-* packages/apps/Settings
-8622b9a  Settings: Update 90hz string replace hack in displayPreference  [Fabian Leutenegger]
-61bd622  Settings: Fix findPeakRefreshRate logic  [Fabian Leutenegger]
-
-
-* packages/apps/SyberiaSettings
-1fcac45  Adapt spoof switches for properties  [DennySPb]
-a56f605  add SystemPropertySwitchPreference  [cjybyjk]
-
-
-* packages/services/Telecomm
-acae87c  Merge tag 'android-13.0.0_r74' of https://android.googlesource.com/platform/packages/services/Telecomm into HEAD  [DennySPb]
+7bc427c  Cancel drag and drop when synthesize cancel for all connection  [Linnan Li]
+3724c80  Dispatch cancel event to the correct target display  [Hu Guo]
 
 
 * system/core
-27bbd99  Re-add code to skip gettings logs on logd crashes.  [Christopher Ferris]
+36b0d30  init.rc: set f2fs seq_file_ra_mul to 128  [Daeho Jeong]
+
+
+====================
+     2023-09-21    
+====================
+
+* frameworks/av
+1c3e2f4  Add format change check rule  [Houxiang Dai]
+
+
+* frameworks/base
+e036cad  Update IANA_TOP_LEVEL_DOMAINS in accordance with http://data.iana.org/TLD/tlds-alpha-by-domain.txt  [Aashna Jena]
+c04e3e8  Expose pending request to subclasses and ensure clean up  [Stephen Trier]
 
 
 * system/memory/lmkd
-9cb5c16  Merge branch 'main' of https://android.googlesource.com/platform/system/memory/lmkd into HEAD  [DennySPb]
+56f8dcc  lmkd: include average compression ratio in available swap calculation  [Suren Baghdasaryan]
 
 
 ====================
-     2023-08-07    
+     2023-09-20    
 ====================
 
-* bootable/recovery
-0e1a435  recovery: Simplify reboot recovery reason  [LuK1337]
-374608b  recovery: Clear BCB before rebooting to recovery  [LuK1337]
-e63ee92  recovery: Ask to reboot before installing anything after A/B update  [LuK1337]
+* external/sqlite
+9909497  Update to 3.43.1 version  [DennySPb]
 
 
 * frameworks/av
-3ae2fe0  Visualizer: Resolve multichannel capture  [Andy Hung]
-27ce40c  Camera: Heic: Allow grids settings override in onFormatChanged  [Shuzhen Wang]
-fd7de9b  codec2_vndk: don't spin during sync variable locking/unlocking  [Lajos Molnar]
+b434eaa  AudioPolicyManager: Fix memory leak  [Andy Hung]
+b862660  Fix MediaCodec mBuffersInFlight size increased so large  [ot900339]
+
+
+* frameworks/base
+b5f7d04  DeviceConfig: Change setProperties behavior  [jhenrique09]
+e31d386  DeviceConfigUtils: Make debug optional  [jhenrique09]
+a5a4809  Implement DeviceConfigUtils and service  [jhenrique09]
+74b6746  [SQUASH] Revert SimpleDeviceConfig changes  [Joey Huab]
 
 
 * frameworks/native
-70c27eb  Turn on LTO optmisations for libbinder  [Yi Kong]
+a9e1ea0  Use a single otapreopt_chroot invocation for all otapreopt runs.  [Martin Stjernholm]
+320a294  Don't clear profile on otapreopt.  [Jiakai Zhang]
+1de8566  Fix string comparison in otapreopt.  [Jiakai Zhang]
+258804c  Clean up dead code.  [Martin Stjernholm]
+c22eb9c  Skip "verify" packages in otapreopt.  [Jiakai Zhang]
+a230775  Merge tag 'android-13.0.0_r82' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
 
+
+* system/core
+b08bab1  fixup! healthd: Reinitialize mChargerNames for every battery update  [LuK1337]
+9e33b4d  Revert "healthd: cover devices that have voltage_max file with value of 0"  [DennySPb]
+
+
+* vendor/syberia
+cf34b43  vendor: Move custom device configs to global_device_configs_override  [jhenrique09]
+01d9169  vendor: Drop SimpleDeviceConfig  [jhenrique09]
+aabf64a  Bump version to 6.7  [DennySPb]
+
+
+====================
+     2023-09-19    
+====================
+
+* build/make
+fb939c2  Merge tag 'android-13.0.0_r82' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
+
+
+* frameworks/av
+2bd428d  Merge tag 'android-13.0.0_r82' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
+550fb6e  Fix null-dereference READ in android::AudioPolicyConfig::addDevice  [Shunkai Yao]
+9cd0392  Fix Segv on unknown address error flagged by fuzzer test.  [Shruti Bihani]
+b2bc288  codec2: use color info from hal for encoder output  [quic_xiaoqiny]
+6480ed1  CCodec: Avoid OOB memory access in some cases  [Shrikara B]
+
+
+* frameworks/base
+8af4773  Removed logging ProcessMemoryStatReported atom to statsd  [Vova Sharaienko]
+51da289  PixelPropsUtils: Update fingerprints to September 2023 release  [Joey Huab]
+13e7309  PixelPropUtils: Stop spoofing some google apps  [aswin7469]
+a4f5959  PixelPropsUtils: Partial spoofing improvement  [minaripenguin]
+98192f2  PixelPropsUtils: Refactor logic and cleanup  [Henrique Silva]
+a2abe24  fwb: silence handwriting error spam  [Dmitrii]
+22bcbb2  AutofillManager: Make userdebug default to NO_LOGGING  [LuK1337]
+84205a4  GamesPropsUtils: Press F for Apex Legends  [Gustavo Mendes]
+50beca8  Merge tag 'android-13.0.0_r82' of https://android.googlesource.com/platform/frameworks/base  [DennySPb]
+2b6380b  Animate backlight quickly when HDR mode is changed  [Koji Fukui]
+7378558  display: Handle zero auto brightness adjustment  [Adithya R]
+8b1e3fc  DisplayPowerController: Don't apply brightness adjustment if NaN  [LibXZR]
+55d45ed  SystemUI: Update icon for Heads up tile.  [Jyotiraditya]
+6b172bc  SystemUI: Add heads up tile  [Michael Bestas]
+800db4f  SystemUI: Add caffeine QS tile  [Keith Mok]
+3cf9730  SystemUI: Fix Biometric dialog corner radius  [Anushek Prasal]
+8e906e0  SystemUI: More rounded corners  [Lucchetto]
+fb19890  SystemUI: Apply QS transparency to footer actions background  [Pranav Vashi]
+5c0bec7c  ScrimController: User Tuner API to apply custom alpha  [Pranav Vashi]
+3284481  SystemUI: Transparent QS customization  [spkal01]
+ba4cd4c  Add userId check before loading icon in Device Controls  [Anton Potapov]
+478320a  Fixing DatabaseUtils to detect malformed UTF-16 strings  [Kunal Malhotra]
+dc8bf25  base: Do not reset keyguard going away state  [minaripenguin]
+da1d557  SystemUI: Enable power menu blur via window flags  [Dhina17]
+d8e4a90  SystemUI: Also blur power sub-menus  [Pranav Vashi]
+2d92fef  Use flow layout for advanced power menu aswell  [SagarMakhar]
+9bd1e62  SystemUI: Blur the power menu  [Elluzion]
+3fc329f  SystemUI: improve blur handling in respect to app launch animations  [nift4]
+fb653c8  perf: disable pre-rendering feature for some multi-layer cases  [Tingting Zhang]
+cee8285  Use encoder capabilities for determining screen recording size  [Malathi Gottam]
+8a28f60  Fix NullPointerException in TextView#canPasteAsPlainText  [张倞诚]
+aaac477  Read files in increasing timestamp order in FileRotator  [Junyu Lai]
+bba9298  Perf:Fix the issue that activity boost duration abnormal.  [Libo Jin]
+ab2e984  Fix JobServiceContext leak issue  [Jiangyou Li]
+2017832  BatteryStatsImpl: Fix wrong synchronized with mDailyFile.  [Yilin Wu]
+557803d  Fix logspam from AppIdleHistory on first boot  [Eric Biggers]
+c68a964  AuthRippleController: Always make sure LightRevealScrim finishes regardless of the progress  [minaripenguin]
+29fbdff  AuthRippleController: Always finish the LightRevealScrim  [Chenyang Zhong]
+4887be8  base: core: Unregister broadcast receiver only when registered  [Soo-Hwan Na]
+
+
+* packages/apps/Launcher3
+7154575  Merge tag 'android-13.0.0_r82' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD  [DennySPb]
+0d708cd  fixup! Launcher3: Allow hiding top shadow on statusbar  [Adithya R]
+
+
+* packages/apps/Nfc
+6b2fa33  Merge tag 'android-13.0.0_r82' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPb]
+
+
+* packages/apps/Settings
+3440e68  Merge tag 'android-13.0.0_r82' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
+
+
+* packages/apps/SyberiaSettings
+779d927  Transparent QS customization  [ShevT]
+
+
+====================
+     2023-09-18    
+====================
+
+====================
+     2023-09-17    
+====================
+
+* vendor/qcom/opensource/power
+f16c47b  power: Remove unused variable  [Chippa-a]
+
+
+====================
+     2023-09-16    
+====================
 
 * packages/resources/devicesettings
-eaeed69  Automatic translation import  [LineageOS Infra]
+4b27258  Automatic translation import  [LineageOS Infra]
 
-
-====================
-     2023-08-06    
-====================
-
-====================
-     2023-08-05    
-====================
 
