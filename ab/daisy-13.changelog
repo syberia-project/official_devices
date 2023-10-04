@@ -1,14 +1,13 @@
 ====================
-     2023-05-09
+     2023-09-30
 ====================
 
 Rom:
-- Syberia v6.4
-- Merged April security update
-- Fixed QS battery customization
-- Added back UDFPS customization
-- Fixed Monet color picker in ThemePicker
-- ART improvements
+- v6.7
+- Merged September security update
+- Added caffeine, heads up QS tiles
+- Added QS panel transparency settings
+- SQlite updated to 3.43.1
 - Other fixes and improvements under the hood
 
 Device:
@@ -22,7 +21,7 @@ Notes:
 - Vanilla version
 
 Installation:
-- Download the ROM, GApps (Optional), Magisk (Optional).
+- Download the ROM, GApps (Optional), Magisk (Optional) from the links above.
 - Boot to TWRP
 - Wipe System, Data, Dalvik, Cache, Internal Storage (Optional).
 - Flash the ROM
@@ -32,3 +31,4 @@ Installation:
 - Flash the Magisk (Optional)
 - Format data
 - Reboot and Enjoy.
+
