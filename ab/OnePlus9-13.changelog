@@ -1,172 +1,82 @@
 ====================
-     2023-09-22    
+     2023-10-10    
 ====================
 
 * frameworks/base
-331b2ba  bt: Use group id to select color for icon  [Michał Narajowski]
-415d907  bt: Set alias for all devices in a set  [Michał Narajowski]
-6a05319  Mirrors calls to suspend LE Audio with those for A2DP  [Rahul Sabnis]
-d92bedd  Sort running task by focus and visibility  [Bowen Li]
+05fbd06  Revert "Dismiss keyguard when simpin auth'd and..."  [Aaron Liu]
+72a86d6  RESTRICT AUTOMERGE: SettingsProvider: exclude secure_frp_mode from resets  [Eric Biggers]
+a62ede1  Disallow loading icon from content URI to PipMenu  [Hongwei Wang]
+26f1675  [DO NOT MERGE] Verify URI Permissions in Autofill RemoteViews  [Tim Yu]
+d7477fe  Do not share key mappings with JNI object  [Josep del Rio]
+bb31ab1  Verify URI permissions for EXTRA_REMOTE_INPUT_HISTORY_ITEMS.  [Ioana Alexandru]
+a5709b7  RingtoneManager: verify default ringtone is audio  [Jean-Michel Trivi]
 
 
 * frameworks/native
-7bc427c  Cancel drag and drop when synthesize cancel for all connection  [Linnan Li]
-3724c80  Dispatch cancel event to the correct target display  [Hu Guo]
-
-
-* system/core
-36b0d30  init.rc: set f2fs seq_file_ra_mul to 128  [Daeho Jeong]
-
-
-====================
-     2023-09-21    
-====================
-
-* frameworks/av
-1c3e2f4  Add format change check rule  [Houxiang Dai]
-
-
-* frameworks/base
-e036cad  Update IANA_TOP_LEVEL_DOMAINS in accordance with http://data.iana.org/TLD/tlds-alpha-by-domain.txt  [Aashna Jena]
-c04e3e8  Expose pending request to subclasses and ensure clean up  [Stephen Trier]
-
-
-* system/memory/lmkd
-56f8dcc  lmkd: include average compression ratio in available swap calculation  [Suren Baghdasaryan]
-
-
-====================
-     2023-09-20    
-====================
-
-* external/sqlite
-9909497  Update to 3.43.1 version  [DennySPb]
-
-
-* frameworks/av
-b434eaa  AudioPolicyManager: Fix memory leak  [Andy Hung]
-b862660  Fix MediaCodec mBuffersInFlight size increased so large  [ot900339]
-
-
-* frameworks/base
-b5f7d04  DeviceConfig: Change setProperties behavior  [jhenrique09]
-e31d386  DeviceConfigUtils: Make debug optional  [jhenrique09]
-a5a4809  Implement DeviceConfigUtils and service  [jhenrique09]
-74b6746  [SQUASH] Revert SimpleDeviceConfig changes  [Joey Huab]
-
-
-* frameworks/native
-a9e1ea0  Use a single otapreopt_chroot invocation for all otapreopt runs.  [Martin Stjernholm]
-320a294  Don't clear profile on otapreopt.  [Jiakai Zhang]
-1de8566  Fix string comparison in otapreopt.  [Jiakai Zhang]
-258804c  Clean up dead code.  [Martin Stjernholm]
-c22eb9c  Skip "verify" packages in otapreopt.  [Jiakai Zhang]
-a230775  Merge tag 'android-13.0.0_r82' of https://android.googlesource.com/platform/frameworks/native into HEAD  [DennySPb]
-
-
-* system/core
-b08bab1  fixup! healthd: Reinitialize mChargerNames for every battery update  [LuK1337]
-9e33b4d  Revert "healthd: cover devices that have voltage_max file with value of 0"  [DennySPb]
-
-
-* vendor/syberia
-cf34b43  vendor: Move custom device configs to global_device_configs_override  [jhenrique09]
-01d9169  vendor: Drop SimpleDeviceConfig  [jhenrique09]
-aabf64a  Bump version to 6.7  [DennySPb]
-
-
-====================
-     2023-09-19    
-====================
-
-* build/make
-fb939c2  Merge tag 'android-13.0.0_r82' of https://android.googlesource.com/platform/build into HEAD  [DennySPb]
-
-
-* frameworks/av
-2bd428d  Merge tag 'android-13.0.0_r82' of https://android.googlesource.com/platform/frameworks/av into HEAD  [DennySPb]
-550fb6e  Fix null-dereference READ in android::AudioPolicyConfig::addDevice  [Shunkai Yao]
-9cd0392  Fix Segv on unknown address error flagged by fuzzer test.  [Shruti Bihani]
-b2bc288  codec2: use color info from hal for encoder output  [quic_xiaoqiny]
-6480ed1  CCodec: Avoid OOB memory access in some cases  [Shrikara B]
-
-
-* frameworks/base
-8af4773  Removed logging ProcessMemoryStatReported atom to statsd  [Vova Sharaienko]
-51da289  PixelPropsUtils: Update fingerprints to September 2023 release  [Joey Huab]
-13e7309  PixelPropUtils: Stop spoofing some google apps  [aswin7469]
-a4f5959  PixelPropsUtils: Partial spoofing improvement  [minaripenguin]
-98192f2  PixelPropsUtils: Refactor logic and cleanup  [Henrique Silva]
-a2abe24  fwb: silence handwriting error spam  [Dmitrii]
-22bcbb2  AutofillManager: Make userdebug default to NO_LOGGING  [LuK1337]
-84205a4  GamesPropsUtils: Press F for Apex Legends  [Gustavo Mendes]
-50beca8  Merge tag 'android-13.0.0_r82' of https://android.googlesource.com/platform/frameworks/base  [DennySPb]
-2b6380b  Animate backlight quickly when HDR mode is changed  [Koji Fukui]
-7378558  display: Handle zero auto brightness adjustment  [Adithya R]
-8b1e3fc  DisplayPowerController: Don't apply brightness adjustment if NaN  [LibXZR]
-55d45ed  SystemUI: Update icon for Heads up tile.  [Jyotiraditya]
-6b172bc  SystemUI: Add heads up tile  [Michael Bestas]
-800db4f  SystemUI: Add caffeine QS tile  [Keith Mok]
-3cf9730  SystemUI: Fix Biometric dialog corner radius  [Anushek Prasal]
-8e906e0  SystemUI: More rounded corners  [Lucchetto]
-fb19890  SystemUI: Apply QS transparency to footer actions background  [Pranav Vashi]
-5c0bec7c  ScrimController: User Tuner API to apply custom alpha  [Pranav Vashi]
-3284481  SystemUI: Transparent QS customization  [spkal01]
-ba4cd4c  Add userId check before loading icon in Device Controls  [Anton Potapov]
-478320a  Fixing DatabaseUtils to detect malformed UTF-16 strings  [Kunal Malhotra]
-dc8bf25  base: Do not reset keyguard going away state  [minaripenguin]
-da1d557  SystemUI: Enable power menu blur via window flags  [Dhina17]
-d8e4a90  SystemUI: Also blur power sub-menus  [Pranav Vashi]
-2d92fef  Use flow layout for advanced power menu aswell  [SagarMakhar]
-9bd1e62  SystemUI: Blur the power menu  [Elluzion]
-3fc329f  SystemUI: improve blur handling in respect to app launch animations  [nift4]
-fb653c8  perf: disable pre-rendering feature for some multi-layer cases  [Tingting Zhang]
-cee8285  Use encoder capabilities for determining screen recording size  [Malathi Gottam]
-8a28f60  Fix NullPointerException in TextView#canPasteAsPlainText  [张倞诚]
-aaac477  Read files in increasing timestamp order in FileRotator  [Junyu Lai]
-bba9298  Perf:Fix the issue that activity boost duration abnormal.  [Libo Jin]
-ab2e984  Fix JobServiceContext leak issue  [Jiangyou Li]
-2017832  BatteryStatsImpl: Fix wrong synchronized with mDailyFile.  [Yilin Wu]
-557803d  Fix logspam from AppIdleHistory on first boot  [Eric Biggers]
-c68a964  AuthRippleController: Always make sure LightRevealScrim finishes regardless of the progress  [minaripenguin]
-29fbdff  AuthRippleController: Always finish the LightRevealScrim  [Chenyang Zhong]
-4887be8  base: core: Unregister broadcast receiver only when registered  [Soo-Hwan Na]
-
-
-* packages/apps/Launcher3
-7154575  Merge tag 'android-13.0.0_r82' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD  [DennySPb]
-0d708cd  fixup! Launcher3: Allow hiding top shadow on statusbar  [Adithya R]
-
-
-* packages/apps/Nfc
-6b2fa33  Merge tag 'android-13.0.0_r82' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [DennySPb]
+4e18497  Fix for heap-use-after-free in GPUService.cpp  [sergiuferentz]
 
 
 * packages/apps/Settings
-3440e68  Merge tag 'android-13.0.0_r82' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [DennySPb]
+beae0a9  [RESTRICT AUTOMERGE] Restrict ApnEditor settings  [Weng Su]
+9eaefe6  RESTRICT AUTOMERGE: Catch exceptions from setLockCredential()  [Eric Biggers]
 
 
-* packages/apps/SyberiaSettings
-779d927  Transparent QS customization  [ShevT]
+* packages/modules/Wifi
+7e18748  Update password check for WAPI  [Oscar Shu]
 
 
-====================
-     2023-09-18    
-====================
-
-====================
-     2023-09-17    
-====================
-
-* vendor/qcom/opensource/power
-f16c47b  power: Remove unused variable  [Chippa-a]
+* packages/services/Telecomm
+8f0c6af  Fix vulnerability in CallRedirectionService.  [Grace Jia]
 
 
 ====================
-     2023-09-16    
+     2023-10-09    
 ====================
 
-* packages/resources/devicesettings
-4b27258  Automatic translation import  [LineageOS Infra]
+====================
+     2023-10-08    
+====================
+
+====================
+     2023-10-07    
+====================
+
+* packages/modules/Bluetooth
+106e1c4  Merge tag 'android-security-13.0.0_r10' of https://android.googlesource.com/platform/packages/modules/Bluetooth into staging/lineage-20.0_merge_android-security-13.0.0_r10  [Kevin F. Haggerty]
+
+
+* packages/providers/MediaProvider
+81d8a4a  Merge tag 'android-security-13.0.0_r10' of https://android.googlesource.com/platform/packages/providers/MediaProvider into staging/lineage-20.0_merge_android-security-13.0.0_r10  [Kevin F. Haggerty]
+
+
+* tools/apksig
+6447768  Merge tag 'android-security-13.0.0_r10' of https://android.googlesource.com/platform/tools/apksig into staging/lineage-20.0_merge_android-security-13.0.0_r10  [Kevin F. Haggerty]
+a970c24  Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/tools/apksig into staging/lineage-20.0_merge_android-security-13.0.0_r10  [Kevin F. Haggerty]
+
+
+====================
+     2023-10-06    
+====================
+
+====================
+     2023-10-05    
+====================
+
+* frameworks/base
+8dcd61f  Avoid repeated loading of mutable runtime overlays in the form of sharedLib  [zhangshuai10]
+d7cf85b  Fix NPE of NativeTombstoneManager.TombstoneWatcher  [Ghouse Hajimad]
+b246552  Report success on every fingerprint removal  [Kishan Dudhatra]
+
+
+* hardware/libhardware_legacy
+801076c  wifi_hal: Add interface to get driver supported iface combinations  [Purushottam Kushwaha]
+
+
+====================
+     2023-10-04    
+====================
+
+* frameworks/av
+c0dd2e3  NdkMedia: fix android.mediav2.cts.CodecEncoderSurfaceTest failed.  [guochuang]
 
 
