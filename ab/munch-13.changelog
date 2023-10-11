@@ -1,68 +1,80 @@
 ====================
-     2023-02-14    
+     2023-10-10    
+====================
+
+* frameworks/base
+05fbd06  Revert "Dismiss keyguard when simpin auth'd and..."  [Aaron Liu]
+72a86d6  RESTRICT AUTOMERGE: SettingsProvider: exclude secure_frp_mode from resets  [Eric Biggers]
+a62ede1  Disallow loading icon from content URI to PipMenu  [Hongwei Wang]
+26f1675  [DO NOT MERGE] Verify URI Permissions in Autofill RemoteViews  [Tim Yu]
+d7477fe  Do not share key mappings with JNI object  [Josep del Rio]
+bb31ab1  Verify URI permissions for EXTRA_REMOTE_INPUT_HISTORY_ITEMS.  [Ioana Alexandru]
+a5709b7  RingtoneManager: verify default ringtone is audio  [Jean-Michel Trivi]
+
+
+* frameworks/native
+4e18497  Fix for heap-use-after-free in GPUService.cpp  [sergiuferentz]
+
+
+* packages/apps/Settings
+beae0a9  [RESTRICT AUTOMERGE] Restrict ApnEditor settings  [Weng Su]
+9eaefe6  RESTRICT AUTOMERGE: Catch exceptions from setLockCredential()  [Eric Biggers]
+
+
+* packages/modules/Wifi
+7e18748  Update password check for WAPI  [Oscar Shu]
+
+
+* packages/services/Telecomm
+8f0c6af  Fix vulnerability in CallRedirectionService.  [Grace Jia]
+
+
+====================
+     2023-10-09    
+====================
+
+====================
+     2023-10-08    
+====================
+
+====================
+     2023-10-07    
+====================
+
+* packages/modules/Bluetooth
+106e1c4  Merge tag 'android-security-13.0.0_r10' of https://android.googlesource.com/platform/packages/modules/Bluetooth into staging/lineage-20.0_merge_android-security-13.0.0_r10  [Kevin F. Haggerty]
+
+
+* packages/providers/MediaProvider
+81d8a4a  Merge tag 'android-security-13.0.0_r10' of https://android.googlesource.com/platform/packages/providers/MediaProvider into staging/lineage-20.0_merge_android-security-13.0.0_r10  [Kevin F. Haggerty]
+
+
+* tools/apksig
+6447768  Merge tag 'android-security-13.0.0_r10' of https://android.googlesource.com/platform/tools/apksig into staging/lineage-20.0_merge_android-security-13.0.0_r10  [Kevin F. Haggerty]
+a970c24  Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/tools/apksig into staging/lineage-20.0_merge_android-security-13.0.0_r10  [Kevin F. Haggerty]
+
+
+====================
+     2023-10-06    
+====================
+
+====================
+     2023-10-05    
+====================
+
+* frameworks/base
+8dcd61f  Avoid repeated loading of mutable runtime overlays in the form of sharedLib  [zhangshuai10]
+d7cf85b  Fix NPE of NativeTombstoneManager.TombstoneWatcher  [Ghouse Hajimad]
+b246552  Report success on every fingerprint removal  [Kishan Dudhatra]
+
+
+* hardware/libhardware_legacy
+801076c  wifi_hal: Add interface to get driver supported iface combinations  [Purushottam Kushwaha]
+
+
+====================
+     2023-10-04    
 ====================
 
 * frameworks/av
-1d51fd6  Revert "Revert "DNM Revert "Camera: Add support for readout timestamp"""  [erwinabs]
-d27a201  Revert "libcameraservice: Add support to set vendor tag with client package name"  [erwinabs]
-606a455  Revert "StagefrightRecorder: Add "set-title" parameter"  [Adithya R]
-
-
-* frameworks/base
-76d7949  Revert "camera: Add backwards-compatible CaptureResultExtras constructor"  [erwinabs]
-8c3c6f1  Revert "Revert "DNM Revert "Camera: Add support for readout timestamp"""  [erwinabs]
-
-
-====================
-     2023-02-13    
-====================
-
-* packages/resources/devicesettings
-0ada6fd  Automatic translation import  [Michael Bestas]
-
-
-====================
-     2023-02-12    
-====================
-
-====================
-     2023-02-11    
-====================
-
-* system/sepolicy
-b1a2bc1  servicemanager: kernel log perms  [Steven Moreland]
-8d2381f  servicemanager started property  [Steven Moreland]
-
-
-====================
-     2023-02-10    
-====================
-
-====================
-     2023-02-09    
-====================
-
-* vendor/syberia
-7963b4a  Merge "Bump version to 6.3" into 13.0  [dennyspb]
-
-
-====================
-     2023-02-08    
-====================
-
-* frameworks/av
-5656fe3  Merge tag 'android-13.0.0_r30' of https://android.googlesource.com/platform/frameworks/av into 13.0  [DennySPb]
-
-
-* frameworks/base
-5ca4768  Toast app icon display is inconsistent for system apps  [Edward Savage-Jones]
-
-
-* system/update_engine
-24c2319  update_engine: Always disable signature and downgrade checks  [jhenrique09]
-
-
-* vendor/syberia
-19ff47d  Bump version to 6.3  [DennySPb]
-
-
+c0dd2e3  NdkMedia: fix android.mediav2.cts.CodecEncoderSurfaceTest failed.  [guochuang]
