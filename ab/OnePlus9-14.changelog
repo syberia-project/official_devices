@@ -1,429 +1,109 @@
 ====================
-     2023-12-20    
+     2024-02-15    
 ====================
 
-* device/qcom/sepolicy_vndr/legacy-um
-04053ef  Add Perf2, Passr, PowerOpt, Qspmhal AIDL services  [DennySPb]
-7844856  msmnile: Allow init write to discard_max_bytes  [Michael Bestas]
+* device/syberia/sepolicy
+a3461ee  update_engine: allow reading fuse files anywhere  [John Galt]
 
 
 * frameworks/base
-a9c53b2  RingtoneManager: Set an default ringtone for the SIM 2  [micky387]
-6dcb3c5  base: Phone ringtone setting for Multi SIM device [1/3]  [Ting Yu]
-a65421f  Squashed navigation/gestures patches  [jhonboy121]
-7ce9959  Fix odm privapp permissions  [Jurijs Oniscuks]
+07426ab  Boost process priority during fork.  [Sadrul Chowdhury]
 
 
-* hardware/qcom-caf/common
-8923e3c  Enable QTI surfaceflinger extensions for all targets  [DennySPb]
+* packages/apps/SyberiaSettings
+8e52ae1  Add island now playing settings  [Pranav Vashi]
 
 
-* packages/apps/Launcher3
-f66885f  Launcher3: Use ClockDrawable from iconloaderlib  [Dhina17]
-dada459  Add support for toggling taskbar  [Danny Lin]
-039d6bf  Launcher3: Enable FORCED_MONO_ICON by default  [TimoDo]
-0df2a33  Launcher3: Enable more animations when dismissing keyguard  [Sourajit Karmakar]
-fddedbb  Add RU translation  [DennySPb]
-165cd59  Rename screenshot icon drawable  [DennySPb]
-33a1ff7  Launcher3: recents: Disable shake to clear all by default  [Mohammad Hasan Keramat J]
-4855a68  Launcher3: Fix smartspace visibility on higher grids  [Logan-Developer]
-2b01bf8  Launcher3: animate workspace on pages without smartpace visible  [Tobias Merkel]
-76c4da9  Launcher3: Drop enhanced_smartspace_padding_top  [basamaryan]
-e93629c  Launcher3: Fixup Smartspace  [John Galt]
-6725c1d  Launcher3: Fix nonsense smartspace span in some workspaces  [Ido Ben-Hur]
-eb07519  Launcher3: Fix crash in smartspace targets dump  [Adithya R]
-efe427a  Launcher3: Add a toggle for smartspace  [Adithya R]
-a1767bc  Launcher3: Open google weather on tapping smartspace  [Adithya R]
-3adce0c  Launcher3: Bring back WorkspaceUnlockAnim  [Adithya R]
-2a32913  Launcher3: Implement Smartspace  [Adithya R]
-dc4cfc2  Launcher3: Create Custom Launcher  [Chris Crump]
-2b3a33a  Launcher3: themedicons: Update LMC8.4 themed icons  [blazerpaul15]
-021a99b  Launcher3: themedicons: Update some google apps themed icons  [Sonal Singh]
-3030f15  Launcher3: themedicons: Update amazaon shopping, prime video and magisk themed icons  [Sonal Singh]
-0f4251a  Launcher3: themedicons: Map OLX Southasia package name to olx themed icon  [Sonal Singh]
-38edfd0  Launcher3: themedicons: Map LMC 8.4 and GCamGO camera to camera icon  [Sonal Singh]
-aade2ae  Launcher3: ThemedIcons: Add Desmos icon  [Arber]
-b563b07  Launcher3: Added themed icons for Profili im, NokoPrint, TouchVPN  [Arber]
-60bcdc1  Launcher3: Theme OnePlus camera  [mukesh22584]
-3d39b08  Launcher3: Specify hour index for clock themed icon  [Adithya R]
-f6c70c9  Launcher3: Update themed icons  [PainKiller3]
-320c686  Launcher3: Update themed icons  [PainKiller3]
-fadb796  Launcher3: Import more themed icons  [PainKiller3]
-99fc642  Launcher3: Add support for themed icons  [TheScarastic]
-08db895  Launcher3: Little revamp for app info bottom sheet  [Pranav Vashi]
-4256217  fixup! Launcher3: Update search icon to match Settings  [Pranav Vashi]
-b183c42  Launcher3: Show a toast when restarting the launcher  [minaripenguin]
-1232467  Launcher3: Add a preference to manually restart the launcher  [elpaablo]
-f2c5377  Launcher3: Fix app icon font  [jhenrique09]
-2eb2de9  Launcher3: Tone down scrim background to N1 for vibrance  [minaripenguin]
-3bdc1e1  Launcher3: Improve search bar header protection  [Adithya R]
-981abee  Launcher3: Improve paddings for all apps search bar  [Pranav Vashi]
-aee16cb  Launcher3: Adjust icons on dock search bar  [Pranav Vashi]
-18b0c6a  Launcher3: Match app searchbar theme with dock searchbar  [Pranav Vashi]
-c0bfbfb  Launcher3: Apply corner radius setting for app searchbar  [Pranav Vashi]
-88c4ce2  Launcher3: Refine dock and all apps UI  [strwbrry143]
-98d97e4  Launcher3: Add toggle to show/hide app drawer search bar  [StarkDroid]
-14eb93a  Launcher3: UI elements color palette changes  [str-br]
-3e8e603  Launcher3: Don't apply disabled alpha to search hint  [str-br]
-16f5573  Launcher3: Switch back to tertiary color for search hint  [alk3pInjection]
-cc6b089  Launcher3: Allow shake to clear tasks in recents only  [Pranav Vashi]
-7f90cad  Launcher3: Allow to control parallax effect and center wallpaper  [nift4]
-1e8d44a  Launcher3: Remove weird brown tint from tablet task menu  [nift4]
-38a88d6  Launcher3: hide "all apps" view when search starts  [octocorvus]
-1f9dd7a  Launcher3: Fix black screen when clicking source pref in InfoBottomSheet  [minaripenguin]
-7157ce6  Launcher3: Follow all apps background for taskbar slide in view  [Pranav Vashi]
-6b0e857  Launcher3: Do not skip search animation for app icons  [Adithya R]
-6203b9a  Launcher3: Clean up AssistantIconView  [Pranav Vashi]
-4992458  Launcher3: Apply settings layout for bottomsheet info pref  [minaripenguin]
-a2e5a15  Launcher3: InfoBottomSheet: Fix NPE with AppTransitionManager  [DennySPb]
-cf29150  Launcher3: Do not set hardcoded colors for widget background  [Pranav Vashi]
-5882653  Launcher3: Update themed icon map on enabling themed icons  [Pranav Vashi]
-abda9eb  Launcher3: Use SelectorWithWidgetPreference for icon pack's selection  [Nauval Rizky]
-18127e3  Launcher3: Reload icon pack settings fragment on resume  [Pranav Vashi]
-0b6de65  Launcher3: Use overridden IconProvider instance consistently  [Nauval Rizky]
-c24a615  Launcher3: Setup icon pack's launchIntent  [Nauval Rizky]
-62b9253  Launcher3: Remove repeated strings in app info  [Pranav Vashi]
-e52a088  Launcher3: Switch to icon pack theming preview  [Pranav Vashi]
-40e152c  Launcher3: Make icon pack support themed icons  [Pranav Vashi]
-d52b94d  Launcher3: Add Icon Pack Support from Shade Launcher [SQUASHED]  [Amir Zaidi]
-16f4377  Launcher3: Make Bottomsheet AppInfo strings translatable  [Pranav Vashi]
-1c673c8  Launcher3: Just say "System" instead of "Unknown" for app source  [Jyotiraditya]
-6c4748c  Launcher3: SystemShortcuts: Fix fc with InfoBottomSheet  [Ali B]
-c1a538d  Launcher3: Add AppInfo Bottom Sheet from Shade Launcher  [Amir Zaidi]
-5e7fa20  fixup! Launcher3: Allow changing max lines for app label  [nift4]
-23a7705  Launcher3: Ability to toggle themed icons for all apps  [Trishiraj]
-5f4530d  Launcher3: Apply themed icons in all apps drawer  [Harsh]
-ad3bdb0  Launcher3: Add separate toggle for shake to clear tasks  [Pranav Vashi]
-c7faa60  Launcher3: Shake to clear all tasks  [AmeChanRain]
-22f0337  Launcher3: Do not set split button via code  [Pranav Vashi]
-c91fc51  Launcher3: Fix up split button in recents for tab  [Pranav Vashi]
-5f764e9  Launcher3: Make recents buttons chips  [Timmah]
-51b7093  Launcher3: Pull in screenshot drawable from Pixel  [Sourajit Karmakar]
-1602e17  Launcher3: Make spaces more consistent in overview container  [Pranav Vashi]
-1c3f9c0  Launcher3: Add toggles for recent quick actions  [Pranav Vashi]
-a289b24  Launcher3: Add Google Lens scan button to recents  [Suphon Thanakornpakapong]
-16b6f25  Launcher3: Remove blur radius option if not supported  [Pranav Vashi]
-d28ad2c  Launcher3: Change resource type for blur radius in DepthController  [Danny Lin]
-a47aae9  Launcher3: Add an option to customize blur radius  [minaripenguin]
-f8aca65  Launcher3: Respect transparent app drawer in tablet UI too  [nift4]
-8060d38  Launcher3: Respect l/r cutout in tablet app drawer too  [nift4]
-8f1d4ec  Launcher3: Do not limit the number of search results  [Adithya R]
-55349a0  Launcher3: Ensure to update cached thumbnail if we take new one  [nift4]
-eae3a32  Launcher3: Fix build warning in SplitShortcut  [nift4]
-35623d2  Launcher3: Fix launcher ui interface overlap and frozen problem  [ot_vishavjot.kaur]
-ec4f2a9  Launcher3: Disable live tile  [nift4]
-a79b11e  Revert "Don't discard custom grid on config changes"  [Michael Bestas]
-49f7d78  Launcher3: Add recents and app drawer opacity customization  [Pranav Vashi]
-7a7ee5c  Launcher3: Make drawer cells square when labels are hidden  [Pranav Vashi]
-66ebc97  Launcher3: Add pref to set app drawer row height  [Pranav Vashi]
+* system/extras
+17c2477  bootsignature: includes dt image size for signed boot image  [Ankit Gupta]
+32464fc  Make sure header version is less than or equal to 4  [Jarl-Penguin]
 
 
-* packages/apps/Settings
-083521d  Strings: Import MSIM ringtone string from A13  [ShevT]
-1468411  Update RU translation  [DennySPb]
-92f0ac8  Settings: Add simcard number title for SIM1  [ShevT]
-9ca2893  Settings: Fix ringtone selection for devices with e-SIM  [jhenrique09]
-153b3ea  MSIM Ringtone: Improve on devices with ESIM  [jhenrique09]
-0db69e2  Settings: Use AOSP translations for MSIM ringtone  [jhenrique09]
-b36bf1f  Settings: enable SIM card ringtone only if slot not empty [1/2]  [maxwen]
-86daa48  Settings: Phone ringtone setting for Multi SIM device [2/3]  [Ting Yu]
-7285e4e  Settings: Properly set battery temperature  [Pranav Vashi]
-f1bb4de  Settings: Show battery temp on power summary  [DennySPB]
-c4af66f  Show user's Google avatar on the homepage  [Jason Edson]
-ae92e87  Settings: Align user avatar with homepage title  [jhonboy121]
-99db51d  Settings: Fix loading iconpack-based Wellbeing icon  [Adithya R]
-07fcb86  Use XDroid collapsing toolbar layout  [DennySPb]
-8d07ace  Add Face Unlock with ParanoidSense  [Chris Crump]
-1b00b55  Reorder device info page  [DennySPb]
-1844c32  battery usage UI: use a fallback name for unknown components  [Dmitry Muhomor]
-4eae19d  Setting: Bring back battery usage graph  [techyminati]
-91d3827  Refactor AppPicker page to adopt Settings main theme  [Shen Lin]
-daa2946  Settings: remove multiple users search when multi-user not supported  [hoffc]
-86d0fca  Settings: Make all user apps cloneable  [someone5678]
-abb95a7  Settings: Let clone apps preference always be available  [saikiran2001]
-764e206  Settings: Add app package name to SPA [2/2]  [someone5678]
-330f996  Settings: Add Game Space support  [Nauval Rizky]
-675ff20  Settings: Set styles/wallpaper picker action name  [Daniel Micay]
-2ca9b7d  Settings: Integrate ThemePicker and WallpaperPicker2  [Danny Lin]
-00b98aa  Settings: Update 90hz string replace hack in displayPreference  [Fabian Leutenegger]
-e9eaa6e  Settings: Fix findPeakRefreshRate logic  [Fabian Leutenegger]
-cd60f96  Fix RU translation in hide IME option  [DennySPb]
-9515903  Squashed navigation/gestures patches  [jhonboy121]
-
-
-* packages/services/Telecomm
-7f96289  Telecomm: Phone ringtone setting for Multi SIM device [3/3]  [Ting Yu]
-b2c8fba  Fix ConnectionServiceFocusManager NPE  [Brad Ebinger]
-
-
-* vendor/google/pixel
-03bbbdb  Remove sysui plugins overlay  [DennySPb]
+* system/update_engine
+b4f58c7  update_engine: Do not attempt to run backuptool in recovery  [Alessandro Astone]
+64510b6  update_engine: Run backuptool only in debuggable builds  [Luca Stefani]
+1d7798b  update_engine: Remove any (stale) read-only flag before r/w mount of system  [Christian Hoffmann]
+11432aa  update_engine: Transition to backuptool domain  [Luca Stefani]
+95ebfc4  update_engine: Run backuptool script before normal postinstall script  [Dan Pasanen]
 
 
 * vendor/syberia
-4f05897  Move soong namespace definition for QTI extensions to hardware/qcom-caf/common  [DennySPb]
-a4ea478  overlay: update allowed clock SysUIPlugins  [John Galt]
-6959902  clocks: drop Handwritten  [John Galt]
-e70b644  clocks: update from husky-uq1a.231205.015  [John Galt]
+0766937  Remove Updater permissions  [DennySPb]
 
 
 ====================
-     2023-12-19    
+     2024-02-14    
+====================
+
+* device/qcom/sepolicy_vndr/legacy-um
+8c5c08a  sepolicy_vndr:qcc: read vendor_qcc_prop  [Shawn Shin]
+
+
+* frameworks/base
+d6c35f2  SystemUI: BackPanel: Always add second arrow in front on long swipe  [someone5678]
+
+
+====================
+     2024-02-13    
 ====================
 
 * frameworks/base
-3fea48e  Rename removeAllProcessGroups() into removeAllEmptyProcessGroups()  [Bart Van Assche]
-85563f8  SystemUI: Forward port QS fling animation boost to NotificationPanelViewController  [Jake Weinstein]
-d6d3ef1  SystemUI: Use proper tint for face unlock icon  [Pranav Vashi]
-4a8cf04  ExifInterface: Catch IOException caused by invalid image  [minaripenguin]
-09629f8  udfps: Forward port Boost framework hook.  [Vishal Cj]
+6bbd9b9  Use a file descriptor in decodeFile.  [Christopher Ferris]
 
 
 * frameworks/native
-d6dda92  Remove redundant call in Layer's constructor.  [jiayongqiang]
-1ced8f4  Assign previous release fence to previous frame ID  [Alec Mouri]
-da35ac6  Remove redundant calls and correct some comments.  [jiayongqiang]
-
-
-* system/core
-2b0d943  libprocessgroup: Add I/O scheduler attributes to task_profiles.json  [Bart Van Assche]
-3dc8155  Revert "libprocessgroup: Add a function to remove only empty process groups"  [Bart Van Assche]
-47eb254  libprocessgroup: Internal linkage for removeAllProcessGroupsInternal  [T.J. Mercier]
-113d3c0  libprocessgroup: Convert incorrect PLOGs to LOGs  [T.J. Mercier]
-88a5fb8  libprocessgroup: Use correct language for cgroups  [T.J. Mercier]
-5595bb9  libprocessgroup: Don't sleep after last cgroup removal attempt  [T.J. Mercier]
-aba3955  libprocessgroup: Remove max_processes from KillProcessGroup API  [T.J. Mercier]
+82d47bd  binder: fix coverity warnings  [wangmingming1]
 
 
 ====================
-     2023-12-18    
-====================
-
-====================
-     2023-12-17    
-====================
-
-====================
-     2023-12-16    
-====================
-
-====================
-     2023-12-15    
+     2024-02-12    
 ====================
 
 * frameworks/base
-062c3dc  Battery Styles: Fix color on QS for circle battery styles  [Pranav Vashi]
-f42bb16  SystemUI: Add API for runtime taskbar config  [Danny Lin]
-7ec8a20  Add back VOLTE and VOWIFI icons customization for A14  [DennySPb]
-a3418c3  SystemUI: BatteryStatusChip: Always use dark text  [Kazuki Hashimoto]
-7e4b06e  SystemUI: Use proper Resolver background color  [elluzion]
-49096b1  SystemUI: buttons should no longer be textAllCaps  [maxwen]
-8e4f7fc  Youtube application when moving to PIP animation was very bad  [pioush.kumar-IN009423]
-a59fa43  Fix the pip bounds error when entering pip mode.  [buwenjing]
-bcd1bb9  Fix pip error, from split-screen to pip in landscape..  [wangdongdong6]
-b45e32e  Fix NPE when pip onAnimationEnd  [wangdongdong6]
-b3d9331  Fix SystemUI NPE when ScreenDecorations is disabled  [xi yu]
-79f3b80  Check for null ferr  [Pawan Wagh]
-fc6339d  Fix null-deref crash while fuzzing  [Pawan Wagh]
-1de4a2e  SystemUI: Follow Dark/Light theme for Safe Mode dialog  [Pulkit077]
-134e9890  SystemUI: Switch notification background to monet on heads up  [DillerOFire]
-5162b45  SystemUI: Remove visibility check in setting QSCarrier color  [Adithya R]
-fda748a  SystemUI: Follow light/dark theme in SplitShade Header  [ReallySnow]
-b6bd358  SystemUI: Add dual-tone light and dark themes for QS  [Danny Lin]
-27e0e5a  SystemUI: Initialize QS tiles in inactive state  [Danny Lin]
-2a30c1b  SystemUI: Use themewrapper for QSCustomizer and tune colorUnavailable  [Pranav Vashi]
-c66e66b  SystemUI: Follow light/dark theme in quick settings  [Danny Lin]
-598b753  Revert "Make QS always use dark theme colors"  [Danny Lin]
-bb40751  SystemUI: Better QS detail clip animation  [dongwan0605.kim]
-22a22f5  Revert "Revert^2 "Ignore BIND_ABOVE_CLIENT for same-process connections""  [Jeongsik Mun]
-238a5c2  Don't throw if hint session death link doesn't exist  [Xiang Wang]
-17cb080  Skip onActivityEvent when remote ContentCaptureService is dead or unbound.  [Jiangyou Li]
-535c36e  Fix UDFPS icon and progress while enrolling  [Tobias Merkel]
-6f0707d  Remove Unicode whitespace before AM/PM in the status bar  [Victor Chang]
-ae9297d  Island: Overrides showIsland in ShadeViewControllerEmptyImpl  [someone5678]
-74e50c8  Island: Squeeze it  [someone5678]
-bc48cf9  Island: Get application info from all user  [someone5678]
-ea22c93  SystemUI: IslandView: Import SystemUIToast icon retrieving logic  [someone5678]
-0467ad4  Island: Improvements and fixes  [minaripenguin]
-27530c1  Island: Implement Dynamic Island effects  [minaripenguin]
-bc6fbd0  Island: Add quick call answer/reject click functionalities  [minaripenguin]
-1dbc867  Island: Update UI Specs and make layout dynamic  [minaripenguin]
-b9ef8762  SystemUI: Implement Island notification feature [1/2]  [minaripenguin]
-c8ecb12d  Enable backup service for non-owner users  [Pratyush]
-ef266b5  SystemUI: volume dialog: Align padding/margin for left and right  [Arian]
-4d2fc94  SystemUI: Check if primitive vibrations are supported in new quick affordances  [Fabian Leutenegger]
-d207121  PackageInstaller: fix crash when handling STATUS_PENDING_USER_ACTION  [Dmitry Muhomor]
-7813651  PackageInstaller: limit max AppSnippet icon size  [Dmitry Muhomor]
-59f2461  Camera: Select the proper request list size  [Guruprasad Gaonkar]
-d45d71e  Fix method not found for NotProvisionedException hidden api  [Kyle Zhang]
-0015fc7  core: Disable secondary orientation config  [Alex Sarraf]
-09233c2  perf: add exit app animation boost for apps exit.  [Tingting Zhang]
-0c51406  wm: avoid invalid typecasting of network to physical display address.  [Vikas batchu]
-8019bf12  wm: Allow non-default displays to rotate with sensor  [Alex Sarraf]
-7cfd2ef  data: Add missing systemui permissions  [Pranav Temkar]
-378ad1b  fwb:Add android.permission.WRITE_APN_SETTINGS  [karthik1896]
-51059ee  Add back button for freeform window  [utzcoz]
-b9eacf9  Add minimize & pip buttons to freeform windows  [Jon West]
-07c37e5  Fix NullPointerException in GestureDetector  [Arnab Sen]
-e55fdfc  Fix ViewConfiguration's ArrayIndexOutOfBoundsException  [优秀]
-bda209fc  Revert^2 "Ignore BIND_ABOVE_CLIENT for same-process connections"  [Tomislav Novak]
-7e5180d  DSR: Fix DSR when we have toast window  [Shashi Shekar Shankar]
-d0ddf7c  DSR: Fix broken DSR  [Karthik Gopalan]
-66ac1fa  Global scale must always be updated when size compat scale is changed  [Tommy Nordgren]
-ef7fdb7  Killing the client process only if the uid matches  [liulvping]
-2febd37  Fix Invalid Surface error  [Chris Li]
-a82aab3  Avoid killing task process after its activity was died  [Riddle Hsu]
-866e86e  Fix null pointer risk on shouldSleepActivities.  [linkai]
-beb37d8  Add null pointer judgment processing to prevent restarting  [HanWang]
-2f3143b  Ensure that the layer of topActivity can reparent to rotation leash  [haoyu.wang]
-9141c6e  Allow ACTIVITY_TYPE_RECENTS to have multiple root tasks  [Jesper Hansson]
-069e143  Update IME relative layer if it can be the control target  [Riddle Hsu]
-c545fd2  services: wm: Freeform handling improvements  [minaripenguin]
-f590c7a  core: Enable freeform/multiple windows feature by default  [minaripenguin]
-6d42116  Avoid recursion for leaf task fragment in freeform mode  [tanxiaoyan]
-7acb6cd  Not able switch between freeform apps.  [pioush garg]
-637b4c2  wm: hacky fix for system_server crash  [nift4]
-09c3ed7  wm: block custom activity transit animations  [nift4]
-a80abc3  wm: block task transitions from displaying in freeform  [nift4]
-288c471  wm: rewrite/fix window change animation  [nift4]
-23fd29a  Fix freeform window resize not working on multiple displays  [nift4]
-9e2f6ce  SystemUI: FaceUnlock: Add margin based on lock icon  [someone5678]
-b210234  SystemUI: Implement face unlock recognition animation and text  [minaripenguin]
-0465809  KeyguardBouncer: Don't delay showing if face auth running  [jhenrique09]
-b93d000  WalletActivity: Don't explicity request face auth  [jhenrique09]
-1ee1be7  SystemUI: Reset face auth on occluding app when authenticated  [jhenrique09]
-2ab48ed  SystemUI: use simple check for isFaceDisabled  [Ali B]
-581dc9d  Fix assertion checks in libs/hwui/Mesh.cpp  [mashixing]
-19b4cc9  Add a suspension check to SuspendedAppActivity  [Jeongsik Mun]
-9c84bb1  StatsPullAtomService: Fixed StrictMode warning  [Vova Sharaienko]
-88c8585  Init some time Process stats with very negative numbers  [Michael Wachenschwanz]
-7655164  Back button/gesture is not working with Android 14 easter egg activity.  [Aditya Jadhav]
-b7c9020  Camera: Fix OutputConfiguration equality check  [Kwangkyu Park]
-84f2cd1  PixelPropsUtils: Fix safetynet attestation  [chiteroman]
-f14973b  PixelPropsUtils: Use sailfish to spoof  [Giovanni Ricca]
-36862ed  PixelPropUtils: Make play integrity pass again  [saikiran2001]
-bc27687  Introduce PixelPropsUtils for safety net spoof [SQUASHED]  [jhenrique09]
-f393941  ParanoidSense: Adapt to Android 14 QPR1  [someone5678]
-a75f5ee  Add Face Unlock with ParanoidSense  [Chris Crump]
-e4f65d7  BiometricScheduler: Cancel operation if not idle  [SagarMakhar]
-073a68a  Import xdroid-OSS settings base layout  [xyzuan]
-b20fa97  Dividers: not here  [Dil3mm4]
-3c30b0e  SettingsLib: CollapsingToolbarBaseActivity: Increase scrim transition duration  [Elluzion]
-43da029  base: SettiingsLib: Change collapse mode to scale  [Blaster4385]
-e082282  base: SettingsLib: Fix collapsed header color  [Blaster4385]
-1eb9b65  SettingsLib: make CollapsingToolbar like oneplus * use default spacing for dynamic metrics * reconfigure paddings and font size to make it somehow look like oneplus collapsingtoolbar * @ xyzuan for https://github.com/xdroid-oss/xd_packages_apps_Settings/commit/abb70ced8fe2193878dbab3081545436a893c561 * also update all back vector drawables to make it uniform  [dlwlrma123]
-7ef17cb  Remove sensitive info from SUPL requests  [Tommy Webb]
-ddcd7cf  SystemUI: React to PrivacyConfig changes properly  [Tommy Webb]
-8594803  JobScheduler: Respect allow-in-power-save perm  [Tommy Webb]
-02f292b  MetaKeyKeyListener: Disable locking of toggled modifier keys  [Sean McCreary]
-c9692d0  Fix multi-user silent notifications on lockscreen  [Tommy Webb]
-659561a  SystemUI: SideFpsEventHandler: Don't crash without FingerprintManager  [Michael W]
-8d5fff1  SystemUI: Prevent NPE when checking for powerbutton FPS  [Michael W]
-6569c8d  AutofillManager: Make userdebug default to NO_LOGGING  [LuK1337]
-dfcab93  Report success on every fingerprint removal  [Kishan Dudhatra]
-7e45640  Paint: Enable subpixel text positioning by default  [Danny Lin]
-a0ad52e  TtsEngines: avoid crashes caused by null engine name  [Oliver Scott]
-7864a69  BatteryStatsViewer: Fix theme  [Michael Bestas]
-dad9c8e5  BatteryStatsViewer: Fix initial activity after launch  [Michael Bestas]
-aaf73cf  BatteryStatsViewer: Add summary for IA preference  [Michael Bestas]
-3446ad4  BatteryStatsViewer: Remove some hardcoded strings  [Michael Bestas]
-27335c7  Create IA entry for BatteryStatsViewer  [Oliver Scott]
-ff2f7da  Set FakeStore as Aurora Store installer package name  [Oliver Scott]
-e97cba9  Filter Google Translate queries for GMS  [Oliver Scott]
-21f82e5  Hide "Enable Google Play Services" notification  [Oliver Scott]
-a9c363d  Allow microG and only microG to spoof package signature  [Chirayu Desai]
-651ad2e  Add other options to settings injectable mappings  [Chirayu Desai]
-0710c1e  Do not ignore background vibrations from shell  [Tommy Webb]
-ffe6a62  AlarmManager: create setExactAndAllowWhileIdle variant based on alarm listener  [Oliver Scott]
-7cdd7a0  Disable cross profile contact search and calendar by default  [Chirayu Desai]
-77dbae5  Stop unsuspending packages in profiles  [Tommy Webb]
-887d23d  Pause apps feature  [Oliver Scott]
-cbff353  Adapt Open With chooser for multiple profiles  [t-m-w]
-5c4a4a1  Do not show logout button on lockscreen  [Tommy Webb]
-cf86952  Support logging out secondary users  [Tommy Webb]
-65ab2e5  Support work profiles on full secondary users  [Oliver Scott]
-b06e210  Enable backup service by default for all users  [Oliver Scott]
-7f74538  Allow creating multiple work profiles via sysprop  [Tommy Webb]
-dbbff42  Automatically start all work profiles  [Tommy Webb]
-d55d585  Camera: Decrement image references after 'onNextImageAvailable'  [Emilian Peev]
-4daf71a  Camera: Fix typos in CameraExtensionSessionImpl  [Euisang Lim]
-6e90c0f  Show hidden apps on secondary users' app lists  [Oliver Scott]
-95fd1bc  Hide hidden apps from all apps except system  [Oliver Scott]
-41d7a44  Start profiles before finishing user boot when finishing user switch  [Oliver Scott]
-0afd758  Fix secondary user crash with system user locked  [Tommy Webb]
-fff1707  base: Update some icons to MD2  [Anushek Prasal]
-9d13a28  Fix unlock notifications for multiple profiles  [t-m-w]
-090fdd6  services: fix quickswitch with gesture pill disabled  [nift4]
-d493dcd  SystemUI: Apply QS transparency to footer actions background  [Pranav Vashi]
-bf89eba  SystemUI: Blur the power menu  [Elluzion]
-3fd85b7  Replace lockscreen icons with two-tone icons  [Trishiraj]
-500c5a5  SystemUI: Ignore font padding for large ls clock  [minaripenguin]
-b5ae4b7  Allow overlaying font spacing for lockscreen clock  [Pranav Vashi]
-9a4ba1f  Add additional work profile badge colors and labels  [t-m-w]
-8975d5a  Allow permission pre-grant files on OEM partition  [Henrik Baard]
-2a6227d  Optimize AbsListView to reduce click operation latency  [Jun Wang]
-67fbec9  Remove unnecessary HashMap instantiation  [Josep del Rio]
-f33c363  Bind voice interactor as visible foreground service when it is being used.  [Albert Dai]
-d336176  Watchdog and sluggishness due to multiple virtual displays created by third party apps  [sai.gairuboina-IN009276]
-49ea96c  Change the resource cache key from context to package name.  [sangyun]
-2eb6435  UsageProgressBarPreference: Fix multiple NPEs  [minaripenguin]
-ddb7fc9  SettingsLib: Animate the UsageProgressBarPreference  [minaripenguin]
-331ab33  SystemUI: Improve charging animation  [minaripenguin]
-3df4fd1  Fix drawable-state cache expired issue  [felkachang]
-a1d9a1d  SystemUI: Align keyguard carrier text with status bar  [Andy CrossGate Yan]
-e6d5f15  Use synchronization to protect service list and service class name set  [lianjintao]
-e6aa095  base: set scrolling friction to 0.006f  [Jake Weinstein]
-daea1fb  ViewConfiguration: Set scroll friction to 0.012  [Alex Naidis]
-7dce58a  InputMethodManager: Prevent unnecessary invocation of IME  [minaripenguin]
-b639483  Improve synchronization of ProcessCpuTracker  [Dmitri Plotnikov]
-5d78374  Fix AlarmManager high CPU issue  [Hari Raj Vijayakumar]
-1bebc9c  SettingsProvider: grant device config permissions  [Ali B]
-ab48941  base: add missing device config permissions for settings  [Ali B]
-0f34de5  [SQUASH] Implement DeviceConfigUtils and service  [jhenrique09]
-937b061  SpaPrivileged: Add app package name to SPA [1/2]  [someone5678]
-0ac2fc8  Close unused Image before acquire new one  [hainiaochen]
-797e0e5  SystemUI: set heap tracking default also with a property like all the other flags  [maxwen]
-501dcad  SystemUI: Re-inflate QS and SB when CONFIG_SCREEN_LAYOUT  [althafvly]
-b627378  SystemUI: Fix QS header clock color  [Danny Baumann]
-7e457ef  SystemUI: QSCustomizer: Fix QS tile reset text color  [althafvly]
-f67dafb  SystemUI: Always refresh power menu on UI mode change  [Danny Lin]
-aa9cfc1  Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE"  [Danny Lin]
-9f17005  SystemUI: Fix multiple QS background scrim issues  [Pranav Vashi]
-d5e07ec  ScrimController: Use Tuner API to apply custom alpha  [Pranav Vashi]
-fb5aa0e  SystemUI: Transparent QS customization  [spkal01]
-ed8f54e  GameManagerService: Set device_config property on behalf of GameSpace  [Dhina17]
-a750993  SystemUI: Add support for GameSpace  [Nauval Rizky]
-310adca  Add less boring heads up option [SQUASHED]  [ezio84]
-01ba86f  services: Skip access check for matlog shipped with rom  [maxwen]
-d9fa002  AuthRippleController: Always make sure LightRevealScrim finishes regardless of the progress  [minaripenguin]
-1c8d961  AuthRippleController: Always finish the LightRevealScrim  [Chenyang Zhong]
+e046cde  media: fix MediaMetadataRetriever Option Intdef  [Lajos Molnar]
+088c63c  HwAudioSource: auto reconnect feature on AudioServer crash  [Francois Gaffie]
+f66acd0  View: Fix not refreshDrawableState when set hovered in focused view  [Jia Zekun]
+d4e8295  fix div by 0 when vsync data empty due to timeout  [lianjintao]
+c02a820  Use getPackagesForOps instead of iterating packages by checkOperation  [yinwei.sun1]
+0402de1  Fix screen flickering when using one handed mode  [timjosten]
+e6d4f3dd  SystemUI: Fix double unlock sound issue  [timjosten]
+34da59c  core: freeze two IDs used by HbmSvManager  [nift4]
+d27df26  aapt2: support freezing private resource IDs  [nift4]
+669266a  UI: Follow Monet and light/dark theme in user 1 icon  [Andy CrossGate Yan]
+039c5ca  SystemUI: Avoid showing face unlock animation on AOD and ambient screen  [someone5678]
+221d7cb  perf: fix the cases for disabling pre-rendering falsely.  [Tingting Zhang]
 
-
-====================
-     2023-12-14    
-====================
 
 * frameworks/native
-59777ad  QTI ext: Fix build in AOSP env  [DennySPb]
-3d47f2f  libbinder: Suppress log spam when unlinking death recipients  [Danny Lin]
-842df0b  InputDispatcher: fix code for clang update  [Yabin Cui]
-2e4116c  SF: Don't enable expensive rendering for unknown dataspace  [Adithya R]
-98d62d2  Cancel drag and drop when pointers are canceled for the drag window  [Linnan Li]
-46ea43f  Add vendor version for libgui  [Vinay Verma]
-4167636  Add AC4Tbl params for dolby AC4 decoder [2/2]  [HELLBOY017]
-169470f  Add dalvik-heap device configs for 8/12/16 GiB devices  [Simao Gomes Viana]
-d5526fe  CompositionEngine: Request device composition for the Udfps touched layer  [daniml3]
-2fc0e3a  surfaceflinger: Add support for Udfps extension lib  [Pierre-Hugues Husson]
-154e0b6  Merge tag 'LA.QSSI.14.0.r1-09900-qssi.0' of https://git.codelinaro.org/clo/la/platform/frameworks/native into 14.0-qpr1  [DennySPb]
-842ba66  Revert "Reland "SF: Encapsulate frame targeting""  [DennySPb]
-d465827  Revert "SF: Report missed frames per display"  [DennySPb]
-5ff5fbc  Revert "SF: Fix mode setting for secondary displays"  [DennySPb]
-90185e9  Revert "SF: Fix mode setting for UDFPS with disabled AOD"  [DennySPb]
-d8f3df8  Revert "[SF] Update to use updateRefreshRateOverlayRate from setActiveMode"  [DennySPb]
-035bd48  Revert "SF: Fix jank after folding due to power sequence"  [DennySPb]
+ad693c5  Modify dimming threshold from 0.2 to 0.9.  [linkai]
+6aa8958  Merge tag 'LA.QSSI.14.0.r1-12000-qssi.0' of https://git.codelinaro.org/clo/la/platform/frameworks/native  [DennySPb]
+
+
+* packages/apps/Launcher3
+41afdd2  Launcher3: fix shake to clear all apps  [nift4]
+71a4772  Launcher3: Add scrollview for task options menu  [electimon]
 
 
 * system/memory/lmkd
-8ffbcbb  Merge tag 'android-14.0.0_r17' of https://android.googlesource.com/platform/system/memory/lmkd into HEAD  [DennySPb]
+4ad964a  lmkd : don't consider file_cache from balanced zones  [Divyanand Rangu]
 
+
+====================
+     2024-02-11    
+====================
+
+====================
+     2024-02-10    
+====================
+
+* frameworks/base
+c54abaf  [fixup] fixup! SystemUI: Implement Island notification feature  [DennySPb]
+300f5b2  Add some fwb stubs from Oplus  [DennySPb]
+e124007  SystemUI: Enable pulsing animation for faceunlock  [aswin7469]
+b36a5f2  Island: Improve text filtering to support symbols  [minaripenguin]
+
+
+====================
+     2024-02-09    
+====================
 
