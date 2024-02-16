@@ -1,10 +1,14 @@
 ====================
-     2024-02-15    
+     2024-02-16    
 ====================
 
-* device/syberia/sepolicy
-a3461ee  update_engine: allow reading fuse files anywhere  [John Galt]
+* frameworks/base
+de9c49f  Revert "Fix system server OOM caused by too many UsageEvents ."  [DennySPb]
 
+
+====================
+     2024-02-15    
+====================
 
 * frameworks/base
 07426ab  Boost process priority during fork.  [Sadrul Chowdhury]
@@ -35,8 +39,8 @@ b4f58c7  update_engine: Do not attempt to run backuptool in recovery  [Alessandr
      2024-02-14    
 ====================
 
-* device/qcom/sepolicy_vndr/legacy-um
-8c5c08a  sepolicy_vndr:qcc: read vendor_qcc_prop  [Shawn Shin]
+* device/syberia/sepolicy
+a3461ee  update_engine: allow reading fuse files anywhere  [John Galt]
 
 
 * frameworks/base
@@ -46,6 +50,10 @@ d6c35f2  SystemUI: BackPanel: Always add second arrow in front on long swipe  [s
 ====================
      2024-02-13    
 ====================
+
+* device/qcom/sepolicy_vndr/legacy-um
+8c5c08a  sepolicy_vndr:qcc: read vendor_qcc_prop  [Shawn Shin]
+
 
 * frameworks/base
 6bbd9b9  Use a file descriptor in decodeFile.  [Christopher Ferris]
@@ -99,11 +107,5 @@ ad693c5  Modify dimming threshold from 0.2 to 0.9.  [linkai]
 * frameworks/base
 c54abaf  [fixup] fixup! SystemUI: Implement Island notification feature  [DennySPb]
 300f5b2  Add some fwb stubs from Oplus  [DennySPb]
-e124007  SystemUI: Enable pulsing animation for faceunlock  [aswin7469]
-b36a5f2  Island: Improve text filtering to support symbols  [minaripenguin]
 
-
-====================
-     2024-02-09    
-====================
 
